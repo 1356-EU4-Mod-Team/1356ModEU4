@@ -1,0 +1,53 @@
+government = monarchy
+add_government_reform = ottoman_government
+government_rank = 2
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+historical_rival = GOL
+historical_rival = MAM
+historical_rival = BYZ
+historical_rival = BUL
+historical_rival = KAR
+historical_rival = TIM
+historical_rival = HAB
+capital = 323 # Konia
+national_focus = MIL
+
+
+1353.7.23 = { 
+	monarch = {
+		name = "Ala ad-Din IV"
+		dynasty = "Kai-Qubad"
+		birth_date = 1327.5.13 
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1354.4.29 = {
+	heir = {
+		name = "Izz ad-Din"
+		monarch_name = "Izz ad-Din V"
+		dynasty = "Kai-Qubad"
+		birth_date = 1354.4.29
+		death_date = 1389.6.14
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+1356.1.1 = {
+	leader = {	
+		name = "Gazi Arslan"	
+		type = general	
+		fire = 4	
+		shock = 4	
+		manuever = 3	
+		siege = 4	
+		death_date = 1387.11.17 
+	} 
+}

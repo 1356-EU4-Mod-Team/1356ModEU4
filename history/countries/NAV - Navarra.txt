@@ -1,0 +1,363 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = basque
+add_accepted_culture = normand
+add_accepted_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+historical_friend = NRM
+historical_friend = ARA
+capital = 210	# Pamplona
+
+
+1328.10.6 = {
+	monarch = {
+		name = "Sancho IV"
+		dynasty = "Jiménez"
+		culture = cosmopolitan_french
+		birth_date = 1310.6.15
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+1332.5.12 = {
+	queen = {
+		name = "Johanna II"
+		dynasty = "Capet"
+		culture = cosmopolitan_french
+		birth_date = 1311.1.28
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1356.12.26 = { remove_historical_friend = ARA }
+
+# BT Out
+
+1356.12.26 = { # Was 1349.10.6
+	monarch = {
+		name = "Charles II"
+		dynasty = "d'Évreux"
+		culture = cosmopolitan_french
+		birth_date = 1332.10.10
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1356.12.26 = { # Was 1352.2.12
+	queen = {
+		country_of_origin = FRA
+		name = "Jeanne"
+		dynasty = "de Valois"
+		birth_date = 1343.6.24
+		death_date = 1373.11.3
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1361.7.22 = {
+	heir = {
+		name = "Carlos"
+		monarch_name = "Charles III"
+		dynasty = "d'Évreux"
+		birth_date = 1361.7.22
+		death_date = 1425.9.8
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1387.1.1 = {
+	monarch = {
+		name = "Charles III"
+		dynasty = "d'Évreux"
+		birth_date = 1361.7.22
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = CAS
+		name = "Leonor"
+		dynasty = "de Trastámara"
+		birth_date = 1363.1.1
+		death_date = 1416.2.27
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1387.7.6 = {
+	heir = {
+		name = "Blanca"
+		monarch_name = "Blanca I"
+		dynasty = "d'Évreux"
+		birth_date = 1387.7.6
+		death_date = 1441.4.1
+		female = yes
+		claim = 100
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1425.9.8 = {
+	monarch = {
+		name = "Blanca I"
+		dynasty = "d'Évreux"
+		birth_date = 1387.7.6
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = ARA
+		name = "Juan"
+		dynasty = "de Trastámara"
+		birth_date = 1398.1.20
+		death_date = 1479.1.20
+		female = no
+		adm = 4
+		dip = 1
+		mil = 0
+	}
+}
+
+1441.4.1 = { # King 'de facto', married with Blanca I
+	monarch = {
+		name = "Juan II"
+		dynasty = "de Trastámara"
+		birth_date = 1398.1.20
+		adm = 4
+		dip = 1
+		mil = 0
+	}
+	heir = {
+		name = "Carlos"
+		monarch_name = "Carlos IV"
+		dynasty = "de Trastámara"
+		birth_date = 1421.5.29
+		death_date = 1461.9.23
+		claim = 100
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1461.9.23 = {
+	heir = {
+		name = "Blanca"
+		monarch_name = "Blanca II"
+		dynasty = "de Trastámara"
+		birth_date = 1424.6.9
+		death_date = 1464.12.2
+		female = yes
+		claim = 90
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1464.12.2 = {
+	heir = {
+		name = "Leonor"
+		monarch_name = "Leonor I"
+		dynasty = "de Trastámara"
+		birth_date = 1426.2.2
+		death_date = 1479.2.12
+		female = yes
+		claim = 90
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}
+
+1479.1.20 = {
+	monarch = {
+		name = "Leonor I"
+		dynasty = "de Trastámara"
+		birth_date = 1426.2.2
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+	heir = {
+		name = "Francisco"
+		monarch_name = "Francisco I Febo"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1469.4.18
+		death_date = 1483.1.7
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1479.2.12 = {
+	monarch = {
+		name = "Queen Regent Madeleine"
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+	heir = {
+		name = "Francisco"
+		monarch_name = "Francisco I Febo"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1469.4.18
+		death_date = 1483.1.7
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1483.1.7 = {
+	monarch = {
+		name = "Catalina I"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1468.4.18
+		female = yes
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1484.7.14 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Jean"
+		dynasty = "d'Albret"
+		birth_date = 1469.1.1
+		death_date = 1516.6.17
+		female = no
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1503.4.18 = {
+	heir = {
+		name = "Enrique"
+		monarch_name = "Enrique II"
+		dynasty = "d'Albret"
+		birth_date = 1503.4.18
+		death_date = 1555.5.25
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1512.9.1 = { capital = 176 government = monarchy add_government_reform = autocracy_reform } # Bearn/Foix 
+  
+1517.2.12 = {
+	monarch = {
+		name = "Enrique II"
+		dynasty = "d'Albret"
+		birth_date = 1503.4.18
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1527.1.24 = {
+	queen = {
+		country_of_origin = AMG
+		name = "Marguerite"
+		dynasty = "de Valois-Angoulême"
+		birth_date = 1492.4.11
+		death_date = 1549.12.21
+		female = yes
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1528.1.7 = {
+	heir = {
+		name = "Juana"
+		monarch_name = "Juana III"
+		dynasty = "d'Albret"
+		birth_date = 1528.1.7
+		death_date = 1572.6.9
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 1
+		female = yes
+	}
+}
+
+1555.5.25 = {
+	monarch = {
+		name = "Juana III"
+		dynasty = "d'Albret"
+		birth_date = 1528.1.7
+		adm = 4
+		dip = 4
+		mil = 1
+		female = yes
+	}
+}
+
+1555.5.25 = {
+	heir = {
+		name = "Enrique"
+		monarch_name = "Enrique III"
+		dynasty = "de Bourbon"
+		birth_date = 1553.12.13
+		death_date = 1610.5.14
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+		leader = { 	name = "Enrique III"		type = general	fire = 4	shock = 4	manuever = 2	siege = 0 }
+	}
+}
+
+1560.1.1 = { religion = reformed set_legacy_government = administrative_monarchy }
+
+1562.1.1 = { leader = {	name = "Louis I de Condé"	type = general	fire = 2	shock = 3	manuever = 4	siege = 3	death_date = 1569.1.1 } }
+
+1572.6.9 = {
+	monarch = {
+		name = "Enrique III"
+		dynasty = "de Bourbon"
+		birth_date = 1553.12.13
+		adm = 5
+		dip = 5
+		mil = 5
+		leader = { 	name = "Enrique III"		type = general	fire = 4	shock = 4	manuever = 2	siege = 0 }
+	}
+}
+
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }
+

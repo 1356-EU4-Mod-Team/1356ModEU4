@@ -1,0 +1,20 @@
+# Second Fernandine War log
+# 2013.12.27 New entry (rickroll120)
+
+name = "Second Fernandine War"
+#casus_belli = cb_insult
+war_goal = {
+	type = superiority_insult_mutual
+	casus_belli = cb_insult
+}
+
+1372.12.1 = { # Failed royal marriage with Castille and secret alliance with England
+	add_attacker = CAS
+	add_defender = POR
+}
+
+# Peace and end of war
+1373.3.31 = { # Treaty of Santarem
+	rem_attacker = CAS
+	rem_defender = POR
+}

@@ -1,0 +1,156 @@
+namespace = mtr
+
+country_event = {
+	id = mtr.1
+	title = mtr.1.t
+	desc = mtr.1.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2689
+		technology_group = chinese
+		2689 = {
+			religion = sunni
+		}
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = mtr.1.a
+		remove_core = 2689
+		2689 = {
+			add_core = MTR
+			add_unrest = 15
+			add_local_autonomy = 50
+		      }
+	        }
+}
+
+country_event = {
+	id = mtr.2
+	title = mtr.2.t
+	desc = mtr.2.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 626
+		technology_group = chinese
+		626 = {
+			religion = sunni
+		}
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = mtr.2.a
+		remove_core = 626
+		626 = {
+			add_core = MTR
+			add_unrest = 15
+			add_local_autonomy = 50
+		      }
+	        }
+}
+
+country_event = {
+	id = mtr.3
+	title = mtr.3.t
+	desc = mtr.3.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2691
+		technology_group = chinese
+		2691 = {
+			religion = sunni
+		}
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = mtr.3.a
+		remove_core = 2691
+		2691 = {
+			add_core = MTR
+			add_unrest = 15
+			add_local_autonomy = 50
+		      }
+	        }
+}
+
+country_event = {
+	id = mtr.4
+	title = mtr.4.t
+	desc = mtr.4.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2690
+		technology_group = chinese
+		2690 = {
+			religion = sunni
+		}
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = mtr.4.a
+		remove_core = 2690
+		2690 = {
+			add_core = MTR
+			add_unrest = 15
+			add_local_autonomy = 50
+		      }
+	        }
+}
+
+country_event = {
+	id = mtr.5
+	title = mtr.5.t
+	desc = mtr.5.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2679
+		technology_group = chinese
+		2679 = {
+			religion = sunni
+		}
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = mtr.5.a
+		remove_core = 2679
+		2679 = {
+			add_core = MTR
+			add_unrest = 15
+			add_local_autonomy = 50
+		      }
+	        }
+}

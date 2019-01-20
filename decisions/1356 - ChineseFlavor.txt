@@ -1,0 +1,33 @@
+country_decisions = {
+	chinese_warlord_no_empire_decision = {
+		potential = {
+			culture_group = east_asian
+			government = monarchy
+			has_reform = chinese_kingdom_government_reform #Warlord Government
+			OR = {
+				religion_group = eastern
+				religion_group = pagan
+			}
+			is_emperor_of_china = no
+		}
+		allow = {
+			china_superregion = {
+				type = all
+				is_core = ROOT
+			}
+		}
+		effect = {
+			change_government_via_reform = monarchy
+			set_government_rank = 3
+			prestige = 200
+			add_stability = 3
+			add_adm_power = 400
+			add_dip_power = 400
+			add_mil_power = 400
+			add_legitimacy = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

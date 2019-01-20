@@ -1,0 +1,25 @@
+name = "Crusade to Reconquest Bulgaria"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 150
+}
+
+1396.1.1 = {
+	add_attacker = HUN
+	add_attacker = WAL
+	add_attacker = VEN
+	add_attacker = KNI
+	add_defender = TUR
+	add_defender = SER
+}
+
+# Peace
+1396.9.25 = {
+	rem_attacker = HUN
+	rem_attacker = WAL
+	rem_attacker = VEN
+	rem_attacker = KNI
+	rem_defender = TUR
+	rem_defender = SER
+}

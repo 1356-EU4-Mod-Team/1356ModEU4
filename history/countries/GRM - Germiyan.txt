@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = beylik_reform
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 322 # Kütahya
+religious_school = hanafi_school
+historical_rival = MAM
+
+1341.1.1 = {
+	monarch = {
+		name = "Mehmed"
+		dynasty = Germiyanoglu
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	add_piety = 0.2
+}
+
+1361.1.1 = {
+	monarch = {
+		name = "Süleyman Sah"
+		dynasty = Germiyanoglu
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1387.1.1 = {
+	monarch = {
+		name = "Yakub II"
+		dynasty = Germiyanoglu
+		birth_date = 1352.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# Ottoman Occupation from 1390 - 1402
+
+1402.8.1 = { # again
+	monarch = {
+		name = "Yakub II"
+		dynasty = Germiyanoglu
+		birth_date = 1352.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# Annexed by the Ottoman Empire 1429

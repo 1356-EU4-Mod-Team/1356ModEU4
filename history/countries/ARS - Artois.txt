@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+religion = catholic
+technology_group = western
+primary_culture = wallonian
+capital = 88 # Artois

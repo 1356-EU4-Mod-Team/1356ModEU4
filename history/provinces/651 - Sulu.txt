@@ -1,0 +1,25 @@
+# 651 - Sulu (1356)
+# Changes: SUL/religion
+
+culture = filipino
+religion = sunni
+capital = "Jolo"
+trade_goods = gems
+hre = no
+base_tax = 4 
+
+base_production = 4
+base_manpower = 3
+owner = SUL
+controller = SUL
+add_core = SUL
+is_city = yes
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1
+
+1521.1.1   = { discovered_by = SPA } # Ferdinand Magellan 

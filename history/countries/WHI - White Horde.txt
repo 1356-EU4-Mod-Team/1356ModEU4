@@ -1,0 +1,178 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = khazak
+religion = sunni
+technology_group = nomad_group
+capital = 2352	# Alty-Kuduk
+historical_friend = SIB
+religious_school = hanbali_school
+
+1344.1.1 = { 
+	monarch = { 
+		name = "Chimtay" 
+		dynasty = "Borjigin"
+		dip = 1 
+		adm = 4 
+		mil = 3
+	}	
+} 
+
+1361.1.1 = { 
+	monarch = { 
+		name = "Urus Khan" 
+		dynasty = "Borjigin"
+		dip = 3 
+		adm = 3 
+		mil = 3
+	}	
+} 
+
+1377.1.1 = { 
+	monarch = { 
+		name = "Timur-Malik" 
+		dynasty = "Borjigin"
+		dip = 2 
+		adm = 2 
+		mil = 2
+	}	
+} 
+
+### 1378.1.1 - 1427.1.1 PU under GOL ###
+
+1378.1.1 = {
+	monarch = {
+		name = "Tokhtamysh"
+		dynasty = "Borjigin"
+		ADM = 4
+		DIP = 4
+		MIL = 4
+	}
+}
+
+1397.1.1 = {
+	monarch = {
+		name = "Temur Qutlugh"
+		dynasty = "Genghisid"
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1399.10.1 = {
+	monarch = {
+		name = "Shadi Beg"
+		dynasty = "Genghisid"
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1399.10.1 = {
+	heir = {
+		name = "Pulad Khan"
+		monarch_name = "Pulad Khan ibn Shadi Beg"
+		dynasty = "Genghisid"
+		birth_date = 1385.1.1
+		death_date = 1410.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1407.1.1 = {
+	monarch = {
+		name = "Pulad Khan ibn Shadi Beg"
+		dynasty = "Genghisid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1410.1.1 = {
+	monarch = {
+		name = "Temur Khan ibn Temur Qutlugh"
+		dynasty = "Genghisid"
+		adm = 0
+		dip = 1
+		mil = 1
+	}
+}
+
+1411.1.1 = {
+	monarch = {
+		name = "Jalal al-Din ibn Tokhamysh"
+		dynasty = "Genghisid"
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1411.1.1 = {
+	heir = {
+		name = "Karim Berdi"
+		monarch_name = "Karim Berdi ibn Tokhamysh"
+		dynasty = "Genghisid"
+		birth_date = 1390.1.1
+		death_date = 1414.1.1
+		claim = 65
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1412.1.1 = {
+	monarch = {
+		name = "Karim Berdi ibn Tokhamysh"
+		dynasty = "Genghisid"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1414.1.1 = {
+	monarch = {
+		name = "Chokra ibn Akmyl"
+		dynasty = "Genghisid"
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1417.1.1 = {
+	monarch = {
+		name = "Jabbar Berdi Khan"
+		dynasty = "Genghisid"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1419.1.1 = {
+	monarch = {
+		name = "Ulugh Muhammad"
+		dynasty = "Genghisid"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1421.1.1 = {
+	monarch = {
+		name = "Baraq Khan"
+		dynasty = "Genghisid"
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}

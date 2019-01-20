@@ -1,0 +1,11 @@
+l_german: 
+ call_to_crusade: "Der Ruf der Kreuzritter"
+ call_to_crusade_desc: "Eine Theokratische Regierung legt eine einfache Wahrheit in der Diplomatie mit anderen Staaten offen - wir sind eine Bastion unseres Glaubens, stark stehend gegen Heiden und Häretiker. Diese Wahrheit blieb in den Köpfen beider, Freund und Feind gleichermaßen haften, und war normalerweise genug um das gewöhnliche Volk dazu zu bringen, sich an den Bannern das Staates zu scharen, wenn dies als nötig erschien."
+ blessings_of_religious_leaders: "Religiöse Ordensmitgliedschaft"
+ blessings_of_religious_leaders_desc: "Ein Titel erzeugt eine Menge politisches Gewicht, und ein Titel der zeigt, dass der Inhaber ein Mitglied eines religiösen Ordens ist, zeigt, dass dieser ein edler und frommer Mann ist. Religiöse Orden würden häufig Titel als ein Mittel zum Tausch mit betreundeten Verwaltungen anbieten."
+ order_of_monastic_knights: "Ritter der Mönchsorden"
+ order_of_monastic_knights_desc: "Die verscheidenen Ritter der Mönchsorden, beauftragt von religiösen Köpfen weltweit, kamen an um für ein primären Zweck dazu sein - den Menschen den einen wahren Glauben zu bringen, dort mit dem Schwert, wo nur Worte versagt hatten. Klösterliche Staaten existierten in einem Status nahe dem totalem Krieg und auch in ihm, sie gediehen für Jahrhunderte."
+ the_inquisitor_act: "Die Inquisition"
+ the_inquisition_act_desc: "Eine Inquisition war eine Institution erschaffen von dem Kopf einer Religion mit dem primären Ziel, unsere Häretiker und ebenso Heiden aufzuspüren. Sie waren besonders Effektiv in dem was sie taten, aber auf jeden Fall waren sie alles andere als beliebt."
+ ruling_in_his_name: "Herrschen in seinem Namen"
+ ruling_in_his_name_desc: "Religiöse Orden beanspruchten oft, dass sie im Namen ihres Gottes regierten, und niemandem anderen Rechenschaft ablegten. Für Gläubige gab es kein höherwertigeres Recht."

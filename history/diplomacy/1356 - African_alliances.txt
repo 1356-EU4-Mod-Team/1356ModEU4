@@ -1,0 +1,13 @@
+vassal = {
+	first = MAL
+	second = SON
+	start_date = 1356.1.1
+	end_date = 1397.1.1
+}
+
+vassal = {
+	first = ETH
+	second = DAM
+	start_date = 1356.1.1
+	end_date = 1444.1.1
+}

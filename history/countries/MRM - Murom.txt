@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 1754	# Murom
+fixed_capital = 1754 # Cannot move capital away from this province & no power cost to move to it
+
+1355.1.1 = { 
+	monarch = {
+		name = "Vladimir II"
+		dynasty = "Murometsk"
+		birth_date = 1320.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

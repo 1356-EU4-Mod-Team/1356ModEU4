@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = tribal_federation
+technology_group = chinese
+religion = animism
+primary_culture = sulawesi
+capital = 642
+
+1356.1.1 = {
+	monarch = {
+		name = "Haluoleo"
+		dynasty = "Tolaki"
+		birth_date = 1356.1.1
+		ADM = 2
+		DIP = 2
+		MIL = 0
+	}
+}

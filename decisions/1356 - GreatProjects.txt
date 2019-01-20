@@ -1,0 +1,79 @@
+country_decisions = {
+
+	build_great_library = { #Give Nation making this events related to this decision & a national modifier related to tech and idea cost.
+		major = yes
+		potential = {
+			OR = { #AI check
+				ai = no
+				AND = { #For AI's
+					treasury = 10000
+					owns_or_vassal_of = 358
+				}
+			}
+			has_discovered = 358
+			358 = {
+				NOT = { has_great_project = great_library }
+				NOT = { has_construction = great_project  } 
+			}
+			adm_tech = 12 #Would be ADM 9 in vanilla?
+		}
+		provinces_to_highlight = {
+			province_id = 358
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { vassal_of = ROOT } }
+			}
+		}
+		allow = {
+			OR = {
+				religion = coptic
+				religion = hellenic_pagan
+				religion = nestorian
+			}
+			owns_or_vassal_of = 358
+			is_subject = no			
+			adm_tech = 18 #Would be ADM 15 in vanilla?
+			treasury = 5000
+			adm_power = 400
+			dip_power = 400
+			mil_power = 400
+		}
+		effect = {
+			add_treasury = -5000
+			add_adm_power = -400
+			add_dip_power = -400
+			add_mil_power = -400
+			358 = {	#Alexandria
+				add_great_project = great_library
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	cancel_great_library = {
+		major = yes
+		potential = {
+			ai = no
+			owns_or_vassal_of = 358
+			is_subject = no
+			358 = {
+				has_construction = great_project 
+			}
+		}
+		allow = {
+			358 = {
+				has_construction = great_project 
+			}
+		}
+		effect = {
+			358 = {	# Alexandria
+				cancel_construction = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

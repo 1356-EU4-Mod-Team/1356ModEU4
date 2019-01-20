@@ -1,0 +1,72 @@
+government = monarchy
+add_government_reform = chinese_kingdom_government_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = hubei
+capital = 2172 # Jingzhou
+
+historical_rival = YUA
+historical_rival = KHA
+historical_rival = CZH
+historical_rival = WUU
+historical_rival = CGS
+historical_rival = MNG
+historical_rival = HUA
+historical_rival = QIN
+historical_rival = LNG
+historical_rival = JIN
+historical_rival = YAN
+historical_rival = QIC
+historical_rival = TNG
+historical_rival = CHC
+historical_rival = NNG
+historical_rival = SHU
+historical_rival = MIN
+historical_rival = QNG
+historical_rival = CMI
+historical_rival = CSH
+
+1351.1.1 = {
+	monarch = {
+		name = "Xu Shouhui"
+		dynasty = "Tianwan"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	capital = 2172
+}
+
+1360.1.1 = {
+	monarch = {
+		name = "Chen Youliang"
+		dynasty = "Dahan"
+		birth_date = 1320.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1363.8.23 = {
+	monarch = {
+		name = "Chen Li"
+		dynasty = "Dahan"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1630.1.1 = {
+	monarch = {
+		name = "Xianzhong"
+		dynasty = "Zhang"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+	capital = 681	# Yichuan
+}
+
+1644.8.9 = { capital = 679 } # Sichuan

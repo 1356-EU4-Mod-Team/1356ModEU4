@@ -1,0 +1,64 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 88  13  172 }
+
+historical_idea_groups = {
+	trade_ideas
+	naval_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	east_asian_spearmen
+	eastern_bow
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+}
+
+monarch_names = {
+	"Hyang Purwawisesa #0" = 10
+	"Pandan Solas #0" = 10
+	"Kertabumi #0" = 10
+	"Dyah Ranawijaya #0" = 10
+	"Pateudra #0" = 10
+	"Senapati Jimbun #0" = 10
+	"Sabrang Lor #0" = 10
+	"Tranggana #0" = 10
+	"Prawata #0" = 10
+	"Aria Pangiri #0" = 10
+}
+
+leader_names = {
+	Ernalia
+	Karsumaatmaja
+        Roem 
+	Syarifuddin 
+	Zulkifli
+	Mollema
+	Nasution Nitisastro
+	Prawiranega Purbacaraka
+	Subadio Sumual
+}
+
+ship_names = {
+	Tanjungkarang Telukbetung
+	Pangeran Ratu Winata Kusuma
+	Surakarta Yogyakarta Semarang Salatiga
+	"Gunung Merbabu" Sragen Sukoharjo Wonosari
+	"Gunung Lawu" Delanggu Cepu Purwodarli
+	Ngawi Grobogan Boja Amgarawa
+        Teunom Peusangen Jamboaye Alas Tripa "Simpang-kiri"
+	"Peg Serbeulangit" "Peg Pusat" "Gunung Peuetsagoe"
+	"Pulau we" "Pulau Breueh"
+}

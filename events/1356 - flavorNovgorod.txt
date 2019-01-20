@@ -1,0 +1,125 @@
+namespace = fla_novgorod
+
+#Novgorod
+country_event = { #Historical Event to grant Narimantas I control over Karelia and Ingrian duchies.
+#Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically. So, deal with the historical inaccuracies.
+	id = fla_novgorod.1
+	title = "fla_novgorod.1.t"
+	desc = "fla_novgorod.1.d"
+	picture = FORT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NOV
+		#historical_rival_with = SWE #Commented out to force the event to occur more often
+		current_age = age_of_feudalism
+		NOT = { started_in = 1356.12.25 }
+		owns = 4124 #Karelia
+		owns = 1961 #Ladoga
+		owns = 32 #Kexholm
+		owns = 4152 #Kainuu
+		owns = 33 #Neva
+		owns = 1776 #White Karrelia
+		owns = 313 #Soroka
+		owns = 309 #Olonets
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.75
+			had_recent_war = 10
+		}
+		modifier = {
+			factor = 0.75
+			is_in_war = {
+				participants = SWE
+				defender_leader = NOV
+			}
+		}
+		modifier = {
+			factor = 0.75
+			310 = {	is_looted = yes	}
+		}
+	}
+	
+	option = { #Establish a New Duke in the Region
+		name = "fla_novgorod.1.a"
+		ai_chance = { factor = 60 }
+		4152 = { add_core = KRL } #Kainuu
+		1776 = { add_core = KRL } #White Karrelia
+		4124 = { add_core = KRL } #Karelia
+		32 = { add_core = KRL } #Kexholm
+		309 = { add_core = KRL } #Olonets
+		
+		4152 = { add_core = ING remove_core = NOV } #Kainuu
+		1776 = { add_core = ING remove_core = NOV } #White Karrelia
+		4124 = { add_core = ING remove_core = NOV } #Karelia
+		32 = { add_core = ING remove_core = NOV } #Kexholm
+		1961 = { add_core = ING } #Ladoga
+		33 = { add_core = ING } #Neva
+		34 = { add_core = ING } #Ingermanland
+		
+				} 
+		33 = { cede_province = ING } #Neva
+		309 = { cede_province = ING } #Olonets
+		4152 = { cede_province = ING } #Kainuu
+		1776 = { cede_province = ING } #White Karrelia
+		4124 = { #Karelia
+			cede_province = ING
+			add_building = fort_15th
+		}
+		32 = { cede_province = ING } #Kexholm
+				1961 = { #Ladoga
+			cede_province = ING
+			add_building = fort_15th
+		} 
+		34 = { cede_province = ING } #Ingermanland
+		
+		ING = {
+			define_ruler = { #Historical
+				name = "Patrikas I"
+				dynasty = "Narimantaitis"
+				culture = lithuanian
+				religion = catholic
+				male = yes
+				adm = 3
+				dip = 3
+				mil = 6
+				age = 22
+				claim = 100
+			}
+		}
+		NOV = {
+			create_subject = {
+				subject_type = vassal
+				subject = ING
+			}
+		}
+	}
+	option = { #Settle for Additional Forts
+		name = "fla_novgorod.1.b"
+		ai_chance = { factor = 30 }
+		4124 = { add_building = fort_15th }
+		1961 = { add_building = fort_15th }
+		add_mil_power = 30
+		4152 = { add_core = KRL } #Kainuu
+		1776 = { add_core = KRL } #White Karrelia
+		4124 = { add_core = KRL } #Karelia
+		32 = { add_core = KRL } #Kexholm
+		1961 = { add_core = ING} #Ladoga
+		33 = { add_core = ING } #Neva
+		34 = { add_core = ING } #Ingermanland
+		
+	}
+	option = { #Things are fine as is
+		name = "fla_novgorod.1.c"
+		ai_chance = { factor = 10 }
+		add_mil_power = 150
+		4152 = { add_core = KRL } #Kainuu
+		1776 = { add_core = KRL } #White Karrelia
+		4124 = { add_core = KRL } #Karelia
+		32 = { add_core = KRL } #Kexholm
+	}
+}

@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = beylik_reform
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+historical_rival = MAM
+capital = 2296 # Biga
+religious_school = hanafi_school
+
+1351.1.1 = {
+	monarch = {
+		name = "Süleyman"
+		dynasty = "Karesiogullari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	add_piety = 0.2
+}
+
+# Annexed by the Ottoman Empire 1361

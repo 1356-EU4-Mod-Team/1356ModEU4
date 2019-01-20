@@ -1,0 +1,120 @@
+namespace = power
+
+country_event = { #Burgundian Power
+	id = power.1
+	title = power.1.t
+	desc = power.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUR
+		owns_core_province = 97 #Amsterdam
+		owns_core_province = 90 #Vladderen
+		owns_core_province = 95 #Breda
+		owns_core_province = 91 #Hainaut
+		OR = {
+			owns_core_province = 87 #Calais
+			owns_core_province = 89 #Picardie
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "power.1.a"
+		set_country_flag = burgundian_low_countries
+		add_prestige = 25
+	}
+}
+
+country_event = { #Aztec Power
+	id = power.2
+	title = power.2.t
+	desc = power.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = AZT
+		owns_core_province = 2628
+		owns_core_province = 2626
+		owns_core_province = 848
+		OR = {
+			owns_core_province = 849
+			owns_core_province = 2624
+			owns_core_province = 844
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "power.2.a"
+		set_country_flag = aztec_empire
+		add_prestige = 25
+	}
+}
+
+country_event = { #Denmark Power
+	id = power.3
+	title = power.3.t
+	desc = power.3.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAN
+		OR = {
+			DAN = { senior_union_with = SWE }
+			DAN = { senior_union_with = NOR }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "power.3.a"
+		set_country_flag = scandinavian_union
+		add_prestige = 25
+	}
+}
+
+country_event = { #Turk Power -Non Ottoman-
+	id = power.4
+	title = power.4.t
+	desc = power.4.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		NOT = { 
+			tag = TUR 
+			has_country_flag = anatolian_power
+		}
+		TUR = { NOT = { num_of_cities = 5 } }
+		primary_culture = turkish
+		num_of_cities = 8
+		total_base_tax = 25
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "power.4.a"
+		set_country_flag = anatolian_power
+		add_prestige = 25
+	}
+}

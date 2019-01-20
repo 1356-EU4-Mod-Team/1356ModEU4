@@ -1,0 +1,441 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = venetian
+add_accepted_culture = greek
+religion = catholic
+technology_group = western
+capital = 164	# Naxos
+fixed_capital = 164 # Cannot move capital away from this province & no power cost to move to it
+
+# Dukes of Naxos #
+
+1341.1.1 = {
+	monarch = {
+		name = "Giovanni I"
+		dynasty = "Sanudo"
+		birth_date = 1300.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = NAX
+		name = "Maria"
+		dynasty = "Sanudo"
+		birth_date = 1305.1.1
+		death_date = 1370.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Fiorenza"
+		monarch_name = "Fiorenza I"
+		dynasty = "Sanudo"
+		birth_date = 1325.1.1
+		death_date = 1371.1.1
+		female = yes
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1362.1.1 = {
+	monarch = {
+		name = "Fiorenza I"
+		dynasty = "Sanudo"
+		birth_date = 1325.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Niccolò"
+		monarch_name = "Niccolò III"
+		dynasty = "Sanudo"
+		birth_date = 1350.1.1
+		death_date = 1383.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1364.1.1 = {
+	queen = {
+		country_of_origin = NAX
+		name = "Niccolò II"
+		dynasty = "Sanudo"
+		birth_date = 1325.1.1
+		female = no
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1371.1.1 = {
+	monarch = {
+		name = "Niccolò III"
+		dynasty = "Sanudo"
+		birth_date = 1350.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = ACH
+		name = "Petronilla"
+		dynasty = "Tocco"
+		birth_date = 1355.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Francesco"
+		monarch_name = "Francesco I"
+		dynasty = "Crispo"
+		birth_date = 1365.1.1
+		death_date = 1397.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1383.1.1 = {
+	monarch = {
+		name = "Francesco I"
+		dynasty = "Crispo"
+		birth_date = 1365.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = NAX
+		name = "Fiorenza"
+		dynasty = "Sanudo"
+		birth_date = 1370.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Giacomo"
+		monarch_name = "Giacomo I"
+		dynasty = "Crispo"
+		birth_date = 1383.1.1
+		death_date = 1418.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1397.1.1 = {
+	monarch = {
+		name = "Giacomo I"
+		dynasty = "Crispo"
+		birth_date = 1383.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = NAX
+		name = "Fiorenza"
+		dynasty = "Sommaripa"
+		birth_date = 1385.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Giovanni"
+		monarch_name = "Giovanni II"
+		dynasty = "Crispo"
+		birth_date = 1388.1.1
+		death_date = 1433.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 0
+	}
+}
+
+1418.1.1 = {
+	monarch = {
+		name = "Giovanni II"
+		dynasty = "Crispo"
+		birth_date = 1388.1.1
+		adm = 2
+		dip = 3
+		mil = 0
+	}
+}
+
+1420.1.1 = {
+	queen = {
+		country_of_origin = VEN
+		name = "Francesca"
+		dynasty = "Morosini"
+		birth_date = 1400.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1426.1.1 = {
+	heir = {
+		name = "Giacomo"
+		monarch_name = "Giacomo II"
+		dynasty = "Crispo"
+		birth_date = 1426.1.1
+		death_date = 1447.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1433.1.1 = {
+	monarch = {
+		name = "Giacomo II"
+		dynasty = "Crispo"
+		birth_date = 1426.1.1
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = intricate_web_weaver_personality
+}
+
+1446.1.1 = {
+	heir = {
+		name = "Gian Giacomo"
+		monarch_name = "Gian Giacomo"
+		dynasty = "Crispo"
+		birth_date = 1446.1.1
+		death_date = 1453.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1447.1.1 = {
+	monarch = {
+		name = "Gian Giacomo"
+		dynasty = "Crispo"
+		birth_date = 1446.1.1
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1447.1.1 = {
+	heir = {
+		name = "Guglielmo"
+		monarch_name = "Guglielmo II"
+		dynasty = "Crispo"
+		birth_date = 1390.1.1
+		death_date = 1463.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1453.1.1 = {
+	monarch = {
+		name = "Guglielmo II"
+		dynasty = "Crispo"
+		birth_date = 1390.1.1
+		adm = 2 
+		dip = 4
+		mil = 2
+	}
+}
+
+1453.1.1 = {
+	heir = {
+		name = "Francesco"
+		monarch_name = "Francesco II"
+		dynasty = "Crispo"
+		birth_date = 1417.1.1
+		death_date = 1463.7.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+		
+1463.1.1 = {
+	monarch = {
+		name = "Francesco II"
+		dynasty = "Crispo"
+		birth_date = 1417.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1463.1.1 = {
+	heir = {
+		name = "Giacomo"
+		monarch_name = "Giacomo III"
+		dynasty = "Crispo"
+		birth_date = 1446.1.1
+		death_date = 1480.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1463.7.1 = {
+	monarch = {
+		name = "Giacomo III"
+		dynasty = "Crispo"
+		birth_date = 1446.1.1
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1463.7.1 = {
+	heir = {
+		name = "Giovanni"
+		monarch_name = "Giovanni III"
+		dynasty = "Crispo"
+		birth_date = 1450.1.1
+		death_date = 1494.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1480.1.1 = {
+	monarch = {
+		name = "Giovanni III"
+		dynasty = "Crispo"
+		birth_date = 1450.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1480.1.1 = {
+	heir = {
+		name = "Francesco"
+		monarch_name = "Francesco III"
+		dynasty = "Crispo"
+		birth_date = 1469.1.1
+		death_date = 1518.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1494.1.1 = {
+	monarch = {
+		name = "Francesco III"
+		dynasty = "Crispo"
+		birth_date = 1469.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1494.1.1 = {
+	heir = {
+		name = "Giovanni"
+		monarch_name = "Giovanni IV"
+		dynasty = "Crispo"
+		birth_date = 1490.1.1
+		death_date = 1564.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1511.1.1 = {
+	monarch = {
+		name = "Giovanni IV"
+		dynasty = "Crispo"
+		birth_date = 1490.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1511.1.1 = {
+	heir = {
+		name = "Giacomo"
+		monarch_name = "Giacomo IV"
+		dynasty = "Crispo"
+		birth_date = 1511.1.1
+		death_date = 1566.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1564.1.1 = {
+	monarch = {
+		name = "Giacomo IV"
+		dynasty = "Crispo"
+		birth_date = 1511.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1566.1.1 = {
+	monarch = {
+		name = "Giuseppe"
+		dynasty = "Nasi"
+		birth_date = 1524.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+# Annexed by the Ottomans in 1579.8.2

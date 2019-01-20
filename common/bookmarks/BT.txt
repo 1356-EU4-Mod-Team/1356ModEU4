@@ -1,0 +1,20 @@
+bookmark = {
+	name = "BT_NAME"
+	desc = "BT_DESC"
+	date = 1356.12.25
+	
+	default = no
+	center = 112	
+	
+	country = SWB
+	country = ENG	
+	country = FRA
+	country = BYZ
+	country = RUM
+	country = KOJ
+	country = VIK
+	
+	easy_country = SWA
+	easy_country = BYZ
+	easy_country = KOJ
+}

@@ -1,0 +1,697 @@
+namespace = yua
+
+
+
+###############################################################################
+######yua.0 written by Genomega, everything else written by Count Flandy#######
+###############################################################################
+
+#Yuan event explaining everything
+country_event = {
+	id = yua.0
+	title = yua.0.t
+	desc = yua.0.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		start_date = 1356.12.25
+		ai = no
+		#has_switched_nation = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = yua.0.a #Got it
+		central_asia_region = {
+			discover_country = YUA
+		}
+		khorasan_region = {
+			discover_country = YUA
+		}
+		persia_region = {
+			discover_country = YUA
+		}
+		crimea_region = {
+			discover_country = YUA
+		}
+		caucasia_region = {
+			discover_country = YUA
+		}
+		add_disaster_progress = {
+			disaster = red_turban_rebellion_disaster
+			value = 50
+		}
+		
+	}
+}
+
+#Yuan event to change from Chinese tech to nomadic tech after loss of Mandate
+country_event = {
+	id = yua.1
+	title = yua.1.t
+	desc = yua.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = YUA
+		NOT = { has_country_flag = no_longer_chinese_yua }
+		NOT = { num_of_cities = 45 }
+		NOT = {
+			OR = {
+				owns = 665
+				owns = 670
+				owns = 674
+				owns = 682
+				owns = 691
+			}
+		}
+		OR = {
+			is_emperor_of_china = no
+			NOT = { owns = 1816 } #This might need tweaked for fairness for non chinese dlc owners
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { #Lose Chinese Tech, remove Manchu as accepted, become Kingdom rank, become steppe horde
+		name = yua.1.a
+		set_country_flag = no_longer_chinese_yua
+		change_technology_group = nomad_group
+		change_unit_type = nomad_group
+		remove_accepted_culture = manchu
+		set_government_rank = 2		
+		change_government = tribal
+		add_government_reform = steppe_horde
+
+		clr_country_flag = heir_elected_yua_flag
+		clr_country_flag = yuan_bribed_noble_rebellion_away_flag
+		clr_country_flag = yuan_noble_revolt_imminent_flag
+		clr_country_flag = yuan_nobles_succeed_plot_flag
+		clr_country_flag = yuan_noble_plot_over_flag
+		clr_country_flag = yua_noble_rebellion_popped_flag
+	}
+}
+
+country_event = { #Nomads want their dues now... -Succeeded, still emperor-
+	id = yua.2
+	title = yua.2.t
+	desc = yua.2.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		NOT = { is_year = 1500 }
+		is_emperor_of_china = yes
+		has_country_flag = yuan_asked_nomads_help_flag #From Decision
+		has_country_flag = red_turban_rebellion_over_flag 
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = { #Alright alright! Don't hurt us!
+		name = yua.2.a
+		custom_tooltip = yuan_nomad_gave_nomads_reward_for_loyalty_tooltip
+		custom_tooltip = yuan_nomad_gave_nomads_reward_for_loyalty_2_tooltip
+		yuan_nomad_gave_nomads_what_they_want_effect = yes
+		add_years_of_income = -0.5
+		add_prestige = -20
+		add_meritocracy = -10
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+			
+	}
+	option = { #Never! They're fools just like the Chinese!
+		name = yua.2.b
+		custom_tooltip = yuan_nomad_turned_back_on_deal_2_tooltip
+		custom_tooltip = yuan_nomad_turned_back_on_deal_tooltip
+		yuan_nomad_turned_back_on_deal_effect = yes
+		add_stability = -1
+		add_war_exhaustion = 4
+		add_yearly_manpower = -0.5
+		remove_accepted_culture = manchu
+		remove_accepted_culture = khalkha
+		remove_accepted_culture = oirats
+		remove_accepted_culture = chahar
+		remove_accepted_culture = buryat
+	}
+}
+
+country_event = { #Toqto Returns! #Tied into the Red Turban Rebellion Disaster
+	id = yua.4
+	title = yua.4.t
+	desc = yua.4.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		NOT = { is_year = 1400 }
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = yuan_toqto_returns_flag }
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+
+	}
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 5
+		}
+		modifier = {
+			factor = 0.1
+			num_of_rebel_armies = 10
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_rebel_armies = 1 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 0.7
+			exists = MNG
+		}
+		modifier = {
+			factor = 0.9
+			exists = QIC
+		}
+		modifier = {
+			factor = 0.9
+			exists = CXI
+		}
+		modifier = {
+			factor = 0.9
+			exists = SHU
+		}
+	}
+	
+	option = { #Yes! He shall be our savior!
+		name = yua.4.a
+		ai_chance = { factor = 50 }
+		custom_tooltip = yua4a_toqto_returns_tooltip
+		custom_tooltip = yua4a_toqto_returns_nobles_displeased_tooltip
+		set_country_flag = yuan_toqto_returns_flag
+		add_stability = -1
+		add_prestige = -50
+		add_meritocracy = -20
+		add_manpower = 20
+		define_advisor = {
+			type = army_reformer
+			name = "Toqto'a Dazhou"
+			location = 720
+			discount = yes
+			skill = 3
+			culture = mongol
+			religion = vajrayana
+		}
+		define_general = {
+			name = "Toqto'a"
+			trait = inspirational_leader_general_personality
+			shock = 6
+			fire = 2
+			manuever = 4
+			siege = 1
+		}
+		add_historical_rival = GYO
+		add_historical_rival = KOR
+		#GYO = {
+		#	country_event = { #Tells the Koreans that Toqto'a has returned
+		#		id = koreagoryeo.1
+		#		days = 30
+		#	}
+		#}
+	}
+	option = { #I thought we exiled you! Guards! Kill this man!
+		name = yua.4.b
+		ai_chance = { factor = 50 } #This should be the more likely option, but its been slightly modified.
+		#custom_tooltip = yua4b_killed_toqto_tooltip
+		#set_country_flag = yuan_toqto_killed_flag #This should go here, but commented out and replaced with option 1 to prevent blind thrill seakers
+		set_country_flag = yuan_toqto_returns_flag
+		#country_event = { #The Execution of Toqto'a
+		#	id = yua.30
+		#	days = 30
+		#}
+		#define_consort = {
+		#	name = "Lady Ki"
+		#	country_of_origin = GYO
+		#	dynasty = "Goryeo"
+		#	culture = korean
+		#	religion = mahayana
+		#	adm = 5
+		#	dip = 6
+		#	mil = 3
+		#	female = yes
+		#}
+	}
+}
+
+country_event = { #Peasants flock to Toqto'as Side!
+	id = yua.5
+	title = yua.5.t
+	desc = yua.5.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+
+	trigger = {
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { is_year = 1400 }
+		has_disaster = red_turban_rebellion_disaster
+		is_emperor_of_china = yes
+		NOT = { manpower = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.1
+			num_of_rebel_armies = 20
+		}
+		modifier = {
+			factor = 0.5
+			manpower_percentage = 0.1
+		}
+		modifier = {
+			factor = 2
+			has_country_flag = yua_took_in_peasants_toqto_flag
+		}
+		modifier = {
+			factor = 1000
+			manpower_percentage = 1
+		}
+	}
+	
+	option = { #Peasants flock to your side!
+		name = yua.5.a
+		set_country_flag = yua_took_in_peasants_toqto_flag
+		add_manpower = 10
+		add_prestige = -10
+	}
+}
+
+country_event = { #Nomads Rebel from the loss of mandate 
+	id = yua.8
+	title = yua.8.t
+	desc = yua.8.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		OR = {
+			NOT = { exists = KHA }
+			AND = {
+				exists = KHA
+				NOT = { num_of_cities = 7 }
+			}
+		}
+		NOT = { is_year = 1444 }
+		is_emperor_of_china = no
+		has_country_flag = yuan_asked_nomads_help_flag
+		NOT = { owns = 1816 }
+		technology_group = nomad_group
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = { #We shall fight!
+		name = yua.8.a
+		ai_chance = { factor = 100 }
+		YUA = { #Remove stats, remove culture acceptance
+			add_stability = -2
+			add_prestige = -25
+			add_horde_unity = -15	
+			remove_accepted_culture = oirats
+			remove_accepted_culture = chahar
+			remove_accepted_culture = manchu
+			remove_accepted_culture = buryat
+		}
+		OIR = { #Remove Oirat Cores
+			remove_core = 717
+			remove_core = 720
+			remove_core = 4221
+			remove_core = 709
+			remove_core = 708
+		}
+		YUA = { #Remove Yuan Cores on China, they're dead anyways.
+			south_china_region = { remove_core = YUA }
+			north_china_region = { remove_core = YUA }
+			xinan_region = { remove_core = YUA }
+		
+		}
+		if = { #Jianzhou revolts
+			limit = {
+				OR = {
+					NOT = { exists = MJZ }
+					AND = {
+						exists = MJZ
+						MJZ = { NOT = { num_of_cities = 10 } }
+					}
+				}
+			}
+			release = MJZ
+		}
+		if = { #Haixi revolts
+			limit = {
+				OR = {
+					NOT = { exists = MHX }
+					AND = {
+						exists = MHX
+						MHX = { NOT = { num_of_cities = 6 } }
+					}
+				}
+			}
+			release = MHX
+		}
+		if = { #Yeren revolts
+			limit = {
+				OR = {
+					NOT = { exists = MYR }
+					AND = {
+						exists = MYR
+						MYR = { NOT = { num_of_cities = 11 } }
+					}
+				}
+			}
+			release = MYR
+		}
+		if = { #Buryatia revolts
+			limit = {
+				OR = {
+					NOT = { exists = BRT }
+					AND = {
+						exists = BRT
+						BRT = { NOT = { num_of_cities = 3 } }
+					}
+				}
+			}
+			release = BRT
+		}
+		if = { #Korchin revolts
+			limit = {
+				OR = {
+					NOT = { exists = KRC }
+					AND = {
+						exists = KRC
+						KRC = { NOT = { num_of_cities = 10 } }
+					}
+				}
+			}
+			release = KRC
+		}
+		if = { #Oirat revolts
+			limit = {
+				OR = {
+					NOT = { exists = OIR }
+					AND = {
+						exists = OIR
+						OIR = { NOT = { num_of_cities = 14 } }
+					}
+				}
+			}
+			release = OIR
+		}
+		YUA = { #tag swap
+			change_tag = KHA
+		}
+		KHA = {
+			set_country_flag = final_fall_of_yuan_flag
+		}
+	}
+	option = { #We shall fight! -Switch Sides-
+		name = yua.8.b
+		ai_chance = { factor = 0 }
+		YUA = { #Remove stats, remove culture acceptance
+			add_stability = -2
+			add_prestige = -25
+			add_horde_unity = -15	
+			remove_accepted_culture = oirats
+			remove_accepted_culture = chahar
+			remove_accepted_culture = manchu
+			remove_accepted_culture = buryat
+		}
+		OIR = { #Remove Oirat Cores
+			remove_core = 717
+			remove_core = 720
+			remove_core = 4221
+			remove_core = 709
+			remove_core = 708
+		}
+		south_china_region = { remove_core = YUA }
+		north_china_region = { remove_core = YUA }
+		xinan_region = { remove_core = YUA }
+		if = { #Jianzhou revolts
+			limit = {
+				OR = {
+					NOT = { exists = MJZ }
+					AND = {
+						exists = MJZ
+						MJZ = { NOT = { num_of_cities = 10 } }
+					}
+				}
+			}
+			release = MJZ
+		}
+		if = { #Haixi revolts
+			limit = {
+				OR = {
+					NOT = { exists = MHX }
+					AND = {
+						exists = MHX
+						MHX = { NOT = { num_of_cities = 6 } }
+					}
+				}
+			}
+			release = MHX
+		}
+		if = { #Yeren revolts
+			limit = {
+				OR = {
+					NOT = { exists = MYR }
+					AND = {
+						exists = MYR
+						MYR = { NOT = { num_of_cities = 11 } }
+					}
+				}
+			}
+			release = MYR
+		}
+		if = { #Buryatia revolts
+			limit = {
+				OR = {
+					NOT = { exists = BRT }
+					AND = {
+						exists = BRT
+						BRT = { NOT = { num_of_cities = 3 } }
+					}
+				}
+			}
+			release = BRT
+		}
+		if = { #Korchin revolts
+			limit = {
+				OR = {
+					NOT = { exists = KRC }
+					AND = {
+						exists = KRC
+						KRC = { NOT = { num_of_cities = 10 } }
+					}
+				}
+			}
+			release = KRC
+		}
+		if = { #Oirat revolts
+			limit = {
+				OR = {
+					NOT = { exists = OIR }
+					AND = {
+						exists = OIR
+						OIR = { NOT = { num_of_cities = 14 } }
+					}
+				}
+			}
+			release = OIR
+		}
+		switch_tag = OIR
+		YUA = { #tag swap
+			change_tag = KHA
+		}
+		KHA = {
+			set_country_flag = final_fall_of_yuan_flag
+		}
+		
+	}
+}
+
+country_event = { #Event to turn remains of Yuan Tengrist if desired
+	id = yua.9
+	title = yua.9.t
+	desc = yua.9.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = KHA
+			tag = YUA
+		}
+		has_country_flag = final_fall_of_yuan_flag
+		NOT = { is_year = 1444 }
+		religion = confucianism
+		NOT = { religion = tengri_pagan_reformed }
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = { #We stay Confucist!
+		name = yua.9.a
+		add_prestige = 5
+	}
+	option = { #Tengrism it is! 
+		name = yua.9.b
+		change_religion = tengri_pagan_reformed
+		add_stability = -2
+		add_prestige = -10
+		add_horde_unity = -20
+		
+	}
+}
+
+#Lady Ki Mission Path/Events
+
+#Execution of Toqto'a
+#country_event = {
+#	id = yua.30
+#	title = yua.30.t
+#	desc = yua.30.desc
+#	picture = DEATH_OF_HEIR_eventPicture
+#	
+#	fire_only_once = yes
+#	major = yes
+#	is_triggered_only = yes
+#	
+#	option = { #Off with his head! 
+#		name = yua.30.a
+#		add_stability = 1
+#		add_prestige = 10
+#		add_meritocracy = 10
+#		add_manpower = -10
+#		country_event = { #Now to turn our focus to these rebels!
+#			id = yua.32
+#			days = 180
+#		}
+		#GYO = {
+		#	country_event = { #Korea Receives word Toqto'a was found and executed.
+		#		id = koreagoryeo.2
+		#		days = 30
+		#	}
+		#}
+#	}
+#}
+
+
+#The Empire focuses on the Rebel Problem
+#country_event = {
+#	id = yua.32
+#	title = yua.32.t
+#	desc = yua.32.desc
+#	picture = DEATH_OF_HEIR_eventPicture
+#	
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	
+#	option = { #
+#		name = yua.32.a
+#			
+#	}
+#}
+
+
+
+#Need to finish the Toqto suspected revolt path.
+
+
+#Misc
+
+#Event from Reform Religion Path
+country_event = {
+	id = yua.200
+	title = yua.200.t
+	desc = yua.200.desc
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Stay Vajrayana
+		name = yua.200.a
+		ai_chance = { factor = 100 }
+		add_prestige = 25
+		add_mandate = 15
+		add_legitimacy = 25
+		add_meritocracy = 25			
+	}
+	option = { #Confucian
+		name = yua.200.b
+		ai_chance = { factor = 10 }
+		trigger = { any_owned_province = { religion = confucianism } }
+		change_religion = confucianism
+		add_stability = -3
+		add_prestige = -25
+		add_mandate = -25
+		add_legitimacy = -50
+		add_meritocracy = -50	
+	}
+	option = { #Mahayana
+		name = yua.200.c
+		ai_chance = { factor = 1 }
+		trigger = { any_owned_province = { religion = mahayana } }
+		change_religion = mahayana
+		add_stability = -2
+		add_prestige = -15
+		add_mandate = -15
+		add_legitimacy = -25
+		add_meritocracy = -25	
+			
+	}
+	option = { #Theravada
+		name = yua.200.d
+		ai_chance = { factor = 1 }
+		trigger = { any_owned_province = { religion = buddhism } }
+		change_religion = buddhism
+		add_stability = -2
+		add_prestige = -15
+		add_mandate = -15
+		add_legitimacy = -25
+		add_meritocracy = -25	
+			
+	}
+	#option = { #Religion of our Ancestors! -Trait Locked?- #Never implimented
+	#	name = yua.200.e		
+	#}
+}

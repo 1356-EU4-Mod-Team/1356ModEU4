@@ -1,0 +1,641 @@
+government = monarchy
+add_government_reform = mandala_reform
+technology_group = chinese
+religion = buddhism
+primary_culture = shan
+capital = 583	# Lashio
+
+# Rulers of the Ava Dynasty, the biggest of the Shan states.
+
+1356.1.1 = {
+	monarch = {
+		name = "Thadominbya"
+		dynasty = "Ava"
+		birth_date = 1356.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1368.1.1 = {
+	monarch = {
+		name = "Nga Nu"
+		dynasty = "Ava"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1368.7.1 = {
+	monarch = {
+		name = "Swasawke"
+		dynasty = "Ava"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1368.7.1 = {
+	heir = {
+		name = "Tarabya"
+		monarch_name = "Tarabya"
+		dynasty = "Ava"
+		birth_date = 1352.1.1
+		death_Date = 1404.7.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1401.1.1 = {
+	monarch = {
+		name = "Tarabya"
+		dynasty = "Ava"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1401.7.1 = {
+	monarch = {
+		name = "Nga Nauk Hsan"
+		dynasty = "Ava"
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1401.10.1 = {
+	monarch = {
+		name = "Minkhaung I"
+		dynasty = "Ava"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1401.10.1 = {
+	heir = {
+		name = "Thihathu"
+		monarch_name = "Thihathu"
+		dynasty = "Ava"
+		birth_date = 1381.1.1
+		death_Date = 1426.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1422.1.1 = {
+	monarch = {
+		name = "Thihathu"
+		dynasty = "Ava"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1422.1.1 = {
+	heir = {
+		name = "Minhlange"
+		monarch_name = "Minhlange"
+		dynasty = "Ava"
+		birth_date = 1407.1.1
+		death_Date = 1426.7.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1426.1.1 = {
+	monarch = {
+		name = "Minhlange"
+		dynasty = "Ava"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1426.7.1 = {
+	monarch = {
+		name = "Kale Kyetaungnyo"
+		dynasty = "Ava"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1427.1.1 = {
+	monarch = {
+		name = "Mohnyin Thado"
+		dynasty = "Ava"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1427.1.1 = {
+	heir = {
+		name = "Minyekyawswa"
+		monarch_name = "Minyekyawswa"
+		dynasty = "Ava"
+		birth_date = 1413.1.1
+		death_Date = 1443.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1440.1.1 = {
+	monarch = {
+		name = "Minyekyawswa"
+		dynasty = "Ava"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1440.1.1 = {
+	heir = {
+		name = "Narapati"
+		monarch_name = "Narapati"
+		dynasty = "Ava"
+		birth_date = 1416.1.1
+		death_Date = 1469.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1443.1.1 = {
+	monarch = {
+		name = "Narapati"
+		dynasty = "Ava"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1443.1.1 = {
+	heir = {
+		name = "Thihathura"
+		monarch_name = "Thihathura"
+		dynasty = "Ava"
+		birth_date = 1439.1.1
+		death_Date = 1481.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1469.1.1 = {
+	monarch = {
+		name = "Thihathura"
+		dynasty = "Ava"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1469.1.1 = {
+	heir = {
+		name = "Minkhaung"
+		monarch_name = "Minkhaung II"
+		dynasty = "Ava"
+		birth_date = 1449.1.1
+		death_Date = 1502.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1481.1.1 = {
+	monarch = {
+		name = "Minkhaung II"
+		dynasty = "Ava"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1481.1.1 = {
+	heir = {
+		name = "Shwenankyawshin"
+		monarch_name = "Shwenankyawshin"
+		dynasty = "Ava"
+		birth_date = 1466.1.1
+		death_Date = 1527.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1502.1.1 = {
+	monarch = {
+		name = "Shwenankyawshin"
+		dynasty = "Ava"
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1527.1.1 = {
+	monarch = {
+		name = "Thohanbwa"
+		dynasty = "Mohnyin"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1543.1.1 = {
+	monarch = {
+		name = "Hkonmaing"
+		dynasty = "Thibaw"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1543.1.1 = {
+	heir = {
+		name = "Mobye Narapati"
+		monarch_name = "Mobye Narapati"
+		dynasty = "Ava"
+		birth_date = 1513.1.1
+		death_Date = 1552.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1546.1.1 = {
+	monarch = {
+		name = "Mobye Narapati"
+		dynasty = "Thibaw"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+# Rulers of Kengtung
+
+1550.1.1 = {
+	monarch = {
+		name = "Hpaya Kiao"
+		dynasty = "Kengtung"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1550.1.1 = {
+	heir = {
+		name = "Sao Mong Hka"
+		monarch_name = "Sao Mong Hka"
+		dynasty = "Kengtung"
+		birth_date = 1540.1.1
+		death_date = 1598.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1557.3.6 = { capital = 587 } # Kengtung, the fall of Mong Yang
+
+1560.1.1 = {
+	monarch = {
+		name = "Sao Mong Hka"
+		dynasty = "Kengtung"
+		ADM = 2
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1560.1.1 = {
+	heir = {
+		name = "Sao Hkham Tao"
+		monarch_name = "Sao Hkham Tao"
+		dynasty = "Kengtung"
+		birth_date = 1560.1.1
+		death_date = 1620.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1598.1.1 = {
+	monarch = {
+		name = "Sao Hkham Tao"
+		dynasty = "Kengtung"
+		ADM = 2
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1598.1.1 = {
+	heir = {
+		name = "Sao Mong Hkak"
+		monarch_name = "Sao Mong Hkak"
+		dynasty = "Kengtung"
+		birth_date = 1580.1.1
+		death_date = 1637.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1620.1.1 = {
+	monarch = {
+		name = "Sao Mong Hkak"
+		dynasty = "Kengtung"
+		ADM = 2
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1620.1.1 = {
+	heir = {
+		name = "Sao On"
+		monarch_name = "Sao On"
+		dynasty = "Kengtung"
+		birth_date = 1600.1.1
+		death_date = 1650.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1637.1.1 = {
+	monarch = {
+		name = "Sao On"
+		dynasty = "Kengtung"
+		ADM = 2
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1637.1.1 = {
+	heir = {
+		name = "Sao In Hkam"
+		monarch_name = "Sao In Hkam"
+		dynasty = "Kengtung"
+		birth_date = 1620.1.1
+		death_date = 1670.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1650.1.1 = {
+	monarch = {
+		name = "Sao In Hkam"
+		dynasty = "Kengtung"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1650.1.1 = {
+	heir = {
+		name = "Sao Awk"
+		monarch_name = "Sao Awk"
+		dynasty = "Kengtung"
+		birth_date = 1640.1.1
+		death_date = 1670.1.1
+		claim = 95
+		ADM = 1
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1670.1.1 = {
+	monarch = {
+		name = "Sao Awk"
+		dynasty = "Kengtung"
+		ADM = 1
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1670.1.1 = {
+	heir = {
+		name = "Sao Mong Saik"
+		monarch_name = "Sao Mong Saik"
+		dynasty = "Kengtung"
+		birth_date = 1660.1.1
+		death_date = 1710.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1690.1.1 = {
+	monarch = {
+		name = "Sao Mong Saik"
+		dynasty = "Kengtung"
+		ADM = 2
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1690.1.1 = {
+	heir = {
+		name = "Sao Hsam Hpi"
+		monarch_name = "Sao Hsam Hpi"
+		dynasty = "Kengtung"
+		birth_date = 1680.1.1
+		death_date = 1730.1.1
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1710.1.1 = {
+	monarch = {
+		name = "Sao Hsam Hpi"
+		dynasty = "Kengtung"
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1710.1.1 = {
+	heir = {
+		name = "Maung Nyo"
+		monarch_name = "Maung Nyo"
+		dynasty = "Kengtung"
+		birth_date = 1700.1.1
+		death_date = 1740.1.1
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1730.1.1 = {
+	monarch = {
+		name = "Maung Nyo"
+		dynasty = "Kengtung"
+		ADM = 2
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1730.1.1 = {
+	heir = {
+		name = "Sao Mong Sin"
+		monarch_name = "Sao Mong Sin"
+		dynasty = "Kengtung"
+		birth_date = 1720.1.1
+		death_date = 1760.1.1
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1740.1.1 = {
+	monarch = {
+		name = "Sao Mong Sin"
+		dynasty = "Kengtung"
+		ADM = 1
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1740.1.1 = {
+	heir = {
+		name = "Sao Mong Hsam"
+		monarch_name = "Sao Mong Hsam"
+		dynasty = "Kengtung"
+		birth_date = 1740.1.1
+		death_date = 1787.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1760.1.1 = {
+	monarch = {
+		name = "Sao Mong Hsam"
+		dynasty = "Kengtung"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1760.1.1 = {
+	heir = {
+		name = "Sao Kawng Tai"
+		monarch_name = "Sao Kawng Tai"
+		dynasty = "Kengtung"
+		birth_date = 1760.1.1
+		death_date = 1804.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1787.1.1 = {
+	monarch = {
+		name = "Sao Kawng Tai"
+		dynasty = "Kengtung"
+		ADM = 2
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1787.1.1 = {
+	heir = {
+		name = "Sao Maha Hkanan"
+		monarch_name = "Sao Maha Hkanan"
+		dynasty = "Kengtung"
+		birth_date = 1780.1.1
+		death_date = 1857.1.1
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1804.1.1 = {
+	monarch = {
+		name = "Sao Maha Hkanan"
+		dynasty = "Kengtung"
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}

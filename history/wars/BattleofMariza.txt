@@ -1,0 +1,19 @@
+name = "Christian Reconquest of Adrianople"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 149
+}
+
+1371.1.1 = {
+	add_attacker = MAC
+	add_attacker = BUL
+	add_defender = TUR
+}
+
+# Peace
+1371.9.27 = {
+	rem_attacker = MAC
+	rem_attacker = BUL
+	rem_defender = TUR
+}

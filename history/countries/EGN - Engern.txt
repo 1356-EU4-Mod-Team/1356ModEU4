@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = hannoverian
+capital = 2972
+
+1315.3.14 = {
+	monarch = {
+		name = "Konrad II"
+		adm = 3
+		dip = 4
+		mil = 4
+		dynasty = "von Engern"
+	}
+}
+
+1341.2.14 = {
+	heir = {
+		name = "Christian"
+		monarch_name = "Christian I"
+		dynasty = "von Engern"
+		birth_date = 1341.2.14
+		death_date = 1404.5.21
+		claim = 100
+		adm = 4
+		dip = 6
+		mil = 4
+	}
+}

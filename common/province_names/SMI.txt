@@ -1,0 +1,73 @@
+#Scandinavia
+1 = "Ruotteriika"    #Uppland
+2 = "Nuortaguhti"    #Ostergotland
+3 = "Jeaggiguovlu"   #Smaland
+4 = "Ruvkebákti"     #Bergslagen
+5 = "Gaskkavárri"    #Varmland
+6 = "Skániriddu"     #Skane
+7 = "Oarjiguhti"     #Vastergotland
+8 = "Dálluvuopmi"    #Dalaskogen
+9 = "Hálsaeana"      #Halsingland
+10 = "Laisa"          #Jamtland
+11 = "Gálaseatnu"     #Vasterbotten
+12 = "Dánasuolo"      #Sjaelland
+14 = "Vuollegašsuolo"  #Fyn
+15 = "Jidaeana"       #Jylland
+16 = "Bágasuolu"      #Bohuslan
+17 = "Áhkárjohka"     #Akershus
+18 = "Ubmejednuo"     #Lappland
+20 = "Plassje"        #Trondelag
+21 = "Saltoduottar"   #Halogaland
+22 = "Háidevuopmi"    #Eidsiva
+23 = "Vuotnariddu"    #Bergenshus
+24 = "Borri"          #Agder
+25 = "Guhtasuolo"     #Gotland
+26 = "Luossariddu"    #Halland
+315 = "Ávjovárri" 	#Finnmark
+1982 = "Goalki"         #Blekinge
+1984 = "Guhkesgáddi     #Nordjylland
+1985 = "Hárjeallodat"   #Narke
+4113 = "Giemajávri"	#Lapland #Correct?
+4114 = "Giebnegáisi"	#Jokkmokk
+4143 = "Áhpi"           #Smalenene
+4144 = "Smierbákti"     #Bratsberg
+4145 = "Mánnuvággi"     #Agdesiden
+4151 = "Aanaar"         #Aanaar
+4164 = "Dáruvuopmi"     #Dal
+4163 = "Skárfu"         #Elfsborg
+4165 = "Dánskarádji"    #Goinge
+4166 = "Unnivuopmi"     #Tioharad
+
+#3088 = "Áhpigárgu"      #Sogn #???
+#Finland
+19 = "Mearrabahta"    #Osterbotten
+27 = "Suopmariddu"    #Finland
+28 = "Sihpomeahcci"   #Nyland
+29 = "Hámivuopmi"     #Tavastaland
+30 = "Geažiljohka"    #Nyborg
+31 = "Sávoeana"       #Savolaks
+32 = "Giehkanuorri"   #Keksholm
+1930 = "Vuoskkusuolo"   #Aland
+4123 = "Birgaeana"      #Birkaland
+4124 = "Joganjálbmi"    #Karelia
+4152 = "Gáinuvuopmi"    #Kainuu
+#Russia
+33 = "Jeaggijávri"    #Neva
+34 = "išorevuopmi"    #Ingermanland
+274 = "Rávdnjisiida"   #Pskov
+295 = "Ruoššasiida"    #Moscow
+309 = "Nuorta Cudevuopmi"  #Olonets
+310 = "Ludivuopmi"     #Novgorod
+313 = "Nuortaduottar"  #Archangelsk
+1776 = "Gárjila"        #Karelia
+1777 = "Guoládat"   	#Kola
+1955 = "Vilgesmearra"   #Kholmogory
+1961 = "Cudejávri"      #Ladoga
+#Ukraine
+284 = "Dáhtarnjárga"   #Crimea
+2961 = "Ledjonvárri"    #Lvov
+#Baltics
+#Americas
+956 = "Lánieana"       #Lenape
+957 = "Duolbbaseana"   #Delaware
+962 = "Unnávuopmi"     #Unami

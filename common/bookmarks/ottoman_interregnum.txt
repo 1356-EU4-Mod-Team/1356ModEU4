@@ -1,0 +1,14 @@
+bookmark =
+{
+	name = "oi_name"
+	desc = "oi_desc"
+	date = 1405.2.15
+	
+	center = 151	
+	
+	country = TUR
+	country = BYZ
+	country = GOL
+	country = TIM
+
+}

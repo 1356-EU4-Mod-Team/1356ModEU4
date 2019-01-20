@@ -1,0 +1,30 @@
+spriteTypes = {
+
+##1356 Mission Stuff begins here##
+	spriteType = {
+		name = "mission_1356_trebuchet_firing.dds"
+		texturefile = "gfx//interface//missions//mission_1356_trebuchet_firing.dds"
+	}
+	spriteType = {
+		name = "mission_1356_trebuchet_firing.dds"
+		texturefile = "gfx//interface//missions//mission_1356_trebuchet_idle.dds"
+	}
+	spriteType = {
+		name = "yua_red_turban_rebellion_disaster"
+		texturefile = "gfx//interface//disasters//red_turban_rebellion_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_yua_red_turban_rebellion_disaster"
+		texturefile = "gfx//interface//disasters//empire_of_china_nomadic_border.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_red_turban_rebellion_disaster"
+		texturefile = "gfx//interface//disasters//empire_of_china_nomadic_border.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

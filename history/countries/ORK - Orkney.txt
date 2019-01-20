@@ -1,0 +1,12 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 0.25
+primary_culture = norwegian
+add_accepted_culture = scottish
+religion = catholic
+technology_group = western
+historical_rival = SCO
+historical_friend = NOR
+capital = 369	# Orkney
+

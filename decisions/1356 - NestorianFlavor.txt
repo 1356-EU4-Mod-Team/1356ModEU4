@@ -1,0 +1,86 @@
+#####
+country_decisions = {
+	expell_nestorian_community_decision = { #Eventually allow them to return? #Associate an event with this everytime this occurs?
+		potential = {
+			OR = {
+				any_owned_province = { has_province_modifier = small_nestorian_community }
+				any_owned_province = { has_province_modifier = medium_nestorian_community }
+				any_owned_province = { has_province_modifier = large_nestorian_community }
+			}
+			NOT = { has_country_modifier = expelled_nestorian }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			custom_tooltip = expell_nestorian_tooltip
+			add_prestige = -5
+			add_country_modifier = { #Permanant
+				name = expelled_nestorian
+				duration = -1  
+				hidden = yes
+			}
+			remove_country_modifier = encourage_nestorian_growth
+			country_event = { 
+				id = fla_nestorian.15
+				days = 1
+			}
+			random_country = {
+				limit = {
+					NOT = { tag = TIM }
+					NOT = { has_country_modifier = expelled_nestorian }
+					any_owned_province = {
+						sea_zone = {
+							any_neighbor_province = {
+								owned_by = ROOT
+							}
+						}
+					}
+				}
+				country_event = {  id = assyrianeventsfla.2 days = 10 }
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { #This is how this works right?
+				factor = 0
+				OR = { 
+					NOT = { tag = MNG }
+					NOT = { tag = TIM }
+					NOT = { tag = MUG }
+					NOT = { tag = SHU }
+					NOT = { tag = GLH }
+				}
+			}
+		}
+	}
+	encourage_growth_of_nestorian_community_decision = { #Players only
+		potential = {
+			is_ai = no
+			OR = {
+				any_owned_province = { has_province_modifier = small_nestorian_community }
+				any_owned_province = { has_province_modifier = medium_nestorian_community }
+				any_owned_province = { has_province_modifier = large_nestorian_community }
+			}
+			NOT = { has_country_modifier = expelled_nestorian }
+			NOT = { has_country_modifier = encourage_nestorian_growth }
+		}
+		allow = {
+			prestige = 0
+			treasury = 50
+			NOT = { has_country_modifier = expelled_nestorian }
+			NOT = { has_country_modifier = encourage_nestorian_growth }
+		}
+		effect = {
+			add_prestige = -5
+			add_treasury = -50
+			add_country_modifier = {
+				name = encourage_nestorian_growth
+				duration = 3200
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

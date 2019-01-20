@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = malayan
+religion = mahayana
+technology_group = chinese
+capital = 598 # Pahang
+
+1356.1.1 = {
+	monarch = {
+		name = "Bhadravarman"
+		dynasty = "Pahang"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}

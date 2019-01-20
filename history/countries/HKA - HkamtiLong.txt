@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = mandala_reform
+technology_group = chinese
+religion = buddhism
+primary_culture = shan
+capital = 2395
+
+1352.1.1 = {
+	monarch = {
+		name = "San Nwe Cho"	# fictional
+		dynasty = "Hkamti Long"
+		ADM = 1
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1382.1.1 = {
+	monarch = {
+		name = "San Nwe No"	# fictional
+		dynasty = "Hkamti Long"
+		ADM = 1
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1412.1.1 = {
+	monarch = {
+		name = "San Nwe Hu"	# fictional
+		dynasty = "Hkamti Long"
+		ADM = 1
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1442.1.1 = {
+	monarch = {
+		name = "Sao Hpa Hkan"	# fictional
+		dynasty = "Hkamti Long"
+		ADM = 1
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1472.1.1 = {
+	monarch = {
+		name = "Sao Hpa Peng"	# fictional
+		dynasty = "Hkamti Long"
+		ADM = 1
+		DIP = 2
+		MIL = 3
+	}
+}

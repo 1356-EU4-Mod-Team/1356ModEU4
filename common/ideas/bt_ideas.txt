@@ -1,0 +1,155 @@
+germany_ideas = {
+	start = {
+		ae_impact = -0.10
+		core_creation = -0.20
+	}
+	
+	bonus = {
+		global_colonial_growth = 25
+	}
+	
+	trigger = {
+			tag = GER
+	}
+	free = yes
+	
+	hereditary_monarchy = {
+		heir_chance = 0.25
+		legitimacy = 1
+	}
+	secularization_act = {
+		global_missionary_strength = 0.02
+	}
+	frankfurt_capital = {
+		global_trade_power = 0.10
+	}
+	gothic_architecture = {
+		build_cost = -0.1
+		prestige_decay = -0.01
+	}
+	a_place_at_the_sun = {
+		colonists = 1
+	}
+	imperial_army = {
+		land_morale = 0.10
+		discipline = 0.05
+	}
+	wehrkreise = {
+		global_manpower_modifier = 0.2
+	}
+}
+
+viking_ideas = {
+	start = {
+		may_perform_slave_raid = yes
+		may_explore = yes
+		
+	}
+	bonus = {
+		ship_durability = 0.10
+	}
+	trigger = {
+		tag = VIK
+	}
+	free = yes
+
+	extend_vinland = {
+		colonists = 1
+	}
+	call_of_our_forefathers = {
+		range = 0.33
+	}
+	natural_seamanship = {
+		naval_morale = 0.20
+	}
+	nor_shipbuilding = {
+		global_ship_cost = -0.1
+	}
+	seize_the_opportunity = {
+ 		global_trade_power = 0.1
+	}
+	nor_fishing = {
+		production_efficiency = 0.1
+	}
+	write_new_sagas = {
+		prestige = 1
+		discipline = 0.025
+	}
+}
+
+bergian_ideas = {
+	start = {
+		global_tax_modifier = 0.1
+		legitimacy = 1
+	}
+
+	bonus = {
+		prestige_decay = -0.01
+	}
+	
+	trigger = {
+		tag = BRG
+	}
+	free = yes
+	
+	kaiserpfalz_keyserswerth = {
+		global_prov_trade_power_modifier = 0.10
+	}
+	julich_kleve_berg = {
+		diplomatic_upkeep = 1
+	}
+	alessandro_pasqualini = {
+		build_cost = -0.1
+		development_cost = -0.1
+	}
+	konrad_heresbach = {
+		tolerance_heretic = 3
+	}
+	jan_wellem = {
+		diplomatic_reputation = 1
+	}
+	gemaeldegalerie_düsseldorf = {
+		prestige = 1
+	}
+	koenigsallee = {
+		production_efficiency = 0.1
+	}
+}
+
+colognian_ideas = {
+	start = {
+		papal_influence = 2
+		stability_cost_modifier = -0.1
+	}
+
+	bonus = {
+		missionaries = 1
+	}
+	
+	trigger = {
+		tag = KOL
+	}
+	free = yes
+	
+	stadtmauer = {
+		defensiveness = 0.25
+	}
+	biblical_magi = {
+		global_tax_modifier = 0.2
+	}
+	koelner_dom = {
+		papal_influence = 2
+	}
+	stapelrecht = {
+		global_prov_trade_power_modifier = 0.10
+	}
+	catholic_bastion = {
+		tolerance_own = 2
+	}
+	free_city = {
+		enemy_core_creation = 0.25
+	}
+	carneval = {
+		prestige = 1
+	}
+}

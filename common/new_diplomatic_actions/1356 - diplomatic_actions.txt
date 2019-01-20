@@ -1,0 +1,197 @@
+establish_kontor = {
+	category = economy
+	
+	require_acceptance = yes
+	
+	alert_index = 11
+	
+	is_visible = {
+		ROOT = {
+			has_country_flag = member_of_hansa_ev
+			NOT = { government = republic }
+		}
+	}
+	is_allowed = {
+			treasury = 200
+	}
+	on_accept = {
+		FROM = {
+			home_trade_node = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 20
+					key = STRONG_MERCHANTS
+				}
+			}
+			add_treasury = -200
+		}
+	}
+	on_decline = {
+		FROM = {
+			add_trust = {
+				who = ROOT
+				value = -5
+				mutual = yes
+			}
+		}
+	}
+	ai_acceptance = {
+		add_entry = {
+			name = entry_basic
+			limit = {
+				always = yes
+			}
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = entry_opinion
+			limit = {
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 11
+			}
+		}
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+crusader_papal_action_1 = { #The AI Acceptance needs work, it doesnt work at all nor do I understand it.
+	category = papacy
+
+	alert_index = 40
+	alert_tooltip = crusader_papal_action_1_tooltip
+
+	require_acceptance = yes # Whether the recipient gets an option to decline
+
+	is_visible = {
+		OR = {
+			tag = KNI
+			tag = KOJ
+			tag = CYP
+			tag = ATO
+			tag = EDE
+			tag = CIC
+			tag = TPO
+			AND = {
+				tag = CYP
+				government = crusader_state_reform 
+			}
+			AND = {
+				tag = ATO
+				government = crusader_state_reform
+			}
+			AND = {
+				tag = EDE
+				government = crusader_state_reform
+			}
+			AND = {
+				tag = TPO
+				government = crusader_state_reform
+			}
+			government = crusader_state_reform
+		}
+		religion = catholic
+		is_subject = no
+		exists = PAP
+	}
+	is_allowed = {
+		exists = PAP
+		papal_influence = 50
+		NOT = { has_ruler_flag = crusder_ruler_asked_pope_assistance_flag }
+		religion = catholic
+		primary_culture = crusader_culture
+	}
+	on_accept = {
+		add_opinion = {
+			who = PAP
+			modifier = accepted_supremacy_of_rome
+		}
+		add_yearly_manpower = 1.5
+		add_years_of_income = 1
+		add_papal_influence = -50
+		add_legitimacy = -5		
+	}
+	on_decline = {
+		add_opinion = {
+			who = PAP
+			modifier = insulted
+		}
+		add_papal_influence = -10
+		add_legitimacy = -5
+	}
+
+	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
+		add_entry = {
+			name = PAP_OPINION_CRUSADER_ACTION_1 #Base Value
+			limit = { exists = PAP }
+			set_variable = {
+				which = ai_value
+				value = -40
+			}
+		}
+		add_entry = {
+			name = PAP_OPINION_CRUSADER_ACTION_2
+			limit = { NOT = { religion = catholic } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = PAP
+			}
+			export_to_variable = {
+				variable_name = is_defender
+				value = trigger_value:is_defender_of_faith # This sets is_defender to either 0.0 or 1.0
+			}
+			multiply_variable = {
+				which = is_defender
+				value = 10
+			}
+			change_variable = {
+				which = ai_value
+				which = is_defender # This adds 10 to ai_value if you are defender of faith
+			}
+		}
+		add_entry = {
+			name = PAP_OPINION_CRUSADER_ACTION_3
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = PAP
+			}
+			export_to_variable = {
+				variable_name = crusader_ruler_flag_var
+				value = trigger_value:has_ruler_flag = crusder_ruler_asked_pope_assistance_flag  # This sets crusader_ruler_flag_var to either 0.0 or 1.0
+			}
+			multiply_variable = {
+				which = crusader_ruler_flag_var
+				value = -1000
+			}
+			change_variable = {
+				which = ai_value
+				which = crusader_ruler_flag_var # This adds -1000 to ai_value if you have requested this once
+			}
+		}
+	}
+
+	ai_will_do = { #Look into how to balance this?
+		always = no
+	}
+}

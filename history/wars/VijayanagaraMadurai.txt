@@ -1,0 +1,19 @@
+name = "Vijayanagari Conquest of Kongu"
+#casus_belli = cb_claim_throne
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 538
+}
+
+1356.1.1 = {
+	add_attacker = VIJ
+	add_attacker = KRK
+	add_defender = MAD
+}
+
+1357.1.1 = {
+	rem_attacker = VIJ
+	rem_attacker = KRK
+	rem_defender = MAD
+}

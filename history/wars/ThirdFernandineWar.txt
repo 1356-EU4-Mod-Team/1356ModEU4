@@ -1,0 +1,23 @@
+# Third Fernandine War log
+# 2013.12.27 New entry (rickroll120)
+
+name = "Third Fernandine War"
+#casus_belli = cb_claim_throne
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = CAS
+}
+
+1381.3.1 = { 
+	add_attacker = POR
+	add_attacker = ENG
+	add_defender = CAS
+}
+
+# Peace and end of war
+1382.8.9 = { # Treaty of Elvas
+	rem_attacker = POR
+	rem_attacker = ENG
+	rem_defender = CAS
+}

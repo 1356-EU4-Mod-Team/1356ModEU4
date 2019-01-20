@@ -1,0 +1,200 @@
+namespace = papua
+
+country_event = {
+	id = papua.1
+	title = papua.1.t
+	desc = papua.1.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		primary_culture = moluccan
+		is_year = 1500
+		648 = { is_empty = yes }
+		manpower = 5
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+
+	option = {
+		name = papua.1.a
+		ai_chance = {
+			factor = 95
+		}
+		648 = { change_native_size = -1 cede_province = ROOT add_core = ROOT change_controller = ROOT }
+	}
+	option = {
+		name = papua.1.b
+		ai_chance = {
+			factor = 5
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = papua.2
+	title = papua.2.t
+	desc = papua.2.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		primary_culture = moluccan
+		is_year = 1500
+		manpower = 5
+		1245 = { is_empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+
+	option = {
+		name = papua.2.a
+		ai_chance = {
+			factor = 95
+		}
+		1245 = { change_native_size = -1 cede_province = ROOT add_core = ROOT change_controller = ROOT }
+	}
+	option = {
+		name = papua.2.b
+		ai_chance = {
+			factor = 5
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = papua.3
+	title = papua.3.t
+	desc = papua.3.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		primary_culture = moluccan
+		is_year = 1500
+		manpower = 5
+		646 = { is_empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+
+	option = {
+		name = papua.3.a
+		ai_chance = {
+			factor = 95
+		}
+		646 = {  change_native_size = -1 cede_province = ROOT add_core = ROOT change_controller = ROOT }
+	}
+	option = {
+		name = papua.3.b
+		ai_chance = {
+			factor = 5
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = papua.4
+	title = papua.4.t
+	desc = papua.4.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		primary_culture = moluccan
+		is_year = 1500
+		manpower = 5
+		652 = { is_empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+
+	option = {
+		name = papua.4.a
+		ai_chance = {
+			factor = 95
+		}
+		
+		652 = { cede_province = ROOT change_native_size = -1 add_core = ROOT change_controller = ROOT }
+	}
+	option = {
+		name = papua.4.b
+		ai_chance = {
+			factor = 5
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = papua.5
+	title = papua.5.t
+	desc = papua.5.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		tag = SUL
+		is_year = 1500
+		manpower = 5
+		653 = { is_empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+	option = {
+		name = papua.5.a
+		ai_chance = {
+			factor = 95
+		}
+		653 = { add_core = ROOT cede_province = ROOT change_native_size = -1 change_controller = SUL }
+	}
+	option = {
+		name = papua.5.b
+		ai_chance = {
+			factor = 5
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = papua.6
+	title = papua.6.t
+	desc = papua.6.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		primary_culture = moluccan
+		is_year = 1500
+		manpower = 5
+		2717 = { is_empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+
+	option = {
+		name = papua.6.a
+		ai_chance = {
+			factor = 95
+		}
+		2717 = { change_native_size = -50 cede_province = ROOT add_core = ROOT change_controller = ROOT }
+	}
+	option = {
+		name = papua.6.b
+		ai_chance = {
+			factor = 5
+		}
+		add_prestige = 5
+	}
+}

@@ -1,0 +1,49 @@
+# War of the Brabant Succession (1355-1357)
+# 2014.1.18 Added war and famous battles (rickroll120)
+
+name = "Brabant Succession War"
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = BRB
+}
+
+1355.12.5 = { # war started due to the death of Jean III of Brabant, leaving no male heirs (only one female) and Flanders claimed the duchy of Brabant
+	add_attacker = FLA
+	add_attacker = NEV
+	add_defender = BRB
+}
+
+1356.8.17 = {
+	battle = {
+		name = "Battle of Scheut"
+		location = 1744 # Antwerpen
+		attacker = {
+			commander = "Louis II Dampierre"
+			infantry = 3000
+			losses = 10	# percent
+			country = FLA
+		}
+
+		defender = {
+			commander = "Jeanne de Reginar"
+			infantry = 5000
+			losses = 90	# percent
+			country = BRB
+		}
+		result = yes
+	}
+}
+
+1356.9.1 = { # backed by her husband Wenceslaus of Luxemburg and his brother Emperor Charles IV 
+	add_defender = LUX
+	add_defender = BOH
+}
+
+1356.12.20 = { # Peace of Ath 1357.6.4
+	rem_attacker = FLA
+	rem_attacker = NEV
+	rem_defender = BRB
+	rem_defender = LUX
+	rem_defender = BOH
+}

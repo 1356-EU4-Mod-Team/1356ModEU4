@@ -1,0 +1,55 @@
+alliance = {
+	first = KOJ
+	second = TPL
+	start_date = 1356.1.1
+	end_date = 1356.12.25 #Ends 1400.1.1 before our merge
+}
+
+alliance = {
+	first = KOJ
+	second = ATO
+	start_date = 1356.1.1
+	end_date = 1356.12.25 #Ends 1400.1.1 before our merge
+}
+
+alliance = {
+	first = KOJ
+	second = EDE
+	start_date = 1356.1.1
+	end_date = 1356.12.25 #Ends 1400.1.1 before our merge
+}
+
+alliance = {
+	first = TPL
+	second = ATO
+	start_date = 1356.1.1
+	end_date = 1356.12.25 #Ends 1400.1.1 before our merge
+}
+
+alliance = {
+	first = TPL
+	second = EDE
+	start_date = 1356.1.1
+	end_date = 1356.12.25 #Ends 1400.1.1 before our merge
+}
+
+alliance = {
+	first = EDE
+	second = ATO
+	start_date = 1356.1.1
+	end_date = 1356.12.25 #Ends 1400.1.1 before our merge
+}
+
+alliance = {
+	first = CIC
+	second = ARM
+	start_date = 1356.1.1
+	end_date = 1356.12.25 #Ends 1400.1.1 before our merge
+}
+
+royal_marriage = {
+	first = CIC
+	second = ARM
+	start_date = 1356.1.1
+	end_date = 1356.12.25 #Ends 1400.1.1 before our merge
+}

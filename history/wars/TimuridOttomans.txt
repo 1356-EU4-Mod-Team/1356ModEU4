@@ -1,0 +1,25 @@
+name = "Timurid Invasion of Anatolia"
+#casus_belli = cb_conquest
+war_goal = {
+	type = superiority_horde
+	casus_belli = cb_horde_vs_civ
+}
+
+1402.1.1 = {
+	add_attacker = TIM
+	add_attacker = CIR
+	add_attacker = SND
+	add_attacker = GEO
+	add_defender = TUR
+	add_defender = SER
+}
+
+# Peace
+1402.12.31 = {
+	rem_attacker = TIM
+	rem_attacker = CIR
+	rem_attacker = SND
+	rem_attacker = GEO
+	rem_defender = TUR
+	rem_defender = SER
+}

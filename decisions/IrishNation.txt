@@ -1,0 +1,89 @@
+country_decisions = {
+
+	irish_nation = { #1356 - Changed Tech
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_ireland_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = IRE }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			primary_culture = irish
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 372			# Ulster
+				province_id = 373			# Meath
+				province_id = 374			# Leinster
+				province_id = 375			# Munster
+				province_id = 376			# Connaught
+				province_id = 4118			# Desmond
+				province_id = 4119			# Sligo
+				province_id = 4120			# Kildare
+				province_id = 4121			# Ulster
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			adm_tech = 16 #Orignally 10
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			owns = 372			# Ulster
+			owns = 373			# Meath
+			owns = 374			# Leinster
+			owns = 375			# Munster
+			owns = 376			# Connaught
+			owns = 4118			# Desmond
+			owns = 4119			# Sligo
+			owns = 4120			# Kildare
+			owns = 4121			# Ulster
+		}
+		effect = {
+			change_tag = IRE
+			remove_non_electors_emperors_from_empire_effect = yes
+			swap_non_generic_missions = yes
+			# should grant cores on all ireland
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 10
+			set_country_flag = formed_ireland_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

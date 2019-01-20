@@ -1,0 +1,20 @@
+# 1142 - Dendi (1356)
+# Changes: religion
+
+owner = SON
+controller = SON
+add_core = SON
+culture = songhai
+is_city = yes
+base_manpower = 1
+religion = shamanism #Fetishism
+capital = "Lulama"
+trade_goods = grain
+hre = no
+base_tax = 3
+
+base_production = 3
+
+discovered_by = sub_saharan
+
+1400.1.1  = { religion = sunni }

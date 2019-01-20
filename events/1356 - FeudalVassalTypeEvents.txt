@@ -1,0 +1,132 @@
+namespace = feudalvassalevents
+
+#Removes feudal vassal type and changes to vassal type so no one is stuck with bugged vassals
+country_event = {
+	id = feudalvassalevents.1
+	title = "feudalvassalevents.1.t"
+	desc = "feudalvassalevents.1.desc"
+	picture = CONQUEST_eventPicture
+	
+	#fire_only_once = yes
+	
+	trigger = {
+		is_subject_of_type = french_ducal_vassal
+		NOT = { is_subject_of = FRA }
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "feudalvassalevents.1.a"
+		overlord = {
+			vassalize = ROOT
+		}
+	}		
+}
+
+#Removes Feudal Vassal type after 1500's
+country_event = {
+	id = feudalvassalevents.2
+	title = "feudalvassalevents.2.t"
+	desc = "feudalvassalevents.2.desc"
+	picture = CONQUEST_eventPicture
+	
+	#fire_only_once = yes
+	
+	trigger = {
+		is_subject_of_type = french_ducal_vassal
+		is_year = 1500
+		is_subject_of = FRA
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "feudalvassalevents.2.a"
+		overlord = {
+			vassalize = ROOT
+		}
+	}		
+}
+
+#Overlord is at war. Join?
+country_event = {
+	id = feudalvassalevents.3
+	title = "feudalvassalevents.3.t"
+	desc = "feudalvassalevents.3.desc"
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		is_subject_of = FRA
+		is_at_war = no
+		FRA = {
+			is_at_war = yes
+		}	
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { #Join the war!
+		name = "feudalvassalevents.3.a"  
+		ai_chance = { factor = 99 }
+	}
+		
+	option = { #We're too busy, offer some troops and money instead.
+		name = "feudalvassalevents.3.b"
+		ai_chance = { factor = 1 }
+		add_treasury = -50
+		add_manpower = -5
+		FRA = {
+			add_treasury = 50
+			add_manpower = 8
+		}
+		
+	}
+}
+
+#Removes French Feudal Vassaal Government Type
+country_event = { #TEST TO SEE IF THIS STILL WORKS
+	id = feudalvassalevents.4
+	title = "feudalvassalevents.4.t"
+	desc = "feudalvassalevents.4.desc"
+	picture = CONQUEST_eventPicture
+	
+	#fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = FOZ
+			tag = ANJ
+			tag = ALE
+			tag = ORL
+			tag = BOU
+			tag = AUV
+			tag = FOI
+		}
+		has_reform = french_vassal_feudal_monarchy_reform
+		NOT = { is_subject_of = FRA }
+		is_at_war = no
+		#OR = {
+		#	NOT = { is_subject_of_type = french_ducal_vassal }
+		#	NOT = { exists = FRA }
+		#}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "feudalvassalevents.4.a"
+		#change_government = feudal_monarchy
+		add_government_reform = feudalism_reform
+		set_legacy_government = feudal_monarchy
+	}		
+}

@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+unit_type = western
+primary_culture = danish
+religion = catholic
+add_accepted_culture = swedish
+capital = 6	# Skane

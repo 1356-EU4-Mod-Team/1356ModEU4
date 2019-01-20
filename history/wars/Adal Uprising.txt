@@ -1,0 +1,19 @@
+name = "Ifat Rebellion"
+#casus_belli = cb_independence_war
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = ADA
+}
+
+
+1356.1.1 = {
+	add_attacker = ADA
+	add_defender = ETH
+}
+
+
+1360.1.1 = {
+	rem_attacker = ADA
+	rem_defender = ETH
+}

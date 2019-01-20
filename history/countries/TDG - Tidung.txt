@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = bornean
+technology_group = chinese
+religion = hinduism
+capital = 2709
+
+1355.1.1 = {
+	monarch = {
+		name = "Aji Beruwing"
+		dynasty = "Sakti"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

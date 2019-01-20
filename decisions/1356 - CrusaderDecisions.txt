@@ -1,0 +1,85 @@
+country_decisions = {
+	adopt_crusader_state_government = {
+		major = yes
+		potential = {
+			NOT = { current_age = age_of_absolutism }
+			NOT = { current_age = age_of_revolutions }
+			OR = {
+				tag = KOJ
+				tag = KNI
+				tag = CYP
+				tag = CIC
+				tag = ATO
+				tag = EDE
+				tag = TPO
+			}
+			OR = {
+				government = monarchy
+				government = theocracy
+			}
+			religion = catholic
+			NOT = { has_reform = crusader_state_reform }
+		}
+		allow = {
+			OR = {
+				tag = KOJ
+				tag = KNI
+				tag = CYP
+				tag = CIC
+				tag = ATO
+				tag = EDE
+				tag = TPO
+			}
+			religion = catholic #for clarity
+			primary_culture = crusader_culture
+			has_institution = feudalism
+			stability = 1
+			legitimacy_equivalent  = 90
+			adm_power = 100
+			dip_power = 100
+		}
+		effect = {
+			change_government = monarchy
+			add_government_reform  = crusader_state_reform
+			set_legacy_government = crusader_state_gov
+			add_adm_power = -100
+			add_dip_power = -100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	start_accepting_crusaders_into_ranks = {
+		major = yes
+		potential = {
+			has_reform = crusader_state_reform
+			NOT = { has_country_modifier = crusader_state_received_aid_recently_modifier }
+			NOT = { has_country_modifier = crusader_state_borders_religious_enemy_modifier }
+			religion = catholic
+			OR = {
+				primary_culture = crusader_culture	
+				tag = TEU
+				tag = LIV
+			}
+		}
+		allow = {
+			religion = catholic
+			primary_culture = crusader_culture	
+			any_neighbor_country  = {
+				NOT = { religion_group = christian }
+			}		
+		}
+		effect = {
+			custom_tooltip = crusader_accepting_crusaders_decision_tooltip
+			add_country_modifier = { 
+				name = crusader_state_borders_religious_enemy_modifier
+				duration = 2555 #7 Years
+				desc = crusader_state_borders_religious_enemy_desc
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

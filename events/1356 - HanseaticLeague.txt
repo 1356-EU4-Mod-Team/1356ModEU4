@@ -1,0 +1,415 @@
+namespace = hansa
+
+# country_event = {
+	# id = hansa.1
+	# hidden = yes
+	
+	# trigger = {
+		# OR = {
+			# tag = HSA
+			# tag = HAM
+			# tag = LUN
+			# tag = MAG
+			# tag = RIG
+			# tag = BRU
+			# tag = BRE
+			# tag = MKL
+			# tag = GOT
+		# }
+	# }
+	# is_triggered_only = yes
+	# immediate = {
+		# hidden_effect = {
+			# add_opinion = {
+				# who = HSA
+				# modifier = member_of_hansa_op
+			# }
+			# add_opinion = {
+				# who = HAM
+				# modifier = member_of_hansa_op
+			# }
+			# add_opinion = {
+				# who = LUN
+				# modifier = member_of_hansa_op
+			# }
+			# add_opinion = {
+				# who = MAG
+				# modifier = member_of_hansa_op
+			# }
+			# add_opinion = {
+				# who = RIG
+				# modifier = member_of_hansa_op
+			# }
+			# add_opinion = {
+				# who = BRU
+				# modifier = member_of_hansa_op
+			# }
+			# add_opinion = {
+				# who = BRE
+				# modifier = member_of_hansa_op
+			# }
+			# add_opinion = {
+				# who = GOT
+				# modifier = member_of_hansa_op
+			# }
+			# add_country_modifier = {
+				# name = member_of_hansa_ev
+				# duration = -1
+				# desc = member_of_hansa_desc
+			# }
+		# }
+		# if = {
+			# limit = { tag = HSA }
+			# add_country_modifier = {
+				# name = leader_of_hansa
+				# duration = -1
+			# }
+		# }
+	# }
+	# option = {		
+	# }
+# }
+
+# country_event = {
+	# id = hansa.2
+	# hidden = yes
+	
+	# trigger = {
+		# has_country_modifier = member_of_hansa_ev
+		# is_in_war = { defender_leader = ROOT }
+		# NOT = { has_country_flag = hansa_attacked }
+	# }
+	# mean_time_to_happen = {
+		# days = 1
+	# }
+	# immediate = {
+		# every_country = {
+			# limit = {
+				# NOT = { tag = ROOT }
+				# has_country_modifier = member_of_hansa_ev
+			# }
+			# #ROOT = {
+			# #	add_treasury = 40
+			# #
+			# #}
+			# #THIS = {
+			# #	add_treasury = -40
+			# #}
+			# THIS = {
+				# country_event = {
+					# id = hansa.4
+				# }
+			# }
+		# }
+		# set_country_flag = hansa_attacked
+	# }
+	# option = {
+	# }
+# }
+
+# # Hansa Sound Toll (Hidden)
+# country_event = {
+	# id = hansa.3
+	# hidden = yes
+	# is_triggered_only = yes
+	
+	# trigger = {
+		# owns = 12
+		# NOT = { has_country_flag = ended_sound_toll }
+		# NOT = { has_country_modifier = hansa_sound_toll }
+	# }
+	# immediate = {
+		# add_country_modifier = {
+			# name = hansa_sound_toll
+			# duration = -1
+		# }
+	# }
+	# option = {
+	# }
+# }
+
+# country_event = {
+	# id = hansa.4
+	# title = "hansa.4.t"
+	# desc = "hansa.4.d"
+	# picture = DIPLOMACY_eventPicture
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "hansa.4.o1"
+		# add_treasury = -50
+		# FROM = {
+			# add_treasury = 50
+		# }
+	# }
+	# option = {
+		# name = "hansa.4.o2"
+		# add_treasury = -100
+		# FROM = {
+			# add_treasury = 100
+		# }
+	# }
+	# option = {
+		# name = "hansa.4.o3"
+		# add_treasury = -500
+		# FROM = {
+			# add_treasury = 500
+		# }
+	# }
+	# option = {
+		# name = "hansa.4.o4"
+		# trigger = {
+			# NOT = { has_country_modifier = hansa_reform_2_member }
+		# }
+		# add_prestige = -5
+		# FROM = {
+			# add_opinion = {
+				# who = ROOT
+				# modifier = refused_join_war
+			# }
+		# }
+	# }
+# }
+
+# country_event = {
+	# id = hansa.5
+	# title = "hansa.5.t"
+	# desc = "hansa.5.d"
+	# picture = DIPLOMACY_eventPicture
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "hansa.5.o1"
+	# }
+# }
+
+# # Hanseatic reforms
+# country_event = {
+	# id = hansa.6
+	# title = "hansa.6.t"
+	# desc = "hansa.6.d"
+	# picture = DIPLOMACY_eventPicture
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "hansa.6.o1"
+		# save_global_event_target_as = country_oppose
+		# FROM = {
+			# country_event = {
+				# id = hansa.7
+			# }
+		# }
+		# set_country_flag = reform_oppose
+		# ai_chance = {
+			# factor = 50
+			# modifier = {
+				# factor = 1.1
+				# NOT = {
+					# has_opinion = {
+						# who = FROM
+						# value = 20
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 1.2
+				# NOT = {
+					# has_opinion = {
+						# who = FROM
+						# value = 0
+					# }
+				# }
+			# }
+		# }
+	# }
+	# option = {
+		# name = "hansa.6.o2"
+		# set_country_flag = reform_support
+		# ai_chance = {
+			# factor = 50
+			# modifier = {
+				# factor = 0
+				# NOT = {
+					# has_opinion = {
+						# who = FROM
+						# value = -50
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 0.8
+				# NOT = { has_matching_religion = FROM }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# has_opinion = {
+					# who = FROM
+					# value = 50
+				# }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# has_opinion = {
+					# who = FROM
+					# value = 100
+				# }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# has_opinion = {
+					# who = FROM
+					# value = 200
+				# }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { num_of_cities = FROM }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { army_size = FROM }
+			# }
+			# modifier = {
+				# factor = 1.2
+				# NOT = { monthly_income = 3 }
+			# }
+		# }
+	# }
+# }
+# country_event = {
+	# id = hansa.7
+	# title = "hansa.7.t"
+	# desc = "hansa.7.d"
+	# picture = DIPLOMACY_eventPicture
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "hansa.7.o1"
+	# }
+# }
+# country_event = {
+	# id = hansa.8
+	# title = "hansa.8.t"
+	# desc = "hansa.8.d"
+	# picture = DIPLOMACY_eventPicture
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "hansa.8.o1"
+		# remove_country_modifier = member_of_hansa_ev
+		# remove_country_modifier = hansa_reform_1
+		# remove_country_modifier = hansa_reform_2_member
+		# remove_country_modifier = hansa_reform_3_member
+		# every_country = {
+			# limit = { has_country_modifier = member_of_hansa_ev }
+			# remove_opinion = {
+				# who = ROOT
+				# modifier = member_of_hansa_op
+			# }
+			# add_opinion = {
+				# who = ROOT
+				# modifier = left_hansa_reform
+			# }
+		# }
+		# ai_chance = {
+			# factor = 50
+			# modifier = {
+				# factor = 1.1
+				# NOT = {
+					# has_opinion = {
+						# who = FROM
+						# value = 20
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 1.2
+				# NOT = {
+					# has_opinion = {
+						# who = FROM
+						# value = 0
+					# }
+				# }
+			# }
+		# }
+	# }
+	# option = {
+		# name = "hansa.8.o2"
+		# FROM = {
+			# vassalize = ROOT
+		# }
+		# ai_chance = {
+			# factor = 50
+			# modifier = {
+				# factor = 0
+				# NOT = {
+					# has_opinion = {
+						# who = FROM
+						# value = -50
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 0.8
+				# NOT = { has_matching_religion = FROM }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# has_opinion = {
+					# who = FROM
+					# value = 50
+				# }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# has_opinion = {
+					# who = FROM
+					# value = 100
+				# }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# has_opinion = {
+					# who = FROM
+					# value = 200
+				# }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { num_of_cities = FROM }
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { army_size = FROM }
+			# }
+			# modifier = {
+				# factor = 1.2
+				# NOT = { monthly_income = 3 }
+			# }
+		# }
+	# }
+# }
+
+# country_event = {
+		# id = hansa.9
+		# title = "hansa.9.t"
+		# desc = "hansa.9.d"
+		# is_triggered_only = yes
+	
+		# option = {
+			# name = "hansa.9.o1"
+		# }
+# }
+
+# country_event = {
+	# id = hansa.10
+	# trigger = {
+		# has_country_flag = hansa_attacked
+		# is_at_war = no
+	# }
+	# immediate = {
+		# clr_country_flag = hansa_attacked
+	# }
+	# option = {
+	# }
+# }

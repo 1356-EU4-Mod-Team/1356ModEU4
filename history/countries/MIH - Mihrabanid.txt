@@ -1,0 +1,44 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = khorasani
+religion = sunni
+government_rank = 1
+technology_group = muslim
+capital = 435	# Zaranj
+religious_school = shafii_school
+
+# Mihrabanids
+
+1352.1.1 = {
+	monarch = {
+		name = "'Izz al-Din"
+		dynasty = "Mihrabanid"
+		birth_date = 1320.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+1382.9.29 = {
+	monarch = {
+		name = "Qutb al-Din"
+		dynasty = "Mihrabanid"
+		birth_date = 1356.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1383.11.1 = {
+	monarch = {
+		name = "Taj al-Din Shah-i Shahan"
+		dynasty = "Mihrabanid"
+		birth_date = 1349.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+

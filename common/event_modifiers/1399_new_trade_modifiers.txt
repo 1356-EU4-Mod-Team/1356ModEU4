@@ -1,0 +1,3 @@
+west_africa_ivory_trade = {
+	trade_goods_size = 2.0
+}

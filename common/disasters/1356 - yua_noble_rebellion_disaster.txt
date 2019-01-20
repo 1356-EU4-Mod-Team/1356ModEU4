@@ -1,0 +1,203 @@
+# yuan_noble_rebellion_disaster = {
+	# potential = { 
+		# tag = YUA
+		# is_emperor_of_china = yes
+		# OR = {
+			# NOT = { is_year = 1444 }
+			# current_age = age_of_feudalism
+		# }
+		# has_country_flag = red_turban_rebellion_over_flag
+		# NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
+		# NOT = { has_country_flag = yuan_noble_plot_over_flag }
+		# NOT = { has_country_flag = yuan_noble_republic_disaster_over_flag }
+		# NOT = { has_countrY_flag = yuan_celestial_empire_noble_republic_flag }
+	# }
+	
+	# can_start = { 
+		# tag = YUA
+		# OR = {
+			# NOT = { is_year = 1444 }
+			# NOT = { current_age = age_of_feudalism }
+		# }
+		# OR = {
+			# has_country_flag = yuan_noble_revolt_imminent_flag
+			# has_country_flag = yua_noble_rebellion_popped_flag
+			# AND = {
+				# estate_influence = { #80 Infulence
+					# estate = estate_nobles
+					# influence = 80
+				# }
+				# NOT = { legitimacy_equivalent = 50 }
+			# }
+			# #AND = { #Perhaps a path for Ki or Non-Toqto'a path here?
+			# #	
+			# #}
+		# }
+		# has_country_flag = red_turban_rebellion_over_flag
+	# }
+	
+	# can_stop = { 
+		# OR = {
+			# AND = {
+				# is_emperor_of_china = no
+				# technology_group = nomad_group
+			# }
+			# has_country_flag = yuan_nobles_succeed_plot_flag
+			# has_country_flag = yuan_noble_plot_over_flag
+		# }		
+	# }
+	
+	# progress = { 
+		# modifier = {
+			# factor = 1
+			# tag = YUA
+			# is_emperor_of_china = yes
+			# NOT = { started_in = 1380.1.1 }
+			# estate_influence = { #80 Infulence
+				# estate = estate_nobles
+				# influence = 80
+			# }
+		# }
+		# modifier = {
+			# factor = 3
+			# tag = YUA
+			# is_emperor_of_china = yes
+			# NOT = { started_in = 1380.1.1 }
+			# estate_influence = { #90 Infulence
+				# estate = estate_nobles
+				# influence = 90
+			# }
+		# }
+		# modifier = {
+			# factor = 7
+			# tag = YUA
+			# is_emperor_of_china = yes
+			# NOT = { started_in = 1380.1.1 }
+			# estate_influence = { #100 Infulence
+				# estate = estate_nobles
+				# influence = 100
+			# }
+		# }
+		# modifier = {
+			# factor = 1
+			# tag = YUA
+			# is_emperor_of_china = yes
+			# NOT = { started_in = 1380.1.1 }
+			# NOT = { legitimacy_equivalent = 50 }
+		# }
+		# modifier = {
+			# factor = 2
+			# tag = YUA
+			# is_emperor_of_china = yes
+			# NOT = { started_in = 1380.1.1 }
+			# NOT = { legitimacy_equivalent = 30 }
+		# }
+		# modifier = {
+			# factor = 2
+			# tag = YUA
+			# is_emperor_of_china = yes
+			# NOT = { started_in = 1380.1.1 }
+			# NOT = { legitimacy_equivalent = 10 }
+		# }
+		# modifier = {
+			# factor = 2
+			# tag = YUA
+			# is_emperor_of_china = yes
+			# NOT = { started_in = 1380.1.1 }
+			# NOT = { legitimacy_equivalent = 5 }
+		# }
+		# modifier = {
+			# factor = 1
+			# tag = YUA
+			# is_emperor_of_china = yes
+			# NOT = { started_in = 1380.1.1 }
+			# NOT = { legitimacy_equivalent = 50 }
+		# }
+		# modifier = { #Forces it to occur faster if you have the noble revolt imminent flag via spying and failing.
+			# factor = 5
+			# tag = YUA
+			# is_emperor_of_china = yes
+			# NOT = { started_in = 1380.1.1 }
+			# has_country_flag = yuan_noble_revolt_imminent_flag
+		# }
+	# }
+	
+	# can_end = {
+		# OR = {
+			# has_country_flag = yuan_nobles_succeed_plot_flag
+			# has_country_flag = yuan_noble_plot_over_flag
+			# has_country_flag = yuan_bribed_noble_rebellion_away_flag #Reserved for special geniuses who destroy their currency in exchange to be rid of a small revolt.
+			# AND = { #Brute Force end it
+				# legitimacy_equivalent = 100
+				# stability = 3
+				# prestige = 60
+				# NOT = { num_of_rebel_armies = 1}
+				# NOT = { num_of_rebel_controlled_provinces = 1 }
+			# }
+			# AND = { #Dealt with ALL the revolt popups.
+				# NOT = { num_of_rebel_armies = 1}
+				# NOT = { num_of_rebel_controlled_provinces = 1 }
+				# stability = 1
+				# prestige = 0
+				# legitimacy_equivalent = 50
+				# has_country_flag = yuan_noble_rebellion_capital_revolt_flag 
+				# has_country_flag = yuan_noble_plot_tibet_revolt_flag
+				# has_country_flag = yuan_noble_plot_korea_revolt_flag
+				# has_country_flag = yuan_noble_plot_xinan_revolt_flag
+				# has_country_flag = yuan_noble_rebellion_anhui_revolt_flag
+				# has_country_flag = yuan_noble_rebellion_liaoning_revolt_flag
+				# has_country_flag = yuan_noble_rebellion_guangdong_revolt_flag
+				# has_country_flag = yuan_noble_rebellion_jiangsu_revolt_flag
+			
+			# }
+			# AND = { #Casually end it circa 1400
+				# is_year = 1400
+				# legitimacy_equivalent = 80
+				# stability = 1
+				# prestige = 25
+				# NOT = { num_of_rebel_armies = 1}
+				# NOT = { num_of_rebel_controlled_provinces = 1 }
+			# }
+			# AND = { #Give up and become a nomad
+				# technology_group = nomad_group
+				# is_emperor_of_china = no
+			# }
+			# AND = { #Somehow its past age of discovery AND ITS STILL GOING? Failsafe.
+				# NOT = { current_age = age_of_feudalism }
+				# NOT = { current_age = age_of_discovery }
+				# NOT = { num_of_rebel_armies = 1}
+				# NOT = { num_of_rebel_controlled_provinces = 1 }
+			# }
+		# }
+	# }
+	
+	# modifier = {
+		# global_unrest = 5
+	# }	
+	
+	# on_start = yuandisaster.1 #Sets flags to trigger revolts
+	# on_end = yuandisaster.2 #Forces the Reform
+	
+	# on_monthly = {
+		# events = {
+		# }
+		# random_events = { 
+			# #Random Events/AKA Random Bad Events
+# #			1000 = 0
+			# 100 = yuandisaster.40
+			# 100 = yuandisaster.41
+			# 100 = yuandisaster.42
+			
+			# #Rebel Events
+			# 100 = yuandisaster.100
+			# 100 = yuandisaster.101
+			# 100 = yuandisaster.102
+			# 100 = yuandisaster.103
+			# 100 = yuandisaster.104
+			# 100 = yuandisaster.105
+			# 100 = yuandisaster.106
+			# 100 = yuandisaster.107
+		
+		# }
+	# }
+# }

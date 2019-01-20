@@ -1,0 +1,56 @@
+# Hanseatic League Members
+
+alliance = {
+	first = HSA
+	second = GOT
+	trade_league = 1
+	start_date = 1350.1.1
+	end_date = 1361.1.1
+}
+
+alliance = {
+	first = HSA
+	second = RIG
+	trade_league = 1
+	start_date = 1350.1.1
+	end_date = 1380.1.1
+}
+
+alliance = {
+	first = HSA
+	second = OLD
+	trade_league = 1
+	start_date = 1350.1.1
+	end_date = 1380.1.1
+}
+
+alliance = {
+	first = HSA
+	second = MAG
+	trade_league = 1
+	start_date = 1350.1.1
+	end_date = 1380.1.1
+}
+
+alliance = {
+	first = HSA
+	second = LUN
+	trade_league = 1
+	start_date = 1350.1.1
+	end_date = 1380.1.1
+}
+
+alliance = {
+	first = HSA
+	second = BRE
+	trade_league = 1
+	start_date = 1350.1.1
+	end_date = 1380.1.1
+}
+alliance = {
+	first = HSA
+	second = HAM
+	trade_league = 1
+	start_date = 1350.1.1
+	end_date = 1380.1.1
+}

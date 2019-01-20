@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = sumatran
+religion = sunni
+technology_group = chinese
+capital = 2675	# Rokan
+
+1356.1.1 = {
+	monarch = {
+		name = "Seri Alam"
+		dynasty = "Rokan"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+

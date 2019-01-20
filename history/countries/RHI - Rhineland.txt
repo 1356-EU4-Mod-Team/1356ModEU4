@@ -1,0 +1,5 @@
+government = monarchy
+primary_culture = hessian
+religion = protestant
+technology_group = western
+capital = 1876	# Frankfurt

@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = hinduism
+primary_culture = sumatran
+capital = 2676 # Indragiri
+
+1356.1.1 = {
+	monarch = {
+		name = "Nara Singa"
+		dynasty = "Keritang"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

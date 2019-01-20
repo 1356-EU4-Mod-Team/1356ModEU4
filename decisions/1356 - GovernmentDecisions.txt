@@ -1,0 +1,35 @@
+country_decisions = {
+	frisian_government_decision = {
+		major = yes
+		potential = {
+			primary_culture = frisian
+			NOT = { has_reform = frisian_republic_gov }
+		}
+		allow = { 
+			primary_culture = frisian
+			OR = { #Either dont be tribal, or don't be a terrible tribe.
+				NOT = { government = tribal }
+				AND = {
+					government = tribal
+					adm = 4
+					dip = 2
+					mil = 2
+					adm_power = 100
+				}
+			}
+			stability = 1
+			prestige = 0
+			NOT = { legitimacy_equivalent = 75 }
+		}
+		effect = { 
+			change_government_via_reform = republic
+			add_government_reform = frisian_republic_gov
+			set_government_rank = 1
+			stability = -2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,351 @@
+namespace = por_djm
+
+country_event = {
+	id = por_djm.1
+	title = por_djm.1.t
+	desc = por_djm.1.d
+	picture = EXPLORERS_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		is_year = 1412
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = por_djm.1.a
+		
+		define_advisor = {
+			type = navigator
+			skill = 2
+			discount = yes
+			name = "Henry the Navigator"
+		}
+		
+		define_explorer = {
+			name = "João Gonçalves Zarco"
+			fire = 2
+			shock = 2
+			manuever = 6
+
+		}
+		
+		add_country_modifier = {
+			name = "rush_of_colonists"
+			duration = 3650
+		}		
+
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+
+		add_country_modifier = {
+			name = "navigator_boost"
+			duration = 3650
+		}	
+	
+	}
+	
+}
+
+country_event = { #Event to colonize the Cannaries
+	id = por_djm.2
+	title = por_djm.2.t
+	desc = por_djm.2.d
+	picture = EXPLORERS_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		OR = {
+			tag = POR
+			tag = CAS
+			AND = {
+				tag = MOR
+				NOT = { exists = POR }
+				NOT = { exists = CAS }
+			}
+		}
+		num_of_ports = 5
+		dip_power = 50
+		4565 = { NOT = { owned_by = ROOT } }
+		366 = { NOT = { owned_by = ROOT } }
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.1
+			NOT = { current_age = age_of_feudalism }
+		}
+		modifier = {
+			factor = 0.1
+			is_year = 1390
+		}
+	}
+	
+	option = { #We'll colonize it! (POR/CAS/SPA)
+		name = por_djm.2.a
+		trigger = {
+			OR = {
+				tag = POR
+				tag = CAS
+				tag = SPA
+			}
+		}
+		4565 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+		}
+		366 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+		}
+	}
+		
+	option = { #Sell it to Portugal (CAS)
+		name = por_djm_2.b
+		trigger = {
+			tag = CAS
+		}
+		add_treasury = 100
+		4565 = {
+			cede_province = POR
+			add_core = POR
+			change_religion = catholic
+			change_culture = portugese
+		}
+		366 = {
+			cede_province = POR
+			add_core = POR
+			change_religion = catholic
+			change_culture = portugese
+		}
+	}
+	
+	option = { #Sell it to Castile (POR)
+		name = por_djm_2.c
+		trigger = {
+			tag = POR
+		}
+		add_treasury = 100
+		4565 = {
+			cede_province = CAS
+			add_core = CAS
+			change_religion = catholic
+			change_culture = castillian
+		}
+		366 = {
+			cede_province = CAS
+			add_core = CAS
+			change_religion = catholic
+			change_culture = castillian
+		}
+	}
+	
+	option = { #Sell it to Morocco
+		name = por_djm_2.e
+		add_treasury = 100
+		4565 = {
+			cede_province = MOR
+			add_core = MOR
+			change_religion = sunni
+			change_culture = moroccan
+		}
+		366 = {
+			cede_province = MOR
+			add_core = MOR
+			change_religion = sunni
+			change_culture = moroccan
+		}
+	}
+}
+
+country_event = { #Event to colonize The Azores
+	id = por_djm.3
+	title = por_djm.3.t
+	desc = por_djm.3.d
+	picture = EXPLORERS_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		OR = {
+			tag = POR
+			tag = CAS
+			AND = {
+				tag = MOR
+				NOT = { exists = POR }
+				NOT = { exists = CAS }
+			}
+		}
+		num_of_ports = 5
+		dip_power = 50
+		367 = { NOT = { owned_by = ROOT } }
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+		modifier = {
+			factor = 0.1
+			NOT = { current_age = age_of_feudalism }
+		}
+		modifier = {
+			factor = 0.1
+			is_year = 1390
+		}
+	}
+	
+	option = { #We'll colonize it! (POR/CAS/SPA)
+		name = por_djm.3.a
+		trigger = {
+			OR = {
+				tag = POR
+				tag = CAS
+			}
+		}
+		367 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+		}
+	}
+		
+	option = { #Sell it to Portugal (CAS)
+		name = por_djm_3.b
+		trigger = { tag = CAS exists = POR}
+		add_treasury = 100
+		367 = {
+			cede_province = POR
+			add_core = POR
+			change_religion = catholic
+			change_culture = portugese
+		}
+	}
+	
+	option = { #Sell it to Castile (POR)
+		name = por_djm_3.c
+		trigger = {
+			tag = POR exists = CAS
+		}
+		add_treasury = 100
+		367 = {
+			cede_province = CAS
+			add_core = CAS
+			change_religion = catholic
+			change_culture = castillian
+		}
+	}
+	
+	option = { #Sell it to Morocco
+		name = por_djm_3.e
+		add_treasury = 100
+		367 = {
+			cede_province = MOR
+			add_core = MOR
+			change_religion = sunni
+			change_culture = moroccan
+		}
+	}
+}
+
+country_event = { #Event to colonize Maderia
+	id = por_djm.4
+	title = por_djm.4.t
+	desc = por_djm.4.d
+	picture = EXPLORERS_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		OR = {
+			tag = POR
+			tag = CAS
+			AND = {
+				tag = MOR
+				NOT = { exists = POR }
+				NOT = { exists = CAS }
+			}
+		}
+		num_of_ports = 5
+		dip_power = 50
+		368 = { NOT = { owned_by = ROOT } }
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+		modifier = {
+			factor = 0.1
+			NOT = { current_age = age_of_feudalism }
+		}
+		modifier = {
+			factor = 0.1
+			is_year = 1390
+		}
+	}
+	
+	option = { #We'll colonize it! (POR/CAS/SPA)
+		name = por_djm.4.a
+		trigger = {
+			OR = {
+				tag = POR
+				tag = CAS
+			}
+		}
+		368 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+		}
+	}
+		
+	option = { #Sell it to Portugal (CAS)
+		name = por_djm_4.b
+		trigger = { tag = CAS exists = POR}
+		add_treasury = 100
+		368 = {
+			cede_province = POR
+			add_core = POR
+			change_religion = catholic
+			change_culture = portugese
+		}
+	}
+	
+	option = { #Sell it to Castile (POR)
+		name = por_djm_4.c
+		trigger = { tag = POR exists = CAS}
+		add_treasury = 100
+		368 = {
+			cede_province = CAS
+			add_core = CAS
+			change_religion = catholic
+			change_culture = castillian
+		}
+	}
+	
+	option = { #Sell it to Morocco
+		name = por_djm_4.e
+		add_treasury = 100
+		368 = {
+			cede_province = MOR
+			add_core = MOR
+			change_religion = sunni
+			change_culture = moroccan
+		}
+	}
+}

@@ -1,0 +1,39 @@
+#843 - Belize
+
+owner = MAY
+controller = MAY
+culture = yucatec
+religion = mesoamerican_religion
+capital = "Belize" 
+trade_goods = sugar 
+hre = no 
+base_tax = 4 
+base_production = 4 
+base_manpower = 1 
+is_city = yes 
+add_local_autonomy = 25
+add_core = MAY
+add_core = CTM
+
+
+
+discovered_by = mesoamerican
+1440.1.1 = { owner = CTM controller = CTM }
+1502.1.1 = { discovered_by = CAS } # Christopher Columbus, no attempt to colonize
+1516.1.23 = { discovered_by = SPA }
+
+1638.1.1 = {
+	owner = ENG
+	controller = ENG
+	add_core = ENG
+	culture = english
+	religion = protestant
+} # British privateers settled in the area 
+1650.1.1 = { capital = "Belize Town" }
+1707.5.12 = {
+	discovered_by = GBR
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+	remove_core = ENG
+}

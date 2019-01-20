@@ -1,0 +1,20 @@
+name = "Hungarian Conquest of Dalmatia"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 136
+}
+
+1345.1.1 = { 
+	add_attacker = CRO
+	add_attacker = HUN
+	add_defender = VEN
+	add_defender = RAG
+}
+
+1358.2.19 = { # Treaty of Zadar
+	rem_attacker = CRO
+	rem_attacker = HUN
+	rem_defender = VEN
+	rem_defender = RAG
+}

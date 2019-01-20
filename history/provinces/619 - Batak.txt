@@ -1,0 +1,29 @@
+# 619 - Batak (1356)
+# Changes: ATJ/religion
+
+owner = HTR
+controller = HTR
+culture = sumatran
+religion = animism
+capital = "Batak"
+trade_goods = incense
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = HTR
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1405.1.1 = { discovered_by = MNG }
+1410.1.1 = { owner = PSA controller = PSA add_core = PSA }
+1450.1.1 = { religion = sunni }
+1509.1.1 = { discovered_by = POR }
+1521.1.1 = {	owner = ATJ
+		controller = ATJ
+		remove_core = PSA
+	   }

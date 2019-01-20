@@ -1,0 +1,135 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = celtic_breton
+add_accepted_culture = breton
+religion = catholic
+technology_group = western
+capital = 170	# Finistere
+
+1341.4.30 = {
+	monarch = {
+		name = "Jean IV"
+		dynasty = "de Dreux"
+		birth_date = 1295.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+	queen = {
+		country_of_origin = NEV
+		name = "Jeanne"
+		dynasty = "de Dampierre"
+		birth_date = 1295.1.1
+		death_date = 1374.9.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean V"
+		dynasty = "de Dreux"
+		birth_date = 1339.4.12
+		death_date = 1399.11.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1345.4.30 = {
+	monarch = {
+		name = "Queen Regent Jeanne"
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean V"
+		dynasty = "de Dreux"
+		birth_date = 1339.4.12
+		death_date = 1399.11.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1361.4.12 = {
+	monarch = {
+		name = "Jean V"
+		dynasty = "de Dreux"
+		birth_date = 1339.4.12
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1361.7.3 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Mary of Waltham"
+		dynasty = "Plantagenet"
+		birth_date = 1344.10.10
+		death_date = 1361.9.10
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1366.5.1 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Joan"
+		dynasty = "Holland"
+		birth_date = 1350.1.1
+		death_date = 1384.10.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1386.10.2 = {
+	queen = {
+		country_of_origin = NAV
+		name = "Joanna"
+		dynasty = "d'Évreux"
+		birth_date = 1370.1.1
+		death_date = 1437.7.9
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1389.12.24 = {
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean VI"
+		dynasty = "de Dreux"
+		birth_date = 1389.12.24
+		death_date = 1442.8.29
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1589.8.3 = { set_legacy_government = administrative_monarchy }
+
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

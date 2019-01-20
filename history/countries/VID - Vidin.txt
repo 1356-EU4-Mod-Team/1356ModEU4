@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = feudalism_reform
+historical_rival = SER
+historical_rival = HUN
+historical_friend = BUL
+historical_friend = DOB
+technology_group = eastern
+primary_culture = bulgarian
+religion = orthodox
+capital = 2746	# Vidin
+
+1356.1.1 = {
+	government_rank = 1
+	monarch = {
+		name = "Ivan Stratsimir"
+		dynasty = "Shishman"
+		birth_date = 1324.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = WAL
+		name = "Anna"
+		dynasty = "Basarab"
+		birth_date = 1342.1.1
+		death_date = 1400.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

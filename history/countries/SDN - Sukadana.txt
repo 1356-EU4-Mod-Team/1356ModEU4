@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = hinduism
+primary_culture = bornean
+capital = 2706
+
+1356.1.1 = {
+	monarch = {
+		name = "Wiraja"
+		dynasty = "Sukadana"
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}

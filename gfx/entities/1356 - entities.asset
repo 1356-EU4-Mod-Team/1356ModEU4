@@ -1,0 +1,6 @@
+entity = {
+	name = "alexandria_great_library"
+	pdxmesh = "alx_great_lighthouse"
+	
+	state = { name = "idle" 		animation = "idle" }
+}

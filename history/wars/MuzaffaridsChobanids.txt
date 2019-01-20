@@ -1,0 +1,21 @@
+name = "Muzaffarid conqest of Azerbaijan"
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+}
+
+1356.1.1 = {
+	add_attacker = PER
+	add_defender = CHB
+	add_defender = SRV
+	add_defender = PAD
+}
+
+# Peace
+# 1358.1.1 = {
+1356.2.1 = {
+	rem_attacker = PER
+	rem_defender = CHB
+	rem_defender = SRV
+	rem_defender = PAD
+}

@@ -1,0 +1,19 @@
+name = "Tlemcen Independence War"
+#casus_belli = cb_independence_war
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = TLC
+}
+
+
+1352.1.1 = {
+	add_attacker = TLC
+	add_defender = MOR
+}
+
+
+1356.12.15 = {
+	rem_attacker = TLC
+	rem_defender = MOR
+}

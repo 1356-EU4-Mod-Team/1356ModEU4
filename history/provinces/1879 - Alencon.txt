@@ -1,0 +1,45 @@
+# 1879 - Alençon (1356)
+# Changes: ALE
+
+owner = ALE
+controller = ALE
+capital = "Alençon"
+is_city = yes
+culture = cosmopolitan_french
+religion = catholic
+hre = no
+base_tax = 6 
+
+base_production = 6
+trade_goods = cloth
+base_manpower = 4
+add_core = ALE
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+1356.12.24  = { add_core = FRA } #BT In
+1356.12.26  = { remove_core = FRA } #BT Out
+
+1424.8.17  = { owner = ENG controller = ENG add_core = ENG add_local_autonomy = 80 }
+1449.3.24  = { # Fall of Routier
+		owner = ALE 
+		controller = ALE
+		estate = estate_nobles
+		add_local_autonomy = -80
+	     }
+1458.10.10 = { owner = FRA controller = FRA add_core = FRA } # duchy confiscated, Jean II imprisoned
+1461.8.15  = { owner = ALE controller = ALE remove_core = FRA } # duchy handed back to Jean II, has to comply terms of King of France
+1474.7.18  = { owner = FRA controller = FRA add_core = FRA } # duchy confiscated, Jean II senteced to death
+1478.3.1   = { owner = ALE controller = ALE remove_core = FRA} # duchy is delivered to Rene, son of Jean II
+1549.12.21 = { owner = FRA controller = FRA add_core = FRA } # duchy becomes royal domain after Marguerite d'Angoulêmes death
+1650.1.14  = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
+1651.4.1   = { unrest = 4 } # An unstable peace is concluded
+1651.12.1  = { unrest = 7 } # Mazarin returns from exile, Condé sides with Spain, situation heats up again
+1652.10.21 = { unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+1685.10.18 = { unrest = 8 } # Edict of Nantes revoked by Louis XIV
+1686.1.17  = { religion = catholic unrest = 0 } # Dragonnard campaign succesful, region back to catholicism
+
+1786.1.1   = { base_tax = 6 base_production = 6 } # The Eden Agreement

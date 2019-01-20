@@ -1,0 +1,140 @@
+hellenic_zeus = {
+	legitimacy = 0.1
+	horde_unity = 0.1
+	core_creation = -0.10
+	allow = { religion = hellenic_pagan }
+	sprite = 9
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+hellenic_hades = {
+	global_tax_modifier = 0.1
+	build_cost = -0.35
+	allow = { religion = hellenic_pagan }
+	sprite = 9
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+hellenic_athena = {
+	technology_cost = -0.1
+	global_institution_spread = 0.15
+	allow = { religion = hellenic_pagan }
+	sprite = 7
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+hellenic_ares = {
+	discipline = 0.05
+	land_morale = 0.1
+	allow = { religion = hellenic_pagan }
+	sprite = 8
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+	}
+}
+hellenic_hephaestus = {
+	reinforce_cost_modifier = -0.15
+	global_regiment_cost = -0.15
+	allow = { religion = hellenic_pagan }
+	sprite = 11
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.5
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+hellenic_demeter = {
+	global_trade_goods_size_modifier = 0.1
+	trade_efficiency = 0.15
+	allow = { religion = hellenic_pagan }
+	sprite = 10
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+hellenic_poseidon = {
+	ship_durability = 0.1
+	naval_morale = 0.1
+	allow = { religion = hellenic_pagan }
+	sprite = 11
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.5
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}

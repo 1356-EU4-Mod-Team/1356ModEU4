@@ -1,0 +1,21 @@
+name = "Tirolian Succession War"
+#casus_belli = cb_claim_throne
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = TIR
+}
+
+1363.1.13 = {
+	add_attacker = BAV
+	add_attacker = MLO
+	add_defender = HAB
+	add_defender = TIR
+}
+
+1369.9.29 = {
+	rem_attacker = BAV
+	rem_attacker = MLO
+	rem_defender = HAB
+	rem_defender = TIR
+}

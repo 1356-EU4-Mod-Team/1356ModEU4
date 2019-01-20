@@ -1,0 +1,109 @@
+namespace = mlc2
+
+country_event = {
+	id = mlc2.1
+	title = mlc2.1.t
+	desc = mlc2.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 596
+		capital_scope = {
+			OR = {
+				area = malaya_area
+				area = malacca_area
+			}
+		}
+		SIN = { exists = no }
+		NOT = { has_global_flag = malacca_formed }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = mlc2.1.a
+		set_global_flag = malacca_formed
+		malaya_area = { add_claim = ROOT }
+		malacca_area = { add_claim = ROOT }
+		add_prestige = 25
+		change_religion = sunni
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 5000
+		}
+		define_ruler = {
+	    name = "Iskandar Shah"
+	    dynasty = "Malacca"
+	    adm = 5
+	    dip = 5
+	    mil = 5
+	    age = 25
+	    claim = 75
+			religion = sunni
+		}
+		596 = {
+			add_base_production = 2
+			add_base_tax = 1
+		}
+	}
+	option = {
+		name = mlc2.1.b
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = mlc2.2
+	title = mlc2.2.t
+	desc = mlc2.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				area = malaya_area
+				area = malacca_area
+			}
+		}
+		is_year = 1400
+		NOT = { has_global_flag = malacca_formed }
+	}
+
+	mean_time_to_happen = {
+		months = 32
+	}
+
+	option = {
+		name = mlc2.2.a
+		set_global_flag = malacca_formed
+		malaya_area = { add_claim = ROOT }
+		malacca_area = { add_claim = ROOT }
+		add_prestige = 25
+		change_religion = sunni
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 5000
+		}
+		define_ruler = {
+	    name = "Iskandar Shah"
+	    adm = 5
+	    dip = 5
+	    mil = 5
+	    age = 25
+	    claim = 75
+			religion = sunni
+		}
+		capital_scope = {
+			add_base_production = 2
+			add_base_tax = 1
+		}
+	}
+	option = {
+		name = mlc2.2.b
+		add_prestige = -5
+	}
+}

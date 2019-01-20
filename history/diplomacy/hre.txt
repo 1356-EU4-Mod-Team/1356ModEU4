@@ -1,0 +1,17 @@
+1347.10.7 = { emperor = SWB }
+1356.12.26 = { emperor = BOH } #Was 1347.10.7 pre merge
+1400.8.20  = { emperor = PAL }
+1410.5.18  = { emperor = BRA }
+1411.1.18  = { emperor = HUN }
+1437.12.9  = { emperor = HAB }
+1452.1.1   = { emperor = STY }
+1457.11.24 = { emperor = HAB }
+1519.1.12  = { emperor = SPA }
+1556.1.16  = { emperor = HAB }
+1740.12.22 = { emperor = BAV }
+1745.1.21  = { emperor = TUS }
+1765.1.1   = { emperor = HAB }
+# Audax Validator "." Ignore_ALL
+1806.7.12  = { emperor = XXX } 
+
+

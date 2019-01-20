@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+historical_rival = GEN
+historical_friend = BYZ
+historical_friend = VID
+technology_group = eastern
+primary_culture = bulgarian
+religion = orthodox
+capital = 159	# Silistria
+
+1347.1.1 = {
+	monarch = {
+		name = "Dobrotitsa I"
+		dynasty = "Karvuna"
+		birth_date = 1320.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1385.1.1 = {
+	monarch = {
+		name = "Ivanko I"
+		dynasty = "Karvuna"
+		birth_date = 1350.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

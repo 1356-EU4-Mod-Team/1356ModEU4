@@ -1,0 +1,39 @@
+# War of the Breton Succession (1341-1364)
+# 2014.1.26 Created war (rickroll120)
+
+name = "Breton Succession War"
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = BLS
+}
+
+1363.1.1 = { # War resumes after the return of Jean V of Monfort
+	add_attacker = MNF
+	add_defender = BLS
+}
+
+1364.9.29 = {
+	battle = {
+		name = "Auray"
+		location = 171 # Morbihan
+		attacker = {
+			commander = "Auray"
+			infantry = 3500
+			losses = 5 # percent
+			country = MNF
+		}
+		defender = {
+			commander = "Auray"
+			infantry = 4000
+			losses = 30	# percent
+			country = BLS
+		}
+		result = yes
+	}
+}
+
+1365.4.12 = { # Treaty of Guerande
+	rem_attacker = MNF
+	rem_defender = BLS
+}

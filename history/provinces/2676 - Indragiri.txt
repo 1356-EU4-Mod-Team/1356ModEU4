@@ -1,0 +1,26 @@
+# 2676 - Indragiri (1356)
+# Changes: SRI/religion
+
+owner = IND
+controller = IND
+culture = sumatran
+religion = hinduism
+capital = "Indragiri"
+trade_goods = copper
+hre = no
+base_tax = 2 
+
+base_production = 2
+base_manpower = 3
+is_city = yes
+add_core = IND
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1405.1.1 = { discovered_by = MNG }
+1405.1.1 = { owner = SAK controller = SAK add_core = SAK }
+1500.1.1 = { religion = sunni }
+1509.1.1 = { discovered_by = POR }

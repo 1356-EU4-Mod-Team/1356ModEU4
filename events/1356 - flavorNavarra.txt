@@ -1,0 +1,124 @@
+namespace = flavor_fla_nav
+
+#Charles is welcomed into Paris like a King
+country_event = {
+	id = flavor_fla_nav.4
+	title = flavor_fla_nav.4.t
+	desc = flavor_fla_nav.4.desc
+	picture = LIBERUM_VETO_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			current_age = age_of_feudalism
+			NOT = { is_year = 1450 }
+		}
+		tag = NAV
+		has_ruler = "Charles II"
+		OR = {
+			AND = {
+				war_with = FRA
+				183 = {
+					country_or_vassal_holds = ROOT
+				}
+			}
+			owns = 183
+		}
+	
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+		
+	option = { #They love me!
+		name = flavor_fla_nav.4.a
+		add_country_modifier = {	
+			name = nav_charles_in_paris
+			duration = 600
+		}
+		add_prestige = 10
+		#country_event = { id = flavor_fla_nav.5 days = 90 }
+		#add_narcisicm = 100
+		#dream_almost_achieved = yes
+	}
+}
+
+#The horrific death of Charles II
+country_event = {
+	id = flavor_fla_nav.25
+	title = flavor_fla_nav.25.t
+	desc = flavor_fla_nav.25.desc
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = { #Fix it later so only europeans get this, its weird that a native american player gets this. Very. Weird.
+		ai = no
+		start_date = 1356.12.25
+		NAV = {
+			NOT = { has_ruler = "Charles II" }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #Charles is dead, and Navarras part in the war is over. Charles will be forever Remembered as an embarassment to Europan Nobility.
+		name = flavor_fla_nav.25.a
+		trigger = {
+			tag = NAV
+		}
+		add_prestige = -5
+		add_legitimacy = 5
+		add_treasury = 50
+		add_dip_power = 10
+	}
+	option = { #Not Navarra
+		name = flavor_fla_nav.25.b
+		trigger = {
+			NOT = { tag = NAV }
+		}
+		add_prestige = 1
+	}
+}
+
+country_event = { #On forming Charlamagne empire
+	id = flavor_fla_nav.99
+	title = flavor_fla_nav.99.t
+	desc = flavor_fla_nav.99.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	#mean_time_to_happen = {
+	#	days = 1
+	#}
+	
+	option = { 
+		name = flavor_fla_nav.99.a
+			trigger = {
+				OR = {
+					ai = no
+					tag = NCH
+					tag = NAV
+				}
+			}
+	}
+	option = { 
+		name = flavor_fla_nav.99.b
+			trigger = {
+				OR = {
+					ai = no
+					NOT = { tag = NAV }
+					NOT = { tag = NCH }
+				}
+			}
+	}
+	
+}
+	

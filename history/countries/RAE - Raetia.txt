@@ -1,0 +1,86 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = swiss
+capital = 1873	# Graubünden
+
+1356.6.10 = {
+	monarch = {
+		name = "Peter von Brünn"
+		birth_date = 1325.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1368.6.9 = {
+	monarch = {
+		name = "Friedrich II von Erdingen"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1376.1.1 = {
+	monarch = {
+		name = "Johannes II Ammann"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1388.6.30 = {
+	monarch = {
+		name = "Hartmann II von Werdenberg"
+		birth_date = 1350.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1416.9.16 = {
+	monarch = {
+		name = "Johannes III Ambundi von Schwan"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1418.5.22 = {
+	monarch = {
+		name = "Johannes IV Naso"
+		birth_date = 1370.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1440.1.1 = { 
+	set_legacy_government = administrative_republic
+	monarch = {
+		name = "Gotteshausbund"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1470.1.1 = {
+	monarch = {
+		name = "Die Drei Bünde"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+	

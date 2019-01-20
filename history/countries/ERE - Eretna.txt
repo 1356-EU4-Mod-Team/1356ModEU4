@@ -1,0 +1,64 @@
+government = tribal
+add_government_reform = tribal_federation_ilkhan_reform
+government_rank = 1
+primary_culture = turkish
+religion = shiite
+technology_group = ottoman
+historical_rival = TUR
+historical_rival = MAM
+capital = 329	# Sivas
+religious_school = jafari_school
+
+1352.1.1 = {
+	monarch = {
+		name = "Mehmed I"
+		dynasty = "Eretna"
+		culture = uyghur
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1366.1.1 = {
+	monarch = {
+		name = "Ali"
+		dynasty = "Eretna"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1380.1.1 = {
+	monarch = {
+		name = "Mehmed II"
+		dynasty = "Eretna"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1381.1.1 = {
+	religion = sunni
+	religious_school = hanafi_school
+	monarch = {
+		name = "Kadi al-Din Ahmed"
+		dynasty = "Burhanids"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1398.1.1 = {
+	monarch = {
+		name = "Zayn al-‘Abidin"
+		dynasty = "Burhanids"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+ 

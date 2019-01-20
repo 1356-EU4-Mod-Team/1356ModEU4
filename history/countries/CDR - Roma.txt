@@ -1,0 +1,21 @@
+government = republic
+add_government_reform = populist_dictatorship
+government_rank = 1
+technology_group = western
+primary_culture = umbrian
+add_accepted_culture = neapolitan
+religion = catholic
+capital = 118 # Rome
+
+1346.9.14 = {
+	monarch = {
+		name = "Cola di Rienzo"
+		birth_date = 1313.4.24
+		adm = 5
+		dip = 3
+		mil = 6
+		leader = { name = "Cola di Rienzo"	type = general	fire = 4 shock = 4 manuever = 3	siege = 3 }
+	}
+	add_ruler_personality = incorruptible_personality
+	add_ruler_personality = conqueror_personality
+}

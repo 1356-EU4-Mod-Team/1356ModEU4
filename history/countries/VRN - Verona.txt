@@ -1,0 +1,125 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = venetian
+religion = catholic
+technology_group = western
+capital = 108	# Verona
+
+# Lords of Verona #
+
+1352.9.13 = {
+	monarch = {
+		name = "Cangrande II"
+		dynasty = "della Scala"
+		birth_date = 1332.6.8
+		ADM = 3
+		DIP = 0
+		MIL = 3
+	}
+	queen = {
+		country_of_origin = BAV
+		name = "Elisabeth"
+		dynasty = "von Wittelsbach"
+		birth_date = 1329.1.1
+		death_date = 1402.8.2
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Alboino"
+		monarch_name = "Alboino II"
+		dynasty = "della Scala"
+		birth_date = 1343.1.1
+		death_date = 1375.10.16
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1359.12.14 = {
+	monarch = {
+		name = "Alboino II"
+		dynasty = "della Scala"
+		birth_date = 1343.1.1
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1365.2.20 = {
+	monarch = {
+		name = "Cansignorio I"
+		dynasty = "della Scala"
+		birth_date = 1340.3.5
+		ADM = 2
+		DIP = 4
+		MIL = 2
+	}
+	queen = {
+		country_of_origin = NAP
+		name = "Agnese"
+		dynasty = "d'Anjou-Durazzo"
+		birth_date = 1345.1.1
+		death_date = 1388.7.15
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Antonio"
+		monarch_name = "Antonio II"
+		dynasty = "della Scala"
+		birth_date = 1362.1.1
+		death_date = 1388.9.3
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1375.10.18 = {
+	monarch = {
+		name = "Antonio I"
+		dynasty = "della Scala"
+		birth_date = 1362.1.1
+		ADM = 4
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1378.1.1 = {
+	queen = {
+		country_of_origin = PAP
+		name = "Samaritana"
+		dynasty = "da Polenta"
+		birth_date = 1365.1.1
+		death_date = 1393.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1385.1.1 = {
+	heir = {
+		name = "Canfrancesco"
+		monarch_name = "Canfrancesco I"
+		dynasty = "della Scala"
+		birth_date = 1385.1.1
+		death_date = 1399.10.18
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

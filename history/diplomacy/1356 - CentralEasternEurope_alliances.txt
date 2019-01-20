@@ -1,0 +1,424 @@
+# Swiss Confederacy
+alliance = {
+	first = ZUR
+	second = BRN
+	start_date = 1355.1.1
+	end_date = 1790.1.1
+}
+
+dependency = {
+	subject_type = "canton"
+	first = ZUR
+	second = RAE
+	start_date = 1356.12.26
+	end_date = 1790.1.1
+}
+
+dependency = {
+	subject_type = "canton"
+	first = ZUR
+	second = WLI
+	start_date = 1355.1.1
+	end_date = 1790.1.1
+}
+
+# Hungary-Poland
+alliance = {
+	first = HUN
+	second = POL
+	start_date = 1355.1.1
+	end_date = 1370.11.5
+}
+
+royal_marriage = {
+	first = HUN
+	second = POL
+	start_date = 1355.1.1
+	end_date = 1370.11.5
+}
+
+# Hungary-Brandenburg
+alliance = {
+	first = HUN
+	second = BRA
+	start_date = 1386.2.24
+	end_date = 1387.3.31
+}
+
+royal_marriage = {
+	first = HUN
+	second = BRA
+	start_date = 1386.2.24
+	end_date = 1387.3.31
+}
+
+union = {
+	first = HUN
+	second = BRA
+	start_date = 1387.3.31
+	end_date = 1388.5.1
+}
+
+# Hungary-Habsburg
+alliance = {
+	first = HUN
+	second = HAB
+	start_date = 1421.9.28
+	end_date = 1437.12.9
+}
+
+royal_marriage = {
+	first = HUN
+	second = HAB
+	start_date = 1421.9.28
+	end_date = 1437.12.9
+}
+
+# Bohemia-Brandenburg
+union = {
+	first = BOH
+	second = BRA
+	start_date = 1373.8.17
+	end_date = 1378.11.29
+}
+
+# Bohemia-Luxembourg (Vaclav IV)
+alliance = {
+	first = BOH
+	second = LUX
+	start_date = 1354.1.21
+	end_date = 1383.12.8
+}
+
+royal_marriage = {
+	first = BOH
+	second = LUX
+	start_date = 1354.1.21
+	end_date = 1383.12.8
+}
+union = {
+	first = BOH
+	second = LUX
+	start_date = 1383.12.8
+	end_date = 1388.5.1
+}
+
+# Brunswick - Luneburg
+union = {
+	first = BRU
+	second = LUN
+	start_date = 1369.11.23
+	end_date = 1373.7.25
+}
+
+alliance = {
+	first = BRU
+	second = LUN
+	start_date = 1388.5.15
+	end_date = 1416.10.15
+}
+
+royal_marriage = {
+	first = BRU
+	second = LUN
+	start_date = 1388.5.15
+	end_date = 1416.10.15
+}
+
+# Saxony - Luneburg
+union = {
+	first = SAX
+	second = LUN
+	start_date = 1373.7.25
+	end_date = 1388.5.15
+}
+
+# Trier - Cologne
+vassal = {
+	first = TRI
+	second = KOL
+	start_date = 1368.8.25
+	end_date = 1370.11.13
+}
+
+# Bohemia-Teutonic Order
+alliance = {
+	first = BOH
+	second = TEU
+	#start_date = 1347.10.11 #Changed for Balance
+	start_date = 1356.12.26
+	end_date = 1378.11.29
+}
+
+guarantee = {
+	first = BOH
+	second = LIV
+	#start_date = 1347.10.11 #BT Balance
+	start_date = 1356.12.26
+	end_date = 1378.11.29
+}
+
+# Habsburg-Tyrol, during Rudolf IV
+union = {
+	first = HAB
+	second = TIR
+	start_date = 1363.1.13
+	end_date = 1365.7.25
+}
+
+# Styria-Tyrol, during Leopold III
+union = {
+	first = STY
+	second = TIR
+	start_date = 1379.9.25
+	end_date = 1386.7.9
+}
+
+# Habsburg-Tyrol, during Albrecht III
+union = {
+	first = HAB
+	second = TIR
+	start_date = 1386.7.9
+	end_date = 1395.8.29
+}
+
+# Austria - Thurgau I
+vassal = {
+	first = HAB
+	second = THG
+	#start_date = 1282.12.17
+	start_date = 1356.12.26 #BT Balance
+	end_date = 1379.9.25
+}
+
+# Styria - Thurgau I
+vassal = {
+	first = STY
+	second = THG
+	start_date = 1379.9.25
+	end_date = 1406.7.15
+}
+
+# Tirol - Thurgau
+vassal = {
+	first = TIR
+	second = THG
+	start_date = 1406.7.15
+	end_date = 1439.6.24
+}
+
+# Austria - Thurgau II
+vassal = {
+	first = HAB
+	second = THG
+	start_date = 1439.6.24
+	end_date = 1452.1.1
+}
+
+# Styria - Thurgau II
+vassal = {
+	first = STY
+	second = THG
+	start_date = 1452.1.1
+	end_date = 1457.11.24
+}
+
+# Austria - Thurgau III
+vassal = {
+	first = HAB
+	second = THG
+	start_date = 1457.11.24
+	end_date = 1460.1.1
+}
+
+# Styria - Gorz I
+vassal = {
+	first = STY
+	second = GOR
+	start_date = 1394.7.1
+	end_date = 1439.10.27
+}
+
+# Habsburg - Gorz I
+vassal = {
+	first = HAB
+	second = GOR
+	start_date = 1439.10.27
+	end_date = 1452.1.1
+}
+
+# Styria - Gorz II
+vassal = {
+	first = STY
+	second = GOR
+	start_date = 1452.1.1
+	end_date = 1457.11.23
+}
+
+# Habsburg - Gorz II
+vassal = {
+	first = HAB
+	second = GOR
+	start_date = 1457.11.23
+	end_date = 1500.4.12
+}
+
+# Teutonic and Livonian Order - Changed to alliance because constantly messes up Lith
+alliance = {
+	first = TEU
+	second = LIV
+	start_date = 1237.1.1
+	end_date = 1466.10.19
+}
+
+# Poland and Livonian Order
+vassal = {
+	first = POL
+	second = LIV
+	start_date = 1466.10.19
+	end_date = 1525.1.1
+}
+
+# Poland-Lithuania
+alliance = {
+	first = POL
+	second = LIT
+	start_date = 1356.1.1
+	end_date = 1386.3.4
+}
+
+#union = { #Changed end date to be Vanilla Compatible.
+#	first = POL
+#	second = LIT
+#	start_date = 1386.3.4
+#	end_date = 1444.11.10
+#}
+
+vassal = {
+	first = LIT
+	second = PLT
+	start_date = 1356.1.1
+	end_date = 1397.1.1
+}
+
+vassal = {
+	first = LIT
+	second = KIE
+	start_date = 1356.1.1
+	end_date = 1363.1.1
+}
+
+vassal = {
+	first = LIT
+	second = CHR
+	start_date = 1356.1.1
+	end_date = 1363.1.1
+}
+
+# Polish vassals
+union = {
+	first = POL
+	second = VOL
+	start_date = 1340.4.7
+	end_date = 1370.11.5
+}
+
+vassal = { #Changed dates to be vanilla compatible. 
+	first = POL
+	second = MAZ
+	start_date = 1356.1.1
+	end_date = 1443.12.31
+}
+
+march = { #Changed Dates to be Vanilla Compatible
+	first = POL
+	second = MOL
+	start_date = 1387.9.26
+	end_date = 1443.12.31
+}
+
+# Louis I of Hungary/Poland
+
+union = {
+	first = HUN
+	second = CRO
+	start_date = 1342.7.16
+	end_date = 1526.8.30
+}
+
+alliance = {
+	first = HUN
+	second = MOL
+	start_date = 1345.1.1
+	end_date = 1360.1.1
+}
+
+vassal = {
+	first = HUN
+	second = BOS
+	start_date = 1367.2.1
+	end_date = 1377.10.26
+}
+
+union = {
+	first = HUN
+	second = POL
+	start_date = 1370.11.5
+	end_date = 1382.9.10
+}
+
+vassal  = {
+	first = HUN
+	second = VOL
+	start_date = 1370.11.5
+	end_date = 1382.9.10
+}
+
+union = {
+	first = HUN
+	second = NAP
+	start_date = 1385.12.31
+	end_date = 1386.2.24
+}
+
+vassal = {
+	first = HUN
+	second = CUM
+	start_date = 1356.12.1
+	end_date = 1444.1.1
+}
+
+vassal = { #For vanilla start date users
+	first = HUN
+	second = CUM
+	start_date = 1444.1.2
+	end_date = 1526.1.1
+}
+
+vassal = {
+	first = HAB
+	second = CUM
+	start_date = 1526.8.30
+	end_date = 1542.1.1
+} #Ends with Turkish occupation
+
+vassal = { #Begins again with Austrian Occupation
+	first = HAB
+	second = CUM
+	start_date = 1699.1.26
+	end_date = 1711.1.1 #Privilages revoked
+}
+
+vassal = { #Autonomy restored by Maria Threasa
+	first = HAB
+	second = CUM
+	start_date = 1745.1.1
+	end_date = 1876.1.1
+}
+
+vassal = { #Theey appear to both have an alliance & Vassalage at the same time...
+	first = TEU
+	second = LIV
+	start_date = 1356.12.25
+	end_date = 1444.11.11
+}

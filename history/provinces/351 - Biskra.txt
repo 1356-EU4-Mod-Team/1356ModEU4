@@ -1,0 +1,25 @@
+# 351 - Biskra (1356)
+# Changes: TUN
+
+owner = MZB
+controller = MZB 
+culture = berber
+religion = ibadi
+capital = "Biskra"
+trade_goods = wool
+hre = no
+base_tax = 2 
+base_production = 1
+base_manpower = 2
+is_city = yes
+add_core = MZB
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = TUR
+
+1356.12.25 = { owner = MZB controller = MZB add_core = MZB }
+1440.1.1 = { owner = TGT controller = TGT add_core = TGT remove_core = TUN }
+1671.1.1 = { owner = ALG controller = ALG add_core = ALG
+	   } # Virtually independent of the Ottoman empire

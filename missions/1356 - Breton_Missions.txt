@@ -1,0 +1,540 @@
+#Lifted from Vanilla France
+bri_colonial_chain = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = BRI	
+	}
+	has_country_shield = yes
+	
+	build_breton_fleet = { #Make a Navy
+		icon = mission_galleys_in_port
+		required_missions = { }
+		position = 1
+		trigger = { num_of_heavy_ship = 20 }
+		effect = {
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	bri_discovers_north_america = { #Explore!
+		icon = mission_establish_high_seas_navy
+		required_missions = { build_breton_fleet }
+		position = 2
+		completed_by = 1535.1.1
+		trigger = {
+			has_idea_group = exploration_ideas
+			has_idea = quest_for_the_new_world
+			custom_trigger_tooltip = {
+				tooltip = fra_canada_discovery.tooltip
+				colonial_canada = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = fra_carib_discovery.tooltip
+				colonial_the_carribean = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = fra_louis_discovery.tooltip
+				colonial_louisiana = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 7300
+			}
+		}
+	}
+	bri_colony_in_north_america = { #Colonize it!
+		icon = mission_colonial
+		required_missions = { bri_discovers_north_america }
+		position = 3
+		completed_by = 1608.7.3
+		provinces_to_highlight = {
+			OR = {
+				colonial_region = colonial_canada
+				colonial_region = colonial_louisiana
+				colonial_region = colonial_the_carribean
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = fra_carib_colony.tooltip
+				# Audax Validator "." Ignore_1007
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					colonial_region = colonial_the_carribean
+				}
+			}
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = fra_canada_colony.tooltip
+					# Audax Validator "." Ignore_1007
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						colonial_region = colonial_canada
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = fra_louisiana_colony.tooltip
+					# Audax Validator "." Ignore_1007
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						colonial_region = colonial_louisiana
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "french_tariffs"
+				duration = 7300
+			}
+		}
+	}
+	bri_discovers_the_carribean = { #Discover Carribean!
+		icon = mission_sea_battles
+		required_missions = { bri_colony_in_north_america }
+		position = 4
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = fra_bengal_discovery.tooltip
+				bengal_region = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = fra_coromandel_discovery.tooltip
+				coromandel_region = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_to_india"
+				duration = 7300
+			}
+			andhra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orissa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			coromandel_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+bri_secure_borders = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = BRI	
+	}
+	has_country_shield = yes
+	
+	bri_annex_normandy = { #We must reunite the celtic nations under one banner!
+		icon = mission_assemble_an_army
+		required_missions = { bri_minor_end_succession_crisis }
+		position = 7
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4385
+				province_id = 168
+				province_id = 167
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4385 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			168 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			167 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			normandy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	bri_annex_anjou = { #We must reunite the celtic nations under one banner!
+		icon = mission_cannons_firing
+		required_missions = { bri_annex_normandy }
+		position = 8
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1879
+				province_id = 177
+				province_id = 178
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1879 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			177 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			178 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+		}
+	}
+}
+
+
+bri_end_the_succession = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		OR = {
+			tag = MNF
+			tag = BLS
+			tag = BRI
+		}
+	}
+	has_country_shield = yes
+	
+	bri_minor_end_succession_crisis = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		position = 6
+		
+		provinces_to_highlight = {
+			area = brittany_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			brittany_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			custom_tooltip = bre_minor_mission_progress_tt
+			brittany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_prestige = 10
+			munster_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			leinster_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		
+		}
+	}
+}
+
+bri_celtic_reconquest = { #We must reunite the celtic nations under one banner!
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = BRI	
+	}
+	has_country_shield = yes
+	
+	bri_lower_ireland_conquest = { #We must reunite the celtic nations under one banner!
+		icon = mission_invade_island
+		required_missions = { bri_minor_end_succession_crisis }
+		position = 7
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = munster_area
+				area = leinster_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			munster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			leinster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			ulster_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			connacht_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	bri_upper_ireland_conquest = { #We must reunite the celtic nations under one banner!
+		icon = mission_build_up_to_force_limit
+		required_missions = { bri_lower_ireland_conquest }
+		position = 8
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = ulster_area
+				area = connacht_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ulster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			connacht_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			kingdom_of_the_isles_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			highlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lowlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			scottish_marches_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	bri_scottland_conquest = { #We must reunite the celtic nations under one banner!
+		icon = mission_cannons_firing
+		required_missions = { bri_upper_ireland_conquest }
+		position = 9
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = kingdom_of_the_isles_area
+				area = highlands_area
+				area = lowlands_area
+				area = scottish_marches_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kingdom_of_the_isles_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			highlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lowlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			scottish_marches_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			wessex_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	bri_cornwall_conquest = { #We must reunite the celtic nations under one banner!
+		icon = mission_conquer_50_development
+		required_missions = { bri_scottland_conquest }
+		position = 10
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 233
+				province_id = 4373
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			233 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4373 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			wales_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	bri_wales_conquest = { #We must reunite the celtic nations under one banner!
+		icon = mission_unite_home_region
+		required_missions = { bri_cornwall_conquest }
+		position = 11
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			area = wales_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			wales_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			asturias_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	bri_asturias_conquest = { #We must reunite the celtic nations under one banner!
+		icon = mission_empire
+		required_missions = { bri_wales_conquest }
+		position = 12
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			area = asturias_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			asturias_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			add_dip_power = 100
+			add_adm_power = 100
+			add_mil_power = 100
+		}
+	}
+}
+
+
+

@@ -1,0 +1,54 @@
+government = monarchy
+add_government_reform = beylik_reform
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 2298
+historical_rival = MAM
+religious_school = hanafi_school
+
+1355.1.1 = {
+	monarch = {
+		name = "Dadi"
+		dynasty = "Tekeogullari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	add_piety = 0.2
+}
+
+1360.1.1 = {
+	monarch = {
+		name = "Mübârizüddin Mehmed"
+		dynasty = "Tekeogullari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1380.1.1 = {
+	monarch = {
+		name = "Osman Celebi"
+		dynasty = "Tekeogullari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# Ottoman Occupation from 1391 - 1402
+
+1402.1.1 = { # again
+	monarch = { 
+		name = "Osman Celebi"
+		dynasty = "Tekeogullari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# Annexed by the Ottoman Empire 1423

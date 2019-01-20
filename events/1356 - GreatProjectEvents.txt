@@ -1,0 +1,84 @@
+namespace = flagreatproject
+
+# Great Library Event
+province_event = {
+	id = flagreatproject.1
+	title = "flagreatproject.1.t"
+	desc = "flagreatproject.1.d"
+	picture = HARBOUR_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+		358 = {
+			has_great_project = great_library
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "flagreatproject.1.a"
+		owner = { add_prestige = 30 }
+	}
+}
+#Gives the other the modifier
+country_event = {
+	id = flagreatproject.2
+	title = "flagreatproject.2.t"
+	desc = "flagreatproject.2.d"
+	picture = HARBOUR_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		owns = 358
+		NOT = { has_country_modifier = alx_great_library_perma_modifier }
+		358 = {
+			has_great_project = great_library
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "flagreatproject.2.a"
+		owner = { add_prestige = 30 }
+		add_country_modifier = { 
+			name = alx_great_library_perma_modifier
+			duration = -1 
+		}
+		
+	}
+}
+
+#Removes previous owners modifier
+country_event = {
+	id = flagreatproject.3
+	title = "flagreatproject.3.t"
+	desc = "flagreatproject.3.d"
+	picture = HARBOUR_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		has_country_modifier = alx_great_library_perma_modifier
+		NOT = { owns = 358 }
+		has_great_project = great_library
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "flagreatproject.2.a"
+		owner = { add_prestige = -15 }
+		remove_country_modifier = alx_great_library_perma_modifier
+	}
+}

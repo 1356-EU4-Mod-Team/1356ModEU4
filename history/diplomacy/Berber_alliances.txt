@@ -1,0 +1,7 @@
+# Fez Vassal
+vassal = {
+	first = MOR
+	second = FEZ
+	start_date = 1356.12.25
+	end_date = 1444.11.11
+}

@@ -1,0 +1,180 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 100 170 165 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	diplomatic_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Konrad #0" = 20
+	"Otto #0" = 20
+	"Friedrich #0" = 20
+	"Karl #0" = 20
+	"Heinrich #0" = 20
+	"Hermann #0" = 20
+	"Gerhard #0" = 20
+	"Ludwig #0" = 20
+	"Berthold #0" = 10
+	"Albrecht #0" = 10
+	"Leopold #0" = 10
+	"Ernst #0" = 10
+	"Siegmund #0" = 10
+	"Wilhelm #0" = 10
+	"Johann #0" = 10
+	"Wolfgang #0" = 10
+	"Burkhard #0" = 10
+	"Ulrich #0" = 10
+	"Bernhard #0" = 10
+	"Dietrich #0" = 10
+	"Gottfried #0" = 10
+	"Meinhard #0" = 10
+	"Adolf #0" = 10
+	"Alfred #0" = 10
+	"Günther #0" = 10
+	"Ferdinand #0" = 1
+	"Maximilian #0" = 1
+	"Konstantin #0" = 1
+    "Lorenz #0" = 1
+	"Engelbert #0" = 1
+	"Reinhard #0" = 1
+	"Hieronymus #0" = 1
+	"Anton #0" = 1
+	"Ignatz #0" = 1
+	"Adalbert #0" = 1
+	"Benedikt #0" = 1
+	"Benno #0" = 1
+	"Bruno #0" = 1
+	"Christian #0" = 1
+	"Cristoph #0" = 1
+	"Clemens #0" = 1
+	"Florian #0" = 1
+	"Gregor #0" = 1
+	"Humbert #0" = 1
+	"Baldwin #0" = 1
+	"Baldur #0" = 1
+	"Bruno #0" = 1
+	"Isaak #0" = 1
+	"Isidor #0" = 1
+	"Jakob #0" = 1
+	"Jörg #0" = 1
+	"Jürgen #0" = 1
+	"Michael #0" = 1
+	"Oskar #0" = 1
+	"Raphael #0" = 1
+	"Siegfried #0" = 1
+	"Siegert #0" = 1
+	"Stefan #0" = 1
+	"Viktor #0" = 1
+	"Cunz #0" = 1
+	"Wolfhard #0" = 1
+	"Wolfram #0" = 1
+	"Philibert #0" = 1
+	
+	"Iris #0" = -1
+	"Katrin #0" = -1
+	"Adelheid #0" = -1
+	"Friede #0" = -1
+	"Juliane #0" = -1
+	"Gertrude #0" = -1
+	"Hildegard #0" = -1
+	"Ivonne #0" = -1
+	"Verena #0" = -1
+	"Alexia #0" = -1
+	"Beatrix #0" = -1
+	"Henriette #0" = -1
+	"Miriam #0" = -1
+	"Ulrike #0" = -1
+	"Sabina #0" = -1
+	"Magdalena #0" = -1
+	"Margarete #0" = -1
+	"Agnes #0" = -1
+	"Barbara #0" = -1
+	"Amalie #0" = -1
+}
+
+leader_names = {
+	"von Berg" "Gundelsheim" "Lotzer" "von Ihering"
+	"Strigel" "Schappeler" "Zangmeister" "Schenck" "Vöhlin"
+	"Schulthaiss" "Imhoff" Blittersdorf "von Gelnhausen"
+	"von Schöneck" "von Dieblich" Cölln Bensenraede Adenau
+	Gruithausen Hohenfeld "von Namedy" Falkenberg
+	"von Clausbruch" Hillensberg Dammerscheidt Elmpt
+	Naxleden Schaluyn "von Leyen" Ansembourg Zebnitsch
+	Adam Angermann Appelt Arndt Beck Becker Bening Blasius
+	Brilz Bröser Büttner Carl Dahm Deneke Eckstein Edelmann 
+	Elsner Feil Fischer Franke Giewer Haase Hafner Hertel 
+	Hirsch Höhn Kammel Keller Kessler Koeppe Kohn Krämer
+	Kuhn Lindner Mertesdorf Meyer Mick Müller Necker Noell 
+	Oelgemöller Raabe Rainer Scharfbillig Schave Scheler 
+	Schmitt Schneider Schumann Stephan Thelen Trierweiler
+	Uhlig "von Franken" "von Rothenburg" "von Schwaben"
+	"von Vitzgau" "von Weimar" Wachsmuth Wacht "von Werl"
+	Walther Wecker "von Pappenheim" "von Zentner"
+	"von Seckendorf" Chlingensperg "von Armansperg"
+	"von Esterhazy" "von Oberg" "von Schönburg"
+	"von Quadt" Ketterer "von Stubenrauch" "von Hatzfeldt"
+	"von Neippberg" Lobkowitz Mittelbach "von Laudon"
+	Alvintzky "von Hohenberg" Erlmayr "von Stark" Meinl
+	Bethmann Kolin Heinrich "von Riedesel" Freystadt
+	"von Guttenberg" Frantsits "von Stauffenberg"
+	Boroewitsch Steiger Tegethoff Buseck Byszynski Zwerger
+	Casper "von Schönbrunn" Poll "von Schwarzenberg"
+}
+
+ship_names = {
+	"Kaiser Karl der Grosse" "Kaiser Friedrich Barbarossa" "Gott Mit Uns"
+	Nibelunge Balmunge Schilbunge Tarnkappe Albriche
+	Kriemhilde Gernot Giselher Etzel Uote Dancrat "Tronege Hagene"
+	"Dancwart der Vil Snelle" "Ortwin von Metzen" Gere Ekkewart "Volker von Alzeye"
+	Sivride Brunhild "Dietrich von Bern" Ermanaric Ricimer Odoaker Heimir
+	Helche Herrat Hildebrand Hittgunt Nuodung Sieglind "Wieland der Schmied"
+	Witege "Wolfhard von Augsburg"  Siegfried Fraenir Hreidmar Ottarr Reginn
+	"Kaiser Ludwig der Deutsche" "Kaiser Karlmann" "Kaiser Ludwig der Jüngere" 
+	"Kaiser Karl der Dicke" "Kaiser Heinrich der Löwe" Merowinger
+	"Kaiser Arnolf von Kärnten" "Kaiser Ludwig das Kind" "Kaiser Arnulf der Böse"
+	"Kaiser Rudolf von Rheinfelden" "Kaiser Hermann von Luxemburg" "Kaiser Lothar"
+	"Kaiser Philipp von Schwaben" "Kaiser Otto von Braunschweig" Staufer Welfen
+	Supplinburger Salier Liudolfinger Konradiner Karolinger 
+	Aachen Aalen Augsburg Biberach Bopfingen Bremen Buchau Buchhorn Cologne
+	Dinkelsbühl Dortmund Esslingen Frankfurt Friedberg Gengenbach Giengen Goslar
+	Hamburg Heilbronn Isny Kaufbeuren Kempten Leutkirch Lindau Lübeck Memmingen
+	Mühlhausen Nordhausen Nördlingen Nürnberg Offenburg Pfullendorf Ravensburg
+	Regensburg Reutlingen Rothenburg Rottweil Gmünd Hall Schweinfurt Speier
+	Überlingen Ulm Wangen Weil Weissenburg Wetzlar Wimpfen Windsheim Worms Zell
+}
+
+army_names = {
+	"Armee von $PROVINCE$" 
+}
+
+fleet_names = {
+	"Flotte von $PROVINCE$"
+}

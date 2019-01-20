@@ -1,0 +1,54 @@
+government = monarchy
+add_government_reform = crusader_state_reform
+primary_culture = crusader_culture
+add_accepted_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 377	# Aleppo
+
+historical_friend = KOJ
+historical_friend = TPL
+historical_friend = EDE
+historical_rival = MAM
+add_historical_friend = MRO
+
+1356.12.24 = { capital = 2313 }
+
+1309.7.21 = {
+	monarch = {
+		name = "Markus I"
+		adm = 6
+		dip = 4
+		mil = 5
+		dynasty = "von Antiochia"
+		death_date = 1356.12.26 
+	}
+}
+
+1322.5.12 = {
+	heir = {
+		name = "Karl"
+		monarch_name = "Karl I"
+		dynasty = "von Antiochia"
+		birth_date = 1322.5.12
+		death_date = 1356.12.26 
+		claim = 100
+		adm = 4
+		dip = 6
+		mil = 4
+	}
+}
+
+1356.1.1 = {
+	leader = {	
+		name = "Gottfried von Reutlingen"	
+		type = general	
+		fire = 4	
+		shock = 2	
+		manuever = 3	
+		siege = 5	
+		death_date = 1356.12.26 
+	} 
+}
+
+#BT Out

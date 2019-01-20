@@ -1,0 +1,60 @@
+#All are Country Scope unless otherwise stated.
+
+yuan_nomad_low_revolt_risk_decision_effect = {
+	every_owned_province = {
+		limit = {
+			OR = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+		}
+		add_province_modifier = { 
+			name = 1356_yua_alatic_provinces
+			duration = -1  
+			desc = 1356_yua_alatic_provinces_tooltip
+			hidden = yes
+		}
+	}
+}
+
+yuan_nomad_turned_back_on_deal_effect = {
+	every_owned_province = {
+		limit = {
+			has_owner_accepted_culture = yes
+		}
+		remove_province_modifier = 1356_yua_alatic_provinces
+		add_province_modifier = { 
+			name = 1356_yua_alatic_provinces_angry_modifier
+			duration = 7300  
+			desc = 1356_yua_alatic_provinces_angry_modifier_tooltip
+			hidden = yes
+		}
+	}
+}
+
+yuan_nomad_gave_nomads_what_they_want_effect = {
+	every_owned_province = {
+		limit = {
+			has_owner_accepted_culture = yes
+		}
+		remove_province_modifier = 1356_yua_alatic_provinces
+		add_province_modifier = { 
+			name = 1356_yua_alatic_provinces_happy_modifier
+			duration = 7300  
+			desc = 1356_yua_alatic_provinces_happy_modifier_tooltip
+			hidden = yes
+		}
+	}
+}
+
+yuan_culture_convert_decision_effect = {
+	set_ruler_culture = yuan_culture
+	set_heir_culture = yuan_culture
+	change_primary_culture = yuan_culture
+	every_owned_province = {
+		limit = {
+			has_owner_culture = yes
+		}
+		change_culture = yuan_culture
+	}
+}

@@ -1,0 +1,65 @@
+name = "Kanno Disturbance"
+#casus_belli = cb_vassalize_mission
+war_goal = {
+	type = take_capital_vassalize
+	casus_belli = cb_vassalize_mission
+	tag = ASK
+}
+
+1356.1.1 = {
+	add_attacker = ASK
+	add_attacker = AKT
+	add_attacker = RFR
+	add_attacker = SBA
+	add_attacker = UTN
+	add_attacker = STK
+	add_attacker = UES
+	add_attacker = HTK
+	add_attacker = IMG
+	add_attacker = TKD
+	add_attacker = OGS
+	add_attacker = HSK
+	add_attacker = AKM
+	add_attacker = ISK
+	add_attacker = YMN
+	add_attacker = OUC
+	add_attacker = SHN
+	add_attacker = OTM
+	add_attacker = ITO
+	add_defender = SCJ
+	add_defender = DTE
+	add_defender = CBA
+	add_defender = TKI
+	add_defender = KNO
+	add_defender = KKC
+	add_defender = SMZ
+}
+
+1392.1.1 = {
+	rem_attacker = ASK
+	rem_attacker = AKT
+	rem_attacker = RFR
+	rem_attacker = SBA
+	rem_attacker = UTN
+	rem_attacker = STK
+	rem_attacker = UES
+	rem_attacker = HTK
+	rem_attacker = IMG
+	rem_attacker = TKD
+	rem_attacker = OGS
+	rem_attacker = HSK
+	rem_attacker = AKM
+	rem_attacker = ISK
+	rem_attacker = YMN
+	rem_attacker = OUC
+	rem_attacker = SHN
+	rem_attacker = OTM
+	rem_attacker = ITO
+	rem_defender = SCJ
+	rem_defender = DTE
+	rem_defender = CBA
+	rem_defender = TKI
+	rem_defender = KNO
+	rem_defender = KKC
+	rem_defender = SMZ
+}

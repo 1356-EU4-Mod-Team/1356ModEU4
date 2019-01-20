@@ -1,0 +1,87 @@
+name = "Hundred Years War - Caroline Phase"
+#casus_belli = cb_insult
+war_goal = {
+	type = superiority_insult_mutual
+	casus_belli = cb_insult
+}
+
+# Charles V renounces the Treaty of Bretagne due to Edward not show up in french court
+1369.5.1 = { 
+	add_attacker = FRA
+	add_attacker = CAS
+	add_attacker = BRI
+	add_attacker = DAU
+	add_attacker = BER
+	add_attacker = ORL
+	add_attacker = ALE
+	add_attacker = AMG
+	add_attacker = ANJ
+	add_defender = ENG
+	add_defender = WLS
+	add_defender = NOL
+	add_defender = YRK
+	add_defender = LNC
+}
+
+1370.12.4 = {
+	battle = {
+		name = "Pontvallain"
+		location = 177 # Maine
+		attacker = {
+			commander = "Bertrand du Guesclin"	# Bertrand du Guesclin
+			infantry = 6200
+			losses = 60	# percent
+			country = FRA
+		}
+		defender = {
+			commander = "Robert Knolles"	# Sir Robert Knolles
+			infantry = 6000
+			losses = 90	# percent
+			country = ENG
+		}
+		result = yes
+	}
+}
+
+1372.6.23 = {
+	battle = {
+		name = "La Rochelle"
+		location = 1276 # Cote D'Argent (sea)
+		attacker = {
+			commander = "Ambrosio Boccanegra"
+			heavy_ship = 6
+			light_ship = 13
+			galley = 12
+			transport = 13
+			losses = 10	# percent
+			country = CAS
+		}
+		defender = {
+			commander = "Earl of Pembroke"
+			heavy_ship = 4
+			light_ship = 9
+			galley = 12
+			transport = 10
+			losses = 95	# percent
+			country = ENG
+		}
+		result = yes
+	}
+}
+
+1375.6.27 = { # Treaty of Bruges
+	rem_attacker = FRA
+	rem_attacker = CAS
+	rem_attacker = BRI
+	rem_attacker = DAU
+	rem_attacker = BER
+	rem_attacker = ORL
+	rem_attacker = ALE
+	rem_attacker = AMG
+	rem_attacker = ANJ
+	rem_defender = ENG
+	rem_defender = WLS
+	rem_defender = NOL
+	rem_defender = YRK
+	rem_defender = LNC
+}

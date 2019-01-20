@@ -1,0 +1,28 @@
+name = "Golden Horde Invasion of Azerbaijan"
+#casus_belli = cb_conquest
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+	province = 416
+}
+
+1385.7.1 = {
+	add_attacker = GOL
+	add_attacker = WHI
+	add_defender = GAZ
+	add_defender = AVR
+	add_defender = SRV
+	add_defender = JLR
+	add_defender = QAR
+}
+
+# Peace
+1387.1.1 = {
+	rem_attacker = GOL
+	rem_attacker = WHI
+	rem_defender = GAZ
+	rem_defender = AVR
+	rem_defender = SRV
+	rem_defender = JLR
+	rem_defender = QAR
+}

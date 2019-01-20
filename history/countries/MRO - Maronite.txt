@@ -1,0 +1,18 @@
+government = monarchy
+
+primary_culture = aramaic
+add_accepted_culture = crusader_culture
+religion = catholic
+technology_group = eastern
+capital = 1855	#Sayda
+
+historical_friend = KNI
+historical_friend = KOJ
+historical_friend = TPO
+historical_friend = ATO
+historical_friend = EDE
+historical_friend = ASY
+historical_friend = CYP
+historical_friend = CIC
+
+

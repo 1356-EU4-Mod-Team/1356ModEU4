@@ -1,0 +1,94 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = flemish
+historical_friend = BUR
+historical_rival = BRB
+capital = 90	# Brugge
+
+1346.8.26 = {
+	monarch = {
+		name = "Louis II"
+		dynasty = "de Dampierre"
+		birth_date = 1330.10.25
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1347.6.6 = {
+	queen = {
+		country_of_origin = BRB
+		name = "Margaretha"
+		dynasty = "Reginar"
+		birth_date = 1323.2.9
+		death_date = 1380.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1350.4.13 = {
+	heir = {
+		name = "Marguerite"
+		monarch_name = "Marguerite III"
+		dynasty = "de Dampierre"
+		birth_date = 1350.4.13
+		death_date = 1405.3.16
+		female = yes
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+#############################################################################
+#  1384.1.30 - 1404.4.27 PU under Burgundy (Phillippe de Valois-Bourgogne)  #
+#############################################################################
+
+1384.1.30 = {
+	monarch = {
+		name = "Philippe II"
+		dynasty = "de Valois-Bourgogne"
+		birth_date = 1342.1.15
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+	queen = {
+		country_of_origin = FLA
+		name = "Marguerite"
+		dynasty = "de Dampierre"
+		birth_date = 1350.4.13
+		death_date = 1405.3.16
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1404.4.27 = {
+	monarch = {
+		name = "Marguerite III"
+		dynasty = "de Dampierre"
+		birth_date = 1350.4.13
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+########################################
+#  PU with Burgundy from 1405.3.16 on  #
+########################################
+
+
+#1440.1.1 = { government = feudalism_reform }

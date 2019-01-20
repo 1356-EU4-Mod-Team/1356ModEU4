@@ -1,0 +1,55 @@
+#Karelen, incl. Sordavala and Keksholm.
+
+owner = NOV
+controller = NOV
+add_core = NOV
+add_core = KRL
+culture = karelian
+religion = orthodox
+hre = no
+base_tax = 2 
+base_production = 2
+trade_goods = fur
+base_manpower = 1
+capital = "Korela" # initial Russian name
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = GLH
+discovered_by = AST
+
+1360.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
+	owner = ING
+	add_core = ING
+	controller = ING
+	remove_core = NOV
+}
+
+1478.1.15 = {
+	owner = MOS
+	controller = MOS
+	add_core = MOS
+	remove_core = NOV
+	remove_core = ING
+} # Muscovite annexation of Novgorod
+1503.4.1 = {
+	owner = RUS
+	controller = RUS 
+	add_core = RUS 
+	remove_core = MOS 
+} # Muscovy becomes Russia
+1580.11.4 = { controller = SWE } # Livonian War
+1583.8.10 = { owner = SWE add_core = SWE capital = "Kexholm" } # The Armistice of Plussa
+1595.5.18 = { owner = RUS controller = RUS remove_core = SWE capital = "Korela" } # The Peace of Teusina
+1611.3.2 = { controller = SWE } # The Ingrian War
+1617.2.27 = { owner = SWE add_core = SWE remove_core = RUS capital = "Kexholm" } # The Peace of Stolbova
+1710.9.8 = { controller = RUS } # The Great Nordic War-Captured Keksholm
+1721.8.30 = {
+	owner = RUS
+	add_core = RUS remove_core = SWE 
+} # The Peace of Nystad
+

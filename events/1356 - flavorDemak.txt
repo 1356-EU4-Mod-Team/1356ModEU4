@@ -1,0 +1,158 @@
+namespace = dmk
+
+country_event = {
+	id = dmk.1
+	title = dmk.1.t
+	desc = dmk.1.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 629
+		technology_group = chinese
+		629 = { religion = sunni }
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = dmk.1.a
+			remove_core = 629
+		629 = {
+			add_core = DMK
+			add_unrest = 15
+			add_local_autonomy = 50
+		      }
+	        }
+}
+
+country_event = {
+	id = dmk.2
+	title = dmk.2.t
+	desc = dmk.2.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 628
+		technology_group = chinese
+		628 = { religion = sunni }
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = dmk.2.a
+			remove_core = 628
+		628 = {
+			add_core = DMK
+			add_unrest = 15
+			add_local_autonomy = 50
+		      }
+	        }
+}
+
+country_event = {
+	id = dmk.3
+	title = dmk.3.t
+	desc = dmk.3.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2692
+		technology_group = chinese
+		2692 = { religion = sunni }
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = dmk.3.a
+			remove_core = 2692
+		2692 = {
+			add_core = DMK
+			add_unrest = 15
+			add_local_autonomy = 50
+		}
+	}
+}
+
+country_event = {
+	id = dmk.4
+	title = dmk.4.t
+	desc = dmk.4.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 629
+		owns = 628
+		owns = 2692
+		OR = {
+			NOT = { legitimacy = 40 }
+			NOT = { stability = 0 }
+			NOT = { prestige = 0 }
+		}
+		technology_group = chinese
+		is_year = 1450
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = dmk.4.a
+
+		2692 = {
+			add_core = DMK
+			change_religion = sunni
+		}
+		629 = {
+			add_core = DMK
+			change_religion = sunni
+			infantry = DMK infantry = DMK infantry = DMK infantry = DMK infantry = DMK infantry = DMK infantry = DMK infantry = DMK infantry = DMK cavalry = DMK cavalry = DMK
+		}
+		628 = {
+			add_core = DMK
+			change_religion = sunni
+		}
+		release = DMK
+		declare_war = DMK
+			random_owned_province = {
+			limit = {
+				NOT = {
+					OR = {
+						province_id = 629
+						province_id = 2692
+						province_id = 628
+					}
+				}
+			}
+			create_revolt = 2
+		}
+		add_stability = -1
+		add_prestige = -20
+		add_country_modifier = {
+			name = "disorder"
+			duration = 5000
+		}
+		DMK = {
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 5000
+			}
+		}
+	}
+}

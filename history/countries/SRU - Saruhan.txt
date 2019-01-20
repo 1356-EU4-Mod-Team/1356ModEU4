@@ -1,0 +1,74 @@
+government = monarchy
+add_government_reform = beylik_reform
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 2297	# Saruhan
+historical_rival = MAM
+religious_school = hanafi_school
+
+1346.1.1 = {
+	monarch = {
+		name = "Fahrüddin Ilyas"
+		dynasty = "Saruhanoglu"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	add_piety = 0.2
+}
+
+1362.1.1 = {
+	monarch = {
+		name = "Mazafferüddin Ishak"
+		dynasty = "Saruhanoglu"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1388.1.1 = {
+	monarch = {
+		name = "Hizirsah"
+		dynasty = "Saruhanoglu"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# Ottoman Occupation from 1390 - 1402
+
+1402.1.1 = {
+	monarch = {
+		name = "Orhan"
+		dynasty = "Saruhanoglu"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1404.1.1 = { # again ?
+	monarch = {
+		name = "Hizirsah"
+		dynasty = "Saruhanoglu"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1410.1.1 = { # again ?
+	monarch = {
+		name = "Orhan"
+		dynasty = "Saruhanoglu"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# Annexed by the Ottoman Empire 1412

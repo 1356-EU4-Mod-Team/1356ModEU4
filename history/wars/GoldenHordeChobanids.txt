@@ -1,0 +1,25 @@
+name = "Golden Horde conquest of Azerbaijan"
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+}
+
+1355.1.1 = {
+	add_attacker = GOL
+	add_attacker = GAZ
+	add_defender = CHB
+	add_defender = SRV
+	add_defender = ARL
+	add_defender = PAD
+}
+
+ #Peace
+# 1358.1.1 = { #This is to remove these errors from validator
+1355.1.2 = {
+	rem_attacker = GOL
+	rem_attacker = GAZ
+	rem_defender = CHB
+	rem_defender = SRV
+	rem_defender = ARL
+	rem_defender = PAD
+}

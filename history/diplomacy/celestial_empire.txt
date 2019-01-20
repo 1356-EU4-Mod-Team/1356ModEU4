@@ -1,0 +1,4 @@
+1260.5.5   = { celestial_emperor = KHA }
+1271.12.18 = { celestial_emperor = YUA }
+1368.9.14  = { celestial_emperor = MNG }
+1644.10.30 = { celestial_emperor = QNG }

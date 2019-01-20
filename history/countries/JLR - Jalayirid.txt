@@ -1,0 +1,209 @@
+government = tribal
+add_government_reform = tribal_federation_ilkhan_reform
+technology_group = muslim
+primary_culture = al_iraqiya_arabic
+add_accepted_culture = kurdish
+religion = shiite
+historical_rival = TIM
+historical_rival = PER
+historical_friend = QON
+capital = 410	# Baghdad
+religious_school = jafari_school
+
+1356.1.1 = {
+	monarch = {
+		name = "Awais I"
+		culture = mongol
+		dynasty = "Jalayirid"
+		birth_date = 1336.1.1
+		adm = 5
+		dip = 4	
+		mil = 5
+	}
+	add_piety = 0.2
+	add_treasury = 300
+	add_ruler_personality = conqueror_personality
+}
+
+1356.1.1 = {
+	heir = {
+		name = "Hasan"
+		monarch_name = "Hasan I"
+		dynasty = "Jalayirid"
+		birth_date = 1356.1.1
+		death_date = 1411.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1358.1.1 = { capital = 416 } # Tabriz
+
+1374.1.1 = {
+	monarch = {
+		name = "Hussain I"
+		dynasty = "Jalayirid"
+		adm = 2
+		dip = 1	
+		mil = 1
+	}
+}
+
+1382.1.1 = {
+	monarch = {
+		name = "Ahmed"
+		dynasty = "Jalayirid"
+		adm = 1
+		dip = 2	
+		mil = 4
+	}
+}
+
+1382.1.1 = {
+	heir = {
+		name = "Walad"
+		monarch_name = "Shah Walad"
+		dynasty = "Jalayirid"
+		birth_date = 1365.1.1
+		death_date = 1411.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1387.1.1 = { capital = 410 } # Baghdad
+
+1410.10.1 = {
+	monarch = {
+		name = "Shah Walad"
+		dynasty = "Jalayirid"
+		adm = 2
+		dip = 2	
+		mil = 2
+	}
+}
+
+1410.10.1 = {
+	heir = {
+		name = "Mahmud"
+		monarch_name = "Mahmud"
+		dynasty = "Jalayirid"
+		birth_date = 1390.1.1
+		death_date = 1415.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1411.4.1 = {
+	monarch = {
+		name = "Mahmud"
+		dynasty = "Jalayirid"
+		adm = 3
+		dip = 1	
+		mil = 1
+	}
+}
+
+1411.4.1 = {
+	heir = {
+		name = "Awais"
+		monarch_name = "Awais II"
+		dynasty = "Jalayirid"
+		birth_date = 1392.1.1
+		death_date = 1421.1.1
+		claim = 95
+		adm = 2
+		dip = 0
+		mil = 2
+	}
+}
+
+1411.7.1 = {
+	capital = 408	# Basra
+	monarch = {
+		name = "Awais II"
+		dynasty = "Jalayirid"
+		adm = 2
+		dip = 0	
+		mil = 2
+	}
+}
+
+1411.7.1 = {
+	heir = {
+		name = "Mohammed"
+		monarch_name = "Mohammed"
+		dynasty = "Jalayirid"
+		birth_date = 1394.1.1
+		death_date = 1422.1.1
+		claim = 95
+		adm = 3
+		dip = 0
+		mil = 1
+	}
+}
+
+1421.1.1 = {
+	monarch = {
+		name = "Mohammed"
+		dynasty = "Jalayirid"
+		adm = 3
+		dip = 0	
+		mil = 1
+	}
+}
+
+1421.1.1 = {
+	heir = {
+		name = "Mahmud"
+		monarch_name = "Mahmud"
+		dynasty = "Jalayirid"
+		birth_date = 1390.1.1
+		death_date = 1424.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1421.7.1 = {
+	monarch = {
+		name = "Mahmud"
+		dynasty = "Jalayirid"
+		adm = 3
+		dip = 1	
+		mil = 1
+	}
+}
+
+1421.7.1 = {
+	heir = {
+		name = "Husain"
+		monarch_name = "Husain II"
+		dynasty = "Jalayirid"
+		birth_date = 1405.1.1
+		death_date = 1432.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+		
+1425.1.1 = {
+	monarch = {
+		name = "Husain II"
+		dynasty = "Jalayirid"
+		adm = 0
+		dip = 1	
+		mil = 0
+	}
+}

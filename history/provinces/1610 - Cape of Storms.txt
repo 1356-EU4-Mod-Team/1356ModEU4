@@ -1,0 +1,4 @@
+1356.12.26 = { discovered_by = NOR }
+1360.1.1 = { undiscover_country = NOR }
+
+1481.1.1 = { discovered_by = POR }

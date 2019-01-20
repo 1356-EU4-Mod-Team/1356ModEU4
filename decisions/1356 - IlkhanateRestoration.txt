@@ -1,0 +1,204 @@
+country_decisions = {
+
+	ilknanate_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = formed_ilknanate_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = ILK }
+			NOT = { tag = TIM }
+			OR = {
+               culture_group = iranian
+               primary_culture = al_iraqiya_arabic			   
+			}			
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 5
+				}
+			}
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_ilknanate_flag }
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+			   province_id = 410
+			   province_id = 412
+			   province_id = 408
+			   province_id = 417
+			   province_id = 421
+			   province_id = 419
+			   province_id = 4301
+			   province_id = 423
+			   province_id = 4295
+			   province_id = 418
+			   province_id = 2218
+			   province_id = 4332
+			   province_id = 428
+			   province_id = 426
+			   province_id = 429
+			}
+			NOT = { owned_by = ROOT }
+		}		
+
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+               culture_group = iranian
+               primary_culture = al_iraqiya_arabic			   
+			}			
+			owns_core_province = 410
+			owns_core_province = 412
+			owns_core_province = 408
+			owns_core_province = 417
+			owns_core_province = 421
+			owns_core_province = 419
+			owns_core_province = 4301
+			owns_core_province = 423
+			owns_core_province = 4295
+			owns_core_province = 418
+			owns_core_province = 2218
+			owns_core_province = 4332
+			owns_core_province = 428
+			owns_core_province = 426
+			owns_core_province = 429
+		}
+		effect = {
+			set_country_flag = formed_ilknanate_flag 
+			change_tag = ILK
+			
+			if = {
+				limit = {
+					government = monarchy
+				}
+				change_government = monarchy
+				set_legacy_government = tribal_federation_ilkhan
+				add_government_reform = tribal_federation_ilkhan_reform
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			add_prestige = 50
+			if = { #Does this area serve a purpose? Currently it does nothing
+				limit = {
+					NOT = { has_global_flag = formed_ilknanate_flag }
+				}
+			}
+			persia_region = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			khorasan_region = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			transoxiana_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			arys_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			transcaspia_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			khiva_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			ferghana_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			termez_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			basra_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			iraq_arabi_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			al_jazira_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			armenia_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			north_kurdistan_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			erzurum_area = {
+				limit = {
+					NOT = { owned_by = ILK }
+					NOT = { is_core = ILK }
+				}
+				add_permanent_claim = ILK
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			change_technology_group = muslim
+			change_unit_type = muslim
+			set_global_flag = formed_ilknanate_flag 
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			set_country_flag = formed_ilknanate_flag 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

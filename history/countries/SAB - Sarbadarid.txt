@@ -1,0 +1,89 @@
+government = tribal
+add_government_reform = tribal_federation_ilkhan_reform
+primary_culture = khorasani
+add_accepted_culture = persian
+religion = shiite
+religious_school = jafari_school
+technology_group = muslim
+capital = 2235 # Sabzevar
+
+1353.1.1 = {
+	capital = 2235 # Sabzevar
+	monarch = {
+		name = "Yahya ibn Karawi"
+		dynasty = "Sarbadarid"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1358.1.1 = {
+	monarch = {
+		name = "Zahir al-Din"
+		dynasty = "Sarbadarid"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1359.1.1 = {
+	monarch = {
+		name = "Haidar al-Qassab"
+		dynasty = "Sarbadarid"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1360.1.1 = {
+	monarch = {
+		name = "Lutf Allah"
+		dynasty = "Sarbadarid"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1361.1.1 = {
+	monarch = {
+		name = "Hasan al-Damghani"
+		dynasty = "Sarbadarid"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1364.1.1 = {
+	monarch = {
+		name = "Khwaja 'Ali-yi Mu'ayyad"
+		dynasty = "Sarbadarid"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1376.1.1 = {
+	monarch = {
+		name = "Rukn ad-Din"
+		dynasty = "Sarbadarid"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1379.1.1 = {
+	monarch = {
+		name = "Khwaja 'Ali-yi Mu'ayyad"
+		dynasty = "Sarbadarid"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

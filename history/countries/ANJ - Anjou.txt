@@ -1,0 +1,207 @@
+government = monarchy
+add_government_reform = french_vassal_feudal_monarchy_reform
+government_rank = 1
+technology_group = western
+primary_culture = cosmopolitan_french
+religion = catholic
+#capital = 178 # Anjou #Removed because balance issues during HYW
+capital = 177	# Maine 
+
+1351.1.1 = { # Duchy of Anjou created for the 2nd son of Jean II de Valois
+	monarch = {
+		name = "Louis I"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1339.7.23
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}	# Also Monarch of Provence 1382.5.12 - 1384.9.20
+
+1360.7.9 = {
+	queen = {
+		country_of_origin = BLS
+		name = "Marie"
+		dynasty = "de Blois"
+		birth_date = 1345.1.1
+		death_date = 1404.11.12
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1377.10.5 = {
+	heir = {
+		name = "Louis"
+		monarch_name = "Louis II"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1377.10.5
+		death_date = 1417.4.29
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1384.9.20 = {
+	monarch = {
+		name = "Louis II"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1377.10.5
+		adm = 1
+		dip = 2
+		mil = 2
+	} 
+}	# Also Monarch of Provence 1384.9.20 - 1417.4.29
+	# Also Monarch of Neaples  1389.11.1 - 1399.11.1
+
+1400.12.2 = {
+	queen = {
+		country_of_origin = ARA
+		name = "Violant"
+		dynasty = "de Barcelona"
+		birth_date = 1384.8.11
+		death_date = 1442.11.14
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1403.9.25 = {
+	heir = {
+		name = "Louis"
+		monarch_name = "Louis III"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1403.9.25
+		death_date = 1434.11.12
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1417.4.29 = {
+	monarch = {
+		name = "Louis III"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1403.9.25
+		adm = 1
+		dip = 2
+		mil = 1
+	} 
+	heir = {
+		name = "René"
+		monarch_name = "René I"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1409.1.16
+		death_date = 1480.7.10
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}	# Also Monarch of Provence 1417.4.29 - 1434.11.12
+
+1431.8.31 = {
+	queen = {
+		country_of_origin = SAV
+		name = "Margherita"
+		dynasty = "di Savoia"
+		birth_date = 1420.8.7
+		death_date = 1479.11.30
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1434.11.12 = {
+	monarch = {
+		name = "René I"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1409.1.16
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+	queen = {
+		country_of_origin = LOR
+		name = "Isabelle I"
+		dynasty = "de Châtenois"
+		birth_date = 1400.1.1
+		death_date = 1453.2.28
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+} 	# Also Monarch of Provence 1434.11.12 - 1480.7.10
+	# Also Monarch of Lorraine 1434.11.12 - 1453.2.28
+	# Also Monarch of Neaples  1435.2.2 - 1442.6.2
+
+1440.1.1 = { 
+	government = monarchy
+	add_government_reform = feudalism_reform
+}
+
+1454.9.10 = {
+	queen = {
+		country_of_origin = BRI
+		name = "Jeanne"
+		dynasty = "de Laval"
+		birth_date = 1433.11.10
+		death_date = 1498.12.19
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1474.1.1 = { # René I declares Charles as heir of Anjou
+	heir = {
+		name = "Charles"
+		monarch_name = "Charles IV"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1446.1.1
+		death_date = 1481.12.10
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1480.7.10 = {
+	monarch = {
+		name = "Charles IV"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1446.1.1
+		adm = 0
+		dip = 2
+		mil = 1
+	} 
+}	# Also Monarch of Provence 1480.7.10 - 1481.12.10
+
+# 1481.12.10 - To French Royal Domain
+
+1515.1.1 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform
+}
+
+1560.1.1 = { religion = reformed }
+
+1589.8.3 = { set_legacy_government = administrative_monarchy }
+
+1661.3.9 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform
+}

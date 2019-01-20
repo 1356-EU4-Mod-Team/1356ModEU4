@@ -1,0 +1,126 @@
+name = "Hundred Years War - Edwardian Phase"
+#casus_belli = cb_insult
+war_goal = {
+	type = superiority_insult_mutual
+	casus_belli = cb_insult
+}
+
+# Philippe VI confiscated duchy of Acquitaine from Edward, so Edward III claimed the throne of France
+1337.1.1 = { # Around 1337
+	add_attacker = ENG
+	add_attacker = WLS
+	add_attacker = LNC
+	add_attacker = NOL
+	add_defender = FRA
+	add_defender = FLA
+	add_defender = BUR
+	add_defender = AMG
+	add_defender = FOI
+	add_defender = BOU
+	add_defender = ALE
+}
+
+1337.11.1 = {
+	battle = {
+		name = "Cadsand"
+		location = 1865 # Ghent
+		attacker = {
+			commander = "Walter Manny"	# Sir Walter Manny
+			infantry = 3500
+			losses = 5	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Cadsand"
+			infantry = 9000
+			losses = 90	# percent
+			country = FLA
+		}
+		result = yes
+	}
+}
+
+1338.9.23 = {
+	battle = {
+		name = "Arnemuiden"
+		location = 1269 # Coast of Holland (sea)
+		attacker = {
+			commander = "John Kingston"
+			heavy_ship = 5
+			light_ship = 10
+			transport = 10
+			losses = 30	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Hugues Quiéret"
+			galley = 48
+			losses = 5	# percent
+			country = FRA
+		}
+		result = no
+	}
+}
+
+1340.6.24 = {
+	battle = {
+		name = "Sluys"
+		location = 1269 # Coast of Holland (sea)
+		attacker = {
+			commander = "Sluys"
+			heavy_ship = 15
+			light_ship = 19
+			galley = 60
+			transport = 20
+			losses = 20	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Hugues Quiéret"
+			heavy_ship = 10
+			light_ship = 20
+			galley = 90
+			transport = 20
+			losses = 90	# percent
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+1340.7.26 = {
+	battle = {
+		name = "Saint-Omer"
+		location = 88 # Artois
+		attacker = {
+			commander = "Robert III"	# Robert III of Artois
+			infantry = 11000
+			losses = 90	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Eudes IV" # Eudes IV of Burgundy
+			infantry = 4000
+			losses = 5	# percent
+			country = BUR
+		}
+		result = no
+	}
+}
+
+1340.9.25 = { # Truce of Esplechin
+	rem_attacker = ENG
+	rem_attacker = WLS
+	rem_attacker = LNC
+	rem_attacker = NOL	
+	rem_defender = FRA
+	rem_defender = FLA
+	rem_defender = BUR
+	rem_defender = AMG
+	rem_defender = FOI
+	rem_defender = BOU
+	rem_defender = ALE
+}
+
+# 1342-1343 Breton War Succession
+

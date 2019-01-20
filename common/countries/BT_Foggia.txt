@@ -1,0 +1,100 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 188 191 82 }
+
+historical_idea_groups = {
+	trade_ideas
+	quantity_ideas
+	economic_ideas
+	maritime_ideas
+	defensive_ideas
+	innovativeness_ideas
+	offensive_ideas
+	quality_ideas	
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ferdinando #0" = 20
+	"Martino #0" = 20
+	"Ruggiero #0" = 20
+	"Corrado #0" = 20
+	"Pietro #0" = 15
+	"Francesco #0" = 15
+	"Federigo #0" = 10
+	"Guglielmo #0" = 10
+	"Luigi #0" = 10
+	"Leopoldo #0" = 10
+	"Simone #0" = 5
+	"Carlo #0" = 5
+	"Manfred #0" = 5
+	"Tancredo #0" = 5
+	
+	"Maria #0" = -15
+	"Violante #0" = -1
+	"Costanza #0" = -5
+	"Eufemia #0" = -1
+	"Beatrice #0" = -1
+	"Isabella #0" = -1
+}
+
+leader_names = {
+	Pignatelli
+	Carafa
+	Caracciolo
+	Sanseverino
+	Acquaviva
+	Orsini
+	Marzano
+	Ruggiero
+	Pignatelli
+	"d'Avalos"
+	Tocco
+	Mazziotti
+	Coscia
+	Mazzaccara
+	Rizzo
+	"de Hauteville"
+	Drengot
+	"di Amalfi"
+}
+
+ship_names = {
+	Albizi  Arcetri Arezzo
+	Bellosguardo Bisenzio
+	Careggi 
+	Fiesole Firenze "fiume Arno"
+	"fiume Greve"
+	Galluzzo Giotto
+	Impruneta
+	Medici Mugnone
+	Orsanmichele
+	Pistoia Prato
+	Ripoli
+	"San Frediano" "San Giovanni Battista" "San Lorenzo"
+	"San Marco" "Santa Maria del Fiore" "Santa Trinita"
+	Scandicci Settignano "Sesto Fiorentino"
+	Terzolle
+	"Roberto Guiscard" "Guglielmo il Buono"
+}
+
+army_names = {
+	"Armata di $PROVINCE$"
+}

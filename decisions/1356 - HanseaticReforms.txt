@@ -1,0 +1,847 @@
+# country_decisions = {
+	# # Hanseatic reforms
+	# 1_unify_hanseatic_circles = {
+		# potential = {
+			# has_country_modifier = member_of_hansa_ev
+			# NOT = { has_global_flag = reform_1_done }
+			# NOT = {
+				# OR = {
+					# has_country_flag = reform_2_pending
+					# has_country_flag = reform_1_pending
+					# has_country_flag = reform_3_pending
+					# has_country_flag = reform_4_pending
+					# has_country_flag = reform_5_pending
+					# has_country_flag = reform_6_pending
+				# }
+			# }
+		# }
+		# allow = {
+			# treasury = 500
+			# has_country_modifier = leader_of_hansa
+			# NOT = { has_country_modifier = recently_passed_reform }
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# country_event = {
+					# id = hansa.6
+				# }
+			# }
+			# add_treasury = -500
+			# set_country_flag = reform_1_pending
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# is_at_war = yes
+			# }
+		# }
+	# }
+	# 1_pass_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_1_pending
+		# }
+		# allow = {
+			# any_country = {
+				# has_country_modifier = member_of_hansa_ev
+				# NOT = { is_rival = ROOT }
+				# has_opinion = {
+					# who = ROOT
+					# value = 50
+				# }
+			# }
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+				# }
+				# add_country_modifier = {
+					# name = hansa_reform_1
+					# duration = -1
+				# }
+				# if = {
+					# limit = { has_country_flag = reform_oppose }
+					# add_opinion = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+					# clr_country_flag = reform_oppose
+				# }
+			# }
+			# add_stability = -1
+			# add_country_modifier = {
+				# name = recently_passed_reform
+				# duration = 10950 # 30 years
+			# }
+			# clr_country_flag = reform_1_pending
+			# set_global_flag = reform_1_done
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# any_country = {
+					# has_country_modifier = member_of_hansa_ev
+					# has_opinion = {
+						# who = ROOT
+						# value = -150
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 0
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 0
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	# 1_cancel_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_1_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# clr_country_flag = reform_1_pending
+		# }
+		# ai_will_do = {
+			# factor = 0
+			# modifier = {
+				# factor = 1.1
+				# is_at_war = yes
+			# }
+			# modifier = {
+				# factor = 1.1
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	
+	
+	# ############################
+	
+	
+	# 2_hanseatic_army = {
+		# potential = {
+			# has_country_modifier = member_of_hansa_ev
+			# NOT = { has_global_flag = reform_2_done }
+			# NOT = {
+				# OR = {
+					# has_country_flag = reform_1_pending
+					# has_country_flag = reform_2_pending
+					# has_country_flag = reform_3_pending
+					# has_country_flag = reform_4_pending
+					# has_country_flag = reform_5_pending
+					# has_country_flag = reform_6_pending
+				# }
+			# }
+			# has_global_flag = reform_1_done
+		# }
+		# allow = {
+			# any_country = {
+				# has_country_modifier = member_of_hansa_ev
+				# NOT = {
+					# has_opinion_modifier = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+				# }
+			# }
+			# treasury = 750
+			# NOT = { has_country_modifier = recently_passed_reform }
+			# has_country_modifier = leader_of_hansa
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# country_event = {
+					# id = hansa.6
+				# }
+			# }
+			# add_treasury = -750
+			# set_country_flag = reform_2_pending
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# is_at_war = yes
+			# }
+		# }
+	# }
+	# 2_pass_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_2_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# add_country_modifier = {
+					# name = hansa_reform_2_member
+					# duration = -1
+				# }
+				# if = {
+					# limit = { has_country_flag = reform_oppose }
+					# add_opinion = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+					# clr_country_flag = reform_oppose
+				# }
+			# }
+			# add_country_modifier = {
+				# name = hansa_reform_2_leader
+				# duration = -1
+			# }
+			# add_stability = -1
+			# add_country_modifier = {
+				# name = recently_passed_reform
+				# duration = 10950 # 30 years
+			# }
+			# clr_country_flag = reform_2_pending
+			# set_global_flag = reform_2_done
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# any_country = {
+					# has_country_modifier = member_of_hansa_ev
+					# has_opinion = {
+						# who = ROOT
+						# value = -150
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 0
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 0
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	# 2_cancel_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_2_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# clr_country_flag = reform_2_pending
+		# }
+		# ai_will_do = {
+			# factor = 0
+			# modifier = {
+				# factor = 1.1
+				# is_at_war = yes
+			# }
+			# modifier = {
+				# factor = 1.1
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	
+	
+	
+	# ########################
+	
+	
+	# 3_reform_league = {
+		# potential = {
+			# has_country_modifier = member_of_hansa_ev
+			# NOT = { has_global_flag = reform_3_done }
+			# NOT = {
+				# OR = {
+					# has_country_flag = reform_1_pending
+					# has_country_flag = reform_2_pending
+					# has_country_flag = reform_3_pending
+					# has_country_flag = reform_4_pending
+					# has_country_flag = reform_5_pending
+					# has_country_flag = reform_6_pending
+				# }
+			# }
+			# has_global_flag = reform_1_done
+			# has_global_flag = reform_2_done
+		# }
+		# allow = {
+			# any_country = {
+				# has_country_modifier = member_of_hansa_ev
+				# NOT = {
+					# has_opinion_modifier = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+				# }
+			# }
+			# treasury = 1000
+			# NOT = { has_country_modifier = recently_passed_reform }
+			# has_country_modifier = leader_of_hansa
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# country_event = {
+					# id = hansa.6
+				# }
+			# }
+			# add_treasury = -1000
+			# set_country_flag = reform_3_pending
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# is_at_war = yes
+			# }
+		# }
+	# }
+	# 3_pass_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_3_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# add_country_modifier = {
+					# name = hansa_reform_3_member
+					# duration = -1
+				# }
+				# if = {
+					# limit = { has_country_flag = reform_oppose }
+					# add_opinion = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+					# clr_country_flag = reform_oppose
+				# }
+			# }
+			# add_country_modifier = {
+				# name = hansa_reform_3_leader
+				# duration = -1
+			# }
+			# add_stability = -1
+			# add_country_modifier = {
+				# name = recently_passed_reform
+				# duration = 10950 # 30 years
+			# }
+			# clr_country_flag = reform_3_pending
+			# set_global_flag = reform_3_done
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# any_country = {
+					# has_country_modifier = member_of_hansa_ev
+					# has_opinion = {
+						# who = ROOT
+						# value = -150
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 0
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 0
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	# 3_cancel_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_3_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# clr_country_flag = reform_3_pending
+		# }
+		# ai_will_do = {
+			# factor = 0
+			# modifier = {
+				# factor = 1.1
+				# is_at_war = yes
+			# }
+			# modifier = {
+				# factor = 1.1
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	
+	
+	
+	# ########################
+	
+	
+	# 4_revoke_privileges = {
+		# potential = {
+			# has_country_modifier = member_of_hansa_ev
+			# NOT = { has_global_flag = reform_4_done }
+			# NOT = {
+				# OR = {
+					# has_country_flag = reform_1_pending
+					# has_country_flag = reform_2_pending
+					# has_country_flag = reform_3_pending
+					# has_country_flag = reform_4_pending
+					# has_country_flag = reform_5_pending
+					# has_country_flag = reform_6_pending
+				# }
+			# }
+			# has_global_flag = reform_1_done
+			# has_global_flag = reform_2_done
+			# has_global_flag = reform_3_done
+		# }
+		# allow = {
+			# any_country = {
+				# has_country_modifier = member_of_hansa_ev
+				# NOT = {
+					# has_opinion_modifier = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+				# }
+			# }
+			# treasury = 1500
+			# NOT = { has_country_modifier = recently_passed_reform }
+			# has_country_modifier = leader_of_hansa
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# country_event = {
+					# id = hansa.6
+				# }
+			# }
+			# add_treasury = -1500
+			# set_country_flag = reform_4_pending
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# is_at_war = yes
+			# }
+		# }
+	# }
+	# 4_pass_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_4_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# if = {
+					# limit = { has_country_flag = reform_oppose }
+					# add_opinion = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+					# clr_country_flag = reform_oppose
+				# }
+				# country_event = {
+					# id = hansa.8
+					# days = 2
+				# }
+			# }
+			# add_stability = -1
+			# add_country_modifier = {
+				# name = recently_passed_reform
+				# duration = 10950 # 30 years #Changed as why leave it as days?/Validator was making a fuss about it.
+			# }
+			# clr_country_flag = reform_4_pending
+			# set_global_flag = reform_4_done
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# any_country = {
+					# has_country_modifier = member_of_hansa_ev
+					# has_opinion = {
+						# who = ROOT
+						# value = -150
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 0
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 0
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	# 4_cancel_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_4_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# clr_country_flag = reform_4_pending
+		# }
+		# ai_will_do = {
+			# factor = 0
+			# modifier = {
+				# factor = 1.1
+				# is_at_war = yes
+			# }
+			# modifier = {
+				# factor = 1.1
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	
+	
+	
+	# ########################
+	
+	
+	# 5_leave_empire = {
+		# potential = {
+			# has_country_modifier = member_of_hansa_ev
+			# NOT = { has_global_flag = reform_5_done }
+			# NOT = {
+				# OR = {
+					# has_country_flag = reform_1_pending
+					# has_country_flag = reform_2_pending
+					# has_country_flag = reform_3_pending
+					# has_country_flag = reform_4_pending
+					# has_country_flag = reform_5_pending
+					# has_country_flag = reform_6_pending
+				# }
+			# }
+			# has_global_flag = reform_1_done
+			# has_global_flag = reform_2_done
+			# has_global_flag = reform_3_done
+			# has_global_flag = reform_4_done
+		# }
+		# allow = {
+			# any_country = {
+				# has_country_modifier = member_of_hansa_ev
+				# NOT = {
+					# has_opinion_modifier = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+				# }
+			# }
+			# treasury = 1750
+			# NOT = { has_country_modifier = recently_passed_reform }
+			# has_country_modifier = leader_of_hansa
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# country_event = {
+					# id = hansa.6
+				# }
+			# }
+			# add_treasury = -1750
+			# set_country_flag = reform_5_pending
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# is_at_war = yes
+			# }
+		# }
+	# }
+	# 5_pass_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_5_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# if = {
+					# limit = { has_country_flag = reform_oppose }
+					# add_opinion = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+					# clr_country_flag = reform_oppose
+				# }
+			# }
+			# every_country = {
+				# limit = { has_country_modifier = member_of_hansa_ev }
+				# set_in_empire = no
+			# }
+			# add_stability = -1
+			# add_country_modifier = {
+				# name = recently_passed_reform
+				# duration = 10950 # 30 years
+			# }
+			# clr_country_flag = reform_5_pending
+			# set_global_flag = reform_5_done
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# any_country = {
+					# has_country_modifier = member_of_hansa_ev
+					# has_opinion = {
+						# who = ROOT
+						# value = -150
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 0
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 0
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	# 5_cancel_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_5_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# clr_country_flag = reform_5_pending
+		# }
+		# ai_will_do = {
+			# factor = 0
+			# modifier = {
+				# factor = 1.1
+				# is_at_war = yes
+			# }
+			# modifier = {
+				# factor = 1.1
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	
+	
+	
+	# ########################
+	
+	
+	# 6_unify_hansa = {
+		# potential = {
+			# has_country_modifier = member_of_hansa_ev
+			# NOT = { has_global_flag = reform_6_done }
+			# NOT = {
+				# OR = {
+					# has_country_flag = reform_1_pending
+					# has_country_flag = reform_2_pending
+					# has_country_flag = reform_3_pending
+					# has_country_flag = reform_4_pending
+					# has_country_flag = reform_5_pending
+					# has_country_flag = reform_6_pending
+				# }
+			# }
+			# has_global_flag = reform_1_done
+			# has_global_flag = reform_2_done
+			# has_global_flag = reform_3_done
+			# has_global_flag = reform_4_done
+			# has_global_flag = reform_5_done
+		# }
+		# allow = {
+			# any_country = {
+				# has_country_modifier = member_of_hansa_ev
+				# NOT = {
+					# has_opinion_modifier = {
+						# who = ROOT
+						# modifier = passed_reform_opposed
+					# }
+				# }
+			# }
+			# treasury = 2000
+			# NOT = { has_country_modifier = recently_passed_reform }
+			# has_country_modifier = leader_of_hansa
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# country_event = {
+					# id = hansa.6
+				# }
+			# }
+			# add_treasury = -2000
+			# set_country_flag = reform_6_pending
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# is_at_war = yes
+			# }
+		# }
+	# }
+	# 6_pass_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_6_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# every_country = {
+				# limit = {
+					# has_country_modifier = member_of_hansa_ev
+					# NOT = { has_country_modifier = leader_of_hansa }
+				# }
+				# ROOT = {
+					# inherit = PREV
+				# }
+			# }
+			# add_stability = -1
+			# add_country_modifier = {
+				# name = recently_passed_reform
+				# duration = 10950 # 30 years #I hope this is right, fixed this as it was giving an error
+			# }
+			# clr_country_flag = reform_6_pending
+			# set_global_flag = reform_6_done
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# any_country = {
+					# has_country_modifier = member_of_hansa_ev
+					# has_opinion = {
+						# who = ROOT
+						# value = -150
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 0
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 0
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+	# 6_cancel_reform = {
+		# major = yes
+		# potential = {
+			# has_country_flag = reform_6_pending
+		# }
+		# allow = {
+		
+		# }
+		# effect = {
+			# clr_country_flag = reform_6_pending
+		# }
+		# ai_will_do = {
+			# factor = 0
+			# modifier = {
+				# factor = 1.1
+				# is_at_war = yes
+			# }
+			# modifier = {
+				# factor = 1.1
+				# num_of_rebel_armies = 1
+			# }
+			# modifier = {
+				# factor = 1.1
+				# NOT = { legitimacy = 30 }
+			# }
+		# }
+	# }
+# }

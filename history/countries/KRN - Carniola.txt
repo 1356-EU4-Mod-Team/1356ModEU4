@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = austrian
+religion = catholic
+technology_group = western
+capital = 129 # Krain
+add_accepted_culture = croatian
+historical_friend = HAB
+national_focus = MIL
+
+1342.4.8 = {
+	monarch = {
+		name = "Heinrich II"
+		dynasty = "von Andechs"
+		birth_date = 1307.6.12
+		ADM = 2
+		DIP = 6
+		MIL = 3
+	}
+}

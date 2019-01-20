@@ -1,0 +1,37 @@
+country_decisions = {
+
+	vassalise_holstein = {
+	
+	major = yes
+	
+		potential = {
+			tag = DAN
+			exists = SHL
+			SHL = { ai = yes }
+			owns = 13
+			NOT = { is_year = 1397 }
+			SHL = { is_subject = no }
+			is_subject = no
+		}
+		allow = {
+			marriage_with = SHL
+			alliance_with = SHL
+			is_at_war = no
+			SHL = {
+				is_at_war = no
+				has_opinion = {
+					who = DAN
+					value = 125
+				}
+			}
+		}
+		effect = {
+			vassalize = SHL
+			13 = { cede_province = SHL }
+			SHL = { add_core = 13 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

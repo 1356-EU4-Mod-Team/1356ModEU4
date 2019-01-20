@@ -1,0 +1,235 @@
+# Order here is the priority for taking them, if trigger is true.
+
+CAS = {
+	NOT = { 
+		exists = SPA 
+		exists = CTR 
+		exists = SEV
+		is_year = 1700
+	}
+}
+
+SPA = {
+	NOT = { 
+		exists = CAS
+		exists = CTR 
+		exists = SEV
+		is_year = 1700
+	}
+}
+
+TUR = { 
+	NOT = { 
+		is_year = 1700
+	}
+	is_year = 1370
+}
+
+RUS = {
+	NOT = {
+		exists = MOS
+		exists = NOV
+		exists = GLH
+	}
+}
+
+MOS = {
+	NOT = { 
+		exists = GLH
+		exists = NOV
+		exists = RUS
+	}
+}
+
+GBR = {
+	NOT = { 
+		exists = ENG
+	}
+}
+
+ENG = {
+	NOT = { 
+		exists = GBR
+	}
+}
+
+FRA = { #Change to take into effect after FRA unification
+	is_year = 1428
+}
+
+HAB = { #Change to take into effect after HAB unification
+	always = yes
+}
+
+PRU = {
+	#is_year = 1650
+	always = yes
+}
+
+NED = {
+	always = yes
+}
+
+POR = {
+	NOT = { 
+		is_year = 1700
+	}
+	is_year = 1400
+}
+
+SWE = {
+	NOT = { 
+		is_year = 1700
+		exists = SCA
+	}
+}
+
+PLC = {
+	NOT = { 
+		is_year = 1700
+		exists = POL
+		exists = LIT
+	}
+}
+
+BUR = { #Tweak this to be based off # of provinces?
+	always = yes
+}
+
+DAN = {
+	NOT = {
+		is_year = 1450
+		exists = SCA
+	}
+}
+
+ARA = {
+	is_subject = no
+}
+
+LIT = {
+	NOT = {
+		is_year = 1420
+	}
+}
+
+NOR = {
+	NOT = {
+		is_year = 1387
+		exists = SCA
+	}
+}
+
+POL = {
+	NOT = { 
+		is_year = 1700
+		exists = PLC
+	}
+}
+
+TEU = {
+	NOT = {
+		exists = PRU
+		exists = PLC
+		is_year = 1475
+	}
+}
+
+MNG = {
+	NOT = {
+		exists = QNG
+		exists = MCH
+		is_year = 1700
+	}
+}
+
+VIJ = { 
+	NOT = {
+		is_year = 1405
+	}
+}
+
+SCA = {
+	NOT = {
+		exists = DAN
+		exists = NOR
+		exists = SWE
+	}
+	is_year = 1600
+}
+
+ITA = {
+	always = yes
+}
+
+QNG = {
+	NOT = {
+		exists = MCH
+		exists = MNG
+	}
+}
+
+MCH = {
+	NOT = {
+		exists = QNG
+	}
+}
+
+GLH = {
+	NOT = {
+		exists = CRI
+		exists = KAZ
+		exists = NOG
+		exists = GOL
+	}
+}
+
+RUM = {
+	NOT = {
+		exists = BYZ
+		exists = TUR
+		is_year = 1700
+	}
+	is_year = 1370
+}
+
+TIM = {
+	NOT = {
+		exists = MUG
+		is_year = 1500
+	}
+}
+
+MUG = {
+	NOT = {
+		exists = TIM
+		is_year = 1750
+	}
+	is_year = 1500
+}
+
+USA = {
+	always = yes
+}
+
+HRE = {
+	NOT = {
+		exists = GER
+	}
+}
+
+GER = {
+	NOT = {
+		exists = HRE
+	}
+}
+
+UKR = {
+	NOT = {
+		exists = RUS
+	}
+}
+
+JAP = {
+	is_year = 1650
+}

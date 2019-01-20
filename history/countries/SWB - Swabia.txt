@@ -1,0 +1,47 @@
+government = monarchy
+add_government_reform = german_kingdom
+government_rank = 3
+mercantilism = 10
+technology_group = western
+religion = catholic
+primary_culture = swabian
+culture_group_union = german
+add_army_professionalism = 0.05
+capital = 1876 # Frankfurt
+
+1350.5.1 = {
+	monarch = {
+		name = "Friedrich III"
+		dynasty = "von Staufen"
+		birth_date = 1328.8.20
+		adm = 6
+		dip = 4
+		mil = 5
+	}
+}
+
+1350.5.14 = {
+	heir = {
+		name = "Maximilian"
+		monarch_name = "Maximilian I"
+		dynasty = "von Staufen"
+		birth_date = 1350.5.14
+		death_date = 1421.5.21
+		claim = 100
+		adm = 4
+		dip = 6
+		mil = 4
+	}
+}
+
+1356.1.1 = {
+	leader = {	
+		name = "Ludwig von Schwaben"	
+		type = general	
+		fire = 4	
+		shock = 3	
+		manuever = 4	
+		siege = 3	
+		death_date = 1383.7.23 
+	} 
+}

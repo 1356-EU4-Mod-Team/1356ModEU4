@@ -1,0 +1,55 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 100  145  10 }
+
+historical_idea_groups = {
+	trade_ideas
+	naval_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	east_asian_spearmen
+	eastern_bow
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+}
+
+monarch_names = {
+	"Dewa Ketut #0" = 20
+	"Sri Aji Baturenggong #0" = 20
+	"Dewa Bekung #0" = 20
+	"Anglurah Agung #0" = 20
+	"Dewa Pacekan #0" = 20
+}
+
+leader_names = {
+	Hamengku
+	Agung
+	Slamet
+	Budi
+	Harto
+	Karno
+	Wani
+	Mas
+	Kencono
+	Ratri
+}
+
+ship_names = {
+	Pendet Legong Baris Topeng Barong
+	Kecak Batur Catur Bratan Pohen Lesong
+	Sangyang Batukaru Patas Musi Mesehe
+	Agong Seraya Merbuk Sanglang Kelatakan
+}

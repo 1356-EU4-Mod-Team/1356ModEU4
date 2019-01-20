@@ -1,0 +1,129 @@
+namespace = crb
+
+country_event = {
+	id = crb.1
+	title = crb.1.t
+	desc = crb.1.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2688
+		technology_group = chinese
+		2688 = {
+			religion = sunni
+		}
+		NOT = { religion = sunni }
+		CRB = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = crb.1.a
+			remove_core = 2688
+		2688 = {
+			add_core = CRB
+			add_unrest = 15
+			add_local_autonomy = 50
+		      }
+	        }
+}
+
+country_event = {
+	id = crb.2
+	title = crb.2.t
+	desc = crb.2.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 625
+		technology_group = chinese
+		625 = {
+			religion = sunni
+		}
+		NOT = { religion = sunni }
+		CRB = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = crb.2.a
+			remove_core = 625
+		625 = {
+			add_core = CRB
+			add_unrest = 15
+			add_local_autonomy = 50
+		      }
+	        }
+}
+
+country_event = {
+	id = crb.3
+	title = crb.3.t
+	desc = crb.3.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 625
+		owns = 2688
+		OR = {
+			NOT = { legitimacy = 40 }
+			NOT = { stability = 0 }
+			NOT = { prestige = 0 }
+		}
+		technology_group = chinese
+		is_year = 1450
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = crb.3.a
+
+		2688 = {
+			add_core = CRB
+			change_religion = sunni
+			infantry = CRB infantry = CRB infantry = CRB infantry = CRB infantry = CRB infantry = CRB infantry = CRB cavalry = CRB cavalry = CRB
+		}
+		625 = {
+			add_core = CRB
+			change_religion = sunni
+		}
+		release = CRB
+		declare_war = CRB
+		add_prestige = -20
+		add_stability = -1
+		random_owned_province = {
+			limit = {
+				NOT = {
+					OR = {
+						province_id = 625
+						province_id = 2688
+					}
+				}
+			}
+			create_revolt = 1
+		}
+		add_country_modifier = {
+			name = "disorder"
+			duration = 5000
+		}
+		CRB = {
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 5000
+			}
+		}
+	}
+}

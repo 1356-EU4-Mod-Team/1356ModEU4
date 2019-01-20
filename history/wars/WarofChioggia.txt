@@ -1,0 +1,20 @@
+# War of Chioggia
+# 2014.3.7 Created war
+
+name = "War of Chioggia"
+#casus_belli = cb_trade_war
+war_goal = {
+	type = superiority_trade_mutual
+	casus_belli = cb_trade_war
+}
+
+1378.5.30 = {
+	add_attacker = GEN
+	add_defender = VEN
+}
+
+# Peace and end of war
+1381.8.8 = {
+	rem_attacker = GEN
+	rem_defender = VEN
+}

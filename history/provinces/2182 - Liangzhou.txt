@@ -1,0 +1,31 @@
+# 2182 - Liangzhou (1356)
+# Change: YUA/religion
+
+owner = YUA
+controller = YUA
+culture = xibei
+religion = vajrayana
+capital = "Liangzhou"
+trade_goods = livestock
+hre = no
+base_tax = 3 
+
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = YUA
+add_core = CSH
+
+discovered_by = chinese
+discovered_by = nomad_group
+
+1388.11.1 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA religion = confucianism }
+1644.1.1  = {	owner = CSH
+		controller = CSH
+		add_core = CSH
+	    } # Li Zicheng's Shun empire
+1645.2.1  = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+	    }
+1682.1.1  = { discovered_by = SPA } # Ferdinand Verbiest

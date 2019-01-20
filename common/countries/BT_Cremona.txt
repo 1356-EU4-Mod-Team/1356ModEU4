@@ -1,0 +1,169 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 228  122  119 }
+
+historical_idea_groups = {
+	innovativeness_ideas
+	trade_ideas
+	defensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	offensive_ideas
+	economic_ideas
+	maritime_ideas	
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	spanish_tercio
+	austrian_tercio
+	austrian_grenzer
+	french_dragoon
+	french_bluecoat
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Guidobaldo #0" = 10
+	"Federigo #0" = 10
+	"Giovanni #0" = 10
+	"Galeazzo #0" = 10
+	"Costanzo #0" = 10
+	"Guglielmo #0" = 10
+	"Antonio #0" = 10
+	"Braccio #0" = 10
+	"Guidantonio #0" = 10
+	"Lorenzo #0" = 10
+	"Oddantonio #0" = 10
+	"Caterina #0" = -10
+	"Cesare #0" = 10
+	"Giovanna #0" = -1
+	"Giulio #0" = 10
+	"Giulio Cesare #0" = 10
+	"Antonio Alberico #0" = 10
+	"Alessandro #0" = 10
+	"Girolamo #0" = 10
+	"Pandolfo #0" = 10
+	"Domenico #0" = 10
+	"Sigismondo #0" = 10
+	"Antonio Maria #0" = 10
+	"Roberto #0" = 10
+	"Corrado #0" = 10
+	"Lucrezia #0" = -1
+	"Isotta #0" = -1
+	"Astorgio #0" = 1
+	"Catalano #0" = 1
+	"Enrichetto #0" = 1
+	"Carlo #0" = 1
+	"Galeotto #0" = 1
+	"Guido #0" = 1
+	"Ugo #0" = 1
+	"Francesco #0" = 1
+	"Pino #0" = 1
+	"Sinibaldo #0" = 1
+	"Cecco #0" = 1
+	"Honore #0" = 1
+	"Aldo #0" = 1
+	"Annibale #0" = 1
+	"Sallustio #0" = 1
+	"Alfonso #0" = 1
+	"Baldovino #0" = 1
+	"Cirillo #0" = 1
+	"Cosimo #0" = 1
+	"Damiano #0" = 1
+	"Egidio #0" = 1
+	"Franco #0" = 1
+	"Giambattista #0" = 1
+	"Giuseppe #0" = 1
+	"Ippolito #0" = 1
+	"Leandro #0" = 1
+	"Marzio #0" = 1
+	"Ovidio #0" = 1
+	"Paolo #0" = 1
+	"Pietro #0" = 1
+	"Prospero #0" = 1
+	"Rafaello #0" = 1
+	"Scipione #0" = 1
+	"Teodosio #0" = 1
+	"Vittorio #0" = 1
+	"Andrea #0" = 1
+	"Ercole #0" = 1
+	"Lunardino #0" = 1
+	"Gozio #0" = 1
+	"Maxio #0" = 1
+	"Giangio #0" = 1
+	"Paolino #0" = 1
+	"Samperino #0" = 1
+	"Vita #0" = 1
+	"Simone #0" = 1
+	"Marino #0" = 1
+	"Niccolò #0" = 1
+	"Bettino #0" = 1
+	"Michelino #0" = 1
+	"Cristofaro #0" = 1
+	"Sante #0" = 1
+	"Luigi #0" = 10
+	"Benetino #0" = 1
+	"Tommaso #0" = 1
+	"Menghino #0" = 1
+	"Bartolomeo #0" = 1
+	"Giacomo #0" = 10
+	"Bianco #0" = 1
+	"Pasquino #0" = 1
+
+	"Elsa #0" = -1
+	"Giulia #0" = -1
+}
+
+leader_names = {
+	Albani Aldobrandini Altieri Barberini Barbo Boncompagni Carpegna
+	Borghese Borgia Braschi "di Campofregoso" Carafa Castagna Manfredi
+	Cervini Chiaramonti Chigi Colonna Condulmeri Conti Corsini Cybo
+	Doria-Landi Doria-Pamphili "di Farnese" "Gaetani dell'Aquila"
+	Gangagnelli Ghislieri Gonzaga Lambertini Lante Ludovisi "de' Medici"
+	Melzi "Melzi de Rimini" "del Monte" "di Montefeltro" Odescalchi Orsini
+	Ottoboni Pallavicino Pamphili Parentucelli Peretti Piccolomini Pignatelli
+	Prignano Rezzonico Rospigliosi "della Rovere" Sfondrati "da Varano"
+	Sforza Malatesta Baglioni "degli Atti" Belluzzi Ordelaffi Rangoni
+	"degli Albizzi" Allori "d'Appiani d'Aragona" "d'Asburgo"
+	Barberini Bartolini Benciveni Bizzelli Boncompagni
+	Botta-Adorno Buontalenti Buti Butteri "di Campofregoso"
+	Cercignani Chiastavelli Chigi Cybo-Malaspina
+	"di Farnese" Gori Grimaldi "Grimaldi di Busca" Lanzi Lessi
+	Ludovisi Malaspina Mancinetti "del Moro" Nasini
+	Pico Pierallini Pieroni Piombante Pontelli
+	Rivani Rospigliosi "del Rosso" Savaranola Soderini Tempesta
+	Terreni Tonelli Traballesi Ulivelli Vasari Zucchi
+	"da Correggio" Torelli "da Sesso" Bentivoglio "del Carretto"
+	Doria Visconti "de Sacco"
+}
+
+ship_names = {
+	Acqualagna Auditore Autonomia
+	Colbordolo Colonna "Enrico Dandolo"
+	Federico Fermignano Crociato
+	Ghibellini Guelphi "Papa Urbano II"
+	"Isola del Piano" Lombardia Emilia Romagna
+	Veneto Liguria Piemonte Aosta Friuli
+	Lazio Marche Trentino Toscana Umbria
+	Lunano Mondaino Oddantonio Peglio "Sant'Angelo"
+	"San Crescentino" Tavoleto "San Pietro" "Sant'Obizio"
+	"San Pietro da Verona" "Zita di Lucca"
+	"San Giovanni del Bastone" "Bona di Pisa"
+	"Raimondo Zanfogni" "Galgano Guidotti"
+	Teodorico Atalarico Teodato Vitige
+	Ildibado Erarico Totila Theia Desiderio
+}
+
+army_names = {
+	"Armata di $PROVINCE$"
+}

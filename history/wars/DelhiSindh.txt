@@ -1,0 +1,18 @@
+name = "Delhian Reconquest of Sindh"
+#casus_belli = cb_conquest
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 2072
+}
+
+1365.1.1 = {
+	add_attacker = DLH
+	add_defender = SND
+}
+
+# Peace
+1367.1.1 = {
+	rem_attacker = DLH
+	rem_defender = SND
+}

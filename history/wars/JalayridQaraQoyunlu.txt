@@ -1,0 +1,17 @@
+name = "Jalayrid Invasion of Azerbaijan"
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+	province = 416
+}
+
+1410.1.1 = {
+	add_attacker = JLR
+	add_defender = QAR
+}
+
+#Peace
+1411.7.1 = {
+	rem_attacker = JLR
+	rem_defender = QAR
+}

@@ -1,0 +1,14 @@
+bookmark = 
+{
+	name = "QOTN_NAME"
+	desc = "QOTN_DESC"
+	date = 1387.8.24
+	
+	center = 12
+	
+	country = DAN
+	country = SWE
+	country = NOR
+	
+	easy_country = DAN
+}

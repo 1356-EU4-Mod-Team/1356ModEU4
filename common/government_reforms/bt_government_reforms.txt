@@ -1,0 +1,54 @@
+# New with Barbarossas Throne
+
+german_kingdom = {
+	
+	#color = { 179 120 100 }
+	
+	icon = "crown"
+	allow_normal_conversion = no
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	fixed_rank = 3
+	
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	
+	modifiers = {
+		max_states = 2
+		global_autonomy = -0.10
+		war_exhaustion = -0.02
+		unjustified_demands = -0.1
+		num_accepted_cultures = 2
+	}
+}
+
+populist_dictatorship = {
+
+	allow_normal_conversion = no
+	legacy_government = yes
+	dictatorship = yes
+	lock_level_when_selected = yes
+	icon = "parliament_hall"
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+
+	modifiers = {
+		unjustified_demands = -0.1
+		war_exhaustion = -0.025
+		land_morale = 0.15
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	has_term_election = no
+}

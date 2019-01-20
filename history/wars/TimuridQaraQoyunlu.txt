@@ -1,0 +1,19 @@
+name = "Timurid Invasion of Azerbaijan"
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+	province = 416
+}
+
+1428.7.1 = {
+	add_attacker = TIM
+	add_defender = QAR
+	add_defender = IRQ
+}
+
+# Peace
+1431.7.1 = {
+	rem_attacker = TIM
+	rem_defender = QAR
+	rem_defender = IRQ
+}

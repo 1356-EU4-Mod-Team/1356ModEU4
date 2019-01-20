@@ -1,0 +1,35 @@
+government = tribal
+add_government_reform = tribal_federation_ilkhan_reform
+technology_group = muslim
+primary_culture = azerbaijani
+religion = shiite
+capital = 416	# Tabriz
+religious_school = zaidi_school
+
+1343.1.1 = {
+	monarch = {
+		name = "Malek Ashraf"
+		dynasty = "Chupanid"
+		birth_date = 1330.1.1
+		culture = mongol
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	add_piety = 0.2
+}
+
+1350.1.1 = { 
+	heir = {
+		name = "Temürtas"
+		monarch_name = "Temürtas I"
+		dynasty = "Chupanid"
+		birth_date = 1350.1.1
+		death_date = 1360.1.1
+		claim = 95
+		culture = mongol
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

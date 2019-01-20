@@ -1,0 +1,87 @@
+royal_marriage = {
+	first = SWB
+	second = BAV
+	start_date = 1348.4.14
+	end_date = 1356.12.25
+}
+
+union = {
+	first = SWB
+	second = SIC
+	start_date = 1194.12.25
+	end_date = 1356.12.25
+}
+
+union = {
+	first = SWB
+	second = PBG
+	start_date = 1156.6.17
+	end_date = 1356.12.25
+}
+
+march = {
+	first = SWB
+	second = TEU
+	start_date = 1300.5.1
+	end_date = 1356.12.25
+}
+
+royal_marriage = {
+	first = HAB
+	second = BAV
+	start_date = 1352.8.12
+	end_date = 1356.12.25
+}
+
+royal_marriage = {
+	first = FRC
+	second = THU
+	start_date = 1347.5.25
+	end_date = 1356.12.25
+}
+
+alliance = {
+	first = BRA
+	second = BAV
+	start_date = 1344.6.15
+	end_date = 1356.12.25
+}
+
+royal_marriage = {
+	first = BRG
+	second = KLE
+	start_date = 1332.6.24
+	end_date = 1356.12.25
+}
+
+# Austria / Alpine
+
+union = {
+	first = HAB
+	second = STY
+	start_date = 1324.10.5
+	end_date = 1356.12.25
+}
+
+royal_marriage = {
+	first = CTH
+	second = KRN
+	start_date = 1300.1.1
+	end_date = 1356.12.25
+}
+
+# German-English-Alliance
+
+royal_marriage = {
+	first = SWB
+	second = ENG
+	start_date = 1204.1.1
+	end_date = 1356.12.25
+}
+
+alliance = {
+	first = SWB
+	second = ENG
+	start_date = 1254.1.1
+	end_date = 1356.12.25
+}

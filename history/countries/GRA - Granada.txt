@@ -1,0 +1,356 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = moorish
+add_accepted_culture = andalucian
+religion = sunni
+add_accepted_culture = berber
+technology_group = muslim
+capital = 223	# Granada
+government_rank = 1
+religious_school = maliki_school
+
+1333.1.1 = {
+	monarch = {
+		name = "Yûsuf I"
+		dynasty = "Nasrid"
+		birth_date = 1318.6.29
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+	add_piety = -0.3
+}
+
+1338.1.4 = {
+	heir = {
+		name = "Muhammad"
+		monarch_name = "Muhammad V"
+		dynasty = "Nasrid"
+		birth_date = 1338.1.4
+		death_date = 1391.1.16
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1354.10.19 = {
+	monarch = {
+		name = "Muhammad V"
+		dynasty = "Nasrid"
+		birth_date = 1338.1.4
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1359.8.21 = { # revolutions to depose Muhammad V with the brothers (Isma'il and Muhammad)
+	monarch = {
+		name = "Isma'il II"
+		dynasty = "Nasrid"
+		birth_date = 1338.10.2
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1360.6.24 = { # Muhammad kills his brother Isma'il II
+	monarch = {
+		name = "Muhammad VI"
+		dynasty = "Nasrid"
+		birth_date = 1332.4.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1362.4.25 = { # Restored to power, after Peter II of Castille kills Muhammad VI
+	monarch = {
+		name = "Muhammad V"
+		dynasty = "Nasrid"
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1391.1.16 = {  
+	monarch = {
+		name = "Yûsuf II"
+		dynasty = "Nasrid"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+	heir = {
+		name = "Yûsuf"
+		monarch_name = "Yûsuf III"
+		dynasty = "Nasrid"
+		birth_date = 1376.1.1
+		death_date = 1417.11.9
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1392.10.3 = { # usurped the throne against his brother Yusuf III
+	monarch = {
+		name = "Muhammad VII"
+		dynasty = "Nasrid"
+		birth_date = 1370.5.13
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1392.10.3 = {
+	heir = {
+		name = "Yûsuf"
+		monarch_name = "Yûsuf III"
+		dynasty = "Nasrid"
+		birth_date = 1376.1.1
+		death_date = 1417.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1408.5.13 = { # the legal heir takes the throne after his brother Muhammad VII dies
+	monarch = {
+		name = "Yûsuf III"
+		dynasty = "Nasrid"
+		birth_date = 1376.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1409.1.1 = {
+	heir = {
+		name = "Muhammad"
+		monarch_name = "Muhammad VIII"
+		dynasty = "Nasrid"
+		birth_date = 1409.1.1
+		death_date = 1431.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}
+
+1417.11.9 = {
+	monarch = {
+		name = "Muhammad VIII"
+		dynasty = "Nasrid"
+		birth_date = 1409.1.1
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}
+
+1419.1.1 = { # civil war - 1419 muhammad VIII is arrested
+	monarch = {
+		name = "Muhammad IX"
+		dynasty = "Nasrid"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1427.1.31 = { # end of civil war, muhammad VIII goes back to throne
+	monarch = {
+		name = "Muhammad VIII"
+		dynasty = "Nasrid"
+		birth_date = 1409.1.1
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}
+
+1429.12.31 = { # muhammad VIII gets arrested and is executed
+	monarch = {
+		name = "Muhammad IX"
+		dynasty = "Nasrid"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1432.1.1 = { # placed in throne from the king of castille, granada is vassal of castille
+	monarch = {
+		name = "Yûsuf IV"
+		dynasty = "Nasrid"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1432.4.1 = { # yusuf IV is overthrown, vassalage of granada ends
+	monarch = {
+		name = "Muhammad IX"
+		dynasty = "Nasrid"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1445.1.1 = { # civil war, Muhammad X usurps the throne
+	monarch = { 
+		name = "Muhammad X"
+		dynasty = "Nasrid"
+		birth_date = 1415.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1445.6.1 = { # civil war, Yusuf V usurps the throne
+	monarch = { 
+		name = "Yûsuf V"
+		dynasty = "Nasrid"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1446.1.1 = { # # civil war, Muhammad X usurps the throne once again
+	monarch = {
+		name = "Muhammad X"
+		dynasty = "Nasrid"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1448.1.1 = { # Muhammad X is executed, Muhammad IX recovers the throne
+	monarch = {
+		name = "Muhammad IX"
+		dynasty = "Nasrid"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1454.1.1 = {
+	monarch = {
+		name = "Muhammad XI"
+		dynasty = "Nasrid"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1455.3.1 = { # Sa'd I overthrows Muhammad XI
+	monarch = {
+		name = "Sa'd I Ciriza"
+		dynasty = "Nasrid"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1462.10.1 = { # Yusuf V usurps the throne
+	monarch = { 
+		name = "Yûsuf V"
+		dynasty = "Nasrid"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1463.6.1 = { # Sa'd I Ciriza recovers the throne
+	monarch = {
+		name = "Sa'd I Ciriza"
+		dynasty = "Nasrid"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1464.8.1 = { # Alí I Muley Hacén usurps the throne from father Sa'd I Ciriza
+	monarch = {
+		name = "Alí I Muley Hacén"
+		dynasty = "Nasrid"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1470.1.1 = { leader = {	name = "Ibrahim Ali al-Attar"	type = general	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1483.1.1 } }
+
+1482.7.15 = { # interregnum, elected by a clan
+	monarch = {
+		name = "Muhammad XII Boabdil"
+		dynasty = "Nasrid"
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1483.10.1 = { # Alí I Muley Hacén recovers the throne
+	monarch = {
+		name = "Ali I muley Hacén"
+		dynasty = "Nasrid"
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1485.1.6 = {
+	monarch = {
+		name = "Muhammad XIII"
+		dynasty = "Nasrid"
+		adm = 0
+		dip = 0
+		mil = 0
+		 leader = { name = "Muhammad El Zagal"	type = general fire = 2	shock = 3	manuever = 3	siege = 0 }
+	}
+}
+
+1487.9.1 = { # Muhammad XII Boabdil gets the throne after an arragement with Castille
+	monarch = {
+		name = "Muhammad XII Boabdil"
+		dynasty = "Nasrid"
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1568.1.1 = { government = monarchy
+add_government_reform = autocracy_reform }
+
+
+1724.1.20 = { set_legacy_government = administrative_monarchy }
+
+1759.8.12 = { government = monarchy
+add_government_reform = autocracy_reform }
+

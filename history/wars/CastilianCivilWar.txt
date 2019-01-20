@@ -1,0 +1,27 @@
+# Audax Validator "!" Ignore_ALL
+# Castilian Civil War
+#
+#name = "Castilian Civil War"
+#casus_belli = cb_insult
+#war_goal = {
+#	type = take_capital_throne
+#	casus_belli = cb_claim_throne
+#        tag = CAS
+#}
+#
+#1355.1.1 = { # Start of Castillian Civil War
+#	add_attacker = CTR
+#	add_attacker = ARA
+#	add_defender = CAS
+#	add_defender = POR
+#	add_defender = GRA
+#}
+
+# End of war
+#1369.3.23 = { # Death of Pedro II
+#	rem_attacker = CTR
+#	rem_attacker = ARA
+#	rem_defender = CAS
+#	rem_defender = POR
+#   rem_defender = GRA
+#}

@@ -1,0 +1,29 @@
+# 469 - Ryn (1356)
+# Changes: GOL
+
+owner = GLH
+controller = GLH
+culture = nogaybak
+religion = sunni
+capital = "Ryn"
+trade_goods = fish
+hre = no
+base_tax = 1 
+
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = GLH
+add_core = NOG
+
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+1391.7.1  = { owner = NOG controller = NOG remove_core = GLH }
+1634.1.1  = {
+ owner = RUS
+ controller = RUS add_core = RUS  remove_core = NOG culture = khazak } # Kalmuk invasion and Russian annexation
+1773.9.13 = { revolt = { type = anti_tax_rebels size = 1 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+1775.2.1  = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured

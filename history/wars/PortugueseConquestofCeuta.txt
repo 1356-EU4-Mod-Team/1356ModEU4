@@ -1,0 +1,39 @@
+name = "Portuguese Conquest of Ceuta"
+#casus_belli = cb_conquest
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1751 # Ceuta
+}
+
+1415.8.21 = {
+	add_attacker = POR
+	add_defender = MOR
+}
+
+1415.8.21 = {
+	battle = {
+		name = "Ceuta"
+		location = 1751
+		attacker = {
+			commander = "João I"	# João I
+			infantry = 14000
+			cavalry = 6000
+			losses = 1	# percent
+			country = POR
+		}
+		defender = {
+			commander = "Ben Salah"	# Ben Salah
+			infantry = 5000
+			losses = 90	# percent
+			country = MOR
+		}
+		result = yes
+	}
+}
+
+#Peace and end of war
+1415.9.1 = {
+	rem_attacker = POR
+	rem_defender = MOR
+}

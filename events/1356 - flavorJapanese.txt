@@ -1,0 +1,25 @@
+namespace = kanno
+
+country_event = {
+	id = kanno.1
+	title = kanno.1.t
+	desc = kanno.1.d
+	picture = CIVIL_WAR_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		is_subject = no
+		is_at_war = yes
+		NOT = { is_year = 1360 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = kanno.1.a
+		1832 = { infantry = ROOT infantry = ROOT infantry = ROOT infantry = ROOT infantry = ROOT infantry = ROOT cavalry = ROOT cavalry = ROOT }
+	}
+}

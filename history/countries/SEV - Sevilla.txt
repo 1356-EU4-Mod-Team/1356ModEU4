@@ -1,0 +1,51 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+primary_culture = castillian
+add_accepted_culture = andalucian
+add_accepted_culture = leonese
+religion = catholic
+technology_group = western
+historical_friend = ARA
+historical_rival = CAS
+capital = 219 # Toledo
+national_focus = MIL
+
+1350.3.26 = {
+	monarch = {
+		name = "Enrique II"
+		dynasty = "de Trastámara"
+		birth_date = 1334.1.13
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1350.7.27 = {
+	queen = {
+		country_of_origin = CAS
+		name = "Juana Manuel"
+		dynasty = "de Borgoña-Ivrea"
+		birth_date = 1339.1.1
+		death_date = 1381.3.27
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1358.8.24 = {
+	heir = {
+		name = "Juan"
+		monarch_name = "Juan I"
+		dynasty = "de Trastámara"
+		birth_date = 1358.8.24
+		death_date = 1390.10.9
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

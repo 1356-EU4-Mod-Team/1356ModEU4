@@ -1,0 +1,20 @@
+#Timur
+kurtid_conquest = {
+
+}
+
+sabardarid_conquest = {
+
+}
+
+mihrabanid_conquest = {
+
+}
+
+muzafarrid_conquest = {
+
+}
+
+injuid_conquest = {
+
+}

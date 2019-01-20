@@ -1,0 +1,155 @@
+#Scandinavia
+ORK = "countries/Orkney.txt"
+SKN = "countries/Skane.txt"
+#SAP = "countries/Sapmi.txt" #WE HAD ONE IN VANILLA ALREADY
+
+#Balkans
+DOB = "countries/Dobruja.txt"
+VID = "countries/Vidin.txt"
+TES = "countries/Thessaly.txt"
+MAC = "countries/Macedonia.txt"
+CPP = "countries/Cappadocia.txt"
+
+#British Isles 
+YRK = "countries/York.txt"
+LNC = "countries/Lancaster.txt"
+
+#Colonies
+
+#Poland-Hungary-Lithuania
+CUM = "countries/Cumania.txt"
+KOG = "countries/Konigsberg.txt"
+LUS = "countries/Lusatia.txt"
+
+#France 
+PBG = "countries/Palatinate of Burgundy.txt"
+ANJ = "countries/Anjou.txt"
+MNF = "countries/Monfortreval.txt"
+BLS = "countries/Blois.txt"
+FOZ = "countries/Forez.txt"
+POU = "countries/Poitou.txt"
+AQT = "countries/Aquitaine.txt"
+ARE = "countries/Arles.txt"
+LOT = "countries/Lotharingia.txt"
+VLS = "countries/Valois.txt"
+NCH = "countries/CharlamagneEmpire.txt"
+OCC = "countries/Occitania.txt"
+
+	
+#HRE
+GOR = "countries/Gorizia.txt"
+BRG = "countries/Berg.txt"
+OST = "countries/Osterland.txt" #Covered in BT
+FRB = "countries/Freiburg.txt"
+THG = "countries/Thurgau.txt"
+WLI = "countries/Wallis.txt"
+RAE = "countries/Raetia.txt"
+#SWB = "countries/Swabia.txt" #Covered in BT
+ZUR = "countries/Zurich.txt"
+BRN = "countries/Bern.txt"
+VAU = "countries/Vaud.txt"
+RHI = "countries/Rhineland.txt"
+
+	
+#Spain
+CTR = "countries/Trastamara.txt"
+SEV = "countries/Sevilla.txt"
+
+#Italy
+VRN = "countries/Verona.txt"
+
+
+#Low Countries
+ARS = "countries/Artois.txt"
+RET = "countries/Rethel.txt"
+LOO = "countries/Loon.txt"
+WOO = "countries/Wallonia.txt"
+
+#Russia 
+GLY = "countries/Galich.txt"
+MRM = "countries/Murom.txt"
+ING = "countries/Ingria.txt"
+
+#Arabia	
+
+#Middle East
+ALX = "countries/Alexandria.txt"
+ASY = "countries/Assyria.txt"
+JLR = "countries/Jalayirid.txt"
+QON = "countries/Qoyunlu.txt"
+
+		
+#Asia Minor		
+CIC = "countries/Cilicia.txt"
+CNI = "countries/Canik.txt"
+HMD = "countries/Hamid.txt"
+KRS = "countries/Karasid.txt"
+TEK = "countries/Teke.txt"
+
+#Levant
+ATO = "countries/Antioch.txt"
+EDE = "countries/Edessa.txt"
+TPO = "countries/CrusaderTripoli.txt"
+MRO = "countries/Maronite.txt"
+	
+#Maghreb
+
+
+#Central Asia
+WHI = "countries/White Horde.txt"
+
+#Persia	
+CHB = "countries/Chobanids.txt"
+KHC = "countries/Khachen.txt"
+MUZ = "countries/Muzaffarids.txt"
+PAD = "countries/Paduspanid.txt"
+SAB = "countries/Sarbadarid.txt"
+KRT = "countries/Kurtid.txt"
+INT = "countries/Injuid.txt"
+MIH = "countries/Mihrabanid.txt"
+TPM = "countries/TimuridEmpireAbsolute.txt"
+
+#North America
+
+#Central America
+
+#South America
+SCN = "countries/Sican.txt"
+
+#Africa
+NRI ="countries/Nri.txt"
+
+#Far East
+SRI = "countries/Srivijaya.txt"
+SDN = "countries/Sukadana.txt"
+LAM = "countries/Lampung.txt"
+MGM = "countries/MongMao.txt"
+MHA = "countries/Minahasa.txt"
+TOL = "countries/Tolaki.txt"
+SED = "countries/Sedu.txt"
+SAM = "countries/Sampit.txt"
+PIN = "countries/Pinya.txt"
+SAG = "countries/Sagaing.txt"
+KEN = "countries/Kengtung.txt"
+HKA = "countries/Hkamti Long.txt"
+SIN = "countries/Singapura.txt"
+LMR = "countries/Lamuri.txt"
+HRU = "countries/Haru.txt"
+HTR = "countries/Hatorusan.txt"
+ROK = "countries/Rokan.txt"
+IND = "countries/Indragiri.txt"
+PAH = "countries/Pahang.txt"
+TDG = "countries/Tidung.txt"
+MEL = "countries/Melanau.txt"
+BEU = "countries/Berau.txt"
+
+#Japan
+SCJ = "countries/SouthCourt.txt"
+
+#India
+MND = "countries/Mandla.txt"
+DEO = "countries/Deogarh.txt"
+SIR = "countries/Sirpur.txt"
+
+#China & Korea
+GYO = "countries/Goryeo.txt"

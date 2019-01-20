@@ -1,0 +1,95 @@
+country_decisions = {
+
+	persian_timurid_nation = {
+		major = yes
+		potential = {
+			tag = TIM
+			government_rank = 3
+			NOT = { has_country_flag = formed_persia_flag }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 414		# Hamadan
+				province_id = 429		# Isfahan
+				province_id = 433		# Yazd
+				province_id = 2213		# Qom
+				province_id = 2215		# Qazvin
+				AND = {
+					province_id = 426
+					ROOT = { NOT = { owns_core_province = 2218 } }
+				}
+				AND = {
+					province_id = 2218
+					ROOT = { NOT = { owns_core_province = 426 } }
+				}
+				AND = {
+					province_id = 416
+					ROOT = { NOT = { owns_core_province = 432 } }
+					ROOT = { NOT = { owns_core_province = 2221 } }
+				}
+				AND = {
+					province_id = 432
+					ROOT = { NOT = { owns_core_province = 416 } }
+					ROOT = { NOT = { owns_core_province = 2221 } }
+				}
+				AND = {
+					province_id = 2221
+					ROOT = { NOT = { owns_core_province = 416 } }
+					ROOT = { NOT = { owns_core_province = 432 } }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			is_tribal = no
+			tag = TIM
+			is_year = 1610
+			government_rank = 3
+		}
+		effect = {
+			change_tag = TPM
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					government = monarchy
+				}
+				change_government = monarchy
+				set_legacy_government = timurid_government
+				add_government_reform = timurid_government_reform
+				add_government_reform = political_absolutism_reform
+			}
+			persia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = TPM
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_absolutism = 10
+			if = {
+				limit = {
+					NOT = { primary_culture = persian }
+				}
+				change_primary_culture = persian
+			}
+			set_country_flag = formed_persia_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

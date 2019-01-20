@@ -1,0 +1,26 @@
+name = "Timurid Invasion of Iraq"
+#casus_belli = cb_conquest
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+	province = 410
+}
+
+1401.1.1 = {
+	add_attacker = TIM
+	add_attacker = CIR
+	add_attacker = SND
+	add_defender = JLR
+	add_defender = MAM
+	add_defender = HED
+}
+
+# Peace
+1401.7.1 = {
+	rem_attacker = TIM
+	rem_attacker = CIR
+	rem_attacker = SND
+	rem_defender = JLR
+	rem_defender = MAM
+	rem_defender = HED
+}

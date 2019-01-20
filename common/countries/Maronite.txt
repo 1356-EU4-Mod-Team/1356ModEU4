@@ -1,0 +1,39 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 232  147  97 }
+
+monarch_names = {
+	"Abdmelqart #1" = 80
+	"Germelqart #1" = 80
+	"Hannibal #1" = 80
+}
+
+
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	innovativeness_ideas
+	economic_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}

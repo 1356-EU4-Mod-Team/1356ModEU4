@@ -1,0 +1,55 @@
+# For specific government types
+# Will pick the first valid one it finds in list
+
+egyptian_nation_non_muslim = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+	
+	ruler_male = {
+		1 = PHARAOH
+		2 = PHARAOH
+		3 = GREAT_PHARAOH
+	}
+	
+	ruler_female = {
+		1 = PHARAOH
+		2 = PHARAOH
+		3 = GREAT_PHARAOH
+	}
+	
+	consort_male = {
+		1 = GREAT_HUSBAND
+		2 = GREAT_HUSBAND
+		3 = GREAT_HUSBAND
+	}
+
+	consort_female = {
+		1 = GREAT_WIFE
+		2 = GREAT_WIFE
+		3 = GREAT_WIFE
+	}
+	
+	heir_male = {
+		1 = GREAT_HEIR
+		2 = GREAT_HEIR
+		3 = GREAT_HEIR
+	}
+
+	heir_female = {
+		1 = GREAT_HEIR_FEMALE
+		2 = GREAT_HEIR_FEMALE
+		3 = GREAT_HEIR_FEMALE
+	}
+	
+	trigger = {
+		tag = EGY
+		primary_culture = old_egyptian_mod
+		OR = {
+			religious_group = pagan
+			religious_group = christian
+		}
+	}
+}

@@ -1,0 +1,234 @@
+country_decisions = {
+	
+	swiss_nation_mil = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = swiss
+				tag = WLI
+				tag = ZUR
+				tag = THG
+				tag = RAE
+				tag = BRN
+			}
+			NOT = { exists = SWI }
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1867
+				province_id = 1871
+				province_id = 165
+				province_id = 1869
+				province_id = 166
+				province_id = 1870
+				province_id = 1873
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			adm_tech = 12
+			owns_core_province = 1867
+			owns_core_province = 1871
+			owns_core_province = 165
+			owns_core_province = 1869
+			owns_core_province = 166
+			owns_core_province = 1870
+			owns_core_province = 1873
+		}
+		effect = {
+			change_tag = SWI
+			swap_non_generic_missions = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_prestige = 15
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			#limit = { #This doesn't work, and should be set to a republic anyways.
+			#	if = {
+			#		NOT = { government = monarchy }
+			#	}
+			#	change_government = monarchy
+			#}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	swiss_nation_dip_ = {
+		major = yes
+		potential = {
+			OR = {
+				tag = WLI
+				tag = ZUR
+				tag = THG
+				tag = RAE
+				tag = BRN
+			}
+			NOT = { exists = SWI }
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1867
+				province_id = 1871
+				province_id = 165
+				province_id = 1869
+				province_id = 166
+				province_id = 1870
+				province_id = 1873
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			adm_tech = 12
+			custom_trigger_tooltip = { #Copy Pasted the Spanish Diplo bit of this, as I didnt know how to do it. Should work.
+				tooltip = forming_swiss_diplomatically_tooltip
+				OR = {
+					AND = {
+						tag = ZUR
+						BRN = {	is_subject_of = ZUR	}
+						WLI = {	is_subject_of = ZUR	}
+						THG = {	is_subject_of = ZUR	}
+						RAE = {	is_subject_of = ZUR	}
+					}
+					AND = {
+						tag = BRN
+						ZUR = {	is_subject_of = BRN	}
+						WLI = {	is_subject_of = BRN	}
+						THG = {	is_subject_of = BRN	}
+						RAE = {	is_subject_of = BRN	}
+					}
+					AND = {
+						tag = WLI
+						ZUR = {	is_subject_of = WLI	}
+						BRN = {	is_subject_of = WLI	}
+						THG = {	is_subject_of = WLI	}
+						RAE = {	is_subject_of = WLI	}
+					}
+					AND = {
+						tag = THG
+						ZUR = {	is_subject_of = THG	}
+						WLI = {	is_subject_of = THG	}
+						BRN = {	is_subject_of = THG	}
+						RAE = {	is_subject_of = THG	}
+					}
+					AND = {
+						tag = RAE
+						ZUR = {	is_subject_of = RAE	}
+						WLI = {	is_subject_of = RAE	}
+						THG = {	is_subject_of = RAE	}
+						BRN = {	is_subject_of = RAE	}
+					}
+				}
+			}
+			OR = { #Keeps the tags below 4 provinces as subjects, also taken from Spain.
+				AND = { #ZUR
+					tag = ZUR
+					BRN = {
+						NOT = { num_of_cities = 4 } 
+					}
+					WLI = {
+						NOT = { num_of_cities = 4 } 
+					}
+					THG = {
+						NOT = { num_of_cities = 4 } 
+					}
+					RAE = {
+						NOT = { num_of_cities = 4 } 
+					}
+				}
+				AND = { #BRN
+					tag = BRN
+					ZUR = {
+						NOT = { num_of_cities = 4 } 
+					}
+					WLI = {
+						NOT = { num_of_cities = 4 } 
+					}
+					THG = {
+						NOT = { num_of_cities = 4 } 
+					}
+					RAE = {
+						NOT = { num_of_cities = 4 } 
+					}
+				}
+				AND = { #WLI
+					tag = WLI
+					BRN = {
+						NOT = { num_of_cities = 4 } 
+					}
+					ZUR = {
+						NOT = { num_of_cities = 4 } 
+					}
+					THG = {
+						NOT = { num_of_cities = 4 } 
+					}
+					RAE = {
+						NOT = { num_of_cities = 4 } 
+					}
+				}
+				AND = { #THG
+					tag = THG
+					BRN = {
+						NOT = { num_of_cities = 4 } 
+					}
+					WLI = {
+						NOT = { num_of_cities = 4 } 
+					}
+					ZUR = {
+						NOT = { num_of_cities = 4 } 
+					}
+					RAE = {
+						NOT = { num_of_cities = 4 } 
+					}
+				}
+				AND = { #RAE
+					tag = RAE
+					BRN = {
+						NOT = { num_of_cities = 4 } 
+					}
+					WLI = {
+						NOT = { num_of_cities = 4 } 
+					}
+					THG = {
+						NOT = { num_of_cities = 4 } 
+					}
+					ZUR = {
+						NOT = { num_of_cities = 4 } 
+					}
+				}
+			}
+			
+		}
+		effect = {
+			change_tag = SWI
+			swap_non_generic_missions = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_prestige = 15
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			#limit = { #This doesn't work, and should be set to a republic anyways.
+			#	if = {
+			#		NOT = { government = monarchy }
+			#	}
+			#	change_government = monarchy
+			#}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

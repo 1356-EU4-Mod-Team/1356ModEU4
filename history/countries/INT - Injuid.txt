@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_federation_ilkhan_reform
+government_rank = 1
+primary_culture = persian
+religion = shiite
+technology_group = muslim
+capital = 2218 # Shiraz
+
+1343.1.1 = {
+	religious_school = jafari_school
+	monarch = {
+		name = "Shaikh Jamal al-Din Abu Ishaq"
+		dynasty = "Injuid"
+		adm = 5
+		dip = 2
+		mil = 4
+		leader = { name = "Jamal al-Din Injuid"	type = general	fire = 3	shock = 3	manuever = 2	siege = 0 }
+	}
+}

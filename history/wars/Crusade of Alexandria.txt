@@ -1,0 +1,21 @@
+name = "Crusade of Alexandria"
+war_goal = {
+	type = superiority_crusade
+	casus_belli = cb_crusade
+}
+
+1365.9.1 = {
+	add_attacker = CYP
+	add_attacker = VEN
+	add_attacker = KNI
+	add_attacker = PAP
+	add_defender = MAM
+}
+
+1366.4.1 = {
+	rem_attacker = CYP
+	rem_attacker = VEN
+	rem_attacker = KNI
+	rem_attacker = PAP
+	rem_defender = MAM
+}

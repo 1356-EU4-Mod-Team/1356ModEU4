@@ -1,0 +1,39 @@
+government = monarchy
+add_government_reform = mandala_reform
+technology_group = chinese
+religion = buddhism
+primary_culture = shan
+capital = 584	# Ava
+
+1350.12.12 = {
+	monarch = {
+		name = "Kyawswa"
+		dynasty = "Myinsaing"
+		birth_date = 1328.1.1
+		ADM = 3
+		DIP = 3
+		MIL = 1
+	}
+}
+
+1359.3.19 = {
+	monarch = {
+		name = "Narathu"
+		dynasty = "Myinsaing"
+		birth_date = 1333.1.1
+		ADM = 4
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1359.6.1 = {
+	monarch = {
+		name = "Uzana II"
+		dynasty = "Myinsaing"
+		birth_date = 1335.1.1
+		ADM = 1
+		DIP = 0
+		MIL = 0
+	}
+}

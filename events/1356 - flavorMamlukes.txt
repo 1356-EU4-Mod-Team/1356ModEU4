@@ -1,0 +1,174 @@
+namespace = flamamluk
+
+#Coptic Culture AKA Coptic Egyptian Culture events
+
+
+#Random Event to give Random Advisor to the Mamluks #Fires back and forth between this and the second event
+country_event = {
+	id = flamamluk.1
+	title = "flamamluk.1.t"
+	desc = "flamamluk.1.d"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		tag = MAM
+		religion_group = muslim
+		accepted_culture = old_egyptian_mod
+		NOT = {
+			employed_advisor = {
+				home_religion = coptic
+				home_culture = old_egyptian_mod
+			}
+		}
+		has_country_flag = mam_coptic_advisor_flag
+		NOT = { primary_culture = old_egyptian_mod }
+		NOT = { has_global_flag = alexandria_massacure_flag }	
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+	}
+	
+	option = { #Yes! Coptics make great advisors!
+		name = "flamamluk.1.a"
+		set_country_flag = mam_coptic_advisor_flag
+		add_treasury = -40
+		define_advisor = {
+			type = treasurer
+			skill = 2
+			culture = old_egyptian_mod
+			religion = coptic
+			location = 358
+			discount = yes
+		}
+	}
+	option = { #We do not need their help currently.
+		name = flamamluk.1.b
+		set_country_flag = mam_coptic_advisor_flag
+		add_adm_power = 5		
+	}
+}
+
+#Random Event to give Random Advisor to the Mamluks #Fires back and forth between this and the first event
+country_event = {
+	id = flamamluk.2
+	title = "flamamluk.2.t"
+	desc = "flamamluk.2.d"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		tag = MAM
+		religion_group = muslim
+		accepted_culture = old_egyptian_mod
+		NOT = {
+			employed_advisor = {
+				home_religion = coptic
+				home_culture = old_egyptian_mod
+			}
+		}
+		has_country_flag = mam_coptic_advisor_flag
+		NOT = { primary_culture = old_egyptian_mod }
+		NOT = { has_global_flag = alexandria_massacure_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+	}
+	
+	option = { #Yes! Coptics make great advisors!
+		name = "flamamluk.2.a"
+		clr_country_flag = mam_coptic_advisor_flag
+		add_treasury = -40
+		define_advisor = {
+			type = treasurer
+			skill = 2
+			culture = old_egyptian_mod
+			religion = coptic
+			location = 358
+			discount = yes
+		}
+	}
+	option = { #We do not need their help currently.
+		name = flamamluk.2.b
+		clr_country_flag = mam_coptic_advisor_flag		
+		add_adm_power = 5
+	}
+}
+
+#Major event for Mamlukes to pick weather they will tolerate Copts or pursecute them
+country_event = {
+	id = flamamluk.3
+	title = "flamamluk.3.t"
+	desc = "flamamluk.3.d" 
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = MAM
+		NOT = { is_year = 1380 }
+		is_year = 1357
+		religion = sunni
+		primary_culture = al_misr_arabic
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = { #Tolerance!
+		name = "flamamluk.3.a"
+		add_country_modifier = { 
+			name = alexandria_tolerated_copts
+			duration = 3600
+		}
+		add_prestige = 2
+		ALX = {
+			country_event = { 
+				id = alexandriaflandy.2
+				days = 30
+				random = 30
+			}
+		}
+
+	}
+	
+	option = { #Protected Minorities no more!
+		name = flamamluk.3.b
+		360 = {
+			change_religion = sunni
+			change_culture = al_misr_arabic
+		}
+		add_prestige = -5
+		ALX = {
+			country_event = { 
+				id = alexandriaflandy.1
+				days = 30
+				random = 30
+			}
+		}
+	}
+}
+
+country_event = { #Vassal converted and declared independence!
+	id = flamamluk.4
+	title = "flamamluk.4.t"
+	desc = "flamamluk.4.d"
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #How dare he!
+		name = flamamluk.4.a
+		add_historical_rival = ALX
+		add_core = 2316
+		add_core = 4317
+		add_core = 362
+		add_core = 358
+		add_core = 2325
+		add_core = 2326
+		add_core = 357
+	}
+	
+}

@@ -1,0 +1,19 @@
+name = "Glyndwr Rising"
+#casus_belli = cb_independence_war
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = WLS
+}
+
+
+1404.1.1 = {
+	add_attacker = WLS
+	add_defender = ENG
+}
+
+
+1415.1.1 = {
+	rem_attacker = WLS
+	rem_defender = ENG
+}

@@ -1,0 +1,173 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = wallonian
+capital = 91	# Mons
+
+#######################################################################
+#  1356.6.23 - 1428.7.3 PU under Holland (Bavaria-Straubing-Holland)  #
+#######################################################################
+
+1356.6.23 = {
+	monarch = {
+		name = "Willem V"
+		dynasty = "von Wittelsbach"
+		birth_date = 1330.5.12
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+	queen = {
+		country_of_origin = LNC
+		name = "Maud"
+		dynasty = "Lancester"
+		birth_date = 1339.4.4
+		death_date = 1362.4.10
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Albrecht"
+		monarch_name = "Albrecht"
+		dynasty = "von Wittelsbach"
+		birth_date = 1336.7.25
+		death_date = 1404.12.16
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1389.4.15 = {
+	monarch = {
+		name = "Albrecht"
+		dynasty = "von Wittelsbach"
+		birth_date = 1336.7.25
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+	heir = {
+		name = "Willem"
+		monarch_name = "Willem VI"
+		dynasty = "von Wittelsbach"
+		birth_date = 1365.4.5
+		death_date = 1417.5.31
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1394.3.30 = {
+	queen = {
+		country_of_origin = KLE
+		name = "Margarethe"
+		dynasty = "von der Mark"
+		birth_date = 1375.1.1
+		death_date = 1411.5.14
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1404.12.16 = {
+	monarch = {
+		name = "Willem VI"
+		dynasty = "von Wittelsbach"
+		birth_date = 1365.4.5
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = BUR
+		name = "Marguerite"
+		dynasty = "de Valois-Bourgogne"
+		birth_date = 1374.10.16
+		death_date = 1441.3.8
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Jan"
+		monarch_name = "Jan III"
+		dynasty = "von Wittelsbach"
+		birth_date = 1374.1.1
+		death_date = 1425.1.6
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1417.5.31 = {
+	monarch = {
+		name = "Jan III"
+		dynasty = "von Wittelsbach"
+		birth_date = 1374.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	heir = {
+		name = "Jacoba"
+		monarch_name = "Jacoba"
+		dynasty = "von Wittelsbach"
+		birth_date = 1401.7.15
+		death_date = 1436.10.8
+		female = yes
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1417.9.16 = {
+	queen = {
+		country_of_origin = BOH
+		name = "Elisabeth"
+		dynasty = "von Luxemburg"
+		birth_date = 1390.11.1
+		death_date = 1451.8.2
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1425.1.6 = {
+	monarch = {
+		name = "Jacoba"
+		dynasty = "von Wittelsbach"
+		birth_date = 1401.7.15
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+	queen = {
+		country_of_origin = ENG
+		name = "Humphrey"
+		dynasty = "Lancester"
+		birth_date = 1390.10.3
+		death_date = 1447.2.23
+		female = no
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

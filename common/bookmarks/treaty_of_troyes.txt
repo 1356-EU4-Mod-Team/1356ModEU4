@@ -1,0 +1,16 @@
+bookmark =
+{
+	name = "tt_name"
+	desc = "tt_desc"
+	date = 1420.05.21
+
+	center = 183
+	
+	country = ENG
+	country = FRA
+	country = BUR
+	country = BRI
+	
+	easy_country = ENG
+
+}

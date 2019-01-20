@@ -1,0 +1,56 @@
+RHI = {
+	culture = hessian
+	is_core = RHI
+}
+
+SWB = {
+	culture = swabian
+	is_core = SWB
+}
+
+NCH = {
+	culture_group = french
+	is_core = NCH
+}
+
+SEV = {
+	always = no
+}
+
+CTR = {
+	always = no
+}
+
+WOO = {
+	culture = wallonian
+	is_core = WOO
+}
+
+ALX = {
+	is_core = ALX
+	OR = {
+		culture = old_egyptian_mod
+		culture = al_misr_arabic
+	}
+}
+
+TPM = {
+	is_core = TPM
+}
+
+GYO = {
+	always = no
+}
+
+VLS = {
+	is_core = VLS
+}
+
+GAS = {
+	culture = gascon
+	is_core = GAS
+}
+
+OCC = {
+	is_core = OCC
+}

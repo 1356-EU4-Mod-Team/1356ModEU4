@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = al_suryah_arabic
+religion = sunni
+technology_group = muslim
+capital = 382	# Damascus
+religious_school = shafii_school
+historical_rival = MAM
+
+1353.9.14 = { 
+	monarch = {
+		name = "Al-Kamil II"
+		dynasty = "Ayyubid"
+		birth_date = 1338.9.14
+		death_date = 1356.12.26
+		adm = 3
+		dip = 6
+		mil = 4
+	}
+}
+
+# BT Out
+
+1356.12.26 = {	# Was 1356.11.6
+	monarch = {
+		name = "Sayf-ad-din II"
+		dynasty = "Nasiraid"
+		birth_date = 1280.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1356.12.26  = { # Was 1356.12.24
+	heir = {
+		name = "Shihab-ad-din"
+		monarch_name = "Shihab-ad-din II"
+		dynasty = "Nasiraid"
+		birth_date = 1338.12.25
+		death_date = 1411.1.1
+		claim = 100
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+
+1357.12.25 = {
+	monarch = {
+		name = "Shihab-ad-din"
+		dynasty = "Nasiraid"
+		birth_date = 1338.12.25
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}

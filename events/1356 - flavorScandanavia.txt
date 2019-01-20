@@ -1,0 +1,1277 @@
+namespace = scan_djm
+#Written by DanJonMin, fixed by CountFlandy to work for 1.25
+country_event = { #Perhaps we should tweak this to take into account queens and the new ruler triggers we have?
+	id = scan_djm.1
+	title = scan_djm.1.t
+	desc = scan_djm.1.d
+	picture = QUEEN_MARGARET_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = NOR
+		#OR = {
+			has_reform = elective_feudal_monarchy_reform
+			#has_legacy_government = elective_feudal_monarchy
+		#}
+		OR = {
+			marriage_with = DAN
+			marriage_with = SWE
+		}
+		NOT = { is_year = 1430 }
+	}
+	
+	mean_time_to_happen = {
+		years = 40
+		
+		modifier = {
+			factor = 0.05
+			DAN = {
+				has_ruler = "Margaret"
+			}
+		}
+
+		modifier = {
+			factor = 0.2
+			is_year = 1400
+		}
+		
+	}
+	
+	option = {
+		ai_chance = { 
+			factor = 50 
+			
+			modifier = {
+				factor = 2
+				NOT = { alliance_with = SWE }
+				alliance_with = DAN
+			}
+			modifier = {
+				factor = 2
+				DAN = {
+					dynasty = "Estridsen"
+				}
+			}
+			
+			modifier = {
+				factor = 2
+				DAN = {
+					DIP = 5
+				}
+			}			
+			
+		}
+		name = scan_djm.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_government_reform = feudalism_reform
+		set_legacy_government = feudal_monarchy
+		DAN = {
+			create_union = NOR
+		}
+	}
+	
+	option = {
+		ai_chance = { 
+			factor = 20 
+			
+			modifier = {
+				factor = 2
+				NOT = { alliance_with = DAN }
+				alliance_with = SWE
+			}
+			
+			modifier = {
+				factor = 2
+				SWE = {
+					DIP = 5
+				}
+			}			
+		}
+		name = scan_djm.1.c
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_government_reform = feudalism_reform
+		set_legacy_government = feudal_monarchy
+		SWE = {
+			create_union = NOR
+		}
+	}	
+	
+	option = {
+		name = scan_djm.1.b
+		ai_chance = { 
+			factor = 30
+			
+			modifier = {
+				factor = 2
+				alliance_with = DAN
+				alliance_with = SWE
+			}
+			
+		}
+	
+		add_stability = -1
+		define_ruler = {
+			adm = 1
+			dip = 1
+			mil = 1
+		}
+		DAN = {
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 120
+				target = NOR
+			}
+		}
+		SWE = {
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 120
+				target = NOR
+			}
+		}
+		add_republican_tradition = 0.50
+	}
+}
+
+country_event = {
+	id = scan_djm.2
+	title = scan_djm.2.t
+	desc = scan_djm.2.d
+	picture = QUEEN_MARGARET_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAN
+		NOT = { DAN = { senior_union_with = SWE } }
+		OR = {
+			SWE = { senior_union_with = MKL }
+			DAN = { senior_union_with = NOR }
+		}
+		is_year = 1387
+		NOT = { is_year = 1444 }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = scan_djm.2.a
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 120
+			target = SWE
+		}
+		add_country_modifier = {
+			name = "swedish_noble_support"
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = scan_djm.3
+	title = scan_djm.3.t
+	desc = scan_djm.3.d
+	picture = QUEEN_MARGARET_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = NOR
+			tag = SWE
+		}
+		is_lesser_in_union = yes
+		#OR = {
+			has_reform = elective_feudal_monarchy_reform
+			#has_legacy_government = elective_feudal_monarchy
+		#}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = scan_djm.3.a
+		add_government_reform = feudalism_reform
+		set_legacy_government = feudal_monarchy
+	}
+}
+
+country_event = {
+	id = scan_djm.4
+	title = scan_djm.4.t
+	desc = scan_djm.4.d
+	picture = LIBERUM_VETO_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = SWE
+		NOT = { has_spawned_rebels = pretender_rebels }
+		has_ruler = "Magnus IV"
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = scan_djm.4.a
+		add_government_reform = feudalism_reform
+		set_legacy_government = feudal_monarchy
+		kill_heir = yes
+		define_heir = {
+			name = "Erik"
+			monarch_name = "Erik XII"
+			dynasty = "Bjelbo"
+			birth_date = 1339.1.1
+			claim = 75
+			adm = 3
+			dip = 3
+			mil = 4
+		}
+	}
+	
+	option = {
+		name = scan_djm.4.b
+		add_stability = 1
+		add_prestige = -15
+	}
+	
+}
+
+##############################
+#  Written by Count Flandy   #
+##############################
+
+#Sweden Only
+country_event = { #The Greenland Carrier Start
+	id = scan_djm.5
+	title = scan_djm.5.t
+	desc = scan_djm.5.d
+	picture = NAVAL_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		current_age = age_of_feudalism
+		1104 = { is_core = NOR }
+		1105 = { is_core = NOR }
+		is_subject = no
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = { #Send the ship!
+		name = scan_djm.5.a
+		add_treasury = -20
+		country_event = { 
+			id = scan_djm.6
+			days = 365
+			random = 180
+		}
+	}	
+	option = { #We can not afford this
+		name = scan_djm.5.b
+		add_prestige = 1
+	}
+	
+}
+
+#Sweden Only
+country_event = { #The Greenland Carrier reports on Greenland
+	id = scan_djm.6
+	title = scan_djm.6.t
+	desc = scan_djm.6.d
+	picture = NAVAL_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	option = { #Interesting...let us continue this!
+		name = scan_djm.6.a
+		set_country_flag = greenland_carrier_flag
+		add_treasury = -50
+		1104 = {
+			add_permanent_province_modifier = { 
+				name = groenlands_knorr_prov_modifier
+				duration = -1  
+			}
+		}
+		1105 = {
+			add_permanent_province_modifier = { 
+				name = groenlands_knorr_prov_modifier
+				duration = -1  
+			}
+		}
+		1 = {
+			add_permanent_province_modifier = { 
+				name = groenlands_knorr_stockholm_modifier
+				duration = -1  
+			}
+		}
+	}
+	option = { #Interesting. Leave them to their own devices.
+		name = scan_djm.6.b
+	}
+	
+}
+
+#Sweden Only
+country_event = { #The Greenland Carrier Sinks
+	id = scan_djm.7
+	title = scan_djm.7.t
+	desc = scan_djm.7.d
+	picture = SHIP_SAILING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		has_country_flag = greenland_carrier_flag
+		NOT = { stability = 0 }
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+	}
+	
+	option = { #Replace it!
+		name = scan_djm.7.a
+		add_treasury = -100
+	}
+	option = { #We can not afford this.
+		name = scan_djm.7.b
+		1104 = { remove_province_modifier = groenlands_knorr_prov_modifier }
+		1105 = { remove_province_modifier = groenlands_knorr_prov_modifier }
+		1 = { remove_province_modifier = groenlands_knorr_stockholm_modifier }
+	}
+	
+}
+
+#Swedish-Novgorod relations
+
+#The Religious Debate
+
+#Sweden
+country_event = { #Sweden Challenges the Novgorodian religion
+	id = scan_djm.8
+	title = scan_djm.8.t
+	desc = scan_djm.8.d
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = SWE
+		religion = catholic
+		exists = NOV
+		NOV = {	religion = orthodox }
+		OR = {
+			current_age = age_of_feudalism
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+	}
+	mean_time_to_happen = {
+		months = 180
+	}
+	option = { #We shall debate the Novgorodians!
+		name = scan_djm.8.a
+		ai_chance = { factor = 90 }
+		NOV = {
+			country_event = { 
+				id = scan_djm.9
+				days = 90
+				random = 180
+			}
+		}
+	}
+	option = { #It may just be better to attack them...
+		name = scan_djm.8.b
+		ai_chance = { factor = 10 }
+		declare_war_with_cb = {
+			who = NOV
+			casus_belli = cb_annex
+		}
+	}
+}
+
+#Novgorod
+country_event = { #Sweden Challenges the Novgorodian religion. Novgorod must respond.
+	id = scan_djm.9
+	title = scan_djm.9.t
+	desc = scan_djm.9.d
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #We send them to the Byzantines
+		name = scan_djm.9.a
+		SWE = {
+			country_event = { 
+				id = scan_djm.11
+				days = 90
+				random = 180
+			}
+		}
+	}
+	option = { #We shall debate them!
+		name = scan_djm.9.b
+		SWE = {
+			country_event = { 
+				id = scan_djm.10
+				days = 90
+				random = 180
+			}
+		}
+		NOV = {
+			country_event = { 
+				id = scan_djm.10
+				days = 90
+				random = 180
+			}
+		}
+	}
+}
+
+#Sweden/Novgorod
+country_event = { #The Debate Begins. Both nations learn of this.
+	id = scan_djm.10
+	title = scan_djm.10.t
+	desc = scan_djm.10.d
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #We shall prepare.
+		name = scan_djm.10.a
+		trigger = { tag = NOV }
+		NOV = {
+			country_event = { 
+				id = scan_djm.20
+				days = 180
+				random = 30
+			}
+		}
+	}
+	option = { #We shall prepare.
+		name = scan_djm.10.a
+		trigger = { tag = SWE }
+	}
+}
+
+#Sweden
+country_event = { #Sweden learns the Novgorodians tell them to debate the Byzantines instead.
+	id = scan_djm.11
+	title = scan_djm.11.t
+	desc = scan_djm.11.d
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Respond with War!
+		name = scan_djm.11.a
+		ai_chance = { factor = 80 }
+		SWE = {
+			country_event = { 
+				id = scan_djm.12
+				days = 30
+				random = 180
+			}
+		}
+	}
+	option = { #Perhaps...?
+		name = scan_djm.11.b
+		ai_chance = { factor = 20 }
+		trigger = { exists = BYZ }
+		BYZ = {
+			country_event = { 
+				id = scan_djm.13
+				days = 90
+				random = 180
+			}
+		}
+	}
+}
+
+#Sweden
+country_event = { #Sweden may receive an Insult OR declare war right away over this.
+	id = scan_djm.12
+	title = scan_djm.12.t
+	desc = scan_djm.12.d
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #CB Given to Sweden over any of the possible actions #We shall prepare!
+		name = scan_djm.12.a
+		SWE = {
+			add_historical_rival = NOV
+			add_casus_belli = {
+				target = NOV
+				type = cb_insult
+				months = 36
+			}
+		}
+		NOV = { add_historical_rival = SWE }
+	}
+	option = { #War right away!
+		name = scan_djm.12.b
+		SWE = {
+			add_historical_rival = NOV
+			declare_war_with_cb = {
+				who = NOV
+				casus_belli = cb_insult
+			}
+		}
+		NOV = { add_historical_rival = SWE }
+	}
+}
+
+#Byzantiums response
+country_event = { #Sweden Challenges the Byzantines
+	id = scan_djm.13
+	title = scan_djm.13.t
+	desc = scan_djm.13.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Laugh, and never respond.
+		name = scan_djm.13.a
+		ai_chance = { factor = 20 }
+		SWE = {
+			country_event = { 
+				id = scan_djm.14
+				days = 90
+				random = 180
+			}
+		}
+		add_historical_rival = SWE
+		add_prestige = 10
+	}
+	option = { #Never respond
+		name = scan_djm.13.b
+		ai_chance = { factor = 80 }
+		SWE = {
+			country_event = { 
+				id = scan_djm.14
+				days = 90
+				random = 180
+			}
+		}
+		add_historical_rival = SWE
+		add_prestige = 10
+	}
+	# option = { #Well... #They choose to debate. #Commented out as how the fuck would this even go.
+		# name = scan_djm.13.c
+		# ai_chance = { factor = 500 }
+		# trigger = {
+			# OR = { #Dependent on two ruler personalities.
+				# ruler_has_personality = babbling_buffoon_personality
+				# ruler_has_personality = loose_lips_personality
+			# }
+		# }
+	# }
+}
+
+#Sweden
+country_event = { #Sweden discovers they have been insulted by the Byzantines!
+	id = scan_djm.14
+	title = scan_djm.14.t
+	desc = scan_djm.14.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #WAR!
+		name = scan_djm.14.a
+		add_historical_rival = BYZ
+		declare_war_with_cb = {
+			who = NOV
+			casus_belli = cb_insult
+		}
+		add_prestige = -10
+		add_legitimacy = -5
+		
+	}
+	option = { #We must prepare....
+		name = scan_djm.14.b
+		add_casus_belli = {
+			target = BYZ
+			type = cb_insult
+			months = 36
+		}
+		add_historical_rival = BYZ
+		add_prestige = -10
+		add_legitimacy = -5
+	}
+	option = { #Sulk in a corner
+		name = scan_djm.14.c
+		add_prestige = -25
+		add_legitimacy = -25
+	}
+}
+
+###The Actual Debate Events here###
+
+#Novgorod Goes first
+country_event = { 
+	id = scan_djm.20
+	title = scan_djm.20.t
+	desc = scan_djm.20.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #The Virgin Mary
+		name = scan_djm.20.a
+		set_country_flag = nov_virgin_mary_flag
+		custom_tooltip = scan_djm.20_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.21
+				days = 30
+			}
+		}
+	}
+	option = { #Original Sin
+		name = scan_djm.20.b
+		set_country_flag = nov_orignal_sin_flag
+		custom_tooltip = scan_djm.20_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.21
+				days = 30
+			}
+		}
+	}
+	option = { #'Till Death do us Part'
+		name = scan_djm.20.c
+		set_country_flag = nov_divorce_topic_flag
+		custom_tooltip = scan_djm.20_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.21
+				days = 30
+			}
+		}
+	}
+	option = { #The Holy Father
+		name = scan_djm.20.e
+		set_country_flag = nov_the_holy_father_flag
+		custom_tooltip = scan_djm.20_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.21
+				days = 30
+			}
+		}
+	}
+}
+
+#Sweden Responds
+country_event = {
+	id = scan_djm.21
+	title = scan_djm.21.t
+	desc = scan_djm.21.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Harsh Response
+		name = scan_djm.21.a
+		custom_tooltip = scan_djm.21_tt
+		NOV = {
+			country_event = { 
+				id = scan_djm.22
+				days = 30
+			}
+		}
+	}
+	option = { #Light Response
+		name = scan_djm.21.b
+		custom_tooltip = scan_djm.21_tt
+		NOV = {
+			country_event = { 
+				id = scan_djm.22
+				days = 30
+			}
+		}
+	}
+	option = { #Understanding Response
+		name = scan_djm.21.c
+		custom_tooltip = scan_djm.21_tt
+		NOV = {
+			country_event = { 
+				id = scan_djm.22
+				days = 30
+			}
+		}
+	}
+	option = { #Agree with the Novgorodians
+		name = scan_djm.21.e
+		custom_tooltip = scan_djm.21_tt
+		NOV = {
+			country_event = { 
+				id = scan_djm.22
+				days = 30
+			}
+		}
+	}
+}
+
+#Novgorod Responds
+country_event = { 
+	id = scan_djm.22
+	title = scan_djm.22.t
+	desc = scan_djm.22.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Aggressively rebuttal Sweden's response
+		name = scan_djm.22.a
+		custom_tooltip = scan_djm.22_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.23
+				days = 30
+			}
+		}
+	}
+	option = { #Stand firm with the topic
+		name = scan_djm.22.b
+		custom_tooltip = scan_djm.22_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.23
+				days = 30
+			}
+		}
+	}
+	option = { #Partially agree
+		name = scan_djm.22.c
+		custom_tooltip = scan_djm.22_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.23
+				days = 30
+			}
+		}
+	}
+	option = { #Do nothing
+		name = scan_djm.22.e
+		custom_tooltip = scan_djm.22_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.23
+				days = 30
+			}
+		}
+	}
+}
+
+#Sweden Now Starts
+country_event = { 
+	id = scan_djm.23
+	title = scan_djm.23.t
+	desc = scan_djm.23.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #The Virgin Mary
+		name = scan_djm.23.a
+		trigger = {
+			NOV = { 
+				NOT = { has_country_flag = nov_virgin_mary_flag }
+			}
+		}
+		custom_tooltip = scan_djm.23_tt
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.24
+				days = 30
+			}
+		}
+	}
+	option = { #Original Sin
+		name = scan_djm.23.b
+		trigger = {
+			NOV = { 
+				NOT = { has_country_flag = nov_orignal_sin_flag }
+			}
+		}
+		custom_tooltip = scan_djm.23_tt
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.24
+				days = 30
+			}
+		}
+	}
+	option = { #'Till Death do us Part'
+		name = scan_djm.23.c
+		trigger = {
+			NOV = { 
+				NOT = { has_country_flag = nov_divorce_topic_flag }
+			}
+		}
+		custom_tooltip = scan_djm.23_tt
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.24
+				days = 30
+			}
+		}
+	}
+	option = { #The Holy Father
+		name = scan_djm.23.e
+		trigger = {
+			NOV = { 
+				NOT = { has_country_flag = nov_the_holy_father_flag }
+			}
+		}
+		custom_tooltip = scan_djm.23_tt
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.24
+				days = 30
+			}
+		}
+	}
+}
+
+#Novgorod Responds
+country_event = { 
+	id = scan_djm.24
+	title = scan_djm.24.t
+	desc = scan_djm.24.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Harsh Response
+		name = scan_djm.24.a
+		custom_tooltip = scan_djm.24_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.25
+				days = 30
+			}
+		}
+	}
+	option = { #Light Response
+		name = scan_djm.24.b
+		custom_tooltip = scan_djm.24_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.25
+				days = 30
+			}
+		}
+	}
+	option = { #Understanding Response
+		name = scan_djm.24.c
+		custom_tooltip = scan_djm.24_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.25
+				days = 30
+			}
+		}
+	}
+	option = { #Agree with the Swedes
+		name = scan_djm.24.e
+		custom_tooltip = scan_djm.24_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.25
+				days = 30
+			}
+		}
+	}
+}
+
+#Sweden Responds
+country_event = { 
+	id = scan_djm.25
+	title = scan_djm.25.t
+	desc = scan_djm.25.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Aggressively rebuttal Sweden's response
+		name = scan_djm.25.a
+		custom_tooltip = scan_djm.25_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+	}
+	option = { #Stand firm with the topic
+		name = scan_djm.25.b
+		custom_tooltip = scan_djm.25_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+	}
+	option = { #Partially agree
+		name = scan_djm.25.c
+		custom_tooltip = scan_djm.25_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+	}
+	option = { #Do nothing
+		name = scan_djm.25.e
+		custom_tooltip = scan_djm.25_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+	}
+}
+
+#Event letting know the Debate is over. Calculating....
+country_event = { 
+	id = scan_djm.26
+	title = scan_djm.26.t
+	desc = scan_djm.26.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = scan_djm.26.a
+		trigger = { tag = NOV }
+		clr_country_flag = nov_virgin_mary_flag
+		clr_country_flag = nov_orignal_sin_flag
+		clr_country_flag = nov_divorce_topic_flag
+		clr_country_flag = nov_the_holy_father_flag
+		custom_tooltip = scan_djm.26_tt
+	}
+	option = { 
+		name = scan_djm.26.b
+		trigger = { tag = SWE }
+		custom_tooltip = scan_djm.26_tt
+		random_list = {
+			50 = {
+				NOV = {
+					country_event = { 
+						id = scan_djm.27
+						days = 30
+					}
+				}
+			}
+			50 = {
+				SWE = {
+					country_event = { 
+						id = scan_djm.28
+						days = 30
+					}
+				}
+			}
+		}
+	}
+}
+
+#Novgorod
+country_event = { #Sweden Wins
+	id = scan_djm.27
+	title = scan_djm.27.t
+	desc = scan_djm.27.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = { #Fine, we convert.
+		name = scan_djm.27.a
+		trigger = { tag = NOV }
+		change_religion = catholic
+		add_stability = -1
+		add_prestige = -15
+		add_legitimacy = -25
+		set_country_flag = sweden_won_religious_debate
+		SWE = {
+			set_country_flag = sweden_won_religious_debate
+		}
+	}
+	option = { #Never!
+		name = scan_djm.27.b
+		trigger = { tag = NOV }
+		add_stability = -3
+		add_prestige = -75
+		add_legitimacy = -50
+		SWE = {
+			add_casus_belli = {
+				target = NOV
+				type = cb_insult
+				months = 60
+			}
+		}
+	}
+	option = { #Sweden wins
+		name = scan_djm.27.c
+		trigger = { tag = SWE }
+		add_prestige = 25
+		add_legitimacy = 50
+		add_republican_tradition = 25
+		add_devotion = 50
+	}
+}
+
+#Sweden
+country_event = {  #Novgorod Wins
+	id = scan_djm.28
+	title = scan_djm.28.t
+	desc = scan_djm.28.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = { #Fine, we convert.
+		name = scan_djm.28.a
+		trigger = { tag = SWE }
+		change_religion = orthodox
+		add_stability = -1
+		add_prestige = -15
+		add_legitimacy = -25
+		set_country_flag = novgorod_won_religious_debate
+		NOV = {
+			set_country_flag = novgorod_won_religious_debate
+		}
+	}
+	option = { #Never!
+		name = scan_djm.28.b
+		trigger = { tag = SWE }
+		add_stability = -3
+		add_prestige = -75
+		add_legitimacy = -50
+		NOV = {
+				add_casus_belli = {
+				target = SWE
+				type = cb_insult
+				months = 60
+			}
+		}
+	}
+	option = { #Novgorod wins
+		name = scan_djm.28.c
+		trigger = { tag = NOV }
+		add_prestige = 25
+		add_legitimacy = 50
+		add_republican_tradition = 25
+		add_devotion = 50
+	}
+}
+
+############Nearby Nations respond###########
+
+#Orthodox Nations respond to Novgorods loss
+country_event = { 
+	id = scan_djm.29
+	title = scan_djm.29.t
+	desc = scan_djm.29.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = PAP
+			tag = NOR
+			tag = DAN
+			tag = BYZ
+			religion = orthodox
+		}
+		NOT = { has_country_flag = responded_to_novgorod_loss_flag}
+		NOV = {
+			has_country_flag = sweden_won_religious_debate
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = { #Generic Response for Orthodox
+		name = scan_djm.29.a
+		trigger = {
+			religion = orthodox
+			NOT = { tag = BYZ }
+		}
+		set_country_flag = responded_to_novgorod_loss_flag
+		add_casus_belli = {
+			target = NOV
+			type = cb_insult
+			months = 60
+		}
+	}
+	option = { #Norway Welcomes Novgorod
+		name = scan_djm.29.b
+		trigger = { tag = NOR }
+		set_country_flag = responded_to_novgorod_loss_flag
+		add_historical_friend = NOV
+		NOV = { add_historical_friend = NOR }
+		
+	}
+	option = { #Byzantium Responds
+		name = scan_djm.29.c
+		trigger = { tag = BYZ }
+		set_country_flag = responded_to_novgorod_loss_flag
+		add_casus_belli = {
+			target = NOV
+			type = cb_insult
+			months = 60
+		}
+	}
+	option = { #Denmark Welcomes Novgorod
+		name = scan_djm.29.b
+		trigger = { TAG = DAN }
+		set_country_flag = responded_to_novgorod_loss_flag
+		add_historical_friend = NOV
+		NOV = { add_historical_friend = DAN }
+		
+	}
+}
+
+#Catholic Nations respond to Swedens loss
+country_event = { 
+	id = scan_djm.30
+	title = scan_djm.30.t
+	desc = scan_djm.30.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+		
+	trigger = {
+		OR = {
+			tag = PAP
+			tag = NOR
+			tag = DAN
+			tag = TEU
+			tag = HAB
+			tag = LIV
+			tag = MOS
+			tag = NOV
+		}
+		NOT = { has_country_flag = responded_to_sweden_loss_flag}
+		SWE = {
+			has_country_flag = novgorod_won_religious_debate
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = { #Generic Response
+		name = scan_djm.30.a
+		trigger = { 
+			religion = catholic
+			NOT = { tag = TEU }
+			NOT = { tag = PAP }
+			NOT = { tag = LIV }
+		}
+		add_casus_belli = {
+			target = SWE
+			type = cb_insult
+			months = 60
+		}
+		set_country_flag = responded_to_sweden_loss_flag
+	}
+	option = { #Papal Response
+		name = scan_djm.30.b
+		trigger = { tag = PAP }
+		add_casus_belli = {
+			target = SWE
+			type = cb_insult
+			months = 60
+		}
+		set_country_flag = responded_to_sweden_loss_flag
+	}
+	option = { #Muscovy Response
+		name = scan_djm.30.c
+		trigger = { tag = MOS }
+		SWE = { add_historical_friend = MOS }
+		add_historical_friend = SWE
+		set_country_flag = responded_to_sweden_loss_flag
+	}
+	option = { #Novgorod Response
+		name = scan_djm.30.e
+		trigger = { tag = NOV }
+		remove_historical_rival = SWE
+		add_historical_friend = SWE
+		SWE = { 
+			remove_historical_rival = NOV
+			add_historical_friend = NOV
+		}
+		set_country_flag = responded_to_sweden_loss_flag
+	}
+	option = { #Teutonic/Livonian Response
+		name = scan_djm.30.f
+		trigger = {
+			OR = {
+				tag = TEU
+				tag = LIV
+			}
+		}
+		add_casus_belli = {
+			target = SWE
+			type = cb_insult
+			months = 60
+		}
+		set_country_flag = responded_to_sweden_loss_flag
+	}
+}

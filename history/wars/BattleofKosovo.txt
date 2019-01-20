@@ -1,0 +1,21 @@
+name = "Ottoman Conquest of Serbia"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 3000
+}
+
+1389.1.1 = {
+	add_attacker = TUR
+	add_attacker = MAC
+	add_defender = SER
+	add_defender = BOS
+}
+
+# Peace
+1389.6.15 = {
+	rem_attacker = TUR
+	rem_attacker = MAC
+	rem_defender = SER
+	rem_defender = BOS
+}

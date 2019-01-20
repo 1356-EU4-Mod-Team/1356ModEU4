@@ -1,0 +1,6 @@
+vassal = {
+	first = MAY
+	second = KIC
+	start_date = 1355.1.1
+	end_date = 1358.1.1
+}

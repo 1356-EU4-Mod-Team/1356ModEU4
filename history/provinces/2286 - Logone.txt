@@ -1,0 +1,25 @@
+# 2286 - Logone (1356)
+# Changes: KBO
+
+owner = KBO
+controller = KBO
+add_core = YAO
+add_core = KBO
+culture = kanuri 
+religion = shamanism #Fetishism
+capital = "Logone"
+trade_goods = ivory
+hre = no
+base_tax = 2 
+
+base_production = 2
+is_city = yes
+base_manpower = 1
+
+discovered_by = sub_saharan
+
+1380.1.1 = { owner = YAO controller = YAO }
+1505.1.1 = {	owner = KBO
+		controller = KBO
+		add_core = KBO 
+	   } # Idris Katakarmabe retakes Kanem

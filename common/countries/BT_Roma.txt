@@ -1,0 +1,128 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 150 0 30 }
+
+preferred_religion = catholic
+
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	offensive_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ranieri #1" = 20
+	"Guarnieri #0" = 20
+	"Frederico #0" = 20
+	"Guelfo #0" = 20
+	"Ridelulfo #0" = 20
+	"Corrado #0" = 20
+	"Enrico #0" = 20
+	"Rainaldo #0" = 20
+	"Bertoldo #0" = 20
+	"Guidobaldo #0" = 10
+	"Federigo #0" = 10
+	"Giovanni #0" = 10
+	"Galeazzo #0" = 10
+	"Costanzo #0" = 10
+	"Guglielmo #0" = 10
+	"Antonio #0" = 10
+	"Braccio #0" = 10
+	"Guidantonio #0" = 10
+	"Lorenzo #0" = 10
+	"Oddantonio #0" = 10
+	"Caterina #0" = -10
+	"Cesare #0" = 10
+	"Giovanna #0" = -10
+	"Giulio #0" = 10
+	"Alessandro #0" = 10
+	"Girolamo #0" = 10
+	"Pandolfo #0" = 10
+	"Domenico #0" = 10
+	"Roberto #0" = 10
+	"Lucrezia #0" = -10
+	"Isotta #0" = -10
+	"Astorgio #0" = 1
+	"Carlo #0" = 1
+	"Galeotto #0" = 1
+	"Guido #0" = 1
+	"Ugo #0" = 1
+	"Francesco #0" = 1
+	"Pino #0" = 1
+	"Sinibaldo #0" = 1
+	"Cecco #0" = 1
+	"Aldo #0" = 1
+	"Sallustio #0" = 1
+	"Alfonso #0" = 1
+	"Baldovino #0" = 1
+	"Cirillo #0" = 1
+	"Cosimo #0" = 1
+	"Damiano #0" = 1
+	"Egidio #0" = 1
+	"Franco #0" = 1
+	"Giambattista #0" = 1
+	"Giuseppe #0" = 1
+	"Ippolito #0" = 1
+	"Leandro #0" = 1
+	"Marzio #0" = 1
+	"Ovidio #0" = 1
+	"Paolo #0" = 1
+	"Pietro #0" = 1
+	"Prospero #0" = 1
+	"Rafaello #0" = 1
+	"Scipione #0" = 1
+	"Teodosio #0" = 1
+	"Vittorio #0" = 1
+}
+
+leader_names = {
+	Albani Aldobrandini Altieri Barberini Barbo Boncompagni Carpegna
+	Borghese Borgia Braschi "di Campofregoso" Carafa Castagna Manfredi
+	Cervini Chiaramonti Chigi Colonna Condulmeri Conti Corsini Cybo
+	Doria-Landi Doria-Pamphili "di Farnese" "Gaetani dell'Aquila"
+	Gangagnelli Ghislieri Gonzaga Lambertini Lante Ludovisi "de' Medici"
+	Melzi "Melzi de Rimini" "del Monte" "di Montefeltro" Odescalchi Orsini
+	Ottoboni Pallavicino Pamphili Parentucelli Peretti Piccolomini Pignatelli
+	Prignano Rezzonico Rospigliosi "della Rovere" Sfondrati "da Varano"
+	Sforza Malatesta Baglioni "degli Atti" Belluzzi Ordelaffi Rangoni
+}
+
+ship_names = {
+	Acqualagna Auditore Colbordolo Colonna
+	Federico Fermignano Fossombrone Fano
+	Senigallia Macerata Fermo Ascoli Spoleto
+	Perugia Camerino Imola Cesena "San Marino"
+	Marche "San Pietro" "Regnum Dei"
+	ghibellini "Giordano Orsini" "Giovanni Santi"
+	"Isola del Piano" Tavoleto
+	Lunano Mondaino Montefeltro Oddantonio Orsini 
+	Peglio "Piero della Francesca"
+	"San Crescentino" "Sant'Angelo in Vado" 
+}
+
+army_names = {
+	"Armata di $PROVINCE$"
+}

@@ -1,0 +1,144 @@
+# Portuguese Succession War (1383-1385)
+# 2013.12.27 Added war and famous battles (rickroll120)
+
+name = "Portuguese Succession War"
+succession = POR
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = POR
+}
+
+1383.12.1 = { # war started due to pretender Joao of Avis to the throne
+	add_attacker = CAS
+	add_defender = POR
+}
+
+1384.4.3 = { # Hundred Years war support
+	add_attacker = FRA
+	add_defender = ENG
+}
+
+1384.4.6 = {
+	battle = {
+		name = "Battle of Atoleiros"
+		location = 229 # Alentejo
+		attacker = {
+			commander = "Pedro Álvares Pereira"
+			infantry = 3000
+			cavalry = 2000
+			losses = 80	# percent
+			country = CAS
+		}
+
+		defender = {
+			commander = "Nuno Álvares Pereira"
+			infantry = 1100
+			cavalry = 300
+			losses = 0	# percent
+			country = POR
+		}
+
+		result = no
+	}
+}
+
+1384.5.15 = {
+	battle = {
+		name = "Battle of Leça"
+		location = 231 # Porto
+		attacker = {
+			commander = "Archbishop of Santiago"
+			infantry = 2700
+			losses = 25	# percent
+			country = CAS
+		}
+
+		defender = {
+			commander = "Pedro de Trastámara"
+			infantry = 6800
+			losses = 5	# percent
+			country = POR
+		}
+
+		result = no
+	}
+}
+
+
+1385.5.29 = {
+	battle = {
+		name = "Battle of Trancoso"
+		location = 228 # Beira
+		attacker = {
+			commander = "Juan Rodriguez de Castañeda"
+			infantry = 600
+			losses = 70	# percent
+			country = CAS
+		}
+
+		defender = {
+			commander = "Gonçalo Vasques Coutinho"
+			infantry = 1100
+			cavalry = 300
+			losses = 10	# percent
+			country = POR
+		}
+
+		result = no
+	}
+}
+
+1385.8.14 = {
+	battle = {
+		name = "Battle of Aljubarrota"
+		location = 227 # Lisbon
+		attacker = {
+			commander = "Juan I"
+			infantry = 28500
+			cavalry = 2000
+			losses = 17	# percent
+			country = CAS
+		}
+
+		defender = {
+			commander = "João I"
+			infantry = 6800
+			cavalry = 200
+			losses = 5	# percent
+			country = POR
+		}
+
+		result = no
+	}
+}
+
+1385.10.14 = {
+	battle = {
+		name = "Battle of Valverde"
+		location = 218 # Badajoz
+		attacker = {
+			commander = "Pedro Muñiz"
+			infantry = 20000
+			losses = 95	# percent
+			country = CAS
+		}
+
+		defender = {
+			commander = "Nuno Álvares Pereira"
+			infantry = 3500
+			losses = 75	# percent
+			country = POR
+		}
+
+		result = no
+	}
+}
+
+# Unknown, but was around that time since all castille army was destroyed in 1385.8, tho there is a period of war between 1396-1402.
+1385.10.31 = {
+	rem_attacker = CAS
+	rem_attacker = FRA
+	rem_defender = POR
+	rem_defender = ENG
+}

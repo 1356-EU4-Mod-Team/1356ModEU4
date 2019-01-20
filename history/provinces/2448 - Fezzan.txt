@@ -1,0 +1,25 @@
+#2448 - Fezzan
+
+owner = FZA
+controller = FZA 
+culture = tunisian
+religion = sunni
+capital = "Murzuk"
+trade_goods = ivory
+hre = no
+base_tax = 4 
+base_production = 5
+base_manpower = 4
+is_city = yes
+add_core = FZA
+
+add_permanent_province_modifier = {
+	name = west_africa_ivory_trade
+	duration = -1
+}
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

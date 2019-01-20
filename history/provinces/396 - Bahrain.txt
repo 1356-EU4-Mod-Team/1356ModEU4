@@ -1,0 +1,42 @@
+# 396 - Bahrain (1356)
+# Changes: ORM
+
+owner = ORM
+controller = ORM
+culture = gulf_arabic
+religion = shiite
+capital = "Manama"
+trade_goods = gems # Pearls
+hre = no
+base_tax = 1 
+
+base_production = 1
+base_manpower = 2
+is_city = yes
+add_core = ORM # Tributary to Hormuz up until conquest by Jabrids
+
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = east_african
+
+1400.1.1 = { controller = ALH owner = ALH add_core = ALH }
+1480.1.1 = { discovered_by = TUR }
+1521.1.1 = {	owner = POR
+		controller = POR
+		add_core = POR
+	   } # Invaded by the Portuguese
+1602.1.1 = {	owner = PER
+		controller = PER
+		add_core = PER
+		remove_core = POR
+	   } # Invaded by the Persians under Shah Abbas I
+1783.1.1 = {	owner = NAJ
+		controller = NAJ
+		remove_core = PER
+	   } # Reconquered by the Bani Utubs
+1799.1.1 = {	owner = OMA
+		controller = OMA
+		add_core = OMA
+	   } # Ruled by the Sultanate of Oman

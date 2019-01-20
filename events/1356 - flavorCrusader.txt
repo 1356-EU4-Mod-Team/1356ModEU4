@@ -1,0 +1,1283 @@
+namespace = crusader_states
+
+country_event = {
+	id = crusader_states.1
+	
+	title = "crusader_states.1.t"
+	desc = "crusader_states.1.d"
+	
+	fire_only_once = yes
+	
+	picture = SIEGE_eventPicture
+	
+	trigger = {
+		owns = 327 # Adana
+		NOT = { tag = CIC }		
+		NOT = { is_religion_enabled = protestant }
+		OR = {
+			religion = orthodox
+			religion = catholic
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "crusader_states.1.a"
+		add_prestige = 5
+		add_dip_power = 25
+		327 = { change_province_name = Cilicia rename_capital = Sis }
+	}
+	option = {
+		trigger = {
+			NOT = { exists = CIC }
+		}
+		name = "crusader_states.1.b"
+		add_prestige = 10
+		add_dip_power = 50
+		327 = { change_province_name = Cilicia rename_capital = Sis cede_province = CIC change_religion = ROOT }
+		vassalize = CIC	
+	}
+}
+
+country_event = {
+	id = crusader_states.2
+	
+	title = "crusader_states.2.t"
+	desc = "crusader_states.2.d"
+	
+	fire_only_once = yes
+	
+	picture = SIEGE_eventPicture
+	
+	trigger = {
+		owns = 377 # Aleppo		
+		owns = 2313
+		NOT = { is_religion_enabled = protestant }
+		OR = {
+			religion = orthodox
+			religion = catholic
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "crusader_states.1.a"
+		add_prestige = 5
+		add_dip_power = 25
+		377 = { rename_capital = Aleppo }
+		2313 = { rename_capital = Antioch }
+	}
+	option = {
+		trigger = {
+			NOT = { exists = ATO }
+			tag = CYP
+		}
+		ai_chance = { factor = 75 }
+		name = "crusader_states.1.b"
+		add_prestige = 10
+		add_dip_power = 50
+		377 = { rename_capital = Aleppo cede_province = ATO change_religion = ROOT add_core = ATO }
+		2313 = { rename_capital = Antioch cede_province = ATO change_religion = ROOT add_core = ATO }
+		vassalize = ATO
+	}
+	option = {
+		trigger = {
+			NOT = { exists = ATO }
+			NOT = { tag = CYP }
+		}	
+		ai_chance = { factor = 25 }
+		name = "crusader_states.1.b"
+		add_prestige = 10
+		add_dip_power = 50
+		377 = { rename_capital = Aleppo cede_province = ATO change_religion = ROOT add_core = ATO }
+		2313 = { rename_capital = Antioch cede_province = ATO change_religion = ROOT add_core = ATO }
+		vassalize = ATO
+	}	
+}
+
+country_event = {
+	id = crusader_states.3
+	
+	title = "crusader_states.3.t"
+	desc = "crusader_states.3.d"
+	
+	fire_only_once = yes
+	
+	picture = SIEGE_eventPicture
+	
+	trigger = {
+		owns = 378 # Beirut
+		NOT = { is_religion_enabled = protestant }
+		OR = {
+			religion = orthodox
+			religion = catholic
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "crusader_states.3.a"
+		add_prestige = 10
+		add_dip_power = 50
+		378 = { change_province_name = Tripoli rename_capital = Tripoli }
+	}
+	option = {
+		trigger = {
+			exists = ATO
+			OR = { 
+				religion = orthodox
+				religion = catholic
+			}
+		}
+		ai_chance = { factor = 100 }		
+		name = "crusader_states.3.b"
+		add_prestige = 5
+		add_dip_power = 25
+		378 = { change_province_name = Tripoli rename_capital = Tripoli cede_province = ATO add_core = ATO }
+	}
+}
+
+## I'm unsure if these events put too much of a strain on the game. ##
+## Perhaps re-write the triggers to be instead in an event that ## 
+## picks out a nation from a random list, tries, then tries again? ##
+
+
+country_event = { #Event for Catholics to send aid to Crusader States
+	id = crusader_states.12
+	
+	title = "crusader_states.12.t"
+	desc = "crusader_states.12.d"
+	
+	picture = RELIGION_eventPicture 
+	
+	trigger = {
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+		NOT = { has_country_modifier = gave_aid_to_crusader_state_already_modifier }
+		NOT = { has_country_modifier = rejected_aid_to_crusader_state_modifier }
+		KOJ = {
+			religion = catholic
+			primary_culture = crusader_culture
+			has_country_modifier = crusader_state_borders_religious_enemy_modifier
+			NOT = { has_country_modifier = crusader_state_received_aid_recently_modifier }
+			is_excommunicated = no
+		}
+		religion = catholic
+		is_excommunicated = no
+		NOT = { tag = BYZ }
+		NOT = { tag = TUR }
+		NOT = { tag = RUM }
+		is_at_war = no
+		is_bankrupt = no
+		NOT = { num_of_loans = 3 }
+		OR = {
+			manpower_percentage = 0.40
+			years_of_income = 0.35
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = righteous_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = zealot_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = tolerant_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = kind_hearted_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = benevolent_personality
+		}
+		modifier = {
+			factor = 0.85
+			ruler_has_personality  = pious_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = babbling_buffoon_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = drunkard_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = sinner_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = greedy_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = cruel_personality
+		}
+		modifier = {
+			factor = 1.2
+			ruler_has_personality  = craven_personality
+		}
+		modifier = {
+			factor = 1.3
+			ruler_has_personality  = malevolent_personality
+		}
+		modifier = {
+			factor = 0.75
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_papal_controller = yes
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 1
+		}
+		modifier = {
+			factor = 0.75
+			religious_ideas = 7
+		}
+		modifier = {
+			factor = 25
+			tag = PAP
+		}
+	}
+	
+	option = { #Soldiers
+		name = "crusader_states.12.a"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_yearly_manpower = -1
+		add_legitimacy = 3
+		KOJ = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_yearly_manpower = 1
+		}
+	}
+	option = { #Money
+		name = "crusader_states.12.b"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_treasury = -100
+		add_legitimacy = 3
+		KOJ = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_treasury = 100
+		}
+		
+	}
+	option = { #No Aid
+		name = "crusader_states.12.c"
+		custom_tooltip = rejected_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = rejected_aid_to_crusader_state_modifier
+			duration = 2555 
+			desc = rejected_aid_to_crusader_state_modifier_desc
+		}
+		add_legitimacy = -10
+	}
+}
+
+country_event = { #Event for Catholics to send aid to Crusader States
+	id = crusader_states.13
+	
+	title = "crusader_states.13.t"
+	desc = "crusader_states.13.d"
+	
+	picture = RELIGION_eventPicture 
+	
+	trigger = {
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+		NOT = { has_country_modifier = gave_aid_to_crusader_state_already_modifier }
+		NOT = { has_country_modifier = rejected_aid_to_crusader_state_modifier }
+		KNI = {
+			religion = catholic
+			primary_culture = crusader_culture
+			has_country_modifier = crusader_state_borders_religious_enemy_modifier
+			NOT = { has_country_modifier = crusader_state_received_aid_recently_modifier }
+			is_excommunicated = no
+		}
+		religion = catholic
+		is_excommunicated = no
+		NOT = { tag = BYZ }
+		NOT = { tag = TUR }
+		NOT = { tag = RUM }
+		is_at_war = no
+		is_bankrupt = no
+		NOT = { num_of_loans = 3 }
+		OR = {
+			manpower_percentage = 0.40
+			years_of_income = 0.35
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			ruler_has_personality = righteous_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = zealot_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = tolerant_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = kind_hearted_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = benevolent_personality
+		}
+		modifier = {
+			factor = 0.85
+			ruler_has_personality  = pious_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = babbling_buffoon_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = drunkard_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = sinner_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = greedy_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = cruel_personality
+		}
+		modifier = {
+			factor = 1.2
+			ruler_has_personality  = craven_personality
+		}
+		modifier = {
+			factor = 1.3
+			ruler_has_personality  = malevolent_personality
+		}
+		modifier = {
+			factor = 0.75
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_papal_controller = yes
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 1
+		}
+		modifier = {
+			factor = 0.75
+			religious_ideas = 7
+		}
+		modifier = {
+			factor = 25
+			tag = PAP
+		}
+	}
+	
+	option = { #Soldiers
+		name = "crusader_states.12.a"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_yearly_manpower = -1
+		add_legitimacy = 3
+		KNI = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_yearly_manpower = 1
+		}
+	}
+	option = { #Money
+		name = "crusader_states.12.b"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_treasury = -100
+		add_legitimacy = 3
+		KNI = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_treasury = 100
+		}
+		
+	}
+	option = { #No Aid
+		name = "crusader_states.12.c"
+		custom_tooltip = rejected_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = rejected_aid_to_crusader_state_modifier
+			duration = 2555 
+			desc = rejected_aid_to_crusader_state_modifier_desc
+		}
+		add_legitimacy = -10
+	}
+}
+
+country_event = { #Event for Catholics to send aid to Crusader States
+	id = crusader_states.14
+	
+	title = "crusader_states.14.t"
+	desc = "crusader_states.14.d"
+	
+	picture = RELIGION_eventPicture 
+	
+	trigger = {
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+		NOT = { has_country_modifier = gave_aid_to_crusader_state_already_modifier }
+		NOT = { has_country_modifier = rejected_aid_to_crusader_state_modifier }
+		CYP = {
+			religion = catholic
+			primary_culture = crusader_culture
+			has_country_modifier = crusader_state_borders_religious_enemy_modifier
+			NOT = { has_country_modifier = crusader_state_received_aid_recently_modifier }
+			is_excommunicated = no
+		}
+		religion = catholic
+		is_excommunicated = no
+		NOT = { tag = BYZ }
+		NOT = { tag = TUR }
+		NOT = { tag = RUM }
+		is_at_war = no
+		is_bankrupt = no
+		NOT = { num_of_loans = 3 }
+		OR = {
+			manpower_percentage = 0.40
+			years_of_income = 0.35
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = righteous_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = zealot_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = tolerant_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = kind_hearted_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = benevolent_personality
+		}
+		modifier = {
+			factor = 0.85
+			ruler_has_personality  = pious_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = babbling_buffoon_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = drunkard_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = sinner_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = greedy_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = cruel_personality
+		}
+		modifier = {
+			factor = 1.2
+			ruler_has_personality  = craven_personality
+		}
+		modifier = {
+			factor = 1.3
+			ruler_has_personality  = malevolent_personality
+		}
+		modifier = {
+			factor = 0.75
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_papal_controller = yes
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 1
+		}
+		modifier = {
+			factor = 0.75
+			religious_ideas = 7
+		}
+		modifier = {
+			factor = 25
+			tag = PAP
+		}
+	}
+	
+	option = { #Soldiers
+		name = "crusader_states.12.a"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_yearly_manpower = -1
+		add_legitimacy = 3
+		CYP = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_yearly_manpower = 1
+		}
+	}
+	option = { #Money
+		name = "crusader_states.12.b"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_treasury = -100
+		add_legitimacy = 3
+		CYP = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_treasury = 100
+		}
+		
+	}
+	option = { #No Aid
+		name = "crusader_states.12.c"
+		custom_tooltip = rejected_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = rejected_aid_to_crusader_state_modifier
+			duration = 2555 
+			desc = rejected_aid_to_crusader_state_modifier_desc
+		}
+		add_legitimacy = -10
+	}
+}
+
+country_event = { #Event for Catholics to send aid to Crusader States
+	id = crusader_states.15
+	
+	title = "crusader_states.15.t"
+	desc = "crusader_states.15.d"
+	
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+		NOT = { has_country_modifier = gave_aid_to_crusader_state_already_modifier }
+		NOT = { has_country_modifier = rejected_aid_to_crusader_state_modifier }
+		CIC = {
+			religion = catholic
+			primary_culture = crusader_culture
+			has_country_modifier = crusader_state_borders_religious_enemy_modifier
+			NOT = { has_country_modifier = crusader_state_received_aid_recently_modifier }
+			is_excommunicated = no
+		}
+		religion = catholic
+		is_excommunicated = no
+		NOT = { tag = BYZ }
+		NOT = { tag = TUR }
+		NOT = { tag = RUM }
+		is_at_war = no
+		is_bankrupt = no
+		NOT = { num_of_loans = 3 }
+		OR = {
+			manpower_percentage = 0.40
+			years_of_income = 0.35
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = righteous_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = zealot_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = tolerant_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = kind_hearted_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = benevolent_personality
+		}
+		modifier = {
+			factor = 0.85
+			ruler_has_personality  = pious_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = babbling_buffoon_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = drunkard_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = sinner_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = greedy_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = cruel_personality
+		}
+		modifier = {
+			factor = 1.2
+			ruler_has_personality  = craven_personality
+		}
+		modifier = {
+			factor = 1.3
+			ruler_has_personality  = malevolent_personality
+		}
+		modifier = {
+			factor = 0.75
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_papal_controller = yes
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 1
+		}
+		modifier = {
+			factor = 0.75
+			religious_ideas = 7
+		}
+		modifier = {
+			factor = 25
+			tag = PAP
+		}
+	}
+	
+	option = { #Soldiers
+		name = "crusader_states.12.a"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_yearly_manpower = -1
+		add_legitimacy = 3
+		CIC = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_yearly_manpower = 1
+		}
+	}
+	option = { #Money
+		name = "crusader_states.12.b"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_treasury = -100
+		add_legitimacy = 3
+		CIC = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_treasury = 100
+		}
+		
+	}
+	option = { #No Aid
+		name = "crusader_states.12.c"
+		custom_tooltip = rejected_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = rejected_aid_to_crusader_state_modifier
+			duration = 2555 
+			desc = rejected_aid_to_crusader_state_modifier_desc
+		}
+		add_legitimacy = -10
+	}
+}
+
+country_event = { #Event for Catholics to send aid to Crusader States
+	id = crusader_states.16
+	
+	title = "crusader_states.16.t"
+	desc = "crusader_states.16.d"
+	
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+		NOT = { has_country_modifier = gave_aid_to_crusader_state_already_modifier }
+		NOT = { has_country_modifier = rejected_aid_to_crusader_state_modifier }
+		ATO = {
+			religion = catholic
+			primary_culture = crusader_culture
+			has_country_modifier = crusader_state_borders_religious_enemy_modifier
+			NOT = { has_country_modifier = crusader_state_received_aid_recently_modifier }
+			is_excommunicated = no
+		}
+		religion = catholic
+		is_excommunicated = no
+		NOT = { tag = BYZ }
+		NOT = { tag = TUR }
+		NOT = { tag = RUM }
+		is_at_war = no
+		is_bankrupt = no
+		NOT = { num_of_loans = 3 }
+		OR = {
+			manpower_percentage = 0.40
+			years_of_income = 0.35
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = righteous_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = zealot_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = tolerant_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = kind_hearted_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = benevolent_personality
+		}
+		modifier = {
+			factor = 0.85
+			ruler_has_personality  = pious_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = babbling_buffoon_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = drunkard_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = sinner_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = greedy_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = cruel_personality
+		}
+		modifier = {
+			factor = 1.2
+			ruler_has_personality  = craven_personality
+		}
+		modifier = {
+			factor = 1.3
+			ruler_has_personality  = malevolent_personality
+		}
+		modifier = {
+			factor = 0.75
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_papal_controller = yes
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 1
+		}
+		modifier = {
+			factor = 0.75
+			religious_ideas = 7
+		}
+		modifier = {
+			factor = 25
+			tag = PAP
+		}
+	}
+	
+	option = { #Soldiers
+		name = "crusader_states.12.a"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_yearly_manpower = -1
+		add_legitimacy = 3
+		ATO = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_yearly_manpower = 1
+		}
+	}
+	option = { #Money
+		name = "crusader_states.12.b"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_treasury = -100
+		add_legitimacy = 3
+		ATO = {
+ 			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_treasury = 100
+		}
+		
+	}
+	option = { #No Aid
+		name = "crusader_states.12.c"
+		custom_tooltip = rejected_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = rejected_aid_to_crusader_state_modifier
+			duration = 2555 
+			desc = rejected_aid_to_crusader_state_modifier_desc
+		}
+		add_legitimacy = -10
+	}
+}
+
+country_event = { #Event for Catholics to send aid to Crusader States
+	id = crusader_states.17
+	
+	title = "crusader_states.17.t"
+	desc = "crusader_states.17.d"
+	
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+		NOT = { has_country_modifier = gave_aid_to_crusader_state_already_modifier }
+		NOT = { has_country_modifier = rejected_aid_to_crusader_state_modifier }
+		EDE = {
+			religion = catholic
+			primary_culture = crusader_culture
+			has_country_modifier = crusader_state_borders_religious_enemy_modifier
+			NOT = { has_country_modifier = crusader_state_received_aid_recently_modifier }
+			is_excommunicated = no
+		}
+		religion = catholic
+		is_excommunicated = no
+		NOT = { tag = BYZ }
+		NOT = { tag = TUR }
+		NOT = { tag = RUM }
+		is_at_war = no
+		is_bankrupt = no
+		NOT = { num_of_loans = 3 }
+		OR = {
+			manpower_percentage = 0.40
+			years_of_income = 0.35
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = righteous_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = zealot_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = tolerant_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = kind_hearted_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = benevolent_personality
+		}
+		modifier = {
+			factor = 0.85
+			ruler_has_personality  = pious_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = babbling_buffoon_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = drunkard_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = sinner_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = greedy_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = cruel_personality
+		}
+		modifier = {
+			factor = 1.2
+			ruler_has_personality  = craven_personality
+		}
+		modifier = {
+			factor = 1.3
+			ruler_has_personality  = malevolent_personality
+		}
+		modifier = {
+			factor = 0.75
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_papal_controller = yes
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 1
+		}
+		modifier = {
+			factor = 0.75
+			religious_ideas = 7
+		}
+		modifier = {
+			factor = 25
+			tag = PAP
+		}
+	}
+	
+	option = { #Soldiers
+		name = "crusader_states.12.a"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_yearly_manpower = -1
+		add_legitimacy = 3
+		EDE = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_yearly_manpower = 1
+		}
+	}
+	option = { #Money
+		name = "crusader_states.12.b"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_treasury = -100
+		add_legitimacy = 3
+		EDE = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_treasury = 100
+		}
+		
+	}
+	option = { #No Aid
+		name = "crusader_states.12.c"
+		custom_tooltip = rejected_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = rejected_aid_to_crusader_state_modifier
+			duration = 2555 
+			desc = rejected_aid_to_crusader_state_modifier_desc
+		}
+		add_legitimacy = -10
+	}
+}
+
+country_event = { #Event for Catholics to send aid to Crusader States
+	id = crusader_states.18
+	
+	title = "crusader_states.18.t"
+	desc = "crusader_states.18.d"
+	
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+		NOT = { has_country_modifier = gave_aid_to_crusader_state_already_modifier }
+		NOT = { has_country_modifier = rejected_aid_to_crusader_state_modifier }
+		TPO = {
+			religion = catholic
+			primary_culture = crusader_culture
+			has_country_modifier = crusader_state_borders_religious_enemy_modifier
+			NOT = { has_country_modifier = crusader_state_received_aid_recently_modifier }
+			is_excommunicated = no
+		}
+		religion = catholic
+		is_excommunicated = no
+		NOT = { tag = BYZ }
+		NOT = { tag = TUR }
+		NOT = { tag = RUM }
+		is_at_war = no
+		is_bankrupt = no
+		NOT = { num_of_loans = 3 }
+		OR = {
+			manpower_percentage = 0.40
+			years_of_income = 0.35
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = righteous_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = zealot_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = tolerant_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = kind_hearted_personality
+		}
+		modifier = {
+			factor = 0.9
+			ruler_has_personality  = benevolent_personality
+		}
+		modifier = {
+			factor = 0.85
+			ruler_has_personality  = pious_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = babbling_buffoon_personality
+		}
+		modifier = {
+			factor = 1.1
+			ruler_has_personality  = drunkard_personality
+		}
+		modifier = {
+			factor = 1.5
+			ruler_has_personality  = sinner_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = greedy_personality
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality  = cruel_personality
+		}
+		modifier = {
+			factor = 1.2
+			ruler_has_personality  = craven_personality
+		}
+		modifier = {
+			factor = 1.3
+			ruler_has_personality  = malevolent_personality
+		}
+		modifier = {
+			factor = 0.75
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_papal_controller = yes
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 1
+		}
+		modifier = {
+			factor = 0.75
+			religious_ideas = 7
+		}
+		modifier = {
+			factor = 25
+			tag = PAP
+		}
+	}
+	
+	option = { #Soldiers
+		name = "crusader_states.12.a"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_yearly_manpower = -1
+		add_legitimacy = 3
+		TPO = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_yearly_manpower = 1
+		}
+	}
+	option = { #Money
+		name = "crusader_states.12.b"
+		custom_tooltip = sent_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = gave_aid_to_crusader_state_already_modifier
+			duration = 2555 
+			desc = gave_aid_to_crusader_state_modifier_desc
+		}
+		add_treasury = -100
+		add_legitimacy = 3
+		TPO = {
+			country_event = { 
+				id = crusader_states.19
+				days = 90
+			}
+			add_treasury = 100
+		}
+		
+	}
+	option = { #No Aid
+		name = "crusader_states.12.c"
+		custom_tooltip = rejected_aid_to_crusader_state_tooltip
+		add_country_modifier = { 
+			name = rejected_aid_to_crusader_state_modifier
+			duration = 2555 
+			desc = rejected_aid_to_crusader_state_modifier_desc
+		}
+		add_legitimacy = -10
+	}
+}
+
+country_event = { #Tells Crusader State Aid has arrived from previous nation
+	id = crusader_states.19
+	
+	title = "crusader_states.19.t"
+	desc = "crusader_states.19.d"
+	
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crusader_states.19.a
+		custom_tooltip = crusader_state_aid_received_success_tooltip
+	}
+}

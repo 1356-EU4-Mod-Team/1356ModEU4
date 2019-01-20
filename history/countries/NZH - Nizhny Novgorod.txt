@@ -1,0 +1,45 @@
+# Principality of Nizhny Novgorod-Suzdal
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+historical_rival = NOV
+historical_rival = LIT
+capital = 306	# Nizhny Novgorod
+
+1355.1.1 = {
+	monarch = {
+		name = "Dmitry I"
+		dynasty = "Rurikovich"
+		birth_date = 1324.1.1
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+	heir = {
+		name = "Vasiliy Kirdyapa"
+		monarch_name = "Vasily I"
+		dynasty = "Rurikovich"
+		birth_date = 1350.1.1
+		death_date = 1403.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1383.6.5 = {
+	monarch = {
+		name = "Vasily I"
+		dynasty = "Rurikovich"
+		birth_date = 1350.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# 1392 to Muscowy

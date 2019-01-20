@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = mandala_reform
+technology_group = chinese
+religion = buddhism
+primary_culture = shan
+capital = 581
+
+1352.2.23 = {
+	monarch = {
+		name = "Minbyauk Thilapate"
+		dynasty = "Myinsaing"
+		birth_date = 1309.10.15
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}

@@ -1,0 +1,109 @@
+#################
+# PU's		#
+#################
+
+# Ferrara and Modena under the Estes
+union = { 
+	first = FER
+	second = MOD
+	start_date = 1336.5.13
+	end_date = 1393.7.30
+}
+
+#################
+# Alliances	#
+#################
+
+alliance = {
+	first = AUG
+	second = PIS
+	start_date = 1355.5.21
+	end_date = 1364.7.1
+}
+
+alliance = {
+	first = CAS
+	second = POR
+	start_date = 1356.12.26
+	end_date = 1366.3.13
+}
+
+# Alliance against the Papal states
+alliance = {
+	first = URB
+	second = MLO
+	start_date = 1375.1.1
+	end_date = 1404.4.29
+}
+
+alliance = {
+	first = URB
+	second = LAN
+	start_date = 1375.1.1
+	end_date = 1404.4.29
+}
+
+# Savoy with Montferrat/Byzantine Empire
+alliance = {
+	first = SAV
+	second = MFA
+	start_date = 1305.1.9
+	end_date = 1372.3.19
+}
+
+#################
+# VASSALS	#
+#################
+
+vassal = {
+	first = SAV
+	second = MFA
+	start_date = 1433.4.26
+	end_date = 1444.1.1
+}
+
+#################
+# RM's		#
+#################
+
+royal_marriage = {
+	 first = MAN 
+	 second = FER 
+	 start_date = 1356.2.16
+	 end_date = 1381.9.26
+}
+
+royal_marriage = {
+	 first = MAN 
+	 second = MLO 
+	 start_date = 1380.1.1
+	 end_date = 1391.2.7
+}
+
+#################################
+# Other Dynastic Relations	#
+#################################
+
+# Aragon and Sicily
+#alliance = { #Changed to be Vanilla Compatible
+#	first = ARA
+#	second = SIC
+#	start_date = 1386.5.19
+#	end_date = 1409.7.25
+#}
+
+alliance = {
+	first = ARA
+	second = SIC
+	start_date = 1386.5.19
+	end_date = 1392.1.1
+	#end_date = 1409.7.25 #To prevent vanilla overlap
+}
+
+royal_marriage = {
+	first = ARA
+	second = SIC
+	start_date = 1386.5.19
+	end_date = 1392.1.1
+	#end_date = 1409.7.25 #So theres no vanilla overlap
+}

@@ -1,0 +1,14 @@
+sound = {
+	name = defender_of_the_hussite_faith
+	file = "claim_defender_faith_hussite.wav"
+}
+
+sound = {
+	name = start_convert_hussite
+	file = "start_conversion_christian_hussite.wav"
+}
+
+sound = {
+	name = age_of_feudalism
+	file = "age_of_feudalism.wav"
+}

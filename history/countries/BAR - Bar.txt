@@ -1,0 +1,175 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = burgundian
+religion = catholic
+technology_group = western
+capital = 187	# Verdun
+
+1352.5.1 = {
+	monarch = {
+		name = "Queen Regent Jolante"
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+	heir = {
+		name = "Robert"
+		monarch_name = "Robert I"
+		dynasty = "de Scarponnois"
+		birth_date = 1344.11.8
+		death_date = 1411.4.12
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1359.11.8 = {
+	monarch = {
+		name = "Robert I"
+		dynasty = "de Scarponnois"
+		birth_date = 1344.11.8
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1364.1.1 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Marie"
+		dynasty = "de Valois"
+		birth_date = 1344.9.18
+		death_date = 1404.10.15
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1377.6.25 = {
+	heir = {
+		name = "Édouard"
+		monarch_name = "Édouard III"
+		dynasty = "de Scarponnois"
+		birth_date = 1377.6.25
+		death_date = 1415.10.25
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1411.4.12 = {
+	monarch = {
+		name = "Édouard III"
+		dynasty = "de Scarponnois"
+		birth_date = 1377.6.25
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+	heir = {
+		name = "Louis"
+		monarch_name = "Louis I"
+		dynasty = "de Scarponnois"
+		birth_date = 1375.1.1
+		death_date = 1430.6.26
+		claim = 75
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1415.10.25 = {
+	monarch = {
+		name = "Louis I"
+		dynasty = "de Scarponnois"
+		birth_date = 1375.1.1
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1419.8.13 = { # Treaty of Saint-Mihiel
+	monarch = {
+		name = "Regent Charles de Châtenois"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+	heir = {
+		name = "René"
+		monarch_name = "René I"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1409.1.16
+		death_date = 1480.7.10
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1425.1.16 = {
+	monarch = {
+		name = "René I"
+		dynasty = "de Valois-Anjou"
+		birth_date = 1409.1.16
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+	queen = {
+		country_of_origin = LOR
+		name = "Isabelle"
+		dynasty = "de Châtenois"
+		birth_date = 1400.1.1
+		death_date = 1453.2.28
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1431.1.25 = { # as Duchess
+	queen = {
+		country_of_origin = LOR
+		name = "Isabelle I"
+		dynasty = "de Châtenois"
+		birth_date = 1400.1.1
+		death_date = 1453.2.28
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# 1434.11.12 - Inherited by Provence under René de Valois-Anjou
+
+#1440.1.1 = { government = feudalism_reform }
+
+1480.7.10 = {
+	monarch = {
+		name = "Yolande"
+		dynasty = "de Vaudémont"
+		adm = 2
+		dip = 2
+		mil = 1
+		female = yes
+	}
+}
+
+# 1483.3.23: Inherited by René II of Lorraine

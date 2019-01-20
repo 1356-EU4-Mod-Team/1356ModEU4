@@ -1,0 +1,42 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = ryazanian
+historical_friend = RUS
+capital = 289	# Chernigov
+fixed_capital = 289 # Cannot move capital away from this province & no power cost to move to it
+
+1353.4.13 = {
+	monarch = {
+		name = "Roman II"
+		dynasty = "Mikhailovich"
+		birth_date = 1345.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1372.1.1 = {
+	monarch = {
+		name = "Dmitry"
+		dynasty = Gediminai
+		birth_date = 1351.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1393.1.1 = {
+	monarch = {
+		name = "Roman II"
+		dynasty = "Mikhailovich"
+		birth_date = 1345.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

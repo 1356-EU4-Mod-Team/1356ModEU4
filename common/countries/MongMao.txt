@@ -1,0 +1,68 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 179  228  104 }
+
+historical_idea_groups = {
+	defensive_ideas
+	spy_ideas
+	trade_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	religious_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	eastern_bow
+	chinese_footsoldier
+	chinese_steppe
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	manchu_banner
+	han_banner
+	asian_musketeer
+	chinese_dragoon
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	reformed_manchu_rifle
+}
+
+monarch_names = {
+	"Si Kefa #0" = 20
+	"Zhao Bingfa #0" = 20
+	"Tai Bian #0" = 20
+	"Zhao Xiofa #0" = 20
+	"Si Wafa #0" = 20
+	"Si Lunfa #0" = 20
+	"Si Xingfa #0" = 20
+	"Si Renfa #0" = 20
+	"Si Jifa #0" = 20
+	"Si Bufa #0" = 20
+}
+
+leader_names = {
+	Li Wang Zhang Liu Zhao Chen Yang Wu Huang Zhou Xu Zhu Lin Sun Ma
+	Gao Hu Zheng Guodao Xie He Xu Song Shen Luo Han Deng Liang Ye
+	Peng Fang Wang Cui Cai Cheng Yuan  Pan Lu Cao Tang Feng Qian Du
+}
+
+ship_names = {
+	Gaodi Huidi Wendi Zhaodi Zhangdi "Da Ming Guo"
+	Beijing "Zeng He" Ji'nan Nanjing Hangzhou 
+	Wuchang Fuzhou Nanchang Guilin Guangzhou
+	Guiyang Yunnan Chendo Xi'an Taiyuan "Huang He"
+	"Chang Jiang" "Xijiang" "Kung-fu tzu" Mencius
+	"Xun Zi" "Yan Hui" "Min Sun" "Ran Geng" "Ran Yong"
+	"Zi-you" "Zi-lu" "Zi-wo" "Zi-gong" "Yan Yan"
+	"Zi-xia" "Zi-zhang" "Zeng Shen" "Dantai Mieming"
+	"Fu Buji" "Yuan Xian" "Gungye Chang" "Nangong Guo"
+	"Gongxi Ai" "Zeng Dian" "Yan Wuyao" "Shang Zhu"
+	"Gao Chai" "Qidiao Kai" "Gongbo Liao" "Sima Geng"
+	"Fan Xu" "You Ruo" "Gongxi Chi" "Wuma Shi" "Liang Zhan"
+	"Yan Xing" "Ran Ru" "Cao Xu" "Bo Qian" "Gongsun Long"
+}

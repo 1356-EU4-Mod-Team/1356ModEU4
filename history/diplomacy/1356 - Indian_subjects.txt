@@ -1,0 +1,317 @@
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = JSL
+	start_date = 1356.1.1
+	end_date = 1398.1.1 
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = BGA
+	start_date = 1356.1.1
+	end_date = 1407.1.1
+}
+
+vassal = {
+	first = DLH
+	second = GUJ
+	start_date = 1391.1.1
+	end_date = 1407.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = TRT
+	start_date = 1356.1.1
+	end_date = 1394.1.1
+}
+
+vassal = {
+	first = DLH
+	second = MAW
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+
+vassal = {
+	first = DLH
+	second = SND
+	start_date = 1367.1.1
+	end_date = 1388.9.20
+}
+
+#vassal = { #Duplicate
+#	first = JNP
+#	second = TRT
+#	start_date = 1394.1.1
+#	end_date = 1486.1.1
+#}
+
+#vassal = { #Duplicate
+#	first = DLH
+#	second = TRT
+#	start_date = 1499.1.1
+#	end_date = 1526.1.1
+#}
+
+vassal = {
+	first = MLW
+	second = SIR
+	start_date = 1418.1.1
+	end_date = 1531.1.1
+}
+
+vassal = {
+	first = VIJ
+	second = KRK
+	start_date = 1356.1.1
+	end_date = 1378.1.1
+}
+
+vassal = {
+	first = VIJ
+	second = MYS
+	start_date = 1399.1.1
+	end_date = 1444.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = SND
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = JSL
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = MAW
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = NGA
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = DHU
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = MER
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = GUJ
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = KAT
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = JLV
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = PTL
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = JGD
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = PRB
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+vassal = {
+	first = DLH
+	second = BAH
+	start_date = 1355.1.1
+	end_date = 1370.1.1 #Needs a more accurate date
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = KLP
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = BND
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = PAN
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = BGL
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = KSH
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = ORI
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = KJH
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = NGP
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = DEO
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = VIJ
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+vassal = {
+	first = DLH
+	second = AHM
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = GDW
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = YOR
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = TLG
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = GOC
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = GNG
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = DLH
+	second = KRK
+	start_date = 1355.1.1
+	end_date = 1370.1.1
+}

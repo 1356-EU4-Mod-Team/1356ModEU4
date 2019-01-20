@@ -1,0 +1,47 @@
+namespace = immortalszoroastrian
+#Commented out as they have no trigger to call them.
+
+## The Janissaries
+#country_event = {
+#	id = immortalszoroastrian.100
+#	title = "immortalszoroastrian.EVTNAME100"
+#	desc = "immortalszoroastrian.EVTDESC100"
+#	picture = MILITARY_CAMP_eventPicture
+#	
+#	fire_only_once = yes
+#	major = yes
+#	is_triggered_only = yes
+#	
+#	option = {		# Continue building up the Janissaries
+#		name = "immortalszoroastrian.EVTOPTA100"
+#		add_country_modifier = {
+#			name = the_immortals
+#			duration = -1
+#		}
+#		custom_tooltip = janissary_disaster_notifier
+#		set_country_flag = janissary_timer
+#	}
+#}
+
+#country_event = {
+#	id = immortalszoroastrian.101
+#	title = "immortalszoroastrian.EVTNAME101"
+#	desc = "immortalszoroastrian.EVTDESC101"
+#	picture = MILITARY_CAMP_eventPicture
+#	
+#	fire_only_once = yes
+#	major = yes
+#	is_triggered_only = yes
+#	
+#	option = {		# Continue building up the Janissaries
+#		name = "immortalszoroastrian.EVTOPTA101"
+#		random_owned_province = {
+#			change_religion = zoroastrian
+#			add_reform_center = zoroastrian
+#			add_province_modifier = {
+#				name = "religious_zeal_at_conv"
+#				duration = 1500
+#			}
+#		}
+#	}
+#}

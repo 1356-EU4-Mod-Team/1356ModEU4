@@ -1,0 +1,147 @@
+namespace = fladebugevent
+
+#####################################################################
+##Written by the previous team, modified by Flandy to cleanup files##
+#####################################################################
+country_event = {
+	id = fladebugevent.1
+	title = fladebugevent.1.t
+	desc = fladebugevent.1.d
+	picture = NAVAL_MILITARY_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		owns = 136
+		is_at_war = no
+		CRO = {
+			exists = yes
+			is_subject_of = HUN
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		ai_chance = { 
+			factor = 100 
+		}
+		name = fladebugevent.1.a
+		136 = { cede_province = CRO change_controller = CRO }
+	}
+	option = {
+		name = fladebugevent.1.b
+		add_legitimacy = -5
+	}
+}
+
+country_event = {
+	id = fladebugevent.2
+	title = fladebugevent.2.t
+	desc = fladebugevent.2.d
+	picture = NAVAL_MILITARY_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_at_war = no
+		NOT = { owns = 136 }
+		RAG = { is_subject_of = VEN }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = fladebugevent.2.a
+		free_vassal = RAG
+	}
+	option = {
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 0
+				
+				is_at_war = yes
+				NOT = { war_score = 0 }
+				war_exhaustion = 10
+			}
+		}	
+		name = fladebugevent.2.b
+		add_prestige = -5
+		free_vassal = RAG
+		declare_war_with_cb = {
+			who = RAG
+			casus_belli = cb_disloyal_vassal
+		}
+	}
+}
+
+country_event = {
+	id = fladebugevent.3
+	title = fladebugevent.3.t
+	desc = fladebugevent.3.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CRI
+		NOT = { is_year = 1444 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+# Audax Validator "!" Ignore_1007
+	option = {
+		name = fladebugevent.1.a
+		284 = { add_unrest = -10 }
+        284 = { add_nationalism = -10 }
+		284 = { cede_province = CRI }
+		1974 = { add_unrest = -10 }
+        1974 = { add_nationalism = -10 }
+		1974 = { cede_province = CRI }
+        282 = { add_unrest = -10 }
+        282 = { add_nationalism = -10 }
+		282 = { cede_province = CRI }
+        2406 = { add_unrest = -10 }
+        2406 = { add_nationalism = -10 }
+        2406 = { cede_province = CRI }		
+        283 = { add_unrest = -10 }
+        283 = { add_nationalism = -10 }	
+        2406 = { cede_province = CRI }		
+        2412 = { add_unrest = -10 }
+        2412 = { add_nationalism = -10 }
+        2406 = { cede_province = CRI }	
+        2411 = { add_unrest = -10 }
+        2411 = { add_nationalism = -10 }	
+		2411 = { cede_province = CRI }
+		283 = { cede_province = CRI }
+		2412 = { cede_province = CRI }
+		2413 = { cede_province = CRI }
+		2414 = { cede_province = CRI }
+		287 = { cede_province = CRI }
+        CRI = {
+			define_ruler = {
+				name = "Shahin"
+				dynasty = "Giray"
+				#birth_date = 1340.4.8 #It doesn't take this into account saddly
+				claim = 100
+				adm = 2
+				dip = 2
+				mil = 2
+			}
+			define_ruler_to_general = {
+				fire = 4
+				shock = 4
+				manuever = 4
+				siege = 1
+			}			
+		}
+	}
+}
+

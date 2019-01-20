@@ -1,0 +1,46 @@
+# 127 - Sardinia (1356)
+# Changes: ARA
+
+owner = ARA
+controller = ARA
+culture = sardinian 
+religion = catholic 
+hre = no 
+base_tax = 3 
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+fort_15th = yes
+capital = "Sassari" 
+is_city = yes
+add_core = ARA 
+add_core = SAR
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1356.12.24  = { owner = SAR controller = SAR remove_core = ARA} #BT In
+1356.12.26  = { owner = ARA controller = ARA add_core = ARA} #BT Out
+
+1383.1.1  = { owner = SAR controller = SAR } # Independent
+1409.1.1  = { owner = ARA controller = ARA } # Conquered by Aragon
+1516.1.23 = {	owner = SPA
+		controller = SPA
+		add_core = SPA
+		remove_core = ARA
+	    } # Unification of Spain
+1713.4.12 = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+		remove_core = SPA
+	    }
+1720.1.1  = {	owner = SPI
+		controller = SPI
+		add_core = SPI
+		remove_core = HAB
+	    } # Kingdom of Piedmont-Sardinia
+1796.1.1  = { controller = FRA } # French invasion
+1796.4.16 = { controller = SPI } # Peace between Sardinia and France
+

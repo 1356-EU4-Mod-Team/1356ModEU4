@@ -1,0 +1,21 @@
+name = "Milanese War of Conquest"
+#casus_belli = cb_conquest
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 116
+}
+
+1401.10.1 = {
+	add_attacker = MLO
+	add_defender = LAN
+	add_defender = PAP
+}
+
+# Peace
+1402.9.3 = {
+	rem_attacker = MLO
+	rem_defender = LAN
+	rem_defender = PAP
+}
+	

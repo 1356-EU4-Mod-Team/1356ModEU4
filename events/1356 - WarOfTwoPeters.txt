@@ -1,0 +1,194 @@
+namespace = WarTwoPetersFlavor
+
+country_event = { #Castile
+	id = WarTwoPetersFlavor.1
+	title = WarTwoPetersFlavor.1.t
+	desc = WarTwoPetersFlavor.1.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = CAS
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.1.a
+		set_global_flag = "WarTwoPetersFlavor"
+        custom_tooltip = WarTwoPetersFlavor.1.a.tt	
+	}
+}
+country_event = { #Trastamara
+	id = WarTwoPetersFlavor.2
+	title = WarTwoPetersFlavor.2.t
+	desc = WarTwoPetersFlavor.2.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CTR
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.2.a
+		set_global_flag = "WarTwoPetersFlavor"
+        custom_tooltip = WarTwoPetersFlavor.2.a.tt	
+	}
+}
+country_event = { #Castile Wins Civil War
+	id = WarTwoPetersFlavor.3
+	title = WarTwoPetersFlavor.3.t
+	desc = WarTwoPetersFlavor.3.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = CAS
+                219 = { controlled_by = CAS }
+                NOT = { has_global_flag = "trastamara_wins_civil_war" }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.3.a
+		set_global_flag = "castile_wins_civil_war"
+		white_peace = CTR
+	}
+}
+country_event = { #House Trastamara wins Civil War
+	id = WarTwoPetersFlavor.4
+	title = WarTwoPetersFlavor.4.t
+	desc = WarTwoPetersFlavor.4.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+        major = yes
+	
+	trigger = {
+		tag = CTR
+                208 = { controlled_by = CTR }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.4.a
+                white_peace = CAS
+                add_prestige = 25
+                inherit = CAS
+		set_global_flag = "trastamara_wins_civil_war"
+                change_tag = CAS
+		swap_non_generic_missions = yes
+                set_government_rank = 2
+                add_truce_with = POR
+                add_truce_with = GRA 
+                define_heir = {
+                  name = "Henry"
+                  dynasty = "Trastamara"
+                  adm = 4
+                  dip = 3
+                  mil = 4
+                } 
+	}
+}
+country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Rival, Portugal as a Historical Friend
+	id = WarTwoPetersFlavor.5
+	title = WarTwoPetersFlavor.5.t
+	desc = WarTwoPetersFlavor.5.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CAS
+                has_global_flag = "castile_wins_civil_war"
+                NOT = { has_global_flag = "trastamara_wins_civil_war" }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.5.a
+                inherit = CTR
+                add_prestige = 25
+                add_truce_with = ARA 
+		}	
+}
+country_event = { #Castile
+	id = WarTwoPetersFlavor.6
+	title = WarTwoPetersFlavor.6.t
+	desc = WarTwoPetersFlavor.6.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.6.a
+		add_legitimacy = -15
+		add_prestige = -15
+	}
+}
+country_event = { #Trastamara
+	id = WarTwoPetersFlavor.7
+	title = WarTwoPetersFlavor.7.t
+	desc = WarTwoPetersFlavor.7.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = CTR
+		exists = CAS
+		is_year = 1360
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.7.a
+		change_tag = SEV
+		add_prestige = 25
+		add_legitimacy = 100
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		CAS = {
+			country_event = { 
+				id = WarTwoPetersFlavor.6
+				days = 15
+				random = 15
+			}
+		}
+	}
+}
+
+	

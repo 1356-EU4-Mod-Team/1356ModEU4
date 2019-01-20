@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = sumatran
+religion = sunni
+technology_group = chinese
+capital = 619	# Batak
+
+1356.1.1 = {
+	monarch = {
+		name = "Ibrahimsyah"
+		dynasty = "Pasaribu"
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+

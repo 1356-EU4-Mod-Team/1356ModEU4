@@ -1,0 +1,38 @@
+name = "Hundred Years War - Caroline Phase"
+#casus_belli = cb_disloyal_vassal
+war_goal = {
+	type = take_capital_disloyal
+	casus_belli = cb_disloyal_vassal
+	tag = BRI
+}
+
+# Jean IV doesn't show up in french court to face his charges because of secret alliance with England
+1378.12.18 = { 
+	add_attacker = FRA
+	add_attacker = DAU
+	add_attacker = BER
+	add_attacker = ORL
+	add_attacker = ALE
+	add_attacker = ANJ
+	add_defender = BRI
+	add_defender = ENG
+	add_defender = WLS
+	add_defender = NOL
+	add_defender = YRK
+	add_defender = LNC
+}
+
+1379.10.14 = { # Truce
+	rem_attacker = FRA
+	rem_attacker = DAU
+	rem_attacker = BER
+	rem_attacker = ORL
+	rem_attacker = ALE
+	rem_attacker = ANJ
+	rem_defender = BRI
+	rem_defender = ENG
+	rem_defender = WLS
+	rem_defender = NOL
+	rem_defender = YRK
+	rem_defender = LNC
+}

@@ -1,0 +1,100 @@
+union = {
+	first = ENG
+	second = WLS
+	#start_date = 1283.1.1 #Balance
+	start_date = 1356.1.1
+	end_date = 1404.1.1
+}
+
+union = {
+	first = ENG
+	second = GUY
+	#start_date = 1300.1.1 #Balance
+	start_date = 1356.1.1
+	end_date = 1360.5.8
+}
+
+union = {
+	first = LNC
+	second = GUY
+	start_date = 1390.1.1
+	end_date = 1399.2.3
+}
+
+
+vassal = {
+	first = SCO
+	second = KOI
+	#start_date = 1266.1.1 #Balance
+	start_date = 1356.1.1
+	end_date = 1399.1.1
+}
+
+vassal = {
+	first = ENG
+	second = NOL
+	start_date = 1356.1.1
+	#start_date = 1300.1.1 #Balance
+	end_date = 1403.7.21
+}
+
+vassal = {
+	first = ENG
+	second = YRK
+	start_date = 1356.1.1
+	#start_date = 1300.1.1 #Balance
+	end_date = 1415.10.25
+}
+
+vassal = {
+	first = ENG
+	second = LNC
+	start_date = 1356.1.1
+	#start_date = 1300.1.1 #Balance
+	end_date = 1399.2.3
+}
+
+vassal = {
+	first = ENG
+	second = KID
+	start_date = 1356.1.1
+	end_date = 1477.2.3
+}
+
+vassal = {
+	first = GUY
+	second = AMG
+	start_date = 1356.10.1
+	end_date = 1369.5.1
+}
+
+alliance = {
+	first = ENG
+	second = NAV
+	start_date = 1349.8.1
+	end_date = 1357.9.23
+}
+
+vassal = { #Changed to be Vanilla compatible
+	first = SCO
+	second = LOI
+	start_date = 1356.1.1
+	end_date = 1443.12.31
+
+}
+
+#BT Additions
+
+vassal = {
+	first = GUY
+	second = FOI
+	start_date = 1356.12.23
+	end_date = 1360.12.25 #Was 1360.5.8 pre merge
+}
+
+#union = { #Can't progress further in the BT date due to merge
+#	first = LNC
+#	second = GUY
+#	start_date = 1390.1.1
+#	end_date = 1399.2.3
+#}

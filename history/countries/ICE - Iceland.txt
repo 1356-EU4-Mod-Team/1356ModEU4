@@ -1,0 +1,10 @@
+government = republic
+add_government_reform = oligarchy_reform
+primary_culture = icelandic
+add_accepted_culture = norwegian
+religion = catholic
+technology_group = western
+historical_rival = SCO
+historical_friend = NOR
+capital = 370	# Reykjavic
+

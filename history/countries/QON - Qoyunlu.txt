@@ -1,0 +1,47 @@
+government = tribal
+add_government_reform = tribal_federation
+primary_culture = turkish
+add_accepted_culture = kurdish
+add_accepted_culture = armenian
+religion = sunni
+technology_group = muslim
+historical_rival = ARM
+historical_friend = JLR
+capital = 331
+religious_school = hanafi_school
+
+1340.1.1 = {
+	monarch = {
+		name = "Qutlugh"
+		dynasty = "Qoyunlu"
+		birth_date = 1330.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+	add_piety = 0.3
+}
+
+1360.1.1 = {
+	monarch = {
+		name = "Qutlugh bin Tur Ali"
+		dynasty = "Aq Qoyunlu"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1360.1.1 = {
+	heir = {
+		name = "Ahmed"
+		monarch_name = "Ahmed bin Qutlugh"
+		dynasty = "Aq Qoyunlu"
+		birth_date = 1350.1.1
+		death_date = 1403.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

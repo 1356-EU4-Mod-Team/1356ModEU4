@@ -1,0 +1,37 @@
+keyserswerdt_zoll = {
+	local_tax_modifier = 0.25
+	local_production_efficiency = 0.10
+	local_manpower_modifier = 0.25
+	province_trade_power_modifier = 0.25
+	land_forcelimit = 10
+	local_defensiveness = 0.20
+	picture = "province_trade_power_value"
+}
+
+centralized_germany = {
+	unjustified_demands = -0.05
+	ae_impact = -0.05
+	global_autonomy = -0.1
+	technology_cost = -0.1
+	stability_cost_modifier = -0.1
+	global_unrest = -3
+}
+
+enforced_religious_conversation = {
+	global_missionary_strength = 0.1
+	missionaries = 2
+}
+
+enhanced_colonisation = {
+	colonists = 4
+	range = 35.0
+	global_colonial_growth = 40
+}
+
+italian_supplies = {
+    land_morale = 0.05
+    defensiveness = 0.10
+    garrison_size = 0.5
+    mercenary_cost = -0.1
+    merc_maintenance_modifier = -0.1
+}

@@ -1,0 +1,423 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = hungarian
+add_accepted_culture = slovak
+add_accepted_culture = transylvanian
+add_accepted_culture = croatian
+religion = catholic
+technology_group = eastern
+capital = 153 # Buda
+historical_friend = HAB
+
+1342.7.16 = {
+	monarch = {
+		name = "Lajos"
+		dynasty = "d'Anjou"
+		birth_date = 1326.3.5
+		ADM = 6
+		DIP = 5
+		MIL = 5
+	}
+}
+
+1353.5.27 = {
+	queen = {
+		country_of_origin = BOS
+		name = "Elizabeta"
+		dynasty = "Kotromanic"
+		birth_date = 1340.1.1
+		death_date = 1387.1.16
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1371.4.14 = {
+	heir = { 
+		name = "Mária"
+		monarch_name = "Mária"
+		dynasty = "d'Anjou"
+		birth_date = 1371.4.14
+		death_date = 1395.5.17
+		female = yes
+		claim = 100
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1382.9.10 = {
+	monarch = {
+		name = "Queen Regent Elizabeta"
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+	heir = { 
+		name = "Mária"
+		monarch_name = "Mária"
+		dynasty = "d'Anjou"
+		birth_date = 1371.4.14
+		death_date = 1395.5.17
+		female = yes
+		claim = 100
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1385.12.31 = {
+	monarch = {
+		name = "Károly II"
+		dynasty = "d'Anjou-Durazzo"
+		birth_date = 1345.1.1
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = NAP
+		name = "Margherita"
+		dynasty = "d'Anjou-Durazzo"
+		birth_date = 1347.7.28
+		death_date = 1412.8.6
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1386.2.24 = {
+	monarch = {
+		name = "Mária"
+		dynasty = "d'Anjou"
+		birth_date = 1371.4.14
+		female = yes
+		ADM = 1
+		DIP = 2
+		MIL = 1
+	}
+	queen = {
+		country_of_origin = BOH
+		name = "Sigismund I"
+		dynasty = "von Luxemburg"
+		birth_date = 1368.2.14	
+		death_date = 1437.12.9
+		female = no
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1387.3.31 = { # Holy Roman Emperor 1411.1.18 / 1437.12.9
+	monarch = {
+		name = "Sigismund I"
+		dynasty = "von Luxemburg"
+		birth_date = 1368.2.14	
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = HUN
+		name = "Mária"
+		dynasty = "d'Anjou"
+		birth_date = 1371.4.14
+		death_date = 1395.5.17
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1405.12.1 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Barbara"
+		dynasty = "von Cilli"
+		birth_date = 1392.1.1
+		death_date = 1451.7.11
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1409.10.7 = {
+	heir = { 
+		name = "Elisabeth"
+		monarch_name = "Elisabeth"
+		dynasty = "von Luxemburg"
+		birth_date = 1409.10.7
+		death_date = 1442.12.19
+		female = yes
+		claim = 100
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# 1437.12.9 - 1439.10.27 PU under Austria (Albrecht von Habsburg)
+
+1437.1.1 = { leader = {	name = "János Hunyadi"         	type = general	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1445.1.1 } }
+
+1437.12.9 = {
+	monarch = {
+		name = "Albrecht II"
+		dynasty = "von Habsburg"
+		birth_date = 1397.8.16
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = HUN
+		name = "Elisabeth"
+		dynasty = "von Luxemburg"
+		birth_date = 1409.10.7
+		death_date = 1442.12.19
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# 1439.10.27 - 1444.11.10 PU under Poland (Wladyslaw Jagiellon)
+
+1439.10.27 = {
+	monarch = {
+		name = "Wladyslaw III"
+		dynasty = Jagiellon
+		birth_date = 1424.10.31
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1444.11.10 = {
+	monarch = {
+		name = "Interregnum"
+		adm = 1
+		mil = 1
+		dip = 1
+		regent = yes
+	}
+}
+
+# 1453.1.1 - 1457.11.23 PU under Austria (Ladislaus Postumus von Habsburg)
+
+1453.1.1 = {
+	monarch = {
+		name = "Ladislaus Postumus"
+		dynasty = "von Habsburg"
+		culture = austrian
+		birth_date = 1440.2.22			
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1457.11.24 = {
+	monarch = {
+		name = "Mátyás"
+		dynasty = Corvin
+		birth_date = 1443.2.23			
+		adm = 4
+		dip = 5
+		mil = 5
+		leader = {	name = "Mátyás Corvin"         	type = general	fire = 3	shock = 4	manuever = 3	siege = 1 }
+	}
+}
+
+1462.1.1 = { leader = {	name = "Pal Kinizsi"           	type = general	fire = 2	shock = 3	manuever = 3	siege = 1	death_date = 1494.1.1 } }
+
+#1500.1.1 = { decision = court_of_wards_and_liveries }
+
+1515.1.1 = { leader = {	name = "Miklos Zrinyi"         	type = general	fire = 2	shock = 4	manuever = 3	siege = 1	death_date = 1530.1.1 } }
+
+1526.8.30 = {
+	monarch = {
+		name = "János I"
+		dynasty = "Zápolya"
+		birth_date = 1487.2.2			
+		adm = 4
+		dip = 3
+		mil = 2
+		leader = {	name = "János I Zápolya"       	type = general	fire = 2	shock = 2	manuever = 2	siege = 0}
+	}
+}
+
+1540.7.24 = {
+	monarch = {
+		name = "János II"
+		birth_date = 1540.7.7			
+		dynasty = "Zápolya"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1540.8.30 = { government = monarchy
+add_government_reform = autocracy_reform }
+
+1541.1.1 = { capital = 154 } # Pressburg
+
+1571.5.26 = {
+	monarch = {
+		name = "István"
+		dynasty = "Báthory"
+		birth_date = 1533.9.27			
+		adm = 5
+		dip = 2
+		mil = 6
+	}
+}
+
+1576.5.3 = {
+	monarch = {
+		name = "Christofer"
+		dynasty = "Báthory"
+		birth_date = 1530.5.27			
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1581.1.1 = {
+	monarch = {
+		name = "Sigismund"
+		dynasty = "Báthory"
+		birth_date = 1572.3.27			
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1596.1.1 = { leader = {	name = "Istvan Bocskai"        	type = general	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1606.1.1 } }
+
+1599.1.1 = {
+	monarch = {
+		name = "Mihai Viteazul"
+		dynasty ="Draculecti"
+		birth_date = 1558.1.1
+		adm = 4
+		dip = 6
+		mil = 6
+	}
+}
+
+1602.1.1 = {
+	monarch = {
+		name = "Interregnum"
+		regent = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1605.1.1 = {
+	monarch = {
+		name = "István"
+		dynasty = "Bocskai"
+		birth_date = 1557.1.1		
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1606.12.30 = {
+	monarch = {
+		name = "Gábor"
+		dynasty = "Báthory"
+		birth_date = 1589.8.15		
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1613.1.1 = {
+	monarch = {
+		name = "Gábor"
+		dynasty = "Bethlen"
+		birth_date = 1580.1.1
+		adm = 4
+		dip = 5
+		mil = 4
+		leader = {	name = "Gabor Bethlen"         	type = general	fire = 2	shock = 3	manuever = 5	siege = 1 } 
+	}
+}
+
+1629.11.17 = {
+	monarch = {
+		name = "György I"
+		dynasty = "Rákóczy"
+		birth_date = 1593.6.8		
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1648.1.1 = {
+	monarch = {
+		name = "György II"
+		dynasty = "Rákóczy"
+		birth_date = 1621.1.30		
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1649.1.1 = { leader = {	name = "Miklos Zrinyi II"      	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1664.1.1 } }
+
+1665.1.1 = {
+	monarch = {
+		name = "Ferenc I"
+		dynasty = "Rákóczy"
+		birth_date = 1645.2.24		
+		adm = 3
+		dip = 0
+		mil = 1
+	}
+}
+
+1678.1.1 = { leader = {	name = "Imre Thokoly"          	type = general	fire = 1	shock = 3	manuever = 2	siege = 1	death_date = 1705.9.13 } }
+
+1691.1.1 = {
+	monarch = {
+		name = "Ferenc II"
+		dynasty = "Rákóczy"
+		birth_date = 1676.3.27		
+		adm = 4
+		dip = 5
+		mil = 4
+		leader = {	name = "Ferenc Rakoczi II"     	type = general	fire = 2	shock = 4	manuever = 2	siege = 0 }
+	}
+}
+
+1739.1.1 = { leader = {	name = "Ferenc Nadasdy"        	type = general	fire = 1	shock = 4	manuever = 4	siege = 0	death_date = 1763.1.1 } }
+
+1744.1.1 = { leader = {	name = "Andras Hadik"          	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1790.3.12 } }
+
+1784.1.1 = { capital = 153 } # Buda

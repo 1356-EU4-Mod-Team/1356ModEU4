@@ -1,0 +1,41 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 2
+primary_culture = japanese
+religion = shinto
+technology_group = chinese
+capital = 1832 # Yamato
+
+1339.9.18 = { 
+	monarch = {
+		name = "Murakami"
+		dynasty = "Go"
+		birth_date = 1328.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1368.3.29 = { 
+	monarch = {
+		name = "Chokei"
+		dynasty = "Go"
+		birth_date = 1343.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+1383.10.1 = { 
+	monarch = {
+		name = "Kameyama"
+		dynasty = "Go"
+		birth_date = 1347.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+

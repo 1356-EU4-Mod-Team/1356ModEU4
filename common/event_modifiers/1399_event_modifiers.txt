@@ -1,0 +1,306 @@
+rush_of_colonists = {
+	colonists = 1
+}
+
+#Center of Trade Modifiers
+
+golden_gate = {
+	local_defensiveness = 1.0
+	local_hostile_attrition = 2
+}
+
+#Generic
+
+generic_make_ally = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+}
+
+generic_men_flock_to_banner = {
+	manpower_recovery_speed = 0.2
+	global_manpower_modifier = 0.15
+	global_regiment_cost = -0.1
+
+}
+
+1356_colonial_boost_exploration_modifier = {
+	navy_tradition = 0.25
+	naval_attrition = -0.05
+	range = 0.1
+	global_colonial_growth = -5
+}
+
+# North Europe region
+# member_of_hansa_ev = {
+	# trade_steering = 0.2
+	# trade_efficiency = 0.2
+	# dip_tech_cost_modifier = -0.1
+	# naval_morale = 0.1
+	# interest = -0.5
+# }
+
+# leader_of_hansa = {
+	# trade_efficiency = 0.1
+	# production_efficiency = 0.05
+	# prestige = 0.5
+# }
+
+# hansa_kontor = {
+	# # Blank on purpose
+# }
+
+# hansa_sound_toll = {
+	# trade_efficiency = -0.1
+	# trade_steering = -0.15
+	# naval_morale = -0.1
+# }
+
+# hansa_reform_1 = {
+	# build_cost = -0.1
+# }
+# hansa_reform_2_member = {
+	# global_regiment_cost = -0.25
+	# manpower_recovery_speed = 0.1
+# }
+# hansa_reform_2_leader = {
+	# global_regiment_cost = -0.25
+	# manpower_recovery_speed = 0.1
+# }
+# hansa_reform_3_member = {
+	# diplomatic_reputation = 1
+# }
+# hansa_reform_3_leader = {
+	# diplomatic_reputation = 1
+	# legitimacy = 1
+# }
+# recently_passed_reform = {
+# }
+
+#Scandanavia
+
+#Iceland
+
+ice_norse_tradition = { #Gogo Iceland into Norse Empire?
+	land_morale = 0.1
+	naval_morale = 0.1
+	diplomatic_reputation = -1
+}
+
+#Balkans/Anatolia
+
+turkish_settlement = {
+	local_tax_modifier = -0.25
+	local_production_efficiency = -0.25
+	local_manpower_modifier = -0.25
+}
+
+constantinopole_fort_1356_modifier = {
+	local_defensiveness = 0.2
+	garrison_growth = 0.1
+	local_hostile_attrition = 1
+}
+
+#French Region
+
+#France 
+jean_darc = {
+	global_regiment_cost = -0.50
+}
+fra_dauphin_modifier = {
+	advisor_cost = -0.05
+	legitimacy = 0.05
+	prestige = 0.15
+}
+fra_ruler_in_prison = {
+	advisor_cost = 0.05
+	legitimacy = -0.25
+}
+HYW_france_beat_back_occupation = {
+	manpower_recovery_speed = 0.5
+}
+paris_prison_break = {
+	prestige = -0.5
+}
+1356_ruler_is_powerless = {
+	prestige = -0.5
+	legitimacy = -0.5
+	global_unrest = 1
+	stability_cost_modifier = 0.15
+}
+
+#French Ducal
+dau_treaty_of_the_romans = {
+	local_unrest = -5
+	local_autonomy = 0.05
+	local_development_cost = -0.25
+	local_missionary_strength = -0.02
+	religious_conversion_resistance = 0.2
+	local_culture_conversion_cost = 0.25
+	local_state_maintenance_modifier = -1
+	province_trade_power_modifier = 0.1
+	local_manpower_modifier = -0.5
+}
+dau_treaty_of_romans_violeted = {
+	local_unrest = 4
+	local_autonomy = -50
+	local_years_of_nationalism = 5
+	local_culture_conversion_cost = 0.25
+	local_missionary_strength = -0.02
+}
+
+#Navarra
+nav_ruler_in_prison = {
+	legitimacy = -1
+	stability_cost_modifier = 0.2
+}
+nav_ruler_prison_break = {
+	prestige = 0.25
+	legitimacy = 0.25
+}
+
+nav_charles_in_paris = {
+	prestige = 1
+}
+ 
+# Near East region
+	
+Tamerlane = {
+	land_maintenance_modifier = -0.50
+	manpower_recovery_speed = 0.35
+	land_morale = 0.20
+	discipline = 0.10
+	land_forcelimit = 25
+    ae_impact = -0.50
+    province_warscore_cost = -0.50
+    core_creation = -0.50
+	years_of_nationalism = -5
+}
+
+tamerlane_random = {
+	land_maintenance_modifier = -0.60
+	manpower_recovery_speed = 0.55
+	land_morale = 0.20
+	discipline = 0.10
+	land_forcelimit = 35
+    ae_impact = -0.55
+    province_warscore_cost = -0.55
+    core_creation = -0.55
+	years_of_nationalism = -7.5
+}
+
+timurid_death_mark = {
+	land_maintenance_modifier = -0.25
+	manpower_recovery_speed = 0.20
+	land_morale = 0.10
+	discipline = 0.5
+	land_forcelimit = 15
+    ae_impact = -0.25
+    province_warscore_cost = -0.25
+    core_creation = -0.25
+	years_of_nationalism = -2.5
+	global_unrest = -2
+}
+
+
+disunited_tribes = {
+	horde_unity = -3
+	land_morale = -0.10
+	land_forcelimit = -15
+}
+
+#Far East Region
+
+fall_of_yuan_mandate = {
+	#years_of_nationalism = 5 #Commented out while I work on a way around the rebellion stuff.
+	#global_unrest = 5
+}
+
+yuan_starting_modifiers = { #Nomadic Modifiers
+	num_accepted_cultures = 3
+	promote_culture_cost = 10
+	raze_power_gain = 0.15
+	cavalry_power = 0.05
+	cav_to_inf_ratio = 0.2
+}
+
+fall_of_yuan_mandate_toqto = {
+	years_of_nationalism = 5
+	culture_conversion_cost = 0.35
+	stability_cost_modifier = 0.35
+	core_creation = 0.25
+	interest = 1
+	enemy_core_creation = -0.30
+	manpower_recovery_speed = 0.15
+	defensiveness = -0.05
+	recover_army_morale_speed = 0.05
+}
+
+yua_ruler_distrusts_spies = {
+	spy_offence = -0.15
+	global_spy_defence = -0.15
+}
+
+#yua_nobles_succeed_plot_modifier = {
+
+#}
+
+#Chinese
+
+chinese_minor_alliance_modifier = {
+	diplomatic_upkeep = 13
+}
+
+#Alexandria
+
+alexandria_tolerated_copts = {
+	tolerance_heathen = 2
+}
+
+alexandria_not_tolerated_copts = {
+	tolerance_heathen = -2
+}
+
+alx_great_library_perma_modifier = {
+	prestige = 0.1
+	global_institution_spread = 0.2
+	embracement_cost = -0.15
+	technology_cost = -0.1
+}
+ #Crusader
+ crusader_state_received_aid_recently_modifier = {
+ 	manpower_recovery_speed = 0.20
+	global_manpower_modifier = 0.20
+ }
+ 
+ gave_aid_to_crusader_state_already_modifier = {
+	prestige = 0.2
+	legitimacy = 0.5
+	devotion = 0.5
+	horde_unity = 0.5
+	republican_tradition = 0.2
+ }
+ 
+ rejected_aid_to_crusader_state_modifier = {
+ 	prestige = -0.2
+ }
+ 
+ crusader_state_borders_religious_enemy_modifier = {
+ 	warscore_cost_vs_other_religion = -0.05
+	global_manpower_modifier = 0.05
+	manpower_recovery_speed = 0.05
+ }
+ 
+#Delhi Collapse Modifier Temp
+
+delhi_sultanate_collapse_modifier = { #Geno remove this when you rework Delhi
+	global_unrest = 5
+	stability_cost_modifier = 0.75
+	years_of_nationalism = 10	
+	reduced_liberty_desire = -40
+}
+
+#Savoy
+sav_public_welfare = {
+	global_unrest = -1
+	war_exhaustion = -0.05
+}

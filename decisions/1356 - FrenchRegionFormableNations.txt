@@ -1,0 +1,675 @@
+country_decisions = {
+
+	aquitaine_nation = {#Aquitaine
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_aquitaine_flag }
+			NOT = { tag = HLR }
+			NOT = { tag = FRA }
+			NOT = { tag = PAP }
+			NOT = { tag = SPA }# Basque is a valid culture for both FRA and SPA
+			NOT = { tag = AQT }
+			NOT = { tag = NCH } #Francia
+			NOT = { exists = AQT }
+			OR = { #Culture
+				primary_culture = gascon
+				primary_culture = aquitaine
+			}
+			NOT = { has_country_flag = GAS_pyrenne_kingdom }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 174	# Aquitaine
+				province_id = 173	# Labourd
+				province_id = 194	# Perigord
+				province_id = 198	# Rouergue
+				province_id = 2753	# Narbonne
+				province_id = 196	# Toulouse
+				province_id = 176	# Bearn
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = AQT }
+			owns_core_province = 174	# Aquitaine
+			owns_core_province = 173	# Labourd
+			owns_core_province = 194	# Perigord
+			owns_core_province = 198	# Rouergue
+			owns_core_province = 2753	# Narbonne
+			owns_core_province = 196	# Toulouse
+			owns_core_province = 176	# Bearn	
+		}
+		effect = {
+			174 = { #Aquitaine
+				move_capital_effect = yes
+				add_base_manpower = 1
+				add_base_tax = 2
+			}
+			change_tag = AQT
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			guyenne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AQT
+			}
+			languedoc_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AQT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AQT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_aquitaine_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gascony_nation = { #Form Gascony
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_gascony_flag }
+			primary_culture = gascon
+			was_never_end_game_tag_trigger = yes
+			NOT = { tag = HLR }
+			NOT = { tag = FRA } # France wouldn't downgrade itself
+			NOT = { tag = PAP }
+			NOT = { tag = SPA }	# Basque is a valid culture for both FRA and SPA
+			NOT = { tag = AQT } # Aquitaine wouldn't downgrade itself
+			NOT = { tag = GUY }
+			NOT = { tag = NCH }
+			NOT = { tag = FOI }
+			NOT = { tag = AMG }
+			NOT = { has_country_flag = GAS_pyrenne_kingdom }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 174	# Aquitaine
+				province_id = 173	# Labourd
+				province_id = 176	# Bearn
+				province_id = 175	# Armagnac
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = GUY }
+			owns_core_province = 174	# Aquitaine
+			owns_core_province = 173	# Labourd
+			owns_core_province = 176	# Bearn
+			owns_core_province = 175	# Armagnac
+		}
+		effect = {
+			174 = { #Aquitaine
+				move_capital_effect = yes
+				add_base_manpower = 1
+				add_base_tax = 2
+			}
+			change_tag = GUY
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_gascony_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	walloon_nation = { #Wallonia
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_wallonia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = WOO }
+			NOT = { exists = WOO }
+			OR = {
+				tag = HAI
+				tag = RET
+				tag = ARS
+				tag = LIE
+				tag = LUX
+			}
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 93 #Liege
+				province_id = 88 #Artois
+				province_id = 1743 #Cambray
+				province_id = 181 #Rethel
+				province_id = 94 #Luxemburg
+				province_id = 1866 #Namur
+				province_id = 91 #Hainaut
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 93 #Liege
+			owns_core_province = 88 #Artois
+			owns_core_province = 1743 #Cambray
+			owns_core_province = 181 #Rethel
+			owns_core_province = 94 #Luxemburg
+			owns_core_province = 1866 #Namur
+			owns_core_province = 91 #Hainaut
+		}
+		effect = {
+			change_tag = WOO
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_wallonia_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	burgundian_nation = { #For Burgundian Minors
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_burgundy_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = FRA }
+			NOT = { tag = PAP }
+			NOT = { tag = SPA }	
+			NOT = { tag = BLS }
+			NOT = { tag = MNF }
+			NOT = { tag = BUR }
+			NOT = { tag = HAB }
+			NOT = { tag = LOT }
+			NOT = { tag = ARE }
+			NOT = { exists = BUR }
+			primary_culture = burgundian
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4392	# Auxerrois
+				province_id = 191	# Nevers
+				province_id = 1877	# Charolais
+				province_id = 192	# Dijonnais
+				province_id = 193	# Franche-Comte
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			owns_core_province = 4392	# Auxerrois
+			owns_core_province = 191	# Nevers
+			owns_core_province = 1877	# Charolais
+			owns_core_province = 192	# Dijonnais
+			owns_core_province = 193	# Franche-Comte
+		}
+		effect = {
+			192 = { 
+				move_capital_effect = yes
+			}
+			change_tag = BUR
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_burgundy_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lotharingia_nation = { #Lotharingia, hard to form
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_lotharingia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = LOT }
+			NOT = { exists = LOT }
+			OR = {
+				tag = BUR
+				tag = BAR
+				tag = LOR
+				tag = LUX
+				#tag = AAC
+				
+			}
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = no
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = flanders_area
+				area = wallonia_area
+				area = lorraine_area
+				area = bourgogne_area
+				area = holland_area
+				area = netherlands_area
+				province_id = 1878 #Aachen
+			}	
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			OR = {
+				AND = {
+					has_country_flag = "bur_granted_imperial_title_flag"
+					tag = BUR
+				}
+				AND = { 
+					NOT = { tag = BUR }
+					is_emperor = yes
+					NOT = { exists = BUR }
+					NOT = { exists = PBG }
+					NOT = { exists = ARE }
+					NOT = { exists = LOR }
+					NOT = { exists = BAR }
+					NOT = { exists = ALS }
+					owns_core_province = 1880
+				}
+			}
+			bourgogne_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			holland_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			netherlands_area = {
+				type = all
+				owned_by = ROOT 
+			}
+			lorraine_area = {
+				type = all
+				owned_by = ROOT
+			}	
+			wallonia_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			flanders_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			owns = 1878 #Aachen
+		}
+		effect = {
+			1878 = { #Aachen
+				move_capital_effect = yes
+			}
+			change_tag = LOT
+			swap_non_generic_missions = yes
+			#remove_non_electors_emperors_from_empire_effect = yes #No because by this point to get the imperial title you've been granted the exclusive rights to be a Kingdom in the Empire ala Bohemia.
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_lotharingia_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	arles_nation = { #Arles, Hard to form #Make event to give them a choice to go Arpitian?
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_arles_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = ARE }
+			NOT = { exists = ARE }
+			OR = {
+				tag = PRO
+				tag = BUR
+				tag = SAV
+				tag = DAU
+			}
+			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_colonial_nation = no
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = savoy_dauphine_area
+				area = romandie_area
+				area = provence_area
+				area = bourgogne_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			OR = {
+				AND = {
+					has_country_flag = "bur_granted_imperial_title_flag"
+					tag = BUR
+				}
+				NOT = { tag = BUR }
+			}
+			bourgogne_area = { owned_by = ROOT }
+			provence_area = { owned_by = ROOT }
+			savoy_dauphine_area = { owned_by = ROOT }
+			romandie_area = { owned_by = ROOT }	
+		}
+		effect = {
+			201 = { #Provence
+				move_capital_effect = yes
+			}
+			change_tag = ARE
+			swap_non_generic_missions = yes
+			#remove_non_electors_emperors_from_empire_effect = yes #You've been given this title, so it'd make no sense to do this.
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_arles_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	occitain_nation = {#Occitania
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_occitania_flag }
+			NOT = { tag = HLR }
+			NOT = { tag = FRA }
+			NOT = { tag = PAP }
+			NOT = { tag = SPA }# Basque is a valid culture for both FRA and SPA
+			NOT = { tag = AQT }
+			NOT = { tag = NCH } #Francia
+			NOT = { tag = OCC }
+			NOT = { exists = OCC }
+			OR = { #Culture
+				primary_culture = occitain
+				primary_culture = arpitan
+			}
+			NOT = { has_country_flag = GAS_pyrenne_kingdom }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 174	# Aquitaine
+				province_id = 173	# Labourd
+				province_id = 194	# Perigord
+				province_id = 198	# Rouergue
+				province_id = 2753	# Narbonne
+				province_id = 196	# Toulouse
+				province_id = 176	# Bearn
+				province_id = 201	# Provence
+				province_id = 204	# Dauphine
+				province_id = 200	# Montpellier
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			owns_core_province = 174	# Aquitaine
+			owns_core_province = 173	# Labourd
+			owns_core_province = 194	# Perigord
+			owns_core_province = 198	# Rouergue
+			owns_core_province = 2753	# Narbonne
+			owns_core_province = 196	# Toulouse
+			owns_core_province = 176	# Bearn	
+			owns_core_province = 201	# Provence
+			owns_core_province = 204	# Dauphine
+			owns_core_province = 200	# Montpellier	
+		}
+		effect = {
+			201 = { #Provence
+				move_capital_effect = yes
+				add_base_manpower = 1
+				add_base_tax = 2
+			}
+			change_tag = OCC
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			guyenne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OCC
+			}
+			languedoc_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OCC
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OCC
+			}
+			provence_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OCC
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_occitania_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

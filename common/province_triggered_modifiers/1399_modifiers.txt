@@ -1,0 +1,18 @@
+the_sound_toll = {
+	potential = {
+		NOT = { has_global_flag = dismantled_hansa }
+	}
+	trigger = {
+		if = {
+			limit = { province_id = 12 }
+			NOT = {
+				owner = { has_country_modifier = member_of_hansa_ev }
+			}
+		}
+	}
+	
+	province_trade_power_modifier = -0.5
+	province_trade_power_value = -15
+	local_tax_modifier = -0.5
+	local_manpower_modifier = -0.5
+}

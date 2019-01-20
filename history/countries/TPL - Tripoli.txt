@@ -1,0 +1,47 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = cosmopolitan_french
+historical_friend = KOJ
+historical_friend = ATO
+historical_friend = EDE
+historical_rival = MAM
+capital = 378
+
+1323.4.12 = {
+	monarch = {
+		name = "Jean II"
+		adm = 4
+		dip = 3
+		mil = 6
+		dynasty = "de Tripoli"
+	}
+}
+
+1334.10.2 = {
+	heir = {
+		name = "Jacques"
+		monarch_name = "Jacques I"
+		dynasty = "de Tripoli"
+		birth_date = 1334.10.2
+		death_date = 1402.6.12
+		claim = 100
+		adm = 3
+		dip = 6
+		mil = 4
+	}
+}
+
+1356.1.1 = {
+	leader = {	
+		name = "Jean de Toulouse"	
+		type = general	
+		fire = 4	
+		shock = 2	
+		manuever = 3	
+		siege = 5	
+		death_date = 1387.3.6 
+	} 
+}

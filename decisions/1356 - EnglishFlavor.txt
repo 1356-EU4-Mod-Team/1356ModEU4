@@ -1,0 +1,44 @@
+country_decisions = {
+	reign_in_the_north_england_decision = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = england_reign_in_northumberland_flag }
+			tag = ENG
+			primary_culture = english
+		}
+		allow = {
+			primary_culture = english
+			NOT = { exists = NOL }
+			NOT = { exists = LNC }
+			NOT = { exists = YRK }
+			is_year = 1390
+		}
+		effect = {
+			set_country_flag = england_reign_in_northumberland_flag
+			ENG = {
+				remove_accepted_culture = northumbrian
+			}
+			NOL = {
+				change_primary_culture = english
+			}
+			YRK = {
+				change_primary_culture = english
+			}
+			LNC = {
+				change_primary_culture = english
+			}
+			custom_tooltip = england_reign_in_northumberland_tt
+			british_isles_region = {
+				limit = {
+					if = {
+						culture = northumbrian
+					}
+				}
+				change_culture = english
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

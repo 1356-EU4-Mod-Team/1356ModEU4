@@ -1,0 +1,21 @@
+# First Fernandine War log
+# 2013.12.27 New entry (rickroll120)
+
+name = "First Fernandine War"
+#casus_belli = cb_claim_throne
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = CAS
+}
+
+1369.3.26 = { # Started with the assassination of Pedro II de Bourgogne
+	add_attacker = POR
+	add_defender = CAS
+}
+
+# Peace and end of war
+1371.3.31 = { # Treaty of Alcoutim
+	rem_attacker = POR
+	rem_defender = CAS
+}

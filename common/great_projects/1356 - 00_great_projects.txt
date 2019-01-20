@@ -1,0 +1,11 @@
+great_library = {
+	ambient_object = great_library_alx 
+	province = 358
+	time = 1#20 #Set back to 120 later
+	
+	modifier = {
+		local_institution_spread = 0.5
+		local_missionary_strength = 0.01 #test modifier
+	}
+}
+

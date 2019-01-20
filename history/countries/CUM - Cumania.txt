@@ -1,0 +1,33 @@
+government = tribal
+primary_culture = cuman
+religion = catholic
+technology_group = eastern
+capital = 4125	# Szolnok
+government_rank = 2
+
+
+1356.1.1 = { #Placeholder till we can find someone to rule
+	monarch = {
+		name = "(Interregnum)"
+		adm = 3
+		mil = 3
+		dip = 3
+		regent = yes
+	}
+}
+
+1444.11.11 = { #Placeholder till we can find someone to rule
+	monarch = {
+		name = "(Interregnum)"
+		adm = 3
+		mil = 3
+		dip = 3
+		regent = yes
+	}
+}
+
+1499.1.1 = {
+	government = monarchy
+	add_government_reform = feudalism_reform
+	technology_group = eastern
+}

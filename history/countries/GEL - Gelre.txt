@@ -1,0 +1,242 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = dutch
+religion = catholic
+technology_group = western
+capital = 99	# Coevorde
+
+1343.10.12 = {
+	monarch = {
+		name = "Reinoud III"
+		dynasty= "von Wassenberg"
+		birth_date = 1333.5.13
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Eduard"
+		monarch_name = "Eduard I"
+		dynasty = "von Wassenberg"
+		birth_date = 1336.3.12
+		death_date = 1371.8.24
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1347.7.1 = {
+	queen = {
+		country_of_origin = BRB
+		name = "Marie"
+		dynasty = "Reginar"
+		birth_date = 1325.1.1
+		death_date = 1399.3.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1361.5.1 = {
+	monarch = {
+		name = "Eduard I"
+		dynasty= "von Wassenberg"
+		birth_date = 1336.3.12
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1371.8.24 = {
+	monarch = {
+		name = "Reinoud III"
+		dynasty= "von Wassenberg"
+		birth_date = 1333.5.13
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1371.12.4 = {
+	monarch = {
+		name = "War of the Guelderian Succession"
+		adm = 1
+		dip = 1
+		mil = 1
+		regent = yes
+	}
+	heir = {
+		name = "Willem"
+		monarch_name = "Willem I"
+		dynasty = "von Jülich-Heimbach"
+		birth_date = 1364.3.5
+		death_date = 1402.2.16
+		claim = 80
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1379.3.24 = {
+	monarch = {
+		name = "Willem I"
+		dynasty= "von Jülich-Heimbach"
+		birth_date = 1364.3.5
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = HOL
+		name = "Katharina"
+		dynasty = "von Wittelsbach"
+		birth_date = 1361.1.1
+		death_date = 1400.11.11
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Reinoud"
+		monarch_name = "Reinoud IV"
+		dynasty = "von Jülich-Heimbach"
+		birth_date = 1365.1.1
+		death_date = 1423.6.25
+		claim = 80
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1402.2.16 = {
+	monarch = {
+		name = "Reinoud IV"
+		dynasty= "von Jülich-Heimbach"
+		birth_date = 1365.1.1
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1405.5.5 = {
+	queen = {
+		country_of_origin = NRM
+		name = "Marie"
+		dynasty = "d'Harcourt"
+		birth_date = 1375.1.1
+		death_date = 1425.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1423.6.29 = {
+	monarch = {
+		name = "Arnold I"
+		dynasty = "van Egmond"
+		birth_date = 1410.7.14
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1438.2.12 = {
+	heir = {
+		name = "Adolf"
+		monarch_name = "Adolf I"
+		dynasty = "van Egmond"
+		birth_date = 1438.2.12
+		death_date = 1471.7.23
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+#1440.1.1 = { government = feudalism_reform }
+
+1465.1.11 = {
+	monarch = {
+		name = "Adolf I"
+		dynasty = "van Egmond"
+		birth_date = 1438.2.12
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1471.7.23 = {
+	monarch = {
+		name = "Arnold I"
+		dynasty = "van Egmond"
+		birth_date = 1410.7.14
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1477.1.5 = {
+	monarch = {
+		name = "Adolf I"
+		dynasty = "van Egmond"
+		birth_date = 1438.2.12
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1477.6.27 = {
+	monarch = {
+		name = "Maria I"
+		dynasty = "de Bourgogne"
+		birth_date = 1457.2.13
+		adm = 3
+		dip = 4
+		mil = 2
+        female = yes
+	}
+}
+
+# The Reign of Philip the First is represented as HAB ownership.
+
+1492.1.1 = {
+	monarch = {
+		name = "Karel II"
+		dynasty = "van Egmond"
+		birth_date = 1467.11.9
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1520.1.1 = { leader = { name = "Maarten van Rossum" type = general fire = 2 shock = 3 manuever = 3 siege = 0 death_date = 1555.6.7 } }
+
+1538.6.30 = {
+	monarch = {
+		name = "Willem III de Rijke"
+		dynasty = "von der Mark"
+		birth_date = 1516.7.28
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}

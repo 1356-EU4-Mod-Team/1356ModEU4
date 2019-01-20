@@ -1,0 +1,25 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = sumatran
+religion = sunni
+technology_group = chinese
+capital = 617	# Banda Aceh
+
+1356.1.1 = {
+	monarch = {
+		name = "Muhammad bin 'Alwuddin"
+		dynasty = "Al-Basir"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+1444.1.1 = {
+	monarch = {
+		name = "Muhammad Shah"
+		dynasty = "Al-Basir"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}

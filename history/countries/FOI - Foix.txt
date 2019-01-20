@@ -1,0 +1,274 @@
+government = monarchy
+add_government_reform = french_vassal_feudal_monarchy_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = gascon
+capital = 176	# Pau
+fixed_capital = 176 # Cannot move capital away from this province & no power cost to move to it
+
+1315.12.13 = {
+	monarch = {
+		name = "Gaston II"
+		dynasty ="de Foix-Béarn"
+		birth_date = 1308.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1327.1.1 = {
+	queen = {
+		country_of_origin = FOI
+		name = "Aliénor"
+		dynasty = "de Comminges"
+		birth_date = 1310.1.1
+		death_date = 1365.5.16
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1331.4.30 = {
+	heir = {
+		name = "Gaston"
+		monarch_name = "Gaston III Fébus"
+		dynasty = "de Foix-Béarn"
+		birth_date = 1331.4.30
+		death_date = 1391.8.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1343.9.26 = {
+	monarch = {
+		name = "Gaston III Fébus"
+		dynasty ="de Foix-Béarn"
+		birth_date = 1331.4.30
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1349.8.4 = {
+	queen = {
+		country_of_origin = NAV
+		name = "Inés"
+		dynasty = "d'Évreux"
+		birth_date = 1334.1.1
+		death_date = 1396.2.4
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1362.9.1 = {
+	heir = {
+		name = "Gaston"
+		monarch_name = "Gaston IV"
+		dynasty = "de Foix-Béarn"
+		birth_date = 1362.9.1
+		death_date = 1382.1.1 # Gaston III kills his heir in a quarrel after tried to poison him
+		claim = 95
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+1391.8.1 = { # cousin of Gaston III, appointed by french court
+	monarch = {
+		name = "Mathieu"
+		dynasty ="de Foix-Béarn"
+		birth_date = 1363.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+	heir = {
+		name = "Isabelle"
+		monarch_name = "Isabelle I"
+		dynasty = "de Foix-Béarn"
+		birth_date = 1361.10.1
+		death_date = 1428.1.1
+		female = yes
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1392.6.4 = {
+	queen = {
+		country_of_origin = ARA
+		name = "Joana"
+		dynasty = "de Barcelona"
+		birth_date = 1375.10.1
+		death_date = 1407.9.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1398.8.1 = { # Mathieu dies leaving no children, her sister gets the county
+	monarch = {
+		name = "Isabelle I"
+		dynasty ="de Foix-Béarn"
+		birth_date = 1361.10.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+	queen = {
+		country_of_origin = FOI
+		name = "Archambaud"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1330.1.1
+		death_date = 1412.1.1
+		female = no
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean I"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1382.1.1
+		death_date = 1436.5.4
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+		
+1428.1.1 = {
+	monarch = {
+		name = "Jean I"
+		dynasty ="de Foix-Grailly"
+		birth_date = 1382.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+	queen = {
+		country_of_origin = ENG
+		name = "Jeanne"
+		dynasty = "d'Albret"
+		birth_date = 1403.1.1
+		death_date = 1435.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Gaston"
+		monarch_name = "Gaston IV"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1422.11.27
+		death_date = 1472.7.26
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1436.5.4 = {
+	monarch = {
+		name = "Gaston IV"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1422.11.27
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+	queen = {
+		country_of_origin = ARA
+		name = "Leonor"
+		dynasty = "de Trastámara"
+		birth_date = 1425.2.2
+		death_date = 1479.2.12
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Gaston"
+		monarch_name = "Gaston V"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1444.1.1
+		death_date = 1470.11.23
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1470.11.23 = {
+	heir = {
+		name = "François Phébus"
+		monarch_name = "François I Phébus"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1469.4.18
+		death_date = 1483.2.12
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1472.7.25 = {
+	monarch = {
+		name = "Queen Regent Madeleine"
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+	heir = {
+		name = "François Phébus"
+		monarch_name = "François I Phébus"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1469.4.18
+		death_date = 1483.2.12
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# 1479.2.13 Foix is incorporated in Navarra
+
+1512.9.12 = { government = monarchy
+add_government_reform = autocracy_reform }
+
+1555.5.30 = { set_legacy_government = administrative_monarchy }
+
+1560.1.1  = { religion = reformed }
+
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

@@ -1,0 +1,26 @@
+# War of the Naples Succession (1382-1384)
+# 2014.1.25 Created war (rickroll120)
+
+name = "Naples Succession War"
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = NAP
+}
+
+1382.5.12 = { # war started due to the titular king of naples was rightful heir not getting the throne
+	add_attacker = ANJ
+	add_attacker = PRO
+	add_attacker = SAV
+	add_defender = NAP
+}
+
+1383.3.1 = { # duchy of savoy dies
+	rem_attacker = SAV
+}
+
+1384.9.20 = { # Louis I dies and war ends
+	rem_attacker = ANJ
+	rem_attacker = PRO
+	rem_defender = NAP
+}

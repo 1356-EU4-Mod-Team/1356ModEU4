@@ -1,0 +1,120 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = northumbrian
+add_accepted_culture = english
+religion = catholic
+historical_rival = ENG
+historical_friend = WAL
+capital = 246	# Newcastle
+
+1352.1.1 = {
+	monarch = {
+		name = "Henry I"
+		dynasty = "Percy"
+		birth_date = 1321.1.1
+		culture = northumbrian
+		ADM = 4
+		DIP = 3
+		MIL = 1
+	}
+	queen = {
+		country_of_origin = LNC
+		name = "Mary"
+		dynasty = "Lancaster"
+		birth_date = 1320.1.1
+		death_date = 1362.9.1
+		culture = northumbrian
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Henry"
+		monarch_name = "Henry II"
+		dynasty = "Percy"
+		birth_date = 1341.11.10
+		death_date = 1408.2.20
+		culture = northumbrian
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+		
+	}
+}
+
+1368.5.18 = {
+	monarch = {
+		name = "Henry II"
+		dynasty = "Percy"
+		birth_date = 1341.11.10
+		culture = northumbrian
+		ADM = 2
+		DIP = 2
+		MIL = 4
+	}
+	queen = {
+		country_of_origin = ENG
+		name = "Margaret"
+		dynasty = "Neville"
+		birth_date = 1339.2.12
+		death_date = 1372.5.12
+		culture = english
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Henry"
+		monarch_name = "Henry III"
+		dynasty = "Percy"
+		birth_date = 1364.5.20
+		death_date = 1403.7.21
+		culture = northumbrian
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+		
+	}
+}
+
+1381.1.1 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Maud"
+		dynasty = "Lucy"
+		birth_date = 1343.1.1
+		death_date = 1398.12.18
+		culture = english
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1403.07.21 = { # son of previous heir
+	heir = {
+		name = "Henry"
+		monarch_name = "Henry III"
+		dynasty = "Percy"
+		birth_date = 1393.2.3
+		death_date = 1455.5.22
+		culture = northumbrian
+		claim = 75
+		adm = 2
+		dip = 0
+		mil = 3
+	}
+}
+
+1405.1.1 = {
+	culture = english
+}
+
+# 1405 Duchy of Nothumberland forfeit independence

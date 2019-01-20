@@ -1,0 +1,27 @@
+namespace = avignon
+
+country_event = {
+	id = avignon.1
+	title = avignon.1.t
+	desc = avignon.1.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PAP
+		ai = no
+		NOT = { is_year = 1378 }
+		NOT = { capital = 202 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = avignon.1.a
+		add_stability = 1
+		reverse_add_opinion = { who = FRA modifier = avignon_pap_end }
+	}
+}

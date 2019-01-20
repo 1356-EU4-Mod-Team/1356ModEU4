@@ -1,0 +1,41 @@
+namespace = koreagoryeo
+
+#Both missions commented out due to unfinished ki branch
+
+# Triggered by yua.4
+#country_event = { #Toqto'a Returns! - Rejoined Army
+#	id = koreagoryeo.1
+#	title = koreagoryeo.1.t
+#	desc = koreagoryeo.1.d
+#	picture = HORDE_ON_HORSEBACK_eventPicture
+#
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#
+#	option = { #Those tratiors!
+#		name = koreagoryeo.1.a 
+#		add_historical_rival = YUA 
+#		
+#		KOR = { add_historical_rival = YUA }
+#		
+#	}
+#}
+
+#Korea receives word that Toqto'a was ordered to be executed.
+#country_event = { #Toqto'a Returns! - Killed the Tratior!
+#	id = koreagoryeo.2
+#	title = koreagoryeo.2.t
+#	desc = koreagoryeo.2.d
+#	picture = DEATH_OF_HEIR_eventPicture
+#
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#
+#	option = { #Perfect! The first step of our plan has worked!
+#		name = koreagoryeo.2.a 
+#		add_prestige = 10
+#		
+#		
+#	}
+#}
+

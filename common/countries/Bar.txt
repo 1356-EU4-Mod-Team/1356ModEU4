@@ -1,0 +1,104 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 108  139  228 }
+
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Robert #1" = 55
+	"Edward #2" = 50
+	"René #0" = 35
+	"Louis #0" = 30
+	"Henri #4" = 20
+	"Frederick #3" = 10
+	"Thierry #1" = 10
+	"Sophie #1" = -10
+	"Theodoric #2" = 10
+	"Reginald #2" = 10
+	"Theobald #2" = 10
+	"Nicholas #0" = 10
+	"François #0" = 10
+	"Philippe #0" = 10
+	"Charles #0" = 10
+	"Jean #0" = 10
+	"Antoine #0" = 10
+	"Nicolas #0" = 10
+	"Isabelle #0" = -10
+	"Léopold #0" = 10
+	"Claude #0" = 5
+	"Ferdinand Philippe #0" = 5
+	"Léopold #0 Clément" = 5
+	"Rodolphe #0" = 5
+	"Charles #1 Ferdinand" = 5
+	"Charles #1 Henri" = 5
+	"François #1 Antoine" = 5
+	"Joseph #0" = 5
+	"Alfred #0" = 5
+	"Bernard #0" = 5
+	"David #0" = 5
+	"Gérard #0" = 10
+	"Jacques #0" = 10
+	"Gaston #0" = 10
+}
+
+leader_names = { 
+	d'Amoncourt d'Apremont d'Aulcy d'Aussigny d'Aigremont
+	d'Orgain d'Haussouville d'Haroué d'Ourches
+	"de Bar" "de Bassompierre" "de Baudricourt" "de Bauffremont" "de Bignecourt" "de Briey" "de Beauvau"
+	"de Bilistein"
+	"de Choiseul" "de Choiseul-d'Isches" "de Choiseul-Stainville" "de Croy" "de Collignon" "de Commercy"
+	"de Dommartin"
+	"de Ficquelmont" "de Fontenoy" "de Forcelles"
+	"de Gerbeviller" "de Gombervaux" "de Germainvilliers"
+	"de Haraucourt" "de Housse"
+	"de Jalin"
+	"de Lambertye" "de Lenoncourt" "de Ligniville" "de Landre" "de Limbourg" "de Lutzelbourg" "de Lorraine"
+	"de la Tour" "de la Vaulx" "de la Mothe"
+	"de Mandre" "de Mercy" "de Montarby" "de Monstreul"
+	"de Nancy" "de Nettancourt" "de Noirbeuille"
+	"de Raigecourt" "de Raulecourt" "de Rosières"
+	"de Saint-Ouen" "de Saint-Belin" "de Salm" "de Stainville" "de Sierck" "de Saintignon"
+	"de Vidrange" "de Vaudémont" "de Valleroy"
+	"de Wendel" "de Watronville"
+	"du Hautoy" "du Châtelet" "du Boys de Riocour"
+	"le Veneur" "le Rhingrave"
+	"la Vallée" "la Guerre"
+	Beguet Bonnaitre Chaufour Guerin Henry Laudinot Levain Mehairon Moictrey
+	Nonon Plumerel Perin Remy Riboulet Raulin Sarrazin Tresves Vivien 
+}
+
+ship_names = {
+	"Emperor Lothar" "Lotharingen"
+	"Rene II Lothringen" Barrois Metz
+	Toul Verdun Warding Skirmjan
+	Bera Scoc Sekjan
+}

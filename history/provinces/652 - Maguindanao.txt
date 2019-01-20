@@ -1,0 +1,28 @@
+# 652 - Maguindanao (1356)
+# Changes: TER
+
+culture = filipino
+religion = animism
+capital = "Maguindanao"
+trade_goods = unknown
+hre = no
+base_tax = 5
+
+base_production = 5
+base_manpower = 3
+native_size = 60
+native_ferocity = 4
+native_hostileness = 7
+
+discovered_by = chinese
+
+1450.1.1 = { religion = sunni }
+1520.1.1 = {	owner = MGD
+		controller = MGD
+		add_core = MGD
+		is_city = yes
+		religion = sunni
+		trade_goods = spices
+	   } # Sultanate of Maguindanao
+1527.1.1 = { discovered_by = SPA }
+1570.1.1 = { owner = TER controller = TER add_core = TER }

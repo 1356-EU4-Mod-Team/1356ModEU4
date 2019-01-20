@@ -1,0 +1,28 @@
+name = "Timurid Invasion of India"
+war_goal = {
+	type = superiority_horde
+	casus_belli = cb_horde_vs_civ
+}
+
+1397.7.1 = {
+	add_attacker = TIM
+	add_attacker = CIR
+	add_defender = DLH
+	add_defender = JSL
+	add_defender = GUJ
+	add_defender = BGA
+	add_defender = BAL
+	add_defender = SND
+}
+
+# Peace
+1398.1.1 = {
+	rem_attacker = TIM
+	rem_attacker = CIR
+	rem_defender = DLH
+	rem_defender = JSL
+	rem_defender = GUJ
+	rem_defender = BGA
+	rem_defender = BAL
+	rem_defender = SND
+}

@@ -1,0 +1,96 @@
+name = "Hundred Years War - Edwardian Phase"
+#casus_belli = cb_insult
+war_goal = {
+	type = superiority_insult_mutual
+	casus_belli = cb_insult
+}
+
+1349.8.1 = { # War resumes
+	add_attacker = ENG
+	add_attacker = WLS
+	add_attacker = LNC
+	add_attacker = KID
+	add_attacker = NOL
+	add_attacker = MNF
+	add_attacker = GUY
+	add_attacker = NAV
+	add_attacker = NRM
+	add_attacker = FOI
+	add_defender = FRA
+	add_defender = AMG
+	add_defender = BOU
+	add_defender = ALE
+	add_defender = ORL
+	add_defender = BLS
+	add_defender = ANJ
+	add_defender = AUV
+	add_defender = FOZ
+	add_defender = DAU
+}
+
+1351.2.1 = {
+	battle = {
+		name = "Ardres"
+		location = 87 # Calais
+		attacker = {
+			commander = "Ardres"
+			infantry = 5000
+			losses = 25	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Ardres"
+			infantry = 5000
+			losses = 5	# percent
+			country = FRA
+		}
+		result = no
+	}
+}
+
+#1352, David II of Scotland is released to arrange his own ransom
+
+1353.3.1 = { # Truce Westminster, England accepts Blois as duke brittany
+	rem_defender = BLS
+}
+
+1354.1.30 = { # Some Navarra conspiracy
+	add_defender = BLS
+}
+
+#1354, Conflicts inside Scotland between the king and nationalists
+
+1355.8.1 = { # Scotland rejoins the war to help France
+	add_defender = SCO
+}
+
+#Historical Date 1357.9.23 = { # Truce of Bordeaux
+1355.12.31 = { #Truce of Bordeaux
+	rem_attacker = ENG
+	rem_attacker = WLS
+	rem_attacker = LNC
+	rem_attacker = KID
+	rem_attacker = NOL
+	rem_attacker = MNF
+	rem_attacker = GUY
+	rem_attacker = NAV
+	rem_attacker = NRM
+	rem_attacker = FOI
+	rem_defender = FRA
+	rem_defender = BOU
+	rem_defender = ALE
+	rem_defender = ORL
+	rem_defender = BLS
+	rem_defender = ANJ
+	rem_defender = AUV
+	rem_defender = DAU
+	rem_defender = AMG
+	rem_defender = FOZ
+	rem_defender = SCO
+}
+
+#1356.10.1 = { # Removes Scotland for AI Balance and Armagnac/Forez after Battle of Portier
+	#rem_defender = SCO
+	#rem_defender = AMG
+	#rem_defender = FOZ
+#}

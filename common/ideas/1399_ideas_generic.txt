@@ -1,0 +1,164 @@
+gen_BUL_ideas = {
+	start = {	
+		merchants = 1
+		core_creation = -0.1		
+	}
+	bonus = {
+		infantry_power = 0.15
+	}
+	trigger = {
+		OR = {
+			tag = DOB
+			tag = VID
+		}
+	}
+	free = yes
+	
+	generic_bul_idea_1 = {
+		stability_cost_modifier = -0.1
+	}
+	generic_bul_idea_2 = {
+		global_heretic_missionary_strength = 0.02		
+	}
+	generic_bul_idea_3 = {
+ 		global_unrest = -1
+	}
+	generic_bul_idea_4 = {
+		infantry_cost = -0.1
+	}
+	generic_bul_idea_5 = {
+		prestige = 1
+	}
+	generic_bul_idea_6 = {
+		land_morale = 0.10
+	}
+	generic_bul_idea_7 = {
+		legitimacy = 1
+	}
+}
+
+gen_CYP_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.2
+		galley_cost = -0.2
+	}
+	bonus = {
+		navy_tradition_decay = -0.01
+	}
+	trigger = {
+		OR = {
+			tag = CIC
+			tag = ANT
+		}
+	}
+	free = yes
+
+	generic_king_of_jerusalem = {
+		legitimacy = 0.5
+		fabricate_claims_cost = -0.25
+	}
+	generic_frankish_crusaders = {
+		army_tradition = 1.0
+	}
+	generic_commandaria_wine = {
+		production_efficiency = 0.1
+	}
+	generic_lusignan_diplomacy = {
+		diplomatic_reputation = 1
+	}
+	generic_cypriot_fortifications = {
+		defensiveness = 0.25
+	}
+	generic_repel_the_corsairs = {
+		galley_power = 0.2
+	}
+	generic_raid_turkish_commerce = {
+		embargo_efficiency = 0.1
+		privateer_efficiency = 0.15
+	}
+}
+
+gen_anatolian_beyliks_ideas = {
+	start = {
+		discipline = 0.05
+		core_creation = -0.20
+	}
+	
+	bonus = {
+		army_tradition = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = CNI
+			tag = KRS
+			tag = HMD
+			tag = TEK
+		}
+	}
+	free = yes
+	
+	generic_travelling_ozan = {
+		global_unrest = -1
+	}
+	generic_seljuq_marches = {
+		global_manpower_modifier = 0.10
+	}
+	generic_akinci_cavalry = {
+		cavalry_power = 0.15
+	}
+	generic_ghazi = {
+		manpower_recovery_speed = 0.2
+	}
+	generic_caravanserais = {
+		trade_efficiency = 0.1
+	}
+	generic_anatolian_architecture = {
+		build_cost = -0.10
+	}
+	generic_legacy_seljuqs_empire = {
+		prestige = 1
+	}
+}
+
+gen_BRI_ideas = {
+	start = {
+		navy_tradition = 1
+		trade_steering = 0.10
+	}
+	
+	bonus = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		OR = {
+			tag = BLS
+			tag = MNF
+		}
+	}
+	free = yes
+	
+	gen_legacy_of_breton_independence = {
+		enemy_core_creation = 0.25
+	}
+	gen_estates_of_brittany = {
+		global_unrest = -1		
+	}
+	gen_breton_march = {
+		defensiveness = 0.2
+	}
+	gen_breton_catholicism = {
+		papal_influence = 2
+		global_missionary_strength = 0.01
+	}
+	gen_protect_the_coastline = {
+		global_ship_cost = -0.1
+	}
+	gen_league_of_the_public_weal = {
+		diplomatic_reputation = 1
+	}
+	gen_catholicon = {
+		prestige = 1
+ 	}
+}

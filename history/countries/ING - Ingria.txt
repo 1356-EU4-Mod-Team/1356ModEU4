@@ -1,0 +1,84 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = ingrian
+add_accepted_culture = karelian
+capital = 33 #Neva
+
+1340.1.1 = { #He died around 1340ish or so, dates about this are slightly different between my sources, so I'm guessing here.
+	monarch = {
+		name = "Narimantas I"
+		dynasty = "Narimantaitis"
+		male = yes
+		culture = lithuanian
+		religion = catholic
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+	heir = {
+		name = "Patrikas I"
+		dynasty = "Narimantaitis"
+		male = yes
+		culture = lithuanian
+		religion = catholic
+		birth_date = 1340.1.1
+		adm = 3
+		dip = 2
+		mil = 6
+		claim = 100
+	}
+}
+
+# 1356.12.26 = { #Most sources say he didnt claim his fathers inheritance until 1380 or so, though this regency and heir would brake the game, so its commented out to prevent this.
+	# define_ruler = {
+		# name = "Regency"
+		# max_random_adm = 5
+		# max_random_dip = 4
+		# max_random_mil = 5
+		# regency = yes
+	# }
+	# heir = {
+		# name = "Patrikas I"
+		# dynasty = "Narimantaitis"
+		# male = yes
+		# culture = lithuanian
+		# religion = catholic
+		# birth_date = 1340.1.1
+		# adm = 3
+		# dip = 2
+		# mil = 6
+		# claim = 100
+	# }
+# }
+
+#1380.1.1 = { #Historically he arrived to claim his inheritance around now? #Commented out to prevent weird bugs with EU4.
+1356.12.1 = {
+	monarch = {
+		name = "Patrikas I"
+		dynasty = "Narimantaitis"
+		male = yes
+		culture = lithuanian
+		religion = catholic
+		adm = 3
+		dip = 2
+		mil = 6
+		age = 38
+	}
+}
+
+# 1388.1.1 = { #Historically were given control of Ingria circa 1400 or so, with Patrikas I still owning Karelia. Or something like that. Information is scarse for this, so I'm leaving it out.
+	# monarch = {
+		# name = "Lengvenis I"
+		# dynasty = "Gediminid"
+		# male = yes
+		# culture = lithuanian
+		# religion = catholic
+		# adm = 3
+		# dip = 2
+		# mil = 5
+		# age = 24
+	# }
+# }

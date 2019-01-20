@@ -1,0 +1,61 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = korean
+religion = mahayana
+technology_group = chinese
+capital = 735	# Hanseong
+
+1351.1.1 = {
+	monarch = {
+		name = "Wang Jeon" #Gongmin
+		dynasty = "Goryeo"
+		birth_date = 1330.5.23
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+	queen = {
+		country_of_origin = YUA
+		name = "Noguk"
+		dynasty = "Borjigin"
+		birth_date = 1345.1.01 #Guesstimate
+		death_date = 1365.3.08
+		female = yes
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1374.10.24 = {
+	monarch = {
+		name = "Wang U" #U
+		dynasty = "Goryeo"
+		birth_date = 1365.7.25
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
+1388.1.1 = {
+	monarch = {
+		name = "Wang Chang" #Chang
+		dynasty = "Goryeo"
+		birth_date = 1381.9.6
+		adm = 3
+		dip = 6
+		mil = 3
+	}
+}
+
+1389.12.31 = {
+	monarch = {
+		name = "Wang Yo" #Gongyang
+		dynasty = "Goryeo"
+		birth_date = 1345.3.9
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}

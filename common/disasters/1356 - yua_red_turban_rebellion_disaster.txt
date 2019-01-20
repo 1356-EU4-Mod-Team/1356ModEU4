@@ -1,0 +1,100 @@
+red_turban_rebellion_disaster = {
+	potential = { #Yuan, is Emperor, before 1380, red turbans not over...
+		tag = YUA
+		is_emperor_of_china = yes
+		NOT = { is_year = 1380 }
+		NOT = { has_country_flag = red_turban_rebellion_over_flag } #Prevents it appearing again.
+	}
+	
+	can_start = { #Always
+		tag = YUA
+		NOT = { is_year = 1380 }
+		
+#		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+	}
+	
+	can_stop = { 
+		OR = {
+			is_emperor_of_china = no
+			has_country_flag = red_turban_rebellion_over_flag
+			AND = {
+				technology_group = nomad_group
+				is_emperor_of_china = no
+			}
+		}		
+	}
+	
+	progress = { #Instantly
+		modifier = {
+			factor = 25
+			tag = YUA
+			is_emperor_of_china = yes
+		}
+	}
+	
+	can_end = { 
+		OR = {
+			AND = {
+				is_emperor_of_china = yes
+				stability = 2
+				prestige = 0
+				NOT = { war_exhaustion = 4 }
+				is_at_war = no
+				NOT = { has_spawned_rebels = yuan_red_turban_rebels }
+				NOT = { has_spawned_rebels = nationalist_rebels }
+				NOT = { num_of_rebel_controlled_provinces = 3 }
+				NOT = {	num_of_revolts = 3 }
+			}
+			AND = { 
+				technology_group = nomad_group
+				is_emperor_of_china = no
+			}
+		}
+	}
+	
+	modifier = {
+		global_unrest = -15
+		#years_of_nationalism = 8 #I hope this will just cause a snowball effect, instead of a blanket unrest modifier.
+		stability_cost_modifier = 0.25
+		global_autonomy = 0.05
+	}	
+	
+	on_start = yuanredturban.1
+	on_end = yuanredturban.2
+	
+	on_monthly = {
+		events = {
+	
+		}
+		random_events = { 
+			#Chinese Rebels
+			#100 = yuanredturban.100
+			#100 = yuanredturban.101
+			#100 = yuanredturban.102
+			#100 = yuanredturban.103
+			#100 = yuanredturban.104
+			#100 = yuanredturban.105
+			#100 = yuanredturban.106
+			#100 = yuanredturban.107
+			#100 = yuanredturban.108
+			#100 = yuanredturban.109
+			#100 = yuanredturban.110
+			#100 = yuanredturban.111
+			#100 = yuanredturban.112
+			#100 = yuanredturban.113
+			#100 = yuanredturban.114
+			#Non Chinese Rebels
+			#100 = yuanredturban.130
+			#100 = yuanredturban.131
+			#100 = yuanredturban.132
+			#100 = yuanredturban.133
+			#100 = yuanredturban.134
+			#100 = yuanredturban.135
+			#100 = yuanredturban.136
+			#100 = yuanredturban.137
+			
+			
+		
+		}
+	}
+}

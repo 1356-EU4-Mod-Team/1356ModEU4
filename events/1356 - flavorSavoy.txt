@@ -1,0 +1,121 @@
+namespace = flasavoy
+
+country_event = {
+	id = flasavoy.1
+	title = "flasavoy.NAME1"
+	desc = "flasavoy.DESC1"
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = SAV
+		primary_culture = arpitan
+		is_year = 1460
+		NOT = { is_year = 1580 }
+		OR = {
+			AND = { #Owns Savoy & Piedmont & Cuneo
+				owns = 103
+				owns = 205
+				owns = 1875
+			}
+			AND = { #Owns Savoy but not Piedmont
+				owns = 205
+				NOT = { owns = 103 }
+			}
+			NOT = { dominant_culture = arpitan }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = { #Turn Italian
+		name = "flasavoy.1.a"
+		trigger = { NOT = { dominant_culture = arpitan } }
+		ai_chance = { factor = 70 }
+		change_primary_culture = piedmontese
+		set_ruler_culture = piedmontese
+		set_heir_culture = piedmontese
+		remove_accepted_culture = arpitan
+		205 = {
+			change_culture = piedmontese
+		}
+		add_opinion = {
+			who = MLO
+			modifier = released_us_freely
+		}
+		add_opinion = {
+			who = GEN
+			modifier = released_us_freely
+		}
+		add_opinion = {
+			who = VEN
+			modifier = released_us_freely
+		}
+		add_opinion = {
+			who = FRA
+			modifier = insulted
+		}
+
+	}
+	option = { #Stay Arpitan
+		name = "flasavoy.1.b"
+		ai_chance = { factor = 30 }
+		remove_accepted_culture = piedmontese
+		add_accepted_culture = cosmopolitan_french
+		add_opinion = {
+			who = FRA
+			modifier = released_us_freely
+		}
+		FRA = { create_guarantee = SAV 	add_historical_friend = SAV }
+		add_historical_friend = FRA
+		add_opinion = {
+			who = MLO
+			modifier = insulted
+		}
+		add_opinion = {
+			who = VEN
+			modifier = insulted
+		}
+		add_opinion = {
+			who = GEN
+			modifier = insulted
+		}
+	}
+}
+
+country_event = {
+	id = flasavoy.2
+	title = flasavoy.2.t 
+	desc = flasavoy.2.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAV
+		is_year = 1370
+		NOT = { is_year = 1420 }
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = {
+		name = flasavoy.2.a 
+		add_country_modifier = {
+			name = sav_public_welfare
+			duration = 18250
+		}
+		add_adm_power = -75
+	}
+	
+	option = {
+		name = flasavoy.2.b 
+		add_prestige = -5
+	}
+}

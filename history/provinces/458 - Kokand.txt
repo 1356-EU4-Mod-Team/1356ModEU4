@@ -1,0 +1,49 @@
+# 458 - Kokand (1356)
+# Changes: CHG/TRS
+
+owner = CHG
+controller = CHG
+culture = uzbehk
+religion = sunni
+capital = "Kokand"
+trade_goods = iron
+hre = no
+base_tax = 4 
+
+base_production = 4
+base_manpower = 4
+is_city = yes
+add_core = CHG
+add_core = KOK
+
+discovered_by = KAS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = indian
+
+1363.7.1  = { owner = TRS controller = TRS add_core = TRS }
+1365.7.1  = { controller = CHG }
+1369.1.1  = { controller = TRS }
+1370.4.9  = { owner = TIM controller = TIM add_core = TIM }
+1389.1.1  = { remove_core = CHG }
+1442.1.1  = { # given to Ulugh Beg
+		owner = TRS
+		controller = TRS
+	    }
+1448.3.1  = { # Ulugh Beg takes Herat and reunites the core of the Timurid Empire
+		owner = TIM
+		controller = TIM
+	    }
+1501.1.1  = { 	owner = SHY 
+		controller = SHY
+		add_core = SHY
+		#remove_core = TIM 
+	    } # Muhammad Shaybani
+1502.1.1  = {	owner = BUK
+		add_core = BUK
+		controller = BUK
+		remove_core = TIM
+	    } # The Uzbek Shaybanids brings an end to the Timurid dynasty
+1622.1.1  = { discovered_by = RUS }
+1709.1.1  = { owner = KOK controller = KOK remove_core = BUK } # Independent principality established by Shaybanid Shahrukh

@@ -1,0 +1,16 @@
+name = "Timurid Independence War"
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = TIM
+}
+
+1365.7.1 = {
+	add_attacker = CHG
+	add_defender = TRS
+}
+
+1369.1.1 = {
+	rem_attacker = CHG
+	rem_defender = TRS
+}

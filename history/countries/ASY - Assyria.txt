@@ -1,0 +1,10 @@
+government = monarchy
+
+primary_culture = assyrian
+religion = nestorian
+technology_group = eastern
+capital = 2309	# Sinjar
+
+historical_friend = MRO
+
+

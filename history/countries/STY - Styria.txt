@@ -1,0 +1,177 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = austrian
+capital = 1863	# Graz
+
+# BT In
+historical_friend = HAB
+historical_rival = CTH
+# BT Out
+
+1379.9.25 = {
+	monarch = {
+		name = "Leopold III"
+		dynasty = "von Habsburg"
+		birth_date = 1351.11.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+	queen = {
+		country_of_origin = MLO
+		name = "Viridis"
+		dynasty = "Visconti"
+		birth_date = 1350.1.1
+		death_date = 1414.3.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Wilhelm"
+		monarch_name = "Wilhelm"
+		dynasty = "von Habsburg"
+		birth_date = 1370.1.1
+		death_date = 1406.7.15
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1386.7.9 = {
+	monarch = {
+		name = "Wilhelm"
+		dynasty = "von Habsburg"
+		birth_date = 1370.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1386.7.9 = {
+	heir = {
+		name = "Ernst"
+		monarch_name = "Ernst"
+		dynasty = "von Habsburg"
+		birth_date = 1377.1.1
+		death_date = 1424.6.10
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1401.1.1 = {
+	queen = {
+		country_of_origin = NAP
+		name = "Giovanna"
+		dynasty = "d'Anjou-Durazzo"
+		birth_date = 1373.6.25
+		death_date = 1435.2.2
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1406.7.15 = {
+	monarch = {
+		name = "Ernst"
+		dynasty = "von Habsburg"
+		birth_date = 1377.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = POM
+		name = "Margaretha"
+		dynasty = "Gryf"
+		birth_date = 1366.1.1
+		death_date = 1410.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1412.1.25 = {
+	queen = {
+		country_of_origin = MAZ
+		name = "Cymburgis"
+		dynasty = "Piast"
+		birth_date = 1395.1.1
+		death_date = 1429.9.28
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1415.9.21 = {
+	heir = {
+		name = "Friedrich"
+		monarch_name = "Friedrich V"
+		dynasty = "von Habsburg"
+		birth_date = 1415.9.21
+		death_date = 1493.8.19
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
+
+1424.6.10 = {
+	monarch = {
+		name = "Regent Friedrich IV von Habsburg"
+		adm = 4
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+	heir = {
+		name = "Friedrich"
+		monarch_name = "Friedrich V"
+		dynasty = "von Habsburg"
+		birth_date = 1415.9.21
+		death_date = 1493.8.19
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
+
+1431.9.21 = {
+	monarch = {
+		name = "Friedrich V"
+		dynasty = "von Habsburg"
+		birth_date = 1415.9.21
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
+
+1452.1.1 = { # as Holy Roman Emperor
+	monarch = {
+		name = "Friedrich III"
+		dynasty = "von Habsburg"
+		birth_date = 1415.9.21
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}

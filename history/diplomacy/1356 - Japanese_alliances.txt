@@ -1,0 +1,339 @@
+# Nanbokucho Period
+
+vassal = {
+	first = ASK
+	second = AKT
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = RFR
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = SBA
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = UTN
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = STK
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = UES
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = HTK
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = IMG
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = TKD
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = OGS
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = HSK
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = AKM
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = ISK
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = YMN
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = OUC
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = SHN
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = OTM
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = ASK
+	second = ITO
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = SCJ
+	second = DTE
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = SCJ
+	second = CBA
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = SCJ
+	second = TKI
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = SCJ
+	second = KNO
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = SCJ
+	second = KKC
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+vassal = {
+	first = SCJ
+	second = SMZ
+	start_date = 1356.1.1
+	end_date = 1392.1.1
+}
+
+# Daimyo Vassals
+
+vassal = {
+	first = ASK
+	second = AKT
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = RFR
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = SBA
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = DTE
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = UTN
+	start_date = 1392.1.1
+	end_date = 1392.2.1
+}
+
+vassal = {
+	first = ASK
+	second = STK
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = UES
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = HTK
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = CBA
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = IMG
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = TKD
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = OGS
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = TKI
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = HSK
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = AKM
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = ISK
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = YMN
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = KNO
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = OUC
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = SHN
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = OTM
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = ITO
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = KKC
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}
+
+vassal = {
+	first = ASK
+	second = SMZ
+	start_date = 1392.1.1
+	end_date = 1444.11.11
+}

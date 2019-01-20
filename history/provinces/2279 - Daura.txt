@@ -1,0 +1,27 @@
+# 2279 - Daura (1356)
+# Changes: religion
+
+owner = KTS
+controller = KTS
+add_core = KTS
+is_city = yes
+culture = hausa 
+religion = shamanism #Fetishism
+capital = "Daura"
+trade_goods = dyes
+hre = no
+base_tax = 3 
+
+base_production = 3
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+base_manpower = 1
+
+discovered_by = sub_saharan
+
+1400.1.1 = { religion = sunni }
+1806.1.1 = {	owner = SOK
+		controller = SOK
+		add_core = SOK
+	   } # The Fulani Empire

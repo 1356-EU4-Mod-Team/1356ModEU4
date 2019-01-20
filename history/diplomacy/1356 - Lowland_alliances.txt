@@ -1,0 +1,214 @@
+# Audax Validator "." Ignore_1007
+casus_belli = {
+	type = cb_restore_personal_union
+	first = ENG
+	second = FRA
+	#start_date = 1337.1.1 #Changed for compatibility/Balance
+	start_date = 1356.12.26
+	end_date = 1471.5.21
+}
+
+# England and Burgundy
+alliance = {
+	first = ENG
+	second = BUR
+	start_date = 1419.9.10
+	end_date = 1435.9.21
+}
+# England and Brittany
+alliance = {
+	first = ENG
+	second = BRI
+	start_date = 1419.9.10
+	end_date = 1435.9.21
+}
+
+# Burgundy and Palatinate Burgundy/Auvergne
+union = {
+	first = BUR
+	second = PBG
+	#start_date = 1330.1.21 #Starts on 1330.1.21 for balance/compatibiltiy sake
+	start_date = 1356.12.26
+	end_date = 1361.11.21
+}
+
+#vassal = { #Covered by Missions
+#	first = BUR
+#	second = AUV
+#	start_date = 1350.4.3
+#	end_date = 1360.9.29
+#}
+
+royal_marriage = {
+	first = BUR
+	second = AUV
+	start_date = 1350.4.3
+	end_date = 1360.9.29
+}
+
+# Luxemburg and Brabant
+alliance = {
+	first = LUX
+	second = BRB
+	start_date = 1354.1.21
+	end_date = 1383.12.8
+}
+
+royal_marriage = {
+	first = LUX
+	second = BRB
+	start_date = 1354.1.21
+	end_date = 1383.12.8
+}
+
+# Burgundy and Flandres
+alliance = {
+	first = BUR
+	second = FLA
+	start_date = 1356.5.14
+	end_date = 1361.11.21
+}
+
+royal_marriage = {
+	first = BUR
+	second = FLA
+	start_date = 1356.5.14
+	end_date = 1361.11.21
+}
+
+# Burgundy and Flandres
+alliance = {
+	first = BUR
+	second = FLA
+	start_date = 1404.4.27
+	end_date = 1405.3.16
+}
+
+royal_marriage = {
+	first = BUR
+	second = FLA
+	start_date = 1404.4.27
+	end_date = 1405.3.16
+}
+
+# Brabant and Luxemburg
+alliance = {
+	first = BRB
+	second = LUX
+	start_date = 1409.7.16
+	end_date = 1415.10.25
+}
+
+royal_marriage = {
+	first = BRB
+	second = LUX
+	start_date = 1409.7.16
+	end_date = 1415.10.25
+}
+
+# Holland and Luxemburg
+alliance = {
+	first = HOL
+	second = LUX
+	start_date = 1417.9.16
+	end_date = 1425.1.6
+}
+
+royal_marriage = {
+	first = HOL
+	second = LUX
+	start_date = 1417.9.16
+	end_date = 1425.1.6
+}
+
+# Hainaut - Holland
+union = {
+	first = HOL
+	second = HAI
+	start_date = 1356.6.23
+	end_date = 1428.7.3
+}
+
+# Utrecht - Liege
+vassal = {
+	first = UTR
+	second = LIE
+	start_date = 1378.7.1
+	end_date = 1379.4.30
+}
+
+# Hainaut - Liege
+vassal = {
+	first = HAI
+	second = LIE
+	start_date = 1417.5.31
+	end_date = 1418.4.1
+}
+
+# Flanders and Nevers
+union = {
+	first = FLA
+	second = NEV
+	start_date = 1322.7.22
+	end_date = 1382.5.9
+}
+
+# Burgundy and Nevers
+vassal = { #Changed to be Vanilla compatible
+	first = BUR
+	second = NEV
+	start_date = 1405.3.16
+	end_date = 1443.12.31
+}
+
+# Burgundy and Rethel
+vassal = {
+	first = BUR
+	second = RET
+	start_date = 1393.1.1
+	end_date = 1406.12.1
+}
+
+# Flanders and Palatinate Burgundy
+union = {
+	first = FLA
+	second = PBG
+	start_date = 1382.5.9
+	end_date = 1384.1.30
+}
+
+# Burgundy and Flanders
+union = {
+	first = BUR
+	second = FLA
+	start_date = 1384.1.30
+	end_date = 1404.4.27
+}
+
+# Flanders and Palatinate Burgundy
+union = {
+	first = FLA
+	second = PBG
+	start_date = 1404.4.27
+	end_date = 1405.3.16
+}
+
+# Dutch states
+union = { #Changed to be Vanilla compatible
+	first = BUR
+	second = FLA
+	start_date = 1405.3.16
+	end_date = 1443.12.31
+}
+union = {#Changed to be Vanilla compatible
+	first = BUR
+	second = BRB
+	start_date = 1430.8.4
+	end_date = 1443.12.31
+}
+union = {#Changed to be Vanilla compatible
+	first = BUR
+	second = HOL
+	start_date = 1428.7.3
+	end_date = 1443.12.31
+}

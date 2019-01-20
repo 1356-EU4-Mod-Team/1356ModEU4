@@ -1,0 +1,16 @@
+name = "Timurid Invasion of Chagatai"
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+}
+
+1388.7.1 = {
+	add_attacker = TIM
+	add_defender = CHG
+}
+
+# Peace
+1389.1.1 = {
+	rem_attacker = TIM
+	rem_defender = CHG
+}

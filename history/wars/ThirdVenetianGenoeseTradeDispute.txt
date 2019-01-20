@@ -1,0 +1,43 @@
+# Third Venetian-Genoese war
+# 2014.3.5 Created war
+
+name = "Third Venetian–Genoese Trade Dispute"
+#casus_belli = cb_trade_war
+war_goal = {
+	type = superiority_trade_mutual
+	casus_belli = cb_trade_war
+}
+
+1350.1.1 = {
+	add_attacker = VEN
+	add_defender = GEN
+}
+
+1350.6.1 = { # Genoa gets Ottomans to help in the conflict
+	add_defender = TUR
+}
+
+1351.1.16 = { # Aragon joins Venice side
+	add_attacker = ARA
+}
+
+1351.6.1 = { # Byzantium forced to join the war
+	add_attacker = BYZ
+}
+
+1352.1.1 = { # Pisa is dragged to the war
+	add_attacker = PIS
+}
+
+1352.5.6 = { # Byzantium peaces out
+	rem_attacker = BYZ
+}
+
+# Peace and end of war
+1355.6.1 = {
+	rem_attacker = VEN
+	rem_attacker = ARA
+	rem_attacker = PIS
+	rem_defender = GEN
+	rem_defender = TUR
+}

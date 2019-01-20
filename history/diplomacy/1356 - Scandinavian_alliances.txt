@@ -1,0 +1,84 @@
+# Sweden-Finland
+vassal = {
+	first = SWE
+	second = FIN
+	start_date = 1356.1.1
+	end_date = 1357.1.1
+}
+
+# Norway-Sweden
+union = {
+	first = NOR
+	second = SWE
+	start_date = 1362.2.15
+	end_date = 1364.2.18
+}
+
+# Haakon VI of Norway and Margaret of Denmark, son was king of Denmark-Norway
+royal_marriage = {
+	first = DAN
+	second = NOR
+	start_date = 1363.4.9
+	end_date = 1380.7.29
+}
+
+alliance = {
+	first = DAN
+	second = NOR
+	start_date = 1363.4.9
+	end_date = 1380.7.29
+}
+
+# Sweden-Mecklenburg
+vassal = {
+	first = SWE
+	second = MKL
+	start_date = 1384.9.1 
+	end_date = 1389.2.24
+} 
+
+# Denmark-Norway
+union = {
+	first = DAN
+	second = NOR
+	start_date = 1380.7.29 # Death of Haakon VI
+	end_date = 1387.8.3 # Death of Olaf II
+}
+
+union = {
+	first = DAN
+	second = NOR
+	start_date = 1388.2.2 # Margrete becomes the Queen of Denmark-Norway
+	end_date = 1397.6.17 # The begin of the Kalmar Union
+}
+
+# Denmark-Sweden
+union = {
+	first = DAN
+	second = SWE
+	start_date = 1389.2.24 # Margrete becomes the elected Queen of Sweden
+	end_date = 1397.6.17 # The begin of the Kalmar Union
+}
+
+# Kalmar Union
+union = {
+	first = DAN
+	second = NOR
+	start_date = 1397.6.17 # The begin of the Kalmar Union
+	end_date = 1444.1.1 # The begin of the Main Game
+}
+
+union = {
+	first = DAN
+	second = SWE
+	start_date = 1397.6.17 # The begin of the Kalmar Union
+	end_date = 1444.1.1 # The begin of the Main Game
+}
+
+# Danish vassal, Holstein
+vassal = { 
+	first = DAN
+	second = SHL
+	start_date = 1386.9.15
+	end_date = 1443.12.30 #So it won't overlap with vanilla
+}

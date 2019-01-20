@@ -1,0 +1,8 @@
+discovered_by = north_american
+
+1356.12.26 = { discovered_by = NOR }
+1360.1.1 = { undiscover_country = NOR }
+
+1497.6.24 = { discovered_by = ENG } # John Cabbot
+1502.1.1 = { discovered_by = POR } # Gaspar Corte-Real
+1534.1.1 = { discovered_by = FRA } # Jacques Cartier

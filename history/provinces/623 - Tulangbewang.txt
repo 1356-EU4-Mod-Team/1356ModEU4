@@ -1,0 +1,35 @@
+# 623 - Tulangbewang (1356)
+# Changes: LAM/religion
+
+owner = PLB
+controller = PLB
+add_core = PLB
+add_core = LAM
+culture = sumatran
+religion = hinduism
+capital = "Tulangbewang"
+trade_goods = cloth
+hre = no
+base_tax = 3 
+
+base_production = 3
+base_manpower = 3
+is_city = yes
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1405.1.1 = { discovered_by = MNG }
+1509.1.1 = { discovered_by = POR }
+1525.1.1 = { religion = sunni }
+1550.1.1 = {	owner = BAN
+		controller = BAN
+		add_core = BAN
+	   } # Banten Sultanate expanded the influence in South Sumatra
+1752.1.1 = {	owner = NED
+		controller = NED
+		add_core = NED
+		remove_core = BAN
+	   }

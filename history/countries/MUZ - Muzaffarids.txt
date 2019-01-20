@@ -1,0 +1,73 @@
+government = tribal
+add_government_reform = tribal_federation_ilkhan_reform
+technology_group = muslim
+primary_culture = persian
+religion = sunni
+historical_rival = TIM
+historical_rival = JLR
+capital = 429 # Isfahan
+add_army_professionalism = 0.05
+religious_school = hanafi_school
+
+1314.1.1 = {
+	monarch = {
+		name = "Mubariz al-Din Muhamad"
+		dynasty = "Muzaffarid"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1357.9.1  = { capital = 429 }
+
+1358.1.1 = {
+	monarch = {
+		name = "Dschamal al-Din Abu I-Fawaris"
+		dynasty = "Muzaffarid"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1364.1.1 = {
+	monarch = {
+		name = "Qutb al-Din Shah Mahmud"
+		dynasty = "Muzaffarid"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1366.1.1 = {
+	monarch = {
+		name = "Dshamal al-Din Abu I-Fawaris"
+		dynasty = "Muzaffarid"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1384.1.1 = {
+	monarch = {
+		name = "Mudshahid al-Din Zain al-Abidin"
+		dynasty = "Muzaffarid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1387.1.1 = {
+	monarch = {
+		name = "Shah Yahya"
+		dynasty = "Muzaffarid"
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+

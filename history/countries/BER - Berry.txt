@@ -1,0 +1,103 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = cosmopolitan_french
+religion = catholic
+capital = 179	# Bourges
+
+1360.10.24 = {
+	monarch = {
+		name = "Jean I"
+		dynasty = "de Valois"
+		birth_date = 1340.11.30
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+	queen = {
+		country_of_origin = AMG
+		name = "Jeanne"
+		dynasty = "d'Armagnac"
+		birth_date = 1346.6.24
+		death_date = 1387.3.15
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1389.6.5 = {
+	queen = {
+		country_of_origin = AUV
+		name = "Jeanne"
+		dynasty = "d'Auvergne"
+		birth_date = 1378.1.1
+		death_date = 1424.1.1
+		female = yes
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+1404.9.28 = { # as Duchess
+	queen = {
+		country_of_origin = AUV
+		name = "Jeanne II"
+		dynasty = "d'Auvergne"
+		birth_date = 1378.1.1
+		death_date = 1424.1.1
+		female = yes
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+# 1416.6.15 - To French Royal Domain
+
+1517.4.11 = { # Duchy restaured
+	monarch = {
+		name = "Marguerite I"
+		dynasty = "de Valois-Angoulême"
+		birth_date = 1492.4.11
+		female = yes
+		adm = 3
+		dip = 5
+		mil = 2
+
+	}
+	queen = {
+		country_of_origin = ALE
+		name = "Charles IV"
+		dynasty = "de Valois-Alençon"
+		birth_date = 1489.1.1
+		death_date = 1525.4.12
+		female = no
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+###############################################################################
+#  1525.4.12 - 1549.12.21 PU under Armagnac (Marguerite de Valois-Angoulême)  #
+###############################################################################
+
+1527.1.24 = {
+	queen = {
+		country_of_origin = NAV
+		name = "Enrique II"
+		dynasty = "d'Albret"
+		birth_date = 1503.4.18
+		death_date = 1555.5.25
+		female = no
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+# 1549.12.21 - To French Royal Domain

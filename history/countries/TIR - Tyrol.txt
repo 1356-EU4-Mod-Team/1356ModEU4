@@ -1,0 +1,349 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = austrian
+capital = 73	# Innsbruck
+
+1335.4.2  = {
+	monarch = {
+		name = "Margarete"
+		dynasty = "Meinhardiner"
+		birth_date = 1318.1.1
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1342.2.10  = {
+	queen = {
+		country_of_origin = BAV
+		name = "Ludwig"
+		dynasty = "von Wittelsbach"
+		birth_date = 1315.5.1
+		death_date = 1361.9.18
+		female = no
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1344.2.9 = {
+	heir = {
+		name = "Meinhard"
+		monarch_name = "Meinhard III"
+		dynasty = "von Wittelsbach"
+		birth_date = 1344.2.9
+		death_date = 1363.1.13
+		claim = 100
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1361.9.18 = {
+	monarch = {
+		name = "Meinhard III"
+		dynasty = "von Wittelsbach"
+		birth_date = 1344.2.9
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+# 1363.1.13 - 1365.7.22 PU under Austria (Rudolf von Habsburg)
+
+1363.1.13 = {
+	monarch = {
+		name = "Rudolf IV"
+		dynasty = "von Habsburg"
+		birth_date = 1339.11.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+	queen = {
+		country_of_origin = BOH
+		name = "Katharina"
+		dynasty = "von Luxemburg"
+		birth_date = 1342.8.19
+		death_date = 1395.4.26
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1365.7.22 = {
+	monarch = {
+		name = "Leopold I"
+		dynasty = "von Habsburg"
+		birth_date = 1351.11.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+	queen = {
+		country_of_origin = MLO
+		name = "Viridis"
+		dynasty = "Visconti"
+		birth_date = 1350.1.1
+		death_date = 1414.3.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# 1379.9.25 - 1386.7.9 PU under Styria (Leopold von Habsburg)
+
+1379.9.25 = {
+	monarch = {
+		name = "Leopold III"
+		dynasty = "von Habsburg"
+		birth_date = 1351.11.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+	queen = {
+		country_of_origin = MLO
+		name = "Viridis"
+		dynasty = "Visconti"
+		birth_date = 1350.1.1
+		death_date = 1414.3.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# 1386.7.9 - 1395.8.29 PU under Austria (Albrecht von Habsburg)
+
+1379.9.26 = {
+	monarch = {
+		name = "Albrecht III"
+		dynasty = "von Habsburg"
+		birth_date = 1349.9.9
+		ADM = 3
+		DIP = 3
+		MIL = 2
+	}
+	queen = {
+		country_of_origin = ANS
+		name = "Beatrix"
+		dynasty = "von Hohenzollern"
+		birth_date = 1362.1.1
+		death_date = 1414.6.10
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1395.8.29 = {
+	monarch = {
+		name = "Leopold II"
+		dynasty = "von Habsburg"
+		birth_date = 1371.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = BUR
+		name = "Catherine"
+		dynasty = "de Valois-Bourgogne"
+		birth_date = 1378.1.1
+		death_date = 1425.1.26
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Friedrich"
+		monarch_name = "Friedrich IV"
+		dynasty = "von Habsburg"
+		birth_date = 1382.1.1
+		death_date = 1439.6.24
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1406.7.15 = {
+	monarch = {
+		name = "Friedrich IV"
+		dynasty = "von Habsburg"
+		birth_date = 1382.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1406.12.24 = {
+	queen = {
+		country_of_origin = PAL
+		name = "Elisabeth"
+		dynasty = "von Wittelsbach"
+		birth_date = 1381.10.27
+		death_date = 1408.12.31
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1410.1.1 = {
+	queen = {
+		country_of_origin = BRU
+		name = "Anna"
+		dynasty = "von Welf"
+		birth_date = 1390.1.1
+		death_date = 1432.8.10
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1439.6.25 = {
+	monarch = {
+		name = "Sigismund I"
+		dynasty = "von Habsburg"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1440.1.1 = { add_government_reform = feudalism_reform }
+
+1454.1.1 = {
+	monarch = {
+		name = "Friedrich V"
+		dynasty = "von Habsburg"
+		adm = 3
+		dip = 1
+		mil = 0
+	}
+}
+
+1490.1.1 = {
+	monarch = {
+		name = "Maximilian I"
+		dynasty = "von Habsburg"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1519.1.1 = {
+	monarch = {
+		name = "Karl I"
+		dynasty = "von Habsburg"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1523.1.1 = {
+	monarch = {
+		name = "Ferdinand I"
+		dynasty = "von Habsburg"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1547.1.11 = {
+	monarch = {
+		name = "Ferdinand II"
+		dynasty = "von Habsburg"
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1594.1.1 = {
+	monarch = {
+		name = "Rudolf"
+		dynasty = "von Habsburg"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1602.1.1 = {
+	monarch = {
+		name = "Maximilian II"
+		dynasty = "von Habsburg"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1625.1.1 = {
+	monarch = {
+		name = "Leopold V"
+		dynasty = "von Habsburg"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1632.9.14 = {
+	monarch = {
+		name = "Claudia de' Medici"
+		regent = yes
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+1646.5.17 = {
+	monarch = {
+		name = "Ferdinand Charles"
+		dynasty = "von Habsburg"
+		adm = 0
+		dip = 3
+		mil = 1
+	}
+}
+
+1646.5.17 = { government = monarchy
+add_government_reform = autocracy_reform }
+
+1662.1.1 = {
+	monarch = {
+		name = "Sigismund Francis"
+		dynasty = "von Habsburg"
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}

@@ -1,0 +1,8 @@
+#Hulk
+type = heavy_ship
+
+hull_size = 18
+base_cannons = 30
+sail_speed = 4
+
+sprite_level = 1

@@ -1,0 +1,41 @@
+royal_marriage = {
+	first = ADU
+	second = MOR
+	start_date = 1332.4.15
+	end_date = 1356.12.25
+}
+
+alliance = {
+	first = ADU
+	second = MOR
+	start_date = 1337.2.22
+	end_date = 1356.12.25
+}
+
+union = {
+	first = ARA
+	second = VAL
+	start_date = 1312.6.12
+	end_date = 1356.12.25
+}
+
+union = {
+	first = LON
+	second = GAL
+	start_date = 1309.3.26
+	end_date = 1356.12.25
+}
+
+royal_marriage = {
+	first = POR
+	second = LON
+	start_date = 1327.8.8
+	end_date = 1356.12.25
+}
+
+royal_marriage = {
+	first = ARA
+	second = NAV
+	start_date = 1327.8.8
+	end_date = 1356.12.25
+}

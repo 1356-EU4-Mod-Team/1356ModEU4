@@ -1,0 +1,26 @@
+# 598 - Pahang (1356)
+# Changes: religion
+
+owner = PAH
+controller = PAH
+culture = malayan
+religion = mahayana
+capital = "Pahang"
+trade_goods = tropical_wood
+hre = no
+base_tax = 2 
+
+base_production = 2
+base_manpower = 1
+is_city = yes
+add_core = PAH
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1425.1.1 = { religion = sunni }
+1454.1.1 = { owner = MLC controller = MLC add_core = MLC add_core = JOH }
+1516.1.1 = { discovered_by = POR }
+1528.1.1 = { owner = JOH controller = JOH }

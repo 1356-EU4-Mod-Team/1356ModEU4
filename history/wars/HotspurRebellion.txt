@@ -1,0 +1,19 @@
+name = "Hotspur Rebellion"
+#casus_belli = cb_independence_war
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = NOL
+}
+
+
+1403.1.1 = {
+	add_attacker = NOL
+	add_defender = ENG
+}
+
+
+1403.7.21 = {
+	rem_attacker = NOL
+	rem_defender = ENG
+}

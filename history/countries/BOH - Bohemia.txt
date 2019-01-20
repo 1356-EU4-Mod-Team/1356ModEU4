@@ -1,0 +1,370 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = czech
+religion = catholic
+elector = yes
+capital = 266 # Praha
+technology_group = western
+add_accepted_culture = saxon
+add_army_professionalism = 0.1
+
+1346.8.26 = {
+	monarch = {  # Holy Roman Emperor 1346.7.11 / 1378.11.29
+		name = "Karl IV"
+		dynasty = "von Luxemburg"
+		birth_date = 1316.5.14
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+1353.5.27 = {
+	queen = {
+		country_of_origin = SIL
+		name = "Anna"
+		dynasty = "Piast"
+		birth_date = 1339.1.1
+		death_date = 1362.7.11
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1361.2.26 = {
+	heir = {
+		name = "Wenzel"
+		monarch_name = "Wenzel IV"
+		dynasty = "von Luxemburg"
+		birth_date = 1361.2.26
+		death_date = 1419.8.16
+		claim = 100
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+1363.5.21 = {
+	queen = {
+		country_of_origin = POM
+		name = "Anna"
+		dynasty = "Gryf"
+		birth_date = 1347.1.1
+		death_date = 1393.4.15
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1378.11.29 = {  # Holy Roman Emperor 1378.11.29 / 1400.8.20
+	monarch = {
+		name = "Wenzel"
+		dynasty = "von Luxemburg"
+		birth_date = 1361.2.26
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+	queen = {
+		country_of_origin = HOL
+		name = "Johanna"
+		dynasty = "von Wittelsbach"
+		birth_date = 1362.1.1
+		death_date = 1386.12.31
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1389.5.2 = {
+	queen = {
+		country_of_origin = BAV
+		name = "Sophia"
+		dynasty = "von Wittelsbach"
+		birth_date = 1376.1.1
+		death_date = 1428.11.4
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1400.8.20 = {
+	monarch = {
+		name = "Wenzel IV"
+		dynasty = "von Luxemburg"
+		birth_date = 1361.2.26
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+	queen = {
+		country_of_origin = BAV
+		name = "Sophia"
+		dynasty = "von Wittelsbach"
+		birth_date = 1376.1.1
+		death_date = 1428.11.4
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# 1419.8.16 - 1437.12.9 PU under Hungary (Sigismund von Luxemburg)
+
+1419.8.16 = { leader = {	name = "Jan Zizka"	type = general		fire = 6	shock = 3	manuever = 5	siege = 0	death_date = 1424.10.11 } }
+
+1419.8.16 = { leader = {	name = "Prokop Holý"	type = general		fire = 4	shock = 3	manuever = 5	siege = 1	death_date = 1434.5.30 } }
+
+1419.8.16 = {
+	monarch = {
+		name = "Sigismund I"
+		dynasty = "von Luxemburg"
+		birth_date = 1368.2.15
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Barbara"
+		dynasty = "von Cilli"
+		birth_date = 1392.1.1
+		death_date = 1451.7.11
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# 1437.12.9 - 1439.10.27 PU under Austria (Albrecht von Habsburg)
+
+1437.12.9 = {
+	monarch = {
+		name = "Albrecht II"
+		dynasty = "von Habsburg"
+		birth_date = 1397.8.16
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = HUN
+		name = "Elisabeth"
+		dynasty = "von Luxemburg"
+		birth_date = 1409.10.7
+		death_date = 1442.12.19
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1439.10.27 = {
+	monarch = {
+		name = "Interregnum"
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+#1440.1.1 = { government = feudalism_reform }
+
+# 1453.10.28 - 1457.11.23 PU under Austria (Ladislaus Postumus von Habsburg)
+
+1453.10.28 = {
+	monarch = {
+		name = "Ladislaus Postumus"
+		dynasty = "von Habsburg"
+		birth_date = 1440.2.22
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1457.11.24 = {
+	monarch = {
+		name = "Jirí"
+		dynasty = "z Podebrad"
+		birth_date = 1420.4.23
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+	queen = {
+		country_of_origin = BOH
+		name = "Joanna"
+		dynasty = "Rozmitál"
+		birth_date = 1430.1.1
+		death_date = 1475.11.12
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1471.3.23 = {
+	monarch = {
+		name = "Vladislav II"
+		dynasty = Jagiellon
+		birth_date = 1456.3.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1476.1.1 = { #A marriage more in name than in practice, should possibly not count.
+	queen = {
+		country_of_origin = BRA
+		name = "Barbara"
+		dynasty = "von Hohenzollern"
+		birth_date = 1464.5.30
+		death_date = 1491.1.1 #(divorce), real death: 1515.9.4 
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1490.10.4 = {
+	queen = {
+		country_of_origin = NAP
+		name = "Beatrice"
+		dynasty = "de Trastámara"
+		birth_date = 1457.11.16
+		death_date = 1500.4.7 #annulled, real death: 1508.9.23
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1502.9.29 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Anne"
+		dynasty = "de Foix"
+		birth_date = 1484.1.1
+		death_date = 1506.7.26
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1516.3.14 = {
+	monarch = {
+		name = "Ludvik I"
+		dynasty = Jagiellon
+		birth_date = 1506.7.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Maria"
+		dynasty = "von Habsburg"
+		birth_date = 1505.9.15
+		death_date = 1558.10.18
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1526.8.30 = {
+	government = monarchy
+	add_government_reform = autocracy_reform
+	elector = no
+	add_accepted_culture = schlesian
+}
+
+
+1526.8.30 = {
+	monarch = {
+		name = "Ferdinand I"
+		dynasty = "von Habsburg"
+		birth_date = 1503.3.10
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1562.9.17 = {
+	monarch = {
+		name = "Maximilian II"
+		dynasty = "von Habsburg"
+		birth_date = 1527.7.31
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1576.1.1 = {
+	monarch = {
+		name = "Rudolf II"
+		dynasty = "von Habsburg"
+		birth_date = 1552.7.18
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1610.1.1 = { leader = {	name = "Christian of Anhalt"   	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1630.4.17 } }
+
+1612.1.22 = {
+	monarch = {
+		name = "Matthias"
+		dynasty = "von Habsburg"
+		birth_date = 1557.2.24
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+1615.1.1 = { leader = {	name = "Thurn"                 	type = general	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1640.1.28 } }
+
+# Start of Thirty years war
+1618.5.22 = {
+	monarch = {
+		name = "The Bohemian Estates"
+		regent = yes
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+	religion = protestant
+	join_league = protestant
+}
+
+#Personal union with Palatinate
+#Personal Union with Habsburg
+
+1620.11.8 = {
+	leave_league = protestant
+}

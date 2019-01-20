@@ -1,0 +1,85 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = burgundian
+religion = catholic
+technology_group = western
+capital = 193	# Frenche-Comte
+
+#######################################################################
+#  1330.1.21 - 1361.11.21 PU under Burgundy (Phillippe de Bourgogne)  #
+#######################################################################
+
+1350.4.3 = {
+	monarch = {
+		name = "Philippe I"
+		dynasty = "de Bourgogne"
+		birth_date = 1346.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1357.5.14 = {
+	queen = {
+		country_of_origin = FLA
+		name = "Marguerite"
+		dynasty = "de Dampierre"
+		birth_date = 1350.4.13
+		death_date = 1405.3.16
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+# 1361.11.21 - Philippe I dies with no heirs, BUR is inherited by France, while PBG goes to the Countess Margaret of Burgundy
+
+1361.11.21 = {
+	monarch = {
+		name = "Marguerite I"
+		dynasty = "Capétien"
+		birth_date = 1312.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+		female = yes
+	}
+}
+
+#################################################################
+#  1382.5.9 - 1384.1.30 PU under Flandres (Louis de Dampierre)  #
+#################################################################
+
+1382.5.9 = {
+	monarch = {
+		name = "Louis II"
+		dynasty = "de Dampierre"
+		birth_date = 1330.10.25
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+# 1384.1.30 - To Burgundy over Louis II daughter Marguerite de Dampierre
+
+#######################################################################
+#  1404.4.27 - 1405.3.16 PU under Flandres (Marguerite de Dampierre)  #
+#######################################################################
+
+1404.4.27 = {
+	monarch = {
+		name = "Marguerite III"
+		dynasty = "de Dampierre"
+		birth_date = 1350.4.13
+		adm = 3
+		dip = 4
+		mil = 2
+		female = yes
+	}
+}
+
+# 1405.3.16 - Finally to Burgundy after Marguerites death

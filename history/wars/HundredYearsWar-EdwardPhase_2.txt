@@ -1,0 +1,196 @@
+name = "Hundred Years War - Edwardian Phase"
+#casus_belli = cb_insult
+war_goal = {
+	type = superiority_insult_mutual
+	casus_belli = cb_insult
+}
+
+# 1342-1343 Breton War Succession
+
+1345.6.15 = { # English Invasion of Normandy
+	add_attacker = ENG
+	add_attacker = WLS
+	add_attacker = LNC
+	add_attacker = NOL
+	add_attacker = MNF
+	add_defender = FRA
+	add_defender = FLA
+	add_defender = BUR
+	add_defender = AMG
+	add_defender = FOI
+	add_defender = BOU
+	add_defender = ALE
+	add_defender = ORL
+	add_defender = BLS
+}
+
+1345.10.21 = {
+	battle = {
+		name = "Auberoche"
+		location = 194 # Perigord
+		attacker = {
+			commander = "Henry of Grosmont"	# Earl of Derby
+			infantry = 1500
+			losses = 5	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Louis of Poitiers"
+			infantry = 7000
+			losses = 95	# percent
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+1346.1.1 = { # Scotland breaks the truce and aids France, by invading England
+	add_defender = SCO
+}
+
+1346.7.26 = {
+	battle = {
+		name = "Caen"
+		location = 168 # Normandie
+		attacker = {
+			commander = "Edward III"	# Edward III of England
+			infantry = 12000
+			losses = 5	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Raoul II"		# Raoul II of Brienne
+			infantry = 15000
+			losses = 95	# percent
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+1346.8.24 = {
+	battle = {
+		name = "Blanchetaque"
+		location = 168 # Normandie
+		attacker = {
+			commander = "Edward III"	# Edward III of England
+			infantry = 5000
+			losses = 5	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Raoul II"		# Raoul II of Brienne
+			infantry = 3500
+			losses = 95	# percent
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+1346.8.26 = {
+	battle = {
+		name = "Crécy"
+		location = 168 # Normandie
+		attacker = {
+			commander = "Edward III"	# Edward III of England
+			infantry = 15000
+			losses = 10	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Philippe VI"		# Philippe VI of France
+			infantry = 25000
+			losses = 90	# percent
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+1346.8.26 = { # Louis I of Flanders dies in Battle of Crecy, Flanders starts being neutral in the war
+	rem_defender = FLA
+}
+
+1346.9.6 = {
+	battle = {
+		name = "St Pol de Léon"
+		location = 170 # Finistere
+		attacker = {
+			commander = "St Pol de Léon"
+			infantry = 300
+			losses = 25 # percent
+			country = MNF
+		}
+		defender = {
+			commander = "St Pol de Léon"
+			infantry = 1000
+			losses = 75	# percent
+			country = BLS
+		}
+		result = yes
+	}
+}
+
+1346.10.17 = {
+	battle = {
+		name = "Neville's Cross"
+		location = 246 # Northumberland
+		attacker = {
+			commander = "Neville's Cross"
+			infantry = 7000
+			losses = 15	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Neville's Cross"
+			infantry = 12000
+			losses = 50	# percent
+			country = SCO
+		}
+		result = yes
+	}
+}
+
+1346.10.17 = { # David II is captured, Scotland leaves the war
+	rem_defender = SCO
+}
+
+1346.12.1 = { # France suspended Burgundy rule of Artois
+	rem_defender = BUR
+}
+
+1347.6.20 = {
+	battle = {
+		name = "La Roche-Derrien"
+		location = 169 # Armor
+		attacker = {
+			commander = "La Roche-Derrien"
+			infantry = 1000
+			losses = 25 # percent
+			country = MNF
+		}
+		defender = {
+			commander = "La Roche-Derrien"
+			infantry = 4000
+			losses = 75	# percent
+			country = BLS
+		}
+		result = yes
+	}
+}
+
+1347.9.28 = { # Truce of Calais
+	rem_attacker = ENG
+	rem_attacker = WLS
+	rem_attacker = LNC
+	rem_attacker = NOL
+	rem_attacker = MNF
+	rem_defender = FRA
+	rem_defender = AMG
+	rem_defender = FOI
+	rem_defender = BOU
+	rem_defender = ALE
+	rem_defender = ORL
+	rem_defender = BLS
+}

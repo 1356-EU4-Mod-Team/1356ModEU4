@@ -1,0 +1,64 @@
+namespace = blm
+
+country_event = {
+	id = blm.1
+	title = blm.1.t
+	desc = blm.1.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 627
+		627 = { religion = hinduism }
+		technology_group = chinese
+		OR = {
+			MTR = { exists = yes }
+			BAN = { exists =  yes }
+			DMK = { exists = yes }
+		}
+		religion = hinduism
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = blm.1.a
+			remove_core = 627
+		627 = {
+			add_core = BLM
+			cede_province = BLM
+			change_controller = BLM
+		      }
+	        }
+}
+
+country_event = {
+	id = blm.2
+	title = blm.2.t
+	desc = blm.2.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns = 627
+		technology_group = chinese
+		627 = { religion = sunni }
+		NOT = { religion = sunni }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = blm.2.a
+			remove_core = 627
+		627 = {
+			add_core = BLM
+			cede_province = BLM
+			change_controller = BLM
+		      }
+	        }
+}

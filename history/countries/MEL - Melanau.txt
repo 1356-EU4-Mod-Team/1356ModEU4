@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = tribal_federation
+primary_culture = bornean
+technology_group = chinese
+religion = hinduism
+capital = 2705
+
+1355.1.1 = {
+	monarch = {
+		name = "Surana"
+		dynasty = "Melanau"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

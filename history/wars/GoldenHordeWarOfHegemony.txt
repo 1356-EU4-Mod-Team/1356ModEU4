@@ -1,0 +1,25 @@
+name = "Golden Horde war of Hegemony"
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+}
+
+1356.1.1 = {
+	add_attacker = GOL
+	add_attacker = GAZ
+	add_defender = PER
+	add_defender = JLR
+	add_defender = QAR
+	add_defender = ERE
+}
+
+# Peace
+#1358.1.1 = { #This is to reduce the amount of popups of bugs in validator
+1356.2.1 = {
+	rem_attacker = GOL
+	rem_attacker = GAZ
+	rem_defender = PER
+	rem_defender = JLR
+	rem_defender = QAR
+	rem_defender = ERE
+}

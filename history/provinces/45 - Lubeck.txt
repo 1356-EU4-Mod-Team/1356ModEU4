@@ -1,0 +1,24 @@
+#BarbarossasThron
+#45 - Lübeck
+
+owner = HSA
+controller = HSA
+add_core = HSA
+add_claim = SAX
+culture = hannoverian
+religion = catholic
+hre = yes
+base_tax = 7
+base_production = 7
+trade_goods = naval_supplies
+base_manpower = 3
+fort_15th = yes
+capital = "Lübeck"
+is_city = yes
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 24
+center_of_trade = 3

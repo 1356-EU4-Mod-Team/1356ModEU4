@@ -1,0 +1,89 @@
+namespace = paregreg
+
+#######################
+# Paregreg war events #
+#######################
+
+country_event = {
+	id = paregreg.1
+	title = paregreg.1.t
+	desc = paregreg.1.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+    tag = MAJ
+    is_year = 1376
+		owns = 627
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = paregreg.1.a
+		remove_core = 627
+		627 = {
+			cede_province = BLM
+			change_controller = BLM
+		  }
+      MAJ = {
+        vassalize = BLM
+      }
+      add_prestige = -5
+      add_legitimacy = -5
+    }
+}
+
+country_event = {
+	id = paregreg.2
+	title = paregreg.2.t
+	desc = paregreg.2.d
+	picture = CIVIL_WAR_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+    tag = MAJ
+    is_year = 1386
+    num_of_provinces_in_states = 2
+	}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	option = {
+		name = paregreg.2.a
+		remove_core = 627
+    add_stability = -1
+    add_prestige = -25
+    add_legitimacy = -10
+    release = BLM
+    BLM = {
+      declare_war_with_cb = {
+        who = MAJ
+        casus_belli = cb_independence_war
+      }
+    }
+    random_subject_country = {
+      declare_war_with_cb = {
+        who = MAJ
+        casus_belli = cb_independence_war
+      }
+    }
+    random_subject_country = {
+      declare_war_with_cb = {
+        who = MAJ
+        casus_belli = cb_independence_war
+      }
+    }
+    random_subject_country = {
+      declare_war_with_cb = {
+        who = MAJ
+        casus_belli = cb_independence_war
+      }
+    }
+
+    }
+}

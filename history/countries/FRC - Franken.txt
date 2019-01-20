@@ -1,0 +1,33 @@
+#Province IDs changed
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = franconian
+religion = catholic
+capital = 81 # Hessen
+
+
+1332.7.19 = {
+	monarch = {
+		name = "Otto I"
+		adm = 5
+		dip = 3
+		mil = 3
+		dynasty = "von Franken"
+	}
+}
+
+1353.11.23 = {
+	heir = {
+		name = "Johann"
+		monarch_name = "Johann I"
+		dynasty = "von Franken"
+		birth_date = 1353.11.23
+		death_date = 1422.5.18
+		claim = 90
+		adm = 3
+		dip = 6
+		mil = 2
+	}
+}

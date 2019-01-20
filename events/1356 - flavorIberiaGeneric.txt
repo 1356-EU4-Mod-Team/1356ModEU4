@@ -1,0 +1,67 @@
+namespace = fla_iberia
+
+province_event = { #From Andalusian to Andalusi
+	id = fla_iberia.1
+	title = fla_iberia.1.t
+	desc = fla_iberia.1.d
+	picture = EXPLORERS_eventPicture
+	
+	hidden = yes #Does this work like this?
+
+	trigger = { #Needs to check if a nation with either culture exists?
+		NOT = { exists = SPA }
+		NOT = { exists = ADU }
+		culture = andalucian
+		religion_group = muslim
+		unrest = 2
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = fla_iberia.1.a
+		iberia_region = {
+			limit = {
+				culture = andalucian
+				religion_group = muslim
+			}
+			change_culture = moorish
+		}
+	}
+	
+}
+
+province_event = { #From Andalusi to Andalusian
+	id = fla_iberia.2
+	title = fla_iberia.2.t
+	desc = fla_iberia.2.d
+	picture = EXPLORERS_eventPicture
+	
+	hidden = yes #Does this work like this?
+
+	trigger = { 
+		NOT = { exists = SPA }
+		NOT = { exists = ADU }
+		culture = moorish
+		religion_group = christian
+		unrest = 2
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = fla_iberia.2.a
+		iberia_region = {
+			limit = {
+				culture = moorish
+				religion_group = christian
+			}
+			change_culture = andalucian
+		}
+	}
+	
+}

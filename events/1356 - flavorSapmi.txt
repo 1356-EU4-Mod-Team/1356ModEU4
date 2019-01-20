@@ -1,0 +1,28 @@
+namespace = sapmi
+
+country_event = {
+	id = sapmi.1
+	title = "sapmi.NAME1"
+	desc = "sapmi.DESC1"
+	picture = RELIGION_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "sapmi.OPT1"
+		add_legitimacy = 5
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = "sapmi.OPT2"
+		change_religion = catholic
+		add_stability = -3
+		ai_chance = { factor = 30 }
+	}
+	option = {
+		name = "sapmi.OPT3"
+		change_religion = orthodox
+		add_stability = -3
+		ai_chance = { factor = 20 }
+	}
+}

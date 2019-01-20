@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = peasants_republic #Achtundvierziger #Some sort of Peasants Republic with a Parlaiment modifier would be interesting.
+primary_culture = viking
+religion = norse_pagan_reformed
+technology_group = north_american
+capital = 981 #Vinland
+
+
+1350.8.20 = {
+	monarch = {
+		name = "Fin"
+		dynasty = "Eriksson"
+		birth_date = 1330.8.20
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}

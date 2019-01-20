@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = hannoverian
+add_accepted_culture = saxon
+religion = catholic
+capital = 57 # Braunschweig
+
+1332.7.19 = {
+	monarch = {
+		name = "Heinrich IV."
+		adm = 6
+		dip = 5
+		mil = 3
+		dynasty = "von Welf"
+		leader = { name = "Heinrich IV" type = general fire = 5 shock = 5 manuever = 3 siege = 5 }
+	}
+}

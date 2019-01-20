@@ -1,0 +1,93 @@
+# War of the Breton Succession (1341-1364)
+# 2014.1.26 Created war (rickroll120)
+
+name = "Breton Succession War"
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = BLS
+}
+
+1341.4.30 = { # Jean III dies and a dispute between House of Monfort and Blois begins
+	add_attacker = MNF
+	add_defender = BLS
+}
+
+1341.10.16 = {
+	battle = {
+		name = "Champtoceaux"
+		location = 172 # Vendee
+		attacker = {
+			commander = "Jean IV"	# Jean IV of Monfort
+			infantry = 2500
+			losses = 90	# percent
+			country = MNF
+		}
+		defender = {
+			commander = "Charles I"		# Charles I of Blois
+			infantry = 7000
+			losses = 5	# percent
+			country = BLS
+		}
+		result = no
+	}
+}
+
+1342.6.1 = { # the way to interrupt the truce of Esplechin
+	add_attacker = ENG # Supports the Monfort faction
+	add_attacker = WLS
+	add_defender = FRA # Supports the Blois faction
+}
+
+1342.8.18 = {
+	battle = {
+		name = "Brest"
+		location = 1273 # Land's End (sea)
+		attacker = {
+			commander = "Brest"
+			galley = 211
+			losses = 1	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Brest"
+			galley = 14
+			losses = 50	# percent
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+1342.9.30 = {
+	battle = {
+		name = "Morlaix"
+		location = 170 # Finistere
+		attacker = {
+			commander = "Morlaix"
+			infantry = 800
+			cavalry = 1500
+			losses = 50 # percent
+			country = ENG
+		}
+		defender = {
+			commander = "Morlaix"
+			infantry = 1500
+			cavalry = 3000
+			losses = 50	# percent
+			country = FRA
+		}
+		result = no
+	}
+}
+
+1343.1.19 = { # Truce of Malestroit, war keeps going between Monfort and Blois
+	rem_attacker = ENG
+	rem_attacker = WLS
+	rem_defender = FRA
+}
+
+1345.5.1 = { # Edward III takes control of Monfort, while Jean of Monfort is in prison
+	rem_attacker = MNF
+	rem_defender = BLS
+}

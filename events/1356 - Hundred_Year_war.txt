@@ -1,0 +1,141 @@
+namespace = hyw
+
+country_event = {
+	id = hyw.1
+	title = hyw.1.t
+	desc = hyw.1.d
+	picture = JOAN_OF_ARC_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = FRA
+		NOT = { is_year = 1428 }
+		OR = {
+			NOT = { 180 = { controlled_by = FRA } }
+			NOT = { 183 = { controlled_by = FRA } }
+			NOT = { 186 = { controlled_by = FRA } }
+			NOT = { 168 = { controlled_by = FRA } }
+			NOT = { 167 = { controlled_by = FRA } }
+			NOT = { 194 = { controlled_by = FRA } }
+			NOT = { 195 = { controlled_by = FRA } }
+			NOT = { 200 = { controlled_by = FRA } }
+		}
+	}
+	mean_time_to_happen = {
+		years = 100
+
+		modifier = {
+			factor = 0.5
+			junior_union_with = ENG
+		}		
+		modifier = {
+			factor = 0.5
+			is_year = 1420
+		}		
+		modifier = {
+			factor = 0.9
+			NOT = { 180 = { controlled_by = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { 184 = { controlled_by = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { 186 = { controlled_by = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { 168 = { controlled_by = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { 167 = { controlled_by = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { 194 = { controlled_by = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { 195 = { controlled_by = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { 200 = { controlled_by = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			exists = NRM
+			NOT = { NRM = { vassal_of = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			exists = NRM
+			NOT = { NRM = { vassal_of = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			exists = ORL
+			NOT = { ORL = { vassal_of = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			exists = BER
+			NOT = { BER = { vassal_of = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			exists = BOU
+			NOT = { BOU = { vassal_of = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			exists = ALE
+			NOT = { ALE = { vassal_of = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			exists = AMG
+			NOT = { AMG = { vassal_of = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			exists = FOI
+			NOT = { FOI = { vassal_of = FRA } }
+		}
+		modifier = {
+			factor = 0.9
+			exists = AUV
+			NOT = { AUV = { vassal_of = FRA } }
+		}		
+	}
+	option = {
+		name = hyw.1.a
+		set_global_flag = "jean_darc"
+		add_historical_rival = ENG
+		add_country_modifier = {
+			name = "jean_darc"
+			duration = 1825
+		}
+		
+		random_owned_province = {
+			build_to_forcelimit = {
+				infantry = 0.4
+				cavalry = 0.1
+			}
+		}
+		
+		define_general = {
+			name = "Jeanne d'Arc"
+			female = yes
+			fire = 0
+			shock = 0
+			manuever = 6
+			siege = 6
+		}
+		
+	}
+}

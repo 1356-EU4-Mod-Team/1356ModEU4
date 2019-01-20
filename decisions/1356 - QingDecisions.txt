@@ -1,0 +1,120 @@
+country_decisions = {
+	qing_culture_shift_decision = {
+		major = yes
+		
+		potential = {
+			OR = {
+				tag = QNG
+				tag = MCH
+			}
+			is_emperor_of_china = yes	
+			owns = 1816
+			NOT = { has_country_flag = qing_new_culture_flag }
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				area = guangdong_area
+				area = west_guangdong_area
+				area = fujian_area
+				area = jiangxi_area
+				area = huguang_area
+				area = zhejiang_area
+				area = south_anhui_area
+				area = south_jiangsu_area
+				area = hunan_area
+				area = guangxi_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+	
+		allow = {
+			is_at_war = no
+			is_subject = no
+			primary_culture = manchu
+			num_of_cities = 75
+			imperial_mandate = 75
+			stability = 1
+			prestige = 0
+			NOT = { num_of_loans = 1 }
+			NOT = { num_of_revolts = 3 }
+			north_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			xinan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+			guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			fujian_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jiangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			huguang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zhejiang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_anhui_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_jiangsu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hunan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			guangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+	
+		effect = {
+			add_years_of_income = 1
+			add_meritocracy = 10
+			add_prestige = 15
+			add_adm_power = 20
+			add_dip_power = 20
+			add_mil_power = 20
+			every_owned_province = {
+				limit = {
+					has_owner_culture = yes
+				}
+				change_culture = qing_culture
+			}
+			set_ruler_culture = qing_culture
+			set_heir_culture = qing_culture
+			change_primary_culture = qing_culture
+
+			set_country_flag = qing_new_culture_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
