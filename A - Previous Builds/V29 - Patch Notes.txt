@@ -1,0 +1,10 @@
+V28
+
+General
+- Added Chancay, Warku, Chanka, Canas, Lupaca, and Carnanga tags to the Andes
+
+Missions
+- Added Lubeck Mission Tree (M)
+- Added Brunswick Mission Tree (M)
+- Added Pomeranian Mission Tree (M)
+

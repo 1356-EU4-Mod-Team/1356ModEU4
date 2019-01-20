@@ -1,0 +1,202 @@
+V29
+
+
+AARONS PERSONAL NOTES
+
+TO DO
+
+#General
+[General] Playtest BT & Vanilla 1356 to ensure all events are properly compatible.
+
+#Events
+[Event/Cultural] Misc Assyrian Flavor events
+[Event/Cultural] Misc Moravian Flavor events
+[Event/Cultural] Misc Frisian Flavor events
+[Event/Cultural] Misc Slovak flavor events
+[Event/Cultural] Misc Bosnian Flavor events
+[Event/Cultural] Scanian Cultural Flavor events
+[Event/Cultural] Misc Arpitan Flavor events
+[Event] Add Flavor to Cornish culture
+[Event] Add Flavor to Cummanian Culture
+[Event] Add flavor to Celtic Breton culture
+[Event] Add flavor to Ingrian culture
+[Event] Add Flavor to Sorbian Culture (They lasted until Napoleon)
+[Event] Add Flavor to Mazovian Culture
+[Event] Add Flavor to Kurland Culture
+[Event] Event to simulate the fall of Nestorianism/split in Korchin circa 1559 when the portuguese arrived.
+
+[Event] Rewrite Crusader events 12-18 about free manpower/money to be less of a strain to calculate. Perhaps a slow expiring global flag that prevents it from checking it every 4 months or something?
+[Event/Religious] Events for Aramatic Christians to rise up in defense of the Crusaders (Actually happened to William of Tyre)
+[Event, Decision, OR Mission] Flavor for the Liberal Moors in Iberia, +10% tech cost + Acceptence for foreign religions + cultures
+[Event] Frisia - vetkolpers & schieringers (Rich & Poor) Factions that typically acted, the more land you owned the more power you had, no law enforcement, no feudalism, no central authority, events about land reclaimation, Dithmarshen, Holstein, Frisia, East Frisia should be allies/have event chain about a Frisian Alliance. (Events to keep it together?) (Unique Government "Frisian freedom?")
+[Balance/Event] Flavor for the Swedes and Erik, as well as Duke Bengt Algotsson.
+[Event] Add Event to Remove Greenland Carrier from Stockholm if Greenland falls.
+[Event] Event for Pope to Demand Scania returned back to Denmark, or war breaks out. (Add alt-history option somehow.) Alongside this Scania should be in a PU with Sweden until 1361, when it went back to Denmark.
+(For Above) https://i.imgur.com/MjYT9wZ.png https://i.imgur.com/NP2DRqw.png
+
+#Mechanics
+[Governments/Mechanics] Crusader diplo action to use papal power to get bonuses from pope
+[Governments/Mechanics] Crusader States should be able to ask for help from Catholics at home (Dip Action)
+[Governments/Mechanics] Crusader State Gov should have its unique succession
+[Mechanics/Bug] Crusader Dip Action AI Acceptance needs reworked/prevent Pope from accepting diplo action if hes pope.
+[Institutions] Add Conintential (1360) & Merchantilism (1410) to institutions.
+[Mechanic/Suggestion] Suggestion on how to handle the French and their Vassals [ https://i.imgur.com/tCQVeSl.png ]
+[Estate/Mechanic] Turn Nestorian and Zoroastrian mechanics into Estates?
+
+#Ages
+[Age Ability/Great Project] Ability to design a new cathedriel as an Age Bonus, through the Great Projects.[ https://i.imgur.com/7FK8tbh.png ]
+[Ages] Overhaul the Age Objectives/Age Bonuses to be in line with the ideas from Voltaires Nightmare [ https://cdn.discordapp.com/attachments/435128392430518293/526383769070993408/unknown.png ] [ https://cdn.discordapp.com/attachments/435128392430518293/526383311996846080/unknown.png ] [ https://cdn.discordapp.com/attachments/435128392430518293/526382212027777024/unknown.png ] [ https://cdn.discordapp.com/attachments/435128392430518293/526382881984217088/unknown.png ]
+[Age] (Idea Continued from above) [ https://i.imgur.com/2Gt7Rja.png ] If done, replace Churches with Chappels, and Cathedriels with Churches
+
+#Flavor
+[Balance/Flavor] Modifier for Jerusalem thats better then the 1 Missionairy
+[Event/Balance/Flavor] Crusade Flavor; Christians can restore land in Balkans to either Byzantium or Latin Empire, all of the Greek or Christian lands in the region. Ends agression against turks.
+[Flavor/Regional] https://en.wikipedia.org/wiki/Guanches For the Canaries
+[Flavor] Rework Avignon Papacy with BT's tags
+[Flavor] Rework the Byzantine Co-Emperorship thing
+[Flavor] Events handling the Rivalry between Sweden and Novgorod
+[Flavor/Balance] Mazandaran, Yazd and Kerman should be the only Zoroastrian Provinces
+
+#Idea Groups/Policies
+[Idea] Cappadocia need Ideas
+[Idea] Ingria needs ideas
+[Idea] Rhineland TAG needs ideas
+[Idea] Occatia needs ideas
+[Idea] Assyria & Maroonite need ideas
+
+#Culture
+[Culture] Look further into Russian cultural tweaks (Remove Ryanzanian, that should be it.)
+[Culture] Get a namelist for Old Prussian
+[Culture/Event] Turn Andalucia/Andalucia events into on_actions?
+
+#Balance
+[Balance] Investigate start date cores, and set the standard to 1444 date standards (IE: No Cores on start)
+[Balance/Mission] Check Yuan Religious Missions for Balance with new system
+[Balance] Replace all starting wars with scripted wars ***** IMPORTANT HYW ONLY NEEDS THIS****
+
+#Tags
+[TAG] Figure out which Crusader TAGS from BT to keep and such
+[TAG] Port Salenero, Osnabruck, Benevento, Hoya, and Franken (Franconia) from BT into 1356?
+
+#Localisation
+[Localisation] Localise all new units
+[Localisation] "Patriarchate of Alexandria" would be awesome should they turn into a theocracy too
+[Localisation] look into submitted English Localisation fixes
+
+#Graphics
+- [Flag] Remake Egypts Coptic Flag
+- [Model] Impliment the Library of Alexandria Model properly
+- [Flag] Make Maronites flag
+- [Flag] Edessa needs a flag
+- [Flag] Tripolli Needs a flag
+- [Flag] Look into Additional Mod added tags and correct any ones that have odd sizes
+- [Flag] Add Flag for Lusatia TAG (Rework it now.)
+- [Icon] Make an Icon for the Nestorian Minorities
+- [Icon] Make a Merged BT & 1356 Logo
+- [Flag] Make a flag for the Rhineland TAG
+- [Flag] Make a flag for Gascony
+
+TEST
+- Test the New Egyptian (Coptic/Non Muslim) related Naming System for Rulers
+- Test date at when Colonialism usually spawns
+- Does AI Alexandria go Coptic too often amymore?
+
+BUGS REPORTED
+Bug reported that sometimes at war AI may completly disband its entire army, perhaps related to the Hansa? Noted the reporter never seen this in vanilla. However it was noted the entire country was occupied when it happened, so perhaps not all that bad?
+Bug where sometimes AI sits on 999 DIP power for some odd reason.
+Chinese Events not working?
+Yuan Rebel Events are buggy, look into
+ALX Name Localisation not working
+sevilla needs to switch to CAS if it fully annexes CAS/CAS ceases to exist
+yuan should implode when it looses the mandate, not continue to exist
+Age Bonus of Feudalism Revolt Risk not working, need to add code somewhere thats missing.
+Look into Iberia, it looks Broken again.
+Look into Yuans religion missions, may be unbalanced now
+France needs nerf?
+random nations still receiving "The Massacure of Alexandria" event. FIX.
+Naples does not start with its capital in naples
+Look into Muslim Spread into Indonesia events
+Charles of Navarra doesnt exist
+Developing a province then going to the Age Bonuses Menu Crashes the game. (Both Times developed their capital)
+
+BT Compatibility stuff
+- [Event] Death of Charles II will always pop in BT
+
+
+
+#NOTES AND SUCH#
+
+RELIGION RELATED STUFF
+Chinese Animists are Zongjiao
+Mexican Animists are Pure'pecha
+Philippine Beliefs are Anito or Anitism
+Carribean is Voodou
+
+
+TO INVESTIGATE FURTHER
+"In 1361 The County of Savoy was detached dejure from the Kingdom of Arles, in 1388 it aquired Nice, and in 1401 it added the County of Geneva. In 1416 it became its own independent duchy, "
+"More fortunate was a dynasty – if such it may be termed – to the west of them, at Sabzawār. This was the Sarbadārs (a name which means “heads on gallows”), who were an independent power from 736/1336 to 783/1381 and thereafter tributaries, with their power much reduced, of Temür. The Sarbadār state was a revolutionary Shīʿī polity without effective dynastic succession. It has been interpreted in various ways. A Marxist historian like I. P. Petrushevsky sees it as the result of a popular movement of social protest, essentially a peasant uprising against “feudal” oppression. J. M. Smith, by contrast, prefers to explain the establishment of the Sarbadār state as deriving from a revolt by the upper classes of the region against taxes they found objectionable. Whatever the truth of the matter, there is no denying the lower-class and, in some sense, the revolutionary element in what was going on." Something about a Persian Peasant Republic
+Investigate North Africas Culture Further
+Investigate the Cultural Situation in Russia better, none of this can be right at the current date..
+Investigate Styrian culture and find out if/when it was distinct from Austrian Culture & If needed create events for it to spawn/go away
+Investigate Avarian Culture further, should it be added?
+Investigate Iberian Cultures, it has to be somewhat different at this date?
+Investigate Nestorians further, where should they exist?
+Investigate Arabian Cultures further, are they any different in this date?
+Investigate if the Hussites are not crushed in time what should happen. (Crusade Mechanics? Generic Heresys growing and becoming actual religions? Forcing the Protestants out even earlier?)
+A way to add Paitriarch mechanics for Christians?
+vanilla coptic events - investigate further
+
+
+Add/Change later
+Tribes Estate?
+Byz Cores in Greece need reworked
+Library of Alexandria needs a model #I TRIED BUT ITS NOT WORKING! Game registers its finished, but the province modifier & Model dont appear. 
+Deity Icons (Finnish, Baltic, Greek, Slavic)
+
+
+
+########Ideas for future patches######
+
+#Religion
+Expand on existing Zoroastrian Flavor
+Expand on Hussite Flavor
+
+#Events
+[Event/Flavor/AltHistory] Event for mehmed to turk catholic?
+[Event/Religious] Hellenic events for ROME tag?
+[Event/Later] Event for BYZ to convert to catholic for saving, last possible chance to save empire
+[Event/Flavor] Events for Novgorodian Border Wars/Skirmishes/Claims on Viborg & Osterbotten
+
+#Flavor
+[Age] Decision that unlocks minor exploration around Europe, could lead to Event Chain or Mini Mission tree to eventually unlock the Age of Discovery.
+[Advisors] More Advisor types? https://i.imgur.com/0Qz0OJx.png
+[Tech Group] Vikings need their own unique Tech Group/Units/Visibility of America
+
+
+#Ideas
+[Idea Groups] New early game ideas?
+[Idea Groups/Policies] Actually add all the policies relating to theocratic ideas
+
+#Government
+[Governments/Flavor] Special Government Reforms for Dharma Owners playing Natives?
+[Government] Sami unique government
+[Government/BT] Viking unique Government, Viking Republic that uses parliament mechanicss
+
+#Decisions
+[Decision] Reformable Bulgaria & Serbia for Minor nations?
+[Decision] Formable Rhineland
+
+#Culture
+[Culture] Overhaul French Culture groups based around THIS map, if its missing: Split up French culture into Francoise, Champeronis, Angevin, and Poitevin https://cdn.discordapp.com/attachments/435770162147491843/518133561774047242/unknown.png https://cdn.discordapp.com/attachments/435770162147491843/518393641258188800/unknown.png
+[Culture] Colonial Cultures?
+[Culture] Greek Cultural Overhaul. Represent all the Greek minor cultures, alongside this add events for the revelant cultures, and Turkish counter flavor for the region.
+[Culture/Mechanic] Late game Nationalism cultural groups? (EX: Split up Austrian into 3 groups, with all 3 groups being able to unify the culture into Austrian during Nationalism.)
+[TAG/Event/Mechanic] Austrian Nationalism Mechanic (testing grounds for more global mechanic)
+
+#Missions
+[Missions] Picardie needs Missions
+[Missions] Rework French Minor missions to better fit the new cultures. Gascony, Aquitaine, Occitania, Poiutu, etc.
+
+#Misc
+Investigate further into The Phoenix Rises and see if its worth asking to integrate into the mod

@@ -1,0 +1,87 @@
+Features
+- Yuan now has a mission tree, complete with a handful of flavor events! Now you can attempt to bring a dying Empire back from the brink of defeat! (Warning: Extreme Difficulty)
+- Southeast Asia and Malaysia have had a touchup thanks to a member of the old 1356 team @Harpyiae on discord!
+- Yuan comes complete with a new disaster!
+- Yuan now has to work to build back their administration, when they start they have access to very little resources to help scrap their Empire back together.
+- Part of the Swiss rework
+
+Events/Decisions
+- Added Event for Yuan to receive free manpower if Toqto returns
+- Added Event for Toqto's Return
+- Added Event for Nomads demanding their reward for staying loyal during the rebellion
+- Added Decision for Yuan to 'Bribe' the Nomads into staying loyal during the rebellion
+- Added Event for Yuan to implode if they've lost their mandate and are only a nomad. If they've asked for help from the nomads and failed. The Player can choose to switch to Oirat if they desire, or stay Yuan.
+- Added event for Mongolia/Yuan to turn Tengrist if theyn desire if/when Yuan implodes
+- York now will spawn in its historical time frame
+- Yuan and Qing now have a culture that is part of the Chinese Culture group. Qing's is through a decision, Yuan receives theirs through a mission. This enables them to recruit banners, and have better control over China if they survive.
+- Switzerland is now a formable nation, through diplomacy or force
+- Added a handful of Swiss flavor missions
+- Added a few secret easter egg events
+- Sigismund of Luxemburg event chain added (Hint: As Hungary, ally and marry Brandenburg)
+
+Flavor
+- Added the Toqto'a path for Yuan, which takes the player through rebuilding the Yuan Empire both externally and internally. In the future, there will be more than the one path.
+- Added the Red Turban Rebellion disaster, and a plethora of events to trigger revolts related to the disaster. The disaster also comes with an unused Rebel type!
+- During the RTR (Red Turban Rebellion) if the player did not pay off the nomads they will split off one by one.
+- During the RTR the Non Chinese provinces controlled by Yuan will revolt, typically quicker than most of mainland China will.
+- During the RTR the Chinese splinter states will slowly revolt away from Yuan. If you annex them and take the mission related to quelling the rebellion, you should have no further rebels there.
+- Added the "Chinese Minor Kingdom" government type, locks the Chinese Minors at Rank 2, as well as giving them some powerful bonuses.
+- Korea now starts with 'Queen Noguk Borgijin' has their consort
+- Berg and Cologne now have ideas, thanks to Mexdus. This includes German localisation for said ideas as well.
+- Added two new subject types, one for Majaraphat, the other for the new Swiss Cantons
+- Bern, Zurich, Vaud, and Sundagu now exist as cores on the Swiss
+- Added the Earldom government reform for Irish minors, granting them 10% Morale of Armies, and +1 Leader Maneuver
+- Added the Turkish Beylik Government Reform for Turkish Minors
+- Added the Tabasco tag in Central America
+- The Byzantines now start out with the "Theme System" government reform
+- Austria now starts out as an "Archduchy" 
+- The Bishopric of Bamberg now exists
+- Secret Prep for the next major update
+- Added a little something to the Northern North.
+
+General
+- Fixed many older bugs from before we took over the mod, many things like westernisation are now gone.
+
+- Yuan receives vision over the Steppe and Persia now through its first event (I'm saving myself the work here, give me a break.)
+- Added the (Currently unused) nation of Goryeo, includes History and Ideas! In the future this will replace Korea in the early game.
+- Removed lots of old code related to defunct Vanilla mechanics (Good bye westernisation!)
+- Removed the 1356 changes to the War of the Roses, as it led to circumstances that was easy to exploit.
+- Ideas updated to Vanilla standards finally, this mostly fixes the change to interest implimented ages ago. 
+- Cleaned up our decisions folder, now all decisions related to tech use the 1356 requirement to form countries, which allows nations to form around the time vanilla EU4 would let them
+- Modified Vanilla events now are in proper line with their vanilla counterparts
+- Added a bunch of (unused) EU3 graphics for future use
+- Added a Mission Debug decision. If you believe you should have different missions due to a bug or oversight, clicking this should correct them. Maybe.
+- Removed the 1356 versions of Ilkhanate and Kale
+- Fixed (most) of the issues resulting in 1.26's government changes
+- Added the Vanilla changes to trade nodes
+- Updated the Polish-Lith provinces to 1.27 standards (sorry india)
+- Added a handful of missing localisation from previous updates
+
+Balance
+- Yuan starts off with Charhar, Khalkha, and Oirat as accepted cultures now
+- Eastern Religions now must be Government Rank 3 to create Tributaries (Fixes a bug related to never ending warlord state in China.)
+- Annexing French Feudal Vassals now requires 190 dip relations between the Annexe Country and the Annexer Country
+- Serbia now starts as a Rival to the turks. (No more Turkish-Serbian anti Byzantine alliances! Who's the real threat?)
+- Chinese Warlords now have more sensical cores
+- Min and Wu now start at war with Yuan
+- Casimir III is now a 6/6/6 ruler
+- Slighty rebalanced Early Mil Techs
+- Removed ILK ideas, now using vanilla ideas.
+- Updated Avignon Age Bonus, now gives +2 Papal Infulence and +50% cheaper enforce religion cost to combat those fithly hussites.
+
+
+Bug-Fixes
+- Anglican has the proper icon (for real this time)
+- Fixed some code weirdness that allowed Lotharingia to form under odd circumstances that was not intended. 
+- Fixed the "Death of Shah Rukh" event triggering at all.
+- Fixed a few weird bugs that were unnoticed in the later modded start dates
+- Fixed some oddities in tech that related to colonies and production
+- Fixed a few bugs from Paradox relating to Mugals culture
+- Fixed tons of issues with events, too many to list
+
+
+Mod Compatibility
+- 00_subject_types.txt is now modified directly by the mod. Any mod that edits this file is incompatible now.
+- Anything that is a 1356 orignal addition should now start with "1356 - " as a prefix in the folders of the mod.
+- Removed a few modified vanilla events that were no longer needed
+

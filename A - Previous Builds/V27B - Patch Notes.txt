@@ -1,0 +1,122 @@
+V27B
+
+Missions
+- Added the Zurich Mission Tree (Victoria) 
+
+Flavor
+- Ideas for all the Swiss Minors
+- Removed Generic Swiss Ideas, in turn all Swiss Minors have their own ideas
+- Removed Generic Armenian Ideas, they were unused and duplicates anyways
+- Added a random option to the Timur spawn event, which aims to give Timur his own ability to conquest with less help than the historical path. Will he go into China embracing their ideals? Will he create the next Steppe Empire? Or will he just do the same damn thing as always?
+- All the Timur invasion events have a fallback option in the case that the nation being invaded does not actually exists, this should prevent annexing nation X to prevent timur conquesting bugs.
+
+Balance
+- Sami received its 7th idea that it was missing previously?
+- Timur's historical war declerations are now reversed. The nations he's invading actually declare the war, which should prevent them from calling in allies, which should allow Timur to mostly follow his historical path.
+- Players who are invaded by Timur now see the Timur death mark modifier on their nation. (It gives them a fighting chance)
+- The Timur death mark modifier now gives -2 revolt risk
+- Germany can now use the Prussian Monarchy if formed while holding the Prussian Monarchy
+
+Localisation Additions:
+- Added startup screens (from Elite_Saighdiúir on discord) for France and England
+- Sami 7th Idea
+- Added ideas to the 5 Swiss Cantons
+- Localised the Generic Bulgarian Ideas (With Vanilla Bulgarian Localisation)
+- Localised Generic Crusader Ideas (With Vanilla Jerusalemite Localisation)
+- Localised Generic Anatolian Beylik Ideas (With Vanilla Anatolian Localisation)
+- Localised Armagnac Final Ideas
+- Localised the final 2 Artoisian ideas
+- Localised a handful of unlocalised Timur events
+- Added localisation for the new Timur event chain
+
+Bug Fixes
+- Fixed a handful of Vanilla errors in provinces that have persisted
+- Fixed a handful of weird vanilla errors with countries, mostly mispelled cultures.
+- Fixed a bug with the Muslim Piety Age Bonus
+- Fixed Missing Lithuanian core on Polotsk
+- Corrected a Hint about Idea Groups
+- Fixed an oversight that allowed all Tribals to have access to the Ilkhanate Governments
+- Fixed a bug with Crusader Missions
+- Fixed some North African nations not being Barbary Sultanates
+- Fixed York spawning without a government (Should have)
+- Fixed a bug with Brittany and Breton Minor Ideas
+- Corrected a Handful of Minor bugs related to Province succession in various Yuan events
+- Fixed a bug with Yuan missions that did not properly remove Administration 7-9 modifiers
+- Corrected a handful of bugs with ruler generals
+- Minor bugs with the Hussites fixed
+
+Mod Compatibility
+- 1356 added religions are now contained in the vanilla religions file, any mod that modifies this WILL be incompatible.
+
+Known bugs:
+- Tabasco has no flag
+- Hanseatic League can be buggy at times
+- Theres a handful of unlocalised texts still
+- Various minor UI errors
+
+
+AARONS PERSONAL NOTES
+
+TO DO
+Make Egypts Custom Flag better
+Crusader States should be able to ask for help from Catholics at home (Dip Action)
+Events for Timur to kill Assyrians
+Misc Assyrian Flavor events
+Jan Zizka Related Event (Hussite General)
+Library of Alexandria needs National Modifiers for the nation that owns it (as opposed to a province modifier)
+Unless noted otherwise all new cultures need their names looked at and tweaked, as they're all reskins of existing cultures.
+Give Arpitan culture its own provinces & Change Provences+Savoys+Dauphine cultures to this. Modify existing Arles formation to take these into account.
+Give Moravian culture its own provinces + Modify Moravia to use this culture
+Add Cummania
+fucking fix india you savage
+Expand on existing Zoroastrian Flavor
+switch duchy to state for the Coptic government localisation?
+"Patriarchate of Alexandria" would be awesome should they turn into a theocracy too
+crusader culture should be outremer
+
+
+TEST
+-Test the New Egyptian (Coptic/Non Muslim) related Naming System for Rulers
+
+BUGS REPORTED
+Bug reported that sometimes at war AI may completly disband its entire army, perhaps related to the Hansa? Noted the reporter never seen this in vanilla. However it was noted the entire country was occupied when it happened, so perhaps not all that bad?
+Egypts Response to how to deal with the Copts should be Global
+Chinese Events not working?
+Yuan Rebel Revolts are global
+Yuan Rebel Events are buggy, look into
+Coptic Event that converts ALX to Coptic should also swap culture (Its set to, but it doesnt??)
+Events based on Trade Good prices need fixed
+ALX Name Localisation not working
+
+
+RELIGION RELATED STUFF
+Chinese Animists are Zongjiao
+Mexican Animists are Pure'pecha
+Philippine Beliefs are Anito or Anitism
+Carribean is Voodou
+
+
+TO INVESTIGATE FURTHER
+"In 1361 The County of Savoy was detached dejure from the Kingdom of Arles, in 1388 it aquired Nice, and in 1401 it added the County of Geneva. In 1416 it became its own independent duchy, "
+"More fortunate was a dynasty – if such it may be termed – to the west of them, at Sabzawār. This was the Sarbadārs (a name which means “heads on gallows”), who were an independent power from 736/1336 to 783/1381 and thereafter tributaries, with their power much reduced, of Temür. The Sarbadār state was a revolutionary Shīʿī polity without effective dynastic succession. It has been interpreted in various ways. A Marxist historian like I. P. Petrushevsky sees it as the result of a popular movement of social protest, essentially a peasant uprising against “feudal” oppression. J. M. Smith, by contrast, prefers to explain the establishment of the Sarbadār state as deriving from a revolt by the upper classes of the region against taxes they found objectionable. Whatever the truth of the matter, there is no denying the lower-class and, in some sense, the revolutionary element in what was going on." Something about a Persian Peasant Republic
+Investigate North Africas Culture Further
+Investigate the Cultural Situation in Russia better, none of this can be right at the current date..
+investigate germanic cultures for the current start date
+investigate when Bosnian Culture was distinct from Serbian Culture & Create event to spawn Bosnian for late game
+Investigate Styrian culture and find out if/when it was distinct from Austrian Culture & If needed create events for it to spawn/go away
+Investigate Frisian Culture further, should it be added?
+Investigate Avarian Culture further, should it be added?
+Investigate Iberian Cultures, it has to be somewhat different at this date?
+Investigate Nestorians further, where should they exist?
+Investigate Arabian Cultures further, are they any different in this date?
+Scanian culture?
+Didnt norway historically have a colony in beothuk at this date?
+Investigate if the Hussites are not crushed in time what should happen. (Crusade Mechanics? Generic Heresys growing and becoming actual religions? Forcing the Protestants out even earlier?)
+A way to add Paitriarch mechanics for Christians?
+
+Add/Change later
+Tribes Estate?
+Byz Cores in Greece need reworked
+Library of Alexandria needs a model
+Deity Icons (Finnish, Baltic, Greek, Slavic)
+
