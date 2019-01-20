@@ -1,9 +1,0 @@
-NDefines.NGame.START_DATE = "1356.12.25"
-NDefines.NGame.END_DATE = "1836.1.1"
-NDefines.NDiplomacy.IMPERIAL_REFORM_COST = 65
-NDefines.NCountry.FREE_IDEA_GROUP_COST  = 4
-NDefines.NCountry.PS_BUY_NATIVE_ADVANCEMENT = 800
-NDefines.NGraphics.COLOR_WASTELANDS = 1
-NDefines.NGame.RANDOM_LUCKY_TECH_WEIGHT = 0
-NDefines.NAI.DEVELOPMENT_CAP_BASE = 20	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
-NDefines.NAI.DEVELOPMENT_CAP_MULT = 3
