@@ -9,38 +9,38 @@
 # Example:
 
 
-end_sound_toll = {
-	category = 6
-	power_projection = 5
-	power_cost_base = 1.0
-	prestige_base = 0.1
-	ae_base = 1.0
-	requires_demand_independence = no
-	is_make_subject = no
-	requires_is_allowed = no
+# end_sound_toll = {
+	# category = 6
+	# power_projection = 5
+	# power_cost_base = 1.0
+	# prestige_base = 0.1
+	# ae_base = 1.0
+	# requires_demand_independence = no
+	# is_make_subject = no
+	# requires_is_allowed = no
 
-	is_visible = {
-		NOT = { has_global_flag = has_dismantled_hansa }
-		FROM = { tag = HSA }
-	}
-	is_allowed = {
-		owns = 12
-	}
-	effect = {
-		12 = {
-			owner = {
-				remove_country_modifier = hansa_sound_toll
-			}
-		}
-		set_country_flag = ended_sound_toll
-	}
-	ai_weight = {
-		export_to_variable = {
-			variable_name = ai_value
-			value = 100
-		}
-		limit = {
-			owns = 12
-		}
-	}
-}
+	# is_visible = {
+		# NOT = { has_global_flag = has_dismantled_hansa }
+		# FROM = { tag = HSA }
+	# }
+	# is_allowed = {
+		# owns = 12
+	# }
+	# effect = {
+		# 12 = {
+			# owner = {
+				# remove_country_modifier = hansa_sound_toll
+			# }
+		# }
+		# set_country_flag = ended_sound_toll
+	# }
+	# ai_weight = {
+		# export_to_variable = {
+			# variable_name = ai_value
+			# value = 100
+		# }
+		# limit = {
+			# owns = 12
+		# }
+	# }
+# }

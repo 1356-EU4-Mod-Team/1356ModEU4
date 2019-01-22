@@ -16,6 +16,7 @@ religious_school = maliki_school
 		mil = 3
 	}
 	add_piety = 0.4
+	capital = 342 #Gharb
 }
 
 1359.1.1 = {

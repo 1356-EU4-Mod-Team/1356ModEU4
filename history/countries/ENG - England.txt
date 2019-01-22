@@ -9,6 +9,8 @@ add_accepted_culture = normand
 religion = catholic
 historical_friend = BUR
 historical_friend = POR
+historical_rival = FRD
+historical_friend = MNF
 capital = 236 # London
 national_focus = DIP
 
@@ -103,7 +105,7 @@ national_focus = DIP
 
 1396.10.31 = {
 	queen = {
-		country_of_origin = FRA
+		country_of_origin = FRD #Or FRA, depends on the date
 		name = "Isabelle"
 		dynasty = "de Valois"
 		birth_date = 1389.11.9
@@ -178,7 +180,7 @@ national_focus = DIP
 
 1420.6.2 = {
 	queen = {
-		country_of_origin = FRA
+		country_of_origin = FRD
 		name = "Catherine"
 		dynasty = "de Valois"
 		birth_date = 1401.10.27

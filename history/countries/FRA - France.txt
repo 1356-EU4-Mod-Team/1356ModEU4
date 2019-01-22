@@ -316,6 +316,8 @@ historical_rival = HAB
 
 1475.8.29 = { set_country_flag = had_end_of_HYW_france }
 
+#1477.1.5 Burgundian Inheritance, French Royal Domaine becomes France
+
 1477.1.6 = { add_accepted_culture = burgundian }
 
 1483.8.30 = {

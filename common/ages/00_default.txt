@@ -243,11 +243,11 @@ age_of_feudalism = {
 			allow = {
 				OR = {
 					AND = {
-						tag = FRA
+						tag = FRD
 						religion = catholic
 					}
 					AND = {
-						NOT = { exists = FRA }
+						NOT = { exists = FRD }
 						culture_group = french
 						religion = catholic
 					}

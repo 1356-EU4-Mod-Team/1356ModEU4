@@ -89,7 +89,7 @@ vassal = {
 	first = GUY
 	second = FOI
 	start_date = 1356.12.23
-	end_date = 1360.12.25 #Was 1360.5.8 pre merge
+	end_date = 1356.12.25 #Was 1360.5.8 pre merge
 }
 
 #union = { #Can't progress further in the BT date due to merge

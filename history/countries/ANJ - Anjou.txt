@@ -4,8 +4,9 @@ government_rank = 1
 technology_group = western
 primary_culture = cosmopolitan_french
 religion = catholic
-#capital = 178 # Anjou #Removed because balance issues during HYW
+#capital = 178 # Anjou 
 capital = 177	# Maine 
+add_historical_friend = PRO
 
 1351.1.1 = { # Duchy of Anjou created for the 2nd son of Jean II de Valois
 	monarch = {

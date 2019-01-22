@@ -16,6 +16,8 @@ owner = VIK
 controller = VIK
 add_core = VIK
 
+
+
 1356.12.26 = { owner = XXX controller = XXX	add_core = XXX
 	culture = cree
 	religion = totemism

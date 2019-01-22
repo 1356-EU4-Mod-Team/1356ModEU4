@@ -188,8 +188,8 @@ country_event = {
 	major = yes
 
 	trigger = {
-		year = 1356
-		NOT = { year = 1400 }
+		is_year = 1356
+		NOT = { is_year = 1400 }
 		OR = {
 			AND = {
 				NOT = { owns = 1104 }

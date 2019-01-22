@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 trade_goods = wine
 base_manpower = 4
-add_core = ENG
+#add_core = ENG
 add_core = GUY
 add_core = NAV
 fort_15th = yes
@@ -23,15 +23,17 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { remove_core = ENG } #BT In
+#1356.12.24  = { remove_core = ENG } #BT In
 1356.12.26  = { add_core = ENG } #BT Out
 
-1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
+1360.5.8   = { owner = ENG controller = ENG add_core = ENG } # Treaty of Bretigny
 1390.1.1   = { owner = GUY controller = GUY }
-1399.2.3   = { owner = ENG controller = ENG }
-1444.1.1   = { add_core = AMG add_core = FRA }
-1453.7.18  = { owner = FRA controller = FRA }
+1399.2.3   = { owner = ENG controller = ENG add_core = FRD }
+1444.1.1   = { add_core = AMG }
+1453.7.18  = { owner = FRD controller = FRD }
+#1453.10.16 = { }
 1475.8.29  = { remove_core = ENG } # Treaty of Picquigny
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD } 
 1549.12.21 = { owner = NAV controller = NAV add_core = NAV culture = basque} # Henri d'Albret (King of Navarra) owns it after Marguerite d'Angoulêmes death
 1560.1.1   = { religion = reformed }
 1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear

@@ -2,6 +2,7 @@ hundred_years_war = {
 	potential = {
 		OR = {
 			tag = FRA
+			tag = FRD
 			tag = ENG
 			tag = BUR
 			tag = BRI
@@ -13,16 +14,12 @@ hundred_years_war = {
 			tag = NOL
 			tag = LNC
 		}
-		NOT = {
-			is_year = 1454
-		}
+		NOT = {	is_year = 1454 }
 	}
 
 	trigger = {
 	
-		NOT = {
-			is_year = 1454
-		}	
+		NOT = {	is_year = 1454 }	
 		OR = {
 			AND = {
 				OR = {
@@ -30,7 +27,7 @@ hundred_years_war = {
 					any_ally = { tag = ENG }
 					vassal_of = ENG
 				}
-				war_with = FRA
+				war_with = FRD
 				NOT = { is_year = 1420 }
 				custom_trigger_tooltip = { 
 					tooltip = not_jean_darc_flag
@@ -39,9 +36,9 @@ hundred_years_war = {
 			}
 			AND = {
 				OR = {
-					tag = FRA
-					any_ally = { tag = FRA }
-					vassal_of = FRA
+					tag = FRD
+					any_ally = { tag = FRD }
+					vassal_of = FRD
 				}
 				war_with = ENG
 				OR = {
@@ -243,7 +240,6 @@ baltic_crusader = {
 	global_manpower_modifier = -0.25
 	reinforce_speed = -0.25
 	recover_army_morale_speed = 0.1
-	movement_speed = -0.075	
 	merc_maintenance_modifier = -0.35
 	mercenary_cost = -0.45
 	possible_mercenaries = 1
@@ -275,7 +271,6 @@ baltic_crusader = {
 	global_manpower_modifier = -0.2
 	reinforce_speed = -0.2
 	recover_army_morale_speed = 0.1
-	movement_speed = -0.075	
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.30
 	possible_mercenaries = 1
@@ -308,7 +303,6 @@ baltic_crusader = {
 	global_manpower_modifier = -0.2
 	reinforce_speed = -0.15
 	recover_army_morale_speed = 0.1
-	movement_speed = -0.075	
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.25
 	possible_mercenaries = 0.75
@@ -342,7 +336,6 @@ baltic_crusader = {
 	global_manpower_modifier = -0.2
 	reinforce_speed = -0.2
 	recover_army_morale_speed = 0.1
-	movement_speed = -0.075	
 	merc_maintenance_modifier = -0.1
 	mercenary_cost = -0.15
 	possible_mercenaries = 1
@@ -383,7 +376,6 @@ baltic_crusader = {
 	years_of_nationalism = 10
 	harsh_treatment_cost = 0.1
 	recover_army_morale_speed = 0.1
-	movement_speed = -0.075	
 }
 
 1356_late_feudalism_mechanics_nomads = { #Mechanics for Nomads
@@ -420,7 +412,6 @@ baltic_crusader = {
 	cavalry_flanking = 0.1
 	shock_damage = 0.1
 	recover_army_morale_speed = 0.1
-	movement_speed = -0.05
 }
 
 # 1356_early_government_replacement_1 = {

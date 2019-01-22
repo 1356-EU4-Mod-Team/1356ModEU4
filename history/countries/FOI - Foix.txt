@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = gascon
 capital = 176	# Pau
 fixed_capital = 176 # Cannot move capital away from this province & no power cost to move to it
+historical_friend = NAV
 
 1315.12.13 = {
 	monarch = {

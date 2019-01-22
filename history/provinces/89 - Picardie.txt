@@ -24,14 +24,14 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.26  = { controller = ENG } # BT Out
-1357.9.23 = { controller = FRA }
-1420.5.12 = { owner = BUR controller = BUR add_core = BUR add_core = ENG remove_core = FRA} # Treaty of Troyes
-1463.1.1  = { owner = FRA controller = FRA add_core = FRA } # Louis XI seizes Picardy
+1356.12.26 = { owner = FRD controller = FRD add_core = FRD remove_core = FRA controller = ENG }
+1357.9.23 = { controller = FRD }
+1420.5.12 = { owner = BUR controller = BUR add_core = BUR add_core = ENG remove_core = FRD} # Treaty of Troyes
+1463.1.1  = { owner = FRD controller = FRD add_core = FRD } # Louis XI seizes Picardy
 1465.1.1  = { owner = NEV controller = NEV add_core = NEV remove_core = FRA } # Picardy is given to John II, Count of Nevers
 1465.7.1  = { owner = BUR controller = BUR remove_core = NEV } # Charles the Bold recovers Picardy
 1475.8.29 = { remove_core = ENG } # Treaty of Picquigny
-1477.1.5  = { owner = FRA controller = FRA add_core = FRA remove_core = BUR } # Charles the Bold dies and transfers Picardie to France
+1477.1.5  = { owner = FRA controller = FRA add_core = FRA remove_core = BUR remove_core = FRD } # Charles the Bold dies and transfers Picardie to France
 1500.1.1 = { culture = cosmopolitan_french }
 1513.8.16 = { controller = ENG } # Henry VIII defeats La Palice at Guinnegate and sacks Therouanne
 1514.5.5  = { controller = FRA } # Henry VIII concludes a seperate peace with France

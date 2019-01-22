@@ -7,6 +7,7 @@ add_accepted_culture = cosmopolitan_french
 religion = catholic
 technology_group = western
 capital = 201 # Aix-en-Provence
+add_historical_friend = ANJ
 
 1343.1.20 = {	# Also Monarch of Neaples 1343.1.20 - 1382.5.12
 	monarch = {

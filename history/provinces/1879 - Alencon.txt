@@ -20,7 +20,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { add_core = FRA } #BT In
+1356.12.24  = { add_core = FRA } #BT In 
 1356.12.26  = { remove_core = FRA } #BT Out
 
 1424.8.17  = { owner = ENG controller = ENG add_core = ENG add_local_autonomy = 80 }
@@ -30,11 +30,14 @@ discovered_by = ottoman
 		estate = estate_nobles
 		add_local_autonomy = -80
 	     }
-1458.10.10 = { owner = FRA controller = FRA add_core = FRA } # duchy confiscated, Jean II imprisoned
-1461.8.15  = { owner = ALE controller = ALE remove_core = FRA } # duchy handed back to Jean II, has to comply terms of King of France
-1474.7.18  = { owner = FRA controller = FRA add_core = FRA } # duchy confiscated, Jean II senteced to death
-1478.3.1   = { owner = ALE controller = ALE remove_core = FRA} # duchy is delivered to Rene, son of Jean II
-1549.12.21 = { owner = FRA controller = FRA add_core = FRA } # duchy becomes royal domain after Marguerite d'Angoulêmes death
+1453.10.16 = { owner = FRD add_core = FRD controller = FRD estate = estate_nobles add_local_autonomy = 25 }
+#1458.10.10 = { owner = FRA controller = FRA add_core = FRA } # duchy confiscated, Jean II imprisoned
+#1461.8.15  = { owner = ALE controller = ALE remove_core = FRA } # duchy handed back to Jean II, has to comply terms of King of France
+#1474.7.18  = { owner = FRA controller = FRA add_core = FRA } # duchy confiscated, Jean II senteced to death
+1477.1.5 = { owner = FRA controller = FRA remove_core = FRD add_core = FRA }
+#1478.3.1   = { owner = ALE controller = ALE remove_core = FRA} # duchy is delivered to Rene, son of Jean II
+#1497.6.3 = { owner = AMG controller = AMG add_core = AMG } #Duchy goes into union under Armagnac, changed to direct control for less confusion.
+#1549.12.21 = { owner = FRA controller = FRA add_core = FRA } # duchy becomes royal domain after Marguerite d'Angoulêmes death
 1650.1.14  = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
 1651.4.1   = { unrest = 4 } # An unstable peace is concluded
 1651.12.1  = { unrest = 7 } # Mazarin returns from exile, Condé sides with Spain, situation heats up again

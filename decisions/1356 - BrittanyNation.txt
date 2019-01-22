@@ -107,6 +107,7 @@ country_decisions = {
 			}
 			NOT = { exists = BRI }
 			NOT = { tag = FRA }
+			NOT = { tag = FRD }
 			NOT = { tag = BLS }
 			NOT = { tag = MNF }
 			was_never_end_game_tag_trigger = yes

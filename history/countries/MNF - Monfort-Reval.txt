@@ -6,6 +6,7 @@ add_accepted_culture = breton
 religion = catholic
 technology_group = western
 capital = 170	# Finistere
+add_historical_friend = ENG
 
 1341.4.30 = {
 	monarch = {

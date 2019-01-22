@@ -15,8 +15,8 @@ union = {
 }
 
 # France-Genoa
-union = {
-	first = FRA
+union = { #FRD
+	first = FRD
 	second = GEN
 	start_date = 1458.1.1
 	end_date = 1461.1.1
@@ -37,8 +37,8 @@ union = {
 	end_date = 1453.2.28
 }
 
-alliance = {
-	first = FRA
+alliance = { #FRD
+	first = FRD
 	second = PRO
 	start_date = 1431.1.25
 	end_date = 1453.7.18
@@ -51,7 +51,7 @@ alliance = {
 	end_date = 1483.3.23
 }
 
-alliance = {
+alliance = { #FRD
 	first = FRA
 	second = GEN
 	start_date = 1458.1.1
@@ -83,28 +83,36 @@ vassal = {
 }
 
 # Normandy, a French vassal
-vassal = {
-	first = FRA
+vassal = { #FRD
+	first = FRD
 	second = NRM
 	start_date = 1465.8.15
 	end_date = 1466.3.6
 }
 
-# Berry, a French vassal
-vassal = {
-	first = FRA
-	second = BER
-	start_date = 1444.1.1
-	end_date = 1444.1.2
+# # Berry, a French vassal
+# vassal = {
+	# first = FRA
+	# second = BER
+	# start_date = 1444.1.1
+	# end_date = 1444.1.2
+# }
+
+# Nevers, a French vassal
+vassal = { #FRD
+	first = FRD
+	second = NEV
+	start_date = 1465.1.1
+	end_date = 1477.1.5
 }
 
 # Nevers, a French vassal
-vassal = {
-	first = FRA
-	second = NEV
-	start_date = 1465.1.1
-	end_date = 1539.1.1
-}
+# vassal = { #FRA
+	# first = FRA
+	# second = NEV
+	# start_date = 1477.1.5
+	# end_date = 1539.1.1
+# }
 
 # The Batavian Republic & later the kingdom of Holland
 vassal = {
@@ -323,10 +331,18 @@ alliance = {
 }
 
 # Auld Alliance
-guarantee = {
-	first = FRA
+guarantee = { #FRD
+	first = FRD
 	second = SCO
 	start_date = 1444.1.1
+	end_date = 1477.1.5
+}
+
+# Auld Alliance
+guarantee = { #FRA
+	first = FRA
+	second = SCO
+	start_date = 1477.1.5
 	end_date = 1560.1.1
 }
 
@@ -700,9 +716,9 @@ royal_marriage = {
 }
 
 # Amadeo IX of Savoy and Yolande of Valois
-royal_marriage = {
+royal_marriage = { #FRD
 	first = SAV
-	second = FRA
+	second = FRD
 	start_date = 1453.1.1
 	end_date = 1472.3.30
 }
@@ -747,8 +763,8 @@ royal_marriage = {
 	end_date = 1814.4.6
 }
 
-guarantee = {
-	first = FRA
+guarantee = { #FRD
+	first = FRD
 	second = AVI
 	start_date = 1399.1.1
 	end_date = 1417.10.18

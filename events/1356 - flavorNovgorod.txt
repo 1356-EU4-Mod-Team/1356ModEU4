@@ -97,7 +97,6 @@ country_event = { #Historical Event to grant Narimantas I control over Karelia a
 				subject = ING
 			}
 		}
-	}
 	option = { #Settle for Additional Forts
 		name = "fla_novgorod.1.b"
 		ai_chance = { factor = 30 }

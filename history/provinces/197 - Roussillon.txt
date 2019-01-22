@@ -29,7 +29,8 @@ discovered_by = ottoman
 1399.1.1   = { add_core = FOI }
 1412.6.29  = { revolt = { type = pretender_rebels size = 1 leader = "Jaume d'Urgell"} controller = REB } # jaime de Urgell Uprising
 1413.1.1   = { revolt = {} controller = ARA }
-1462.1.1   = { owner = FRA controller = FRA } # Treaty of Bayonne: Aragon sells Roussillon to France
+1462.1.1   = { owner = FRD controller = FRD add_core = FRD } # Treaty of Bayonne: Aragon sells Roussillon to France
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
 1493.1.19  = { owner = ARA controller = ARA } # Treaty of Barcelona: Charles VIII restores Roussillon to Aragon
 
 1516.1.23  = {	owner = SPA

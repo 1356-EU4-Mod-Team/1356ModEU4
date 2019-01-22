@@ -31,6 +31,8 @@ capital = 121 # Napoli
 	}
 }
 
+1356.12.26 = { capital = 121  } #Napoli
+
 1363.9.26 = {
 	queen = {
 		country_of_origin = ARA

@@ -16,7 +16,7 @@ war_goal = {
 	add_attacker = NAV
 	add_attacker = NRM
 	add_attacker = FOI
-	add_defender = FRA
+	add_defender = FRD
 	add_defender = AMG
 	add_defender = BOU
 	add_defender = ALE
@@ -42,7 +42,7 @@ war_goal = {
 			commander = "Ardres"
 			infantry = 5000
 			losses = 5	# percent
-			country = FRA
+			country = FRD
 		}
 		result = no
 	}
@@ -76,7 +76,7 @@ war_goal = {
 	rem_attacker = NAV
 	rem_attacker = NRM
 	rem_attacker = FOI
-	rem_defender = FRA
+	rem_defender = FRD
 	rem_defender = BOU
 	rem_defender = ALE
 	rem_defender = ORL

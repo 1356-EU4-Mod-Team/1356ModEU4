@@ -23,9 +23,11 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.26 = { owner = FRD controller = FRD add_core = FRD remove_core = FRA }
 1422.5.11  = { owner = ENG controller = ENG } # Captured by the English
-1436.4.13  = { owner = FRA controller = FRA } # Retaken by Charles VII
+1436.4.13  = { owner = FRD controller = FRD } # Retaken by Charles VII
 1440.1.1   = { base_tax = 11 base_production = 11 base_manpower = 10 }
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
 1571.1.1   = { unrest = 5 } # Unrest spreads in catholic territory: massacres of protestants in Rouen, Orange & Paris
 1573.8.23  = { unrest = 10 } # Saint Barthelew's Day Massacre
 1574.5.1   = { unrest = 0 } # Charles IX dies, situation cools a bit	

@@ -5,6 +5,7 @@ primary_culture = breton
 religion = catholic
 technology_group = western
 capital = 169	# Armor
+add_historical_friend = FRD
 
 1341.4.30 = {
 	monarch = {

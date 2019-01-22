@@ -2,7 +2,7 @@
 
 owner = MAL
 controller = MAL
-add_core = MAl
+add_core = MAL
 culture = fulani 
 religion = shamanism #Fetishism
 capital = "Galam"

@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = peasants_republic #Achtundvierziger #Some sort of Peasants Republic with a Parlaiment modifier would be interesting.
-primary_culture = viking
+primary_culture = icelandic #It was viking?
 religion = norse_pagan_reformed
 technology_group = north_american
 capital = 981 #Vinland

@@ -34,16 +34,28 @@ country_event = { #1356 - Changed the trigger
 		capital_scope = {
 			continent = europe
 		}
-		FRA = {
-			exists = yes
-			is_free_or_tributary_trigger = yes
-			num_of_cities = 8
-			is_neighbor_of = BUR
-		}
 		OR = {
+			FRA = {
+				exists = yes
+				is_free_or_tributary_trigger = yes
+				num_of_cities = 8
+				is_neighbor_of = BUR
+			}
+			FRD = { #1356
+				exists = yes
+				is_free_or_tributary_trigger = yes
+				num_of_cities = 8
+				is_neighbor_of = BUR
+			}
+		}
+		OR = { #1356
 			emperor = {
 				exists = yes
 				NOT = { war_with = FRA }
+			}
+			emperor = { #1356
+				exists = yes
+				NOT = { war_with = FRD }
 			}
 			emperor = {
 				exists = no
@@ -113,6 +125,7 @@ country_event = { #1356 - Changed the trigger
 						num_of_cities = 4
 						NOT = {
 							tag = FRA
+							tag = FRD #1356
 						}
 						OR = {
 							is_part_of_hre = yes
@@ -298,6 +311,7 @@ country_event = { #1356 - Changed the trigger
 							}
 							num_of_cities = 4
 							NOT = { tag = FRA }
+							NOT = { tag = FRD } #1356
 						}
 						set_country_flag = bur_marriage_successor
 					}
@@ -320,6 +334,7 @@ country_event = { #1356 - Changed the trigger
 								num_of_cities = 4
 								NOT = {
 									tag = FRA
+									tag = FRD #1356
 								}
 							}
 						}
@@ -332,7 +347,7 @@ country_event = { #1356 - Changed the trigger
 		}
 	}
 	
-	option = {
+	option = { #1356
 		name = "flavor_bur.EVTOPTA1"
 		if = {
 			limit = {
@@ -352,6 +367,9 @@ country_event = { #1356 - Changed the trigger
 		FRA = {
 			country_event = { id = flavor_bur.3 }
 		}
+		FRD = { #1356
+			country_event = { id = flavor_bur.3 }
+		}
 	}
 }
 
@@ -364,7 +382,7 @@ country_event = { #1356 - Changed the trigger
 
 	major = yes
 	
-	trigger = { 
+	trigger = {  #1356
 		tag = BUR
 		is_year = 1444 #1356
 		ai = yes
@@ -378,16 +396,28 @@ country_event = { #1356 - Changed the trigger
 			continent = europe
 		}
 		has_heir = no
-		FRA = {
-			exists = yes
-			is_free_or_tributary_trigger = yes
-			num_of_cities = 8
-			is_neighbor_of = BUR
+		OR = {
+			FRA = {
+				exists = yes
+				is_free_or_tributary_trigger = yes
+				num_of_cities = 8
+				is_neighbor_of = BUR
+			}
+			FRD = { #1356
+				exists = yes
+				is_free_or_tributary_trigger = yes
+				num_of_cities = 8
+				is_neighbor_of = BUR
+			}
 		}
 		OR = {
 			emperor = {
 				exists = yes
 				NOT = { war_with = FRA }
+			}
+			emperor = { #1356
+				exists = yes
+				NOT = { war_with = FRD }
 			}
 			emperor = {
 				exists = no
@@ -413,7 +443,7 @@ country_event = { #1356 - Changed the trigger
 		}
 	}
 	
-	immediate = {
+	immediate = { #1356
 		hidden_effect = {
 			set_country_flag = burgundian_succession_crisis
 			add_ruler_modifier = {
@@ -439,6 +469,7 @@ country_event = { #1356 - Changed the trigger
 						num_of_cities = 4
 						NOT = {
 							tag = FRA
+							tag = FRD #1356
 						}
 						OR = {
 							is_part_of_hre = yes
@@ -624,6 +655,7 @@ country_event = { #1356 - Changed the trigger
 							}
 							num_of_cities = 4
 							NOT = { tag = FRA }
+							NOT = { tag = FRD } #1356
 						}
 						set_country_flag = bur_marriage_successor
 					}
@@ -646,6 +678,7 @@ country_event = { #1356 - Changed the trigger
 								num_of_cities = 4
 								NOT = {
 									tag = FRA
+									tag = FRD
 								}
 							}
 						}
@@ -658,7 +691,7 @@ country_event = { #1356 - Changed the trigger
 		}
 	}
 	
-	option = {
+	option = { #1356
 		name = "flavor_bur.EVTOPTA2"
 		if = {
 			limit = {
@@ -676,6 +709,9 @@ country_event = { #1356 - Changed the trigger
 			}
 		}
 		FRA = {
+			country_event = { id = flavor_bur.3 }
+		}
+		FRD = { #1356
 			country_event = { id = flavor_bur.3 }
 		}
 	}

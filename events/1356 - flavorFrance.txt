@@ -31,6 +31,7 @@ country_event = {
 		}
 		add_treasury = -200
 		set_country_flag = dauphine_treaty_romans_accepted_flag
+		FRA = { set_country_flag = dauphine_treaty_romans_accepted_flag }
 	}
 	option = { #Decline and Integrate
 		name = flavor_fla_fra.1.b
@@ -43,7 +44,8 @@ country_event = {
 		break_union = DAU
 		add_historical_friend = DAU
 		DAU = {
-			add_historical_friend = FRA
+			#add_historical_friend = FRA
+			add_historical_friend = FRD
 		}
 		create_marriage = DAU
 		create_alliance = DAU
@@ -60,12 +62,20 @@ country_event = {
 	#fire_only_once = yes
 
 	trigger = {
-		FRA = {
-			has_country_flag = dauphine_treaty_romans_accepted_flag
+		OR = {
+			FRA = {
+				has_country_flag = dauphine_treaty_romans_accepted_flag
+			}
+			FRD = {
+				has_country_flag = dauphine_treaty_romans_accepted_flag
+			}
 		}
 		owns = 204
 		NOT = { primary_culture = occitain }
-		NOT = { tag = FRA }
+		OR = {
+			NOT = { tag = FRA }
+			NOT = { tag = FRD }
+		}
 		NOT = { culture_group = french }
 	}
 
@@ -153,6 +163,7 @@ country_event = {
 		}
 		OR = {
 			tag = FRA
+			tag = FRD
 			culture_group = french
 		}
 		is_year = 1550

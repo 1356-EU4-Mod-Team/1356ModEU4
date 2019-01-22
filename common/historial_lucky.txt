@@ -53,8 +53,8 @@ ENG = {
 	}
 }
 
-FRA = { #Change to take into effect after FRA unification
-	is_year = 1428
+FRA = { 
+	always = yes
 }
 
 HAB = { #Change to take into effect after HAB unification

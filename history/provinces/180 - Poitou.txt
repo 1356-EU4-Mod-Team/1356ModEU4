@@ -25,13 +25,14 @@ discovered_by = ottoman
 
 1356.9.19  = { controller = ENG }
 1356.12.24  = { owner = GUY controller = GUY add_core = GUY } #BT In
-1356.12.26  = { controller = ENG owner = FRA remove_core = GUY } #BT Out
+1356.12.26  = { controller = ENG owner = FRD add_core = FRD remove_core = FRA remove_core = GUY } #BT Out
 
-1357.9.23  = { controller = FRA }
+1357.9.23  = { controller = FRD }
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
-1372.9.1   = { controller = FRA }
-1375.6.27  = { owner = FRA controller = FRA } # Treaty of Bruges
-1416.3.15  = { owner = FRA controller = FRA } # Death of Jean de Valois
+1372.9.1   = { controller = FRD }
+1375.6.27  = { owner = FRD controller = FRD } # Treaty of Bruges
+1416.3.15  = { owner = FRD controller = FRD } # Death of Jean de Valois
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
 1560.1.1   = { religion = reformed }
 1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
 1568.9.1   = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks

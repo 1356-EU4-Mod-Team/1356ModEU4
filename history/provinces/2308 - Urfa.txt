@@ -23,8 +23,8 @@ discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = indian
 
-1356.12.24  = { owner = EDE controller = EDE add_core = EDE remove_core = JL } #BT In
-1356.12.26  = { owner = JLR controller = JLR remove_core = EDE add_core = JL } #BT Out
+1356.12.24  = { owner = EDE controller = EDE add_core = EDE remove_core = JLR } #BT In
+1356.12.26  = { owner = JLR controller = JLR remove_core = EDE add_core = JLR } #BT Out
 
 1400.1.1  = { religion = sunni }
 1401.4.1  = { controller = TIM }

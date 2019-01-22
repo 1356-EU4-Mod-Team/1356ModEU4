@@ -10,7 +10,7 @@ events = {
 }
 on_new_monarch = {
 	events = { 
-		cri_cleanup.1 #Are both these needed anymore?
+		fladebugevent.3 #Are both these needed anymore?
 		fladebugevent.1
 	}
 }

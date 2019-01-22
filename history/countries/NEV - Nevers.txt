@@ -20,7 +20,7 @@ fixed_capital = 191 # Cannot move capital away from this province & no power cos
 
 1409.4.9 = {
 	queen = {
-		country_of_origin = FRA
+		country_of_origin = FRD
 		name = "Isabelle de Coucy"
 		dynasty = "Gent"
 		birth_date = 1388.1.1

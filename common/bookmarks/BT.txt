@@ -14,7 +14,7 @@ bookmark = {
 	country = KOJ
 	country = VIK
 	
-	easy_country = SWA
+	easy_country = SWB
 	easy_country = BYZ
 	easy_country = KOJ
 }

@@ -3,7 +3,7 @@
 owner = BAV
 controller = BAV
 add_core = BAV
-add_core = REG
+#add_core = REG
 culture = bavarian
 religion = catholic
 base_tax = 6

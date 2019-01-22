@@ -5,7 +5,6 @@ owner = GUY
 controller = GUY
 capital = "Bordeaux"
 is_city = yes
-estate = estate_burghers
 culture = gascon
 religion = catholic
 hre = no
@@ -14,7 +13,7 @@ base_tax = 8
 base_production = 8
 trade_goods = wine
 base_manpower = 5
-add_core = ENG
+#add_core = ENG
 add_core = GUY
 
 discovered_by = eastern
@@ -29,16 +28,17 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-1356.12.24  = { remove_core = ENG } #BT In
+#1356.12.24  = { remove_core = ENG } #BT In
 1356.12.26  = { add_core = ENG } #BT Out
 
-1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
+1360.5.8   = { owner = ENG controller = ENG add_core = ENG } # Treaty of Bretigny
 1390.1.1   = { owner = GUY controller = GUY }
-1399.2.3   = { owner = ENG controller = ENG }
+1399.2.3   = { owner = ENG controller = ENG add_core = FRD estate = estate_burghers }
 1453.1.1   = { add_core = AMG }
-1453.7.18  = { owner = FRA controller = FRA add_core = FRA }
+1453.7.18  = { owner = FRD controller = FRD }
 
 1475.8.29  = { remove_core = ENG } # Treaty of Picquigny
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
 1560.1.1   = { religion = reformed }
 1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
 1568.9.1   = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks

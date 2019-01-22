@@ -21,7 +21,7 @@ capital = 199	# Clermont
 
 1350.2.9 = {
 	queen = {
-		country_of_origin = FRA
+		country_of_origin = FRD
 		name = "Jean"
 		dynasty = "de Valois"
 		birth_date = 1319.4.16
@@ -115,7 +115,7 @@ capital = 199	# Clermont
 		mil = 2
 	}
 	queen = {
-		country_of_origin = FRA
+		country_of_origin = FRD
 		name = "Jean I"
 		dynasty = "de Valois"
 		birth_date = 1340.11.30

@@ -22,12 +22,14 @@ center_of_trade = 1
 1354.1.1 = { owner = NAV controller = NAV add_core = NAV }
 1378.6.1 = { owner = ENG controller = ENG }
 1393.1.1 = { owner = NAV controller = NAV }
-1404.1.1 = { owner = FRA controller = FRA add_core = FRA }
+1404.1.1 = { owner = FRD controller = FRD add_core = FRD }
 1415.10.25 = { controller = ENG } # The Battle of Agincourt
 1420.5.12 = { owner = ENG add_core = ENG } # Treaty of Troyes
-1450.1.1 = { owner = FRA controller = FRA } # Retaken by France
+1450.1.1 = { owner = FRD controller = FRD } # Retaken by France
+#1453.10.16 = { }
 1465.8.15 = { owner = NRM controller = NRM } # Treaty of Conflans
-1466.3.6 = { owner = FRA controller = FRA } # Louis XI reincorporates Normandy into the French crown
+1466.3.6 = { owner = FRD controller = FRD } # Louis XI reincorporates Normandy into the French crown
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
 1475.8.29 = { remove_core = ENG } # Treaty of Picquigny
 1583.1.1 = { fort_15th = no fort_16th = yes }
 1588.12.1 = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy

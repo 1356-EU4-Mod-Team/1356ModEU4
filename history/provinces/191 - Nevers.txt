@@ -22,9 +22,11 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1384.1.30  = {	owner = BUR controller = BUR add_core = BUR remove_claim = BUR 
-	     } # Louis II of Flanders dies and county is inherited by Jean II of Burgundy
+1384.1.30  = {	owner = BUR controller = BUR add_core = BUR remove_claim = BUR } # Louis II of Flanders dies and county is inherited by Jean II of Burgundy
 1405.3.16  = { owner = NEV controller = NEV } # Nevers is inherited by Jeans son Phillipp II of Nervers 
+#1453.10.16 = { }
+#1465 france takes over as its overlord
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = BUR }
 1539.1.1   = { owner = FRA controller = FRA add_core = FRA remove_core = NEV }
 1588.12.1  = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
 1594.1.1   = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism

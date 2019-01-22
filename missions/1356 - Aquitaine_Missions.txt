@@ -416,7 +416,11 @@ AQT_put_france_in_check = {
 		trigger = {	
 			OR = {
 				offensive_war_with = FRA
-				NOT = { exists = FRA }
+				offensive_war_with = FRD
+				AND = {
+					NOT = { exists = FRA }
+					NOT = { exists = FRD }
+				}
 			}
 			OR = {
 				has_country_flag = AQT_befriend_burgundy
@@ -434,7 +438,11 @@ AQT_put_france_in_check = {
 			OR = {
 # Audax Validator "." Ignore_NEXT
 				has_truce = FRA
-				NOT = { exists = FRA }
+				has_truce = FRD
+				AND = {
+					NOT = { exists = FRA }
+					NOT = { exists = FRD }
+				}
 			}
 		}
 		effect = {
@@ -466,6 +474,7 @@ AQT_put_france_in_check_p3 = {
 		completed_by = 1821.1.1
 		trigger = {	
 			NOT = { exists = FRA }
+			NOT = { exists = FRD }
 			owns = 183
 		}
 		effect = {
@@ -477,7 +486,7 @@ AQT_put_france_in_check_p3 = {
 		required_missions = { AQT_finish_off_the_french }
 		position = 15
 		completed_by = 1821.1.1
-		trigger = {	NOT = { exists = FRA } }
+		trigger = {	NOT = { exists = FRA } NOT = { exists = FRD } }
 		effect = {
 			add_prestige = 25
 			if = {
@@ -506,6 +515,7 @@ AQT_put_france_in_check_p3 = {
 		completed_by = 1821.1.1
 		trigger = {	
 			NOT = { exists = FRA }
+			NOT = { exists = FRD }
 			owns = 183 #Paris
 			owns = 174 #Aquitaine
 		}
@@ -624,12 +634,17 @@ aqt_fight_back = {
 		trigger = {	
 			OR = {
 				has_casus_belli_against = FRA
-				NOT = { exists = FRA }
+				has_casus_belli_against = FRD
+				AND = {
+					NOT = { exists = FRA }
+					NOT = { exists = FRD}
+				}
 			}
 		}
 		effect = { 
 			add_army_tradition = 5 
 			add_historical_rival = FRA
+			add_historical_rival = FRD
 		}
 	}
 	
@@ -679,6 +694,7 @@ aqt_fight_back = {
 		completed_by = 1821.1.1
 		trigger = {
 			NOT = { exists = FRA } 
+			NOT = { exists = FRD }
 			NOT = { has_country_flag = formed_france_flag }
 			prestige = 50
 			is_at_war = no

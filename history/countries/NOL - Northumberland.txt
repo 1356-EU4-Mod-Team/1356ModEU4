@@ -113,8 +113,6 @@ capital = 246	# Newcastle
 	}
 }
 
-1405.1.1 = {
-	culture = english
-}
+1405.1.1 = { primary_culture = english }
 
 # 1405 Duchy of Nothumberland forfeit independence

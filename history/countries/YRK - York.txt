@@ -84,6 +84,4 @@ fixed_capital = 245 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1405.1.1 = {
-	culture = english
-}
+1405.1.1 = { primary_culture = english }

@@ -16,8 +16,6 @@ base_tax = 4
 base_production = 4
 trade_goods = iron
 base_manpower = 3
-add_local_autonomy = 25
-estate = estate_nobles
 add_core = AUV
 add_claim = BUR
 
@@ -32,9 +30,10 @@ discovered_by = ottoman
 
 1360.9.29  = { owner = BUR controller = BUR add_core = BUR remove_claim = BUR } # Jeanne I dies and its inherited by her son Phillippe I
 1361.11.21 = { owner = AUV controller = AUV }
-1399.1.1   = { add_core = FRA }
+1399.1.1   = { add_core = FRD }
 1435.9.21  = { remove_core = BUR }
-1453.1.1   = { add_core = BOU }
+1453.10.16 = { add_core = BOU owner = FRD controller = FRD add_local_autonomy = 25 estate = estate_nobles } #HYW ENDS. All vassals integrate for simplcities sake.
+1477.1.5 = { add_core = FRA owner = FRA controller = FRA remove_core = FRD }
 1560.1.1   = { religion = reformed }
 1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
 1568.9.1   = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks

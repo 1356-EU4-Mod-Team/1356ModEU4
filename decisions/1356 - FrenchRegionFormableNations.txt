@@ -8,6 +8,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_aquitaine_flag }
 			NOT = { tag = HLR }
 			NOT = { tag = FRA }
+			NOT = { tag = FRD }
 			NOT = { tag = PAP }
 			NOT = { tag = SPA }# Basque is a valid culture for both FRA and SPA
 			NOT = { tag = AQT }
@@ -122,6 +123,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { tag = HLR }
 			NOT = { tag = FRA } # France wouldn't downgrade itself
+			NOT = { tag = FRD }
 			NOT = { tag = PAP }
 			NOT = { tag = SPA }	# Basque is a valid culture for both FRA and SPA
 			NOT = { tag = AQT } # Aquitaine wouldn't downgrade itself
@@ -289,6 +291,7 @@ country_decisions = {
 			}
 			NOT = { tag = HLR }
 			NOT = { tag = FRA }
+			NOT = { tag = FRD }
 			NOT = { tag = PAP }
 			NOT = { tag = SPA }	
 			NOT = { tag = BLS }
@@ -556,6 +559,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_occitania_flag }
 			NOT = { tag = HLR }
 			NOT = { tag = FRA }
+			NOT = { tag = FRD }
 			NOT = { tag = PAP }
 			NOT = { tag = SPA }# Basque is a valid culture for both FRA and SPA
 			NOT = { tag = AQT }

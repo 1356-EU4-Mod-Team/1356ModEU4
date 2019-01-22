@@ -23,8 +23,8 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
-1361.11.21 = { owner = FRA controller = FRA add_core = FRA } # Philippe I dies, his brother king of France inherits Burgundy
-1363.9.6   = { owner = BUR controller = BUR remove_core = FRA } # The king of France (Jean II) offers his youngest son Philippe the duchy of Burgundy for his efforts in the Battle of Poitiers
+1361.11.21 = { owner = FRD controller = FRD add_core = FRD } # Philippe I dies, his brother king of France inherits Burgundy
+1363.9.6   = { owner = BUR controller = BUR remove_core = FRD } # The king of France (Jean II) offers his youngest son Philippe the duchy of Burgundy for his efforts in the Battle of Poitiers
 1477.1.5   = { owner = FRA controller = FRA add_core = FRA } # Charles the Bold dies and transfers Bourgogne to France
 
 1526.1.14  = { add_core = HAB } # Treaty of Madrid, Austria claims Burgundy, but François I refuses to hand it over subsequently

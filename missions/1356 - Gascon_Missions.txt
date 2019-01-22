@@ -994,6 +994,7 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 		completed_by = 1821.1.1
 		trigger = {
 			NOT = { exists = FRA }
+			NOT = { exists = FRD }
 			NOT = { exists = AQT }
 			is_at_war = no
 		}
