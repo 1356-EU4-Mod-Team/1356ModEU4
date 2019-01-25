@@ -12,8 +12,6 @@ historical_friend = EDE
 historical_rival = MAM
 add_historical_friend = MRO
 
-1356.12.24 = { capital = 2313 }
-
 1309.7.21 = {
 	monarch = {
 		name = "Markus I"
@@ -21,7 +19,6 @@ add_historical_friend = MRO
 		dip = 4
 		mil = 5
 		dynasty = "von Antiochia"
-		death_date = 1356.12.26 
 	}
 }
 
@@ -51,4 +48,18 @@ add_historical_friend = MRO
 	} 
 }
 
+1356.12.24 = { capital = 2313 }
+
+1356.12.26 = { 
+	capital = 377
+	monarch = {
+		name = "Regency"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+		dynasty = "Regency"
+
+	}
+}
 #BT Out

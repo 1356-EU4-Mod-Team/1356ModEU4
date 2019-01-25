@@ -15,7 +15,6 @@ historical_friend = BLS
 		name = "Charles IV"
 		dynasty = "Capet"
 		birth_date = 1296.6.18
-		death_date = 1356.12.26
 		adm = 3
 		dip = 5
 		mil = 4

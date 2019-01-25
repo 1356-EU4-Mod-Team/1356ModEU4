@@ -1,6 +1,7 @@
 #997 - Labrador
 
 culture = viking
+culture = norwegian
 religion = norse_pagan_reformed
 capital = "Labrador"
 trade_goods = fish

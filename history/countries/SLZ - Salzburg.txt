@@ -13,7 +13,6 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 		name = "Albrecht II"
 		dynasty = "von Habsburg"
 		birth_date = 1356.12.25
-		death_date = 1356.12.26
 		adm = 1
 		dip = 1
 		mil = 3

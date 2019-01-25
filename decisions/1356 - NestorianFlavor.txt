@@ -56,7 +56,7 @@ country_decisions = {
 	}
 	encourage_growth_of_nestorian_community_decision = { #Players only
 		potential = {
-			is_ai = no
+			ai = no
 			OR = {
 				any_owned_province = { has_province_modifier = small_nestorian_community }
 				any_owned_province = { has_province_modifier = medium_nestorian_community }

@@ -21,6 +21,15 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { 
+				owner = KUR controller = KUR add_core = KUR
+				base_tax = 4 base_production = 5 base_manpower = 3
+} #BT In
+
+1356.12.26  = { 
+				owner = LIV controller = LIV remove_core = KUR
+				base_tax = 3 base_production = 3 base_manpower = 1
+} #BT Out
 
 #1561.11.28
 1561.1.1 = { owner = KUR

@@ -133,7 +133,7 @@ capital = 192	# Dijon
 }
 
 1420.1.1 = {
-	add_accepted_culture = walloon
+	add_accepted_culture = wallonian
 	add_accepted_culture = flemish
 	add_accepted_culture = dutch
 }

@@ -25,6 +25,14 @@ discovered_by = GLH
 discovered_by = AST
 discovered_by = QAS
 
+1356.12.24  = { 
+				owner = EST controller = EST
+} #BT In
+
+1356.12.26  = { 
+				owner = LIV controller = LIV
+} #BT Out
+
 1399.1.1  = { religion = catholic }
 1542.1.1  = { religion = protestant} # Unknown date
 1558.5.11 = {	owner = RUS

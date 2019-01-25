@@ -24,6 +24,15 @@ discovered_by = QAS
 discovered_by = western
 discovered_by = eastern
 
+1356.12.24  = { 
+				owner = EST controller = EST
+				#base_tax = 3 base_production = 3 base_manpower = 2
+} #BT In
+
+1356.12.26  = { 
+				owner = LIV controller = LIV
+				#base_tax = 3 base_production = 3 base_manpower = 2
+} #BT Out
 
 1542.1.1 = { religion = protestant} # Unknown date
 1558.7.18 = { controller = RUS } # Russian conquest

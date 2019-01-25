@@ -10,7 +10,7 @@ country_decisions = {
 			NOT = { tag = HAB }
 			NOT = { tag = BRA }
 			NOT = { tag = TEU }
-			NOT = { tag = SWA }
+			NOT = { tag = SWB }
 			NOT = { tag = HAN }
 			NOT = { tag = BOH }
 			NOT = { tag = RHI }
@@ -183,7 +183,7 @@ country_decisions = {
 			NOT = { tag = HAB }
 			NOT = { tag = BRA }
 			NOT = { tag = TEU }
-			NOT = { tag = SWA }
+			NOT = { tag = SWB }
 			NOT = { tag = HAN }
 			NOT = { tag = BOH }
 			NOT = { tag = RHI }
@@ -255,7 +255,7 @@ country_decisions = {
 			NOT = { tag = HAB }
 			NOT = { tag = BRA }
 			NOT = { tag = TEU }
-			NOT = { tag = SWA }
+			NOT = { tag = SWB }
 			NOT = { tag = HAN }
 			NOT = { tag = BOH }
 			NOT = { tag = RHI }
@@ -326,7 +326,7 @@ country_decisions = {
 			NOT = { tag = HAB }
 			NOT = { tag = BRA }
 			NOT = { tag = TEU }
-			NOT = { tag = SWA }
+			NOT = { tag = SWB }
 			NOT = { tag = HAN }
 			NOT = { tag = BOH }
 			NOT = { tag = RHI }

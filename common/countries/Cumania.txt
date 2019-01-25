@@ -2,7 +2,7 @@
 
 graphical_culture = muslimgfx
 
-color = { 234  177  136 }
+color = { 127  71  77 }
 
 monarch_names = {
 	"Togli #1" = 80

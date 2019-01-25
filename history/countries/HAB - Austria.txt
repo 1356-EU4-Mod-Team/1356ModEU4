@@ -15,7 +15,6 @@ national_focus = ADM
 		name = "Karl II"
 		dynasty = "von Babenberg"
 		birth_date = 1308.6.15
-		death_date = 1356.12.26
 		ADM = 4
 		DIP = 6
 		MIL = 2
@@ -40,6 +39,20 @@ national_focus = ADM
 
 # BT Out
 
+# 1339.11.1 = {
+	# heir = {
+		# name = "Rudolf"
+		# monarch_name = "Rudolf IV"
+		# dynasty = "von Habsburg"
+		# birth_date = 1339.11.1
+		# death_date = 1365.7.27
+		# claim = 95
+		# ADM = 4
+		# DIP = 4
+		# MIL = 3
+	# }
+# }
+
 1356.12.26 = { # Was 1330.1.13
 	monarch = {
 		name = "Albrecht II"
@@ -48,20 +61,6 @@ national_focus = ADM
 		ADM = 4
 		DIP = 6
 		MIL = 2
-	}
-}
-
-1339.11.1 = {
-	heir = {
-		name = "Rudolf"
-		monarch_name = "Rudolf IV"
-		dynasty = "von Habsburg"
-		birth_date = 1339.11.1
-		death_date = 1365.7.27
-		claim = 95
-		ADM = 4
-		DIP = 4
-		MIL = 3
 	}
 }
 

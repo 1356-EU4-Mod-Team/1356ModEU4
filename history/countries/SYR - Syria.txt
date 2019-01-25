@@ -12,7 +12,6 @@ historical_rival = MAM
 		name = "Al-Kamil II"
 		dynasty = "Ayyubid"
 		birth_date = 1338.9.14
-		death_date = 1356.12.26
 		adm = 3
 		dip = 6
 		mil = 4

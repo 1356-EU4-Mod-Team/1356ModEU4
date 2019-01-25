@@ -21,8 +21,8 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24 = { owner = PAR } #BT In
-1356.12.26 = { owner = MLO } #BT Out
+1356.12.24 = { owner = PAR controller = PAR } #BT In
+1356.12.26 = { owner = MLO controller = MLO } #BT Out
 
 1404.3.1   = { owner = PAR controller = PAR }
 1409.5.27  = { owner = MLO controller = MLO }

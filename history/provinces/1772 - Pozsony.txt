@@ -29,6 +29,14 @@ discovered_by = QAS
 extra_cost = 8
 center_of_trade = 1
 
+1356.12.24  = { 
+				HRE = no
+} #BT In
+
+1356.12.26  = { 
+				HRE = yes
+} #BT Out
+
 1432.1.1  = { unrest = 10 } # The city is attacked by Hussites
 1434.1.1  = { unrest = 0 }
 1440.1.1  = { unrest = 10 } # Struggles between the supporters of Ladislaus and Elisabeth of Hungary

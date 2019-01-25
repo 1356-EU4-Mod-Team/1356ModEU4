@@ -48,8 +48,8 @@ egyptian_nation_non_muslim = {
 		tag = EGY
 		primary_culture = old_egyptian_mod
 		OR = {
-			religious_group = pagan
-			religious_group = christian
+			religion_group = pagan
+			religion_group = christian
 		}
 	}
 }

@@ -27,6 +27,16 @@ discovered_by = GOL
 discovered_by = AST
 discovered_by = QAS
 
+1356.12.24  = { 
+				owner = KUR controller = KUR add_core = KUR remove_core = LIT
+				base_tax = 4 base_production = 3 base_manpower = 3
+} #BT In
+
+1356.12.26  = { 
+				owner = LIT controller = LIT add_core = LIT remove_core = KUR
+				base_tax = 3 base_production = 3 base_manpower = 3
+} #BT Out
+
 1398.1.1   = { owner = TEU controller = TEU add_core = TEU religion = catholic }
 1411.2.1   = { owner = LIT controller = LIT remove_core = TEU }
 1569.1.1   = { capital = "Raseiniai" }

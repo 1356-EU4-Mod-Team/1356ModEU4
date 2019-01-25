@@ -719,7 +719,7 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			num_of_subjects = 0		
+			NOT = { num_of_subjects = 1 }
 			is_year = 1454
 			has_country_flag = can_form_france_FRD_flag
 			owns_core_province = 168	# Caen

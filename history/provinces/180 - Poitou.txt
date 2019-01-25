@@ -23,7 +23,6 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.9.19  = { controller = ENG }
 1356.12.24  = { owner = GUY controller = GUY add_core = GUY } #BT In
 1356.12.26  = { controller = ENG owner = FRD add_core = FRD remove_core = FRA remove_core = GUY } #BT Out
 

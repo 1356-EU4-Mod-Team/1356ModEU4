@@ -10,7 +10,6 @@ capital = 208 #Leon
 		name = "Fernando I"
 		dynasty = "d'Ivrée"
 		birth_date = 1332.8.30
-		death_date = 1356.12.26
 		adm = 3
 		dip = 2
 		mil = 4

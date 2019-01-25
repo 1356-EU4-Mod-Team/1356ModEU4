@@ -3273,7 +3273,7 @@ german_free_city = {
 	trigger = {
 		OR = {
 			has_reform = imperial_city
-			has_reform = imperial_city
+			has_reform = free_city
 		}
 		culture_group = germanic
 	}
@@ -3295,7 +3295,7 @@ gov_free_city = {
 	trigger = {
 		OR = {
 			has_reform = imperial_city
-			has_reform = imperial_city
+			has_reform = free_city
 		}
 	}
 }

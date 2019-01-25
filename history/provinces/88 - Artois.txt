@@ -23,8 +23,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { add_core = PIC } #BT In
-1356.12.26  = { remove_core = PIC } #BT Out
+1356.12.24  = { HRE = yes add_core = PIC } #BT In
+1356.12.26  = { HRE = no remove_core = PIC } #BT Out
 
 1384.1.30  = { owner = BUR controller = BUR } # The son of Margaret I, Louis II of Flanders dies and his son-in-law Phillippe II. of Burgundy inherits the province
 1404.4.27  = { owner = PBG controller = PBG } # Margarets III husband Phillippe II. dies and she takes power in Flanders and Palatinate Burgundy
@@ -32,7 +32,7 @@ discovered_by = ottoman
 
 1477.1.5   = { owner = FRA controller = FRA add_core = FRA remove_core = BUR } # Charles the Bold dies and Louis XII takes Artois
 1493.8.19  = { owner = HAB controller = HAB add_core = HAB } # Frederick III dies, Charles VII cedes Artois to Maximilian I von Habsburg
-1500.1.1 = { culture = walloon }
+1500.1.1 = { culture = wallonian }
 1519.1.12  = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
 1529.8.3   = { remove_core = FRA } # 'Ladies Peace' (Damesvrede) of Cambrai: France renounces all claims
 1548.6.26  = { hre = yes } # Artois incorporated into the Holy Roman Empire

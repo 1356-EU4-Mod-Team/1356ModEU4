@@ -1119,41 +1119,6 @@ CTR_ideas = { #Just spains ideas, same localisation and all
 	}
 }
 
-SAP_ideas = { #Sapmi ideas
-	start = {
-		enemy_core_creation = 0.5
-		tolerance_heathen = 2
-	}
-	bonus = {
-		missionaries = 1
-	}
-	trigger = { 
-		tag = SAP
-	}
-	free = yes
-	the_cold_north = {
-		hostile_attrition = 1.5
-	}
-	the_old_gods = {
-		religious_unity = 0.2
-	}
-	tribal_armies = {
-		discipline = 0.05
-	}
-	shamanism = {
-		tolerance_own = 2
-	}
-	fur_trade = {
-		merchants = 1
-	}
-	overland_trade = {
-		caravan_power = 0.25
-	}
-	sap_tribal_connections = {
-		advisor_cost = -0.20
-	}
-}
-
 JLR_ideas = {
 	start = {
 		tolerance_heretic = 3

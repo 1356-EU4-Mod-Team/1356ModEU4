@@ -20,11 +20,13 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1379.1.1   = { unrest = 8 revolt = { type = nationalist_rebels size = 1 leader = "Filips van Artevelde" } 
-	     } # Filips van Artevelde rises up against Louis II
+1356.12.24  = { HRE = yes } #BT In
+
+1356.12.26  = { HRE = no } #BT Out
+
+1379.1.1   = { unrest = 8 revolt = { type = nationalist_rebels size = 1 leader = "Filips van Artevelde" } } # Filips van Artevelde rises up against Louis II
 1379.2.1   = { revolt = { } }
-1381.1.1   = { revolt = { type = nationalist_rebels size = 1 leader = "Filips van Artevelde" } controller = REB 
-	     } # Filips van Artevelde rises up again against Louis II
+1381.1.1   = { revolt = { type = nationalist_rebels size = 1 leader = "Filips van Artevelde" } controller = REB } # Filips van Artevelde rises up again against Louis II
 1382.11.27 = { unrest = 0 revolt = { } controller = FLA } # Filips van Artevelde dies and so does the rebellion
 1477.1.5   = { owner = HAB controller = HAB add_core = HAB }
 1519.1.12  = { owner = SPA controller = SPA add_core = SPA } # Charles V gets total control over his Burgundian inheritance

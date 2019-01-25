@@ -1,8 +1,8 @@
 # 89 - Picardie (1356)
 # Changes: ENG/FRA/FLA
 
-owner = FRA
-controller = FRA 
+owner = FRD
+controller = FRD 
 capital = "Amiens"
 is_city = yes
 estate = estate_nobles
@@ -14,7 +14,7 @@ base_tax = 6
 base_production = 6
 trade_goods = grain
 base_manpower = 5
-add_core = FRA
+add_core = FRD
 add_core = PIC
 add_claim = FLA
 fort_15th = yes
@@ -24,7 +24,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.26 = { owner = FRD controller = FRD add_core = FRD remove_core = FRA controller = ENG }
+1356.12.26 = { owner = FRD add_core = FRD remove_core = FRA controller = ENG }
 1357.9.23 = { controller = FRD }
 1420.5.12 = { owner = BUR controller = BUR add_core = BUR add_core = ENG remove_core = FRD} # Treaty of Troyes
 1463.1.1  = { owner = FRD controller = FRD add_core = FRD } # Louis XI seizes Picardy

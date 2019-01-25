@@ -52,7 +52,7 @@ country_decisions = {
 				technology_group = nomad_group
 				AND = {
 					technology_group = muslim
-					has_matching_religion = tengri_pagan_reformed
+					religion  = tengri_pagan_reformed
 				}
 			}
 			current_age = age_of_feudalism
@@ -66,7 +66,7 @@ country_decisions = {
 				technology_group = nomad_group #Does this even work?
 				AND = {
 					technology_group = muslim
-					has_matching_religion = tengri_pagan_reformed
+					religion  = tengri_pagan_reformed
 				}
 			}
 			current_age = age_of_feudalism
