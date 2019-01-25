@@ -13,7 +13,10 @@ country_decisions = {
 			NOT = { exists = SPI }
 			government = monarchy
 			OR = {
-				tag = SAV
+				AND = { #1356
+					tag = SAV
+					primary_culture = piedmontese #1356
+				}
 				tag = SAR
 				primary_culture = piedmontese
 				primary_culture = sardinian
@@ -52,6 +55,7 @@ country_decisions = {
 				}
 				AND = {
 					tag = SAV
+					primary_culture = piedmontese
 					NOT = { exists = SAR }
 				}
 				AND = { #1356 change

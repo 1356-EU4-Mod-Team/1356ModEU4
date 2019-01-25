@@ -1274,5 +1274,127 @@ country_event = {
 	}
 }
 
+#Brittany event to become a subject of France
+country_event = {
+	id = flavor_fla_fra.25
+	title = flavor_fla_fra.25.t
+	desc = flavor_fla_fra.25.desc
+	picture = FEAST_eventPicture
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #Become Subject FRD
+		name = flavor_fla_fra.25.a
+		trigger = { is_subject = no exists = FRD }
+		ai_chance = { factor = 80 }
+		FRD = {
+			create_subject = {
+				subject_type = vassal
+				subject = BRI
+			}
+		}
+		add_prestige = -15
+		add_legitimacy = -20
+	}
+	option = { #Become Subject FRA
+		name = flavor_fla_fra.25.b
+		trigger = { is_subject = no exists = FRA }
+		ai_chance = { factor = 80 }
+		FRA = {
+			create_subject = {
+				subject_type = vassal
+				subject = BRI
+			}
+		}
+		add_prestige = -15
+		add_legitimacy = -15
+	}
+	option = { #No Subjugation
+		name = flavor_fla_fra.25.c
+		trigger = { is_subject = no exists = FRD }
+		ai_chance = { factor = 20 }
+		add_mil_power = 200
+		add_legitimacy = 10
+		add_prestige = 10
+		FRD = {
+			add_casus_belli = {
+				target = BRI
+				type = cb_vassalize
+				months = 48
+			}
+		}
+	}
+	option = { #No Subjugation
+		name = flavor_fla_fra.25.e
+		trigger = { is_subject = no exists = FRA }
+		ai_chance = { factor = 20 }
+		add_mil_power = 200
+		add_legitimacy = 10
+		add_prestige = 10
+		FRA = {
+			add_casus_belli = {
+				target = BRI
+				type = cb_vassalize
+				months = 48
+			}
+		}
+	}
+	option = { #Already Subject
+		name = flavor_fla_fra.25.f
+		trigger = { is_subject = yes }
+		add_prestige = 5
+	}
+}
 
+#Prevents Non-French nations from receiving this modifier. That'd be weird.
+country_event = {
+	id = flavor_fla_fra.26
+	title = flavor_fla_fra.26.t
+	desc = flavor_fla_fra.26.desc
+	picture = FEAST_eventPicture
+	
+	hidden = yes	
+	fire_only_once = yes
 
+	trigger = {
+		owns = 1879
+		NOT = { tag = ALE }
+		NOT = { tag = FRA }
+		NOT = { tag = FRD }
+		1879 = {
+			has_province_modifier = 1356_fra_alencon_family_rule_prov
+		}
+	}	
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = flavor_fla_fra.26.a
+		remove_province_modifier = 1356_fra_alencon_family_rule_prov
+	
+	}
+}
+
+#Event to manage the French Vassal Integration Modifier provinces get from being integrated into the French Crown.
+province_event = { #Is this done correct?
+	id = flavor_fla_fra.27
+	title = flavor_fla_fra.27.t
+	desc = flavor_fla_fra.27.desc
+	picture = FEAST_eventPicture
+	
+	hidden = yes	
+
+	trigger = {
+		has_province_modifier = 1356_fra_alencon_family_rule_prov
+		NOT = { tag = FRA }
+		NOT = { tag = FRD }
+	}	
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = flavor_fla_fra.27.a
+		remove_province_modifier = 1356_fra_alencon_family_rule_prov
+	}
+}

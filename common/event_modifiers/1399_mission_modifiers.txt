@@ -1,4 +1,4 @@
-#Sweden
+ #Sweden
 swe_supported_protestant = {
 	land_morale = 0.15
 	manpower_recovery_speed = 0.1
@@ -66,6 +66,7 @@ cru_conquered_jerusalem = {
 	legitimacy = 0.25
 	prestige = 0.1
 }
+
 #French Ducal
 french_ducal_paris_conquest = {
 	diplomatic_reputation = 1

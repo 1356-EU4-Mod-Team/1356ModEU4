@@ -320,6 +320,8 @@
  yua_toqtoa_diplomacy_reform_mission_9_modifier: "Diplomacy Reform"
  forming_swiss_diplomatically_tooltip: "$TAG% needs to be the overlord of the following nations. Bern, Zurich, Thurgau, Churraetia, and Wallis."
 
+ #V30 Additions
+ 
  crusader_accepting_crusaders_decision_tooltip: "We send word to the Papacy and other pious Catholics in Europe that we need aid to further clense our borders of hethens!"
  gave_aid_to_crusader_state_modifier_desc: "The Crusaders in the Holy Land requested aid in any form in order to continue the fight against the heathens that occupy the Holy Land, and we sent all the aid we can spare! We can only pray that it is enough."
  rejected_aid_to_crusader_state_modifier_desc: "The vile Crusaders in the Holy Land requested aid to continue their bitter fight against the heathens that occupy the Holy Land, they have already squandered all the aid previous Kings sent them, so why should we bother to aid a failing cause?"
@@ -342,4 +344,15 @@
  scan_djm.25_tt: "The Judges will have some time to review what has been said."
  scan_djm.26_tt: "The Judges have come to a conclusion!"
  form_france_frd_tt: "In order to centralize France we need to end the Hundred Years War first."
+ 1356_fra_alencon_family_rule_prov: "Administrated by the Royal Family"
+ frd_tell_player_can_form_fra_tt: "You are now able to form the Kingdom of France after all of your hard work!"
+ flaeng_2_welsh_independence_tt: "If we proceed then the English may respond back with a declaration of war. We must tread carefully."
+ flaeng_3_welsh_independence_tt: "The Welsh shall recieve a decleration of war by the end of the month."
+ flaeng_3_welsh_independence_peacefully_tt: "We shall offer the Welsh a peaceful way to end this, we can still work something out."
+ 1356_wales_hold_out_against_england_modifier: "Anti-English sentiment"
+ pentarchy_mod_nestorian: "The Pentarchy"
+ desc_pentarchy_mod_nestorian: "The five ancient Patriarchates of Jerusalem, Alexandria, Antioch, Rome and Constantinople are in Nestorian hands - our hands - affirming the unity of the One Christian Church."
+ pentarchy_mod_coptic: "The Pentarchy"
+ desc_pentarchy_mod_coptic: "The five ancient Patriarchates of Jerusalem, Alexandria, Antioch, Rome and Constantinople are in Coptic hands - our hands - affirming the unity of the One Christian Church."
+ 
  

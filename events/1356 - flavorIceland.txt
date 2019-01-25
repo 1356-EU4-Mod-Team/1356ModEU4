@@ -269,6 +269,7 @@ country_event = { #Event forcing Norway to lose vision on said tiles after they 
 		NOT = { owns = 1105 }
 		NOT = { owns = 1104 }
 		NOT = { is_year = 1400 }
+	}
 	
 	mean_time_to_happen = {
 		months = 12

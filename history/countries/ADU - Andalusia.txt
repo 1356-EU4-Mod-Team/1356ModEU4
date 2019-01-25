@@ -11,16 +11,6 @@ historical_friend = MOR
 capital = 225 # Cordoba
 national_focus = MIL
 
-1355.1.1 = { 
-	monarch = {
-		name = "Abd V"
-		dynasty = "ar-Rahman"
-		birth_date = 1311.12.12 
-		adm = 5
-		dip = 4
-		mil = 5
-	}
-}
 
 1332.6.23 = {
 	heir = {
@@ -32,6 +22,17 @@ national_focus = MIL
 		claim = 80
 		adm = 4
 		dip = 3
+		mil = 5
+	}
+}
+
+1355.1.1 = { 
+	monarch = {
+		name = "Abd V"
+		dynasty = "ar-Rahman"
+		birth_date = 1311.12.12 
+		adm = 5
+		dip = 4
 		mil = 5
 	}
 }

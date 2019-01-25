@@ -57,55 +57,6 @@ hundred_years_war = {
 	war_exhaustion = -0.05
 }
 
-#Old Mongolia Debuff
-#yuan_china = {
-#	potential = {
-#		tag = KHA
-#	}
-#	trigger = {
-#		government = celestial_empire
-#	}
-#	
-#	
-#	discipline = -0.25
-#	land_forcelimit_modifier = -0.5
-#	manpower_recovery_speed = -0.5
-#	core_creation = 1.0
-#	unjustified_demands = 0.5
-#	
-#	global_trade_power = -0.50
-#	diplomatic_upkeep = -4
-#	global_trade_income_modifier = -0.5
-#	technology_cost = 0.5
-#	merchants = -1
-#	advisor_cost = 1.0
-#	
-#	build_cost = 1.0
-#	global_tax_modifier = -0.5
-#	stability_cost_modifier = 0.5
-#	advisor_pool = -1
-#	heir_chance = -0.5
-#	religious_unity = -0.25
-#}
-
-#mongol_debuff = {
-#
-#	potential = {
-#		tag = YUA
-#	}
-#	
-#	trigger = {
-#		government = celestial_empire
-#		custom_trigger_tooltip = { 
-#			tooltip = not_government_fixed_flag
-#			NOT = { has_country_flag = government_fixed }
-#		}
-#	}
-#	
-#	discipline = -0.1
-#	land_morale = -0.1
-#	war_exhaustion = 0.05
-#}
 
 highland_charge = {
 	potential = {
@@ -215,6 +166,100 @@ baltic_crusader = {
 	land_maintenance_modifier = -0.25
 	army_tradition = 1
 }
+
+##################################################
+# The Pentarchy Nestorians & Coptic
+##################################################
+
+pentarchy_mod_nestorian = {
+	potential = {
+		normal_or_historical_nations = yes
+		religion = nestorian
+		OR = {
+			has_discovered = 118 	# Rome
+			has_discovered = 151 	# Constantinople
+			has_discovered = 2313 	# Antioch
+			has_discovered = 379 	# Jerusalem
+			has_discovered = 358 	# Alexandria
+		}
+	}
+
+	trigger = {
+		owns = 118 	# Rome
+		owns = 151 	# Constantinople
+		owns = 2313 # Antioch
+		owns = 379 	# Jerusalem
+		owns = 358 	# Alexandria
+		118 = { religion = nestorian }
+		151 = { religion = nestorian }
+		2313 = { religion = nestorian }
+		379 = { religion = nestorian }
+		358 = { religion = nestorian }
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+}
+
+pentarchy_mod_coptic = {
+	potential = {
+		normal_or_historical_nations = yes
+		religion = coptic
+		OR = {
+			has_discovered = 118 	# Rome
+			has_discovered = 151 	# Constantinople
+			has_discovered = 2313 	# Antioch
+			has_discovered = 379 	# Jerusalem
+			has_discovered = 358 	# Alexandria
+		}
+	}
+
+	trigger = {
+		owns = 118 	# Rome
+		owns = 151 	# Constantinople
+		owns = 2313 # Antioch
+		owns = 379 	# Jerusalem
+		owns = 358 	# Alexandria
+		118 = { religion = coptic }
+		151 = { religion = coptic }
+		2313 = { religion = coptic }
+		379 = { religion = coptic }
+		358 = { religion = coptic }
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+}
+
+###########################################
+# Jerusalem held by Abrahamic Faiths
+###########################################
+jerusalem_held = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+			religion = jewish
+		}
+		has_discovered = 379	# Judea
+	}
+
+	trigger = {
+		owns = 379 # Judea
+	}
+
+	missionaries = 1
+	prestige = 0.5
+	legitimacy = 0.5
+	horde_unity = 0.5
+	devotion = 1
+	republic_tradition = 0.25
+}
+
+##################################################
+# Late Feudalism Mechanics
+##################################################
 
 1356_late_feudalism_mechanics = { #Mechanics for Settled Nations
 	potential = {
@@ -413,218 +458,3 @@ baltic_crusader = {
 	shock_damage = 0.1
 	recover_army_morale_speed = 0.1
 }
-
-# 1356_early_government_replacement_1 = {
-	# potential = {
-		# #NOT = { date = 1440.1.1 }
-		# NOT = { technology_group = north_american }
-		# NOT = { technology_group = mesoamerican }
-		# NOT = { technology_group = south_american }
-		# NOT = { technology_group = andean }
-		# #NOT = { technology_group = nomad_group }
-		# NOT = { adm_tech = 9 }
-		# NOT = { dip_tech = 9 }
-		# NOT = { mil_tech = 9 }
-	# }
-	# trigger = {
-		# OR = {
-			# adm_tech = 1
-			# dip_tech = 1
-			# mil_tech = 1
-		# }
-		# NOT = { adm_tech = 3 }
-		# NOT = { dip_tech = 3 }
-		# NOT = { mil_tech = 3 }
-	# }
-	# core_creation = 1
-	# core_decay_on_your_own = 0.25
-	# development_cost = 0.4
-	# build_time = 0.25
-	# diplomats = -1	
-	# diplomatic_upkeep = 3
-	# unjustified_demands = 0.25 
-	# province_warscore_cost = 0.25 
-	# #diplomatic_annexation_cost = -0.2 
-# #	yearly_army_professionalism = -0.25
-# #	drill_decay_modifier = 0.25
-	# global_manpower_modifier = -0.25
-	# merc_maintenance_modifier = -0.25
-	# mercenary_cost = -0.30
-	# possible_mercenaries = 1
-	# loot_amount = 0.25
-# #	raze_power_gain = 0.15
-# #	mercenary_discipline = 0.05
-# }
-
-# 1356_early_government_replacement_2 = {
-	# potential = {
-		# #NOT = { date = 1440.1.1 }
-		# NOT = { technology_group = north_american }
-		# NOT = { technology_group = mesoamerican }
-		# NOT = { technology_group = south_american }
-		# NOT = { technology_group = andean }
-		# #NOT = { technology_group = nomad_group }
-		# NOT = { adm_tech = 9 }
-		# NOT = { dip_tech = 9 }
-		# NOT = { mil_tech = 9 }
-	# }
-	# trigger = {
-		# OR = {
-			# adm_tech = 3
-			# dip_tech = 3
-			# mil_tech = 3
-		# }
-		# NOT = { adm_tech = 5 }
-		# NOT = { dip_tech = 5 }
-		# NOT = { mil_tech = 5 }
-	# }
-	# core_creation = 0.77
-	# core_decay_on_your_own = 0.2
-	# development_cost = 0.3
-	# build_time = 0.20
-	# diplomats = -1	
-	# diplomatic_upkeep = 2
-	# unjustified_demands = 0.2 
-	# province_warscore_cost = 0.2
-# #	yearly_army_professionalism = -0.2
-# #	drill_decay_modifier = 0.15
-	# global_manpower_modifier = -0.20
-	# merc_maintenance_modifier = -0.20
-	# mercenary_cost = -0.25
-	# possible_mercenaries = 0.75
-# #	raze_power_gain = 0.1
-	# loot_amount = 0.20
-# #	mercenary_discipline = 0.05
-# }
-
-# 1356_early_government_replacement_3 = {
-	# potential = {
-		# #NOT = { date = 1440.1.1 }
-		# NOT = { technology_group = north_american }
-		# NOT = { technology_group = mesoamerican }
-		# NOT = { technology_group = south_american }
-		# NOT = { technology_group = andean }
-		# #NOT = { technology_group = nomad_group }
-		# NOT = { adm_tech = 9 }
-		# NOT = { dip_tech = 9 }
-		# NOT = { mil_tech = 9 }
-	# }
-	# trigger = {
-		# OR = {
-			# adm_tech = 5
-			# dip_tech = 5
-			# mil_tech = 5
-		# }
-		# NOT = { adm_tech = 7 }
-		# NOT = { dip_tech = 7 }
-		# NOT = { mil_tech = 7 }
-	# }
-	# core_creation = 0.5
-	# core_decay_on_your_own = 0.15
-	# development_cost = 0.2
-	# build_time = 0.15
-	# diplomats = -1	
-	# diplomatic_upkeep = 1
-	# unjustified_demands = 0.15
-	# province_warscore_cost = 0.15
-# #	yearly_army_professionalism = -0.15
-# #	drill_decay_modifier = 0.10
-	# global_manpower_modifier = -0.10
-	# merc_maintenance_modifier = -0.10
-	# mercenary_cost = -0.15
-	# possible_mercenaries = 0.50
-# #	mercenary_discipline = 0.05
-# #	raze_power_gain = 0.075
-	# loot_amount = 0.15
-# }
-
-# 1356_early_government_replacement_4 = {
-	# potential = {
-		# #NOT = { date = 1440.1.1 }
-		# NOT = { technology_group = north_american }
-		# NOT = { technology_group = mesoamerican }
-		# NOT = { technology_group = south_american }
-		# NOT = { technology_group = andean }
-		# #NOT = { technology_group = nomad_group }
-		# NOT = { adm_tech = 9 }
-		# NOT = { dip_tech = 9 }
-		# NOT = { mil_tech = 9 }
-	# }
-	# trigger = {
-		# OR = {
-			# adm_tech = 7
-			# dip_tech = 7
-			# mil_tech = 7
-		# }
-		# NOT = { adm_tech = 9 }
-		# NOT = { dip_tech = 9 }
-		# NOT = { mil_tech = 9 }	
-	# }
-	# core_creation = 0.33
-	# core_decay_on_your_own = 0.1
-	# development_cost = 0.1
-	# build_time = 0.1
-	# diplomats = -1	
-	# diplomatic_upkeep = 1
-	# unjustified_demands = 0.1
-	# province_warscore_cost = 0.1
-# #	yearly_army_professionalism = -0.10
-# #	drill_decay_modifier = 0.10
-# #	global_manpower_modifier = -0.10
-# #	merc_maintenance_modifier = -0.10
-	# mercenary_cost = -0.1
-	# possible_mercenaries = 0.25
-# #	mercenary_discipline = 0.05
-# #	raze_power_gain = 0.5
-	# loot_amount = 0.10
-# }
-
-# 1356_early_feudalism_nomad_1 = {
-	# potential = {
-		# always = no #Remove after Patch
-		# NOT = { is_year = 1444 }
-		# technology_group = nomad_group
-	# }
-	# trigger = {
-		# always = no #Remove after Patch
-		# technology_group = nomad_group
-		# NOT = { is_year = 1444 }
-	# }
-	# core_creation = 0.5
-	# core_decay_on_your_own = 2 #They never go away...
-	# development_cost = 0.65
-	# culture_conversion_cost = 0.5 #May require testing
-	# num_accepted_cultures = 2 #May require testing
-	# promote_culture_cost = 0.25 #May require testing
-	# #years_of_nationalism = 5 #TEST FURTHER
-	# #global_unrest = 2 #TEST FURTHER
-	# build_time = 0.5
-	# #max_states = 2 #How fair would this be? Playtesting required.
-	# diplomats = 1	
-	# improve_relation_modifier = -0.2
-	# spy_offence = 0.1
-	# discovered_relations_impact = 0.15
-	# unjustified_demands = 0.15
-	# province_warscore_cost = 0.15
-	# #ae_impact = 0.1 #Unsure how fun this could be/Fair...
-	# leader_land_manuever = 1
-	# leader_siege = 1
-	# hostile_attrition = 1
-	# war_exhaustion = -0.05
-	# land_attrition = -0.15
-	# shock_damage = 0.1
-	# shock_damage_received = 0.1
-	# fire_damage_received = 0.2
-	# discipline = -0.05
-	# infantry_power = -0.15
-	# cav_to_inf_ratio = 0.15
-	# #movement_speed = 0.1 #Seems unfair and unfun
-	# merc_maintenance_modifier = -0.15
-	# mercenary_cost = -0.2
-	# possible_mercenaries = 0.75
-	# global_tax_modifier = -0.1
-	# production_efficiency = -0.1
-	# loot_amount = 1
-	# raze_power_gain = 0.25
-	# harsh_treatment_cost = -0.05
-# }

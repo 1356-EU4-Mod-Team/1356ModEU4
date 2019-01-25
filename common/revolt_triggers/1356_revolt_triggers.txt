@@ -46,9 +46,9 @@ VLS = {
 	is_core = VLS
 }
 
-GAS = {
+GUY = {
 	culture = gascon
-	is_core = GAS
+	is_core = GUY
 }
 
 OCC = {

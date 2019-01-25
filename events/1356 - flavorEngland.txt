@@ -105,6 +105,705 @@ country_event = { #Spawns Duchy of York circa 1380
 			}
 		}
 	}
-
-
 }
+
+#Wales
+country_event = { #Revolt of Owain Glyndŵr
+	id = flaeng.2
+	title = "flaeng.2.t"
+	desc = "flaeng.2.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = WLS
+		exists = ENG
+		WLS = { is_subject_of = ENG }
+		is_at_war = no
+		OR = {
+			AND = {
+				current_age = age_of_feudalism
+				is_year = 1380
+			}
+			current_age = age_of_discovery
+		}
+	}
+	mean_time_to_happen = {
+		months = 48
+	}
+	option = { #We stand by him! Down with England!
+		name = flaeng.2.a
+		ai_chance = { factor = 100 }
+		custom_tooltip = flaeng_2_welsh_independence_tt
+		ENG = {
+			country_event = { 
+				id = flaeng.3
+				days = 15
+			}
+		}
+	}
+	option = { #Perhaps it may be best to do this peacefully...
+		name = flaeng.2.b
+		WLS = {
+			country_event = { #5 is Peaceful Wales starting
+				id = flaeng.5
+				days = 15
+			}
+		}
+		add_dip_power = 50
+		add_prestige = -15
+	}
+}
+
+#England
+country_event = { #Revolt of Owain Glyndŵr
+	id = flaeng.3
+	title = "flaeng.3.t"
+	desc = "flaeng.3.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { #Kill him!
+		name = flaeng.3.a
+		ai_chance = { factor = 90 }
+		custom_tooltip = flaeng_3_welsh_independence_tt
+		WLS = {
+			country_event = { 
+				id = flaeng.4
+				days = 10
+			}
+		}
+	}
+	option = { #Perhaps we can work something out?
+		name = flaeng.3.b
+		ai_chance = { factor = 10 }
+		custom_tooltip = flaeng_3_welsh_independence_peacefully_tt
+		WLS = {
+			country_event = { #6 is Peaceful English starting
+				id = flaeng.6
+				days = 15
+			}
+		}
+	}
+	option = { #Perhaps these backwater mountains are not worth it after all...
+		name = flaeng.3.c
+		ai_chance = { factor = 0 }
+		add_mil_power = 50
+		break_union = WLS
+	}
+}
+
+#Wales
+country_event = { #Revolt of Owain Glyndŵr - Violent Path
+	id = flaeng.4
+	title = "flaeng.4.t"
+	desc = "flaeng.4.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { #It is too late!
+		name = flaeng.4.a
+		ai_chance = { factor = 100 }
+		declare_war_with_cb = {
+			who = ENG
+			casus_belli = cb_independence_war
+			war_goal_province = 242
+		}
+		define_ruler = {
+			name = "Owain"
+			dynasty = "Glyndŵr"
+			religion = catholic
+			culture = welsh
+			adm = 3
+			dip = 5
+			mil = 4
+			age = 53
+			claim = 100
+		}
+		define_ruler_to_general = {
+			fire = 0
+			shock = 4
+			manuever = 6
+			siege = 1
+		}
+		capital_scope  = {
+			infantry = WLS
+			infantry = WLS
+			infantry = WLS
+			infantry = WLS
+			infantry = WLS
+			infantry = WLS
+			cavalry = WLS
+			cavalry = WLS
+		}
+		241 = { 
+			add_province_modifier = { 
+				name = 1356_wales_hold_out_against_england_modifier
+				duration = 1825
+			}
+		}
+		4369 = {
+			add_province_modifier = { 
+				name = 1356_wales_hold_out_against_england_modifier
+				duration = 1825
+			}
+		}
+		4366 = {
+			add_province_modifier = { 
+				name = 1356_wales_hold_out_against_england_modifier
+				duration = 1825
+			}
+		}
+		242 = {
+			add_province_modifier = { 
+				name = 1356_wales_hold_out_against_england_modifier
+				duration = 1825
+			}
+		}
+		set_country_flag = revolt_of_owain_glyndwr_flag #For Free Money
+		set_country_flag = revolt_of_owain_glyndwr_other_flag #For Other Nations to send aid
+	}
+	option = { #It is never too late!
+		name = flaeng.4.c
+		ai_chance = { factor = 0 }
+		add_mil_power = 50
+	}
+}
+
+#Wales 
+country_event = { #Revolt of Owain Glyndŵr - A Peaceful Resolution - Wales starts
+	id = flaeng.5
+	title = "flaeng.5.t"
+	desc = "flaeng.5.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #A Peaceful request for Independence
+		name = flaeng.5.a
+	}
+	option = { #Wait a minute...there can be no peace with the English!
+		name = flaeng.5.b
+		ENG = {
+			country_event = { 
+				id = flaeng.3
+				days = 15
+			}
+		}
+	}
+}
+
+#England
+country_event = { #Revolt of Owain Glyndŵr - A Peaceful Resolution - England Starts
+	id = flaeng.6
+	title = "flaeng.6.t"
+	desc = "flaeng.6.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Offer them independence
+		name = flaeng.6.a
+		break_union = WLS
+		add_adm_power = 200
+		add_dip_power = 200
+		add_mil_power = 200
+		add_treasury = 100
+	}
+	option = { #Laugh in their face
+		name = flaeng.6.b
+		WLS = {
+			country_event = { 
+				id = flaeng.4
+				days = 10
+			}
+		}
+	}
+}
+
+
+#Events for Scotland, France, and Irish Earls to send Aid to Wales
+
+#France
+country_event = { #Revolt of Owain Glyndŵr - French Aid
+	id = flaeng.7
+	title = "flaeng.7.t"
+	desc = "flaeng.7.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = FRD
+		}
+		exists = WLS
+		WLS = { 
+			is_subject = no
+			has_country_flag = revolt_of_owain_glyndwr_other_flag
+			is_at_war = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { #France offers an Alliance
+		name = flaeng.7.a
+		ai_chance = { factor = 20 }
+		trigger = { is_at_war = no }
+		create_alliance = WLS
+		add_historical_friend = WLS
+		WLS = { 
+			add_historical_friend = FRA
+			add_historical_friend = FRD
+			country_event = { 
+				id = flaeng.16
+				days = 5
+			}
+		}
+
+	}
+	option = { #Send Manpower
+		name = flaeng.7.b
+		ai_chance = { factor = 35 }
+		trigger = { manpower = 5 }
+		add_manpower = -5
+		WLS = {
+			country_event = { 
+				id = flaeng.11
+				days = 5
+			}
+		}
+
+	}
+	option = { #Send Money
+		name = flaeng.7.c
+		ai_chance = { factor = 35 }
+		trigger = { treasury = 100 }
+		add_treasury = -100
+		WLS = {
+			country_event = { 
+				id = flaeng.10
+				days = 5
+			}
+		}
+
+	}
+	option = { #No Aid
+		name = flaeng.7.e
+		ai_chance = { factor = 10 }
+	}
+}
+
+#Scotland
+country_event = { #Revolt of Owain Glyndŵr - Scotish Aid
+	id = flaeng.8
+	title = "flaeng.8.t"
+	desc = "flaeng.8.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = SCO
+		exists = WLS
+		WLS = { 
+			is_subject = no
+			has_country_flag = revolt_of_owain_glyndwr_other_flag
+			is_at_war = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { #Scotland Offers an Alliance
+		name = flaeng.8.a
+		ai_chance = { factor = 20 }
+		trigger = { is_at_war = no }
+		create_alliance = WLS
+		add_historical_friend = WLS
+		WLS = { 
+			add_historical_friend = SCO
+			country_event = { 
+				id = flaeng.17
+				days = 5
+			}
+		}
+	}
+	option = { #Send Manpower
+		name = flaeng.8.b
+		ai_chance = { factor = 35 }
+		trigger = { manpower = 5 }
+		add_manpower = -5
+		WLS = {
+			country_event = { 
+				id = flaeng.13
+				days = 5
+			}
+		}
+
+	}
+	option = { #Send Money
+		name = flaeng.8.c
+		ai_chance = { factor = 35 }
+		trigger = { treasury = 100 }
+		add_treasury = -100
+		WLS = {
+			country_event = { 
+				id = flaeng.12
+				days = 5
+			}
+		}
+
+	}
+	option = { #No Aid
+		name = flaeng.8.e
+		ai_chance = { factor = 10 }
+	}
+}
+
+#Ireland
+country_event = { #Revolt of Owain Glyndŵr - Irish Earl Aid
+	id = flaeng.9
+	title = "flaeng.9.t"
+	desc = "flaeng.9.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = MTH
+			tag = LEI
+			tag = ULS
+			tag = TRY
+			tag = TYR
+			tag = SLN
+			tag = CNN
+			tag = KID
+			tag = FLY
+			tag = MNS
+			tag = ORD
+			tag = DMS
+			tag = MCM
+		}
+		exists = WLS
+		WLS = { 
+			is_subject = no
+			has_country_flag = revolt_of_owain_glyndwr_other_flag
+			is_at_war = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { #An Earl Offers an Alliance
+		name = flaeng.9.a
+		ai_chance = { factor = 20 }
+		trigger = { is_at_war = no }
+		create_alliance = WLS
+		add_historical_friend = WLS
+		WLS = { 
+			add_historical_friend = ROOT
+			country_event = { 
+				id = flaeng.18
+				days = 5
+			}
+		}
+	}
+	option = { #Send Manpower
+		name = flaeng.9.b
+		ai_chance = { factor = 35 }
+		trigger = { manpower = 5 }
+		add_manpower = -5
+		WLS = {
+			country_event = { 
+				id = flaeng.15
+				days = 5
+			}
+		}
+
+	}
+	option = { #Send Money
+		name = flaeng.9.c
+		ai_chance = { factor = 35 }
+		trigger = { treasury = 100 }
+		add_treasury = -100
+		WLS = {
+			country_event = { 
+				id = flaeng.14
+				days = 5
+			}
+		}
+
+	}
+	option = { #No Aid
+		name = flaeng.9.e
+		ai_chance = { factor = 10 }
+	}
+}
+
+##########################################################
+#Events where Scotland, France, or Irish Minors send Help#
+##########################################################
+
+country_event = { #Revolt of Owain Glyndŵr - France Sends Money
+	id = flaeng.10
+	title = "flaeng.10.t"
+	desc = "flaeng.10.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { #Kill him!
+		name = flaeng.10.a
+		add_treasury = 100
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - France Sends Manpower
+	id = flaeng.11
+	title = "flaeng.11.t"
+	desc = "flaeng.11.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { #Kill him!
+		name = flaeng.11.a
+		add_manpower = 5
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - Scotland Sends Money
+	id = flaeng.12
+	title = "flaeng.12.t"
+	desc = "flaeng.12.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { 
+		name = flaeng.12.a
+		add_treasury = 50
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - Scotland Sends Manpower
+	id = flaeng.13
+	title = "flaeng.13.t"
+	desc = "flaeng.13.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { 
+		name = flaeng.13.a
+		add_manpower = 3
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - An Irish Earl Sends Money
+	id = flaeng.14
+	title = "flaeng.14.t"
+	desc = "flaeng.14.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { 
+		name = flaeng.14.a
+		add_treasury = 25
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - An Irish Earl Sends Manpower
+	id = flaeng.15
+	title = "flaeng.15.t"
+	desc = "flaeng.15.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { 
+		name = flaeng.15.a
+		add_manpower = 2
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - France Joins the War
+	id = flaeng.16
+	title = "flaeng.16.t"
+	desc = "flaeng.16.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { 
+		name = flaeng.16.a
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - Scotland Joins the War
+	id = flaeng.17
+	title = "flaeng.17.t"
+	desc = "flaeng.17.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { 
+		name = flaeng.17.a
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - An Irish Earl Joins the War
+	id = flaeng.18
+	title = "flaeng.18.t"
+	desc = "flaeng.18.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = { 
+		name = flaeng.18.a
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - Owain himself donates his entire Funds to the cause
+	id = flaeng.19
+	title = "flaeng.19.t"
+	desc = "flaeng.19.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = WLS
+		is_subject = no
+		is_at_war = yes
+		has_country_flag = revolt_of_owain_glyndwr_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = { #
+		name = flaeng.19.a
+		add_treasury = 150
+		clr_country_flag = revolt_of_owain_glyndwr_flag
+	}
+}
+
+#########################
+#Continued from flaeng.6#
+#########################
+
+#England
+country_event = { #Revolt of Owain Glyndŵr - A Peaceful Resolution - Wales Requests Independence
+	id = flaeng.20
+	title = "flaeng.20.t"
+	desc = "flaeng.20.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #They can have it...for a price.
+		name = flaeng.20.a
+		ai_chance = { factor = 20 }
+		WLS = {
+			country_event = { 
+				id = flaeng.21
+				days = 15
+			}
+		}
+		
+	}
+	option = { #No peace for the Welsh!
+		name = flaeng.20.b
+		ai_chance = { factor = 80 }
+		WLS = {
+			country_event = { 
+				id = flaeng.4
+				days = 10
+			}
+		}
+	}
+}
+
+#Wales
+country_event = { #Revolt of Owain Glyndŵr - A Peaceful Resolution - England Offers Independence
+	id = flaeng.21
+	title = "flaeng.21.t"
+	desc = "flaeng.21.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Graciously Accept
+		name = flaeng.21.a
+		ai_chance = { factor = 100 }
+		add_adm_power = -200
+		add_dip_power = -200
+		add_mil_power = -200
+		add_treasury = -100
+		ENG = {
+			country_event = { 
+				id = flaeng.22
+				days = 15
+			}
+		}
+	}
+	option = { #Laugh in their face
+		name = flaeng.21.b
+		ai_chance = { factor = 0 }
+		WLS = {
+			country_event = { 
+				id = flaeng.4
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #Revolt of Owain Glyndŵr - A Peaceful Resolution - Our offer was accepted
+	id = flaeng.22
+	title = "flaeng.22.t"
+	desc = "flaeng.22.desc"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #The Welsh accepted our offer.
+		name = flaeng.22.a
+		break_union = WLS
+		add_adm_power = 200
+		add_dip_power = 200
+		add_mil_power = 200
+		add_treasury = 100
+	}
+}
+	
+

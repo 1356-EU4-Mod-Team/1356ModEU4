@@ -146,6 +146,9 @@
  desc_zizka_legacy_aspect: "Jan 'One Eye' Zizka was a Hussite General during the Hussite Wars. His revolutionary and unorthodox use of wagons during battles won him many victories, and the tactic continued to be used well into the 19th Century."
  yuan_culture: "Yuan"
  qing_culture: "Qing"
+ 
+ #V30 additions here
+ 
  akka: "Akka"
  akka_desc: "Akka is the mother of the tribe, and the goddess of women and children."
  rana: "Rana"
@@ -189,8 +192,6 @@
  slovak: "Slovak"
  bosnian: "Bosnian"
  moorish: "Andalusi"
- bithynian: "Bithnian"
- lykian: "Lykian"
  cappadocian: "Cappadocian"
  moravian: "Moravian"
  slovenian: "Slovenian"
@@ -207,7 +208,7 @@
  turko_semitic: "Arabic"
  low_lands_culture_group: "Low Frankish"
  cornish: "Cornish"
- celtic_breton: "Britannic"
+ celtic_breton: "Brythonic"
  kashubian: "Kashubian"
  finnish_urgric_culture_group: "Finnic"
  mazovian: "Mazovian"
@@ -215,7 +216,4 @@
  kurland_culture: "Couronian"
  poitou: "Poitevin"
  northumbrian: "Northumbrian"
- #russian: "Black Russian"
- #novgorodian: "White Russian"
- #ryazanian: "Red Russian"
  mongolic_culture_group: "Mongolic"

@@ -31,35 +31,35 @@ historical_units = {
 	napoleonic_lancers
 }
 
-# leader_names = {
-	# Azegid Gachegid Zhebegid
-	# Lunegid Zhunegid Irtegid
-	# Moshegid Rategid
-	# Yugra Syktyvkar
-# }
+ leader_names = {
+	 Azegid Gachegid Zhebegid
+	 Lunegid Zhunegid Irtegid
+	 Moshegid Rategid
+	 Yugra Syktyvkar
+ }
 
-# ship_names = {
-	# Noroava Olota Ordava Pemka Poshayka
-	# Tekay Tetyava  Tundya Unzhutka Yalgava
-# }
+ ship_names = {
+	 Noroava Olota Ordava Pemka Poshayka
+	 Tekay Tetyava  Tundya Unzhutka Yalgava
+ }
 
-# monarch_names = {
-	# "Mohkku #0" = 20
-	# "Mokci #0" = 20
-	# "Náhkol #0" = 20
-	# "Päevalemb #0" = 10
-	# "Sulev #0" = 10
-	# "Pivtsay #0" = 10
-	# "Pokshayka #0" = 5
-	# "Shypicha #0" = 5
-	# "Irter #0" = 5
-	# "Karuvald #0" = 5
-	# "Piho #0" = 0
-	# "Varaka #0" = 0
-	# "Náinnas #0" = 0
+ monarch_names = { #Adjust these to better suit their culture
+	 "Mohkku #0" = 20
+	 "Mokci #0" = 20
+	 "Náhkol #0" = 20
+	 "Päevalemb #0" = 10
+	 "Sulev #0" = 10
+	 "Pivtsay #0" = 10
+	 "Pokshayka #0" = 5
+	 "Shypicha #0" = 5
+	 "Irter #0" = 5
+	 "Karuvald #0" = 5
+	 "Piho #0" = 0
+	 "Varaka #0" = 0
+	 "Náinnas #0" = 0
 	
-	# "Nyayka #0" = -1
-	# "Vidyava #0" = -1
-	# "Poshayka #0" = -1
-	# "Satu #0" = -1
-# }
+	 "Nyayka #0" = -1
+	 "Vidyava #0" = -1
+	 "Poshayka #0" = -1
+	 "Satu #0" = -1
+ }

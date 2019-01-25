@@ -1,0 +1,657 @@
+namespace = barbarossa
+
+country_event = {
+	id = barbarossa.1
+	title = "barbarossa.1.t"
+	desc = "barbarossa.1.d"
+	picture = "HRE_eventPicture"
+
+	fire_only_once = yes
+
+	trigger = {	ai = no }
+	
+	option = {
+		trigger = {	normal_or_historical_nations = yes }
+		name = "barbarossa.1.ger" #Germany
+		hidden_effect = { country_event = { id = barbarossa.2 } }
+	}
+	option = {
+		trigger = {	normal_or_historical_nations = yes }
+		name = "barbarossa.1.byz" #Byzantinum
+		hidden_effect = { country_event = { id = barbarossa.3 } }
+	}
+	
+	option = {
+		trigger = {	normal_or_historical_nations = yes }
+		name = "barbarossa.1.koj" #Jerusalem
+		hidden_effect = { country_event = { id = barbarossa.5 } }
+	}
+	option = {
+		name = "barbarossa.1.done" #Start
+	}
+}
+
+#Germany
+country_event = {
+	id = barbarossa.2
+	title = "barbarossa.2.t"
+	desc = "barbarossa.2.d"
+	picture = "FRANKFURT_eventPicture"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "barbarossa.1.byz" #Byzantinum
+		country_event = { id = barbarossa.3 }
+	}
+	option = {
+		name = "barbarossa.1.koj" #Jerusalem
+		country_event = { id = barbarossa.5 }
+	}
+	option = {
+		name = "barbarossa.1.done" #Start
+	}
+}
+
+#Byzantinum
+country_event = {
+	id = barbarossa.3
+	title = "barbarossa.3.t"
+	desc = "barbarossa.3.d"
+	picture = "CONSTANTINOPLE_eventPicture"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "barbarossa.1.ger" #Germany
+		country_event = { id = barbarossa.2 }
+	}
+	option = {
+		name = "barbarossa.1.koj" #Jerusalem
+		country_event = { id = barbarossa.5 }
+	}
+	option = {
+		name = "barbarossa.1.done" #Start
+	}
+}
+
+# #Al-Andalus
+# country_event = {
+	# id = barbarossa.4
+	# title = "barbarossa.4.t"
+	# desc = "barbarossa.4.d"
+	# picture = "CORDOBA_eventPicture"
+
+	# is_triggered_only = yes
+
+	# option = {
+		# name = "barbarossa.1.ger" #Germany
+		# country_event = { id = barbarossa.2 }
+	# }
+	# option = {
+		# name = "barbarossa.1.koj" #Jerusalem
+		# country_event = { id = barbarossa.5 }
+	# }
+	# option = {
+		# name = "barbarossa.1.done" #Start
+	# }
+# }
+
+#Jerusalem
+country_event = {
+	id = barbarossa.5
+	title = "barbarossa.5.t"
+	desc = "barbarossa.5.d"
+	picture = "BTJERUSALEM_eventPicture"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "barbarossa.1.ger" #Germany
+		country_event = { id = barbarossa.2 }
+	}
+	option = {
+		name = "barbarossa.1.byz" #Byzantinum
+		country_event = { id = barbarossa.3 }
+	}
+	option = {
+		name = "barbarossa.1.done" #Start
+	}
+}
+
+#### Emperor Events ####
+
+country_event = {
+	id = barbarossa.10
+	title = "barbarossa.10.t"
+	desc = "barbarossa.10.d"
+	picture = "HRE_eventPicture"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "barbarossa.10.zentral" # Centralized Empire
+		ai_chance = { factor = 75 }
+		dismantle_hre = yes
+		change_tag = GER
+		set_government_rank = 3
+		swap_free_idea_group = yes
+		north_german_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = GER	}
+		south_german_region = {	limit = { NOT = { owned_by = ROOT }	} add_permanent_claim = GER }
+		every_country = { limit = {	is_part_of_hre = yes is_emperor = no num_of_cities = 1 NOT = { vassal_of = ROOT } }	add_opinion = { who = ROOT modifier = hre_centralized } }
+		MLO = { country_event = { id = barbarossa.11 } }
+	}
+	option = {
+		name = "barbarossa.10.ausgleich" # Heritable Empire
+		ai_chance = { factor = 20 }
+		imperial_ban_allowed = yes
+		hre_inheritable = yes
+		SWA = { add_imperial_influence = 25 }
+		every_country = {
+		limit = { OR = { tag = BOH tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
+		every_country = { limit = {	is_part_of_hre = yes is_emperor = no num_of_cities = 1 NOT = { vassal_of = ROOT } }	add_opinion = { who = ROOT modifier = hre_heritable } }
+	}
+	option = {
+		name = "barbarossa.10.traditional" # Traditional Empire
+		ai_chance = { factor = 5 }
+		imperial_ban_allowed = yes
+		hre_inheritable = no
+		SWA = { add_imperial_influence = 35 }
+		every_country = {
+		limit = { OR = { tag = BOH tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
+		every_country = { limit = {	is_part_of_hre = yes is_emperor = no num_of_cities = 1 NOT = { vassal_of = ROOT } }	add_opinion = { who = ROOT modifier = hre_traditional } }
+	}
+}
+
+#### Milano forms Italy ####
+
+country_event = {
+	id = barbarossa.11
+	title = "barbarossa.11.t"
+	desc = "barbarossa.11.d"
+	picture = "HRE_eventPicture"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "barbarossa.11.e" # Form Italy
+		change_tag = ITA
+		set_government_rank = 2
+		swap_free_idea_group = yes
+		lombardy_area = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ITA }
+		piedmont_area = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ITA }
+		liguria_area = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ITA }
+		emilia_romagna_area = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = ITA }
+		every_owned_province  = { add_core = MLO }
+		add_manpower = 25
+		create_general = { tradition = 75 }
+		GER = { country_event = { id = barbarossa.12 } }
+	}
+}
+
+#### German Ultimatum ####
+
+country_event = {
+	id = barbarossa.12
+	title = "barbarossa.12.t"
+	desc = "barbarossa.12.d"
+	picture = "HRE_eventPicture"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "barbarossa.12.f" # Wait for an opportunity!
+		ai_chance = { factor = 20 }
+		custom_tooltip = barbarossa.12.ttb
+		ROOT = { add_truce_with = ITA }
+	}	
+	option = {
+		name = "barbarossa.12.e" # Send ultimatum!
+		ai_chance = { factor = 80 }
+		custom_tooltip = barbarossa.12.tta
+		set_country_flag = invasion_of_italy
+		
+		every_country = {
+			limit = {
+				capital_scope = {
+						region = italy_region
+					}
+				}
+			add_opinion = {
+				who = ROOT
+				modifier = "opinion_tyrant_overlord"
+			}
+		}
+		every_country = {
+			limit = {
+				culture_group = latin
+				is_subject = no
+			}
+			country_event = {
+				id = barbarossa.15
+				days = 0
+            }
+        }
+		ITA = { country_event = { id = barbarossa.18 days = 30 random = 20 } }
+		SIC = { add_liberty_desire = 40 }
+	}
+}
+
+country_event = {
+	id = barbarossa.15
+	title = barbarossa.15.t
+	desc = barbarossa.15.d
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+	
+    #Help them!
+    option = {
+        name = barbarossa.15.e
+        set_country_flag = invasion_of_italy_ally
+		ITA = {	country_event = { id = barbarossa.16 } }
+        ai_chance = {
+            factor = 85
+            modifier = {
+                factor = 0.8
+                OR = {
+                    is_rival = ITA
+                    truce_with = GER
+                    is_at_war = yes
+                }
+            }
+		}
+    }
+    #Supply them!
+    option = {
+        name = barbarossa.15.f
+        set_country_flag = invasion_of_italy_help
+		ITA = {	country_event = { id = barbarossa.17 } }
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 0.9
+                OR = {
+                    is_rival = ITA
+                    truce_with = GER
+                    is_at_war = yes
+                }
+            }
+        }
+    }
+    #Let them fight their own fight!
+    option = {
+        name = barbarossa.15.g
+        set_country_flag = refused_to_help_ita
+        ai_chance = {
+            factor = 5
+            modifier = {
+                factor = 0
+                NOT = {
+                    OR = {
+                        is_at_war = yes
+                        is_rival = ITA
+                        truce_with = GER
+                        has_opinion = { who = ITA value = 25 }
+                        NOT = { has_opinion = { who = GER value = 25 } }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#### Country joins us ####
+
+country_event = {
+	id = barbarossa.16
+	title = barbarossa.16.t
+	desc = barbarossa.16.d
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {	tag = ITA }
+	
+	option = {
+		name = barbarossa.16.e
+	}
+}
+
+#### Country supplies us ####
+
+country_event = {
+    id = barbarossa.17
+	title = barbarossa.17.t
+	desc = barbarossa.17.d
+	picture = SHIP_SAILING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {	tag = BYZ }
+	
+	option = {
+		name = barbarossa.17.e
+        add_country_modifier = {
+			name = italian_supplies
+			duration = 365
+		}
+        add_treasury = 50
+	}
+}
+
+#### Ultimatum expires ####
+
+country_event = {
+	id = barbarossa.18
+	title = "barbarossa.18.t"
+	desc = "barbarossa.18.d"
+	picture = "HRE_eventPicture"
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 95 }
+		name = "barbarossa.18.e" # Refuse ultimatum!
+		GER = { country_event = { id = barbarossa.19 } }
+	}
+	option = {
+		ai_chance = { factor = 5 }
+		name = "barbarossa.18.f" # Give in!
+		change_tag = MLO
+		white_peace = GER	
+		release = PAR
+		GER = { country_event = { id = barbarossa.21 } }
+		hidden_effect = {
+		lombardy_area = { limit = { NOT = { owned_by = ROOT } } remove_core = ITA }
+		piedmont_area = { limit = { NOT = { owned_by = ROOT } } remove_core = ITA }
+		liguria_area = { limit = { NOT = { owned_by = ROOT } } remove_core = ITA }
+		emilia_romagna_area = { limit = { NOT = { owned_by = ROOT } } remove_core = ITA }
+		}
+	}
+}
+
+#### German DOW ####
+
+country_event = {
+	id = barbarossa.19
+	title = "barbarossa.19.t"
+	desc = "barbarossa.19.d"
+	picture = "HRE_eventPicture"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "barbarossa.19.e" # War!
+		every_country = {
+			limit = {
+				has_country_flag = invasion_of_italy_ally
+			}
+			form_coalition_against = GER 
+			clr_country_flag = invasion_of_italy_ally
+		}
+		ROOT = { declare_war_with_cb = { who = ITA casus_belli = cb_annex } }
+	}
+}
+
+#### Milano besieged ####
+
+country_event = {
+	id = barbarossa.20
+	title = "barbarossa.20.t"
+	desc = "barbarossa.20.d"
+	picture = "SIEGE_eventPicture"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ITA
+		is_in_war = {
+			attacker_leader = GER
+			defender_leader = ROOT
+		}
+		OR = {
+			NOT = { war_score = -50 }
+			GER = { controls = 104 }
+		}
+	}
+	
+	mean_time_to_happen = {	days = 3 }
+	
+	option = {
+		name = "barbarossa.20.e" # We have lost!
+		white_peace = GER	
+		GER = { country_event = { id = barbarossa.21 } }
+		104 = {	add_base_manpower = -2 add_base_production = -2	add_base_tax = -2 }
+		}
+}
+
+#### German victory ####
+
+country_event = {
+	id = barbarossa.21
+	title = "barbarossa.21.t"
+	desc = "barbarossa.21.d"
+	picture = "SIEGE_eventPicture"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "barbarossa.21.e" # Cut them down!
+		ITA = { change_tag = MLO }
+		add_prestige = 25
+		add_treasury = 250
+		ITA = {	release = PAR }
+		hidden_effect = {
+		lombardy_area = { limit = { NOT = { owned_by = ROOT } } remove_core = ITA }
+		lombardy_area = { limit = { NOT = { owned_by = ROOT } } remove_claim = ITA }
+		piedmont_area = { limit = { NOT = { owned_by = ROOT } } remove_core = ITA }
+		piedmont_area = { limit = { NOT = { owned_by = ROOT } } remove_claim = ITA }
+		liguria_area = { limit = { NOT = { owned_by = ROOT } } remove_core = ITA }
+		liguria_area = { limit = { NOT = { owned_by = ROOT } } remove_claim = ITA }
+		emilia_romagna_area = { limit = { NOT = { owned_by = ROOT } } remove_core = ITA }
+		emilia_romagna_area = { limit = { NOT = { owned_by = ROOT } } remove_claim = ITA }
+		}
+	}
+	option = {
+		name = "barbarossa.21.f" # Make use of them!
+	ITA = { 
+		define_ruler = {
+			name = "Stefano I"
+			dynasty = "von Staufen"
+			culture = swabian
+			adm = 5
+			dip = 3
+			mil = 3
+			age = 29
+			claim = 60
+		}
+		create_marriage = GER
+		create_alliance = GER
+	}
+		add_prestige = 25
+		add_treasury = 250
+	}
+}
+
+#### Byzantine looks on Sicily ####
+
+country_event = {
+	id = barbarossa.22
+	title = "barbarossa.22.t"
+	desc = "barbarossa.22.d"
+	picture = "SIEGE_eventPicture"
+	
+	fire_only_once = yes
+	
+	trigger = {
+	tag = BYZ
+	is_at_war = no
+	SIC = {
+		exists = yes
+		is_subject = yes
+		war_with = ITA 
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = "barbarossa.22.e" # Approch Sicily!
+		ai_chance = { factor = 95 }
+		reverse_add_opinion = {	who = SIC modifier = supporting_independence }
+		set_country_flag = support_sicilian_revolt
+		every_province = {
+			limit = { is_claim = ROOT owned_by = SIC }
+			remove_claim = ROOT
+		}
+		hidden_effect ={ add_opinion = { who = SIC modifier = supporting_independence } }
+	}
+	option = {
+		ai_chance = { factor = 5 }
+		name = "barbarossa.22.f" # Don't entangle in such wars!
+	}
+}
+
+#### Sicily revolts ####
+
+country_event = {
+	id = barbarossa.23
+	title = "barbarossa.23.t"
+	desc = "barbarossa.23.d"
+	picture = "SIEGE_eventPicture"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SIC
+		is_subject = yes
+		war_with = ITA 
+		BYZ = {	has_country_flag = support_sicilian_revolt }
+	}
+	
+	mean_time_to_happen = {	days = 3 }
+	
+	option = {
+	name = "barbarossa.23.e" # Revolt!
+
+	BYZ = {
+		create_alliance = SIC
+		clr_country_flag = support_sicilian_revolt
+	}
+	
+	declare_war_with_cb = {	who = GER casus_belli = cb_independence_war	}
+	
+	define_ruler = {
+		name = "Guglielmo I"
+		dynasty = "di Sicilia"
+		culture = sicilian
+		adm = 3
+		dip = 3
+		mil = 5
+		age = 24
+		claim = 95
+	}
+	define_consort = {
+		name = "Theodora"
+		dynasty = "Skleroi"
+		culture = greek
+		adm = 5
+		dip = 4
+		mil = 5
+		age = 21
+		female = yes
+	}
+	create_marriage = BYZ
+	}
+}
+
+#### Return of the Vikings ####
+
+country_event = {
+    id = barbarossa.30
+    title = barbarossa.30.t
+    desc = barbarossa.30.d
+	picture = "EXPLORERS_eventPicture"
+	
+	fire_only_once = yes
+	
+    trigger = {
+        is_year = 1360
+        ai = no
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = barbarossa.30.e
+		custom_tooltip = barbarossa.30.tt
+			hidden_effect = {
+				every_country = { limit = { capital_scope = { continent = europe } } }
+					newfoundland_area = { discover_country = PREV }
+					labrador_area = { discover_country = PREV }
+					greenland_area = { discover_country = PREV }
+					sea_of_labrador_area = { discover_country = PREV }
+					denmark_strait_area = { discover_country = PREV }
+				}
+		}
+}
+
+#### Italy gathering support ####
+
+# country_event = {
+	# id = barbarossa.15
+	# title = barbarossa.15.t
+	# desc = barbarossa.15.d
+	# picture = SIEGE_eventPicture
+	
+# trigger = {
+    # GER = { has_country_flag = invasion_of_italy }
+    # capital_scope = { region = italy_region }
+    # NOT = {
+        # has_country_flag = invasion_of_italy
+        # has_country_flag = refused_to_help_ita
+        # has_country_flag = invasion_of_italy_help
+        # tag = GER
+        # war_with = GER
+        # truce_with = GER
+        # is_rival = ITA
+    # }
+    # OR = {
+        # has_opinion = { who = ITA value = 25 }
+        # NOT = { has_opinion = { who = GER value = 25 } }
+    # }
+    # is_at_war = no
+    # is_subject = no
+# }
+
+	# mean_time_to_happen = { days = 3 }
+	
+	# option = {
+        # ai_chance = { factor = 50 }
+		# name = barbarossa.15.e
+		# set_country_flag = invasion_of_italy_ally
+		# reverse_add_opinion = {
+			# who = ITA
+			# modifier = joined_war_against_ger
+		# }
+		# ITA = {
+			# country_event = { id = barbarossa.16 }
+		# }
+		# set_country_flag = invasion_of_italy_help
+	# }
+	# option = {
+        # ai_chance = { factor = 25 }
+		# name = barbarossa.15.f
+		# set_country_flag = refused_to_help_ita
+	# }
+    # option = {
+        # ai_chance = { factor = 25 }
+        # name = barbarossa.15.g
+        # add_treasury = -50
+        # set_country_flag = invasion_of_italy_help
+        # ITA = {
+            # country_event = { id = barbarossa.17 }
+        # }
+    # }
+# }

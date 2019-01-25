@@ -518,10 +518,10 @@ country_decisions = {
 				}
 				NOT = { tag = BUR }
 			}
-			bourgogne_area = { owned_by = ROOT }
-			provence_area = { owned_by = ROOT }
-			savoy_dauphine_area = { owned_by = ROOT }
-			romandie_area = { owned_by = ROOT }	
+			bourgogne_area = { type = all owned_by = ROOT }
+			provence_area = { type = all owned_by = ROOT }
+			savoy_dauphine_area = { type = all owned_by = ROOT }
+			romandie_area = { type = all owned_by = ROOT }	
 		}
 		effect = {
 			201 = { #Provence
@@ -566,10 +566,7 @@ country_decisions = {
 			NOT = { tag = NCH } #Francia
 			NOT = { tag = OCC }
 			NOT = { exists = OCC }
-			OR = { #Culture
-				primary_culture = occitain
-				primary_culture = arpitan
-			}
+			primary_culture = occitain
 			NOT = { has_country_flag = GAS_pyrenne_kingdom }
 			is_colonial_nation = no
 			OR = {
@@ -671,6 +668,118 @@ country_decisions = {
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_occitania_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	frd_centralize_french_nation = { #1356
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_france_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			tag = FRD
+			NOT = { exists = FRA }
+			OR = {
+				ai = no
+				NOT = { exists = FRA }
+			}
+			culture_group = french
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 168	# Caen
+				province_id = 174	# Aquitaine
+				province_id = 175	# Armagnac
+				province_id = 177	# Maine
+				province_id = 178 	# Anjou
+				province_id = 179	# Berry
+				province_id = 180	# Haut-Poitou
+				province_id = 182	# Valois
+				province_id = 183	# Paris
+				province_id = 184	# Orléannais
+				province_id = 185	# Nemours
+				province_id = 186	# Champagne
+				province_id = 190	# Bourbonnais
+				province_id = 196	# Toulouse
+				province_id = 199	# Auvergne
+				province_id = 203	# Lyonnais
+				province_id = 204	# Dauphine
+				province_id = 1879  # Alencon
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			num_of_subjects = 0		
+			is_year = 1454
+			has_country_flag = can_form_france_FRD_flag
+			owns_core_province = 168	# Caen
+			owns_core_province = 174	# Aquitaine
+			owns_core_province = 175	# Armagnac
+			owns_core_province = 177	# Maine
+			owns_core_province = 178    # Anjou
+			owns_core_province = 179	# Berry
+			owns_core_province = 180	# Haut-Poitou
+			owns_core_province = 182	# Valois
+			owns_core_province = 183	# Paris
+			owns_core_province = 184	# Orléannais
+			owns_core_province = 185	# Nemours
+			owns_core_province = 186	# Champagne
+			owns_core_province = 190	# Bourbonnais
+			owns_core_province = 196	# Toulouse
+			owns_core_province = 199	# Auvergne
+			owns_core_province = 203	# Lyonnais
+			owns_core_province = 204	# Dauphine
+			owns_core_province = 1879   # Alencon
+		}
+		effect = {
+			183 = { #Paris
+				move_capital_effect = yes
+				add_base_tax = 2
+			}
+			change_tag = FRA
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			france_region = { #Remove this one day
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_france_flag
 		}
 		ai_will_do = {
 			factor = 1
