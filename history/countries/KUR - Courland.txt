@@ -7,6 +7,15 @@ add_accepted_culture = prussian
 religion = catholic
 capital = 1935	# Mitau
 
+1356.12.24  = { 
+		religion = baltic_pagan_reformed		capital = 39	# Goldingen
+} #BT In
+
+1356.12.26  = { 
+		religion = catholic  capital = 1935	# Mitau
+} #BT Out
+
+
 1561.11.28 = { religion = protestant} #Investigate Rulers to see if they should be Prussian or Kurland culture
 
 1561.11.28 = {

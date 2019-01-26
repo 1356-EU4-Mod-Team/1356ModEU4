@@ -32,7 +32,15 @@ discovered_by = AST
 discovered_by = QAS
 extra_cost = 8
 center_of_trade = 1
- 
+
+1356.12.24  = { 
+				remove_claim = POL
+} #BT In
+
+1356.12.26  = { 
+				add_claim = POL
+} #BT Out 
+
 1387.2.1  = { owner = POL controller = POL remove_claim = POL add_core = POL }
 1569.7.1  = {	owner = PLC
 		controller = PLC

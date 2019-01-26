@@ -1,0 +1,8 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+primary_culture = pecheneg
+religion = tengri_pagan_reformed
+secondary_religion = orthodox
+technology_group = western_nomad_group
+capital = 2451

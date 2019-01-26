@@ -26,6 +26,16 @@ discovered_by = GLH
 discovered_by = AST
 discovered_by = QAS
 
+1356.12.24  = { 
+				owner = HUN controller = HUN add_core = HUN remove_core = CUM
+				religion = catholic
+} #BT In
+
+1356.12.26  = { 
+				owner = CUM controller = CUM add_core = CUM remove_core = HUN
+				religion = tengri_pagan_reformed
+} #BT Out
+
 1499.1.1 = { religion = catholic }
 1506.1.1  = { revolt = { type = anti_tax_rebels size = 1.5 } controller = REB } # Szekely rebellion
 1507.1.1  = { revolt = {} controller = CUM } # Estimated #Formerly HUN

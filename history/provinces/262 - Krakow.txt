@@ -32,6 +32,14 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
+1356.12.24  = { 
+				owner = KRA controller = KRA
+} #BT In
+
+1356.12.26  = { 
+				owner = POL controller = POL
+} #BT Out
+
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

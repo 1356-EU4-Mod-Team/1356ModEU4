@@ -13,7 +13,7 @@ country_decisions = {
 			has_discovered = 358
 			358 = {
 				NOT = { has_great_project = great_library }
-				NOT = { has_construction = great_project  } 
+				NOT = { has_construction = great_library  } 
 			}
 			adm_tech = 12 #Would be ADM 9 in vanilla?
 		}
@@ -51,7 +51,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
 	cancel_great_library = {
 		major = yes
 		potential = {
@@ -59,12 +58,12 @@ country_decisions = {
 			owns_or_vassal_of = 358
 			is_subject = no
 			358 = {
-				has_construction = great_project 
+				has_construction = great_library 
 			}
 		}
 		allow = {
 			358 = {
-				has_construction = great_project 
+				has_construction = great_library
 			}
 		}
 		effect = {
@@ -76,4 +75,64 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
+	build_great_cathedral_notre_dame = {
+		major = yes
+		potential = {
+			current_age = age_of_feudalism
+			religion_group = christian
+			owns_or_vassal_of  = 183 #Paris
+			OR = { #AI check
+				ai = no
+				AND = { #For AI's
+					treasury = 2000
+					NOT = { has_country_flag = great_cathedral_build_flag }
+				}
+			}
+			183 = {
+				NOT = { has_great_project = great_cathedral_notre_dame }
+			}
+		}
+		allow = {
+			owns_or_vassal_of  = 183 #Paris
+			current_age = age_of_feudalism
+			religion_group = christian
+			NOT = { has_country_flag = great_cathedral_build_flag }
+			is_subject = no			
+			treasury = 2000
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+		}
+		effect = {
+			add_treasury = -2000
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			set_country_flag = great_cathedral_notre_dame_build_flag
+			183 = { add_great_project = great_cathedral_notre_dame }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	cancel_great_cathedral_notre_dame = {
+		major = yes
+		potential = {
+			ai = no
+			is_subject = no
+			183 = { has_great_project = great_cathedral_notre_dame }
+			owns_or_vassal_of = 183
+		}
+		allow = {
+			183 = {	has_great_project = great_cathedral_notre_dame }
+		}
+		effect = {
+			183 = {	cancel_construction = yes }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
 }

@@ -1,0 +1,22 @@
+# Yotvings
+#Province IDs changed
+
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+primary_culture = yotvingian
+add_accepted_culture = lithuanian
+religion = baltic_pagan_reformed
+technology_group = eastern
+historical_friend = LIT
+capital = 269 # Podlasie
+
+1285.1.1 = {
+	monarch = {
+		name = "Rukals"
+		dynasty = "Skomantin"
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+} #son of great chief Skomants

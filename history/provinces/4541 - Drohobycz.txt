@@ -11,7 +11,7 @@ trade_goods = livestock
 base_manpower = 1
 capital = "Drohobycz"
 is_city = yes
-add_core = POL
+add_claim = POL
 add_core = VOL
 
 
@@ -26,6 +26,14 @@ discovered_by = ottoman
 discovered_by = muslim
 
 1355.1.1 = { owner = VOL controller = VOL add_core = VOL }
+
+1356.12.24  = { 
+				remove_claim = POL
+} #BT In
+
+1356.12.26  = { 
+				add_claim = POL
+} #BT Out
 
 1387.2.1  = { owner = POL controller = POL remove_claim = POL add_core = POL }
 1492.1.1 = { unrest = 0 } 

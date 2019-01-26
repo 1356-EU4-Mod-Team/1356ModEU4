@@ -35,3 +35,11 @@ SLR = "countries/BT_Salerno.txt" #
 SDL = "countries/BT_Stendal.txt"
 SPO = "countries/BT_Spoleto.txt"
 TVO = "countries/BT_Treviso.txt"
+
+# New in 1.2
+
+YOT = "countries/BT_Yotvings.txt"
+SNZ = "countries/BT_Sandomierz.txt"
+TRV = "countries/BT_Turov.txt"
+PEY = "countries/BT_Pereyaslav.txt"
+PEC = "countries/BT_Pechenegs.txt"

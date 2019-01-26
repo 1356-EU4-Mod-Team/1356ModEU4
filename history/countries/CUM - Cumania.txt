@@ -1,10 +1,20 @@
 government = tribal
 primary_culture = cuman
-religion = catholic
+religion = tengri_pagan_reformed
+secondary_religion = orthodox
 technology_group = eastern
 capital = 4125	# Szolnok
 government_rank = 2
 
+1356.12.24  = { 
+				capital = 1974 # Yedishkul
+				add_accepted_culture = crimean
+} #BT In
+
+1356.12.26  = { 
+				capital = 4125 # Szolnok
+				remove_accepted_culture = crimean
+} #BT Out
 
 1356.1.1 = { #Placeholder till we can find someone to rule
 	monarch = {

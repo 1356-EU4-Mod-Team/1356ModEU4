@@ -33,6 +33,15 @@ national_focus = ADM
 	}
 }
 
+1356.12.24  = { 
+				capital = 254 # Pozan
+} #BT In
+
+1356.12.26  = { 
+				capital = 262 # Krakow
+} #BT Out
+
+
 1365.1.1 = {
 	queen = {
 		country_of_origin = SIL

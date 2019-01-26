@@ -9,42 +9,30 @@ age_of_feudalism = {
 	
 
 	objectives = {
-		obj_higher_prestige = { #Would like to change, but to what?
+		obj_higher_prestige = { #Change to New Institution related thing
 			prestige = 80
 		}
 		obj_trade_league = { #Suggested by Mexdus on the workshop suggestion thread
 			OR = {
 				is_in_trade_league = yes
-				#has_country_flag = is_in_hansa_trade_league_flag
-				has_country_modifier = member_of_hansa_ev
+				mercantilism = 25
 			}
 		}
-		obj_20_development_city = { #Change in future?
-			custom_trigger_tooltip = {
-				tooltip = obj_20_development_city_tooltip
-				any_owned_province = {
-					is_core = ROOT
-					controlled_by = owner
-					development = 20
-				}
-			}
+		obj_powerful_estate = { #
+			num_of_powerful_estates = 2
 		}
 		obj_papal_controller = { 
-			allow = {
-				religion = catholic
-			}
+			allow = { religion = catholic }
 			is_papal_controller = yes
 	 	}
 		obj_feudalism_muslim_piety = { 
-			allow = {
-				religion_group = muslim
-			}
+			allow = { religion_group = muslim }
 			OR = {
 				piety = 0.75
 				NOT = { piety = -0.75}
 			}
 	 	}
-		obj_non_christian_muslim_religious_unity = { 
+		obj_non_christian_muslim_religious_unity = { #Change to new institution thing. Gunpowder?
 			allow = {
 				NOT = { religion = catholic }
 				NOT = { religion_group = muslim }
@@ -88,18 +76,19 @@ age_of_feudalism = {
 				owns_core_province = 225 #Cordoba
 			}
 		}
-		obj_feudal_generic_non_abrahamic_holy_war = { 
+		obj_feudal_generic_non_abrahamic_competent_ruler = { 
 			allow = {
 				NOT = { religion_group = christian }
 				NOT = { religion_group = muslim }
 			}
-			OR = {
-				has_border_with_religious_enemy = yes
-				at_war_with_religious_enemy = yes
-			}
+			adm = 3
+			dip = 3
+			mil = 3
 		}
 		obj_many_vassals_f = {
+			government_rank = 2
 			vassal = 3
+			
 		}		
 		obj_cav_army = { #Suggested by Mexdus on the workshop suggestion thread
 			cavalry_fraction = 0.6 #Too high?
@@ -131,7 +120,7 @@ age_of_feudalism = {
 				factor = 10
 			}			
 		}
-		ab_gothic_architecture = { #Suggested by Mexdus on the workshop suggestion thread #For now no way to let you have early cathedrals. Sorry!
+		ab_gothic_architecture = { #Change to the unique cathedriel feature
 			modifier = {
 				build_cost = -0.25
 				build_time = -0.35

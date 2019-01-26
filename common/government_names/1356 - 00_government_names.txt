@@ -47,9 +47,62 @@ egyptian_nation_non_muslim = {
 	trigger = {
 		tag = EGY
 		primary_culture = old_egyptian_mod
+		religion_group = pagan
 		OR = {
-			religion_group = pagan
-			religion_group = christian
+			government = monarchy
+			government = tribal
+			government = theocracy
 		}
+	}
+}
+
+egyptian_nation_theocracy_christian = {
+	rank = {
+		1 = DUCHY_EGY
+		2 = KINGDOM_EGY
+		3 = EMPIRE_EGY
+	}
+	
+	ruler_male = {
+		1 = PATRIARCH_EGY_RULER
+		2 = PATRIARCH_EGY_RULER
+		3 = GREAT_PATRIARCH_EGY_RULER
+	}
+	
+	ruler_female = {
+		1 = FEM_PATRIARCH_EGY_RULER
+		2 = FEM_PATRIARCH_EGY_RULER
+		3 = FEM_GREAT_PATRIARCH_EGY_RULER
+	}
+	
+	consort_male = {
+		1 = EGY_PATRIARCH_CONSORT
+		2 = EGY_PATRIARCH_CONSORT
+		3 = EGY_PATRIARCH_CONSORT
+	}
+
+	consort_female = {
+		1 = EGY_PATRIARCH_CONSORT_FEM
+		2 = EGY_PATRIARCH_CONSORT_FEM
+		3 = EGY_PATRIARCH_CONSORT_FEM
+	}
+	
+	heir_male = {
+		1 = CHOSEN_HEIR_EGY
+		2 = CHOSEN_HEIR_EGY
+		3 = CHOSEN_HEIR_EGY
+	}
+
+	heir_female = {
+		1 = CHOSEN_HEIR_EGY_FEM
+		2 = CHOSEN_HEIR_EGY_FEM
+		3 = CHOSEN_HEIR_EGY_FEM
+	}
+	
+	trigger = {
+		tag = EGY
+		primary_culture = old_egyptian_mod
+		religion_group = christian
+		government = theocracy
 	}
 }

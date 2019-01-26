@@ -30,6 +30,13 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
+1356.12.24  = { 
+				owner = SNZ controller = SNZ add_core = SNZ
+} #BT In
+
+1356.12.26  = { 
+				owner = POL controller = POL remove_core = SNZ
+} #BT Out
 
 1490.1.1 = { unrest = 6 } # Uprising led by Mukha
 1492.1.1 = { unrest = 0 } 

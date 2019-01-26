@@ -9,3 +9,16 @@ great_library = {
 	}
 }
 
+great_cathedral_notre_dame = {
+	ambient_object = notre_dame
+	province = 183
+	time = 1#20 #Set back to 120 later
+	
+	modifier = {
+		local_institution_spread = 0.1
+		local_monthly_devastation = -0.1
+		tax_income = 1
+		local_unrest = -2
+	}
+}
+

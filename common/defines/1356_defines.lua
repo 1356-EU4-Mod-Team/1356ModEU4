@@ -7,4 +7,4 @@ NDefines.NGraphics.COLOR_WASTELANDS = 1
 NDefines.NGame.RANDOM_LUCKY_TECH_WEIGHT = 0
 NDefines.NAI.DEVELOPMENT_CAP_BASE = 20	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
 NDefines.NAI.DEVELOPMENT_CAP_MULT = 3
-NDefines.NMilitary.BASE_COMBAT_WIDTH = 10.0,						-- _MDEF_BASE_COMBAT_WIDTH_
+-- NDefines.NMilitary.BASE_COMBAT_WIDTH = 10.0,						-- _MDEF_BASE_COMBAT_WIDTH_

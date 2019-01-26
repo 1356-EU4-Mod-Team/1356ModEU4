@@ -20,6 +20,15 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 1355.1.1 = { owner = CHR controller = CHR add_core = CHR }
+
+1356.12.24  = { 
+				remove_core = LIT
+} #BT In
+
+1356.12.26  = { 
+				add_core = LIT
+} #BT Out
+
 1363.1.1   = { owner = LIT controller = LIT add_core = LIT
 	       base_tax = 2 base_production = 2 base_manpower = 1 add_local_autonomy = 10
 	     } # Declining Influrnce in Lituanian State

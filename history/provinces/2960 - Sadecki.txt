@@ -24,6 +24,14 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { 
+				owner = KRA controller = KRA add_core = KRA
+} #BT In
+
+1356.12.26  = { 
+				owner = POL controller = POL remove_core = KRA
+} #BT Out
+
 1558.1.1 = { religion = protestant }
 1569.7.1 = {
 	owner = PLC

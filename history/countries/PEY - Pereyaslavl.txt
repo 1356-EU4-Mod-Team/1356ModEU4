@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+mercantilism = 0.1
+primary_culture = ruthenian
+religion = orthodox
+technology_group = eastern
+capital = 2407	# Pereyaslav
+
+1206.1.1 = {
+	monarch = {
+		name = "Vladimir"
+		dynasty = "Rurikovich"
+		adm = 1
+		dip = 2
+		mil = 5
+	}
+}

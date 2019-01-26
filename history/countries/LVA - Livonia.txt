@@ -6,6 +6,14 @@ religion = catholic
 primary_culture = latvian
 capital = 1834
 
+1356.12.24  = { 
+				religion = baltic_pagan_reformed
+} #BT In
+
+1356.12.26  = { 
+				religion = catholic
+} #BT Out
+
 1542.1.1 = {
 	religion = protestant
 }

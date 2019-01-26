@@ -21,10 +21,12 @@ discovered_by = eastern
 
 1356.12.24  = { 
 				owner = EST controller = EST
+				religion = finnish_pagan_reformed
 } #BT In
 
 1356.12.26  = { 
 				owner = LIV controller = LIV
+				religion = catholic
 } #BT Out
 
 1542.1.1 = { religion = protestant} # Unknown date
