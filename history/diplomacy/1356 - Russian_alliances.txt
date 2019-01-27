@@ -3,7 +3,7 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = RSO
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -11,7 +11,7 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = MOS
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -19,7 +19,7 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = TVE
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -27,7 +27,7 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = NZH
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -35,7 +35,7 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = SMO
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -43,7 +43,7 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = YAR
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -51,7 +51,7 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = OKA
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -59,7 +59,7 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = MRM
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -67,7 +67,7 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = NOV
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -75,7 +75,7 @@ dependency = {
 alliance = {
 	first = LIT
 	second = TVE
-	start_date = 1350.1.1
+	start_date = 1356.12.26 #1350.1.1
 	end_date = 1377.5.29 
 }
 
@@ -83,7 +83,7 @@ alliance = {
 alliance = {
 	first = NOV
 	second = PSK
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -91,35 +91,35 @@ alliance = {
 alliance = {
 	first = MOS
 	second = PSK
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
 alliance = {
 	first = MOS
 	second = SMO
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
 alliance = {
 	first = MOS
 	second = BLO
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
 alliance = {
 	first = MOS
 	second = YAR
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
 alliance = {
 	first = MOS
 	second = RSO
-	start_date = 1355.1.1
+	start_date = 1356.12.26 #1355.1.1
 	end_date = 1380.9.8
 }
 
@@ -180,7 +180,7 @@ vassal = {
 alliance = {
 	first = RYA
 	second = GLH
-	start_date = 1356.1.1
+	start_date = 1356.12.26 # 1356.1.1
 	end_date = 1380.9.8
 }
 
