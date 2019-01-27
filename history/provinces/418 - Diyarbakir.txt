@@ -24,6 +24,9 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
+1356.12.24 = { owner = EDE controller = EDE remove_core = JLR add_core = EDE } #BT In
+1356.12.26 = { owner = JLR controller = JLR remove_core = EDE add_core = JLR } #BT Out
+
 1396.1.1  = { owner = TIM controller = TIM add_core = TIM religion = sunni }
 1405.2.19 = { owner = AKK controller = AKK add_core = AKK } # The Ak Koyunlu
 1409.5.13 = { remove_core = TIM }

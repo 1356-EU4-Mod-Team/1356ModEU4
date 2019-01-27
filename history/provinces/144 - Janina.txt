@@ -29,8 +29,8 @@ discovered_by = GLH
 discovered_by = AST
 discovered_by = QAS
 
-1356.12.24  = { owner = BYZ controller = BYZ } #BT In
-1356.12.26  = { owner = EPI controller = EPI } #BT Out
+1356.12.24  = { owner = BYZ controller = BYZ remove_core = SER } #BT In
+1356.12.26  = { owner = EPI controller = EPI add_core = SER } #BT Out
 
 1359.7.1   = { owner = TES controller = TES }
 1366.7.1   = { owner = EPI controller = EPI }

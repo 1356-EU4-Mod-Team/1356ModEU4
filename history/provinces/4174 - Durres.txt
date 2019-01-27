@@ -29,8 +29,8 @@ discovered_by = QAS
 extra_cost = 8
 center_of_trade = 1
 
-1356.12.24 = { owner = ALB controller = ALB remove_core = NAP add_claim = BYZ } #BT In
-1356.12.26 = { owner = NAP controller = NAP add_core = NAP remove_claim = BYZ } #BT Out
+1356.12.24 = { owner = ALB controller = ALB remove_core = NAP } #BT In
+1356.12.26 = { owner = NAP controller = NAP add_core = NAP } #BT Out
 
 1367.1.1  = { owner = ALB controller = ALB }
 1376.1.1  = { owner = NAP controller = NAP }

@@ -28,12 +28,12 @@ discovered_by = AST
 discovered_by = QAS
 
 1356.12.24  = { 
-				owner = KUR controller = KUR add_core = KUR
+				owner = KUR controller = KUR add_core = KUR remove_core = LIT
 				base_tax = 4 base_production = 3 base_manpower = 3
 } #BT In
 
 1356.12.26  = { 
-				owner = LIT controller = LIT remove_core = KUR
+				owner = LIT controller = LIT add_core = LIT remove_core = KUR
 				base_tax = 3 base_production = 3 base_manpower = 3
 } #BT Out
 
