@@ -7,21 +7,23 @@ war_goal = {
 	casus_belli = cb_crusade
 }
 
-1356.12.1 = {
+1356.3.24 = {
 	add_attacker = KOJ
 	add_attacker = ATO
 	add_attacker = TPL
 	add_attacker = EDE
+	add_attacker = ASY
 	add_defender = SYR
 	add_defender = FAD
 }
 
 # End of war
-1359.12.26 = { #Historically in BT timeline it ends 1359.8.22
+1356.12.26 = { #Historically in BT timeline it ends 1359.8.22
 	rem_attacker = KOJ
 	rem_attacker = ATO
 	rem_attacker = TPL
 	rem_attacker = EDE
+	rem_attacker = ASY
 	rem_defender = SYR
 	rem_defender = FAD
 }
