@@ -5,7 +5,7 @@ war_goal = {
 	province = 136
 }
 
-1345.1.1 = { 
+1356.12.26 = { # 1345.1.1
 	add_attacker = CRO
 	add_attacker = HUN
 	add_defender = VEN
