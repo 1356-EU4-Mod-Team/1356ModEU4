@@ -68,37 +68,21 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		OR = {
-			AND = {
-				tag = ALX
-				owns_core_province = 358
-				religion = sunni
-				primary_culture = al_misr_arabic
-				358 = {
-					culture = old_egyptian_mod
-					religion = coptic
-				}
-			}
-			AND = {
-				tag = MAM
-				NOT = { exists = ALX }
-				owns_core_province = 358
-				religion = sunni
-				primary_culture = al_misr_arabic
-				358 = {
-					culture = old_egyptian_mod
-					religion = coptic
-				}
-			}
+		tag = ALX
+		is_year = 1360
+		NOT = { is_year = 1375 }
+		owns_core_province = 358
+		religion = sunni
+		primary_culture = al_misr_arabic
+		358 = {
+			culture = old_egyptian_mod
+			religion = coptic
 		}
 		OR = {
 			NOT = { vassal_of = MAM }
-			MAM = { has_country_modifier = alexandria_tolerated_copts }
 			has_country_modifier = alexandria_tolerated_copts
 		}
 		358 = { has_province_modifier = alexandria_coptic_church_province_modifier }
-		is_year = 1360
-		NOT = { is_year = 1375 }
 		NOT = { has_country_modifier = alexandria_not_tolerated_copts }
 	}
 	
@@ -108,7 +92,6 @@ country_event = {
 	
 	option = { #Yes!
 		name = alexandriaflandy.3.a
-		trigger = { tag = ALX }
 		ai_chance = { factor = 5 }
 		change_religion = coptic
 		change_primary_culture = old_egyptian_mod
@@ -169,21 +152,17 @@ province_event = {
 	picture = RELIGION_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
+		tag = ALX
+		NOT = { is_year = 1380 }
 		358 = {
 			culture = old_egyptian_mod
 			religion = coptic
 		}
-		exists = MAM
-		MAM = { #This should instead reference the TAG
-			tag = MAM
-			NOT = { is_year = 1380 }
-			NOT = { has_global_flag = alexandria_massacure_flag }
-			NOT = { culture_group = byzantine }
-			NOT = { primary_culture = old_egyptian_mod }
-		}
+		NOT = { has_global_flag = alexandria_massacure_flag }
+		NOT = { culture_group = byzantine }
+		NOT = { primary_culture = old_egyptian_mod }
 	
 	}
 	
@@ -227,9 +206,7 @@ country_event = {
 	desc = alexandriaflandy.5.d
 	picture = ANGRY_MOB_eventPicture
 	
-	fire_only_once = yes
 	is_triggered_only = yes
-	major = yes
 		
 	option = { #The Minorities go away
 		name = alexandriaflandy.5.a
