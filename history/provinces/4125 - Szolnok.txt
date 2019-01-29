@@ -29,11 +29,13 @@ discovered_by = QAS
 1356.12.24  = { 
 				owner = HUN controller = HUN add_core = HUN remove_core = CUM
 				religion = catholic
+				culture = hungarian
 } #BT In
 
 1356.12.26  = { 
 				owner = CUM controller = CUM add_core = CUM remove_core = HUN
 				religion = tengri_pagan_reformed
+				culture = cuman
 } #BT Out
 
 1499.1.1 = { religion = catholic }

@@ -18,11 +18,13 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { owner = TOU controller = TOU
+1356.12.24  = { owner = TOU controller = TOU remove_core = FRA
 				base_tax = 7 base_production = 7 base_manpower = 6 
 } #BT In
 
-1356.12.26  = {	owner = FRD controller = FRD add_core = FRD remove_core = FRA base_tax = 6 base_production = 6 base_manpower = 5 } #BT Out
+1356.12.26  = {	owner = FRD controller = FRD add_core = FRD
+				base_tax = 6 base_production = 6 base_manpower = 5
+} #BT Out
 
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
 

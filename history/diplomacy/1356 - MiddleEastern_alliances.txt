@@ -310,7 +310,7 @@ vassal = {
 guarantee = {
 	first = MAM
 	second = HED
-	start_date = 1356.1.1
+	start_date = 1356.12.26 # 1356.1.1
 	end_date = 1444.1.1
 }
 
