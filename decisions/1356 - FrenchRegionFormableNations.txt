@@ -721,7 +721,10 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			NOT = { num_of_subjects = 1 }
 			is_year = 1454
-			has_country_flag = can_form_france_FRD_flag
+			OR = {
+				has_country_flag = can_form_france_FRD_flag
+				ai = yes
+			}
 			owns_core_province = 168	# Caen
 			owns_core_province = 174	# Aquitaine
 			owns_core_province = 175	# Armagnac

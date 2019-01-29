@@ -1398,3 +1398,65 @@ province_event = { #Is this done correct?
 		remove_province_modifier = 1356_fra_alencon_family_rule_prov
 	}
 }
+
+#Revoking the Nobilitys Land fully
+country_event = {
+	id = flavor_fla_fra.28
+	title = flavor_fla_fra.28.t
+	desc = flavor_fla_fra.28.desc
+	picture = FEAST_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Pay them off
+		name = flavor_fla_fra.28.a
+		ai_chance = { factor = 80 }
+		france_region = { remove_province_modifier = 1356_frd_controlled_by_nobles_prov_modifier }
+		add_treasury = -400
+		add_adm_power = -200
+		add_dip_power = -200
+		add_mil_power = -200
+		
+	}
+	option = { #Take it by force
+		name = flavor_fla_fra.28.b
+		ai_chance = { factor = 20 }
+		france_region = { remove_province_modifier = 1356_frd_controlled_by_nobles_prov_modifier }
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+		179 = { #Berry
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+				win = yes
+			}
+		}
+		180 = { #Haut-Poitou
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+		}
+		196 = { #Toulouse
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+				win = yes
+			}
+		}
+		184 = { #Orleans
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+				win = yes
+			}
+		}
+		
+		
+	}
+}

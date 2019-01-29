@@ -10,7 +10,7 @@ country_event = {
 
 	trigger = {	
 		ai = no
-		start_date = 1356.12.25
+		NOT = { started_in = 1356.12.26 }
 	}
 	
 	option = {
@@ -409,7 +409,7 @@ country_event = {
 
 	trigger = {
 		tag = ITA
-		start_date = 1356.12.25
+		NOT = { started_in = 1356.12.26 }
 		is_in_war = {
 			attacker_leader = GER
 			defender_leader = ROOT
@@ -490,7 +490,7 @@ country_event = {
 	
 	trigger = {
 	tag = BYZ
-	start_date = 1356.12.25
+	NOT = { started_in = 1356.12.26 }
 	is_at_war = no
 	SIC = {
 		exists = yes
@@ -530,7 +530,7 @@ country_event = {
 	
 	trigger = {
 		tag = SIC
-		start_date = 1356.12.25
+		NOT = { started_in = 1356.12.26 }
 		is_subject = yes
 		war_with = ITA 
 		BYZ = {	has_country_flag = support_sicilian_revolt }
@@ -583,7 +583,7 @@ country_event = {
 	fire_only_once = yes
 	
     trigger = {
-		start_date = 1356.12.25
+		NOT = { started_in = 1356.12.26 }
         is_year = 1360
         ai = no
     }

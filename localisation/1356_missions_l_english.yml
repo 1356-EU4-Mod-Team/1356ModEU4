@@ -1197,7 +1197,15 @@
  hyw_declare_war_reclaimation_part_3_mission_desc: "At a point in the Hundred Years War we were pushed out of Paris with our King captured. Now we have reconquered the South we can push the English far out of the North and ensure that our Capital is under firm control of the King himself."
  hyw_centralized_vassals_mission_title: "A Centralized Kingdom"
  hyw_centralized_vassals_mission_desc: "We have reigned in the power of our vassals, now they are powerless in our realm, what Nobility that are left are either members of our court or exiled. Before we can truely claim to be centralized however, we must completly push out the English from France for good!"
- 
+ hyw_push_england_out_of_the_north_fra_title: "Push the English Out"
+ hyw_push_england_out_of_the_north_fra_desc: "Now that we've secured southern France we should turn our attention to the north. This time it may be harder to push the English out of our Kingdom seeing as London is so close to Normandy. If we organize all the forces we have perhaps we could have a chance at finally ending this war."
+ hyw_ensure_no_cores_on_france_mission_title: "Revoke Englands Claims"
+ hyw_ensure_no_cores_on_france_mission_desc: "Now that the English no longer control any land on the mainland we should revoke all the claims they have on us, this way the war can never start back up and we can save future generations from suffering through this bloodshed."
+ hyw_an_end_to_the_feudal_era_mission_title: "The End of Feudalism"
+ hyw_an_end_to_the_feudal_era_mission_desc: "Now that our vassals have been integrated and the English pushed out of France we can turn our attention inwards. Many nations around us have already centralized with the Kings holding absolute power. Perhaps now is our chance to wield absolute power finally?"
+ hyw_generic_placeholder_mission_1_title: "Revoke the Privilages"
+ hyw_generic_placeholder_mission_1_desc: "The Nobility have been a thorn in our side since the days of Charlamagne, and while things have gotten better slowly it's still not good enough. While many Kingdoms around us have centralized power around their King we are still lagging behind. Many of our Dukes and Counts cling to the old ways and their power. If we truley wish to have a chance at moving forward we must revoke what power and land they have left, however they will not be happy. Perhaps we can pay them off to prevent a revolt?"
+
  #These were in previous patches, but were reworked to better suit the changing of who is integrated first. The wording HAS been changed.
  hyw_punish_charles_ii_normandy_title: "Revoke Normandy"
  hyw_punish_charles_ii_normandy_desc: "Charles II and his scheming must be stopped! His plots and backstabbing nature must be put to and end once and for all. His French land must be returned to the crown! Historically during the Hundreds years war King Charles II of Navarra, who controlled the Duchy of Normandy, played both sides of the war for what he wanted, switching sides when it was convenient for him. In reality, he had his eyes set on the French throne and would stop at nothing to get what he wanted. This lead to France and England punishing Charles II by taking all his land outside of Navarra away from him. France regained its dejure duchy of Normandy for the most part, and the thorn was dealt with."

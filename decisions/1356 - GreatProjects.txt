@@ -10,7 +10,7 @@ country_decisions = {
 					owns_or_vassal_of = 358
 				}
 			}
-			has_discovered = 358
+			is_core = 358
 			358 = {
 				NOT = { has_great_project = great_library }
 				NOT = { has_construction = great_library  } 

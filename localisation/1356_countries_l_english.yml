@@ -195,6 +195,7 @@
  VAU_ADJ:0 "Vaudese"
  TPM:0 "Persia"
  TPM_ADJ:0 "Persian"
+ #V30
  CUM: "Cumania"
  CUM_ADJ: "Cuman"
  EDE: "Edessa"
@@ -217,8 +218,8 @@
  LUS_ADJ: "Lusatian"
  RHI: "Rhineland"
  RHI_ADJ: "Rhineish"
- GUY:2 "Gascony"
- GUY_ADJ:2 "Gascon"
+ GUY: "Gascony"
+ GUY_ADJ: "Gascon"
  OCC: "Occitania"
  OCC_ADJ: "Occitanian"
  CUN: "Cuneo"
