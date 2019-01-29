@@ -12,7 +12,8 @@ country_event = {
 	trigger = {
 		tag = MAJ
 		stability = -3
-		is_year = 1406
+		is_year = 1370 #Tweaked for balance
+		#is_year = 1406 #Historical, changed for balance
 	}
 
 	mean_time_to_happen = {

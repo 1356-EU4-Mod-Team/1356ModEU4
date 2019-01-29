@@ -18,7 +18,8 @@ province_event = {
 			religion = sunni
 			province_id = 2686
 		}
-		is_year = 1450
+		is_year = 1420
+		NOT = { is_year = 1500 }
 	}
 	mean_time_to_happen = {
 		months = 2500
@@ -77,6 +78,7 @@ country_event = {
 			tag = BLI
 		}
 		is_year = 1400
+		NOT = { is_year = 1480 }
 	}
 	mean_time_to_happen = {
 		months = 350

@@ -4,7 +4,7 @@ owner = SIC
 controller = SIC
 culture = sicilian 
 religion = catholic 
-hre = yes 
+hre = yes
 base_tax = 6
 base_production = 6
 trade_goods = wine
@@ -18,6 +18,8 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.25 = { hre = yes }
+1356.12.26 = { hre = no }
 
 1409.7.25 = {
 	owner = ARA

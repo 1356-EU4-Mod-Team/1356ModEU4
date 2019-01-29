@@ -55,7 +55,8 @@ country_event = {
 
 	trigger = { #Fix it later so only europeans get this, its weird that a native american player gets this. Very. Weird.
 		ai = no
-		start_date = 1356.12.25
+		start_date = 1356.12.26
+		NOT = { is_year = 1420 }
 		NAV = {
 			NOT = { has_ruler = "Charles II" }
 		}

@@ -1850,7 +1850,7 @@ yuan_toqtoa_interior_religion = { #Toqto's Return - Dealing with the topic of Re
 	
 		trigger = {
 			calc_true_if = {
-				all_country = {
+				all_core_province  = {
 					religion = ROOT
 				}
 				amount = 10
@@ -1869,7 +1869,7 @@ yuan_toqtoa_interior_religion = { #Toqto's Return - Dealing with the topic of Re
 	
 		trigger = {
 			calc_true_if = {
-				all_country = {
+				all_core_province  = {
 					religion = ROOT
 				}
 				amount = 30
@@ -1888,7 +1888,7 @@ yuan_toqtoa_interior_religion = { #Toqto's Return - Dealing with the topic of Re
 	
 		trigger = {
 			calc_true_if = {
-				all_country = {
+				all_core_province  = {
 					religion = ROOT
 				}
 				amount = 50
