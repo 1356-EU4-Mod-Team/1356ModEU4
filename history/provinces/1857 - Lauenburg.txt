@@ -1,8 +1,8 @@
 #BarbarossasThron
 #1857 - Lauenburg
 
-owner = SHL
-controller = SHL
+owner = LAU
+controller = LAU
 add_core = SHL
 add_core = LAU
 culture = hannoverian

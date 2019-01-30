@@ -90,3 +90,14 @@ groenlands_knorr_stockholm_modifier = { #Stockholm
 1356_anti_english_modifier = { #For future mechanics about Wales/Scotland/Ireland holding out against the English.
 
 }
+
+#Institution
+
+home_of_mercantilism_institution_modifier = {
+	trade_goods_size = 1.5
+	trade_value = 0.5
+}
+
+birthplace_of_gunpowder_modifier = {
+
+}

@@ -254,7 +254,7 @@ age_of_feudalism = {
 	}
 }
 
-age_of_discovery = {
+age_of_discovery = { #Partially edited by #1356
 	start = 1400
 	
 	can_start = {

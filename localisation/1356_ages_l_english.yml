@@ -62,3 +62,6 @@
  obj_powerful_estate_desc: "Have at least two estates at 70% influence each."
  obj_feudal_generic_non_abrahamic_competent_ruler: "Competent Ruler"
  obj_feudal_generic_non_abrahamic_competent_ruler_desc: "Have a ruler with at least 3 in each Adm, Dip, and Mil stats."
+ 
+ #V30
+ mercantilism_institution: "Mercantilism"

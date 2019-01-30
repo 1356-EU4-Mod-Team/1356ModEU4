@@ -8,13 +8,18 @@
 # It checks for adjacent provinces or provinces one seazone away.
 # Friendly is defined as at positive relations or owned by the same country that owns the province.
 
+#1356 NOTE:
+#Note: If you're adding institutions/modifying them having an institution start in a nations capital FORCES the nation to start with it. 
+#Unsure if preventable.
+
 #######################################
 # Feudalism.  
 # 
 # Most in the old world start with it.
 #######################################
 
-feudalism = {
+feudalism = { #Heavily #Edited by 1356
+
 	penalty = 0.5
 	bonus = {
 		free_leader_pool = 1
@@ -306,12 +311,585 @@ feudalism = {
 }
 
 #######################################
+# Mercantilism.  
+# 
+# Starts in Lubeck & Various Trade Centers around the world
+#######################################
+
+
+mercantilism_institution = { #1356 New Content
+
+	penalty = 0.5
+	bonus = {
+		trade_range_modifier = 0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trade_company_efficiency = 0.0
+
+	historical_start_date = 1350.1.1
+	historical_start_province = 45 # Lubeck
+
+	history = {
+		#is_year = 1350
+		OR = {
+			AND = { #Nation Designer
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				owner = {
+					is_playing_custom_nation = yes
+					OR = {
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+						technology_group = muslim
+						technology_group = indian
+						technology_group = chinese
+						#technology_group = high_american #Is listed below as High Americans get it regardless of if Nation Designer is used.
+					}
+				}
+			}
+			owner = { technology_group = high_american }
+			AND = { #Low Countries, Chinese, Korean, Japanese, Greek, Germanic, Danish, Swedish, Scanian, English, USA, French
+				owner = { is_playing_custom_nation = no }
+				is_year = 1350
+				OR = { #Note, having an institution spawn in a nations capital forces ALL their provinces to have it.(????)
+					province_id = 151 #Constantinople
+					province_id = 112 #Venice
+					province_id = 101 #Genoa
+					province_id = 44 #Hamburg
+					province_id = 54 #Stade
+					#province_id = 4383 #Den Haag
+					province_id = 2996 #Wismar
+					#province_id = 12 #Sjaelland
+					province_id = 6 #Lund
+					province_id = 14 #Fyn
+					province_id = 45 #Lubeck
+					province_id = 1874 #Bremen
+					province_id = 55 #Oldenburg
+					province_id = 25 #Gotland
+					province_id = 186 #Champagne
+					province_id = 267 #Plzen #Czech Province
+					province_id = 238 #Essex
+					province_id = 235 #Kent
+					province_id = 1860 #Norfolk
+					province_id = 118 #Rome
+					province_id = 220 #Valencia
+					province_id = 213 #Barcelona
+					province_id = 231 #Porto
+					province_id = 2983 #Salerno
+					province_id = 137 #Ragusa
+					province_id = 149 #Adrianople
+					province_id = 362 #Rosetta
+					province_id = 2312 #Wasit
+					province_id = 2313 #Antioch
+					province_id = 453 #Qarshi
+					#province_id = 446 #Herat
+					province_id = 445 #Merv
+					province_id = 399 #Qawasim
+					province_id = 4457 #Khambhat
+					province_id = 524 #Central Delhi
+					province_id = 2075 #Doaba
+					province_id = 597 #Johor
+					province_id = 286 #Azov
+					province_id = 1774 #Treviso
+					province_id = 1862 #Cremona
+					province_id = 115 #Pisa
+					province_id = 251 #Aberdeen
+					province_id = 97 #Amsterdam
+					province_id = 87 #Calais
+					#province_id = 90 #Vladderen
+					province_id = 1744 #Antwerpen
+					province_id = 695 #Hejian
+					province_id = 2745 #Gyeongju
+					province_id = 1020 #Kyoto
+					province_id = 2149 #Ningbo
+					province_id = 685 #Yangzhou
+					province_id = 667 #Canton
+					province_id = 700 #Xi'an
+					province_id = 682 #Wuchang
+					province_id = 680 #Chongqing
+					province_id = 34 #Ingermanland
+					province_id = 43 #Danzig
+				}
+			}
+			AND = {
+				owner = { is_playing_custom_nation = no }
+				is_year = 1360
+				OR = {
+					culture_group = germanic
+					culture_group = low_lands_culture_group
+					culture_group = korean_g
+					culture_group = japanese_g
+					AND = {
+						culture_group = east_asian
+						NOT = { tag = YUA }
+					}
+				}
+			}
+			AND = { #Aramaic, Armenian, Georgian, Pontic, Gothic, Cappadocian, Norwegian, Scottish, Northumbrian, French (Group), Latin, West Slavic
+				owner = { is_playing_custom_nation = no }
+				is_year = 1365
+				OR = {
+					culture_group = french
+					culture_group = latin
+					culture_group = west_slavic
+					culture_group = southeastasian_group
+					culture_group = burman
+					culture_group = eastern_aryan
+					culture_group = british
+					culture_group = scandinavian
+					culture_group = byzantine
+					AND = {
+						culture_group = east_asian
+						NOT = { tag = YUA }
+					}
+					AND = {
+						culture = aramaic
+						primary_culture = aramaic
+					}
+					AND = {
+						culture = armenian
+						primary_culture = armenian
+					}
+					AND = {
+						culture = georgian
+						primary_culture = georgian
+					}
+				}
+			}
+			AND = { #Egyptian, Old Egyptian, Syrian, Gaelic, Iberian, Moorish, Novgorodian
+				owner = { is_playing_custom_nation = no }
+				is_year = 1365
+				OR = {
+					culture_group = gaelic
+					culture_group = iberian 
+					culture_group = carpathian
+					culture_group = malay
+					AND = {
+						culture = al_misr_arabic
+						primary_culture = al_misr_arabic 
+					}
+					AND = {
+						culture = old_egyptian_mod
+						primary_culture = old_egyptian_mod 
+					}
+					AND = {
+						culture = al_suryah_arabic
+						primary_culture = al_suryah_arabic 
+					}
+					AND = {
+						culture = moorish
+						primary_culture = moorish
+					}
+					AND = {
+						culture = novgorodian
+						primary_culture = novgorodian
+					}
+				}
+			}
+			AND = { #Turkish
+				owner = { is_playing_custom_nation = no }
+				is_year = 1370
+				OR = {
+					culture_group = south_slavic
+					culture_group = baltic
+					AND = {
+						culture = turkish
+						primary_culture = turkish 
+						NOT = { tag = ERE } 
+						NOT = { tag = QON } 
+					}
+				}
+			}
+			AND = { #Persian, Azerbaijani, Kurdish, Luri, Mazandarani, Iraqi, Assyrian, Circassian, Dagestani, Icelandic, Maghreb, East Slavic
+				owner = { is_playing_custom_nation = no }
+				is_year = 1375
+				OR = {
+					culture_group = maghrebi
+					culture_group = east_slavic
+					AND = {
+						culture = persian
+						primary_culture = persian 
+						NOT = { tag = MUZ } 
+						NOT = { tag = INT } 
+					}
+					AND = {
+						culture = mazandarani
+						primary_culture = mazandarani 
+					}
+					AND = {
+						culture = luri
+						primary_culture = luri 
+					}
+					AND = { 
+						culture = azerbaijani
+						primary_culture = azerbaijani 
+						NOT = { tag = CHB } 
+					}
+					AND = { 
+						culture = kurdish
+						primary_culture = kurdish 
+						NOT = { tag = JLR } 
+					}
+					AND = {
+						culture = al_iraqiya_arabic
+						primary_culture = al_iraqiya_arabic 
+						NOT = { tag = JLR } 
+					}
+					AND = {
+						culture = circassian
+						primary_culture = circassian
+					}
+					AND = {
+						culture = dagestani
+						primary_culture = dagestani
+					}
+					AND = {
+						culture = assyrian
+						primary_culture = assyrian
+					}
+					AND = {
+						culture = icelandic
+						primary_culture = icelandic
+					}
+				}
+			}
+			AND = { #Baluchi, Afghan, Khorasani,
+				owner = { is_playing_custom_nation = no }
+				is_year = 1380
+				OR = {
+					AND = {
+						culture = khorasani
+						primary_culture = khorasani #1356
+						NOT = { tag = KRT } #1356
+						NOT = { tag = MIH } #1356
+						NOT = { tag = SAB } #1356
+						NOT = { tag = TRS } #1356
+					}
+					AND = {
+						culture = afghani
+						primary_culture = afghani #1356
+						NOT = { tag = KRT } #1356
+						NOT = { tag = MIH } #1356
+						NOT = { tag = SAB } #1356
+						NOT = { tag = TRS } #1356
+					}
+					AND = {
+						culture = baluchi
+						primary_culture = baluchi #1356
+						NOT = { tag = KRT } #1356
+						NOT = { tag = MIH } #1356
+						NOT = { tag = SAB } #1356
+						NOT = { tag = TRS } #1356
+					}
+				}
+			}
+			AND = { #Hindusthani, Dravidian, West Aryan
+				is_year = 1380
+				OR = {
+					culture_group = hindusthani
+					culture_group = western_aryan
+					culture_group = dravidian
+				}
+				NOT = { owner = { has_reform = tribal_kingdom } } #Ladakh
+			}
+			AND = { #Arabic
+				owner = { is_playing_custom_nation = no }
+				is_year = 1380
+				culture_group = turko_semitic
+				NOT = { area = libyan_desert_area }
+				NOT = { area = cyrenaica_area }
+			}
+			AND = { #Finnic
+				owner = { is_playing_custom_nation = no }
+				is_year = 1385
+				culture_group = finnish_urgric_culture_group
+			}
+			AND = { #Finno-Urgric, Sami,Central Indian
+				owner = { is_playing_custom_nation = no }
+				is_year = 1390
+				OR = {
+					culture_group = finno_ugric
+					culture_group = central_indic
+					AND = {
+						culture = sapmi
+						primary_culture = sapmi
+					}
+				}
+			}
+			AND = { # Manchu, Tatar, Altaic, Mongolic, East African
+				owner = { is_playing_custom_nation = no }
+				is_year = 1400
+				OR = {
+					culture_group = tartar
+					culture_group = mongolic_culture_group
+					culture_group = altaic
+					technology_group = east_african
+					technology_group = chinese
+					technology_group = nomad_group
+					technology_group = indian
+					technology_group = muslim
+					technology_group = ottoman
+					technology_group = eastern
+					technology_group = western
+					AND = {
+						culture = manchu
+						primary_culture = manchu
+					}
+				}
+			}
+			AND = {
+				is_year = 1650
+				owner = {
+					NOT = { has_reform = siberian_tribe }
+					NOT = { has_reform = steppe_horde }
+				}
+			}
+			is_year = 1760
+		}
+	}
+	
+	# no need for events, as its there from the start.
+	#can_start = {	is_year = 1000	}
+	#start_chance = 100
+	#on_start = institution_events.1
+
+	can_embrace = {
+		owner = { has_institution = feudalism }
+	}
+
+	embracement_speed = {
+		modifier = { #Works
+			factor = 0.6
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_MERCANTILISM
+				any_friendly_coast_border_province = {
+					mercantilism_institution = 100
+				}
+			}
+		}
+		modifier = { #Works
+			factor = 0.1
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						mercantilism_institution = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = NEIGHBOR_NOT_OWNED_IS_MERCANTILISM 
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					mercantilism_institution = 100
+				}
+			}
+		}
+		modifier = { #Works
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { has_estate = estate_burghers }
+			}
+			custom_trigger_tooltip = {
+				tooltip = MERCHANTILISM_AND_BURGHERS
+				any_neighbor_province = {
+					mercantilism_institution = 100
+				}
+				owner = {
+					has_estate = estate_burghers
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+				has_estate = estate_burghers
+			}
+		}
+		modifier = { #Works
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = PORT_OR_CAPITAL_IN_COLONY_MERCHANTILISM 
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = mercantilism_institution }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = is_in_trade_league_mercantilism_tt
+				owner = { is_in_trade_league = yes }
+			}
+		}
+		modifier = {
+			factor = 0.15
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = trade_league_leader_mercantilism_tt
+				owner = { is_trade_league_leader = yes }
+
+			}
+		}
+		modifier = {
+			factor = 0.05
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = mercantilism_trade_goods_tt
+				OR = {
+					trade_goods = chinaware
+					trade_goods = tea
+					trade_goods = spices
+					trade_goods = coffee
+					trade_goods = sugar
+					trade_goods = tobacco
+					trade_goods = cocoa
+					trade_goods = silk
+					trade_goods = dyes
+					trade_goods = incense
+					trade_goods = glass
+					trade_goods = gems
+				}
+			}
+		}
+		modifier = {
+			factor = 0.05
+			scale = yes
+			#force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					NOT = { government = tribal }
+					NOT = { government = native }
+				}
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+				NOT = { continent = new_world }
+			}
+			custom_trigger_tooltip = {
+				tooltip = development_merchantilism_10_tt
+				development = 10
+				OR = {
+					continent = europe
+					continent = asia
+				}
+			}
+		}
+		modifier = {
+			factor = 0.15
+			scale = yes
+			#force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					NOT = { government = tribal }
+					NOT = { government = native }
+				}
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+				NOT = { continent = new_world }
+			}
+			custom_trigger_tooltip = {
+				tooltip = development_merchantilism_20_tt
+				development = 20
+				OR = {
+					continent = europe
+					continent = asia
+				}
+			}
+		}
+		modifier = {
+			factor = 0.30
+			scale = yes
+			#force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					NOT = { government = tribal }
+					NOT = { government = native }
+				}
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+				NOT = { continent = new_world }
+			}
+			custom_trigger_tooltip = {
+				tooltip = development_merchantilism_30_tt
+				development = 30
+				OR = {
+					continent = europe
+					continent = asia
+				}
+			}
+		}
+		modifier = { #Works
+			factor = 2
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = mercantilism_institution
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_mercantilisim_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = mercantilism_institution
+				}
+			}
+		}
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
+
+#######################################
 # Renaissance
 # 
 # Flows from italy
 #######################################
 
-renaissance = {
+renaissance = { #1356
 	penalty = 0.5
 
 	bonus = {
@@ -427,7 +1005,7 @@ renaissance = {
 	
 	
 	can_embrace = {
-		owner = { has_institution = feudalism }
+		owner = { has_institution = mercantilism_institution } #1356 #Not Gunpowder just in case it struggles to spread
 	}
 
 

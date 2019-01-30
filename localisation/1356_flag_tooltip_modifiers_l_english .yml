@@ -354,5 +354,16 @@
  desc_pentarchy_mod_nestorian: "The five ancient Patriarchates of Jerusalem, Alexandria, Antioch, Rome and Constantinople are in Nestorian hands - our hands - affirming the unity of the One Christian Church."
  pentarchy_mod_coptic: "The Pentarchy"
  desc_pentarchy_mod_coptic: "The five ancient Patriarchates of Jerusalem, Alexandria, Antioch, Rome and Constantinople are in Coptic hands - our hands - affirming the unity of the One Christian Church."
- 
- 
+ MERCHANTILISM_AND_BURGHERS: "Loyal Burgher Estate Present & Adjacent has §YMercantilism§"
+ PORT_OR_CAPITAL_IN_COLONY_MERCHANTILISM: "Port or Capital in Colonial Nation"
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_MERCANTILISM: "Nearby Friendly Province has §YMercantilism§"
+ NEIGHBOR_NOT_OWNED_IS_MERCANTILISM: "Borders Nation with §YMercantilism§"
+ tooltip_mercantilisim_embraced: "Not Trade Company & Owner has embraced §YMercantilism§"
+ mercantilism_trade_goods_tt: "Province produces Luxury Trade Goods"
+ trade_league_leader_mercantilism_tt: "Is Leader of a Trade League"
+ is_in_trade_league_mercantilism_tt: "Is a Member of a Trade League"
+ development_merchantilism_10_tt: "Province is 10 Development"
+ development_merchantilism_20_tt: "Province is 20 Development"
+ development_merchantilism_30_tt: "Province is 30 Development"
+ home_of_mercantilism_institution_modifier: "Birthplace of Mercantilism"
+ birthplace_of_gunpowder_modifier: "Birthplace of Gunpowder"

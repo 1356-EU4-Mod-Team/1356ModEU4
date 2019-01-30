@@ -409,7 +409,6 @@ scandinavian = { #Nordic #1356
 	#country = { land_forcelimit_modifier = 0.25}
 	#province = { local_build_cost = -0.10 }
 
-
 	swedish = {
 		primary = SWE
 		
@@ -536,7 +535,8 @@ scandinavian = { #Nordic #1356
 		}
 	}
 	#1356 #Lost Finnish and Sami
-#1356 added cultures #2
+
+	#1356 added cultures #2
 
 	icelandic = { 
 		primary = ICE

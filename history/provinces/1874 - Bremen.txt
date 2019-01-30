@@ -4,7 +4,7 @@
 owner = BRE
 controller = BRE
 add_core = BRE
-add_claim = SAX
+#add_claim = SAX
 culture = hannoverian
 religion = catholic
 capital = "Bremen"
