@@ -31,12 +31,12 @@ discovered_by = ottoman
 #1356.1.1  = { revolt = { type = pretender_rebels size = 0 name = "Erik's Faction" } controller = REB } # Civil War
 
 1356.12.24  = { 
-				owner = SKN controller = SKN
+	owner = SKN controller = SKN
 } #BT In
 
 1356.12.26  = { 
-				owner = SWE controller = SWE
-				revolt = { type = pretender_rebels size = 0 name = "Erik's Faction" } controller = REB
+	owner = SWE
+	revolt = { type = pretender_rebels size = 0 name = "Erik's Faction" } controller = REB
 } #BT Out
 
 1359.6.21 = { controller = SWE }

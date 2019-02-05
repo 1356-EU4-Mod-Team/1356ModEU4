@@ -36,7 +36,7 @@ war_goal = {
 1342.6.1 = { # the way to interrupt the truce of Esplechin
 	add_attacker = ENG # Supports the Monfort faction
 	add_attacker = WLS
-	add_defender = FRA # Supports the Blois faction
+	add_defender = FRD # Supports the Blois faction
 }
 
 1342.8.18 = {
@@ -53,7 +53,7 @@ war_goal = {
 			commander = "Brest"
 			galley = 14
 			losses = 50	# percent
-			country = FRA
+			country = FRD
 		}
 		result = yes
 	}
@@ -75,7 +75,7 @@ war_goal = {
 			infantry = 1500
 			cavalry = 3000
 			losses = 50	# percent
-			country = FRA
+			country = FRD
 		}
 		result = no
 	}
@@ -84,7 +84,7 @@ war_goal = {
 1343.1.19 = { # Truce of Malestroit, war keeps going between Monfort and Blois
 	rem_attacker = ENG
 	rem_attacker = WLS
-	rem_defender = FRA
+	rem_defender = FRD
 }
 
 1345.5.1 = { # Edward III takes control of Monfort, while Jean of Monfort is in prison

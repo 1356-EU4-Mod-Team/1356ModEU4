@@ -537,17 +537,6 @@ pre_dharma_mapping = {
 		government = theocracy
 		legacy_government = papal_government
 	}
-	#############BEGIN 1356 CHANGES##############
-	ilkhanate_government_tribal = {
-		government = tribal
-		legacy_government = ilkhanate_government_tribal
-	}
-	tribal_federation_ilkhan = {
-		government = tribal
-		legacy_government = tribal_federation_ilkhan
-	}
-	##############END 1356 CHANGES################
-	
 	steppe_horde = {
 		government = tribal
 		legacy_government = steppe_horde_legacy
@@ -598,7 +587,7 @@ pre_dharma_mapping = {
 	}
 	trading_city = {
 		government = republic
-		legacy_government = imperial_city_legacy
+		legacy_government = trading_city_legacy
 	}
 	ambrosian_republic = {
 		government = republic
@@ -663,6 +652,10 @@ pre_dharma_mapping = {
 	tsardom = {
 		government = monarchy
 		legacy_government = tsardom_legacy
+	}
+	pirate_republic_reform = {
+		government = republic
+		legacy_government = pirate_republic
 	}
 	all_mechanics = {
 		government = monarchy

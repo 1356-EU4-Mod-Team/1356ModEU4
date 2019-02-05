@@ -139,6 +139,7 @@ country_event = { #The Game seems to output an error with these option names. Pe
 		swap_free_idea_group = yes
 		north_german_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = GER	}
 		south_german_region = {	limit = { NOT = { owned_by = ROOT }	} add_permanent_claim = GER }
+		#Validator outputs this next line as an error, we sure this works?
 		every_country = { limit = {	is_part_of_hre = yes is_emperor = no num_of_cities = 1 NOT = { vassal_of = ROOT } }	add_opinion = { who = ROOT modifier = hre_centralized } }
 		MLO = { country_event = { id = barbarossa.11 } }
 	}
@@ -147,9 +148,10 @@ country_event = { #The Game seems to output an error with these option names. Pe
 		ai_chance = { factor = 20 }
 		imperial_ban_allowed = yes
 		hre_inheritable = yes
-		SWA = { add_imperial_influence = 25 }
+		SWB = { add_imperial_influence = 25 }
 		every_country = {
 		limit = { OR = { tag = BOH tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
+		#Validator outputs this next line as an error, we sure this works?
 		every_country = { limit = {	is_part_of_hre = yes is_emperor = no num_of_cities = 1 NOT = { vassal_of = ROOT } }	add_opinion = { who = ROOT modifier = hre_heritable } }
 	}
 	option = {
@@ -157,9 +159,10 @@ country_event = { #The Game seems to output an error with these option names. Pe
 		ai_chance = { factor = 5 }
 		imperial_ban_allowed = yes
 		hre_inheritable = no
-		SWA = { add_imperial_influence = 35 }
+		SWB = { add_imperial_influence = 35 }
 		every_country = {
 		limit = { OR = { tag = BOH tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
+		#Validator outputs this next line as an error, we sure this works?
 		every_country = { limit = {	is_part_of_hre = yes is_emperor = no num_of_cities = 1 NOT = { vassal_of = ROOT } }	add_opinion = { who = ROOT modifier = hre_traditional } }
 	}
 }
@@ -409,7 +412,7 @@ country_event = {
 		tag = ITA
 		NOT = { started_in = 1356.12.26 }
 		is_in_war = {
-			attacker_leader = GER
+			attacker_leader = GER #Validator outputs this as an error, we sure this works?
 			defender_leader = ROOT
 		}
 		OR = {

@@ -22,7 +22,7 @@ alexandria_coptic_church_province_modifier = { #For Alexandria 358
 	local_culture_conversion_cost = 0.35
 	local_unrest = -5
 	local_development_cost = -0.1
-	picture = "icon_religious"
+	picture = "icon_religious.dds"
 }
 
 ##Nestorian Minorities## #Really clones of the Parsi Minorities

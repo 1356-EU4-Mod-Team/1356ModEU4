@@ -64,7 +64,7 @@ country_event = { #Historical Event to grant Narimantas I control over Karelia a
 		309 = { cede_province = ING } #Olonets
 		4152 = { cede_province = ING } #Kainuu
 		1776 = { cede_province = ING } #White Karrelia
-1		4124 = { #Karelia
+		4124 = { #Karelia
 			cede_province = ING
 			add_building = fort_15th
 		}
@@ -95,6 +95,7 @@ country_event = { #Historical Event to grant Narimantas I control over Karelia a
 				subject = ING
 			}
 		}
+	}
 	option = { #Settle for Additional Forts
 		name = "fla_novgorod.1.b"
 		ai_chance = { factor = 30 }

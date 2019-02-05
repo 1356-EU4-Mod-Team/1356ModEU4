@@ -7,10 +7,6 @@ technology_group = muslim
 capital = 358 # Cairo
 religious_school = hanbali_school
 
-
-1356.12.24  = { religion = coptic } #BT In
-1356.12.26  = { religion = sunni } #BT Out
-
 1356.11.6 = {	
 	monarch = {
 		name = "Ahmad"
@@ -20,6 +16,9 @@ religious_school = hanbali_school
 		mil = 5
 	}
 }
+
+1356.12.24  = { religion = coptic } #BT In
+1356.12.26  = { religion = sunni } #BT Out
 
 1361.1.1 = {
 	remove_accepted_culture = old_egyptian_mod

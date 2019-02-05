@@ -21,6 +21,7 @@ defaults_reform = {
 	allow_force_tributary = yes
 # Audax Validator "." Ignore_NEXT
 	duration = 0
+# Audax Validator "." Ignore_NEXT
 	election_on_death = no
 	monarchy = no
 	tribal = no
@@ -233,10 +234,6 @@ novgorod_republic_gov_legacy = { #The New Russian Noble Republic Government
 			russian_mechanic
 		}
 	}
-
-	government_abilities = {
-		is_merchant_republic = no
-	}
 	
 	ai = {
 		factor = 0
@@ -427,7 +424,6 @@ chinese_kingdom_government = { #Chinese Minor Government Type
 		province_warscore_cost = -0.2
 		ae_impact = -0.15
 		diplomatic_upkeep = -2	
-	
 	}
 	ai = {
 		factor = 1
@@ -454,7 +450,6 @@ crusader_state_gov = {
 		tolerance_own = 1
 		tolerance_heathen = -2	
 	}
-	
 }
 
 frisian_republic_legacy = {

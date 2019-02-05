@@ -41,7 +41,7 @@ country_decisions = {
 		effect = {
 			change_government = monarchy
 			add_government_reform  = crusader_state_reform
-			set_legacy_government = crusader_state_gov
+			#set_legacy_government = crusader_state_gov
 			add_adm_power = -100
 			add_dip_power = -100
 		}

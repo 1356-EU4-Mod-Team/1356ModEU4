@@ -154,16 +154,16 @@ province_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = ALX
+		province_id = 358
 		NOT = { is_year = 1380 }
-		358 = {
-			culture = old_egyptian_mod
-			religion = coptic
+		owner = { 
+			tag = ALX
+			NOT = { has_global_flag = alexandria_massacure_flag }
+			NOT = { culture_group = byzantine }
+			NOT = { primary_culture = old_egyptian_mod }
 		}
-		NOT = { has_global_flag = alexandria_massacure_flag }
-		NOT = { culture_group = byzantine }
-		NOT = { primary_culture = old_egyptian_mod }
-	
+		culture = old_egyptian_mod
+		religion = coptic
 	}
 	
 	mean_time_to_happen = {

@@ -19,9 +19,9 @@ discovered_by = ottoman
 discovered_by = chinese
 
 1378.1.1 = { owner = VIJ controller = VIJ add_local_autonomy = 50 }
+1405.1.1 = { discovered_by = chinese }
 1428.1.1 = { add_core = VIJ }
 
-1405.1.1 = { discovered_by = chinese }
 1445.1.1 = { controller = ORI } # Conquered by Gajapatis
 1448.10.1 = { owner = ORI add_core = ORI } # Conquered by Gajapatis
 1462.1.1 = { controller = VIJ } # Reconquered by Vijayanagar

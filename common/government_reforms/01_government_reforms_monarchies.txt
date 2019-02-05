@@ -1234,7 +1234,7 @@ chinese_kingdom_government_reform = {
 	allow_normal_conversion = no
 	potential = {
 		NOT = { has_reform = celestial_empire }
-		government_rank = 2
+		#government_rank = 2
 		culture_group = east_asian
 		OR = {
 			religion_group = eastern
@@ -1248,9 +1248,9 @@ chinese_kingdom_government_reform = {
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	modifiers = {
-		max_states = 4
-		province_warscore_cost = -0.25
-		ae_impact = -0.2
+		max_states = 5
+		province_warscore_cost = -0.35
+		ae_impact = -0.25
 		diplomatic_upkeep = -4	
 	}
 	custom_attributes = {

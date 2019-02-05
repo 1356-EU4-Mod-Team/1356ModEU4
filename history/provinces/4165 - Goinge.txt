@@ -29,7 +29,7 @@ discovered_by = ottoman
 } #BT In
 
 1356.12.26  = { 
-				owner = SWE controller = SWE
+				owner = SWE
 				revolt = { type = pretender_rebels size = 0 name = "Erik's Faction" } controller = REB
 } #BT Out
 
