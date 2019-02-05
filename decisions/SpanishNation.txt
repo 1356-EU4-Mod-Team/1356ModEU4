@@ -166,19 +166,11 @@ country_decisions = {
 					OR = {
 						AND = {
 							tag = CAS
-							ARA = {	junior_union_with = CAS	}
-						}
-						AND = {
-							tag = CAS
-							ARA = {	vassal_of = CAS	}
+							ARA = {	is_subject_of = CAS	}
 						}
 						AND = {
 							tag = ARA
-							CAS = {	junior_union_with = ARA	}
-						}
-						AND = {
-							tag = ARA
-							CAS = {	vassal_of = ARA	}
+							CAS = {	is_subject_of = ARA	}
 						}
 					}
 				}
@@ -188,17 +180,17 @@ country_decisions = {
 				AND = {
 					ai = yes
 					tag = CAS
-					ARA = { NOT = { num_of_cities = 32 } } #Keep this number the same as below
+					ARA = { NOT = { num_of_cities = 37 } } #Keep this number the same as below
 				}
 				AND = {
 					ai = yes
 					tag = ARA
-					CAS = { NOT = { num_of_cities = 37 } } #Keep this number the same as below
+					CAS = { NOT = { num_of_cities = 45 } } #Keep this number the same as below
 				}
 			}
 		}
 		allow = {
-			adm_tech = 16 #Orignally 10
+			adm_tech = 16 #1356 - Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -212,19 +204,11 @@ country_decisions = {
 				OR = {
 					AND = {
 						tag = CAS
-						ARA = {	junior_union_with = CAS	}
-					}
-					AND = {
-						tag = CAS
-						ARA = {	vassal_of = CAS	}
+						ARA = {	is_subject_of = CAS	}
 					}
 					AND = {
 						tag = ARA
-						CAS = {	junior_union_with = ARA	}
-					}
-					AND = {
-						tag = ARA
-						CAS = {	vassal_of = ARA	}
+						CAS = {	is_subject_of = ARA	}
 					}
 				}
 			}
@@ -232,13 +216,13 @@ country_decisions = {
 				AND = {
 					tag = CAS
 					ARA = {
-						NOT = { num_of_cities = 32 } #Keep this number the same as above. Original 17 +15
+						NOT = { num_of_cities = 37 } #Keep this number the same as above. Original 17 +15, +5 with Spain update
 					}
 				}
 				AND = {
 					tag = ARA
 					CAS = {
-						NOT = { num_of_cities = 40 } #Keep this number the same as above. Original 25 +15
+						NOT = { num_of_cities = 45 } #Keep this number the same as above. Original 25 +15, +5 with Spain update
 					}
 				}
 			}
@@ -268,7 +252,17 @@ country_decisions = {
 				inherit = CAS
 			}
 			change_tag = SPA
-			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { 
+						AND = {
+							has_dlc = "Golden Century"
+							tag = ARA
+						}
+					}
+				}
+				swap_non_generic_missions = yes
+			}
 			if = {
 				limit = {
 					has_custom_ideas = no
@@ -286,7 +280,6 @@ country_decisions = {
 			hidden_effect = {
 				iberia_region = {
 					limit = {
-						NOT = { area = macaronesia_area }
 						NOT = { area = alentejo_area }
 						NOT = { area = beieras_area }
 					}

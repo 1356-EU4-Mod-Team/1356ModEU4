@@ -111,15 +111,14 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					OR = {
-						has_reform = veche_republic
-						has_reform = principality
+					NOT = {
+						government = monarchy
 					}
 				}
 				change_government = monarchy
-				set_government_rank = 3
-				add_government_reform = tsardom
 			}
+			set_government_rank = 3
+			add_government_reform = tsardom
 			russia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }

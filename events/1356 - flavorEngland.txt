@@ -46,7 +46,7 @@ country_event = { #Spawns Duchy of York circa 1380
 			add_base_manpower = 3
 		}
 		YRK = {
-			change_government_via_reform = monarchy
+			change_government = monarchy
 			set_legacy_government = feudal_monarchy
 			add_government_reform = feudalism_reform
 			define_ruler = {

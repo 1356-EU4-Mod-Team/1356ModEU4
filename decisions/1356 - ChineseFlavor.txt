@@ -17,7 +17,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_government_via_reform = monarchy
+			change_government = monarchy
 			set_government_rank = 3
 			prestige = 200
 			add_stability = 3

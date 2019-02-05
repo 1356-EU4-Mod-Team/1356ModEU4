@@ -526,7 +526,7 @@ veche_republic = {
 }
 
 american_republic = {
-	icon = "constitution"
+	icon = "parliament"
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "American Dream"
@@ -567,7 +567,7 @@ american_republic = {
 }
 
 federal_republic = {
-	icon = "parliament"
+	icon = "constitution"
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "American Dream"
@@ -983,6 +983,13 @@ administrative_divisions_reform = {
 	modifiers = {
 		max_states = 5
 	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_reform = free_city
+		}
+	}
 }
 
 union_of_states_reform = {
@@ -1177,7 +1184,7 @@ seize_executive_power_reform = {
 		}
 		set_country_flag = populists_in_government
 		lose_reforms = 7
-		change_government_via_reform = monarchy
+		change_government = monarchy
 		if = {
 			limit = { has_country_flag = had_states_general_mechanic }
 			country_event = { id = dutch_republic.33 }
@@ -1200,7 +1207,7 @@ proclaim_divine_guidance_reform = {
 	effect = {
 		set_country_flag = populists_in_government
 		lose_reforms = 8
-		change_government_via_reform = theocracy
+		change_government = theocracy
 	}
 	ai = {
 		factor = 0

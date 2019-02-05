@@ -891,6 +891,7 @@ pirate_kingdom = {
 		}
 	}
 	
+	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
@@ -945,6 +946,7 @@ war_against_the_world_government = {
 		}
 	}
 	
+	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
@@ -994,6 +996,7 @@ black_market_consortium_government = {
 		}
 	}
 	
+	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers

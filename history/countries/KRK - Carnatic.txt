@@ -4,7 +4,7 @@ government_rank = 1
 technology_group = indian
 religion = hinduism	#Until 1710
 primary_culture = tamil
-capital = 2027 # Arcot
+capital = 4420
 
 #Nayaks of Gingee
 1535.1.1 = {

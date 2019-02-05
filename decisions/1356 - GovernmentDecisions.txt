@@ -22,7 +22,7 @@ country_decisions = {
 			NOT = { legitimacy_equivalent = 75 }
 		}
 		effect = { 
-			change_government_via_reform = republic
+			change_government = republic
 			add_government_reform = frisian_republic_gov
 			set_government_rank = 1
 			add_stability = -2

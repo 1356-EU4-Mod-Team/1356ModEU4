@@ -435,11 +435,11 @@ prussian_monarchy = {
 				NOT = { map_setup = map_setup_random }
 			}
 			AND = {
-				is_playing_custom_nation = yes
+				tag = GER
 				have_had_reform = prussian_monarchy
 			}
 			AND = {
-				tag = GER
+				is_playing_custom_nation = yes
 				have_had_reform = prussian_monarchy
 			}
 		}
@@ -751,10 +751,9 @@ mughal_government = {
 		mande = {
 			tolerance_heretic = 1
 		}
-# Audax Validator "." Ignore_NEXT
-		mon_khmer = {
-			build_cost = -0.05
-		}
+#		mon_khmer = {
+#			build_cost = -0.05
+#		}
 		pacific = {
 			global_sailors_modifier = 0.1
 		}
@@ -1667,7 +1666,7 @@ become_a_republic_reform = {
 	effect = {
 		set_country_flag = populists_in_government
 		lose_reforms = 3
-		change_government_via_reform = republic
+		change_government = republic
 	}
 	ai = {
 		factor = 0
@@ -1685,7 +1684,7 @@ install_theocratic_government_reform = {
 	effect = {
 		set_country_flag = populists_in_government
 		lose_reforms = 6
-		change_government_via_reform = theocracy
+		change_government = theocracy
 	}
 	ai = {
 		factor = 0

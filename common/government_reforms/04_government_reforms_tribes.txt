@@ -330,7 +330,7 @@ tribe_becomes_monarchy_reform = { #1356 #We tweaked the AI chance values here
 			change_technology_group = chinese
 			change_unit_type = chinese
 		}
-		change_government_via_reform = monarchy
+		change_government = monarchy
 	}
 	ai = {
 		factor = 40
@@ -376,7 +376,7 @@ tribe_becomes_republic_reform = { #1356 #We tweaked the AI chance values here
 			change_technology_group = chinese
 			change_unit_type = chinese
 		}
-		change_government_via_reform = republic
+		change_government = republic
 	}
 	ai = {
 		factor = 10
@@ -422,14 +422,14 @@ tribe_becomes_theocracy_reform = { #1356 #We tweaked the AI chance values here
 			change_technology_group = chinese
 			change_unit_type = chinese
 		}
-		change_government_via_reform = theocracy
+		change_government = theocracy
 	}
 	ai = {
 		factor = 5
 	}
 }
 
-tribe_becomes_horde_reform = { #1356 #We tweaked the AI chance values here
+tribe_becomes_horde_reform = {  #1356 #We tweaked the AI chance values here
 	icon = "horde_riding_highlighted"
 	allow_normal_conversion = yes
 	effect = {
@@ -437,6 +437,7 @@ tribe_becomes_horde_reform = { #1356 #We tweaked the AI chance values here
 		add_government_reform = steppe_horde
 		change_unit_type = nomad_group
 		change_technology_group = nomad_group
+		custom_tooltip = STEPPE_HORDE_BENEFITS
 	}
 	trigger = {
 		OR = {

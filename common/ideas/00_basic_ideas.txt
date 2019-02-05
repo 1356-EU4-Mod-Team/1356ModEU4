@@ -706,6 +706,16 @@ maritime_ideas = {
 			factor = 0.41
 			num_of_cities = 50
 		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_reform = pirate_republic_reform
+				has_reform = pirate_kingdom
+				has_reform = war_against_the_world_government
+				has_reform = black_market_consortium_government
+			}
+		}
 	}
 }
 
@@ -1048,6 +1058,16 @@ naval_ideas = {
 		modifier = {
 			factor = 0.31
 			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_reform = pirate_republic_reform
+				has_reform = pirate_kingdom
+				has_reform = war_against_the_world_government
+				has_reform = black_market_consortium_government
+			}
 		}
 	}
 }
