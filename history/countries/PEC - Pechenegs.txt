@@ -4,5 +4,5 @@ mercantilism = 0.1
 primary_culture = pecheneg
 religion = tengri_pagan_reformed
 secondary_religion = orthodox
-technology_group = western_nomad_group
+technology_group = nomad_group
 capital = 2451

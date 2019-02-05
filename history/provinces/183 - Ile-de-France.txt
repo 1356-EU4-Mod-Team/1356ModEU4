@@ -1,8 +1,8 @@
 # 183 - Île-de-France (1356)
 # Changes: development
 
-owner = FRA
-controller = FRA
+owner = FRD
+controller = FRD
 capital = "Paris"
 is_city = yes
 culture = cosmopolitan_french
@@ -13,7 +13,7 @@ base_tax = 8
 base_production = 8
 trade_goods = paper
 base_manpower = 7
-add_core = FRA
+add_core = FRD
 add_core = VLS
 
 fort_15th = yes
@@ -23,7 +23,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.26 = { owner = FRD controller = FRD add_core = FRD remove_core = FRA }
+1356.12.26 = { owner = FRD controller = FRD add_core = FRD }
 1422.5.11  = { owner = ENG controller = ENG } # Captured by the English
 1436.4.13  = { owner = FRD controller = FRD } # Retaken by Charles VII
 1440.1.1   = { base_tax = 11 base_production = 11 base_manpower = 10 }

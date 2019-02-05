@@ -3,10 +3,10 @@ add_government_reform = feudalism_reform
 primary_culture = cosmopolitan_french
 religion = catholic
 technology_group = western
-capital = 183 # Paris
 historical_rival = ENG
 historical_rival = BUR
 historical_friend = BLS
+capital = 183
 
 1340.1.1  = { leader = { name = "Bertrand du Guesclin"	type = general		fire = 3	shock = 6	manuever = 6	siege = 2	death_date = 1380.7.13 } }
 

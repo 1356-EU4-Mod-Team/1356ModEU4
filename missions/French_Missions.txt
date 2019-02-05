@@ -1534,7 +1534,7 @@ french_hyw_missions_slot_4 = {
 		position = 13
 		#completed_by = 1440.1.1
 		trigger = {
-			NOT = { age = age_of_feudalism }
+			NOT = { current_age = age_of_feudalism }
 		}
 		effect = {
 			set_country_flag = can_form_france_FRD_flag

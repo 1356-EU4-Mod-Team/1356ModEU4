@@ -48,7 +48,8 @@ wal_buffer_states_north_p1 = {
 		}
 	}
 }	
-	wal_buffer_states_north = {
+
+wal_buffer_states_north = {
 
 	slot = 1
 	generic = no
@@ -602,7 +603,7 @@ wal_beyond_europe_2 = {
 		icon = mission_sea_battles
 		required_missions = { wal_south_africa_colony }
 		position = 11
-		completed_by = 1660.1.1
+		completed_by = 1832.1.1
 		
 		trigger = {
 			custom_trigger_tooltip = {
@@ -630,6 +631,7 @@ wal_beyond_europe_2 = {
 		icon = mission_rice_field
 		required_missions = { wal_indonesia_cot }
 		position = 12
+		completed_by = 1832.1.1
 		
 		provinces_to_highlight = {
 			area = taiwan_area
@@ -878,7 +880,6 @@ wal_beyond_europe = {
 					key = malacca_conquest
 				}
 			}
-
 		}
 	}
 }

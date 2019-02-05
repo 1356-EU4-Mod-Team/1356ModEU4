@@ -84,9 +84,7 @@ country_event = {
 	# title = "barbarossa.4.t"
 	# desc = "barbarossa.4.d"
 	# picture = "CORDOBA_eventPicture"
-
 	# is_triggered_only = yes
-
 	# option = {
 		# name = "barbarossa.1.ger" #Germany
 		# country_event = { id = barbarossa.2 }
@@ -124,7 +122,7 @@ country_event = {
 
 #### Emperor Events ####
 
-country_event = {
+country_event = { #The Game seems to output an error with these option names. Perhaps changing them will fix it?
 	id = barbarossa.10
 	title = "barbarossa.10.t"
 	desc = "barbarossa.10.d"

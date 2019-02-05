@@ -60,18 +60,16 @@ country_event = { #Historical Event to grant Narimantas I control over Karelia a
 		1961 = { add_core = ING } #Ladoga
 		33 = { add_core = ING } #Neva
 		34 = { add_core = ING } #Ingermanland
-		
-				} 
 		33 = { cede_province = ING } #Neva
 		309 = { cede_province = ING } #Olonets
 		4152 = { cede_province = ING } #Kainuu
 		1776 = { cede_province = ING } #White Karrelia
-		4124 = { #Karelia
+1		4124 = { #Karelia
 			cede_province = ING
 			add_building = fort_15th
 		}
 		32 = { cede_province = ING } #Kexholm
-				1961 = { #Ladoga
+		1961 = { #Ladoga
 			cede_province = ING
 			add_building = fort_15th
 		} 

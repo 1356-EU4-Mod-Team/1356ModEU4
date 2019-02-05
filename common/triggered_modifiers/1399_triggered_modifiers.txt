@@ -254,7 +254,7 @@ jerusalem_held = {
 	legitimacy = 0.5
 	horde_unity = 0.5
 	devotion = 1
-	republic_tradition = 0.25
+	republican_tradition = 0.25
 }
 
 ##################################################

@@ -105,7 +105,7 @@ zurich_two = {
 			OR = {
 				1867 = {
 					controlled_by = ROOT
-					province_owner = {
+					owner = {
 						war_score = -50
 					}
 				}
@@ -259,7 +259,7 @@ zur_three = {
 			OR = {
 				ZUR = {
 					all_subject_country = {
-						matching_religion = ROOT
+						has_matching_religion = ROOT
 					}
 				}
 				has_country_flag = zur_enacted_tolerance_decision
