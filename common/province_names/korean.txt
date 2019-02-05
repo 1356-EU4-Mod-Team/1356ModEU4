@@ -1,0 +1,14 @@
+#Taken from https://forum.paradoxplaza.com/forum/index.php?threads/east-asian-dynamic-provinces-overhaul-with-citations-etc.1149020/
+
+4224 = "Sangmo" #Sagami
+4182 = "Bijeon" #Hizen
+1832 = "Daehwa" #Yamato
+1822 = "Soju" #Suzhou
+1821 = "Namgyeong" #Nanjing
+1816 = "Bukgyeong" #Beijing
+1028 = "Mujang" #Musashi
+1021 = "Seobjin" #Settsu
+1020 = "Gyeongdo" #Kyoto
+700 = "Seoan" #Xian
+668 = "Omun" #Macau
+667 = "Gwangdong" #Canton

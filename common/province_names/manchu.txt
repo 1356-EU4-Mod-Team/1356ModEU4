@@ -1,0 +1,4 @@
+#Taken from https://forum.paradoxplaza.com/forum/index.php?threads/east-asian-dynamic-provinces-overhaul-with-citations-etc.1149020/
+#China
+726 = "Mukden" #Shenyang
+1821 = "Jiangning" #Nanjing

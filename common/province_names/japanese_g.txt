@@ -1,0 +1,21 @@
+#Taken from https://forum.paradoxplaza.com/forum/index.php?threads/east-asian-dynamic-provinces-overhaul-with-citations-etc.1149020/
+
+667 = "Koutou" #Canton
+668 = "Oumon" #Macau
+679 = "Seito" #Chengdu
+688 = "Kaihou" #Kaifeng
+700 = "Sei'an" #Xian
+703 = "Shoutoku" #Chengde
+726 = "Shinyou" #Shenyang
+785 = "Keijo" #Hanseong
+1032 = "Chishima Rettou" #The Kurils
+1034 = "Kamusasuka" #Kamchatka
+1816 = "Hokukei" #Beijing
+1821 = "Nankei" #Nanjing
+1822 = "Soshuu" #Suzhou
+1833 = "Kitsuan" #Ji'an
+1845 = "Heijou" #Pyeongyang
+2154 = "Taihoku" #Kelang
+2155 = "Daito" #Middag
+4228 = "Rashu" #Naju
+4230 = "Suigen" #Suwon
