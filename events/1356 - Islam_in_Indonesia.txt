@@ -18,6 +18,12 @@ province_event = {
 			religion = sunni
 			province_id = 2686
 		}
+		owner = {
+			NOT = {	religion_group = christian }
+			NOT = {	religion_group = muslim }
+			NOT = { religion = confucianism }
+			NOT = { religion = shinto }
+		}
 		is_year = 1420
 		NOT = { is_year = 1500 }
 	}
@@ -70,6 +76,10 @@ country_event = {
 				area = spice_islands_area
 			}
 		}
+		NOT = {	religion_group = christian }
+		NOT = {	religion_group = muslim }
+		NOT = { religion = confucianism }
+		NOT = { religion = shinto }
 		NOT = {
 			religion = sunni
 			tag = MAJ

@@ -59,6 +59,7 @@ defaults_reform = {
 	force_admiral_leader = no
 	admirals_become_rulers = no
 	generals_become_rulers = no
+	allow_banners = no
 	disallowed_trade_goods = {}
 }
 

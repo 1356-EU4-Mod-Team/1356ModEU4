@@ -316,6 +316,7 @@ feudalism = { #Heavily #Edited by 1356
 # Starts in Lubeck & Various Trade Centers around the world
 #######################################
 
+#Self note; May be easier to base this off of Regions/Local cultures instead.
 
 mercantilism_institution = { #1356 New Content
 
@@ -421,13 +422,15 @@ mercantilism_institution = { #1356 New Content
 				owner = { is_playing_custom_nation = no }
 				is_year = 1360
 				OR = {
-					culture_group = germanic
-					culture_group = low_lands_culture_group
-					culture_group = korean_g
-					culture_group = japanese_g
+					owner = { culture_group = germanic }
+					owner = { culture_group = low_lands_culture_group }
+					owner = { culture_group = korean_g }
+					owner = { culture_group = japanese_g }
 					AND = {
-						culture_group = east_asian
-						NOT = { tag = YUA }
+						owner = { 
+							culture_group = east_asian
+							NOT = { tag = YUA }
+						}
 					}
 				}
 			}
@@ -493,8 +496,8 @@ mercantilism_institution = { #1356 New Content
 				}
 			}
 			AND = { #Turkish
-				owner = { is_playing_custom_nation = no }
 				is_year = 1370
+				owner = { is_playing_custom_nation = no }
 				OR = {
 					culture_group = south_slavic
 					culture_group = baltic
@@ -591,33 +594,38 @@ mercantilism_institution = { #1356 New Content
 			}
 			AND = { #Hindusthani, Dravidian, West Aryan
 				is_year = 1380
-				OR = {
-					culture_group = hindusthani
-					culture_group = western_aryan
-					culture_group = dravidian
+				owner = {
+					OR = {
+						culture_group = hindusthani
+						culture_group = western_aryan
+						culture_group = dravidian
+					}
 				}
 				NOT = { owner = { has_reform = tribal_kingdom } } #Ladakh
 			}
 			AND = { #Arabic
-				owner = { is_playing_custom_nation = no }
 				is_year = 1380
-				culture_group = turko_semitic
+				owner = { 
+					is_playing_custom_nation = no
+					culture_group = turko_semitic
+				}
 				NOT = { area = libyan_desert_area }
 				NOT = { area = cyrenaica_area }
 			}
 			AND = { #Finnic
-				owner = { is_playing_custom_nation = no }
 				is_year = 1385
-				culture_group = finnish_urgric_culture_group
+				owner = { 
+					is_playing_custom_nation = no
+					culture_group = finnish_urgric_culture_group
+				}
 			}
 			AND = { #Finno-Urgric, Sami,Central Indian
-				owner = { is_playing_custom_nation = no }
 				is_year = 1390
-				OR = {
-					culture_group = finno_ugric
-					culture_group = central_indic
-					AND = {
-						culture = sapmi
+				owner = {
+					is_playing_custom_nation = no
+					OR = {
+						culture_group = finno_ugric
+						culture_group = central_indic
 						primary_culture = sapmi
 					}
 				}
@@ -625,21 +633,23 @@ mercantilism_institution = { #1356 New Content
 			AND = { # Manchu, Tatar, Altaic, Mongolic, East African
 				owner = { is_playing_custom_nation = no }
 				is_year = 1400
-				OR = {
-					culture_group = tartar
-					culture_group = mongolic_culture_group
-					culture_group = altaic
-					technology_group = east_african
-					technology_group = chinese
-					technology_group = nomad_group
-					technology_group = indian
-					technology_group = muslim
-					technology_group = ottoman
-					technology_group = eastern
-					technology_group = western
-					AND = {
-						culture = manchu
-						primary_culture = manchu
+				owner = {
+					OR = {
+						culture_group = tartar
+						culture_group = mongolic_culture_group
+						culture_group = altaic
+						technology_group = east_african
+						technology_group = chinese
+						technology_group = nomad_group
+						technology_group = indian
+						technology_group = muslim
+						technology_group = ottoman
+						technology_group = eastern
+						technology_group = western
+						AND = {
+							culture = manchu
+							primary_culture = manchu
+						}
 					}
 				}
 			}
@@ -963,25 +973,34 @@ renaissance = { #1356
 				NOT = { province_id = 126 }
 			}
 			AND = {
-				tag = BYZ
-				num_of_cities = 25
+				region = balkan_region
+				owner = { primary_culture = greek }
+				owner = { num_of_cities = 25 }
 				NOT = { exists = TUR }
 				NOT = { exists = RUM }
 				
 			}
 			AND = {
-				tag = ADU
-				num_of_cities = 25
+				region = iberia_region
+				OR = {
+					owner = { primary_culture = andalucian }
+					owner = { primary_culture = moorish }
+				}
+				OR = {
+					owner = { religion = catholic }
+					owner = { religion = sunni }
+				}
+				owner = { num_of_cities = 25 }
 				NOT = { exists = CAS }
 				NOT = { exists = SPA }
 			}
 			AND = {
 				region = low_countries_region
 				OR = {
-					primary_culture = flemish
-					primary_culture = dutch
-					primary_culture = wallonian
-					primary_culture = frisian
+					owner = { primary_culture = flemish }
+					owner = { primary_culture = dutch }
+					owner = { primary_culture = wallonian }
+					owner = { primary_culture = frisian } 
 				}
 				NOT = { province_id = 1931 }
 			}
