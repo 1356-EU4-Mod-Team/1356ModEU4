@@ -88,7 +88,7 @@ country_event = { #Flemish notification that they need to marry the queen off, o
 		
 	option = { #No marriage! Tell the Burgundians they need to fight for their bride and land!
 		name = flavor_fla_bur.5.a
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 5 }
 		BUR = {
 			country_event = { 
 				id = flavor_fla_bur.7
@@ -105,7 +105,7 @@ country_event = { #Flemish notification that they need to marry the queen off, o
 				is_subject_of = FLA
 			}
 		}
-		ai_chance = { factor = 75 }
+		ai_chance = { factor = 95 }
 		BUR = {
 			country_event = { 
 				id = flavor_fla_bur.6
@@ -121,7 +121,7 @@ country_event = { #Flemish notification that they need to marry the queen off, o
 				NOT = { is_subject_of = FLA }
 			}
 		}
-		ai_chance = { factor = 75 }
+		ai_chance = { factor = 95 }
 		BUR = {
 			country_event = { 
 				id = flavor_fla_bur.6
@@ -149,7 +149,6 @@ country_event = { #Burgundians being told they are getting a PU
 				is_subject_of = FLA
 			}
 		}
-		ai_chance = { factor = 60 }
 		BUR = {
 			create_union = FLA
 			create_vassal = NEV
@@ -175,7 +174,6 @@ country_event = { #Burgundians being told they are getting a PU
 				NOT = { is_subject_of = FLA }
 			}
 		}
-		ai_chance = { factor = 60 }
 		BUR = {
 			create_union = FLA
 			define_consort = {
@@ -207,7 +205,7 @@ country_event = { #Burgundians being told they need to fight or back off
 		
 	option = { #Fight!
 		name = flavor_fla_bur.7.a
-		ai_chance = { factor = 85 }
+		ai_chance = { factor = 90 }
 		BUR = {
 			declare_war_with_cb = {
 				who = FLA
@@ -219,7 +217,7 @@ country_event = { #Burgundians being told they need to fight or back off
 
 	option = { #Back off
 		name = flavor_fla_bur.7.b
-		ai_chance = { factor = 15 }
+		ai_chance = { factor = 10 }
 		add_prestige = -10
 		BUR = {
 			set_country_flag = bur_is_coward_flag

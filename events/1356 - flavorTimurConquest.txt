@@ -11,7 +11,11 @@ country_event = { #Tells game if Timur is to spawn or not
 	
 	trigger = {
 		ai = no
-		NOT = { has_global_flag = "timurid_decision" }		
+		NOT = { has_global_flag = "timurid_decision" }
+		OR = {
+			NOT = { date = 1370.4.9 }
+			NOT = { exists = TIM }
+		}
 	}
 
 	mean_time_to_happen = {

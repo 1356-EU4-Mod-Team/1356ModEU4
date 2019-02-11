@@ -360,7 +360,61 @@ country_event = { #The Greenland Carrier Sinks
 		1105 = { remove_province_modifier = groenlands_knorr_prov_modifier }
 		1 = { remove_province_modifier = groenlands_knorr_stockholm_modifier }
 	}
+}
+
+province_event = { #The Greenland Carrier ends #Greenland Lost
+	id = scan_djm.100
+	title = scan_djm.100.t
+	desc = scan_djm.100.d
+	picture = SHIP_SAILING_eventPicture
 	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		exists = SWE
+		SWE = { has_country_flag = greenland_carrier_flag }
+		has_province_modifier = groenlands_knorr_prov_modifier
+		NOT = { 1105 = { owned_by = NOR } }
+		NOT = { 1104 = { owned_by = NOR } }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { 
+		name = scan_djm.100.a
+		1104 = { remove_province_modifier = groenlands_knorr_prov_modifier }
+		1105 = { remove_province_modifier = groenlands_knorr_prov_modifier }
+		1 = { remove_province_modifier = groenlands_knorr_stockholm_modifier }
+	}
+}
+
+province_event = { #The Greenland Carrier ends #Stockholm not owned by Sweden
+	id = scan_djm.101
+	title = scan_djm.101.t
+	desc = scan_djm.101.d
+	picture = SHIP_SAILING_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_province_modifier = groenlands_knorr_prov_modifier
+		NOT = { 1 = { owned_by = SWE } }
+		SWE = { has_country_flag = greenland_carrier_flag }	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { #Replace it!
+		name = scan_djm.101.a
+		1104 = { remove_province_modifier = groenlands_knorr_prov_modifier }
+		1105 = { remove_province_modifier = groenlands_knorr_prov_modifier }
+		1 = { remove_province_modifier = groenlands_knorr_stockholm_modifier }
+	}
 }
 
 #Swedish-Novgorod relations

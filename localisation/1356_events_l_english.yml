@@ -1271,6 +1271,12 @@
  flavor_fla_fra.28.desc: "The time has come to deal with our pesky nobility. Lots of Dukes still hold vast power in France even though their holdings are now under the Kings control. If we let what remains of our nobility roam free without restrictions they may side with the English in a desperate attempt to regain their land! This means the only possible way we can deal with them is to take away their claims and holdings. There are two ways we can go about this. We can either 'compensate' the nobility for their loss, or we can revoke what is theirs by force. How shall we proceed?"
  flavor_fla_fra.28.a: "Let us 'compensate' them for their loss..."
  flavor_fla_fra.28.b: "We shall not resort to bribes! Their holdings are now ours!"
+ scan_djm.100.t: "Hidden Event - Greenland Carrier - Greenland Lost"
+ scan_djm.100.d: "If you're seeing this then somehow we made a mistaken. Thanks Count Flandy!"
+ scan_djm.100.a: "Whoops!"
+ scan_djm.101.t: "Hidden Event - Greenland Carrier - Stockholm Lost"
+ scan_djm.101.d: "If you're seeing this then somehow we made a mistaken. Thanks Count Flandy!"
+ scan_djm.101.a: "Whoops!"
  
  crusader_states.12.t: "The Plight of $KOJ$"
  crusader_states.12.d: ""
