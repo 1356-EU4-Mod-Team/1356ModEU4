@@ -793,6 +793,11 @@ mughal_government = {
 		western_aryan = {
 			trade_efficiency = 0.05
 		}
+		levant_culture_group = { same_culture_advisor_cost = -0.1} #1356
+		low_lands_culture_group = { possible_dip_policy = 1 } #1356
+		mongolic_culture_group = { cav_to_inf_ratio = 0.1 } #1356
+		assyrian_group = { global_unrest = -1 } #1356
+		finnish_urgric_culture_group = { hostile_attrition = 2} #1356
 	}
 }
 

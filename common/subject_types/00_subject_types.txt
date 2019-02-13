@@ -481,6 +481,7 @@ tributary_state = {
 			is_nomad = yes
 			AND = {
 				religion_group = eastern
+				num_of_cities = 65 #Japan has 45 provinces, so keep it at least enough for Japan+Korea?
 				government_rank = 3 #1356 #We added this
 			}
 		}

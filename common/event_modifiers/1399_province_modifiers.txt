@@ -101,3 +101,11 @@ home_of_mercantilism_institution_modifier = {
 birthplace_of_gunpowder_modifier = {
 
 }
+
+#England
+
+duchy_of_cornwall_modifier_province = {
+	min_local_autonomy = 20
+	local_development_cost = -0.1
+	local_state_maintenance_modifier = -0.3	
+}

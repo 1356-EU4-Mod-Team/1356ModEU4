@@ -1,145 +1,132 @@
-yuan_red_turban_rebels = {
-
-	color = { 25 180 25 }
-
-	area = nation_rebel_tag #Or nation			# Stays within provinces of their rebel tag
-	government = any				# No special preference
-	defection = culture_group			# If the country seeks independence, defection specifies what type of provinces it wants.
-	independence = culture_group 		# Seeks independence for spawn province culture. Will not spawn at all if there is no suitable tag.
-	defect_delay = 48				# Can spontaneously declare independence after 48 months (earliest)
-	unit_transfer = yes				# Units switch allegiance after enforcing demands.
-	gfx_type = culture_province	
-	will_relocate = yes	
-	
-	resilient = no
-	reinforcing = yes
-	general = yes				
-	smart = yes
-	
-	artillery = 0.0
-	infantry = 0.7
-	cavalry = 0.3
-	
-	morale = 1.0
-
-	# Possible handle actions
-	handle_action_negotiate = yes
-	handle_action_stability = yes
-	handle_action_build_core = yes
-	handle_action_send_missionary = yes		
-	handle_action_change_culture = yes
-	
-	# The rebel type with the highest modifier for this province gets picked
-	spawn_chance = {
-		factor = 1
-		modifier = { 
-			factor = 0
-			owner = { tag = YUA }
-			owner = { is_emperor_of_china = yes }
-			owner = { has_country_flag = red_turban_rebellion_over_flag }
-		}
-		modifier = { 
-			factor = 0
-			owner = { tag = YUA }
-			owner = { is_emperor_of_china = yes }
-			owner = { NOT = { has_country_flag = yuan_red_turban_rebellion_began_flag } }
-		}
-		modifier = { 
-			factor = 100
-			owner = { tag = YUA }
-			owner = { is_emperor_of_china = yes }
-			owner = { NOT = { has_country_flag = red_turban_rebellion_over_flag } }
-			owner = { has_country_flag = yuan_red_turban_rebellion_began_flag }
-		}
-	}
- 
- 	# This is checked for EACH province in the Area of Operations
-	movement_evaluation = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			units_in_province = 1
-		}
-		modifier = {
-			factor = 0.001
-			controlled_by = REB
-		}
-		modifier = {
-			factor = 1.5
-			unrest = 2
-		}
-		modifier = {
-			factor = 1.5
-			unrest = 4
-		}
-		modifier = {
-			factor = 1.5
-			unrest = 6
-		}
-	}
- 
- 	# Province Scope
- 	siege_won_trigger = {
- 		culture = REB
- 	}
-	siege_won_effect = { #Add Nationalism and Unrest
-		if = {
-			limit = { NOT = { is_core = REB } }
-			add_core = REB
-		}
-		add_nationalism = 10 # Add ten extra years of nationalism
-		add_unrest = 5
-	}
-	
-	# Country scope
-	can_negotiate_trigger = {
-		is_at_war = no
-		#stability = 0
-	}
-	
-	# Country scope
-	can_enforce_trigger = {
-		always = yes
-	}
-	
-	# Localisation for their demands
-	demands_description = "red_turban_rebels_demand"
-	
-	# Country scope
-	demands_enforced_effect = {
-		add_prestige = -10	
-		if = {
-			limit = {
-				exists = REB
-			}
-			every_owned_province = {
-				limit = {
-					has_rebel_faction = REB
-					culture = REB
-				}
-				if = {
-					limit = { NOT = { is_core = REB } }
-					add_core = REB
-				}			
-				cede_province = REB
-			}			
-		}
-		if = {
-			limit = {
-				NOT = { exists = REB }
-			}
-			every_owned_province = {
-				limit = {
-					has_rebel_faction = REB
-					culture = REB
-					NOT = { is_core = REB }
-				}
-				add_core = REB
-			}
-			create_vassal = REB
-		}		
-	}
-}
+# yuan_red_turban_rebels = {
+	# color = { 25 180 25 }
+	# area = nation_rebel_tag #Or nation			# Stays within provinces of their rebel tag
+	# government = any				# No special preference
+	# defection = culture_group			# If the country seeks independence, defection specifies what type of provinces it wants.
+	# independence = culture_group 		# Seeks independence for spawn province culture. Will not spawn at all if there is no suitable tag.
+	# defect_delay = 48				# Can spontaneously declare independence after 48 months (earliest)
+	# unit_transfer = yes				# Units switch allegiance after enforcing demands.
+	# gfx_type = culture_province	
+	# will_relocate = yes	
+	# resilient = no
+	# reinforcing = yes
+	# general = yes				
+	# smart = yes
+	# artillery = 0.0
+	# infantry = 0.7
+	# cavalry = 0.3
+	# morale = 1.0
+	# # Possible handle actions
+	# handle_action_negotiate = yes
+	# handle_action_stability = yes
+	# handle_action_build_core = yes
+	# handle_action_send_missionary = yes		
+	# handle_action_change_culture = yes
+	# # The rebel type with the highest modifier for this province gets picked
+	# spawn_chance = {
+		# factor = 1
+		# modifier = { 
+			# factor = 0
+			# owner = { tag = YUA }
+			# owner = { is_emperor_of_china = yes }
+			# owner = { has_country_flag = red_turban_rebellion_over_flag }
+		# }
+		# modifier = { 
+			# factor = 0
+			# owner = { tag = YUA }
+			# owner = { is_emperor_of_china = yes }
+			# owner = { NOT = { has_country_flag = yuan_red_turban_rebellion_began_flag } }
+		# }
+		# modifier = { 
+			# factor = 100
+			# owner = { tag = YUA }
+			# owner = { is_emperor_of_china = yes }
+			# owner = { NOT = { has_country_flag = red_turban_rebellion_over_flag } }
+			# owner = { has_country_flag = yuan_red_turban_rebellion_began_flag }
+		# }
+	# }
+ 	# # This is checked for EACH province in the Area of Operations
+	# movement_evaluation = {
+		# factor = 1
+		# modifier = {
+			# factor = 0.1
+			# units_in_province = 1
+		# }
+		# modifier = {
+			# factor = 0.001
+			# controlled_by = REB
+		# }
+		# modifier = {
+			# factor = 1.5
+			# unrest = 2
+		# }
+		# modifier = {
+			# factor = 1.5
+			# unrest = 4
+		# }
+		# modifier = {
+			# factor = 1.5
+			# unrest = 6
+		# }
+	# }
+ 	# # Province Scope
+ 	# siege_won_trigger = {
+ 		# culture = REB
+ 	# }
+	# siege_won_effect = { #Add Nationalism and Unrest
+		# if = {
+			# limit = { NOT = { is_core = REB } }
+			# add_core = REB
+		# }
+		# add_nationalism = 10 # Add ten extra years of nationalism
+		# add_unrest = 5
+	# }
+	# # Country scope
+	# can_negotiate_trigger = {
+		# is_at_war = no
+		# #stability = 0
+	# }
+	# # Country scope
+	# can_enforce_trigger = {
+		# always = yes
+	# }
+	# # Localisation for their demands
+	# demands_description = "red_turban_rebels_demand"
+	# # Country scope
+	# demands_enforced_effect = {
+		# add_prestige = -10	
+		# if = {
+			# limit = {
+				# exists = REB
+			# }
+			# every_owned_province = {
+				# limit = {
+					# has_rebel_faction = REB
+					# culture = REB
+				# }
+				# if = {
+					# limit = { NOT = { is_core = REB } }
+					# add_core = REB
+				# }			
+				# cede_province = REB
+			# }			
+		# }
+		# if = {
+			# limit = {
+				# NOT = { exists = REB }
+			# }
+			# every_owned_province = {
+				# limit = {
+					# has_rebel_faction = REB
+					# culture = REB
+					# NOT = { is_core = REB }
+				# }
+				# add_core = REB
+			# }
+			# create_vassal = REB
+		# }		
+	# }
+# }
 
 ######################################################################
 # Disgruntled nobles.

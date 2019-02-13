@@ -63,5 +63,5 @@
  obj_feudal_generic_non_abrahamic_competent_ruler: "Competent Ruler"
  obj_feudal_generic_non_abrahamic_competent_ruler_desc: "Have a ruler with at least 3 in each Adm, Dip, and Mil stats."
  
- #V30
+ #V30 #Lots of the above strings were edited too
  mercantilism_institution: "Mercantilism"

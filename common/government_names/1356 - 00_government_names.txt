@@ -106,3 +106,53 @@ egyptian_nation_theocracy_christian = {
 		government = theocracy
 	}
 }
+
+cornish_monarchy_titles = {
+	rank = {
+		1 = EARLDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = EARL
+		2 = HIGH_KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = COUNTESS
+		2 = HIGH_QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		tag = CRN
+		government = monarchy
+	}
+}
+
+cornish_monarchy_titles = {
+	rank = {
+		1 = DDUGAETH
+		2 = DEYRNAS
+		3 = YMERODRAETH
+	}
+
+	ruler_male = {
+		1 = DUG
+		2 = BRENIN
+		3 = YMERAWDWR
+	}
+
+	ruler_female = {
+		1 = DDUGES
+		2 = BRENHINES 
+		3 = EMPRESS
+	}
+
+	trigger = {
+		tag = WLS
+		government = monarchy
+	}
+}
