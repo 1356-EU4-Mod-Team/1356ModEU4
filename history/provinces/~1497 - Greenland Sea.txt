@@ -1,3 +1,0 @@
-1356.1.1 = { discovered_by = NOR }
-
-1453.1.1 = { discovered_by = western }

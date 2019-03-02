@@ -25,7 +25,7 @@ discovered_by = nomad_group
 			owner = PEY controller = PEY add_core = PEY 
 } #BT In
 
-1356.12.26  = {  remove_core = PEY } #BT Out
+1356.12.26  = {  owner = CHR controller = CHR remove_core = PEY } #BT Out
 
 1363.1.1   = { owner = LIT controller = LIT add_core = LIT estate = estate_nobles
 	       base_tax = 2 base_production = 2 base_manpower = 1 add_local_autonomy = 10

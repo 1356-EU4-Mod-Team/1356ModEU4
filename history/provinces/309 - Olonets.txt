@@ -23,12 +23,12 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
-1360.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
-	owner = ING
-	add_core = ING
-	controller = ING
-	remove_core = NOV
-}
+#1337.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
+#	owner = ING
+#	add_core = ING
+#	controller = ING
+#	remove_core = NOV
+#}
 
 1478.1.15 = {	owner = MOS controller = MOS add_core = MOS remove_core = NOV remove_core = ING }
 1503.4.1 = {

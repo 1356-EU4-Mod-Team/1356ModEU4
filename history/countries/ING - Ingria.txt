@@ -54,6 +54,7 @@ capital = 33 #Neva
 # }
 
 #1380.1.1 = { #Historically he arrived to claim his inheritance around now? #Commented out to prevent weird bugs with EU4.
+
 1356.12.1 = {
 	monarch = {
 		name = "Patrikas I"
@@ -67,15 +68,15 @@ capital = 33 #Neva
 	}
 }
 
-# 1388.1.1 = { #Historically were given control of Ingria circa 1400 or so, with Patrikas I still owning Karelia. Or something like that. Information is scarse for this, so I'm leaving it out.
-	# monarch = {
-		# name = "Lengvenis I"
-		# dynasty = "Gediminid"
-		# culture = lithuanian
-		# religion = catholic
-		# adm = 3
-		# dip = 2
-		# mil = 5
-		# age = 24
-	# }
-# }
+ 1388.1.1 = { #Historically were given control of Ingria circa 1400 or so, with Patrikas I still owning Karelia. Or something like that. Information is scarse for this.
+	 monarch = {
+		 name = "Lengvenis I"
+		 dynasty = "Gediminid"
+		 culture = lithuanian
+		 religion = catholic
+		 adm = 3
+		 dip = 2
+		 mil = 5
+		 age = 24
+	 }
+ }

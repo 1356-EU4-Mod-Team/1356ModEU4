@@ -1273,7 +1273,7 @@ crusader_state_reform = {
 		primary_culture = crusader_culture
 		religion = catholic
 	}
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	legacy_equivalent = crusader_state_gov
 	valid_for_nation_designer = no
@@ -1287,6 +1287,9 @@ crusader_state_reform = {
 	}
 	custom_attributes = {
 		locked_government_type = yes
+		royal_marriage = yes
+		queen = yes
+		heir = no
 	}
 }
 

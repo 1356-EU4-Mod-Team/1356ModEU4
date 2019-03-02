@@ -11,6 +11,7 @@ trade_goods = fur
 base_manpower = 2
 capital = "Ladoga"
 is_city = yes
+#fort_15th = yes #1356
 add_core = NOV
 add_core = ING
 
@@ -20,12 +21,12 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
-1360.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
-	owner = ING
-	add_core = ING
-	controller = ING
-	remove_core = NOV
-}
+#1337.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
+#	owner = ING
+#	add_core = ING
+#	controller = ING
+#	remove_core = NOV
+#}
 
 1478.1.15 = {	owner = MOS controller = MOS add_core = MOS remove_core = NOV }
 1503.4.1 = {	owner = RUS controller = RUS add_core = RUS remove_core = MOS }

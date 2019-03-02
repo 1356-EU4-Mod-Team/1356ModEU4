@@ -830,7 +830,7 @@ christian = { #1356
 	#####1356 Additions here#####
 	hussite = {
 		color = { 0.7 0.6 0.4 }
-		icon = 28
+		icon = 29
 		allowed_conversion = {
 			reformed
 			protestant
@@ -938,7 +938,7 @@ christian = { #1356
 
 	nestorian = { #Needs Heretics, icon, and special icons.
 		color = { 255 210 150 } #For now
-		icon = 29
+		icon = 31
 		country = {
 			num_accepted_cultures = 2
 			global_unrest = -2
@@ -952,11 +952,11 @@ christian = { #1356
 			local_missionary_strength = -0.03
 		}
 		
-		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
+		heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
 		
 		misguided_heretic = yes		# Other christians hate them less
 		
-		holy_sites = { 410 379 2313 739 535 }
+		holy_sites = { 410 379 2313 739 535 } #Converter uses these 358 1227 2313 1234 419
 		
 		blessings = {
 			nestorian_legitimize_government

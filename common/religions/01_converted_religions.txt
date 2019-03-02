@@ -1,0 +1,77 @@
+
+pagan = {
+	zun_pagan_reformed = {
+		icon = 43
+		color = { 0.9 1.0 0.0 }
+		
+		country = {
+			tolerance_own = 3
+			hostile_attrition = 1
+		}
+		country_as_secondary = {
+			tolerance_own = 3
+			hostile_attrition = 1
+		}
+		
+		heretic = { DARKNESS }	
+	}
+	bon = {
+		color = { 8 140 131 }
+		icon = 60
+		country = {
+			tolerance_heretic = 1
+			shock_damage_received = -0.1
+		}
+		country_as_secondary = {
+			horde_unity = 1
+			shock_damage_received = -0.1
+		}
+		province = {
+			local_defensiveness = 0.1
+		}
+		
+		heretic = { ZEN }
+		
+		uses_karma = yes
+	}
+	bon_reformed = {
+		color = { 8 140 131 }
+		icon = 60
+		country = {
+			tolerance_heretic = 1
+			shock_damage_received = -0.1
+		}
+		country_as_secondary = {
+			horde_unity = 1
+			shock_damage_received = -0.1
+		}
+		province = {
+			local_defensiveness = 0.1
+		}
+		
+		heretic = { ZEN }
+		
+		uses_karma = yes
+	}
+}
+
+
+dharmic = {
+	jain = {
+		icon = 59
+		color = { 1.2 0.3 0.6 }
+		country = {
+			tolerance_heathen = 2
+			tolerance_heretic = 2
+			religious_unity = 0.5
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		country_as_secondary = {
+			religious_unity = 0.75
+		}
+		
+		heretic = { TERAPANTHA }
+	}
+}

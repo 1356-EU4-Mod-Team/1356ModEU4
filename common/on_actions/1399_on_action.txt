@@ -14,3 +14,18 @@ on_new_monarch = {
 		fladebugevent.1
 	}
 }
+
+on_monarch_death = {
+	if = {
+		limit = {
+			government = crusader_state_reform
+			NOT = { has_country_flag = two_heirs_succession_crusader_flag }
+		}
+		ROOT = {
+			set_country_flag = crusader_state_time_to_choose_ruler_flag
+		}
+	}
+	events = {
+		1356government.98
+	}
+}

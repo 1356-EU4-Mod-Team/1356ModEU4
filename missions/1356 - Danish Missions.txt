@@ -84,6 +84,7 @@ danish_missions_2 = {
 
 	dan_baltic_fleet = {
 		icon = mission_galleys_in_port
+		position = 2
 		required_missions = { annex_holstein }
 		trigger = {
 			navy_size_percentage = 0.9
@@ -403,7 +404,7 @@ danish_missions_3 = {
 	conquer_gotland = {
 		icon = mission_conquer_5_states
 		required_missions = { weaken_the_hansa }
-		position = 7
+		position = 8
 		provinces_to_highlight = {
 			province_id = 25
 		}

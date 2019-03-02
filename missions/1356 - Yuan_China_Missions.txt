@@ -698,6 +698,7 @@ yuan_toqtoa_red_turban_rebellion_west_china_group = { #Toqto's Return - Crush th
 			set_country_flag = red_turban_rebellion_over_flag
 			add_years_of_income = 1.5
 			add_inflation = 1.5	
+			remove_country_modifier = yuan_starting_modifiers
 			
 			#remove_country_modifier = mongol_debuff - Save this for later, alongside the reforming of Empire work that is to come.
 			#Let them keep the province modifiers in China for the rebellion

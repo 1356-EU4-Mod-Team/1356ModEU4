@@ -192,10 +192,10 @@ alliance = {
 	end_date = 1503.4.1
 }
 #Novgorod and Ingria
-vassal = {
+march = {
 	first = NOV
 	second = ING
 	#start_date = 1333.1.1 #Historical, though its set to 1356 for balance.
-	start_date = 1360.1.1
+	start_date = 1356.1.1
 	end_date = 1478.1.15
 }

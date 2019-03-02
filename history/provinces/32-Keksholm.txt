@@ -13,6 +13,7 @@ trade_goods = fur
 base_manpower = 1
 capital = "Korela" # initial Russian name
 is_city = yes
+fort_15th = yes #1356
 discovered_by = western
 discovered_by = eastern
 discovered_by = nomad_group
@@ -22,7 +23,7 @@ discovered_by = GOL
 discovered_by = GLH
 discovered_by = AST
 
-1360.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
+1337.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
 	owner = ING
 	add_core = ING
 	controller = ING
@@ -35,6 +36,7 @@ discovered_by = AST
 	add_core = MOS
 	remove_core = NOV
 	remove_core = ING
+	fort_15th = no #1356
 } # Muscovite annexation of Novgorod
 1503.4.1 = {
 	owner = RUS

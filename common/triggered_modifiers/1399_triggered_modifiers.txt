@@ -52,7 +52,7 @@ hundred_years_war = {
 		}
 	}
 
-	discipline = 0.1
+	discipline = 0.05
 	land_morale = 0.1
 	war_exhaustion = -0.05
 }

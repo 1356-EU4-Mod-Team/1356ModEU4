@@ -432,6 +432,10 @@
  flaeng.33.d: "Now that the Duchy of Cornwall is no longer in our hands the title has been revoked from us! Various nobles across our land have already heard the news and are upset with us! We need to be careful..."
  flaeng.33.a: "Curses! This shall hurt our family name..."
  
+ 1356government.98.t: "Hidden Event - Crusader Succession choice"
+ 1356government.98.d: "This is a hidden event to determine how the succession of a Crusader State goes."
+ 1356government.98.a: "Oh joy..."
+ 
  crusader_states.12.t: "The Plight of $KOJ$"
  crusader_states.12.d: ""
  crusader_states.12.a: "Send the Crusaders my best Knights!"

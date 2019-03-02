@@ -1140,10 +1140,7 @@ bur_claims_lowlands_tree = { #Burgundy/Arles/Lotharingia - Lowland Claims Tree
 						FLA = {	is_subject = yes }
 						BUR = { owns_core_province = 191 }				
 					}
-					AND = { #Flanders and Nevers Subjects
-						FLA = { is_subject = yes }
-						NEV = {	is_vassal = yes	}
-					}
+					FLA = { is_subject = yes }
 					AND = {
 						BUR = {
 							1865 = {
