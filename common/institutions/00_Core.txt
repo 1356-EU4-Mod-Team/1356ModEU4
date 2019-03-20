@@ -28,7 +28,7 @@ feudalism = { #Heavily #Edited by 1356
 	trade_company_efficiency = 0.0
 
 
-	history = {
+	history = { #1356 #Everything in Feudal History is 100% new and none of it should be vanilla save for the RNW stuff
 		is_year = 1000
 		OR = {
 			AND = { #If this is changed costs for Nation Designer may also need to be changed.
@@ -51,117 +51,369 @@ feudalism = { #Heavily #Edited by 1356
 					}
 				}
 			}
-			AND = {
-				owner = { is_playing_custom_nation = no }
+			OR = {
+				region = british_isles_region
+				region = iberia_region
+				region = france_region
+				region = italy_region
+				region = south_german_region
+				region = poland_region
+				region = ruthenia_region
+				region = north_german_region
+				region = korea_region
+				region = balkan_region
+				region = coromandel_region #May need to be adjusted when India update is added
+			}
+			#Every region below needs a more accurate date when it becomes Feudal.
+			AND = { #Scandanavia and Baltic
 				OR = {
-					AND = {#1356
-						culture = persian
-						primary_culture = persian #1356
-						NOT = { tag = MUZ } #1356
-						NOT = { tag = INT } #1356
-					}
-					
-					AND = { #1356
-						culture = azerbaijani
-						primary_culture = azerbaijani #1356
-						NOT = { tag = CHB } #1356
-					}
-					AND = { #1356
-						culture = kurdish
-						primary_culture = kurdish #1356
-						NOT = { tag = JLR } #1356
-					}
-					AND = { #1356
-						culture = armenian
-						primary_culture = armenian #1356
-						NOT = { tag = QON }#1356
-					}
-					AND = {#1356
-						culture = mazandarani
-						primary_culture = mazandarani #1356
-						NOT = { tag = PAD } #1356
-					}
+					region = scandinavia_region
+					region = baltic_region
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion = finnish_pagan_reformed } #Province Religion
+				NOT = { religion = baltic_pagan_reformed } #Province Religion
+				OR = {
 					AND = {
-						culture = turkish
-						primary_culture = turkish #1356
-						NOT = { tag = ERE } #1356
-						NOT = { tag = QON } #1356
+						NOT = { province_id = 4114 } #Jokkmokk
+						NOT = { province_id = 18 } #Lappland
+						NOT = { province_id = 4152 } #Kainuu
+						NOT = { province_id = 4113 } #Rovaniemi
+						NOT = { area = laponia_area }
 					}
-					AND = {
-						culture = khorasani
-						primary_culture = khorasani #1356
-						NOT = { tag = KRT } #1356
-						NOT = { tag = MIH } #1356
-						NOT = { tag = SAB } #1356
-						NOT = { tag = TRS } #1356
-					}
-					culture = omani_culture
-					culture = yemeni_culture
-					#culture = manchu #In our start date, no. Covered below.
-					culture_group = byzantine
-					culture_group = dravidian
-					culture_group = east_asian
-					culture_group = east_slavic
-					culture_group = eastern_aryan
-					culture_group = japanese_g
-					culture_group = korean_g
-					#culture_group = scandinavian #1356 #Replaced so Sami dont get stuck with Feudalism
-					primary_culture = icelandic #1356
-					primary_culture = danish #1356
-					primary_culture = swedish #1356
-					primary_culture = norwegian #1356
-					culture_group = west_slavic
-					culture_group = western_aryan
-					#province_id = 383
-					#province_id = 412
-					#province_id = 2327
-					#province_id = 2329
-					#province_id = 2331
-					#province_id = 2999
+					is_year = 1400 #Get a more accurate date
 				}
 			}
-			#AND = { #1356 #Removed so Nubians can be Tribal
-			#	region = horn_of_africa_region
-			#	owner = { NOT = { has_reform = tribal_federation } }
-			#}
-			AND = {
-				culture = al_misr_arabic
-				NOT = { area = libyan_desert_area }
-				NOT = { area = cyrenaica_area }
+			AND = { #Egypt
+				region = egypt_region
+				NOT = { owner = { government = tribal } }
+				OR = {
+					AND = {
+						NOT = { area = lower_nubia_area }
+						NOT = { area = al_wahat_area }
+						NOT = { area = cyrenaica_area }
+						NOT = { province_id = 365 } #Sinai
+						NOT = { province_id = 1231 } #Aswan
+					}
+					is_year = 1500 #Get a more accurate date
+				
+				}
 			}
-			AND = {
-				culture_group = hindusthani
-				NOT = { owner = { has_reform = tribal_kingdom } } #Ladakh
+			AND = { #North Africa #Theoritically this could be a problem, if uncolonized land can have an institution.
+				region = maghreb_region #(Should Mzab start with Feudalism?)
+				NOT = { owner = { government = tribal } }
+				OR = {
+					AND = {
+						NOT = { area = fezzan_area }
+						NOT = { area = macaronesia_area }
+						NOT = { area = north_saharan_area }
+						NOT = { province_id = 350 } #Laghouat
+						NOT = { province_id = 351 } #Biskra
+					}
+					is_year = 1500 #Get a more accurate date
+				}
+			}
+			AND = { #Carpathia
+				region = carpathia_region
+				NOT = { owner = { government = tribal } }
+				NOT = { province_id = 4125 } #Szolnok
+			}
+			AND = { #Low Countries
+				region = low_countries_region
+				NOT = { owner = { government = tribal } }
+				NOT = { province_id = 1931 } #East Frisia
+			}
+			AND = { #Russia
+				region = russia_region
+				NOT = { owner = { government = tribal } }
+				NOT = { area = tambov_area } 
+			}
+			AND = { #Caucasia
+				region = caucasia_region
+				OR = {
+					is_year = 1450 #Get a more accurate date
+					NOT = { area = circassia_area }
+				}
+			}
+			AND = { #Anatolia & Mashriq
+				OR = {
+					region = anatolia_region
+					region = mashriq_region
+				}
+				NOT = { owner = { government = tribal } }
+				OR = {
+					AND = {
+						#We want these tags to not have Feudalism, but it to tick faster since their culture already has it.
+						NOT = { owner = { tag = ERE } } #Does this work?
+						NOT = { owner = { tag = AKK } } #Does this work?
+						NOT = { owner = { tag = QAR } } #Does this work?
+						#We want JLR to not have it, but a lot of their land to have it.
+						NOT = { owner = { tag = JLR} } #Does this work?
+					}
+					is_year = 1400 #Get a more accurate date
+				}
+			}
+			AND = { #Arabia & Mashriq
+				OR = {
+					region = arabia_region
+					region = mashriq_region
+				}
+				NOT = { owner = { government = tribal } }
+				OR = {
+					AND = {
+						NOT = { culture = bedouin_arabic }
+						NOT = { owner = { tag = JLR } }
+					}
+					is_year = 1650 #Get a more accurate date
+				}
+				#Did I miss anyone?
+			}
+			AND = { #Persia and Khorasan
+				OR = {
+					region = persia_region
+					region = khorasan_region
+				}
+				OR = {
+					NOT = { owner = { government = tribal } }
+					is_year = 1370 #Get a more accurate date
+				}
+				#Did I miss anyone?
+			}
+			AND = { #Pontic Steppe
+				region = crimea_region
+				NOT = { owner = { government = tribal } }
+				OR = {
+					AND = {
+						NOT = { area = lower_don_area }
+						NOT = { area = astrakhan_area }
+						NOT = { area = zaporizhia_area }
+						NOT = { area = yedisan_area }
+						NOT = { area = azov_area }
+						NOT = { province_id = 284 } #Crimea
+						NOT = { province_id = 2447 } #Matrega
+					}
+					is_year = 1600 #Get a more accurate date
+				}
+			}
+			AND = { #Urals #Theoritically this could be a problem, if uncolonized land can have an institution.
+				region = ural_region
+				NOT = { owner = { government = tribal } }
+				OR = {
+					AND = {
+						NOT = { province_id = 4129 } #Ust-Vym
+						NOT = { province_id = 1964 } #Ust-Sysolsk
+						NOT = { province_id = 1963 } #Cherdyn
+						NOT = { province_id = 1077 } #Solikamsk
+						NOT = { area = samara_area }
+						NOT = { area = bashkiria_area }
+						NOT = { area = ural_area }
+						NOT = { area = kazan_area }
+						NOT = { area = saratov_area }
+						NOT = { area = kama_area }
+						NOT = { area = volga_area }
+					}
+					AND = {
+						owner = { primary_culture = uralic }
+						owner = { primary_culture = novgorodian }
+						owner = { primary_culture = russian }
+						is_year = 1400 #Get a more accurate date
+					}
+					is_year = 1600 #Get a more accurate date
+				}
+			}
+			AND = { #Central Asia 
+				region = central_asia_region
+				OR = {
+					AND = {
+						NOT = { owner = { government = tribal } }
+						NOT = { culture = uyghur }
+					}
+					NOT = { is_year = 1600 } #Get a more accurate date
+				}
+			}
+			AND = { #Mongolia #Theoritically this could be a problem, if uncolonized land can have an institution.
+				region = mongolia_region
+				NOT = { owner = { government = tribal } }
+				NOT = { is_year = 1600 } #Get a more accurate date
+			}
+			AND = { #Manchuria #Theoritically this could be a problem, if uncolonized land can have an institution.
+				region = manchuria_region
+				NOT = { owner = { government = tribal } }
+				NOT = { is_year = 1430 } #Get a more accurate date
+			}
+			AND = { #Both Siberias #Theoritically this could be a problem, if uncolonized land can have an institution.
+				OR = {
+					region = east_siberia_region
+					region = west_siberia_region
+				}
+				OR = {
+					AND = {
+						NOT = { area = buryatia_area }
+						NOT = { province_id = 2103 } #Udi
+						NOT = { owner = { government = tribal } }
+					}
+					NOT = { is_year = 1600 } #Get a more accurate date
+				}
+			}
+			AND = { #Sub Saharan Africa AKA:Kongo, Central Africa, East Africa, South Africa, Niger, Sahel, Guinea #Theoritically this could be a problem, if uncolonized land can have an institution.
+				OR = {
+					region = horn_of_africa_region
+					region = east_africa_region
+					region = central_africa_region
+					region = kongo_region
+					region = south_africa_region
+					region = sahel_region
+					region = guinea_region
+					region = niger_region
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion = shamanism } #This is the province religion
+			}
+			AND = { #Burma, Xinan, and Indochina
+				OR = {
+					region = burma_region
+					region = indo_china_region
+					region = xinan_region
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion = animism }
+			}
+			AND = { #Tibet
+				region = tibet_region
+				NOT = { owner = { government = tribal } }
+			}
+			AND = { #North and South China
+				OR = {
+					region = north_china_region
+					region = south_china_region
+				}
+				OR = {
+					AND = {
+						NOT = { owner = { government = tribal } }
+						NOT = { religion = animism }
+						NOT = { religion = tengri_pagan_reformed }
+						NOT = { culture = mongol }
+						NOT = { culture = oirats }						
+					}
+					is_year = 1600 #Check to make sure this year is correct
+				}
+			}
+			AND = { #Hinduistan
+				region = hindusthan_region
+				OR = {
+					NOT = { owner = { government = tribal } }
+					NOT = { culture = jharkhandi }
+				}
+			}
+			AND = { #Bengal
+				region = bengal_region
+				OR = {
+					AND = {
+						NOT = { culture = jharkhandi }
+						NOT = { culture = garjati }
+						NOT = { culture = gondi }
+						NOT = { culture = chin }
+						NOT = { province_id = 2040 } #Sadiya
+					}
+					NOT = { owner = { government = tribal } }
+				}
+
+			}
+			AND = { #Western India
+				region = west_india_region
+				OR = {
+					NOT = { culture = saurashtri } #Make an exception for Saurashtri? Look further into
+					NOT = { owner = { government = tribal } }
+				}
+			}
+			AND = { #Deccan
+				region = deccan_region
+				OR = {
+					NOT = { culture = gondi }
+					NOT = { owner = { government = tribal } }
+				}
+			}
+			#AND = { #Coromandel
+				#region = coromandel_region
+				#NOT = { owner = { government = tribal } }
+			#}
+			AND = { #Japan
+				region = japan_region
+				OR = {
+					NOT = { area = hokkaido_area } #Ainu
+					NOT = { owner = { government = tribal } }
+				}
+			}
+			AND = { #Malaya, Moluccas, Indonesia, 
+				OR = {
+					region = indonesia_region
+					region = moluccas_region
+					region = malaya_region
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion = animism }
+			}
+			AND = { #North American Natives, Caribbean Natives, Australia,Oceania, and South American Natives (Not Incan) #Theoritically this could be a problem, if uncolonized land can have an institution.
+				#In the future ensure specific North American Tribes recieve Feudalism when they historically did
+				OR = {
+					region = canada_region
+					region = great_lakes_region
+					region = northeast_america_region
+					region = southeast_america_region
+					region = mississippi_region
+					region = great_plains_region
+					region = california_region
+					region = cascadia_region
+					region = hudson_bay_region
+					region = rio_grande_region
+					region = colombia_region
+					region = la_plata_region
+					region = brazil_region
+					region = carribeans_region
+					region = australia_region
+					region = oceanea_region
+				}
+				OR = {
+					OR = {
+						NOT = { owner = { government = tribal } }
+						NOT = { owner = { government = government = native } }
+					}
+					AND = {
+						NOT = { religion = totemism } #This is the province religion
+						NOT = { religion = animism } #This is the province religion
+						NOT = { religion = inti } #This is the province religion
+						NOT = { religion = norse_pagan_reformed }
+						NOT = { province_id = 858 } #Tamaulipas
+						NOT = { area = upper_acadia_area }
+						NOT = { area = lower_acadia_area }
+						NOT = { area = newfoundland_area }
+						NOT = { area = labrador_area }
+						NOT = { area = cote_nord_area }
+						NOT = { area = greenland_area }
+						NOT = { area = notre_dame_mountains_area }
+					}
+				}
+			}
+			AND = { #Mexico, Central America
+				OR = {
+					region = central_america_region
+					region = mexico_region
+				}
+				NOT = { religion = animism }
+				NOT = { religion = nahuatl }
+				NOT = { religion = mesoamerican_religion }
+				NOT = { religion = totemism }
+			}
+			AND = { # Upper Peru, Peru
+				OR = {
+					region = upper_peru_region
+					region = peru_region
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion = animism }
+				is_year = 1650 #Get a more accurate year, as these should be the only natives to have Feudalism aside from a few Eastern American Tribes
 			}
 			owner = { technology_group = high_american }
-			owner = {
-				NOT = {
-					government = tribal
-					government = native
-					primary_culture = bedouin_arabic
-					primary_culture = uyghur
-					primary_culture = sapmi #1356
-					technology_group = andean
-					technology_group = mesoamerican
-					technology_group = north_american
-					technology_group = south_american
-					technology_group = sub_saharan
-				}
-			}
-			AND = { #1356
-				OR = {
-					culture = swahili
-					culture = manchu
-				}
-				is_year = 1430
-			}
-			AND = {
-				is_year = 1600
-				owner = {
-					NOT = { has_reform = siberian_tribe }
-					NOT = { has_reform = steppe_horde }
-				}
-			}
 			is_year = 1700
 		}
 	}
@@ -172,10 +424,11 @@ feudalism = { #Heavily #Edited by 1356
 	#on_start = institution_events.1
 
 	can_embrace = {
-		always = yes
+		owner = { NOT = { government = tribal } }
+		#always = yes
 	}
 
-	embracement_speed = {
+	embracement_speed = { #Add a modifier for "Reformed" Religions
 		modifier = {
 			factor = 0.6
 			scale = yes
@@ -426,11 +679,9 @@ mercantilism_institution = { #1356 New Content
 					owner = { culture_group = low_lands_culture_group }
 					owner = { culture_group = korean_g }
 					owner = { culture_group = japanese_g }
-					AND = {
-						owner = { 
-							culture_group = east_asian
-							NOT = { tag = YUA }
-						}
+					owner = { 
+						culture_group = east_asian
+						NOT = { tag = YUA }
 					}
 				}
 			}
@@ -1931,9 +2182,7 @@ global_trade = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_center_of_trade_spread
-				OR = {
-					province_has_center_of_trade_of_level = 3
-				}
+				province_has_center_of_trade_of_level = 3
 			}
 		}
 		modifier = {
@@ -1947,9 +2196,7 @@ global_trade = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_center_of_trade_spread
-				OR = {
-					province_has_center_of_trade_of_level = 2
-				}
+				province_has_center_of_trade_of_level = 2
 			}
 		}
 		modifier = {

@@ -1,0 +1,20 @@
+government = theocracy
+add_government_reform = monastic_order_reform
+primary_culture = crusader_culture
+add_accepted_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 341	# Carthago
+historical_friend = KNI
+historical_rival = KOJ
+add_historical_friend = MRO
+
+1318.12.24 = {
+	monarch = {
+		name = "Marcello"
+		adm = 4
+		dip = 3
+		mil = 5
+		dynasty = "d'Lusignan"
+	}
+} #BT Out

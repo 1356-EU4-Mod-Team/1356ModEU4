@@ -23,7 +23,9 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.26 = { owner = FRD controller = FRD add_core = FRD }
+1356.12.24 = { owner = FRA controller = FRA add_core = FRA } #BT Out
+1356.12.26 = { owner = FRD controller = FRD remove_core = FRA  add_core = FRD } #BT Out
+
 1422.5.11  = { owner = ENG controller = ENG } # Captured by the English
 1436.4.13  = { owner = FRD controller = FRD } # Retaken by Charles VII
 1440.1.1   = { base_tax = 11 base_production = 11 base_manpower = 10 }

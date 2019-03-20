@@ -20,7 +20,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { owner = TOU controller = TOU remove_core = GUY remove_core = FRA } #BT In
-1356.12.26  = { owner = FRD controller = FRD add_core = AQT add_core = FRD } #BT Out
+1356.12.26  = { owner = FRD controller = FRD add_core = GUY add_core = FRD } #BT Out
 
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
 1560.1.1 = { religion = reformed }

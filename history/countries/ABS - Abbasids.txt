@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 2
+primary_culture = al_iraqiya_arabic
+religion = sunni
+technology_group = muslim
+capital = 410 #Baghdad
+add_accepted_culture = al_misr_arabic
+add_accepted_culture = bedouin_arabic
+add_accepted_culture = al_suryah_arabic
+religious_school = shafii_school
+
+1356.12.24 = {
+	monarch={
+		name="Abdullah"
+		dynasty="Abbasid"
+		birth_date = 1324.6.12
+		dip = 3
+		adm = 3
+		mil = 5
+	}
+}

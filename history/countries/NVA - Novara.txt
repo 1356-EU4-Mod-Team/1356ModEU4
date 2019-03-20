@@ -1,7 +1,17 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = republic
+add_government_reform = merchant_republic
 government_rank = 1
 technology_group = western
 primary_culture = lombard
 religion = catholic
 capital = 2979 # Bologna
+
+1356.1.1 = {
+	monarch = {
+		name = "Città-Stato"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}

@@ -23,8 +23,8 @@ discovered_by = east_african
 extra_cost = 16
 center_of_trade = 2
 
-1356.12.24 = { add_claim = KOJ } #BT In
-1356.12.26 = { remove_claim = KOJ } #BT Out
+1356.12.24 = { owner = AYB controller = AYB add_core = AYB } #BT In
+1356.12.26 = { owner = SYR controller = SYR remove_core = AYB } #BT Out
 
 1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = SYR }
 1516.8.24 = {	owner = TUR

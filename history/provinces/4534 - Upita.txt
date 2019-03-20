@@ -24,10 +24,12 @@ discovered_by = ottoman
 
 1356.12.24  = { 
 				owner = KUR controller = KUR add_core = KUR remove_core = LIT
+				religion = baltic_pagan_reformed
 } #BT In
 
 1356.12.26  = { 
 				owner = LIT controller = LIT add_core = LIT remove_core = KUR
+				religion = catholic
 } #BT Out
 
 1569.1.1 = { capital = "Raseiniai" }

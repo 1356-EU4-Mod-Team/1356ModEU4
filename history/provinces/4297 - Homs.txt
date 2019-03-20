@@ -23,7 +23,7 @@ discovered_by = indian
 
 1356.12.24  = { 
 				owner = TPL controller = TPL add_core = TPL
-				religion = nestorian
+				religion = catholic
 } #BT In
 
 1356.12.26  = { 

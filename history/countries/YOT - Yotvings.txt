@@ -4,7 +4,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 2
-primary_culture = lithuanian
+primary_culture = mazovian
+add_accepted_culture = byelorussian
 religion = baltic_pagan_reformed
 technology_group = eastern
 historical_friend = LIT

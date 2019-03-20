@@ -22,7 +22,7 @@ discovered_by = indian
 
 1356.12.24  = { 
 				owner = ATO controller = ATO add_core = ATO
-				religion = nestorian
+				religion = catholic
 } #BT In
 
 1356.12.26  = { 

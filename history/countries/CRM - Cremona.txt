@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = romagnan
 religion = catholic
 capital = 1862 # Cremona
+
+1356.1.1 = {
+	monarch = {
+		name = "Città-Stato"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}

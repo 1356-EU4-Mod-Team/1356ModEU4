@@ -19,6 +19,18 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
+1356.12.24  = {
+			owner = CTA controller = CTA add_core = CTA
+			religion = catholic
+			capital = "Carthago"
+} #BT In
+
+1356.12.26  = {
+			owner = TUN controller = TUN remove_core = CTA
+			religion = sunni
+			capital = "Tunis"
+} #BT Out
+
 1489.1.1 = { unrest = 4 } # Abu Zikriya Yahya overthrown by Abul Mumin
 1490.1.1 = { unrest = 0 } # Abu Yahya recaptures the power
 1534.8.16 = {

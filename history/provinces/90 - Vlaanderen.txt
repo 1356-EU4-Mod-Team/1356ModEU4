@@ -19,6 +19,14 @@ discovered_by = ottoman
 extra_cost = 24
 center_of_trade = 3
 
+1356.12.24 = {
+			hre = yes
+} #BT In
+
+1356.12.26 = {
+			hre = no
+} #BT Out
+
 1477.1.5 = { owner = HAB controller = HAB add_core = HAB }
 1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
 1548.6.26 = { hre = yes } # Flanders incorporated into the Holy Roman Empire

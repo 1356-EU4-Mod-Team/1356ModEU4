@@ -22,6 +22,14 @@ discovered_by = eastern
 discovered_by = indian
 discovered_by = nomad_group
 
+1356.12.24  = {
+			owner = ABS controller = ABS add_core = ABS
+} #BT In
+
+1356.12.26  = {
+			owner = JLR controller = JLR remove_core = ABS
+} #BT Out
+
 1394.1.1   = { owner = TIM controller = TIM add_core = TIM }
 1396.1.1   = { owner = JLR controller = JLR }
 1401.7.1   = { owner = TIM controller = TIM }

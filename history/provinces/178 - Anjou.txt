@@ -20,8 +20,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { add_core = FRA } #BT In
-1356.12.26  = { remove_core = FRA owner = ANJ controller = ANJ add_core = ANJ } #BT Out # Jean II, offers his 2nd son Louis II the duchy of Anjou
+1356.12.24  = { add_core = FRA owner = ANJ controller = ANJ } #BT In
+1356.12.26  = { remove_core = FRA } #BT Out # Jean II, offers his 2nd son Louis II the duchy of Anjou
 
 #1356.12.26   = { controller = ENG }
 #1357.9.23  = { controller = ANJ }

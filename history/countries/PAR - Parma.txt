@@ -7,6 +7,23 @@ technology_group = western
 capital = 105	# Parma
 fixed_capital = 105 # Cannot move capital away from this province & no power cost to move to it
 
+1356.12.24 = {
+	government = republic
+	add_government_reform = oligarchic_republic 
+
+	monarch = {
+		name = "Città-Stato"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+} # BT Out
+
+1356.12.26 = { government = monarchy add_government_reform = feudalism_reform }
+
 1404.3.1 = {
 	monarch = {
 		name = "Ottobuono"

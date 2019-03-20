@@ -23,7 +23,7 @@ discovered_by = ottoman
 1304.1.1   = { add_core = AMG }
 
 1356.12.24  = { owner = TOU controller = TOU remove_core = GUY } #BT In
-1356.12.26  = { owner = AMG controller = AMG add_core = AQT } # BT Out
+1356.12.26  = { owner = AMG controller = AMG add_core = GUY } # BT Out
 
 1360.5.25  = { owner = ENG controller = ENG } # Treaty of Bretigny
 1375.6.27  = { owner = AMG controller = AMG } # Treaty of Bruges

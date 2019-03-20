@@ -21,11 +21,11 @@ discovered_by = western
 discovered_by = eastern
 
 1356.12.24  = { 
-				owner = EST controller = EST
+				owner = EST controller = EST remove_core = LIV
 } #BT In
 
 1356.12.26  = { 
-				owner = LIV controller = LIV
+				owner = LIV controller = LIV add_core = LIV
 } #BT Out
 
 1399.1.1  = { religion = catholic }

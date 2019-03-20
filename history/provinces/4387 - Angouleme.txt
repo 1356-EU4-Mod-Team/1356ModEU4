@@ -19,8 +19,9 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { owner = GUY controller = GUY add_core = GUY } #BT In
-1356.12.26  = { owner = FRD add_core = FRD remove_core = FRA remove_core = GUY controller = ENG } #BT Out
+1356.12.24  = { owner = AQT controller = AQT add_core = AQT } #BT In
+1356.12.26  = { owner = FRD add_core = FRD remove_core = FRA remove_core = AQT controller = ENG } #BT Out
+
 1357.9.23  = { controller = FRD }
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
 1375.6.27  = { owner = FRD controller = FRD } # Treaty of Bruges

@@ -10,6 +10,18 @@ capital = 2961
 
 1340.4.7 = { capital = 2961 } # Lwow
 
+1356.12.24 = {
+	monarch = {
+		name = "Juri II"
+		dynasty = "Rurikovich"
+		birth_date = 1341.2.2
+		death_date = 1356.12.26
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+} # BT Out
+
 1370.11.5 = {
 	monarch = {
 		name = "Wladyslaw"

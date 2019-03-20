@@ -4,13 +4,13 @@ primary_culture = armenian
 add_accepted_culture = cosmopolitan_french
 add_accepted_culture = crusader_culture
 religion = catholic
-technology_group = western
+technology_group = eastern
 historical_friend = ARM
 historical_friend = CYP
 historical_friend = KNI
 historical_friend = KOJ
 historical_friend = MRO
-capital = 327	# Cicilia
+capital = 327 # Cicilia
 
 1320.7.20 = {
 	monarch = {
@@ -58,6 +58,18 @@ capital = 327	# Cicilia
 		dip = 2
 		mil = 2
 	}
+}
+
+# BT In
+
+1356.12.26 = {
+	religion = coptic
+}
+
+# BT Out
+
+1356.12.26 = {
+	religion = catholic
 }
 
 1362.12.21 = {

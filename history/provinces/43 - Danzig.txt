@@ -33,11 +33,13 @@ center_of_trade = 2
 1356.12.24  = { 
 				owner = DNZ controller = DNZ
 				base_tax = 7 base_production = 8 base_manpower = 3
+				hre = yes
 } #BT In
 
 1356.12.26  = { 
 				owner = TEU controller = TEU
 				base_tax = 7 base_production = 7 base_manpower = 2
+				hre = no
 } #BT Out
 
 1454.2.10 = { add_core = POL revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Thirteen Years War

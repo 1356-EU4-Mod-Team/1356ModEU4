@@ -21,6 +21,15 @@ discovered_by = ottoman
 discovered_by = western
 discovered_by = eastern
 
+1356.12.24  = {
+			owner = CTA controller = CTA add_core = CTA
+			religion = catholic
+} #BT In
+
+1356.12.26  = {
+			owner = TUN controller = TUN remove_core = CTA
+			religion = sunni
+} #BT Out
 
 1534.8.16 = {
 	owner = ALG

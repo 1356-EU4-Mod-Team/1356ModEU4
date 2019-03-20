@@ -9,7 +9,19 @@ technology_group = eastern
 capital = 153 # Buda
 historical_friend = HAB
 
-1342.7.16 = {
+1356.12.24 = {
+	monarch = {
+		name = "Géza III"
+		dynasty = "Árpád"
+		birth_date = 1337.8.17
+		death_date = 1356.12.26
+		dip = 3
+		adm = 5
+		mil = 2
+	}
+} # BT Out
+
+1356.12.26 = { #1342.7.16
 	monarch = {
 		name = "Lajos"
 		dynasty = "d'Anjou"
@@ -20,7 +32,7 @@ historical_friend = HAB
 	}
 }
 
-1353.5.27 = {
+1356.12.26 = { #1353.5.27
 	queen = {
 		country_of_origin = BOS
 		name = "Elizabeta"

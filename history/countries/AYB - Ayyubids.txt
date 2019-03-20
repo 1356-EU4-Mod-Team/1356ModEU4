@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = mamluk_government
+government_rank = 2
+technology_group = muslim
+primary_culture = al_misr_arabic
+add_accepted_culture = al_suryah_arabic
+add_accepted_culture = bedouin_arabic
+religion = sunni
+capital = 382 # Damascus
+religious_school = shafii_school
+
+historical_rival = ABS
+historical_rival = MAM
+
+1352.5.2 = {
+	monarch = {
+		name = "An-Nasir Ali"
+		dynasty = "Ayyubid"
+		birth_date = 1345.6.6
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}

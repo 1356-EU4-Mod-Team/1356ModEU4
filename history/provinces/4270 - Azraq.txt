@@ -18,8 +18,8 @@ discovered_by = ottoman
 discovered_by = indian
 discovered_by = nomad_group
 
-1356.12.24  = { add_claim = KOJ } #BT In
-1356.12.26  = { remove_claim = KOJ } #BT Out
+1356.12.24 = { owner = AYB controller = AYB add_core = AYB } #BT In
+1356.12.26 = { owner = SYR controller = SYR remove_core = AYB } #BT Out
 
 1515.1.1 = { discovered_by = POR }
 1516.8.24 = {

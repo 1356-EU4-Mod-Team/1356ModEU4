@@ -233,6 +233,7 @@ capital = 1931	# Emden
 	}
 }
 
+#Using 1470 as the year when EFR Feudalizes
 # East Frisia raised to the status of Imperial Count in 1464 by Emperor Frederick III
 
 1491.1.1 = {

@@ -20,6 +20,9 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { remove_core = CTR } #BT In
+1356.12.26  = { add_core = CTR } #BT Out
+
 1369.3.23  = { remove_core = CTR } # End of the First Castillian Civil War
 1516.1.23  = {	controller = SPA
 		owner = SPA

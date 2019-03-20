@@ -1,10 +1,24 @@
 government = monarchy
-
+add_government_reform = feudalism_reform
 primary_culture = assyrian
+add_accepted_culture = al_iraqiya_arabic
+add_accepted_culture = al_suryah_arabic
 religion = nestorian
-technology_group = eastern
+technology_group = muslim
 capital = 2309	# Sinjar
 
+historical_friend = KOJ
+historical_friend = ARM
 historical_friend = MRO
 
-
+1344.6.17 = {
+	monarch = {
+		name = "Assur IV"
+		dynasty = "Nasir-Apli"
+		birth_date = 1338.14.11
+		culture = assyrian
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}

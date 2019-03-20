@@ -13,13 +13,18 @@ base_manpower = 2
 is_city = yes
 add_core = TUN
 
-
-
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = {
+			owner = CTA controller = CTA add_core = CTA
+} #BT In
+
+1356.12.26  = {
+			owner = TUN controller = TUN remove_core = CTA
+} #BT Out
 
 1535.6.11 = {
 	owner = GHD

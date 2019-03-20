@@ -6,6 +6,18 @@ primary_culture = sardinian
 capital = 127	# Cagliari
 fixed_capital = 127 # Cannot move capital away from this province & no power cost to move to it
 
+1356.12.24 = {
+	monarch = { 
+		name = "Enzo"
+		dynasty = "d'Sardegna"
+		birth_date = 1341.1.1
+		death_date = 1356.12.26
+		dip = 4
+		mil = 3
+		adm = 2
+	}
+} # BT Out
+
 1383.1.1 = {
 	monarch = { 
 		name = "Eleonora"

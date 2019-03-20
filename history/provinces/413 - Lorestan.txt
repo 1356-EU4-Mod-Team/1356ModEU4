@@ -28,6 +28,14 @@ discovered_by = indian
 	}
 }
 
+1356.12.24  = {
+			owner = LRI controller = LRI add_core = LRI
+} #BT In
+
+1356.12.26  = {
+			owner = JLR controller = JLR remove_core = LRI
+} #BT Out
+
 1392.1.1  = { owner = TIM controller = TIM add_core = TIM remove_province_modifier = small_nestorian_community }
 1400.1.1  = { religion = shiite }
 1409.5.13 = { owner = LRI controller = LRI }

@@ -4,6 +4,7 @@ government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = cosmopolitan_french
+add_accepted_culture = aramaic
 historical_friend = KOJ
 historical_friend = ATO
 historical_friend = EDE

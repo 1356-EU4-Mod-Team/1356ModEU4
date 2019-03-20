@@ -8,7 +8,19 @@ technology_group = western
 add_accepted_culture = saxon
 add_army_professionalism = 0.1
 
-1346.8.26 = {
+1356.12.24 = {
+	monarch = {
+		name = "Wenzel IV"
+		dynasty = "Premyslovci"
+		birth_date = 1339.2.12
+		death_date = 1356.12.26
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+} # BT Out
+
+1356.12.26 = { # Was 1346.8.26
 	monarch = {  # Holy Roman Emperor 1346.7.11 / 1378.11.29
 		name = "Karl IV"
 		dynasty = "von Luxemburg"
@@ -19,7 +31,7 @@ add_army_professionalism = 0.1
 	}
 }
 
-1353.5.27 = {
+1356.12.26 = { # Was 1353.5.27
 	queen = {
 		country_of_origin = SIL
 		name = "Anna"
