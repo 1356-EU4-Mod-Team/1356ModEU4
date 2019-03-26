@@ -113,6 +113,13 @@ country_decisions = {
 				}
 				add_permanent_claim = PRU
 			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = PRU_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			capital_scope = {
 				change_culture = prussian
 			}

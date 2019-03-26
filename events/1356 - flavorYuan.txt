@@ -27,6 +27,7 @@ country_event = {
 
 	option = {
 		name = yua.0.a #Got it
+		1816 = { move_capital_effect = yes }#Bejing
 		central_asia_region = {
 			discover_country = YUA
 		}
@@ -85,10 +86,11 @@ country_event = {
 	option = { #Lose Chinese Tech, remove Manchu as accepted, become Kingdom rank, become steppe horde
 		name = yua.1.a
 		set_country_flag = no_longer_chinese_yua
+		every_owned_province = { remove_core = YUA }
 		change_tag = KHA
+		every_owned_province = { add_core = KHA }
 		change_technology_group = nomad_group
 		change_unit_type = nomad_group
-		remove_accepted_culture = manchu
 		set_government_rank = 2		
 		change_government = tribal
 		add_government_reform = steppe_horde
@@ -97,7 +99,6 @@ country_event = {
 			limit = { has_custom_ideas = no }
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
-
 		clr_country_flag = heir_elected_yua_flag
 		clr_country_flag = yuan_bribed_noble_rebellion_away_flag
 		clr_country_flag = yuan_noble_revolt_imminent_flag

@@ -13,12 +13,11 @@ base_production = 1
 base_manpower = 2
 is_city = yes
 add_core = YUA
-add_core = KHA
 
 discovered_by = chinese
 discovered_by = nomad_group
 
-1388.11.1 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA }
+1388.11.1 = { owner = MNG controller = MNG add_core = MNG add_core = KHA remove_core = YUA }
 1449.10.1 = { owner = OIR controller = OIR }
 1454.1.1  = {	owner = KHA
 		controller = KHA

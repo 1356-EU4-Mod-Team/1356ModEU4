@@ -509,6 +509,8 @@
  home_of_mercantilism_institution_modifier: "Birthplace of Mercantilism"
  birthplace_of_gunpowder_modifier: "Birthplace of Gunpowder"
  duchy_of_cornwall_modifier_province: "The Duke of Cornwall"
+ pagan_province_feudalism: "Province is Pagan"
+ pagan_country_feudalism: "Province owner is Pagan"
  
  #Missions
   

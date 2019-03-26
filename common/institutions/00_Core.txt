@@ -18,7 +18,7 @@
 # Most in the old world start with it.
 #######################################
 
-feudalism = { #Heavily #Edited by 1356
+feudalism = { #Heavily Edited by #1356 
 
 	penalty = 0.5
 	bonus = {
@@ -38,7 +38,7 @@ feudalism = { #Heavily #Edited by 1356
 					continent = south_america
 					continent = oceania
 				}
-				owner = {
+				owner = { #Custom Nation stuff
 					is_playing_custom_nation = yes
 					OR = {
 						technology_group = western
@@ -51,7 +51,7 @@ feudalism = { #Heavily #Edited by 1356
 					}
 				}
 			}
-			OR = {
+			OR = { #What regions ALWAYS get it
 				region = british_isles_region
 				region = iberia_region
 				region = france_region
@@ -63,28 +63,39 @@ feudalism = { #Heavily #Edited by 1356
 				region = korea_region
 				region = balkan_region
 				region = coromandel_region #May need to be adjusted when India update is added
+				area = al_jazira_area
+				area = iraq_arabi_area
+				area = transoxiana_area
+				area = iraq_e_ajam_area
+				area = tabarestan_area
+				area = azerbaijan_area
+				province_id = 2308 #Urfa
+				province_id = 415 #Kirkuk
+				province_id = 2312 #Wasit
+				province_id = 408 #Basra
+				province_id = 418 #Diyarbakir
+				province_id = 445 #Merv
+				province_id = 444 #Charjuy
+				owner = { culture = crusader_culture }
 			}
 			#Every region below needs a more accurate date when it becomes Feudal.
-			AND = { #Scandanavia and Baltic
+			AND = { #Scandanavia and Baltic #Needs fine tuning
 				OR = {
 					region = scandinavia_region
 					region = baltic_region
 				}
-				NOT = { owner = { government = tribal } }
-				NOT = { religion = finnish_pagan_reformed } #Province Religion
-				NOT = { religion = baltic_pagan_reformed } #Province Religion
 				OR = {
 					AND = {
-						NOT = { province_id = 4114 } #Jokkmokk
-						NOT = { province_id = 18 } #Lappland
-						NOT = { province_id = 4152 } #Kainuu
-						NOT = { province_id = 4113 } #Rovaniemi
-						NOT = { area = laponia_area }
+						NOT = { religion = finnish_pagan_reformed } #Province Religion
+						NOT = { religion = baltic_pagan_reformed } #Province Religion
+						NOT = { culture = lithuanian } #Province Culture
+						NOT = { culture = old_prussian } #Province Culture
+						NOT = { culture = sapmi } #Province Culture
 					}
 					is_year = 1400 #Get a more accurate date
 				}
 			}
-			AND = { #Egypt
+			AND = { #Egypt #Needs fine tuning
 				region = egypt_region
 				NOT = { owner = { government = tribal } }
 				OR = {
@@ -99,8 +110,8 @@ feudalism = { #Heavily #Edited by 1356
 				
 				}
 			}
-			AND = { #North Africa #Theoritically this could be a problem, if uncolonized land can have an institution.
-				region = maghreb_region #(Should Mzab start with Feudalism?)
+			AND = { #North Africa 
+				region = maghreb_region 
 				NOT = { owner = { government = tribal } }
 				OR = {
 					AND = {
@@ -195,7 +206,7 @@ feudalism = { #Heavily #Edited by 1356
 					is_year = 1600 #Get a more accurate date
 				}
 			}
-			AND = { #Urals #Theoritically this could be a problem, if uncolonized land can have an institution.
+			AND = { #Urals 
 				region = ural_region
 				NOT = { owner = { government = tribal } }
 				OR = {
@@ -221,27 +232,26 @@ feudalism = { #Heavily #Edited by 1356
 					is_year = 1600 #Get a more accurate date
 				}
 			}
-			AND = { #Central Asia 
+			AND = { #Central Asia #Needs fine tuning
 				region = central_asia_region
 				OR = {
 					AND = {
 						NOT = { owner = { government = tribal } }
 						NOT = { culture = uyghur }
+						NOT = { culture_group = tartar }
+						NOT = { culture_group = altaic }
 					}
-					NOT = { is_year = 1600 } #Get a more accurate date
+					is_year = 1600 #Get a more accurate date
 				}
 			}
-			AND = { #Mongolia #Theoritically this could be a problem, if uncolonized land can have an institution.
-				region = mongolia_region
-				NOT = { owner = { government = tribal } }
-				NOT = { is_year = 1600 } #Get a more accurate date
-			}
-			AND = { #Manchuria #Theoritically this could be a problem, if uncolonized land can have an institution.
+			AND = { #Manchuria 
 				region = manchuria_region
-				NOT = { owner = { government = tribal } }
-				NOT = { is_year = 1430 } #Get a more accurate date
+				OR = {
+					NOT = { owner = { government = tribal } }
+					is_year = 1430 #Get a more accurate date
+				}
 			}
-			AND = { #Both Siberias #Theoritically this could be a problem, if uncolonized land can have an institution.
+			AND = { #Both Siberias 
 				OR = {
 					region = east_siberia_region
 					region = west_siberia_region
@@ -252,10 +262,10 @@ feudalism = { #Heavily #Edited by 1356
 						NOT = { province_id = 2103 } #Udi
 						NOT = { owner = { government = tribal } }
 					}
-					NOT = { is_year = 1600 } #Get a more accurate date
+					is_year = 1600 #Get a more accurate date
 				}
 			}
-			AND = { #Sub Saharan Africa AKA:Kongo, Central Africa, East Africa, South Africa, Niger, Sahel, Guinea #Theoritically this could be a problem, if uncolonized land can have an institution.
+			AND = { #Sub Saharan Africa AKA:Kongo, Central Africa, East Africa, South Africa, Niger, Sahel, Guinea 
 				OR = {
 					region = horn_of_africa_region
 					region = east_africa_region
@@ -282,18 +292,17 @@ feudalism = { #Heavily #Edited by 1356
 				region = tibet_region
 				NOT = { owner = { government = tribal } }
 			}
-			AND = { #North and South China
+			AND = { #North and South China, Mongolia
 				OR = {
 					region = north_china_region
 					region = south_china_region
+					region = mongolia_region
 				}
 				OR = {
 					AND = {
-						NOT = { owner = { government = tribal } }
 						NOT = { religion = animism }
 						NOT = { religion = tengri_pagan_reformed }
-						NOT = { culture = mongol }
-						NOT = { culture = oirats }						
+						NOT = { culture_group = mongolic_culture_group }	
 					}
 					is_year = 1600 #Check to make sure this year is correct
 				}
@@ -301,8 +310,13 @@ feudalism = { #Heavily #Edited by 1356
 			AND = { #Hinduistan
 				region = hindusthan_region
 				OR = {
-					NOT = { owner = { government = tribal } }
-					NOT = { culture = jharkhandi }
+					AND = {
+						NOT = { owner = { government = tribal } }
+						NOT = { culture = jharkhandi }
+						NOT = { culture = kashmiri }
+						NOT = { area = kashmir_area }
+					}
+					is_year = 1550
 				}
 			}
 			AND = { #Bengal
@@ -353,7 +367,7 @@ feudalism = { #Heavily #Edited by 1356
 				NOT = { owner = { government = tribal } }
 				NOT = { religion = animism }
 			}
-			AND = { #North American Natives, Caribbean Natives, Australia,Oceania, and South American Natives (Not Incan) #Theoritically this could be a problem, if uncolonized land can have an institution.
+			AND = { #North American Natives, Caribbean Natives, Australia,Oceania, and South American Natives (Not Incan)
 				#In the future ensure specific North American Tribes recieve Feudalism when they historically did
 				OR = {
 					region = canada_region
@@ -374,13 +388,14 @@ feudalism = { #Heavily #Edited by 1356
 					region = oceanea_region
 				}
 				OR = {
-					OR = {
+					AND = {
 						NOT = { owner = { government = tribal } }
-						NOT = { owner = { government = government = native } }
+						NOT = { owner = { government = native } }
 					}
 					AND = {
 						NOT = { religion = totemism } #This is the province religion
 						NOT = { religion = animism } #This is the province religion
+						NOT = { religion = catholic }
 						NOT = { religion = inti } #This is the province religion
 						NOT = { religion = norse_pagan_reformed }
 						NOT = { province_id = 858 } #Tamaulipas
@@ -428,7 +443,7 @@ feudalism = { #Heavily #Edited by 1356
 		#always = yes
 	}
 
-	embracement_speed = { #Add a modifier for "Reformed" Religions
+	embracement_speed = { 
 		modifier = {
 			factor = 0.6
 			scale = yes
@@ -535,6 +550,36 @@ feudalism = { #Heavily #Edited by 1356
 				}
 			}
 		}
+		#1356 Changes here
+		# modifier = { #Spreads slower in Pagan Nations #These two may need adjusted
+			# factor = -0.5
+			# scale = yes
+			# force_potential = yes
+			# potential = {
+				# owner = {
+					# religion_group = pagan
+				# }
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = pagan_country_feudalism
+				# owner = {
+					# religion_group = pagan
+				# }
+			# }
+		# }
+		modifier = { #Spreads slower in Pagan Provinces
+			factor = -0.5
+			scale = yes
+			force_potential = yes
+			potential = {
+				religion_group = pagan
+			}
+			custom_trigger_tooltip = {
+				tooltip = pagan_province_feudalism
+				religion_group = pagan
+			}
+		}
+		#End of 1356 Changes
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)

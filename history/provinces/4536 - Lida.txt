@@ -2,7 +2,7 @@
 
 owner = LIT
 controller = LIT
-religion = "catholic"
+religion = baltic_pagan_reformed
 culture = lithuanian
 capital = "Lida"
 trade_goods = livestock

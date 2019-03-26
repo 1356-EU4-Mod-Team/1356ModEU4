@@ -4,12 +4,11 @@ government_rank = 3
 technology_group = chinese
 religion = vajrayana
 primary_culture = mongol
-add_accepted_culture = manchu
 add_accepted_culture = khalkha
 add_accepted_culture = oirats
 add_accepted_culture = chahar
-add_accepted_culture = buryat
-capital = 1816	# Beijing
+#capital = 1816	# Beijing
+capital = 2190	# Qaraqorum
 
 historical_rival = KHA
 historical_rival = CZH

@@ -284,7 +284,7 @@ yua_toqtoa_diplomacy_reform_mission_3_modifier = { #Relations Speed
 	envoy_travel_time = 0.55
 }
 yua_toqtoa_diplomacy_reform_mission_4_modifier = { #Relations
-	diplomatic_upkeep = -5
+	diplomatic_upkeep = -1
 }
 yua_toqtoa_diplomacy_reform_mission_5_modifier = { #Vassal Loyalty
 	liberty_desire_from_subject_development = 0.35

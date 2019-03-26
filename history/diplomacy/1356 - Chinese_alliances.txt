@@ -152,9 +152,42 @@ dependency = {
 	end_date = 1380.9.8
 }
 
-vassal = {
+vassal = { #Kham
 	first = YUA
 	second = KAM
+	start_date = 1356.1.1
+	end_date = 1368.9.13
+}
+
+vassal = { #Jianzhou
+	first = YUA
+	second = MJZ
+	start_date = 1356.1.1
+	end_date = 1368.9.13
+}
+
+vassal = { #Yeren
+	first = YUA
+	second = MYR
+	start_date = 1356.1.1
+	end_date = 1368.9.13
+}
+
+vassal = { #Haixi
+	first = YUA
+	second = MHX
+	start_date = 1356.1.1
+	end_date = 1368.9.13
+}
+vassal = { #Korchin
+	first = YUA
+	second = KRC
+	start_date = 1356.1.1
+	end_date = 1368.9.13
+}
+vassal = { #Buryata
+	first = YUA
+	second = BRT
 	start_date = 1356.1.1
 	end_date = 1368.9.13
 }
