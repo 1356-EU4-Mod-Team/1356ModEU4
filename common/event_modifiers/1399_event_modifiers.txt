@@ -304,3 +304,51 @@ sav_public_welfare = {
 	global_unrest = -1
 	war_exhaustion = -0.05
 }
+
+#Decisions
+
+mercantilism_embracement_faster_duccats = {
+	embracement_cost = -0.05
+	global_institution_spread = 0.1
+}
+mercantilism_embracement_faster_monarch = {
+	embracement_cost = -0.05
+	global_institution_spread = 0.1
+}
+mercantilism_embracement_faster_empire = {
+	embracement_cost = -0.10
+	global_institution_spread = 0.20
+	advisor_cost = 0.25
+	all_power_cost = 0.1
+}
+
+####THESE MAY NEED FURTHER BALANCING####
+
+mongol_gunpowder_modifier = { #Does this even work right?
+	artillery_power = 0.1
+}
+
+gunpowder_tech_modifier = {
+	global_institution_spread = 0.1
+}
+
+chinese_gunpowder_modifier = {
+	artillery_fire = 1
+}
+
+greek_gunpowder_modifier = {
+	leader_naval_fire = 1
+	leader_land_fire = 1
+	capture_ship_chance = -0.2
+}
+
+korean_gunpowder_modifier = {
+	artillery_cost = -0.1
+	naval_tradition_from_battle = 0.1
+	
+}
+
+#southeast_asia_gunpowder_modifier = { #Cut because it wasnt unique enough
+#	leader_naval_fire = 1
+#	naval_tradition_from_battle = 0.1
+#}

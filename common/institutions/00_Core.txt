@@ -477,7 +477,7 @@ mercantilism_institution = { #1356 New Content
 	penalty = 0.5
 	bonus = { #Tweak
 		trade_range_modifier = 0.1
-		global_trade_goods_size_modifier = 0.1
+		administrative_efficiency = 0.05
 	}
 	
 	trade_company_efficiency = 0.0
@@ -948,11 +948,11 @@ mercantilism_institution = { #1356 New Content
 
 #Self note; May be easier to base this off of Regions/Local cultures instead.
 
-gunpowder_institution = { #1356 New Content
+gunpowder_institution = { #1356 New Content #This is more the search for better and better firearms, than the spread of firearms. 
 
 	penalty = 0.5
-	bonus = { #Needs to be Started
-		
+	bonus = { 
+		artillery_power = 0.05
 	}
 	
 	trade_company_efficiency = 0.0
@@ -960,8 +960,8 @@ gunpowder_institution = { #1356 New Content
 	historical_start_date = 1400.1.1
 	historical_start_province = 1816 #Bejing
 
-	history = { #Needs to be started
-		#is_year = 1350
+	history = { #It spreads like it did a hundred years ago for balance, but once again this represents the search for better firearms
+		is_year = 1400
 		OR = {
 			AND = { #Nation Designer
 				OR = {
@@ -987,164 +987,225 @@ gunpowder_institution = { #1356 New Content
 				owner = { technology_group = high_american }
 				is_year = 1400
 			}
-			AND = { #Provinces it starts in
-				is_year = 1350
-				OR = {
-					province_id = 151 #Constantinople
-					province_id = 112 #Venice
-					province_id = 101 #Genoa
-					province_id = 44 #Hamburg
-					province_id = 54 #Stade
-					province_id = 2996 #Wismar
-					province_id = 6 #Lund
-					province_id = 14 #Fyn
-					province_id = 45 #Lubeck
-					province_id = 1874 #Bremen
-					province_id = 25 #Gotland
-					province_id = 186 #Champagne
-					province_id = 238 #Essex
-					province_id = 235 #Kent
-					province_id = 1860 #Norfolk
-					province_id = 118 #Rome
-					province_id = 220 #Valencia
-					province_id = 231 #Porto
-					province_id = 2983 #Salerno
-					province_id = 362 #Rosetta
-					#province_id = 410 #Baghdad
-					#province_id = 2313 #Antioch
-					#province_id = 453 #Qarshi #Since Samarkand would break it all
-					#province_id = 445 #Merv
-					#province_id = 399 #Qawasim
-					#province_id = 4457 #Khambhat
-					#province_id = 524 #Central Delhi
-					#province_id = 2075 #Doaba
-					province_id = 1862 #Cremona
-					province_id = 115 #Pisa
-					province_id = 251 #Aberdeen
-					province_id = 97 #Amsterdam
-					province_id = 87 #Calais
-					province_id = 1744 #Antwerpen
-					province_id = 695 #Hejian
-					#province_id = 2745 #Gyeongju
-					#province_id = 1020 #Kyoto
-					province_id = 2149 #Ningbo
-					#province_id = 685 #Yangzhou
-					province_id = 667 #Canton
-					#province_id = 700 #Xi'an
-					#province_id = 682 #Wuchang
-					#province_id = 680 #Chongqing
-					#province_id = 34 #Ingermanland
-					province_id = 43 #Danzig
-				}
+			AND = { #It starts in Beijing #1400
+				is_year = 1400
+				province_id = 1816 #Beijing
 			}
-			AND = { #Simplified, expand on later.
-				is_year = 1363
+			AND = { #Moves onto China & Korea #1410
+				is_year = 1410
 				OR = {
+					region = north_china_region
+					region = south_china_region
+					region = korea_region
+					region = xinan_region
+				}
+				OR = {
+					owner = { culture_group = east_asian }
+					owner = { culture_group = korean_g }
+					owner = { culture_group = tibetan_group }
+					owner = { culture_group = southeastasian_group }
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion_group = pagan }
+			}
+			AND = { #Moves through the steppes #1415
+				is_year = 1415
+				OR = {
+					region = mongolia_region
+					region = central_asia_region
+					region = west_siberia_region
+				}
+				OR = {
+					owner = { culture_group = east_asian }
+					owner = { culture_group = tartar }
+					owner = { culture_group = mongolic_culture_group }
+					owner = { culture_group = altaic }
+				}
+				#NOT = { owner = { government = tribal } }
+				#NOT = { religion_group = pagan }
+			}
+			AND = { #Then into Persia #1420
+				is_year = 1420 #Guesstimate
+				OR = {
+					region = khorasan_region
+					region = persia_region
+				}
+				OR = {
+					owner = { culture_group = iranian }
+					owner = { culture_group = turko_semitic }
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion_group = pagan }
+			}
+			AND = { #While also going into Russia #1425
+				is_year = 1425
+				OR = {
+					region = ural_region
+					region = crimea_region
+					region = russia_region
+					region = ruthenia_region
+				}
+				OR = {
+					owner = { culture_group = east_slavic }
+					owner = { culture_group = tartar }
+					owner = { culture_group = finno_ugric }
+					owner = { culture_group = altaic }
+					owner = { culture_group = finnish_urgric_culture_group }
+					owner = { culture_group = carpathian }
+					owner = { culture_group = caucasian }
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion_group = pagan }
+			}
+			AND = { #Then the Caucasia, Poland & Carpathia #1430
+				is_year = 1430
+				OR = {
+					region = carpathia_region
+					region = caucasia_region
+					region = poland_region
+				}
+				OR = {
+					owner = { culture_group = east_slavic }
+					owner = { culture_group = tartar }
+					owner = { culture_group = west_slavic }
+					owner = { culture_group = carpathian }
+					owner = { culture_group = caucasian }
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion_group = pagan }
+			}
+			AND = { #Into Anatolia, Mashriq & Balkans #1435
+				is_year = 1430
+				OR = {
+					region = anatolia_region
+					region = balkan_region
+					region = mashriq_region
+				}
+				OR = {
+					owner = { culture_group = levant_culture_group }
+					owner = { culture_group = south_slavic }
+					owner = { culture_group = byzantine }
+					owner = { culture_group = carpathian }
+					owner = { culture_group = caucasian }
+					owner = { culture_group = assyrian_group }
+					owner = { culture_group = iranian }
+					owner = { culture_group = turko_semitic }
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion_group = pagan }
+			}
+			AND = { #Into Europe, North Africa #1440
+				is_year = 1440
+				OR = {
+					region = north_german_region
+					region = low_countries_region
+					region = italy_region
+					region = france_region
+					region = south_german_region
+					region = iberia_region
+					region = british_isles_region
+					region = baltic_region
+					region = scandinavia_region
+					region = egypt_region
+					region = maghreb_region
+				}
+				OR = {
+					owner = { culture_group = finnish_urgric_culture_group }
+					owner = { culture_group = finno_ugric }
+					owner = { culture_group = british }
+					owner = { culture_group = gaelic }
+					owner = { culture_group = scandinavian }
+					owner = { culture_group = baltic }
 					owner = { culture_group = germanic }
 					owner = { culture_group = low_lands_culture_group }
-					owner = { 
-						culture_group = east_asian
-						NOT = { owner = { tag = YUA } }
-					}
+					owner = { culture_group = west_slavic }
+					owner = { culture_group = latin }
+					owner = { culture_group = iberian }
+					owner = { culture_group = french }
+					owner = { culture_group = south_slavic }
+					owner = { culture_group = maghrebi }					
 				}
 				NOT = { owner = { government = tribal } }
 				NOT = { religion_group = pagan }
 			}
-			AND = { #Pontic, Gothic, Cappadocian, Norwegian, Scottish, Northumbrian, French (Group), Latin, West Slavic, East Asian
-				is_year = 1362 #Guesstimate
+			AND = { #Into India #1440
+				is_year = 1440
 				OR = {
-					culture_group = french
-					culture_group = latin
-					culture_group = west_slavic
-					culture_group = southeastasian_group
-					culture_group = eastern_aryan
-					culture_group = british
-					culture_group = scandinavian
-					culture_group = byzantine
-					AND = {
-						culture_group = east_asian
-						NOT = { owner = { tag = YUA } }
-					}
+					region = bengal_region
+					region = hindusthan_region
+					region = west_india_region
+					region = deccan_region
+					region = coromandel_region
 				}
-				NOT = { owner = { government = tribal } }
-				NOT = { religion_group = pagan }
-			}
-			AND = { #Egyptian, Old Egyptian, Syrian, Gaelic, Iberian, Moorish, Novgorodian, Aramaic, Armenian, Georgian, Baltic
-				is_year = 1367
 				OR = {
-					culture_group = gaelic
-					culture_group = iberian 
-					culture_group = carpathian
-					culture_group = malay
-					culture_group = baltic
-					culture = old_egyptian_mod
-					culture = al_misr_arabic
-					culture = al_suryah_arabic
-					culture = moorish
-					culture = novgorodian
-					culture = aramaic
-					culture = armenian
-					culture = georgian
-					culture = old_egyptian_mod
+					owner = { culture_group = tibetan_group }
+					owner = { culture_group = eastern_aryan }
+					owner = { culture_group = central_indic }
+					owner = { culture_group = dravidian }
+					owner = { culture_group = western_aryan }
+					owner = { culture_group = hindusthani }
+					owner = { culture_group = burman }				
 				}
 				NOT = { owner = { government = tribal } }
 				NOT = { religion_group = pagan }
-			}
-			AND = { #Turkish
-				is_year = 1370
+			}	
+			AND = { #Southeast Asia #1444
+				is_year = 1444
 				OR = {
-					culture_group = south_slavic
-					culture = turkish
+					region = burma_region
+					region = indo_china_region
+					region = malaya_region
+					region = moluccas_region
+					region = indonesia_region
 				}
-				NOT = { owner = { government = tribal } }
-				NOT = { religion_group = pagan }
-			}
-			AND = { #Iranian, Iraqi, Assyrian, Circassian, Dagestani, Maghreb, East Slavic
-				is_year = 1375
 				OR = {
-					culture_group = maghrebi
-					culture_group = east_slavic
-					culture_group = iranian
-					culture = al_iraqiya_arabic
-					culture = circassian
-					culture = dagestani
-					culture = assyrian
+					owner = { culture_group = malay }
+					owner = { culture_group = southeastasian_group }
+					owner = { culture_group = burman }
+					owner = { culture_group = pacific }
 				}
 				NOT = { owner = { government = tribal } }
 				NOT = { religion_group = pagan }
 			}
-			AND = { #Hindusthani, Dravidian, West Aryan, Central Indian, Khorasani, Icelandic
-				is_year = 1379
-				owner = {
-					OR = {
-						culture = khorasani
-						culture_group = hindusthani
-						culture_group = western_aryan
-						culture_group = dravidian
-						culture_group = central_indic
-						culture = icelandic
-					}
-				}
-				NOT = { owner = { government = tribal } }
-				NOT = { religion_group = pagan }
-			}
-			AND = { #Arabic
-				is_year = 1382 #Needs a more specific date
-				culture_group = turko_semitic
-				NOT = { owner = { government = tribal } }
-				NOT = { religion_group = pagan }
-			}
-			AND = { #Burman, Finnic
-				is_year = 1385
+			AND = { #Arabia & Tibet #1450
+				is_year = 1450
 				OR = {
-					culture_group = burman
-					culture_group = finnish_urgric_culture_group
+					region = tibet_region
+					region = arabia_region
+					region = scandinavia_region
+				}
+				OR = {
+					owner = { culture_group = tibetan_group }
+					owner = { culture_group = turko_semitic }
+					owner = { culture_group = british }
+					owner = { culture_group = gaelic }
+					owner = { culture_group = scandinavian }
+					owner = { culture_group = baltic }
+					owner = { culture_group = germanic }
+				}
+				NOT = { owner = { government = tribal } }
+				NOT = { religion_group = pagan }
+			}			
+			AND = { #Then spreads into Japan #1450
+				is_year = 1450 #Guesstimate
+				OR = {
+					region = japan_region
+					region = manchuria_region
+					region = east_siberia_region
+				}
+				OR = {
+					owner = { culture_group = japanese_g }
+					owner = { culture_group = korean_g }
+					owner = { culture_group = east_asian }
+					owner = { culture_group = east_slavic }
+					owner = { culture_group = evenks }
+					owner = { culture_group = kamchatkan_g }
 				}
 				NOT = { owner = { government = tribal } }
 				NOT = { religion_group = pagan }
 			}
-			AND = { #East African, Chinese, Indian, Muslim, Ottoman, Eastern, and Western Non Tribals
-				is_year = 1400
+			AND = { #Anyone of these tech groups who were missed #1460
+				is_year = 1460
 				owner = {
 					OR = {
 						technology_group = east_african
@@ -1159,17 +1220,45 @@ gunpowder_institution = { #1356 New Content
 				NOT = { owner = { government = tribal } }
 				NOT = { religion_group = pagan }
 			}
-			AND = { #Steppe Hordes & Pagans get it finally
-				is_year = 1650
+			AND = { #Anyone whos NOT a pagan, tribal, or native #1480
+				is_year = 1480
+				NOT = { superregion = south_america_superregion }
+				NOT = { superregion = north_america_superregion }
+				NOT = { superregion = central_america_superregion }
+				NOT = { superregion = new_world_superregion }
 				NOT = { owner = { government = tribal } }
+				NOT = { owner = { government = native } }
 				NOT = { religion_group = pagan }
 			}
-			is_year = 1760
+			AND = { #Anyone whos NOT a pagan, tribal, or native #1600
+				is_year = 1600
+				NOT = { owner = { government = tribal } }
+				NOT = { owner = { government = native } }
+				NOT = { religion_group = pagan }
+			}
+			is_year = 1700
 		}
 	}
 	
-	 no need for events, as its there from the start.
-	can_start = {	is_year = 1000	}
+	can_start = { #Perhaps make a backup in case someone conquers all of China as an outsider?
+		is_year = 1400
+		OR = {
+			region = north_china_region
+			region = south_china_region
+			region = korea_region
+		}
+		OR = {
+			owner = { culture_group = east_asian }
+			owner = { culture_group = korean_g }
+		}
+		is_state = yes
+		is_island = no
+		OR = {
+			development = 15
+			is_capital = yes
+			#Possibly add a new trade good here?
+		}
+	}
 	start_chance = 100
 	on_start = institution_events.1
 
@@ -1177,14 +1266,14 @@ gunpowder_institution = { #1356 New Content
 		owner = { NOT = { government = tribal } }
 	}
 
-	embracement_speed = { #Needs to be Started
+	embracement_speed = { #Needs more work
 		modifier = { #Friendly Border Province has Institution
 			factor = 0.6
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_MERCANTILISM
+				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_GUNPOWDER
 				any_friendly_coast_border_province = {
-					mercantilism_institution = 100
+					gunpowder_institution = 100
 				}
 			}
 		}
@@ -1194,38 +1283,40 @@ gunpowder_institution = { #1356 New Content
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
-						mercantilism_institution = 100
+						gunpowder_institution = 100
 					}
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = NEIGHBOR_NOT_OWNED_IS_MERCANTILISM 
+				tooltip = NEIGHBOR_NOT_OWNED_IS_GUNPOWDER
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					mercantilism_institution = 100
+					gunpowder_institution = 100
 				}
 			}
 		}
-		modifier = { #Burgher Estate
-			factor = 0.15
+		#It would be nice to have a modifier based on if your allies have arty #Opposite of the next modifier
+		modifier = { #At war with someone who has embraced Gunpowder #Check balance
+			factor = 0.8
 			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { has_estate = estate_burghers }
-			}
 			custom_trigger_tooltip = {
-				tooltip = MERCHANTILISM_AND_BURGHERS
-				any_neighbor_province = {
-					mercantilism_institution = 100
+				tooltip = at_war_with_nation_embraced_gunpowder_tt
+				owner = { is_at_war = yes }
+				any_enemy_country = {
+					has_institution = gunpowder_institution
+					is_at_war = yes
 				}
-				owner = {
-					has_estate = estate_burghers
-					estate_loyalty = {
-						estate = estate_burghers
-						loyalty = 40
-					}
+			}
+		}
+		modifier = { #Overlord has embraced the Institution #Check balance
+			factor = 0.8
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = owner_overlord_embraced_gunpowder_tt
+				owner = { is_subject_of_type = tributary_state }
+				overlord = {
+					has_institution = gunpowder_institution
 				}
-				has_estate = estate_burghers
 			}
 		}
 		modifier = { #For Colonies
@@ -1238,120 +1329,27 @@ gunpowder_institution = { #1356 New Content
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = PORT_OR_CAPITAL_IN_COLONY_MERCHANTILISM 
+				tooltip = PORT_OR_CAPITAL_IN_COLONY_GUNPOWDER
 				OR = {
 					has_port = yes
 					is_capital = yes
 				}
 				owner = {
 					is_colonial_nation = yes
-					overlord = { has_institution = mercantilism_institution }
+					overlord = { has_institution = gunpowder_institution }
 				}
 			}
 		}
-		modifier = { #Is in Trade League
-			factor = 0.35
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = is_in_trade_league_mercantilism_tt
-				owner = { is_in_trade_league = yes }
-			}
-		}
-		modifier = { #Trade League Leader
-			factor = 0.45
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = trade_league_leader_mercantilism_tt
-				owner = { is_trade_league_leader = yes }
-
-			}
-		}
-		modifier = { #Luxury Trade Good in Province
-			factor = 0.2
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				OR = {
-					trade_goods = chinaware
-					trade_goods = tea
-					trade_goods = spices
-					trade_goods = coffee
-					trade_goods = sugar
-					trade_goods = tobacco
-					trade_goods = cocoa
-					trade_goods = silk
-					trade_goods = dyes
-					trade_goods = incense
-					trade_goods = glass
-					trade_goods = gems
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = mercantilism_trade_goods_tt
-				OR = {
-					trade_goods = chinaware
-					trade_goods = tea
-					trade_goods = spices
-					trade_goods = coffee
-					trade_goods = sugar
-					trade_goods = tobacco
-					trade_goods = cocoa
-					trade_goods = silk
-					trade_goods = dyes
-					trade_goods = incense
-					trade_goods = glass
-					trade_goods = gems
-				}
-			}
-		}
-		modifier = { #Province Center of Trade 1
-			factor = 0.2
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = {
-					NOT = { government = tribal }
-					NOT = { government = native }
-				}
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
-				NOT = { continent = new_world }
-				province_has_center_of_trade_of_level = 1	
-			}
-			custom_trigger_tooltip = {
-				tooltip = merchantilism_cot_1_tt
-				province_has_center_of_trade_of_level = 1
-				OR = {
-					continent = europe
-					continent = asia
-				}
-			}
-		}
-		modifier = { #Province Center of Trade 2
+		modifier = { #Owner has Mil Tech 12 Arquebus
 			factor = 0.4
 			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = {
-					NOT = { government = tribal }
-					NOT = { government = native }
-				}
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
-				NOT = { continent = new_world }
-				province_has_center_of_trade_of_level = 1	
-			}
 			custom_trigger_tooltip = {
-				tooltip = merchantilism_cot_2_tt
-				province_has_center_of_trade_of_level = 2	
-				OR = {
-					continent = europe
-					continent = asia
-				}
+				tooltip = owner_has_mil_tech_6_gunpowder_tt
+				owner = { mil_tech = 12 }
 			}
 		}
-		modifier = { #Province Center of Trade 3
-			factor = 0.8
+		modifier = { #4 Units of Arty in province #May need tweaks
+			factor = 0.5
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1362,15 +1360,16 @@ gunpowder_institution = { #1356 New Content
 				NOT = { continent = north_america }
 				NOT = { continent = south_america }
 				NOT = { continent = new_world }
-				province_has_center_of_trade_of_level = 1	
 			}
 			custom_trigger_tooltip = {
-				tooltip = merchantilism_cot_2_tt
-				province_has_center_of_trade_of_level = 3	
-				OR = {
-					continent = europe
-					continent = asia
-				}
+				tooltip = gunpowder_arty_in_province_tt
+				artillery_in_province = 4
+				owner = { NOT = { unit_type = 1356-muslim_trebuchet_arty } }
+				owner = { NOT = { unit_type = 1356-anatolian_trebuchet_arty } }
+				owner = { NOT = { unit_type = 1356-eastern_trebuchet_arty } }
+				owner = { NOT = { unit_type = 1356-indian_early_arty } }
+				owner = { NOT = { unit_type = 1356-asian_early_arty } }
+				owner = { NOT = { unit_type = 1356-trebuchet_arty } }
 			}
 		}
 		modifier = { #Province Owner already embraced the Institution
@@ -1378,15 +1377,15 @@ gunpowder_institution = { #1356 New Content
 			scale = yes
 			potential = {
 				owner = {
-					has_institution = mercantilism_institution
+					has_institution = gunpowder_institution
 				}
 			}
 			
 			custom_trigger_tooltip = {
-				tooltip = tooltip_mercantilisim_embraced
+				tooltip = tooltip_gunpowder_embraced
 				is_owned_by_trade_company = no
 				owner = {
-					has_institution = mercantilism_institution
+					has_institution = gunpowder_institution
 				}
 			}
 		}

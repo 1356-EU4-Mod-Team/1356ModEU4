@@ -1,4 +1,6 @@
 ﻿l_english:
+ #Units
+ 
  #Events
  flamamluk.1.t: "Coptic Advisors"
  flamamluk.1.d: "During the rule of the Mamluks many Sultans respected the Coptic minority, and quite frequently the Sultans gave respected Copts places in their court. Our advisors and close kin have found another Copt who would be of use to us. As usual they are a treasurer, but will happily work at a discount! We could always use more advisors, but turning them away could also who we have high expectations."
@@ -460,6 +462,24 @@
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
  eng_reinstate_duke_of_cornwall_decision_desc: "At one point the title 'Duke of Cornwall' was lost and our eldest son no longer held the title. Now that we are able to we should grant this title to our eldest son once more to both reward him and to gain more power ourselves!"
+ boost_mercantilism_growth_monarch_decision_title: "Boost Mercantilism Growth - Monarch"
+ boost_mercantilism_growth_monarch_decision_desc: "Due to our [Root.Monarch.GetTitle]'s ability to rule we may allow [Root.Monarch.GetHerHim] to assist our Administration in our efforts to speed up our embracement of Mercantilism."
+ boost_mercantilism_growth_duccats_decision_title: "Boost Mercantilism Growth - Ducats"
+ boost_mercantilism_growth_duccats_decision_desc: "We may spend a large sum of money to help our administration understand the new ways of 'Mercantilism'. However our Administration will surely benefit from this."
+ boost_mercantilism_growth_empire_decision_title: "Boost Mercantilism Growth - Empire"
+ boost_mercantilism_growth_empire_decision_desc: "Due to our sizeable Administration and Empire we may move around resources to allow ourselves to embrace Mercantilism faster. However it comes at a great cost, and may be very risky."
+ boost_gunpowder_growth_mongol_decision_title: "Mongolic Gunpowder"
+ boost_gunpowder_growth_mongol_decision_desc: "During the reign of Genghis the Mongol Empire used various forms of gunpowder during their conquests. When seiging Jin's capital they used a form of bombs, and later when seiging the Song they used bombs to burn down towers. "
+ boost_chinese_gunpowder_decision_title: "Chinese Gunpowder"
+ boost_chinese_gunpowder_decision_desc: "Historically the Chinese were one of the first people to use gunpowder. It's said a Chinese monk discovered it when trying to create an immortality potion. The Chinese used many bombs in historic accounts, however many of them were against the Mongols. During the seige of the Jin capital in 1232 the Jin used the 'Heaven-Shaking-Thunder bomb' against the Mongol invaders. It was an iron vessel filled with gunpowder which was lit on fire and shot off. It gets its name from the sound it makes when it goes off, and was said to turn men to ash instantly. "
+ boost_byzantine_gunpowder_decision_title: "Greek Fire"
+ boost_byzantine_gunpowder_decision_desc: "Greek fire was historically developed in the 6th Century by the Eastern Roman Empire, it was key in the defense of Constantinople several times and was frequently used in Byzantine naval battles, as it kept burning even when floating on the water."
+ boost_korean_gunpowder_decision_title: "Korean Gunpowder Innovations"
+ boost_korean_gunpowder_decision_desc: "Around the late 1300's the Koreans began to develop early gunpowder propelled arrows, and later the 'Hwacha' or 'Fire Cart', as well as incorporating these adaptions into Naval Combat against Japanese pirates."
+ #boost_majapahit_gunpowder_decision_title: "Majapahit Gunpowder" #Cut Content
+ #boost_majapahit_gunpowder_decision_desc: "After the failed Mongol Invasion of Java in 1293 the Javanese quickly developed breech loading cannons for their navies, called 'Cetbang'."
+ tributary_subject_gunpowder_decision_title: "The Secret of Gunpowder"
+ tributary_subject_gunpowder_decision_desc: "Our overlord has embraced §Gunpowder§ and is allowing us to learn some of its benefits! We should take advantage of their generosity and learn as much as we can from their innovations before it is too late."
  
  #Modifiers/Tooltips
  
@@ -511,6 +531,24 @@
  duchy_of_cornwall_modifier_province: "The Duke of Cornwall"
  pagan_province_feudalism: "Province is Pagan"
  pagan_country_feudalism: "Province owner is Pagan"
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_GUNPOWDER: "Nearby Friendly Province has §YGunpowder§"
+ NEIGHBOR_NOT_OWNED_IS_GUNPOWDER: "Borders Nation with §YGunpowder§"
+ PORT_OR_CAPITAL_IN_COLONY_GUNPOWDER: "Port or Capital in Colonial Nation"
+ owner_has_mil_tech_6_gunpowder_tt: "Province Owner has Milititary Technology 12 the Arquebus"
+ gunpowder_arty_in_province_tt: "Province has at least 4 Units of Artillery in it"
+ tooltip_gunpowder_embraced: "Owner has embraced §YGunpowder§"
+ owner_overlord_embraced_gunpowder_tt: "Overlord has embraced §YGunpowder§"
+ at_war_with_nation_embraced_gunpowder_tt: "Nation is at war with Nation who have embraced §YGunpowder§"
+ mercantilism_paper_tt: "Province produces Paper"
+ mercantilism_embracement_faster_duccats: "Mercantilism Embracement - Ducats"
+ mercantilism_embracement_faster_monarch: "Mercantilism Embracement - Monarch"
+ mercantilism_embracement_faster_empire: "Mercantilism Embracement - Empire"
+ mongol_gunpowder_modifier: "Mongolic Gunpowder"
+ gunpowder_tech_modifier: "Historic Gunpowder"
+ chinese_gunpowder_modifier: "The 'Heaven-Shaking-Thunder Bomb'"
+ greek_gunpowder_modifier: "Greek Fire"
+ korean_gunpowder_modifier: "Korean Gunpowder Innovations"
+ #southeast_asia_gunpowder_modifier: "Majapahit Naval Cannons" #Cut Content
  
  #Missions
   

@@ -82,4 +82,310 @@ country_decisions = {
 			factor = 100
 		}
 	}
+	boost_mercantilism_growth_duccats_decision = { #Decision to allow Nations with lots of money to embrace the Mercantilism faster
+		major = yes
+		potential = {
+			NOT = { government = tribal }
+			NOT = { government = native }
+			NOT = { has_institution = mercantilism_institution }
+			NOT = { is_year = 1400 }
+		}
+		allow = {
+			NOT = { government = tribal }
+			NOT = { government = native }
+			NOT = { has_institution = mercantilism_institution }
+			NOT = { has_country_modifier = mercantilism_embracement_faster_monarch }
+						NOT = { has_country_modifier = mercantilism_embracement_faster_empire }
+			treasury = 500
+		}
+		effect = {
+			add_country_modifier = { 
+				name = mercantilism_embracement_faster_duccats
+				duration = 3650  
+			}
+		}
+		ai_will_do = { #Not allowing AI to do so due to the possibilities of Debt accured just to embrace this. Change in the future?
+			factor = 0
+		}
+	}
+	boost_mercantilism_growth_monarch_decision = { #Decision to allow Nations with a good ruler to embrace the institution faster
+		major = yes
+		potential = {
+			NOT = { government = tribal }
+			NOT = { government = native }
+			NOT = { has_institution = mercantilism_institution }
+			NOT = { is_year = 1400 }
+		}
+		allow = {
+			NOT = { government = tribal }
+			NOT = { government = native }
+			NOT = { has_institution = mercantilism_institution }
+			NOT = { has_country_modifier = mercantilism_embracement_faster_duccats }
+			NOT = { has_country_modifier = mercantilism_embracement_faster_empire }
+			OR = {
+				adm = 5
+				dip = 5
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = mercantilism_embracement_faster_monarch
+				duration = 3650  
+			}	
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	boost_mercantilism_growth_empire_decision = { #Decision to allow Nations that are an empire to allowcare more resources to the institution
+		major = yes
+		potential = {
+			NOT = { government = tribal }
+			NOT = { government = native }
+			NOT = { has_institution = mercantilism_institution }
+			NOT = { is_year = 1400 }
+		}
+		allow = {
+			NOT = { government = tribal }
+			NOT = { government = native }
+			government_rank = 3 #Empire
+			#government_rank = 4 #For when we add Counts?
+			NOT = { has_institution = mercantilism_institution }
+			NOT = { has_country_modifier = mercantilism_embracement_faster_monarch }
+			NOT = { has_country_modifier = mercantilism_embracement_faster_duccats }
+		}
+		effect = {
+			add_country_modifier = { 
+				name = mercantilism_embracement_faster_empire
+				duration = 3650  
+			}	
+		}
+		ai_will_do = { 
+			factor = 0
+		}
+	}
+#Instead of giving them a boost to instutitions, how about we remove a malus on it?
+	boost_gunpowder_growth_mongol_decision = { #Decision to allow former Mongol nations to embrace Gunpowder faster
+		major = yes
+		potential = {
+			OR = {
+				government = steppe_horde
+				government = tribe_becomes_horde_reform #Is this needed?
+				government = great_mongol_state_reform
+				tag = YUA
+				tag = JLR
+				tag = CHB
+				#Did I miss any?
+			}
+			NOT = { has_institution = gunpowder_institution }
+			is_year = 1399
+			NOT = { is_year = 1450 }
+		}
+		allow = {
+			OR = {
+				government = steppe_horde
+				government = tribe_becomes_horde_reform #Is this needed?
+				government = great_mongol_state_reform
+				tag = YUA
+				tag = JLR
+				tag = CHB
+				#Did I miss any?
+				
+			}
+			NOT = { has_institution = gunpowder_institution }
+			NOT = { is_year = 1450 }
+			OR = {
+				mil_tech = 7
+				AND = {
+					mil = 6
+					mil_tech = 5
+				}
+			}
+			
+		}
+		effect = {
+			add_country_modifier = { 
+				name = mongol_gunpowder_modifier
+				duration = -1 
+			}	
+			add_country_modifier = { 
+				name = mongol_gunpowder_tech_modifier
+				duration = 3650  
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	boost_chinese_gunpowder_decision = { #Allows any Chinese nation to get extra power from their arty, and embrace Gunpowder faster.
+		major = yes
+		potential = {
+			culture_group = east_asian
+			NOT = { tag = YUA } #We dont need Yuan getting both now...
+			NOT = { has_institution = gunpowder_institution }
+			is_year = 1399
+			NOT = { is_year = 1450 }
+		}
+		allow = {
+			culture_group = east_asian
+			NOT = { has_institution = gunpowder_institution }
+			NOT = { is_year = 1450 }
+			mil_tech = 7
+			
+		}
+		effect = {
+			add_country_modifier = { #+1 Arty pip forever
+				name = chinese_gunpowder_modifier
+				duration = -1 
+			}	
+			add_country_modifier = { 
+				name = gunpowder_tech_modifier
+				duration = 3650  
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	boost_byzantine_gunpowder_decision = { #Decision to allow any Greek nation to embrace Gunpowder faster
+		major = yes
+		potential = {
+			culture_group = byzantine
+			NOT = { has_institution = gunpowder_institution }
+			is_year = 1399
+			NOT = { is_year = 1450 }
+		}
+		allow = {
+			culture_group = byzantine
+			owns = 151 #Constantinople
+			NOT = { has_institution = gunpowder_institution }
+			NOT = { is_year = 1450 }
+			mil_tech = 7
+			
+		}
+		effect = {
+			add_country_modifier = { #+1 Fire pip for Naval and Land leaders, but -25% ship capture chance.
+				name = greek_gunpowder_modifier
+				duration = -1 
+			}	
+			add_country_modifier = { 
+				name = gunpowder_tech_modifier
+				duration = 3650  
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	boost_korean_gunpowder_decision = { #Decision to allow any Korean nation to embrace Gunpowder faster
+		major = yes
+		potential = {
+			culture = korean
+			NOT = { has_institution = gunpowder_institution }
+			is_year = 1399
+			NOT = { is_year = 1450 }
+		}
+		allow = {
+			culture = korean
+			NOT = { has_institution = gunpowder_institution }
+			NOT = { is_year = 1450 }
+			mil_tech = 7
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = korean_gunpowder_modifier
+				duration = -1 
+			}	
+			add_country_modifier = { 
+				name = gunpowder_tech_modifier
+				duration = 3650  
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	#boost_majapahit_gunpowder_decision = { #Decision to allow any Majaphait nation to embrace Gunpowder faster
+		# major = yes
+		# potential = {
+			# culture = javanese
+			# NOT = { has_institution = gunpowder_institution }
+			# is_year = 1399
+			# NOT = { is_year = 1450 }
+		# }
+		# allow = {
+			# culture = javanese
+			# NOT = { has_institution = gunpowder_institution }
+			# NOT = { is_year = 1450 }
+			# mil_tech = 7
+			# navy_size_percentage = 0.50
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = southeast_asia_gunpowder_modifier
+				# duration = -1 
+			# }	
+			# add_country_modifier = { 
+				# name = gunpowder_tech_modifier
+				# duration = 3650  
+			# }
+		# }
+		# ai_will_do = { 
+			# factor = 1
+		# }
+
+	tributary_overlord_gunpowder_decision = { #Decision to allow the overlord of a tributary subject to receive unique bonuses towards gunpowder
+		major = yes
+		potential = {
+			tributary_state = 1
+			has_institution = gunpowder_institution
+			is_year = 1399
+			NOT = { is_year = 1450 }
+		}
+		allow = {
+			tributary_state = 1
+			has_institution = gunpowder_institution
+			NOT = { is_year = 1450 }
+			mil_tech = 7
+			
+		}
+		effect = {
+			add_country_modifier = { 
+				name = gunpowder_tech_modifier
+				duration = 3650  
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	tributary_subject_gunpowder_decision = { #Decision to allow tributary subjects of a nation that has embraced gunpowder to get unique bonuses towards gunpowder
+		major = yes
+		potential = {
+			is_subject_of_type = tributary_state
+			NOT = { has_institution = gunpowder_institution }
+			is_year = 1399
+			NOT = { is_year = 1450 }
+		}
+		allow = {
+			is_subject_of_type = tributary_state
+			NOT = { has_institution = gunpowder_institution }
+			NOT = { is_year = 1450 }
+			mil_tech = 7
+			
+		}
+		effect = {
+			add_country_modifier = { 
+				name = gunpowder_tech_modifier
+				duration = 3650  
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	
+	#Another decision for Subjects of the Chinese Emperor
 }
