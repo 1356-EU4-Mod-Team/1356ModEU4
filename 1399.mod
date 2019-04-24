@@ -1,15 +1,7 @@
-name="1356 - A Timeline Extension Mod for EUIV"
-archive="mod/1399.zip"
-user_dir="1356"
-tags={
-	"Historical"
-	"Expansion"
-	"Utilities"
-	"New Nations"
-	"Events"
-	"Missions and Decisions"
-	"Religion"
-	"Technologies"
-}
-picture="1356pic.png"
-supported_version="1.25.*.*"
+name="1356 - Main Dev GIT"
+path="mod/1356ModEU4-master"
+user_dir="1356-dev-git"
+
+replace_path="history/countries"
+
+supported_version="1.28.*.*"
