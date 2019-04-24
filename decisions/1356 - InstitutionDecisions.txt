@@ -82,6 +82,9 @@ country_decisions = {
 			factor = 100
 		}
 	}
+
+#Needs to be more difficult to get
+
 	boost_mercantilism_growth_duccats_decision = { #Decision to allow Nations with lots of money to embrace the Mercantilism faster
 		major = yes
 		potential = {
@@ -216,7 +219,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
-#Needs Removed by Event later
 	boost_chinese_gunpowder_decision = { #Allows any Chinese nation to get extra power from their arty, and embrace Gunpowder faster.
 		major = yes
 		potential = {
@@ -253,7 +255,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
-#Needs Removed by Event later
 	boost_byzantine_gunpowder_decision = { #Decision to allow any Greek nation to embrace Gunpowder faster
 		major = yes
 		potential = {
@@ -409,7 +410,6 @@ country_decisions = {
 			factor = 10
 		}
 	}
-#Needs removed by event later
 	tributary_subject_gunpowder_boost_decision = { #Decision to give Chinese Subjects a small boost to arty until 1500'sish
 		#major = yes
 		potential = {

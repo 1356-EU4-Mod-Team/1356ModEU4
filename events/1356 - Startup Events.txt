@@ -1,6 +1,6 @@
 namespace = 1356startupevents
 
-#Triggers for everyone, too intensive.
+#Triggers for everyone, too intensive. Has to be a better way.
 
 country_event = { #Adds primitive Gunpowder for everyone in general
 	id = 1356startupevents.1
