@@ -1944,7 +1944,6 @@ yuan_toqtoa_interior_religion = { #Toqto's Return - Dealing with the topic of Re
 			NOT = { num_of_loans = 1 }
 			NOT = { num_of_revolts = 3 }
 			NOT = { has_disaster = red_turban_rebellion_disaster }
-			NOT = { has_country_flag = yuan_asked_nomads_help_flag }
 		}
 		effect = {
 			add_adm_power = 100

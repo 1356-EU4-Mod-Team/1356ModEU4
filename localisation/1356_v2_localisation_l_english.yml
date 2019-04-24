@@ -1,4 +1,9 @@
 ﻿l_english:
+
+ #Institutions
+ gunpowder_institution: "Gunpowder"
+ gunpowder_institution_date: "1400"
+ 
  #Units
  
  #Events
@@ -458,6 +463,29 @@
  crusader_states.19.t: "Aid Received from the [From.TAG.GetAdjective] [From.TAG.Monarch.GetName]"
  crusader_states.19.d: "The pious nation of [From.TAG.GetName] has sent us aid! May this aid be enough to help us starve off any who would wish harm onto us!"
  crusader_states.19.a: "Any aid is good aid!"
+ 
+ 1356startupevents.1.t: "Early Gunpowder Weapons"
+ 1356startupevents.1.d: "Before the rise of rifles and common acceptance of gunpowder in most standing armies many nations had some sort of 'Primitive' gunpowder. The Chinese had Bombs, the Byzantines had Greek fire, and the Koreans had developed Rocketry and Primitive Flamethrowers. Many other nations had developed similar concepts, and as a whole while it still wasn't common to see on the battlefield many nations did use it one way or another before gunpowder became commonplace."
+ 1356startupevents.1.a: "These primitive gunpowder weapons sound dangerous..."
+ 
+ new_institution_events.1.t: "The Rise of Gunpowder Weapons"
+ new_institution_events.1.d: "With the use of Gunpowder weapons becoming more and more common in standing armies our primitive gunpowder weapons are more futile. It may be best if we find a way to 'acquire' some better weapons one way or another, even if we have to use underhanded means."
+ new_institution_events.1.a: "Gunpowder weapons will be the death of us..."
+ new_institution_events.3.t: "The Rise of Gunpowder Weapons"
+ new_institution_events.3.d: "With the use of Gunpowder weapons becoming more and more common in standing armies, as well as navies the use of our Greek Fire has fallen out of use. Many Admirals and Generals refuse to use it anymore, claiming the more advanced cannons they've captured from enemies are more effective!"
+ new_institution_events.3.a: "Preposterous!"
+ new_institution_events.4.t: "The Rise of Gunpowder Weapons"
+ new_institution_events.4.d: "Due to the rise of Gunpowder weapons the use of our Juhwa and Hwacha's have fallen out of favor, being replaced by captured Cannons. Many Admirals and Generals refuse to use our own locally produced gunpowder based weapons now. Perhaps it is time to retire them?"
+ new_institution_events.4.a: "Gunpowder weapons will be the death of us..."
+ new_institution_events.5.t: "The Rise of Gunpowder Weapons"
+ new_institution_events.5.d: "With the use of cannon based gunpowder our handheld gunpowder weapons have begun to fall out of favor with our Generals. As effective as our 'Heaven-Shaking-Thunder bomb' has been, it may be time to retire it in favor of more conventional weapons..."
+ new_institution_events.5.a: "Such a great weapon, reduced to a mere childs toy."
+ new_institution_events.6.t: "The Rise of Gunpowder Weapons"
+ new_institution_events.6.d: "The Gunpowder weapons and technology we stole from the Chinese has become increasingly more and more outdated, with many various Generals abandoning them all together. We are still a distance away from aquiring 'Cannons' as well... Perhaps the days of hordes are numbered?"
+ new_institution_events.6.a: "Gunpowder weapons will be the death of us..."
+ new_institution_events.7.t: "The Rise of Gunpowder Weapons"
+ new_institution_events.7.d: "With the rise of Gunpowder weapons the technology provided to us by our overlord has become dated. Many Generals refuse to use the weapons we have in our arsenal, instead opting for the more advanced 'Cannon' type of weapons."
+ new_institution_events.7.a: "Gunpowder weapons will be the death of us..."
 
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
@@ -479,10 +507,13 @@
  #boost_majapahit_gunpowder_decision_title: "Majapahit Gunpowder" #Cut Content
  #boost_majapahit_gunpowder_decision_desc: "After the failed Mongol Invasion of Java in 1293 the Javanese quickly developed breech loading cannons for their navies, called 'Cetbang'."
  tributary_subject_gunpowder_decision_title: "The Secret of Gunpowder"
- tributary_subject_gunpowder_decision_desc: "Our overlord has embraced §Gunpowder§ and is allowing us to learn some of its benefits! We should take advantage of their generosity and learn as much as we can from their innovations before it is too late."
+ tributary_subject_gunpowder_decision_desc: "Our overlord has embraced §Gunpowder§ and is allowing us to learn some of its benefits for a price! We should take advantage of their generosity and learn as much as we can from their innovations before it is too late."
+ tributary_overlord_gunpowder_decision_title: "Sharing the Secret of Gunpowder"
+ tributary_overlord_gunpowder_decision: "Now that we have embraced §Gunpowder§ we have the option to allow our tributaries to learn from us. This will not only allow them to stand alone stronger, but we can also require a one time 'Tax' before we aid them with our technological innovations."
+ tributary_subject_gunpowder_boost_decision_title: "Embracing Chinese Gunpowder Technology"
+ tributary_subject_gunpowder_boost_decision_desc: "Now that we have embraced Gunpowder, with the Emperor graciously giving us aid in developing better firearms and cannons this allows us to have an edge over the rest of the worlds firearms! We should take advantage of this while we are ahead!"
  
  #Modifiers/Tooltips
- 
  crusader_accepting_crusaders_decision_tooltip: "We send word to the Papacy and other pious Catholics in Europe that we need aid to further clense our borders of hethens!"
  gave_aid_to_crusader_state_modifier_desc: "The Crusaders in the Holy Land requested aid in any form in order to continue the fight against the heathens that occupy the Holy Land, and we sent all the aid we can spare! We can only pray that it is enough."
  rejected_aid_to_crusader_state_modifier_desc: "The vile Crusaders in the Holy Land requested aid to continue their bitter fight against the heathens that occupy the Holy Land, they have already squandered all the aid previous Kings sent them, so why should we bother to aid a failing cause?"
@@ -548,6 +579,7 @@
  chinese_gunpowder_modifier: "The 'Heaven-Shaking-Thunder Bomb'"
  greek_gunpowder_modifier: "Greek Fire"
  korean_gunpowder_modifier: "Korean Gunpowder Innovations"
+ chinese_subject_gunpowder_boost_modifier: "Chinese Gunpowder"
  #southeast_asia_gunpowder_modifier: "Majapahit Naval Cannons" #Cut Content
  
  #Missions

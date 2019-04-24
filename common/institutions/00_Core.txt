@@ -788,6 +788,18 @@ mercantilism_institution = { #1356 New Content
 
 			}
 		}
+		modifier = { #Province produces paper
+			factor = 0.5
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				trade_goods = paper
+			}
+			custom_trigger_tooltip = {
+				tooltip = mercantilism_paper_tt
+				trade_goods = paper
+			}
+		}
 		modifier = { #Luxury Trade Good in Province
 			factor = 0.2
 			scale = yes
@@ -799,7 +811,6 @@ mercantilism_institution = { #1356 New Content
 					trade_goods = spices
 					trade_goods = coffee
 					trade_goods = sugar
-					trade_goods = tobacco
 					trade_goods = cocoa
 					trade_goods = silk
 					trade_goods = dyes
@@ -807,6 +818,8 @@ mercantilism_institution = { #1356 New Content
 					trade_goods = glass
 					trade_goods = gems
 				}
+				NOT = { owner = { government = tribal } }
+				NOT = { owner = { government = native } }
 			}
 			custom_trigger_tooltip = {
 				tooltip = mercantilism_trade_goods_tt
@@ -816,7 +829,6 @@ mercantilism_institution = { #1356 New Content
 					trade_goods = spices
 					trade_goods = coffee
 					trade_goods = sugar
-					trade_goods = tobacco
 					trade_goods = cocoa
 					trade_goods = silk
 					trade_goods = dyes
@@ -909,6 +921,24 @@ mercantilism_institution = { #1356 New Content
 				is_owned_by_trade_company = no
 				owner = {
 					has_institution = mercantilism_institution
+				}
+			}
+		}
+		modifier = { #Province Owner is a republic of any kind
+			factor = 0.3
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					government = republic
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_mercantilisim_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					government = republic
 				}
 			}
 		}

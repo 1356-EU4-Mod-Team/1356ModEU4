@@ -348,7 +348,13 @@ korean_gunpowder_modifier = {
 	
 }
 
-#southeast_asia_gunpowder_modifier = { #Cut because it wasnt unique enough
-#	leader_naval_fire = 1
-#	naval_tradition_from_battle = 0.1
-#}
+chinese_subject_gunpowder_boost_modifier = {
+	artillery_cost = -0.1
+	artillery_power = 0.05
+	army_tradition = 0.05
+}
+
+pre_gunpowder_modifier = { #
+	fire_damage = 0.1
+	fire_damage_received = 0.1
+}

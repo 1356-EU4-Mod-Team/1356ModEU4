@@ -1,13 +1,30 @@
 on_startup = {
-events = { 
-		#hansa.1
+	events = { 
 		barbarossa.1
-}
+	}
 	if = {
 		limit = { tag = SWB }
 		country_event = { id = barbarossa.10 }
 	}
 }
+
+on_startup = {
+	events = { 
+		1356startupevents.1
+	}
+	if = {
+		OR = {
+			technology_group = western
+			technology_group = eastern
+			technology_group = ottoman
+			technology_group = muslim
+			technology_group = indian
+			technology_group = chinese
+		}
+		NOT = { has_country_modifier = pre_gunpowder_modifier }
+	}
+}
+
 on_new_monarch = {
 	events = { 
 		fladebugevent.3 #Are both these needed anymore?
