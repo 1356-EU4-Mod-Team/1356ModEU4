@@ -139,6 +139,7 @@ country_event = { #Removes Chinese Subject Gunpowder after gunpowder
 	}
 }
 
+
 ####################
 ####Mercantilism####
 ####################
@@ -179,3 +180,27 @@ country_event = { #Removes Chinese Subject Gunpowder after gunpowder
 ####Gunpowder####
 #################
 
+country_event = { #First to reach gunpowder
+	id = new_institution_events.60
+	title = new_institution_events.60.t
+	desc = new_institution_events.60.d
+	
+	picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		is_year = 1400
+		has_institution = gunpowder_institution
+		mil_tech = 4 #Hand Cannon
+	}
+	mean_time_to_happen = {	
+		days = 1
+	}
+	option = {
+		name = new_institution_events.60.a
+		mil_power = 200
+		add_army_tradition = 15
+		add_navy_tradition = 15
+	}
+}

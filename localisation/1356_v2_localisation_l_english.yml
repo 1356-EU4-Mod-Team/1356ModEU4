@@ -487,6 +487,10 @@
  new_institution_events.7.d: "With the rise of Gunpowder weapons the technology provided to us by our overlord has become dated. Many Generals refuse to use the weapons we have in our arsenal, instead opting for the more advanced 'Cannon' type of weapons."
  new_institution_events.7.a: "Gunpowder weapons will be the death of us..."
 
+ new_institution_events.60.t: "The Handcannon"
+ new_institution_events.60.d: "Even though Gunpowder weapons have been around for around a century only recently have people begun to take interest in these strange weapons from the far east. However our researchers now have innovated on existing designs and may have created the first hand held cannon. The 'Handcannon' is the first of its kind, and perhaps is a sign of things to come... Perhaps this is the edge our nation has always needed in warfare?"
+ new_institution_events.60.a: "Interesting..."
+
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
  eng_reinstate_duke_of_cornwall_decision_desc: "At one point the title 'Duke of Cornwall' was lost and our eldest son no longer held the title. Now that we are able to we should grant this title to our eldest son once more to both reward him and to gain more power ourselves!"
