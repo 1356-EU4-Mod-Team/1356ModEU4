@@ -83,8 +83,6 @@ country_decisions = {
 		}
 	}
 
-#Needs to be more difficult to get
-
 	boost_mercantilism_growth_duccats_decision = { #Decision to allow Nations with lots of money to embrace the Mercantilism faster
 		major = yes
 		potential = {
@@ -98,7 +96,7 @@ country_decisions = {
 			NOT = { government = native }
 			NOT = { has_institution = mercantilism_institution }
 			NOT = { has_country_modifier = mercantilism_embracement_faster_monarch }
-						NOT = { has_country_modifier = mercantilism_embracement_faster_empire }
+			NOT = { has_country_modifier = mercantilism_embracement_faster_empire }
 			treasury = 500
 		}
 		effect = {
@@ -106,6 +104,7 @@ country_decisions = {
 				name = mercantilism_embracement_faster_duccats
 				duration = 3650  
 			}
+			add_treasury = -500
 		}
 		ai_will_do = { #Not allowing AI to do so due to the possibilities of Debt accured just to embrace this. Change in the future?
 			factor = 0
@@ -129,12 +128,16 @@ country_decisions = {
 				adm = 5
 				dip = 5
 			}
+			adm = 100
+			dip = 100
 		}
 		effect = {
 			add_country_modifier = { 
 				name = mercantilism_embracement_faster_monarch
 				duration = 3650  
 			}	
+			add_adm = -100
+			add_dip = -100
 		}
 		ai_will_do = { 
 			factor = 1
@@ -167,6 +170,7 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
 #Instead of giving them a boost to instutitions, how about we remove a malus on it?
 	boost_gunpowder_growth_mongol_decision = { #Decision to allow former Mongol nations to embrace Gunpowder faster
 		major = yes
@@ -207,7 +211,7 @@ country_decisions = {
 		effect = {
 			add_country_modifier = { 
 				name = mongol_gunpowder_modifier
-				duration = -1 
+				duration = 18250 
 			}	
 			add_country_modifier = { 
 				name = mongol_gunpowder_tech_modifier
@@ -225,25 +229,25 @@ country_decisions = {
 			culture_group = east_asian
 			NOT = { tag = YUA } #We dont need Yuan getting both now...
 			NOT = { has_institution = gunpowder_institution }
-			has_country_modifier = pre_gunpowder_modifier
+			#has_country_modifier = pre_gunpowder_modifier
 			is_year = 1360
 			NOT = { is_year = 1450 }
 		}
 		allow = {
 			culture_group = east_asian
 			NOT = { has_institution = gunpowder_institution }
-			has_country_modifier = pre_gunpowder_modifier
+			#has_country_modifier = pre_gunpowder_modifier
 			NOT = { is_year = 1450 }
 			OR = {
 				mil = 5
-				mil_tech = 7
+				mil_tech = 4
 			}
 			
 		}
 		effect = {
 			add_country_modifier = { #+1 Arty pip forever
 				name = chinese_gunpowder_modifier
-				duration = -1 
+				duration = 18250 #50 years 
 			}	
 			add_country_modifier = { 
 				name = gunpowder_tech_modifier
@@ -260,18 +264,18 @@ country_decisions = {
 		potential = {
 			culture_group = byzantine
 			NOT = { has_institution = gunpowder_institution }
-			has_country_modifier = pre_gunpowder_modifier
+			#has_country_modifier = pre_gunpowder_modifier
 			NOT = { is_year = 1450 }
 		}
 		allow = {
-			culture_group = byzantine
+			tag = BYZ
 			owns = 151 #Constantinople
 			NOT = { has_institution = gunpowder_institution }
-			has_country_modifier = pre_gunpowder_modifier
+			#has_country_modifier = pre_gunpowder_modifier
 			NOT = { is_year = 1450 }
 			OR = {
 				mil = 5
-				mil_tech = 7
+				mil_tech = 4
 			}
 			
 		}
@@ -295,17 +299,17 @@ country_decisions = {
 		potential = {
 			culture = korean
 			NOT = { has_institution = gunpowder_institution }
-			has_country_modifier = pre_gunpowder_modifier
+			#has_country_modifier = pre_gunpowder_modifier
 			is_year = 1399
 			NOT = { is_year = 1450 }
 		}
 		allow = {
-			culture = korean
+			tag = KOR
 			NOT = { has_institution = gunpowder_institution }
-			has_country_modifier = pre_gunpowder_modifier
+			#has_country_modifier = pre_gunpowder_modifier
 			NOT = { is_year = 1450 }
 			OR = {
-				mil_tech = 7
+				mil_tech = 4
 				mil = 5
 			}
 			
@@ -424,18 +428,17 @@ country_decisions = {
 			has_country_flag = chinese_subject_embraced_gunpowder
 			has_institution = gunpowder_institution
 			NOT = { is_year = 1500 }
-			mil_power = 200
+			mil_power = 250
 		}
 		effect = {
-			add_mil_power = -200
+			add_mil_power = -250
 			add_country_modifier = { 
 				name = chinese_subject_gunpowder_boost_modifier
-				duration = -1 
+				duration = 18250 #50 years
 			}
 		}
 		ai_will_do = { 
 			factor = 5
 		}
 	}
-
 }

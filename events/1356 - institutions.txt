@@ -11,39 +11,36 @@ namespace = new_institution_events
 ########PreGunpowder Modifiers#########
 #######################################
 
-country_event = { #Event to remove general gunpowder modifier after gunpowder
-	id = new_institution_events.1
-	title = new_institution_events.1.t
-	desc = new_institution_events.1.d
-	
-	picture = LAND_MILITARY_eventPicture
-	
-	trigger = {
-		is_year = 1400
-		has_country_modifier = pre_gunpowder_modifier
-		NOT = { has_institution = gunpowder_institution }
-	}
-	mean_time_to_happen = {	
-		months = 1
-	}
-	option = {
-		name = new_institution_events.1.a
-		remove_country_modifier = pre_gunpowder_modifier
-	}
-}
+# country_event = { #Event to remove general gunpowder modifier after gunpowder #Scrapped this idea for now
+	# id = new_institution_events.1
+	# title = new_institution_events.1.t
+	# desc = new_institution_events.1.d
+	# picture = LAND_MILITARY_eventPicture
+	# trigger = {
+		# is_year = 1425
+		# has_country_modifier = pre_gunpowder_modifier
+		# NOT = { has_institution = gunpowder_institution }
+	# }
+	# mean_time_to_happen = {	
+		# months = 1
+	# }
+	# option = {
+		# name = new_institution_events.1.a	
+		# remove_country_modifier = pre_gunpowder_modifier
+	# }
+# }
 
-#Should these be fire only once?
-
-country_event = { #Removes Greek Fire after gunpowder
+country_event = { #Removes Greek Fire after gunpowder #Could this be exploited since it only fires once?
 	id = new_institution_events.3
 	title = new_institution_events.3.t
 	desc = new_institution_events.3.d
 	
 	picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes
 	
 	trigger = {
 		has_country_modifier = greek_gunpowder_modifier
-		is_year = 1400
+		is_year = 1425
 		has_institution = gunpowder_institution
 	}
 	mean_time_to_happen = {	
@@ -61,10 +58,11 @@ country_event = { #Removes Korean Gunpowder after gunpowder
 	desc = new_institution_events.4.d
 	
 	picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes
 	
 	trigger = {
 		has_country_modifier = korean_gunpowder_modifier
-		is_year = 1400
+		is_year = 1425
 		has_institution = gunpowder_institution
 	}
 	mean_time_to_happen = {	
@@ -76,104 +74,213 @@ country_event = { #Removes Korean Gunpowder after gunpowder
 	}
 }
 
-country_event = { #Removes Chinese Gunpowder after gunpowder
-	id = new_institution_events.5
-	title = new_institution_events.5.t
-	desc = new_institution_events.5.d
-	
-	picture = LAND_MILITARY_eventPicture
-	
-	trigger = {
-		has_country_modifier = chinese_gunpowder_modifier
-		is_year = 1400
-		has_institution = gunpowder_institution
-	}
-	mean_time_to_happen = {	
-		months = 1
-	}
-	option = {
-		name = new_institution_events.5.a
-		remove_country_modifier = chinese_gunpowder_modifier
-	}
-}
+# country_event = { #Removes Chinese Gunpowder after gunpowder #It goes away after 50 years flat
+	# id = new_institution_events.5
+	# title = new_institution_events.5.t
+	# desc = new_institution_events.5.d
+	# picture = LAND_MILITARY_eventPicture
+	# trigger = {
+		# has_country_modifier = chinese_gunpowder_modifier
+		# is_year = 1425
+		# has_institution = gunpowder_institution
+	# }
+	# mean_time_to_happen = {	
+		# months = 1
+	# }
+	# option = {
+		# name = new_institution_events.5.a
+		# remove_country_modifier = chinese_gunpowder_modifier
+	# }
+# }
 
-country_event = { #Removes Mongol Gunpowder after gunpowder
-	id = new_institution_events.6
-	title = new_institution_events.6.t
-	desc = new_institution_events.6.d
-	
-	picture = LAND_MILITARY_eventPicture
-	
-	trigger = {
-		has_country_modifier = mongol_gunpowder_modifier
-		is_year = 1400
-		has_institution = gunpowder_institution
-	}
-	mean_time_to_happen = {	
-		months = 1
-	}
-	option = {
-		name = new_institution_events.6.a
-		remove_country_modifier = mongol_gunpowder_modifier
-	}
-}
+# country_event = { #Removes Mongol Gunpowder after gunpowder #It goes away after 50 years flat
+	# id = new_institution_events.6
+	# title = new_institution_events.6.t
+	# desc = new_institution_events.6.d
+	# picture = LAND_MILITARY_eventPicture
+	# trigger = {
+		# has_country_modifier = mongol_gunpowder_modifier
+		# is_year = 1450
+		# has_institution = gunpowder_institution
+	# }
+	# mean_time_to_happen = {	
+		# months = 1
+	# }
+	# option = {
+		# name = new_institution_events.6.a
+		# remove_country_modifier = mongol_gunpowder_modifier
+	# }
+# }
 
-country_event = { #Removes Chinese Subject Gunpowder after gunpowder
-	id = new_institution_events.7
-	title = new_institution_events.7.t
-	desc = new_institution_events.7.d
-	
-	picture = LAND_MILITARY_eventPicture
-	
-	trigger = {
-		has_country_modifier = chinese_subject_gunpowder_boost_modifier
-		is_year = 1400
-		has_institution = gunpowder_institution
-	}
-	mean_time_to_happen = {	
-		months = 1
-	}
-	option = {
-		name = new_institution_events.7.a
-		remove_country_modifier = chinese_subject_gunpowder_boost_modifier
-	}
-}
+# country_event = { #Removes Chinese Subject Gunpowder after gunpowder
+	# id = new_institution_events.7
+	# title = new_institution_events.7.t
+	# desc = new_institution_events.7.d
+	# picture = LAND_MILITARY_eventPicture
+	# trigger = {
+		# has_country_modifier = chinese_subject_gunpowder_boost_modifier
+		# is_year = 1425
+		# has_institution = gunpowder_institution
+	# }
+	# mean_time_to_happen = {	
+		# months = 1
+	# }
+	# option = {
+		# name = new_institution_events.7.a
+		# remove_country_modifier = chinese_subject_gunpowder_boost_modifier
+	# }
+# }
 
 
 ####################
 ####Mercantilism####
 ####################
 
-# country_event = { #Boosts Mercantilism in nations with trade income %
-	# id = new_institution_events.20
-	# title = new_institution_events.20.t
-	# desc = new_institution_events.20.d
-	
-	# picture = MERCHANTS_TALKING_eventPicture
-	
-	# trigger = {
-		# NOT = { has_institution = mercantilism_institution }
-		# trade_income_percentage = 0.50 #Whats a fair ratio early game?
-		# NOT = { is_year = 1430 }
-	# }
-	# mean_time_to_happen = {	
-		# months = 24
-	# }
-	# option = {
-		# name = new_institution_events.20.a
-		# random_owned_province = {
-			# if = {
-				# NOT = { mercantilism_institution = 100}
-				# owner = { NOT = { has_institution = mercantilism_institution } }
-			# }
-			# add_institution_embracement = {
-				# which = mercantilism_institution
-				# value = 50
-			# }
-		# }
+country_event = { #Boosts Mercantilism in nations with trade income %
+	id = new_institution_events.20
+	title = new_institution_events.20.t
+	desc = new_institution_events.20.d
+	picture = MERCHANTS_TALKING_eventPicture
+	trigger = {
+		NOT = { has_institution = mercantilism_institution }
+		NOT = { is_year = 1420 }
+		trade_income_percentage = 0.65 #Whats a fair ratio early game?
 		
-	# }
-# }
+	}
+	mean_time_to_happen = {	
+		months = 24
+	}
+	option = {
+		name = new_institution_events.20.a
+		random_owned_province = {
+			if = {
+				NOT = { mercantilism_institution = 100}
+				owner = { NOT = { has_institution = mercantilism_institution } }
+			}
+			add_institution_embracement = {
+				which = mercantilism_institution
+				value = 50
+			}
+		}	
+	}
+}
+
+country_event = { #Boosts Mercantilism in nations with X requirement
+	id = new_institution_events.21
+	title = new_institution_events.21.t
+	desc = new_institution_events.21.d
+	
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	trigger = {
+		NOT = { has_institution = mercantilism_institution }
+		NOT = { is_year = 1420 }
+		province_has_center_of_trade_of_level = 2
+		
+	}
+	mean_time_to_happen = {	
+		months = 24
+	}
+	option = {
+		name = new_institution_events.21.a
+		random_owned_province = {
+			if = {
+				NOT = { mercantilism_institution = 100}
+				province_has_center_of_trade_of_level = 2
+				owner = { NOT = { has_institution = mercantilism_institution } }
+			}
+			add_institution_embracement = {
+				which = mercantilism_institution
+				value = 50
+			}
+		}
+	}
+	option = { #We don't need more research, we need money!
+		name = new_institution_events.21.b
+		add_treasury = 50
+	}
+}
+
+country_event = { #Boosts Mercantilism in nations with X requirement
+	id = new_institution_events.22
+	title = new_institution_events.22.t
+	desc = new_institution_events.22.d
+	
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	trigger = {
+		NOT = { has_institution = mercantilism_institution }
+		NOT = { is_year = 1420 }
+		province_has_center_of_trade_of_level = 3 #Does this need to be in a scope?
+		
+	}
+	mean_time_to_happen = {	
+		months = 24
+	}
+	option = {
+		name = new_institution_events.22.a
+		random_owned_province = {
+			if = {
+				NOT = { mercantilism_institution = 100}
+				province_has_center_of_trade_of_level = 3
+				owner = { NOT = { has_institution = mercantilism_institution } }
+			}
+			add_institution_embracement = {
+				which = mercantilism_institution
+				value = 50
+			}
+		}
+	}
+	option = { #We don't need more research, we need money!
+		name = new_institution_events.22.b
+		add_treasury = 50
+	}
+}
+
+country_event = { #Boosts Mercantilism in nations with paper trade good
+	id = new_institution_events.23
+	title = new_institution_events.23.t
+	desc = new_institution_events.23.d
+	
+	picture = TRADEGOODS_eventPicture
+	
+	trigger = {
+		NOT = { has_institution = mercantilism_institution }
+		NOT = { is_year = 1420 }
+		any_owned_province = {
+			NOT = { mercantilism_institution = 100}
+			trade_goods = paper
+			development = 15
+		}
+		
+	}
+	mean_time_to_happen = {	
+		months = 24
+	}
+	option = {
+		name = new_institution_events.23.a
+		random_owned_province = {
+			if = {
+				NOT = { mercantilism_institution = 100}
+				trade_goods = paper
+				owner = { NOT = { has_institution = mercantilism_institution } }
+			}
+			add_institution_embracement = {
+				which = mercantilism_institution
+				value = 50
+			}
+		}
+	}
+	option = { #We don't need more research, we need money!
+		name = new_institution_events.23.b
+		add_treasury = 50
+	}
+}
+
+
+
+#Similar events for provinces that have paper
+
 
 
 #################
@@ -202,5 +309,32 @@ country_event = { #First to reach gunpowder
 		mil_power = 200
 		add_army_tradition = 15
 		add_navy_tradition = 15
+	}
+}
+
+#Is this event correct?
+
+country_event = { #Gunpowder Spawn Event
+	id = new_institution_events.61
+	title = new_institution_events.61.t
+	desc = new_institution_events.61.d
+	
+	picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = new_institution_events.61.a
+		random_owned_province = {
+			limit = {
+				is_capital = yes
+			}
+			add_permanent_province_modifier = { 
+				name = birthplace_of_gunpowder_modifier
+				duration = -1  
+			}
+		}
+		add_mil_power = 100
 	}
 }

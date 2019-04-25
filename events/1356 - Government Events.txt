@@ -38,611 +38,611 @@ country_event = { #Fixes AI with Veche Republics to switch governments when they
 #to direct what could occur before the ruler death perhaps. The player could influence how it ends through various events, and if no
 #agreement is reached then further outcomes could be chosen from.
 
-country_event = { #Sets the Ruler Flag for Crusader States
-	id = 1356government.98
-	title = "1356government.98.t"
-	desc = "1356government.98.d"
+# country_event = { #Sets the Ruler Flag for Crusader States
+	# id = 1356government.98
+	# title = "1356government.98.t"
+	# desc = "1356government.98.d"
 	
-	picture = KING_SICK_IN_BED_eventPicture
+	# picture = KING_SICK_IN_BED_eventPicture
 	
-	hidden = yes
+	# hidden = yes
 	
-	# trigger = {
-		# government = crusader_state_reform
-		# NOT = { has_ruler_flag = crusader_state_ruler_flag }
+	# # trigger = {
+		# # government = crusader_state_reform
+		# # NOT = { has_ruler_flag = crusader_state_ruler_flag }
+	# # }
+	# # mean_time_to_happen = {
+		# # months = 1
+	# # }
+	# option = {
+		# name = 1356government.98.a
+		# clr_country_flag = crusader_state_time_to_choose_ruler_flag
+		# clr_country_flag = two_heirs_succession_crusader_flag
+		# random_list = {
+			# 10 = { #Ruler dies, no heirs left.
+				# country_event = { 
+					# id = 1356government.100
+					# days = 1
+				# }
+			# }
+			# 10 = { #Ruler dies, two heirs.
+				# country_event = { 
+					# id = 1356government.103
+					# days = 1
+				# }
+			# }
+			# 10 = { #Ruler dies, One Heir & Powerful Regent
+				# country_event = { 
+					# id = 1356government.104
+					# days = 1
+				# }
+			# }
+			# 10 = { #Ruler dies, two heirs, peaceful succession.
+				# country_event = { 
+					# id = 1356government.105
+					# days = 1
+				# }
+			# }
+			# 10 = { #Ruler dies, one heir takes throne, other becomes heir
+				# country_event = { 
+					# id = 1356government.106
+					# days = 1
+				# }
+			# }
+			# 10 = { #Ruler dies, both children under age, powerful regent.
+				# country_event = { 
+					# id = 1356government.107
+					# days = 1
+				# }
+			# }
+			# 10 = { #Ruler dies, stable succession. No arguments, one heir. No Regent usurping power.
+				# country_event = { 
+					# id = 1356government.108
+					# days = 1
+				# }
+			# }
+			# 10 = { #Ruler dies, heir is currently in exile
+				# country_event = { 
+					# id = 1356government.109
+					# days = 1
+				# }
+			# }
+			# 10 = { #Ruler dies, heir became a monk.
+				# country_event = { 
+					# id = 1356government.110
+					# days = 1
+				# }
+			# }
+			# 10 = { #Ruler dies, underage heir with no regent. Random Crusader Dynasty tries to usurp the throne.
+				# country_event = { 
+					# id = 1356government.111
+					# days = 1
+				# }
+			# }
+		# }
 	# }
-	# mean_time_to_happen = {
-		# months = 1
+# }
+
+
+# #Ruler dies, no heirs left.
+# country_event = { #
+	# id = 1356government.100
+	# title = "1356government.100.t"
+	# desc = "1356government.100.d"
+	# picture = KING_SICK_IN_BED_eventPicture
+	
+	# is_triggered_only = yes
+	
+	# option = { #A Local Bishop can appoint someone
+		# name = crusader_states.100.a
+		# if = {
+			# limit = {
+				# has_estate = estate_church
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_church
+				# loyalty = 15
+			# }
+		# }
+		# define_ruler = {
+			# hide_skills = yes
+			# male = yes
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 50
+		# }
+		# add_papal_influence = 10
+		# }
+	# option = { #Choose a local noble
+		# name = crusader_states.100.b
+		# if = {
+			# limit = {
+				# has_estate = estate_nobles
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_nobles
+				# loyalty = 10
+			# }
+		# }
+		# define_ruler = {
+			# hide_skills = yes
+			# male = yes
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 50
+		# }
 	# }
-	option = {
-		name = 1356government.98.a
-		clr_country_flag = crusader_state_time_to_choose_ruler_flag
-		clr_country_flag = two_heirs_succession_crusader_flag
-		random_list = {
-			10 = { #Ruler dies, no heirs left.
-				country_event = { 
-					id = 1356government.100
-					days = 1
-				}
-			}
-			10 = { #Ruler dies, two heirs.
-				country_event = { 
-					id = 1356government.103
-					days = 1
-				}
-			}
-			10 = { #Ruler dies, One Heir & Powerful Regent
-				country_event = { 
-					id = 1356government.104
-					days = 1
-				}
-			}
-			10 = { #Ruler dies, two heirs, peaceful succession.
-				country_event = { 
-					id = 1356government.105
-					days = 1
-				}
-			}
-			10 = { #Ruler dies, one heir takes throne, other becomes heir
-				country_event = { 
-					id = 1356government.106
-					days = 1
-				}
-			}
-			10 = { #Ruler dies, both children under age, powerful regent.
-				country_event = { 
-					id = 1356government.107
-					days = 1
-				}
-			}
-			10 = { #Ruler dies, stable succession. No arguments, one heir. No Regent usurping power.
-				country_event = { 
-					id = 1356government.108
-					days = 1
-				}
-			}
-			10 = { #Ruler dies, heir is currently in exile
-				country_event = { 
-					id = 1356government.109
-					days = 1
-				}
-			}
-			10 = { #Ruler dies, heir became a monk.
-				country_event = { 
-					id = 1356government.110
-					days = 1
-				}
-			}
-			10 = { #Ruler dies, underage heir with no regent. Random Crusader Dynasty tries to usurp the throne.
-				country_event = { 
-					id = 1356government.111
-					days = 1
-				}
-			}
-		}
-	}
-}
+	# option = { #Choose a local Crusader Dynasty
+		# name = crusader_states.100.c
+		# trigger = { 
+			# any_neighbor_country = {
+				# government = crusader_state_reform
+				# religion = ROOT
+			# }
+		# } #A Trigger goes here for looking for ANY crusader State
+		# random_neighbor_country = { 
+			# limit = {
+				# government = crusader_state_reform
+				# religion = ROOT
+			# }
+			# ROOT = { 
+				# define_heir = { 
+					# dynasty = PREV 
+					# age = 35
+					# culture = PREV
+					# religion = PREV
+					# hidden = yes
+				# } 
+			# }
+			# add_opinion = { who = ROOT modifier = opinion_theocracy_noble }
+		# }
+	# }
+	# option = { #Choose from an existing Dynasty back home
+		# name = crusader_states.100.e
+	# }
+	# option = { #Let the pope select 
+		# name = crusader_states.100.f
+		# trigger = { exists = PAP }
+		# add_papal_influence = 10
+		# PAP = {
+			# country_event = { 
+				# id = 1356government.101
+				# days = 30
+			# }
+		# }
+	# }
+# }
 
-
-#Ruler dies, no heirs left.
-country_event = { #
-	id = 1356government.100
-	title = "1356government.100.t"
-	desc = "1356government.100.d"
-	picture = KING_SICK_IN_BED_eventPicture
+# #Pope
+# country_event = { #Event allowing the pope to select an heir for the Crusaders
+	# id = 1356government.101
+	# title = "1356government.101.t"
+	# desc = "1356government.101.d"
 	
-	is_triggered_only = yes
+	# picture = RELIGION_eventPicture
 	
-	option = { #A Local Bishop can appoint someone
-		name = crusader_states.100.a
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 15
-			}
-		}
-		define_ruler = {
-			hide_skills = yes
-			male = yes
-			culture = ROOT
-			religion = ROOT
-			claim = 50
-		}
-		add_papal_influence = 10
-		}
-	option = { #Choose a local noble
-		name = crusader_states.100.b
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 10
-			}
-		}
-		define_ruler = {
-			hide_skills = yes
-			male = yes
-			culture = ROOT
-			religion = ROOT
-			claim = 50
-		}
-	}
-	option = { #Choose a local Crusader Dynasty
-		name = crusader_states.100.c
-		trigger = { 
-			any_neighbor_country = {
-				government = crusader_state_reform
-				religion = ROOT
-			}
-		} #A Trigger goes here for looking for ANY crusader State
-		random_neighbor_country = { 
-			limit = {
-				government = crusader_state_reform
-				religion = ROOT
-			}
-			ROOT = { 
-				define_heir = { 
-					dynasty = PREV 
-					age = 35
-					culture = PREV
-					religion = PREV
-					hidden = yes
-				} 
-			}
-			add_opinion = { who = ROOT modifier = opinion_theocracy_noble }
-		}
-	}
-	option = { #Choose from an existing Dynasty back home
-		name = crusader_states.100.e
-	}
-	option = { #Let the pope select 
-		name = crusader_states.100.f
-		trigger = { exists = PAP }
-		add_papal_influence = 10
-		PAP = {
-			country_event = { 
-				id = 1356government.101
-				days = 30
-			}
-		}
-	}
-}
-
-#Pope
-country_event = { #Event allowing the pope to select an heir for the Crusaders
-	id = 1356government.101
-	title = "1356government.101.t"
-	desc = "1356government.101.d"
-	
-	picture = RELIGION_eventPicture
-	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
 
-	option = { #A Pious Bishop
-		name = crusader_states.101.a
-	}
-	option = { #A Cardinal's Son
-		name = crusader_states.101.b
-	}
-	option = { #A Family Member of your own
-		name = crusader_states.101.c
-	}
-	option = { #A Pious Noble's Son
-		name = crusader_states.101.e
-	}
-}
+	# option = { #A Pious Bishop
+		# name = crusader_states.101.a
+	# }
+	# option = { #A Cardinal's Son
+		# name = crusader_states.101.b
+	# }
+	# option = { #A Family Member of your own
+		# name = crusader_states.101.c
+	# }
+	# option = { #A Pious Noble's Son
+		# name = crusader_states.101.e
+	# }
+# }
 
-#Ruler dies, two heirs.
-country_event = {
-	id = 1356government.103
-	title = "1356government.103.t"
-	desc = "1356government.103.d"
+# #Ruler dies, two heirs.
+# country_event = {
+	# id = 1356government.103
+	# title = "1356government.103.t"
+	# desc = "1356government.103.d"
 	
-	picture = CIVIL_WAR_eventPicture
+	# picture = CIVIL_WAR_eventPicture
 	
-	is_triggered_only = yes
-	
-
-	option = { #The Elder Son
-		name = crusader_states.103.a
-		define_ruler = {
-			hide_skills = yes
-			age = 35
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 100
-			adm = 3
-			dip = 2
-			mil = 3
-		}
-	}
-	option = { #The Younger Son
-		name = crusader_states.103.b
-		define_ruler = {
-			hide_skills = yes
-			age = 27
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 100
-			adm = 2
-			max_random_adm = 5
-			dip = 2
-			max_random_dip = 5
-			mil = 3
-			max_random_mil = 5
-		}
-	}
-	option = { #Joint Rulership
-		name = crusader_states.103.c
-	}
-	option = { #Split the Kingdom
-		name = crusader_states.103.e
-	}
-}
-
-#Ruler dies, One Heir & Powerful Regent
-country_event = {
-	id = 1356government.104
-	title = "1356government.104.t"
-	desc = "1356government.104.d"
-	
-	picture = CIVIL_WAR_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Side with Family
-		name = crusader_states.104.a
-		define_ruler = {
-			hide_skills = yes
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 5
-			adm = 3
-			dip = 3
-			mil = 3
-		}
-	}
-	option = { #Side with Regent
-		name = crusader_states.104.b
-		define_ruler = {
-			hide_skills = yes
-			age = 35
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 100
-			adm = 3
-			dip = 2
-			mil = 3
-		}
-	}
-}
-
-#Ruler dies, two heirs, peaceful succession.
-country_event = {
-	id = 1356government.105
-	title = "1356government.105.t"
-	desc = "1356government.105.d"
-	picture = KING_SICK_IN_BED_eventPicture
-	
-	is_triggered_only = yes
-
-	option = { #The Elder Son
-		name = crusader_states.105.a
-		define_ruler = {
-			hide_skills = yes
-			age = 35
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 100
-			adm = 3
-			dip = 2
-			mil = 3
-		}
-	}
-	option = { #The Younger Son
-		name = crusader_states.105.b
-		define_ruler = {
-			hide_skills = yes
-			age = 27
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 100
-			adm = 2
-			max_random_adm = 5
-			dip = 2
-			max_random_dip = 5
-			mil = 3
-			max_random_mil = 5
-		}
-	}
-}
-
-#Ruler dies, one heir takes throne, other becomes heir
-country_event = { #Needs second event on ruler death to clear this.
-	id = 1356government.106
-	title = "1356government.106.t"
-	desc = "1356government.106.d"
-	picture = KING_SICK_IN_BED_eventPicture
-	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
 
-	option = { #The Elder Son
-		name = crusader_states.106.a
-		set_country_flag = two_heirs_succession_crusader_flag
-	}
-}
+	# option = { #The Elder Son
+		# name = crusader_states.103.a
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 35
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 100
+			# adm = 3
+			# dip = 2
+			# mil = 3
+		# }
+	# }
+	# option = { #The Younger Son
+		# name = crusader_states.103.b
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 27
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 100
+			# adm = 2
+			# max_random_adm = 5
+			# dip = 2
+			# max_random_dip = 5
+			# mil = 3
+			# max_random_mil = 5
+		# }
+	# }
+	# option = { #Joint Rulership
+		# name = crusader_states.103.c
+	# }
+	# option = { #Split the Kingdom
+		# name = crusader_states.103.e
+	# }
+# }
 
-#Ruler dies, both children under age, powerful regent.
-country_event = { 
-	id = 1356government.107
-	title = "1356government.107.t"
-	desc = "1356government.107.d"
-	picture = CIVIL_WAR_eventPicture
+# #Ruler dies, One Heir & Powerful Regent
+# country_event = {
+	# id = 1356government.104
+	# title = "1356government.104.t"
+	# desc = "1356government.104.d"
 	
-	is_triggered_only = yes
+	# picture = CIVIL_WAR_eventPicture
 	
+	# is_triggered_only = yes
+	
+	# option = { #Side with Family
+		# name = crusader_states.104.a
+		# define_ruler = {
+			# hide_skills = yes
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 5
+			# adm = 3
+			# dip = 3
+			# mil = 3
+		# }
+	# }
+	# option = { #Side with Regent
+		# name = crusader_states.104.b
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 35
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 100
+			# adm = 3
+			# dip = 2
+			# mil = 3
+		# }
+	# }
+# }
 
-	option = { #The Elder Son
-		name = crusader_states.107.a
-	}
-	option = { #The Younger Son
-		name = crusader_states.107.b
-	}
-	option = { #The Regent
-		name = crusader_states.107.c
-	}
-}
+# #Ruler dies, two heirs, peaceful succession.
+# country_event = {
+	# id = 1356government.105
+	# title = "1356government.105.t"
+	# desc = "1356government.105.d"
+	# picture = KING_SICK_IN_BED_eventPicture
+	
+	# is_triggered_only = yes
 
-#Ruler dies, stable succession. No arguments, one heir. No Regent usurping power.
-country_event = { 
-	id = 1356government.108
-	title = "1356government.108.t"
-	desc = "1356government.108.d"
-	picture = KING_SICK_IN_BED_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #
-		name = crusader_states.108.a
-		define_ruler = {
-			hide_skills = yes
-			age = 30
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 100
-			adm = 3
-			dip = 3
-			mil = 3
-		}
-	}
-}
+	# option = { #The Elder Son
+		# name = crusader_states.105.a
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 35
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 100
+			# adm = 3
+			# dip = 2
+			# mil = 3
+		# }
+	# }
+	# option = { #The Younger Son
+		# name = crusader_states.105.b
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 27
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 100
+			# adm = 2
+			# max_random_adm = 5
+			# dip = 2
+			# max_random_dip = 5
+			# mil = 3
+			# max_random_mil = 5
+		# }
+	# }
+# }
 
-#Ruler dies, heir is currently in exile
-country_event = { 
-	id = 1356government.109
-	title = "1356government.109.t"
-	desc = "1356government.109.d"
-	picture = KING_SICK_IN_BED_eventPicture
+# #Ruler dies, one heir takes throne, other becomes heir
+# country_event = { #Needs second event on ruler death to clear this.
+	# id = 1356government.106
+	# title = "1356government.106.t"
+	# desc = "1356government.106.d"
+	# picture = KING_SICK_IN_BED_eventPicture
 	
-	is_triggered_only = yes
-	
-
-	option = { #Bring him back from exile
-		name = crusader_states.109.a
-		define_ruler = {
-			hide_skills = yes
-			age = 32
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 30
-			adm = 2
-			dip = 5
-			mil = 3
-		}
-	}
-	option = { #Pick a distant family member instead
-		name = crusader_states.109.b
-		define_ruler = {
-			hide_skills = yes
-			age = 47
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 50
-			adm = 4
-			dip = 4
-			mil = 3
-		}
-	}
-	option = { #Local Crusader Dynasty
-		name = crusader_states.109.c
-		trigger = { 
-			any_neighbor_country = {
-				government = crusader_state_reform
-				religion = ROOT
-			}
-		} #A Trigger goes here for looking for ANY crusader State
-		random_neighbor_country = { 
-			limit = {
-				government = crusader_state_reform
-				religion = ROOT
-			}
-			ROOT = { 
-				define_heir = { 
-					dynasty = PREV 
-					age = 35
-					culture = PREV
-					religion = PREV
-					hidden = yes
-				} 
-			}
-			add_opinion = { who = ROOT modifier = opinion_theocracy_noble }
-		}
-	}
-	option = { #Local Crusader Dynasty (If No Cruasder States exist still)
-		name = crusader_states.109.e
-		trigger = { }
-		define_ruler = {
-			hide_skills = yes
-			male = yes
-			culture = ROOT
-			religion = ROOT
-			claim = 30
-		}		
-	}
-}
-
-#Ruler dies, heir became a monk.
-country_event = { 
-	id = 1356government.110
-	title = "1356government.110.t"
-	desc = "1356government.110.d"
-	
-	picture = KING_SICK_IN_BED_eventPicture
-	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
 
-	option = { #Distant Family Member
-		name = crusader_states.110.a
-		define_ruler = {
-			hide_skills = yes
-			age = 47
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 50
-			adm = 4
-			dip = 3
-			mil = 4
-		}
-	}
-	option = { #Kings Wife
-		name = crusader_states.110.b
-	}
-	option = { #Local Crusader Dynasty
-		name = crusader_states.110.c
-		trigger = { 
-			any_neighbor_country = {
-				government = crusader_state_reform
-				religion = ROOT
-			}
-		} #A Trigger goes here for looking for ANY crusader State
-		random_neighbor_country = { 
-			limit = {
-				government = crusader_state_reform
-				religion = ROOT
-			}
-			ROOT = { 
-				define_heir = { 
-					dynasty = PREV 
-					age = 35
-					culture = PREV
-					religion = PREV
-					hidden = yes
-				} 
-			}
-			add_opinion = { who = ROOT modifier = opinion_theocracy_noble }
-		}
-	}
-	option = { #Local Crusaeder Dynasty (If no Crusader States exist)
-		name = crusder_states.110.e
-		trigger = { }
-		define_ruler = {
-			hide_skills = yes
-			male = yes
-			culture = ROOT
-			religion = ROOT
-			claim = 30
-		}
-	}
-}
+	# option = { #The Elder Son
+		# name = crusader_states.106.a
+		# set_country_flag = two_heirs_succession_crusader_flag
+	# }
+# }
 
-#Ruler dies, underage heir with no regent. Random Crusader Dynasty tries to usurp the throne.
-country_event = { 
-	id = 1356government.111
-	title = "1356government.111.t"
-	desc = "1356government.111.d"
-	picture = CIVIL_WAR_eventPicture
+# #Ruler dies, both children under age, powerful regent.
+# country_event = { 
+	# id = 1356government.107
+	# title = "1356government.107.t"
+	# desc = "1356government.107.d"
+	# picture = CIVIL_WAR_eventPicture
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
 
-	option = { #Keep it in the family
-		name = crusader_states.111.a
-		define_ruler = {
-			hide_skills = yes
-			age = 45
-			male = yes
-			dynasty = ROOT
-			culture = ROOT
-			religion = ROOT
-			claim = 50
-			adm = 4
-			dip = 4
-			mil = 4
-		}
-	}
-	option = { #Local Crusader Dynasty
-		name = crusader_states.111.b
-		trigger = { 
-			any_neighbor_country = {
-				government = crusader_state_reform
-				religion = ROOT
-			}
-		}
-		random_neighbor_country = { 
-			limit = {
-				government = crusader_state_reform
-				religion = ROOT
-			}
-			ROOT = { 
-				define_heir = { 
-					dynasty = PREV 
-					age = 35
-					culture = PREV
-					religion = PREV
-					hidden = yes
-				} 
-			}
-			add_opinion = { who = ROOT modifier = opinion_theocracy_noble }
-		}
-	}
-	option = { #Local Crusader Dynasty (If there is no existing Cruaders left)
-		name = crusader_states.111.c
-		trigger = { }
-		define_ruler = {
-			hide_skills = yes
-			male = yes
-			culture = ROOT
-			religion = ROOT
-			claim = 30
-		}
-	}
-}
+	# option = { #The Elder Son
+		# name = crusader_states.107.a
+	# }
+	# option = { #The Younger Son
+		# name = crusader_states.107.b
+	# }
+	# option = { #The Regent
+		# name = crusader_states.107.c
+	# }
+# }
+
+# #Ruler dies, stable succession. No arguments, one heir. No Regent usurping power.
+# country_event = { 
+	# id = 1356government.108
+	# title = "1356government.108.t"
+	# desc = "1356government.108.d"
+	# picture = KING_SICK_IN_BED_eventPicture
+	
+	# is_triggered_only = yes
+	
+	# option = { #
+		# name = crusader_states.108.a
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 30
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 100
+			# adm = 3
+			# dip = 3
+			# mil = 3
+		# }
+	# }
+# }
+
+# #Ruler dies, heir is currently in exile
+# country_event = { 
+	# id = 1356government.109
+	# title = "1356government.109.t"
+	# desc = "1356government.109.d"
+	# picture = KING_SICK_IN_BED_eventPicture
+	
+	# is_triggered_only = yes
+	
+
+	# option = { #Bring him back from exile
+		# name = crusader_states.109.a
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 32
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 30
+			# adm = 2
+			# dip = 5
+			# mil = 3
+		# }
+	# }
+	# option = { #Pick a distant family member instead
+		# name = crusader_states.109.b
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 47
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 50
+			# adm = 4
+			# dip = 4
+			# mil = 3
+		# }
+	# }
+	# option = { #Local Crusader Dynasty
+		# name = crusader_states.109.c
+		# trigger = { 
+			# any_neighbor_country = {
+				# government = crusader_state_reform
+				# religion = ROOT
+			# }
+		# } #A Trigger goes here for looking for ANY crusader State
+		# random_neighbor_country = { 
+			# limit = {
+				# government = crusader_state_reform
+				# religion = ROOT
+			# }
+			# ROOT = { 
+				# define_heir = { 
+					# dynasty = PREV 
+					# age = 35
+					# culture = PREV
+					# religion = PREV
+					# hidden = yes
+				# } 
+			# }
+			# add_opinion = { who = ROOT modifier = opinion_theocracy_noble }
+		# }
+	# }
+	# option = { #Local Crusader Dynasty (If No Cruasder States exist still)
+		# name = crusader_states.109.e
+		# trigger = { }
+		# define_ruler = {
+			# hide_skills = yes
+			# male = yes
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 30
+		# }		
+	# }
+# }
+
+# #Ruler dies, heir became a monk.
+# country_event = { 
+	# id = 1356government.110
+	# title = "1356government.110.t"
+	# desc = "1356government.110.d"
+	
+	# picture = KING_SICK_IN_BED_eventPicture
+	
+	# is_triggered_only = yes
+	
+
+	# option = { #Distant Family Member
+		# name = crusader_states.110.a
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 47
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 50
+			# adm = 4
+			# dip = 3
+			# mil = 4
+		# }
+	# }
+	# option = { #Kings Wife
+		# name = crusader_states.110.b
+	# }
+	# option = { #Local Crusader Dynasty
+		# name = crusader_states.110.c
+		# trigger = { 
+			# any_neighbor_country = {
+				# government = crusader_state_reform
+				# religion = ROOT
+			# }
+		# } #A Trigger goes here for looking for ANY crusader State
+		# random_neighbor_country = { 
+			# limit = {
+				# government = crusader_state_reform
+				# religion = ROOT
+			# }
+			# ROOT = { 
+				# define_heir = { 
+					# dynasty = PREV 
+					# age = 35
+					# culture = PREV
+					# religion = PREV
+					# hidden = yes
+				# } 
+			# }
+			# add_opinion = { who = ROOT modifier = opinion_theocracy_noble }
+		# }
+	# }
+	# option = { #Local Crusaeder Dynasty (If no Crusader States exist)
+		# name = crusder_states.110.e
+		# trigger = { }
+		# define_ruler = {
+			# hide_skills = yes
+			# male = yes
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 30
+		# }
+	# }
+# }
+
+# #Ruler dies, underage heir with no regent. Random Crusader Dynasty tries to usurp the throne.
+# country_event = { 
+	# id = 1356government.111
+	# title = "1356government.111.t"
+	# desc = "1356government.111.d"
+	# picture = CIVIL_WAR_eventPicture
+	
+	# is_triggered_only = yes
+	
+
+	# option = { #Keep it in the family
+		# name = crusader_states.111.a
+		# define_ruler = {
+			# hide_skills = yes
+			# age = 45
+			# male = yes
+			# dynasty = ROOT
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 50
+			# adm = 4
+			# dip = 4
+			# mil = 4
+		# }
+	# }
+	# option = { #Local Crusader Dynasty
+		# name = crusader_states.111.b
+		# trigger = { 
+			# any_neighbor_country = {
+				# government = crusader_state_reform
+				# religion = ROOT
+			# }
+		# }
+		# random_neighbor_country = { 
+			# limit = {
+				# government = crusader_state_reform
+				# religion = ROOT
+			# }
+			# ROOT = { 
+				# define_heir = { 
+					# dynasty = PREV 
+					# age = 35
+					# culture = PREV
+					# religion = PREV
+					# hidden = yes
+				# } 
+			# }
+			# add_opinion = { who = ROOT modifier = opinion_theocracy_noble }
+		# }
+	# }
+	# option = { #Local Crusader Dynasty (If there is no existing Cruaders left)
+		# name = crusader_states.111.c
+		# trigger = { }
+		# define_ruler = {
+			# hide_skills = yes
+			# male = yes
+			# culture = ROOT
+			# religion = ROOT
+			# claim = 30
+		# }
+	# }
+# }
 

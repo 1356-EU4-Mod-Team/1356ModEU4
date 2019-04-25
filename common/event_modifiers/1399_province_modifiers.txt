@@ -99,7 +99,8 @@ home_of_mercantilism_institution_modifier = {
 }
 
 birthplace_of_gunpowder_modifier = {
-
+	local_monthly_devastation = -0.1
+	local_defensiveness = 0.1
 }
 
 #England

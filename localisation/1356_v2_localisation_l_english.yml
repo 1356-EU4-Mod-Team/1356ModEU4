@@ -487,6 +487,24 @@
  new_institution_events.7.d: "With the rise of Gunpowder weapons the technology provided to us by our overlord has become dated. Many Generals refuse to use the weapons we have in our arsenal, instead opting for the more advanced 'Cannon' type of weapons."
  new_institution_events.7.a: "Gunpowder weapons will be the death of us..."
 
+ new_institution_events.20.t: "Profitable Trading"
+ new_institution_events.20.d: "Our trade has been bringing in much more money than usual lately, so much so that it outnumbers our taxes by a large margin. This has got a lot of traders that reside in our nation talking about how they can best make use of this, while many high ranking advisors debate if we should tax traders more than we do already. Before we think much more about making more money off of traders perhaps we should give their conversations a good listen, we could learn something new from them after all."
+ new_institution_events.20.a: "Perhaps these commoners could teach us something new after all..."
+ new_institution_events.20.b: "We can learn nothing from a commoner! Implement a tariff on all imports!"
+ new_institution_events.21.t: "Profitable Trading?"
+ new_institution_events.21.d: "Due to our control over an important §Center of Trade§ our advisors tend to spend a lot of time at port in their free time. Recently there's been a some of talk about 'Merchantilism' and how if our trade is profitable it'll help stimulate more wealth than what it already brings in. No one has yet to come forth with ideas, however [ROOT.Monarch.GetTitle] [ROOT.Monarch.GetName] has a few ideas that come to [ROOT.GetHerHis] mind. Perhaps if we ask our advisors we may be able to come up with a new policy or two."
+ new_institution_events.21.a: "More long term profit sounds nice!"
+ new_institution_events.21.b: "I'd rather have more money in the treasury now!"
+ new_institution_events.22.t: "Profitable Trading?"
+ new_institution_events.22.d: "Due to our control over such an important §Center of Trade§ our advisors usually spend a lot of time in port in their free time. Recently there's been a lot of talk about 'Merchantilism' and how if our trade is profitable it'll help stimulate more wealth than what it already brings in. Various members of the administration have already come to us talking about ideas and new trade policies, while even a few close family members have come forth with ideas. If we listen closely to these ideas we may be able to come up with a way to profit even more from our existing trade..."
+ new_institution_events.22.a: "More long term profit sounds nice!"
+ new_institution_events.22.b: "I'd rather have more money in the treasury now!"
+ new_institution_events.23.t: "The Rise of Mercantilism & the Use of Paper"
+ new_institution_events.23.d: "With the rise of Mercantilism the interest in paper has risen, and so we're now able to use this to our advantage. Since we've yet to fully understand what all this talk of 'Mercantilism' is we may be able to trade off some of our paper for some assistance in understanding this better."
+ new_institution_events.23.a: "It is a good trade!"
+ new_institution_events.23.b: "Just sell the paper like usual, we'll understand it later."
+ 
+
  new_institution_events.60.t: "The Handcannon"
  new_institution_events.60.d: "Even though Gunpowder weapons have been around for around a century only recently have people begun to take interest in these strange weapons from the far east. However our researchers now have innovated on existing designs and may have created the first hand held cannon. The 'Handcannon' is the first of its kind, and perhaps is a sign of things to come... Perhaps this is the edge our nation has always needed in warfare?"
  new_institution_events.60.a: "Interesting..."
@@ -586,6 +604,8 @@
  chinese_subject_gunpowder_boost_modifier: "Chinese Gunpowder"
  #southeast_asia_gunpowder_modifier: "Majapahit Naval Cannons" #Cut Content
  pre_gunpowder_modifier: "Early Gunpowder Weapons"
+ INCREASED_PAPER_DEMAND: "Due to the increased interest in profiting from trade the demand for paper has increased tenfold, thanks to this we can increase the price at which we sell paper to make even more money. As a nice side effect of this some we're now able to produce even more paper than previously thanks to some traders funding more production of paper elsewhere as well."
+ birthplace_of_gunpowder_modifier: "Birthplace of Gunpowder"
  
  #Missions
   

@@ -2,18 +2,19 @@ namespace = 1356startupevents
 
 #Triggers for everyone, too intensive. Has to be a better way.
 
-country_event = { #Adds primitive Gunpowder for everyone in general
-	id = 1356startupevents.1
-	title = 1356startupevents.1.t
-	desc = 1356startupevents.1.d
-	picture = LAND_MILITARY_eventPicture
-	is_triggered_only = yes
-	
-	option = {
-		name = 1356startupevents.1.a
-		add_country_modifier = { 
-			name = pre_gunpowder_modifier
-			duration = -1
-		}
-	}
-}
+# country_event = { #Adds primitive Gunpowder for everyone in general
+	# id = 1356startupevents.1
+	# title = 1356startupevents.1.t
+	# desc = 1356startupevents.1.d
+	# picture = LAND_MILITARY_eventPicture
+	# is_triggered_only = yes
+	# option = {
+		# name = 1356startupevents.1.a
+		# add_country_modifier = { 
+			# name = pre_gunpowder_modifier
+			# duration = -1
+		# }
+	# }
+# }
+
+

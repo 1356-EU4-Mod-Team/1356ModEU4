@@ -1290,7 +1290,7 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 		}
 	}
 	start_chance = 100
-	on_start = institution_events.1
+	on_start = new_institution_events.61
 
 	can_embrace = {
 		owner = { NOT = { government = tribal } }
