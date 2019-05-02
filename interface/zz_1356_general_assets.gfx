@@ -259,6 +259,16 @@ spriteTypes = {
 		name = "GFX_ab_disc_general_cost_leader_pool"
 		texturefile = "gfx/interface/ages/ab_disc_general_cost_leader_pool.dds"
 	}
+	
+# Institutions
+	spriteType = { #Gunpowder Institution GFX
+		name = "GFX_gunpowder_institution"
+		texturefile = "gfx//interface//gunpowder_institution.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+		
+	}
+	
 #Great Projects
 	pdxmesh = {
 		name = "alx_great_lighthouse"

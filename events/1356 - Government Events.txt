@@ -1,9 +1,9 @@
-namespace = 1356government
+namespace = flagovernment
 
 country_event = { #Fixes AI with Veche Republics to switch governments when they get to 18 cities
-	id = 1356government.1
-	title = 1356government.1.t
-	desc = 1356government.1.d
+	id = flagovernment.1
+	title = flagovernment.1.t
+	desc = flagovernment.1.d
 	picture = RELIGION_eventPicture
 	
 	fire_only_once = yes
@@ -21,7 +21,7 @@ country_event = { #Fixes AI with Veche Republics to switch governments when they
 	}
 
 	option = {
-		name = 1356government.1.a
+		name = flagovernment.1.a
 		add_government_reform = novgorod_republic_gov
 		add_corruption = -10
 	}
@@ -39,14 +39,11 @@ country_event = { #Fixes AI with Veche Republics to switch governments when they
 #agreement is reached then further outcomes could be chosen from.
 
 # country_event = { #Sets the Ruler Flag for Crusader States
-	# id = 1356government.98
-	# title = "1356government.98.t"
-	# desc = "1356government.98.d"
-	
+	# id = flagovernment.98
+	# title = "flagovernment.98.t"
+	# desc = "flagovernment.98.d"
 	# picture = KING_SICK_IN_BED_eventPicture
-	
 	# hidden = yes
-	
 	# # trigger = {
 		# # government = crusader_state_reform
 		# # NOT = { has_ruler_flag = crusader_state_ruler_flag }
@@ -55,67 +52,67 @@ country_event = { #Fixes AI with Veche Republics to switch governments when they
 		# # months = 1
 	# # }
 	# option = {
-		# name = 1356government.98.a
+		# name = flagovernment.98.a
 		# clr_country_flag = crusader_state_time_to_choose_ruler_flag
 		# clr_country_flag = two_heirs_succession_crusader_flag
 		# random_list = {
 			# 10 = { #Ruler dies, no heirs left.
 				# country_event = { 
-					# id = 1356government.100
+					# id = flagovernment.100
 					# days = 1
 				# }
 			# }
 			# 10 = { #Ruler dies, two heirs.
 				# country_event = { 
-					# id = 1356government.103
+					# id = flagovernment.103
 					# days = 1
 				# }
 			# }
 			# 10 = { #Ruler dies, One Heir & Powerful Regent
 				# country_event = { 
-					# id = 1356government.104
+					# id = flagovernment.104
 					# days = 1
 				# }
 			# }
 			# 10 = { #Ruler dies, two heirs, peaceful succession.
 				# country_event = { 
-					# id = 1356government.105
+					# id = flagovernment.105
 					# days = 1
 				# }
 			# }
 			# 10 = { #Ruler dies, one heir takes throne, other becomes heir
 				# country_event = { 
-					# id = 1356government.106
+					# id = flagovernment.106
 					# days = 1
 				# }
 			# }
 			# 10 = { #Ruler dies, both children under age, powerful regent.
 				# country_event = { 
-					# id = 1356government.107
+					# id = flagovernment.107
 					# days = 1
 				# }
 			# }
 			# 10 = { #Ruler dies, stable succession. No arguments, one heir. No Regent usurping power.
 				# country_event = { 
-					# id = 1356government.108
+					# id = flagovernment.108
 					# days = 1
 				# }
 			# }
 			# 10 = { #Ruler dies, heir is currently in exile
 				# country_event = { 
-					# id = 1356government.109
+					# id = flagovernment.109
 					# days = 1
 				# }
 			# }
 			# 10 = { #Ruler dies, heir became a monk.
 				# country_event = { 
-					# id = 1356government.110
+					# id = flagovernment.110
 					# days = 1
 				# }
 			# }
 			# 10 = { #Ruler dies, underage heir with no regent. Random Crusader Dynasty tries to usurp the throne.
 				# country_event = { 
-					# id = 1356government.111
+					# id = flagovernment.111
 					# days = 1
 				# }
 			# }
@@ -126,15 +123,13 @@ country_event = { #Fixes AI with Veche Republics to switch governments when they
 
 # #Ruler dies, no heirs left.
 # country_event = { #
-	# id = 1356government.100
-	# title = "1356government.100.t"
-	# desc = "1356government.100.d"
+	# id = flagovernment.100
+	# title = "flagovernment.100.t"
+	# desc = "flagovernment.100.d"
 	# picture = KING_SICK_IN_BED_eventPicture
-	
 	# is_triggered_only = yes
-	
 	# option = { #A Local Bishop can appoint someone
-		# name = crusader_states.100.a
+		# name = flagovernment.100.a
 		# if = {
 			# limit = {
 				# has_estate = estate_church
@@ -154,7 +149,7 @@ country_event = { #Fixes AI with Veche Republics to switch governments when they
 		# add_papal_influence = 10
 		# }
 	# option = { #Choose a local noble
-		# name = crusader_states.100.b
+		# name = flagovernment.100.b
 		# if = {
 			# limit = {
 				# has_estate = estate_nobles
@@ -173,7 +168,7 @@ country_event = { #Fixes AI with Veche Republics to switch governments when they
 		# }
 	# }
 	# option = { #Choose a local Crusader Dynasty
-		# name = crusader_states.100.c
+		# name = flagovernment.100.c
 		# trigger = { 
 			# any_neighbor_country = {
 				# government = crusader_state_reform

@@ -6,13 +6,13 @@
 # modified from vanilla events by Count Flandy
 ####################################################
 
-namespace = 1356prices
+namespace = flaprices
 
-# Explosion of Early Modern Printing
+# Explosion of Early Modern Printing #Possibly make a follow up event so the world sees this? Same for Gunpowder?
 country_event = {
-	id = 1356prices.1
-	title = 1356prices.1.t
-	desc = 1356prices.1.d
+	id = flaprices.1
+	title = flaprices.1.t
+	desc = flaprices.1.d
 	picture = TRADEGOODS_eventPicture
 	fire_only_once = yes
 	major = yes
@@ -28,7 +28,7 @@ country_event = {
 	}
 		
 	option = {
-		name = 1356prices.1.a
+		name = flaprices.1.a
 		ai_chance = {
 			factor = 100
 		}
@@ -50,224 +50,322 @@ country_event = {
 	}
 }
 
-#Make event that spawns paper in various provinces
+#Commented out since there seems to be a vanilla event to spawn this later, perhaps adjust this to be compatible?
 
-country_event = {
-	id = 1356prices.2
-	title = 1356prices.2.t
-	desc = 1356prices.2.d
+# province_event = { #Paper for Holland Area
+	# id = 1356prices.3
+	# title = 1356prices.3.t
+	# desc = 1356prices.3.d
+	# picture = TRADEGOODS_eventPicture
+	# fire_only_once = yes
+	# major = yes
+	# trigger = {
+		# area = holland_area
+		# holland_area = { #Does this work?
+			# NOT = { trade_goods = paper }
+		# }
+		# NOT = { is_year = 1500 }
+		# is_state = yes
+		# development = 15
+		# mercantilism_institution = 100
+		# owner = { has_institution = mercantilism_institution } #Keep this?
+		# OR = { #Ruler requirement
+			# owner = { adm = 5 }
+			# owner = { dip = 5 }
+		# }
+		# OR = { #Trade Goods required
+			# trade_goods = fish
+			# trade_goods = livestock
+			# trade_goods = grain
+			# trade_goods = wool
+			# AND = { #cloth
+				# trade_goods = cloth
+				# development = 20
+			# }
+			# AND = { #wine
+				# trade_goods = wine
+				# development = 20
+			# }
+		# }
+	# }
+	# mean_time_to_happen = {
+		# months = 420 #35 years
+	# }
+	# option = {
+		# name = 1356prices.3.a
+		# change_trade_goods = paper
+		# add_base_production = 2
+	# }
+# }
+
+province_event = { #Paper for Savoy Area
+	id = flaprices.4
+	title = flaprices.4.t
+	desc = flaprices.4.d
 	picture = TRADEGOODS_eventPicture
 	fire_only_once = yes
 	major = yes
-
+	
 	trigger = {
-		NOT = { has_global_flag = hollender_beater_flag }
-		has_institution = manufactories
-		any_owned_province = {
-			province_without_special_goods_produced_trigger = yes
-			is_state = yes
-			OR = { #Somewhere reasonable for windmills 
-				has_building = workshop
-				has_building = counting_house
-				base_production = 6
-				has_port = yes
+		area = savoy_dauphine_area
+		savoy_dauphine_area = { #Does this work?
+			NOT = { trade_goods = paper }
+		}
+		NOT = { is_year = 1500 }
+		is_state = yes
+		development = 15
+		mercantilism_institution = 100
+		owner = { has_institution = mercantilism_institution } #Keep this?
+		OR = { #Ruler requirement
+			owner = { adm = 5 }
+			owner = { dip = 5 }
+		}
+		OR = { #Trade Goods required
+			trade_goods = fish
+			trade_goods = livestock
+			trade_goods = grain
+			trade_goods = wool
+			AND = { #cloth
+				trade_goods = cloth
+				development = 20
 			}
-			OR = {
-				trade_goods = cloth #Lump
-				trade_goods = naval_supplies #Hemp
-				trade_goods = wool #Lump
+			AND = { #wine
+				trade_goods = wine
+				development = 20
 			}
-			NOT = { has_building = textile }
-			NOT = { has_building = wharf }
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1
-	}
-	
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					province_without_special_goods_produced_trigger = yes
-					is_state = yes
-					OR = { #Somewhere reasonable for windmills 
-						has_building = workshop
-						has_building = counting_house
-						base_production = 6
-						has_port = yes
-					}
-					OR = {
-						trade_goods = cloth #Lump
-						trade_goods = naval_supplies #Hemp
-						trade_goods = wool #Lump
-					}
-					NOT = { has_building = textile }
-					NOT = { has_building = wharf }
-				}
-				save_event_target_as = hollender_beater_province
-			}
-			random_owned_province = {
-				limit = {
-					province_without_special_goods_produced_trigger = yes
-					is_state = yes
-					num_free_building_slots = 1 #prefered but not required
-					OR = { #Somewhere reasonable for windmills 
-						has_building = workshop
-						has_building = counting_house
-						base_production = 6
-						has_port = yes
-					}
-					OR = {
-						trade_goods = cloth #Lump
-						trade_goods = naval_supplies #Hemp
-						trade_goods = wool #Lump
-					}
-					NOT = { has_building = textile }
-					NOT = { has_building = wharf }
-				}
-				save_event_target_as = hollender_beater_province
-			}
-			random_owned_province = {
-				limit = {
-					province_without_special_goods_produced_trigger = yes
-					is_state = yes
-					num_free_building_slots = 1
-					OR = { #Somewhere reasonable for windmills 
-						has_building = workshop
-						has_building = counting_house
-						base_production = 6
-						has_port = yes
-					}
-					OR = {
-						trade_goods = cloth #Lump
-						trade_goods = naval_supplies #Hemp
-						trade_goods = wool #Lump
-					}
-					NOT = { has_building = textile }
-					NOT = { has_building = wharf }
-					base_production = 6
-				}
-				save_event_target_as = hollender_beater_province
-			}
-			random_owned_province = {
-				limit = {
-					province_without_special_goods_produced_trigger = yes
-					is_state = yes
-					num_free_building_slots = 1
-					OR = { #Somewhere reasonable for windmills 
-						has_building = workshop
-						has_building = counting_house
-						base_production = 6
-						has_port = yes
-					}
-					OR = {
-						trade_goods = cloth #Lump
-						trade_goods = naval_supplies #Hemp
-						trade_goods = wool #Lump
-					}
-					NOT = { has_building = textile }
-					NOT = { has_building = wharf }
-					base_production = 10
-				}
-				save_event_target_as = hollender_beater_province
-			}
-			random_owned_province = {
-				limit = {
-					province_without_special_goods_produced_trigger = yes
-					is_state = yes
-					num_free_building_slots = 1
-					OR = { #Somewhere reasonable for windmills 
-						has_building = workshop
-						has_building = counting_house
-						base_production = 6
-						has_port = yes
-					}
-					OR = {
-						trade_goods = cloth #Lump
-						trade_goods = naval_supplies #Hemp
-						trade_goods = wool #Lump
-					}
-					NOT = { has_building = textile }
-					NOT = { has_building = wharf }
-					base_production = 14
-				}
-				save_event_target_as = hollender_beater_province
-			}
-		}
+		months = 420 #35 years
 	}
 	
 	option = {
-		name = 1356prices.2.a
-		add_adm_power = 75
-		event_target:hollender_beater_province = {
-			change_trade_goods = paper
-			if = {
-				limit = { num_free_building_slots = 1 }
-				add_building = mills
-				else = {
-					add_base_production = 4
-				}
-			}
-		}
-		change_price = {
-			trade_goods = paper
-			key = HOLLENDER_BEATER
-			value = -0.5
-			duration = -1
-		}
+		name = flaprices.4.a
+		change_trade_goods = paper
+		add_base_production = 2
 	}
 }
 
-# Growing Bureaucracies
-country_event = {
-	id = 1356prices.3
-	title = 1356prices.3.t
-	desc = 1356prices.3.d
-	picture = BIG_BOOK_eventPicture
-
+province_event = { #Paper for Franconia Area
+	id = flaprices.5
+	title = flaprices.5.t
+	desc = flaprices.5.d
+	picture = TRADEGOODS_eventPicture
 	fire_only_once = yes
-	
 	major = yes
-
+	
 	trigger = {
-		NOT = { has_global_flag = paper_in_bureaucracies }
-		adm_tech = 10 #1356 #Orignally 6
-		has_institution = feudalism
-		OR = {
-			num_of_cities = 50
-			colony = 1 #1 Colonial Country
+		area = franconia_area
+		franconia_area = { #Does this work?
+			NOT = { trade_goods = paper }
 		}
-		NOT = { government = tribal }
-		OR = {
-			colony = 1 #1 Colonial Country
-			AND = {
-				capital_scope = { continent = europe }
-				any_owned_province = { NOT = { continent = europe } }
+		NOT = { is_year = 1500 }
+		is_state = yes
+		development = 15
+		mercantilism_institution = 100
+		owner = { has_institution = mercantilism_institution } #Keep this?
+		OR = { #Ruler requirement
+			owner = { adm = 5 }
+			owner = { dip = 5 }
+		}
+		OR = { #Trade Goods required
+			trade_goods = fish
+			trade_goods = livestock
+			trade_goods = grain
+			trade_goods = wool
+			AND = { #cloth
+				trade_goods = cloth
+				development = 20
 			}
-			AND = {
-				capital_scope = { continent = africa }
-				any_owned_province = { NOT = { continent = africa } }
-			}
-			AND = {
-				capital_scope = { continent = asia }
-				any_owned_province = { NOT = { continent = asia } }
+			AND = { #wine
+				trade_goods = wine
+				development = 20
 			}
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 420 #35 years
 	}
 	
 	option = {
-		name = 1356prices.3.a
-		change_price = {
-			trade_goods = paper
-			key = PAPER_IN_BUREAUCRACY
-			value = 0.25
-			duration = -1
-		}
+		name = flaprices.5.a
+		change_trade_goods = paper
+		add_base_production = 2
 	}
 }
+
+province_event = { #Paper for Rhineland Area
+	id = flaprices.6
+	title = flaprices.6.t
+	desc = flaprices.6.d
+	picture = TRADEGOODS_eventPicture
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		area = upper_rhineland_area
+		upper_rhineland_area = { #Does this work?
+				NOT = { trade_goods = paper }
+			}
+		NOT = { is_year = 1500 }
+		is_state = yes
+		development = 15
+		mercantilism_institution = 100
+		owner = { has_institution = mercantilism_institution } #Keep this?
+		OR = { #Ruler requirement
+			owner = { adm = 5 }
+			owner = { dip = 5 }
+		}
+		OR = { #Trade Goods required
+			trade_goods = fish
+			trade_goods = livestock
+			trade_goods = grain
+			trade_goods = wool
+			AND = { #cloth
+				trade_goods = cloth
+				development = 20
+			}
+			AND = { #wine
+				trade_goods = wine
+				development = 20
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 420 #35 years
+	}
+	
+	option = {
+		name = flaprices.6.a
+		change_trade_goods = paper
+		add_base_production = 2
+	}
+}
+
+province_event = { #Paper for West Midlands Area #Perhaps add an event to remove this trade good under X requirement, since historically it failed?
+	id = flaprices.7
+	title = flaprices.7.t
+	desc = flaprices.7.d
+	picture = TRADEGOODS_eventPicture
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		area = west_midlands_area
+		west_midlands_area = { #Does this work?
+			NOT = { trade_goods = paper }
+		}
+		NOT = { is_year = 1400 }
+		is_state = yes
+		development = 15
+		mercantilism_institution = 100
+		owner = { has_institution = mercantilism_institution } #Keep this?
+		OR = { #Ruler requirement
+			owner = { adm = 5 }
+			owner = { dip = 5 }
+		}
+		OR = { #Trade Goods required
+			trade_goods = fish
+			trade_goods = livestock
+			trade_goods = grain
+			trade_goods = wool
+			AND = { #cloth
+				trade_goods = cloth
+				development = 20
+			}
+			AND = { #wine
+				trade_goods = wine
+				development = 20
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 420 #35 years
+	}
+	
+	option = {
+		name = flaprices.7.a
+		change_trade_goods = paper
+		add_base_production = 2
+	}
+}
+
+province_event = { #Removes the paper from the west midlands since it failed historically
+	id = flaprices.8
+	title = flaprices.8.t
+	desc = flaprices.8.d
+	picture = TRADEGOODS_eventPicture
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		area = west_midlands_area
+		west_midlands_area = { #Does this work?
+			trade_goods = paper
+		}
+		is_year = 1440
+		NOT = { is_year = 1480 }
+		is_state = yes
+
+	}
+	
+	mean_time_to_happen = {
+		months = 480 #40 years
+	}
+	option = {
+		name = flaprices.8.a
+		change_trade_goods = unknown
+		add_base_production = -2
+		add_treasury = -50
+	}
+}
+
+#and prices.9 reserved for moving it to kent?
+
+province_event = { #Paper for West Midlands Area #Perhaps add an event to remove this trade good under X requirement, since historically it failed?
+	id = flaprices.9
+	title = flaprices.9.t
+	desc = flaprices.9.d
+	picture = TRADEGOODS_eventPicture
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		area = home_counties_area
+		home_counties_area = { #Does this work?
+			NOT = { trade_goods = paper }
+		}
+		is_year = 1490
+		NOT = { is_year = 1600 }
+		is_state = yes
+		development = 20
+		OR = { #Ruler requirement
+			owner = { adm = 4 }
+			owner = { dip = 4 }
+		}
+		OR = { 
+			trade_goods = livestock
+			trade_goods = grain
+			trade_goods = cloth
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	option = {
+		name = flaprices.9.a
+		change_trade_goods = paper
+		add_base_production = 2
+	}
+}
+
+#Perhaps a generic event for regions that do NOT have any paper trade goods?
+
+
+
