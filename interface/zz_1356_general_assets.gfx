@@ -261,12 +261,41 @@ spriteTypes = {
 	}
 	
 # Institutions
-	spriteType = { #Gunpowder Institution GFX
-		name = "GFX_gunpowder_institution"
-		texturefile = "gfx//interface//gunpowder_institution.dds"
+	# spriteType = { #Gunpowder Institution GFX
+		# name = "GFX_gunpowder_institution"
+		# texturefile = "gfx//interface//gunpowder_institution.dds"
+		# loadType = "INGAME"
+		# transparencecheck = yes
+	# }
+	spriteType = { 
+		name = "GFX_icon_institution_gunpowder_institution"
+		texturefile = "gfx//interface//institutions//gunpowder_institution.dds"
 		loadType = "INGAME"
 		transparencecheck = yes
-		
+	}
+	spriteType = {
+		name = "GFX_institution_tab_gunpowder_institution"
+		texturefile = "gfx//interface//institutions//institution_tab_gunpowder_institution.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	# spriteType = { #Mercantilism Institution GFX
+		# name = "GFX_mercantilism_institution"
+		# texturefile = "gfx//interface//mercantilism_institution.dds"
+		# loadType = "INGAME"
+		# transparencecheck = yes
+	# }
+	spriteType = { 
+		name = "GFX_icon_institution_mercantilism_institution"
+		texturefile = "gfx//interface//institutions//mercantilism_institution.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_institution_tab_mercantilism_institution"
+		texturefile = "gfx/interface/institutions//institution_tab_mercantilism_institution.dds"
+		noOfFrames = 2
+		transparencecheck = yes
 	}
 	
 #Great Projects
