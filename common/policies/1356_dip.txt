@@ -44,3 +44,22 @@ blessings_of_religious_leaders = {
 	}
 }
 
+early_game_policy_dip = {
+
+	monarch_power = DIP
+
+	potential = {
+		always = yes
+	}
+	allow = {
+		always = yes
+	}
+		
+	diplomatic_reputation = 2
+	envoy_travel_time = 0.25
+		
+	ai_will_do = {
+		factor = 0			
+	}
+
+}

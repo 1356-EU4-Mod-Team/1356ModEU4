@@ -58,3 +58,22 @@ ruling_in_his_name = {
 		factor = 1					
 	}
 }
+
+early_game_policy_adm = {
+
+	monarch_power = ADM
+
+	potential = {
+		always = yes
+	}
+	allow = {
+		always = yes
+	}
+	global_unrest = -2
+	development_cost = 0.15
+		
+	ai_will_do = {
+		factor = 0				
+	}
+
+}

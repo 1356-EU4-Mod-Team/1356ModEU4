@@ -22,3 +22,22 @@ order_of_monastic_knights = {
 }
 
 
+early_game_policy_mil = {
+
+	monarch_power = MIL
+
+	potential = {
+		always = yes
+	}
+	allow = {
+		always = yes
+	}
+		
+	manpower_recovery_speed = 0.10
+	global_tax_modifier = -0.10
+		
+	ai_will_do = {
+		factor = 0			
+	}
+
+}

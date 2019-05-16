@@ -6,6 +6,14 @@
  
  #Units
  
+ #Policies
+ early_game_policy_mil: "Mandatory Service"
+ desc_early_game_policy_mil: "In times of war it is necessary peasants may be forcibly drafted into our army in order to keep its numbers high. It's not a great idea to draft too frequently however, as it could lower birth rates and cause troubles drafting peasants in the future."
+ early_game_policy_dip: "Extra Diplomatic Training"
+ desc_early_game_policy_dip: "While our diplomats get enough training it could never hurt to implement mandatory training in languages, culture, and traditions. This would enable our diplomats to sway the opinions of other countries much easier, as knowing local traditions and cultures would allow us to treat the rulers and diplomats of other countries with more respect, perhaps swaying their opinions just enough to aid us. However all this extra training will force our diplomats to take more time to go from court to court, as they need to educate themselves before they go somewhere. "
+ early_game_policy_adm: "Grant Significant Privileges"
+ desc_early_game_policy_adm: "If we want to keep the masses content we can grant them significant privileges now, and then change the policy up later than normal. This would allow us to keep more of our population content under our rule, while in return giving up our ability to adjust their autonomy frequently."
+ 
  #Events
  flamamluk.1.t: "Coptic Advisors"
  flamamluk.1.d: "During the rule of the Mamluks many Sultans respected the Coptic minority, and quite frequently the Sultans gave respected Copts places in their court. Our advisors and close kin have found another Copt who would be of use to us. As usual they are a treasurer, but will happily work at a discount! We could always use more advisors, but turning them away could also who we have high expectations."
