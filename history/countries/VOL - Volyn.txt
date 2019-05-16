@@ -15,7 +15,6 @@ capital = 2961
 		name = "Juri II"
 		dynasty = "Rurikovich"
 		birth_date = 1341.2.2
-		death_date = 1356.12.26
 		adm = 3
 		dip = 4
 		mil = 3

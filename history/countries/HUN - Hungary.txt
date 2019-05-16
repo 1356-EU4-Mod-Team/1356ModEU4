@@ -14,7 +14,6 @@ historical_friend = HAB
 		name = "Géza III"
 		dynasty = "Árpád"
 		birth_date = 1337.8.17
-		death_date = 1356.12.26
 		dip = 3
 		adm = 5
 		mil = 2

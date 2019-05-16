@@ -77,6 +77,6 @@ capital = 33 #Neva
 		 adm = 3
 		 dip = 2
 		 mil = 5
-		 age = 24
+		 birth_date = 1364.1.1
 	 }
  }

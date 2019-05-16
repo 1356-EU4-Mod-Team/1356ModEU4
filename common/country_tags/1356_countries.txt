@@ -89,7 +89,6 @@ CPP = "countries/Cappadocia.txt"
 #Levant
 ATO = "countries/Antioch.txt"
 EDE = "countries/Edessa.txt"
-TPO = "countries/CrusaderTripoli.txt"
 MRO = "countries/Maronite.txt"
 	
 #Maghreb

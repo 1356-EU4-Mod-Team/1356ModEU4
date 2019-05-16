@@ -12,7 +12,6 @@ capital = 2976 # Spoleto
 		name = "Heinrich I"
 		dynasty = "von Urslingen"
 		birth_date = 1339.2.12
-		death_date = 1356.12.26
 		dip = 3
 		adm = 2
 		mil = 3

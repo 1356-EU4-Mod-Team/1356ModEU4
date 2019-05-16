@@ -43,3 +43,8 @@ SNZ = "countries/BT_Sandomierz.txt"
 TRV = "countries/BT_Turov.txt"
 PEY = "countries/BT_Pereyaslav.txt"
 PEC = "countries/BT_Pechenegs.txt"
+
+#New in V2.0
+CTA = "countries/BT_Carthage.txt"
+AYB = "countries/BT_Ayyubids.txt"
+ABS = "countriers/BT_Abbasids.txt"

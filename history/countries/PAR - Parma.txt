@@ -20,7 +20,7 @@ fixed_capital = 105 # Cannot move capital away from this province & no power cos
 	}
 }
 
-} # BT Out
+ # BT Out
 
 1356.12.26 = { government = monarchy add_government_reform = feudalism_reform }
 

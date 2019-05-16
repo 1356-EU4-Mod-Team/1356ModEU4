@@ -8,7 +8,7 @@ capital = 1855	#Sayda
 
 historical_friend = KNI
 historical_friend = KOJ
-historical_friend = TPO
+historical_friend = TPL
 historical_friend = ATO
 historical_friend = EDE
 historical_friend = ASY

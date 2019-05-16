@@ -11,7 +11,6 @@ capital = 107 # Brescia
 		name = "Ezzelino III"
 		dynasty = "da Romano"
 		birth_date = 1327.5.11
-		death_date = 1356.12.26
 		dip = 3
 		adm = 2
 		mil = 3

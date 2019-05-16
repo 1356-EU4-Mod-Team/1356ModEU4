@@ -13,7 +13,6 @@ add_army_professionalism = 0.1
 		name = "Wenzel IV"
 		dynasty = "Premyslovci"
 		birth_date = 1339.2.12
-		death_date = 1356.12.26
 		dip = 3
 		adm = 2
 		mil = 3

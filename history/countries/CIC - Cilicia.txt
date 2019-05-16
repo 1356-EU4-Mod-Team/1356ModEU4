@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 primary_culture = armenian
 add_accepted_culture = cosmopolitan_french
 add_accepted_culture = crusader_culture
-religion = catholic
+religion = coptic
 technology_group = eastern
 historical_friend = ARM
 historical_friend = CYP
@@ -62,7 +62,7 @@ capital = 327 # Cicilia
 
 # BT In
 
-1356.12.26 = {
+1356.12.25 = {
 	religion = coptic
 }
 

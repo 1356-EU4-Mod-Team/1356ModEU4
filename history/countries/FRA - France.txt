@@ -258,7 +258,7 @@ historical_rival = HAB
 
 #1435.1.1 = { leader = { name = "Jean de Xaintrailles" 	type = general	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1461.10.7 } }
 
-1436.4.14 = { capital = capital = 183 }
+1436.4.14 = { capital = 183 }
 
 1439.1.1 = {
 	leader = {
