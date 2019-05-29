@@ -7,7 +7,7 @@ culture = franconian
 religion = catholic
 base_tax = 8
 base_production = 8
-trade_goods = paper
+trade_goods = grain #1356
 base_manpower = 3
 capital = "Nürnberg"
 is_city = yes
@@ -24,6 +24,7 @@ center_of_trade = 2
 
 1356.12.24  = { owner = SWB	controller = SWB add_core = SWB add_claim = FRC } #BT In
 1356.12.26  = { owner = NUM	controller = NUM remove_core = SWB remove_claim = FRC } #BT Out
+1390.1.1 = { trade_goods = paper } #1356
 
 1427.6.27 = { remove_core = ANS add_claim = ANS }
 1533.1.1  = { religion = protestant } # Brandenburg-Nürnbergische Kirchenordnung

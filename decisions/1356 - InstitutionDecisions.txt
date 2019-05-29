@@ -83,93 +83,95 @@ country_decisions = {
 		}
 	}
 
-	boost_mercantilism_growth_duccats_decision = { #Decision to allow Nations with lots of money to embrace the Mercantilism faster
-		major = yes
-		potential = {
-			NOT = { government = tribal }
-			NOT = { government = native }
-			NOT = { has_institution = mercantilism_institution }
-			NOT = { is_year = 1400 }
-		}
-		allow = {
-			NOT = { government = tribal }
-			NOT = { government = native }
-			NOT = { has_institution = mercantilism_institution }
-			NOT = { has_country_modifier = mercantilism_embracement_faster_monarch }
-			NOT = { has_country_modifier = mercantilism_embracement_faster_empire }
-			treasury = 500
-		}
-		effect = {
-			add_country_modifier = { 
-				name = mercantilism_embracement_faster_duccats
-				duration = 3650  
-			}
-			add_treasury = -500
-		}
-		ai_will_do = { #Not allowing AI to do so due to the possibilities of Debt accured just to embrace this. Change in the future?
-			factor = 0
-		}
-	}
-	boost_mercantilism_growth_monarch_decision = { #Decision to allow Nations with a good ruler to embrace the institution faster
-		major = yes
-		potential = {
-			NOT = { government = tribal }
-			NOT = { government = native }
-			NOT = { has_institution = mercantilism_institution }
-			NOT = { is_year = 1400 }
-		}
-		allow = {
-			NOT = { government = tribal }
-			NOT = { government = native }
-			NOT = { has_institution = mercantilism_institution }
-			NOT = { has_country_modifier = mercantilism_embracement_faster_duccats }
-			NOT = { has_country_modifier = mercantilism_embracement_faster_empire }
-			OR = {
-				adm = 5
-				dip = 5
-			}
-			adm = 100
-			dip = 100
-		}
-		effect = {
-			add_country_modifier = { 
-				name = mercantilism_embracement_faster_monarch
-				duration = 3650  
-			}	
-			add_adm = -100
-			add_dip = -100
-		}
-		ai_will_do = { 
-			factor = 1
-		}
-	}
-	boost_mercantilism_growth_empire_decision = { #Decision to allow Nations that are an empire to allowcare more resources to the institution
-		major = yes
-		potential = {
-			NOT = { government = tribal }
-			NOT = { government = native }
-			NOT = { has_institution = mercantilism_institution }
-			NOT = { is_year = 1400 }
-		}
-		allow = {
-			NOT = { government = tribal }
-			NOT = { government = native }
-			government_rank = 3 #Empire
-			#government_rank = 4 #For when we add Counts?
-			NOT = { has_institution = mercantilism_institution }
-			NOT = { has_country_modifier = mercantilism_embracement_faster_monarch }
-			NOT = { has_country_modifier = mercantilism_embracement_faster_duccats }
-		}
-		effect = {
-			add_country_modifier = { 
-				name = mercantilism_embracement_faster_empire
-				duration = 3650  
-			}	
-		}
-		ai_will_do = { 
-			factor = 0
-		}
-	}
+	# boost_mercantilism_growth_duccats_decision = { #Decision to allow Nations with lots of money to embrace the Mercantilism faster
+		# major = yes
+		# potential = {
+			# NOT = { government = tribal }
+			# NOT = { government = native }
+			# NOT = { has_institution = mercantilism_institution }
+			# NOT = { is_year = 1400 }
+		# }
+		# allow = {
+			# NOT = { government = tribal }
+			# NOT = { government = native }
+			# NOT = { has_institution = mercantilism_institution }
+			# NOT = { has_country_modifier = mercantilism_embracement_faster_monarch }
+			# NOT = { has_country_modifier = mercantilism_embracement_faster_empire }
+			# treasury = 500
+		# }
+		# effect = {
+			# add_country_modifier = { 
+				# name = mercantilism_embracement_faster_duccats
+				# duration = 3650  
+			# }
+			# add_treasury = -500
+		# }
+		# ai_will_do = { #Not allowing AI to do so due to the possibilities of Debt accured just to embrace this. Change in the future?
+			# factor = 0
+		# }
+	# }
+	
+	# boost_mercantilism_growth_monarch_decision = { #Decision to allow Nations with a good ruler to embrace the institution faster
+		# major = yes
+		# potential = {
+			# NOT = { government = tribal }
+			# NOT = { government = native }
+			# NOT = { has_institution = mercantilism_institution }
+			# NOT = { is_year = 1400 }
+		# }
+		# allow = {
+			# NOT = { government = tribal }
+			# NOT = { government = native }
+			# NOT = { has_institution = mercantilism_institution }
+			# NOT = { has_country_modifier = mercantilism_embracement_faster_duccats }
+			# NOT = { has_country_modifier = mercantilism_embracement_faster_empire }
+			# OR = {
+				# adm = 5
+				# dip = 5
+			# }
+			# adm = 100
+			# dip = 100
+		# }
+		# effect = {
+			# add_country_modifier = { 
+				# name = mercantilism_embracement_faster_monarch
+				# duration = 3650  
+			# }	
+			# add_adm = -100
+			# add_dip = -100
+		# }
+		# ai_will_do = { 
+			# factor = 1
+		# }
+	# }
+	
+	# boost_mercantilism_growth_empire_decision = { #Decision to allow Nations that are an empire to allowcare more resources to the institution
+		# major = yes
+		# potential = {
+			# NOT = { government = tribal }
+			# NOT = { government = native }
+			# NOT = { has_institution = mercantilism_institution }
+			# NOT = { is_year = 1400 }
+		# }
+		# allow = {
+			# NOT = { government = tribal }
+			# NOT = { government = native }
+			# government_rank = 3 #Empire
+			# #government_rank = 4 #For when we add Counts?
+			# NOT = { has_institution = mercantilism_institution }
+			# NOT = { has_country_modifier = mercantilism_embracement_faster_monarch }
+			# NOT = { has_country_modifier = mercantilism_embracement_faster_duccats }
+		# }
+		# effect = {
+			# add_country_modifier = { 
+				# name = mercantilism_embracement_faster_empire
+				# duration = 3650  
+			# }	
+		# }
+		# ai_will_do = { 
+			# factor = 0
+		# }
+	# }
 
 #Instead of giving them a boost to instutitions, how about we remove a malus on it?
 	boost_gunpowder_growth_mongol_decision = { #Decision to allow former Mongol nations to embrace Gunpowder faster

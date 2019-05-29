@@ -67,7 +67,7 @@ early_game_policy_adm = {
 		always = yes
 	}
 	allow = {
-		always = yes
+		adm_tech = 3
 	}
 	global_unrest = -2
 	development_cost = 0.15

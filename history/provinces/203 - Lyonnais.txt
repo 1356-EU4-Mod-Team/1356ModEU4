@@ -10,7 +10,7 @@ religion = catholic
 hre = no
 base_tax = 6
 base_production = 6
-trade_goods = paper # Great printing industry form the 15th century and french center of paperproduction in Ambert close by (even though not the main trade good for that province).
+trade_goods = iron #1356
 base_manpower = 5
 add_core = FOZ
 fort_15th = yes
@@ -31,6 +31,7 @@ center_of_trade = 2
 
 1467.6.15  = { add_core = BUR } # Charles the Bold ascends to the throne and lays claims
 1477.1.5   = { remove_core = BUR add_core = FRA owner = FRA controller = FRA remove_core = FRD  } # Charles the Bold dies
+1500.1.1 = { trade_goods = paper } #1356 # Great printing industry form the 15th century and french center of paperproduction in Ambert close by (even though not the main trade good for that province). #1356
 1531.9.22  = { owner = FRA controller = FRA } # Louise de Savoie dies, Bourbon added to France
 1573.9.1   = { unrest = 5 } # Saint Barthelew's Day Massacre: the consequences in the land
 1574.5.1   = { unrest = 0 } # Charles IX dies, situation cools a bit

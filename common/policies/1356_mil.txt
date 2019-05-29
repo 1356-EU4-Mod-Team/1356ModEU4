@@ -30,7 +30,7 @@ early_game_policy_mil = {
 		always = yes
 	}
 	allow = {
-		always = yes
+		mil_tech = 3
 	}
 		
 	manpower_recovery_speed = 0.10

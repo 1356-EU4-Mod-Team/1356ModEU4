@@ -5,7 +5,7 @@ controller = KOL
 add_core = KOL
 culture = hessian
 religion = catholic
-trade_goods = paper
+trade_goods = grain #1356
 capital = "Köln"
 base_tax = 6 
 base_production = 6
@@ -28,6 +28,7 @@ center_of_trade = 2
 				owner = KOL controller = KOL remove_core = SWB
 } #BT Out
 
+1380.1.1 = { trade_goods = paper } #1356
 1583.12.17 = { fort_15th = no }
 1638.1.1 = { base_tax = 10 
 base_production = 10 } # Köln manages to stay neutral in the 30 years war and prospers through weapon sales. 

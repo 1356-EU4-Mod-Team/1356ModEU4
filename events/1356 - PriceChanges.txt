@@ -41,7 +41,7 @@ country_event = {
 		}
 		random_owned_province = {
 			limit = {
-				trade_goods = paper
+				NOT = { trade_goods = paper }
 				is_state = yes
 				development = 10
 			}
@@ -108,10 +108,10 @@ province_event = { #Paper for Savoy Area
 	
 	trigger = {
 		area = savoy_dauphine_area
-		savoy_dauphine_area = { #Does this work?
-			NOT = { trade_goods = paper }
-		}
-		NOT = { is_year = 1500 }
+		#savoy_dauphine_area = { #Does this work?
+		#	NOT = { trade_goods = paper }
+		#}
+		NOT = { is_year = 1550 }
 		is_state = yes
 		development = 15
 		mercantilism_institution = 100
@@ -142,6 +142,17 @@ province_event = { #Paper for Savoy Area
 	
 	option = {
 		name = flaprices.4.a
+		# savoy_dauphine_area = {
+			# random_owned_province = {
+				# limit = {
+					# NOT = { trade_goods = paper }
+					# is_state = yes
+					# development = 10
+				# }
+				# change_trade_goods = paper
+				# add_base_production = 2
+			# }
+		# }
 		change_trade_goods = paper
 		add_base_production = 2
 	}
@@ -157,9 +168,9 @@ province_event = { #Paper for Franconia Area
 	
 	trigger = {
 		area = franconia_area
-		franconia_area = { #Does this work?
-			NOT = { trade_goods = paper }
-		}
+		#franconia_area = { #Does this work?
+		#	NOT = { trade_goods = paper }
+		#}
 		NOT = { is_year = 1500 }
 		is_state = yes
 		development = 15
@@ -191,6 +202,17 @@ province_event = { #Paper for Franconia Area
 	
 	option = {
 		name = flaprices.5.a
+		# franconia_area = {
+			# random_owned_province = {
+				# limit = {
+					# NOT = { trade_goods = paper }
+					# is_state = yes
+					# development = 10
+				# }
+				# change_trade_goods = paper
+				# add_base_production = 2
+			# }
+		# }
 		change_trade_goods = paper
 		add_base_production = 2
 	}
@@ -206,9 +228,9 @@ province_event = { #Paper for Rhineland Area
 	
 	trigger = {
 		area = upper_rhineland_area
-		upper_rhineland_area = { #Does this work?
-				NOT = { trade_goods = paper }
-			}
+		#upper_rhineland_area = { #Does this work? #Not needed since it fires once and the area doesnt start with paper anyway.
+		#		NOT = { trade_goods = paper }
+		#	}
 		NOT = { is_year = 1500 }
 		is_state = yes
 		development = 15
@@ -240,6 +262,17 @@ province_event = { #Paper for Rhineland Area
 	
 	option = {
 		name = flaprices.6.a
+		# upper_rhineland_area = {
+			# random_owned_province = {
+				# limit = {
+					# NOT = { trade_goods = paper }
+					# is_state = yes
+					# development = 10
+				# }
+				# change_trade_goods = paper
+				# add_base_production = 2
+			# }
+		# }
 		change_trade_goods = paper
 		add_base_production = 2
 	}

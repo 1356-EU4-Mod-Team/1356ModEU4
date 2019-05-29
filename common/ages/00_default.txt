@@ -7,39 +7,156 @@ age_of_feudalism = {
 	
 	religious_conflicts = yes
 	
-
 	objectives = {
 		obj_higher_prestige = { #Change to New Institution related thing
 			prestige = 80
 		}
-		obj_trade_league = { #Suggested by Mexdus on the workshop suggestion thread
+		obj_trade_league = { #Suggested by Mexdus on the workshop suggestion thread 
 			OR = {
 				is_in_trade_league = yes
-				mercantilism = 25
+				mercantilism = 20
 			}
 		}
-		obj_powerful_estate = { #
-			num_of_powerful_estates = 2
-		}
+
+		obj_powerful_estate = { #For Non-Republics
+			num_of_powerful_estates = 1
+			num_of_revolts = 0
+			#NOT = { average_unrest = 2 } Not sure if this can be balanced fairly
+		}		
+						
 		obj_papal_controller = { 
 			allow = { religion = catholic }
-			is_papal_controller = yes
+			OR = {
+				is_papal_controller = yes
+				num_of_cardinals = 5
+				AND = {
+					papal_influence = 100
+					invested_papal_influence = 25
+				}
+			}
 	 	}
-		obj_feudalism_muslim_piety = { 
+		obj_feudalism_orthodox_icons = { 
+			allow = { religion = orthodox }
+			OR = {
+				current_icon = icon_michael
+				current_icon = icon_eleusa
+				current_icon = icon_pancreator
+				current_icon = icon_nicholas
+				current_icon = icon_climacus
+			}
+			patriarch_authority = 0.40
+	 	}	
+		obj_feudalism_coptic = { 
+			allow = { religion = coptic }
+			num_of_active_blessings = 3
+			calc_true_if = {
+				all_neighbor_country = {
+					religion = coptic
+				}
+				amount = 3
+			}
+	 	}	
+		obj_feudalism_nestorian = { 
+			allow = { religion = nestorian }
+			num_of_active_blessings = 2
+			calc_true_if = {
+				all_core_province = {
+					religion = ROOT
+				}
+				amount = 20
+			}
+	 	}		
+		obj_feudalism_hussite = { 
+			allow = { religion = hussite }
+			church_power = 100
+			num_of_aspects = 1
+			check_variable = { which = num_converted_religion value = 10 }
+	 	}				
+		obj_feudalism_muslim_piety = { #Piety
 			allow = { religion_group = muslim }
 			OR = {
 				piety = 0.75
 				NOT = { piety = -0.75}
 			}
+			religious_unity = 0.80 #Adjust as needed
 	 	}
-		obj_non_christian_muslim_religious_unity = { #Change to new institution thing. Gunpowder?
-			allow = {
-				NOT = { religion = catholic }
-				NOT = { religion_group = muslim }
+		obj_feudalism_confucianism_harmony = { 
+			allow = { religion = confucianism }
+			harmony = 70
+			religious_unity = 0.80 #Adjust as needed
+	 	}
+		obj_feudalism_buddhism_karma = { 
+			allow = { 
+				OR = {
+					religion = buddhism
+					religion = vajrayana
+					religion = mahayana
+				}
 			}
-			religious_unity = 0.99
-	 	}		
-		obj_deus_vult = { #Suggested by Mexdus on the workshop suggestion thread
+			karma = 0
+			religious_unity = 0.80 #Adjust as needed
+	 	}
+		obj_feudalism_hindu_pagan_gods = { 
+			allow = {
+				OR = {
+					religion = hinduism
+					religion = finnish_pagan_reformed
+					religion = baltic_pagan_reformed
+					religion = slavic_pagan_reformed
+					religion = hellenic_pagan
+					religion = norse_pagan_reformed
+				}
+			}
+			uses_personal_deities = yes
+			calc_true_if = {
+				all_core_province = {
+					religion = ROOT
+				}
+				amount = 15
+			}
+			has_idea_group = religious_ideas
+	 	}
+		obj_feudalism_fetishist = { 
+			allow = {
+				religion = shamanism
+			}
+			num_of_unlocked_cults = 5
+	 	}	
+		obj_feudalism_zoroastrian_jewish_sikh = { 
+			allow = {
+				OR = {
+					religion = zoroastrian
+					religion = sikhism
+					religion = jewish
+				}
+			}
+			total_development = 125
+			legitimacy_equivalent = 85
+			religious_unity = 0.85 #Adjust as needed
+			#number_of_sister-daughter-mother-wives = 4
+	 	}	
+		obj_non_christian_muslim_religious_unity = { 
+			allow = { 
+				OR = {
+					religion = shinto
+					religion = animism
+					religion = totemism
+					religion = inti
+					religion = nahuatl
+					religion = mesoamerican_religion
+					religion = tengri_pagan_reformed
+				}
+			}
+			calc_true_if = {
+				all_core_province = {
+					religion = ROOT
+				}
+				amount = 15
+			}
+			religious_unity = 0.90
+	 	}
+			
+		obj_deus_vult = { #Suggested by Mexdus on the workshop suggestion thread #Create Crusade Mechanics and integrate them into this instead?
 			allow = {
 				religion_group = christian
 			}
@@ -59,7 +176,7 @@ age_of_feudalism = {
 				owns_core_province = 118 #Rome
 			}
 		}
-		obj_muslim_holy_war = { 
+		obj_muslim_holy_war = { #Create Crusade Mechanics and integrate them into this instead?
 			allow = {
 				religion_group = muslim
 			}
@@ -76,7 +193,7 @@ age_of_feudalism = {
 				owns_core_province = 225 #Cordoba
 			}
 		}
-		obj_feudal_generic_non_abrahamic_competent_ruler = { 
+		obj_feudal_generic_non_abrahamic_competent_ruler = { #Create a generic Holy site system and use it for this?
 			allow = {
 				NOT = { religion_group = christian }
 				NOT = { religion_group = muslim }
@@ -85,11 +202,15 @@ age_of_feudalism = {
 			dip = 3
 			mil = 3
 		}
-		obj_many_vassals_f = {
+		
+		obj_many_vassals_f = { #Feudal Society
+			has_institution = feudalism
 			government_rank = 2
-			vassal = 3
-			
+			num_of_subjects = 3
 		}		
+		
+		#Add a non monarchy variant of the above?
+		
 		obj_cav_army = { #Suggested by Mexdus on the workshop suggestion thread
 			cavalry_fraction = 0.6 #Too high?
 			army_size_percentage = 0.8
