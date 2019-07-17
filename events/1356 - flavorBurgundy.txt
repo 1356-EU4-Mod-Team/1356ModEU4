@@ -18,7 +18,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 20
+		months = 32
 	}
 	
 	option = {
@@ -42,8 +42,6 @@ country_event = { #Burgundian Event to get a PU over Flanders
 		tag = BUR
 		OR = {
 			NOT = { has_ruler = "Louis II" }
-			has_ruler = "Marguerite III"
-			has_ruler = "Marguerite"
 			is_female = yes
 		}
 		FLA = {
@@ -53,7 +51,7 @@ country_event = { #Burgundian Event to get a PU over Flanders
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 3
 	}
 		
 	option = { #Take the PU!
@@ -88,7 +86,7 @@ country_event = { #Flemish notification that they need to marry the queen off, o
 		
 	option = { #No marriage! Tell the Burgundians they need to fight for their bride and land!
 		name = flavor_fla_bur.5.a
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 25 }
 		BUR = {
 			country_event = { 
 				id = flavor_fla_bur.7
@@ -105,7 +103,7 @@ country_event = { #Flemish notification that they need to marry the queen off, o
 				is_subject_of = FLA
 			}
 		}
-		ai_chance = { factor = 95 }
+		ai_chance = { factor = 75 }
 		BUR = {
 			country_event = { 
 				id = flavor_fla_bur.6
@@ -121,7 +119,7 @@ country_event = { #Flemish notification that they need to marry the queen off, o
 				NOT = { is_subject_of = FLA }
 			}
 		}
-		ai_chance = { factor = 95 }
+		ai_chance = { factor = 75 }
 		BUR = {
 			country_event = { 
 				id = flavor_fla_bur.6
@@ -149,6 +147,7 @@ country_event = { #Burgundians being told they are getting a PU
 				is_subject_of = FLA
 			}
 		}
+		ai_chance = { factor = 60 }
 		BUR = {
 			create_union = FLA
 			create_vassal = NEV
@@ -174,6 +173,7 @@ country_event = { #Burgundians being told they are getting a PU
 				NOT = { is_subject_of = FLA }
 			}
 		}
+		ai_chance = { factor = 60 }
 		BUR = {
 			create_union = FLA
 			define_consort = {
@@ -205,7 +205,7 @@ country_event = { #Burgundians being told they need to fight or back off
 		
 	option = { #Fight!
 		name = flavor_fla_bur.7.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 85 }
 		BUR = {
 			declare_war_with_cb = {
 				who = FLA
@@ -217,7 +217,7 @@ country_event = { #Burgundians being told they need to fight or back off
 
 	option = { #Back off
 		name = flavor_fla_bur.7.b
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 15 }
 		add_prestige = -10
 		BUR = {
 			set_country_flag = bur_is_coward_flag
@@ -226,7 +226,6 @@ country_event = { #Burgundians being told they need to fight or back off
 }
 
 ###Burgundian Chain to Purchase Namur###
-
 #Burgundian Event
 country_event = { #Burgundian Event to purchase Namur
 	id = flavor_fla_bur.8
@@ -397,7 +396,6 @@ country_event = { #Hainaut Event telling them Burgundy backed out
 }
 
 ###Brabant PU Chain###
-
 #Burgundian Event
 country_event = { #Burgundian Event that sets off the PU or annex Brabant chain
 	id = flavor_fla_bur.13
@@ -451,7 +449,6 @@ country_event = { #Burgundian Event that sets off the PU or annex Brabant chain
 		add_legitimacy = -5
 	}
 }
-
 #Brabant Event
 country_event = { #Brabant being told of the Union
 	id = flavor_fla_bur.14
@@ -485,7 +482,6 @@ country_event = { #Brabant being told of the Union
 		}
 	}
 }
-
 #Burgundian Event
 country_event = { #Burgundy being told Brabant said no
 	id = flavor_fla_bur.15
@@ -520,7 +516,6 @@ country_event = { #Burgundy being told Brabant said no
 		add_legitimacy = -5
 	}
 }
-
 #Burgundian Event
 country_event = { #Burgundy being told Brabant said yes
 	id = flavor_fla_bur.16
@@ -553,117 +548,7 @@ country_event = { #Burgundy being told Brabant said yes
 	}
 }
 
-country_event = { #Arles Cultural Decision
-	id = flavor_fla_bur.17
-	title = flavor_fla_bur.17.t
-	desc = flavor_fla_bur.17.d
-	picture = DIPLOMACY_eventPicture
 
-	fire_only_once = yes
-	major = yes
-	
-	trigger = {
-		tag = ARE
-		OR = {
-			primary_culture = burgundian
-			primary_culture = arpitan
-			primary_culture = occitain
-		}
-		is_at_war = no
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-	}
-	
-	option = { #We are born Burgundians!
-		name = flavor_fla_bur.17.a
-		set_ruler_culture = burgundian
-		set_heir_culture = burgundian
-		change_primary_culture = burgundian
-		add_accepted_culture = occitain
-		add_accepted_culture = arpitan
-		capital_scope = {
-			change_culture = burgundian
-		}
-		add_prestige = -15
-		add_adm_power = 5		
-	}
-	option = { #We are born Arpitans!
-		name = flavor_fla_bur.17.b
-		set_ruler_culture = arpitan
-		set_heir_culture = arpitan
-		change_primary_culture = arpitan
-		add_accepted_culture = burgundian
-		add_accepted_culture = occitain
-		capital_scope = {
-			change_culture = arpitan
-		}
-		add_prestige = -15
-		add_dip_power = 5
-	}
-	option = { #We are born Occitans!
-		name = flavor_fla_bur.17.c
-		set_ruler_culture = occitain
-		set_heir_culture = occitain
-		change_primary_culture = occitain
-		add_accepted_culture = arpitan
-		add_accepted_culture = burgundian
-		capital_scope = {
-			change_culture = occitain
-		}
-		add_prestige = -20
-		add_mil_power = 10
-	}
-	option = { #We stay who we are!
-		name = flavor_fla_bur.17.e
-		add_prestige = 10
-		add_stability = 1
-	}
-}
-
-country_event = { #Arles Capital question.
-	id = flavor_fla_bur.18
-	title = flavor_fla_bur.18.t
-	desc = flavor_fla_bur.18.d
-	picture = DIPLOMACY_eventPicture
-
-	fire_only_once = yes
-	
-	trigger = {
-		tag = ARE
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-	}
-	
-	option = { #The Historical Capital!
-		name = flavor_fla_bur.18.a
-		201 = {
-			rename_capital = "Arles"
-			move_capital_effect = yes
-		}
-		
-	}
-	option = { #Savoy is the center of the nation!
-		name = flavor_fla_bur.18.b
-		205 = {
-			move_capital_effect = yes
-		}
-	}
-	option = { #Dijonnais is in the more centralized Burgundian Region!
-		name = flavor_fla_bur.18.c
-		192 = {
-			move_capital_effect = yes
-		}
-	}
-	option = { #It stays where it stands!
-		name = flavor_fla_bur.18.e
-		add_adm_power = 50
-		add_prestige = 5
-	}
-}
 
 
 	

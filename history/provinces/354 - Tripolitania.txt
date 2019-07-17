@@ -2,7 +2,7 @@
 
 owner = TRP
 controller = TRP
-culture = tunisian
+culture = tripolitanian_culture
 religion = sunni
 capital = "Tripoli" #Tripoli in the West.
 estate = estate_nobles
@@ -21,7 +21,7 @@ extra_cost = 16
 center_of_trade = 2
 
 1356.12.25 = { owner = TRP controller = TRP }
-1444.1.1 = { owner = TUN controller = TUN add_core = TUN }
+1440.1.1 = { owner = TUN controller = TUN add_core = TUN }
 1510.1.1 = { owner = CAS controller = CAS add_core = CAS }
 1516.1.23 = {	owner = SPA	
 	controller = SPA

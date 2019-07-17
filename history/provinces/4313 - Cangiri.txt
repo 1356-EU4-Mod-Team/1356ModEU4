@@ -4,7 +4,7 @@
 owner = ERE
 controller = ERE
 culture = turkish
-religion = shiite
+religion = sunni
 capital = "Kangiri"
 trade_goods = wool
 hre = no

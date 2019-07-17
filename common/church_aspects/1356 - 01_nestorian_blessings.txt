@@ -1,12 +1,18 @@
 nestorian_legitimize_government = {
 	is_blessing = yes
+	potential = {
+		religion = nestorian
+	}
+	trigger = {
+		religion = nestorian
+	}
 
 	modifier = {
-		legitimacy = 0.5
-		horde_unity = 0.5
-		republican_tradition = 0.2
-		devotion = 0.5
-		prestige = 0.1
+		legitimacy = 1
+		horde_unity = 1
+		republican_tradition = 0.3
+		devotion = 1
+		prestige = 0.2
 	}
 	ai_will_do = {
 		factor = 10
@@ -25,10 +31,16 @@ nestorian_legitimize_government = {
 
 nestorian_encourage_warriors_in_defense_of_the_faith = {
 	is_blessing = yes
+	potential = {
+		religion = nestorian
+	}
+	trigger = {
+		religion = nestorian
+	}
 
 	modifier = {
 		manpower_recovery_speed = 0.05
-		reinforce_speed = 0.05
+		reinforce_speed = 0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -43,9 +55,16 @@ nestorian_encourage_warriors_in_defense_of_the_faith = {
 
 nestorian_send_monks_to_establish_monasteries = {
 	is_blessing = yes
+	
+	potential = {
+		religion = nestorian
+	}
+	trigger = {
+		religion = nestorian
+	}
 
 	modifier = {
-		religious_unity = 0.1
+		religious_unity = 0.15
 		tolerance_heathen = 1
 		tolerance_heretic = 1
 	}
@@ -74,10 +93,17 @@ nestorian_send_monks_to_establish_monasteries = {
 
 nestorian_advisors_any_religion = {
 	is_blessing = yes
+	
+	potential = {
+		religion = nestorian
+	}
+	trigger = {
+		religion = nestorian
+	}
 
 	modifier = {
-		stability_cost_modifier = -0.05
-		advisor_cost = -0.075
+		stability_cost_modifier = -0.1
+		advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -86,6 +112,13 @@ nestorian_advisors_any_religion = {
 
 nestorian_far_from_home = {
 	is_blessing = yes
+	
+	potential = {
+		religion = nestorian
+	}
+	trigger = {
+		religion = nestorian
+	}
 
 	modifier = {
 		num_accepted_cultures = 2

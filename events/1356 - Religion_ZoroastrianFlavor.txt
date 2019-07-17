@@ -1,47 +1,51 @@
-namespace = immortalszoroastrian
-#Commented out as they have no trigger to call them.
+namespace = zoroastrianflavuor
 
-## The Janissaries
-#country_event = {
-#	id = immortalszoroastrian.100
-#	title = "immortalszoroastrian.EVTNAME100"
-#	desc = "immortalszoroastrian.EVTDESC100"
-#	picture = MILITARY_CAMP_eventPicture
-#	
-#	fire_only_once = yes
-#	major = yes
-#	is_triggered_only = yes
-#	
-#	option = {		# Continue building up the Janissaries
-#		name = "immortalszoroastrian.EVTOPTA100"
-#		add_country_modifier = {
-#			name = the_immortals
-#			duration = -1
-#		}
-#		custom_tooltip = janissary_disaster_notifier
-#		set_country_flag = janissary_timer
-#	}
-#}
-
-#country_event = {
-#	id = immortalszoroastrian.101
-#	title = "immortalszoroastrian.EVTNAME101"
-#	desc = "immortalszoroastrian.EVTDESC101"
-#	picture = MILITARY_CAMP_eventPicture
-#	
-#	fire_only_once = yes
-#	major = yes
-#	is_triggered_only = yes
-#	
-#	option = {		# Continue building up the Janissaries
-#		name = "immortalszoroastrian.EVTOPTA101"
-#		random_owned_province = {
-#			change_religion = zoroastrian
-#			add_reform_center = zoroastrian
-#			add_province_modifier = {
-#				name = "religious_zeal_at_conv"
-#				duration = 1500
-#			}
-#		}
-#	}
-#}
+country_event = { #####Establishment of a Atash Behram#####
+	id = zoroastrianflavuor.16
+	title = zoroastrianflavuor.16.t
+	desc = zoroastrianflavuor.16.d
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = zoroastrianflavuor.16.a # Encourage these believes
+		ai_chance = { factor = 100 }
+		add_treasury = -500
+		add_prestige = 50
+		add_fervor = 25
+		add_mil_power = 100
+		add_dip_power = 100
+		add_adm_power = 100
+		capital_scope = { 
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = "atash_behram"
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = zoroastrianflavuor.17
+	title = zoroastrianflavuor.17.t
+	desc = zoroastrianflavuor.17.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Curses
+		name = zoroastrianflavuor.17.a
+		add_ruler_modifier = {
+			name = zoroastrian_divine_marriage
+		}
+		add_fervor = 25
+		define_consort = {
+			dynasty = ROOT
+			culture = ROOT
+		}
+	}
+	
+}

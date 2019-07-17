@@ -23,6 +23,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+add_province_triggered_modifier = 1356_paris_notre_dam_province_modifier #1356 #Test Modifier to learn system
+
 1356.12.24 = { owner = FRA controller = FRA add_core = FRA } #BT Out
 1356.12.26 = { owner = FRD controller = FRD remove_core = FRA  add_core = FRD } #BT Out
 

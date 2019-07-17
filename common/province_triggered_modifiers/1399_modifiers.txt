@@ -16,3 +16,653 @@
 	# local_tax_modifier = -0.5
 	# local_manpower_modifier = -0.5
 # }
+
+1356_paris_notre_dam_province_modifier = {
+	potential = {
+		religion_group = christian
+		owner = { religion_group = christian }
+		183 = { has_great_project = great_cathedral_notre_dame }
+	}
+	trigger = {
+		religion_group = christian
+		owner = { religion_group = christian }
+		183 = { has_great_project = great_cathedral_notre_dame }
+	}
+	
+	local_institution_spread = 0.1
+	local_development_cost = -0.05
+	allowed_num_of_buildings = 1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_theodosian_walls_project_province_modifier = { #Perhaps remove this if the province gets 100% devistation?
+	potential = {		
+		151 = { has_great_project = theodosian_walls_great_project }
+		151 = { owner = { NOT = { has_country_flag = destroyed_theodosian_walls_flag } } } #Removes the walls on 100% Devistation & a successful siege
+		151 = { owner = { NOT = { has_global_flag = mil_tech_13_cannons_global_flag } } } #Removes the Walls after mil tech 13
+	}
+	
+	trigger = {
+		151 = { has_great_project = theodosian_walls_great_project }
+		NOT = { owner = { has_country_flag = destroyed_theodosian_walls_flag } }
+		NOT = { owner = { has_global_flag = mil_tech_13_cannons_global_flag } }
+		#Anything else?
+	}
+	
+	fort_level = 1
+	garrison_growth = 0.1
+	local_hostile_attrition = 1
+	local_defensiveness = 0.2
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_kinkaku_ji_great_project_province_modifier = { #
+	potential = {		
+		1020 = { has_great_project = kinkaku_ji_great_project }
+		
+	}
+	
+	trigger = {
+		1020 = { has_great_project = kinkaku_ji_great_project }
+	}
+	
+	local_missionary_strength = -0.02
+	local_unrest = -1
+	allowed_num_of_buildings = 1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_madrassa_mosque_great_project_province_modifier = { #
+	potential = {		
+		361 = { has_great_project = madrassa_mosque_great_project }
+		
+	}
+	
+	trigger = {
+		361 = { has_great_project = madrassa_mosque_great_project }
+	}
+	
+	local_religious_unity_contribution = 0.1
+	local_institution_spread = 0.1
+	local_tax_modifier = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_adina_mosque_great_project_province_modifier = { #
+	potential = {		
+		563 = { has_great_project = adina_mosque_great_project }
+		
+	}
+	
+	trigger = {
+		563 = { has_great_project = adina_mosque_great_project }
+	}
+	
+	local_manpower_modifier = 0.2
+	garrison_growth = 0.1
+	local_monthly_devastation = -0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_cologne_cathedral_great_project_province_modifier = { #
+	potential = {		
+		85 = { has_great_project = cologne_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		85 = { has_great_project = cologne_cathedral_great_project }
+	}
+	
+	religious_conversion_resistance = 0.15
+	local_institution_spread = 0.1
+	local_monthly_devastation = -0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_florence_cathedral_great_project_province_modifier = { #
+	potential = {		
+		116 = { has_great_project = florence_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		116 = { has_great_project = florence_cathedral_great_project }
+	}
+	
+	local_build_cost = -0.15
+	local_state_maintenance_modifier = -0.15
+	local_institution_spread = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_milan_cathedral_great_project_province_modifier = { #
+	potential = {		
+		104 = { has_great_project = milan_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		104 = { has_great_project = milan_cathedral_great_project }
+	}
+	
+	local_monthly_devastation = -0.1
+	religious_conversion_resistance = 0.1
+	allowed_num_of_buildings = 1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_strasbourg_cathedral_great_project_province_modifier = { #
+	potential = {		
+		75 = { has_great_project = strasbourg_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		75 = { has_great_project = strasbourg_cathedral_great_project }
+	}
+	
+	local_tax_modifier = 0.1
+	local_build_time = -0.2
+	local_state_maintenance_modifier = -0.15
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_moscow_cathedral_great_project_province_modifier = { #
+	potential = {		
+		295 = { has_great_project = moscow_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		295 = { has_great_project = moscow_cathedral_great_project }
+	}
+	
+	local_manpower_modifier = 0.2
+	regiment_recruit_speed = -0.2
+	local_monthly_devastation = -0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_seville_cathedral_great_project_province_modifier = { #
+	potential = {		
+		224 = { has_great_project = seville_cathedral_great_project }
+	}
+	
+	trigger = {
+		224 = { has_great_project = seville_cathedral_great_project }
+	}
+	
+	local_monthly_devastation = -0.1
+	local_state_maintenance_modifier = -0.2
+	allowed_num_of_buildings = 1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_prague_cathedral_great_project_province_modifier = { #
+	potential = {		
+		266 = { has_great_project = prague_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		266 = { has_great_project = prague_cathedral_great_project }
+	}
+	
+	local_missionary_strength = 0.02
+	local_unrest = -1
+	local_development_cost = -0.15
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_wein_cathedral_great_project_province_modifier = { #
+	potential = {		
+		134 = { has_great_project = wein_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		134 = { has_great_project = wein_cathedral_great_project }
+	}
+	
+	religious_conversion_resistance = 0.1
+	allowed_num_of_buildings = 1
+	local_build_cost = -0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_london_cathedral_great_project_province_modifier = { #
+	potential = {		
+		236 = { has_great_project = london_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		236 = { has_great_project = london_cathedral_great_project }
+	}
+	
+	ship_recruit_speed = -0.1
+	local_sailors_modifier = 0.1
+	province_trade_power_modifier = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_antwerp_cathedral_great_project_province_modifier = { #
+	potential = {		
+		1744 = { has_great_project = antwerp_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		1744 = { has_great_project = antwerp_cathedral_great_project }
+	}
+	
+	province_trade_power_modifier = 0.1
+	local_institution_spread = 0.1
+	trade_goods_size_modifier = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_warsaw_cathedral_great_project_province_modifier = { #
+	potential = {		
+		257 = { has_great_project = warsaw_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		257 = { has_great_project = warsaw_cathedral_great_project }
+	}
+	
+	local_unrest = -1
+	local_state_maintenance_modifier = -0.15
+	local_development_cost = -0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_naples_cathedral_great_project_province_modifier = { #
+	potential = {		
+		121 = { has_great_project = naples_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		121 = { has_great_project = naples_cathedral_great_project }
+	}
+	
+	local_missionary_strength = -0.02
+	local_institution_spread = 0.1
+	local_sailors_modifier = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_lisboa_cathedral_great_project_province_modifier = { #
+	potential = {		
+		227 = { has_great_project = lisboa_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		227 = { has_great_project = lisboa_cathedral_great_project }
+	}
+	
+	local_missionary_strength = -0.02
+	local_development_cost = -0.1
+	local_sailors_modifier = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_toledo_cathedral_great_project_province_modifier = { #
+	potential = {		
+		219 = { has_great_project = toledo_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		219 = { has_great_project = toledo_cathedral_great_project }
+	}
+	
+	local_monthly_devastation = -0.1
+	local_production_efficiency = 0.1
+	allowed_num_of_buildings = 1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_valencia_cathedral_great_project_province_modifier = { #
+	potential = {		
+		220 = { has_great_project = valencia_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		220 = { has_great_project = valencia_cathedral_great_project }
+	}
+	
+	local_institution_spread = 0.1
+	local_development_cost = -0.1
+	local_sailors_modifier = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_teutonic_order_cathedral_great_project_province_modifier = { #
+	potential = {		
+		1841 = { has_great_project = teutonic_order_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		1841 = { has_great_project = teutonic_order_cathedral_great_project }
+	}
+	
+	local_missionary_strength = -0.02
+	local_manpower_modifier = 0.2
+	garrison_growth = 0.10
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_denmark_cathedral_great_project_province_modifier = { #
+	potential = {		
+		12 = { has_great_project = denmark_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		12 = { has_great_project = denmark_cathedral_great_project }
+	}
+	
+	local_ship_repair = 0.15
+	ship_recruit_speed = -0.2
+	local_development_cost = -0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_stockholm_cathedral_great_project_province_modifier = { #
+	potential = {		
+		1 = { has_great_project = stockholm_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		1 = { has_great_project = stockholm_cathedral_great_project }
+	}
+	
+	local_missionary_strength = -0.02
+	regiment_recruit_speed = -0.1
+	local_tax_modifier = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_debre_libanos_cathedral_great_project_province_modifier = { #
+	potential = {		
+		1224 = { has_great_project = debre_libanos_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		1224 = { has_great_project = debre_libanos_cathedral_great_project }
+	}
+	
+	local_missionary_strength = -0.02
+	local_monthly_devastation = -0.1
+	local_defensiveness = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_qufu_temple_of_confucius_great_project_province_modifier = { #
+	potential = {		
+		2140 = { has_great_project = qufu_temple_of_confucius_great_project }
+		
+	}
+	
+	trigger = {
+		2140 = { has_great_project = qufu_temple_of_confucius_great_project }
+	}
+	
+	local_development_cost = -0.1
+	local_institution_spread = 0.1
+	local_state_maintenance_modifier = -0.15
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_goharshad_mosque_mosque_great_project_province_modifier = { #
+	potential = {		
+		446 = { has_great_project = goharshad_mosque_mosque_great_project }
+		
+	}
+	
+	trigger = {
+		446 = { has_great_project = goharshad_mosque_mosque_great_project }
+	}
+	
+	local_missionary_strength = -0.02
+	local_unrest = -1
+	local_institution_spread = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_jongmyo_temple_great_project_province_modifier = { #
+	potential = {		
+		4230 = { has_great_project = great_project_jongmyo_temple_great_project }
+		
+	}
+	
+	trigger = {
+		4230 = { has_great_project = great_project_jongmyo_temple_great_project }
+	}
+	
+	local_religious_unity_contribution = 0.15
+	local_institution_spread = 0.1
+	trade_goods_size_modifier = 0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+1356_temple_of_heaven_great_project_province_modifier = { #
+	potential = {		
+		446 = { has_great_project = great_project_temple_of_heaven_great_project }
+		
+	}
+	
+	trigger = {
+		446 = { has_great_project = great_project_temple_of_heaven_great_project }
+	}
+	
+	trade_goods_size_modifier = 0.1
+	local_development_cost = -0.1
+	local_state_maintenance_modifier = -0.15
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}

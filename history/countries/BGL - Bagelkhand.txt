@@ -8,6 +8,17 @@ capital = 2097	# Baghelkhand
 fixed_capital = 2097 # Cannot move capital away from this province & no power cost to move to it
 
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Duryodhan Singh"
+		dynasty = "Karkare"
+		ADM = 2
+		DIP = 4
+		MIL = 3
+	}
+}
+
 1440.1.1 = {
 	monarch = {
 		name = "Virama Dev"

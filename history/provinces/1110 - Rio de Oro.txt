@@ -2,7 +2,7 @@
 
 owner = SOS
 controller = SOS
-culture = berber
+culture = shilha
 religion = sunni
 capital = "Agadir"
 trade_goods = sugar
@@ -26,7 +26,7 @@ center_of_trade = 1
 	owner = SOS
 	controller = SOS
 }
-1444.1.1 = { owner = SOS controller = SOS add_core = MOR }
+1440.1.1 = { owner = SOS controller = SOS add_core = MOR }
 1465.1.1 = { unrest = 5 } #Marinid Sultan killed by mob. Mohammed ibn Ali Amrani-Joutey (Idrisid) proclaims himself Sultan. Unrest in the entire country. 
 1472.1.1 = {
 	owner = SOS

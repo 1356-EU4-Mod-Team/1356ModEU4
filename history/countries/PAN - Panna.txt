@@ -6,6 +6,17 @@ religion = hinduism
 primary_culture = vindhyan
 capital = 4467	# Kalinjar/Panna
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Devi Singh"
+		dynasty = "Karkare"
+		ADM = 2
+		DIP = 5
+		MIL = 5
+	}
+}
+
 #Chandellas of Kalinjar
 1430.1.1 = {
 	monarch = {

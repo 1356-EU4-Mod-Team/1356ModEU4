@@ -244,14 +244,191 @@ province_event = {
 #		}
 #	}
 #}
+#Jadwiga of Poland
+country_event = {
+	id = flaflavorlith.5
+	title = flaflavorlith.5.t
+	desc = flaflavorlith.5.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1370
+		tag = POL
+		is_female = no
+	}
+
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	option = {
+		name = flaflavorlith.5.a
+		ai_chance = { 
+			factor = 75 
+		}		
+		define_heir = {
+			name = "Jadwiga"
+			dynasty = "d'Anjou"
+			culture = hungarian
+			fixed = yes
+			adm = 5
+			dip = 5
+			mil = 3
+			age = 0
+			claim = 90
+			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = lawgiver_personality }
+		}
+	}
+	
+	option = {
+		name = flaflavorlith.5.b
+		ai_chance = { 
+			factor = 25 
+		}
+		trigger = {
+			has_heir = no
+		}
+		add_meritocracy_effect = yes
+		define_heir = {
+			DIP = 2
+			ADM = 2
+			MIL = 2
+			claim = 100
+			culture = polish
+			dynasty = "Piast"
+		}
+	}
+	
+	option = {
+		name = flaflavorlith.5.c
+		ai_chance = { 
+			factor = 25 
+		}
+		trigger = {
+			has_heir = yes
+		}
+	}	
+}
+
+#Union of Krewo (Poland)
+country_event = {
+	id = flaflavorlith.6
+	title = flaflavorlith.6.t
+	desc = flaflavorlith.6.d
+
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = POL
+		is_subject = no
+		ai = no
+		has_regency = no
+		is_female = yes
+		NOT = { has_reform = celestial_empire }
+		LIT  = {
+			ai = yes
+			exists = yes
+			is_subject = no
+			was_player = no
+			NOT = { junior_union_with = POL }
+			is_female = no
+		}
+		NOT = { is_year = 1450 }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.1
+			is_year = 1370
+		}
+		modifier = {
+			factor = 0.01
+			is_year = 1375
+		}
+		modifier = {
+			factor = 0.001
+			is_year = 1385
+		}
+	}
+	
+	option = {
+		name = flaflavorlith.6.a #We must retain the Jagiellon Dynasty
+		ai_chance = { 
+			factor = 80 
+		}
+		create_union = LIT
+		set_dynasty = Jagiellon
+		define_general = {
+			name = "Jogaila Jagiellon"
+			fire = 3
+			shock = 3	
+			manuever = 3
+			siege = 1
+			female = no
+		}		
+		define_consort = {
+			name = "Jogaila"
+			dynasty = "Jagiellon"
+			culture = lithuanian
+			fixed = yes
+			adm = 5
+			dip = 3
+			mil = 5
+			female = yes
+		}
+		add_historical_friend = LIT
+		LIT = {
+			add_historical_friend = POL
+		}
+		LIT = {
+			change_religion = catholic
+			every_owned_province = {
+				limit = {
+					religion = baltic_pagan_reformed
+				}		
+				change_religion = catholic
+				add_province_modifier = {
+					name = forced_conversion
+					duration = 4800
+				}
+			}
+		}	
+		remove_heir = yes
+	}
+	
+	option = {
+		name = flaflavorlith.6.b #Stay Romuva.
+		ai_chance = { 
+			factor = 20
+		}
+		LIT = {
+			add_opinion = {
+				who = ROOT
+				modifier = lit_denied_birthright
+			}
+		}
+	}
+}
 #Written by Genomega
-#Election of Kasimir
+#Union of Krewo (Lithuania)
 country_event = {
 	id = flaflavorlith.4
 	title = flaflavorlith.4.t
 	desc = flaflavorlith.4.d
 
-	picture = LIBERUM_VETO_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
 	major = yes
@@ -264,6 +441,7 @@ country_event = {
 			ai = yes
 			exists = yes
 			is_subject = no
+			was_player = no
 			NOT = { junior_union_with = LIT }
 			dynasty = "d'Anjou"
 			is_female = yes
@@ -275,35 +453,38 @@ country_event = {
 		months = 12
 		modifier = {
 			factor = 0.1
-			is_year = 1355
+			is_year = 1370
 		}
 		modifier = {
 			factor = 0.01
-			is_year = 1356
+			is_year = 1375
 		}
 		modifier = {
 			factor = 0.001
-			is_year = 1357
+			is_year = 1385
 		}
 	}
 	
 	option = {
 		name = flaflavorlith.4.a #We must retain the Jagiellon Dynasty
 		ai_chance = { 
-			factor = 100 
+			factor = 90 
 		}
 		create_union = POL
 		define_consort = {
 			name = "Hedvig"
 			dynasty = "d'Anjou"
 			culture = hungarian
-			#fixed = yes
+			fixed = yes
 			adm = 5
 			dip = 5
 			mil = 3
 			female = yes
 		}
-        set_government_rank = 2	
+		add_historical_friend = POL
+		POL = {
+			add_historical_friend = LIT
+		}
 		change_religion = catholic	
 		every_owned_province = {
 			limit = {
@@ -312,7 +493,7 @@ country_event = {
 			change_religion = catholic
 			add_province_modifier = {
 				name = forced_conversion
-				duration = 3650
+				duration = 4800
 			}
 		}			
 	}
@@ -320,14 +501,7 @@ country_event = {
 	option = {
 		name = flaflavorlith.4.b #Stay Romuva.
 		ai_chance = { 
-			factor = 0
-		}
-		define_ruler = {
-			DIP = 4
-			ADM = 4
-			MIL = 4
-			claim = 100
-			culture = polish
+			factor = 10
 		}
 		POL = {
 			add_opinion = {
@@ -337,65 +511,4 @@ country_event = {
 		}
 	}
 }
-#Written by Genomega
 
-#For Poland
-country_event = {
-	id = flaflavorlith.5
-	title = flaflavorlith.5.t
-	desc = flaflavorlith.5.d
-	picture = LIBERUM_VETO_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = POL
-		is_year = 1356
-		NOT = { is_year = 1420 }
-		is_female = no
-	}
-
-	
-	mean_time_to_happen = {
-		months = 24
-	}
-	
-	option = {
-		name = flaflavorlith.5.a
-		ai_chance = { 
-			factor = 100 
-		}		
-		define_heir = {
-			name = "Hedvig"
-			dynasty = "d'Anjou"
-			culture = hungarian
-			#fixed = yes
-			adm = 5
-			dip = 5
-			mil = 3
-			age = 23
-			female = yes
-		}
-		if = {
-			limit = {
-				has_dlc = "Rights of Man" 
-			}
-			hidden_effect = { add_ruler_personality = lawgiver_personality }
-		}
-	}
-	option = {
-		name = flaflavorlith.5.b
-		ai_chance = { 
-			factor = 0 
-		}
-		add_meritocracy_effect = yes
-		define_heir = {
-			DIP = 4
-			ADM = 4
-			MIL = 4
-			claim = 100
-			culture = polish
-			dynasty = "Piast"
-		}
-	}
-}

@@ -1,8 +1,8 @@
 # 516 - Baroda (1356)
 # Changes: DLH/unrest
 
-owner = DLH
-controller = DLH
+owner = GUJ
+controller = GUJ
 culture = gujarati
 religion = hinduism
 capital = "Baroda"
@@ -22,7 +22,6 @@ discovered_by = ottoman
 discovered_by = chinese
 discovered_by = east_african
 
-1355.1.1  = { unrest = 15 }
 1391.1.1  = { owner = GUJ controller = GUJ unrest = 0 }
 
 1498.1.1 = { discovered_by = POR }

@@ -7,6 +7,15 @@ technology_group = indian
 capital = 2040
 fixed_capital = 2040 # Cannot move capital away from this province & no power cost to move to it
 
+1346.1.1 = {
+	monarch = {
+		name = "Dhir Narayan"
+		dynasty = "Chutiya"
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
 
 1399.1.1 = {
 	monarch = {

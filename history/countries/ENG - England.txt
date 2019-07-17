@@ -10,6 +10,7 @@ religion = catholic
 historical_friend = BUR
 historical_friend = POR
 historical_rival = FRD
+historical_rival = FRA
 historical_friend = MNF
 capital = 236 # London
 national_focus = DIP

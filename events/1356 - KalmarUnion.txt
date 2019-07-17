@@ -13,12 +13,11 @@ country_event = {
 		NOT = { is_year = 1456 }
 		NOR = {
 			is_subject = no
-			has_regency = yes
 			marriage_with = ROOT
 		}
 	}
 	mean_time_to_happen = {
-		months = 1
+		months = 12
 	}
 	option = {
 		name = "norway_union_opt1"
@@ -48,7 +47,7 @@ country_event = {
 		is_subject = no
 	}
 	mean_time_to_happen = {
-		months = 396
+		months = 312
 	}
 	option = {
 		name = "sweden_estate_opt1"
@@ -148,13 +147,13 @@ country_event = {
 		add_treasury = -200
 		DAN = { add_treasury = 200 }
 		add_prestige = -10
-		ai_chance = { factor = 40 }
+		ai_chance = { factor = 20 }
 	}
 	option = {
 		name = "denmark_ultimatum_opt2"
 		DAN = { create_union = SWE }
 		add_prestige = -10
-		ai_chance = { factor = 40 }
+		ai_chance = { factor = 60 }
 	}
 	option = {
 		name = "denmark_ultimatum_opt3"

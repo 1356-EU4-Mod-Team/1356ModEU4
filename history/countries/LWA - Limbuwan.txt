@@ -6,6 +6,16 @@ religion = vajrayana
 capital = 4483	#Morang
 
 # Ing dynasty of Morang
+1356.1.1 = {
+	monarch = {
+		name = "Chakdor"
+		dynasty = "Ing"
+		ADM = 1
+		DIP = 4
+		MIL = 3
+	}
+}
+
 1444.1.1 = {
 	monarch = {
 		name = "Sangla"

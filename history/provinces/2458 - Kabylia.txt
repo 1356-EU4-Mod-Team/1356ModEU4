@@ -1,8 +1,8 @@
 # - Hodna
 
-owner = KBA
-controller = KBA
-culture = algerian
+owner = OUA
+controller = OUA
+culture = kabyle
 religion = sunni
 capital = "Msila"
 trade_goods = salt
@@ -12,6 +12,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = KBA
+add_core = OUA
 
 
 
@@ -20,10 +21,20 @@ discovered_by = ottoman
 discovered_by = western
 
 1356.12.25 = {
-	owner = KBA
-	controller = KBA
+	owner = OUA
+	controller = OUA
+	add_core = OUA
+	add_core = KBA
 }
-1444.1.1 = { owner = TUN controller = TUN add_core = TUN }
+
+1440.1.1 = { 
+	owner = TUN 
+	controller = TUN 
+	add_core = TUN 
+	remove_core = OUA 
+	culture = algerian
+}
+
 1521.1.1 = {
 	owner = ALG
 	controller = ALG

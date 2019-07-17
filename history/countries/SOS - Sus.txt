@@ -1,6 +1,6 @@
-government = monarchy
-add_government_reform = barbary_sultanate_reform
-primary_culture = berber
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = shilha
 religion = sunni
 technology_group = muslim
 capital = 348 # Sus
@@ -17,6 +17,11 @@ religious_school = maliki_school
 		mil = 5
 	}
 	add_piety = 1.0
+}
+
+1400.1.1 = {
+	government = monarchy
+	add_government_reform = barbary_sultanate_reform
 }
 
 1472.1.1 = {

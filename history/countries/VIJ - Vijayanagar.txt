@@ -1,17 +1,19 @@
 government = monarchy
-add_government_reform = nayankara_reform
+add_government_reform = vij_government_reform
 primary_culture = kannada
 religion = hinduism
 technology_group = indian
 capital = 541	# Vijayanagara
+historical_rival = BAH
 
 1356.1.1 = {
 	monarch = {
 		name = "Bukka I"
 		dynasty = "Sangama"
-		ADM = 4
-		DIP = 4
-		MIL = 4
+		ADM = 5
+		DIP = 3
+		MIL = 6
+		leader = {	name = "Bukka I Sangama"	type = general	fire = 5	shock = 5	manuever = 4 siege = 2	personality = inspirational_leader_general_personality }
 	}
 }
 

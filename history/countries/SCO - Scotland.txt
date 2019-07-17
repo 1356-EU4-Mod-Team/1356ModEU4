@@ -5,6 +5,7 @@ add_accepted_culture = highland_scottish
 religion = catholic
 technology_group = western
 capital = 248 # Edinburgh
+historical_friend = FRA
 
 1329.6.7 = {
 	monarch = {

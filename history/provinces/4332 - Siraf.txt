@@ -1,8 +1,8 @@
 # 4332 - Siraf (1356)
 # Changes: PER/TIM
 
-owner = INT
-controller = INT
+owner = FRS
+controller = FRS
 culture = persian
 religion = shiite
 capital = "Siraf"
@@ -12,7 +12,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = INT
+add_core = FRS
 
 discovered_by = east_african
 discovered_by = muslim

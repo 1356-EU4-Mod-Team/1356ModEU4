@@ -13,8 +13,8 @@ religious_school = hanbali_school
 		name = "Nasir"
 		dynasty = "Al-Zaid"
 		adm = 3
-		dip = 6
-		mil = 6
+		dip = 3
+		mil = 3
 	}
 }
 

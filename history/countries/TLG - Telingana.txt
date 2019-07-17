@@ -7,6 +7,18 @@ religion = hinduism
 capital = 4439	# Devarakonda
 
 #Recherla Velama
+
+#Random Ruler
+1352.1.1 = {
+	monarch = {
+		name = "Venna"
+		dynasty = "Velama"
+		DIP = 4
+		MIL = 3
+		ADM = 3
+	}
+}
+
 1384.1.1 = {
 	monarch = {
 		name = "Peda Vedagiri"

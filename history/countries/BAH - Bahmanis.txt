@@ -1,12 +1,13 @@
 government = monarchy
-add_government_reform = indian_sultanate_reform
+add_government_reform = bahamis_sultanate_reform
 technology_group = indian
 religion = shiite
 primary_culture = kannada
-capital = 1948	# Gulbarga
+capital = 1948	# Bihar
 add_accepted_culture = marathi
 add_accepted_culture = telegu
 religious_school = jafari_school
+historical_rival = VIJ
 
 1347.1.1 = {
 	monarch = {

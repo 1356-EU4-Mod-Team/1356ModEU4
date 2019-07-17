@@ -1,8 +1,8 @@
 # 2225 - Bamyan (1356)
 # Changes: AFG
 
-owner = KRT
-controller = KRT
+owner = AFG
+controller = AFG
 culture = afghani
 religion = shiite
 capital = "Bamyam"
@@ -12,7 +12,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = KRT
+add_core = AFG
 
 discovered_by = KAS
 discovered_by = muslim

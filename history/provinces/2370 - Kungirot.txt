@@ -1,8 +1,8 @@
 # 2370 - Kungirot (1356)
 # Changes: TRS/TIM
 
-owner = TRS
-controller = TRS
+owner = KHI
+controller = KHI
 culture = nogaybak
 religion = sunni
 capital = "Kungirot"
@@ -13,8 +13,8 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = TRS
-add_core = NOG
+add_core = KHI
+#add_core = NOG
 
 discovered_by = muslim
 discovered_by = ottoman

@@ -6,6 +6,17 @@ religion = hinduism
 primary_culture = malayalam
 capital = 4413	# Cannanore
 
+#Random Ruler
+1352.1.1 = {
+	monarch = {
+		name = "Udaya"
+		dynasty = "Perumal"
+		DIP = 1
+		MIL = 3
+		ADM = 3
+	}
+}
+
 1444.1.1 = {
 	monarch = {
 		name = "Udaya Varman"

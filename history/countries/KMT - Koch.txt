@@ -8,6 +8,15 @@ capital = 562	# Koch
 add_accepted_culture = bengali
 
 #Khen Dynasty
+1353.1.1 = {
+	monarch = {
+		name = "Mriganka"
+		dynasty = "Khen"
+		ADM = 4
+		DIP = 1
+		MIL = 4
+	}
+}
 
 1385.1.1 = {
 	monarch = {
@@ -17,9 +26,6 @@ add_accepted_culture = bengali
 		DIP = 0
 		MIL = 3
 	}
-}
-
-1385.1.1 = {
 	heir = {
 		name = "Sukranka"
 		monarch_name = "Sukranka"

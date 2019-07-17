@@ -1,8 +1,8 @@
 # 2215 - Qazvin (1356)
 # Changes: CHB/JLR
 
-owner = PAD
-controller = PAD
+owner = CHB
+controller = CHB
 culture = azerbaijani
 religion = shiite
 capital = "Qazvin"
@@ -14,7 +14,7 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 fort_15th = yes
-add_core = PAD
+add_core = CHB
 
 discovered_by = muslim
 discovered_by = ottoman

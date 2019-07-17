@@ -2,7 +2,7 @@
 
 owner = TLC
 controller = TLC 
-culture = berber
+culture = kabyle
 religion = sunni
 capital = "Tlemcen"
 trade_goods = cloth

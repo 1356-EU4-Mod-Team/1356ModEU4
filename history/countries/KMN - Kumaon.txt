@@ -5,6 +5,16 @@ primary_culture = pahari
 religion = hinduism
 capital = 2069	#Kumaon
 
+1336.1.1 = {
+	monarch = {
+		name = "Amaramalla"
+		dynasty = "Chand"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
 1437.1.1 = {
 	monarch = {
 		name = "Bharati"

@@ -479,6 +479,13 @@ royal_marriage = {
 # Other Alliances	#
 #########################
 
+guarantee = {
+	first = FRA
+	second = SCO
+	start_date = 1419.8.13
+	end_date = 1434.11.12
+}
+
 alliance = {
 	first = MNF
 	second = ENG

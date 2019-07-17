@@ -51,7 +51,7 @@
  hussite_spr.3.a: "Deus Vult!"
  hussite_spr.3.a.tt: "The Hussite Religion will now spread faster."
  hussite_spr.4.t: "The Fall of the Hussites"
- hussite_spr.4.d: "The great bastion of the Hussite Rebels has fallen, and $MONARCH$ has been forced to convert back to Catholicism, whilst renouncing $RULER_ADJ$ heretical ways. All of Christendom rejoices at this triumph!"
+ hussite_spr.4.d: "The great bastion of the Hussite Rebels has fallen, and $MONARCH$ has been forced to convert back to Catholicism, not only renouncing $RULER_ADJ$ heretical ways, they have also abdicated the throne to [ROOT.Heir.GetName]. All of Christendom rejoices at this triumph!"
  hussite_spr.4.a: "Such is the fate of Heretics"
  hussite_spr.4.a.tt: "The Hussite Religion will no longer spread."
  hussite_spr.5.t: "The Folly of the Hussites"

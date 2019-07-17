@@ -178,23 +178,22 @@ country_decisions = {
 		major = yes
 		potential = {
 			OR = {
-				government = steppe_horde
-				government = tribe_becomes_horde_reform #Is this needed?
-				government = great_mongol_state_reform
+				has_reform  = steppe_horde
+				has_reform  = great_mongol_state_reform
 				tag = YUA
 				tag = JLR
 				tag = CHB
 				#Did I miss any?
 			}
+			NOT = { has_country_flag = mongolic_gunpowder_flag }
 			NOT = { has_institution = gunpowder_institution }
 			#has_country_modifier = pre_gunpowder_modifier
 			NOT = { is_year = 1450 }
 		}
 		allow = {
 			OR = {
-				government = steppe_horde
-				government = tribe_becomes_horde_reform #Is this needed?
-				government = great_mongol_state_reform
+				has_reform = steppe_horde
+				has_reform = great_mongol_state_reform
 				tag = YUA
 				tag = JLR
 				tag = CHB
@@ -219,6 +218,7 @@ country_decisions = {
 				name = mongol_gunpowder_tech_modifier
 				duration = 3650  
 			}
+			set_country_flag = mongolic_gunpowder_flag
 			#remove_country_modifier = pre_gunpowder_modifier
 		}
 		ai_will_do = { 
@@ -232,7 +232,7 @@ country_decisions = {
 			NOT = { tag = YUA } #We dont need Yuan getting both now...
 			NOT = { has_institution = gunpowder_institution }
 			#has_country_modifier = pre_gunpowder_modifier
-			is_year = 1360
+			NOT = { has_country_flag = chinese_gunpowder_flag }
 			NOT = { is_year = 1450 }
 		}
 		allow = {
@@ -255,6 +255,7 @@ country_decisions = {
 				name = gunpowder_tech_modifier
 				duration = 3650  
 			}
+			set_country_flag = chinese_gunpowder_flag
 			remove_country_modifier = pre_gunpowder_modifier
 		}
 		ai_will_do = { 
@@ -266,6 +267,7 @@ country_decisions = {
 		potential = {
 			culture_group = byzantine
 			NOT = { has_institution = gunpowder_institution }
+			NOT = { has_country_flag = byzantine_gunpowder_flag }
 			#has_country_modifier = pre_gunpowder_modifier
 			NOT = { is_year = 1450 }
 		}
@@ -290,6 +292,7 @@ country_decisions = {
 				name = gunpowder_tech_modifier
 				duration = 3650  
 			}
+			set_country_flag = byzantine_gunpowder_flag
 			remove_country_modifier = pre_gunpowder_modifier
 		}
 		ai_will_do = { 
@@ -301,8 +304,8 @@ country_decisions = {
 		potential = {
 			culture = korean
 			NOT = { has_institution = gunpowder_institution }
+			NOT = { has_country_flag = korean_gunpowder_flag }
 			#has_country_modifier = pre_gunpowder_modifier
-			is_year = 1399
 			NOT = { is_year = 1450 }
 		}
 		allow = {
@@ -325,6 +328,7 @@ country_decisions = {
 				name = gunpowder_tech_modifier
 				duration = 3650  
 			}
+			set_country_flag = korean_gunpowder_flag
 			remove_country_modifier = pre_gunpowder_modifier
 		}
 		ai_will_do = { 
@@ -366,6 +370,7 @@ country_decisions = {
 		potential = {
 			tributary_state = 1
 			has_institution = gunpowder_institution
+			NOT = { has_country_flag = overlord_gunpowder_modifier }
 			NOT = { is_year = 1450 }
 		}
 		allow = {
@@ -393,6 +398,7 @@ country_decisions = {
 		potential = {
 			is_subject_of_type = tributary_state
 			NOT = { has_institution = gunpowder_institution }
+			NOT = { has_country_flag = chinese_subject_embraced_gunpowder }
 			NOT = { is_year = 1450 }
 		}
 		allow = {
@@ -421,6 +427,7 @@ country_decisions = {
 		potential = {
 			is_subject_of_type = tributary_state
 			has_country_flag = chinese_subject_embraced_gunpowder
+			NOT = { has_country_flag = subject_gunpowder_boost_flag }
 			is_year = 1400
 			NOT = { is_year = 1500 }
 		}
@@ -438,6 +445,7 @@ country_decisions = {
 				name = chinese_subject_gunpowder_boost_modifier
 				duration = 18250 #50 years
 			}
+			set_country_flag = subject_gunpowder_boost_flag 
 		}
 		ai_will_do = { 
 			factor = 5

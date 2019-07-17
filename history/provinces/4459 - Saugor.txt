@@ -1,17 +1,17 @@
 #4459 - Saugor
 
-owner = GDW
-controller = GDW
+owner = KLP
+controller = KLP
 culture = gondi
 religion = hinduism
 capital = "Saugor"
 trade_goods = grain
 hre = no
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = GDW
+add_core = KLP
 add_rajputs_or_marathas_or_nobles_effect = yes
 discovered_by = indian
 discovered_by = nomad_group

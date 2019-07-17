@@ -1,8 +1,8 @@
 # 334 - Tangiers (1356)
 # Changes: GRA
 
-owner = MOR
-controller = MOR 
+owner = FEZ
+controller = FEZ 
 culture = moroccan
 religion = sunni
 capital = "Tangier"
@@ -13,7 +13,7 @@ base_production = 4
 base_manpower = 3
 is_city = yes
 fort_15th = yes
-add_core = MOR
+add_core = FEZ
 
 
 add_claim = GRA
@@ -25,6 +25,12 @@ discovered_by = eastern
 extra_cost = 16
 center_of_trade = 2
 
+1356.12.25 = {
+	owner = FEZ
+	controller = FEZ
+	add_core = FEZ
+}
+1440.1.1 = { owner = MOR controller = MOR add_core = MOR remove_core = FEZ }
 
 1471.1.1   = { controller = POR add_core = POR }
 1471.12.30 = { owner = POR }

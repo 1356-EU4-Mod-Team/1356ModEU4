@@ -2,7 +2,7 @@
 
 owner = TUN
 controller = TUN 
-culture = berber
+culture = kabyle
 religion = sunni
 capital = "Constantine"
 trade_goods = grain
@@ -33,4 +33,5 @@ discovered_by = ottoman
 	owner = ALG
 	controller = ALG
 	add_core = ALG
+	culture = algerian
 }

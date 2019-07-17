@@ -10,11 +10,34 @@ religious_school = shafii_school
 
 1352.1.1 = {
 	monarch = {
-		name = "Banhbina"
+		name = "Banhbina I"
 		dynasty = "Samma"
 		ADM = 3
-		DIP = 1
-		MIL = 1
+		DIP = 4
+		MIL = 5
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = midas_touched_personality
+	define_ruler_to_general = {
+		fire = 3
+		shock = 4
+		manuever = 3
+		siege = 2
+	}
+}
+1356.12.1 = {
+	heir = {
+		name = "Tamachi"
+		monarch_name = "Tamachi"
+		dynasty = "Samma"
+		birth_date = 1353.1.1
+		death_date = 1367.1.1
+		claim =  75
+		ADM = 3
+		DIP = 3
+		MIL = 2
 	}
 }
 
@@ -22,8 +45,8 @@ religious_school = shafii_school
 	monarch = {
 		name = "Tamachi"
 		dynasty = "Samma"
-		ADM = 1
-		DIP = 2
+		ADM = 3
+		DIP = 3
 		MIL = 2
 	}
 }

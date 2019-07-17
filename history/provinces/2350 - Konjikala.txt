@@ -1,8 +1,8 @@
 # 2350 - Konjikala (1356)
 # Changes: TRS
 
-owner = TRS
-controller = TRS
+owner = KHI
+controller = KHI
 culture = turkmeni
 religion = sunni
 capital = "Konjikala"
@@ -12,7 +12,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = TRS
+#add_core = TRS
 add_core = KHI
 
 discovered_by = muslim

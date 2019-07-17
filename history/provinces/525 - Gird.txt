@@ -1,8 +1,8 @@
 # 525 - Gird (1356)
 # Changes: DLH/unrest
 
-owner = DLH
-controller = DLH
+owner = KLP
+controller = KLP
 culture = kanauji
 religion = hinduism
 capital = "Gwalior"
@@ -12,6 +12,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
+add_core = KLP
 fort_15th = yes #"Gibraltar of India"
 
 discovered_by = indian
@@ -20,7 +21,6 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = chinese
 
-1355.1.1  = { unrest = 10 }
 1398.1.1  = { owner = GWA controller = GWA unrest = 0 } # Independent
 
 1518.5.1 = { owner = DLH controller = DLH } #Conquered by Ibrahim Lodi

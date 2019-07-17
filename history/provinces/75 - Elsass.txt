@@ -20,6 +20,8 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
+add_province_triggered_modifier = 1356_strasbourg_cathedral_great_project_province_modifier #1356 
+
 1356.12.24  = { 
 				owner = SWB controller = SWB add_core = SWB
 } #BT In

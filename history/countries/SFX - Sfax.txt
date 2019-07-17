@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = pirate_republic_reform
+primary_culture = tunisian
+religion = sunni
+technology_group = muslim
+capital = 2453
+fixed_capital = 2453 # Cannot move capital away from this province & no power cost to move to it

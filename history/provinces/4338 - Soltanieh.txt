@@ -1,8 +1,8 @@
 # 4338 - Soltanieh & Abhar (1356)
 # Changes: CHB/JLR
 
-owner = PAD
-controller = PAD
+owner = CHB
+controller = CHB
 culture = azerbaijani
 religion = shiite
 capital = "Soltanieh"
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = PAD
+add_core = CHB
 
 discovered_by = muslim
 discovered_by = ottoman

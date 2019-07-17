@@ -7,6 +7,16 @@ capital = 2041 # Imphal
 fixed_capital = 2041 # Cannot move capital away from this province & no power cost to move to it
 
 #Rajas of Manipur
+1356.1.1 = {
+	monarch = {
+		name = "Madhuchandra"
+		dynasty = "Ningthouja"
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+
 1399.1.1 = {
 	monarch = {
 		name = "Pengshiba"

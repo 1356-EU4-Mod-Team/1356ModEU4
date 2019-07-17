@@ -73,3 +73,8 @@ chinese_minor_overthrow_yuan_opinion = {
 	opinion = 500
 	yearly_decay = 0.01
 }
+
+guanche_refused_crusade = {
+	opinion = -75
+	yearly_decay = 3
+}

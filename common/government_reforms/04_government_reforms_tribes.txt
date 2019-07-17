@@ -140,6 +140,7 @@ siberian_tribe = {
 }
 
 ######1356 Changes#######
+
 tribal_federation_ilkhan_reform = { #Tribes
 	icon = "tribal_council"
 	potential = {
@@ -206,7 +207,6 @@ ilkhanate_government_tribal_reform = { #Ilkhanate itself
 		locked_government_type = yes
 	}
 }
-
 #tribal_republic_gov = { #Cut for now as I had issues actually getting the Republic Mechanics to work here.
 #	icon = "shaman"
 #	allow_normal_conversion = yes

@@ -1,8 +1,8 @@
 # 2218 - Sarvestan (1356)
 # Changes: PER/TIM
 
-owner = INT
-controller = INT
+owner = FRS
+controller = FRS
 culture = persian
 religion = sunni
 capital = "Shiraz"
@@ -12,8 +12,8 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
-add_core = INT
-
+add_core = FRS
+fort_15th = yes
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian

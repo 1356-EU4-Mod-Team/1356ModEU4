@@ -1,20 +1,20 @@
 # 447 - Kandahar (1356)
 # Changes: SIS/TIM
 
-owner = MIH
-controller = MIH
+owner = SIS
+controller = SIS
 culture = afghani
 religion = sunni
 capital = "Kandahar"
 trade_goods = cotton
 hre = no
 base_tax = 2
-base_production = 6
-base_manpower = 2
+base_production = 2
+base_manpower = 3
 is_city = yes
-add_core = MIH
-add_core = KRT
-add_core = SAB
+add_core = SIS
+#add_core = KRT
+#add_core = SAB
 fort_15th = yes # Zorr Shaar - Qandahar is often described as the strongest fortress in Western Asia
 
 discovered_by = KAS

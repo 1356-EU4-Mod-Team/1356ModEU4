@@ -1,8 +1,8 @@
 # 1751 - Ceuta (1356)
 # Changes: GRA
 
-owner = FEZ
-controller = FEZ  
+owner = CBT
+controller = CBT  
 culture = moroccan
 religion = sunni
 capital = "Cebta"
@@ -13,6 +13,7 @@ base_production = 3
 base_manpower = 4
 is_city = yes
 fort_15th = yes
+add_core = CBT
 add_core = FEZ
 add_core = GRA
 
@@ -22,10 +23,11 @@ discovered_by = ottoman
 discovered_by = eastern
 
 1356.12.25 = {	
-        owner = FEZ
-	controller = FEZ
+        owner = CBT
+	controller = CBT
+	add_core = CBT
 } 
-1415.9.1 = { controller = POR add_core = POR owner = POR capital = Ceuta }
+1415.9.1 = { controller = POR add_core = POR owner = POR capital = Ceuta remove_core = CBT }
 1440.1.1 = { remove_core = FEZ }
 1500.1.1 = { religion = catholic }
 1640.1.1 = {	owner = SPA

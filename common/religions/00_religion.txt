@@ -1756,8 +1756,8 @@ pagan = {#1356
 			# hussite
 		# }
 		country = {
-			defensiveness = 0.1
-			tolerance_heretic = 1
+			tolerance_heathen = 2
+			war_exhaustion = -0.02
 		}
 		
 		on_convert = {
@@ -1899,8 +1899,9 @@ zoroastrian_group = {
 			local_missionary_strength = -0.02
 		}
 		country = {
-			tolerance_own = 2
-			trade_efficiency = 0.1
+			innovativeness_gain = 0.25 #Does this cause any problems for non RB owners?
+			technology_cost = -0.05
+			stability_cost_modifier = -0.1
 		}
 		country_as_secondary = {
 			merchants = 1
@@ -1908,6 +1909,8 @@ zoroastrian_group = {
 		}
 		
 		heretic = { MAZDAKI MANICHEAN }	
+
+		fervor = yes
 	}
 	
 	harmonized_modifier = harmonized_zoroastrian_group
@@ -1915,3 +1918,4 @@ zoroastrian_group = {
 	crusade_name = HOLY_WAR
 	
 }
+

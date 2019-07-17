@@ -1,8 +1,8 @@
 # 445 - Merv (1356)
 # Changes: AFG
 
-owner = KRT
-controller = KRT
+owner = AFG
+controller = AFG
 culture = turkmeni
 religion = sunni
 capital = "Merv"
@@ -12,8 +12,8 @@ base_tax = 2
 base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = KRT
-add_core = SAB
+add_core = AFG
+#add_core = SAB
 
 discovered_by = muslim
 discovered_by = ottoman

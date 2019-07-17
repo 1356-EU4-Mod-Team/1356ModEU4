@@ -4,7 +4,6 @@ primary_culture = moroccan
 religion = sunni
 technology_group = muslim
 capital = 344 # Marrakech
-add_accepted_culture = berber
 religious_school = maliki_school
 
 1348.1.1 = {
@@ -211,6 +210,7 @@ religious_school = maliki_school
 		dip = 3
 		mil = 4
 	}
+	capital = 344 #Marrakech
 }
 
 1557.10.24 = {

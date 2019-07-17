@@ -3,7 +3,6 @@
 
 owner = DLH
 controller = DLH
-add_core = DLH
 culture = panjabi
 religion = sunni
 capital = "Dera Ghazi Khan"
@@ -14,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = PUN
+add_core = DLH
 add_core = MUL
 estate = estate_nobles
 
@@ -24,7 +23,6 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
-1355.1.1  = { unrest = 10 }
 1398.1.1  = { owner = TIM controller = TIM add_core = TIM unrest = 0 }
 1405.2.19 = { owner = MUL controller = MUL remove_core = DLH remove_core = TIM }
 1414.1.1 = {

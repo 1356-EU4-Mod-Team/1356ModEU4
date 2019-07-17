@@ -6,6 +6,17 @@ religion = hinduism	#Until 1710
 primary_culture = tamil
 capital = 4420
 
+#Random Ruler
+1352.1.1 = {
+	monarch = {
+		name = "Dust Ali"
+		dynasty = "Tupakula"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
 #Nayaks of Gingee
 1535.1.1 = {
 	monarch = {

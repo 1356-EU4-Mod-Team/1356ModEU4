@@ -1,24 +1,29 @@
 government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
-primary_culture = tunisian
+primary_culture = chaoui
+add_accepted_culture = tripolitanian_culture
 religion = sunni
 technology_group = muslim
 capital = 2448	# Murzuk
 fixed_capital = 2448 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
 
-1355.1.1 = {
+#Loosely Historical, could be from a later time period.
+
+1320.1.1 = {
 	monarch = {
-		name = "Ahmazâ I"
-		dynasty = "Banu Sulaym"
+		name = "Muhamad"
+		dynasty = "Awlad"
 		adm = 2
 		dip = 2
 		mil = 2
 	}
 }
 
-1400.1.1 = {
+
+
+1380.1.1 = {
 	monarch = {
 		name = "Ahmazâ II"
 		dynasty = "Banu Sulaym"
@@ -36,6 +41,8 @@ religious_school = maliki_school
 		dip = 0
 		mil = 1
 	}
+	primary_culture = tunisian
+	add_accepted_culture = chaoui
 }
 
 1480.1.1 = {

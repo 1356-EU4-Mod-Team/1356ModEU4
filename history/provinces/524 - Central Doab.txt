@@ -8,8 +8,8 @@ religion = hinduism
 capital = "Mathura"
 trade_goods = dyes	# Indigo
 hre = no
-base_tax = 10
-base_production = 10
+base_tax = 6
+base_production = 6
 base_manpower = 4
 add_brahmins_or_church_effect = yes
 is_city = yes
@@ -26,7 +26,11 @@ discovered_by = chinese
 extra_cost = 16
 center_of_trade = 2
 
-1355.1.1   = { unrest = 10 }
+1356.1.1 = {
+	owner = JNP
+	controller = JNP
+	add_core = JNP
+}
 1425.1.1   = { unrest = 0 }
 
 1437.1.1 = {

@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = mamluk_government
-government_rank = 3
+government_rank = 2
 primary_culture = al_misr_arabic
 add_accepted_culture = al_suryah_arabic
 add_accepted_culture = old_egyptian_mod

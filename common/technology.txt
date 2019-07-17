@@ -26,7 +26,7 @@ groups = {
 	}
 	eastern = {
 		start_level = 1
-		start_cost_modifier = 0.20
+		start_cost_modifier = 0
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
@@ -43,7 +43,7 @@ groups = {
 	}
 	ottoman = {
 		start_level = 2
-		start_cost_modifier = 0.25
+		start_cost_modifier = 0.05
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
@@ -60,7 +60,7 @@ groups = {
 	}
 	muslim = {
 		start_level = 2
-		start_cost_modifier = 0.40
+		start_cost_modifier = 0.20
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
@@ -93,17 +93,17 @@ groups = {
 		}
 	}
 	east_african = {
-		start_level = 1
+		start_level = 0
 		start_cost_modifier = 0.5
 		nation_designer_unit_type = sub_saharan
 	}
 	central_african = {
-		start_level = 1
+		start_level = 0
 		start_cost_modifier = 0.65
 		nation_designer_unit_type = sub_saharan
 	}
 	chinese = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.6
 		nation_designer_cost = {
 			trigger = {
@@ -120,7 +120,7 @@ groups = {
 		}
 	}
 	nomad_group = {
-		start_level = 1
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_trigger = {
 			OR = {
@@ -130,7 +130,7 @@ groups = {
 		}
 	}
 	sub_saharan = { #West African
-		start_level = 1
+		start_level = 0
 		start_cost_modifier = 0.6
 	}
 	north_american = {
@@ -139,7 +139,7 @@ groups = {
 		is_primitive = yes
 	}
 	mesoamerican = {
-		start_level = 1
+		start_level = 0
 		start_cost_modifier = 1.5
 		is_primitive = yes
 	}
@@ -149,7 +149,7 @@ groups = {
 		is_primitive = yes
 	}
 	andean = {
-		start_level = 1
+		start_level = 0
 		start_cost_modifier = 1.5
 		nation_designer_unit_type = south_american
 		is_primitive = yes
@@ -157,7 +157,7 @@ groups = {
 	
 	
 	high_american = {
-		start_level = 3
+		start_level = 4
 		start_cost_modifier = 0
 		nation_designer_unit_type = high_american
 		nation_designer_cost = {

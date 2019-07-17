@@ -1,47 +1,91 @@
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = JSL
-	start_date = 1356.1.1
-	end_date = 1398.1.1 
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = JSL
+#	start_date = 1356.1.1
+#	end_date = 1398.1.1 
+#}
+
+
+#vassal = {
+#	first = DLH
+#	second = GUJ
+#	start_date = 1391.1.1
+#	end_date = 1407.1.1
+#}
 
 dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = BGA
-	start_date = 1356.1.1
-	end_date = 1407.1.1
-}
-
-vassal = {
+	subject_type = "tughlaq_prince_vassal"
 	first = DLH
 	second = GUJ
-	start_date = 1391.1.1
-	end_date = 1407.1.1
-}
-
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = TRT
-	start_date = 1356.1.1
-	end_date = 1394.1.1
+	start_date = 1355.1.1
+	end_date = 1370.1.1 #Needs a more accurate date
 }
 
 vassal = {
-	first = DLH
+	first = SND
 	second = MAW
+	start_date = 1355.1.1
+	end_date = 1370.1.1 #Needs a more accurate date
+}
+
+#dependency = {
+#	subject_type = "tughlaq_prince_vassal"
+#	first = DLH
+#	second = HAJ
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1 #Needs a more accurate date
+#}
+
+union = {
+	first = HAJ
+	second = SNG
+	start_date = 1355.1.1
+	end_date = 1359.1.1 #Needs a more accurate date
+}
+
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = TRT
+#	start_date = 1356.1.1
+#	end_date = 1394.1.1
+#}
+
+#vassal = {
+#	first = DLH
+#	second = MAW
+#	start_date = 1356.1.1
+#	end_date = 1388.9.20
+#}
+
+vassal = {
+	first = SND
+	second = JSL
 	start_date = 1356.1.1
 	end_date = 1388.9.20
 }
 
 vassal = {
-	first = DLH
-	second = SND
-	start_date = 1367.1.1
-	end_date = 1388.9.20
+	first = VIJ
+	second = KLT
+	start_date = 1356.1.1
+	end_date = 1387.9.20
 }
+vassal = {
+	first = MAD
+	second = GNG
+	start_date = 1356.1.1
+	end_date = 1387.9.20
+}
+
+#vassal = {
+#	first = DLH
+#	second = SND
+#	start_date = 1367.1.1
+#	end_date = 1388.9.20
+#}
 
 #vassal = { #Duplicate
 #	first = JNP
@@ -58,10 +102,45 @@ vassal = {
 #}
 
 vassal = {
+	first = BAH
+	second = SIR
+	start_date = 1356.1.1
+	end_date = 1418.1.1
+}
+
+vassal = {
+	first = BAH
+	second = BIJ
+	start_date = 1356.1.1
+	end_date = 1418.1.1
+}
+
+vassal = {
 	first = MLW
 	second = SIR
 	start_date = 1418.1.1
 	end_date = 1531.1.1
+}
+
+vassal = {
+	first = MER
+	second = IDR
+	start_date = 1356.1.1
+	end_date = 1399.1.1
+}
+
+vassal = {
+	first = AHM
+	second = BGA
+	start_date = 1356.1.1
+	end_date = 1399.1.1
+}
+
+vassal = {
+	first = SND
+	second = NGA
+	start_date = 1356.1.1
+	end_date = 1399.1.1
 }
 
 vassal = {
@@ -79,239 +158,462 @@ vassal = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "tughlaq_prince_vassal"
 	first = DLH
 	second = SND
 	start_date = 1355.1.1
 	end_date = 1370.1.1
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = JSL
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = JSL
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = MAW
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = NGA
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = DHU
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
 
 dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = MAW
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
-
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = NGA
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
-
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = DHU
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
-
-dependency = {
-	subject_type = "tributary_state"
+	subject_type = "tughlaq_prince_vassal"
 	first = DLH
 	second = MER
 	start_date = 1355.1.1
 	end_date = 1370.1.1
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = GUJ
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = GUJ
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = KAT
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = KAT
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = JLV
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = JLV
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = PTL
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = PTL
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = JGD
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = JGD
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = PRB
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = PRB
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#vassal = {
+#	first = DLH
+#	second = BAH
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1 #Needs a more accurate date
+#}
 
 vassal = {
-	first = DLH
-	second = BAH
+	first = MER
+	second = DHU
 	start_date = 1355.1.1
 	end_date = 1370.1.1 #Needs a more accurate date
 }
 
+#dependency = {
+#	subject_type = "tughlaq_prince_vassal"
+#	first = DLH
+#	second = BAH
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1 #Needs a more accurate date
+#}
+
+
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "tughlaq_prince_vassal"
 	first = DLH
 	second = KLP
 	start_date = 1355.1.1
 	end_date = 1370.1.1
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = BND
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+vassal = {
+	first = KLP
 	second = BND
 	start_date = 1355.1.1
-	end_date = 1370.1.1
+	end_date = 1370.1.1 #Needs a more accurate date
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
+vassal = {
+	first = KLP
 	second = PAN
 	start_date = 1355.1.1
-	end_date = 1370.1.1
+	end_date = 1370.1.1 #Needs a more accurate date
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
+vassal = {
+	first = KLP
 	second = BGL
 	start_date = 1355.1.1
-	end_date = 1370.1.1
+	end_date = 1370.1.1 #Needs a more accurate date
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = KSH
+#vassal = {
+#	first = GUJ
+#	second = PTL
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1 #Needs a more accurate date
+#}
+
+vassal = {
+	first = GUJ
+	second = KAT
 	start_date = 1355.1.1
-	end_date = 1370.1.1
+	end_date = 1370.1.1 #Needs a more accurate date
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = ORI
+vassal = {
+	first = GUJ
+	second = JGD
 	start_date = 1355.1.1
-	end_date = 1370.1.1
+	end_date = 1370.1.1 #Needs a more accurate date
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = KJH
+vassal = {
+	first = GUJ
+	second = PRB
 	start_date = 1355.1.1
-	end_date = 1370.1.1
+	end_date = 1370.1.1 #Needs a more accurate date
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = NGP
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = PAN
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = DEO
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = BGL
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = VIJ
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = KSH
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = ORI
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = KJH
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = NGP
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = DEO
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tughlaq_prince_vassal"
+#	first = DLH
+#	second = VIJ
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tughlaq_prince_vassal"
+#	first = DLH
+#	second = AHM
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#vassal = {
+#	first = DLH
+#	second = AHM
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+vassal = {
+	first = AHM
+	second = KHD
 	start_date = 1355.1.1
 	end_date = 1370.1.1
 }
 
 vassal = {
-	first = DLH
-	second = AHM
+	first = MER
+	second = CMP
 	start_date = 1355.1.1
 	end_date = 1370.1.1
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = GDW
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
-
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = YOR
-	start_date = 1355.1.1
-	end_date = 1370.1.1
-}
-
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
+vassal = {
+	first = YOR
 	second = TLG
 	start_date = 1355.1.1
 	end_date = 1370.1.1
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
+vassal = {
+	first = YOR
 	second = GOC
 	start_date = 1355.1.1
 	end_date = 1370.1.1
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = DLH
-	second = GNG
+vassal = {
+	first = VIJ
+	second = MYS
 	start_date = 1355.1.1
 	end_date = 1370.1.1
 }
 
+#vassal = {
+#	first = DLH
+#	second = PUN
+#	start_date = 1356.12.25
+#	end_date = 1370.1.1
+#}
+
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "tughlaq_prince_vassal"
 	first = DLH
-	second = KRK
+	second = JNP
 	start_date = 1355.1.1
 	end_date = 1370.1.1
+}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = GDW
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tughlaq_prince_vassal"
+#	first = DLH
+#	second = YOR
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = TLG
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = GOC
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = GNG
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = DLH
+#	second = KRK
+#	start_date = 1355.1.1
+#	end_date = 1370.1.1
+#}
+######Orissa and Gartha Vassals#####
+#vassal = {
+#	first = GDW
+#	second = MND
+#	start_date = 1356.1.1
+#	end_date = 1388.9.20
+#}
+vassal = {
+	first = GDW
+	second = DEO
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+vassal = {
+	first = GDW
+	second = RTT
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+vassal = {
+	first = BAH
+	second = CHD
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+vassal = {
+	first = GDW
+	second = BST
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+vassal = {
+	first = GDW
+	second = NGP
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+
+#Orissa
+vassal = {
+	first = ORI
+	second = JPR
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+vassal = {
+	first = ORI
+	second = PRD
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+vassal = {
+	first = ORI
+	second = GRJ
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+vassal = {
+	first = ORI
+	second = KJH
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+vassal = {
+	first = ORI
+	second = KLH
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+#vassal = {
+#	first = ORI
+#	second = PTT
+#	start_date = 1356.1.1
+#	end_date = 1388.9.20
+#}
+
+royal_marriage = {
+	first = GDW
+	second = RTT
+	start_date = 1356.1.1
+	end_date = 1357.1.1
+}
+royal_marriage = {
+	first = GDW
+	second = DEO
+	start_date = 1356.1.1
+	end_date = 1357.1.1
+}
+royal_marriage = {
+	first = GDW
+	second = NGP
+	start_date = 1356.1.1
+	end_date = 1357.1.1
+}
+royal_marriage = {
+	first = GDW
+	second = BST
+	start_date = 1356.1.1
+	end_date = 1357.1.1
 }

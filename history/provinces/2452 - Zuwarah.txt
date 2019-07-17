@@ -1,8 +1,8 @@
 # - Zuwarah
 
-owner = TRP
-controller = TRP 
-culture = tunisian
+owner = ZUW
+controller = ZUW 
+culture = tripolitanian_culture
 religion = ibadi
 capital = "Zuwarah"
 trade_goods = fish
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = TRP
+add_core = ZUW
 
 
 
@@ -22,10 +22,19 @@ discovered_by = ottoman
 
 
 1356.12.25 = {
+	owner = ZUW
+	controller = ZUW
+	add_core = ZUW
+}
+
+1400.1.1 = { 
 	owner = TRP
 	controller = TRP
+	add_core = TRP
+	remove_core = ZUW
 }
-1444.1.1 = { owner = TUN controller = TUN add_core = TUN }
+
+1440.1.1 = { owner = TUN controller = TUN add_core = TUN }
 1558.1.1 = {
 	owner = TRP
 	controller = TRP

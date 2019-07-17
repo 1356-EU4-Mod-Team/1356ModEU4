@@ -1,9 +1,11 @@
 #366 - The Canarias
-
-culture = berber
+owner = GUN
+controller = GUN
+add_core = GUN
+culture = guanche
 religion = animism
 capital = "Las Palmas"
-trade_goods = unknown
+trade_goods = sugar
 hre = no
 base_tax = 3 
 base_production = 3
@@ -13,17 +15,19 @@ native_ferocity = 1
 native_hostileness = 0
 
 1356.12.24  = { 
-				owner = HAM
-				controller = HAM
-				add_core = HAM
-				capital = "Palmstadt"
+	owner = HAM
+	controller = HAM
+	add_core = HAM
+	remove_core = GUN
+	capital = "Palmstadt"
 } #BT In
 
 1356.12.26  = { 
-				owner = XXX
-				controller = XXX
-				add_core = XXX
-				capital = "Las Palmas"
+	owner = GUN
+	controller = GUN
+	add_core = GUN
+	remove_core = HAM
+	capital = "Las Palmas"
 } #BT Out
 
 1402.1.1 = {
@@ -39,8 +43,9 @@ native_hostileness = 0
 	religion = catholic
 	culture = castillian	
 	trade_goods = sugar
+	remove_core = GUN
 } # Castilian control
-1478.1.1 = { capital = "Las Palmas" }
+#1478.1.1 = { capital = "Las Palmas" }
 1516.1.23 = {
 	controller = SPA
 	owner = SPA

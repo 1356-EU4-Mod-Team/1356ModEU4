@@ -372,5 +372,24 @@ province_event = { #Event to force convert the Hussite Center of Reformation if 
 		add_prestige = -20
 		change_religion = catholic
 		add_reform_desire = -0.25
+		set_heir_religion = catholic
+		#set_ruler_religion = catholic
+		if = {
+			limit = {
+				has_heir = no
+			}
+			define_heir = {
+				male = yes
+				hide_skills = yes
+				dynasty = ROOT
+				religion = catholic
+				culture = ROOT
+				claim = 50
+				adm = 2
+				dip = 2
+				mil = 2
+			}
+		}
+		exile_ruler_as = hussite_ruler_abdicated
 	}
 }

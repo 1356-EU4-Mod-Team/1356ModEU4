@@ -1,8 +1,8 @@
 # 2219 - Bandar Langeh (1356)
 # Changes: PER/TIM
 
-owner = INT
-controller = INT
+owner = ORM
+controller = ORM
 culture = persian
 religion = zoroastrian
 capital = "Bandar Langeh"
@@ -14,7 +14,6 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 add_core = ORM
-add_core = INT
 
 discovered_by = east_african
 discovered_by = muslim

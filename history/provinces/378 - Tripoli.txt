@@ -28,9 +28,9 @@ extra_cost = 8
 center_of_trade = 1
 
 1356.12.24 = { owner = TPL controller = TPL add_core = TPL religion = catholic } #BT In
-1356.12.26 = { owner = SYR controller = SYR remove_core = TPL religion = sunni } #BT Out
+1356.12.26 = { owner = SYR controller = SYR remove_core = TPL religion = catholic } #BT Out
 
-1400.1.1  = { remove_core = CYP culture = aramaic religion = shiite } #Minority now
+1400.1.1  = { remove_core = CYP culture = al_suryah_arabic religion = shiite } #Minority now
 1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = SYR }
 1516.8.24 = {	owner = TUR
 		controller = TUR

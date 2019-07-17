@@ -13,6 +13,7 @@ trade_goods = salt
 base_manpower = 3
 add_core = FRA
 add_core = POU
+add_claim = ENG
 estate = estate_burghers
 discovered_by = eastern
 discovered_by = western

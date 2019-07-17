@@ -3,7 +3,7 @@
 owner = HDR
 controller = HDR
 culture = mahri_culture
-religion = coptic
+religion = nestorian
 capital = "Suqutra"
 trade_goods = fish
 hre = no

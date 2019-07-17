@@ -1121,8 +1121,8 @@ CTR_ideas = { #Just spains ideas, same localisation and all
 
 JLR_ideas = {
 	start = {
-		tolerance_heretic = 3
-		land_morale = 0.15
+		global_unrest = -1
+		land_morale = 0.10
 	}
 	bonus = {
 		shock_damage = 0.1
@@ -1133,14 +1133,14 @@ JLR_ideas = {
 	free = yes
 	
 	jlr_citadels_and_fortesses = {
-		core_creation = -0.20
+		core_creation = -0.15
 	}
 	jlr_ayyubid_heritage = {
-		siege_ability = 0.20
+		siege_ability = 0.10
 	}
 	jlr_righteousness_of_the_faith = {
-		prestige = 1
-        yearly_tribal_allegiance = 3
+		prestige = 0.50
+        army_tradition_from_battle = 0.5
 	}
 	jlr_elite_warriors = {
 		global_tax_modifier = 0.1
@@ -1152,7 +1152,7 @@ JLR_ideas = {
 		legitimacy = 1
 	}
 	jlr_state_economics = {
-		ae_impact = -0.10
+		ae_impact = -0.20
 	}
 }
 
@@ -1879,3 +1879,415 @@ CUM_ideas = {
 		discipline = 0.05
 	}
 }
+
+ahm_ideas = {
+	start = {
+		land_morale = 0.10
+		republican_tradition = 0.5
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = AHM
+	}
+	free = yes
+	
+	dec_foreign_trade_privileges = {
+		global_trade_power = 0.1
+	}
+	dec_marathi_habshi_state = {
+		advisor_cost = -0.1
+	}
+	dec_brahmin_administrators = {
+		stability_cost_modifier = -0.1
+	}
+	dec_habshis = {	
+		infantry_power = 0.1
+	}
+	dec_bargi_giri = {
+		cavalry_flanking = 0.5
+	}
+	dec_marathi_cultivators = {
+		production_efficiency = 0.1
+	}
+	dec_jewels_of_the_nizams = {
+		diplomatic_reputation = 1
+	}
+}
+bra_ideas = {
+	start = {
+		improve_relation_modifier = 0.25
+		core_creation = -0.15
+	}
+	
+	bonus = {
+		imperial_authority = 0.15
+	}
+	
+	trigger = {
+		tag = BRA
+	}
+	free = yes
+	
+	divided_estates = {
+		stability_cost_modifier = -0.1
+	}
+	noble_cadets = {
+		army_tradition_decay = -0.01
+	}
+	reichskreis = {
+		diplomatic_reputation = 1
+	}
+	polizeiordnung = {
+		global_unrest = -1
+	}
+	via_regia = {
+		trade_efficiency = 0.1
+	}
+	kammergericht = {
+		global_tax_modifier = 0.1
+	}
+	goose_step = {
+		infantry_power = 0.20
+	}
+}
+
+GON_ideas = {
+	start = {
+		fire_damage = 0.1
+		land_morale = 0.15
+	}
+	
+	bonus = {
+		technology_cost = -0.05
+	}
+	
+	trigger = {
+		tag = GON
+	}
+	free = yes
+	
+	securing_defenses_central_indic = {
+		defensiveness = 0.15
+	}
+	nag_harsh_terrain = {
+		leader_land_manuever = 1
+	}
+	tigers_and_elephants_central_indic = {
+		hostile_attrition = 1.0
+	}
+	flexible_caste_central_indic = {
+		num_accepted_cultures = 1
+	}	
+	ancient_roots_central_indic = {
+		legitimacy = 1
+	}
+	nag_cultivating_the_forest = {
+		production_efficiency = 0.1
+	}
+	raiding_the_plains_central_indic = {
+		infantry_power = 0.1
+	}
+}
+
+TUG_ideas = {
+	start = {
+		core_creation = -0.20
+		legitimacy = 1
+	}
+	
+	bonus = {
+		artillery_fire = 1
+	}
+	
+	trigger = {
+		tag = TUG
+	}
+	free = yes
+	
+	dlh_expansionism_tug = {
+		reinforce_speed = 0.33
+		global_manpower_modifier = 0.20
+	}
+	mughal_ibadat_khana = {
+		idea_cost = -0.1
+	}	
+	dlh_afghan_nobility_tug = {
+		global_own_trade_power = 0.10
+		caravan_power = 0.10
+	}
+	dlh_textile_innovation_tug = {
+		infantry_power = 0.20
+	}
+	dlh_reconquest_tug = {
+		num_accepted_cultures = 5
+		promote_culture_cost = -0.33
+	}
+	dlh_grand_trunk_tug = {
+		global_institution_spread = 0.20
+	}
+	dlh_throne_of_india_tug = {
+		max_absolutism = 10
+	}
+}
+
+ASY_ideas = {
+	start = { 
+		adm_advisor_cost = -0.15
+		religious_unity = 0.25
+	}
+	
+	bonus = { 
+		fire_damage = 0.1
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = ASY
+	}
+	free = yes
+	
+	asy_idea_1 = { #Isolated, no friends
+		shock_damage_received = -0.15
+	}
+	asy_idea_2 = { #Religiously isolated
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	asy_idea_3 = { #Empire builders
+		development_cost = -0.1
+		build_cost = -0.15
+	}
+	asy_idea_4 = { #No allies
+		diplomatic_reputation = 1
+	}
+	asy_idea_5 = { #Culturally isolated
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.25
+	}
+	asy_idea_6 = { #Prestigious Old Empire
+		prestige = 1
+		prestige_decay = -0.5
+	}
+	asy_idea_7 = { #Innovative
+		free_adm_policy = 1
+	}
+}
+
+canary_ideas = {
+	start = {
+		diplomatic_reputation = 2
+		defensiveness = 0.1
+	}
+
+	bonus = { 
+		free_dip_policy = 1
+	}
+
+	trigger = {
+		tag = GUN
+	}
+
+	free = yes
+
+	canary_berber_heritage = {
+		cavalry_power = 0.15
+	}
+
+	canary_majorcan_trade = {
+		trade_efficiency = 0.1
+	}
+
+	canary_iberian_missions = {
+		tolerance_heathen = 2
+	}
+
+	canary_resist_the_castilians = {
+		shock_damage_received = -0.1
+	}
+
+	canary_guanche_mummification = {
+		prestige = 1
+	}
+
+	canary_island_culture = {
+		global_sailors_modifier = 0.1
+		naval_attrition = -0.1
+	}
+
+	canary_drive_out_the_spanish = {
+		global_autonomy = -0.05
+		years_of_nationalism = -5
+	}
+}
+
+FZA_ideas = {
+	start = { 
+		hostile_attrition = 2
+		loot_amount = 0.5
+	}
+	
+	bonus = { 
+		siege_ability = 0.1
+	}
+	
+	trigger = {
+		tag = FZA
+	}
+	
+	free = yes
+	
+	fza_idea_1 = { #They live in a damn desert
+		war_exhaustion = -0.1
+		leader_land_manuever = 1
+	}
+	fza_idea_2 = { #Living in the desert long enough may allow one to travel it faster
+		envoy_travel_time = -0.2
+	}
+	trans_saharan_trade_fezzan = { #Vanilla import
+		trade_efficiency = 0.1
+		caravan_power = 0.2
+	}
+	fza_idea_4 = { #Help from the south
+		state_maintenance_modifier = -0.15
+		build_cost = -0.1
+	}
+	fza_idea_5 = { #A close nit tribe may allow more men to be loyal to the war efforts
+		global_manpower_modifier = 0.2
+	}
+	fza_idea_6 = { #Help from the south
+		free_dip_policy = 1
+	}
+	fza_idea_7 = { #Hardened Desert Warriors
+		discipline = 0.05
+	}
+}
+
+algerian_ideas = {
+	start = {
+		may_perform_slave_raid = yes
+		galley_power = 0.2		
+	}
+	bonus = {
+		naval_forcelimit_modifier = 0.25
+	}
+	trigger = {
+		tag = ALG
+	}
+	free = yes
+	algerian_royal_guard = {
+		discipline = 0.05
+		legitimacy = 0.5
+	}
+	algerian_dual_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	algerian_corsairs = {
+		navy_tradition = 1
+		privateer_efficiency = 0.10
+	}
+	algerian_attract_foreign_pirates = {
+		global_sailors_modifier = 0.25
+	}
+	algerian_board_of_captains = {
+		leader_naval_fire = 1
+	}
+	algerian_plunder = {
+		development_cost = -0.15
+		build_cost = -0.2
+	}
+	algerian_brothers_barbarossa = {
+		galley_power = 0.20
+	}
+}	
+
+TRP_ideas = { #Tripoli ideas
+	start = {
+		naval_attrition = -0.25
+		may_perform_slave_raid = yes
+	}
+	
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = TRP
+		NOT = { has_reform = pirate_republic_reform }
+	}
+	free = yes
+	
+	trp_barbary_pirates = {
+		naval_forcelimit_modifier = 0.25
+	}
+	trp_desert_warfare = {
+		shock_damage_received = -0.1
+	}
+	trp_trans_saharan_trade = {
+		trade_efficiency = 0.1
+		caravan_power = 0.2
+	}
+	trp_corsairs = {
+		navy_tradition = 1
+		privateer_efficiency = 0.10
+	}
+	trp_tuareg_cavalry = {
+		cavalry_power = 0.10
+		loot_amount = 0.10
+	}
+	trp_idea_6 = {
+		production_efficiency = 0.1
+		build_cost = -0.15
+	}
+	trp_brothers_barbarossa = {
+		galley_power = 0.20
+	}
+}		
+
+united_berber_ideas = { #United Berber Culture Group ideas
+	start = {
+		loot_amount = 0.5
+		may_perform_slave_raid = yes
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	
+	trigger = {
+		culture_group = berber_culture_group
+		has_country_flag = berber_tribal_government_unified_berbers_flag
+	}
+	free = yes
+	
+	united_berber_tuareg_cavalry = {
+		cavalry_power = 0.10
+		cav_to_inf_ratio = 0.2
+	}
+	united_berber_desert_armies = {
+		shock_damage = 0.1
+		shock_damage_received = -0.05
+	}
+	united_berber_desert_warfare = {
+		hostile_attrition = 1
+		land_attrition = -0.15
+	}
+	united_berber_trans_saharan_trade = {
+		trade_efficiency = 0.1
+		caravan_power = 0.3
+	}
+	united_berber_generals = {
+		leader_land_shock = 1
+		army_tradition = 0.5
+	}
+	united_berber_diplomacy = {
+		diplomatic_reputation = 1
+	}
+	united_berber_culture = {
+		culture_conversion_cost = -0.3
+	}
+}
+

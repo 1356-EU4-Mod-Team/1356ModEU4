@@ -16,6 +16,7 @@ base_manpower = 4
 #add_core = ENG
 add_core = GUY
 add_core = NAV
+add_core = FRA
 fort_15th = yes
 
 discovered_by = eastern

@@ -5,6 +5,16 @@ religion = buddhism
 primary_culture = sinhala
 capital = 2099 #Kandy
 
+1356.1.1 = {
+	monarch = {
+		name = "Parakramabahu"
+		dynasty = "Siri Sanga Bo"
+		ADM = 1
+		DIP = 3
+		MIL = 3
+	}
+}
+
 1444.1.1 = {
 	monarch = {
 		name = "Sena Sammatha Wickramabahu"

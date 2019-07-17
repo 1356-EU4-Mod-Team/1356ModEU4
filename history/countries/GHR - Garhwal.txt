@@ -6,6 +6,16 @@ primary_culture = pahari
 religion = hinduism
 capital = 511	# Garhwal
 
+1353.1.1 = {
+	monarch = {
+		name = "Shyam Shah"
+		dynasty = "Parmar"
+		DIP = 5
+		ADM = 5
+		MIL = 6
+	}
+}
+
 1398.1.1 = {
 	monarch = {
 		name = "Sundar Pal"

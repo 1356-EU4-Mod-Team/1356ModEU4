@@ -1,8 +1,8 @@
 # 2228 - Maymana (1356)
 # Changes: AFG
 
-owner = KRT
-controller = KRT
+owner = AFG
+controller = AFG
 culture = afghani
 religion = sunni
 capital = "Maymana"
@@ -12,7 +12,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = KRT
+add_core = AFG
 
 discovered_by = KAS
 discovered_by = muslim

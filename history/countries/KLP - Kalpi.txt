@@ -8,6 +8,18 @@ capital = 2059	# Kalpi
 religious_school = shafii_school
 
 #Malikzadas of Kalpi
+
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Qadir"
+		dynasty = "Malikzada"
+		ADM = 4
+		DIP = 4
+		MIL = 3
+	}
+}
+
 1399.1.1 = {
 	monarch = {
 		name = "Nasir al-Din Mahmud Shah"

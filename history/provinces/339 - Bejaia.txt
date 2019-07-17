@@ -1,8 +1,8 @@
 #339 - Bejaia
 
-owner = KBA
-controller = KBA
-culture = berber
+owner = OUA
+controller = OUA
+culture = kabyle
 religion = sunni
 capital = "Bejaia"
 trade_goods = iron
@@ -12,6 +12,7 @@ base_production = 3
 base_manpower = 3
 is_city = yes
 add_core = KBA
+add_core = OUA
 
 discovered_by = western
 discovered_by = eastern
@@ -20,10 +21,17 @@ discovered_by = ottoman
 
 
 1356.12.25 = {
-	owner = KBA
-	controller = KBA
+	owner = OUA
+	controller = OUA
+	add_core = OUA
+	add_core = KBA
 }
-1444.1.1 = { owner = TUN controller = TUN add_core = TUN }
+1440.1.1 = { 
+	owner = TUN 
+	controller = TUN 
+	add_core = TUN 
+	remove_core = OUA
+}
 1510.1.1 = {
 	owner = KBA
 	controller = KBA

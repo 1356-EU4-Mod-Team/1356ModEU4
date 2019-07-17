@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_noble_indian_ahm"
+		texturefile = "gfx//interface//government_reform_icons//noble_indian_ahm.dds"
+	}
+	spriteType = {
+		name = "government_reform_serbian_government"
+		texturefile = "gfx//interface//government_reform_icons//serbian_government.dds"
+	}
+	spriteType = {
+		name = "government_reform_bahamis_government"
+		texturefile = "gfx//interface//government_reform_icons//bahamanis_government.dds"
+	}
+	spriteType = {
+		name = "government_reform_bengal_government"
+		texturefile = "gfx//interface//government_reform_icons//bengal_sultans.dds"
+	}
+	spriteType = {
+		name = "government_reform_vijhindu_government"
+		texturefile = "gfx//interface//government_reform_icons//vij_government.dds"
+	}		
+}

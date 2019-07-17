@@ -1,0 +1,10 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = guanche
+religion = animism
+technology_group = muslim
+#capital = 4665	#Tenerife
+
+
+#Loosely Historical, could be from a later time period.

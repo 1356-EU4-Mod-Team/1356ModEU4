@@ -25,7 +25,7 @@ center_of_trade = 1
 
 #BT Out
 
-1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = FZA }
+1440.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = FZA }
 
 
 1517.1.1 = {	owner = TUR

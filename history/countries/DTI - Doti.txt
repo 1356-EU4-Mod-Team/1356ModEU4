@@ -7,6 +7,18 @@ capital = 4492	#Doti
 
 # Malla Raikas of Doti
 
+1356.12.25 = {
+	monarch = {
+		name = "Devaladevi"
+		dynasty = "Malla"
+		ADM = 6
+		DIP = 5
+		MIL = 6
+		female = yes
+		leader = { name = "Devaladevi Malla"	type = general	fire = 5	shock = 6	manuever = 5	siege = 1 female = yes }
+	}
+}
+
 1443.1.1 = {
 	monarch = {
 		name = "Kalyan"

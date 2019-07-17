@@ -67,7 +67,7 @@ plutocratic_reform = {
 
 grand_duchy_reform = {
 	icon = "peasants"
-	allow_normal_conversion = yes
+	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			AND = {
@@ -81,11 +81,12 @@ grand_duchy_reform = {
 		}
 	}
 	legacy_equivalent = despotic_monarchy
-	fixed_rank = 1
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-		max_states = 2
+		max_states = 3
+		movement_speed = 0.1
+		discipline = 0.015
 	}
 }
 
@@ -602,6 +603,10 @@ feudal_theocracy = {
 				has_reform = feudal_theocracy
 			}
 			AND = {
+				religion = zoroastrian
+				has_reform = feudal_theocracy
+			}
+			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = feudal_theocracy
 			}
@@ -618,6 +623,7 @@ feudal_theocracy = {
 		global_missionary_strength = 0.01
 		tolerance_own = 2
 		max_states = 1
+		missionary_maintenance_cost = -0.25
 	}
 
 	custom_attributes = {
@@ -1041,6 +1047,184 @@ archduchy_reform = {
 		locked_government_type = yes
 	}
 }
+
+serbian_government_reform = {
+	icon = "serbian_government"
+	allow_normal_conversion = no 
+	potential = {
+		OR = {
+			has_reform = serbian_government_reform
+			have_had_reform = serbian_government_reform
+		}
+	}
+	legacy_equivalent = serbian_government_legacy
+	lock_level_when_selected = yes
+	#fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	modifiers = {
+		legitimacy = 1
+		vassal_income = 0.20
+		core_creation = -0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+delhi_sultanate_reform = {
+	icon = "noble_muslim"
+	allow_normal_conversion = no 
+	potential = {
+		has_reform = delhi_sultanate_reform
+	}
+	legacy_equivalent = delhi_sultanate_legacy
+	#fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	modifiers = {
+		tolerance_heathen = 3
+		monarch_admin_power = 2
+		unjustified_demands = -0.2
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+}
+
+bahamis_sultanate_reform = {
+	icon = "bahamis_government"
+	allow_normal_conversion = no 
+	potential = {
+		has_reform = bahamis_sultanate_reform
+	}
+	legacy_equivalent = bahamis_sultanate_legacy
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no 
+	modifiers = {
+		tolerance_heathen = 2
+		global_missionary_strength = 0.01
+		monthly_piety = -0.005
+		free_leader_pool = 1
+		leader_siege = 1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+}
+
+vij_government_reform = {
+	icon = "vijhindu_government"
+	allow_normal_conversion = no 
+	potential = {
+		has_reform = vij_government_reform
+	}
+	legacy_equivalent = vij_government_legacy
+	lock_level_when_selected = yes
+	#fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	modifiers = {
+		diplomats = 1
+		tolerance_own = 1
+		fabricate_claims_cost= -0.33
+		unjustified_demands = -0.2
+		vassal_income = 0.33
+		vassal_forcelimit_bonus = 0.50
+	}
+}
+
+bengali_sultanate_reform = {
+	icon = "bengal_government"
+	allow_normal_conversion = no 
+	potential = {
+		has_reform = bengali_sultanate_reform
+	}
+	legacy_equivalent = bengali_sultanate_legacy
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	modifiers = {
+		tolerance_heathen = 3
+		missionaries = 1
+		monarch_military_power = 2
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+delhian_empire_reform = {
+	icon = "peacock_throne"
+	allow_normal_conversion = no 
+	potential = {
+		OR = {
+			has_reform = delhian_empire_reform
+			have_had_reform = delhian_empire_reform
+		}
+	}
+	legacy_equivalent = delhian_empire_legacy
+	lock_level_when_selected = yes
+	fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	modifiers = {
+		monarch_diplomatic_power = 3
+		tolerance_heathen = 3.5
+		yearly_absolutism = 0.25
+		reserves_organisation = 0.25
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+gondi_kingdom_kingdom_reform = {
+	icon = "rajput_kingdom"
+	allow_normal_conversion = no 
+	potential = {
+		OR = {
+			has_reform = gondi_kingdom_kingdom_reform
+			have_had_reform = gondi_kingdom_kingdom_reform
+		}
+	}
+	legacy_equivalent = gondi_kingdom_kingdom
+	lock_level_when_selected = yes
+	#fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	modifiers = {
+		years_of_nationalism = -5
+		fort_maintenance_modifier = -0.20
+		defensiveness = 0.2
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
 
 french_vassal_feudal_monarchy_reform = {
 	icon = "castle"

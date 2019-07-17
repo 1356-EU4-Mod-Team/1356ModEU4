@@ -1,20 +1,20 @@
 # 558 - Bihar (1356)
 # Changes: DLH/unrest
 
-owner = DLH
-controller = DLH
+owner = HAJ
+controller = HAJ
+add_core = HAJ
 culture = bihari
 religion = hinduism
 capital = "Patna"
 trade_goods = paper #And Silk and Saltpetre
 hre = no
-base_tax = 5 
-base_production = 5
+base_tax = 3 
+base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = JNP
 estate = estate_dhimmi
-fort_15th = yes # Rohtasgarh
+#fort_15th = yes # Rohtasgarh
 
 discovered_by = indian
 discovered_by = muslim 
@@ -25,22 +25,12 @@ add_province_triggered_modifier = buddhist_bodh_gaya
 extra_cost = 16
 center_of_trade = 2
 
-1355.1.1   = { unrest = 10 }
-
-1356.12.25 = { 
-	add_permanent_province_modifier = {
-		name = medium_nestorian_community
-		duration = -1
-	}
-}
-
-1394.1.1   = { owner = JNP controller = JNP unrest = 0  }
+1394.1.1   = { owner = JNP controller = JNP remove_core = DLH unrest = 0  }
 
 1486.1.1 = {
 	owner = DLH
 	controller = DLH
 	add_core = DLH
-	remove_province_modifier = medium_nestorian_community
 	remove_core = JNP
 } # Bahlul Lodi places his eldest surviving son Barbak Shah Lodi on the throne of Jaunpur
 1517.11.21 = { controller = REB revolt = { type = nationalist_rebels } } #Revolt of Afghan Nobles

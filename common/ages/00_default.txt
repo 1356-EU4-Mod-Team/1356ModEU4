@@ -8,8 +8,13 @@ age_of_feudalism = {
 	religious_conflicts = yes
 	
 	objectives = {
-		obj_higher_prestige = { #Change to New Institution related thing
-			prestige = 80
+		obj_feudalism_institution = { #
+			has_institution = feudalism
+			has_institution = mercantilism_institution
+	 		all_state_province = {
+	 			mercantilism_institution = 100
+				feudalism = 100
+	 		}
 		}
 		obj_trade_league = { #Suggested by Mexdus on the workshop suggestion thread 
 			OR = {
@@ -17,8 +22,7 @@ age_of_feudalism = {
 				mercantilism = 20
 			}
 		}
-
-		obj_powerful_estate = { #For Non-Republics
+		obj_powerful_estate = { #
 			num_of_powerful_estates = 1
 			num_of_revolts = 0
 			#NOT = { average_unrest = 2 } Not sure if this can be balanced fairly
@@ -204,12 +208,10 @@ age_of_feudalism = {
 		}
 		
 		obj_many_vassals_f = { #Feudal Society
-			has_institution = feudalism
 			government_rank = 2
-			num_of_subjects = 3
+			num_of_subjects = 4
 		}		
 		
-		#Add a non monarchy variant of the above?
 		
 		obj_cav_army = { #Suggested by Mexdus on the workshop suggestion thread
 			cavalry_fraction = 0.6 #Too high?
@@ -220,41 +222,40 @@ age_of_feudalism = {
 
 	
 	abilities = {
-		ab_allow_feudal_de_jure_law_f = {
+		ab_allow_feudal_de_jure_law_f = { 
 			effect = {
 				custom_tooltip = feudal_de_jure_law
 				set_country_flag = feudal_de_jure_law
 			}
-			rule = {
-				can_transfer_vassal_wargoal = yes
+			modifier = {
+				autonomy_change_time = -0.1
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		ab_feudalism_vassals = { #May need more tweaking
+		ab_feudalism_vassals = { 
 			modifier = {
-				vassal_income = 0.25
-				liberty_desire_from_subject_development = -0.25
+				vassal_income = 0.2
+				vassal_forcelimit_bonus = 0.1
 			}
 			ai_will_do = {
 				factor = 10
 			}			
 		}
-		ab_gothic_architecture = { #Change to the unique cathedriel feature
-			modifier = {
-				build_cost = -0.25
-				build_time = -0.35
-				
+		ab_gothic_cathedrals = { 
+			effect = {
+				custom_tooltip = ab_gothic_cathedrals_tt
 			}
 			ai_will_do = {
-				factor = 9
+				factor = 1
 			}
 		}
 		ab_feudalism_court_life = { #Suggested by Mexdus on the workshop suggestion thread
-			modifier = {
-				diplomatic_upkeep = 2
-				improve_relation_modifier = 0.1
+			modifier = { #Was the AB that gave extra dip relations, removed due to being too powerful
+				advisor_cost = -0.1
+				advisor_pool = 1
+				prestige = 0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -262,26 +263,26 @@ age_of_feudalism = {
 		}	
 		ab_mercs_over_chevaliers = { #Suggested by Mexdus on the workshop suggestion thread
 			modifier = {
-				possible_mercenaries = 0.1
+				merc_maintenance_modifier = -0.15
 				mercenary_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		ab_chevauchee = { #Tweaked to focus more on just cav
+		ab_chevauchee = { #Historically this is a strategy to siege a fort down without harming it
 			modifier = {
-				cavalry_power = 0.15
-				leader_land_shock = 1
+				loot_amount = 0.25
+				siege_ability = 0.05
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		ab_feudalism_quality_trade_ships = { 
+		ab_feudalism_professional_armies = { #Perhaps needs a slight buff?
 			modifier = {
-				global_ship_trade_power = 0.15
-				light_ship_cost = -0.2
+				army_tradition_from_battle = 0.05
+				army_tradition_decay = -0.1
 			}
 			ai_will_do = {
 				factor = 10
@@ -294,63 +295,45 @@ age_of_feudalism = {
 					technology_group = nomad_group
 					tag = JLR
 					tag = CHB
-					tag = YUA
 				}
 			}
 			modifier = {
-				cavalry_flanking = 0.1
+				cavalry_cost = -0.15
 				cavalry_power = 0.1
-				horde_unity = 2
+				horde_unity = 1
+				legitimacy = 1
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}	
-		ab_england_longbowmen = { #Needs tweaks for balance
-		
+
+		ab_feudal_unique_ = { # #Replace with a Turkish, Persian, or Norwegian bonus?
 			allow = {
-				OR = {
-					tag = ENG
-					tag = YRK
-					tag = LNC
-					tag = NOL	
-				}
+
 			}
 			modifier = {
-				infantry_power = 0.15
-				prestige_from_land = 0.2
+
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_asia_large_conquests = { #Partially suggested by Mexdus on the workshop suggestion thread
-				allow = {
-				capital_scope = {
-					continent = asia
-				}
-				NOT = { is_emperor_of_china = yes }
-				OR = {
-					government_rank = 3
-					NOT = { great_power_rank = 8 }
-					AND = {
-						NOT = { has_country_flag = red_turban_rebellion_over_flag }
-						culture_group = east_asian
-					}
-				}
+
+		ab_feudal_unique_great_power = { #May need balancing
+			allow = { 
+				NOT = { great_power_rank = 8 } #Does this work without Rights of Man?
 			}
 			modifier = {
-				administrative_efficiency = 0.1
-				ae_impact = -0.1
-				unjustified_demands = -0.1
+				min_autonomy_in_territories = -0.15 #May need balancing
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
+
 		ab_feudalism_avignon_papacy = { #Suggested by Mexdus on the workshop suggestion thread
-		
-			allow = {
+			allow = { #Tweak to tie into Schism mechanics if possible?
 				OR = {
 					AND = {
 						tag = FRD
@@ -507,13 +490,10 @@ age_of_discovery = { #Partially edited by #1356
 		}
 		
 
-		ab_disc_claims = { #Removed chain claim in Age 1, removed Vassal Wargoal in Age 2. WAS TRANSFTER VASSAL WARGOAL.	
+		ab_transfer_vassal_wargoal = {
 			rule = {
-				#can_transfer_vassal_wargoal = yes
+				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
-			}
-			modifier = {
-				fabricate_claims_cost= -0.15
 			}
 			ai_will_do = {
 				factor = 10

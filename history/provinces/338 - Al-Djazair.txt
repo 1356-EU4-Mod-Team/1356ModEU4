@@ -1,8 +1,8 @@
 # 338 - Al-Djazair (1356)
 # Changes: TLC
 
-owner = KBA
-controller = KBA 
+owner = MIT
+controller = MIT 
 culture = algerian
 religion = sunni
 capital = "Al-Djazair"
@@ -12,8 +12,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = KBA
-add_core = ALG
+add_core = MIT
 
 discovered_by = western
 discovered_by = muslim
@@ -22,10 +21,18 @@ discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
 
+1356.12.25 = {	
+        owner = MIT
+	controller = MIT
+	add_core = MIT
+} 
 
 1424.1.1 = {	owner = TUN
 		controller = TUN
+		add_core = TUN
+		add_core = ALG
 		remove_core = TLC
+		remove_core = MIT
 	   }
 1510.1.1 = {	owner = ALG
 		controller = ALG

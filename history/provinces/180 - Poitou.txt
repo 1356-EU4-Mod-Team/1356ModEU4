@@ -15,6 +15,7 @@ trade_goods = livestock
 base_manpower = 4
 add_core = FRA
 add_core = POU
+add_claim = ENG
 fort_15th = yes
 estate = estate_burghers
 

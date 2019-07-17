@@ -23,7 +23,7 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 1356.12.24  = { owner = BYZ controller = BYZ add_claim = RUM } #BT In
-1356.12.26  = { owner = SRU controller = SRU add_claim = TUR remove_claim = RUM } #BT Out
+1356.12.26  = { owner = SRU controller = SRU remove_claim = RUM } #BT Out
 
 1390.1.1  = { owner = TUR controller = TUR add_core = TUR }
 1402.8.1  = { owner = SRU controller = SRU }

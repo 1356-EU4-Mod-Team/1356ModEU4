@@ -20,6 +20,7 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = chinese
 
+1356.1.1 = { add_claim = VIJ }
 1378.1.1 = {
 	owner = VIJ
 	controller = VIJ

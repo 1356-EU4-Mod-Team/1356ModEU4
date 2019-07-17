@@ -8,7 +8,7 @@ historical_friend = BOS
 historical_rival = TUR
 
 1355.12.20 = {
-	government_rank = 2
+	government_rank = 3
 	monarch = {
 		name = "Stefan Uroš V"
 		dynasty = "Nemanjic"

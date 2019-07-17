@@ -1,7 +1,7 @@
 #4430 - Daman
 
-owner = DLH
-controller = DLH
+owner = GUJ
+controller = GUJ
 culture = marathi
 religion = hinduism
 capital = "Daman"
@@ -20,7 +20,6 @@ discovered_by = ottoman
 discovered_by = chinese
 discovered_by = east_african
 
-1355.1.1 = { unrest = 15 }
 1391.1.1 = { owner = GUJ controller = GUJ unrest = 0 }
 
 1498.1.1 = { discovered_by = POR }

@@ -1,8 +1,10 @@
 #349 - Figuig
 
+#Note; get specific dates when cultures/tags changed in North Africa
+
 owner = TFL
 controller = TFL
-culture = berber
+culture = shilha
 religion = sunni
 capital = "Figuig"
 trade_goods = livestock
@@ -17,7 +19,7 @@ discovered_by = ottoman
 discovered_by = western
 
 1356.12.25 = { owner = TFL controller = TFL }
-1444.1.1 = { owner = TLC controller = TLC add_core = TLC }
+1440.1.1 = { owner = TLC controller = TLC add_core = TLC }
 
 1549.1.1 = {
 	owner = MOR

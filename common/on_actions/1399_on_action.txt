@@ -8,22 +8,33 @@ on_startup = {
 	}
 }
 
-# on_startup = {
-	# events = { 
-		# 1356startupevents.1
-	# }
-	# if = {
-		# OR = {
-			# technology_group = western
-			# technology_group = eastern
-			# technology_group = ottoman
-			# technology_group = muslim
-			# technology_group = indian
-			# technology_group = chinese
-		# }
-		# NOT = { has_country_modifier = pre_gunpowder_modifier }
-	# }
-# }
+on_startup = {
+	#events = { 
+	#	flagreatproject.4
+	#}
+	if = {
+		limit = { 
+			tag = BYZ
+			is_year = 1356
+			NOT = { is_year = 1452 }
+		}
+		country_event = { id = flagreatproject.4 }
+	}
+}
+
+on_startup = {
+	events = { 
+		1356startupevents.2
+	}
+	if = {
+		limit = {
+			government = pirate_republic_reform
+			region = maghreb_region
+			NOT = { has_dlc = "Golden Century" }
+		}
+		country_event = { id = 1356startupevents.2 }
+	}
+}
 
 on_new_monarch = {
 	events = { 

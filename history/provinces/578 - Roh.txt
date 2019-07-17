@@ -1,8 +1,8 @@
 # 578 - Roh (1356)
 # Changes: CHG/AFG/TIM
 
-owner = CHG
-controller = CHG
+owner = AFG
+controller = AFG
 culture = afghani
 religion = sunni
 capital = "Peshawar"
@@ -13,7 +13,7 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 fort_15th = yes # Bala Hissar
-add_core = CHG
+#add_core = CHG
 add_core = AFG
 
 discovered_by = KAS

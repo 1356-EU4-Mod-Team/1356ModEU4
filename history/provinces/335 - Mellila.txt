@@ -25,7 +25,7 @@ discovered_by = eastern
 	owner = FEZ
 	controller = FEZ
 }
-1444.1.1 = { owner = MOR controller = MOR add_core = MOR }
+1440.1.1 = { owner = MOR controller = MOR add_core = MOR }
 1472.1.1 = {
 	owner = FEZ
 	controller = FEZ

@@ -32,6 +32,7 @@ discovered_by = chinese
 	owner = NED
 	controller = NED
 	add_core = NED
+	add_core = NED 
 	add_to_trade_company = NED
 	add_trade_company_investment = {
 		investment = company_depot

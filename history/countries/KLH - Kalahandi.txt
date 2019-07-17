@@ -8,6 +8,17 @@ capital = 4446	# Kalahandi
 
 #The royal house of Kalahandi
 
+#Random Rulers
+1356.1.1 = {
+	monarch = {
+		name = "Raghunath"
+		dynasty = "Gangavanshi"
+		ADM = 4
+		DIP = 3
+		MIL = 1
+	}
+}
+
 1366.1.1 = {
 	monarch = {
 		name = "Haria Deo"

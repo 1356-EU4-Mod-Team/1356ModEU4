@@ -418,7 +418,7 @@ native = {
 }
 
 
-theocracy = {
+theocracy = { #1356
 	color = { 75 170 75 }
 	basic_reform = theocracy_mechanic
 
@@ -426,6 +426,7 @@ theocracy = {
 		papal_government
 		theocratic_government
 		monastic_order_government
+		patriarch_government_legacy #1356
 	}
 	reform_levels = {
 		theocratic_leadership = {
@@ -433,6 +434,7 @@ theocracy = {
 				leading_clergy_reform
 				monastic_order_reform
 				papacy_reform
+				patriarch_government_reform #1356
 			}
 		}
 		internal_vs_external_mission = {

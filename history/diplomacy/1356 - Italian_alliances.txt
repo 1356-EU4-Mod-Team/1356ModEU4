@@ -24,7 +24,7 @@ alliance = {
 alliance = {
 	first = CAS
 	second = POR
-	start_date = 1356.12.26
+	start_date = 1356.1.1
 	end_date = 1366.3.13
 }
 
@@ -91,7 +91,6 @@ royal_marriage = {
 #	start_date = 1386.5.19
 #	end_date = 1409.7.25
 #}
-
 alliance = {
 	first = ARA
 	second = SIC

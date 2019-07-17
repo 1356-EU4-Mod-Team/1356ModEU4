@@ -2,7 +2,6 @@ hundred_years_war = {
 	potential = {
 		OR = {
 			tag = FRA
-			tag = FRD
 			tag = ENG
 			tag = BUR
 			tag = BRI
@@ -14,12 +13,17 @@ hundred_years_war = {
 			tag = NOL
 			tag = LNC
 		}
-		NOT = {	is_year = 1454 }
+		NOT = {
+			is_year = 1454
+		}
 	}
 
 	trigger = {
 	
-		NOT = {	is_year = 1454 }	
+		NOT = {
+			is_year = 1454
+			is_at_war = no
+		}	
 		OR = {
 			AND = {
 				OR = {
@@ -27,36 +31,32 @@ hundred_years_war = {
 					any_ally = { tag = ENG }
 					vassal_of = ENG
 				}
-				war_with = FRD
+				war_with = FRA
 				NOT = { is_year = 1420 }
-				custom_trigger_tooltip = { 
-					tooltip = not_jean_darc_flag
-					NOT = { has_global_flag = "jean_darc" }
-				}
 			}
 			AND = {
 				OR = {
-					tag = FRD
-					any_ally = { tag = FRD }
-					vassal_of = FRD
+					tag = FRA
+					any_ally = { tag = FRA }
+					vassal_of = FRA
 				}
 				war_with = ENG
-				OR = {
-					is_year = 1428	
-					custom_trigger_tooltip = { 
-						tooltip = jean_darc_flag
-						has_global_flag = "jean_darc"
-					}
-				}
 			}
 		}
 	}
 
-	discipline = 0.05
-	land_morale = 0.1
+	#discipline = 0.1
+	#land_morale = 0.1
+	#war_exhaustion = -0.05
+	infantry_cost = -0.15
+	cavalry_cost = -0.15
+	reinforce_cost_modifier = -0.33
+	manpower_recovery_speed = 0.15
+	global_supply_limit_modifier = 0.33
+	prestige_from_land = 1.0
+	war_taxes_cost_modifier = 15.0 #Modifier is essentially wartaxes
 	war_exhaustion = -0.05
 }
-
 
 highland_charge = {
 	potential = {
@@ -131,40 +131,6 @@ shia_persia = {
 	missionaries = 1
 	global_unrest = -3
 	
-}
-
-baltic_crusader = {
-	potential = {
-
-		OR = {
-			tag = TEU
-			tag = LIV
-			tag = POL
-			tag = LIT
-			tag = MOS
-			tag = NOV
-			tag = SWE
-			tag = DAN
-			tag = BRA
-			tag = POM
-		}
-		NOT = {
-			is_year = 1420
-		}
-	}
-
-	trigger = {
-		OR = {
-			tag = TEU
-			tag = LIV
-		}
-		NOT = { is_year = 1420 }
-	}
-	
-	land_forcelimit = 10
-	land_morale = 0.1
-	land_maintenance_modifier = -0.25
-	army_tradition = 1
 }
 
 ##################################################
@@ -262,7 +228,7 @@ jerusalem_held = {
 ##################################################
 
 1356_late_feudalism_mechanics = { #Mechanics for Settled Nations
-	potential = {
+	potential = { #Move Western and Ethiopia into its own grouo, with Eastern Europeans on its own? But then India would need its own...
 		current_age = age_of_feudalism
 		OR = {
 			technology_group = western
@@ -281,8 +247,11 @@ jerusalem_held = {
 	unjustified_demands = 0.3 
 	province_warscore_cost = 0.2
 	diplomatic_annexation_cost = 0.15
-	reduced_liberty_desire = 10
-	vassal_income = 0.33
+	
+	#reduced_liberty_desire = 5
+
+	#vassal_income = 0.33 #Now an Age Bonus
+	
 	years_of_nationalism = 7.5
 	global_manpower_modifier = -0.25
 	reinforce_speed = -0.25
@@ -372,20 +341,20 @@ jerusalem_held = {
 	core_decay_on_your_own = 3
 	development_cost = 0.45
 	global_institution_spread = -0.6
-	embracement_cost = 0.3
-	build_time = 0.5
+	embracement_cost = 0.4
+	#stability_cost_modifier = 0.1 #Perhaps?
 	diplomatic_upkeep = 2
 	years_of_nationalism = 10
 	unjustified_demands = 0.25 
 	province_warscore_cost = 0.25 
 	diplomatic_annexation_cost = 0.2
-	loot_amount = 0.5
-	global_manpower_modifier = -0.2
-	reinforce_speed = -0.2
+	loot_amount = 0.6
+	#global_manpower_modifier = 0.1
+	reinforce_speed = -0.1
+	global_supply_limit_modifier = 0.1
+	land_attrition = -0.15
 	recover_army_morale_speed = 0.1
-	merc_maintenance_modifier = -0.1
-	mercenary_cost = -0.1
-	possible_mercenaries = 1
+	possible_mercenaries = -0.5
 }
 
 1356_late_feudalism_mechanics_natives = { #Mechanics for American Natives

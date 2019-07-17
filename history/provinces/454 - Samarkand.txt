@@ -53,3 +53,5 @@ center_of_trade = 2
 1677.1.1  = { discovered_by = FRA }
 1707.5.12 = { discovered_by = GBR }
 
+
+

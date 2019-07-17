@@ -1,8 +1,8 @@
 # 430 - Bushehr (1356)
 # Changes: PER/TIM
 
-owner = INT
-controller = INT
+owner = FRS
+controller = FRS
 culture = persian
 religion = shiite
 capital = "Bushehr"
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = INT
+add_core = FRS
 add_core = MSY
 
 discovered_by = east_african

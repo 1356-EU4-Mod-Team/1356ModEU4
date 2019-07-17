@@ -9,6 +9,18 @@ religious_school = hanafi_school
 
 # Sultans of Jaunpur
 
+##aHistorical Ruler
+1350.1.1 = {
+	monarch = {
+		name = "Bahadur"
+		dynasty = "Bundela"
+		ADM = 5
+		DIP = 5
+		MIL = 6
+	}
+}
+
+
 1394.1.1 = {
 	monarch = {
 		name = "Atabak-i-Azam"

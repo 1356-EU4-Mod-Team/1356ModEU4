@@ -1,20 +1,19 @@
 # 2746 - Vidin (1356)
 # Changes: VID/HUN/TUR
 
-owner = VID
-controller = VID
+owner = BUL
+controller = BUL
 culture = bulgarian
 religion = orthodox
 capital = "Vidin"
 trade_goods = grain
 hre = no
 base_tax = 3 
-
 base_production = 3
 base_manpower = 1
 is_city = yes
 add_core = VID
-#add_claim = BUL
+add_core = BUL
 
 discovered_by = western
 discovered_by = eastern
@@ -23,7 +22,7 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 1365.1.1  = { owner = HUN controller = HUN add_core = HUN }
-1369.1.1  = { owner = VID controller = VID }
+1369.1.1  = { owner = BUL controller = BUL }
 1396.1.1  = { owner = TUR controller = TUR add_core = TUR remove_core = HUN }
 1408.1.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
 1413.7.5  = { revolt = {} controller = TUR }

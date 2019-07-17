@@ -948,3 +948,54 @@ country_event = { #England being told the Duchy of Cornwall has been revoked
 }
 
 #Prince of Wales goes to the heir apparent. Never finished as the orignal story may be a legend. Possibly look further into in the future.
+
+country_event = { #English cultured nations getting longbows
+	id = flaeng.40
+	title = "flaeng.40.t"
+	desc = "flaeng.40.d"
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		NOT = { year = 1550 }
+		NOT = { has_country_modifier = english_longbowmen_event_modifier }
+		primary_culture = english
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #
+		name = flaeng.40.a
+		add_country_modifier = { 
+			name = english_longbowmen_event_modifier
+			duration = -1  
+		}
+	}
+}
+
+country_event = { #English cultured nations losing longbows
+	id = flaeng.41
+	title = "flaeng.41.t"
+	desc = "flaeng.41.d"
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_country_modifier = english_longbowmen_event_modifier
+		year = 1550
+		primary_culture = english
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #
+		name = flaeng.41.a
+		remove_country_modifier = english_longbowmen_event_modifier
+	}
+}
+
+
+#Perhaps an event to organize that thing where every citizen was to have a bow and knife for defense or something? Could be interesting flavor
+

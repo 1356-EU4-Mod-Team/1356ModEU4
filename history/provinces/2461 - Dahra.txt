@@ -1,0 +1,32 @@
+# - Dahra
+
+owner = DHA
+controller = DHA
+culture = algerian
+religion = sunni
+capital = "Mostaganem"
+trade_goods = grain
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = DHA
+fort_15th = yes
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+discovered_by = eastern
+
+1356.12.25 = {	
+        owner = DHA
+	controller = DHA
+	add_core = DHA
+} 
+
+1440.1.1 = { add_core = TLC owner = TLC controller = TLC remove_core = DHA add_core = ALG }
+
+1517.1.1 = {
+	owner = ALG
+	controller = ALG
+}

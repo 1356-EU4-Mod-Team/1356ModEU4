@@ -1,8 +1,8 @@
 # 426 - Mazandaran (1356)
 # Changes: TIM/religion
 
-owner = PAD
-controller = PAD
+owner = TAB
+controller = TAB
 culture = mazandarani
 religion = zoroastrian
 capital = "Amol"
@@ -14,7 +14,7 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 fort_15th = yes
-add_core = PAD
+add_core = TAB
 
 discovered_by = eastern
 discovered_by = muslim

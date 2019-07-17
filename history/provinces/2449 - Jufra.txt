@@ -2,7 +2,7 @@
 
 owner = FZA
 controller = FZA 
-culture = tunisian
+culture = chaoui
 religion = sunni
 capital = "Hun"
 trade_goods = livestock
@@ -13,7 +13,12 @@ base_manpower = 1
 is_city = yes
 add_core = FZA
 add_local_autonomy = 25
+
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+
+1440.1.1 = {
+	culture = tunisian
+}

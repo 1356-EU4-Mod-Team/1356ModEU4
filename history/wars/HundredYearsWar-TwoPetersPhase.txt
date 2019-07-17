@@ -7,17 +7,20 @@ war_goal = {
 	casus_belli = cb_insult
 }
 
-1356.12.26 = { # Claim in kingdom of Valencia, more access to mediterrean sea #Started before the merge in 1356.1.1
+1356.1.1 = { # Claim in kingdom of Valencia, more access to mediterrean sea
 	add_attacker = ENG
 	add_attacker = CAS
 	add_attacker = POR
 	add_attacker = GEN
-	add_attacker = GRA
 	add_attacker = GUY
 	add_attacker = AMG
 	add_attacker = MNF
+	add_attacker = WLS
+	add_attacker = LNC
+	add_attacker = NOL
 	add_attacker = NAV
-	add_defender = FRD
+	add_defender = FRA
+	add_defender = FOI
 	add_defender = CTR
 	add_defender = ARA	
 	add_defender = ALE
@@ -28,10 +31,9 @@ war_goal = {
 	add_defender = ORL
 	add_defender = BLS
 	add_defender = FOZ
-	add_defender = FOI #Should be attacker, but it caused issues with them being a vassal at war with their overlord 
 }
 
-1356.12.26 = {
+1356.9.19 = {
 	battle = {
 		name = "Poitiers"
 		location = 180 # Poitou
@@ -47,7 +49,7 @@ war_goal = {
 			infantry = 3000
 			cavalry = 8000
 			losses = 75	# percent
-			country = FRD
+			country = FRA
 		}
 		result = yes
 	}
@@ -59,13 +61,16 @@ war_goal = {
 	rem_attacker = CAS
 	rem_attacker = POR
 	rem_attacker = GEN
-	rem_attacker = GRA
 	rem_attacker = GUY
 	rem_attacker = AMG
 	rem_attacker = MNF
 	rem_attacker = NAV
-	rem_defender = FRD
+	rem_attacker = WLS
+	rem_attacker = LNC
+	rem_attacker = NOL
+	rem_defender = FRA
 	rem_defender = CTR
+	rem_defender = FOI
 	rem_defender = ARA
 	rem_defender = ALE
 	rem_defender = ANJ
@@ -75,5 +80,4 @@ war_goal = {
 	rem_defender = ORL
 	rem_defender = BLS
 	rem_defender = FOZ
-	rem_defender = FOI
 }

@@ -19,7 +19,6 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = chinese
 
-1355.1.1  = { unrest = 15 }
 1392.1.1  = { controller = JAN owner = JAN unrest = 0 remove_core = DLH }
 
 

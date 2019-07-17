@@ -2,7 +2,7 @@
 
 owner = MZB
 controller = MZB 
-culture = berber
+culture = chaoui
 religion = ibadi
 capital = "Laghwat"
 trade_goods = livestock

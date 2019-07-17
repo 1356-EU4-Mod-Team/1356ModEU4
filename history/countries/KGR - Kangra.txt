@@ -6,6 +6,16 @@ primary_culture = pahari
 religion = hinduism
 capital = 509	# Kangra
 
+1343.1.1 = {
+	monarch = {
+		name = "Narendra Chand"
+		dynasty = "Katoch"
+		DIP = 3
+		ADM = 3
+		MIL = 5
+	}
+}
+
 1390.1.1 = {
 	monarch = {
 		name = "Megh Chand"

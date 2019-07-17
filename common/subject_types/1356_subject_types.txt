@@ -36,9 +36,9 @@ french_ducal_vassal = {
 	copy_from = daimyo_vassal
 	count = vassal
 	# Graphics:
-	sprite = GFX_icon_feudal_vassal_orignal
-	diplomacy_overlord_sprite = GFX_icon_feudal_vassal_overlord # The one that the overlord sees
-	diplomacy_subject_sprite = GFX_icon_feudal_vassal_subject	# The one that the subject sees
+	sprite = GFX_icon_feudalvassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadfeudalvassal # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_amfeudalvassal	# The one that the subject sees
 	
 	#properties
 	pays_overlord = 0.0
@@ -105,6 +105,103 @@ french_ducal_vassal = {
 	enforce_religion = yes
 	conscript_general = yes
 	#contribute_to_capital = yes
+	#(special)
+	sword_hunt = no
+	sankin_kotai = no
+	expel_ronin = no
+	force_seppuku = no
+	force_isolation = no
+	
+		# Modifiers
+	modifier_overlord = clear #We don't want to duplicate the ones inherited from vassal
+	modifier_subject = clear #Ditto
+	
+	overlord_opinion_modifier = is_vassal
+	subject_opinion_modifier = is_vassal
+}
+
+tughlaq_prince_vassal = {
+	copy_from = daimyo_vassal
+	count = vassal
+	# Graphics:
+	sprite = GFX_icon_protectorate
+	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorates
+	diplomacy_subject_sprite = GFX_diplomacy_inprotectorate
+	
+	#properties
+	pays_overlord = 0.0
+	gives_daimyo_bonuses = no
+	gets_help_with_rebels = yes
+	#separatists_become_subjects = yes Removed for now until more research can be done into this effect.
+	allows_taking_land_without_independence = no
+	can_send_missionary_to_subject = yes	
+	counts_for_borders = yes	
+	can_use_claims = yes
+	joins_overlords_wars = no
+	share_rebel_popup = yes	
+	has_power_projection = yes
+	can_have_subjects_of_other_types = yes
+	can_be_integrated = no
+	can_be_annexed = yes
+	overlord_can_be_subject = yes
+	can_transfer_in_peace = no #I assume this would result in others being able to get this vassal type?
+	#overlord_enforce_peace_attacking = yes #May need changed later
+	overlord_protects_external = yes
+	can_release_in_peace = no #May need changed for balance
+	
+	max_government_rank = 2
+	#liberty_desire_same_dynasty = -10.0
+	#liberty_desire_negative_prestige = -1.0
+	base_liberty_desire = 30.0
+
+	
+	trust_on_start = 0
+		
+	relative_power_class = 1
+	diplomacy_view_class = 1
+	
+
+	can_fight = {
+		same_overlord = tughlaq_prince_vassal
+		independent_nations = no
+	}
+	can_rival = {
+		same_overlord = tughlaq_prince_vassal
+		independent_nations = no
+	}
+	can_ally = {
+		same_overlord = tughlaq_prince_vassal
+		independent_nations = no
+	}
+	can_marry = {
+		same_overlord = tughlaq_prince_vassal
+		independent_nations = no
+	}
+	
+		# Subject Interactions
+	#(disable)
+	scutage = no
+	place_relative_on_throne = no
+	enforce_culture = no
+	seize_territory = yes
+	enforce_religion = yes
+	knowledge_sharing = no
+	return_land = no
+	embargo_rivals = no
+	divert_trade= no
+	takeondebt = no
+	#(enable)
+	subsidize_armies = no
+	grant_core_claim = no
+	grant_province = no
+	bestow_gifts = yes
+	enforce_religion = yes
+	conscript_general = yes
+	demand_artifacts = yes
+	demand_additional_tribute = yes	
+	contribute_to_capital = yes
+	placate_rulers = no
+	support_loyalists = yes
 	#(special)
 	sword_hunt = no
 	sankin_kotai = no

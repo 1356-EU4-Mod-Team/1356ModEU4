@@ -7,6 +7,18 @@ capital = 2066	# Nagaur
 fixed_capital = 2066 # Cannot move capital away from this province & no power cost to move to it
 religious_school = hanafi_school
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Shams"
+		dynasty = "Dandani"
+		culture = afghani
+		ADM = 3
+		DIP = 5
+		MIL = 5
+	}
+}
+
 1399.1.1 = {
 	monarch = {
 		name = "Firuz Khan"

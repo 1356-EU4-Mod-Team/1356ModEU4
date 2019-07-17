@@ -15,7 +15,6 @@ base_manpower = 3
 is_city = yes
 estate = estate_nobles
 add_core = MEN
-#add_claim = BYZ
 
 discovered_by = western
 discovered_by = eastern

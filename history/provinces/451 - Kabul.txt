@@ -1,18 +1,18 @@
 # 451 - Kabulistan (1356)
 # Changes: AFG/TIM
 
-owner = KRT
-controller = KRT
+owner = AFG
+controller = AFG
 culture = afghani
 religion = sunni
 capital = "Kabul"
 trade_goods = gems # Emeralds
 hre = no
-base_tax = 6 
-base_production = 5
+base_tax = 4 
+base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = KRT
+add_core = AFG
 
 discovered_by = KAS
 discovered_by = muslim

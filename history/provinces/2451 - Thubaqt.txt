@@ -2,7 +2,7 @@
 
 owner = TRP
 controller = TRP
-culture = tunisian
+culture = tripolitanian_culture
 religion = sunni
 capital = "Thubaqt"
 trade_goods = cloth
@@ -22,11 +22,12 @@ discovered_by = eastern
 
 
 1356.12.25 = {
-	owner = TRP
-	controller = TRP
-	add_core = TRP
+	owner = FZA
+	controller = FZA
+	add_core = FZA
 }
-1444.1.1 = { owner = TUN controller = TUN add_core = TUN }
+
+1440.1.1 = { owner = TUN controller = TUN add_core = TUN remove_core = FZA culture = tunisian }
 1558.1.1 = {
 	owner = TRP
 	controller = TRP

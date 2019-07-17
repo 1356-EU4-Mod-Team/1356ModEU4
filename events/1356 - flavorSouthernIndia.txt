@@ -1,0 +1,167 @@
+namespace = southern_india
+
+#Sikander Event Chain. 
+
+
+#Madurai Intervention - Bahmanis
+country_event = {
+	id = southern_india.1
+	title = southern_india.1.t
+	desc = southern_india.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = BAH
+		MAD = {
+			exists = yes
+			war_with = VIJ
+		}
+	}
+	
+	option = { #Great!
+		name = southern_india.1.a
+		ai_chance = { factor = 35 }
+		add_war_exhaustion = 2
+		create_alliance = MAD
+		532 = {
+			add_claim = BAH
+		}
+		4428 = {
+			add_claim = BAH
+		}
+		4424 = {
+			add_claim = BAH
+		}
+		541 = {
+			add_claim = BAH
+		}
+		4427 = {
+			add_claim = BAH
+		}
+		531 = {
+			add_claim = BAH
+		}
+		2032 = {
+			add_claim = BAH
+		}
+		2035 = {
+			build_to_forcelimit = {
+				infantry = 0.5
+				cavalry = 0.3
+			}
+		}
+	}
+	option = { #Great!
+		name = southern_india.1.b
+		ai_chance = { factor = 30 }
+		add_prestige = 10
+		add_war_exhaustion = 1
+		532 = {
+			add_claim = BAH
+		}
+		4428 = {
+			add_claim = BAH
+		}
+		4424 = {
+			add_claim = BAH
+		}
+		541 = {
+			add_claim = BAH
+		}
+		4427 = {
+			add_claim = BAH
+		}
+		531 = {
+			add_claim = BAH
+		}
+		2032 = {
+			add_claim = BAH
+		}
+		2035 = {
+			build_to_forcelimit = {
+				infantry = 0.5
+				cavalry = 0.3
+			}
+		}
+		declare_war_with_cb = {
+			who = VIJ
+			casus_belli = cb_conquest
+			war_goal_province = 4428
+		}
+	}	
+	option = { #No Intervention
+		name = southern_india.1.c
+		ai_chance = { factor = 35 }
+	}
+}
+
+##Startup Event, Replaces History\War\VijayanagaraMadurai
+country_event = {
+	id = southern_india.101
+	title = southern_india.101.t
+	desc = southern_india.101.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	#is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		tag = VIJ
+		MAD = {
+			exists = yes
+		}
+	}
+	
+	option = { #Great!
+		name = southern_india.101.a
+		ai_chance = { factor = 95 }
+		541 = {
+			build_to_forcelimit = {
+				infantry = 0.6
+				cavalry = 0.4
+			}
+		}
+		declare_war_with_cb = {
+			who = MAD
+			casus_belli = cb_conquest
+			war_goal_province = 538
+		}
+		MAD = {
+			country_event = { id = southern_india.102 } #Used for the Dispositio Achillea Followup
+		}
+	}
+}
+country_event = {
+	id = southern_india.102
+	title = southern_india.102.t
+	desc = southern_india.102.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = MAD
+	}
+	
+	option = { #Great!
+		name = southern_india.102.a
+		ai_chance = { factor = 95 }
+		2101 = {
+			build_to_forcelimit = {
+				infantry = 0.6
+				cavalry = 0.4
+			}
+		}
+		BAH = {
+			country_event = { id = southern_india.1 days = 15 } #Used for the Dispositio Achillea Followup
+		}
+	}
+}

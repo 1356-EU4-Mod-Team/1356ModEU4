@@ -7,6 +7,17 @@ technology_group = indian
 capital = 519	# Jaipur
 fixed_capital = 519 # Cannot move capital away from this province & no power cost to move to it
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Man Singh"
+		dynasty = "Satnami"
+		ADM = 2
+		DIP = 2
+		MIL = 6
+	}
+}
+
 1388.1.1 = {
 	monarch = {
 		name = "Narasimha"

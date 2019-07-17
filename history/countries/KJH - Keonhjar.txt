@@ -8,6 +8,18 @@ capital = 4450	# Mayurbhanj
 
 # Bhanjas of Keonjhar and Mayurbhanj
 
+#Random Rulers
+1356.1.1 = {
+	monarch = {
+		name = "Narsingh"
+		dynasty = "Keshari"
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+}
+
+
 1444.1.1 = {
 	monarch = {
 		name = "Batuli"

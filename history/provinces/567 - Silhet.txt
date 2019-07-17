@@ -12,12 +12,22 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 estate = estate_dhimmi
-add_core = BNG
+#add_core = BNG
 discovered_by = indian
 discovered_by = chinese
 discovered_by = nomad_group
 
+1356.1.1 = {
+	owner = SNG
+	controller = SNG
+	add_core = SNG
+}
 
+1359.1.1 = {
+	owner = BNG
+	controller = BNG
+	add_core = BNG
+}
 1576.7.12 = {
 	owner = MUG
 	controller = MUG

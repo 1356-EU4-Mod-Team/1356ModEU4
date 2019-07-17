@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = republic
+add_government_reform = ahm_republic_reform
 government_rank = 2
 technology_group = indian
 religion = hinduism
@@ -10,11 +10,24 @@ capital = 2034	# Pune
 	monarch = {
 		name = "Kaapaaneedu I"
 		dynasty = "Nayak"
-		ADM = 5
-		DIP = 1
-		MIL = 5
+		birth_date = 1281.1.1
+		death_date = 1356.1.1
+		ADM = 3
+		DIP = 2
+		MIL = 3
 	}
 }
+
+1356.1.1 = {
+	monarch = {
+		name = "Annam"
+		dynasty = "Shahji"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
 
 1470.1.1 = {
 	monarch = {

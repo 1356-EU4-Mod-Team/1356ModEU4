@@ -305,6 +305,33 @@ sav_public_welfare = {
 	war_exhaustion = -0.05
 }
 
+#English
+
+english_longbowmen_event_modifier = {
+	fire_damage = 0.1
+	shock_damage_received = 0.05
+	prestige_from_land = 0.2
+}
+
+#Guache
+gun_events_unrest = {
+	local_unrest = 10
+}
+
+gun_events_catholic_spread = {
+	tolerance_own = -2
+	prestige = -0.5
+}
+
+gun_events_resisting_foreign_pressure = {
+	tolerance_own = 3
+	legitimacy = 1
+}
+
+gun_events_the_old_ways = {
+	global_unrest = -5
+}
+
 #Decisions
 
 mercantilism_embracement_faster_duccats = {

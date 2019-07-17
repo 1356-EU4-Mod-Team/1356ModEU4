@@ -1,8 +1,8 @@
 # 4327 - Jask (1356)
 # Changes: PER/religion
 
-owner = MUZ
-controller = MUZ
+owner = BAL
+controller = BAL
 culture = gulf_arabic
 religion = sunni
 capital = "Jask"
@@ -13,7 +13,6 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = BAL
-add_core = MUZ
 
 discovered_by = east_african
 discovered_by = muslim

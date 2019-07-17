@@ -328,6 +328,7 @@ province_event = { #Event to Boost Mercantilism in nations with paper provinces
 	trigger = {
 		NOT = { is_year = 1420 }
 		NOT = { owner = { has_institution = mercantilism_institution } }
+		NOT = { mercantilism_institution = 100 }
 		trade_goods = paper
 		development = 20
 	}
@@ -358,6 +359,7 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	
 	trigger = {
 		NOT = { owner = { has_institution = mercantilism_institution } }
+		NOT = { mercantilism_institution = 100 }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 3
 		development = 12
@@ -389,6 +391,7 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	
 	trigger = {
 		NOT = { owner = { has_institution = mercantilism_institution } }
+		NOT = { mercantilism_institution = 100 }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 2
 		development = 10
@@ -420,6 +423,7 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	
 	trigger = {
 		NOT = { owner = { has_institution = mercantilism_institution } }
+		NOT = { mercantilism_institution = 100 }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 1
 		development = 10
@@ -692,8 +696,8 @@ country_event = { #First to reach gunpowder
 	major = yes
 	
 	trigger = {
-		is_year = 1400
-		has_institution = gunpowder_institution
+		is_year = 1370
+		#has_institution = gunpowder_institution
 		mil_tech = 4 #Hand Cannon
 	}
 	mean_time_to_happen = {	
@@ -733,3 +737,5 @@ country_event = { #Gunpowder Spawn Event
 		add_mil_power = 100
 	}
 }
+
+

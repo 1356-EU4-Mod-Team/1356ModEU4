@@ -1,0 +1,11 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = kabyle
+add_accepted_culture = algerian
+religion = sunni
+technology_group = muslim
+capital = 2462	# Kabylia
+fixed_capital = 2462 # Cannot move capital away from this province & no power cost to move to it
+religious_school = maliki_school
+

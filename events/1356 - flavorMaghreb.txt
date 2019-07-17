@@ -1,0 +1,552 @@
+namespace = fla_maghreb
+
+#
+#Maghreb Events to culture convert provinces historically to their proper variants
+#
+
+#Slightly worried the below events might be intensive to the game. Run tests?
+
+province_event = { #Moroccan
+	id = fla_maghreb.1
+	title = fla_maghreb.1.t
+	desc = fla_maghreb.1.d
+	picture = EXPLORERS_eventPicture
+
+	trigger = { 
+		region = maghreb_region
+		NOT = { has_province_flag = maghreb_province_culture_converted_flag }
+		NOT = { owner = { has_global_flag = global_berber_tribal_government_unified_berbers_flag } }
+		year = 1400 
+		NOT = { year = 1600 }
+		OR = {
+			culture = shilha
+			culture = kabyle
+			culture = chaoui
+			culture = tripolitanian_culture
+		}
+		owner = { primary_culture = moroccan }
+		owner = { government_rank = 2 }
+		nationalism = 0
+	}
+	
+	mean_time_to_happen = { #4x Slower if at war
+		months = 120
+		modifier = {
+			factor = 4
+			owner = { is_at_war = yes }
+		}
+		modifier = { #Slightly Faster if low local autonomy
+			factor = 0.9
+			local_autonomy_above_min = 15
+		}
+		modifier = { #2x Slower if below 10 Dev
+			factor = 2
+			NOT = { development = 10 }
+		}
+		modifier = { #1.5x Slower if a territorial core
+			factor = 1.5
+			owner = { is_territorial_core = ROOT }
+		}
+		modifier = { #2x Slower if not owners religion
+			factor = 2
+			has_owner_religion = no
+		}
+		modifier = { #Faster if Tribal
+			factor = 0.9
+			owner = { government = tribal }
+		}
+		modifier = { #2x Slower if not tribal
+			factor = 2
+			NOT = { owner = { government = tribal } }
+			owner = { culture_group = berber_culture_group }
+		}
+		modifier = { #Faster if Maghreb culture
+			factor = 0.7
+			owner = { culture_group = maghrebi }
+		}
+		modifier = { #1.2x Slower if shilha is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = shilha }
+		}
+		modifier = { #1.2x Slower if kabyle is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = kabyle }
+		}
+		modifier = { #1.2x Slower if chaoui is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = chaoui }
+		}
+		modifier = { #1.2x Slower if tripolitanian is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = tripolitanian_culture }
+		}
+		modifier = { #Slightly Faster if wners religion
+			factor = 0.9
+			has_owner_religion = yes
+		}
+		modifier = { #Slightly Faster if a core province
+			factor = 0.85
+			owner = { is_state_core = ROOT }
+		}
+		modifier = { #Slightly Faster if ruler is Moroccan
+			factor = 0.95
+			owner = { ruler_culture = moroccan }
+		}
+	}
+	
+	option = {
+		name = fla_maghreb.1.a
+		ROOT = { set_province_flag = maghreb_province_culture_converted_flag }
+		change_culture = moroccan
+	}
+}
+
+province_event = { #Tunisian
+	id = fla_maghreb.2
+	title = fla_maghreb.2.t
+	desc = fla_maghreb.2.d
+	picture = EXPLORERS_eventPicture
+
+	trigger = { 
+		region = maghreb_region
+		NOT = { has_province_flag = maghreb_province_culture_converted_flag }
+		NOT = { owner = { has_global_flag = global_berber_tribal_government_unified_berbers_flag } }
+		year = 1400 
+		NOT = { year = 1600 }
+		OR = {
+			culture = shilha
+			culture = kabyle
+			culture = chaoui
+			culture = tripolitanian_culture
+		}
+		owner = { primary_culture = tunisian }
+		owner = { government_rank = 2 }
+		nationalism = 0
+	}
+		
+	mean_time_to_happen = { #4x Slower if at war
+		months = 120
+		modifier = {
+			factor = 4
+			owner = { is_at_war = yes }
+		}
+		modifier = { #Slightly Faster if low local autonomy
+			factor = 0.9
+			local_autonomy_above_min = 15
+		}
+		modifier = { #2x Slower if below 10 Dev
+			factor = 2
+			NOT = { development = 10 }
+		}
+		modifier = { #1.5x Slower if a territorial core
+			factor = 1.5
+			owner = { is_territorial_core = ROOT }
+		}
+		modifier = { #2x Slower if not owners religion
+			factor = 2
+			has_owner_religion = no
+		}
+		modifier = { #Faster if Tribal
+			factor = 0.9
+			owner = { government = tribal }
+		}
+		modifier = { #2x Slower if not tribal
+			factor = 2
+			NOT = { owner = { government = tribal } }
+			owner = { culture_group = berber_culture_group }
+		}
+		modifier = { #Faster if Maghreb culture
+			factor = 0.7
+			owner = { culture_group = maghrebi }
+		}
+		modifier = { #1.2x Slower if shilha is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = shilha }
+		}
+		modifier = { #1.2x Slower if kabyle is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = kabyle }
+		}
+		modifier = { #1.2x Slower if chaoui is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = chaoui }
+		}
+		modifier = { #1.2x Slower if tripolitanian is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = tripolitanian_culture }
+		}
+		modifier = { #Slightly Faster if wners religion
+			factor = 0.9
+			has_owner_religion = yes
+		}
+		modifier = { #Slightly Faster if a core province
+			factor = 0.85
+			owner = { is_state_core = ROOT }
+		}
+		modifier = { #Slightly Faster if ruler is tunisian
+			factor = 0.95
+			owner = { ruler_culture = tunisian }
+		}
+	}	
+	
+	option = {
+		name = fla_maghreb.2.a
+		ROOT = { set_province_flag = maghreb_province_culture_converted_flag }
+		change_culture = tunisian
+	}
+}
+
+province_event = { #Algerian
+	id = fla_maghreb.3
+	title = fla_maghreb.3.t
+	desc = fla_maghreb.3.d
+	picture = EXPLORERS_eventPicture
+
+	trigger = { 
+		region = maghreb_region
+		NOT = { has_province_flag = maghreb_province_culture_converted_flag }
+		NOT = { owner = { has_global_flag = global_berber_tribal_government_unified_berbers_flag } }
+		year = 1400 
+		NOT = { year = 1600 }
+		OR = {
+			culture = shilha
+			culture = kabyle
+			culture = chaoui
+			culture = tripolitanian_culture
+		}
+		owner = { primary_culture = algerian }
+		owner = { government_rank = 2 }
+		nationalism = 0
+	}
+	
+	mean_time_to_happen = { #4x Slower if at war
+		months = 120
+		modifier = {
+			factor = 4
+			owner = { is_at_war = yes }
+		}
+		modifier = { #Slightly Faster if low local autonomy
+			factor = 0.9
+			local_autonomy_above_min = 15
+		}
+		modifier = { #2x Slower if below 10 Dev
+			factor = 2
+			NOT = { development = 10 }
+		}
+		modifier = { #1.5x Slower if a territorial core
+			factor = 1.5
+			owner = { is_territorial_core = ROOT }
+		}
+		modifier = { #2x Slower if not owners religion
+			factor = 2
+			has_owner_religion = no
+		}
+		modifier = { #Faster if Tribal
+			factor = 0.9
+			owner = { government = tribal }
+		}
+		modifier = { #2x Slower if not tribal
+			factor = 2
+			NOT = { owner = { government = tribal } }
+			owner = { culture_group = berber_culture_group }
+		}
+		modifier = { #Faster if Maghreb culture
+			factor = 0.7
+			owner = { culture_group = maghrebi }
+		}
+		modifier = { #1.2x Slower if shilha is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = shilha }
+		}
+		modifier = { #1.2x Slower if kabyle is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = kabyle }
+		}
+		modifier = { #1.2x Slower if chaoui is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = chaoui }
+		}
+		modifier = { #1.2x Slower if tripolitanian is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = tripolitanian_culture }
+		}
+		modifier = { #Slightly Faster if wners religion
+			factor = 0.9
+			has_owner_religion = yes
+		}
+		modifier = { #Slightly Faster if a core province
+			factor = 0.85
+			owner = { is_state_core = ROOT }
+		}
+		modifier = { #Slightly Faster if ruler is algerian
+			factor = 0.95
+			owner = { ruler_culture = algerian }
+		}
+	}	
+	
+	option = {
+		name = fla_maghreb.3.a
+		ROOT = { set_province_flag = maghreb_province_culture_converted_flag }
+		change_culture = algerian
+	}
+}
+
+province_event = { #Unique Fezzan Culture?
+	id = fla_maghreb.4
+	title = fla_maghreb.4.t
+	desc = fla_maghreb.4.d
+	picture = EXPLORERS_eventPicture
+
+	trigger = { 
+		region = maghreb_region
+		NOT = { has_province_flag = maghreb_province_culture_converted_flag }
+		NOT = { owner = { has_global_flag = global_berber_tribal_government_unified_berbers_flag } }
+		year = 1400 
+		NOT = { year = 1600 }
+		OR = {
+			culture = shilha
+			culture = kabyle
+			culture = chaoui
+			culture = tripolitanian_culture
+		}
+		owner = { primary_culture = fezzan_culture }
+		owner = { tag = FZA }
+		owner = { NOT = { government = tribal } }
+		owner = { government_rank = 2 }
+		nationalism = 0
+	}
+	
+	mean_time_to_happen = { #4x Slower if at war
+		months = 120
+		modifier = {
+			factor = 4
+			owner = { is_at_war = yes }
+		}
+		modifier = { #Slightly Faster if low local autonomy
+			factor = 0.9
+			local_autonomy_above_min = 15
+		}
+		modifier = { #2x Slower if below 10 Dev
+			factor = 2
+			NOT = { development = 10 }
+		}
+		modifier = { #1.5x Slower if a territorial core
+			factor = 1.5
+			owner = { is_territorial_core = ROOT }
+		}
+		modifier = { #2x Slower if not owners religion
+			factor = 2
+			has_owner_religion = no
+		}
+		modifier = { #1.2x Slower if shilha is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = shilha }
+		}
+		modifier = { #1.2x Slower if kabyle is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = kabyle }
+		}
+		modifier = { #1.2x Slower if chaoui is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = chaoui }
+		}
+		modifier = { #1.2x Slower if tripolitanian is dominant culture
+			factor = 1.2
+			owner = { dominant_culture = tripolitanian_culture }
+		}
+		modifier = { #Slightly Faster if wners religion
+			factor = 0.9
+			has_owner_religion = yes
+		}
+		modifier = { #Slightly Faster if a core province
+			factor = 0.85
+			owner = { is_state_core = ROOT }
+		}
+		modifier = { #Slightly Faster if ruler is Fezzan
+			factor = 0.95
+			owner = { ruler_culture = fezzan_culture }
+		}
+	}
+	
+	option = {
+		name = fla_maghreb.4.a
+		ROOT = { set_province_flag = maghreb_province_culture_converted_flag }
+		change_culture = fezzan_culture
+	}
+}
+
+country_event = { #Berber into Fezzan
+	id = fla_maghreb.5
+	title = fla_maghreb.5.t
+	desc = fla_maghreb.5.d
+	picture = CULTURE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FZA
+		NOT = { has_global_flag = global_berber_tribal_government_unified_berbers_flag }
+		dominant_culture = fezzan_culture
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = fla_maghreb.5.a
+		change_primary_culture = fezzan
+		change_graphical_culture = africangfx
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = FZA_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+	}
+	option = {
+		name = fla_maghreb.5.b
+		trigger = { is_ai = no }
+		add_prestige = 5
+	}
+}
+
+country_event = { #Kabylia into Algerian
+	id = fla_maghreb.6
+	title = fla_maghreb.6.t
+	desc = fla_maghreb.6.d
+	picture = CULTURE_eventPicture
+	
+	
+	trigger = {
+		primary_culture = kabyle 
+		NOT = { has_global_flag = global_berber_tribal_government_unified_berbers_flag }
+		dominant_culture = algerian
+		NOT = { has_country_flag = algerian_culture_swap_event_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = { #Faster if Tribal
+			factor = 0.8
+			owner = { government = tribal }
+		}
+		modifier = { #Slower if not Tribal
+			factor = 1.5
+			NOT = { owner = { government = tribal } }
+		}
+	}
+	
+	option = {
+		name = fla_maghreb.6.a
+		change_primary_culture = algerian
+		change_graphical_culture = muslimgfx
+		set_country_flag = algerian_culture_swap_event_flag
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = gen_algerian_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+	}
+	option = {
+		name = fla_maghreb.6.b
+		trigger = { is_ai = no }
+		add_prestige = 5
+		set_country_flag = algerian_culture_swap_event_flag
+	}
+}
+
+country_event = { #Shilha into Moroccan
+	id = fla_maghreb.7
+	title = fla_maghreb.7.t
+	desc = fla_maghreb.7.d
+	picture = CULTURE_eventPicture
+	
+	
+	trigger = {
+		primary_culture = shilha 
+		NOT = { has_global_flag = global_berber_tribal_government_unified_berbers_flag }
+		dominant_culture = moroccan
+		NOT = { has_country_flag = moroccan_culture_swap_event_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = { #Faster if Tribal
+			factor = 0.8
+			owner = { government = tribal }
+		}
+		modifier = { #Slower if not Tribal
+			factor = 1.5
+			NOT = { owner = { government = tribal } }
+		}
+	}
+	
+	option = {
+		name = fla_maghreb.7.a
+		change_primary_culture = moroccan
+		change_graphical_culture = muslimgfx
+		set_country_flag = moroccan_culture_swap_event_flag
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = gen_moroccan_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+	}
+	option = {
+		name = fla_maghreb.7.b
+		trigger = { is_ai = no }
+		add_prestige = 5
+		set_country_flag = moroccan_culture_swap_event_flag
+	}
+}
+
+country_event = { #Tripolitanian into Tunisian
+	id = fla_maghreb.8
+	title = fla_maghreb.8.t
+	desc = fla_maghreb.8.d
+	picture = CULTURE_eventPicture
+	
+	
+	trigger = {
+		primary_culture = tripolitanian_culture 
+		NOT = { has_global_flag = global_berber_tribal_government_unified_berbers_flag }
+		dominant_culture = tunisian
+		NOT = { has_country_flag = tunisian_culture_swap_event_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = { #Faster if Tribal
+			factor = 0.8
+			owner = { government = tribal }
+		}
+		modifier = { #Slower if not Tribal
+			factor = 1.5
+			NOT = { owner = { government = tribal } }
+		}
+	}
+	
+	option = {
+		name = fla_maghreb.8.a
+		change_primary_culture = tunisian
+		change_graphical_culture = muslimgfx
+		set_country_flag = tunisian_culture_swap_event_flag
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = gen_tunisian_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+	}
+	option = { #No!
+		name = fla_maghreb.8.b
+		trigger = { is_ai = no }
+	}
+}

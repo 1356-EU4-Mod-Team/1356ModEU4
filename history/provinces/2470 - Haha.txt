@@ -2,7 +2,7 @@
 
 owner = MRK
 controller = MRK
-culture = berber
+culture = shilha
 religion = sunni
 capital = "Mogador"
 trade_goods = grain
@@ -20,9 +20,18 @@ discovered_by = ottoman
 discovered_by = western
 discovered_by = eastern
 
+1356.12.25 = {
+	owner = SOS
+	controller = SOS
+	add_core = SOS
+}
 
-1444.1.1 = {
+1440.1.1 = {
+	owner = MRK
+	controller = MRK
+	add_core = MRK
 	add_core = MOR
+	remove_core = SOS
 }
 1465.1.1 = { unrest = 5 } #Marinid Sultan killed by mob. Mohammed ibn Ali Amrani-Joutey (Idrisid) proclaims himself Sultan. Unrest in the entire country. 
 1472.1.1 = {

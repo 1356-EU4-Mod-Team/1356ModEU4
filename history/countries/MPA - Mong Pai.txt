@@ -5,6 +5,15 @@ religion = buddhism
 primary_culture = shan
 capital = 2401
 
+1356.1.1 = {
+	monarch = {
+		name = "Kyetaungnyo"
+		dynasty = "Mong Pai"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
 
 1444.1.1 = {
 	monarch = {

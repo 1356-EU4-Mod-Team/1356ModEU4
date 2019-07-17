@@ -1,8 +1,8 @@
 # 539 - Tondainadu (1356) 
-# Changes: YOR
+# Changes: VIJ/YOR
 
-owner = YOR
-controller = YOR
+owner = VIJ
+controller = VIJ
 culture = telegu
 religion = hinduism
 capital = "Pulicat"
@@ -12,7 +12,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = YOR
+add_core = VIJ
 
 discovered_by = indian
 discovered_by = nomad_group

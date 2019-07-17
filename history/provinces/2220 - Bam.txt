@@ -1,8 +1,8 @@
 # 2220 - Bam (1356)
 # Changes: PER/religion
 
-owner = MUZ
-controller = MUZ
+owner = BAL
+controller = BAL
 culture = baluchi
 religion = sunni
 capital = "Bam"
@@ -13,8 +13,6 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = BAL
-add_core = SIS
-add_core = MUZ
 fort_15th = yes # Bam Citadel
 
 discovered_by = muslim

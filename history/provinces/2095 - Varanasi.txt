@@ -1,8 +1,9 @@
 # 2095 - Varanasi (1356)
 # Changes: DLH/unrest
 
-owner = DLH
-controller = DLH
+owner = JNP
+controller = JNP
+add_core = JNP
 culture = bihari
 religion = "hinduism"
 capital = "Varanasi"
@@ -13,7 +14,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = JNP
 add_brahmins_or_church_effect = yes
 
 discovered_by = indian
@@ -26,9 +26,7 @@ extra_cost = 5
 add_province_triggered_modifier = religious_center
 add_province_triggered_modifier = hindu_varanasi
 
-
-1355.1.1  = { unrest = 10 }
-1394.1.1  = { owner = JNP controller = JNP unrest = 0 }
+1394.1.1  = { owner = JNP controller = JNP remove_core = DLH unrest = 0 }
 
 1486.1.1 = {
 	owner = DLH

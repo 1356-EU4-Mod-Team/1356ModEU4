@@ -32,21 +32,21 @@ dependency = {
 }
 
 # Jalayrid Tributaries
-dependency = {
-	subject_type = "tributary_state"
-	first = JLR
-	second = HSN
-	start_date = 1355.1.1
-	end_date = 1394.1.1
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = JLR
+#	second = HSN
+#	start_date = 1355.1.1
+#	end_date = 1394.1.1
+#}
 
 # Georgia and Imeretia
-union = {
-	first = GEO
-	second = IME
-	start_date = 1330.1.1
-	end_date = 1387.1.1
-}
+#union = {
+#	first = GEO
+#	second = IME
+#	start_date = 1330.1.1
+#	end_date = 1387.1.1
+#}
 
 union = {
 	first = GEO
@@ -64,9 +64,23 @@ vassal = {
 
 vassal = {
 	first = CHB
-	second = PAD
-	start_date = 1355.1.1 
-	end_date = 1396.1.1 
+	second = ARM
+	start_date = 1356.1.1 
+	end_date = 1360.1.1 
+}
+
+vassal = {
+	first = MUZ
+	second = KRM
+	start_date = 1356.1.1 
+	end_date = 1360.1.1 
+}
+
+vassal = {
+	first = TUR
+	second = SRU
+	start_date = 1356.1.1 
+	end_date = 1390.1.1 
 }
 
 guarantee = {
@@ -92,16 +106,7 @@ vassal = {
 	end_date = 1358.1.1
 }
 
-# Qara Qoyunlu under Jalayrids
-vassal = {
-	first = JLR
-	second = QAR
-	start_date = 1366.1.1
-	end_date = 1387.1.1
-}
-
-
-# GLHden Horde and White Horde
+# Golden Horde and White Horde
 alliance = {
 	first = GLH
 	second = WHI
@@ -166,9 +171,9 @@ vassal = {
 }
 
 # Transoxania and Chagatai
-alliance = {
-	first = TRS
-	second = CHG
+vassal = {
+	first = CHG
+	second = TRS
 	start_date = 1356.1.1
 	end_date = 1358.1.1
 }
@@ -310,7 +315,7 @@ vassal = {
 guarantee = {
 	first = MAM
 	second = HED
-	start_date = 1356.12.26 # 1356.1.1
+	start_date = 1356.1.1
 	end_date = 1444.1.1
 }
 
@@ -326,37 +331,4 @@ vassal = {
 	second = ALH
 	start_date = 1432.1.1
 	end_date = 1444.1.1
-}
-#Mamluk vassals
-
-# Syrian Vassal
-vassal = {
-	first = MAM
-	second = SYR
-	start_date = 1356.12.26
-	end_date = 1444.11.11
-}
-
-# Alexandria Vassal
-vassal = {
-	first = MAM
-	second = ALX
-	start_date = 1356.12.26
-	end_date = 1444.11.11
-}
-
-# Fez Vassal
-vassal = {
-	first = MAM
-	second = FAD
-	start_date = 1356.12.26
-	end_date = 1444.11.10
-}
-
-# Fez Vassal
-vassal = {
-	first = MAM
-	second = ANZ
-	start_date = 1356.12.26
-	end_date = 1444.11.10
 }

@@ -4,7 +4,7 @@
 owner = MUZ
 controller = MUZ
 culture = persian
-religion = sunni
+religion = shiite
 capital = "Savah"
 trade_goods = grain
 hre = no

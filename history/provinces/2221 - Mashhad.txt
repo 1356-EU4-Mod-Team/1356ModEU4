@@ -1,8 +1,8 @@
 # 2221 - Mashhad (1356)
 # Changes: KHO
 
-owner = SAB
-controller = SAB
+owner = KHO
+controller = KHO
 culture = khorasani
 religion = shiite
 capital = "Mashhad"
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = SAB
+add_core = KHO
 
 discovered_by = muslim
 discovered_by = ottoman

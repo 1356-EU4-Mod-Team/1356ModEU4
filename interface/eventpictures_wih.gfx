@@ -1,0 +1,26 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "wihgfx_FEMALE_GENERAL_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_WiH/FEMALE_GENERAL_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "wihgfx_FEMALE_RULER_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_WiH/FEMALE_RULER_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "wihgfx_FEMALE_SCHOLAR_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_WiH/FEMALE_SCHOLAR_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "wihgfx_FEMALES_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_WiH/FEMALES_eventPicture.dds"
+		allwaystransparent = yes
+	}
+}

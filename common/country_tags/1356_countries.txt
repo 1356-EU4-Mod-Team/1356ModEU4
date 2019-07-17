@@ -92,6 +92,17 @@ EDE = "countries/Edessa.txt"
 MRO = "countries/Maronite.txt"
 	
 #Maghreb
+DJE = "countries/Djerba.txt"
+SFX = "countries/Sfax.txt"
+MIT = "countries/Mitidja.txt"
+DHA = "countries/Dahra.txt"
+KEB = "countries/Kebir.txt"
+CBT = "countries/Cebta.txt"
+SAF = "countries/Safi.txt"
+ZUW = "countries/Zuwarah.txt"
+OUA = "countries/Ouarsenis.txt"
+GUN = "countries/Guanche.txt"
+
 
 
 #Central Asia
@@ -149,6 +160,10 @@ SCJ = "countries/SouthCourt.txt"
 MND = "countries/Mandla.txt"
 DEO = "countries/Deogarh.txt"
 SIR = "countries/Sirpur.txt"
+HAJ = "countries/Hajipur.txt"
+SNG = "countries/Sonargaon.txt"
+TUG = "countries/Tughluq.txt"
+GON = "countries/GondwanaKingdom.txt"
 
 #China & Korea
 GYO = "countries/Goryeo.txt"

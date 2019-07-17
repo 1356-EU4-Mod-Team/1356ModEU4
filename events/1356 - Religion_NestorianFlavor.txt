@@ -9,6 +9,7 @@ province_event = { #Wouldnt this event just convert them while leaving the commu
 
 	trigger = {
 		has_province_modifier = large_nestorian_community
+		NOT = { religion = nestorian }
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 		}
@@ -46,6 +47,7 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = small_nestorian_community
+		NOT = { religion = nestorian }
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 		}
@@ -83,6 +85,7 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = medium_nestorian_community
+		NOT = { religion = nestorian }
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 		}
@@ -121,6 +124,7 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = large_nestorian_community
+		NOT = { religion = nestorian }
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 		}
@@ -152,6 +156,7 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = medium_nestorian_community
+		NOT = { religion = nestorian }
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 		}
@@ -183,6 +188,7 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = small_nestorian_community
+		NOT = { religion = nestorian }
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 		}
@@ -526,7 +532,7 @@ province_event = {
 	# }
 # }
 
-province_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
+province_event = { #Get rid of Nestorians if taken expell decision or if you're nestorian
 	id = fla_nestorian.15
 	title = "fla_nestorian.15.t"
 	desc = "fla_nestorian.15.d"
@@ -541,8 +547,13 @@ province_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
 			has_province_modifier = small_nestorian_community
 		}
 		owner = {
-			has_country_modifier = expelled_nestorian 
-			had_recent_war = 10
+			OR = {
+				AND = {
+					has_country_modifier = expelled_nestorian 
+					had_recent_war = 10
+				}
+				religion = nestorian
+			}
 		}
 	}
 	
@@ -551,7 +562,7 @@ province_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
 	}
 	
 	option = {
-		name = "fla_nestorian.15.a"		# Large nestorian Community Converts Province
+		name = "fla_nestorian.15.a"
 		remove_province_modifier = small_nestorian_community
 		remove_province_modifier = medium_nestorian_community
 		remove_province_modifier = large_nestorian_community

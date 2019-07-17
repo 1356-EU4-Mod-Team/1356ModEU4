@@ -6,6 +6,17 @@ religion = hinduism
 primary_culture = vindhyan
 capital = 4466
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Jaswant Singh"
+		dynasty = "Karkare"
+		ADM = 6
+		DIP = 3
+		MIL = 4
+	}
+}
+
 #Bundela Rajas of Orchha & Mahoba
 1437.1.1 = {
 	monarch = {

@@ -12,7 +12,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-estate = estate_dhimmi
 add_core = EPI
 add_core = SER
 add_core = TES
@@ -35,7 +34,7 @@ discovered_by = QAS
 1359.7.1   = { owner = TES controller = TES }
 1366.7.1   = { owner = EPI controller = EPI }
 1371.12.3  = { remove_core = SER }
-1430.10.9  = { owner = TUR add_core = TUR controller = TUR capital = "Janina" }
+1430.10.9  = { owner = TUR add_core = TUR controller = TUR capital = "Janina" estate = estate_dhimmi }
 1502.1.1   = { remove_core = EPI }
 1528.5.29  = { remove_core = BYZ }
 1555.1.1   = { unrest = 5 } # General discontent against the Janissaries' dominance

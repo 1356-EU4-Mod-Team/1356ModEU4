@@ -1,8 +1,8 @@
 #353 - Tataouine
 
-owner = TRP
-controller = TRP 
-culture = tunisian
+owner = ZUW
+controller = ZUW 
+culture = tripolitanian_culture
 religion = sunni
 capital = "Tataouine"
 trade_goods = grain
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = TRP
+add_core = ZUW
 
 
 
@@ -21,10 +21,19 @@ discovered_by = ottoman
 discovered_by = eastern
 
 1356.12.25 = {
+	owner = ZUW
+	controller = ZUW
+	add_core = ZUW
+}
+
+1400.1.1 = { 
 	owner = TRP
 	controller = TRP
+	add_core = TRP
+	remove_core = ZUW
 }
-1444.1.1 = { owner = TUN controller = TUN add_core = TUN }
+
+1440.1.1 = { owner = TUN controller = TUN add_core = TUN }
 1489.1.1 = { unrest = 4 } # Abu Zikriya Yahya overthrown by Abul Mumin
 1490.1.1 = { unrest = 0 } # Abu Yahya recaptures the power
 1546.1.1 = {

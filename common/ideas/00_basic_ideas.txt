@@ -7,6 +7,80 @@
 # ROOT = country picking the idea
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
 
+default_policy_1_ideas = { #Hidden idea to allow our unique policies to function and not crash
+	category = ADM
+
+	trigger = {
+		always = no
+	}
+	
+	bonus = {
+	}
+	
+	hiddenpolicy1 = {
+		inflation_action_cost = -0.15
+	}
+	hiddenpolicy2 = {
+		merc_maintenance_modifier = -0.10
+	}
+	hiddenpolicy3 = {
+		state_maintenance_modifier = -0.20
+	}
+	hiddenpolicy4 = {
+		land_maintenance_modifier = -0.05
+	}
+	hiddenpolicy5 = {
+		fort_maintenance_modifier = -0.10
+	}
+	hiddenpolicy6 = {
+		naval_maintenance_modifier = -0.05
+	}
+	hiddenpolicy7 = {
+		inflation_reduction = 0.02
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+default_policy_2_ideas = { #Hidden idea to allow our unique policies to function and not crash
+	category = ADM
+
+	trigger = {
+		always = no
+	}
+	
+	bonus = {
+	}
+	
+	policy1 = {
+		inflation_action_cost = -0.15
+	}
+	policy2 = {
+		inflation_action_cost = -0.15
+	}
+	policy3 = {
+		inflation_action_cost = -0.15
+	}
+	policy4 = {
+		inflation_action_cost = -0.15
+	}
+	policy5 = {
+		inflation_action_cost = -0.15
+	}
+	policy6 = {
+		inflation_action_cost = -0.15
+	}
+	policy7 = {
+		inflation_action_cost = -0.15
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 aristocracy_ideas = {
 	category = MIL
 
@@ -59,12 +133,12 @@ aristocracy_ideas = {
 	}
 }
 
-theocratic_ideas = { 
+theocratic_ideas = { #1356
 	category = MIL
 
 	bonus = {
 		infantry_power = 0.1
-		may_convert_territories = yes
+		local_missionary_maintenance_cost = -0.25
 	}
 
 	trigger = { 

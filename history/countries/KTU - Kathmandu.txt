@@ -5,6 +5,16 @@ primary_culture = nepali
 religion = hinduism
 capital = 557	# Kathmandu
 
+1336.6.1 = {
+	monarch = {
+		name = "Mahendra"
+		dynasty = "Malla"
+		ADM = 0
+		DIP = 1
+		MIL = 2
+	}
+}
+
 1395.6.1 = {
 	monarch = {
 		name = "Jayajyoti"

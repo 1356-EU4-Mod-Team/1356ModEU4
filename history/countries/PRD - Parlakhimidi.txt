@@ -6,6 +6,17 @@ religion = hinduism
 primary_culture = garjati
 capital = 4448	# Parlakhimidi
 
+#Random Rulers
+1356.1.1 = {
+	monarch = {
+		name = "Narayan"
+		dynasty = "Sankara"
+		ADM = 5
+		DIP = 4
+		MIL = 3
+	}
+}
+
 # Founder 
 1444.1.1 = { # Younger son of Kapilendra of Orissa
 	monarch = {

@@ -56,8 +56,18 @@ country_event = { #Castile Wins Civil War
 	
 	trigger = {
 		tag = CAS
-                219 = { controlled_by = CAS }
-                NOT = { has_global_flag = "trastamara_wins_civil_war" }
+		OR = {
+			219 = { controlled_by = CAS }
+			219 = { controlled_by = ENG }
+			219 = { controlled_by = GRA }
+			219 = { controlled_by = POR }
+			219 = { controlled_by = GUY }
+			219 = { controlled_by = FOI }
+			219 = { controlled_by = AMG }
+			219 = { controlled_by = MNF }
+			219 = { controlled_by = NAV }			
+		}			
+        NOT = { has_global_flag = "trastamara_wins_civil_war" }
 	}
 
 	mean_time_to_happen = {
@@ -77,11 +87,22 @@ country_event = { #House Trastamara wins Civil War
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
-        major = yes
+    major = yes
 	
 	trigger = {
 		tag = CTR
-                208 = { controlled_by = CTR }
+		OR = {
+			208 = { controlled_by = CTR }
+			208 = { controlled_by = ARA }
+			208 = { controlled_by = FRA }
+			208 = { controlled_by = AUV }
+			208 = { controlled_by = FOZ }
+			208 = { controlled_by = DAU }
+			208 = { controlled_by = BOU }
+			208 = { controlled_by = BLS }
+			208 = { controlled_by = ANJ }
+			208 = { controlled_by = ALE }			
+		}		
 	}
 
 	mean_time_to_happen = {
@@ -90,22 +111,15 @@ country_event = { #House Trastamara wins Civil War
 
 	option = {
 		name = WarTwoPetersFlavor.4.a
-                white_peace = CAS
-                add_prestige = 25
-                inherit = CAS
+        white_peace = CAS
+        add_prestige = 25
+        inherit = CAS
 		set_global_flag = "trastamara_wins_civil_war"
-                change_tag = CAS
+        change_tag = CAS
 		swap_non_generic_missions = yes
-                set_government_rank = 2
-                add_truce_with = POR
-                add_truce_with = GRA 
-                define_heir = {
-                  name = "Henry"
-                  dynasty = "Trastamara"
-                  adm = 4
-                  dip = 3
-                  mil = 4
-                } 
+        set_government_rank = 2
+        add_truce_with = POR
+        add_truce_with = GRA 
 	}
 }
 country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Rival, Portugal as a Historical Friend
@@ -128,9 +142,15 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
 
 	option = {
 		name = WarTwoPetersFlavor.5.a
-                inherit = CTR
-                add_prestige = 25
-                add_truce_with = ARA 
+        inherit = CTR
+        add_prestige = 25
+        add_truce_with = ARA 
+		change_mil = 1
+		change_adm = 2
+		change_dip = 2
+		change_heir_adm = 3
+		change_heir_mil = 3
+		change_heir_dip = 3
 		}	
 }
 country_event = { #Castile

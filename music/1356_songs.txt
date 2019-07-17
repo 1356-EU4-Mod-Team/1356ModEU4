@@ -1,0 +1,89 @@
+
+song = {
+	name = "The Celestial Throne"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = no
+		}		
+	}
+}
+
+
+song = {
+	name = "Mare Antlaticum"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}			
+	}
+}
+
+song = {
+	name = "Night Over Our Empire"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "Discover New Lands"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			num_of_colonists = 1
+		}		
+	}
+}
+
+song = {
+	name = "Para Bellum"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}		
+	}
+}
+
+song = {
+	name = "Travel South"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}			
+	}
+}
+
+song = {
+	name = "East vs West"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}		
+	}
+}
+
+
+song = {
+	name = "A Cruce Victoria"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = yes
+		}		
+	}
+}

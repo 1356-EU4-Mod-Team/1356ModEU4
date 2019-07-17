@@ -1,29 +1,57 @@
 government = monarchy
-add_government_reform = indian_sultanate_reform
+add_government_reform = delhi_sultanate_reform
 primary_culture = kanauji
 religion = sunni
 technology_group = indian
 capital = 522	# Delhi
 fixed_capital = 522 # Cannot move capital away from this province & no power cost to move to it
-#add_accepted_culture = panjabi
 religious_school = hanafi_school
+add_accepted_culture = panjabi
+add_accepted_culture = rajput
+historical_rival = AFG
 
 1351.1.1 = {
 	monarch = {
 		name = "Feroze Shah"
 		dynasty = "Tughluq"
 		birth_date = 1309.1.1
-		ADM = 1
+		ADM = 2
 		DIP = 2
 		MIL = 3
 	}
-}
-
-1356.1.1 = {
-	add_country_modifier = { 
-		name = delhi_sultanate_collapse_modifier
-		duration = 14600
+	define_ruler_to_general = {
+		fire = 2
+		shock = 2
+		manuever = 3
+		siege = 1
+	}	
+	add_country_modifier = {
+		name = "decentrialized_delhi_empire"
+		duration = -1
 	}
+	add_country_modifier = {
+		name = "delhi_army_needs_reforms"
+		duration = -1
+	}
+	add_country_modifier = {
+		name = "delhi_diplomancy_rework"
+		duration = -1
+	}
+	add_country_modifier = {
+		name = "delhi_economic_rework"
+		duration = -1
+	}
+	add_country_modifier = {
+		name = "delhi_government_rework"
+		duration = -1
+	}
+	add_ruler_modifier = {
+		name = feroze_shah_empire
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = architectural_visionary_personality	
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = scholar_personality		
 }
 
 1388.9.20 = {
@@ -85,8 +113,6 @@ religious_school = hanafi_school
 		MIL = 0
 	}
 }
-
-1401.1.1 = { remove_country_modifier = delhi_sultanate_collapse_modifier }
 
 1414.5.28 = {
 	monarch = {

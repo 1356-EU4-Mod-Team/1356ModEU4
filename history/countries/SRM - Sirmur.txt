@@ -8,6 +8,17 @@ capital = 4493	#Sirmur
 # Dynasty founded by Subans Prakash in 1095
 
 #Prakash Rajas of shifting Capitals
+
+1354.1.1 = {
+	monarch = {
+		name = "Kirat"
+		dynasty = "Plassia"
+		ADM = 2
+		DIP = 3
+		MIL = 1
+	}
+}
+
 1440.1.1 = {
 	monarch = {
 		name = "Bir"

@@ -9,6 +9,17 @@ capital = 4452	# Ratanpur
 #Haihayas of Ratanpur, heirs to the Haihayas/Kalachuris of Tripuri
 #Dynasty started in 875
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Taktasingh"
+		dynasty = "Haihaya"
+		ADM = 1
+		DIP = 5
+		MIL = 5
+	}
+}
+
 1426.1.1 = { 
 	monarch = {
 		name = "Kamaldeva"

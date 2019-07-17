@@ -5,6 +5,18 @@ religion = hinduism
 technology_group = indian
 capital = 1947	# Gingee
 
+#Random Ruler
+1352.1.1 = {
+	monarch = {
+		name = "Krishnappa"
+		dynasty = "Tubaki"
+		adm = 5
+		dip = 1
+		mil = 4
+	}
+}
+
+
 1540.1.1 = {
 	monarch = {
 		name = "Muthialu"

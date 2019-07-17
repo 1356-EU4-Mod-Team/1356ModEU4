@@ -1,7 +1,7 @@
-government = monarchy
-add_government_reform = feudal_theocracy
+government = tribal
+add_government_reform = tribal_kingdom
 government_rank = 1
-primary_culture = berber
+primary_culture = chaoui
 religion = ibadi
 technology_group = muslim
 capital = 2457	# Mzab
@@ -33,6 +33,8 @@ religious_school = maliki_school
 		dip = 1
 		mil = 2
 	}
+	government = monarchy
+	add_government_reform = feudal_theocracy
 }
 
 1500.1.1 = {

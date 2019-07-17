@@ -1,0 +1,48 @@
+country_decisions = {
+	zoroastrian_divine_marriage = {
+		major = yes
+		potential = {
+			NOT = { has_ruler_modifier = zoroastrian_divine_marriage  }
+			religion = zoroastrian
+			has_consort = no
+		}
+		allow = {
+			religion = zoroastrian
+			has_consort = no
+			government = monarchy
+		}
+		effect = {
+			country_event = { id = zoroastrianflavuor.17 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	zoroastrian_atash_behram = {
+		potential = {
+			religion = zoroastrian
+			NOT = { has_country_flag = built_atash_behram  }
+		}
+		allow = {
+			capital_scope = { 
+				development = 30
+				#religion = zoroastrian
+			}	
+			religion = zoroastrian	
+			total_development = 500
+			treasury = 500
+			stability = 1	
+			is_at_war = no			
+		}
+		effect = {
+			country_event = { id = zoroastrianflavuor.16 }
+			set_country_flag = built_atash_behram
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

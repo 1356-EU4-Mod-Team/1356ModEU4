@@ -8,6 +8,17 @@ capital = 4454	# Porbandar
 
 #Jethwas of Porbandar
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Mahipala"
+		dynasty = "Jethwa"
+		ADM = 3
+		DIP = 2
+		MIL = 3
+	}
+}
+
 1420.1.1 = {
 	monarch = {
 		name = "Sanghji"

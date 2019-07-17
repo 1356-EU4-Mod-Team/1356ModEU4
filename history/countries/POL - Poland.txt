@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 primary_culture = polish
 religion = catholic
 technology_group = eastern
-historical_friend = LIT
+#historical_friend = LIT
 historical_rival = TEU
 capital = 262 # Krakow
 national_focus = ADM
@@ -214,6 +214,10 @@ national_focus = ADM
 		leader = { name = "Wladyslaw III"		type = general		fire = 3	shock = 3	manuever = 2	siege = 0 }
 	}
 }	# Also Monarch of Hungary 1439.10.27 - 1444.11.10
+
+1440.1.1 = {
+	historical_friend = LIT
+}
 
 1444.11.11 = {
 	monarch = {

@@ -1,26 +1,63 @@
+# order_of_monastic_knights = {
+	# monarch_power = MIL
+	# potential = {
+		# has_idea_group = theocratic_ideas
+		# has_idea_group = offensive_ideas
+	# }
+	# allow = {
+		# full_idea_group = theocratic_ideas
+		# full_idea_group = offensive_ideas
+	# }
+	# war_exhaustion = -0.02
+	# army_tradition = 0.25
+	# ai_will_do = {
+		# factor = 1
+	# }
+# }
 
-order_of_monastic_knights = {
+priests_of_war_policy = {
 	monarch_power = MIL
 
 	potential = {
 		has_idea_group = theocratic_ideas
-		has_idea_group = offensive_ideas
+		has_idea_group = maritime_ideas
 	}
 	
 	allow = {
 		full_idea_group = theocratic_ideas
-		full_idea_group = offensive_ideas
+		full_idea_group = maritime_ideas
 	}
 	
-	war_exhaustion = -0.02
-	army_tradition = 0.25
+	naval_morale = 0.1
+	infantry_power = 0.1
 	
 	ai_will_do = {
 		factor = 1
 	}
-	
 }
 
+
+merchant_warriors_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = theocratic_ideas
+		has_idea_group = trade_ideas
+	}
+	
+	allow = {
+		full_idea_group = theocratic_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	discipline = 0.025
+	global_trade_power = 0.1
+	
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
 
 early_game_policy_mil = {
 
@@ -28,9 +65,14 @@ early_game_policy_mil = {
 
 	potential = {
 		always = yes
+		NOT = { has_country_flag = hide_early_game_policies_forever } #Unused currently
+		NOT = { has_idea_group = default_policy_1_ideas }
+		NOT = { has_idea_group = default_policy_2_ideas }
 	}
 	allow = {
 		mil_tech = 3
+		NOT = { has_idea_group = default_policy_1_ideas }
+		NOT = { has_idea_group = default_policy_2_ideas }
 	}
 		
 	manpower_recovery_speed = 0.10

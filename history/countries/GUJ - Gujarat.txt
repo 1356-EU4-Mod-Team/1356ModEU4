@@ -6,6 +6,18 @@ technology_group = indian
 capital = 2054	# Ahmadabad
 religious_school = shafii_school
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Bahadur"
+		dynasty = "Muzaffarid"
+		culture = afghani
+		ADM = 3
+		DIP = 2
+		MIL = 5
+	}
+}
+
 #Sultans of Gujarat
 1391.1.1 = {
 	monarch = {
