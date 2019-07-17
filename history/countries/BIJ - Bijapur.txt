@@ -7,6 +7,17 @@ capital = 569	# Bijapur
 fixed_capital = 569 # Cannot move capital away from this province & no power cost to move to it
 religious_school = jafari_school
 
+#Random Ruler
+1352.1.1 = {
+	monarch = {
+		name = "Kizr"
+		dynasty = "Chalukya"
+		DIP = 3
+		MIL = 1
+		ADM = 4
+	}
+}
+
 1490.1.1 = {
 	monarch = {
 		name = "Yusuf"

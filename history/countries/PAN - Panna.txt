@@ -16,7 +16,6 @@ capital = 4467	# Kalinjar/Panna
 		MIL = 5
 	}
 }
-
 #Chandellas of Kalinjar
 1430.1.1 = {
 	monarch = {

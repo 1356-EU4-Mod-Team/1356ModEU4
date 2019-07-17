@@ -6,6 +6,16 @@ religion = shiite
 technology_group = muslim
 capital = 2218 # Shiraz
 
+1343.1.1 = {
+	religious_school = jafari_school
+	monarch = {
+		name = "Shaikh Jamal al-Din Abu Ishaq"
+		dynasty = "Injuid"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
 
 ### Injuids annexed by Muzaffarids in 1357 ###
 

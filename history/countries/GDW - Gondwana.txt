@@ -1,12 +1,27 @@
 government = tribal
 add_government_reform = gond_kingdom
-government_rank = 1
+government_rank = 2
 technology_group = indian
 religion = hinduism
 primary_culture = gondi
 capital = 550	# Garha
 
 #Rajas of Garha-Mandla/Katanga
+
+1356.1.1 = {
+	monarch = {
+		name = "Narsingh Rai" #Historical Leader needed
+		dynasty = "Garha-Mandli"
+		birth_date = 1335.1.1
+		death_Date = 1358.1.1
+		ADM = 3
+		DIP = 3
+		MIL = 4
+	}
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = charismatic_negotiator_personality
+}
+
 
 1440.1.1 = {
 	monarch = {

@@ -1,10 +1,22 @@
-government = monarchy
-add_government_reform = iqta
-technology_group = muslim
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
 religion = sunni
 primary_culture = uzbehk
+government_rank = 1
 capital = 458	# Kokkand
-fixed_capital = 458 # Cannot move capital away from this province & no power cost to move to it
+
+1356.1.1 = {
+	monarch = {
+		name = "Suleyman"
+		dynasty = "Ediguid"
+		dip = 4
+		adm = 4
+		mil = 3
+	}
+	add_piety = 0.65
+}
+
 
 # (Khans)
 1709.1.1 = {

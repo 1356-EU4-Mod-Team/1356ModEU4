@@ -5,7 +5,31 @@ religion = sunni
 primary_culture = afghani
 capital = 451	# Kabul
 religious_school = hanafi_school
+historical_rival = DLH
+historical_rival = HAJ
+historical_friend = BAL
+# Kartidid Empire
 
+1332.1.1 = {
+	capital = 446
+	monarch = {
+		name = "Mu'izz-uddin Husayn"
+		dynasty = "Kurtid"
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+1370.1.1 = {
+	monarch = {
+		name = "Ghiyath-uddin Ali"
+		dynasty = "Kurtid"
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
 
 # Timurid Governors of Kabul, Soyurghatmish
 1424.1.1 = {

@@ -6,6 +6,16 @@ religion = hinduism
 technology_group = indian
 capital = 2056	# Rewa Kantha
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Arsisinhji"
+		dynasty = "Kathi"
+		ADM = 4
+		DIP = 4
+		MIL = 1
+	}
+}
 #Rulers of Champaner / Pavagadh
 
 1400.1.1 = {

@@ -6,6 +6,17 @@ religion = hinduism
 primary_culture = marathi
 capital = 2036	# Mayuragiri
 
+#Random Ruler
+1353.1.1 = {
+	monarch = {
+		name = "Malik"
+		dynasty = "Rastraudha"
+		ADM = 4
+		DIP = 4
+		MIL = 2
+	}
+}
+
 #Rajas of Baglana
 1399.1.1 = {
 	monarch = {

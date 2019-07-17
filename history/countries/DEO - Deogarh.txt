@@ -4,7 +4,7 @@ government_rank = 1
 technology_group = indian
 religion = hinduism
 primary_culture = gondi
-capital = 2082
+capital = 2098
 
 # Rajas of Garha-Mandla/Katanga
 
