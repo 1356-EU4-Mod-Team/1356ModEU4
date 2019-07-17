@@ -1077,6 +1077,7 @@ delhi_sultanate_reform = {
 	allow_normal_conversion = no 
 	potential = {
 		has_reform = delhi_sultanate_reform
+		tag = DLH
 	}
 	legacy_equivalent = delhi_sultanate_legacy
 	#fixed_rank = 3

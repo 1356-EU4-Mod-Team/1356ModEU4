@@ -8,6 +8,16 @@ capital = 4295 #Hisn Kayfa
 add_accepted_culture = al_suryah_arabic
 religious_school = shafii_school
 
+1349.1.1 = {
+	monarch = {
+		name = "Salih Abu-Bakr"
+		dynasty = "Ayyubid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
 1378.1.1 = {
 	monarch = {
 		name = "al-‘Adil Fakhr al-Din"

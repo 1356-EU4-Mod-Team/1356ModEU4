@@ -38,6 +38,13 @@ monarchy = {
 				earldom_reform
 				archduchy_reform
 				byzantine_empire_reform
+				serbian_government_reform
+				delhi_sultanate_reform
+				bengali_sultanate_reform
+				delhian_empire_reform
+				bahamis_sultanate_reform
+				vij_government_reform
+				gondi_kingdom_kingdom_reform
 				#####END 1356 CHANGES#####
 			}
 		}
@@ -131,6 +138,13 @@ monarchy = {
 		earldom_legacy
 		beylik_legacy
 		archduchy_legacy
+		serbian_government_legacy
+		delhi_sultanate_legacy
+		bengali_sultanate_legacy
+		delhian_empire_legacy
+		bahamis_sultanate_legacy
+		vij_government_legacy		
+		gondi_kingdom_kingdom
 		byzantine_empire_gov
 		#####END 1356 CHANGES#####
 	}
@@ -173,6 +187,13 @@ monarchy = {
 		kalmar_union_reform
 		archduchy_reform
 		byzantine_empire_reform
+		serbian_government_reform
+		delhi_sultanate_reform
+		bengali_sultanate_reform
+		delhian_empire_reform
+		bahamis_sultanate_reform
+		vij_government_reform
+		gondi_kingdom_kingdom_reform
 		#####END 1356 CHANGES#####
 		
 	}
@@ -221,6 +242,7 @@ republic = {
 		swiss_canton
 		frisian_republic_legacy
 		novgorod_republic_gov_legacy
+		ahm_republic
 		#####1356 Additions End#####
 	}
 	reform_levels = {
@@ -247,6 +269,7 @@ republic = {
 				swiss_canton_reform
 				frisian_republic_gov
 				novgorod_republic_gov
+				ahm_republic_reform
 				#####1356 Additions End#####
 			}
 		}
@@ -334,6 +357,7 @@ republic = {
 		pirate_republic_reform
 		#########Begin 1356 Changes#####
 		swiss_canton_reform
+		ahm_republic_reform
 		######End 1356 Changes#####
 	}
 	exclusive_reforms = {

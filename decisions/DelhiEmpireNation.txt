@@ -1,0 +1,148 @@
+country_decisions = {
+
+	form_delhi_empire = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_delhian_empire }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = MUG }
+			NOT = { tag = HIN }
+			NOT = { tag = BHA }
+			tag = DLH
+			religion_group = muslim
+			culture_group = hindusthani
+			NOT = { has_reform = steppe_horde }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = west_india_region
+				area = sind_sagar_area
+				area = lahore_area
+				area = multan_area
+				area = sirhind_area
+				area = upper_doab_area
+				area = katehar_area
+				area = lower_doab_area
+				area = oudh_area
+				area = purvanchal_area
+				area = gird_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			tag = DLH
+			is_at_war = no
+			stability = 3
+			sind_sagar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lahore_area = {
+				type = all
+				owned_by = ROOT
+			}
+			multan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sirhind_area = {
+				type = all
+				owned_by = ROOT
+			}
+			upper_doab_area = {
+				type = all
+				owned_by = ROOT
+			}
+			katehar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_doab_area = {
+				type = all
+				owned_by = ROOT
+			}
+			oudh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			purvanchal_area = {
+				type = all
+				owned_by = ROOT
+			}
+			gird_area = {
+				type = all
+				owned_by = ROOT
+			}			
+			west_india_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = TUG
+			change_government = monarchy
+			set_legacy_government = delhian_empire_legacy
+			add_government_reform = delhian_empire_reform
+			set_government_rank = 3
+			bengal_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUG
+			}
+			hindusthan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUG
+			}
+			deccan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUG
+			}
+			coromandel_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUG
+			}
+			set_country_flag = formed_delhian_empire
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+}	

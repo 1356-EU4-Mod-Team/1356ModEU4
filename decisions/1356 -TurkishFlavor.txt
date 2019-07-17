@@ -1,0 +1,31 @@
+country_decisions = {
+	tur_resettle_gallipoli = {
+		potential = {
+			tag = TUR
+			owns = 149
+			religion = sunni	
+			149 = { has_province_modifier = turkish_settlement }
+		}
+		allow = {
+			owns = 149
+			OR = { 
+				owns = 2296			
+				owns = 151
+			}
+		}
+		effect = {
+
+			149 = {
+				remove_province_modifier = turkish_settlement
+				add_base_tax = 3
+				add_base_production = 3
+				change_province_name = Edirne 
+				rename_capital = "Edirne"
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
