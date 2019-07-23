@@ -9,6 +9,21 @@
  #Governments
  patriarch_government_legacy: "Patriarchate"
  patriarch_government_reform: " Patriarchate"
+ viking_republic_reform: "Viking Republic"
+ viking_republic_legacy: "Viking Republic"
+ VIKING_RULER_MALE: "Logmaðr" #Lawspeaker
+ VIKING_RULER_FEMALE: "Logkona" #Lawspeaker
+ VIKING_CONSORT_MALE: "Hópur"
+ VIKING_CONSORT_FEMALE: "Hópur"
+ VIKING_HEIR_FEMALE: "Erfingi"
+ VIKING_HEIR: "Erfingi"
+ VIKING_DUCHY: "Hertogadæmið"
+ VIKING_KINGDOM: "Þjóðveldið" #People Dominion
+ VIKING_EMPIRE: "Stórþjóðveldið" #Great People Dominion
+ estate_viking_merchants: "Þingmenn" #Assembly people
+ estate_viking_clergy: "Dómarar" #Judges
+ estate_viking_nobles: "Goði" #Chieftans
+ VIK_parliament_name:0 "Althing"
  
  #Culture
  fezzan_culture: "Fezzan"

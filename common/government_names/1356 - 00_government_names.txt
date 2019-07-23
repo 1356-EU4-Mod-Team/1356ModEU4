@@ -156,3 +156,54 @@ cornish_monarchy_titles = {
 		government = monarchy
 	}
 }
+
+viking_republic_government_name_flavor = { #Special thanks to Raumarici on discord for these
+	rank = {
+		1 = VIKING_DUCHY
+		2 = VIKING_KINGDOM
+		3 = VIKING_EMPIRE
+	}
+	
+	ruler_male = {
+		1 = VIKING_RULER_MALE
+		2 = VIKING_RULER_MALE
+		3 = VIKING_RULER_MALE
+	}
+	
+	ruler_female = {
+		1 = VIKING_RULER_FEMALE
+		2 = VIKING_RULER_FEMALE
+		3 = VIKING_RULER_FEMALE
+	}
+	
+	consort_male = {
+		1 = VIKING_CONSORT_MALE
+		2 = VIKING_CONSORT_MALE
+		3 = VIKING_CONSORT_MALE
+	}
+
+	consort_female = {
+		1 = VIKING_CONSORT_FEMALE
+		2 = VIKING_CONSORT_FEMALE
+		3 = VIKING_CONSORT_FEMALE
+	}
+	
+	heir_male = {
+		1 = VIKING_HEIR
+		2 = VIKING_HEIR
+		3 = VIKING_HEIR
+	}
+
+	heir_female = {
+		1 = VIKING_HEIR_FEMALE
+		2 = VIKING_HEIR_FEMALE
+		3 = VIKING_HEIR_FEMALE
+	}
+	
+	trigger = {
+		tag = VIK
+		primary_culture = icelandic
+		primary_religion = norse_pagan_reformed
+		government = republic
+	}
+}

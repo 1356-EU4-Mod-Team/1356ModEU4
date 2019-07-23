@@ -691,6 +691,44 @@ frisian_republic_legacy = {
 	}
 }
 
+viking_republic_legacy = { #BT Vikings TAG
+	# government mechanics flags go here
+	icon = "british_queen"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	
+	duration = 4
+	royal_marriage = yes
+	republican_name = yes
+
+	valid_for_nation_designer = no
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "Common Sense"
+	}
+
+	republic = yes
+	start_territory_to_estates = 0.3
+	modifiers = {
+		republican_tradition = 0.3
+		global_unrest = -2
+		global_autonomy = -0.05
+		max_absolutism = -20
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 5
+	}
+}
+
 #########1356 Changes END########
 
 

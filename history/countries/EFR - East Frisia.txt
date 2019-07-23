@@ -233,6 +233,11 @@ capital = 1931	# Emden
 	}
 }
 
+1464.1.1 = {
+	government = republic
+	add_government_reform = frisian_republic_gov
+}
+
 #Using 1470 as the year when EFR Feudalizes
 # East Frisia raised to the status of Imperial Count in 1464 by Emperor Frederick III
 

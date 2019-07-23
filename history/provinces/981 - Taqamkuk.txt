@@ -14,7 +14,7 @@ native_hostileness = 0
 discovered_by = north_american
 
 
-1356.12.25 = { owner = VIK controller = VIK add_core = VIK culture = viking religion = norse_pagan_reformed base_tax = 5 base_production = 6 base_manpower = 4 }
+1356.12.25 = { owner = VIK controller = VIK add_core = VIK culture = icelandic religion = norse_pagan_reformed base_tax = 5 base_production = 6 base_manpower = 4 }
 
 1356.12.26 = { owner = XXX controller = XXX
 	culture = cree

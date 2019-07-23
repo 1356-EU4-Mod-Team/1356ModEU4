@@ -76,6 +76,7 @@ feudalism = { #Heavily Edited by #1356
 				province_id = 418 #Diyarbakir
 				province_id = 445 #Merv
 				province_id = 444 #Charjuy
+				province_id = 320 #Rhodes
 				owner = { culture = crusader_culture }
 			}
 			#Every region below needs a more accurate date when it becomes Feudal.
