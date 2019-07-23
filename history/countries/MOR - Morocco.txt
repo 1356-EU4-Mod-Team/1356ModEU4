@@ -194,11 +194,6 @@ religious_school = maliki_school
 		mil = 5
 		leader = { name = "Muhammad I"		type = general	fire = 3	shock = 3	manuever = 2	siege = 0}
 	}
-	capital = 344 # Marrakech
-	add_piety = 1.0
-}
-
-1544.1.1 = {
 	heir = {
 		name = "'Abd Allâh"
 		monarch_name = "'Abd Allâh"
@@ -210,7 +205,8 @@ religious_school = maliki_school
 		dip = 3
 		mil = 4
 	}
-	capital = 344 #Marrakech
+	capital = 344 # Marrakech
+	add_piety = 1.0
 }
 
 1557.10.24 = {

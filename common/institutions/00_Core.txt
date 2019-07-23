@@ -1280,6 +1280,7 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 		OR = {
 			owner = { culture_group = east_asian }
 			owner = { culture_group = korean_g }
+			owner = { culture_group = mongolic_culture_group }
 		}
 		is_state = yes
 		is_island = no

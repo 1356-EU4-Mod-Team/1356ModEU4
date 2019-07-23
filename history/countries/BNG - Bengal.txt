@@ -37,7 +37,6 @@ religious_school = hanafi_school
 		name = "Sikandar Shah"
 		dynasty = "Ilyas Shahi"
 		birth_date = 1336.1.1
-		death_Date = 1390.1.1
 		ADM = 4
 		DIP = 2
 		MIL = 4

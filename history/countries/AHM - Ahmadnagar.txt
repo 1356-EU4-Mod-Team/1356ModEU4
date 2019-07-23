@@ -11,7 +11,6 @@ capital = 2034	# Pune
 		name = "Kaapaaneedu I"
 		dynasty = "Nayak"
 		birth_date = 1281.1.1
-		death_date = 1356.1.1
 		ADM = 3
 		DIP = 2
 		MIL = 3

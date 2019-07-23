@@ -13,13 +13,22 @@ capital = 550	# Garha
 		name = "Narsingh Rai" #Historical Leader needed
 		dynasty = "Garha-Mandli"
 		birth_date = 1335.1.1
-		death_Date = 1358.1.1
 		ADM = 3
 		DIP = 3
 		MIL = 4
 	}
 	add_ruler_personality = benevolent_personality
 	add_ruler_personality = charismatic_negotiator_personality
+}
+
+1358.1.1 = {
+	monarch = {
+		name = "Regency" 
+		ADM = 3
+		DIP = 3
+		MIL = 3
+		regent = yes
+	}
 }
 
 

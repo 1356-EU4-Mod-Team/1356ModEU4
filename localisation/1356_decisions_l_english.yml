@@ -119,8 +119,8 @@
  
  cancel_great_library_title: "Cancel the Construction of the Great Library"
  cancel_great_library_desc: "We can no longer sustain this project, we must stop all progress now before it is too late!"
- build_great_library_title: "Rebuild the Library of Alexandria"
- build_great_library_desc: "Many centuries ago the Great Library of Alexandria was burned down to the ground, and with it much lost knowledge! If we begin to rebuild the Library then we can gather all the knowledge of the world into one place! And this time, we shall ensure it is fireproof!"
+ construct_great_library_title: "Rebuild the Library of Alexandria"
+ construct_great_library_desc: "Many centuries ago the Great Library of Alexandria was burned down to the ground, and with it much lost knowledge! If we begin to rebuild the Library then we can gather all the knowledge of the world into one place! And this time, we shall ensure it is fireproof!"
  adopt_crusader_state_government_title: "Adopt a Crusader Government"
  adopt_crusader_state_government_desc: "We exist only in the Holy land, while we are still a Monarchy we are a Crusader State first and foremost, if we openly proclaim ourselves to be a Crusder State perhaps we may be able to get specific exemptions from the Papacy, or other Christians even. Either way, it will allow us to reorganize our Government to focus on our needs on the Frontier, which is needed if we are to survive."
  start_accepting_crusaders_into_ranks_title: "Request additional Crusader assistance"

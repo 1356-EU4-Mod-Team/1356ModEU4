@@ -804,6 +804,30 @@ swiss_canton_reform = { #Maybe give it access to Parlament mechanics?
 	duration = 4
 }
 
+ahm_republic_reform = { #Maybe give it access to Parlament mechanics?
+	icon = "noble_indian_ahm"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = ahm_republic
+	republican_name = yes
+	royal_marriage = yes
+	potential = {
+		tag = AHM
+	}
+	modifiers = {
+		army_tradition = 0.75
+		candidate_random_bonus = 1
+		max_states = 3
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+		enables_nepotism = yes
+	}
+	duration = 5
+}
+
 frisian_republic_gov = {
 	allow_normal_conversion = yes
 	icon = "peasant_republic"
