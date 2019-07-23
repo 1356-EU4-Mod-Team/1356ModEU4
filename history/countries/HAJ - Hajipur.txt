@@ -23,6 +23,7 @@ historical_rival = AFG
 1356.1.1 = {
 	heir = {
 		name = "Sikandar Shah"
+		monarch_name = "Sikandar Shah"
 		dynasty = "Ilyas Shahi"
 		birth_date = 1336.1.1
 		death_Date = 1358.1.1

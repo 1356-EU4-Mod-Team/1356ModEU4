@@ -8,7 +8,7 @@ technology_group = western
 capital = 183 # Paris
 national_focus = DIP
 historical_rival = HAB
-historicla_friend = SCO
+historical_friend = SCO
 
 1340.1.1  = { leader = { name = "Bertrand du Guesclin"	type = general		fire = 3	shock = 6	manuever = 6	siege = 2	death_date = 1380.7.13 } }
 

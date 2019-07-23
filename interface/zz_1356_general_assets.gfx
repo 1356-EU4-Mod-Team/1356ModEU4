@@ -315,8 +315,8 @@ spriteTypes = {
 	
 #Great Projects
 	pdxmesh = {
-		name = "alx_great_lighthouse"
-		file = "gfx/models/Mapitems/alexandria_library.mesh" 
+		name = "alx_great_lighthouse_mesh"
+		file = "gfx/models/Buildings/alexandria_library.mesh" 
 		scale = 1.0
 	}
 }
