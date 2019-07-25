@@ -110,7 +110,7 @@ WHI = "countries/White Horde.txt"
 
 #Persia	
 CHB = "countries/Chobanids.txt"
-KHC = "countries/Khachen.txt"
+#KHC = "countries/Khachen.txt"
 MUZ = "countries/Muzaffarids.txt"
 PAD = "countries/Paduspanid.txt"
 SAB = "countries/Sarbadarid.txt"
