@@ -1,8 +1,0 @@
-expelled_nestorian = {
-
-}
-encourage_nestorian_growth = {
-
-}
-
-

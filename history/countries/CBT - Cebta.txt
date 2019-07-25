@@ -1,8 +1,0 @@
-government = republic
-add_government_reform = pirate_republic_reform
-primary_culture = moroccan
-religion = sunni
-technology_group = muslim
-capital = 1751
-fixed_capital = 1751 # Cannot move capital away from this province & no power cost to move to it
-religious_school = maliki_school
