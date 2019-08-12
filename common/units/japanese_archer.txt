@@ -1,10 +1,10 @@
-# Mongol Steppe
+# Japanese Archer
 
-type = cavalry
-unit_type = nomad_group
+type = infantry
+unit_type = chinese
 
-maneuver = 2
-offensive_morale = 2
+maneuver = 1
+offensive_morale = 0
 defensive_morale = 1
 offensive_fire = 0
 defensive_fire = 0

@@ -69,6 +69,7 @@ feudalism = { #Heavily Edited by #1356
 				area = iraq_e_ajam_area
 				area = tabarestan_area
 				area = azerbaijan_area
+				area = aegean_archipelago_area
 				province_id = 2308 #Urfa
 				province_id = 415 #Kirkuk
 				province_id = 2312 #Wasit
@@ -77,7 +78,8 @@ feudalism = { #Heavily Edited by #1356
 				province_id = 445 #Merv
 				province_id = 444 #Charjuy
 				province_id = 320 #Rhodes
-				owner = { culture = crusader_culture }
+				owner = { primary_culture = crusader_culture }
+				
 			}
 			#Every region below needs a more accurate date when it becomes Feudal.
 			AND = { #Scandanavia and Baltic #Would be nice to not have all of the Orders start with Feudalism
@@ -125,7 +127,7 @@ feudalism = { #Heavily Edited by #1356
 				NOT = { owner = { government = tribal } }
 				NOT = { religion_group = pagan }
 			}
-			AND = { #North Africa 
+			AND = { #North Africa #Update for Berber cultural rework
 				region = maghreb_region 
 				NOT = { owner = { government = tribal } }
 				OR = {

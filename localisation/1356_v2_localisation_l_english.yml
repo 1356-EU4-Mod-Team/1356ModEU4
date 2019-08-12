@@ -6,6 +6,133 @@
  
  #Units
  
+ #Mesoamerican
+ 1356-meso_early_spearmen: "Tepoztopilli"
+ 1356-meso_spear_throwers: "Atlatl Throwers"
+ 1356-meso_macuahitlins: "Macuahitlins"
+ 1356-meso_slingers: "Mesoamerican Slingers"
+ 1356-meso_zapotec_early_tribal_warriors: "Zapotec Early Tribal Warriors"
+ 1356-meso_eagle_warriors: "Eagle Warriors"
+ 1356-meso_yaomitlists: "Yaomitlists"
+ 1356-meso_zaptoec_tribal_warriors: "Zapotec Tribal Warriors"
+ 1356-meso_jaguar_warriors: "Jaguar Warriors"
+ 1356-meso_reformed_yaomitlists: "Reformed Yaomitlists"
+ 1356-meso_zaptoec_tribal_plains_warriors: "Zapotec Tribal Plains Warriors"
+ 1356-meso_otomi: "Otomi"
+ 1356-meso_reformed_slinger: "Mesoamerican Reformed Slingers"
+ 1356-meso_zaptoec_plains_warriors: "Zapotec Plains Warriors"
+ 
+ 1356-meso_early_spearmenDESCR: "Spearmen have been used by all societies, as the spear is the most basic of weapon that also allows the user to keep its distance from the target."
+ 1356-meso_spear_throwersDESCR: "Atlatl Throwers were typically lightly armored soldiers armed with throwing spears. Throwing spears have been common through all of human history, and it has been documented that most, if not all, societies at one point used throwing spears for warfare or hunting."
+ 1356-meso_macuahitlinsDESCR: "Macuahitlins wielded the Macuahuitl, a wooden club with many sharp obsidian blades. It was one of the most common weapons in the Aztec army by the time of the Spanish conquest. The Macuahuitl was manufactured as a one handed and two handed weapons, and was believed that when wielded properly it was sharp enough to decapitate humans and animals alike."
+ 1356-meso_slingersDESCR: "Most tribalistic societies use slingers in some form. A basic lightly armored unit equiped with a sling and a bundle of rocks. While effective at a distance they are very weak up close, and the user may struggle to close the gap if attacked in close range."
+ 1356-meso_zapotec_early_tribal_warriorsDESCR: "The area of the Zapotec empire created conditions highly suitable for offensive warfare. Here military units were developed that specialized in attack and used tactics designed to undermine the morale of their opponents."
+ 1356-meso_eagle_warriorsDESCR: "Eagle Warriors were one of the Aztec's military orders. These orders only took the most brave and noble of warriors into their ranks, creating a skilled unit that was to be feared. While the higher ranking orders required noble blood, the Eagle Warriors did not, and worthy commoners could prove themselves through number of captives taken."
+ 1356-meso_yaomitlistsDESCR: "Archery is both a basic skill, and an advanced skill. It doesn't take much effort to train someone to fire a bow and keep his distance from the target, but it takes decades of experience to create a skilled archer."
+ 1356-meso_zaptoec_tribal_warriorsDESCR: "The area of the Zapotec empire created conditions highly suitable for offensive warfare. Here military units were developed that specialized in attack and used tactics designed to undermine the morale of their opponents."
+ 1356-meso_jaguar_warriorsDESCR: "Like the Eagle Warriors, Jaguar Warriors were one of the Aztecs military societies. Jaguar Warriors not only were fierce warriors in combat, they also held significant status in society. They were granted significant privilages and in many circumstances were treated like nobility."
+ 1356-meso_reformed_yaomitlistsDESCR: "Archery is both a basic skill, and an advanced skill. It doesn't take much effort to train someone to fire a bow and keep his distance from the target, but it takes decades of experience to create a skilled archer. While we may still be adapting to the new technology the Europeans have brought, our archers now have access to more European arrow types."
+ 1356-meso_zaptoec_tribal_plains_warriorsDESCR: "The plains warrior was the ultimate offensive unit in the Americas, but even they were not immune to progress. New weapons and tactics allowed the units to improve their offensive capability, while new training methods helped these warriors to maintain morale in combat."
+ 1356-meso_otomiDESCR: "The Otomi were an elite Aztec military order, named after the Otomi peoples. They were renouned for their fierce skills in combat, and were a force to be feared. They were one of the most prestigious orders in Aztec military society."
+ 1356-meso_reformed_slingerDESCR: "Most tribalistic societies use slingers in some form. A basic lightly armored unit equiped with a sling and a bundle of rocks. While effective at a distance they are very weak up close, and the user may struggle to close the gap if attacked in close range. However with the arrival of Europeans we have managed to scavenge some of their weapons, and may now at least defend themselves if attacked up close."
+ 1356-meso_zaptoec_plains_warriorsDESCR: "The plains warrior was the ultimate offensive unit in the Americas, but even they were not immune to progress. New weapons and tactics allowed the units to improve their offensive capability, while new training methods helped these warriors to maintain morale in combat."
+ 
+ #Western
+ 1356-early_western_peasant_levy: "Western Peasant Levy"
+ 1356-early_western_spearmen: "Early Western Spearmen"
+ 1356-early_western_light_cav: "Western Light Cavalry"
+ 1356-early_western_royal_guard: "Western Royal Guards"
+ 1356-early_western_crossbowmen: "Early Western Crossbowmen"
+ 1356-trebuchet_arty: "Trebuchet"
+ 1356-early_western_pikemen: "Early Western Pikemen"
+ 
+ 1356-early_western_peasant_levyDESCR: "During the whole Medieval period it was common for Lords to raise local peasant levys in times of war. It was uncommon to have standing armies at this time aside from the Lords guardsmen, so many peasants would be drafted in times of war. Many of these peasants had little to no training in warfare."
+ 1356-early_western_spearmenDESCR: "The Spearmen serves as one of the most important units in a basic army composition, without them the enemy cavalry has free reign to harass the flanks of armies, which could very quickly turn a battle in the other direction. These Spearmen are the most basic form, carrying just a spear and light armor at best."
+ 1356-early_western_light_cavDESCR: "Light Cavalry tend to be lightly armored mounted units, allowing for more maneuverability than their Heavily mounted counterparts. While they do not pack as heavy as a punch as Heavy Cavalry may, they still serve a similar purpose. However historically they tended to serve as Scouts, Screening, and Reconnaissance."
+ 1356-early_western_royal_guardDESCR: "The King's Royal Guards were the last defense of the ruler in combat and at home. In times of peace they carried out important duties in the rulers castle, and in times of war they served as heavy shock troops who could decide a battle. Historically some kinds of Royal Guards were; Praetorian Guards, Imperial Guard in Napoleonic France, and the Walloon Guards in Spain."
+ 1356-early_western_crossbowmenDESCR: "The Crossbow became more common the further the Medieval period progressed. Allowing just about any untrained soldier to use a bow was a massive advantage over traditional bows, which could require up to decades of training to use correctly. Where Crossbows just require strength to pull the bowstring back, allowing many soldiers who previously were not able to use a bow to use a Crossbow."
+ 1356-trebuchet_artyDESCR: "The Trebuchet served a major role in Medieval siege warfare, being commonly used to siege down castles and fortifications, they could launch a 90kg stone projectile over 300 meters using a counterweight."
+ 1356-early_western_pikemenDESCR: "The Pikemen is much like the Spearmen, with the biggest difference being a Pike is much longer than a spear, much more often it is used in a group formation as opposed to a spear which is more focused in single hand to hand combat. As the medieval period gave way to the future, Pikes and Spears became more common in army compisitions."
+ 
+ #Eastern 
+ 1356-eastern_trebuchet_arty: "Trebuchet"
+ 1356-early_eastern_pikemen: "Early Eastern Pikemen"
+ 1356-early_eastern_royal_guard: "Eastern Royal Guards"
+ 1356-early_eastern_light_cav: "Eastern Light Cavalry"
+ 1356-early_eastern_spearmen: "Early Eastern Spearmen"
+ 1356-early_eastern_peasant_levy: "Eastern Peasant Levy"
+  
+ 1356-eastern_trebuchet_artyDESCR: "The Trebuchet served a major role in Medieval siege warfare, being commonly used to siege down castles and fortifications, they could launch a 90kg stone projectile over 300 meters using a counterweight."
+ 1356-early_eastern_pikemenDESCR: "The Pikemen is much like the Spearmen, with the biggest difference being a Pike is much longer than a spear, much more often it is used in a group formation as opposed to a spear which is more focused in single hand to hand combat. As the medieval period gave way to the future, Pikes and Spears became more common in army compisitions."
+ 1356-early_eastern_royal_guardDESCR: "The King's Royal Guards were the last defense of the ruler in combat and at home. In times of peace they carried out important duties in the rulers castle, and in times of war they served as heavy shock troops who could decide a battle. Historically some kinds of Royal Guards were; Praetorian Guards, Imperial Guard in Napoleonic France, and the Walloon Guards in Spain."
+ 1356-early_eastern_light_cavDESCR: "Light Cavalry tend to be lightly armored mounted units, allowing for more maneuverability than their Heavily mounted counterparts. While they do not pack as heavy as a punch as Heavy Cavalry may, they still serve a similar purpose. However historically they tended to serve as Scouts, Screening, and Reconnaissance."
+ 1356-early_eastern_spearmenDESCR: "The Spearmen serves as one of the most important units in a basic army composition, without them the enemy cavalry has free reign to harass the flanks of armies, which could very quickly turn a battle in the other direction. These Spearmen are the most basic form, carrying just a spear and light armor at best."
+ 1356-early_eastern_peasant_levyDESCR: "During the whole Medieval period it was common for Lords to raise local peasant levys in times of war. It was uncommon to have standing armies at this time aside from the Lords guardsmen, so many peasants would be drafted in times of war. Many of these peasants had little to no training in warfare."
+
+ #Anatolian
+ 1356-early_anatolian_cav: "Anatolian Light Calvary"
+ 1356-early_anatolian_peasant_levy: "Anatolian Peasant Levy"
+ 1356-early_anatolian_royal_guard: "Anatolian Royal Guards"
+ 1356-anatolian_trebuchet_arty: "Trebuchet"
+ 1356-early_anatolian_inf: "Early Anatolian Infantry"
+ 1356-early_anatolian_pikemen: "Early Anatolian Pikemen"
+ 
+ 1356-early_anatolian_cavDESCR: "Light Cavalry tend to be lightly armored mounted units, allowing for more maneuverability than their Heavily mounted counterparts. While they do not pack as heavy as a punch as Heavy Cavalry may, they still serve a similar purpose. However historically they tended to serve as Scouts, Screening, and Reconnaissance."
+ 1356-early_anatolian_peasant_levyDESCR: "During the whole Medieval period it was common for Lords to raise local peasant levys in times of war. It was uncommon to have standing armies at this time aside from the Lords guardsmen, so many peasants would be drafted in times of war. Many of these peasants had little to no training in warfare."
+ 1356-early_anatolian_royal_guardDESCR: "The Sultan's Royal Guards were the last defense of the ruler in combat and at home. In times of peace they carried out important duties in the rulers castle, and in times of war they served as heavy shock troops who could decide a battle. Historically some kinds of Royal Guards were; Praetorian Guards, Imperial Guard in Napoleonic France, and the Walloon Guards in Spain."
+ 1356-anatolian_trebuchet_artyDESCR: "The Trebuchet served a major role in Medieval siege warfare, being commonly used to siege down castles and fortifications, they could launch a 90kg stone projectile over 300 meters using a counterweight."
+ 1356-early_anatolian_infDESCR: "These Anatolian Infantry serve as the backbone of the army, serving as the center line, they are first in combat and last to leave. They'll take the brunt of the attack, while relying on the units on the flank and rear to deal most of the damage."
+ 1356-early_anatolian_pikemenDESCR: "The Pikemen is much like the Spearmen, with the biggest difference being a Pike is much longer than a spear, much more often it is used in a group formation as opposed to a spear which is more focused in single hand to hand combat. As the medieval period gave way to the future, Pikes and Spears became more common in army compisitions."
+ 
+ #Muslim
+ 1356-muslim_trebuchet_arty: "Trebuchet"
+ 1356-early_muslim_pikemen: "Early Muslim Pikemen"
+ 1356-early_muslim_cav_archer: "Early Muslim Cavalry Archers"
+ 1356-early_muslim_lancers: "Early Muslim Lancers"
+ 1356-early_muslim_royal_guard: "Muslim Royal Guards"
+ 1356-early_muslim_light_cav: "Muslim Light Cavalry"
+ 1356-early_muslim_inf: "Early Muslim Infantry"
+ 
+ 1356-muslim_trebuchet_artyDESCR: "The Trebuchet served a major role in Medieval siege warfare, being commonly used to siege down castles and fortifications, they could launch a 90kg stone projectile over 300 meters using a counterweight."
+ 1356-early_muslim_pikemenDESCR: "The Pikemen is much like the Spearmen, with the biggest difference being a Pike is much longer than a spear, much more often it is used in a group formation as opposed to a spear which is more focused in single hand to hand combat. As the medieval period gave way to the future, Pikes and Spears became more common in army compisitions."
+ 1356-early_muslim_cav_archerDESCR: "While Cavalry Archers have been in use long before the Mongols came, the Mongols reignited the popularity of Cavalry Archers in some Kingdoms. These Muslim Cavalry Archers attempt to use what they learned in the many battles against the Mongol Army to their advantage, allowing them to be highly mobile and cause casualties to the enemy without taking many themselves."
+ 1356-early_muslim_lancersDESCR: "There are many different types of Heavy Cavalry, with Lancers being able to deal the most impact damage. Ideally they'd outflank the enemy army and charge the center line with their lances drawn, causing heavy casualties and massive shock to the troops nearby."
+ 1356-early_muslim_royal_guardDESCR:  "The Sultan's Royal Guards were the last defense of the ruler in combat and at home. In times of peace they carried out important duties in the rulers castle, and in times of war they served as heavy shock troops who could decide a battle. Historically some kinds of Royal Guards were; Praetorian Guards, Imperial Guard in Napoleonic France, and the Walloon Guards in Spain."
+ 1356-early_muslim_light_cavDESCR: "Light Cavalry tend to be lightly armored mounted units, allowing for more maneuverability than their Heavily mounted counterparts. While they do not pack as heavy as a punch as Heavy Cavalry may, they still serve a similar purpose. However historically they tended to serve as Scouts, Screening, and Reconnaissance."
+ 1356-early_muslim_infDESCR: "These Muslim Infantry serve as the backbone of the army, serving as the center line, they are first in combat and last to leave. They'll take the brunt of the attack, while relying on the units on the flank and rear to deal most of the damage."
+
+#Indian
+ 1356-early_indian_shock_inf: "Early Indian Shock Infantry"
+ 1356-early_indian_spearmen: "Early Indian Spearmen"
+ 1356-early_indian_inf: "Early Indian Infantry"
+ 1356-early_indian_camelry: "Early Indian Camelry"
+ 1356-early_indian_cav: "Early Indian Light Cavalry"
+ 1356-early_indian_elephant: "Early Indian Elephant Cavalry"
+ 1356-indian_early_arty: "Tower-Breaker Elephants"
+ 
+ 1356-early_indian_shock_infDESCR: "Shock Infantry are typically placed at the center of a line, with the sole purpose to break the enemy's defense. Historically German Landsknecht used large Zweihander's to break pike formations. These soldiers tend to carry heavier weapons and will require more skill than standard infantry due to their location in the line."
+ 1356-early_indian_spearmenDESCR: "The Spearmen serves as one of the most important units in a basic army composition, without them the enemy cavalry has free reign to harass the flanks of armies, which could very quickly turn a battle in the other direction. These Spearmen are the most basic form, carrying just a spear and light armor at best."
+ 1356-early_indian_infDESCR: "These Indian Infantry serve as the backbone of the army, serving as the center line, they are first in combat and last to leave. They'll take the brunt of the attack, while relying on the units on the flank and rear to deal most of the damage."
+ 1356-early_indian_camelryDESCR: "Camels as Cavalry are more specalized than most standard Horse based Cavalry. While they tend to turn and run at the sound of Gunfire, they can also cover longer distances in a shorter time than horses."
+ 1356-early_indian_cavDESCR: "Light Cavalry tend to be lightly armored mounted units, allowing for more maneuverability than their Heavily mounted counterparts. While they do not pack as heavy as a punch as Heavy Cavalry may, they still serve a similar purpose. However historically they tended to serve as Scouts, Screening, and Reconnaissance."
+ 1356-early_indian_elephantDESCR: "Elephants were more common in the Jungles of India than the plains or hills, however they were still deployed from time to time."
+ 1356-indian_early_artyDESCR: "The Indian's never developed the Counter-weight Trebuchet, and Battering Rams were rarely used. And most other Traditional Siege weapons that the West used were not used in India. Most sieges involved sewing decent using spies, and scaling the walls using ladders. However Elephants were deployed in rare situations to break towers or gates down."
+
+ #Chinese
+ 
+ #Nomad
+ 1356-early_mongol_horse_archers: "Mongol Horse Archers"
+ 1356-early_mongol_heavy_cav: "Mongol Heavy Cavalry"
+ 1356-early_mongol_lancer_cav: "Mongol Lancer Cavalry"
+ 1356-early_mongol_dismounted_heavy_cav: "Mongol Dismounted Heavy Calvary"
+ 1356-early_mongol_dismounted_archers: "Mongol Dismounted Archers"
+ 
+ 1356-early_mongol_horse_archersDESCR: "Mongolian Horse Archers were a force to be feared, highly mobile, well trained, and disciplined archers could slaughter an enemy easily. What helped the Mongolian horse archers above other horse archers is the stirrup, allowing the Mongolian archers to be able to turn in all directions, including backwards. This allowed them to safely combat any foe on horse and foot alike. On top of this the archers would time the loosing of an arrow to the moment a horse's four feet were off the ground, allowing for a well aimed shot."
+ 1356-early_mongol_heavy_cavDESCR: "While the meat of the Mongolian Army was horse archers, a good third of the army was heavy cavalry. Most lancers also carried a scimitar as well as their lance, allowing for more varried combat if required."
+ 1356-early_mongol_lancer_cavDESCR: "While the meat of the Mongolian Army was horse archers, a good third of the army was heavy cavalry. Lancers job was to close the gap between the archers and the enemy after the archers had properly brought the enemy into disarray."
+ 1356-early_mongol_dismounted_heavy_cavDESCR: "While the Mongolian Army traveled purely on horseback, as the distance they were able to cover gave them the advantage, if it was required horse archers and infantry alike would dismount for combat. However this did give them a disadvantage, and was not seen frequently unless the terrain or enemy required it."
+ 1356-early_mongol_dismounted_archersDESCR: "While the Mongolian Army traveled purely on horseback, as the distance they were able to cover gave them the advantage, if it was required horse archers and infantry alike would dismount for combat. However this did give them a disadvantage, and was not seen frequently unless the terrain or enemy required it."
+
  #Governments
  patriarch_government_legacy: "Patriarchate"
  patriarch_government_reform: " Patriarchate"

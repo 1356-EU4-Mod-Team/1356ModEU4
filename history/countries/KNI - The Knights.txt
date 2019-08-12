@@ -21,6 +21,7 @@ add_army_professionalism = 0.1
 		dip = 3
 		mil = 2
 	}
+capital = 320 # Rhodes
 }
 
 1365.5.28 = {

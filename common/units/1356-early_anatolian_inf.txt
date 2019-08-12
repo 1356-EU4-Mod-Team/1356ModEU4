@@ -1,4 +1,4 @@
-# Early Turkish Infantry
+# Early Anatolian Infantry
 
 type = infantry
 unit_type = ottoman

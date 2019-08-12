@@ -4534,10 +4534,10 @@ otomanguean = {
 	zapotek = {
 		primary = ZAP
 		male_names = {
-			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
+			Cocijoeza Cocijopi Xolo Nucano Cocijocza Zaachilla Cocijouza Pwuix Dao 
 			Binech Bzojj Chsáaxcejj Cháalaxa Chonna Bicu Coqui Djoraxa Gwèibóoné Gyazob Gyejj Ipalnemoani Ji 
-			Jzió Láxdaóxo Lyebe Mbalaz Na Yel Naquichinisa Naxiñanguiiu Ngolbex An Nguiiu Rire Nisa Ro Pijje 
-			Rusiguunda Véeni Veziá Zne Yel Zniá Zyrx Beljjw Bibejw Jzió Jituh Jzió Tobi
+			Láxdaóxo Lyebe Mbalaz Na Yel Naquichinisa Naxiñanguiiu Ngolbex An Nguiiu Rire Nisa Ro Pijje 
+			Rusiguunda Véeni Veziá Zne Zniá Zyrx Beljjw Bibejw Jituh Jzió Tobi
 		}
 		female_names = {
 			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
@@ -4546,10 +4546,10 @@ otomanguean = {
 	mixtec = {
 		primary = MIX
 		male_names = {
-			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
+			Cocijoeza Xolo Nucano Cocijocza Zaachilla Cocijouza Cocijopi Pwuix Dao 
 			Binech Bzojj Chsáaxcejj Cháalaxa Chonna Bicu Coqui Djoraxa Gwèibóoné Gyazob Gyejj Ipalnemoani Ji 
 			Jzió Láxdaóxo Lyebe Mbalaz Na Yel Naquichinisa Naxiñanguiiu Ngolbex An Nguiiu Rire Nisa Ro Pijje 
-			Rusiguunda Véeni Veziá Zne Yel Zniá Zyrx Beljjw Bibejw Jzió Jituh Jzió Tobi
+			Rusiguunda Véeni Veziá Zne Zniá Zyrx Beljjw Bibejw Jituh Tobi
 		}
 		female_names = {
 			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
@@ -4558,10 +4558,10 @@ otomanguean = {
 	tlapanec = {
 		primary = TLA
 		male_names = {
-			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
+			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Pwuix Dao 
 			Binech Bzojj Chsáaxcejj Cháalaxa Chonna Bicu Coqui Djoraxa Gwèibóoné Gyazob Gyejj Ipalnemoani Ji 
-			Jzió Láxdaóxo Lyebe Mbalaz Na Yel Naquichinisa Naxiñanguiiu Ngolbex An Nguiiu Rire Nisa Ro Pijje 
-			Rusiguunda Véeni Veziá Zne Yel Zniá Zyrx Beljjw Bibejw Jzió Jituh Jzió Tobi
+			Jzió Láxdaóxo Lyebe Mbalaz Na Naquichinisa Naxiñanguiiu Ngolbex An Nguiiu Rire Nisa Ro Pijje 
+			Rusiguunda Véeni Veziá Zne Yel Zniá Zyrx Beljjw Bibejw Jituh Tobi
 		}
 		female_names = {
 			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
@@ -4654,7 +4654,7 @@ je_tupi = { # Tupi
 	tupinamba = {
 		primary = TPQ
 		dynasty_names = {
-			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+			Piratininga Temiminó Tamoio Tabajara Caeté Tupinaé Tupina Aricobé
 		}
 		male_names = {
 			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
@@ -4712,7 +4712,7 @@ maranon = {
 	jivaro = {
 		male_names = {
 			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca 
-			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
 			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
 		}
 		female_names = {
@@ -4723,7 +4723,7 @@ maranon = {
 		primary = CYA
 		male_names = {
 			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca 
-			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
 			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
 		}
 		female_names = {
@@ -4762,7 +4762,7 @@ chibchan = {
 		}
 		male_names = {
 			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca 
-			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
 			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
 		}
 		female_names = {
@@ -4775,7 +4775,7 @@ chibchan = {
 		}
 		male_names = {
 			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca 
-			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
 			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
 		}
 		female_names = {
@@ -4859,7 +4859,7 @@ carribean = {
 	arawak = { #Taino
 		male_names = {
 			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
+			Wiwakaleme Haubariria Toratora Amorotahe Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
 		}
 		female_names = {
 			Hayá Isani Takuiba Twengga
@@ -4868,7 +4868,7 @@ carribean = {
 	maipurean = {
 		male_names = {
 			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
+			Wiwakaleme Haubariria Toratora Amorotahe Shoko Laliwa Arah Arata Toruí Mbicy 
 		}
 		female_names = {
 			Hayá Isani Takuiba Twengga
@@ -4886,7 +4886,7 @@ carribean = {
 	guajiro = { #	Lokono / Northern Mainland Arawak
 		primary = ARW
 		male_names = {
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
+			Wiwakaleme Haubariria Toratora Amorotahe Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
 		}
 		female_names = {
 			Takuiba Twengga
@@ -4919,7 +4919,7 @@ eskaleut = {
 			Ujurak Ukiuk Unnuk Usuiituk
 		}
 		female_names = {
-			Ahnah Akna Chena Corazon Desna Kaskae Kaya Kirima Koko Malina Adlartok Ahnah Akiak Anana Anernerk Annakpok Aput 
+			Akna Chena Desna Kaskae Kaya Kirima Koko Malina Adlartok Ahnah Akiak Anana Anernerk Annakpok Aput 
 			Ataciare Atka Aukaneck Biisaiyowaq Buniq Chulyin Cikup Corazon Cupun Hey Iluak Iluq Imnek Ipiktok Iqniq Kakrayok 
 		}
 	}
@@ -5033,7 +5033,7 @@ plains_algonquian = {
 	cheyenne = {
 		primary = CHY
 		dynasty_names = {
-			Mohe Diwali Waya Tsiyi Onacona Atagulkalu Degataga Cheasequah Adahy Atagulkalu
+			Mohe Diwali Waya Tsiyi Onacona Degataga Cheasequah Adahy Atagulkalu
 		}
 		male_names = {
 			Wechegalla Tatoncapa Japu Takchesca Chahpacpahha Tatoncahooohcalehpaha Matewashena Shonggemoneto 
@@ -5050,9 +5050,9 @@ plains_algonquian = {
 		dynasty_names = {			
 			Aisikstukiks Apikaiyikis Emitahpahksaiyiks Motahtosiks Puhksinahmahyiks Saiyiks Siksinokaks Tsiniktsistsoyiks 
 			Ahkaisumiks Ahkaipokaks Ahkotahshiks Anepo Apikaiyiks Aputosikainah Inuhksoyistamiks Isissokasimiks Istsikaihan 
-			Mameoya Nitikskiks Saksinahmahyiks Sikahpuniks Sikinokaks Ahahpitape Ahkaiyikokakiniks Apikaiyiks Esksinaitupiks 
+			Mameoya Nitikskiks Saksinahmahyiks Sikahpuniks Sikinokaks Ahahpitape Ahkaiyikokakiniks Esksinaitupiks 
 			Inuksikahpowaiks Inuksiks Ipoksimaiks Kahmitaiks Kiyis Kutaiimiks Kutaisotsiman Miahwahpitsiks Miawkinaiyiks 
-			Mokumiks Motahtosiks Motwainaiks Nitakoskitsipupiks Niwayiks Nitikskiks Nitotsiksistaniks Sikokitsimiks 
+			Mokumiks Motwainaiks Nitakoskitsipupiks Niwayiks Nitotsiksistaniks Sikokitsimiks 
 			Sikopoksimaiks Sikutsipumaiks Susksoyiks Tsiniksistsoyiks
 		}
 		male_names = {
@@ -5062,7 +5062,7 @@ plains_algonquian = {
 			Tihkoosue Togquos Apisi
 		}
 		female_names = {
-			Peta Hanata Alsoomse Hausis Hurit Kanti Keegsquaw Kimi Makkitotosimew Nadie Nijlon Nittawosew Numees Nuna Nuttah 
+			Hanata Alsoomse Hausis Hurit Kanti Keegsquaw Kimi Makkitotosimew Nadie Nijlon Nittawosew Numees Nuna Nuttah 
 			Oota dabun Pules Sokanon Sokw Sooleawa Tahki Wapun Wawetseka Koko Peta Sinopa
 		}
 	}
@@ -5084,7 +5084,7 @@ plains_algonquian = {
 		}
 		female_names = {
 			Elvamox Ethete Natane Bly Dae Cocheta Ekta Ela Elina Ila Imala Inayat Kushala Kusuma Liluye Lipika Lolaksi 
-			Lolotea Nascha Nashota Natane Nita Nitara Niti Nitika Nittawosew Onawa Onawah Preyasi Prita PreetiHalf Smita 
+			Lolotea Nascha Nashota Nita Nitara Niti Nitika Nittawosew Onawa Onawah Preyasi Prita PreetiHalf Smita 
 			Smriti Surabhi Tapi Tara
 		}
 	}
@@ -5117,7 +5117,7 @@ eastern_algonquian = {
 		primary = ABE
 		dynasty_names = {
 			Amoskeay Cocheco Cowasuck Koasek Masipskwoik Nashua Ossipee Pemigewasset Pennacook Pequaket	Piscataqua Souhegan 
-			Winnibisauga Amaseconti Alessikantekw Kinipekw Odanak Ossipee Panawahpskek Apikwahki Rocameca Wawinak Wôlinak
+			Winnibisauga Amaseconti Alessikantekw Kinipekw Odanak Panawahpskek Apikwahki Rocameca Wawinak Wôlinak
 		}
 		male_names = {
 			Qualebeenewes Madockawando Wanagemeshaw Bungawarrawit Warrankansit Bomoseen Edaranaquin Eneas 
@@ -5127,7 +5127,7 @@ eastern_algonquian = {
 			Lobal Klegual Simo Az Atian
 		}
 		female_names = {
-			Mali Malian Maliazonis Azonis Malgelit Agat Alizbat O'zalik Alan O'nis Lowiz O'nias Malgelit Katetin Mali 
+			Malian Maliazonis Azonis Agat Alizbat O'zalik Alan O'nis Lowiz O'nias Malgelit Katetin Mali 
 			Sallot Sopi Klalis Sozn Toloti Talaz
 		}
 	}
@@ -5148,7 +5148,7 @@ eastern_algonquian = {
 	}
 	mahican = {
 		dynasty_names = {
-			Muhhcanneuw Mehckentowoon Wawyachtonoc Westenhuck Wiekagjoc Shecomeco Wechquadnach Pamperaug Bantam Weataug 
+			Muhhcanneuw Mehckentowoon Wawyachtonoc Westenhuck Wiekagjoc Shecomeco Pamperaug Bantam Weataug 
 			Scaticook Mahaiwe Wikwajek Chaghnet Horikan Kaunaumeek Kenuckpacook Maringoman Monemius Nepaug Paanpaack Peantam 
 			Potick Potie Shodac Shakehook Unawat Wechquadnach Wequadnack Wiatiae Winooskeek Wyeck
 		}
@@ -5236,7 +5236,7 @@ iroquoian = {
 	cherokee = {
 		primary = CHE
 		dynasty_names = {
-			Mohe Diwali Waya Tsiyi Onacona Atagulkalu Degataga Cheasequah Adahy Atagulkalu
+			Mohe Diwali Waya Tsiyi Onacona Degataga Cheasequah Adahy Atagulkalu
 		}
 		male_names = {
 			Sequoyah Attakullaculla Guwisguwi Moytoy Yonaguska Tsiyu Gansini Agi It Boudinot Lach'n Koatohee 
@@ -5251,8 +5251,8 @@ iroquoian = {
 		}
 		female_names = {
 			Asmita Nanyehi Cuhtahlatah Sequoya Adsila Amadahy Awenasa Awinita Ayita Galilahi Leotie Usdi Galilani Hialeah 
-			Immookalee Tayanita Sequoia Ahyoka Ama Galilani Ghigau Hiawassee Immokalee Inola Knasgowa Nanye-hi Ninovan 
-			Salali Tsistunagiska Tsula Tayanita Yona
+			Immookalee Tayanita Sequoia Ahyoka Ama Ghigau Hiawassee Immokalee Inola Knasgowa Nanye-hi Ninovan 
+			Salali Tsistunagiska Tsula Yona
 		}
 	}
 	huron = {
@@ -5310,7 +5310,7 @@ siouan = {
 			Wabasha Petette Tartunkanasiah Keejee Tarsega Wamadetunka Wannata Kokomako Shacope Penision Etaseepa 
 			Wakauhee Poehapa Takewapa Tenchzepart Mascpulochastosh Tetekarmunch Wasaota Oeyakoca Maktowahkeark 
 			Matowayouwe Makatozaza Belotonkatanga Nakapagigi Maktosabichis Mewatanihanska Thathanka Iyotake 
-			Iyapato Thasunke Witko Maphiya Luta Hehaka Sapa Sinte Gleska Ite Omagazu Ogle Luta Mahpiya
+			Iyapato Thasunke Witko Maphiya Hehaka Sapa Sinte Gleska Ite Omagazu Ogle Luta Mahpiya
 		}
 		female_names = {
 			Tasinasapewin Thasinamani Tasinahlahlawin Dohumme Chapa Chapawee Chumani Dowanhowee Ehawee Hantaywee Kimimela 
@@ -5420,7 +5420,7 @@ caddoan = {
 			Tena Pulkuptima Sallaf Hoipkenek Yeptah Satinvose Pulican Pulktah Talsapeer
 		}
 		female_names = {
-			Elvamox Ethete Natane Bly Dae Cocheta Ekta Ela Elina Ila Imala Inayat Kushala Kusuma Liluye Lipika Lolaksi 
+			Elvamox Ethete Bly Dae Cocheta Ekta Ela Elina Ila Imala Inayat Kushala Kusuma Liluye Lipika Lolaksi 
 			Lolotea Nascha Nashota Natane Nita Nitara Niti Nitika Nittawosew Onawa Onawah Preyasi Prita PreetiHalf Smita 
 			Smriti Surabhi Tapi Tara
 		}
@@ -5488,7 +5488,7 @@ muskogean = {
 			Usquelagana Saktitamaha Itchechana Shumotakali Tinshinkla Chucafalaya Bissacha Otakchitotamaha Yackniachuchuma 
 			Octuechanacbe Ocatalaya Ouiacha Puscustakali Kunshabolukta Yowani Chiskilikbacha Neshobawenya Tamaha Seniasha 
 			Talepokta Iyanabe Nusiconchito Ibetapoklachitto Tombigbee Imoklashaiskitini Holithaasha Abeca Achohchuba Hankhaula 
-			Itokchako Lukfakta Bokfalaya Yazoo Kunshak Okalusa Pante Chemifalaya Shumotakali Osapachito Haluwahiasha Okacoopoly 
+			Itokchako Lukfakta Bokfalaya Yazoo Kunshak Okalusa Pante Chemifalaya Osapachito Haluwahiasha Okacoopoly 
 			Shinukkaha Kafitalaia Imoklashi Cabeahoola Kashtasha Osaktalaya Abissa Chanke Onitalemon	
 		}
 		male_names = {
@@ -5549,7 +5549,7 @@ sonoran = {
 			Popé Ku-htihth Galisteo Xenome Ollito Tagu Bolsas Naranjo Catiti
 		}
 		female_names = {
-			Ootcakao Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
+			Ootcakao Kahavasooah Sacagawea Chipeta Tocmetone
 		}
 	}
 	piman = {
@@ -5592,7 +5592,7 @@ sonoran = {
 		}
 		female_names = {
 			Elvamox Ethete Natane Bly Dae Cocheta Ekta Ela Elina Ila Imala Inayat Kushala Kusuma Liluye Lipika Lolaksi 
-			Lolotea Nascha Nashota Natane Nita Nitara Niti Nitika Nittawosew Onawa Onawah Preyasi Prita PreetiHalf Smita 
+			Lolotea Nascha Nashota Nita Nitara Niti Nitika Nittawosew Onawa Onawah Preyasi Prita PreetiHalf Smita 
 			Smriti Surabhi Tapi Tara
 		}
 	}
@@ -5605,7 +5605,7 @@ apachean = {
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
 			Toboso Cholome Jocome Sibolo Pelone Manso Kiva
-			Arivaipa Carlanas Chiricahua Ch'uuk'anen Cibecue Coyotero
+			Arivaipa Carlanas Ch'uuk'anen Cibecue Coyotero
 			Faraones Gileno KIowa Llanero Lipiyanes
 			Mimbrenos Mogollon Na'iisha Natages Pinal 
 			Querechos
@@ -5620,11 +5620,11 @@ apachean = {
 		}
 	}
 	mescalero = {
-		primary = MES
+		primary = MSC
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
 			Toboso Cholome Jocome Sibolo Pelone Manso Kiva
-			Arivaipa Carlanas Chiricahua Ch'uuk'anen Cibecue Coyotero
+			Arivaipa Carlanas Ch'uuk'anen Cibecue Coyotero
 			Faraones Gileno KIowa Llanero Lipiyanes
 			Mimbrenos Mogollon Na'iisha Natages Pinal 
 			Querechos
@@ -5643,7 +5643,7 @@ apachean = {
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
 			Toboso Cholome Jocome Sibolo Pelone Manso Kiva
-			Arivaipa Carlanas Chiricahua Ch'uuk'anen Cibecue Coyotero
+			Arivaipa Carlanas Ch'uuk'anen Cibecue Coyotero
 			Faraones Gileno KIowa Llanero Lipiyanes
 			Mimbrenos Mogollon Na'iisha Natages Pinal 
 			Querechos
@@ -5662,8 +5662,8 @@ apachean = {
 		dynasty_names = {
 			"Bit'anhi" "Naaste'ezheh" "Kiyaa'aanii" "Dzilt'aadi" Honaghaahnii "To'ahani" 
 			"Ta'neeszahnii" "Hashk'aa Hadzohi" Nihoobaanii "Ts'ah Yisk'idnii" "Todich'ii'nii" "To Baazhni'azhi" Tseikeehee
-			"Naaket L'ahi" "Tsin Sikaadnii" "Biih Bitoodnii" "Tl'ogi" "Todik'ozhi" "K'aahanaanii" "Todich'ii'nii" "Totshnii"
-			"Hooghan Lani" "Dzaaneez Lani" "Tse Deeshgizhnii" "Hasht L'ishnii" Tabaaha Haltsooi "To Baazhni'azhi" "Tachii'nii"
+			"Naaket L'ahi" "Tsin Sikaadnii" "Biih Bitoodnii" "Tl'ogi" "Todik'ozhi" "K'aahanaanii" "Totshnii"
+			"Hooghan Lani" "Dzaaneez Lani" "Tse Deeshgizhnii" "Hasht L'ishnii" Tabaaha Haltsooi "Tachii'nii"
 			"Kin Ichii'nii" Tsenjikini Dibelzhini "Ma'ii Deeshgiizhinii" "Ashinuii" "Keha'atiinii" "To'aheedliinii"
 			
 		}
@@ -6271,10 +6271,10 @@ japanese_g = {
 			Ietsugu Yoshimune Ieshige Ieharu Ienari Ieyoshi Iesada Iemochi Yoshinobu
 		}
 		female_names = {
-			Toku Sen Tama Aya Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
+			Toku Sen Tama Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
 			Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru 
 			Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede 
-			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto 
+			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kyo Kyou Mai Makoto 
 			Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio 
 			Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi 
 			Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu 
@@ -6297,10 +6297,10 @@ japanese_g = {
 			Ietsugu Yoshimune Ieshige Ieharu Ienari Ieyoshi Iesada Iemochi Yoshinobu
 		}
 		female_names = {
-			Toku Sen Tama Aya Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
+			Toku Sen Tama Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
 			Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru 
 			Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede 
-			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto 
+			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kyo Kyou Mai Makoto 
 			Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio 
 			Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi 
 			Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu 
@@ -6323,10 +6323,10 @@ japanese_g = {
 			Ietsugu Yoshimune Ieshige Ieharu Ienari Ieyoshi Iesada Iemochi Yoshinobu
 		}
 		female_names = {
-			Toku Sen Tama Aya Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
+			Toku Sen Tama Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
 			Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru 
 			Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede 
-			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto 
+			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kyo Kyou Mai Makoto 
 			Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio 
 			Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi 
 			Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu 
@@ -6638,19 +6638,21 @@ southeastasian_group = {
 		}
 		male_names = {
 			"Barom Reachea" "Noreay Ramathipatei" "Soriyotei" "Thommo Reachea" "Srey Sukonthor" "Ang Chan" "Reachea Ramathipatei"
-			"Barom Reachea" "Chey Chettha" "Ney Khan" "Preah Ram" "Keo Hua" "Outey Reachea" "Dharmaraja" "Padumaraja" "Ramathipadi" "Satha" "Ream Reachea" "Narayanaraja" "Ponhea Yat" "Narayanaraja" 
-			"Sri Raja" "Rajadhiraja" "Dharmarajadhiraja" "Damkhat Sukonthor" "Reamea Chungprey" "Keo Ban On" "Ponhea Yor" "Ponhea An" "Ponhea Nhom" "Srei Soriyopear" "Udayaraja" "Ponhea To" "Ang Non" "Ponhea Chan" "Ang Sur" 
+			"Chey Chettha" "Ney Khan" "Preah Ram" "Keo Hua" "Outey Reachea" "Dharmaraja" "Padumaraja"
+			"Ramathipadi" "Satha" "Ream Reachea" "Narayanaraja" "Ponhea Yat" 
+			"Sri Raja" "Rajadhiraja" "Dharmarajadhiraja" "Damkhat Sukonthor" "Reamea Chungprey" "Keo Ban On"
+			"Ponhea Yor" "Ponhea An" "Ponhea Nhom" "Srei Soriyopear" "Udayaraja" "Ponhea To" "Ang Non" "Ponhea Chan" "Ang Sur" 
 			"Ang Chea" "Ang Nan" "Ang Sor" "Ang Yong" "Ang Em" "Ang Tham" "Ang Sngoun" "Ang Tong" "Ang Ton" "Ang Eng" 
 			"Ang Duong"
 		}
 		female_names = {
-			"Boupha" "Sakngea" "Ang Mey" "Anak Moneang Krachap" "Neang Pou" Achariya Akara Anchali Arunny Ary Bopha Botum 
+			"Sakngea" "Ang Mey" "Anak Moneang Krachap" "Neang Pou" Achariya Akara Anchali Arunny Ary Bopha Botum 
 			Boupha Champei Champey Chamroeun Chan Chankrisna Chanlina Chanmony Channary Chanthavy Chantou Chantrea 
 			Chanvatey Chariya Chavy Chaya Chea Chenda Chhaiya Chhean Chhorvin Chhorvon Chivy Choum Da Daevy Dara 
 			Darareaksmey Davi Jorani Kalianne Kaliyanei Kalliyan Kanleakhana Kannareth Kannitha Kanya Kesor Kolab Kolthida 
-			Kravann Kun Thea Kunthea Leakena Leap Mach Makara Malis Maly Mau Mealea Mean Mliss Mony Nakry Thom Thyda Tina 
+			Kravann Kun Thea Kunthea Leakena Leap Mach Makara Malis Maly Mau Mealea Mliss Mony Nakry Thom Thyda Tina 
 			Toch Tola Vanna Veasna Veata Vimean Nary Nearidei Neary Reach Reaksmey Rangsei Reasmey Sokha Sokhanya Sokhom 
-			Sok Mean Rom Chang Rotha Samphy Roumduol Roumjong Samnang Saley Savady Sawatdee Seda Seyha Sikha Sinuon Sita 
+			Mean Rom Chang Rotha Samphy Roumduol Roumjong Samnang Saley Savady Sawatdee Seda Seyha Sikha Sinuon Sita 
 			Soboen Socheat Sok Sombo Sonisay Sonith Peou Nuon Phally Phary Pich Pheakdei Pheakkley Phhoung Ponlok Ponnleu 
 			Pisey Putrea Punthea Rachana Rachany 
 		}
@@ -6772,7 +6774,7 @@ pacific = {
 	papuan = {
 		male_names = {
 			Agolave Akelika-Yaga Amborn Andagalimp-Wak Barunoma Buassi Endemongo Ewunga-Goiba Gaima-Yokumul Gasowe 
-			Gavey-Akamo Gerigl-Gande Gesupo Gopie-Ataiamelaho Isakoa-Hepu Isakoa-Hepu Jokuri-Hari Kaglnogl Kainaro-Kravia 
+			Gavey-Akamo Gerigl-Gande Gesupo Gopie-Ataiamelaho Isakoa-Hepu Jokuri-Hari Kaglnogl Kainaro-Kravia 
 			Kaura Kepagane-Peone Kerenga Kerika-Rebia Khaswaho-Baitoheiro Kiakoa Kimba-Kopol Kirupano-Eza'e 
 			Kize Kize-Obaneso Klimbil Koin Kombagle Komp-Nikints Kondon-Agaundo Konia-Taglba KopiaKerika-Kubal Koritoia-Ope 
 			Korpore Korua-Kolta Korul-Korul Kuan Kubal-Nori Kubarl Kumai-Kana Kumi-Kispe Kut Kwipi-Nembil Loo Lowai 
@@ -6789,7 +6791,7 @@ pacific = {
 	}
 	aboriginal = {
 		male_names = {
-			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarra Jarrah 
+			Adoni Akama Allambee Amaroo Apari Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarra
 			Jarrah Jerara Jirra Kalti Maka Mallee Mandu Marron Matari Mearann Minar Miro Mogo Monti Mowan Odern Orad Parri 
 			Pindan Pindari Taree Tewart Tuart Uwan Warra Warrain
 		}
@@ -6979,7 +6981,7 @@ eastern_aryan = {
 		male_names = {
 			Jayajyotimalla Jayayakshamalla Ratmamalla Suryamalla Amaramalla Narendramalla Mahendramalla Sadashivamalla 
 			Shivasimhamalla Lakshminarasimhamalla Pratapamalla Jayanripendramalla Parthivendramalla Bhupendramalla 
-			Bhaskaramalla Mahendrasimhamalla Jayaprakasamalla Bhimsen Amar Singh Ranjur Singh Bhakti
+			Bhaskaramalla Mahendrasimhamalla Jayaprakasamalla Bhimsen Amar Ranjur Singh Bhakti
 		}
 		female_names = {
 			Devaladevi Kaushalyawati Rajendralakshmi Maiya Nanu Nani Maya Pragya Anu Chameli Nirmala Anushka Sarmila Komal 
@@ -7003,22 +7005,22 @@ eastern_aryan = {
 		}
 		male_names = {
 			Narasimhadeva Bhanudeva Kapilesvara Pratâprudra Kaluadeva Govindaraja Vidyadhara Chakrapretâpa Nârashima 
-			Jana Raghurâma Chhotra Mukundadeva Harishandra Râmchandra Deva Râmchandra Purushottama Mukunda Nârsimha 
-			Gangâdar Bâlabhadra Divya Simha Hari Krishna Gapînâth Deva Padmanabha Vîra Kishor Deva Devendravarman 
-			Anantavarman Ananga Bhima Narasimha Bhanu Narayan Gopinath Rudra Mukunda Bira Jagat Saheb Kumar
-			Anangabhima Anantasaktivarman Anantavarman Apsaradeva Arthapatiraja Ayasobhita Balabhadra 
-			Barjena Betta Bhanu Bhavadattavarman Bhimaratha Bhimasena Bhramarbara Bhupendra Bhupendravarman 
+			Jana Raghurâma Chhotra Mukundadeva Harishandra Râmchandra Deva Purushottama Mukunda Nârsimha 
+			Gangâdar Bâlabhadra Divya Simha Hari Krishna Gapînâth Padmanabha Vîra Kishor Devendravarman 
+			Anantavarman Ananga Bhima Narasimha Bhanu Narayan Gopinath Rudra Bira Jagat Saheb Kumar
+			Anangabhima Anantasaktivarman Apsaradeva Arthapatiraja Ayasobhita Balabhadra 
+			Barjena Betta Bhavadattavarman Bhimaratha Bhimasena Bhramarbara Bhupendra Bhupendravarman 
 			Chandravarman Charamparaja Damodara Danai Danarnava Dayita Dayitavarman Devananda 
-			Devendravarman Dharmaraja Dharmarstha Dhruvananda Dibyasingha Digbhanja Durgaraja Durjaya 
+			Dharmaraja Dharmarstha Dhruvananda Dibyasingha Digbhanja Durgaraja Durjaya 
 			Durjayabhanja Gangadhara Gandhata Gangakavilasa Gayada Gopinatha Gunamaharnava Gunarnava 
 			Gundama Hamvira Harekrushna Hastivarman Hemantavarman Indranatha Indravarman Jahangir Janmejaya 
 			Jayananda Jayaraja Jayasimha Jayasthambha Jayavarma Jayavarmadeva Kakharua Kalaha Kalahastambha 
 			Kalasa Kalua Kalyankalasa Kamarnava Kanchana Kanchanastambha Kapilendra Kapilendradeva 
 			Karnadeva Khadaga Kotta Kottabhanja Ksemankaradeva Kulastambha Lakshmikaradeva Madhavaraja 
 			Madhavavarman Madhukamarnava Mahendraditya Mahendravarman Mahinda Manamatra Matradhyarya 
-			Mukunda Nahusa Nandaprabhanjana Nandaprabhanjanavarman Nandavarman Narasimha Narendra Netta 
+			Nahusa Nandaprabhanjana Nandaprabhanjanavarman Nandavarman Narendra Netta 
 			Nettabhanja Padmanava Paramananda Prasannamatra Prataparudra Pravaraja Prithivarman 
-			Prithivimaharaja Prithvibhanja Prithvidena Pulindasena Puranjaya Purushottama Rajabhanja 
+			Prithivimaharaja Prithvibhanja Prithvidena Pulindasena Puranjaya Rajabhanja 
 			Rajaraja Ramachandra Ramachandradeva Ranabhanja Ranabhita Ranadurjaya Ranga Rangabhanja 
 			Sailobhava Sainyabita Saktivarman Samantavarman Sambhuyasa Sankaravarman Santikaradeva Sarabha 
 			Satru Satrubhanja Satyavarman Sila Silabhanja Sivakaradeva Sivananda Skandavarman Sobhanaraja 
@@ -7031,7 +7033,7 @@ eastern_aryan = {
 			Durlabha Gandharavati Gauri Gaurimahadevi Kalyanavati Karnadevi Kuladevi Lakshmi 
 			Lakshmikaradevi Lilavati Mahadevi Nayanadevi Rajasundari Ratnavati Suvrata Syamadevi Vakula 
 			Vakulamahadevi Vasumati Vijnanavati Vijnayavati Yajiyavati Yajnavati Giriraj Kumari Suratarangini Devi 
-			Krishnapriya Bishnupriya Tikayet Devi
+			Krishnapriya Bishnupriya Tikayet
 		}
 	}
 	sinhala = {
@@ -7041,22 +7043,22 @@ eastern_aryan = {
 		}
 		male_names = {
 			Parakramabahu Jayabahu Bhuvanaikabahu Vijayabahu Dharmapalabahu Vimala Dharmasuriya Senarut Rajasimha 
-			Narenda Sri Vijaya Rajasimha Kitri Sri Rajasimha Sri Rajadhiraja Simha Dhatmapala
+			Narenda "Sri Vijay" Kitri "Sri Rajasimha" "Sri Rajadhiraja" "Sri" Simha Dhatmapala
 			Agabala Aggabodhi Agibuti Ananda Anikanga Apaya Arittha Avirada Ayasmantha Bhuvanekabahu 
 			Butisamana Chodaganga Dahamsena 
 			Danamitta Dappula Dathappabhuti Dathopatissa Dharmapala Dharmasena Dharmasoka Dhatusena 
 			Digakassapa Diganaguli 
-			Digasumana Gajabahu Hadaka Hadana Hujata Jayabahu Jetthatissa Jhotisena Kashyapa Kassapa Kitti 
+			Digasumana Gajabahu Hadaka Hadana Hujata Jetthatissa Jhotisena Kashyapa Kassapa Kitti 
 			Kittisena Kittivarma 
 			Magamitta Mahadeva Mahanaga Mahasattha Mahasena Mahasiva Mahinda Manavanna Mihidala Mihindala 
 			Mitta Moggallana 
-			Nandamitta Narendra Narendrasinha Nirmala Padita Parakkamabahu Parakramabahu Rajasinha Rakasala 
+			Nandamitta Narendra Narendrasinha Nirmala Padita Parakkamabahu Rajasinha Rakasala 
 			Ratana Rohaka 
 			Sadhatissa Sagala Saliya Sanghamitta Sanghatissa Sankha Sena Senarat Sidata Sigaratissa 
 			Silameghavanna Sinhabahu 
 			Siva Sobana Sobika Sudata Sumana Surakita Suratissa Tissa Udaya Upatissa Vassaba Vebeliya 
-			Vepali Vijayabahu 
-			Vikrama Vikrama Vikramabahu Vimaladharma Vimaladharmasuriya Virabahu Viranarendra
+			Vepali 
+			Vikrama Vikramabahu Vimaladharma Vimaladharmasuriya Virabahu Viranarendra
 		}
 		female_names = {
 			Abijliguta Ahali Anula Anurada Anuradi Anuridi Asadaguta Asali Aselaya Ata Barani Bodhideva 
@@ -7072,7 +7074,7 @@ eastern_aryan = {
 			Rasumiliya Reva Sagara Samidata Samudaguta Savera Seneya Silmini Siriguta Siripali Sivala 
 			Sivanabuti Somali Sugula 
 			Sujhata Sumanadevi Suri Suriguta Tisi Tissabuti Tissadata Tissadevi Tissamita Tissaraka 
-			Tissarakita Yahasaya Yahasini Sunetra Devi Kalyanavati Swarnamanikya 
+			Tissarakita Yahasaya Yahasini Sunetra Devi Swarnamanikya 
 		}
 	}
 }
@@ -7127,11 +7129,11 @@ hindusthani = {
 			"Gahunia" "Gian" "Nihang " "Granth" "Bhai Bachittar" "Himmat" "Hoora" "Ishnar" "Jhol" "Jhotti" 
 			"Mokham" "Nand" "Parmanand" "Rajsingh" "Sanlib" "Sardul" "Shabeg" "Shergill" "Sodhi" "Sohal" 
 			"Tara" "Udasi" "Angad" "Amar" "Lohaar" "Dharem" "Fakir" Ranjor
-			Ajit Amar "Amar Dasi" Amir Angad Arjun Atar Basawa Bhagwant Bhaimani Budh Chand Charat 
-			Damodar Dasu Datu Dayaram Didar Farid Fateh Gobind Gurdita 
+			Ajit "Amar Dasi" Amir Arjun Atar Basawa Bhagwant Bhaimani Budh Chand Charat 
+			Damodar Dasu Datu Dayaram Didar Farid Gurdita 
 			Hargobind Hari "Har Krishan" "Har Rai" "Jai Ram" Jetha Jujhar 
-			Kalyan Kapur Kehar Kharak Khushal Lahna Lakhmichand Laxman 
-			Mahadev Mohan Mohri Nanak Narayan Nodha Partap Pheru Prithichand Prithvi "Ram Rai" Ranjit 
+			Kalyan Kapur Kehar Khushal Lahna Lakhmichand Laxman 
+			Mahadev Mohan Mohri Nanak Narayan Nodha Partap Pheru Prithichand Prithvi "Ram Rai"
 			Sahdev Shamsher Sher Srichand "Tegh Bahadur" "Tej Bhan" Thakur Zorawar
 		}
 		female_names = {
@@ -7158,52 +7160,71 @@ hindusthani = {
 		}
 	}
 	male_names = {
-		Achalraj Achalraja Achalraja Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal Anangpala 
-		Anangpala Anangpala Anupapala Anupapala 
-		Anuppal Anupapala "Apara Gangeya" Arjunpal Arjunpala Arjunpala Arjunpala Arjunavarman Bacchdev 
+		Achalraj Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal Anangpala Anupapala 
+		Anuppal "Apara Gangeya" Arjunpal Arjunpala Arjunavarman Bacchdev 
 		Bachraj Baghpal Baghpala 
-		Bahadur-Singh Beejpal Beejpala Beejpala Beejpala Bhaadar Bhilpala Bhoj Bhoja Bhoja Bhoja 
-		Bhojavarman Bhoja Bhopal Bhumpal Bhumpala 
-		Bhumpala Bhumpala Birpal Birpala Birpala Birpala Bisaldeva Brahmadeva Brahmapala Brahmdevpal Chand 
-		Devapala Devavarman Dhanga Dhanga 
-		Dhangadeva Dhanga Dharmapala Dhaulshaya Dilipapala Dilipapala Dilippal Dilipapala Doth Draupad 
-		Draupada Draupada Draupada Dugarendra 
-		Gambhir Ganapatideva Gandadeva Gangeya Ghatamdeva Gopal Gopala Gopala Gopala Govindachandra 
-		Govindapala Govindaraja Govindaraja Govindraj Govindaraja
-		Hamir Hammiravarman Harpal Harsa Harsa Harshapala Harsa Hirapal Hirapala Indrapal 
-		Indrapala Indrapala Indrapala Ishtpala 
-		Jaganpal Jaganpala Jaganpala Jaganpala Jagatpal Jagatpala Jagatpala Jagatpala Jagdev Jagdeva 
-		Jagdeva Jagdeva Jaidas Jaipal Jaitugideva Jasapala Jasapala 
-		Jaspal Jasapala Jatanpal Jatanpala Jatanpala Jatanpala Jayapala Jayasakti Jayasimha Jayavarman 
-		Jhetpal Jhetpala Jhetpala Jhetpala Junpala 
-		Kailaspal Kailaspala Kailaspala Kailaspala Kalkurna Kalyanachandra Kakhopal Kakhopala Kakhopala 
-		Kakhopala Kamal Kanhad Kanvarpal Kanvarpala 
-		Kanvarpala Kanvarpala Karnpal Keeratdeva Khadag Khetrapal Khetrapala Khetrapala Khetrapala Kiratpal 
-		Kiratpala Kiratpala Kiratpala Krishnray 
-		Krsnapa Kumarapala Kunwar Kunwar Kunwarpal Kunwar Ladahachandra Lakshmandeva Lokpala Madanapala 
+		Bahadur-Singh Beejpal Beejpala Bhaadar Bhilpala Bhoj Bhoja 
+		Bhojavarman Bhopal Bhumpal Bhumpala 
+		Birpal Birpala Bisaldeva Brahmadeva Brahmapala Brahmdevpal Chand 
+		Devapala Devavarman Dhanga 
+		Dhangadeva Dharmapala Dhaulshaya Dilippal Dilipapala Doth Draupad 
+		Draupada Dugarendra 
+		Gambhir Ganapatideva Gandadeva Gangeya Ghatamdeva Gopal Gopala Govindachandra 
+		Govindapala Govindaraja Govindraj
+		Hamir Hammiravarman Harpal Harsa Harshapala Hirapal Hirapala Indrapal Indrapala Ishtpala 
+		Jaganpal Jagatpal Jagatpala Jagdev Jagdeva 
+		Jaidas Jaipal Jaitugideva Jasapala 
+		Jaspal Jatanpal Jatanpala Jayapala Jayasakti Jayasimha Jayavarman 
+		Jhetpal Jhetpala Junpala 
+		Kailaspal Kailaspala Kalkurna Kalyanachandra Kakhopal Kakhopala 
+		Kamal Kanhad Kanvarpal Kanvarpala 
+		Karnpal Keeratdeva Khadag Khetrapal Khetrapala Kiratpal	Kiratpala Krishnray 
+		Krsnapa Kumarapala Kunwar Kunwarpal Ladahachandra Lakshmandeva Lokpala Madanapala 
 		Madanavarman Maharana Mahendrapal Mahendrapala 
-		Mahendrapala Mahendrapala Mahipal Mahipala Mahipala Mahipala Mahipata Mahlakadeva Mandandeva 
+		Mahipal Mahipala Mahipata Mahlakadeva Mandandeva 
 		Mangaldeva Margdeva Mihira Nagapala Nagdeo Nannuka 
 		Naravarman Narayanapala Narpal Nayapala Nihaal Nihalray Paramardideva Pavak Peepalraj Popatraj 
-		Pritampal Pritampala Pritampala Pritampala Prithipala 
-		Prithvi Prithvi Prithvipal Prithvi Prithviraj Prithviraja Prithviraja Prithviraja Prithvivarman 
+		Pritampal Pritampala Prithipala 
+		Prithvi Prithvipal Prithviraj Prithviraja Prithvivarman 
 		Rahila Rajapala Rajyapala Ramabhadra Ramachandra 
-		Rampal Rampala Rampala Rampala Rana Rangraj Rangraja Rangraja Rangraja Ratnapala Rijhpala 
+		Rampal Rampala Rana Rangraj Rangraja Ratnapala Rijhpala 
 		Roshandeva Salivaahan Sallaksanavarman Saugandeva Shurapala 
-		Sisupal Sisupala Sisupala Sisupala Sohanpal Somasi Someshvara Sonpal Sonpala Sonpala Sonpala 
+		Sisupal Sisupala Sohanpal Somasi Someshvara Sonpal Sonpala 
 		Srichandra Subhatavarman Sukhinpal Sukhinpala 
-		Sulakshanpal Sultanpal Sultanpala Sultanpala Sultanpala Surajpal Surajpala 
-		Surajpala Surajpala Traillokyachandra Tejapala Tejpal 
-		Tejpal Tejpal Tolpal Trailokyavarman Trilochanpala Udayaditya Udaysangh Uddharandeva Vachhal 
-		Vakpati Vapyata Varshapala Varshapala Varshpal Varshapala 
-		Vasudev Vidurathpal Vidurathpala Vidurathpala Vidurathpala Vidyadhara Vigrahapala Vigraharaja 
+		Sulakshanpal Sultanpal Sultanpala Surajpal 
+		Surajpala Traillokyachandra Tejapala 
+		Tejpal Tolpal Trailokyavarman Trilochanpala Udayaditya Udaysangh Uddharandeva Vachhal 
+		Vakpati Vapyata Varshapala Varshpal 
+		Vasudev Vidurathpal Vidurathpala Vidyadhara Vigrahapala Vigraharaja 
 		Vihangpal Vijayapala Vijayasakti Vinayakapala Vindhyavarman 
 		Viramdeva Viravarman Virsinghadeva Yasovarman
 	}
 	female_names = {
 		Akal Anantadevi Damayanti Dattadevi Dehanagadevi Dhruvadevi Dhruvasvamini Hemavati 
 		Kakanvati Kalayandevi Kanchuka Kanwar Karmavati Kumaradevi Lakshman Maharani Mahidevi Nattadevi
-		Prabhavati Prabhavatigupta Prasadhanadevi Puppadevi Rajamati Sanyukta Shrimitradevi Aadi Abhirati Aditi Adya Agrata Ahalya Ahisma Ajaya Alka Amaravati Amba Ambar Ambika Ambrosia Amhi Amhika Amma Amritha Anahita Anala Ananda Ananta Anasuya Anga Angirasa Anila Annapurna Anumati Apala Apsaras Arpana Aruna Arundhati Arya Avani Avasa Avatara Baka Ballari Behula Bela Bha Bhadraa Bhagiratha Bharati Bhikkhuni Bhimadevi Bhu Bhudevi Brinda Chamunda Chanda Chandi Chandra Changla Channa Charumati Chhaya Chitra Corona Daeva Dakini Dakshina Damayanti Daru Denali Deva Devaki Devamatar Devayani Devi Devika Dharani Dharma Diti Div Divya Drisana Durga Ellora Eshana Gambhiri Gandhari Ganesa Garima Garuda Garudi Gatha Gaura Gauri Gayatri Gita Guri Haimati Hanita Hara Hariti Harsha Hema Hetal Indi Indira Indra Indrani Indumati Ishana Ishani Jaganmata Jamuna Janna Jarita Jaya Jayanti Jayne Jivanta Jui Jyotika Jyotis Kadru Kailasa Kala Kali Kalinda Kalindi Kalli Kallie Kamala Kamana Kanan Kantha Kanya Karka Karma Karuna Kasi Kaveri Kavindra Kerani Kesava Khasa Kiran Kirati Kiri Kirsi Kirtana Kirti Komala Krodha Kumari Kumuda Kumudavati Kunti Laasya Lajila Laksha Lakshmi Lakya Lalasa Lalita Lanka Latika Lavanya Leya Madhur Madri Mahadevi Mahamari Mahesa Maheshvari Mahila Maina Makara Malini Mallika Manasa Manda Mandara Manju Marisha Matrika Meena Meghana Mehadi Minda Mira Mrinal Muniya Nanda Nandini Narmada Natesa Nayana Neeja Neema Nidra Niloufer Nipa Nirveli Nisha Nitara Niyati Odra Ojal Omana Opal Padma Pallavi Pandara Pandita Parvani Pinga Pishachi Pithasthana Prabha Pramlocha Premala Quasar Rachana Radha Raja Rajni Ramya Ran Rana Rane Ranee Rani Rania Rashmika Rati Ratna Ravati Rekha Riddhi Rohana Rohini Ruana Rubaina Ruma Rupali Sakari Sakina Sakra Sakujna Samvarta Sandhya Saniya Sanjna Sany Sara Sarama Sarisha Sati Satya Satyavati Saura Savarna Savitari  Seema Sevita Sevti Shaibya Shakini Shakra Shakti Shalin Shanata Shanta Shanti Shapa Sharada Sharama Sharvani Shashi Shasti Shitala Shraddha Shri Shyla Sita Sitara Sohalia Soma Subha Suchi Sumana Sumitra Sundari Sunila Supriya Sur Sur Tamanna Tanaya Tanika Tanuja Tapati Tara Taraka Tarala Tarannum Tarika Tira Tirtha Trisha Trishna Trisna Triveni Tulsi Uma Umika Upala Ura Urvi Usha Ushas Uttara Vac Vach Vairocana Vallari Vandana Varana Varaza Varouna Varsha Varuna Varunani Vasanti Vayu Vedas Vema Vijaya Vilina Vina Vinata Vinaya Vineeta Viveka Vivika Yamuna Yasiman Yasmine Yauvani Zahra Zudora
+		Prabhavati Prabhavatigupta Prasadhanadevi Puppadevi Rajamati Sanyukta Shrimitradevi Aadi Abhirati Aditi 
+		Adya Agrata Ahalya Ahisma Ajaya Alka Amaravati Amba Ambar Ambika Ambrosia Amhi Amhika Amma Amritha Anahita
+		Anala Ananda Ananta Anasuya Anga Angirasa Anila Annapurna Anumati Apala Apsaras Arpana Aruna Arundhati Arya
+		Avani Avasa Avatara Baka Ballari Behula Bela Bha Bhadraa Bhagiratha Bharati Bhikkhuni Bhimadevi Bhu Bhudevi
+		Brinda Chamunda Chanda Chandi Chandra Changla Channa Charumati Chhaya Chitra Corona Daeva Dakini Dakshina
+		Daru Denali Deva Devaki Devamatar Devayani Devi Devika Dharani Dharma Diti Div Divya Drisana Durga Ellora Eshana
+		Gambhiri Gandhari Ganesa Garima Garuda Garudi Gatha Gaura Gauri Gayatri Gita Guri Haimati Hanita Hara Hariti
+		Harsha Hema Hetal Indi Indira Indra Indrani Indumati Ishana Ishani Jaganmata Jamuna Janna Jarita Jaya Jayanti
+		Jayne Jivanta Jui Jyotika Jyotis Kadru Kailasa Kala Kali Kalinda Kalindi Kalli Kallie Kamala Kamana Kanan Kantha
+		Kanya Karka Karma Karuna Kasi Kaveri Kavindra Kerani Kesava Khasa Kiran Kirati Kiri Kirsi Kirtana Kirti
+		Komala Krodha Kumari Kumuda Kumudavati Kunti Laasya Lajila Laksha Lakshmi Lakya Lalasa Lalita Lanka Latika
+		Lavanya Leya Madhur Madri Mahadevi Mahamari Mahesa Maheshvari Mahila Maina Makara Malini Mallika Manasa Manda
+		Mandara Manju Marisha Matrika Meena Meghana Mehadi Minda Mira Mrinal Muniya Nanda Nandini Narmada Natesa
+		Nayana Neeja Neema Nidra Niloufer Nipa Nirveli Nisha Nitara Niyati Odra Ojal Omana Opal Padma Pallavi Pandara
+		Pandita Parvani Pinga Pishachi Pithasthana Prabha Pramlocha Premala Quasar Rachana Radha Raja Rajni Ramya Ran
+		Rana Rane Ranee Rani Rania Rashmika Rati Ratna Ravati Rekha Riddhi Rohana Rohini Ruana Rubaina Ruma Rupali Sakari
+		Sakina Sakra Sakujna Samvarta Sandhya Saniya Sanjna Sany Sara Sarama Sarisha Sati Satya Satyavati Saura
+		Savarna Savitari  Seema Sevita Sevti Shaibya Shakini Shakra Shakti Shalin Shanata Shanta Shanti Shapa
+		Sharada Sharama Sharvani Shashi Shasti Shitala Shraddha Shri Shyla Sita Sitara Sohalia Soma Subha Suchi
+		Sumana Sumitra Sundari Sunila Supriya Sur Tamanna Tanaya Tanika Tanuja Tapati Tara Taraka Tarala
+		Tarannum Tarika Tira Tirtha Trisha Trishna Trisna Triveni Tulsi Uma Umika Upala Ura Urvi Usha Ushas Uttara
+		Vac Vach Vairocana Vallari Vandana Varana Varaza Varouna Varsha Varuna Varunani Vasanti Vayu Vedas Vema
+		Vijaya Vilina Vina Vinata Vinaya Vineeta Viveka Vivika Yamuna Yasiman Yasmine Yauvani Zahra Zudora
 	}
 	dynasty_names = {
 		"Gautam" "Ajaka" "Cedi" "Dasaratha" "Salisuka" "Satadhanva" "Gahadvala" "Dhariwal" "Jethani" 
@@ -8935,21 +8956,21 @@ levant_culture_group = { #New Group, but Vanilla cultures
 			Ali Davut Hasan Hüseyin Ishak Kamer Kasim Korkut Emin Iskender Halil Sait Hamit Ertugrul Izzettin 
 			Nizamettin Sinan Ferhat Salih Ismail Cüneyt Bahadir Hizir Harun Cemal Inal Celalettin Ilyas 
 			Dursun Ramazan Recep Abdulrahman Hayrettin
-			Çagri Çaka Afsin Ahmet Aksonqor Alaeddin Ali Alkan "Alp Arslan" "Alp Yurek" Alptigin Artuk Ayaz 
-			Aydin Aydogan Aydogdu Aytekin Böru Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars 
-			Bayezid Baytas Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud David 
-			Demir Dogan Dogukan Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hizir Ibrahim Ilgazi 
-			Inal Iskender Alexander Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun 
-			Kemal Kiliç Korkut Kutalmis Kutay Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad 
-			Mustafa Orhan Osman Porsuk Rustem Ramazan Ridvan Söbuk Sökmen Sönmez Suleyman Saim Saltuk 
-			Saruca Savtekin Savur Sehinsah Selçuk Selim Sencer Sinan Tanrivermis Tekin Timurtas Togay 
+			Çagri Çaka Afsin Aksonqor Alaeddin Alkan "Alp Arslan" "Alp Yurek" Alptigin Artuk Ayaz 
+			Aydin Aydogan Aydogdu Aytekin Böru Bulend Balaban Basbuga Batuhan Baturay Baybars 
+			Baytas Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud David 
+			Demir Dogan Dogukan Dukak Erdem Ertan Ertekin Gunduz Ilgazi 
+			Alexander Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kaya Kaytun 
+			Kemal Kiliç Kutalmis Kutay Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad 
+			Porsuk Rustem Ridvan Söbuk Sökmen Sönmez Suleyman Saim Saltuk 
+			Saruca Savtekin Savur Sehinsah Selçuk Sencer Tanrivermis Tekin Timurtas Togay 
 			Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan Tutus Uluç Umur Yakut Yaman Yinal 
 			Yunus
 		}
 		female_names = {
 			Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu 
 			Bozçin Canan Ceylan Dunya Dilber Dilek Emine Esin Fatma Firuze Gulçiçek Gulay Gulbahar Gulfem 
-			Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge Karacik Lale 
+			Gulsum Gumus Gunduz Gundes Gunes Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge Karacik Lale 
 			Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica 
 			Sati Sehnaz Serap Serife Sevilay Sevindik Sibel Sibylla Sirin Sirma Songul Sumru Tekçe Tura 
 			Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal Hatice Safiye Zeynep Hürrem Mihrimah Nurbanu 
@@ -8963,9 +8984,9 @@ levant_culture_group = { #New Group, but Vanilla cultures
 			Katkhuda Abaza Qasimiyya Qitas al-Qazdughli Yakubid Hassanid
 		}
 		male_names = {
-			Muhammad Ahmad Qânsawh Tûmân Bay Inâl Khusqadam 'Abd al-'Aziz al-Musta'in al-Nasr Faraj Barsbay 
+			Muhammad Ahmad Qânsawh Tûmân Inâl Khusqadam 'Abd al-'Aziz al-Musta'in al-Nasr Faraj Barsbay 
 			Qâyit Bay Shaik al-Mahmudi Timurbughâ 'Uthman Yalbay Jânbulât Yûsuf Barqûq 'Alî Baybars Hâjjî 
-			Bakr al-Hasan Isma'îl Kûjûk Sâlih 'Abd al-Malik Basir Fadl Ghayth Hatim Ilyas Jabir Nadim Nizar 
+			Bakr al-Hasan Isma'îl Kûjûk Sâlih al-Malik Basir Fadl Ghayth Hatim Ilyas Jabir Nadim Nizar 
 			Sayyid Yunus Jaqmaq Qasim Sa'di Sha'bân Abû 
 		}
 		female_names = {
@@ -8981,16 +9002,16 @@ levant_culture_group = { #New Group, but Vanilla cultures
 			Katkhuda Abaza Qasimiyya Qitas al-Qazdughli 
 		}
 		male_names = {
-			al-Nasr al-Mu'azzam al-Salih al-'Adil al-Kamil al-Ashraf al-Afdal Tadj Mujir ud-Din Djamal ud-Din 
-			ud-Din Shams Saif 'Abbas 'Abd al-Rahman Anwar Atuf Bakr Fahd Hakim Harun Hikmat Hisham Husayn 
+			al-Nasr al-Mu'azzam al-Salih al-'Adil al-Kamil al-Ashraf al-Afdal Tadj Mujir ud-Din Djamal 
+			Shams Saif 'Abbas 'Abd al-Rahman Anwar Atuf Bakr Fahd Hakim Harun Hikmat Hisham Husayn 
 			Jamaal Karim Malîk Mirza Muhammad Rashîd Rusul Shimun Tarîq Usama Yasir Yusuf Zaid Zîyad Isma'il 	
 			Jafar Shihab
 		}
 		female_names = {
-			Ihsan Marwa Aisha Aziza Duha Farida Golbahar Gulnar Gulnaz Gulpari Hafsa Hasti Huma Ibtisam Jalila Kamala 
+			Ihsan Aisha Aziza Duha Farida Golbahar Gulnar Gulnaz Gulpari Hafsa Hasti Huma Ibtisam Jalila Kamala 
 			Karima Khandan Khaterah Khatira Kinah Lala Madiha Mahdokht Nazy Neelab Negar Niki Nikoo Noushin Rabiya
 			Mahsa Mahwash Marwa Mastana Mehri Mina Minoo Munawwar Muzhdah Nahal Najela Nasiba Nastaran Nazaneen 
-			Rajiya Sadiya Salma Sitara Thana Zahra Zahra Zuhayra
+			Rajiya Sadiya Salma Sitara Thana Zahra Zuhayra
 		}
 	}
 	al_iraqiya_arabic = { #Mashriqi Arab
@@ -9000,14 +9021,14 @@ levant_culture_group = { #New Group, but Vanilla cultures
 			"Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim"
 		}
 		male_names = {
-			Sulayman 'Abdallâh 'Alî 'Umar Dâ'ûd Hasan Sa'îd 'Abbas 'Abd al-Karim 'Abd al-Rahman Anwar Atuf Bakr 
+			Sulayman 'Abdallâh 'Alî 'Umar Dâ'ûd Hasan Sa'îd 'Abbas al-Karim 'Abd al-Rahman Anwar Atuf Bakr 
 			Faruq Fouad Hakim Harun Hikmat Hisham Husayn Isma'il Jafar Jamaal Karim Khalil Malîk Mirza Muhammad 
 			Qasim Rashîd Rusul Shimun Tarîq Usama Yasir Yusuf Zaid Zîyad Zulqifar Fahd Mustafa
 		}
 		female_names = {
 			Badr Fatimah Acenith Alia Amunet Andali Asanet Asenath Asenet Azenet Badiat Cena Fatima Halima 
 			Jamila Khadija Majida Mariam Maria Nabila Nura Radiya Rana Sacmis Safiya 
-			Samira Suhaila Tawaret Taweret Titi Thuriya Zara Zahra Zahra
+			Samira Suhaila Tawaret Taweret Titi Thuriya Zara Zahra
 		}
 	}
 }
@@ -9017,22 +9038,22 @@ low_lands_culture_group = { #New Group, but Vanilla cultures
 	dutch = {
 		primary = NED
 		male_names = {
-			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
-			Barnaerd Bernard Bartolomeus Bartolomeus
+			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnulf Balderik Barend 
+			Barnaerd Bernard Bartolomeus
 			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
-			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
+			Thierry Dirk Douwe Eduard Edward Egmund Ekbert
 			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
 			Gerulf
 			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
-			Gwijde Hendrik Henry Herman Herman Hubert
+			Hendrik Henry Herman Hubert
 			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
-			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
-			Marquart Niclaes Nicholas
-			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
-			Robert Robert Robert Rodulf 
+			Kristof Christopher Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
+			Marquart Niclaes
+			Olivier Oliver Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
+			Robert Rodulf 
 			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
-			Waelram Walter Walter
-			Wicher Willem William Wolfard Hendrik Maurits
+			Waelram Walter
+			Wicher Willem William Wolfard Maurits
 			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
 			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
 			Roeland Rogier Thomas Vincent Zacharias
@@ -9259,21 +9280,22 @@ mongolic_culture_group = {
 			Sechen Radi Talman Todo Tumen Tumu Ubashi Ulan Wehe Yelu Zaya Orlök
 		}
 		female_names = {
-			Hoelun Tamülün Sorghaghtani Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene 
+			Hoelun Tamülün Sorghaghtani Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi
+			Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Beki Toregene 
 		}
 	}
 	uyghur = {
 		primary = KAS
 		male_names = {
-			Abdul-Karim Abdul-Latif Abdul-Rashîd Abdullah Ahmad Alghu Ali Baraq Bayan Quli Buqa Temür Buzan 
-			Changshi Danishmendji Dost Muhammad Dughlat Duwa Duwa Temür Eljigidey Esen Buqa Ilbars Ilyas Ismail 
-			Khabul Khizr Könchek Mahmud Mansur Mubarak Muhammad Muhammad Amin Muhammad Mumin Naqsh-i-Jahan 
-			Hulagu Qazaghan Qazan Quraysh Sa'id Satuq Shams-i-Jahan Sher Muhammad Soyurghatmish Taliqu 
-			Temür Tughlugh Temür Uwais Yasa'ur Yesu Mongke Yesun Temür Yunus Chagatay Tarmashirin Negübei Qara 
+			Abdul-Karim Abdul-Latif Abdul-Rashîd Abdullah Ahmad Alghu Ali Baraq Bayan Quli Temür Buzan 
+			Changshi Danishmendji Dost Dughlat Duwa Eljigidey Esen Buqa Ilbars Ilyas Ismail 
+			Khabul Khizr Könchek Mahmud Mansur Mubarak Muhammad Amin Mumin Naqsh-i-Jahan 
+			Hulagu Qazaghan Qazan Quraysh Sa'id Satuq Shams-i-Jahan Sher Soyurghatmish Taliqu 
+			Tughlugh Uwais Yasa'ur Yesu Mongke Yesun Yunus Chagatay Tarmashirin Negübei Qara 
 			Kebek Yahballaha 
 		}
 		female_names = {
-			Sakina Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun 
+			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun 
 			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene "Fatima" "Ibtisam" "Jalila" "Janan" 
 			"Layla" "Sakina" "Sharifa"
 		}
@@ -9337,12 +9359,12 @@ finnish_urgric_culture_group = { #New Group, Vanilla cultures
 			Eino Erno Heikki Jooseppi Jyri Kaarle Kristian Lauri Mainio Mikael Onni Otso Paavo Petteri Ransu 
 			Samuli Taavi Tauno Tuomas Valto Veli Vieno Vilhelmi Voitto Reino
 			Aatos Ahma Aimo Armas Arvo Asikko Ensio Haapa Hannu Havu Hintsa Ihanti Into Jalo Jurva 
-			Kalevi Kettu Kolli Lalli Lauri Laurence Lemetti Kaleva
-			Mielitty Miemo Mikko Michael Oiva Onni Otso Pyry Päiviö Pentti Reko Sampo Satajalka 
+			Kalevi Kettu Kolli Lalli Laurence Lemetti Kaleva
+			Mielitty Miemo Mikko Michael Oiva Pyry Päiviö Pentti Reko Sampo Satajalka 
 			Seppo Susi Tapani Terho Toivo Ukko Uoti Urho Väinö Satatieto
-			Valta Valto Veli Vesa Voitto Erkki Erik Kaarle Charles Johannes John Risto Christopher 
+			Valta Vesa Erkki Erik Charles Johannes John Risto Christopher 
 			Olaf Petri Peter Henri Henry Yrjö George Olavi
-			Valteri Walter Riku Richard Matti Matthew Jaakoppi Jacob Taisto Paavo Paul Aatso Adam Ahvo 
+			Valteri Walter Riku Richard Matti Matthew Jaakoppi Jacob Taisto Paul Aatso Adam Ahvo 
 			Artur Asko Tuokko David Rieti Frederick Aarto
 			Kauro Gabriel Kuuti Knut Pekko Soini Sven Tuure Turo Tommo Tohmas Thomas
 		}
@@ -9351,8 +9373,8 @@ finnish_urgric_culture_group = { #New Group, Vanilla cultures
 			Aamu Aino Hellä Helmi Ilta Kaarina Catherine Käpy Kielo Kukka Lauha Lempi Mahla Maija 
 			Metta Päivä Päivi Pihla Pilvi Rauha Sisko Suoma Marja Mesi 
 			Taimi Terhi Titti Tuija Tuovi Tuuli Tuulikki Tyyne Tyyni Vanamo Venla Mielikki Hertta 
-			Inkeri Ilmatar Irene Irene Ilona Helen Kristiina Christina Loviisa
-			Elisabet Elisabeth Sohvi Sofia Auni Agnes Liekko Helen Kivutar Lemmikki Lyylikki Salme 
+			Inkeri Ilmatar Irene Ilona Helen Kristiina Christina Loviisa
+			Elisabet Elisabeth Sohvi Sofia Auni Agnes Liekko Kivutar Lemmikki Lyylikki Salme 
 			Tuulitar Talvikki
 		}
 	}
@@ -9436,8 +9458,8 @@ finnish_urgric_culture_group = { #New Group, Vanilla cultures
 			Sutepelg Tambet Tarva Tarvet Dobrinya Dokya Dondy Gazheg Hulyen Inzhay Irter Lyneg Lysko Kezhapa Kezhay Kezhedey 
 			Setyamka Shindyay Shypicha Shyrpuzh Spira Syrka Tikshayka Tuhan Tyueykezhut Tyutyuk Tugan Kezhevat Kichay Koksha 
 			Kuaz Kudym-Osh Kya Kyldysin Malyaka Malyy Meltsayka Mosheg Nalka Turush Uchva Varaka Vechkas Velmayka Virdyan Viryas 
-			Viryay Vokan Yirkap Ylvan Zarny Tugan Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka 
-			Tyueykezhut Tylmache Tylze Tyushten Tyushtya Uzhara Varmanpaz
+			Viryay Vokan Yirkap Ylvan Zarny Parush Pivtsay Pokshayka Putyayka Shoksha 
+		 Tylmache Tylze Tyushten Tyushtya Uzhara Varmanpaz
 		}
 		female_names = {
 			Nyayka Olota Ordava Oshama Parava Pekshayka Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Ruzava 
@@ -9458,17 +9480,15 @@ finnish_urgric_culture_group = { #New Group, Vanilla cultures
 			Ohetõiv Ohevald Olev Onni Otelemb Ott Arnaz Arti Artis Arvo Aymort Azeg Biur Biyar Burmort Chichayka Chuga Dergun 
 			Deryab Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka Pyera Rateg Rayda Sarin Sektev Dobrinya Dokya 
 			Dondy Gazheg Hulyen Inzhay Irter Lyneg Lysko Kezhapa Kezhay Kezhedey Setyamka Shindyay Shypicha Shyrpuzh Spira Syrka 
-			Tikshayka Tuhan Tyueykezhut Tyutyuk Meltsayka Mordvinko Moksha Nalka Nuyaksha Nuyanza Nuyat Ovtay Pakstyan Paksyay 
-			Paksyut 
+			Tikshayka Tuhan Tyueykezhut Tyutyuk Meltsayka Mordvinko Moksha Nalka Nuyaksha Nuyanza Nuyat Ovtay  
 		}
 		female_names = {
 			Aasa Ahma Aime Aimo Aita Aldi Ann Anni Annika Are Auli Aune Eha Elo Ere Helbe Hele Helgi Tiiu Tuuli Urve Viire Vilja 
 			Virge Virve Värvu Õie Õnne Ülane Ülle Anava Ashava Asrava Avya Azra-Va Chechama Chenksa Cherava Chichayka Chindyapa 
 			Chindyayka Chinzhay Chitska Mel'shay Nezayka Nulzyava Nyal'ka Nyayka Nyumina Nyv Olota Ordava Oshama Öshkamöshka 
 			Tetyava Tikshayka Toyaksha Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava Virtyava Yalgava 
-			Yugörka Anava Ashava Asrava Azra-Va Chechama Chenksa Cherava Chichayka Chindyapa Chindyayka Chinzhay Chitska Elyuva 
-			Inyava Kanyava Kanyuva Kirdyava Kunava Kunyavka Litava Liyava Mazava Megurka Mel'shay Nezayka Nulzyava Nuyanza 
-			Nyal'ka 
+			Yugörka Elyuva Inyava Kanyava Kanyuva Kirdyava Kunava Kunyavka Litava Liyava Mazava Megurka Nuyanza 
+			 
 		}
 	}
 }

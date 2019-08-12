@@ -1,4 +1,4 @@
-# Basic Indian Cav
+# Early Indian Light Cavalry
 
 unit_type = indian
 type = cavalry

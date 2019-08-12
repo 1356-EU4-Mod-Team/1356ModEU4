@@ -5,8 +5,8 @@ religion = coptic
 technology_group = eastern
 historical_friend = GEO
 historical_friend = CIC
-historical_friend = KHC
-historical_rival = ARM
+#historical_friend = KHC
+#historical_rival = ARM
 capital = 419	# Yerevan
 
 # Rulers of Ani

@@ -319,4 +319,51 @@ spriteTypes = {
 		file = "gfx/models/Buildings/alexandria_library.mesh" 
 		scale = 1.0
 	}
+
+	#Icons
+	spriteType = {
+		name = "GFX_nestorian_neg_estate"
+		texturefile = "gfx/interface/nestorian_neg_estate.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_nestorian_netural_estate"
+		texturefile = "gfx/interface/nestorian_netural_estate.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_nestorian_pos_estate"
+		texturefile = "gfx/interface/nestorian_pos_estate.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_zoroastrian_neg_estate"
+		texturefile = "gfx/interface/zoroastrian_neg_estate.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_zoroastrian_pos_estate"
+		texturefile = "gfx/interface/zoroastrian_pos_estate.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_zoroastrian_netural_estate"
+		texturefile = "gfx/interface/zoroastrian_netural_estate.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_coptic_neg_estate"
+		texturefile = "gfx/interface/coptic_neg_estate.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_coptic_pos_estate"
+		texturefile = "gfx/interface/coptic_pos_estate.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_coptic_netural_estate"
+		texturefile = "gfx/interface/coptic_netural_estate.dds"
+		noOfFrames = 1
+	}
 }

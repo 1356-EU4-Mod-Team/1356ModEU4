@@ -1,4 +1,4 @@
-# Western Medieval Infantry
+# Western Peasant Levy
 
 type = infantry
 unit_type = western

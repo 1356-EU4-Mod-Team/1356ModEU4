@@ -163,12 +163,15 @@ sufi_favored_bengal = {
 ####Zoroastrian Communities####
 small_parsi_community = {
 	trade_goods_size = 0.5
+	picture = "GFX_zoroastrian_neg_estate"
 }
 medium_parsi_community = {
 	trade_goods_size = 0.75
+	picture = "GFX_zoroastrian_netural_estate"
 }
 large_parsi_community = {
 	trade_goods_size = 1.25
+	picture = "GFX_zoroastrian_pos_estate"
 }
 zoroastrian_divine_marriage = {
 	heir_chance = 0.25
