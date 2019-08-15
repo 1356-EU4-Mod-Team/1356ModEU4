@@ -1,7 +1,7 @@
-# Chinese Longspear
+# Early North American War Shields
 
+unit_type = north_american
 type = infantry
-unit_type = chinese
 
 maneuver = 1
 offensive_morale = 0

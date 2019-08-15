@@ -1,4 +1,4 @@
-# African Spearmen Tactics
+# Early African Bowmen
 
 unit_type = sub_saharan
 type = infantry
@@ -8,5 +8,5 @@ offensive_morale = 1
 defensive_morale = 0
 offensive_fire = 0
 defensive_fire = 0
-offensive_shock = 0
-defensive_shock = 1
+offensive_shock = 1
+defensive_shock = 0

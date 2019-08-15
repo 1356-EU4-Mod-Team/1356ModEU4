@@ -97,7 +97,7 @@
  1356-early_muslim_pikemenDESCR: "The Pikemen is much like the Spearmen, with the biggest difference being a Pike is much longer than a spear, much more often it is used in a group formation as opposed to a spear which is more focused in single hand to hand combat. As the medieval period gave way to the future, Pikes and Spears became more common in army compisitions."
  1356-early_muslim_cav_archerDESCR: "While Cavalry Archers have been in use long before the Mongols came, the Mongols reignited the popularity of Cavalry Archers in some Kingdoms. These Muslim Cavalry Archers attempt to use what they learned in the many battles against the Mongol Army to their advantage, allowing them to be highly mobile and cause casualties to the enemy without taking many themselves."
  1356-early_muslim_lancersDESCR: "There are many different types of Heavy Cavalry, with Lancers being able to deal the most impact damage. Ideally they'd outflank the enemy army and charge the center line with their lances drawn, causing heavy casualties and massive shock to the troops nearby."
- 1356-early_muslim_royal_guardDESCR:  "The Sultan's Royal Guards were the last defense of the ruler in combat and at home. In times of peace they carried out important duties in the rulers castle, and in times of war they served as heavy shock troops who could decide a battle. Historically some kinds of Royal Guards were; Praetorian Guards, Imperial Guard in Napoleonic France, and the Walloon Guards in Spain."
+ 1356-early_muslim_royal_guardDESCR: "The Sultan's Royal Guards were the last defense of the ruler in combat and at home. In times of peace they carried out important duties in the rulers castle, and in times of war they served as heavy shock troops who could decide a battle. Historically some kinds of Royal Guards were; Praetorian Guards, Imperial Guard in Napoleonic France, and the Walloon Guards in Spain."
  1356-early_muslim_light_cavDESCR: "Light Cavalry tend to be lightly armored mounted units, allowing for more maneuverability than their Heavily mounted counterparts. While they do not pack as heavy as a punch as Heavy Cavalry may, they still serve a similar purpose. However historically they tended to serve as Scouts, Screening, and Reconnaissance."
  1356-early_muslim_infDESCR: "These Muslim Infantry serve as the backbone of the army, serving as the center line, they are first in combat and last to leave. They'll take the brunt of the attack, while relying on the units on the flank and rear to deal most of the damage."
 
@@ -119,6 +119,17 @@
  1356-indian_early_artyDESCR: "The Indian's never developed the Counter-weight Trebuchet, and Battering Rams were rarely used. And most other Traditional Siege weapons that the West used were not used in India. Most sieges involved sewing decent using spies, and scaling the walls using ladders. However Elephants were deployed in rare situations to break towers or gates down."
 
  #Chinese
+ 1356-asian_early_arty: "Arcuballista"
+ 1356-early_asian_infantry: "Early Asian Infantry"
+ 1356-early_asian_bowmen: "Early Asian Bowmen"
+ 1356-early_asian_light_cav: "Early Asian Light Cavalry"
+ 1356-early_asian_spearmen: "Early Asian Spearmen"
+ 
+ 1356-asian_early_artyDESCR: "The Arcuballista, also called the Multiple Bolt Crossbow is a large mounted crossbow. It uses a winch to fire its bolts giving it has an enormous ability to penetrate walls and objects, even capable of knocking down walls and towers. It fires 10 large bolts at once, and has a maximum range of 500 yards, or  450 meters."
+ 1356-early_asian_infantryDESCR: "These Asian Infantry serve as the backbone of the army, serving as the center line, they are first in combat and last to leave. They'll take the brunt of the attack, while relying on the units on the flank and rear to deal most of the damage."
+ 1356-early_asian_bowmenDESCR: "The Bow is one of the most basic weapons for a tribe, alongside the Club and Spear. The bow typically served as a hunting weapon for the tribe, but in times of war they could work just as well on other people."
+ 1356-early_asian_light_cavDESCR: "Light Cavalry tend to be lightly armored mounted units, allowing for more maneuverability than their Heavily mounted counterparts. While they do not pack as heavy as a punch as Heavy Cavalry may, they still serve a similar purpose. However historically they tended to serve as Scouts, Screening, and Reconnaissance."
+ 1356-early_asian_spearmenDESCR: "The Spearmen serves as one of the most important units in a basic army composition, without them the enemy cavalry has free reign to harass the flanks of armies, which could very quickly turn a battle in the other direction. These Spearmen are the most basic form, carrying just a spear and light armor at best."
  
  #Nomad
  1356-early_mongol_horse_archers: "Mongol Horse Archers"
@@ -133,6 +144,38 @@
  1356-early_mongol_dismounted_heavy_cavDESCR: "While the Mongolian Army traveled purely on horseback, as the distance they were able to cover gave them the advantage, if it was required horse archers and infantry alike would dismount for combat. However this did give them a disadvantage, and was not seen frequently unless the terrain or enemy required it."
  1356-early_mongol_dismounted_archersDESCR: "While the Mongolian Army traveled purely on horseback, as the distance they were able to cover gave them the advantage, if it was required horse archers and infantry alike would dismount for combat. However this did give them a disadvantage, and was not seen frequently unless the terrain or enemy required it."
 
+#North American/South American
+ 1356-early_na_war_shields: "Early War Shields"
+ 1356-early_na_tomahawk_infantry: "Early Tomahawk Warriors"
+ 1356-early_na_spear_throwers: "Early Spear Throwers"
+ 1356-early_na_spearmen: "Early Spearmen"
+ 1356-early_sa_incan_axemen: "Early Incan Axemen"
+ 1356-early_sa_incan_bola_warriors: "Early Incan Bola Warriors"
+ 1356-early_sa_incan_halberd: "Early Incan Spearmen"
+ 1356-early_sa_incan_dart_throwers: "Early Incan Dart Throwers"
+ 
+ 1356-early_na_war_shieldsDESCR: "War Shields were fairly common in Rituals, but as time progressed they saw more combat. Someone equipped with a warshield in battle would typically carry a club or tomahawk as well, allowing the soldier more defense in battle."
+ 1356-early_na_tomahawk_infantryDESCR: "Tomahawks resemble European Hatchets in a way. The Tomahawks were not always used in combat, they were typically a tool generally used in society. They could also be used as throwing weapons due to their unique weight and design. As the American tribes met the Europeans the stone head of a tomahawk was traded out for an Iron one, which also occasionally had a hammer or spike on the otherwise of the axe head."
+ 1356-early_na_spear_throwersDESCR: "Spear throwers have been fielded in armies since long before the Romans. A spear can be easily created by the American tribes, and can be used to hunt or see combat. Sometimes if a spear is made specifically for throwing it will be smaller than a standard spear, but not always."
+ 1356-early_na_spearmenDESCR: "The Spearmen serves as one of the most important units in a basic army composition, without them the enemy cavalry has free reign to harass the flanks of armies, which could very quickly turn a battle in the other direction. These Spearmen are the most basic form, carrying just a spear and light armor at best."
+ 1356-early_sa_incan_axemenDESCR: "Incan Axes were similar to their European counterparts, with the exception of all Incan axes were made out of stone or copper, with their lack of ironworking. Typically these men would be lightly armored with cotton based armor, with the occasional wooden helmet."
+ 1356-early_sa_incan_bola_warriorsDESCR: "The Bola is an Incan throwing weapon, with two weighted balls at each end of a rope. It is thrown and can be used to tangle the targets legs. Sometimes used for hunting, however the Incans and Mapuche used them in combat."
+ 1356-early_sa_incan_halberdDESCR: "The Spearmen serves as one of the most important units in a basic army composition, without them the enemy cavalry has free reign to harass the flanks of armies, which could very quickly turn a battle in the other direction. These Spearmen are the most basic form, carrying just a spear and light armor at best."
+ 1356-early_sa_incan_dart_throwersDESCR: "Similar to the Spear Thrower, the Dart Thrower's main difference is that they thrower more lightweight darts. These darts can easily gain more distance than spears and can be thrown faster, and due to the much smaller size more can be carried by a single soldier."
+ 
+ #African
+ 1356-early_african_camel_warriors: "Early African Camel Cavalry"
+ 1356-early_african_light_cav: "Early African Light Cavalry"
+ 1356-early_african_clubmen: "Early African Clubmen"
+ 1356-early_african_bowmen: "Early African Bowmen"
+ 1356-early_african_spearmen: "Early African Spearmen"
+ 
+ 1356-early_african_camel_warriorsDESCR: "Camels as Cavalry are more specalized than most standard Horse based Cavalry. While they tend to turn and run at the sound of Gunfire, they can also cover longer distances in a shorter time than horses."
+ 1356-early_african_light_cavDESCR: "Light Cavalry tend to be lightly armored mounted units, allowing for more maneuverability than their Heavily mounted counterparts. While they do not pack as heavy as a punch as Heavy Cavalry may, they still serve a similar purpose. However historically they tended to serve as Scouts, Screening, and Reconnaissance."
+ 1356-early_african_clubmenDESCR: "While a club may be a basic weapon it can be easily created and modified in many ways, while as a blunt weapon it is easier to knock someone unconscious it can be quite effective in the right hands."
+ 1356-early_african_bowmenDESCR: "The Bow is one of the most basic weapons for a tribe, alongside the Club and Spear. The bow typically served as a hunting weapon for the tribe, but in times of war they could work just as well on other people."
+ 1356-early_african_spearmenDESCR: "The Spearmen serves as one of the most important units in a basic army composition, without them the enemy cavalry has free reign to harass the flanks of armies, which could very quickly turn a battle in the other direction. These Spearmen are the most basic form, carrying just a spear and light armor at best."
+ 
  #Governments
  patriarch_government_legacy: "Patriarchate"
  patriarch_government_reform: " Patriarchate"

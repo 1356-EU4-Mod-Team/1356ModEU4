@@ -24,9 +24,6 @@ technology = {
 
 	fort_15th = yes
 	
-	enable = 1356-early_african_inf
-	enable = 1356-early_african_cav
-	
 	#Eastern
 	enable = 1356-early_eastern_peasant_levy
 	enable = 1356-early_eastern_spearmen
@@ -58,24 +55,25 @@ technology = {
 	enable = 1356-early_indian_elephant
 	
 	#Chinese
-	enable = east_asian_spearmen #Repurposed Asian Tier 1 inf, they did have 3.
-	enable = 1356-generic_asian_cav
+	enable = 1356-early_asian_spearmen
+	enable = 1356-early_asian_bowmen
+	enable = 1356-early_asian_infantry
+	enable = 1356-early_asian_light_cav
 	
-	#West African
-	
-	#East African
-	
-	#Kongo African
-	
-	#Perhaps move all Vanilla Native units to T1 units then add new later tiers?
+	#African
+	enable = 1356-early_african_spearmen
+	enable = 1356-early_african_bowmen
+	enable = 1356-early_african_clubmen
+	enable = 1356-early_african_light_cav
+	enable = 1356-early_african_camel_warriors
 	
 	#North American
-	enable = 1356-early_north_american_inf
-	enable = 1356-early_north_american_ranged_inf #Perhaps unbalanced
+	enable = 1356-early_na_spearmen
+	enable = 1356-early_na_spear_throwers 
 	
 	#South American
-	enable = 1356-early_south_american_inf
-	enable = 1356-early_south_american_ranged_inf #Perhaps unbalanced
+	enable = 1356-early_sa_incan_halberd
+	enable = 1356-early_sa_incan_dart_throwers
 	
 	#Central American 
 	enable = 1356-meso_early_spearmen
@@ -115,16 +113,6 @@ technology = {
 	
 	#Chinese
 	
-	#West African
-	
-	#East African
-	
-	#Kongo African
-	
-	#South American
-	
-	#Central American
-	
 }
 
 technology = { 
@@ -138,22 +126,14 @@ technology = {
 	enable = 1356-early_anatolian_inf
 	enable = 1356-early_anatolian_pikemen
 	
-	#Muslim
-	
-	
 	#Chinese
 	
-	#West African
-	
-	#East African
-	
-	#Kongo African
-	
 	#North American
-	
+	enable = 1356-early_na_tomahawk_infantry
+	enable = 1356-early_na_war_shields
 	#South American
-	
-	#Central American
+	enable = 1356-early_sa_incan_axemen
+	enable = 1356-early_sa_incan_bola_warriors
 
 }
 
@@ -186,31 +166,13 @@ technology = {
 	#Chinese #I dont like how empty their units are from 4-12 for cav and 4-11 for inf
 	enable = 1356-asian_early_arty
 	
-	#West African
-	
-	#East African
-	
-	#Any justification to have any here?
-	
-	#Kongo African
-	
-	#North American
-	
-	#South American
-	
 	#Central American
 	enable = 1356-meso_macuahitlins
 	enable = 1356-meso_slingers
 	enable = 1356-meso_zapotec_early_tribal_warriors
 	
 	#High American
-	enable = ha_xantican_warrior
-	
-	#Any justification to have Central American Siege?
-	
-
-	
-	
+	enable = ha_xantican_warrior	
 }
 
 # Pre-era techs
@@ -262,6 +224,7 @@ technology = { #OG tech 1
 	enable = indian_archers #Basic Tier 1 Elephant
 	enable = rajput_hill_fighters #Basic Tier 1 Cav Indian
 	#Chinese
+	enable = east_asian_spearmen
 	enable = chinese_longspear #Asian Longspear Infantry
 	enable = japanese_archer #Asian Longbow
 	enable = eastern_bow #East Asian Archer Cavalry

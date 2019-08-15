@@ -1,10 +1,10 @@
-# Japanese Archer
+# Early North American Tomahawk Infantry
 
+unit_type = north_american
 type = infantry
-unit_type = chinese
 
 maneuver = 1
-offensive_morale = 0
+offensive_morale = 1
 defensive_morale = 1
 offensive_fire = 0
 defensive_fire = 0
