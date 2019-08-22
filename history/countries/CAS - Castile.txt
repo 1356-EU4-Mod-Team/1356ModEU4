@@ -7,12 +7,12 @@ religion = catholic
 technology_group = western
 historical_friend = POR
 historical_rival = GRA
-capital = 208 # Leon
+capital = 217 # Madrid
 national_focus = MIL
 add_army_professionalism = 0.1
 
 1350.3.26 = {
-	capital = 208 # Leon
+	capital = 217 # Madrid
 	monarch = {
 		name = "Pedro I"
 		dynasty = "d'Ivrée"

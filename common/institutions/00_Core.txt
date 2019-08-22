@@ -473,8 +473,6 @@ feudalism = { #Heavily Edited by #1356
 # Starts in Lubeck & Various Trade Centers around Europe
 #######################################
 
-#Self note; May be easier to base this off of Regions/Local cultures instead.
-
 mercantilism_institution = { #1356 New Content
 
 	penalty = 0.5
@@ -517,49 +515,30 @@ mercantilism_institution = { #1356 New Content
 				OR = {
 					province_id = 151 #Constantinople
 					province_id = 112 #Venice
-					province_id = 101 #Genoa
+					province_id = 2992 #Albenga
 					province_id = 44 #Hamburg
 					province_id = 54 #Stade
 					province_id = 2996 #Wismar
 					province_id = 6 #Lund
 					province_id = 14 #Fyn
 					province_id = 45 #Lubeck
-					province_id = 1874 #Bremen
 					province_id = 25 #Gotland
-					province_id = 186 #Champagne
-					province_id = 238 #Essex
 					province_id = 235 #Kent
-					province_id = 1860 #Norfolk
 					province_id = 118 #Rome
-					province_id = 220 #Valencia
-					province_id = 231 #Porto
-					province_id = 2983 #Salerno
 					province_id = 362 #Rosetta
-					#province_id = 410 #Baghdad
-					#province_id = 2313 #Antioch
-					#province_id = 453 #Qarshi #Since Samarkand would break it all
-					#province_id = 445 #Merv
-					#province_id = 399 #Qawasim
-					#province_id = 4457 #Khambhat
-					#province_id = 524 #Central Delhi
-					#province_id = 2075 #Doaba
-					province_id = 1862 #Cremona
-					province_id = 115 #Pisa
 					province_id = 251 #Aberdeen
 					province_id = 97 #Amsterdam
 					province_id = 87 #Calais
 					province_id = 1744 #Antwerpen
-					province_id = 695 #Hejian
-					#province_id = 2745 #Gyeongju
-					#province_id = 1020 #Kyoto
-					province_id = 2149 #Ningbo
-					#province_id = 685 #Yangzhou
 					province_id = 667 #Canton
-					#province_id = 700 #Xi'an
-					#province_id = 682 #Wuchang
-					#province_id = 680 #Chongqing
-					#province_id = 34 #Ingermanland
 					province_id = 43 #Danzig
+					province_id = 4388 #Chartres
+					province_id = 34 #Ingermanland
+					owner = { government = merchants_reform }
+					owner = { government = venice_merchants_reform }
+					owner = { government = trading_city }
+					owner = { government = veche_republic }
+					owner = { government = free_city }
 				}
 			}
 			AND = { #Simplified, expand on later.
@@ -927,22 +906,53 @@ mercantilism_institution = { #1356 New Content
 				}
 			}
 		}
-		modifier = { #Province Owner is a republic of any kind
-			factor = 0.3
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
+		modifier = { #Italians
+			factor = 5
+			scale = no
+			force_potential = yes
 			potential = {
-				owner = {
-					government = republic
-				}
+				culture_group = latin
 			}
-			
 			custom_trigger_tooltip = {
-				tooltip = tooltip_mercantilisim_embraced
-				is_owned_by_trade_company = no
-				owner = {
-					government = republic
-				}
+				tooltip = mercantilism_region_italians_tt
+				owner = { culture_group = latin }
+			}
+		}
+		modifier = { #Chinese
+			factor = 5
+			scale = no
+			force_potential = yes
+			potential = {
+				culture_group = east_asian
+				NOT = { tag = YUA }
+			}
+			custom_trigger_tooltip = {
+				tooltip = mercantilism_east_asians_tt
+				owner = { culture_group = east_asian }
+			}
+		}
+		modifier = { #Indochinese
+			factor = 4
+			scale = no
+			force_potential = yes
+			potential = {
+				culture_group = southeastasian_group
+			}
+			custom_trigger_tooltip = {
+				tooltip = mercantilism_indochinese_tt
+				owner = { culture_group = southeastasian_group }
+			}
+		}
+		modifier = { #Korea
+			factor = 5
+			scale = no
+			force_potential = yes
+			potential = {
+				culture_group = korean_g
+			}
+			custom_trigger_tooltip = {
+				tooltip = mercantilism_korea_tt
+				owner = { culture_group = korean_g }
 			}
 		}
 	}

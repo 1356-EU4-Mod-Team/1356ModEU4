@@ -1346,7 +1346,11 @@
  gun_events_resisting_foreign_pressure: "Resisting Foreign Pressure"
  gun_events_the_old_ways: "The Old Ways"
  gun_portuguese_education_tt: "[GUN.Heir.GetName] will receive a western education in the Portuguese court."
-
+ mercantilism_region_italians_tt: "Latin Cultured Nation"
+ mercantilism_korea_tt: "Korean Cultured Nation"
+ mercantilism_east_asians_tt: "Chinese Nation"
+ mercantilism_indochinese_tt: "Indochinese Nation"
+ mercantilism_malaya_tt: "Malayan or Indonesian Nation"
  
  
  #Missions

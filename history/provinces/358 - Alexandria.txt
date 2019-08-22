@@ -1,5 +1,4 @@
 # 358 - Alexandria (1356)
-# Changes: religion
 
 owner = ALX
 controller = ALX
