@@ -802,9 +802,9 @@
  flaeng.41.d: "The mighty English Longbowmen were a force to be feared at their prime. Being able to cut down a knight with a single arrow was an effective way to turn a battle in your favor before it even began. However as the decades went on Armor got better and arrows lost their ability to penetrate armor. Eventually longbow regiments were traded out for regiments of rifles instead, however they did show up in battles for a few decades even after they fell out of favor."
  flaeng.41.a: "How a mighty weapon has fallen"
  
- 1356startupevents.2.t: "GENERIC TITLE"
- 1356startupevents.2.d: "This is a startup event that controls if Pirate Republics stay Pirate republics or not, its dependent on if player owns Golden Century."
- 1356startupevents.2.a: "RESPONSE"
+ flastartupevents.2.t: "GENERIC TITLE"
+ flastartupevents.2.d: "This is a startup event that controls if Pirate Republics stay Pirate republics or not, its dependent on if player owns Golden Century."
+ flastartupevents.2.a: "RESPONSE"
  
  flagreatproject.4.t: "Hidden Event - Spawning of Walls of Theodoro"
  flagreatproject.4.d: "HIDDEN EVENT"
@@ -971,6 +971,21 @@
  gun_events.10.b: "Prepare for war!"
  gun_events.10.c: "Hmm, perhaps there may be another option."
  
+ flastartupevents.3.t: "HIDDEN - Barbarossas Throne Start"
+ flastartupevents.3.d: "If you're seeing this than Count Flandy broke something again. Ignore this."
+ flastartupevents.3.a: "Whoops!"
+ flastartupevents.4.t: "HIDDEN - Standard 1356 Start"
+ flastartupevents.4.d: "If you're seeing this then Count Flandy broke something again. Ignore this."
+ flastartupevents.4.a: "Whoops!"
+ flastartupevents.5.t: "HIDDEN - Vanilla Start"
+ flastartupevents.5.d: "If you're seeing this then Count Flandy broke something again. Ignore this."
+ flastartupevents.5.a: "Whoops!"
+ 
+ flacrimea.1.t: "The Independence of the Crimean Khanate"
+ flacrimea.1.d: "The Crimean region has long been under our grasp, and while it may not be a firm one we still rightfully claim the land as ours. However recently the region has been clamoring for independence, going as far to invite a contender for OUR throne! This is an insult to our Khan at best, action must be taken immediately, as they've recently declared independence from us with a sizeable force!"
+ flacrimea.1.a: "How dare they declare independence with a claimate to our throne, to war!"
+ flacrimea.1.b: "They can have their independence, to a degree."
+ flacrimea.1.c: "We can not afford a war currently, let them go."
  
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"

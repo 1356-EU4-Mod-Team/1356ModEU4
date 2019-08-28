@@ -195,7 +195,6 @@ tughlaq_prince_vassal = {
 	grant_core_claim = no
 	grant_province = no
 	bestow_gifts = yes
-	enforce_religion = yes
 	conscript_general = yes
 	demand_artifacts = yes
 	demand_additional_tribute = yes	

@@ -8,6 +8,7 @@ country_event = {
 	title = fladebugevent.1.t
 	desc = fladebugevent.1.d
 	picture = NAVAL_MILITARY_eventPicture
+	
 	fire_only_once = yes
 
 	trigger = {
@@ -34,6 +35,9 @@ country_event = {
 	option = {
 		name = fladebugevent.1.b
 		add_legitimacy = -5
+		CRO = {
+			add_liberty_desire = 15
+		}
 	}
 }
 
@@ -76,71 +80,6 @@ country_event = {
 		declare_war_with_cb = {
 			who = RAG
 			casus_belli = cb_disloyal_vassal
-		}
-	}
-}
-
-country_event = {
-	id = fladebugevent.3
-	title = fladebugevent.3.t
-	desc = fladebugevent.3.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
-
-	fire_only_once = yes
-	
-	trigger = {
-		tag = CRI
-		NOT = { is_year = 1444 }
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-# Audax Validator "!" Ignore_1007
-	option = {
-		name = fladebugevent.1.a
-		284 = { add_unrest = -10 }
-        284 = { add_nationalism = -10 }
-		284 = { cede_province = CRI }
-		1974 = { add_unrest = -10 }
-        1974 = { add_nationalism = -10 }
-		1974 = { cede_province = CRI }
-        282 = { add_unrest = -10 }
-        282 = { add_nationalism = -10 }
-		282 = { cede_province = CRI }
-        2406 = { add_unrest = -10 }
-        2406 = { add_nationalism = -10 }
-        2406 = { cede_province = CRI }		
-        283 = { add_unrest = -10 }
-        283 = { add_nationalism = -10 }	
-        2406 = { cede_province = CRI }		
-        2412 = { add_unrest = -10 }
-        2412 = { add_nationalism = -10 }
-        2406 = { cede_province = CRI }	
-        2411 = { add_unrest = -10 }
-        2411 = { add_nationalism = -10 }	
-		2411 = { cede_province = CRI }
-		283 = { cede_province = CRI }
-		2412 = { cede_province = CRI }
-		2413 = { cede_province = CRI }
-		2414 = { cede_province = CRI }
-		287 = { cede_province = CRI }
-        CRI = {
-			define_ruler = {
-				name = "Shahin"
-				dynasty = "Giray"
-				#birth_date = 1340.4.8 #It doesn't take this into account saddly
-				claim = 100
-				adm = 2
-				dip = 2
-				mil = 2
-			}
-			define_ruler_to_general = {
-				fire = 4
-				shock = 4
-				manuever = 4
-				siege = 1
-			}			
 		}
 	}
 }

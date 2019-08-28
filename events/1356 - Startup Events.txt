@@ -1,26 +1,10 @@
-namespace = 1356startupevents
+namespace = flastartupevents
 
-#Triggers for everyone, too intensive. Has to be a better way.
-
-# country_event = { #Adds primitive Gunpowder for everyone in general
-	# id = 1356startupevents.1
-	# title = 1356startupevents.1.t
-	# desc = 1356startupevents.1.d
-	# picture = LAND_MILITARY_eventPicture
-	# is_triggered_only = yes
-	# option = {
-		# name = 1356startupevents.1.a
-		# add_country_modifier = { 
-			# name = pre_gunpowder_modifier
-			# duration = -1
-		# }
-	# }
-# }
 
 country_event = { #Startup event to turn all pirates into generic sultanates if DLC isnt owned
-	id = 1356startupevents.2
-	title = 1356startupevents.2.t
-	desc = 1356startupevents.2.d
+	id = flastartupevents.2
+	title = flastartupevents.2.t
+	desc = flastartupevents.2.d
 	picture = LAND_MILITARY_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -48,3 +32,66 @@ country_event = { #Startup event to turn all pirates into generic sultanates if 
 }
 
 
+country_event = { #BT
+	id = flastartupevents.3
+	title = flastartupevents.3.t
+	desc = flastartupevents.3.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		NOT = { started_in = 1356.12.26 }
+	}
+	
+	option = {
+		name = flastartupevents.3.a
+		set_global_flag = barbarossas_throne_start_flag
+	}
+
+}
+
+country_event = { #1356-1444
+	id = flastartupevents.4
+	title = flastartupevents.4.t
+	desc = flastartupevents.4.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		started_in = 1356.12.26
+		NOT = {started_in = 1440.1.1 }
+	}
+	
+	option = {
+		name = flastartupevents.4.a
+		set_global_flag = 1356_start_flag
+	}
+
+}
+
+country_event = { #1444 and after
+	id = flastartupevents.5
+	title = flastartupevents.5.t
+	desc = flastartupevents.5.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		started_in = 1440.1.1
+	}
+	
+	option = {
+		name = flastartupevents.5.a
+		set_global_flag = 1356_vanilla_startdate
+	}
+
+}

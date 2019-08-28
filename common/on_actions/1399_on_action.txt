@@ -1,59 +1,14 @@
-on_startup = {
-	events = { 
-		barbarossa.1
-	}
-	if = {
-		limit = { tag = SWB }
-		country_event = { id = barbarossa.10 }
-	}
-}
-
-on_startup = {
-	#events = { 
-	#	flagreatproject.4
-	#}
-	if = {
-		limit = { 
-			tag = BYZ
-			is_year = 1356
-			NOT = { is_year = 1452 }
-		}
-		country_event = { id = flagreatproject.4 }
-	}
-}
-
-on_startup = {
-	events = { 
-		1356startupevents.2
-	}
-	if = {
-		limit = {
-			government = pirate_republic_reform
-			region = maghreb_region
-			NOT = { has_dlc = "Golden Century" }
-		}
-		country_event = { id = 1356startupevents.2 }
-	}
-}
-
-on_new_monarch = {
-	events = { 
-		fladebugevent.3 #Are both these needed anymore?
-		fladebugevent.1
-	}
-}
-
-on_monarch_death = {
-	if = {
-		limit = {
-			government = crusader_state_reform
-			NOT = { has_country_flag = two_heirs_succession_crusader_flag }
-		}
-		ROOT = {
-			set_country_flag = crusader_state_time_to_choose_ruler_flag
-		}
-	}
-	events = {
-		1356government.98
-	}
-}
+# on_monarch_death = {
+	# if = {
+		# limit = {
+			# government = crusader_state_reform
+			# NOT = { has_country_flag = two_heirs_succession_crusader_flag }
+		# }
+		# ROOT = {
+			# set_country_flag = crusader_state_time_to_choose_ruler_flag
+		# }
+	# }
+	# events = {
+		# 1356government.98
+	# }
+# }

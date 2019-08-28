@@ -1,0 +1,27 @@
+on_startup = {
+	events = { 
+		barbarossa.1
+		flastartupevents.2
+		flastartupevents.3
+		flastartupevents.4
+		flastartupevents.5
+	}
+	if = {
+		limit = { tag = SWB }
+		country_event = { id = barbarossa.10 }
+	}
+}
+
+on_startup = {
+	#events = { 
+	#	flagreatproject.4
+	#}
+	if = {
+		limit = { 
+			tag = BYZ
+			is_year = 1356
+			NOT = { is_year = 1452 }
+		}
+		country_event = { id = flagreatproject.4 }
+	}
+}
