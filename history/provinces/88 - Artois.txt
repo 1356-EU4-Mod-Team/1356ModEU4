@@ -17,14 +17,15 @@ add_core = PBG
 add_core = BUR
 add_core = ARS
 add_claim = FLA
+add_core = PIC
 
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { HRE = yes add_core = PIC } #BT In
-1356.12.26  = { HRE = no remove_core = PIC } #BT Out
+1356.12.24  = { hre = yes } #BT In
+1356.12.26  = { hre = no } #BT Out
 
 1384.1.30  = { owner = BUR controller = BUR } # The son of Margaret I, Louis II of Flanders dies and his son-in-law Phillippe II. of Burgundy inherits the province
 1404.4.27  = { owner = PBG controller = PBG } # Margarets III husband Phillippe II. dies and she takes power in Flanders and Palatinate Burgundy

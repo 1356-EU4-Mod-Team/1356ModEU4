@@ -14,7 +14,7 @@ guarantee = { #Fezzan and Tripoli
 
 dependency = { #Tlemcen and Kebir
 	subject_type = "tributary_state"
-	first = TCL
+	first = TLC
 	second = KEB
 	start_date = 1356.12.26
 	end_date = 1420.1.1

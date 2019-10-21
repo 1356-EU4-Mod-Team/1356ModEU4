@@ -589,7 +589,6 @@ mercantilism_institution = { #1356 New Content
 					culture = aramaic
 					culture = armenian
 					culture = georgian
-					culture = old_egyptian_mod
 				}
 				NOT = { owner = { government = tribal } }
 				NOT = { religion_group = pagan }

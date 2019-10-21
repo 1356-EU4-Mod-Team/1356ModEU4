@@ -21,8 +21,10 @@ discovered_by = ottoman
 discovered_by = indian
 discovered_by = nomad_group
 
-1365.7.1  = { controller = CHG }
-1369.1.1  = { controller = TRS }
+#1365.7.1  = { controller = CHG }
+
+#1369.1.1  = { controller = TRS }
+
 1370.4.9  = { owner = TIM controller = TIM remove_core = TRS }
 1449.2.1  = { # Conquered by Babur bin Baysunkur
 		owner = KHO

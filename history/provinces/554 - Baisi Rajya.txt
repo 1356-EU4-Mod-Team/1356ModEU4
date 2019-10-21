@@ -24,7 +24,7 @@ discovered_by = chinese
 	add_core = DTI
 }
 1444.11.11 = {
-	owner = JMP
+	owner = JML
 	controller = JML
 }	
 1690.1.1 = { discovered_by = ENG }

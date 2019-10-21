@@ -178,7 +178,7 @@
  
  #Governments
  patriarch_government_legacy: "Patriarchate"
- patriarch_government_reform: " Patriarchate"
+ patriarch_government_reform: "Patriarchate"
  viking_republic_reform: "Viking Republic"
  viking_republic_legacy: "Viking Republic"
  VIKING_RULER_MALE: "Logmaðr" #Lawspeaker
@@ -195,7 +195,7 @@
  estate_viking_nobles: "Goði" #Chieftans
  VIK_parliament_name:0 "Althing"
  
- #Culture
+ #Culture & Religion
  fezzan_culture: "Fezzan"
  tripolitanian_culture: "Tripolitanian"
  chaoui: "Chaoui"
@@ -203,6 +203,29 @@
  shilha: "Shilha"
  berber_culture_group: "Berber"
  guanche: "Guanche"
+ lykian: "Lykian"
+ pecheneg: "Pechenegs"
+ bon_reformed: "Bon"
+ TERAPANTHA: "Terapantha"
+ slavic_zhibog_desc: "Zhibog is the god of life, sometimes depected with his female counterpart Zhiva, they are the gods of love, fertility, and marriage."
+ slavic_ognebog_desc: "Literally meaning Fire God, Ognebog is the representation of the celestial and sacrificial flame. Typically Ognebog is identified as the Fire god."
+ slavic_sud_desc: "Meaning Judge, Sud is the god of fate."
+ slavic_vida_desc: "Meaning Sight or Vision, Vida is comparable to Roman goddess Juno."
+ slavic_rod_desc: "Rod is the primordial God of the Universe and of all other gods. Creator of all things. Comparable to Zeus or Saturn of Greek & Roman Mythology."
+ hellenic_zeus_desc: "King of all the gods and Mount Olympus, Zeus is the god of the sky, weather, law, and justice. "
+ hellenic_hades_desc: "King of the Underworld and the dead, the god of Wealth."
+ hellenic_athena_desc: "Goddess of Wisdom."
+ hellenic_ares_desc: "God of war."
+ hellenic_hephaestus_desc: "God of Fire and Metalworking, he is the smith of the gods."
+ hellenic_demeter_desc: "Goddess of Agriculture and the harvest."
+ hellenic_poseidon_desc: "King of the Sea, God of Water, and Earthquakes."
+ romuva_dievas_desc: "The Supreme diety of Romuva Pagans."
+ romuva_saule_desc: "The Sun Goddess"
+ romuva_perkunas_desc: "The Thunder God"
+ romuva_auataras_desc: "God of the Northeast wind, who stands at the gates of Paradise."
+ romuva_auataras: "Austaras"
+ romuva_asvieniai_desc: "The Divine Twins who pulled the Chariot of the Sun."
+ 
  
  #Policies
  early_game_policy_mil: "Mandatory Service"

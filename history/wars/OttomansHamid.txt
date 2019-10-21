@@ -6,7 +6,7 @@ war_goal = {
 	province = 322
 }
 
-1356.12.24 = {
+1356.12.26 = {
 	add_attacker = TUR
 	add_attacker = SRU
 	add_defender = GRM
@@ -18,5 +18,5 @@ war_goal = {
 	rem_attacker = TUR
 	rem_attacker = SRU
 	rem_defender = GRM
-	add_defender = HMD
+	rem_defender = HMD
 }

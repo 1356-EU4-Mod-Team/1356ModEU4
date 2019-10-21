@@ -21,8 +21,8 @@ discovered_by = ottoman
 discovered_by = indian
 discovered_by = nomad_group
 
-1365.7.1  = { controller = CHG }
-1369.1.1  = { controller = TRS }
+#1365.7.1  = { controller = CHG }
+#1369.1.1  = { controller = TRS }
 1370.4.9  = { owner = TIM controller = TIM }
 1501.1.1  = { controller = SHY } # Conquered by Muhammad Shaybani
 1502.1.1  = { owner = BUK add_core = BUK controller = BUK remove_core = TIM } # The Uzbek Shaybanids brings an end to the Timurid dynasty

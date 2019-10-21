@@ -10,12 +10,6 @@ on_startup = {
 		limit = { tag = SWB }
 		country_event = { id = barbarossa.10 }
 	}
-}
-
-on_startup = {
-	#events = { 
-	#	flagreatproject.4
-	#}
 	if = {
 		limit = { 
 			tag = BYZ

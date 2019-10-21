@@ -967,6 +967,220 @@ christian = { #1356
 		}
 	}
 	
+	cathar = { #Converter
+		color = { 0.5 0.5 0.9 }
+		icon = 34
+		allowed_conversion = {
+			reformed
+			protestant
+		}
+		country = {
+			tolerance_own = 2
+			stability_cost_modifier = -0.1
+			may_recruit_female_generals = yes
+			female_advisor_chance = 0.2
+		}
+		country_as_secondary = {
+			yearly_corruption = -0.1
+			advisor_pool = 1
+		}
+		hre_heretic_religion = yes
+		
+		heretic = { BOGOMILIST WALDENSIAN FRATICELLI HUSSITE LOLLARD SOCINIAN }
+		
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		aspects = {
+			organised_through_bishops_aspect
+			priests_may_marry_aspect
+			adult_baptism_aspect
+			holy_sacraments_aspect
+			saints_accept_prayers_aspect
+			icons_images_aspect
+			legalised_divorces_aspect
+			heretics_deported_aspect
+			parish_registers_aspect
+			individual_creeds_aspect
+			allow_usury_aspect
+			translated_bibles_aspect
+		}
+		
+		on_convert = {
+			change_religion = cathar
+			add_prestige = -100
+			
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+	}	
+	
+	fraticelli = { #Converter. Historically lasted until late 1300's. Look further into.
+		color = { 0.7 0.7 0.4 }
+		icon = 35
+		allowed_conversion = {
+			reformed
+			protestant
+		}
+		country = {
+			legitimacy = 1
+			tolerance_own = 2
+		}
+		province = {
+			local_tax_modifier = -0.1
+		}
+		country_as_secondary = {
+			horde_unity = 1
+			tolerance_own = 1
+		}
+		hre_religion = yes
+		
+		
+		on_convert = {
+			change_religion = fraticelli
+			add_prestige = -100
+			
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { BOGOMILIST WALDENSIAN HUSSITE LOLLARD SOCINIAN }
+		
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		aspects = {
+			organised_through_bishops_aspect
+			priests_may_marry_aspect
+			adult_baptism_aspect
+			holy_sacraments_aspect
+			saints_accept_prayers_aspect
+			icons_images_aspect
+			legalised_divorces_aspect
+			heretics_deported_aspect
+			parish_registers_aspect
+			individual_creeds_aspect
+			allow_usury_aspect
+			translated_bibles_aspect
+		}
+	}
+	
+	waldensian = { #Converter Lasted until Protestant Reformation, could really be called Early Protestants in a way.
+		color = { 0.4 0.4 0.7 }
+		icon = 36
+		allowed_conversion = {
+			reformed
+			protestant
+		}
+		country = {
+			tolerance_heretic = 2
+			technology_cost = -0.1
+		}
+		
+		country_as_secondary = {
+			global_unrest = -1
+			technology_cost = -0.1
+		}
+		
+		hre_heretic_religion = yes
+		fervor = yes
+		
+		heretic = { BOGOMILIST FRATICELLI HUSSITE LOLLARD SOCINIAN }
+		
+		on_convert = {
+			change_religion = waldensian
+			add_prestige = -100
+			
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		}
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		aspects = {
+			organised_through_bishops_aspect
+			priests_may_marry_aspect
+			adult_baptism_aspect
+			holy_sacraments_aspect
+			saints_accept_prayers_aspect
+			icons_images_aspect
+			legalised_divorces_aspect
+			heretics_deported_aspect
+			parish_registers_aspect
+			individual_creeds_aspect
+			allow_usury_aspect
+			translated_bibles_aspect
+		}
+	}
+	
+	lollard = { #Converter Historically appears around 1380's. Expand on?
+		color = { 0.5 0.8 0.8 }
+		icon = 37
+		allowed_conversion = {
+			reformed
+			protestant
+		}
+		country = {
+			tolerance_own = 2
+			stability_cost_modifier = -0.2
+		}
+		province = {
+			local_tax_modifier = -0.1
+		}
+		country_as_secondary = {
+			stability_cost_modifier = -0.2
+		}
+		hre_heretic_religion = yes
+		
+		fervor = yes
+		
+		heretic = { BOGOMILIST WALDENSIAN FRATICELLI HUSSITE SOCINIAN }
+		
+		on_convert = {
+			change_religion = lollard
+			add_prestige = -100
+			
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		aspects = {
+			organised_through_bishops_aspect
+			priests_may_marry_aspect
+			adult_baptism_aspect
+			holy_sacraments_aspect
+			saints_accept_prayers_aspect
+			icons_images_aspect
+			legalised_divorces_aspect
+			heretics_deported_aspect
+			parish_registers_aspect
+			individual_creeds_aspect
+			allow_usury_aspect
+			translated_bibles_aspect
+		}
+	}
+
 	######1356 Changes end here#####
 	
 	
@@ -1338,7 +1552,29 @@ muslim = {
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
+
+	####1356 Changes below
+	zikri = { #Converter Heresy. Appears Muhammad Jaunpuri is closely mentioned with this. Look further into, as he was both 1443
+		color = { 0.2 0.6 0.2 }
+		icon = 44
+		country = {
+			global_institution_spread = 0.15
+			heir_chance = 1.0
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country_as_secondary = {
+			global_institution_spread = 0.15
+			heir_chance = 1.0
+		}
+		heretic = { BEKTASHI AHMADI YAZIDI }
+		
+		uses_piety = yes				# Uses piety mechanics
+	}	
 	
+	
+	#######End 1356 Changes#
 	harmonized_modifier = harmonized_muslim
 	
 	crusade_name = JIHAD
@@ -1477,6 +1713,30 @@ eastern = {
 		
 	}
 	
+	########1356 Changes below#####
+	
+	bon_reformed = { #Converter Religion. Kept mostly for A-Historical flavor if it comes to it.
+		color = { 8 140 131 }
+		icon = 60
+		country = {
+			tolerance_heretic = 1
+			shock_damage_received = -0.1
+		}
+		country_as_secondary = {
+			horde_unity = 1
+			shock_damage_received = -0.1
+		}
+		province = {
+			local_defensiveness = 0.1
+		}
+		
+		heretic = { ZEN }
+		
+		uses_karma = yes
+	}
+		
+	#######End 1356 Changes########
+	
 	crusade_name = CRUSADE
 	
 }
@@ -1550,6 +1810,26 @@ dharmic = {
 
 		date = 1499.01.01
 	}
+	
+	####1356 Changes below#
+	jain = { #Converter Religion. Expand on perhaps?
+		icon = 59
+		color = { 1.2 0.3 0.6 }
+		country = {
+			tolerance_heathen = 2
+			tolerance_heretic = 2
+			religious_unity = 0.5
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		country_as_secondary = {
+			religious_unity = 0.75
+		}
+		
+		heretic = { TERAPANTHA }
+	}	
+	######End 1356 Changes
 	
 	harmonized_modifier = harmonized_dharmic
 	
@@ -1852,6 +2132,7 @@ pagan = {#1356
 			remove_country_modifier = de_heretico_comburendo			
 		}
 		personal_deity = yes
+		#uses_piety = yes
 		
 		heretic = { GOAT_SKULL }	
 	}
@@ -1911,6 +2192,36 @@ zoroastrian_group = {
 		heretic = { MAZDAKI MANICHEAN }	
 
 		fervor = yes
+	}
+	#1356 Changes below here. Converter Heressies
+	manichean = {  
+		icon = 32
+		color = { 0.5 0.7 0.2 }
+		country = {
+			tolerance_heathen = 2
+			legitimacy = 1
+		}
+		country_as_secondary = {
+			tolerance_heathen = 2
+			global_missionary_strength = 0.01
+		}
+		heretic = { MAZDAKI }
+	}
+	mazdaki = { #May still be cut?
+		icon = 47
+		color = { 0.5 0.7 0.2 }
+		country = {
+			global_unrest = -3 # Proto-socialism
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+			global_tax_modifier = -0.15
+		}
+		country_as_secondary = {
+			global_unrest = -1
+			tolerance_heretic = 1
+		}
+		
+		heretic = { MANICHEAN }
 	}
 	
 	harmonized_modifier = harmonized_zoroastrian_group

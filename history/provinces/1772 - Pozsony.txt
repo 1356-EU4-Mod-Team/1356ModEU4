@@ -30,11 +30,11 @@ extra_cost = 8
 center_of_trade = 1
 
 1356.12.24  = { 
-				HRE = no
+	hre = no
 } #BT In
 
 1356.12.26  = { 
-				HRE = yes
+	hre = yes
 } #BT Out
 
 1432.1.1  = { unrest = 10 } # The city is attacked by Hussites
