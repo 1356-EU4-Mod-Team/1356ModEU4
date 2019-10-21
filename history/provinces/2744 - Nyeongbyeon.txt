@@ -3,6 +3,9 @@
 
 owner = YUA
 controller = YUA
+add_core = YUA
+add_core = KOR
+#add_core = GYO
 culture = korean
 religion = mahayana
 capital = "Nyeongbyeon"
@@ -12,9 +15,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = YUA
-add_core = KOR
-#add_core = GYO
+add_local_autonomy = 35
 
 discovered_by = chinese
 discovered_by = nomad_group

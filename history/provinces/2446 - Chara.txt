@@ -9,10 +9,11 @@ capital = "Chara"
 trade_goods = wool
 hre = no
 base_tax = 3
-
 base_production = 3
 base_manpower = 3
-estate = estate_nomadic_tribes
+native_size = 10
+native_ferocity = 1
+native_hostileness = 3
 is_city = yes
 add_core = BRT
 

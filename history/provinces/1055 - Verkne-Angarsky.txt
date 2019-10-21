@@ -1,5 +1,4 @@
 # 1055 - Verkne-Angarsky (1356)
-# Changes: YUA
 
 owner = BRT
 controller = BRT

@@ -54,7 +54,8 @@ discovered_by = UTN
 discovered_by = TTI
 discovered_by = ASK
 
-1440.1.1  = { owner = MYR controller = MYR add_core = MYR is_city = yes }
+#1440.1.1  = { owner = MYR controller = MYR add_core = MYR is_city = yes }
+
 1542.1.1  = { discovered_by = POR }
 1636.5.15 = { add_core = TKG }
 1640.1.1  = { discovered_by = RUS } # Ivan Moskvitin

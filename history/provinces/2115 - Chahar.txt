@@ -15,6 +15,7 @@ is_city = yes
 add_core = YUA
 add_core = KRC
 estate = estate_nomadic_tribes
+add_core = CHH
 
 discovered_by = chinese
 discovered_by = nomad_group

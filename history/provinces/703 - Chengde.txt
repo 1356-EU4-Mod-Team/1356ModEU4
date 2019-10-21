@@ -3,6 +3,9 @@
 
 owner = YUA
 controller = YUA
+add_core = YUA
+add_core = KRC
+add_core = CHH
 culture = chahar
 religion = vajrayana
 capital = "Chengde"
@@ -12,8 +15,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = YUA
-add_core = KRC
 estate = estate_nomadic_tribes
 
 discovered_by = chinese

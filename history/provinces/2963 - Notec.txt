@@ -2,7 +2,7 @@
 
 owner = POL
 controller = POL
-capital = "Bydgoszcz"
+capital = "Naklo"
 culture = polish
 religion = catholic
 trade_goods = livestock
