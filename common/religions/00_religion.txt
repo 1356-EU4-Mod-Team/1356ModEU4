@@ -478,38 +478,8 @@ christian = { #1356
 		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {
 				can_have_center_of_reformation_trigger = {
-						  
-						
-						
-	 
-							   
-							
-							  
-		  
-					RELIGION = reformed
-					 
-				}
-				  
-		   
-							  
-								 
-	  
-	 
-		   
-					 
-				 
-						 
-								 
-	  
-	 
-								  
-								
-									 
-										  
-								  
-								  
-								   
-									
+					RELIGION = reformed 
+				}								
 			}
 		}
 		
@@ -541,36 +511,8 @@ christian = { #1356
 					random_owned_province = {
 						limit = {
 							can_have_center_of_reformation_trigger = {
-							 
-						   
 								RELIGION = reformed
-						  
-							}
-								  
-							   
-								 
-					 
-					   
-			  
-								 
-									
-		 
-		
-			  
-						
-					
-							
-									
-		 
-		
-									 
-								   
-										
-											 
-									 
-									 
-									  
-									   
+							}   
 						}
 						change_religion = reformed
 						add_reform_center = reformed
@@ -1189,7 +1131,7 @@ christian = { #1356
 	crusade_name = CRUSADE
 }
 
-muslim = {
+muslim = { #1356
 	defender_of_faith = yes
 	
 	center_of_religion = 385 # Mecca
@@ -1491,11 +1433,6 @@ muslim = {
 	sunni = {
 		color = { 0 153 0 }
 		icon = 5
-		allowed_center_conversion = {
-			buddhism
-			animism
-			hinduism
-		}
 		country = {
 			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0
@@ -1580,7 +1517,7 @@ muslim = {
 	crusade_name = JIHAD
 }
 
-eastern = {
+eastern = { 
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
@@ -1741,7 +1678,7 @@ eastern = {
 	
 }
 
-dharmic = {
+dharmic = { #1356
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
@@ -2162,6 +2099,7 @@ jewish_group = {
 		province = {
 			local_missionary_strength = -0.02
 		}
+		
 		heretic = { SAMARITAN KARAITE }
 	}
 	
@@ -2179,7 +2117,7 @@ zoroastrian_group = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		country = {
+		country = { #1356
 			innovativeness_gain = 0.25 #Does this cause any problems for non RB owners?
 			technology_cost = -0.05
 			stability_cost_modifier = -0.1

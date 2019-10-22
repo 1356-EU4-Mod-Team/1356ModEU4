@@ -34,7 +34,6 @@ east_indian_trade_route = {
 				province_id = 1343 # Ganges Delta
 				province_id = 504 # Sind
 				province_id = 1340 # Comorin Cape
-				province_id = 2030 # Goa
 			}
 		}
 	}
@@ -575,6 +574,70 @@ the_mandate_of_heaven_lost = {
 	global_unrest = 10
 }
 
+lost_control_of_beijing = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+	}
+
+	trigger = {
+		OR = {
+			NOT = { owns = 1816 }
+			NOT = { controls = 1816 }
+		}
+	}
+
+	imperial_mandate = -0.05
+}
+
+lost_control_of_nanjing = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+	}
+
+	trigger = {
+		OR = {
+			NOT = { owns = 1821 }
+			NOT = { controls = 1821 }
+		}
+	}
+
+	imperial_mandate = -0.05
+}
+
+lost_control_of_canton = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+	}
+
+	trigger = {
+		OR = {
+			NOT = { owns = 667 }
+			NOT = { controls = 667 }
+		}
+	}
+
+	imperial_mandate = -0.05
+}
+
+waging_war_for_china = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+	}
+
+	trigger = {
+		is_in_war = {
+			attacker_leader = root
+			casus_belli = cb_chinese_unification
+		}
+	}
+	
+	imperial_mandate = 0.05
+}
+
 ##################################################
 # HRE modifiers
 ##################################################
@@ -646,7 +709,7 @@ golden_age_of_piracy = {
 	potential = {
 		has_global_flag = golden_age_of_piracy
 		NOT = { # lasts 50 years
-			had_country_flag = { flag = golden_age_of_piracy days = 18250 }
+			had_global_flag = { flag = golden_age_of_piracy days = 18250 }
 		}
 		1516 = { has_discovered = ROOT }
 	}

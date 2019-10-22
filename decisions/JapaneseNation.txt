@@ -50,7 +50,6 @@ country_decisions = {
 				}
 			}
 			change_tag = JAP
-			swap_non_generic_missions = yes
 			set_country_flag = formed_japan_flag
 			if = {
 				limit = { has_custom_ideas = no }
@@ -94,7 +93,6 @@ country_decisions = {
 			remove_government_reform = shogunate
 			set_legacy_government = despotic_monarchy
 			set_country_flag = formed_japan_flag
-			swap_non_generic_missions = yes
 			set_government_rank = 3
 			add_legitimacy = 100
 			add_adm_power = 100
@@ -151,7 +149,6 @@ country_decisions = {
 			remove_government_reform = daimyo
 			remove_government_reform = indep_daimyo
 			set_legacy_government = despotic_monarchy
-			swap_non_generic_missions = yes
 			set_government_rank = 3
 			add_legitimacy = 100
 			add_adm_power = 100

@@ -373,6 +373,7 @@ country_decisions = {
 			religion = sunni
 			NOT = { tag = MAM } #Controls the Caliph already.
 			NOT = { government = republic }
+			ruler_religion = sunni
 		}
 		allow = {
 			mil = 3
@@ -514,6 +515,7 @@ country_decisions = {
 					school = hanbali_school
 				}
 			}
+			ruler_religion = sunni
 		}
 		allow = {
 			piety = 1.0 #100 Legalism
@@ -596,8 +598,15 @@ country_decisions = {
 	adopt_vajrayana = {
 		potential = {
 			religion_group = pagan
-			any_owned_province = {
-				religion = vajrayana
+			OR = {
+				dominant_religion = vajrayana
+				AND = {
+					any_owned_province = {
+						religion = vajrayana
+					}
+					NOT = { current_age = age_of_discovery }
+					NOT = { current_age = age_of_reformation }
+				}
 			}
 			is_free_or_tributary_trigger = yes
 		}
@@ -923,14 +932,14 @@ country_decisions = {
 		}
 	}
 	
-	religious_sacrifice = {
+	religious_sacrifice = {#1356
 		potential = {
 			NOT = { has_country_modifier = religious_sacrifices }
 			religion_group = pagan
 			NOT = { religion = nahuatl }
 			NOT = { religion = inti }
 			NOT = { religion = mesoamerican_religion }
-			NOT = { religion = baltic_pagan_reformed }
+			NOT = { religion = baltic_pagan_reformed } #1356
 		}
 		allow = {
 			adm = 3
@@ -1183,7 +1192,7 @@ country_decisions = {
 		}
 	}
 	
-	zoroastrian_rites_of_admission = {
+	zoroastrian_rites_of_admission = { #1356
 		potential = {
 			NOT = { has_country_modifier = rites_of_admission_modifier_1356 }
 			religion = zoroastrian
@@ -1500,11 +1509,11 @@ country_decisions = {
 		}
 	}
 	
-	pagan_conversion_to_christianity = {
+	pagan_conversion_to_christianity = { #1356
 		potential = {
 			religion_group = pagan
 			NOT = { religion = tengri_pagan_reformed }
-			NOT = { religion = baltic_pagan_reformed }
+			NOT = { religion = baltic_pagan_reformed } #1356
 			any_owned_province = {
 				religion_group = christian
 			}
@@ -1679,6 +1688,12 @@ country_decisions = {
 			add_prestige = -100
 			add_stability = -2
 			change_religion = sikhism
+			if = {
+				limit = {
+					has_reform_level = 2
+				}
+				add_government_reform = khalsa_reform
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1743,6 +1758,7 @@ country_decisions = {
 	
 	conversion_of_convenience = {
 		potential = {
+			is_lesser_in_union = no
 			NOT = { ruler_religion = ROOT }
 			OR = {
 				has_regency = no

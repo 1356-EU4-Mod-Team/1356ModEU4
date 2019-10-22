@@ -4,7 +4,6 @@ technology_group = nomad_group
 religion = tengri_pagan_reformed
 primary_culture = oirats
 capital = 718
-historical_rival = KHA
 
 # Khans of the Oirats (Kalmyks, Dzungars)
 

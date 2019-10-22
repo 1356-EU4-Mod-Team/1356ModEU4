@@ -7,7 +7,6 @@ secondary_religion = vajrayana
 primary_culture = mongol
 capital = 2190
 historical_rival = MNG
-historical_rival = OIR #so they will try to break free
 
 1388.11.1 = {
 	monarch = {

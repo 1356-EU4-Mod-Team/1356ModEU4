@@ -1,5 +1,27 @@
 country_decisions = {
 
+	institute_prussian_monarchy = {
+		major = yes
+		potential = {
+			NOT = { has_dlc = "Dharma" }
+			normal_or_historical_nations = yes
+			tag = PRU
+			government = monarchy
+			NOT = { has_reform = prussian_monarchy_legacy }
+		}
+
+		allow = {
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+
+		effect = {
+			add_government_reform = prussian_monarchy
+		}
+	}
+
 	form_kingdom_of_prussia = { #1356 - Changed tech
 		major = yes
 		potential = {

@@ -13,8 +13,6 @@
 # TRIGGERED - Triggered from within the code or by event effects
 # --------------------------------------------------------------
 
-#Everything modified by us is marked with #1356 right above it for the sake of making patching easier.
-
 # Restoration of recently broken PU
 cb_restore_personal_union = {
 	valid_for_subject = no
@@ -224,20 +222,13 @@ cb_annex = {
 	war_goal = annex_country
 }
 
-cb_change_government = { #1356
+cb_change_government = {
 	valid_for_subject = no
 
 	is_triggered_only = yes
 	months = 120
 
 	war_goal = war_goal_change_government
-	
-	#1356 This section is new
-	attacker_disabled_po = {
-		po_demand_provinces
-		po_become_vassal
-		po_form_personal_union
-	}
 }
 
 # AUTOMATIC - Constantly in effect while 'prerequisites' is true
@@ -266,12 +257,11 @@ cb_humiliate = {
 
 
 # Temporary claim CB (mostly used by missions)
-cb_conquest = { #1356
+cb_conquest = {
 
 	prerequisites = {
 		claim = FROM
 		is_revolution_target = no
-		#NOT = { current_age = age_of_feudalism } #1356 #Disabled until new CB gets added
 	}
 
 	war_goal = take_claim
@@ -345,9 +335,24 @@ cb_imperial = {
 		}
 		is_free_or_tributary_trigger = yes
 		is_revolution_target = no
+		NOT = { has_reform = war_against_the_world_doctrine_reform }
 	}
 
 	war_goal = take_capital_imperial
+}
+
+# War Against the World CB for pirates
+cb_war_against_the_world = {
+	valid_for_subject = no
+	
+	prerequisites = {
+		has_reform = war_against_the_world_doctrine_reform
+		dip_tech = 23
+		is_free_or_tributary_trigger = yes
+		is_revolution_target = no
+	}
+
+	war_goal = take_capital_pirates
 }
 
 # Daimyo on Japan
@@ -367,7 +372,7 @@ cb_daimyo_annex = {
 		is_revolution_target = no
 	}
 
-	war_goal = annex_country
+	war_goal = annex_country_japan
 }
 
 cb_independent_daimyo_annex = {
@@ -385,7 +390,7 @@ cb_independent_daimyo_annex = {
 		is_revolution_target = no
 	}
 
-	war_goal = annex_country
+	war_goal = annex_country_japan
 }
 
 cb_shogun_annex = {
@@ -403,7 +408,7 @@ cb_shogun_annex = {
 		is_revolution_target = no
 	}
 
-	war_goal = annex_country
+	war_goal = annex_country_japan
 }
 
 # Sengoku - Daimyo infighting
@@ -421,7 +426,7 @@ cb_sengoku = {
 		is_revolution_target = no
 	}
 
-	war_goal = annex_country
+	war_goal = annex_country_japan
 }
 
 # Revolutionary CB
@@ -605,8 +610,8 @@ cb_trade_war = {
 				NOT = { FROM = { trade_embargo_by = ROOT } }
 			}
 			AND = {
-				has_reform = merchants_reform
-				FROM = { has_reform = merchants_reform }
+				has_government_attribute = is_merchant_republic
+				FROM = { has_government_attribute = is_merchant_republic }
 			}
 		}
 		is_revolution_target = no
@@ -1007,6 +1012,7 @@ cb_take_mandate = {
 		has_dlc = "Mandate of Heaven"
 		is_subject = no
 		is_neighbor_of = FROM
+		NOT = { has_reform = shogunate }
 		FROM = { is_emperor_of_china = yes }
 		OR = {
 			religion_group = pagan
