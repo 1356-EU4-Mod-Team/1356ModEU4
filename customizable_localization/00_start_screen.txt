@@ -42,7 +42,7 @@ defined_text = {
 		text = {
         localisation_key = string_start_title_frd
         trigger = {
-			tag = FRD
+			tag = FRA
 		}
     }
 	
@@ -437,7 +437,7 @@ defined_text = {
 		text = { #France
 		localisation_key = string_start_frd
 		trigger = {
-			tag = FRD
+			tag = FRA
 		}
 	}
 	#######END 1356 ADDITIONS#########

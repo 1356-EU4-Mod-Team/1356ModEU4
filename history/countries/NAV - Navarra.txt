@@ -47,7 +47,7 @@ capital = 210	# Pamplona
 		mil = 3
 	}
 	queen = {
-		country_of_origin = FRD
+		country_of_origin = FRA
 		name = "Jeanne"
 		dynasty = "de Valois"
 		birth_date = 1343.6.24

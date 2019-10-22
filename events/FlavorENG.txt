@@ -185,21 +185,12 @@ country_event = { #1356
 				owned_by = ROOT
 			}
 		}
-		OR = {
-			FRA = {
-				exists = yes
-				NOT = { is_subject_of = ENG }
-				NOT = { is_subject_of = GBR }
-				NOT = { war_with = ENG }
-				NOT = { war_with = GBR }
-			}
-			FRD = { #1356
-				exists = yes
-				NOT = { is_subject_of = ENG }
-				NOT = { is_subject_of = GBR }
-				NOT = { war_with = ENG }
-				NOT = { war_with = GBR }
-			}
+		FRA = {
+			exists = yes
+			NOT = { is_subject_of = ENG }
+			NOT = { is_subject_of = GBR }
+			NOT = { war_with = ENG }
+			NOT = { war_with = GBR }
 		}
 	}
 	
@@ -211,12 +202,6 @@ country_event = { #1356
 					FRA = { NOT = { has_country_flag = had_end_of_HYW_france } }
 				}
 				FRA = { country_event = { id = flavor_fra.9104 days = 1 } }
-			}
-			if = { #1356
-				limit = {
-					FRD = { NOT = { has_country_flag = had_end_of_HYW_france } }
-				}
-				FRD = { country_event = { id = flavor_fra.9104 days = 1 } }
 			}
 		}
 	}

@@ -341,10 +341,7 @@ country_event = { #Revolt of Owain Glyndŵr - French Aid
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = FRA
-			tag = FRD
-		}
+		tag = FRA
 		exists = WLS
 		WLS = { 
 			is_subject = no
@@ -365,7 +362,6 @@ country_event = { #Revolt of Owain Glyndŵr - French Aid
 		add_historical_friend = WLS
 		WLS = { 
 			add_historical_friend = FRA
-			add_historical_friend = FRD
 			country_event = { 
 				id = flaeng.16
 				days = 5

@@ -15,8 +15,8 @@ union = {
 }
 
 # France-Genoa
-union = { #FRD
-	first = FRD
+union = { 
+	first = FRA
 	second = GEN
 	start_date = 1458.1.1
 	end_date = 1461.1.1
@@ -37,8 +37,8 @@ union = {
 	end_date = 1453.2.28
 }
 
-alliance = { #FRD
-	first = FRD
+alliance = {
+	first = FRA
 	second = PRO
 	start_date = 1431.1.25
 	end_date = 1453.7.18
@@ -51,7 +51,7 @@ alliance = {
 	end_date = 1483.3.23
 }
 
-alliance = { #FRD
+alliance = {
 	first = FRA
 	second = GEN
 	start_date = 1458.1.1
@@ -83,8 +83,8 @@ vassal = {
 }
 
 # Normandy, a French vassal
-vassal = { #FRD
-	first = FRD
+vassal = { 
+	first = FRA
 	second = NRM
 	start_date = 1465.8.15
 	end_date = 1466.3.6
@@ -99,8 +99,8 @@ vassal = { #FRD
 # }
 
 # Nevers, a French vassal
-vassal = { #FRD
-	first = FRD
+vassal = { 
+	first = FRA
 	second = NEV
 	start_date = 1465.1.1
 	end_date = 1477.1.5
@@ -331,8 +331,8 @@ alliance = {
 }
 
 # Auld Alliance
-guarantee = { #FRD
-	first = FRD
+guarantee = { 
+	first = FRA
 	second = SCO
 	start_date = 1444.1.1
 	end_date = 1477.1.5
@@ -716,9 +716,9 @@ royal_marriage = {
 }
 
 # Amadeo IX of Savoy and Yolande of Valois
-royal_marriage = { #FRD
+royal_marriage = { 
 	first = SAV
-	second = FRD
+	second = FRA
 	start_date = 1453.1.1
 	end_date = 1472.3.30
 }
@@ -763,8 +763,8 @@ royal_marriage = {
 	end_date = 1814.4.6
 }
 
-guarantee = { #FRD
-	first = FRD
+guarantee = {
+	first = FRA
 	second = AVI
 	start_date = 1399.1.1
 	end_date = 1417.10.18

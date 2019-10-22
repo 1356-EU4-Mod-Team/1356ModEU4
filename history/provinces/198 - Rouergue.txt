@@ -29,8 +29,8 @@ discovered_by = ottoman
 1360.5.25  = { owner = ENG controller = ENG } # Treaty of Bretigny
 1375.6.27  = { owner = AMG controller = AMG } # Treaty of Bruges
 
-1453.10.16 = { owner = FRD controller = FRD add_core = FRD add_local_autonomy = 25 estate = estate_nobles }
-1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
+1453.10.16 = { owner = FRA controller = FRA add_core = FRA add_local_autonomy = 25 estate = estate_nobles }
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 
 1549.12.21 = { owner = NAV controller = NAV add_core = NAV } # Henri d'Albret (King of Navarra) owns it after Marguerite d'Angoulêmes death
 1588.12.1  = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy

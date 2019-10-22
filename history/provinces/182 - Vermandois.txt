@@ -21,11 +21,11 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.26 = { owner = FRD controller = FRD add_core = FRD remove_core = FRA }
+1356.12.26 = { owner = FRA controller = FRA add_core = FRA }
 1420.5.12  = { owner = ENG controller = ENG add_core = ENG } # Treaty of Troyes, ceded to the English
-1429.1.1   = { owner = FRD controller = FRD remove_core = ENG } # Retaken by the French
+1429.1.1   = { owner = FRA controller = FRA remove_core = ENG } # Retaken by the French
 1435.9.21  = { owner = BUR controller = BUR add_core = BUR } # Treaty of Arras, ceded to the Burgundians
-1477.1.5   = { owner = FRA controller = FRA remove_core = BUR remove_core = FRD } # Charles the Bold dies and Louis XII takes Vermandois
+1477.1.5   = { owner = FRA controller = FRA remove_core = BUR } # Charles the Bold dies and Louis XII takes Vermandois
 1588.12.1  = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
 1594.1.1   = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 

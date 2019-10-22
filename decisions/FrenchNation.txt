@@ -19,16 +19,11 @@ country_decisions = {
 			NOT = { tag = ARE }
 			NOT = { tag = LOT }
 			NOT = { tag = AQT }
-			NOT = { tag = FRD } #1356 #They have a seperate decision
 			NOT = { tag = NCH } #1356 #Francia
-			NOT = { exists = FRD }
 			NOT = { primary_culture = crusader_culture } #1356
 			OR = {
 				ai = no
-				AND = {
-					NOT = { exists = FRA }
-					NOT = { exists = FRD }
-				}
+				NOT = { exists = FRA }
 			}
 			OR = {
 				culture_group = french

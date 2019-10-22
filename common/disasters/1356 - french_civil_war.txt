@@ -1,20 +1,20 @@
 disaster_french_civil_war = {
 	potential = {
-		tag = FRD
-		exists = FRD
+		tag = FRA
+		exists = FRA
 		NOT = { has_global_flag = 1356_french_civil_war }
 		ai = yes
 		current_age = age_of_feudalism
-		FRD = {
+		FRA = {
 			government = monarchy
 			is_free_or_tributary_trigger = yes
 		}
 	}
 
 	can_start = {
-		tag = FRD
+		tag = FRA
 		current_age = age_of_feudalism
-		FRD = {
+		FRA = {
 			has_any_disaster = no
 			has_regency = no
 			is_at_war = no #I hope this wont be exploitable...
@@ -72,7 +72,7 @@ disaster_french_civil_war = {
 	progress = {
 		modifier = {
 			factor = 1
-			tag = FRD
+			tag = FRA
 			ruler_age = 65
 			NOT = { dip = 3}
 		}
@@ -93,23 +93,23 @@ disaster_french_civil_war = {
 		}
 		modifier = {
 			factor = 2
-			tag = FRD
+			tag = FRA
 			NOT = { months_of_ruling = 24 }
 		}
 		modifier = {
 			factor = 2
-			tag = FRD
+			tag = FRA
 			heir_has_ruler_dynasty = no
 		}		
 		modifier = {
 			factor = 2
-			tag = FRD
+			tag = FRA
 			has_foreign_heir = yes
 		}	
 	}
 		
 	can_end = {
-		NOT = { exists = FRD }
+		NOT = { exists = FRA }
 	}
 	
 	on_start = fre_disaster_civil_war.1

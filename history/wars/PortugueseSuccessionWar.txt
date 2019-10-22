@@ -15,7 +15,7 @@ war_goal = {
 }
 
 1384.4.3 = { # Hundred Years war support
-	add_attacker = FRD
+	add_attacker = FRA
 	add_defender = ENG
 }
 
@@ -138,7 +138,7 @@ war_goal = {
 # Unknown, but was around that time since all castille army was destroyed in 1385.8, tho there is a period of war between 1396-1402.
 1385.10.31 = {
 	rem_attacker = CAS
-	rem_attacker = FRD
+	rem_attacker = FRA
 	rem_defender = POR
 	rem_defender = ENG
 }

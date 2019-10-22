@@ -13,21 +13,21 @@
 #########################################
 
 # Berry, a French duchy vassal (1360-1416)
-dependency = { #FRD
+dependency = { #
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = BER
 	start_date = 1360.10.1 # duchy created
 	end_date = 1416.6.15 # duchy inherited
 }
 
 # Bourbonnais, a French duchy vassal  (1327-1523)
-dependency = { #FRD
+dependency = { 
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = BOU
 	start_date = 1327.12.27 # duchy created
-	end_date = 1453.10.16 # Switched from FRD to FRA
+	end_date = 1453.10.16 
 }
 
 #Bourbonnais, a French duchy vassal  (1327-1523)
@@ -35,7 +35,7 @@ dependency = { #FRD
 	# subject_type = "french_ducal_vassal"
 	# first = FRA
 	# second = BOU
-	# start_date = 1453.10.16 # Switches from FRD to FRA
+	# start_date = 1453.10.16 
 	# end_date = 1523.10.9 # duchy to Kingmother Louise de Savoie
 # }
 
@@ -49,21 +49,21 @@ dependency = { #FRD
 # }
 
 # Orleanais, a French duchy vassal (1344-1376)
-dependency = { #FRD
+dependency = { #FRA
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = ORL
 	start_date = 1344.1.1 # duchy created
 	end_date = 1376.9.1 # duchy inherited
 }
 
 # Orleanais, a French duchy (1392-1489)
-dependency = { #FRD
+dependency = { #
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = ORL
 	start_date = 1392.1.1 # duchy restaured
-	end_date = 1453.10.16 # Switched from FRD to FRA
+	end_date = 1453.10.16 
 }
 
 # # Orleanais, a French duchy (1392-1489)
@@ -71,7 +71,7 @@ dependency = { #FRD
 	# subject_type = "french_ducal_vassal"
 	# first = FRA
 	# second = ORL
-	# start_date = 1453.10.16 # Switched from FRD to FRA
+	# start_date = 1453.10.16 
 	# end_date = 1489.5.27 # becomes the King of France
 # }
 
@@ -85,21 +85,21 @@ dependency = { #FRD
 # }
 
 # Alençon, a French county/duchy (1346-1458)
-dependency  = { #FRD
+dependency  = { 
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = ALE
 	start_date = 1356.12.26 #was 1346.8.26
-	end_date = 1453.10.16 # royal domain #was 1458.1.1
+	end_date = 1453.10.16 #was 1458.1.1
 }
 
 # # Alençon, a French duchy vassal 1st phase (1461-1474)
-# dependency = { #FRD
+# dependency = {
 	# subject_type = "french_ducal_vassal"
-	# first = FRD
+	# first = FRA
 	# second = ALE
 	# start_date = 1461.1.1 # duchy returned
-	# end_date = 1474.1.1 # royal domain
+	# end_date = 1474.1.1
 # }
 
 # # Alençon, a French duchy vassal 2nd phase (1478-1497)
@@ -112,12 +112,12 @@ dependency  = { #FRD
 # }
 
 # Armagnac, a French duchy (1369-1549)
-dependency = { #FRD
+dependency = {
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = AMG
 	start_date = 1369.5.1 # French reqonquer Gascogne
-	end_date = 1453.10.16 # Switches from FRD to FRA
+	end_date = 1453.10.16 
 }
 
 # # Armagnac, a French duchy (1369-1549)
@@ -125,69 +125,69 @@ dependency = { #FRD
 	# subject_type = "french_ducal_vassal"
 	# first = FRA
 	# second = AMG
-	# start_date = 1453.10.16 # Switches from FRD to FRA
+	# start_date = 1453.10.16 # Switches from FRA to FRA
 	# end_date = 1549.12.21 # duchy inherited by Navarra
 # }
 
 
 # Foix, a French county
-dependency = { #FRD
+dependency = { 
 	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = FOI
 	start_date = 1356.12.26 #This is because it is harder to make them vassals later on, as it's highly possible Foix will no longer exist by 1380.
 	#start_date = 1380.5.1 # becomes Lieutenant-général of Languedoc
-	end_date = 1453.10.16 # FRD to FRA
+	end_date = 1453.10.16 
 }
 
 # # Foix, a French county
-# dependency = { #FRA
+# dependency = { 
 	# subject_type = "french_ducal_vassal"
 	# first = FRA
 	# second = FOI
-	# start_date = 1453.10.16 #FRD to FRA
+	# start_date = 1453.10.16 
 	# #start_date = 1380.5.1 # becomes Lieutenant-général of Languedoc
 	# end_date = 1479.2.13 # becomes the King of Navarra
 # }
 
 # Forez, a French county
-dependency = { #FRD
+dependency = { 
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = FOZ
 	start_date = 1349.8.1 # The Britisch attacking France
 	end_date = 1417.9.22 # becomes PU Partner of Bourbonnais
 }
 
 # Burgundy, a French duchy vassal
-dependency = { #FRD #Possibly rework this stage
+dependency = { 
 	subject_type = "vassal"
-	first = FRD
+	first = FRA
 	second = BUR
 	start_date = 1363.9.6 # duchy handed to Philippe I, son of king of france
 	end_date = 1387.1.1 # (for now 1399), later = Treaty of Arras (1435.9.20)
 }
 
 # Auvergne, a French county
-dependency = { #FRD
+dependency = { 
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = AUV
 	start_date = 1350.2.9 # Countess becomes Queen Consort 
 	end_date = 1360.9.29 # part of BUR
 }
 
-royal_marriage = { #FRD
-	first = FRD
+royal_marriage = { 
+	first = FRA
 	second = AUV
 	start_date = 1350.2.9 # Countess becomes Queen Consort 
 	end_date = 1360.9.29 # part of BUR
 }
 
 # Auvergne, a French county
-dependency = { #FRD #Rework this stage
+dependency = { 
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = AUV
 	start_date = 1361.11.21 # county again freed
 	end_date = 1453.10.16 # FRX to FRA
@@ -198,7 +198,7 @@ dependency = { #FRD #Rework this stage
 	# subject_type = "french_ducal_vassal"
 	# first = FRA
 	# second = AUV
-	# start_date = 1453.10.16 # FRD to FRA
+	# start_date = 1453.10.16 
 	# end_date = 1533.10.28 # county to dauphiné of France
 # }
 
@@ -219,27 +219,27 @@ dependency = { #FRD #Rework this stage
 # }
 
 # Brittany, a French duchy vassal
-dependency = { #FRD #May need reworking
+dependency = { 
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = BRI
 	start_date = 1365.4.12 # Treaty of Guerande
 	end_date = 1378.12.18 # secret alliance with england #Look into this, maybe this needs reworked too?
 }
 
 # Brittany, a French duchy vassal
-dependency = { #FRD
+dependency = { 
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = BRI
 	start_date = 1381.4.4 # homage to france again with assurance neutrality in wars fra x eng
 	end_date = 1399.1.1 # so far
 }
 
 # Anjou, a French county/duchy
-dependency = { #FRD
+dependency = { 
 	subject_type = "french_ducal_vassal"
-	first = FRD
+	first = FRA
 	second = ANJ
 	start_date = 1351.1.1 # county created
 	end_date = 1382.7.27
@@ -349,8 +349,8 @@ royal_marriage = {
 #}
 
 # Dauphiné under King of France
-union = { #FRD
-	first = FRD
+union = { #FRA
+	first = FRA
 	second = DAU
 	#start_date = 1349.7.16
 	start_date = 1356.12.26
@@ -493,9 +493,9 @@ alliance = {
 	end_date = 1365.4.12
 }
 
-alliance = { #FRD
+alliance = { #FRA
 	first = BLS
-	second = FRD
+	second = FRA
 	start_date = 1342.6.1
 	end_date = 1365.4.12
 }

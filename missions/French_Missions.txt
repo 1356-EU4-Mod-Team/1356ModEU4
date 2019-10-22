@@ -4,10 +4,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 	ai = yes
 	
 	potential = { 
-		OR = {
-			tag = FRD
-			tag = FRA
-		}
+		tag = FRA
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -25,22 +22,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			wns_or_non_sovereign_subject_of = 176
 			OR = {
 				FOI = {
-					is_subject_of = FRD
-					ai = yes
-				}
-				FOI = {
 					is_subject_of = FRA
 					ai = yes
 				}
 				NOT = { exists = FOI }
 			}
 			OR = {
-				FOI = {
-					has_opinion = {
-						who = FRD
-						value = 190
-					}
-				}
 				FOI = {
 					has_opinion = {
 						who = FRA
@@ -56,10 +43,10 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			add_mil_power = -50
 			176 = { #Foix
 				add_base_manpower = 1
-				add_permanent_province_modifier = { 
-					name = 1356_frd_controlled_by_nobles_prov_modifier
-					duration = -1  
-				}
+				#add_permanent_province_modifier = { 
+				#	name = 1356_frd_controlled_by_nobles_prov_modifier
+				#	duration = -1  
+				#}
 			}
 		}
 	}
@@ -78,22 +65,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			owns_or_non_sovereign_subject_of = 4389
 			OR = {
 				ORL = { 
-					is_subject_of = FRD
-					ai = yes
-				}
-				ORL = { 
 					is_subject_of = FRA
 					ai = yes
 				}
 				NOT = { exists = ORL }
 			}
 			OR = {
-				ORL = {
-					has_opinion = {
-						who = FRD
-						value = 190
-					}
-				}
 				ORL = {
 					has_opinion = {
 						who = FRA
@@ -110,17 +87,17 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			184 = { #Orleans
 				add_base_tax = 2
 				add_base_manpower = 1
-				add_permanent_province_modifier = { 
-					name = 1356_frd_controlled_by_nobles_prov_modifier
-					duration = -1  
-				}
+				#add_permanent_province_modifier = { 
+				#	name = 1356_frd_controlled_by_nobles_prov_modifier
+				#	duration = -1  
+				#}
 			}
 			4389 = { #Touraine
 				add_base_tax = 1
-				add_permanent_province_modifier = { 
-					name = 1356_frd_controlled_by_nobles_prov_modifier
-					duration = -1  
-				}
+				#add_permanent_province_modifier = { 
+				#	name = 1356_frd_controlled_by_nobles_prov_modifier
+				#	duration = -1  
+				#}
 			}
 		}
 	}
@@ -139,22 +116,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			owns_or_non_sovereign_subject_of = 1879 #Alencon
 			OR = {
 				ALE = {
-					is_subject_of = FRD
-					ai = yes
-				}
-				ALE = {
 					is_subject_of = FRA
 					ai = yes
 				}
 				NOT = { exists = ALE }
 			}
 			OR = {
-				ALE = {
-					has_opinion = {
-						who = FRD
-						value = 190
-					}
-				}
 				ALE = {
 					has_opinion = {
 						who = FRA
@@ -191,22 +158,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			owns_or_non_soverign_subject_of = 203
 			OR = {
 				FOZ = {
-					is_subject_of = FRD
-					ai = yes
-				}
-				FOZ = {
 					is_subject_of = FRA
 					ai = yes
 				}
 				NOT = { exists = FOZ }
 			}
 			OR = {
-				FOZ = {
-					has_opinion = {
-						who = FRD
-						value = 190
-					}
-				}
 				FOZ = {
 					has_opinion = {
 						who = FRA
@@ -222,10 +179,10 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			add_mil_power = -50
 			203 = { #Lyonnais
 				add_base_tax = 1
-				add_permanent_province_modifier = { 
-					name = 1356_frd_controlled_by_nobles_prov_modifier
-					duration = -1  
-				}
+				#add_permanent_province_modifier = { 
+				#	name = 1356_frd_controlled_by_nobles_prov_modifier
+				#	duration = -1  
+				#}
 			}
 		}
 	}
@@ -243,22 +200,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			owns_or_non_soverign_subject_of = 190
 			OR = {
 				BOU = {
-					is_subject_of = FRD
-					ai = yes
-				}
-				BOU = {
 					is_subject_of = FRA
 					ai = yes
 				}
 				NOT = { exists = BOU }
 			}
 			OR = {
-				BOU = {
-					has_opinion = {
-						who = FRD
-						value = 190
-					}
-				}
 				BOU = {
 					has_opinion = {
 						who = FRA
@@ -274,10 +221,10 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			add_mil_power = -50
 			190 = { #Bourbonnais
 				add_base_production = 2
-				add_permanent_province_modifier = { 
-					name = 1356_frd_controlled_by_nobles_prov_modifier
-					duration = -1  
-				}
+				#add_permanent_province_modifier = { 
+				#	name = 1356_frd_controlled_by_nobles_prov_modifier
+				#	duration = -1  
+				#}
 			}
 			
 		}
@@ -296,22 +243,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			owns_or_non_soverign_subject_of = 178
 			OR = {
 				ANJ = {
-					is_subject_of = FRD
-					ai = yes
-				}
-				ANJ = {
 					is_subject_of = FRA
 					ai = yes
 				}
 				NOT = { exists = ANJ }
 			}
 			OR = {
-				ANJ = {
-					has_opinion = {
-						who = FRD
-						value = 190
-					}
-				}
 				ANJ = {
 					has_opinion = {
 						who = FRA
@@ -326,19 +263,19 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			add_mil_power = -100
 			177 = { #Maine
 				add_base_manpower = 1
-				add_permanent_province_modifier = { 
-					name = 1356_frd_controlled_by_nobles_prov_modifier
-					duration = -1  
-				}
+				#add_permanent_province_modifier = { 
+				#	name = 1356_frd_controlled_by_nobles_prov_modifier
+				#	duration = -1  
+				#}
 			}
 			178 = { #Anjou
 				add_base_tax = 1
 				add_base_manpower = 1
 				add_base_production = 1
-				add_permanent_province_modifier = { 
-					name = 1356_frd_controlled_by_nobles_prov_modifier
-					duration = -1  
-				}
+				#add_permanent_province_modifier = { 
+				#	name = 1356_frd_controlled_by_nobles_prov_modifier
+				#	duration = -1  
+				#}
 			}
 		}
 	}
@@ -355,22 +292,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			owns_or_non_soverign_subject_of = 199
 			OR = {
 				AUV = {
-					is_subject_of = FRD
-					ai = yes
-				}
-				AUV = {
 					is_subject_of = FRA
 					ai = yes
 				}
 				NOT = { exists = AUV }
 			}
 			OR = {
-				AUV = {
-					has_opinion = {
-						who = FRD
-						value = 190
-					}
-				}
 				AUV = {
 					has_opinion = {
 						who = FRA
@@ -388,10 +315,10 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			
 			}
 			190 = { #Auvergne
-				add_permanent_province_modifier = { 
-					name = 1356_frd_controlled_by_nobles_prov_modifier
-					duration = -1  
-				}	
+				#add_permanent_province_modifier = { 
+				#	name = 1356_frd_controlled_by_nobles_prov_modifier
+				#	duration = -1  
+				#}	
 			}
 		}
 	}	
@@ -408,22 +335,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			mil_power = 100
 			OR = {
 				BRI = {
-					is_subject_of = FRD
-					ai = yes
-				}
-				BRI = {
 					is_subject_of = FRA
 					ai = yes
 				}
 				NOT = { exists = BRI }
 			}
 			OR = {
-				BRI = {
-					has_opinion = {
-						who = FRD
-						value = 190
-					}
-				}
 				BRI = {
 					has_opinion = {
 						who = FRA
@@ -582,10 +499,7 @@ french_missions_integrate_dau = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = FRD
-			tag = FRA
-		}
+		tag = FRA
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -606,18 +520,10 @@ french_missions_integrate_dau = {
 				}
 				NOT = { exists = DAU }
 			}			
-			OR = {
-				DAU = {
-					has_opinion = {
-						who = FRD
-						value = 150
-					}
-				}
-				DAU = {
-					has_opinion = {
-						who = FRA
-						value = 150
-					}
+			DAU = {
+				has_opinion = {
+					who = FRA
+					value = 150
 				}
 			}
 		}
@@ -632,10 +538,7 @@ french_missions_breton_civil_war_slot = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = FRD
-			tag = FRA
-		}
+		tag = FRA
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -673,7 +576,6 @@ french_missions_breton_civil_war_slot = {
 					alliance_with = BRI
 					marriage_with = BRI
 				}
-				BRI = { is_subject_of = FRD }
 				BRI = { is_subject_of = FRA }
 			}
 		}
@@ -696,7 +598,6 @@ french_missions_breton_civil_war_slot = {
 			exists = BRI
 			is_at_war = no
 			OR = {
-				BRI = { is_subject_of = FRD }
 				BRI = { is_subject_of = FRA }
 			}
 		}
@@ -1088,10 +989,7 @@ french_hundred_years_war_missions = { #French Royal Domaine Missions ONLY.
 	generic = no
 	ai = yes
 	potential = { 
-		OR = {
-			tag = FRA
-			tag = FRD
-		}
+		tag = FRA
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -1174,10 +1072,7 @@ french_hyw_missions_slot_4 = {
 	generic = no
 	ai = yes
 	potential = { 
-		OR = {
-			tag = FRD
-			tag = FRA
-		}
+		tag = FRA
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -1216,9 +1111,9 @@ french_hyw_missions_slot_4 = {
 		effect = {
 			add_army_tradition = 2.5
 			add_war_exhaustion = -2
-			167 = {	add_claim = FRD }
-			168 = { add_claim = FRD }
-			4385 = { add_claim = FRD }
+			167 = {	add_claim = FRA }
+			168 = { add_claim = FRA }
+			4385 = { add_claim = FRA }
 		}
 	}
 	hyw_punish_charles_ii_normandy = { #Reconquer Normandy
@@ -1265,8 +1160,8 @@ french_hyw_missions_slot_4 = {
 		effect = {
 			add_army_tradition = 2.5
 			add_war_exhaustion = -2
-			198 = {	add_claim = FRD	} #Rouergue
-			175 = { add_claim = FRD } #Armagnac
+			198 = {	add_claim = FRA	} #Rouergue
+			175 = { add_claim = FRA } #Armagnac
 		}	
 	}
 	hyw_annex_armagnac = { #Annex Armagnac for serving the English
@@ -1295,8 +1190,8 @@ french_hyw_missions_slot_4 = {
 		effect = {
 			add_army_tradition = 2.5
 			add_war_exhaustion = -2
-			198 = {	add_core = FRD	} #Rouergue
-			175 = { add_core = FRD } #Armagnac
+			198 = {	add_core = FRA	} #Rouergue
+			175 = { add_core = FRA } #Armagnac
 		}	
 	}
 	hyw_declare_war_reclaimation_part_2_mission = { #Declare war on England in order to Reclaim the Southern Provinces they held. Part 2
@@ -1318,8 +1213,8 @@ french_hyw_missions_slot_4 = {
 		effect = {
 			add_army_tradition = 2.5
 			add_war_exhaustion = -2
-			175 = {	add_claim = FRD	} #Aquitaine
-			173 = { add_claim = FRD } #Labourd
+			175 = {	add_claim = FRA	} #Aquitaine
+			173 = { add_claim = FRA } #Labourd
 		}	
 	}
 	hyw_revoke_gascony_from_english = { #Revoke Gascony from the English
@@ -1348,8 +1243,8 @@ french_hyw_missions_slot_4 = {
 		effect = {
 			add_army_tradition = 2.5
 			add_war_exhaustion = -2
-			174 = {	add_core = FRD	}
-			173 = { add_core = FRD } 
+			174 = {	add_core = FRA	}
+			173 = { add_core = FRA } 
 		}	
 	}
 	hyw_push_english_out_of_the_south_fra = { #Ensure the English are removed from Southern France
@@ -1524,7 +1419,7 @@ french_hyw_missions_slot_4 = {
 			ENG = { NOT = { owns_or_non_sovereign_subject_of = champagne_area } }
 		}
 		effect = { 	
-			87 = {	add_claim = FRD	} #Calais
+			87 = {	add_claim = FRA	} #Calais
 		}
 	}
 	
@@ -2170,10 +2065,7 @@ hyw_two_peters_phase_slot = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = FRD
-			tag = FRA
-		}
+		tag = FRA
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes

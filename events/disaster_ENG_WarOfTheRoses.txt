@@ -637,7 +637,6 @@ country_event = { #1356
 				region = british_isles_region
 			}
 			tag = FRA
-			tag = FRD
 		}
 		ENG = {
 			has_disaster = war_of_the_roses
@@ -710,7 +709,6 @@ country_event = { #1356
 				region = british_isles_region
 			}
 			tag = FRA
-			tag = FRD
 		}
 		ENG = {
 			has_disaster = war_of_the_roses

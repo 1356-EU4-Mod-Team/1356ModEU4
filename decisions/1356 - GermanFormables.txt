@@ -15,7 +15,6 @@ country_decisions = {
 			NOT = { tag = BOH }
 			NOT = { tag = RHI }
 			NOT = { tag = FRA }
-			NOT = { tag = FRD }
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
@@ -189,7 +188,6 @@ country_decisions = {
 			NOT = { tag = RHI }
 			NOT = { tag = BAV }
 			NOT = { tag = FRA }
-			NOT = { tag = FRD }
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
@@ -260,7 +258,6 @@ country_decisions = {
 			NOT = { tag = BOH }
 			NOT = { tag = RHI }
 			NOT = { tag = FRA }
-			NOT = { tag = FRD }
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
@@ -331,7 +328,6 @@ country_decisions = {
 			NOT = { tag = BOH }
 			NOT = { tag = RHI }
 			NOT = { tag = FRA }
-			NOT = { tag = FRD }
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {

@@ -13,7 +13,7 @@ war_goal = {
 	add_attacker = LNC
 	add_attacker = NOL
 	add_attacker = MNF
-	add_defender = FRD
+	add_defender = FRA
 	add_defender = FLA
 	add_defender = BUR
 	add_defender = AMG
@@ -38,7 +38,7 @@ war_goal = {
 			commander = "Louis of Poitiers"
 			infantry = 7000
 			losses = 95	# percent
-			country = FRD
+			country = FRA
 		}
 		result = yes
 	}
@@ -62,7 +62,7 @@ war_goal = {
 			commander = "Raoul II"		# Raoul II of Brienne
 			infantry = 15000
 			losses = 95	# percent
-			country = FRD
+			country = FRA
 		}
 		result = yes
 	}
@@ -82,7 +82,7 @@ war_goal = {
 			commander = "Raoul II"		# Raoul II of Brienne
 			infantry = 3500
 			losses = 95	# percent
-			country = FRD
+			country = FRA
 		}
 		result = yes
 	}
@@ -102,7 +102,7 @@ war_goal = {
 			commander = "Philippe VI"		# Philippe VI of France
 			infantry = 25000
 			losses = 90	# percent
-			country = FRD
+			country = FRA
 		}
 		result = yes
 	}
@@ -186,7 +186,7 @@ war_goal = {
 	rem_attacker = LNC
 	rem_attacker = NOL
 	rem_attacker = MNF
-	rem_defender = FRD
+	rem_defender = FRA
 	rem_defender = AMG
 	rem_defender = FOI
 	rem_defender = BOU

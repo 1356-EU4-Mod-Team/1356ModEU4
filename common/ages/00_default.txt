@@ -336,11 +336,11 @@ age_of_feudalism = {
 			allow = { #Tweak to tie into Schism mechanics if possible?
 				OR = {
 					AND = {
-						tag = FRD
+						tag = FRA
 						religion = catholic
 					}
 					AND = {
-						NOT = { exists = FRD }
+						NOT = { exists = FRA }
 						culture_group = french
 						religion = catholic
 					}

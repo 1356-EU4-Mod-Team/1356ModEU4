@@ -25,10 +25,10 @@ discovered_by = ottoman
 
 #1356.12.26   = { controller = ENG }
 #1357.9.23  = { controller = ANJ }
-1453.10.16 = { owner = FRD add_core = FRD controller = FRD estate = estate_church }
+1453.10.16 = { owner = FRA add_core = FRA controller = FRA estate = estate_church }
 #1474.8.1   = { owner = FRA controller = FRA } # Louis XI occupies Anjou because of being excluded of the Anjou inheritance
 #1476.1.1   = { owner = ANJ controller = ANJ } # Louis XI is reconciled, and Anjou is restored to Duke René
-1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 #1481.12.10 = { owner = FRA controller = FRA add_core = FRA } # Anjou ceded to France after the death of Charles, Duke of Anjou & Provence
 1560.1.1   = { religion = reformed }
 1562.3.1   = { unrest = 3 } # The Huguenots organise themselves along the Loire

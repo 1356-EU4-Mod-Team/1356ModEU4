@@ -9,7 +9,6 @@ historical_friend = SAV
 historical_friend = FLA
 historical_friend = PBG
 historical_rival = FRA
-historical_rival = FRD
 capital = 192	# Dijon
 
 1350.4.3 = {

@@ -20,10 +20,10 @@ discovered_by = ottoman
 1356.12.24  = { add_core = FRA } #BT In
 1356.12.26  = { remove_core = FRA } #BT Out
 
-1376.9.1   = { owner = FRD controller = FRD add_core = FRD } # Philippe I of Orleans dies, duchy returns to the royal domain of France
-1392.1.1   = { owner = ORL controller = ORL remove_core = FRD } # duchy is handed to Louis I
-1453.10.16 = { owner = FRD controller = FRD add_core = FRD add_local_autonomy = 25 estate = estate_nobles }
-1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
+1376.9.1   = { owner = FRA controller = FRA add_core = FRA } # Philippe I of Orleans dies, duchy returns to the royal domain of France
+1392.1.1   = { owner = ORL controller = ORL remove_core = FRA } # duchy is handed to Louis I
+1453.10.16 = { owner = FRA controller = FRA add_core = FRA add_local_autonomy = 25 estate = estate_nobles }
+#1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 #1498.4.7   = { owner = FRA controller = FRA add_core = FRA } # Duchy returns to the royal domain of France
 1560.1.1 = { religion = reformed }
 1562.3.1 = { unrest = 5 }

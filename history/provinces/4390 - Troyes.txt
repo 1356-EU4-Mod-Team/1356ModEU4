@@ -21,11 +21,11 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { owner = CHP controller = CHP add_core = NAV } #BT In
-1356.12.26  = { owner = FRD controller = FRD add_core = FRD remove_core = FRA  } #BT Out
+1356.12.26  = { owner = FRA controller = FRA add_core = FRA } #BT Out
 
 
 1404.6.9   = { remove_core = NAV }
-1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 1588.12.1 = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
 1594.1.1 = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1621.1.1 = { base_tax = 7 

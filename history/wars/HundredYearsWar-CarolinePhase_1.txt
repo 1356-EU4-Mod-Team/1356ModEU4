@@ -7,7 +7,7 @@ war_goal = {
 
 # Charles V renounces the Treaty of Bretagne due to Edward not show up in french court
 1369.5.1 = { 
-	add_attacker = FRD
+	add_attacker = FRA
 	add_attacker = CAS
 	add_attacker = BRI
 	add_attacker = DAU
@@ -31,7 +31,7 @@ war_goal = {
 			commander = "Bertrand du Guesclin"	# Bertrand du Guesclin
 			infantry = 6200
 			losses = 60	# percent
-			country = FRD
+			country = FRA
 		}
 		defender = {
 			commander = "Robert Knolles"	# Sir Robert Knolles
@@ -70,7 +70,7 @@ war_goal = {
 }
 
 1375.6.27 = { # Treaty of Bruges
-	rem_attacker = FRD
+	rem_attacker = FRA
 	rem_attacker = CAS
 	rem_attacker = BRI
 	rem_attacker = DAU

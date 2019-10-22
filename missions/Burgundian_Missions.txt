@@ -2359,7 +2359,6 @@ bur_into_france_tree = { #Burgundy - Go Form France Tree
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			NOT = { exists = FRA }
-			NOT = { exists = FRD }
 			owns_core_province = 177	# Maine
 			owns_core_province = 179	# Blois
 			owns_core_province = 182	# Vermandois

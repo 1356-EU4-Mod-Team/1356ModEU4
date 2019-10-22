@@ -22,8 +22,8 @@ discovered_by = ottoman
 1345.7.1  = { owner = ENG controller = ENG }
 1353.3.1  = { owner = BLS controller = BLS } # Treaty of Westminster
 1365.4.12 = { owner = BRI controller = BRI add_core = BRI remove_core = BLS remove_core = MNF } # Treaty of Guerande
-1453.1.1 = { add_core = FRD }
-1477.1.1 = { remove_core = FRD add_core = FRA }
+1453.1.1 = { add_core = FRA }
+1477.1.1 = { add_core = FRA }
 1532.8.4 = { owner = FRA controller = FRA } # Union Treaty
 1560.1.1 = { religion = reformed }
 1588.12.1 = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy

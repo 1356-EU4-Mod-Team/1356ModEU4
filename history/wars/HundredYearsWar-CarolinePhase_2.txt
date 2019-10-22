@@ -8,7 +8,7 @@ war_goal = {
 
 # Jean IV doesn't show up in french court to face his charges because of secret alliance with England
 1378.12.18 = { 
-	add_attacker = FRD
+	add_attacker = FRA
 	add_attacker = DAU
 	add_attacker = BER
 	add_attacker = ORL
@@ -23,7 +23,7 @@ war_goal = {
 }
 
 1379.10.14 = { # Truce
-	rem_attacker = FRD
+	rem_attacker = FRA
 	rem_attacker = DAU
 	rem_attacker = BER
 	rem_attacker = ORL

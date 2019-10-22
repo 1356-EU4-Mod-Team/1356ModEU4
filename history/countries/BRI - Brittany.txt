@@ -83,7 +83,7 @@ capital = 172	# Nantes
 		mil = 2
 	}
 	queen = {
-		country_of_origin = FRD
+		country_of_origin = FRA
 		name = "Jeanne"
 		dynasty = "de Valois"
 		birth_date = 1391.1.24
@@ -161,7 +161,7 @@ capital = 172	# Nantes
 		mil = 3
 	}
 	queen = {
-		country_of_origin = FRD
+		country_of_origin = FRA
 		name = "Françoise"
 		dynasty = "d'Amboise"
 		birth_date = 1427.5.29

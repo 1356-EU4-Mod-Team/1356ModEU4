@@ -17,7 +17,7 @@ fixed_capital = 190 # Cannot move capital away from this province & no power cos
 		mil = 3
 	}
 	queen = {
-		country_of_origin = FRD
+		country_of_origin = FRA
 		name = "Isabelle"
 		dynasty = "de Valois"
 		birth_date = 1313.1.1
@@ -155,7 +155,7 @@ fixed_capital = 190 # Cannot move capital away from this province & no power cos
 		mil = 1
 	}
 	queen = {
-		country_of_origin = FRD
+		country_of_origin = FRA
 		name = "Jeanne"
 		dynasty = "de Valois"
 		birth_date = 1435.5.4

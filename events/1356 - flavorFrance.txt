@@ -44,8 +44,7 @@ country_event = {
 		break_union = DAU
 		add_historical_friend = DAU
 		DAU = {
-			#add_historical_friend = FRA
-			add_historical_friend = FRD
+			add_historical_friend = FRA
 		}
 		create_marriage = DAU
 		create_alliance = DAU
@@ -62,19 +61,13 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			FRA = {	has_country_flag = dauphine_treaty_romans_accepted_flag	}
-			FRD = {	has_country_flag = dauphine_treaty_romans_accepted_flag	}
-		}
+		FRA = {	has_country_flag = dauphine_treaty_romans_accepted_flag	}
 		owns = 204
 		OR = {
 			NOT = { primary_culture = occitain }
 			NOT = { tag = DAU }
 		}
-		OR = {
-			NOT = { tag = FRA }
-			NOT = { tag = FRD }
-		}
+		NOT = { tag = FRA }
 		NOT = { culture_group = french }
 	}
 
@@ -164,7 +157,6 @@ country_event = {
 		}
 		OR = {
 			tag = FRA
-			tag = FRD
 			culture_group = french
 		}
 		is_year = 1550
@@ -1285,11 +1277,11 @@ country_event = {
 	fire_only_once = yes	
 	is_triggered_only = yes
 	
-	option = { #Become Subject FRD
+	option = { #Become Subject FRA
 		name = flavor_fla_fra.25.a
-		trigger = { is_subject = no exists = FRD }
+		trigger = { is_subject = no exists = FRA }
 		ai_chance = { factor = 80 }
-		FRD = {
+		FRA = {
 			create_subject = {
 				subject_type = vassal
 				subject = BRI
@@ -1313,12 +1305,12 @@ country_event = {
 	}
 	option = { #No Subjugation
 		name = flavor_fla_fra.25.c
-		trigger = { is_subject = no exists = FRD }
+		trigger = { is_subject = no exists = FRA }
 		ai_chance = { factor = 20 }
 		add_mil_power = 200
 		add_legitimacy = 10
 		add_prestige = 10
-		FRD = {
+		FRA = {
 			add_casus_belli = {
 				target = BRI
 				type = cb_vassalize
@@ -1362,7 +1354,6 @@ country_event = {
 		owns = 1879
 		NOT = { tag = ALE }
 		NOT = { tag = FRA }
-		NOT = { tag = FRD }
 		1879 = {
 			has_province_modifier = 1356_fra_alencon_family_rule_prov
 		}
@@ -1389,7 +1380,6 @@ province_event = { #Is this done correct?
 	trigger = {
 		has_province_modifier = 1356_fra_alencon_family_rule_prov
 		NOT = { tag = FRA }
-		NOT = { tag = FRD }
 	}	
 	mean_time_to_happen = {
 		months = 12

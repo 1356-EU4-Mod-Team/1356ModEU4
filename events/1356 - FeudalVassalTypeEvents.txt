@@ -11,10 +11,7 @@ country_event = {
 	
 	trigger = {
 		is_subject_of_type = french_ducal_vassal
-		OR = {
-			NOT = { is_subject_of = FRD }
-			NOT = { is_subject_of = FRA }
-		}
+		NOT = { is_subject_of = FRA }
 		is_at_war = no
 	}
 	
@@ -42,10 +39,7 @@ country_event = {
 	trigger = {
 		is_subject_of_type = french_ducal_vassal
 		is_year = 1500
-		OR = {
-			is_subject_of = FRD
-			is_subject_of = FRA
-		}
+		is_subject_of = FRA
 		is_at_war = no
 	}
 	
@@ -69,15 +63,9 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
-		OR = {
-			is_subject_of = FRD
-			is_subject_of = FRA
-		}
+		is_subject_of = FRA
 		is_at_war = no
-		OR = { 
-			FRD = { is_at_war = yes	}
-			FRA = { is_at_war = yes	}				
-		}
+		FRA = { is_at_war = yes	}				
 	}
 	mean_time_to_happen = {
 		months = 6
@@ -90,11 +78,11 @@ country_event = {
 		
 	option = { #We're too busy, offer some troops and money instead.
 		name = "feudalvassalevents.3.b"
-		trigger = { exists = FRD }
+		trigger = { exists = FRA }
 		ai_chance = { factor = 1 }
 		add_treasury = -50
 		add_manpower = -5
-		FRD = {
+		FRA = {
 			add_treasury = 50
 			add_manpower = 8
 		}
@@ -133,14 +121,11 @@ country_event = { #TEST TO SEE IF THIS STILL WORKS
 			tag = FOI
 		}
 		has_reform = french_vassal_feudal_monarchy_reform
-		OR = {
-			NOT = { is_subject_of = FRD }
-			NOT = { is_subject_of = FRA }
-		}
+		NOT = { is_subject_of = FRA }
 		is_at_war = no
 		#OR = {
 		#	NOT = { is_subject_of_type = french_ducal_vassal }
-		#	NOT = { exists = FRD }
+		#	NOT = { exists = FRA }
 		#}
 	}
 	

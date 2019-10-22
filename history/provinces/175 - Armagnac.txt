@@ -25,12 +25,12 @@ discovered_by = ottoman
 1356.12.26  = { remove_core = AQT add_core = GUY } #BT Out
 
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
-1373.6.28  = { controller = FRD } # Siege of Mauvezin
+1373.6.28  = { controller = FRA } # Siege of Mauvezin
 1375.6.27  = { owner = AMG controller = AMG } # Treaty of Bruges
-1399.1.1   = { add_core = ENG add_core = FRD }
-1453.10.16 = { owner = FRD controller = FRD add_local_autonomy = 25 estate = estate_nobles }
+1399.1.1   = { add_core = ENG add_core = FRA }
+1453.10.16 = { owner = FRA controller = FRA add_local_autonomy = 25 estate = estate_nobles }
 1475.8.29  = { remove_core = ENG } # Treaty of Picquigny
-1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = FRD }
+1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 1549.12.21 = { owner = NAV controller = NAV add_core = NAV } # Henri d'Albret (King of Navarra) owns it after Marguerite d'Angoulêmes death
 1560.1.1   = { religion = reformed }
 1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear

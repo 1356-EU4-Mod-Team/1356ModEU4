@@ -14,7 +14,6 @@ country_decisions = {
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			NOT = { tag = FRA }			# Basque is a valid culture for both FRA and SPA
-			NOT = { tag = FRD } #1356
 			NOT = { tag = KNI }		# Maltese is part of iberian culture group
 			NOT = { tag = ADU }
 			NOT = { religion_group = muslim }

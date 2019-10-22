@@ -18,7 +18,7 @@ country_event = {
 		add_prestige = -20
 		break_union = DAU
 		release_all_subjects = yes
-		FRD = {
+		FRA = {
 			release = AMG
 			release = TOU
 			release = GUY
@@ -59,9 +59,9 @@ country_event = {
 			release = ENG
 			release = SCO
 		}
-		FRD = {
+		FRA = {
 			france_region = {
-				remove_core = FRD
+				remove_core = FRA
 			}
 		}
 		change_tag = VLS
@@ -140,7 +140,6 @@ country_event = {
 		is_part_of_hre = no
 		NOT = { has_global_flag = emperor_declined_offer_to_french_dukes }
 		NOT = { has_country_flag = fre_minor_declined_hre_offer_flag }
-		NOT = { tag = FRD }
 		NOT = { tag = FRA }
 		NOT = { tag = ENG }
 		NOT = { tag = SPA }

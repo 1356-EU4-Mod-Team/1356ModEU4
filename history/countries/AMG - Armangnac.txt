@@ -56,7 +56,7 @@ fixed_capital = 175 # Cannot move capital away from this province & no power cos
 		mil = 4
 	}
 	queen = {
-		country_of_origin = FRD
+		country_of_origin = FRA
 		name = "Jeanne"
 		dynasty = "de Talleyrand"
 		birth_date = 1341.1.1

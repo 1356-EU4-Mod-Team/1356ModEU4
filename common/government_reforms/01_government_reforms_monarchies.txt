@@ -1240,16 +1240,8 @@ french_vassal_feudal_monarchy_reform = {
 				is_subject_of = FRA
 			}
 			AND = {
-				has_reform = french_vassal_feudal_monarchy_reform
-				is_subject_of = FRD
-			}
-			AND = {
 				have_had_reform = french_vassal_feudal_monarchy_reform
 				is_subject_of = FRA
-			}
-			AND = {
-				have_had_reform = french_vassal_feudal_monarchy_reform
-				is_subject_of = FRD
 			}
 		}
 	}
