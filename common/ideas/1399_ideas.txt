@@ -1834,7 +1834,6 @@ EGY_ideas = {
 	}
 }
 
-
 CUM_ideas = {
 	start = { #Former nomadic nation
 		cavalry_power = 0.15
@@ -2291,3 +2290,135 @@ united_berber_ideas = { #United Berber Culture Group ideas
 	}
 }
 
+thai_nation_ideas = { #Siamese ideas. United Thai.
+    start = {
+		advisor_cost = -0.15 
+		diplomatic_reputation = 1 
+    }
+ 
+    bonus = {
+		manpower_recovery_speed = 0.2
+    }
+   
+    trigger = {
+        tag = SIA
+    }
+    free = yes
+   
+    1356_the_god_king = {
+		prestige = 1
+    }
+    1356_grand_canals = {
+		trade_goods_size = 0.1
+		development_cost = -0.1 
+    }
+    1356_maharaj_taksin = {
+		land_morale = 0.15
+    }
+    1356_the_white_elephant = {
+		global_unrest = -2 
+    }
+    1356_enlightened_kings = {
+		monarch_diplomatic_power = 1
+    }
+    1356_office_of_kalahom = {
+		leader_land_shock = 1
+		shock_damage_received = -0.1
+    }
+    1356_jungle_warfare = {
+		defensiveness = 0.1
+		hostile_attrition = 2
+    }
+}
+
+1356_malaya_nation_ideas = { #United Malaya
+    start = {
+		global_trade_power = 0.2 
+		land_attrition = -0.2
+    }
+ 
+    bonus = {
+		max_states = 5 
+    }
+   
+    trigger = {
+        tag = MSA 
+    }
+    free = yes
+   
+    1356_malayan_tolerance = {
+		tolerance_heretic = 2 
+		tolerance_heathen = 2
+    }
+    1356_settle_the_islands = {
+		global_colonial_growth = 25
+    }
+    1356_reforms_of_tun_perak = {
+        infantry_power = 0.15 
+    }
+    1356_people_of_the_seas = {
+		global_sailors_modifier = 0.25
+		naval_maintenance_modifier = -0.1 
+    }
+    1356_sea_traditions = {
+		naval_morale = 0.1 
+		merchants = 1 
+    }
+    1356_undang_undang_malacca = {
+		trade_goods_size = 0.1
+    }
+    1356_tradition_of_gunpowder = {
+		fire_damage = 0.1
+    }
+}
+
+javan_ideas = { #1356 #Expanded to allow non muslim Malayans to have ideas #Moved from 00_country_ideas to ensure compatibility with existing ideas
+	start = {
+		tolerance_heathen = 2
+		prestige_decay = -0.01	
+	}
+	
+	bonus = {
+		naval_maintenance_modifier = -0.2
+	}
+	
+	trigger = {
+		OR = {
+			tag = MAJ
+			tag = SUN
+			AND = {
+				NOT = { religion_group = muslim }
+				OR = {
+					primary_culture = bornean
+					primary_culture = sumatran
+					primary_culture = javanese
+					primary_culture = malayan
+				}
+			}
+		}
+	}
+	free = yes
+	
+	candi_shrines = {
+		religious_unity = 0.20
+	}
+	indianization = {
+		global_institution_spread = 0.1
+	}
+	dharmasastra = {
+		global_missionary_strength = 0.02
+	}
+	pan_asian_trade = {
+		merchants = 1
+		trade_steering = 0.10
+	}
+	bi_yearly_harvest = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	modernized_shipbuilding = {
+		global_ship_cost = -0.10
+	}
+	terracotta_banking = {
+		trade_efficiency = 0.1
+	}
+}

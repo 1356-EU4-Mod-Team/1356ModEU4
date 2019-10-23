@@ -1,0 +1,68 @@
+country_decisions = {
+	
+	1356_siamese_nation = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = central_thai
+				primary_culture = northern_thai
+			}
+			NOT = { exists = SIA }
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 600 #Ayutthaya
+				province_id = 601 #Sukhothai
+				province_id = 609 #Angkor
+				#province_id = 613 #Dongkinh
+				province_id = 614 #Vientiane
+				#province_id = 2380 #Phnom Penh
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		allow = {
+			is_at_war = no
+			is_subject = no
+			OR = {
+				religion = buddhism
+				religion = vajrayana
+				religion = mahayana
+			}
+			OR = {
+				primary_culture = central_thai
+				primary_culture = northern_thai
+			}
+			owns_core_province = 600 #Ayutthaya
+			owns_core_province = 601 #Sukhothai
+			owns_core_province = 609 #Angkor
+			#owns_core_province = 613 #Dongkinh
+			owns_core_province = 614 #Vientiane
+			#owns_core_province = 2380 #Phnom Penh
+		}
+		
+		effect = {
+			change_tag = SIA
+			set_government_rank = 3 
+			set_capital = 600 # Ayutthaya
+			600 = { add_base_tax = 1 }
+			add_prestige = 15
+			add_legitimacy = 25
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	

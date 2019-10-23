@@ -167,3 +167,8 @@ GON = "countries/GondwanaKingdom.txt"
 
 #China & Korea
 GYO = "countries/Goryeo.txt"
+
+#V2
+
+#Southeast Asia % Malaya
+SIA = "countries/Siam.txt"

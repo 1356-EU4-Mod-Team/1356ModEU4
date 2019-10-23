@@ -3315,47 +3315,55 @@ GEO_ideas = {
 	}
 }
 
-javan_ideas = {
-	start = {
-		tolerance_heathen = 2
-		prestige_decay = -0.01	
-	}
+# javan_ideas = { #1356 Moved to 1356 group ideas to prevent overrides of unique SEA/Malay ideas
+	# start = {
+		# tolerance_heathen = 2
+		# prestige_decay = -0.01	
+	# }
 	
-	bonus = {
-		naval_maintenance_modifier = -0.2
-	}
+	# bonus = {
+		# naval_maintenance_modifier = -0.2
+	# }
 	
-	trigger = {
-		OR = {
-			tag = MAJ
-			tag = SUN
-		}
-	}
-	free = yes
+	# trigger = {
+		# OR = {
+			# tag = MAJ
+			# tag = SUN
+			# AND = {
+				# NOT = { religion_group = muslim }
+				# OR = {
+					# primary_culture = bornean
+					# primary_culture = sumatran
+					# primary_culture = javanese
+				# }
+			# }
+		# }
+	# }
+	# free = yes
 	
-	candi_shrines = {
-		religious_unity = 0.20
-	}
-	indianization = {
-		global_institution_spread = 0.1
-	}
-	dharmasastra = {
-		global_missionary_strength = 0.02
-	}
-	pan_asian_trade = {
-		merchants = 1
-		trade_steering = 0.10
-	}
-	bi_yearly_harvest = {
-		global_trade_goods_size_modifier = 0.10
-	}
-	modernized_shipbuilding = {
-		global_ship_cost = -0.10
-	}
-	terracotta_banking = {
-		trade_efficiency = 0.1
-	}
-}
+	# candi_shrines = {
+		# religious_unity = 0.20
+	# }
+	# indianization = {
+		# global_institution_spread = 0.1
+	# }
+	# dharmasastra = {
+		# global_missionary_strength = 0.02
+	# }
+	# pan_asian_trade = {
+		# merchants = 1
+		# trade_steering = 0.10
+	# }
+	# bi_yearly_harvest = {
+		# global_trade_goods_size_modifier = 0.10
+	# }
+	# modernized_shipbuilding = {
+		# global_ship_cost = -0.10
+	# }
+	# terracotta_banking = {
+		# trade_efficiency = 0.1
+	# }
+# }
 
 AFG_ideas = {
 	start = {

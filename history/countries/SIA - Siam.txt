@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = central_thai
+#accepted_culture = northern_thai
+technology_group = chinese
+religion = buddhism
+capital = 600	# Ayutthaya
