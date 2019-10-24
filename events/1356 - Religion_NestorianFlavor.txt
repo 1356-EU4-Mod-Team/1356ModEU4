@@ -532,7 +532,9 @@ province_event = {
 	# }
 # }
 
-province_event = { #Get rid of Nestorians if taken expell decision or if you're nestorian
+#This event could be improved on to be less resource intensive
+
+province_event = { #Get rid of Nestorians if taken expell decision, alternativly it adds the provencial modifier in these areas to increase conversion speed;
 	id = fla_nestorian.15
 	title = "fla_nestorian.15.t"
 	desc = "fla_nestorian.15.d"
@@ -542,16 +544,20 @@ province_event = { #Get rid of Nestorians if taken expell decision or if you're 
 	
 	trigger = {
 		OR = {
-			has_province_modifier = large_nestorian_community
-			has_province_modifier = medium_nestorian_community
-			has_province_modifier = small_nestorian_community
-		}
-		owner = {
-			OR = {
-				AND = {
-					has_country_modifier = expelled_nestorian 
-					had_recent_war = 10
+			AND = {
+				OR = {
+					has_province_modifier = large_nestorian_community
+					has_province_modifier = medium_nestorian_community
+					has_province_modifier = small_nestorian_community
 				}
+				owner = {
+					AND = {
+						has_country_modifier = expelled_nestorian 
+						had_recent_war = 10
+					}
+				}
+			}
+			AND = {
 				religion = nestorian
 			}
 		}
@@ -563,11 +569,463 @@ province_event = { #Get rid of Nestorians if taken expell decision or if you're 
 	
 	option = {
 		name = "fla_nestorian.15.a"
+		trigger = { NOT = { religion = nestorian} }
 		remove_province_modifier = small_nestorian_community
 		remove_province_modifier = medium_nestorian_community
 		remove_province_modifier = large_nestorian_community
 	}
+	
+	option = {
+		name = "fla_nestorian.15.b"
+		trigger = { owner = { religion = nestorian } }
+		remove_province_modifier = small_nestorian_community
+		remove_province_modifier = medium_nestorian_community
+		remove_province_modifier = large_nestorian_community
+		add_province_modifier = {
+			name = the_faithful_liberated
+			duration = 3650
+		}
+	}
 }
 
+##################################################################################################################
+#Events 30 - X control provices converting to Nestorian if it has a community and is controlled by a Nestorian.
+##################################################################################################################
+
+#The modifier is taken from the coptic modifier in vanilla
+
+#Taken from coptic.txt, reworked for Nestorians
+
+#30-39 are for Nestorian Holy Sites
+
+#Nestorians come out of hiding (Baghdad)
+country_event = {
+	id = fla_nestorian.30
+	title = "fla_nestorian.30.t"
+	desc = "fla_nestorian.30.d"
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 410
+		religion = nestorian
+		has_dlc = "Rights of Man"
+		#NOT = { has_global_flag = coptic_alexandria_liberated } #Cancels Mission #Not needed
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = nestorian_baghdad_liberated
+			iraq_arabi_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = ROOT
+				}
+				set_province_flag = nestorians_liberated
+			}
+		}
+	}
+
+	option = {
+		name = fla_nestorian.30.a
+		custom_tooltip = fla_nestorian.30.a.tt
+
+		add_prestige = 10
+
+		every_owned_province = {
+			limit = { has_province_flag = nestorians_liberated }
+			add_province_modifier = {
+				name = the_faithful_liberated
+				duration = 3650
+			}
+			clr_province_flag = nestorians_liberated
+		}
+		
+
+		hidden_effect = {
+			every_known_country = {
+				limit = { religion = nestorian ai = no }
+				country_event = { id = fla_nestorian.31 }
+			} 
+		}
+	}
+}
+
+#Baghdad Liberated (For other Nestorians)
+country_event = {
+	id = fla_nestorian.31
+	title = fla_nestorian.31.t
+	desc = fla_nestorian.31.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = fla_nestorian.31.a
+		custom_tooltip = fla_nestorian.31.a.tt
+
+		tooltip = {
+			iraq_arabi_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = FROM
+				}
+				add_province_modifier = {
+					name = the_faithful_liberated
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+
+#Nestorians come out of hiding (Antioch)
+country_event = {
+	id = fla_nestorian.32
+	title = "fla_nestorian.32.t"
+	desc = "fla_nestorian.32.d"
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2313 #antioch
+		religion = nestorian
+		has_dlc = "Rights of Man"
+		#NOT = { has_global_flag = coptic_alexandria_liberated } #Cancels Mission #Not needed
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = nestorian_antioch_liberated
+			aleppo_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = ROOT
+				}
+				set_province_flag = nestorians_liberated
+			}
+		}
+	}
+
+	option = {
+		name = fla_nestorian.32.a
+		custom_tooltip = fla_nestorian.32.a.tt
+
+		add_prestige = 10
+
+		every_owned_province = {
+			limit = { has_province_flag = nestorians_liberated }
+			add_province_modifier = {
+				name = the_faithful_liberated
+				duration = 3650
+			}
+			clr_province_flag = nestorians_liberated
+		}
+		
+
+		hidden_effect = {
+			every_known_country = {
+				limit = { religion = nestorian ai = no }
+				country_event = { id = fla_nestorian.33 }
+			} 
+		}
+	}
+}
+
+#Antioch Liberated (For other Nestorians)
+country_event = {
+	id = fla_nestorian.33
+	title = fla_nestorian.33.t
+	desc = fla_nestorian.33.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = fla_nestorian.33.a
+		custom_tooltip = fla_nestorian.33.a.tt
+
+		tooltip = {
+			aleppo_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = FROM
+				}
+				add_province_modifier = {
+					name = the_faithful_liberated
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+
+#Nestorians come out of hiding (Jerusalem)
+country_event = {
+	id = fla_nestorian.34
+	title = "fla_nestorian.34.t"
+	desc = "fla_nestorian.34.d"
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 379 #Jerusalem
+		religion = nestorian
+		has_dlc = "Rights of Man"
+		#NOT = { has_global_flag = coptic_alexandria_liberated } #Cancels Mission #Not needed
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = nestorian_jerusalem_liberated
+			palestine_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = ROOT
+				}
+				set_province_flag = nestorians_liberated
+			}
+		}
+	}
+
+	option = {
+		name = fla_nestorian.34.a
+		custom_tooltip = fla_nestorian.34.a.tt
+
+		add_prestige = 10
+
+		every_owned_province = {
+			limit = { has_province_flag = nestorians_liberated }
+			add_province_modifier = {
+				name = the_faithful_liberated
+				duration = 3650
+			}
+			clr_province_flag = nestorians_liberated
+		}
+		
+
+		hidden_effect = {
+			every_known_country = {
+				limit = { religion = nestorian ai = no }
+				country_event = { id = fla_nestorian.35 }
+			} 
+		}
+	}
+}
+
+#Jerusalem Liberated (For other Nestorians)
+country_event = {
+	id = fla_nestorian.35
+	title = fla_nestorian.35.t
+	desc = fla_nestorian.35.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = fla_nestorian.35.a
+		custom_tooltip = fla_nestorian.35.a.tt
+
+		tooltip = {
+			palestine_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = FROM
+				}
+				add_province_modifier = {
+					name = the_faithful_liberated
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+
+#Nestorians come out of hiding (Kashgar)
+country_event = {
+	id = fla_nestorian.36
+	title = "fla_nestorian.36.t"
+	desc = "fla_nestorian.36.d"
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 739 #Kashgar
+		religion = nestorian
+		has_dlc = "Rights of Man"
+		#NOT = { has_global_flag = coptic_alexandria_liberated } #Cancels Mission #Not needed
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = nestorian_kashgaria_liberated
+			kashgaria_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = ROOT
+				}
+				set_province_flag = nestorians_liberated
+			}
+		}
+	}
+
+	option = {
+		name = fla_nestorian.36.a
+		custom_tooltip = fla_nestorian.36.a.tt
+
+		add_prestige = 10
+
+		every_owned_province = {
+			limit = { has_province_flag = nestorians_liberated }
+			add_province_modifier = {
+				name = the_faithful_liberated
+				duration = 3650
+			}
+			clr_province_flag = nestorians_liberated
+		}
+		
+
+		hidden_effect = {
+			every_known_country = {
+				limit = { religion = nestorian ai = no }
+				country_event = { id = fla_nestorian.37 }
+			} 
+		}
+	}
+}
+
+#Kashgar Liberated (For other Nestorians)
+country_event = {
+	id = fla_nestorian.37
+	title = fla_nestorian.37.t
+	desc = fla_nestorian.37.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = fla_nestorian.37.a
+		custom_tooltip = fla_nestorian.37.a.tt
+
+		tooltip = {
+			kashgaria_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = FROM
+				}
+				add_province_modifier = {
+					name = the_faithful_liberated
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+
+#Nestorians come out of hiding (Korchin)
+country_event = {
+	id = fla_nestorian.38
+	title = "fla_nestorian.38.t"
+	desc = "fla_nestorian.38.d"
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 535 #Korchin
+		religion = nestorian
+		has_dlc = "Rights of Man"
+		#NOT = { has_global_flag = coptic_alexandria_liberated } #Cancels Mission #Not needed
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = nestorian_korchin_liberated
+			malabar_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = ROOT
+				}
+				set_province_flag = nestorians_liberated
+			}
+		}
+	}
+
+	option = {
+		name = fla_nestorian.38.a
+		custom_tooltip = fla_nestorian.38.a.tt
+
+		add_prestige = 10
+
+		every_owned_province = {
+			limit = { has_province_flag = nestorians_liberated }
+			add_province_modifier = {
+				name = the_faithful_liberated
+				duration = 3650
+			}
+			clr_province_flag = nestorians_liberated
+		}
+		
+
+		hidden_effect = {
+			every_known_country = {
+				limit = { religion = nestorian ai = no }
+				country_event = { id = fla_nestorian.39 }
+			} 
+		}
+	}
+}
+
+#Korchin Liberated (For other Nestorians)
+country_event = {
+	id = fla_nestorian.39
+	title = fla_nestorian.39.t
+	desc = fla_nestorian.39.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = fla_nestorian.39.a
+		custom_tooltip = fla_nestorian.39.a.tt
+
+		tooltip = {
+			malabar_area = {
+				limit = { 
+					NOT = { religion = nestorian } 
+					owned_by = FROM
+				}
+				add_province_modifier = {
+					name = the_faithful_liberated
+					duration = 3650
+				}
+			}
+		}
+	}
+}
 
 

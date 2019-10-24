@@ -798,6 +798,7 @@ mercantilism_institution = { #1356 New Content
 					trade_goods = incense
 					trade_goods = glass
 					trade_goods = gems
+					trade_goods = silk
 				}
 				NOT = { owner = { government = tribal } }
 				NOT = { owner = { government = native } }

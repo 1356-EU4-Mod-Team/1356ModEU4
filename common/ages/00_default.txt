@@ -67,7 +67,7 @@ age_of_feudalism = {
 				all_core_province = {
 					religion = ROOT
 				}
-				amount = 20
+				amount = 12
 			}
 	 	}		
 		obj_feudalism_hussite = { 

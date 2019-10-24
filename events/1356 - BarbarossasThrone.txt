@@ -132,7 +132,7 @@ country_event = { #The Game seems to output an error with these option names. Pe
 	
 	option = {
 		name = "barbarossa.10.zentral" # Centralized Empire
-		ai_chance = { factor = 75 }
+		ai_chance = { factor = 80 }
 		dismantle_hre = yes
 		change_tag = GER
 		set_government_rank = 3
@@ -145,12 +145,12 @@ country_event = { #The Game seems to output an error with these option names. Pe
 	}
 	option = {
 		name = "barbarossa.10.ausgleich" # Heritable Empire
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 15 }
 		imperial_ban_allowed = yes
 		hre_inheritable = yes
 		SWB = { add_imperial_influence = 25 }
 		every_country = {
-		limit = { OR = { tag = BOH tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
+		limit = { OR = { tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
 		#Validator outputs this next line as an error, we sure this works?
 		every_country = { limit = {	is_part_of_hre = yes is_emperor = no num_of_cities = 1 NOT = { vassal_of = ROOT } }	add_opinion = { who = ROOT modifier = hre_heritable } }
 	}
@@ -161,7 +161,7 @@ country_event = { #The Game seems to output an error with these option names. Pe
 		hre_inheritable = no
 		SWB = { add_imperial_influence = 35 }
 		every_country = {
-		limit = { OR = { tag = BOH tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
+		limit = { OR = { tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
 		#Validator outputs this next line as an error, we sure this works?
 		every_country = { limit = {	is_part_of_hre = yes is_emperor = no num_of_cities = 1 NOT = { vassal_of = ROOT } }	add_opinion = { who = ROOT modifier = hre_traditional } }
 	}
