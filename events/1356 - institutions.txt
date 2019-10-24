@@ -143,6 +143,7 @@ country_event = { #Boosts Mercantilism in nations with trade income %
 	picture = MERCHANTS_TALKING_eventPicture
 	trigger = {
 		NOT = { has_institution = mercantilism_institution }
+		NOT = { government = tribal }
 		NOT = { is_year = 1420 }
 		trade_income_percentage = 0.65 #Whats a fair ratio early game?
 		
@@ -174,6 +175,7 @@ country_event = { #Boosts Mercantilism in nations with X requirement
 	
 	trigger = {
 		NOT = { has_institution = mercantilism_institution }
+		NOT = { government = tribal }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 2
 		
@@ -210,6 +212,7 @@ country_event = { #Boosts Mercantilism in nations with X requirement
 	
 	trigger = {
 		NOT = { has_institution = mercantilism_institution }
+		NOT = { government = tribal }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 3 #Does this need to be in a scope?
 		
@@ -246,6 +249,7 @@ country_event = { #Boosts Mercantilism in nations with paper trade good
 	
 	trigger = {
 		NOT = { has_institution = mercantilism_institution }
+		NOT = { government = tribal }
 		NOT = { is_year = 1420 }
 		any_owned_province = {
 			NOT = { mercantilism_institution = 100}
@@ -286,6 +290,7 @@ country_event = { #Event to Boost Mercantilism in nations with Low Autonomy AKA 
 	
 	trigger = {
 		NOT = { has_institution = mercantilism_institution }
+		NOT = { government = tribal }
 		NOT = { is_year = 1420 }
 		average_autonomy = 10
 		OR = {
@@ -327,6 +332,7 @@ province_event = { #Event to Boost Mercantilism in nations with paper provinces
 	
 	trigger = {
 		NOT = { is_year = 1420 }
+		NOT = { government = tribal }
 		NOT = { owner = { has_institution = mercantilism_institution } }
 		NOT = { mercantilism_institution = 100 }
 		trade_goods = paper
@@ -359,6 +365,7 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	
 	trigger = {
 		NOT = { owner = { has_institution = mercantilism_institution } }
+		NOT = { government = tribal }
 		NOT = { mercantilism_institution = 100 }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 3
@@ -391,6 +398,7 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	
 	trigger = {
 		NOT = { owner = { has_institution = mercantilism_institution } }
+		NOT = { government = tribal }
 		NOT = { mercantilism_institution = 100 }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 2
@@ -424,6 +432,7 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	trigger = {
 		NOT = { owner = { has_institution = mercantilism_institution } }
 		NOT = { mercantilism_institution = 100 }
+		NOT = { government = tribal }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 1
 		development = 10
@@ -699,6 +708,7 @@ country_event = { #First to reach gunpowder
 		is_year = 1370
 		#has_institution = gunpowder_institution
 		mil_tech = 4 #Hand Cannon
+		NOT = { government = tribal }
 	}
 	mean_time_to_happen = {	
 		days = 1

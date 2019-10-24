@@ -5,22 +5,93 @@ religion = buddhism
 primary_culture = shan
 capital = 2166 # Dehong
 
-1413.1.1 = {
+1340.1.1 = {
 	monarch = {
-		name = "Renfa"
-		dynasty = "Si"
-		ADM = 2
-		DIP = 2
-		MIL = 5
-		leader = {	
-			name = "Si Renfa"
-			type = general
-			fire = 2
-			shock = 4
-			manuever = 4
-			siege = 0 
-		}
+		name = "Si Kefa"
+		dynasty = "Hpa"
+		adm = 2
+		dip = 1
+		mil = 1
 	}
 }
 
+1371.1.1 = {
+	monarch = {
+		name = "Zhao Bingfa"
+		dynasty = "Hpa"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1378.1.1 = {
+	monarch = {
+		name = "Tai Bian"
+		dynasty = "Hpa"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1379.1.1 = {
+	monarch = {
+		name = "Zhao Xiaofa"
+		dynasty = "Hpa"
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1380.1.1 = {
+	monarch = {
+		name = "Si Wafa"
+		dynasty = "Hpa"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1382.1.1 = {
+	monarch = {
+		name = "Si Lunfa"
+		dynasty = "Hpa"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1404.1.1 = {
+	monarch = {
+		name = "Si Xingfa"
+		dynasty = "Hpa"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1413.1.1 = {
+	monarch = {
+		name = "Si Renfa"
+		dynasty = "Hpa"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1445.1.1 = {
+	monarch = {
+		name = "Si Jifa"
+		dynasty = "Hpa"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
 # mong mao defeated in 1449, though at great cost to the Ming

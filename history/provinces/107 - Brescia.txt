@@ -21,12 +21,15 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { owner = BCI controller = BCI add_core = BCI add_core = VRN } #BT In
-1356.12.26  = { owner = MLO controller = MLO remove_core = BCI remove_core = VRN } #BT Out
+1356.12.26  = { owner = MLO controller = MLO remove_core = VRN } #BT Out
 
 1426.1.1 = {	owner = VEN
 	controller = VEN
 	add_core = VEN
 }
+
+1444.1.1 = { remove_core = BCI }
+
 1495.1.1 = { hre = no }
 1509.6.1 = { controller = FRA } # Venice collapses
 1512.1.1 = { controller = VEN } # Brescia revolts

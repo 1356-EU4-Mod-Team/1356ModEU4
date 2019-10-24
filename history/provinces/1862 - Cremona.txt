@@ -18,7 +18,9 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { owner = CRM controller = CRM add_core = CRM } #BT In
-1356.12.26  = { owner = MLO controller = MLO remove_core = CRM } #BT Out
+1356.12.26  = { owner = MLO controller = MLO  } #BT Out
+
+1390.1.1 = { remove_core = CRM } #Guesstimation saddly. Its hard to tell. After it became part of the Duchy of Milan is ideal.
 
 1495.1.1 = { hre = no }
 1499.8.10 = { controller = FRA } # Louis XII of France invades...

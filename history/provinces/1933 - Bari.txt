@@ -21,7 +21,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { hre = yes owner = SIC controller = SIC remove_core = NAP add_core = SIC add_core = BAI add_core = APL add_claim = BYZ } #BT In
-1356.12.26  = { hre = no owner = NAP controller = NAP add_core= NAP remove_core = SIC remove_core = BAI remove_claim = BYZ } #BT Out
+1356.12.26  = { hre = no owner = NAP controller = NAP add_core= NAP remove_core = SIC remove_core = BAI remove_claim = BYZ remove_core = APL } #BT Out
 
 1494.1.1 = { add_core = FRA } # Angevine claims
 1495.2.22 = { controller = FRA } # Charles VIII invades Naples

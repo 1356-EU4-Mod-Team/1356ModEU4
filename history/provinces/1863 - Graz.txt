@@ -5,6 +5,7 @@ owner = HAB
 controller = HAB
 add_core = HAB
 add_core = STY
+add_core = CTH #Carinthia
 culture = austrian
 religion = catholic
 base_tax = 5 
@@ -27,20 +28,16 @@ discovered_by = GLH
 discovered_by = AST
 discovered_by = QAS
 
-1356.12.24  = { 
-				owner = STY controller = STY
-} #BT In
+1356.12.24  = { owner = STY controller = STY } #BT In
 
-1356.12.26  = { 
-				owner = HAB controller = HAB
-} #BT Out
+1356.12.26  = { owner = HAB controller = HAB } #BT Out
 
 
 
 1379.9.25  = { owner = STY controller = STY remove_core = HAB add_claim = HAB }
 1439.10.27 = { owner = HAB controller = HAB remove_claim = HAB add_core = HAB }
 1452.1.1   = { owner = STY controller = STY }
-1457.11.24 = { owner = HAB controller = HAB remove_core = STY }
+1457.11.24 = { owner = HAB controller = HAB remove_core = STY remove_core = CTH } #1356 #added remove_core = CTH
 1515.4.1   = { unrest = 4 } # Bund - Farmer insurrections
 1515.10.1  = { unrest = 0 }
 1525.5.1   = { unrest = 8 } # serious Farmer insurrections 

@@ -1,47 +1,44 @@
 #New with Barbarossas Throne
-#AQT	= "countries/Aquitaine.txt"
-CTH = "countries/BT_Carinthia.txt"
-#EDE	= "countries/BT_Edessa.txt"
-EGN	= "countries/BT_Engern.txt"
+CTH = "countries/BT_Carinthia.txt" #Added to 1356 Start in 3 provinces
+EGN	= "countries/BT_Engern.txt" #No use in 1356 starts
 FRC	= "countries/BT_Franken.txt" #
-KRN = "countries/BT_Carniola.txt"
-OFA	= "countries/BT_Ostfalen.txt"
+KRN = "countries/BT_Carniola.txt" #Krain. Theres an argument to be able to release this is a habsburg is destroyed early on.
+OFA	= "countries/BT_Ostfalen.txt" #Eastphalia #No use in 1356 starts
 SWB = "countries/BT_Swabia.txt" #Replaces 1356 Swabia
 TPL	= "countries/BT_Tripoli.txt"
 VIK = "countries/BT_Vikings.txt"
 
 # New in 1.1
 
-ANC = "countries/BT_Ancona.txt"
-APL = "countries/BT_Apulia.txt"
+ANC = "countries/BT_Ancona.txt" #added to 1356
+APL = "countries/BT_Apulia.txt" #Not added to 1356, last ruler was in the 1200's.
 BAM = "countries/BT_Bamberg.txt" #Added to 1356 Starts
-BAI = "countries/BT_Bari.txt" #Added to 1356 starts
-BCI = "countries/BT_Brescia.txt"
-BOL = "countries/BT_Bologna.txt"
-CDR = "countries/BT_Roma.txt"
-CLB = "countries/BT_Calabria.txt" #Added to 1356 starts
-CRM = "countries/BT_Cremona.txt"
-CUN = "countries/BT_Cuneo.txt"
-FOG = "countries/BT_Foggia.txt"
-HOY = "countries/BT_Hoya.txt" #
-LEC = "countries/BT_Lecce.txt"
-NIC = "countries/BT_Nice.txt"
-NVA = "countries/BT_Novara.txt"
-OSN = "countries/BT_Osnabruck.txt" #
-#REG = "countries/BT_Regensburg.txt"
-BNV = "countries/BT_Benevento.txt" #
-BRS = "countries/BT_Breisgau.txt"
-SLR = "countries/BT_Salerno.txt" #
-SDL = "countries/BT_Stendal.txt"
-SPO = "countries/BT_Spoleto.txt"
-TVO = "countries/BT_Treviso.txt"
+BAI = "countries/BT_Bari.txt" #Not added to 1356 starts, similar to apulia.
+BCI = "countries/BT_Brescia.txt" #added to 1356 starts
+BOL = "countries/BT_Bologna.txt" #Potential to be an existing TAG in 1356, though the rest of the area was owned by the papal states still.
+CDR = "countries/BT_Roma.txt" #Not added for obvious reasons
+CLB = "countries/BT_Calabria.txt" #Not added to 1356 starts
+CRM = "countries/BT_Cremona.txt" #Potential to exist in 1356
+CUN = "countries/BT_Cuneo.txt" #Not added
+FOG = "countries/BT_Foggia.txt" #Not added
+HOY = "countries/BT_Hoya.txt" #Appears to be independent in 1356 under two brothers
+LEC = "countries/BT_Lecce.txt" #Not added, similar to Apulia.
+NIC = "countries/BT_Nice.txt" #Fully added into 1356
+NVA = "countries/BT_Novara.txt" #Not added
+OSN = "countries/BT_Osnabruck.txt" #Not added
+BNV = "countries/BT_Benevento.txt" #Not added. Potential formable with its great history though.
+BRS = "countries/BT_Breisgau.txt" #Could remove. Seems to be the same as Freiburg?
+SLR = "countries/BT_Salerno.txt" #Not added
+SDL = "countries/BT_Stendal.txt" #Could be independent, look more into.
+SPO = "countries/BT_Spoleto.txt" #Not added
+TVO = "countries/BT_Treviso.txt" #Not sure either way
 
 # New in 1.2
 
 YOT = "countries/BT_Yotvings.txt"
-SNZ = "countries/BT_Sandomierz.txt"
-TRV = "countries/BT_Turov.txt"
-PEY = "countries/BT_Pereyaslav.txt"
+SNZ = "countries/BT_Sandomierz.txt" #Could overlap with Mijo's work
+TRV = "countries/BT_Turov.txt" #Could overlap with Mijo's work
+PEY = "countries/BT_Pereyaslav.txt" #Could overlap with Mijo's work
 PEC = "countries/BT_Pechenegs.txt"
 
 #New in V2.0
