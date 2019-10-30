@@ -1423,7 +1423,7 @@ french_hyw_missions_slot_4 = {
 		}
 	}
 	
-	hyw_an_end_to_the_feudal_era_mission = { #Ends the Feudal Era for France
+	hyw_an_end_to_the_feudal_era_mission = { #Ends the Feudal Era for France #NOTE: Expand on this event later
 		icon = mission_assemble_an_army
 		required_missions = { hyw_ensure_no_cores_on_france_mission hyw_generic_placeholder_mission_1 }
 		position = 13
@@ -1433,7 +1433,7 @@ french_hyw_missions_slot_4 = {
 		}
 		effect = {
 			set_country_flag = can_form_france_FRD_flag
-			custom_tooltip = frd_tell_player_can_form_fra_tt
+			#custom_tooltip = frd_tell_player_can_form_fra_tt
 			lorraine_area = {
 				limit = {
 					NOT = { is_core = ROOT }

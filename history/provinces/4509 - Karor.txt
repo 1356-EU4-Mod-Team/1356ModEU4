@@ -19,6 +19,10 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = chinese
 
+1398.1.1  = { owner = TIM controller = TIM add_core = TIM unrest = 0 }
+1414.1.1  = { owner = DLH controller = DLH add_core = DLH }
+1405.2.19 = { owner = MUL controller = MUL remove_core = TIM }
+1414.1.1  = { owner = DLH controller = DLH }
 1437.1.1 = {
 	owner = MUL
 	controller = MUL

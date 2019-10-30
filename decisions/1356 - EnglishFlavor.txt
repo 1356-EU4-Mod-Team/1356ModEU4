@@ -30,9 +30,7 @@ country_decisions = {
 			custom_tooltip = england_reign_in_northumberland_tt
 			british_isles_region = {
 				limit = {
-					if = {
-						culture = northumbrian
-					}
+					culture = northumbrian
 				}
 				change_culture = english
 			}

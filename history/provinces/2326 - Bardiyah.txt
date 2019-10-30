@@ -20,7 +20,7 @@ discovered_by = eastern
 discovered_by = nomad_group
 
 1356.1.1 = { owner = ALX controller = ALX add_core = ALX }
-1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = ALX }
+1390.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = ALX }
 1517.1.1 = {
 	owner = TUR
 	controller = TUR

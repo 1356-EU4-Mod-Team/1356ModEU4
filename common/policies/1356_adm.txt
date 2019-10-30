@@ -145,25 +145,26 @@ religious_values_policy = {
 	}
 }
 
-early_game_policy_adm = { #This just works. If you need to make similar ones just reuse "default_policy_1." I did double check MEIOU to see if I did this right, hence the same name. Many thanks to them!
-	monarch_power = ADM
+# early_game_policy_adm = { #This just works. If you need to make similar ones just reuse "default_policy_1." I did double check MEIOU to see if I did this right, hence the same name. Many thanks to them!
+	# monarch_power = ADM
 
-	potential = {
-		always = yes
-		NOT = { has_country_flag = hide_early_game_policies_forever } #Unused currently
-		NOT = { has_idea_group = default_policy_1_ideas }
-		NOT = { has_idea_group = default_policy_2_ideas }
-	}
-	allow = {
-		adm_tech = 3
-		NOT = { has_idea_group = default_policy_1_ideas }
-		NOT = { has_idea_group = default_policy_2_ideas }
-	}
-	global_unrest = -2
-	#development_cost = 0.15
+	# potential = {
+		# always = no
+		# #always = yes
+		# NOT = { has_country_flag = hide_early_game_policies_forever } #Unused currently
+		# NOT = { has_idea_group = default_policy_1_ideas }
+		# NOT = { has_idea_group = default_policy_2_ideas }
+	# }
+	# allow = {
+		# adm_tech = 3
+		# NOT = { has_idea_group = default_policy_1_ideas }
+		# NOT = { has_idea_group = default_policy_2_ideas }
+	# }
+	# global_unrest = -2
+	# #development_cost = 0.15
 		
-	ai_will_do = {
-		factor = 0				
-	}
+	# ai_will_do = {
+		# factor = 0				
+	# }
 
-}
+# }

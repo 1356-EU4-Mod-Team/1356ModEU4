@@ -30,6 +30,7 @@ discovered_by = east_african
 1356.12.26  = { owner = SYR controller = SYR remove_core = KOJ } #BT Out
 
 1375.1.1  = { remove_core = CYP culture = al_suryah_arabic religion = shiite } #Minority now
+1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = SYR }
 1516.8.24 = {	owner = TUR
 		controller = TUR
 		add_core = TUR

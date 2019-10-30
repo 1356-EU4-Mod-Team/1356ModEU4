@@ -59,27 +59,28 @@ merchant_warriors_policy = {
 	}
 }
 
-early_game_policy_mil = {
+# early_game_policy_mil = {
 
-	monarch_power = MIL
+	# monarch_power = MIL
 
-	potential = {
-		always = yes
-		NOT = { has_country_flag = hide_early_game_policies_forever } #Unused currently
-		NOT = { has_idea_group = default_policy_1_ideas }
-		NOT = { has_idea_group = default_policy_2_ideas }
-	}
-	allow = {
-		mil_tech = 3
-		NOT = { has_idea_group = default_policy_1_ideas }
-		NOT = { has_idea_group = default_policy_2_ideas }
-	}
+	# potential = {
+		# always = no
+		# #always = yes
+		# NOT = { has_country_flag = hide_early_game_policies_forever } #Unused currently
+		# NOT = { has_idea_group = default_policy_1_ideas }
+		# NOT = { has_idea_group = default_policy_2_ideas }
+	# }
+	# allow = {
+		# mil_tech = 3
+		# NOT = { has_idea_group = default_policy_1_ideas }
+		# NOT = { has_idea_group = default_policy_2_ideas }
+	# }
 		
-	manpower_recovery_speed = 0.10
-	global_tax_modifier = -0.10
+	# manpower_recovery_speed = 0.10
+	# global_tax_modifier = -0.10
 		
-	ai_will_do = {
-		factor = 0			
-	}
+	# ai_will_do = {
+		# factor = 0			
+	# }
 
-}
+# }

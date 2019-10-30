@@ -202,6 +202,7 @@ country_decisions = {
 			151 = {	has_construction = great_project }
 			owns_core_province = 151
 			#BYZ = { owns_core_province = 151 }
+			is_year = 1360
 		}
 		allow = {
 			ai = no

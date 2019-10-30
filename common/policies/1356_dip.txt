@@ -86,27 +86,28 @@ clergy_spies_policy = {
 	}
 }
 
-early_game_policy_dip = {
+# early_game_policy_dip = {
 
-	monarch_power = DIP
+	# monarch_power = DIP
 
-	potential = {
-		always = yes
-		NOT = { has_country_flag = hide_early_game_policies_forever } #Unused currently
-		NOT = { has_idea_group = default_policy_1_ideas }
-		NOT = { has_idea_group = default_policy_2_ideas }
-	}
-	allow = {
-		dip_tech = 3
-		NOT = { has_idea_group = default_policy_1_ideas }
-		NOT = { has_idea_group = default_policy_2_ideas }
-	}
+	# potential = {
+		# always = no
+		# #always = yes
+		# NOT = { has_country_flag = hide_early_game_policies_forever } #Unused currently
+		# NOT = { has_idea_group = default_policy_1_ideas }
+		# NOT = { has_idea_group = default_policy_2_ideas }
+	# }
+	# allow = {
+		# dip_tech = 3
+		# NOT = { has_idea_group = default_policy_1_ideas }
+		# NOT = { has_idea_group = default_policy_2_ideas }
+	# }
 		
-	diplomatic_reputation = 1
-	envoy_travel_time = 0.50
+	# diplomatic_reputation = 1
+	# envoy_travel_time = 0.50
 		
-	ai_will_do = {
-		factor = 0			
-	}
+	# ai_will_do = {
+		# factor = 0			
+	# }
 
-}
+# }

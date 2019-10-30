@@ -1,6 +1,9 @@
 edict_feudal_de_jure_law = {
 	potential = {
-		current_age = age_of_discovery
+		OR = { #1356
+			current_age = age_of_discovery
+			current_age = age_of_feudalism #1356
+		} #1356
 	}
 	
 	allow = {

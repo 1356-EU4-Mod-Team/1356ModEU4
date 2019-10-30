@@ -228,16 +228,16 @@ age_of_feudalism = {
 				set_country_flag = feudal_de_jure_law
 			}
 			modifier = {
-				autonomy_change_time = -0.1
+				vassal_income = 0.2
+				vassal_forcelimit_bonus = 0.1
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		ab_feudalism_vassals = { 
+		ab_feudalism_ = { 
 			modifier = {
-				vassal_income = 0.2
-				vassal_forcelimit_bonus = 0.1
+				
 			}
 			ai_will_do = {
 				factor = 10
@@ -247,15 +247,18 @@ age_of_feudalism = {
 			effect = {
 				custom_tooltip = ab_gothic_cathedrals_tt
 			}
+			modifier = {
+				build_time = -0.25
+			}
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		ab_feudalism_court_life = { #Suggested by Mexdus on the workshop suggestion thread
 			modifier = { #Was the AB that gave extra dip relations, removed due to being too powerful
-				advisor_cost = -0.1
-				advisor_pool = 1
-				prestige = 0.25
+				advisor_cost = -0.15
+				advisor_pool = 2
+				prestige = 0.5
 			}
 			ai_will_do = {
 				factor = 10
@@ -264,7 +267,7 @@ age_of_feudalism = {
 		ab_mercs_over_chevaliers = { #Suggested by Mexdus on the workshop suggestion thread
 			modifier = {
 				merc_maintenance_modifier = -0.15
-				mercenary_cost = -0.15
+				mercenary_cost = -0.2
 			}
 			ai_will_do = {
 				factor = 10
@@ -272,36 +275,29 @@ age_of_feudalism = {
 		}
 		ab_chevauchee = { #Historically this is a strategy to siege a fort down without harming it
 			modifier = {
-				loot_amount = 0.25
+				loot_amount = 0.50
 				siege_ability = 0.05
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		ab_feudalism_professional_armies = { #Perhaps needs a slight buff?
+		ab_feudalism_iron_fisted_rule = { #May require a better name
 			modifier = {
-				army_tradition_from_battle = 0.05
-				army_tradition_decay = -0.1
+				administrative_efficiency = 0.05
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 		
-		ab_nomad_age_bonus = {
+		ab_feudalism_timurid_conquest = {
 			allow = {
-				OR = {
-					technology_group = nomad_group
-					tag = JLR
-					tag = CHB
-				}
+				tag = TIM
 			}
 			modifier = {
-				cavalry_cost = -0.15
-				cavalry_power = 0.1
-				horde_unity = 1
-				legitimacy = 1
+				reinforce_cost_modifier = -0.33
+				reinforce_speed = 0.33
 			}
 			ai_will_do = {
 				factor = 100
@@ -320,36 +316,27 @@ age_of_feudalism = {
 			}
 		}
 
-		ab_feudal_unique_great_power = { #May need balancing
+		ab_feudal_celestial_mandate = { #May need balancing
 			allow = { 
-				NOT = { great_power_rank = 8 } #Does this work without Rights of Man?
+				culture_group = east_asian
+				is_emperor_of_china = yes 
 			}
 			modifier = {
-				min_autonomy_in_territories = -0.15 #May need balancing
+				imperial_mandate = 0.05
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 
-		ab_feudalism_avignon_papacy = { #Suggested by Mexdus on the workshop suggestion thread
-			allow = { #Tweak to tie into Schism mechanics if possible?
-				OR = {
-					AND = {
-						tag = FRA
-						religion = catholic
-					}
-					AND = {
-						NOT = { exists = FRA }
-						culture_group = french
-						religion = catholic
-					}
-				}
-				
+		ab_feudalism_bohemian_imperial_dominance = {
+			allow = { #
+				tag = BOH
+				is_emperor = yes
 			}
 			modifier = {
-				papal_influence = 2
-				enforce_religion_cost = -0.5
+				diplomatic_reputation = 2
+				envoy_travel_time = -0.25
 			}
 			ai_will_do = {
 				factor = 100

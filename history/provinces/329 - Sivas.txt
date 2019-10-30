@@ -27,14 +27,11 @@ discovered_by = nomad_group
 	controller = TIM
 	add_core = TIM
 } # Timur takes control of Sivas
-1402.1.1 = {	owner = AKK
-	controller = AKK
-	add_core = AKK
-} # The Ak Koyunlu
+
 1408.1.1 = {	owner = TUR
 	controller = TUR
+	add_core = TUR
 	remove_core = TIM
-	remove_core = AKK
 } # The Ottomans restore control
 1481.6.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Civil war, Bayezid & Jem
 1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes

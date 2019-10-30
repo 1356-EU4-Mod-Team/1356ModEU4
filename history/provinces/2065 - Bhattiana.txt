@@ -20,13 +20,8 @@ discovered_by = ottoman
 discovered_by = chinese
 
 1398.1.1  = { owner = TIM controller = TIM add_core = TIM unrest = 0 }
-1405.2.19 = { owner = MUL controller = MUL remove_core = TIM }
+1405.2.19 = { owner = DLH controller = DLH add_core = DLH remove_core = TIM }
 
-1414.1.1 = {
-	owner = DLH
-	controller = DLH
-	remove_core = MUL
-}
 1526.2.1 = { controller = TIM } # Babur's invasion
 1526.4.21 = {
 	owner = MUG

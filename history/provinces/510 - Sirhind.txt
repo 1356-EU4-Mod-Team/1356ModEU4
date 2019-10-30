@@ -24,10 +24,9 @@ extra_cost = 8
 center_of_trade = 1
 
 1398.1.1   = { owner = TIM controller = TIM add_core = TIM unrest = 0 }
-1405.2.19  = { owner = MUL controller = MUL remove_core = TIM }
+1405.2.19  = { owner = DLH controller = DLH remove_core = TIM }
 1414.1.1   = {	owner = DLH
 		controller = DLH
-		remove_core = MUL
 	     }
 1443.1.1 = {
 owner = SRH

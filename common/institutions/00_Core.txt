@@ -196,6 +196,7 @@ feudalism = { #Heavily Edited by #1356
 				}
 				NOT = { owner = { government = tribal } }
 				NOT = { religion = shamanism } #This is the province religion
+				is_year = 1420
 				NOT = { culture = tuareg }
 			}
 			AND = { #North and South China, Mongolia
@@ -427,8 +428,8 @@ feudalism = { #Heavily Edited by #1356
 			# }
 		# }
 		modifier = { #Spreads slower in Pagan Provinces
-			factor = -0.5
-			scale = yes
+			factor = -1
+			#1scale = yes
 			force_potential = yes
 			potential = {
 				religion_group = pagan
@@ -477,8 +478,8 @@ mercantilism_institution = { #1356 New Content
 
 	penalty = 0.5
 	bonus = { #Tweak
-		trade_range_modifier = 0.1
-		administrative_efficiency = 0.05
+		trade_range_modifier = 0.15
+		global_prov_trade_power_modifier = 0.1
 	}
 	
 	trade_company_efficiency = 0.0
@@ -691,6 +692,34 @@ mercantilism_institution = { #1356 New Content
 				}
 			}
 		}
+		modifier = { #Spreads slower in Pagan Provinces
+			factor = -1
+			#scale = yes
+			force_potential = yes
+			potential = {
+				religion_group = pagan
+			}
+			custom_trigger_tooltip = {
+				tooltip = pagan_province_feudalism
+				religion_group = pagan
+			}
+		}
+		modifier = { #Owner has embraced institution
+			factor = 2
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = mercantilism_institution
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_mercantilism_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = mercantilism_institution
+				}
+			}
+		}
 		modifier = { #Works
 			factor = 0.1
 			scale = yes
@@ -770,7 +799,7 @@ mercantilism_institution = { #1356 New Content
 			}
 		}
 		modifier = { #Province produces paper
-			factor = 0.5
+			factor = 0.75
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -782,7 +811,7 @@ mercantilism_institution = { #1356 New Content
 			}
 		}
 		modifier = { #Luxury Trade Good in Province
-			factor = 0.2
+			factor = 0.4
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -802,6 +831,9 @@ mercantilism_institution = { #1356 New Content
 				}
 				NOT = { owner = { government = tribal } }
 				NOT = { owner = { government = native } }
+				NOT = { owner = { religion = nahuatl } }
+				NOT = { owner = { religion = inti } }
+				NOT = { owner = { religion = mesoamerican_religion } }
 			}
 			custom_trigger_tooltip = {
 				tooltip = mercantilism_trade_goods_tt
@@ -818,6 +850,11 @@ mercantilism_institution = { #1356 New Content
 					trade_goods = glass
 					trade_goods = gems
 				}
+				NOT = { owner = { government = tribal } }
+				NOT = { owner = { government = native } }
+				NOT = { owner = { religion = nahuatl } }
+				NOT = { owner = { religion = inti } }
+				NOT = { owner = { religion = mesoamerican_religion } }
 			}
 		}
 		modifier = { #Province Center of Trade 1
@@ -881,7 +918,7 @@ mercantilism_institution = { #1356 New Content
 				province_has_center_of_trade_of_level = 1	
 			}
 			custom_trigger_tooltip = {
-				tooltip = merchantilism_cot_2_tt
+				tooltip = merchantilism_cot_3_tt
 				province_has_center_of_trade_of_level = 3	
 				OR = {
 					continent = europe
@@ -1430,6 +1467,74 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 				is_owned_by_trade_company = no
 				owner = {
 					has_institution = gunpowder_institution
+				}
+			}
+		}
+	
+		#Spread into Indus Valley faster (Sindh up to Delhi)
+		modifier = { #Unique tags that have embraced their pre gunpowder decisions #May need to split these up
+			factor = 0.75
+			#scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				OR = {
+					area = sindh_area
+					area = northern_sindh_area
+					area = multan_area
+					area = lahore_area
+					area = sind_sagar_area
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = gunpowder_indus_valley_tt
+				OR = {
+					area = sindh_area
+					area = northern_sindh_area
+					area = multan_area
+					area = lahore_area
+					area = sind_sagar_area
+				}
+			
+			}
+		}	
+	
+		modifier = { #Unique tags that have embraced their pre gunpowder decisions #May need to split these up
+			factor = 0.75
+			#scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				OR = {
+					tag = BYZ
+					tag = KOR
+					culture_group = east_asian
+					culture_group = tartar
+					culture_group = mongolic_culture_group
+					culture_group = altaic
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = gunpowder_unique_decision_flag_tt
+				OR = {
+					AND = { #Greek Fire
+						tag = BYZ
+						has_country_flag = byzantine_gunpowder_flag
+					}
+					AND = { #Korean
+						tag = KOR
+						has_country_flag = korean_gunpowder_flag
+					}
+					AND = { #Chinese
+						culture_group = east_asian
+						has_country_flag = chinese_gunpowder_modifier
+					}
+					AND = { #Mongolic/Steppe
+						OR = {
+							culture_group = tartar
+							culture_group = mongolic_culture_group
+							culture_group = altaic
+						}
+						has_country_flag = mongolic_gunpowder_flag
+					}
 				}
 			}
 		}

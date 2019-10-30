@@ -32,7 +32,7 @@ LOT = "countries/Lotharingia.txt"
 VLS = "countries/Valois.txt"
 NCH = "countries/CharlamagneEmpire.txt"
 OCC = "countries/Occitania.txt"
-FRD = "countries/RoyalDomaine.txt"
+#FRD = "countries/RoyalDomaine.txt"
 
 	
 #HRE

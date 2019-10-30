@@ -21,7 +21,7 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
-1385.1.1   = { owner = GOL controller = GOL }
+1385.1.1   = { owner = GLH controller = GLH }
 1387.1.1   = { owner = TIM controller = TIM add_core = TIM }
 1399.1.1 = { culture = azerbaijani }
 1405.2.19  = { owner = MLK controller = MLK } # Karabach

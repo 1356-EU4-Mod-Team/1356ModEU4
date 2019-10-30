@@ -15,3 +15,7 @@ capital = 1862 # Cremona
 		regent = yes
 	}
 }
+
+1356.12.26 = {
+	add_government_reform = oligarchy_reform
+}

@@ -31,7 +31,7 @@ country_decisions = {
 			num_of_total_ports = 5
 			total_development = 75
 			navy_size_percentage = 0.75
-			navy_tradition = 15
+			navy_tradition = 20
 		}
 		effect = { 
 			set_country_flag = age_of_discovery_decision_flag

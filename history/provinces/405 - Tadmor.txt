@@ -21,16 +21,16 @@ discovered_by = nomad_group
 discovered_by = east_african
 
 1356.12.24  = { 
-				owner = ASY controller = ASY add_core = ASY remove_claim = MAM
-				religion = nestorian
-				culture = assyrian
+	owner = ASY controller = ASY add_core = ASY remove_claim = MAM
+	religion = nestorian
+	culture = assyrian
 } #BT In
 
 1356.12.26  = { 
-				owner = SYR controller = SYR remove_core = ASY
-				#add_claim = MAM
-				religion = sunni
-				culture = al_suryah_arabic
+	owner = SYR controller = SYR remove_core = ASY
+	#add_claim = MAM
+	religion = sunni
+	culture = al_suryah_arabic
 } #BT Out
 
 

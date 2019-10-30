@@ -4,6 +4,7 @@ zurich_two = {
 	ai = yes
 	potential = {
 		tag = ZUR
+		government = swiss_canton_reform
 	}
 	has_country_shield = yes
 	
@@ -187,6 +188,7 @@ zur_three = {
 	ai = yes
 	potential = {
 		tag = ZUR
+		government = swiss_canton_reform
 	}
 	has_country_shield = yes
 	
@@ -300,6 +302,7 @@ zur_four = {
 	ai = yes
 	potential = {
 		tag = ZUR
+		government = swiss_canton_reform
 	}
 	has_country_shield = yes
 	
@@ -387,6 +390,7 @@ zur_six = {
 	ai = yes
 	potential = {
 		tag = ZUR
+		government = swiss_canton_reform
 	}
 	has_country_shield = yes
 	
@@ -438,6 +442,7 @@ zur_eight = {
 	ai = yes
 	potential = {
 		tag = ZUR
+		government = swiss_canton_reform
 	}
 	has_country_shield = yes
 	
@@ -543,6 +548,7 @@ zur_ten = {
 	ai = yes
 	potential = {
 		tag = ZUR
+		government = swiss_canton_reform
 	}
 	has_country_shield = yes
 	

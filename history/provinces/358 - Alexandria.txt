@@ -39,7 +39,7 @@ discovered_by = east_african
 }
 1365.10.9  = { owner = CYP controller = CYP } # Crusade against Alexandria
 1365.10.12 = { owner = MAM controller = MAM add_core = MAM }
-1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = ALX }
+1390.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = ALX }
 1517.1.1 = {
 		owner = TUR
 		controller = TUR

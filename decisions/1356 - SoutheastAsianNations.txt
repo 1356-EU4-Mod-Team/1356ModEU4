@@ -25,6 +25,7 @@ country_decisions = {
 		}
 		
 		allow = {
+			adm_tech = 16
 			is_at_war = no
 			is_subject = no
 			OR = {

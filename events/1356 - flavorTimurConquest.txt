@@ -10,6 +10,7 @@ country_event = { #Tells game if Timur is to spawn or not
 	major = yes
 	
 	trigger = {
+		always = no
 		ai = no
 		NOT = { has_global_flag = "timurid_decision" }
 		OR = {
