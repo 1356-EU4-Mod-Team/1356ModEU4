@@ -1751,7 +1751,7 @@ dharmic = { #1356
 	####1356 Changes below#
 	jain = { #Converter Religion. Expand on perhaps?
 		icon = 59
-		color = { 1.2 0.3 0.6 }
+		color = { 120 30 60 }
 		country = {
 			tolerance_heathen = 2
 			tolerance_heretic = 2

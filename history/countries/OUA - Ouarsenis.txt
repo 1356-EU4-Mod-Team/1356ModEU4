@@ -8,4 +8,3 @@ technology_group = muslim
 capital = 2462	# Kabylia
 fixed_capital = 2462 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
-

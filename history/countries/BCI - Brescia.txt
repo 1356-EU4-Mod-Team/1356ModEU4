@@ -7,6 +7,8 @@ religion = catholic
 capital = 107 # Brescia
 
 1356.12.24 = {
+	government = republic
+	add_government_reform = free_city
 	monarch = {
 		name = "Ezzelino III"
 		dynasty = "da Romano"
@@ -16,3 +18,8 @@ capital = 107 # Brescia
 		mil = 3
 	}
 } # BT Out
+
+1356.12.26 = {
+	government = monarchy
+	add_government_reform = despotic_monarchy
+}

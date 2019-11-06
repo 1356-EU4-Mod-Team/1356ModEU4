@@ -1,9 +1,9 @@
 government = tribal
 add_government_reform = tribal_kingdom
+government_rank = 1
 technology_group = muslim
 religion = sunni
 primary_culture = tripolitanian_culture
-government_rank = 1
 capital = 2452	# Zuwarah
 fixed_capital = 2452 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school

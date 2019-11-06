@@ -7,7 +7,7 @@ war_goal = {
 	casus_belli = cb_insult
 }
 
-1356.1.1 = { # Claim in kingdom of Valencia, more access to mediterrean sea
+1356.12.26 = { # Claim in kingdom of Valencia, more access to mediterrean sea
 	add_attacker = ENG
 	add_attacker = CAS
 	add_attacker = POR
@@ -33,7 +33,7 @@ war_goal = {
 	add_defender = FOZ
 }
 
-1356.9.19 = {
+1356.12.26 = { #Historically 1356.9.19
 	battle = {
 		name = "Poitiers"
 		location = 180 # Poitou

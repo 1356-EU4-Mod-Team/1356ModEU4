@@ -1,48 +1,46 @@
-guarantee = { #Tunis and Sfax
+alliance = { #Tunis and Sfax
 	first = TUN
 	second = SFX
 	start_date = 1356.12.26
 	end_date = 1420.1.1
 }
 
-guarantee = { #Fezzan and Tripoli
+alliance = { #Fezzan and Tripoli
 	first = FZA
 	second = TRP
 	start_date = 1356.12.26
 	end_date = 1420.1.1
 }
 
-dependency = { #Tlemcen and Kebir
-	subject_type = "tributary_state"
+alliance = { #Tlemcen and Kebir
 	first = TLC
 	second = KEB
 	start_date = 1356.12.26
 	end_date = 1420.1.1
 }
 
-guarantee = { #Fez and Tetouan
+alliance = { #Fez and Tetouan
 	first = FEZ
 	second = TET
 	start_date = 1356.12.26
 	end_date = 1440.1.1
 }
 
-dependency = { #Fez and Cebta
-	subject_type = "tributary_state"
+alliance = { #Fez and Cebta
 	first = FEZ
 	second = CBT
 	start_date = 1356.12.26
 	end_date = 1400.1.1
 }
 
-guarantee = { #Morocco and Sale
+alliance = { #Morocco and Sale
 	first = MOR
 	second = SLE
 	start_date = 1356.12.26
 	end_date = 1420.1.1
 }
 
-guarantee = { #Morocco and Safi
+alliance = { #Morocco and Safi
 	first = MOR
 	second = SAF
 	start_date = 1356.12.26
@@ -50,8 +48,7 @@ guarantee = { #Morocco and Safi
 }
 
 
-dependency = { #Tunis and Djerba
-	subject_type = "tributary_state"
+alliance = { #Tunis and Djerba
 	first = TUN
 	second = DJE
 	start_date = 1356.12.26 

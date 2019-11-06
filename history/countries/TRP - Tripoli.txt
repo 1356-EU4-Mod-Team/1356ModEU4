@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = pirate_republic_reform
+government = monarchy
+add_government_reform = barbary_sultanate_reform
 technology_group = muslim
 religion = sunni
 primary_culture = tripolitanian_culture

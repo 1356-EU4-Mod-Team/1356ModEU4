@@ -78,6 +78,7 @@ feudalism = { #Heavily Edited by #1356
 				province_id = 445 #Merv
 				province_id = 444 #Charjuy
 				province_id = 320 #Rhodes
+				province_id = 1224 #Gonder #Gives Ethiopia Feudalism
 				owner = { primary_culture = crusader_culture }
 				
 			}
@@ -535,6 +536,7 @@ mercantilism_institution = { #1356 New Content
 					province_id = 43 #Danzig
 					province_id = 4388 #Chartres
 					province_id = 34 #Ingermanland
+					province_id = 4546 #Malaga #Granada-ish. Would pick Granada itself but I dont want it to start with Mercantilism completly
 					owner = { government = merchants_reform }
 					owner = { government = venice_merchants_reform }
 					owner = { government = trading_city }

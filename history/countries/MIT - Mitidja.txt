@@ -1,8 +1,9 @@
-government = republic
-add_government_reform = pirate_republic_reform
+government = monarchy
+add_government_reform = barbary_sultanate_reform
 primary_culture = algerian
 religion = sunni
 technology_group = muslim
 capital = 338
 fixed_capital = 338 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
+government_rank = 1

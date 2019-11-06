@@ -1,0 +1,30 @@
+# To use a created subject type in history you need to use this structure
+#dependency = {
+#	subject_type = "[subject type]"
+#	first = [Overlord tag]
+#	second = [Subject tag]
+#	start_date = YYYY.M.DD
+#	end_date = YYYY.M.DD
+#}
+
+
+#alliance = { #Historical!
+#	first = CAS
+#	second = GEN
+#	start_date = 1356.12.26
+#	end_date = 1360.1.1
+#}
+
+alliance = { #Historical!
+	first = ARA
+	second = CTR
+	start_date = 1356.12.26
+	end_date = 1360.1.1 #Need an end date
+}
+
+alliance = { #Historical!
+	first = CAS
+	second = ENG
+	start_date = 1356.12.26
+	end_date = 1360.1.1 #Need an end date
+}

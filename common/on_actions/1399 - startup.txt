@@ -1,7 +1,7 @@
 on_startup = {
 	events = { 
 		barbarossa.1
-		flastartupevents.2
+		#flastartupevents.2
 		flastartupevents.3
 		flastartupevents.4
 		flastartupevents.5

@@ -140,10 +140,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_diplomacy_leadfeudalvassal"
 		texturefile = "gfx//interface//icon_diplomacy_leadfeudalvassal.dds"
+		legacy_lazy_load=no
 	}
 	spriteType = {
 		name = "GFX_diplomacy_amfeudalvassal"
 		texturefile = "gfx//interface//icon_diplomacy_amfeudalvassal.dds"
+		legacy_lazy_load=no
 	}
 	
 

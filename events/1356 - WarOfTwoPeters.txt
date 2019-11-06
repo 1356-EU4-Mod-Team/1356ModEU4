@@ -59,7 +59,7 @@ country_event = { #Castile Wins Civil War
 		OR = {
 			219 = { controlled_by = CAS }
 			219 = { controlled_by = ENG }
-			219 = { controlled_by = GRA }
+			#219 = { controlled_by = GRA } #Removed since currently theres no mechanics for Granada to enter the war historically
 			219 = { controlled_by = POR }
 			219 = { controlled_by = GUY }
 			219 = { controlled_by = FOI }
@@ -119,7 +119,7 @@ country_event = { #House Trastamara wins Civil War
 		swap_non_generic_missions = yes
         set_government_rank = 2
         add_truce_with = POR
-        add_truce_with = GRA 
+        #add_truce_with = GRA 
 	}
 }
 country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Rival, Portugal as a Historical Friend

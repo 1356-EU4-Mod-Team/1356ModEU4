@@ -1,35 +1,35 @@
 namespace = flastartupevents
 
 
-country_event = { #Startup event to turn all pirates into generic sultanates if DLC isnt owned
-	id = flastartupevents.2
-	title = flastartupevents.2.t
-	desc = flastartupevents.2.d
-	picture = LAND_MILITARY_eventPicture
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-	trigger = {
-		government = pirate_republic_reform
-		NOT = { has_dlc = "Golden Century" }
-		is_year = 1356
-		NOT = { is_year = 1400 }
-	}
-	option = {
-		name = 1356startupevents.2.a
-		SAF = { add_government_reform = oligarchy_reform }
-		SLE = { add_government_reform = oligarchy_reform }
-		CBT = { add_government_reform = oligarchy_reform }
-		TET = { add_government_reform = oligarchy_reform }
-		KEB = { add_government_reform = oligarchy_reform }
-		DHA = { add_government_reform = oligarchy_reform }
-		MIT = { add_government_reform = oligarchy_reform }
-		SFX = { add_government_reform = oligarchy_reform }
-		DJE = { add_government_reform = oligarchy_reform }
-		TRP = { add_government_reform = oligarchy_reform }
+# country_event = { #Startup event to turn all pirates into generic sultanates if DLC isnt owned #Defunct now
+	# id = flastartupevents.2
+	# title = flastartupevents.2.t
+	# desc = flastartupevents.2.d
+	# picture = LAND_MILITARY_eventPicture
+	# is_triggered_only = yes
+	# fire_only_once = yes
+	# hidden = yes
+	# trigger = {
+		# government = pirate_republic_reform
+		# NOT = { has_dlc = "Golden Century" }
+		# is_year = 1356
+		# NOT = { is_year = 1400 }
+	# }
+	# option = {
+		# name = 1356startupevents.2.a
+		# SAF = { add_government_reform = oligarchy_reform }
+		# SLE = { add_government_reform = oligarchy_reform }
+		# CBT = { add_government_reform = oligarchy_reform }
+		# TET = { add_government_reform = oligarchy_reform }
+		# KEB = { add_government_reform = oligarchy_reform }
+		# DHA = { add_government_reform = oligarchy_reform }
+		# MIT = { add_government_reform = oligarchy_reform }
+		# SFX = { add_government_reform = oligarchy_reform }
+		# DJE = { add_government_reform = oligarchy_reform }
+		# TRP = { add_government_reform = oligarchy_reform }
 		
-	}
-}
+	# }
+# }
 
 
 country_event = { #BT

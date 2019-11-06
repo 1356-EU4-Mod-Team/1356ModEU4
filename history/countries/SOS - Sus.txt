@@ -6,6 +6,7 @@ technology_group = muslim
 capital = 348 # Sus
 fixed_capital = 348 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
+government_rank = 1
 
 1356.12.25 = {
 	monarch = {

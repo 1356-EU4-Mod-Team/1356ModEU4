@@ -2,6 +2,6 @@
 vassal = {
 	first = MOR
 	second = FEZ
-	start_date = 1356.12.25
+	start_date = 1440.1.1
 	end_date = 1444.11.11
 }

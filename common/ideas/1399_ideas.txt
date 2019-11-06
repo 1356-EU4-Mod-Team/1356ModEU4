@@ -2215,7 +2215,6 @@ TRP_ideas = { #Tripoli ideas
 	
 	trigger = {
 		tag = TRP
-		NOT = { has_reform = pirate_republic_reform }
 	}
 	free = yes
 	
@@ -2420,5 +2419,55 @@ javan_ideas = { #1356 #Expanded to allow non muslim Malayans to have ideas #Move
 	}
 	terracotta_banking = {
 		trade_efficiency = 0.1
+	}
+}
+
+1356_barbary_pirate_ideas = { #cloned from vanilla
+	start = {
+		galley_power = 0.2
+		privateer_efficiency = 0.2
+		may_perform_slave_raid = yes #Unique to this idea set
+	}
+	bonus = {
+		republican_tradition = 0.5
+		legitimacy = 1
+	}
+	trigger = {
+		OR = {
+			tag = TET #Tetouan
+			tag = SLE #Sale
+			tag = SAF #Safi
+			tag = CBT #Cebta
+			tag = KEB #Kebir
+			tag = DHA #Dahra
+			tag = MIT #Mitidja
+			tag = SFX #Sfax
+			tag = DJE #Djerba
+			#tag = TRP #Excluded because they have a unique idea set
+		}
+	}
+	free = yes
+	1356_barbary_slave_trade = {
+		trade_efficiency = 0.1
+	}
+	1356_galley_slaves = {
+		global_sailors_modifier = 0.25
+		galley_cost = -0.2
+	}
+	1356_vengeful_refugees = {
+		own_coast_naval_combat_bonus = 1
+	}
+	1356_mazmorras = {
+		diplomatic_reputation = 1
+	}
+	1356_barbary_fortified_strongholds = {
+		defensiveness = 0.2
+	}
+	1356_heirs_of_al_andalus = {
+		unjustified_demands = -0.25
+	}
+	1356_barbary_board_of_captains = {
+		pr_captains_influence = 0.1
+		possible_mil_policy = 1
 	}
 }

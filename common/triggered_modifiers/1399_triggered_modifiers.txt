@@ -273,7 +273,7 @@ jerusalem_held = {
 	trigger = {
 		current_age = age_of_feudalism
 	}
-	core_creation = 0.5
+	core_creation = 0.45
 	core_decay_on_your_own = 3
 	development_cost = 0.2
 	global_institution_spread = 0.1
@@ -337,9 +337,9 @@ jerusalem_held = {
 	trigger = {
 		current_age = age_of_feudalism
 	}
-	core_creation = 1
+	core_creation = 0.75
 	core_decay_on_your_own = 3
-	development_cost = 0.45
+	development_cost = 0.3
 	global_institution_spread = -0.5
 	embracement_cost = 0.4
 	#stability_cost_modifier = 0.1 #Perhaps?
@@ -403,7 +403,7 @@ jerusalem_held = {
 		current_age = age_of_feudalism
 		technology_group = nomad_group
 	}
-	core_creation = 0.5
+	core_creation = 0.4
 	core_decay_on_your_own = 5 #They never go away...
 	unjustified_demands = 0.2
 	province_warscore_cost = 0.1

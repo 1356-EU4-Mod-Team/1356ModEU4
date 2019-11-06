@@ -55,10 +55,10 @@ OCC = {
 	is_core = OCC
 }
 
-FRD = { 
-	is_core = FRD
-	NOT = { exists = FRA }
-}
+#FRD = { 
+#	is_core = FRD
+#	NOT = { exists = FRA }
+#}
 
 #FRA = {
 #	NOT = { exists = FRD }

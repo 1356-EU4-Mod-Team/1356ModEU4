@@ -6,6 +6,7 @@ primary_culture = kabyle
 capital = 336 # Tlemcen
 fixed_capital = 336 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
+government_rank = 1
 
 1352.1.1 = {
 	monarch = {
@@ -98,6 +99,8 @@ religious_school = maliki_school
 		leader = {	name = "Ahmad II"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
 	}
 }
+
+1440.1.1 = { government_rank = 2 }
 
 1462.2.2 = {
 	monarch = {

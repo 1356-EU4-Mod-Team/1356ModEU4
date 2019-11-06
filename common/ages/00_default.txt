@@ -235,20 +235,21 @@ age_of_feudalism = {
 				factor = 10
 			}
 		}
-		ab_feudalism_ = { 
+		ab_feudalism_institution_gain = { #Not sold on this idea yet either
 			modifier = {
-				
+				 global_institution_spread = 0.4
+				 embracement_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 10
 			}			
 		}
 		ab_gothic_cathedrals = { 
-			effect = {
-				custom_tooltip = ab_gothic_cathedrals_tt
-			}
 			modifier = {
 				build_time = -0.25
+			}
+			effect = {
+				custom_tooltip = ab_gothic_cathedrals_tt
 			}
 			ai_will_do = {
 				factor = 1
@@ -304,12 +305,20 @@ age_of_feudalism = {
 			}
 		}	
 
-		ab_feudal_unique_ = { # #Replace with a Turkish, Persian, or Norwegian bonus?
+		ab_feudal_unique_sons_of_genghisid = { # Not sold on the idea yet
 			allow = {
-
+				tag = GLH
+				tag = YUA
+				tag = ILK
+				tag = JLR
+				tag = CHG
+				tag = KHA
 			}
 			modifier = {
-
+				legitimacy = 0.5
+				horde_unity = 0.5
+				raze_power_gain = 0.1
+				cavalry_shock = 1 
 			}
 			ai_will_do = {
 				factor = 100
