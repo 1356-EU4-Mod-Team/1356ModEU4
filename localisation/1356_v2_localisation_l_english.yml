@@ -1053,6 +1053,24 @@
  fla_nestorian.39.a: "The true faith grows ever stronger!"
  fla_nestorian.15.b: "Hidden response - let the Nestorians be free!"
  
+ flaassyria.NAME1: "The Assyrian Revolt of [GetYear]"
+ flaassyria.DESC1: "For many Centuries the Assyrians have lived peacefully under their overlord regardless of Religion, or Cultural differences. However recently the [Root.Monarch.GetTitle] of [JLR] has been more oppressive than previous [Root.Monarch.GetTitle]'s. The Assyrians of Mesopotamia have had enough of their poor treatment and are now in open revolt! Something must be done soon before this spreads even further in our Mighty Nation!"
+ flaassyria.1.a: "Rise up against the [Root.Monarch.GetTitle]!"
+ flaassyria.1.b: "There shall never be an independent Assyrian State again!"
+ flaassyria.1.c: "Peacefully release the Assyrians, for a price..."
+ flaassyria.NAME2: "Rising Assyrian Nationalism"
+ flaassyria.DESC2: "Recent events in the area of Al Jazira has caused a resurgance of Assyrian Nationalism that has not been seen since long before the rise of the Roman Empire. Word has it that the governor over the area has been increasing taxes for Assyrians and providing harsher setences for Assyrians who commit crimes. The local populace is fed up with it and has begun to organize a local government of their own. While they have yet to request additional autonomy it's very likely they will prove to be a problem as time progresses if we do not deal with them somehow..."
+ flaassyria.2.a: "This is very bad..."
+ flaassyria.NAME3: "Rising Assyrian Nationalism"
+ flaassyria.DESC3: "Recent events in Upper Mesopotamia have caused a resurgance of Assyrian Nationalism. Fed up with the recent poor treatment of Assyrians under the reigns of the current ruling Sultan, the Assyrians of the area have begun to organize themselves into a sort of militia to protect their own culture from outsiders who would do them harm. If pushed any further this may turn into a full scale revolt across the Middle East to create a reborn Assyria! We'd do best to keep this under wraps seeing as we control a number of Assyrians ourselves."
+ flaassyria.3.a: "We must stamp out this Nationalism before we loose our grip!"
+ flaassyria.NAME4: "Province Defects"
+ flaassyria.DESC4: "An Assyrian Province of ours has taken notice of the current Assyrians in open revolt against their liege and have taken up arms in order to support them, declaring independence from us in the process!"
+ flaassyria.4.a: "We can NOT loose grip now!"
+ flaassyria.NAME5: "More Men Flock to Our Banner"
+ flaassyria.DESC5: "It appears more Assyrians are flocking to our banner, not only has two new regiments appeared but they bring with them a new province! Perhaps things are looking up for us after all."
+ flaassyria.5.a: "We shall have our independence yet!"
+ 
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
  eng_reinstate_duke_of_cornwall_decision_desc: "At one point the title 'Duke of Cornwall' was lost and our eldest son no longer held the title. Now that we are able to we should grant this title to our eldest son once more to both reward him and to gain more power ourselves!"
@@ -1451,6 +1469,11 @@
  gunpowder_unique_decision_flag_tt: "Has Unique Pre-Gunpowder Technology"
  gunpowder_indus_valley_tt: "Indus Valley Saltpeter"
  tooltip_mercantilism_embraced: "Owner has Embraced Mercantilism"
+ 1356_asy_revolt_tt: "Assyria will become independent, you WILL swap to Assyria, and be at war with your former nation."
+ 1356_asy_revolt_peaceful_tt: "Assyria will be peacefully released as a Tributary to us"
+ flyassyria3_notify_player_assyrian_nationalism_tt: "Any province of Assyrian culture will experience increased Revolt Risk for a period of time."
+ assyria_2_asy_gains_cores_tt: "Assyria gains cores on ANY provinces in Europe, Asia, or Africia that has Assyrian Culture"
+ asy_province_defected_tt: "A province has defected to your control, and with it two infantry!"
  
  #Missions
   

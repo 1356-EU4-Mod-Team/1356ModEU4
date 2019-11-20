@@ -12,7 +12,7 @@ nestorian_legitimize_government = {
 		horde_unity = 1
 		republican_tradition = 0.3
 		devotion = 1
-		prestige = 0.2
+		prestige = 0.5
 	}
 	ai_will_do = {
 		factor = 10
@@ -39,8 +39,8 @@ nestorian_encourage_warriors_in_defense_of_the_faith = {
 	}
 
 	modifier = {
-		manpower_recovery_speed = 0.05
-		reinforce_speed = 0.1
+		manpower_recovery_speed = 0.1
+		movement_speed = 0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -64,7 +64,7 @@ nestorian_send_monks_to_establish_monasteries = {
 	}
 
 	modifier = {
-		religious_unity = 0.15
+		missionaries = 1 
 		tolerance_heathen = 1
 		tolerance_heretic = 1
 	}

@@ -228,8 +228,8 @@ age_of_feudalism = {
 				set_country_flag = feudal_de_jure_law
 			}
 			modifier = {
-				vassal_income = 0.2
-				vassal_forcelimit_bonus = 0.1
+				vassal_income = 0.25
+				vassal_forcelimit_bonus = 0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -277,7 +277,7 @@ age_of_feudalism = {
 		ab_chevauchee = { #Historically this is a strategy to siege a fort down without harming it
 			modifier = {
 				loot_amount = 0.50
-				siege_ability = 0.05
+				siege_ability = 0.1
 			}
 			ai_will_do = {
 				factor = 10

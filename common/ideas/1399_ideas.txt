@@ -2069,7 +2069,7 @@ ASY_ideas = {
 	}
 	asy_idea_6 = { #Prestigious Old Empire
 		prestige = 1
-		prestige_decay = -0.5
+		prestige_decay = -0.02
 	}
 	asy_idea_7 = { #Innovative
 		free_adm_policy = 1

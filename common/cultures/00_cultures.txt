@@ -3384,7 +3384,7 @@ byzantine = { #1356
 	}
 }
 
-caucasian = {
+caucasian = { #1356
 	graphical_culture = easterngfx
 	georgian = {
 		primary = GEO
@@ -3494,6 +3494,29 @@ caucasian = {
 		"Kaerkuys" "Djykkaj" "Godjysa" "Magket" "Paerraesta" "Hetaegkat" "Haedarca" "Tuallaeg" 
 		"Faerniat" "Ephraimid" "Tandelat" "Tsaeykostae" "Sozana" "Maerzoj"
 	}
+#1356 Additional Cultures #9
+	
+	cuman = { #Imported from CK2 #Names should be best they can be here.
+		primary = CUM
+		male_names = { #Partially suggested by Cobex in Discord
+			Çilbu Aepak Asalup Asep Atrak Bönek Bachman Begluk Blush Bonyak Borç Eldeçyuk Etrek Girgen Gzi Itlar Ituk Könçek Kobyak Kopti Kotyan Koza
+			Kozel Kubasar Kuntuvdi Kutan Pulad Saru Sevenç Sirçan Sokal Sotan Sugr Törtogul Togli Tolun Tugor Uzluk Uzur Kutub, Boniak, Taz, Köten, Konchak, Yuri Kobyak, Köpek, Kopyak, Chilbuk, Koza, Gzak
+			Eldechyuk Toksobich Ovlur "Sharukan Toglyy" "Sokal Kutesk" Beka Otrok Vakhtang Sirchan Eltut Sevinch Zeyhan Arbuz "Tort-oyul" Menk Begovars Tolon
+			Alpra Kutlu Aslan Kitzes Sytzigan Barc Membrok Baytursun Tapar Saraga Baibars Kuman Kutuz
+		}
+		female_names = { #Partially Suggested by Cobex in Discord
+			Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulçiçek Gulay Gunduz Gundes Gunes Ilkay Ipek Ipekel Irge
+			Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay Sevindik Sibel Sirin Sirma Songul Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz
+			Konchakovna Svoboda Jiajak Jaqeli Gurandukht
+		}
+		dynasty_names = { #Imported from my defunct mod, which got it from various CK2 mods and the importer.
+			"Boke Temur" "Qutlugh Vachir" "Suren Chinua" "Delger Bayar" "Shria Gan" "Bora Chinua" Nasange Temur-chi Chinuagene 
+			Toluilun Qutughqan "Koke Burilgi" Surenchar Bayangge
+		}
+	}	
+	
+#End 1356 Additional Cultures	
+
 }
 
 turko_semitic = { #Arabic #1356
@@ -8775,7 +8798,7 @@ kamchatkan_g = {
 	}
 }
 
-tartar	= { #1356
+tartar	= {
 	graphical_culture = muslimgfx
 	astrakhani = {
 		primary = AST
@@ -8909,28 +8932,7 @@ tartar	= { #1356
 			Alia Amunet Andali Asanet Asenath Asenet Azenet Badiat Cena Fatima Halima
 		}
 	}
-#1356 Additional Cultures #9
-	
-	cuman = { #Imported from CK2 #Names should be best they can be here.
-		primary = CUM
-		male_names = { #Partially suggested by Cobex in Discord
-			Çilbu Aepak Asalup Asep Atrak Bönek Bachman Begluk Blush Bonyak Borç Eldeçyuk Etrek Girgen Gzi Itlar Ituk Könçek Kobyak Kopti Kotyan Koza
-			Kozel Kubasar Kuntuvdi Kutan Pulad Saru Sevenç Sirçan Sokal Sotan Sugr Törtogul Togli Tolun Tugor Uzluk Uzur Kutub, Boniak, Taz, Köten, Konchak, Yuri Kobyak, Köpek, Kopyak, Chilbuk, Koza, Gzak
-			Eldechyuk Toksobich Ovlur "Sharukan Toglyy" "Sokal Kutesk" Beka Otrok Vakhtang Sirchan Eltut Sevinch Zeyhan Arbuz "Tort-oyul" Menk Begovars Tolon
-			Alpra Kutlu Aslan Kitzes Sytzigan Barc Membrok Baytursun Tapar Saraga Baibars Kuman Kutuz
-		}
-		female_names = { #Partially Suggested by Cobex in Discord
-			Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulçiçek Gulay Gunduz Gundes Gunes Ilkay Ipek Ipekel Irge
-			Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay Sevindik Sibel Sirin Sirma Songul Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz
-			Konchakovna Svoboda Jiajak Jaqeli Gurandukht
-		}
-		dynasty_names = { #Imported from my defunct mod, which got it from various CK2 mods and the importer.
-			"Boke Temur" "Qutlugh Vachir" "Suren Chinua" "Delger Bayar" "Shria Gan" "Bora Chinua" Nasange Temur-chi Chinuagene 
-			Toluilun Qutughqan "Koke Burilgi" Surenchar Bayangge
-		}
-	}	
-	
-#End 1356 Additional Cultures	
+
 	dynasty_names = {
 		"Chagatay" "Edigüid" "Giray" "Borjigin" "Shaybanid" "Janid" "Mangit"
 	}

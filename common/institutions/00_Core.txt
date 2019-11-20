@@ -1034,7 +1034,7 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 
 	penalty = 0.5
 	bonus = { 
-		artillery_power = 0.05
+		siege_ability = 0.05
 	}
 	
 	trade_company_efficiency = 0.0
