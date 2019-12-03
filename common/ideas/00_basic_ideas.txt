@@ -85,6 +85,7 @@ aristocracy_ideas = {
 			has_government_attribute = enables_aristocratic_idea_group
 			government = theocracy
 			government = tribal
+			NOT = { government = feudal_theocracy }
 		}
 	}
 	
@@ -134,7 +135,10 @@ theocratic_ideas = { #1356
 	}
 
 	trigger = { 
-		government = theocracy
+		OR = {
+			government = theocracy
+			government = feudal_theocracy
+		}
 	}
 	
 	the_word_of_god = { 

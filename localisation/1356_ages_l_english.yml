@@ -49,7 +49,7 @@
  obj_deus_vult: "Deus Vult!"
  obj_deus_vult_desc: "Go on a crusade and conquer a city in the east of importance! (Jerusalem, Antioch, Sidon, Damascus, Alexandria, etc)"  
  obj_feudal_generic_non_abrahamic_competent_ruler: "Competent Ruler"
- obj_feudal_generic_non_abrahamic_competent_ruler_desc: "Have a ruler with at least 3 in each Adm, Dip, and Mil stats"
+ obj_feudal_generic_non_abrahamic_competent_ruler_desc: "Have a ruler with at least 3 in each Adm, Dip, and Mil stats."
  
  #V30 #Some strings below are previously existing strings slight edited
  mercantilism_institution: "Mercantilism"
@@ -68,9 +68,9 @@
  obj_feudalism_fetishist: "Fetishes"
  obj_feudalism_fetishist_desc: "As a Fetishist unlock at least 5 Cults"
  obj_feudalism_hindu_pagan_gods: "Safeguard our Beliefs"
- obj_feudalism_hindu_pagan_gods_desc: "As a Pagan or Hindu nation ensure 15 of your provinces follow your religion, and take the Religious idea group"
+ obj_feudalism_hindu_pagan_gods_desc: "As a Pagan or Hindu nation ensure 15 of your provinces follow your religion."
  obj_non_christian_muslim_religious_unity: "Protect our Heritage."
- obj_non_christian_muslim_religious_unity_desc: "As any Shinto, American, Animist, or Tengrist Pagan ensure you have 15 provinces following your religion and keep Religious Unity at 90%"
+ obj_non_christian_muslim_religious_unity_desc: "As a Shinto, American, Animist, or Tengrist ensure you have 15 provinces following your religion and keep Religious Unity at 90%"
  obj_feudalism_nestorian: "Nestorian Beliefs"
  obj_feudalism_nestorian_desc: "As a Nestorian ensure that any Nestorian controls at least two Holy Sites, and convert 20 core provinces to Nestorianism."
  obj_papal_controller:0 "Papal Controller"

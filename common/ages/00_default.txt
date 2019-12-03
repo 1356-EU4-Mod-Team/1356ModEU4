@@ -22,7 +22,7 @@ age_of_feudalism = {
 				mercantilism = 20
 			}
 		}
-		obj_powerful_estate = { #
+		obj_powerful_estate = { #I want more out of this...
 			num_of_powerful_estates = 1
 			num_of_revolts = 0
 			#NOT = { average_unrest = 2 } Not sure if this can be balanced fairly
@@ -67,7 +67,7 @@ age_of_feudalism = {
 				all_core_province = {
 					religion = ROOT
 				}
-				amount = 12
+				amount = 10
 			}
 	 	}		
 		obj_feudalism_hussite = { 
@@ -118,7 +118,6 @@ age_of_feudalism = {
 				}
 				amount = 15
 			}
-			has_idea_group = religious_ideas
 	 	}
 		obj_feudalism_fetishist = { 
 			allow = {

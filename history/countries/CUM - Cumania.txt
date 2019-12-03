@@ -1,3 +1,6 @@
+#Really its a representation of the following tribes who settled into Hungary
+#Koncsog, Ilunesuk, Kol/Kor, Ulas/Olas, Curtan/Csertan, Burdjogli/Borchol, Toqsoba/Toksobichi
+#Perhaps give Cumans a unique Government due to their unique situation? 
 government = tribal
 primary_culture = cuman
 religion = tengri_pagan_reformed

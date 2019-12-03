@@ -330,6 +330,7 @@ country_event = { #Lets more provinces flip to an Assyria in Open Revolt #This e
 	desc = "flaassyria.DESC5"
 	picture = ANGRY_MOB_eventPicture
 	
+	is_triggered_only = yes
 	
 	option = { #Curses!
 		name = "flaassyria.5.a"

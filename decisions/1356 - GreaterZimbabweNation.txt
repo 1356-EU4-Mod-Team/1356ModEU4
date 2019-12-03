@@ -1,0 +1,124 @@
+country_decisions = {
+
+	greater_zimbabwe_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_zbb_flag }
+			NOT = { tag = ZBB }
+			NOT = { exists = ZBB }
+			NOT = { tag = ETH }
+			NOT = { tag = AKS }
+			OR = {
+				culture_group = southern_african
+				primary_culture = shona
+				primary_culture = Bemba
+				primary_culture = Nyasa
+				primary_culture = Makua
+				tag = ZAN
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1184		# Zimbabwe
+				province_id = 1185		# Butua
+				province_id = 2950		# Buhera
+				province_id = 2951		# Manikya
+				province_id = 2952		# Madanda
+				province_id = 4034		# Makua
+				province_id = 4040		# Kalonga
+				province_id = 1185		# Butua
+				province_id = 4039		# Lundu
+				province_id = 4045		# Tumbuka
+				province_id = 1186		# Sofala
+				
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			total_development = 300
+			NOT = { exists = ZBB }
+			owns_core_province = 1184		# Zimbabwe
+			owns_core_province = 2950		# Buhera
+			owns_core_province = 2951		# Manikya
+			owns_core_province = 2952		# Madanda
+			owns_core_province = 4034		# Makua
+			owns_core_province = 4040		# Kalonga
+			owns_core_province = 1185		# Butua
+			owns_core_province = 4039		# Lundu
+			owns_core_province = 4045		# Tumbuka
+			owns_core_province = 1186		# Sofala
+
+
+		}
+		effect = {
+			change_tag = ZBB
+			remove_non_electors_emperors_from_empire_effect = yes
+			#if = {
+			#	limit = {
+			#		NOT = {
+			#			government = monarchy
+			#		}
+			#	}
+			#	change_government = monarchy
+			#}
+			set_government_rank = 3
+			
+			#add_government_reform = autocracy
+			#if = {
+			#	limit = {
+			#		has_reform = states_general_reform
+			#	}
+			#	remove_government_reform = states_general_reform
+			#}
+				add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			1184 = {
+				add_base_tax = 4
+				add_base_production = 1
+				add_base_manpower = 4
+			}
+
+			2950 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+
+			2951 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+
+			2952 = {
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			
+			add_prestige = 25
+			
+			set_country_flag = formed_zbb_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		ai_importance = 400
+	}
+	
+}

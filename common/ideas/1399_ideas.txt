@@ -1834,6 +1834,9 @@ EGY_ideas = {
 	}
 }
 
+#Cuman note, the following tribes are the ones that migrated into hungary, useful for later content I'm sure
+#Koncsog, Ilunesuk, Kol/Kor, Ulas/Olas, Curtan/Csertan, Burdjogli/Borchol, Toqsoba/Toksobichi
+
 CUM_ideas = {
 	start = { #Former nomadic nation
 		cavalry_power = 0.15
@@ -1851,30 +1854,28 @@ CUM_ideas = {
 	free = yes
 	
 	cum_idea_1 = { #They do not loot on the way to their target, but they loot on the way back and take as much as they can carry.
-		loot_amount = 0.25
-		cavalry_cost = -0.15
+		loot_amount = 0.75
 	}
-	cum_idea_2 = { #They Ride through the night to make better time, and their horses have feedbags on frequently to prevent having to stop.
+	cum_idea_2 = { #Fearsome even in Peace
+		diplomatic_reputation = 1
+	}
+	cum_idea_3 = { #They Ride through the night to make better time, and their horses have feedbags on frequently to prevent having to stop.
 		land_attrition = -0.2
-		movement_speed = 0.025
+		movement_speed = 0.05
 	}
-	cum_idea_3 = { #They adapted to Tribal life from nomads
-		global_institution_spread = 0.2
-	}
-	cum_idea_4 = { #They are far away from their old home and linguistic brothers, they have to adapt to their new area.
+	cum_idea_4 = { #The Cuman-Kipchack Confederation
 		num_accepted_cultures = 2
 	}
-	cum_idea_5 = { #Former nomads, they can take more than they came for.
-		unjustified_demands = -0.15
-		years_of_nationalism = -2.5
+	cum_idea_5 = { #Frequent Trading, even as Nomads
+		global_foreign_trade_power = 0.15
 	}
 	cum_idea_6 = { #Cuman Unity - Whats left of us have to band together in order to prevent the death of the Cuman identity!-
 		legitimacy = 1
 		horde_unity = 1
-		candidate_random_bonus = 1
+		republican_tradition = 0.3
 	}
 	cum_idea_7 = { #Feirce Caravan defense
-		caravan_power = 0.25
+		caravan_power = 0.3
 		discipline = 0.05
 	}
 }
@@ -2470,4 +2471,126 @@ javan_ideas = { #1356 #Expanded to allow non muslim Malayans to have ideas #Move
 		pr_captains_influence = 0.1
 		possible_mil_policy = 1
 	}
+}
+
+RHN_ideas = { #Submitted by "The Janitor", slight tweaks by CountFlandy
+	start = {
+		diplomatic_reputation = 1
+		global_tax_modifier = 0.15
+	}
+
+	bonus = {
+		land_morale = 0.1
+	}
+	
+	trigger = {
+		tag = RHN
+	}
+	free = yes
+	
+	RHN_idea_1 = {
+		build_cost = -0.15
+	}
+	RHN_idea_2 = {
+		discipline = 0.05
+	}
+	RHN_idea_3 = {
+		global_heretic_missionary_strength = 0.02
+	}
+	RHN_idea_4 = {
+		development_cost = -0.15
+	}
+	RHN_idea_5 = {
+		army_tradition = 1
+        global_manpower_modifier = 0.2
+	}
+	RHN_idea_6 = {
+		global_trade_goods_size_modifier = -0.1
+	}
+	RHN_idea_7 = {
+		defensiveness = 0.25
+        siege_ability = 0.1
+	}
+}
+
+AKS_ideas = { #Submitted by "The Janitor", slight tweaks by CountFlandy
+	start = {
+		global_trade_goods_size_modifier = 0.15
+		missionaries = 1
+	}
+
+	bonus = {
+		land_attrition = -0.10
+		discipline = 0.025
+	}
+	
+	trigger = {
+		tag = AKS
+	}
+	free = yes		#will be added at load.
+
+	aksum_religious_unity = {
+		global_missionary_strength = 0.02
+		religious_unity = 0.15
+	}
+	desert_cavalry_traditions = {
+		cavalry_power = 0.2
+	}
+	building_an_empire = {
+		build_cost = -0.15
+	}
+	warriors_of_the_sahara = {
+		hostile_attrition = 1
+		land_morale = 0.1
+	}
+	imperial_ambition = {
+		core_creation = -0.15
+	}
+	crossroads_of_trade = {
+		global_trade_power = 0.15
+	}
+	fierce_warrior_traditions = {
+		shock_damage = 0.2
+	}
+	
+}
+
+ZBB_Ideas = { #Submitted by "The Janitor", slight tweaks by CountFlandy
+	start = {
+		inflation_reduction = 0.2
+		merchants = 1
+	}
+
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = ZBB
+	}
+	free = yes		#will be added at load.
+
+	mwenemutapa = {
+		discipline = 0.05
+	}
+	indian_ocean_trade = {
+		trade_efficiency = 0.15
+		trade_range_modifier = 0.75
+	}
+	ancestral_reverance = {
+		global_unrest = -2	
+	}
+	fortified_cities = {
+		defensiveness = 0.25
+	}
+	expanding_the_african_empire = {
+		colonists = 1
+	}
+	african_general_staff = {
+		infantry_power = 0.15
+	}
+	imperial_tax_organization = {
+		global_tax_modifier = 0.15
+	}
+
 }

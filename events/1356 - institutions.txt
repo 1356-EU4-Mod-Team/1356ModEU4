@@ -154,7 +154,7 @@ country_event = { #Boosts Mercantilism in nations with trade income %
 	option = {
 		name = new_institution_events.20.a
 		random_owned_province = {
-			if = {
+			limit = {
 				NOT = { mercantilism_institution = 100}
 				owner = { NOT = { has_institution = mercantilism_institution } }
 			}
@@ -186,7 +186,7 @@ country_event = { #Boosts Mercantilism in nations with X requirement
 	option = {
 		name = new_institution_events.21.a
 		random_owned_province = {
-			if = {
+			limit = {
 				NOT = { mercantilism_institution = 100}
 				province_has_center_of_trade_of_level = 2
 				owner = { NOT = { has_institution = mercantilism_institution } }
@@ -223,7 +223,7 @@ country_event = { #Boosts Mercantilism in nations with X requirement
 	option = {
 		name = new_institution_events.22.a
 		random_owned_province = {
-			if = {
+			limit = {
 				NOT = { mercantilism_institution = 100}
 				province_has_center_of_trade_of_level = 3
 				owner = { NOT = { has_institution = mercantilism_institution } }
@@ -264,7 +264,7 @@ country_event = { #Boosts Mercantilism in nations with paper trade good
 	option = {
 		name = new_institution_events.23.a
 		random_owned_province = {
-			if = {
+			limit = {
 				NOT = { mercantilism_institution = 100}
 				trade_goods = paper
 				owner = { NOT = { has_institution = mercantilism_institution } }
@@ -308,7 +308,7 @@ country_event = { #Event to Boost Mercantilism in nations with Low Autonomy AKA 
 	option = {
 		name = new_institution_events.30.a
 		random_owned_province = {
-			if = {
+			limit = {
 				NOT = { mercantilism_institution = 100}
 			}
 			add_institution_embracement = {

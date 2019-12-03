@@ -19,9 +19,9 @@ discovered_by = indian
 discovered_by = nomad_group
 
 1356.12.24 = { owner = AYB controller = AYB add_core = AYB } #BT In
-1356.12.26 = { owner = SYR controller = SYR remove_core = AYB } #BT Out
+1356.12.26 = { owner = FAD controller = FAD remove_core = AYB } #BT Out
 
-1444.1.1 = { add_core = FAD owner = FAD controller = FAD remove_core = SYR }
+1444.1.1 = { add_core = FAD owner = FAD controller = FAD }
 
 1515.1.1 = { discovered_by = POR }
 1516.8.24 = {
