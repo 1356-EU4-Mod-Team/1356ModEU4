@@ -204,6 +204,46 @@ spriteTypes = {
 		name = "GFX_obj_cav_army"		
 		texturefile = "gfx/interface/ages/obj_cav_army.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_obj_feudalism_zoroastrian_jewish_sikh"
+		texturefile = "gfx/interface/ages/obj_feudalism_zoroastrian_jewish_sikh.dds"	
+	}
+	
+	spriteType = {
+		name = "GFX_obj_feudalism_fetishist"
+		texturefile = "gfx/interface/ages/obj_feudalism_fetishist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_feudalism_hindu_pagan_gods"
+		texturefile = "gfx/interface/ages/obj_feudalism_hindu_pagan_gods.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_feudalism_buddhism_karma"
+		texturefile = "gfx/interface/ages/obj_feudalism_buddhism_karma.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_feudalism_confucianism_harmony"
+		texturefile = "gfx/interface/ages/obj_feudalism_confucianism_harmony.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_powerful_estate"
+		texturefile = "gfx/interface/ages/obj_powerful_estate.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_feudalism_institution"
+		texturefile = "gfx/interface/ages/obj_feudalism_institution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_feudal_generic_non_abrahamic_competent_ruler"
+		texturefile = "gfx/interface/ages/obj_feudal_generic_non_abrahamic_competent_ruler.dds"
+	}
 
 # Age of Feudalism Abilities
 	spriteType = {

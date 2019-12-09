@@ -1099,17 +1099,8 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 
-				#MOD ENTRY #1356# #Flandy You Dummy we modify this file #Love, past you
-				iconType =
-				{
-					name ="mod_icon_date"
-					spriteType = "GFX_mod_icon"
-					position = { x= 10 y = 552 }
-					Orientation = "UPPER_LEFT"
-					tooltip = "mod_icon_desc"
-					tooltipText = "mod_icon_desc"
-				}
-				#END 1356 MODIFICATIONS HERE #FLANDY THIS MEANS WE'RE DONE YOU DUMMY #Love, past you
+
+
 
 
 
@@ -1685,6 +1676,13 @@ guiTypes = {
 						maxWidth = 260
 						maxHeight = 24
 						format = centre
+					}
+
+					guiButtonType = {
+							name = "checksum_click_button"
+							position = { x = -20 y = 32 }
+							quadTextureSprite = "GFX_frontend_checksum"
+							size = { x=260 y=24}
 					}
 
 					instantTextBoxType = {

@@ -167,13 +167,6 @@ age_of_feudalism = {
 				is_defender_of_faith = yes
 				owns_core_province = 379 #Jerusalem
 				owns_core_province = 2313 #Antioch
-				owns_core_province = 1855 #Sidon
-				owns_core_province = 378 #Tarabulus
-				owns_core_province = 1854 #Jaffa
-				owns_core_province = 382 #Damascus
-				owns_core_province = 327 #Cilicia
-				owns_core_province = 321 #Cyprus
-				owns_core_province = 320 #Rhodes
 				owns_core_province = 151 #Constantanopole
 				owns_core_province = 358 #Alexandria
 				owns_core_province = 118 #Rome
@@ -185,15 +178,11 @@ age_of_feudalism = {
 			}
 			OR = {
 				is_defender_of_faith = yes
-				owns_core_province = 118 #Rome
 				owns_core_province = 379 #Jerusalem
-				owns_core_province = 382 #Damascus
-				owns_core_province = 151 #Constantanopole
 				owns_core_province = 385 #Mecca
 				owns_core_province = 384 #Medina
 				owns_core_province = 410 #Baghdad
-				owns_core_province = 358 #Alexandria
-				owns_core_province = 225 #Cordoba
+				owns_core_province = 382 #Damascus
 			}
 		}
 		obj_feudal_generic_non_abrahamic_competent_ruler = { #Create a generic Holy site system and use it for this?

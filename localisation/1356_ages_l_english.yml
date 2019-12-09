@@ -45,9 +45,9 @@
  obj_feudalism_muslim_piety: "Piety"
  obj_feudalism_muslim_piety_desc: "Have either 75 Piety, or -75 Piety, while maintaining at least 80% Religious Unity."
  obj_muslim_holy_war: "Jihad!"
- obj_muslim_holy_war_desc: "Control a Holy City of the Muslim Faith, or the Holy City of a Christian Faith! (Rome, Jerusalem, Mecca, Baghdad, Alexandria, etc)"
+ obj_muslim_holy_war_desc: "Control a Holy City of the Muslim Faith! (Jerusalem, Mecca, Baghdad, Medina, Damascus)"
  obj_deus_vult: "Deus Vult!"
- obj_deus_vult_desc: "Go on a crusade and conquer a city in the east of importance! (Jerusalem, Antioch, Sidon, Damascus, Alexandria, etc)"  
+ obj_deus_vult_desc: "Go on a crusade and conquer a city in the east of importance! (Rome, Constantinople, Jerusalem, Antioch, Alexandria)"  
  obj_feudal_generic_non_abrahamic_competent_ruler: "Competent Ruler"
  obj_feudal_generic_non_abrahamic_competent_ruler_desc: "Have a ruler with at least 3 in each Adm, Dip, and Mil stats."
  
