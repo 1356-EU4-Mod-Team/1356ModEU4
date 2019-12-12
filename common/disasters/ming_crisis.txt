@@ -7,7 +7,7 @@ ming_crisis = { #1356
 	
 	can_start = {
 		has_any_disaster = no
-		OR = { #1356
+		AND = { #1356
 			NOT = { current_age = age_of_discovery }
 			NOT = { current_age = age_of_feudalism } #1356
 		} #1356
@@ -18,9 +18,13 @@ ming_crisis = { #1356
 			OR = {
 				AND = {
 					NOT = { imperial_mandate = 50 }
-					is_emperor_of_china = yes
+					MNG = { is_emperor_of_china = yes } #1356
 				}
-				NOT = { is_emperor_of_china = yes }
+				AND = { #1356 added
+					is_emperor_of_china = no #1356
+					NOT = { current_age = age_of_feudalism } #1356
+					NOT = { current_age = age_of_discovery } #1356
+				} #1356
 			}
 		}
 		else = {

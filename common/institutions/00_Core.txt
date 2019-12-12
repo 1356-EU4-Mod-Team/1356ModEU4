@@ -894,7 +894,7 @@ mercantilism_institution = { #1356 New Content
 				NOT = { continent = north_america }
 				NOT = { continent = south_america }
 				NOT = { continent = new_world }
-				province_has_center_of_trade_of_level = 1	
+				province_has_center_of_trade_of_level = 2	
 			}
 			custom_trigger_tooltip = {
 				tooltip = merchantilism_cot_2_tt

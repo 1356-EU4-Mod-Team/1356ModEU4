@@ -24,6 +24,8 @@ discovered_by = east_african
 
 add_province_triggered_modifier = jerusalem_held
 
+add_province_triggered_modifier = nestorian_jerusalem
+
 1356.12.24  = { 
 				owner = KOJ controller = KOJ add_core = KOJ remove_core = MAM
 				base_tax = 8 base_production = 7 base_manpower = 9

@@ -25,6 +25,8 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 
+add_province_triggered_modifier = nestorian_antioch
+
 1356.12.24  = { owner = ATO controller = ATO add_core = ATO religion = catholic } #BT In
 1356.12.26  = { owner = SYR controller = SYR remove_core = ATO religion = sunni } #BT Out
 

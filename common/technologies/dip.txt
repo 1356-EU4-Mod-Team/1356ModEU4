@@ -13,7 +13,7 @@ technology = {
 	trade_range =   100
 	naval_maintenance =	0.1
 	naval_morale =	1.5
-	range =	40
+	range =	90
 	enable = cog
 	enable = galley
 	enable = crayer
@@ -58,7 +58,7 @@ technology = {
 technology = {
 	# Tech 5
 	year = 1396
-	range					= 	25	
+	range					= 	15	
 	trade_range				=	35
 
 }
@@ -67,7 +67,7 @@ technology = {
 	# Tech 6
 	year = 1408
 	
-	range					= 	25	
+	range					= 	15	
 	naval_morale = 0.2
 	
 }
@@ -99,7 +99,7 @@ technology = { #The Early Carrack
 technology = {
 
 	year = 1443
-	range					= 	70		
+	range					= 	50		
 	global_colonial_growth	= 	15
 }
 

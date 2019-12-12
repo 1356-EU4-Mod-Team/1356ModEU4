@@ -151,7 +151,12 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
 		change_heir_adm = 3
 		change_heir_mil = 3
 		change_heir_dip = 3
+		CAS = {
+			iberia_region = {
+				remove_core = CTR
+			}
 		}	
+	}
 }
 country_event = { #Castile
 	id = WarTwoPetersFlavor.6

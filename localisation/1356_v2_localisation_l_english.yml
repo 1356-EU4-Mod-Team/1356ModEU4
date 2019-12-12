@@ -1072,7 +1072,7 @@
  flaassyria.5.a: "We shall have our independence yet!"
  
  fre_disaster_civil_war.7.t: "End of the French Civil War - Hidden Event"
- fre_disaster_civil_war.desc: "Hidden Description"
+ fre_disaster_civil_war.7.desc: "Hidden Description"
  fre_disaster_civil_war.7.a: "Hidden Response"
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
@@ -1478,6 +1478,17 @@
  assyria_2_asy_gains_cores_tt: "Assyria gains cores on ANY provinces in Europe, Asia, or Africia that has Assyrian Culture"
  asy_province_defected_tt: "A province has defected to your control, and with it two infantry!"
  
+ nestorian_kochin: "Nestorian Conquest of Kochin"
+ nestorian_kochin_desc: "We are in control of the City of Kochin, where many Nestorians reside. Prester John is said to have converted these Indian's to the faith many centuries ago."
+ nestorian_baghdad: "Nestorian Conquest of Baghdad"
+ nestorian_baghdad_desc: "We are in control of the City of Baghdad, a city of major importance in learning. Home of the Nestorian Patriarch."
+ nestorian_jerusalem: "Nestorian Conquest of Jerusalem"
+ nestorian_jerusalem_desc: "We are in control of the Holy City of Jerusalem, held sacred by Muslims, Jews and Christians alike."
+ nestorian_antioch: "Nestorian Conquest of Antioch"
+ nestorian_antioch_desc: "We are in control of the City of Antioch, a city of importance to the entire Christian faith."
+ nestorian_kashgar: "Nestorian Conquest of Kashgar"
+ nestorian_kashgar_desc: "We are in control of the City of Kashgar, one of the only locations in the world where Nestorians have held a majority."
+ 
  #Missions
   
  #French Minor Additions
@@ -1818,6 +1829,8 @@
  default_policy_1_ideas: "Hidden"
  default_policy_1_ideas_title: "Hidden"
  default_policy_1_ideas_desc: "Hidden"
+ 
+ TACCEPTED_CULTURES: "Accepted Cultures"
  
  1356_malaya_nation_ideas: "Malayan Ideas"
  1356_malaya_nation_ideas_start: "Malayan Traditions"

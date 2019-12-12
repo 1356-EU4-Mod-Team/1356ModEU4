@@ -219,6 +219,7 @@ province_event = {
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 			NOT = { religion = nestorian }
+			ai = no
 		}
 	}
 	
@@ -258,6 +259,7 @@ province_event = {
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 			NOT = { religion = nestorian }
+			ai = no
 		}
 	}
 	
@@ -297,6 +299,7 @@ province_event = {
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 			NOT = { religion = nestorian }
+			ai = no
 		}
 	}
 	
@@ -336,6 +339,7 @@ province_event = {
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 			NOT = { religion = nestorian }
+			ai = no
 		}
 	}
 	
@@ -375,6 +379,7 @@ province_event = {
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 			NOT = { religion = nestorian }
+			ai = no
 		}
 	}
 	
@@ -414,6 +419,7 @@ province_event = {
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian }
 			NOT = { religion = nestorian }
+			ai = no
 		}
 	}
 	
@@ -454,6 +460,7 @@ province_event = {
 		owner = {
 			NOT = { has_country_modifier = expelled_nestorian } #Need this still
 			NOT = { religion = nestorian }
+			ai = no
 		}
 	}
 	

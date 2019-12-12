@@ -24,9 +24,9 @@ discovered_by = ottoman
 
 
 #1356.12.24 = { controller = ARA remove_core = PAP owner = ANC add_core = ANC } #BT In
-1356.12.26   = { owner = ARA controller = ARA } #BT Out
+1356.12.26   = { owner = ARA controller = ARA add_core = ARA} #BT Out
 
-1369.3.26  = { owner = GEN controller = GEN }
+1369.3.26  = { owner = GEN controller = GEN add_core = GEN}
 1464.1.1   = {	owner = MLO
 		controller = MLO
 		add_core = MLO

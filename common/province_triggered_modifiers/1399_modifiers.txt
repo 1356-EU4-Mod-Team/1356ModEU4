@@ -666,3 +666,157 @@
 	
 	}
 }
+
+############################
+#Nestorian Holy Site Control
+############################
+
+nestorian_baghdad = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		owner = {
+			religion = nestorian
+		}
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	global_missionary_strength = 0.03
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+nestorian_kochin = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		owner = {
+			religion = nestorian
+		}
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	global_missionary_strength = 0.03
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+nestorian_jerusalem = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		owner = {
+			religion = nestorian
+		}
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	global_missionary_strength = 0.03
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+nestorian_antioch = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		owner = {
+			religion = nestorian
+		}
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+nestorian_kashgar = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		owner = {
+			religion = nestorian
+		}
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	global_missionary_strength = 0.03
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
