@@ -8,6 +8,7 @@ country_event = {
 	
 	major = yes
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	immediate = {
 		set_global_flag = 1356_french_civil_war
@@ -18,6 +19,7 @@ country_event = {
 		add_prestige = -20
 		break_union = DAU
 		release_all_subjects = yes
+		GUY = { add_core = 194 } #Perigord
 		FRA = {
 			release = AMG
 			release = TOU
@@ -58,6 +60,7 @@ country_event = {
 			release = ARA
 			release = ENG
 			release = SCO
+			release = FOI			
 		}
 		FRA = {
 			france_region = {
@@ -66,6 +69,7 @@ country_event = {
 		}
 		change_tag = VLS
 		set_government_rank = 1
+		release_all_subjects = yes
 		remove_accepted_culture = occitain
 		remove_accepted_culture = gascon
 		remove_accepted_culture = breton
@@ -90,7 +94,13 @@ country_event = {
 		emperor = {
 			country_event = { 
 				id = fre_disaster_civil_war.4
-				days = 15
+				days = 10
+			}
+		}
+		VLS = {
+			country_event = {
+				id = fre_disaster_civil_war.2
+				days = 10
 			}
 		}
 	}
@@ -104,13 +114,8 @@ country_event = {
 	desc = fre_disaster_civil_war.2.desc
 	picture = CIVIL_WAR_eventPicture
 	
-	major = yes
 	is_triggered_only = yes
-	
-
-	immediate = {
-		set_global_flag = 1356_french_civil_war_popped
-	}
+	fire_only_once = yes
 	
 	option = {
 		name = fre_disaster_civil_war.2.a
@@ -121,62 +126,24 @@ country_event = {
 }
 
 #Event that gives the nations the option of joining the HRE or getting a claim on all of France
-country_event = {
+country_event = { #Shouldnt there be an event for the emperor that gives them the chance to offer this?
 	id = fre_disaster_civil_war.3
 	title = fre_disaster_civil_war.3.t
 	desc = fre_disaster_civil_war.3.desc
 	picture = HRE_eventPicture
 	
 	major = yes
-	
-	trigger = {
-		has_global_flag = 1356_french_civil_war
-		technology_group = western
-		culture_group = french
-		OR = {
-			current_age = age_of_feudalism
-			NOT = { is_year = 1480 }
-		}
-		is_part_of_hre = no
-		NOT = { has_global_flag = emperor_declined_offer_to_french_dukes }
-		NOT = { has_country_flag = fre_minor_declined_hre_offer_flag }
-		NOT = { tag = FRA }
-		NOT = { tag = ENG }
-		NOT = { tag = SPA }
-		NOT = { tag = ARA }
-		NOT = { tag = NAV }
-		NOT = { tag = DAN }
-		NOT = { tag = KNI }
-		NOT = { tag = CYP }
-		NOT = { tag = CIC }
-		NOT = { tag = KOJ }
-		OR = {
-			AND = {
-				tag = BUR
-				NOT = { num_of_subjects = 2 }
-				NOT = { num_of_states = 4 }
-			}
-			NOT = { tag = BUR }
-		}
-		is_subject = no
-		NOT = { num_of_states = 6 }
-	}
-	
-	mean_time_to_happen = {
-		months = 12
-	}
-	
+	is_triggered_only = yes
+		
 	option = { #We stay independent!
 		name = fre_disaster_civil_war.3.a
 		ai_chance = { factor = 25 }
+		set_country_flag = fre_minor_declined_hre_offer_flag
 		france_region = {
 			add_permanent_claim = ROOT
 		}
-		add_prestige = 5
-		add_legitimacy = 5
-		ROOT = { 
-			set_country_flag = fre_minor_declined_hre_offer_flag
-		}
+		add_prestige = 10
+		add_legitimacy = 10
 		emperor = {
 			country_event = { 
 			id = fre_disaster_civil_war.6
@@ -185,14 +152,14 @@ country_event = {
 		}
 	}
 	
-	option = {
+	option = { #We'll join!
 		name = fre_disaster_civil_war.3.b
 		ai_chance = { factor = 75 }
 		ROOT = {
 			set_in_empire = yes
-			capital_scope = { 
-				set_in_empire = yes
-			}
+			#capital_scope = { 
+			#	set_in_empire = yes
+			#}
 		}
 		emperor = {		
 			country_event = { 
@@ -204,8 +171,8 @@ country_event = {
 	
 }
 
-#Emperors event for this.
-country_event = {
+#Emperor offers French Minors vassalisation & Trigger for Event to handle this chain ending
+country_event = { 
 	id = fre_disaster_civil_war.4
 	title = fre_disaster_civil_war.4.t
 	desc = fre_disaster_civil_war.4.desc
@@ -217,16 +184,190 @@ country_event = {
 		name = fre_disaster_civil_war.4.a
 		ai_chance = { factor = 90 }
 		custom_tooltip = 1356_HRE_emperor_offered_french_dukes_vassalization_tt
+		set_global_flag = french_civil_war_emperor_offers_vassal_french_duke_flag
+		VLS = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		BUR = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		BLS = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		MNF = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		NRM = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		PIC = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		PBG = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		HAI = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		ART = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		RET = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		BUR = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		NEV = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		BER = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		POU = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		ORL = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		ANJ = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		BOU = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		AUV = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		FOZ = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		PRO = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		AVI = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		DAU = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		TOU = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		AMG = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		FOI = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		GUY = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		FLA = {
+			country_event = { 
+				id = fre_disaster_civil_war.3
+				days = 10
+			}
+		}
+		emperor = { #Ends chain 90 days later
+			country_event = {
+				id = fre_disaster_civil_war.7
+				days = 90
+			}
+		}
 	}
 	
 	option = { #Don't offer it.
 		name = fre_disaster_civil_war.4.b
 		ai_chance = { factor = 10 }
-		set_global_flag = emperor_declined_offer_to_french_dukes
+		emperor = {
+			country_event = {
+				id = fre_disaster_civil_war.7
+				days = 1
+			}
+		}
 	}
 }
 
-#Emperors event for acceptance
+#Emperor told of acceptance of Joining
 country_event = {
 	id = fre_disaster_civil_war.5
 	title = fre_disaster_civil_war.5.t
@@ -242,7 +383,7 @@ country_event = {
 	
 }
 
-#Emperors event for decline
+#Emperor told of French Minor Declining Offer
 country_event = {
 	id = fre_disaster_civil_war.6
 	title = fre_disaster_civil_war.6.t
@@ -253,7 +394,23 @@ country_event = {
 	
 	option = { #Boo!
 		name = fre_disaster_civil_war.6.a
-		add_legitimacy = -1
 	}
 	
+}
+
+country_event = { #Ends Civil War content
+	id = fre_disaster_civil_war.7
+	title = fre_disaster_civil_war.7.t
+	desc = fre_disaster_civil_war.7.desc
+	picture = HRE_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	option = {
+		name = fre_disaster_civil_war.7.a
+		clr_global_flag = french_civil_war_emperor_offers_vassal_french_duke_flag
+		clr_global_flag = emperor_declined_offer_to_french_dukes
+		set_global_flag = french_civil_war_end_flag
+	}
 }

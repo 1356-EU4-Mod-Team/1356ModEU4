@@ -1071,6 +1071,9 @@
  flaassyria.DESC5: "It appears more Assyrians are flocking to our banner, not only has two new regiments appeared but they bring with them a new province! Perhaps things are looking up for us after all."
  flaassyria.5.a: "We shall have our independence yet!"
  
+ fre_disaster_civil_war.7.t: "End of the French Civil War - Hidden Event"
+ fre_disaster_civil_war.desc: "Hidden Description"
+ fre_disaster_civil_war.7.a: "Hidden Response"
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
  eng_reinstate_duke_of_cornwall_decision_desc: "At one point the title 'Duke of Cornwall' was lost and our eldest son no longer held the title. Now that we are able to we should grant this title to our eldest son once more to both reward him and to gain more power ourselves!"
