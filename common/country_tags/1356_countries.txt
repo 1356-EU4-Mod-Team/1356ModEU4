@@ -127,6 +127,8 @@ SCN = "countries/Sican.txt"
 
 #Africa
 NRI ="countries/Nri.txt"
+ZBB = "countries/GreaterZimbabwe.txt"
+AKS = "countries/Aksum.txt"
 
 #Far East
 SRI = "countries/Srivijaya.txt"

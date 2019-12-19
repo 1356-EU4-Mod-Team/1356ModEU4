@@ -29,7 +29,9 @@ age_of_feudalism = {
 		}		
 						
 		obj_papal_controller = { 
-			allow = { religion = catholic }
+			allow = { 
+				religion = catholic
+			}
 			OR = {
 				is_papal_controller = yes
 				num_of_cardinals = 5
@@ -125,12 +127,19 @@ age_of_feudalism = {
 			}
 			num_of_unlocked_cults = 5
 	 	}	
-		obj_feudalism_zoroastrian_jewish_sikh = { 
+		obj_feudalism_zoroastrian_jewish_sikh = { #And misc heresies/minor converter religions
 			allow = {
 				OR = {
 					religion = zoroastrian
 					religion = sikhism
 					religion = jewish
+					religion = cathar
+					religion = fraticelli
+					religion = waldensian
+					religion = lollard
+					religion = bon_reformed
+					religion = manichean
+					religion = mazdaki
 				}
 			}
 			total_development = 125
@@ -235,6 +244,7 @@ age_of_feudalism = {
 		ab_gothic_cathedrals = { 
 			modifier = {
 				build_time = -0.25
+				build_cost = -0.15 
 			}
 			effect = {
 				custom_tooltip = ab_gothic_cathedrals_tt

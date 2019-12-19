@@ -995,7 +995,7 @@ LOT_ideas = { #Lotharingia ideas
 
 WOO_ideas = { #Walloon ideas
 	start = {
-		development_cost = -0.15
+		development_cost = -0.10
 		technology_cost = -0.05
 	}
 	
@@ -1008,28 +1008,28 @@ WOO_ideas = { #Walloon ideas
 	}
 	free = yes
 	
-	WOO_infantry_power = { 
-		infantry_power = 0.15
+	WOO_forts = {
+		defensiveness = 0.25
 	}
 	WOO_walloon_banks = {
-		interest = -0.5
+		interest = -0.15
 		build_cost = -0.10
 	}
 	WOO_low_countries_trade = { 
 		global_trade_power = 0.15
-		trade_efficiency = 0.1
 	}
-	WOO_stable_nation = { #We Finally rule ourselves!
-		global_unrest = -2
+	WOO_infantry_power = { 
+		infantry_power = 0.10
 	}
 	WOO_walloon_iron = { 
-		global_trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.10
+	}
+	WOO_stable_nation = { #We Finally rule ourselves!
+		tolerance_heretic = 3
+		papal_influence = 2
 	}
 	WOO_stern_army = { 
-		shock_damage_received = -0.15
-	}
-	WOO_forts = {
-		defensiveness = 0.25
+		diplomatic_reputation = 1 
 	}
 }
 
@@ -2589,6 +2589,44 @@ ZBB_Ideas = { #Submitted by "The Janitor", slight tweaks by CountFlandy
 	}
 	imperial_tax_organization = {
 		global_tax_modifier = 0.15
+	}
+}
+
+SYR_ideas = {
+	start = {
+		tolerance_heathen = 2
+		prestige_decay = -0.01	
+	}
+	
+	bonus = {
+		naval_maintenance_modifier = -0.2
+	}
+	
+	trigger = {
+		tag = SYR
+	}
+	free = yes
+	
+	damascus_steel = {
+		
+	}
+	arameans_and_phoenicians = {
+		
+	}
+	entrepot_of_pilgrims = {
+		
+	}
+	an_nasir_salah_ad_din = {
+		
+	}
+	birthplace_of_empire = {
+		
+	}
+	restore_the_overland_route_to_asia = {
+		
+	}
+	crossbreed_horses = {
+		
 	}
 
 }

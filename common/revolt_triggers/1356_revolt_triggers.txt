@@ -63,3 +63,11 @@ OCC = {
 #FRA = {
 #	NOT = { exists = FRD }
 #}
+
+AKS = {
+	is_core = AKS
+}
+
+ZBB = {
+	is_core = ZBB
+}

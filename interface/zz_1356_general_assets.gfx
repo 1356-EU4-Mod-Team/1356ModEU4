@@ -245,6 +245,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_feudal_generic_non_abrahamic_competent_ruler.dds"
 	}
 
+	spriteType = {
+		name = "GFX_obj_feudalism_orthodox_icons"
+		texturefile = "gfx/interface/ages/obj_feudalism_orthodox_icons.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_feudalism_coptic"
+		texturefile = "gfx/interface/ages/obj_feudalism_coptic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_feudalism_nestorian"
+		texturefile = "gfx/interface/ages/obj_feudalism_nestorian.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_feudalism_hussite"
+		texturefile = "gfx/interface/ages/obj_feudalism_hussite.dds"
+	}
+
 # Age of Feudalism Abilities
 	spriteType = {
 		name = "GFX_ab_allow_feudal_de_jure_law_f"
@@ -299,6 +319,41 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ab_feudalism_avignon_papacy"
 		texturefile = "gfx/interface/ages/ab_feudalism_avignon_papacy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_feudalism_institution_gain"
+		texturefile = "gfx/interface/ages/ab_feudalism_institution_gain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_gothic_cathedrals"
+		texturefile = "gfx/interface/ages/ab_gothic_cathedrals.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_feudalism_iron_fisted_rule"
+		texturefile = "gfx/interface/ages/ab_feudalism_iron_fisted_rule.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_feudalism_timurid_conquest"
+		texturefile = "gfx/interface/ages/ab_feudalism_timurid_conquest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_feudal_unique_sons_of_genghisid"
+		texturefile = "gfx/interface/ages/ab_feudal_unique_sons_of_genghisid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_feudal_celestial_mandate"
+		texturefile = "gfx/interface/ages/ab_feudal_celestial_mandate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_feudalism_bohemian_imperial_dominance"
+		texturefile = "gfx/interface/ages/ab_feudalism_bohemian_imperial_dominance.dds"
 	}
 
 # Age of Discovery Abilities

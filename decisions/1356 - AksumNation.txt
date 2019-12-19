@@ -1,0 +1,87 @@
+country_decisions = {
+
+#Expand on to be more than Nubia 2.0
+#Handle government change in a seperate event after reformation?
+	aksum_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_aksum_flag }
+			NOT = { tag = ZBB }
+			NOT = { tag = MAM }
+			NOT = { tag = EGY }
+			NOT = { tag = ARB }
+			NOT = { exists = AKS }
+			OR = { 
+				AND = {
+					culture_group = sudanese
+					NOT = { primary_culture = acholi }
+				}
+				AND = {
+					culture_group = cushitic
+					NOT = { primary_culture = somali }
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = { 
+			OR = {
+				province_id = 1234		# Qasr Ibrim
+				province_id = 2797		# Shendy
+				province_id = 1227		# Aksum
+				province_id = 2323		# Sahra An Nubyah
+				province_id = 1214		# Tajura
+				province_id = 2766		# Mendefera
+				province_id = 1213		# Shewa
+				province_id = 1215		# Tajura
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			total_development = 300
+			owns_core_province = 1234		# Qasr Ibrim
+			owns_core_province = 2797		# Shendy
+			owns_core_province = 1227		# Aksum
+			owns_core_province = 2323		# Sahra An Nubyah
+			owns_core_province = 1214		# Tajura
+			owns_core_province = 2766		# Mendefera
+			owns_core_province = 1213		# Shewa
+			owns_core_province = 1215		# Tajura
+		}
+		effect = {
+			change_tag = AKS
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			#if = {
+			#	limit = {
+			#		NOT = { primary_culture = nubian }
+			#	}
+			#	change_primary_culture = nubian
+			#}
+			set_country_flag = formed_aksum_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}
