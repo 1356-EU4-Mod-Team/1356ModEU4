@@ -385,3 +385,7 @@ pre_gunpowder_modifier = { #
 	fire_damage = 0.1
 	fire_damage_received = 0.1
 }
+
+1356_early_firearms_capture_modifier = {
+	shock_damage = 0.1 #Would do fire but that'd be broken af early game.
+}

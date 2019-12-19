@@ -321,7 +321,86 @@ country_event = { #Event to Boost Mercantilism in nations with Low Autonomy AKA 
 	}
 }
 
-#More boots for nations with a centralized Administration #One more event like the above?
+#Growing Urban Influence #####WIP#########
+country_event = { #Spread of Mercantilism ###UPDATE FOR 1.30####!!!!!
+	id = new_institution_events.31
+	title = new_institution_events.31.t
+	desc = new_institution_events.31.d
+	picture = CITY_VIEW_eventPicture
+
+	
+	trigger = {
+		NOT = { has_institution = mercantilism_institution }
+		has_institution = feudalism
+		NOT = { government = tribal }
+		any_owned_province = {
+			mercantilism_institution = 100
+		}
+		any_owned_province = {
+			is_capital = no
+			NOT = { mercantilism_institution = 50 }
+			development = 10
+			base_production = 2
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					development = 10
+					base_manpower = 2
+					is_capital = no
+					NOT = { mercantilism_institution = 50 }
+				}
+				set_province_flag = growing_mercantilism_institution
+			}
+		}
+	}
+
+	option = {
+		name = new_institution_events.31.b
+		random_owned_province = {
+			limit = {
+				has_province_flag = growing_mercantilism_institution
+			}
+			clr_province_flag = growing_mercantilism_institution
+			add_institution_embracement = {
+				value = 50
+				which = "mercantilism_institution"
+			}
+			add_base_production = -1
+			
+			if = {
+				limit = {
+					owner = {
+						has_estate = estate_burghers
+					}
+					NOT = { has_estate = estate_burghers }
+				}
+				set_estate = estate_burghers #This will not be 1.30 compatible
+			}
+		}
+	}
+	option = { #Decline free mercantilism institution
+		name = new_institution_events.31.a
+		add_horde_unity = 5
+		add_legitimacy = 5
+		add_republican_tradition = 2.5
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = growing_mercantilism_institution
+				}
+				clr_province_flag = growing_mercantilism_institution
+			}
+		}
+	}
+}
 
 province_event = { #Event to Boost Mercantilism in nations with paper provinces
 	id = new_institution_events.35
@@ -748,4 +827,173 @@ country_event = { #Gunpowder Spawn Event
 	}
 }
 
+country_event = { #Spreads gunpowder through hostile nations at war
+	id = new_institution_events.62
+	title = new_institution_events.62.t
+	desc = new_institution_events.62.d
+	
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		NOT = { has_institution = gunpowder_institution }
+		is_year = 1370
+		mil_tech = 4 #Hand Cannon
+		NOT = { government = tribal }
+		NOT = { government = native }
+		 any_enemy_country = { 
+			has_institution = gunpowder_institution 
+		}
+	}
+	mean_time_to_happen = {	
+		months = 2
+	}
+	option = { #We'll research them!
+		name = new_institution_events.62.a
+		random_owned_province = {
+			limit = {
+				NOT = { gunpowder_institution = 100 }
+			}
+			add_institution_embracement = {
+				which = gunpowder_institution
+				value = 100
+			}
+		}
+		add_manpower = -5
+	}
+	option = { #Use them now.
+		name = new_institution_events.62.b
+		add_country_modifier = { 
+			name = 1356_early_firearms_capture_modifier
+			duration = 1825 # 5 years is the intended value  
+		}
+	}
+}
 
+country_event = { #Sale of Gunpowder
+	id = new_institution_events.63
+	title = new_institution_events.63.t
+	desc = new_institution_events.63.d
+	
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_institution = gunpowder_institution
+		NOT = { has_country_flag = 1356_selling_institution_flag }
+		is_year = 1370
+		mil_tech = 4 #Hand Cannon
+		NOT = { government = tribal }
+		NOT = { government = native }
+		random_neighbor_country = { 
+			NOT = { has_institution = gunpowder_institution }
+			NOT = { has_country_flag = 1356_declined_to_buy_gunpowder_institution_flag }
+		}
+	}
+	mean_time_to_happen = {	
+		months = 36 # 3 years?
+	}
+	option = { #Sell it!
+		name = new_institution_events.63.a
+		random_neighbor_country = {
+			limit = {
+				NOT = { government = native }
+				NOT = { government = tribal }
+				NOT = { has_institution = gunpowder_institution }
+				NOT = { has_country_flag = 1356_declined_to_buy_gunpowder_institution_flag }
+			}
+			country_event = { 
+				id = new_institution_events.63
+				days = 30
+			}
+		}
+		set_country_flag = has_country_flag = 1356_selling_institution_flag
+	}
+	option = { #No, we will not.
+		name = new_institution_events.63.b
+		add_prestige = 5
+	}
+}
+
+country_event = { #Sale of Gunpowder
+	id = new_institution_events.64
+	title = new_institution_events.64.t
+	desc = new_institution_events.64.d
+	
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Buy it
+		name = new_institution_events.64.a
+		random_neighbor_country = {
+			limit = {
+				NOT = { government = native }
+				NOT = { government = tribal }
+				 has_institution = gunpowder_institution
+				 has_country_flag = 1356_selling_institution_flag
+			}
+			country_event = { 
+				id = new_institution_events.65
+				days = 30
+			}
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { gunpowder_institution = 100 }
+			}
+			add_institution_embracement = {
+				which = gunpowder_institution
+				value = 100
+			}
+		}
+		add_mil_power = -50
+
+	}
+	option = { #Over my cold dead body
+		name = new_institution_events.64.b
+		add_prestige = 5
+		set_country_flag = 1356_declined_to_buy_gunpowder_institution_flag
+		random_neighbor_country = {
+			limit = {
+				NOT = { government = native }
+				NOT = { government = tribal }
+				 has_institution = gunpowder_institution
+				 has_country_flag = 1356_selling_institution_flag
+			}
+			country_event = { 
+				id = new_institution_events.65
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = { #Sale of Gunpowder - Accepted
+	id = new_institution_events.65
+	title = new_institution_events.65.t
+	desc = new_institution_events.65.d
+	
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = new_institution_events.65.a
+		add_mil_power = 50
+		clr_country_flag = 1356_selling_institution_flag	
+	}
+}
+
+country_event = { #Sale of Gunpowder - Declined
+	id = new_institution_events.66
+	title = new_institution_events.66.t
+	desc = new_institution_events.66.d
+	
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = new_institution_events.66.a
+		clr_country_flag = 1356_selling_institution_flag	
+	}
+}

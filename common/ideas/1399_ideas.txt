@@ -2594,39 +2594,40 @@ ZBB_Ideas = { #Submitted by "The Janitor", slight tweaks by CountFlandy
 
 SYR_ideas = {
 	start = {
-		tolerance_heathen = 2
-		prestige_decay = -0.01	
+		global_tax_modifier = 0.1
+		legitimacy = 1 	
 	}
 	
 	bonus = {
-		naval_maintenance_modifier = -0.2
+		discipline = 0.05
 	}
-	
 	trigger = {
 		tag = SYR
 	}
 	free = yes
 	
 	damascus_steel = {
-		
+		shock_damage = 0.2
 	}
 	arameans_and_phoenicians = {
-		
+		prestige = 1
 	}
 	entrepot_of_pilgrims = {
-		
+		global_heretic_missionary_strength = 0.03 
+		trade_efficiency = 0.05
 	}
 	an_nasir_salah_ad_din = {
-		
+		leader_land_manuever = 1 
+		free_leader_pool = 1
 	}
 	birthplace_of_empire = {
-		
+		 	core_creation = -0.15
 	}
 	restore_the_overland_route_to_asia = {
-		
+		global_trade_power = 0.1 
+		improve_relation_modifier = 0.1
 	}
 	crossbreed_horses = {
-		
+		cavalry_power = 0.15
 	}
-
 }

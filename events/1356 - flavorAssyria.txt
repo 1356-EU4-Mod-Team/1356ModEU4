@@ -85,6 +85,11 @@ country_event = {
 			who = ASY
 			casus_belli = cb_insult
 		}
+		hidden_effect = {
+			every_enemy_country = {
+				country_event = { id = flaassyria.20 days = 1 }
+			}
+		}
 		switch_tag = ASY
 		#There has to be a better way to condense this....
 		europe = { discover_country = ASY }
@@ -341,4 +346,30 @@ country_event = { #Lets more provinces flip to an Assyria in Open Revolt #This e
 	}
 }
 
-#Would be nice to have events for nations to support this nation with manpower, alliance, etc....
+country_event = { #Creates alliance with rivals of enemy
+	id = flaassyria.20
+	title = "flaassyria.20.t"
+	desc = "flaassyria.20.desc"
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flaassyria.20.a"
+		create_alliance = ASY
+		set_ai_attitude = {
+			who = ASY
+			attitude = attitude_friendly
+		}
+		ASY = {
+			add_opinion = {
+				who = ROOT
+				modifier = supported_independence
+			}
+		}
+	}
+	option = {
+		name = "flaassyria.20.b"
+		add_prestige = -10
+	}
+}

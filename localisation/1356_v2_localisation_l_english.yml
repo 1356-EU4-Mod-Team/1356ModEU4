@@ -231,7 +231,13 @@
  desc_nestorian_send_monks_to_establish_monasteries: "There are not enough Monasteries in the world that provide locals the teachings of the Nestorian Faith! If we were to establish additional Monasteries in neighboring towns as our existing ones perhaps we can raise the number of followers quicker."
  desc_nestorian_encourage_warriors_in_defense_of_the_faith: "The Nestorian Faithful are scattered across Asia. While many Kingdoms accept us for who we are there are many that would threaten our entire existance and wipe us off the map. We can not allow this to occur! If we train some men who are in perfect shape to be warriors from a young age we can have guards of our small communities and churches while still maintaining our current lives."
  desc_nestorian_legitimize_government: "There has yet to be a King in Europe or Asia who has embraced the Nestorian beliefs. If we wish to stand strong against those around us we must prove to our people that our [Root.Monarch.GetTitle] is legitimate!"
- 
+ finno_ugric: "Finno-Ugric"
+ mordvin: "Mordvin"
+ udmurt: "Udmurt"
+ avar_culture: "Avar"
+ mari_culture: "Mari"
+ bolghar: "Bolghar"
+ uralic: "Permic"
  
  #Policies
  early_game_policy_mil: "Mandatory Service"
@@ -1074,6 +1080,39 @@
  fre_disaster_civil_war.7.t: "End of the French Civil War - Hidden Event"
  fre_disaster_civil_war.7.desc: "Hidden Description"
  fre_disaster_civil_war.7.a: "Hidden Response"
+ 
+ flaassyria.20.t: "Assyrian revolters call on the rivals of their enemy"
+ flaassyria.20.desc: "The Assyrians in Mesopotamia have risen up in open revolt due to circumstances surrounding their rule and treatment. While we may or may not care about their peoples as a whole they are now currently at war with one of our rivals, and so it would be in our best interest to support them any way we are able to!"
+ flaassyria.20.a: "We stand behind our new Assyrian allies!"
+ flaassyria.20.b: "This is not in our best interests."
+ new_institution_events.31.t: "Spread of Mercantilism"
+ new_institution_events.31.d: "The spread of Mercantilism has taken off quite quickly, with many nations adopting new policies to reflect the newfound interest in Mercantilism. We have an interesting situation where we can retask certain peasants to aid the Merchant guilds in writing up new trade agreements, policies, and the like in order to fully benefit from this. Obviously this means some of our peasants will be tasked off production of trade goods and naval production, but it could be a beneficial trade off."
+ new_institution_events.31.a: "Yes, this is a good trade-off."
+ new_institution_events.31.b: "No, we can not make this sacrifice."
+ 
+ new_institution_events.62.t: "Captured Gunpowder Firearms"
+ new_institution_events.62.d: "In recent combat with our enemy our soldiers have managed to return with some gunpowder based weapons! While we've been working hard at understanding how these foreign weapons work it would greatly benefit progress if we were able to examine these weapons back in our capital! On the other hand we could use this as a chance to equip our soldiers with this advanced tech, even if its only for a short time."
+ new_institution_events.62.a: "We need to research these firearms!"
+ new_institution_events.62.b: "We need to use these firearms now!"
+ 
+ new_institution_events.63.t: "The Sale of Gunpowder"
+ new_institution_events.63.d: "It appears some of our less fortunate neighbors have yet to embrace the newest technoligical advancement 'Gunpowder' we could make quite a large profit by selling gunpowder technology to them for research purposes, however we would be aiding a potential enemy in the process."
+ new_institution_events.63.a: "Yes, let us offer them a generous deal."
+ new_institution_events.63.b: "Over my cold dead body."
+ 
+ new_institution_events.64.t: "The Sale of Gunpowder"
+ new_institution_events.64.d: "We've been offered the chance to buy gunpowder from a neighbor of ours for a small fee, the deal itself seems rather generous. Some of our nobility however do not agree with recieving help from potential rivals and our court is split on what to do."
+ new_institution_events.64.a: "A very generous offer, we accept."
+ new_institution_events.64.b: "Over my cold dead body"
+ 
+ new_institution_events.65.t: "The Sale of Gunpowder"
+ new_institution_events.65.d: "It appears that the nation that we offered to sell gunpowder to has accepted our offer. We've recieved their payment already!"
+ new_institution_events.65.a: "This shall greatly benefit us!"
+
+ new_institution_events.66.t: "The Sale of Gunpowder"
+ new_institution_events.66.d: "It appears the nation that has declined our generous offer to sell gunpowder to them for a small fee."
+ new_institution_events.66.a: "Curses!"
+ 
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
  eng_reinstate_duke_of_cornwall_decision_desc: "At one point the title 'Duke of Cornwall' was lost and our eldest son no longer held the title. Now that we are able to we should grant this title to our eldest son once more to both reward him and to gain more power ourselves!"
@@ -1272,6 +1311,7 @@
  dlh_centrialize_the_empire_after_shah_ai_desc: "hidden ai decision"
  dlh_centrialize_the_empire_ai_title: "hidden ai decision"
  dlh_centrialize_the_empire_ai_desc: "hidden ai decision"
+  
  
  #Modifiers/Tooltips/Great Projects
  crusader_accepting_crusaders_decision_tooltip: "We send word to the Papacy and other pious Catholics in Europe that we need aid to further clense our borders of hethens!"
@@ -1488,6 +1528,8 @@
  nestorian_antioch_desc: "We are in control of the City of Antioch, a city of importance to the entire Christian faith."
  nestorian_kashgar: "Nestorian Conquest of Kashgar"
  nestorian_kashgar_desc: "We are in control of the City of Kashgar, one of the only locations in the world where Nestorians have held a majority."
+ 
+ 1356_early_firearms_capture_modifier: "Early Firearms Captured"
  
  #Missions
   
