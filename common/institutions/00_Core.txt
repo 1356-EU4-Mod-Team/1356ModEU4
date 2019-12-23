@@ -300,8 +300,8 @@ feudalism = { #Heavily Edited by #1356
 	#on_start = institution_events.1
 
 	can_embrace = {
-		owner = { NOT = { government = tribal } }
-		#always = yes
+		#owner = { NOT = { government = tribal } }
+		always = yes
 	}
 
 	embracement_speed = { 

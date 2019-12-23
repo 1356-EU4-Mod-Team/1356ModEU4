@@ -1113,6 +1113,21 @@
  new_institution_events.66.d: "It appears the nation that has declined our generous offer to sell gunpowder to them for a small fee."
  new_institution_events.66.a: "Curses!"
  
+ africantribal.1.t: "The Spread of Feudalism"
+ africantribal.1.d: "Our many subjects have enabled our [ROOT.Monarch.GetTitle] [ROOT.Monarch.GetName] to draw up plans for what the Christians and Muslims in the distant realms call 'Feudalism'. 'Feudalism' allows for a more centralized nature of government where the tribes are closer and function more as one than independently, and as such we could begin to adopt certain traditions the Christians and Muslims hold."
+ africantribal.1.a: "These new ways are better!"
+ africantribal.1.b: "The old ways are best!"
+ 
+ africantribal.2.t: "The Spread of Feudalism"
+ africantribal.2.d: "Our friendly relations with our neighbors have brought us many benefits. While they may be "civilized" we still retain our old tribal ways. Our [Root.Monarch.GetTitle] [Root.Monarch.GetName] has decided it may be in our best interests to adopt some parts of their ways of life, as [Root.Monarch.SheHe] believes it will aid us in the future to retain our independence for our peoples as a whole."
+ africantribal.2.a: "These new ways are better!"
+ africantribal.2.b: "The old ways are best!"
+ 
+ africantribal.3.t: "Feudalism?"
+ africantribal.3.d: "Our [ROOT.Monarch.GetTitle] [ROOT.Monarch.GetName] has a grand idea that will change how our nation functions at the core! [Root.Monarch.GetSheHe] decrees that long gone are the ways of tribalism, gathering around the village elder, and our decentralized nature. All of the tribes under us shall begin to work as one in order to further the interests of the greater good. This is only the first of their many reforms they would like to pass. The tribe has gathered around [Root.Monarch.GetName] for a grand speach they're delivering about their plans. After [Root.Monarch.GetName] is done the masses have decided..."
+ africantribal.3.a: "These new ways are better!"
+ africantribal.3.b: "The old ways are best!"
+ 
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
  eng_reinstate_duke_of_cornwall_decision_desc: "At one point the title 'Duke of Cornwall' was lost and our eldest son no longer held the title. Now that we are able to we should grant this title to our eldest son once more to both reward him and to gain more power ourselves!"
@@ -1312,6 +1327,13 @@
  dlh_centrialize_the_empire_ai_title: "hidden ai decision"
  dlh_centrialize_the_empire_ai_desc: "hidden ai decision"
   
+ tribal_feudalism_spread_vassal_decision_title: "The Spread of Feudalism - Subjects"
+ tribal_feudalism_spread_vassal_decision_desc: "Our many subjects have enabled our [ROOT.Monarch.GetTitle] [ROOT.Monarch.GetName] to draw up plans for what the Christians and Muslims in the distant realms call 'Feudalism'. 'Feudalism' allows for a more centralized nature of government where the tribes are closer and function more as one than independently, and as such we could begin to adopt certain traditions the Christians and Muslims hold."
+ tribal_feudalism_spread_rng_decision_title: "The Spread of Feudalism - RNG"
+ tribal_feudalism_spread_rng_decision_desc: "Our [ROOT.Monarch.GetTitle] [ROOT.Monarch.GetName] has a grand idea that will change how our nation functions at the core! [Root.Monarch.GetSheHe] decrees that long gone are the ways of tribalism, gathering around the village elder, and our decentralized nature. All of the tribes under us shall begin to work as one in order to further the interests of the greater good. This is only the first of their many reforms they would like to pass. The tribe has gathered around [Root.Monarch.GetName] for a grand speach they're delivering about their plans. After [Root.Monarch.GetName] is done the masses have decided..."
+ tribal_feudalism_spread_border_decision_title: "The Spread of Feudalism - Borders"
+ tribal_feudalism_spread_border_decision_desc: "Our friendly relations with our neighbors have brought us many benefits. While they may be "civilized" we still retain our old tribal ways. Our [Root.Monarch.GetTitle] [Root.Monarch.GetName] has decided it may be in our best interests to adopt some parts of their ways of life, as [Root.Monarch.SheHe] believes it will aid us in the future to retain our independence for our peoples as a whole."
+ 
  
  #Modifiers/Tooltips/Great Projects
  crusader_accepting_crusaders_decision_tooltip: "We send word to the Papacy and other pious Catholics in Europe that we need aid to further clense our borders of hethens!"
@@ -1530,6 +1552,10 @@
  nestorian_kashgar_desc: "We are in control of the City of Kashgar, one of the only locations in the world where Nestorians have held a majority."
  
  1356_early_firearms_capture_modifier: "Early Firearms Captured"
+ 
+ 1356_tribal_feudal_spread_rng_tt: "This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 150 years without modifiers."
+ 1356_tribal_feudal_spread_border_tt: "This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 250 months."
+ 1356_tribal_feudal_spread_vassal_tt: "This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 100 months."
  
  #Missions
   

@@ -3,16 +3,18 @@
 
 owner = HUN
 controller = HUN 
-culture = hungarian
-religion = catholic
+culture = cuman
+religion = tengri_pagan_reformed
 capital = "Bacs"
 trade_goods = livestock
 hre = no
-base_tax = 2
-base_production = 2
-base_manpower = 1
+base_tax = 3
+base_production = 3
+base_manpower = 2
 is_city = yes
-add_core = HUN
+#add_core = HUN
+add_core = CUM
+add_local_autonomy = 100
 
 discovered_by = western
 discovered_by = eastern
@@ -25,8 +27,30 @@ discovered_by = GLH
 discovered_by = AST
 discovered_by = QAS
 
+1356.12.24  = { 
+	owner = HUN controller = HUN add_core = HUN remove_core = CUM
+	religion = catholic
+	culture = hungarian
+	base_tax = 2
+	base_production = 2
+	base_manpower = 1
+} #BT In
+
+1356.12.26 = {
+	owner = HUN
+	controller = HUN
+	add_core = CUM
+	remove_core = HUN
+	culture = cuman
+	religion = tengri_pagan_reformed
+	base_tax = 3
+	base_production = 3
+	base_manpower = 2
+} #BT Out
+
 1514.1.1  = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Rebel peasant troops led by Gheorghe Doja
 1514.6.1  = { revolt = {} controller = HUN } # Estimated
+#1518.1.1  = { revolt = {} controller = CUM } # Estimated #Formerly HUN
 1526.8.30 = {	owner = HAB
 		controller = HAB
 		add_core = HAB 	
@@ -49,12 +73,18 @@ discovered_by = QAS
 1598.1.1  = { revolt = {} controller = TUR }
 1685.1.1  = {	controller = HAB
 	    } # Conquered/liberated by Charles of Lorraine, the Ottoman Turks are driven out of Hungary
-1699.1.26 = {	owner = HAB
-		controller = HAB
-		add_core = HAB
-		remove_core = TUR
-	    } # Treaty of Karlowitz
+1699.1.26 = { #1356	
+	#owner = CUM #Formerly HAB #1356
+	#controller = CUM #1356 #Added this
+	add_core = CUM #Formerly HAB #1356
+	remove_core = TUR
+} # Treaty of Karlowitz
 1738.1.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Uprising against the imperial authority
 1739.1.1  = { revolt = {} controller = HAB }
+1745.1.1 = { #1356
+	#owner = CUM
+	#controller = CUM
+	add_core = CUM
+} #Rights to Cumans granted again by Maria Thresa
 1769.1.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Anti Habsburg uprisings
 1770.1.1  = { revolt = {} controller = HAB } # Estimated

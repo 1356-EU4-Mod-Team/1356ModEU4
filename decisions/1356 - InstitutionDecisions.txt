@@ -451,4 +451,115 @@ country_decisions = {
 			factor = 5
 		}
 	}
+	tribal_feudalism_spread_vassal_decision = {
+		major = yes
+		potential = {
+			ai = no
+			government = tribal
+			NOT = { government = steppe_horde }
+			NOT = { government = great_mongol_state_reform }
+			NOT = { religion = mesoamerican_religion }
+			NOT = { religion = nahuatl }
+			NOT = { religion = inti }
+			NOT = { has_institution = feudalism }
+		}
+		allow = { 
+			government = tribal
+			NOT = { government = steppe_horde }
+			NOT = { government = great_mongol_state_reform }
+			NOT = { religion = mesoamerican_religion }
+			NOT = { religion = nahuatl }
+			NOT = { religion = inti }
+			NOT = { has_institution = feudalism }
+			OR = {
+				vassal = 4 #WIP number
+				personal_union = 2
+				tributary_state = 8
+			}
+			NOT = { adm = 2 }
+			NOT = { dip = 2 }
+			NOT = { mil = 2 }
+		}
+		effect = { 
+			custom_tooltip = 1356_tribal_feudal_spread_vassal_tt 
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	tribal_feudalism_spread_border_decision = {
+		major = yes
+		potential = {
+			ai = no
+			government = tribal
+			NOT = { government = steppe_horde }
+			NOT = { government = great_mongol_state_reform }
+			NOT = { religion = mesoamerican_religion }
+			NOT = { religion = nahuatl }
+			NOT = { religion = inti }
+			NOT = { has_institution = feudalism }
+		}
+		allow = { 
+			government = tribal
+			NOT = { government = steppe_horde }
+			NOT = { government = great_mongol_state_reform }
+			NOT = { religion = mesoamerican_religion }
+			NOT = { religion = nahuatl }
+			NOT = { religion = inti }
+			NOT = { has_institution = feudalism }
+			OR = {
+				any_neighbor_country = { 
+					limit = { alliance_with = ROOT }
+					has_institution = feudalism 	
+				}
+				any_neighbor_country = { 
+					has_opinion = {
+						who = PREV
+						value = 100
+					}
+					has_institution = feudalism 
+				} 
+			}
+		}
+		effect = { 
+			custom_tooltip = 1356_tribal_feudal_spread_border_tt 
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	tribal_feudalism_spread_rng_decision = {
+		major = yes
+		potential = {
+			ai = no
+			government = tribal
+			NOT = { government = steppe_horde }
+			NOT = { government = great_mongol_state_reform }
+			NOT = { religion = mesoamerican_religion }
+			NOT = { religion = nahuatl }
+			NOT = { religion = inti }
+			NOT = { has_institution = feudalism }
+		}
+		allow = { 
+			government = tribal
+			NOT = { government = steppe_horde }
+			NOT = { government = great_mongol_state_reform }
+			NOT = { religion = mesoamerican_religion }
+			NOT = { religion = nahuatl }
+			NOT = { religion = inti }
+			NOT = { has_institution = feudalism }
+			adm = 5
+			dip = 5
+			mil = 5
+		}
+		effect = { 
+			custom_tooltip = 1356_tribal_feudal_spread_rng_tt 
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

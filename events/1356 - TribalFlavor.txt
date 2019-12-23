@@ -1,0 +1,357 @@
+namespace = africantribal
+
+#Create a decision to notify the players when these requirements are met?
+
+country_event = { #Feudalism spread - Vassals (Easy)
+	id = africantribal.1
+	title = africantribal.1.t
+	desc = africantribal.1.d
+	picture = ECONOMY_eventPicture #Get a better image
+	
+	trigger = {
+		government = tribal
+		NOT = { government = steppe_horde }
+		NOT = { government = great_mongol_state_reform }
+		NOT = { religion = mesoamerican_religion }
+		NOT = { religion = nahuatl }
+		NOT = { religion = inti }
+		NOT = { has_institution = feudalism }
+		OR = {
+			vassal = 4 #WIP number
+			personal_union = 2
+			tributary_state = 8
+		}
+		NOT = { adm = 2 }
+		NOT = { dip = 2 }
+		NOT = { mil = 2 }
+	}
+	
+	mean_time_to_happen = { #Dont forget the modifiers to this
+		months = 100
+		modifier = { #Faster for Christians/Muslims
+			factor = 1.2
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+			}
+		}
+		modifier = { #Slightly faster with additional subjects
+			factor = 1.2
+			OR = {
+				vassal = 5 #WIP number
+				personal_union = 3
+				tributary_state = 10
+			}
+		}
+		modifier = { #Slightly more fast with additional subjects
+			factor = 1.5
+			OR = {
+				vassal = 6 #WIP number
+				personal_union = 4
+				tributary_state = 12
+			}
+		}
+		modifier = { #2X faster for double subjects
+			factor = 2
+			OR = {
+				vassal = 8 #WIP number
+				personal_union = 4
+				tributary_state = 14
+			}
+		}
+		modifier = { #Faster for good/great rulers
+			factor = 1.5
+			adm = 5
+			dip = 5
+			mil = 5
+		}
+		modifier = { #Slower at war
+			factor = 0.1
+				is_at_war = yes
+		}
+		modifier = { #Slower with rebelious subjects
+			factor = 0.7
+			any_subject_country = {
+				liberty_desire = 51 
+			}
+		}
+		modifier = { #Faster if allied to neighbor with feudalism
+			factor = 1.2
+			any_neighbor_country = { 
+				alliance_with = PREV
+			}
+			has_institution = feudalism 			
+		}
+	}
+		
+	option = { #Yes, these new ways are better
+		name = africantribal.1.a
+		all_owned_province = {
+			limit = {
+				NOT = { feudalism = 90 }
+			}
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+		add_country_modifier = { #+2 revolt risk for 5 years
+			name = isolate_rebels
+			duration = 1825 #5 years
+		}
+		add_legitimacy = -25
+	}
+	
+	option = { #The old ways are best!
+		name = africantribal.1.b
+		trigger = { #Dont be an AI or AI with bad ruler traits
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					OR = {
+						ruler_has_personality = craven_personality
+						ruler_has_personality = naive_personality
+						ruler_has_personality = drunkard_personality
+						ruler_has_personality = malevolent_personality
+					}
+				}
+			}
+		}
+		add_legitimacy = 15
+		add_stability = 1 
+	}
+}
+
+country_event = { #Feudalism spread - Near Feudals (Normal)
+	id = africantribal.2
+	title = africantribal.2.t
+	desc = africantribal.2.d
+	picture = ECONOMY_eventPicture 
+	
+	trigger = { #Double check this works?
+		government = tribal
+		NOT = { government = steppe_horde }
+		NOT = { government = great_mongol_state_reform }
+		NOT = { religion = mesoamerican_religion }
+		NOT = { religion = nahuatl }
+		NOT = { religion = inti }
+		NOT = { has_institution = feudalism }
+		
+		OR = {
+			any_neighbor_country = { 
+				limit = { alliance_with = ROOT }
+				has_institution = feudalism 	
+			}
+			any_neighbor_country = { 
+				has_opinion = {
+					who = PREV
+					value = 100
+				}
+				has_institution = feudalism 
+			} 
+		}
+	}
+	
+	mean_time_to_happen = { 
+		months = 250
+		modifier = { #Faster for Christians/Muslims
+			factor = 1.2
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+			}
+		}
+		modifier = { #Slightly faster with additional subjects
+			factor = 1.2
+			OR = {
+				vassal = 4
+				personal_union = 2
+				tributary_state = 8
+			}
+		}
+		modifier = { #Faster for good/great rulers
+			factor = 1.5
+			adm = 5
+			dip = 5
+			mil = 5
+		}
+		modifier = { #Slower at war
+			factor = 0.1
+				is_at_war = yes
+		}
+		modifier = { #Slower with rebelious subjects
+			factor = 0.9
+			any_subject_country = {
+				liberty_desire = 51 
+			}
+		}
+		modifier = { #Faster if friendly with neighbor with Feudalism
+			factor = 1.2
+			any_neighbor_country = { 
+				has_opinion = {
+					who = PREV
+					value = 100
+				}
+				has_institution = feudalism 
+			} 
+		}
+		modifier = { #Faster if allied to neighbor with feudalism
+			factor = 1.5
+			any_neighbor_country = { 
+				limit = { alliance_with = PREV }
+				has_institution = feudalism 		
+			}			
+		}
+	}
+		
+	option = { #Yes, these new ways are better
+		name = africantribal.2.a
+		all_owned_province = {
+			limit = {
+				NOT = { feudalism = 90 }
+			}
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+		add_country_modifier = { #+2 revolt risk for 10 years
+			name = isolate_rebels
+			duration = 3600 #10 years
+		}
+		add_legitimacy = -25
+	}
+	
+	option = { #The old ways are best!
+		name = africantribal.2.b
+		trigger = { #Dont be an AI or AI with bad ruler traits
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					OR = {
+						ruler_has_personality = craven_personality
+						ruler_has_personality = naive_personality
+						ruler_has_personality = drunkard_personality
+						ruler_has_personality = malevolent_personality
+					}
+				}
+			}
+		}
+		add_legitimacy = 15
+		add_stability = 1 
+	}
+}
+
+country_event = { #Feudalism spread - Random Event Chain (Hard)
+	id = africantribal.3
+	title = africantribal.3.t
+	desc = africantribal.3.d
+	picture = ECONOMY_eventPicture 
+	
+	trigger = { #Allow Natives?
+		government = tribal
+		NOT = { government = native }
+		NOT = { government = steppe_horde }
+		NOT = { government = great_mongol_state_reform }
+		NOT = { has_institution = feudalism }
+		NOT = { religion = mesoamerican_religion }
+		NOT = { religion = nahuatl }
+		NOT = { religion = inti }
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+	
+	mean_time_to_happen = { 
+		months = 1800 #150 years
+		modifier = { #Faster for Christians/Muslims
+			factor = 1.2
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+			}
+		}
+		modifier = { #Slightly faster with additional subjects
+			factor = 1.2
+			OR = {
+				vassal = 6
+				personal_union = 4
+				tributary_state = 12
+			}
+		}
+		modifier = { #Faster for good/great rulers
+			factor = 1.5
+			adm = 5
+			dip = 5
+			mil = 5
+		}
+		modifier = { #Slower at war
+			factor = 0.1
+				is_at_war = yes
+		}
+		modifier = { #Slower with rebelious subjects
+			factor = 0.9
+			any_subject_country = {
+				liberty_desire = 51 
+			}
+		}
+		modifier = { #Faster if friendly with neighbor with Feudalism
+			factor = 1.2
+			any_neighbor_country = { 
+				has_opinion = {
+					who = PREV
+					value = 100
+				}
+				has_institution = feudalism 
+			} 
+		}
+		modifier = { #Faster if allied to neighbor with feudalism
+			factor = 1.5
+			any_neighbor_country = { 
+				alliance_with = PREV
+			}
+			has_institution = feudalism 			
+		}
+	}
+		
+	option = { #Yes, these new ways are better
+		name = africantribal.3.a
+		all_owned_province = {
+			limit = {
+				NOT = { feudalism = 90 }
+			}
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+		add_country_modifier = { #+2 revolt risk, +25% more infantry/cav cost for 20 years
+			name = obsolete_forces
+			duration = 7200 #20 years
+		}
+		add_legitimacy = -25
+	}
+	
+	option = { #The old ways are best!
+		name = africantribal.3.b
+		trigger = { #Dont be an AI or AI with bad ruler traits
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					OR = {
+						ruler_has_personality = craven_personality
+						ruler_has_personality = naive_personality
+						ruler_has_personality = drunkard_personality
+						ruler_has_personality = malevolent_personality
+					}
+				}
+			}
+		}
+		add_legitimacy = 15
+		add_stability = 1
+		add_doom = -15
+	}
+}
