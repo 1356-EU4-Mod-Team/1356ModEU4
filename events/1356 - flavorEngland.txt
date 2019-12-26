@@ -821,10 +821,11 @@ country_event = { #Cornwall goes to the eldest son of the monarch
 			}
 		}
 		government = monarchy
+		233 = { NOT = { has_province_modifier = duchy_of_cornwall_modifier_province } }
 		has_heir = yes
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 	}
 	option = { #Hand over the Duchy of Cornwall
 		name = flaeng.30.a
@@ -979,7 +980,7 @@ country_event = { #English cultured nations losing longbows
 	trigger = {
 		has_country_modifier = english_longbowmen_event_modifier
 		year = 1550
-		primary_culture = english
+		#primary_culture = english
 	}
 	
 	mean_time_to_happen = {

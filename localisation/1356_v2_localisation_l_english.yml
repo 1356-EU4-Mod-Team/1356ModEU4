@@ -1553,9 +1553,9 @@
  
  1356_early_firearms_capture_modifier: "Early Firearms Captured"
  
- 1356_tribal_feudal_spread_rng_tt: "This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 150 years without modifiers."
- 1356_tribal_feudal_spread_border_tt: "This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 250 months."
- 1356_tribal_feudal_spread_vassal_tt: "This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 100 months."
+ 1356_tribal_feudal_spread_rng_tt: "!!THIS HAS NO EFFECT!! This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 150 years without modifiers."
+ 1356_tribal_feudal_spread_border_tt: "!!THIS HAS NO EFFECT!! This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 250 months."
+ 1356_tribal_feudal_spread_vassal_tt: "!!THIS HAS NO EFFECT!! This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 100 months."
  
  #Missions
   

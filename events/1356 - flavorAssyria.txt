@@ -191,38 +191,28 @@ country_event = { #Comes before the previous event
 		NOT = { exists = ASY }
 		NOT = { primary_culture = assyrian }
 		NOT = { ruler_culture = assyrian }
+		num_of_owned_provinces_with = {
+			value = 1
+			culture = assyrian
+		}
 		OR = {
-			AND = {
-				mashriq_region = {
-					limit = {
-						culture = assyrian
-					}
-					owner = { corruption = 15 }
+			mashriq_region = {
+				limit = {
+					culture = assyrian
 				}
+				owner = { corruption = 15 }
 			}
-			AND = {
-				mashriq_region = {
-					limit = {
-						culture = assyrian
-					}
-					unrest = 15
+			mashriq_region = {
+				limit = {
+					culture = assyrian
 				}
+				unrest = 15
 			}
-			#AND = { #Commented out due to this not working, somehow NOT = value = 5 shows up as a zero
-			#	near_east_superregion = {
-			#		num_of_owned_provinces_with = {
-			#			 NOT = { value = 5 } #Reads as 0?????
-			#			culture = assyrian
-			#		}
-			#	}
-			#}
-			AND = {
-				mashriq_region = {
-					limit = {
-						culture = assyrian
-					}
-					owner = { overextension_percentage = 1 }
+			mashriq_region = {
+				limit = {
+					culture = assyrian
 				}
+				owner = { overextension_percentage = 1 }
 			}
 		}
 	}
