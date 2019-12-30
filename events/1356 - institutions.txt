@@ -836,6 +836,8 @@ country_event = { #Spreads gunpowder through hostile nations at war
 	
 	trigger = {
 		NOT = { has_institution = gunpowder_institution }
+		NOT = { has_country_flag = institution_gunpowder_captured_research_flag }
+		NOT = { has_country_flag = institution_gunpowder_captured_use_flag }
 		is_year = 1370
 		mil_tech = 4 #Hand Cannon
 		NOT = { government = tribal }
@@ -859,6 +861,7 @@ country_event = { #Spreads gunpowder through hostile nations at war
 			}
 		}
 		add_manpower = -5
+		set_country_flag = institution_gunpowder_captured_research_flag
 	}
 	option = { #Use them now.
 		name = new_institution_events.62.b
@@ -866,6 +869,7 @@ country_event = { #Spreads gunpowder through hostile nations at war
 			name = 1356_early_firearms_capture_modifier
 			duration = 1825 # 5 years is the intended value  
 		}
+		set_country_flag = institution_gunpowder_captured_use_flag
 	}
 }
 
@@ -889,7 +893,7 @@ country_event = { #Sale of Gunpowder
 		}
 	}
 	mean_time_to_happen = {	
-		months = 36 # 3 years?
+		months = 60 # 5 years?
 	}
 	option = { #Sell it!
 		name = new_institution_events.63.a

@@ -953,7 +953,7 @@ country_event = { #English cultured nations getting longbows
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
-		NOT = { year = 1550 }
+		NOT = { is_year = 1550 }
 		NOT = { has_country_modifier = english_longbowmen_event_modifier }
 		primary_culture = english
 	}
@@ -979,7 +979,7 @@ country_event = { #English cultured nations losing longbows
 	
 	trigger = {
 		has_country_modifier = english_longbowmen_event_modifier
-		year = 1550
+		is_year = 1550
 		#primary_culture = english
 	}
 	

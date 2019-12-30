@@ -21,9 +21,9 @@ country_event = { #Feudalism spread - Vassals (Easy)
 			personal_union = 2
 			tributary_state = 8
 		}
-		NOT = { adm = 2 }
-		NOT = { dip = 2 }
-		NOT = { mil = 2 }
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 	
 	mean_time_to_happen = { #Dont forget the modifiers to this
