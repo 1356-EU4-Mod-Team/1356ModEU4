@@ -21,6 +21,6 @@ tags={
 	"Trade"
 }
 name="1356 - V2 Early ALPHA"
-supported_version="1.29.3"
 picture="1356_loadscreen.jpg"
+supported_version="1.29.3"
 remote_file_id="1896965304"

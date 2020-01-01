@@ -565,6 +565,10 @@ exploration_ideas = {
 		OR = {
 			has_country_flag = age_of_discovery_decision_flag
 			NOT = { current_age = age_of_feudalism }
+			AND = {
+				ai = yes
+				is_year = 1399
+			}
 		}
 	}
 
@@ -867,6 +871,10 @@ expansion_ideas = {
 		OR = {
 			NOT = { current_age = age_of_feudalism }
 			has_country_flag = unlock_expansion_ideas_decision
+			AND = {
+				ai = yes
+				is_year = 1375
+			}
 		}
 	}
 
