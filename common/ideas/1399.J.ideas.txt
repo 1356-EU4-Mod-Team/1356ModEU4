@@ -2793,3 +2793,51 @@ YR_ideas = {
 	}
 	crossbreed_horses = {
 		cavalry_power = 0.15
+	}
+}
+
+SWB_ideas = {
+	start = {
+		shock_damage_received = -0.1
+		global_tax_modifier = 0.1
+	}
+	
+	bonus = {
+		development_cost = -0.1
+	}
+	
+	trigger = {
+		tag = SWB
+	}
+	free = yes
+	
+	berufen_zu_herrschen = {
+		legitimacy = 1
+		republican_tradition = 0.2
+		devotion = 1
+		imperial_authority = 0.1
+	}
+
+	kluge_hochzeiten = {
+		heir_chance = 0.75
+	}
+	burg_trifels = {
+		defensiveness = 0.2
+	}
+
+	hausmachtspolitik = {
+		cavalry_power = 0.15
+		ae_impact = -0.1
+	}
+	unio_regni_ad_imperium = {
+		 diplomatic_reputation = 1
+	}
+	
+	stupor_mundi = {
+		core_creation = -0.1
+		possible_policy = 1	
+	}
+	staufer_architektur = {
+		build_cost = -0.1
+	}
+}
