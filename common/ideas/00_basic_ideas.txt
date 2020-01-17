@@ -83,7 +83,6 @@ aristocracy_ideas = {
 	trigger = {
 		OR = {
 			has_government_attribute = enables_aristocratic_idea_group
-			government = theocracy
 			government = tribal
 			NOT = { government = feudal_theocracy }
 		}
@@ -565,10 +564,6 @@ exploration_ideas = {
 		OR = {
 			has_country_flag = age_of_discovery_decision_flag
 			NOT = { current_age = age_of_feudalism }
-			AND = {
-				ai = yes
-				is_year = 1375
-			}
 		}
 	}
 
@@ -871,10 +866,6 @@ expansion_ideas = {
 		OR = {
 			NOT = { current_age = age_of_feudalism }
 			has_country_flag = unlock_expansion_ideas_decision
-			AND = {
-				ai = yes
-				is_year = 1375
-			}
 		}
 	}
 
@@ -1149,3 +1140,195 @@ naval_ideas = {
 		}
 	}
 }
+
+
+permanent_war_ideas = {
+	category = ADM
+
+	bonus = {
+		land_maintenance_modifier = -0.10
+	}
+	
+	endless_forts = {
+		fort_maintenance_modifier = -0.25
+	}
+	staff_headquarters = {
+		stability_cost_modifier = -0.15
+		advisor_cost = -0.1
+	}
+	army_infrastructure = {
+		war_taxes_cost_modifier = -0.75
+		land_maintenance_modifier = -0.05
+	}
+	tenacious_people = {
+		war_exhaustion = -0.05
+	}
+	wartime_smuggling = {
+		global_tax_modifier = 0.10
+	}
+	volunteers = {
+		global_regiment_cost = -0.1
+		reinforce_speed = 0.33
+	}
+	national_pride = {
+		global_manpower_modifier = 0.25
+	}
+	
+
+	ai_will_do = {
+		factor = 0.4
+	}
+}
+
+imperial_ideas = {
+	category = ADM
+
+	bonus = {
+		envoy_travel_time = 0.25
+		movement_speed = 0.1
+	}
+	
+	courtly_education = {
+		dip_advisor_cost = -0.25
+	}
+	land_reforms = {
+		development_cost = -0.05
+	}
+	robust_state_administration = {
+		yearly_corruption = -0.2
+	}
+	client_states = { 
+		vassal_income = 0.35
+		diplomatic_reputation = 2
+
+	}
+	imperial_centralization = {
+		global_autonomy = -0.05
+		max_absolutism = 5
+	}
+	complex_bureacracy = {
+		free_adm_policy = 1
+	}
+	imperial_engineering = {
+		build_cost = -0.1
+	}
+	
+
+	ai_will_do = {
+		factor = 0.3
+		modifier = {
+			factor = 1.5
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 2
+			total_development = 800
+		}	}
+	
+}
+
+marcher_lord_ideas = {
+	category = MIL
+
+	bonus = {
+		vassal_forcelimit_bonus = 1
+	}
+	
+	feudal_levies = {
+		infantry_cost = -0.15
+	}
+	honor_and_discipline = {
+		shock_damage_received = -0.1
+	}
+	noble_marriage_efforts = {
+		diplomatic_upkeep = 1
+	}
+	loyal_suzerainty = {
+		liberty_desire_from_subject_development = -0.1
+
+	}
+	imperial_fortifications = {
+		diplomatic_reputation = 1
+		fort_maintenance_modifier = -0.1
+	}
+	crown_supply_reforms = {
+		land_maintenance_modifier = -0.05
+	}
+	officer_training = {
+		shock_damage = 0.1
+	}
+}
+
+royal_education_ideas = {
+	category = DIP
+
+	bonus = {
+		possible_policy = 1
+	}
+	
+	laws_of_inheritance = {
+		heir_chance = 0.75
+	}
+	pragmatic_inheritance = {
+		may_recruit_female_generals
+    }
+	royal_communications = {
+		power_projection_from_insults = 0.5
+	}
+	ways_of_war = {
+		army_tradition_decay = -0.005
+	}
+	proper_education = {
+		monarch_admin_power = 1
+		harmonization_speed = 0.1
+	}
+	importance_of_public_works = {
+		development_cost = -0.05
+	}
+	
+	art_of_the_deal = {
+		unjustified_demands = -0.25
+	}
+	ai_will_do = {
+		factor = 0.4
+	}
+}
+
+
+grand_court_ideas = {
+	category = DIP
+
+	bonus = {
+		monarch_diplomatic_power = 1
+	}
+venerated_state_rituals = {
+	diplomatic_reputation = 1
+	prestige = 0.5
+}
+grand_viziers = {
+	advisor_cost = -0.10
+}
+
+permanent_diplomacy = {
+	diplomatic_upkeep = 1
+}
+courtly_tolerance = {
+	religious_unity = 0.15
+}
+artists_and_mathematicians = {
+	idea_cost = -0.05
+}
+noble_pride = {
+	free_leader_pool = 1
+}
+
+pride_of_subjects = {
+	global_unrest = -1
+}
+ai_will_do = {
+	factor = 0.85
+	}
+}
+
+
+

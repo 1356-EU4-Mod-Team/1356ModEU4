@@ -1289,9 +1289,7 @@ BYZ_ideas = {
 	}
 	free = yes
 	
-	regulations_for_mercenaries = {
-		merc_maintenance_modifier = -0.15
-	}
+	
 	repopulation_of_countryside = {
 		global_trade_goods_size_modifier = 0.05
 		global_manpower_modifier = 0.10
@@ -1310,6 +1308,9 @@ BYZ_ideas = {
 	}
 	ecumenical_patriarch = {
 		global_missionary_strength = 0.03
+	}
+	regulations_for_mercenaries = {
+		merc_maintenance_modifier = -0.15
 	}
 }
 
@@ -1741,6 +1742,10 @@ ETH_ideas = {
 	}
 	free = yes		#will be added at load.
 	
+	
+	eth_reformed_armies = {
+		infantry_power = 0.1
+	}
 	solomonid_claim = {
 		prestige = 1
 	}
@@ -1759,9 +1764,7 @@ ETH_ideas = {
 	eth_expansionist_policy = {
 		core_creation = -0.10
 	}
-	eth_reformed_armies = {
-		infantry_power = 0.1
-	}
+	
 }
 
 
@@ -1875,6 +1878,7 @@ SAX_ideas = {
 	}
 	the_zwinger = {
 		diplomatic_reputation = 1
+		imperial_authority = 0.1
 	}
 	wittenberg_university = {
 	 	tolerance_heretic = 3
@@ -1894,12 +1898,12 @@ SAX_ideas = {
 
 LIT_ideas = {
 	start = {
-		shock_damage = 0.1
-		global_unrest = -2
+		shock_damage_received = -0.1
+		no_religion_penalty = yes
 	}
 	
 	bonus = {
-		no_religion_penalty = yes
+		global_unrest = -2
 	}
 	
 	trigger = {
@@ -1908,31 +1912,30 @@ LIT_ideas = {
 	free = yes		#will be added at load.
 	
 	lithuanian_renaissance = {
-		technology_cost = -0.075
+		technology_cost = -0.05
 		innovativeness_gain = 0.5
 	}	
 	warlord_dukes = {
 		leader_land_shock = 1
-		global_manpower_modifier = 0.05
+		global_manpower_modifier = 0.15
+		
 	}
 	statutes_of_lithuania = {
 		years_of_nationalism = -5
-		core_creation = -0.20
 	}
+	lithuanian_hussars = {
+		cavalry_power = 0.25
+
 	auksine_laisve = {
 		stability_cost_modifier = -0.1
 	}
 	magdeburg_laws = {
-		global_tax_modifier = 0.05
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	magnate_estates = {
 		production_efficiency = 0.1
 	}
-	lithuanian_hussars = {
-		cavalry_power = 0.30
-		cav_to_inf_ratio = 0.1
-	}
+		}
 }
 
 
@@ -3217,7 +3220,7 @@ MDI_ideas = {
 		leader_naval_manuever = 1
 	}
 	mdi_east_african_gold_trade = {
-		global_trade_power = 0.1
+		global_trade_power = 0.15
 	}
 	city_of_mogadishu = {
 		development_cost = -0.1
@@ -3834,12 +3837,13 @@ KRA_ideas = {
 
 AJU_ideas = {
 	start = {
-		build_cost = -0.1
+		global_trade_goods_size_modifier = 0.15
 		global_missionary_strength = 0.01
 	}
 
 	bonus = {
-		land_morale = 0.1
+		naval_forcelimit_modifier = 0.2
+		global_sailors_modifier = 0.2
 	}
 	
 	trigger = {
@@ -3847,27 +3851,30 @@ AJU_ideas = {
 	}
 	free = yes		#will be added at load.
 	
+	
 	aju_maritime_enterprise = {
-		global_ship_cost = -0.1
-	}
-	istunka_tournament = {
-		global_unrest = -1
-	}
-	gareen_imams = {
-		missionaries = 1
-	}
-	aju_muslim_migrations = {
-		advisor_pool = 1
+		trade_efficiency = 0.15
 	}
 	aju_hydraulic_empire = {
 		development_cost = -0.1
-		stability_cost_modifier = -0.1
 	}
 	aju_expelling_the_infidel = {
-		leader_land_shock = 1
+		discipline = 0.05
+		naval_morale = 0.1
+	}
+	istunka_tournament = {
+		infantry_power = 0.1
+	}
+	gareen_imams = {
+		missionaries = 1
+		monthly_piety = 0.002
+		}
+	
+	aju_muslim_migrations = {
+		advisor_cost = -0.1
 	}
 	aju_received_assistance = {
-		global_institution_spread = 0.1
+		leader_land_fire = 1
 	}
 }
 
@@ -5473,7 +5480,7 @@ LXA_ideas = {
 
 KHI_ideas = {
 	start = {
-		land_attrition = -0.1
+		land_attrition = -0.15
 		cavalry_cost = -0.1
 	}
 
@@ -5673,7 +5680,7 @@ jerusalem_ideas = {
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.3
 	}
 	
 	trigger = {
@@ -5685,9 +5692,11 @@ jerusalem_ideas = {
 	crown_of_thorns = {
 		prestige = 1
 		legitimacy = 1
+		devotion = 0.5
+		republican_tradition = 0.2
 	}
 	latin_patriarch = {
-		papal_influence = 2
+		papal_influence = 5
 	}
 	frontier_state = {
 		discipline = 0.05
@@ -5696,7 +5705,7 @@ jerusalem_ideas = {
 		missionaries = 1
 	}
 	crusader_aristocracy = {
-		leader_land_shock = 1
+		cavalry_power = 0.25
 	}
 	crusader_castles = {
 		defensiveness = 0.25
