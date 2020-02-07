@@ -1126,7 +1126,7 @@ marcher_lord_ideas = {
 	crown_supply_reforms = {
 		land_maintenance_modifier = -0.05
 	}
-	officer_training = {
+	marcher_officer_training = {
 		shock_damage = 0.05
 	}
 }
@@ -1135,34 +1135,38 @@ royal_education_ideas = {
 	category = DIP
 
 	bonus = {
-		free_dip_policy = 1
+		free_policy = 1
+		yearly_absolutism = 0.5
 	}
 	
 	laws_of_inheritance = {
 		heir_chance = 0.75
+		reelection_cost = -0.05
 	}
-
 	royal_communications = {
 		power_projection_from_insults = 0.5
 	}
-
 	pragmatic_inheritance = {
 		may_recruit_female_generals = yes
     }
-	
 	ways_of_war = {
 		army_tradition_decay = -0.01
 	}
 	proper_education = {
-		monarch_admin_power = 1
-		harmonization_speed = 0.1
+		legitimacy = 2
+		republican_tradition = 0.2
+		devotion = 2
+		horde_unity = 1
+		meritocracy = 1
 	}
 	importance_of_public_works = {
 		development_cost = -0.10
 	}
 	
-	art_of_the_deal = {
-		unjustified_demands = -0.5
+	the_royal_turn = {
+		prestige = 1
+		improve_relation_modifier = 0.25
+
 	}
 	ai_will_do = {
 		factor = 0.4
@@ -1189,11 +1193,12 @@ venerated_state_rituals = {
 	diplomatic_reputation = 1
 }
 courtly_tolerance = {
-	religious_unity = 0.15
+	religious_unity = 0.20
 }
 
 artists_and_mathematicians = {
-	idea_cost = -0.05
+	envoy_travel_time = -0.25
+	diplomats = 1
 }
 noble_pride = {
 	monthly_splendor = 2
@@ -1260,12 +1265,9 @@ permanent_war_ideas = {
 	}
 	
 	endless_forts = {
-		fort_maintenance_modifier = -0.25
+		fort_maintenance_modifier = -0.2
 	}
-	staff_headquarters = {
-		stability_cost_modifier = -0.15
-		advisor_cost = -0.1
-	}
+	
 	army_infrastructure = {
 		war_taxes_cost_modifier = -0.5
 		land_maintenance_modifier = -0.05
@@ -1273,11 +1275,15 @@ permanent_war_ideas = {
 	tenacious_people = {
 		war_exhaustion = -0.05
 	}
+	staff_headquarters = {
+		stability_cost_modifier = -0.2
+		advisor_cost = -0.1
+	}
 	national_pride = {
 		global_manpower_modifier = 0.25
 	}
 	wartime_smuggling = {
-		global_tax_modifier = 0.10
+		global_tax_modifier = 0.15
 	}
 	volunteers = {
 		global_regiment_cost = -0.1
@@ -1294,12 +1300,12 @@ imperial_ideas = {
 	category = ADM
 
 	bonus = {
-		global_missionary_strength = 0.01
-		movement_speed = 0.1
+		monarch_admin_power = 1
+		harmonization_speed = 0.1
 	}
 	
 	courtly_education = {
-		dip_advisor_cost = -0.20
+		adm_advisor_cost = -0.20
 	}
 
 	imperial_centralization = {
@@ -1307,24 +1313,30 @@ imperial_ideas = {
 		max_absolutism = 10
 	}
 
-	robust_state_administration = {
-		yearly_corruption = -0.2
+	imperial_engineering = {
+		build_cost = -0.1
 	}
 
-	client_states = { 
+	robust_state_administration = {
+		max_states = 5
+		trade_company_investment_cost = -0.1
+	}
+
+	1356_client_states = { 
 		vassal_income = 0.35
 		diplomatic_reputation = 2
 
 	}
-	land_reforms = {
-		development_cost = -0.1
+	
+	imperial_land_grants = {
+		province_warscore_cost = -0.1
+		warscore_cost_vs_other_religion = -0.1
 	}
-	compel_problem = {
+
+	1356_compel_problem = {
 		free_adm_policy = 1
 	}
-	imperial_engineering = {
-		build_cost = -0.1
-	}
+	
 	
 
 	ai_will_do = {
@@ -1340,3 +1352,44 @@ imperial_ideas = {
 	
 }
 
+military_doctrine_ideas = {
+	category = MIL
+
+	bonus = {
+		possible_mil_policy = 1
+		free_mil_policy = 1
+	}
+
+	uniform_marshaling_points = {
+		global_regiment_recruit_speed = -0.2
+	}
+	
+	military_mentorship = {
+		army_tradition_from_battle = 0.5
+	}
+
+	academy_of_officers = {
+		leader_cost = -0.1
+	}
+
+	holding_the_line = {
+		infantry_shock = 0.2
+	}
+
+	1356_advisory_committee = {
+		mil_advisor_cost = -0.2
+	}
+
+	standardized_calibres = { 
+		backrow_artillery_damage = 0.1
+		artillery_cost = -0.1
+	}
+
+	unified_conscription_laws = {
+		manpower_recovery_speed = 0.2
+	}
+
+	ai_will_do = {
+		factor = 1
+		}		
+}
