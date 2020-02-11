@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = elective_feudal_monarchy_reform
+primary_culture = jamtland_culture
+add_accepted_culture = norwegian
+#add_accepted_culture = norn_culture
+#add_accepted_culture = icelandic
+religion = catholic
+technology_group = western
+capital = 10 #Jamtland

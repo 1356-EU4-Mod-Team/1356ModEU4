@@ -1,6 +1,10 @@
 #Scandinavia
 ORK = "countries/Orkney.txt"
 SKN = "countries/Skane.txt"
+GTL = "countries/Gotaland.txt"
+JMT = "countries/Jamtland.txt"
+TRO = "countries/Trodelag.txt"
+JUT = "countries/Jutland.txt"
 
 #Balkans
 DOB = "countries/Dobruja.txt"
@@ -18,6 +22,7 @@ LNC = "countries/Lancaster.txt"
 CUM = "countries/Cumania.txt"
 KOG = "countries/Konigsberg.txt"
 LUS = "countries/Lusatia.txt"
+OPR = "countries/OldPrussia.txt"
 
 #France 
 PBG = "countries/Palatinate of Burgundy.txt"

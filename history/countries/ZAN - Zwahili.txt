@@ -8,6 +8,16 @@ capital = 1196	# Kilwa
 add_piety = -0.25
 religious_school = shafii_school
 
+1330.1.1 = { #Dynasty ruled since 1277. Dont have a name. Fictional Person.
+	monarch = {
+		name = "Ali"
+		dynasty = "al-Mawahib"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
 1442.1.1 = { #Suleimans Uncle
 	monarch = {
 		name = "Ismâ'îl"

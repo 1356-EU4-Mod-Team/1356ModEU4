@@ -4,12 +4,10 @@ technology_group = western
 unit_type = western
 primary_culture = swedish
 religion = catholic
-add_accepted_culture = finnish
-add_accepted_culture = geat_culture
-historical_friend = NOR
-historical_rival = NOV
-capital = 1 # Stockholm
-national_focus = MIL
+capital = 3 #Kalmar
+
+
+#If you want to get Technical, all the below Rulers are historically correct since Swedens King held this Kingdom as well.
 
 1336.7.21 = { # coronation, before that was regency council. PU with Norway till 1343.8.15
 	monarch = {

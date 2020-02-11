@@ -238,6 +238,10 @@
  mari_culture: "Mari"
  bolghar: "Bolghar"
  uralic: "Permic"
+ norn_culture: "Norn"
+ gutnish_culture: "Gutnish"
+ geat_culture: "Geatish"
+ jamatland_culture: "Trondish"
  
  #Policies
  early_game_policy_mil: "Mandatory Service"
@@ -1128,6 +1132,17 @@
  africantribal.3.a: "These new ways are better!"
  africantribal.3.b: "The old ways are best!"
  
+ 
+ flavor_cum.t.1: "The Cumans declare independence!"
+ flavor_cum.d.1: "The Cumans of the Bacs province have risen up and declared their intention to be a completly autonomous region of our nation. They state that their unique heritage and background are not governable by our current laws, and would serve better as an autonomous region of our nation that offers more troops in exchange for said autonomy. Historically the Cumans clashed with the Hungarian Nobility often throughout history, and they never managed to see eye to eye."
+ flavor_cum.1.a: "The Cumans would serve well as a March."
+ flavor_cum.1.b: "They are nothing more than Subjects to the [Root.Monarch.GetTitle]!"
+ 
+ goldenbullculture.t.1: "The Winds of Change"
+ goldenbullculture.d.1: "As of recent many nobility, and the literate in our country have been looking back at the past of our people, and have been wishing that again they could ride on horseback day in and day out. Long gone are those times, but many elders in our society still recall those memories. While they may be in the past, there has been speak from the elders that we have strayed too far from our ancestry. That we are more deserving than to live in the shadow of another peoples! These ideas have taken hold in the younger generations now, and many are clamoring for us to once again call ourselves 'Avars'."
+ goldenbullculture.1.a: "We must accept these changes."
+ goldenbullculture.1.b: "We must stay civilized and resist!"
+ goldenbullculture.1.c: "These changes do not go far enough! Back into the saddle!"
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
  eng_reinstate_duke_of_cornwall_decision_desc: "At one point the title 'Duke of Cornwall' was lost and our eldest son no longer held the title. Now that we are able to we should grant this title to our eldest son once more to both reward him and to gain more power ourselves!"
@@ -1847,7 +1862,7 @@
  
  CUM_ideas: "Cuman Ideas"
  CUM_ideas_start: "Cuman Traditions"
- CUM_ideas_bonus: Cuman Ambitions
+ CUM_ideas_bonus: "Cuman Ambitions"
  CUM_idea_1: "Saddlebags"
  CUM_idea_1_desc: "The Speed at which our cavalry move enable us to cross more land at a faster pace, which in turn allows us to take even more loot with us back to our homes. If we were to add Saddlebags to our riders we'd be able to carry even more loot back home than we could previously!"
  CUM_idea_2: "Fearsome Past"

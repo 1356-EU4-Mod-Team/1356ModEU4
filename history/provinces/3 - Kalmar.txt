@@ -2,9 +2,10 @@
 # Changes: revolts
 
 add_core = SWE
+add_core = GTL #1356
 owner = SWE
 controller = SWE
-culture = swedish
+culture = geat_culture
 religion = catholic
 hre = no
 base_tax = 2 
@@ -35,6 +36,7 @@ discovered_by = ottoman
 1520.3.6   = { owner = DAN controller = DAN } # The Council accept Christian II as King
 1523.6.4   = { owner = SWE controller = SWE } # Kalmar falls to Sweden
 1527.6.1   = { religion = protestant}
+1550.1.1 = {culture = swedish } #1356 #could be more specific, but at some point it just became a dialect of Swedish
 1598.8.1   = { controller = PLC } # Sigismund tries to reconquer his crown
 1599.5.12  = { controller = SWE } # Duke Karl get it back
 1611.8.3   = { controller = DAN } # The War of Kalmar-Captured by Christian IV

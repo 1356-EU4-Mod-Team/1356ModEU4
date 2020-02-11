@@ -1,1 +1,83 @@
-namespace = 1356culture
+namespace = goldenbullculture
+
+country_event = { #Avaria unique culture spawn
+	id = goldenbullculture.1
+	title = "goldenbullculture.t.1"
+	desc = "goldenbullculture.d.1"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AVR
+		is_at_war = no
+		num_of_owned_provinces_with = {
+			value = 5
+			is_core = AVR
+			culture = ROOT
+			is_overseas = no
+		}
+	}
+	mean_time_to_happen = {
+		months = 400 #40 years
+	}
+	immediate = {
+		hidden_effect = {
+			AVR = {
+				every_core_province = { #Anything the nation that has cored that is their current primary culture
+					limit = {
+						is_core = AVR
+						culture = dagestani
+					}
+					change_culture = avar_culture
+				}
+			}
+		}
+	}
+	option = { #We must accept the changing tides
+		name = "goldenbullculture.1.a"
+		add_prestige = -5
+		add_dip_power = 10
+		change_primary_culture = avar_culture
+	}
+	option = { #No, I will resist!
+		name = "goldenbullculture.1.b"
+		trigger = {
+			ai = no
+		}
+		AVR = {
+			every_core_province = { #Anything the nation that has cored that is their current primary culture
+				limit = {
+					is_core = AVR
+					culture = avar_culture
+				}
+				change_culture = dagestani
+				add_unrest = 5
+			}
+		}
+	}
+	option = { #This is not enough! We must look back to our ancestors for guidence!
+		name = "goldenbullculture.1.c"
+		trigger = {
+			ai = no
+		}
+		AVR = {
+			every_core_province = { #Anything the nation that has cored that is their current primary culture
+				limit = {
+					is_core = AVR
+					culture = avar_culture
+				}
+				change_religion = tengri_pagan_reformed
+			}
+		}
+		add_prestige = -20
+		add_mil_power = 10
+		change_primary_culture = avar_culture
+		change_religion = tengri_pagan_reformed
+		change_technology_group = nomad_group
+		change_unit_type = nomad_group
+		change_government = tribal
+		add_government_reform = steppe_horde
+	}
+}
+	
