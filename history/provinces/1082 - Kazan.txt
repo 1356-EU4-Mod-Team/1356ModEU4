@@ -1,8 +1,8 @@
 # 1082 - Kazan (1356)
 # Changes: GOL
 
-owner = GLH
-controller = GLH
+owner = KAZ
+controller = KAZ
 capital = "Kazan"
 culture = kazani
 religion = sunni
@@ -13,7 +13,6 @@ base_production = 6
 base_manpower = 3
 is_city = yes
 fort_15th = yes
-add_core = GLH
 add_core = KAZ
 
 discovered_by = eastern
@@ -26,7 +25,7 @@ center_of_trade = 2
 
 1438.1.1  = {	owner = KAZ
 		controller = KAZ
-		remove_core = GLH
+		remove_core = WHI
 	    } # Khanate of Kazan
 1552.10.2 = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
 1553.1.1  = { culture = russian religion = orthodox } # Most Tatars were christianized or killed

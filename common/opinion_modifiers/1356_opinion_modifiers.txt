@@ -78,3 +78,24 @@ guanche_refused_crusade = {
 	opinion = -75
 	yearly_decay = 3
 }
+
+supported_us_castile = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+supported_us_castile_england = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+supported_us_trastamara = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+supported_us_trastamara_france = {
+	opinion = 50
+	yearly_decay = 1
+}
+

@@ -1,8 +1,8 @@
 # 2349 - Kizil-Su (1356)
 # Changes: TRS
 
-owner = KHI
-controller = KHI
+owner = RAD
+controller = RAD
 culture = turkmeni
 religion = zoroastrian
 capital = "Kizil-Su"
@@ -12,6 +12,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 #is_city = no
+add_core = RAD
 add_core = KHI
 
 

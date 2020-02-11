@@ -1,127 +1,106 @@
-# GLHden Horde Tributaries (not Caucasus)
+# WHIden Horde Tributaries (not Caucasus)
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = RSO
-	start_date = 1356.12.26 #1355.1.1
+	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = MOS
-	start_date = 1356.12.26 #1355.1.1
+	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = TVE
-	start_date = 1356.12.26 #1355.1.1
+	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = NZH
-	start_date = 1356.12.26 #1355.1.1
+	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = SMO
-	start_date = 1356.12.26 #1355.1.1
+	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
+	second = BLO
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
 	second = YAR
-	start_date = 1356.12.26 #1355.1.1
+	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = OKA
-	start_date = 1356.12.26 #1355.1.1
+	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = MRM
-	start_date = 1356.12.26 #1355.1.1
+	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = GLH
-	second = NOV
-	start_date = 1356.12.26 #1355.1.1
-	end_date = 1380.9.8
-}
+#dependency = {
+#	subject_type = "tributary_state"
+#	first = WHI
+#	second = NOV
+#	start_date = 1355.1.1
+#	end_date = 1380.9.8
+#}
 
 # Lithuania-Tver Connection
-alliance = {
-	first = LIT
-	second = TVE
-	start_date = 1356.12.26 #1350.1.1
-	end_date = 1377.5.29 
-}
+#alliance = {
+#	first = LIT
+#	second = TVE
+#	start_date = 1350.1.1
+#	end_date = 1377.5.29 
+#}
 
 # Novgorod alliance
 alliance = {
 	first = NOV
 	second = PSK
-	start_date = 1356.12.26 #1355.1.1
+	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
 
-# Moskovite alliances
-alliance = {
-	first = MOS
-	second = PSK
-	start_date = 1356.12.26 #1355.1.1
-	end_date = 1380.9.8
-}
-
-alliance = {
-	first = MOS
-	second = SMO
-	start_date = 1356.12.26 #1355.1.1
-	end_date = 1380.9.8
-}
-
-alliance = {
-	first = MOS
-	second = BLO
-	start_date = 1356.12.26 #1355.1.1
-	end_date = 1380.9.8
-}
-
-alliance = {
-	first = MOS
-	second = YAR
-	start_date = 1356.12.26 #1355.1.1
-	end_date = 1380.9.8
-}
-
-alliance = {
-	first = MOS
-	second = RSO
-	start_date = 1356.12.26 #1355.1.1
-	end_date = 1380.9.8
-}
+#alliance = {
+#	first = MOS
+#	second = BLO
+#	start_date = 1355.1.1
+#	end_date = 1380.9.8
+#}
 
 # Moskovite vassal - Battle of Kulikovo
 vassal = {
@@ -176,12 +155,13 @@ vassal = {
 	end_date = 1440.1.1
 }
 
-# Ryazanian Anti-Moskovite Alliance
-alliance = {
-	first = RYA
-	second = GLH
-	start_date = 1356.12.26 # 1356.1.1
-	end_date = 1380.9.8
+# Ryazanian Anti-Moskovite Alliance ## Changed to be a White Horde Tribute
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = RYA
+	start_date = 1356.1.1
+	end_date = 1372.9.8
 }
 
 # Muscovy and Crimea
@@ -190,12 +170,4 @@ alliance = {
 	second = CRI
 	start_date = 1480.1.1
 	end_date = 1503.4.1
-}
-#Novgorod and Ingria
-march = {
-	first = NOV
-	second = ING
-	#start_date = 1333.1.1 #Historical, though its set to 1356 for balance.
-	start_date = 1356.1.1
-	end_date = 1478.1.15
 }

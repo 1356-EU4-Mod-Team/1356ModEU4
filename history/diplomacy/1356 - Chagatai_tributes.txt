@@ -1,0 +1,50 @@
+#Chagatai Tributes
+dependency = {
+	subject_type = "tributary_state"
+	first = CHG
+	second = AFG
+	start_date = 1353.1.1
+	end_date = 1375.9.8
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHG
+	second = KOK
+	start_date = 1353.1.1
+	end_date = 1375.9.8
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHG
+	second = LDK
+	start_date = 1353.1.1
+	end_date = 1375.9.8
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHG
+	second = KSH
+	start_date = 1353.1.1
+	end_date = 1375.9.8
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHG
+	second = KGR
+	start_date = 1353.1.1
+	end_date = 1375.9.8
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHG
+	second = GUG
+	start_date = 1353.1.1
+	end_date = 1375.9.8
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHG
+	second = KHI
+	start_date = 1353.1.1
+	end_date = 1375.9.8
+}

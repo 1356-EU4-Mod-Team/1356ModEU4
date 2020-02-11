@@ -1,0 +1,24 @@
+declarewar = {
+	condition = {
+		potential = {
+		}
+		allow = {
+			NOT = {
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = member_of_hansa_op
+					}
+				}
+			}
+			NOT = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = member_of_hansa_op
+					}
+				}
+			}
+		}
+	}
+}

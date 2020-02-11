@@ -1,8 +1,8 @@
 # 1967 - Khujand (1356)
 # Changes: CHG/TRS
 
-owner = CHG
-controller = CHG
+owner = TRS
+controller = TRS
 culture = uzbehk
 religion = sunni
 capital = "Khujand"
@@ -13,7 +13,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 3
 is_city = yes
-add_core = CHG
+add_core = TRS
 add_core = KOK
 
 discovered_by = KAS

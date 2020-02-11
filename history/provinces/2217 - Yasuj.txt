@@ -1,8 +1,8 @@
 # 2217 - Yasuj (1356)
 # Changes: TIM/religion
 
-owner = LRI
-controller = LRI
+owner = BSR
+controller = BSR
 culture = luri
 religion = shiite
 capital = "Yasuj"
@@ -12,6 +12,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
+add_core = BSR
 add_core = LRI
 
 discovered_by = muslim

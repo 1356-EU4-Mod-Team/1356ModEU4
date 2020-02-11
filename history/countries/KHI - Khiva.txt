@@ -5,7 +5,7 @@ religion = sunni
 primary_culture = turkmeni
 historical_rival = SHY
 historical_rival = BUK
-capital = 2349	# Kizil-Su
+capital = 439	# Mangyshlak
 religious_school = hanafi_school
 
 # Choresm Safid Dynasty
@@ -14,11 +14,11 @@ religious_school = hanafi_school
 	monarch = {
 		name = "Aq Sufii"
 		dynasty = "Sufid"
-		adm = 2
+		adm = 3
 		dip = 2
 		mil = 2
 	}
-	add_piety = 0.25
+	add_piety = 0.65
 }
 
 1361.1.1 = {

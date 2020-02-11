@@ -5,6 +5,14 @@ on_startup = {
 		flastartupevents.3
 		flastartupevents.4
 		flastartupevents.5
+		#hansa.1
+		#delhi_empire.101
+		#sikandar.66
+		#southern_india.101 #Vij Madurai conflict
+		serbian_flavour.999 #Ottoman Event to buff Heir
+		rus_independence.4
+		WarTwoPetersFlavor.1
+		WarTwoPetersFlavor.2
 	}
 	if = {
 		limit = { tag = SWB }

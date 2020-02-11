@@ -4,7 +4,7 @@ primary_culture = siberian
 religion = tengri_pagan_reformed
 technology_group = nomad_group
 capital = 1075	# Chimgi-Tura
-historical_friend = WHI
+historical_friend = BLU
 
 1350.1.1 = {
 	monarch = {

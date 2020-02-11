@@ -1,7 +1,7 @@
 #466 - Sarai
 
-owner = GLH
-controller = GLH
+owner = WHI
+controller = WHI
 culture = astrakhani
 religion = sunni
 capital = "Sarai"
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 5
 is_city = yes
-add_core = GLH
+add_core = WHI
 add_core = AST
 
 
@@ -23,7 +23,7 @@ discovered_by = nomad_group
 extra_cost = 8
 center_of_trade = 1
 
-1438.1.1  = { owner = GOL controller = GOL remove_core = GLH add_core = GOL} # Golden Horde Completly collapses
+1438.1.1  = { owner = GOL controller = GOL remove_core = WHI add_core = GOL} # Golden Horde Completly collapses
 1459.1.1 = { owner = AST controller = AST remove_core = GOL }
 1556.6.2 = { owner = RUS controller = RUS add_core = RUS remove_core = AST } # Russians acquire Volga after fall of Astrakhan
 1600.1.1 = { culture = russian religion = orthodox }

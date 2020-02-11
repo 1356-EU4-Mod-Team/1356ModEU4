@@ -1,19 +1,18 @@
 # 2306 - Mush (1356)
 # Changes: ARM
-
-owner = AKK
-controller = AKK
+owner = BTL
+controller = BTL
 culture = armenian
 religion = coptic
 capital = "Mus"
 trade_goods = wool
 hre = no
 base_tax = 3 
+
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = AKK
-add_core = ARM
+add_core = BTL
 
 discovered_by = east_african
 discovered_by = western
@@ -21,7 +20,6 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
-
 1399.1.1  = { owner = TIM controller = TIM add_core = TIM }
 1405.2.19 = { owner = AKK controller = AKK add_core = AKK } # The Ak Koyunlu
 1453.1.1  = { discovered_by = western }

@@ -1,8 +1,8 @@
 # 2367 - Lower Yik (1356)
 # Changes: GOL
 
-owner = GLH
-controller = GLH
+owner = WHI
+controller = WHI
 culture = nogaybak
 religion = sunni
 capital = "Kalmyk"
@@ -13,7 +13,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = GLH
+add_core = WHI
 add_core = NOG
 
 discovered_by = muslim
@@ -21,7 +21,7 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
-1391.7.1 = { owner = NOG controller = NOG remove_core = GLH }
+1391.7.1 = { owner = NOG controller = NOG remove_core = WHI }
 1634.1.1 = {	owner = RUS
 		controller = RUS
 		add_core = RUS

@@ -1,0 +1,119 @@
+disaster_french_civil_war = {
+	potential = {
+		tag = FRA
+		exists = FRA
+		NOT = { has_global_flag = 1356_french_civil_war }
+		ai = yes
+		current_age = age_of_feudalism
+		FRA = {
+			government = monarchy
+			is_free_or_tributary_trigger = yes
+		}
+	}
+
+	can_start = {
+		tag = FRA
+		current_age = age_of_feudalism
+		FRA = {
+			has_any_disaster = no
+			has_regency = no
+			is_at_war = no #I hope this wont be exploitable...
+			OR = {
+				AND = {
+					has_new_dynasty = yes
+					NOT = { legitimacy = 30 }
+					ruler_age = 45
+					NOT = { adm = 2 }
+					NOT = { dip = 2 }
+					NOT = { mil = 2 }
+					
+				}
+				AND = {
+					heir_has_ruler_dynasty = no
+					ruler_age = 65
+				}
+				AND = {
+					has_foreign_heir = yes
+					ruler_age = 65
+				}
+				AND = {
+					has_heir = no
+					ruler_age = 65
+					OR = {
+						NOT = { heir_adm = 2 }
+						NOT = { heir_dip = 2 }
+						NOT = { heir_mil = 2 }
+					}
+				}
+				AND = {
+					ruler_is_foreigner = yes
+					ruler_age = 45
+					NOT = {legitimacy = 30 }
+					NOT = { adm = 2 }
+					NOT = { dip = 2 }
+					NOT = { mil = 2 }
+				}
+			}
+		}
+	}
+	
+	
+	can_stop = { #????
+		heir_has_ruler_dynasty = yes
+		OR = {
+			heir_adm = 5
+			heir_dip = 5
+			heir_mil = 5
+		}
+		has_foreign_heir = no
+		has_new_dynasty = no
+	}
+		
+	progress = {
+		modifier = {
+			factor = 1
+			tag = FRA
+			ruler_age = 65
+			NOT = { dip = 3}
+		}
+		modifier = {
+			factor = 2
+			has_heir = no
+			ruler_age = 65
+		}
+		modifier = {
+			factor = 3
+			has_heir = no
+			ruler_age = 75
+		}
+		modifier = {
+			factor = 4
+			has_heir = no
+			ruler_age = 85
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			NOT = { months_of_ruling = 24 }
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			heir_has_ruler_dynasty = no
+		}		
+		modifier = {
+			factor = 2
+			tag = FRA
+			has_foreign_heir = yes
+		}	
+	}
+		
+	can_end = {
+		NOT = { exists = FRA }
+	}
+	
+	on_start = fre_disaster_civil_war.1
+	on_end = fre_disaster_civil_war.2
+
+}
+

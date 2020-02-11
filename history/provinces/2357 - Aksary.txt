@@ -1,8 +1,8 @@
 # 2357 - Aksary (1356)
 # Changes: KZH/WHI/religion
 
-owner = KZH
-controller = KZH
+owner = SHY
+controller = SHY
 culture = khazak
 religion = tengri_pagan_reformed
 capital = "Aksary"

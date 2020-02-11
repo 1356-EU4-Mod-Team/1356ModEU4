@@ -1,8 +1,8 @@
 # 2351 - Shekty (1356)
 # Changes: WHI
 
-owner = WHI
-controller = WHI
+owner = BLU
+controller = BLU
 culture = khazak
 religion = sunni
 capital = "Shekty"
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = WHI
+add_core = BLU
 add_core = NOG
 add_core = KZH
 

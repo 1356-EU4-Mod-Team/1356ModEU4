@@ -1,8 +1,8 @@
 # 449 - Ghor (1356)
 # Changes: AFG
 
-owner = AFG
-controller = AFG
+owner = HER
+controller = HER
 culture = afghani
 religion = sunni
 capital = "Ahangaran"
@@ -12,6 +12,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
+add_core = HER
 add_core = AFG
 
 discovered_by = KAS

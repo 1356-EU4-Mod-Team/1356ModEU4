@@ -1,8 +1,8 @@
 # 2305 - Erzincan (1356)
 # Changes: ERE/TIM/AKK
 
-owner = AKK
-controller = AKK
+owner = ERE
+controller = ERE
 culture = armenian
 religion = coptic
 capital = "Erzindjan"
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = AKK
+add_core = ERE
 
 discovered_by = western
 discovered_by = eastern

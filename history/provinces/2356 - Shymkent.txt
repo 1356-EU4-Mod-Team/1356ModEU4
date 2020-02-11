@@ -1,8 +1,8 @@
 # 2356 - Shymkent (1356)
 # Changes: CHG/TRS
 
-owner = CHG
-controller = CHG
+owner = TRS
+controller = TRS
 culture = uzbehk
 religion = sunni
 capital = "Shymkent"
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = CHG
+add_core = TRS
 
 discovered_by = KAS
 discovered_by = muslim

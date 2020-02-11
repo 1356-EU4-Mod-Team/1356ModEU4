@@ -1,8 +1,8 @@
 # 2141 - Xuzhou (1356)
 # Changes: YUA
 
-owner = YUA
-controller = YUA
+owner = MNG
+controller = MNG
 culture = zhongyuan
 religion = confucianism
 capital = "Xuzhou"
@@ -13,6 +13,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 3
 is_city = yes
+add_core = MNG
 add_core = YUA
 add_core = TNG
 

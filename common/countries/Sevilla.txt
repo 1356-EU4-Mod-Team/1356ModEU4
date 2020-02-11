@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = { 90  160  100 } 
+ color = { 16  252  238 }    #color = { 90  160  100 }  ##Removed because Green looked too much like Portugal
 
 revolutionary_colors = { 5  8  5 }
 

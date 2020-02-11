@@ -1,8 +1,8 @@
 # 431 - Mogostan (1356)
 # Changes: PER/religion
 
-owner = ORM
-controller = ORM
+owner = MUZ
+controller = MUZ
 culture = gulf_arabic
 religion = sunni
 capital = "Gamrun"
@@ -13,7 +13,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 1
 is_city = yes
-add_core = ORM
+add_core = MUZ
 
 discovered_by = east_african
 discovered_by = muslim

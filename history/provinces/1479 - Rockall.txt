@@ -1,0 +1,3 @@
+
+1419.1.1 = { discovered_by = western }
+1419.1.1 = { discovered_by = eastern }

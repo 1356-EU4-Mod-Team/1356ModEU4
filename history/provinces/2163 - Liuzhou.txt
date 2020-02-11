@@ -1,8 +1,8 @@
 # 2163 - Liuzhou (1356)
 # Changes: YUA/CZH
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = zhuang
 religion = confucianism
 capital = "Liuzhou"
@@ -14,6 +14,7 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = YUA
+add_core = MIN
 add_core = CGS
 
 discovered_by = chinese

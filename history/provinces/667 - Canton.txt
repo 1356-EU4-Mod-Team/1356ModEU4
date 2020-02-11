@@ -1,8 +1,8 @@
 # 667 - Guangzhou (1356)
 # Changes: YUA/CZH
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = cantonese
 religion = confucianism
 capital = "Canton"
@@ -13,6 +13,7 @@ base_production = 12
 base_manpower = 3
 is_city = yes
 add_core = YUA
+add_core = MIN
 #add_core = CZH
 add_core = YUE
 fort_15th = yes # More than 1 Weisuo
@@ -29,6 +30,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+
 1356.12.25 = { 
 	add_permanent_province_modifier = {
 		name = medium_nestorian_community
@@ -37,7 +39,7 @@ add_permanent_province_modifier = {
 }
 
 1367.10.1  = { controller = MNG }
-1368.9.14  = { owner = MNG add_core = MNG remove_core = YUA remove_province_modifier = medium_nestorian_community }
+1368.9.14  = { owner = MNG add_core = MNG remove_core = YUA }
 #1382.1.6   = { remove_core = CZH }
 1514.1.1   = { discovered_by = POR }
 1647.4.1   = {	owner = QNG

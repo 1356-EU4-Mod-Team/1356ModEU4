@@ -1,6 +1,7 @@
 owner = YUA
 controller = YUA
 add_core = YUA
+add_core = KHA
 culture = khalkha
 religion = tengri_pagan_reformed
 capital = "Barag"
@@ -13,9 +14,6 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 
-add_core = YUA
-
-1388.11.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
 
 1552.1.1 = {
 	owner = KHA

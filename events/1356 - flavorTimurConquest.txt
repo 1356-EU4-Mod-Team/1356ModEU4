@@ -1,61 +1,131 @@
 namespace = timurlane
 
-country_event = { #Tells game if Timur is to spawn or not
-	id = timurlane.999	#Disable Timur?
-	title = timurlane.999.t
-	desc = timurlane.999.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
-
-	fire_only_once = yes
-	major = yes
+#Rebel Timur or Enthrone Timur
+country_event = {
+	id = timurlane.9999
+	title = harem_events.5.t
+	picture = 3_SONS_eventPicture
 	
-	trigger = {
-		always = no
-		ai = no
-		NOT = { has_global_flag = "timurid_decision" }
-		OR = {
-			NOT = { date = 1370.4.9 }
-			NOT = { exists = TIM }
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = timurlane.999.a
-		set_global_flag = "timurid_decision"
-	}
-	option = {
-		name = timurlane.999.b
-		set_global_flag = "disable_timur_conquest"
-		set_global_flag = "timurid_decision"
-	}	
-	option = { #Non Historical Timur, lets him do whatever.
-		name = timurlane.999.c
-		set_global_flag = "timurid_non_historical_flag"
-		set_global_flag = "timurid_decision"
-	}
-}
-country_event = { #Spawns Timur, Timur nation, and lots of flags.
-	id = timurlane.1
-	title = timurlane.1.t
-	desc = timurlane.1.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
-
 	fire_only_once = yes
 	major = yes
 	
 	trigger = {
 		tag = TRS
         is_year = 1370
-		NOT = { has_global_flag = "disable_timur_conquest" }
-		NOT = { has_global_flag = "timurid_non_historical_flag"}
+		#NOT = { has_global_flag = "disable_timur_conquest" }
+		#NOT = { has_global_flag = "timurid_non_historical_flag"}
 	}
-
+	
 	mean_time_to_happen = {
-		months = 24
+		months = 36
+	}
+	
+	option = {
+		name = harem_events.5.a
+		set_saved_name = {
+			key = timur_name_trigger
+			type = simple
+			name = "Timur's Host"
+		}
+		random_owned_province = {
+			limit = { is_in_capital_area = yes }
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				culture = uzbehk
+				leader = "timur_name_trigger"
+				win = yes
+			}			
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				win = yes
+			}			
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				win = yes
+			}			
+		}		
+		#event_target:heir_revolter = {
+		#	spawn_rebels = {
+		#		type = pretender_rebels
+		#		size = 1
+		#		use_heir_as_leader = yes
+		#		culture = ROOT
+		#		religion = ROOT
+		#	}
+		#}
+		#define_heir = {
+		#	dynasty = original_dynasty
+		#	age = 15
+		#	male = yes
+		#}
+	}
+	option = {
+		name = timurlane.1.a
+		set_global_flag = "timur_conquest"
+        change_technology_group = muslim
+		change_tag = TIM
+		swap_free_idea_group = yes	
+		define_ruler = {
+			name = "Timur"
+			dynasty = "Timurid"
+			age = 34
+			claim = 50
+			adm = 6
+			dip = 4
+			mil = 6
+        }
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 4
+		}
+		add_ruler_modifier = {
+			name = "Tamerlane"
+			duration = -1
+			hidden = yes
+		}
+		remove_heir = yes
+		add_ruler_personality = conqueror_personality
+		random_owned_province = {
+			build_to_forcelimit = {
+				infantry = 0.5
+				cavalry = 0.2
+			}
+		}
+		change_government = monarchy
+		add_government_reform = timurid_government_reform
+		set_legacy_government = timurid_government
+		set_government_rank = 3
+		every_owned_province = {
+			add_institution_embracement = {
+				value = 100
+				which = "feudalism"
+			}
+		}	
+	}	
+}
+
+country_event = { #Timur Seizes control if Rebels win
+	id = timurlane.123	#Disable Timur?
+	title = timurlane.123.t
+	desc = timurlane.123.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		 has_new_dynasty = yes
+		 tag = TRS
 	}
 
 	option = {
@@ -84,7 +154,80 @@ country_event = { #Spawns Timur, Timur nation, and lots of flags.
 			duration = -1
 			hidden = yes
 		}
-		kill_heir = yes
+		kill_leader = {
+			type = "Timur's"
+		}
+		create_general = { tradition = 60 }
+		create_general = { tradition = 60 }		
+		remove_heir = yes
+		add_ruler_personality = conqueror_personality
+		random_owned_province = {
+			build_to_forcelimit = {
+				infantry = 0.5
+				cavalry = 0.2
+			}
+		}
+		change_government = monarchy
+		add_government_reform = timurid_government_reform
+		set_legacy_government = timurid_government
+		set_government_rank = 3
+		every_owned_province = {
+			add_institution_embracement = {
+				value = 100
+				which = "feudalism"
+			}
+		}	
+	}
+}
+
+country_event = { #Spawns Timur, Timur nation, and lots of flags.
+	id = timurlane.1
+	title = timurlane.1.t
+	desc = timurlane.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TRS
+		is_year = 1370
+		always = no
+		NOT = { has_global_flag = "disable_timur_conquest" }
+		NOT = { has_global_flag = "timurid_non_historical_flag"}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = timurlane.1.a
+		set_global_flag = "timur_conquest"
+        change_technology_group = muslim
+		change_tag = TIM
+		swap_free_idea_group = yes	
+		define_ruler = {
+			name = "Timur"
+			dynasty = "Timurid"
+			age = 34
+			claim = 100
+			adm = 6
+			dip = 6
+			mil = 6
+        }
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 4
+		}
+		add_ruler_modifier = {
+			name = "Tamerlane"
+			duration = -1
+			hidden = yes
+		}
+		remove_heir = yes
 		add_ruler_personality = conqueror_personality
 		random_owned_province = {
 			build_to_forcelimit = {
@@ -1926,7 +2069,6 @@ country_event = { #Slaughter of the Assyrians
 	option = { #Historical - Slaughter them all
 		name = timurlane.992.a
 		ai_chance = { factor = 90 }
-		set_global_flag = timur_genocided_assyrians
 		add_treasury = 300
 		add_adm_power = 100
 		add_dip_power = 50

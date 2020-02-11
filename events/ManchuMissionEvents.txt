@@ -128,7 +128,7 @@ country_event = {
 }
 
 # Koxinga Flees to Taiwan
-country_event = { #1356 #Changed to prevent Tiawan from going independent right away
+country_event = {
 	id = mch_missions.5
 	title = "mch_missions.5.t"
 	desc = "mch_missions.5.d"
@@ -139,12 +139,7 @@ country_event = { #1356 #Changed to prevent Tiawan from going independent right 
 	
 	trigger = {
 		tag = MNG
-		MNG = { #1356
-			OR = {
-				has_disaster = ming_crisis
-				has_country_flag = 1356_ming_crisis_flag
-			}
-		}
+		is_year = 1600
 		NOT = {
 			total_development = 600
 		}

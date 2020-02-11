@@ -1,0 +1,146 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 166  68  72 }
+
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	religious_ideas
+	quality_ideas
+}
+
+historical_units = {
+	persian_footsoldier
+	persian_cavalry_charge
+	persian_shamshir
+	qizilbash_cavalry
+	tofongchis_musketeer
+	topchis_artillery
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_mass_infantry
+	muslim_dragoon
+	durrani_swivel
+	durrani_rifled_musketeer
+	durrani_dragoon
+}
+
+monarch_names = {
+	"Husain #1" = 20
+	"Uwais #1" = 20
+	"Ahmad #0" = 20
+	"Mahmud #0" = 20
+	"Muhammad #0" = 20
+	"Shah Walad #0" = 20
+	"Hasan #1" = 15
+	"Rashîd #0" = 15
+	"Isma'il #0" = 10
+	"Qasim #0" = 10
+	"'Abbas #0" = 0
+	"'Abd al-Karim #0" = 0
+	"'Abd al-Rahman #0" = 0
+	"Anwar #0" = 0
+	"Atuf #0" = 0
+	"Bakr #0" = 0
+	"Fahd #0" = 0
+	"Faruq #0" = 0
+	"Fouad #0" = 0
+	"Hakim #0" = 0
+	"Harun #0" = 0
+	"Hikmat #0" = 0
+	"Hisham #0" = 0
+	"Iqbal #0" = 0
+	"Jafar #0" = 0
+	"Jamaal #0" = 0
+	"Karim #0" = 0
+	"Khalil #0" = 0
+	"Malîk #0" = 0
+	"Mirza #0" = 0
+	"Najib #0" = 0
+	"Rusul #0" = 0
+	"Shimun #0" = 0
+	"Tarîq #0" = 0
+	"Usama #0" = 0
+	"Yasir #0" = 0
+	"Yusuf #0" = 0
+	"Zaid #0" = 0
+	"Zîyad #0" = 0
+	"Zulqifar #0" = 0
+	"Hulagu #1" = 20
+	"Abaqa #1" = 20
+	"Tekuder #1" = 20
+	"Arghun #1" = 20
+	"Gaykhatu #1" = 20
+	"Baydu #1" = 20
+	"Gazan #2" = 20
+	"Oljeitu #1" = 20
+	"Abu Sa'id #1" = 20
+	"Arpa #1" = 20
+	"Musa #1" = 20
+	"Muhammad #1" = 20
+	"Sati Beg #1" = 20
+	"Solayman #1" = 20
+	"Jahan Temür #1" = 20
+	"Jahan #0" = 10
+	"Temür #0" = 10
+	"Anushirwan #1" = 20
+
+	"Fatin #1" = -1
+	"Mumtaz #0" = -1
+	"Roshanara #0" = -1
+	"Jahanara #0" = -1
+	"Bahar Banu #0" = -1
+	"Gawahir #0" = -1
+	"Basira #0" = -1
+}
+
+leader_names = {
+	Genghisid
+	Borjigin
+	Rukh
+	Jahagir
+	Sa'id
+	Uways
+	Hussain
+	Ahmad
+	Mahmud
+	Mirza
+	Mohsin
+	Zaman
+	Abbâs
+	Abû Bakr
+	Akbar
+	Jahagir
+	Jalâl
+	Jâmî
+	Khalil
+	Mohsin
+	"ud-Dîn"	
+}
+
+ship_names = {
+	Faydhi
+	Fazil
+	Kadri
+	Jamal
+	Midhat
+	Nadhif
+	Nadhim
+	Namiq
+	Omer
+	Sirri
+	Yingchang Karakorum Hohhot Chagaan
+	"Ghengis Khan" Jöchi Ögödei Tolui
+	Möngke Qubilai Hülegü Böke
+	Jinggim Kamala Dharmapala "Örüg Temür"
+	Adai Elbeg Batu Mugali "Bo'orchu" Borokhula Chilaun
+	Khubilai Jelme Jebe Subutai
+	"Yelü Chucai" Shikhikhutug "Sorqan Shira" "Khar Khiruge"
+	"Dörben Külü'üd" "Dörben Noyas"	
+}

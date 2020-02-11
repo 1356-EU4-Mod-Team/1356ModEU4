@@ -9,11 +9,11 @@ capital = "Erzurum"
 trade_goods = livestock
 hre = no
 base_tax = 4 
+
 base_production = 4
 base_manpower = 4
 is_city = yes
 add_core = AKK
-add_core = ERE
 add_core = ARM
 
 discovered_by = western

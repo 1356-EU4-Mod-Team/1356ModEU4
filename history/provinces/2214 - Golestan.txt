@@ -1,8 +1,8 @@
 # 2214 - Golestan (1356)
 # Changes: TIM/religion
 
-owner = KHO
-controller = KHO
+owner = RAD
+controller = RAD
 culture = mazandarani
 religion = sunni
 capital = "Asatarabad"
@@ -13,6 +13,7 @@ base_production = 2
 base_manpower = 3
 is_city = yes
 fort_15th = yes
+add_core = RAD
 add_core = KHO
 
 discovered_by = muslim

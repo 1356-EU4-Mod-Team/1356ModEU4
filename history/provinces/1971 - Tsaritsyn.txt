@@ -1,7 +1,7 @@
 #1971 - Tsaritsyn
 
-owner = GLH
-controller = GLH 
+owner = WHI
+controller = WHI 
 culture = mishary
 religion = sunni
 hre = no
@@ -11,14 +11,14 @@ trade_goods = livestock
 base_manpower = 2
 capital = "Sary-Su"
 is_city = yes
-add_core = GLH
+add_core = WHI
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 discovered_by = ottoman
 discovered_by = muslim
 
-1438.1.1  = { owner = GOL controller = GOL remove_core = GLH add_core = GOL} # Golden Horde Completly collapses
+1438.1.1  = { owner = GOL controller = GOL remove_core = WHI add_core = GOL} # Golden Horde Completly collapses
 1502.6.1 = {
 	owner = AST
 	controller = AST

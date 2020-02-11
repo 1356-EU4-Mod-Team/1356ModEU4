@@ -1,10 +1,10 @@
 # 414 - Hamadan (1356)
 # Changes: PER/JLR/religion
 
-owner = MUZ
-controller = MUZ
+owner = LRI
+controller = LRI
 culture = luri
-religion = sunni
+religion = shiite
 capital = "Hamedan"
 trade_goods = cloth
 hre = no
@@ -13,9 +13,8 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = MUZ
-add_core = QOM
 add_core = LRI
+add_core = QOM
 #add_core = JLR
 
 discovered_by = muslim

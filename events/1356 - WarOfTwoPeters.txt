@@ -1,38 +1,55 @@
 namespace = WarTwoPetersFlavor
 
-country_event = { #Castile
+country_event = { #Castile Startup
 	id = WarTwoPetersFlavor.1
 	title = WarTwoPetersFlavor.1.t
 	desc = WarTwoPetersFlavor.1.d
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
-	major = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		tag = CAS
-	}
-
-	mean_time_to_happen = {
-		days = 1
+		NOT = { year = 1366 }
 	}
 
 	option = {
 		name = WarTwoPetersFlavor.1.a
-		set_global_flag = "WarTwoPetersFlavor"
         custom_tooltip = WarTwoPetersFlavor.1.a.tt	
 	}
 }
-country_event = { #Trastamara
+country_event = { #Trastamara Startup
 	id = WarTwoPetersFlavor.2
 	title = WarTwoPetersFlavor.2.t
 	desc = WarTwoPetersFlavor.2.d
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		tag = CTR
+		NOT = { year = 1366 }
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.2.a
+        custom_tooltip = WarTwoPetersFlavor.2.a.tt	
+	}
+}
+
+country_event = { #English Support to Castile
+	id = WarTwoPetersFlavor.3
+	title = WarTwoPetersFlavor.333.t
+	desc = WarTwoPetersFlavor.333.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		NOT = { year = 1366 }		
 	}
 
 	mean_time_to_happen = {
@@ -40,48 +57,180 @@ country_event = { #Trastamara
 	}
 
 	option = {
-		name = WarTwoPetersFlavor.2.a
-		set_global_flag = "WarTwoPetersFlavor"
-        custom_tooltip = WarTwoPetersFlavor.2.a.tt	
-	}
-}
-country_event = { #Castile Wins Civil War
-	id = WarTwoPetersFlavor.3
-	title = WarTwoPetersFlavor.3.t
-	desc = WarTwoPetersFlavor.3.d
-	picture = CIVIL_WAR_eventPicture
-
-	fire_only_once = yes
-	major = yes
-	
-	trigger = {
-		tag = CAS
-		OR = {
-			219 = { controlled_by = CAS }
-			219 = { controlled_by = ENG }
-			#219 = { controlled_by = GRA } #Removed since currently theres no mechanics for Granada to enter the war historically
-			219 = { controlled_by = POR }
-			219 = { controlled_by = GUY }
-			219 = { controlled_by = FOI }
-			219 = { controlled_by = AMG }
-			219 = { controlled_by = MNF }
-			219 = { controlled_by = NAV }			
-		}			
-        NOT = { has_global_flag = "trastamara_wins_civil_war" }
-	}
-
-	mean_time_to_happen = {
-		months = 3
+		ai_chance = { 
+			factor = 50
+		}	
+		name = WarTwoPetersFlavor.333.a #England sends 5k
+		add_manpower = -5
+		reverse_add_opinion = {
+			who = CAS
+			modifier = supported_us_castile
+		}
+		CAS = {
+			country_event = { id = WarTwoPetersFlavor.5 } 
+		}	
 	}
 
 	option = {
-		name = WarTwoPetersFlavor.3.a
-		set_global_flag = "castile_wins_civil_war"
-		white_peace = CTR
+		ai_chance = { 
+			factor = 35
+		}	
+		name = WarTwoPetersFlavor.333.b #England sends 5k and a General
+		add_manpower = -5
+		add_mil_power = -75
+		add_army_tradition = -5.0
+		reverse_add_opinion = {
+			who = CAS
+			modifier = supported_us_castile
+		}		
+		CAS = {
+			country_event = { id = WarTwoPetersFlavor.6 } 
+		}	
+	}
+	option = {
+		ai_chance = { 
+			factor = 15
+		}	
+		name = WarTwoPetersFlavor.333.c #England sends no support
 	}
 }
-country_event = { #House Trastamara wins Civil War
+
+country_event = { #French Support to Trastamara
 	id = WarTwoPetersFlavor.4
+	title = WarTwoPetersFlavor.55.t
+	desc = WarTwoPetersFlavor.55.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		NOT = { year = 1366 }	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = { 
+			factor = 35
+		}	
+		name = WarTwoPetersFlavor.3.a #France Sends 8k
+		add_manpower = -8
+		CTR = {
+			country_event = { id = WarTwoPetersFlavor.7 } 
+		}	
+	}
+
+	option = {
+		ai_chance = { 
+			factor = 50
+		}	
+		name = WarTwoPetersFlavor.3.b #France sends 5k
+		add_manpower = -8
+		add_mil_power = -75
+		add_army_tradition = -5.0
+		CTR = {
+			country_event = { id = WarTwoPetersFlavor.8 } 
+		}	
+	}
+	option = {
+		ai_chance = { 
+			factor = 15
+		}	
+		name = WarTwoPetersFlavor.3.b #France sends no support
+	}
+}
+
+country_event = { #English Support #1
+	id = WarTwoPetersFlavor.5
+	title = WarTwoPetersFlavor.44.t
+	desc = WarTwoPetersFlavor.44.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WarTwoPetersFlavor.3.a 
+		add_manpower = 5
+	}
+}
+country_event = { #English Support #2
+	id = WarTwoPetersFlavor.6
+	title = WarTwoPetersFlavor.44.t
+	desc = WarTwoPetersFlavor.44.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WarTwoPetersFlavor.3.a 
+		add_manpower = 5
+		add_trust = {
+			who = ENG
+			value = 15
+			mutual = yes
+		}
+		reverse_add_opinion = {
+			who = ENG
+			modifier = supported_us_castile_england
+		}		
+		create_general = { 
+			tradition = 25
+			culture = english
+			add_shock = 2
+			add_fire = 1
+			add_manuever = 2
+			add_siege = 1
+		}
+	}
+}
+
+country_event = { #French Support #1
+	id = WarTwoPetersFlavor.7
+	title = WarTwoPetersFlavor.44.t
+	desc = WarTwoPetersFlavor.44.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WarTwoPetersFlavor.3.a #France Sends 8k
+		add_manpower = 8
+	}
+}
+country_event = { #French Support #2
+	id = WarTwoPetersFlavor.8
+	title = WarTwoPetersFlavor.44.t
+	desc = WarTwoPetersFlavor.44.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WarTwoPetersFlavor.3.a #France Sends 8k
+		add_manpower = 8
+		create_general = { 
+			tradition = 20
+			culture = french
+			add_shock = 1
+			add_fire = 1
+			add_manuever = 3
+			add_siege = 2
+		}
+	}
+}
+country_event = { # Trastamara Total Victory
+	id = WarTwoPetersFlavor.9
 	title = WarTwoPetersFlavor.4.t
 	desc = WarTwoPetersFlavor.4.d
 	picture = CIVIL_WAR_eventPicture
@@ -91,39 +240,22 @@ country_event = { #House Trastamara wins Civil War
 	
 	trigger = {
 		tag = CTR
-		OR = {
-			208 = { controlled_by = CTR }
-			208 = { controlled_by = ARA }
-			208 = { controlled_by = FRA }
-			208 = { controlled_by = AUV }
-			208 = { controlled_by = FOZ }
-			208 = { controlled_by = DAU }
-			208 = { controlled_by = BOU }
-			208 = { controlled_by = BLS }
-			208 = { controlled_by = ANJ }
-			208 = { controlled_by = ALE }			
-		}		
+		senior_union_with = CAS		
 	}
 
-	mean_time_to_happen = {
-		months = 3
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = WarTwoPetersFlavor.4.a
-        white_peace = CAS
-        add_prestige = 25
         inherit = CAS
-		set_global_flag = "trastamara_wins_civil_war"
         change_tag = CAS
 		swap_non_generic_missions = yes
         set_government_rank = 2
         add_truce_with = POR
-        #add_truce_with = GRA 
 	}
 }
-country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Rival, Portugal as a Historical Friend
-	id = WarTwoPetersFlavor.5
+country_event = { # d'Ivrée Total Victory
+	id = WarTwoPetersFlavor.10
 	title = WarTwoPetersFlavor.5.t
 	desc = WarTwoPetersFlavor.5.d
 	picture = CIVIL_WAR_eventPicture
@@ -132,18 +264,14 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
 	
 	trigger = {
 		tag = CAS
-                has_global_flag = "castile_wins_civil_war"
-                NOT = { has_global_flag = "trastamara_wins_civil_war" }
+        senior_union_with = CTR
 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = WarTwoPetersFlavor.5.a
         inherit = CTR
-        add_prestige = 25
         add_truce_with = ARA 
 		change_mil = 1
 		change_adm = 2
@@ -151,69 +279,320 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
 		change_heir_adm = 3
 		change_heir_mil = 3
 		change_heir_dip = 3
-		CAS = {
-			iberia_region = {
-				remove_core = CTR
-			}
-		}	
-	}
+	}	
 }
-country_event = { #Castile
-	id = WarTwoPetersFlavor.6
+country_event = { # d'Ivrée Proposes Peace ####Trastamara Recieves the Event####
+	id = WarTwoPetersFlavor.11
 	title = WarTwoPetersFlavor.6.t
 	desc = WarTwoPetersFlavor.6.d
 	picture = CIVIL_WAR_eventPicture
 	
-	major = yes
 	is_triggered_only = yes
 	
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	option = {
+		ai_chance = { 
+			factor = 30
+		}	
 		name = WarTwoPetersFlavor.6.a
-		add_legitimacy = -15
-		add_prestige = -15
+		white_peace = CAS
+		1747 = {
+			cede_province = CTR
+		}
+		4551 = {
+			cede_province = CTR
+		}
+		217 = {
+			cede_province = CTR
+		}
+		216 = {
+			cede_province = CTR
+		}
+		215 = {
+			cede_province = CTR
+		}
+		206 = {
+			cede_province = CAS
+		}
+		4554 = {
+			cede_province = CAS
+		}
+		207 = {
+			cede_province = CAS
+		}
+		CAS = {
+			change_tag = LON
+		}			
+		change_tag = CAS
 	}
+	option = {
+		ai_chance = { 
+			factor = 70
+		}		
+		name = WarTwoPetersFlavor.333.c #England sends no support
+	}	
 }
-country_event = { #Trastamara
-	id = WarTwoPetersFlavor.7
+country_event = { # Trastamara Proposes Peace  ####Castile Recieves Event####
+	id = WarTwoPetersFlavor.12
 	title = WarTwoPetersFlavor.7.t
 	desc = WarTwoPetersFlavor.7.d
 	picture = CIVIL_WAR_eventPicture
 
-	fire_only_once = yes
-	major = yes
-	
-	trigger = {
-		tag = CTR
-		exists = CAS
-		is_year = 1360
-		is_at_war = no
-	}
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
 		days = 1
 	}
 
 	option = {
-		name = WarTwoPetersFlavor.7.a
-		change_tag = SEV
-		add_prestige = 25
-		add_legitimacy = 100
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		CAS = {
-			country_event = { 
-				id = WarTwoPetersFlavor.6
-				days = 15
-				random = 15
+		ai_chance = { 
+			factor = 40
+		}	
+		name = WarTwoPetersFlavor.7.a		
+	}
+	option = {
+		ai_chance = { 
+			factor = 60
+		}		
+		name = WarTwoPetersFlavor.333.c #England sends no support
+	}		
+}
+
+country_event = { # Civil War Cores Cleanup
+	id = WarTwoPetersFlavor.1333
+	title = WarTwoPetersFlavor.6.t
+	desc = WarTwoPetersFlavor.6.d
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = WarTwoPetersFlavor.6.a
+		hidden_effect = {
+			CAS = {
+				every_owned_province = {
+					limit = {
+						has_core = CTR
+					}		
+					remove_core = CTR
+				}	
 			}
+		}	
+	}
+}	
+
+
+country_event = { # Trastamara Surrender (Castile Agree to terms)
+	id = WarTwoPetersFlavor.14
+	title = WarTwoPetersFlavor.333.t
+	desc = WarTwoPetersFlavor.333.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WarTwoPetersFlavor.333.a #England sends 5k
+		white_peace = CAS
+		206 = {
+			cede_province = CAS
 		}
+		4554 = {
+			cede_province = CAS
+		}
+		207 = {
+			cede_province = CAS
+		}
+		2755 = {
+			cede_province = CAS
+		}
+		218 = {
+			cede_province = CAS
+		}
+		4548 = {
+			cede_province = CAS
+		}
+		4554 = {
+			cede_province = CAS
+		}
+		if = {
+			limit = {
+				224 = { controlled_by = CTR }
+			}
+			224 = { cede_province = CAS }
+		}
+		if = {
+			limit = {
+				1749 = { controlled_by = CTR }
+			}
+			1749 = { cede_province = CAS }
+		}				
+		CTR = {
+			change_tag = SEV
+		}	
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.333.b #England sends 5k and a General
+		add_manpower = -5
+		add_mil_power = -75
+		add_army_tradition = -5.0
+		reverse_add_opinion = {
+			who = CAS
+			modifier = supported_us_castile
+		}		
+		CAS = {
+			country_event = { id = WarTwoPetersFlavor.445 } 
+		}	
+	}
+	option = {
+		name = WarTwoPetersFlavor.333.c #England sends no support
 	}
 }
 
+country_event = { # Trastamara recieves Offer Declined
+	id = WarTwoPetersFlavor.15
+	title = WarTwoPetersFlavor.333.t
+	desc = WarTwoPetersFlavor.333.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
 	
+	is_triggered_only = yes
+
+	option = {
+		name = WarTwoPetersFlavor.333.a #England sends 5k
+		add_manpower = -5
+		reverse_add_opinion = {
+			who = CAS
+			modifier = supported_us_castile
+		}
+		CAS = {
+			country_event = { id = rus_independence.1 } 
+		}	
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.333.b #England sends 5k and a General
+		add_manpower = -5
+		add_mil_power = -75
+		add_army_tradition = -5.0
+		reverse_add_opinion = {
+			who = CAS
+			modifier = supported_us_castile
+		}		
+		CAS = {
+			country_event = { id = WarTwoPetersFlavor.445 } 
+		}	
+	}
+	option = {
+		name = WarTwoPetersFlavor.333.c #England sends no support
+	}
+}
+
+country_event = { # d'Ivrée Surrender (Trastamara Agree to terms)
+	id = WarTwoPetersFlavor.16
+	title = WarTwoPetersFlavor.333.t
+	desc = WarTwoPetersFlavor.333.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WarTwoPetersFlavor.333.a #England sends 5k
+		white_peace = CTR
+		1747 = {
+			cede_province = CTR
+		}
+		4551 = {
+			cede_province = CTR
+		}
+		217 = {
+			cede_province = CTR
+		}
+		216 = {
+			cede_province = CTR
+		}
+		215 = {
+			cede_province = CTR
+		}
+		206 = {
+			cede_province = CAS
+		}
+		4554 = {
+			cede_province = CAS
+		}
+		207 = {
+			cede_province = CAS
+		}
+		change_tag = LON
+		CTR = {
+			change_tag = CAS
+		}			
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.333.b #England sends 5k and a General
+		add_manpower = -5
+		add_mil_power = -75
+		add_army_tradition = -5.0
+		reverse_add_opinion = {
+			who = CAS
+			modifier = supported_us_castile
+		}		
+		CAS = {
+			country_event = { id = WarTwoPetersFlavor.445 } 
+		}	
+	}
+	option = {
+		name = WarTwoPetersFlavor.333.c #England sends no support
+	}
+}
+
+country_event = { # d'Ivrée recieves Offer Declined
+	id = WarTwoPetersFlavor.17
+	title = WarTwoPetersFlavor.333.t
+	desc = WarTwoPetersFlavor.333.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WarTwoPetersFlavor.333.a #England sends 5k
+		add_manpower = -5
+		reverse_add_opinion = {
+			who = CAS
+			modifier = supported_us_castile
+		}
+		CAS = {
+			country_event = { id = rus_independence.1 } 
+		}	
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.333.b #England sends 5k and a General
+		add_manpower = -5
+		add_mil_power = -75
+		add_army_tradition = -5.0
+		reverse_add_opinion = {
+			who = CAS
+			modifier = supported_us_castile
+		}		
+		CAS = {
+			country_event = { id = WarTwoPetersFlavor.445 } 
+		}	
+	}
+	option = {
+		name = WarTwoPetersFlavor.333.c #England sends no support
+	}
+}
+
+
+
+

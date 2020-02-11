@@ -7,12 +7,12 @@ religion = catholic
 technology_group = western
 historical_friend = POR
 historical_rival = GRA
-capital = 217 # Madrid
+capital = 208 # Leon
 national_focus = MIL
 add_army_professionalism = 0.1
 
 1350.3.26 = {
-	capital = 217 # Madrid
+	capital = 208 # Leon
 	monarch = {
 		name = "Pedro I"
 		dynasty = "d'Ivrée"
@@ -21,6 +21,11 @@ add_army_professionalism = 0.1
 		dip = 2
 		mil = 4
 	}
+	add_country_modifier = {
+		name = "castile_no_provinces"
+		duration = -1
+		hidden = yes
+	}	
 }
 
 1353.6.3 = {

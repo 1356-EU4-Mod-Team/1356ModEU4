@@ -2,7 +2,7 @@
 
 owner = POL
 controller = POL
-capital = "Naklo"
+capital = "Bydgoszcz"
 culture = polish
 religion = catholic
 trade_goods = livestock
@@ -14,8 +14,6 @@ is_city = yes
 add_core = POL
 discovered_by = KAZ
 discovered_by = CRI
-discovered_by = GOL
-discovered_by = GLH
 discovered_by = AST
 discovered_by = QAS
 discovered_by = eastern

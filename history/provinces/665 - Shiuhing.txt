@@ -1,8 +1,8 @@
 # 665 - Jiangmen (1356)
 # Changes: YUA/CZH
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = cantonese
 religion = confucianism
 capital = "Shiuhing"
@@ -14,6 +14,7 @@ base_production = 4
 base_manpower = 3
 is_city = yes
 add_core = YUA
+add_core = MIN
 #add_core = CZH
 add_core = YUE
 

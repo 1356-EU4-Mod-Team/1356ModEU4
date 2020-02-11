@@ -1,8 +1,8 @@
 # 1081 - Simbirsk (1356)
 # Changes: GOL
 
-owner = GLH
-controller = GLH
+owner = KAZ
+controller = KAZ
 capital = "Bolgar"
 culture = kazani
 religion = sunni
@@ -13,7 +13,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = GLH
 add_core = KAZ
 
 discovered_by = eastern
@@ -23,7 +22,7 @@ discovered_by = ottoman
 
 1438.1.1  = {	owner = KAZ
 		controller = KAZ
-		remove_core = GLH
+		remove_core = WHI
 	    } # Khanate of Kazan
 1552.10.2 = {	owner = RUS
 		controller = RUS

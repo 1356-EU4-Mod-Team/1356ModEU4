@@ -4,38 +4,39 @@ technology_group = muslim
 primary_culture = al_iraqiya_arabic
 add_accepted_culture = kurdish
 religion = shiite
-historical_rival = TIM
-historical_rival = PER
-historical_friend = QON
+#historical_rival = TIM
+#historical_rival = PER
 capital = 410	# Baghdad
 religious_school = jafari_school
 
 1356.1.1 = {
 	monarch = {
-		name = "Awais I"
-		culture = mongol
+		name = "Shaikh Awais I"
 		dynasty = "Jalayirid"
-		birth_date = 1336.1.1
-		adm = 5
+		birth_date = 1329.1.1
+		adm = 4
 		dip = 4	
 		mil = 5
+		leader = {	name = "Shaikh Awais I"	type = general	fire = 3	shock = 4	manuever = 3 siege = 2	personality = master_of_arms_personality }		
 	}
-	add_piety = 0.2
-	add_treasury = 300
+	add_piety = -0.10
+	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
+	add_ruler_personality = just_personality
+	add_ruler_personality = zealot_personality
 }
 
 1356.1.1 = {
 	heir = {
-		name = "Hasan"
-		monarch_name = "Hasan I"
+		name = "Shaikh Hussain"
+		monarch_name = "Hussain I"
 		dynasty = "Jalayirid"
 		birth_date = 1356.1.1
 		death_date = 1411.1.1
 		claim = 95
-		adm = 3
-		dip = 4
-		mil = 5
+		adm = 2
+		dip = 2
+		mil = 3
 	}
 }
 
@@ -46,8 +47,8 @@ religious_school = jafari_school
 		name = "Hussain I"
 		dynasty = "Jalayirid"
 		adm = 2
-		dip = 1	
-		mil = 1
+		dip = 2
+		mil = 3
 	}
 }
 

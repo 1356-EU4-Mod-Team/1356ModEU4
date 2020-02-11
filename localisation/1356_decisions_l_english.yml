@@ -116,6 +116,9 @@
  desc_turkish_settlement: "In March 1354, an earthquake forced the Byzantine Emperor John VI Kantakouzenos to evacuate the Gallipoli fortress and peninsula. Within a month, the Ottoman Turks led by Süleyman Pasha crossed the Bosphorus and seized the site, quickly fortifying it and populating it with Turkish families from Anatolia."
  persian_timurid_nation_title: "Modernize the Timurid Empire"
  persian_timurid_nation_desc: "It has been nearly 300 years since the Great Timur conquered the lands of Persia and Afghanistan. Over this period of time our Descendants have slowly abandon the old language Uzbek, the language used by our forefathers for the more Prominent Persian language. Perhaps the time has come for use to formally adopt this language and reform into a more centralized state."
+ remove_delhi_starting_modifier_decision_title: "DEBUG - Remove Starting Modifiers"
+ remove_delhi_starting_modifier_decision_desc: "You're seeing this because AI Delhi receives a small malus to help them collapse, until next major update this modifier exists for the first 40 years, then it disapears. For players they can choose to remove this modifier for free."
+ delhi_sultanate_collapse_modifier: "Falling Nation"
  
  cancel_great_library_title: "Cancel the Construction of the Great Library"
  cancel_great_library_desc: "We can no longer sustain this project, we must stop all progress now before it is too late!"

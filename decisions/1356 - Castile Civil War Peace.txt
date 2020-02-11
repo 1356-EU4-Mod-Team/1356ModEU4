@@ -1,0 +1,43 @@
+country_decisions = {
+
+	trastamara_offers_status_quo = {
+		potential = {
+			tag = CTR
+			war_with = CAS
+			NOT = { year = 1366 }
+			NOT = { has_country_flag = offering_peace }
+		}
+		allow = {
+			NOT = { war_score = -55 }
+		}
+		effect = {
+			set_country_flag = offering_peace
+			CAS = { 
+				country_event = { id = WarTwoPetersFlavor.12 } 
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	castile_offers_status_quo = {
+		potential = {
+			tag = CAS
+			war_with = CTR
+			NOT = { year = 1366 }
+			NOT = { has_country_flag = offering_peace }
+		}
+		allow = {
+			NOT = { war_score = -55 }
+		}
+		effect = {
+			set_country_flag = offering_peace
+			CTR = { 
+				country_event = { id = WarTwoPetersFlavor.11 } 
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+}

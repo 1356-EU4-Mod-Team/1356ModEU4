@@ -67,6 +67,72 @@ goal_chinese_civil_war = {
 	war_name = NATION_WAR_NAME	
 }
 
+superiority_insult_england_france = {
+	type = superiority
+	
+	attacker = 	{
+		badboy_factor = 0.75
+		prestige_factor = 2.0
+		peace_cost_factor = 0.25
+
+		peace_options = {
+			po_revoke_cores
+			po_gold
+			po_concede_defeat
+			po_humiliate_rival
+		}
+	}
+	
+	defender = 	{
+		badboy_factor = 0.75
+		prestige_factor = 2.0
+		peace_cost_factor = 0.25
+
+		peace_options = {
+			po_revoke_cores
+			po_gold
+			po_concede_defeat	
+			po_humiliate_rival
+		}
+	}
+	
+	war_name = INSULT_WAR_NAME
+}
+
+take_capital_throne_castile = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.25
+		prestige_factor = 1.25
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			always = no
+		}
+
+		peace_options = {
+			po_form_personal_union
+		}
+	}
+	
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 1.0
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			always = no
+		}
+		
+		peace_options = {
+			po_form_personal_union
+		}
+	}
+	
+	war_name = THRONE_WAR_NAME	
+}
+
 #goal_feudalism_border_war = { #Make sure you restrict use of normal CB and restrict conquest of secondaries. Figure out why if LIV integrates someone mid war its super cheap.
 #	type = take_province
 #	

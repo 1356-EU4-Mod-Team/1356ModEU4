@@ -1,8 +1,8 @@
 # 2224 - Ferah (1356)
 # Changes: AFG
 
-owner = AFG
-controller = AFG
+owner = HER
+controller = HER
 culture = khorasani
 religion = sunni
 capital = "Ferah"
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = AFG
+add_core = HER
 
 discovered_by = muslim
 discovered_by = ottoman

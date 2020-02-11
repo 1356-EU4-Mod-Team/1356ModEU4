@@ -1,8 +1,8 @@
 # 664 - Guangxi (1356)
 # Changes: YUA/CZH
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = zhuang
 religion = confucianism
 capital = "Lingyun"
@@ -14,6 +14,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = YUA
+add_core = MIN
 add_core = CGS
 
 discovered_by = chinese

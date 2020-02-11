@@ -1,8 +1,8 @@
 # 2166 - Dehong (1356)
 # Changes: YUA/CZH/cultures
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = kachin
 religion = buddhism
 capital = "Dehong"
@@ -13,6 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 is_city = yes
+add_core = MIN
 add_core = YUA
 #add_core = CZH
 add_core = CDL

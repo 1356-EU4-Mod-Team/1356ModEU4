@@ -1,16 +1,14 @@
 # War of the Two Peters
-name = "War of the Two Peters"
+name = "The Hundred Years' War"
 # Audax Validator "." Ignore_1007
 casus_belli = cb_insult
 war_goal = {
-	type = superiority_insult_mutual
+	type = superiority_insult_england_france
 	casus_belli = cb_insult
 }
 
-1356.12.26 = { # Claim in kingdom of Valencia, more access to mediterrean sea
+1356.1.1 = { # Claim in kingdom of Valencia, more access to mediterrean sea
 	add_attacker = ENG
-	add_attacker = CAS
-	add_attacker = POR
 	add_attacker = GEN
 	add_attacker = GUY
 	add_attacker = AMG
@@ -21,8 +19,6 @@ war_goal = {
 	add_attacker = NAV
 	add_defender = FRA
 	add_defender = FOI
-	add_defender = CTR
-	add_defender = ARA	
 	add_defender = ALE
 	add_defender = ANJ
 	add_defender = AUV
@@ -33,7 +29,7 @@ war_goal = {
 	add_defender = FOZ
 }
 
-1356.12.26 = { #Historically 1356.9.19
+1356.9.19 = {
 	battle = {
 		name = "Poitiers"
 		location = 180 # Poitou
@@ -58,8 +54,6 @@ war_goal = {
  #End of war
 1366.3.13 = { # Start of Castillian Civil War
 	rem_attacker = ENG
-	rem_attacker = CAS
-	rem_attacker = POR
 	rem_attacker = GEN
 	rem_attacker = GUY
 	rem_attacker = AMG
@@ -69,9 +63,7 @@ war_goal = {
 	rem_attacker = LNC
 	rem_attacker = NOL
 	rem_defender = FRA
-	rem_defender = CTR
 	rem_defender = FOI
-	rem_defender = ARA
 	rem_defender = ALE
 	rem_defender = ANJ
 	rem_defender = AUV

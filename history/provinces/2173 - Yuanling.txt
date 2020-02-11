@@ -1,8 +1,8 @@
 # 2173 - Yuanling (1356)
 # Changes: YUA/CZH
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = miao
 religion = animism
 capital = "Yuanling"
@@ -17,6 +17,7 @@ add_core = YUA
 #add_core = CZH
 add_core = CHC
 add_core = CMI
+add_core = MIN
 
 discovered_by = chinese
 discovered_by = nomad_group

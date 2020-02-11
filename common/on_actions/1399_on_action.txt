@@ -12,3 +12,59 @@
 		# 1356government.98
 	# }
 # }
+
+on_new_monarch = {
+	events = { 
+		#fladebugevent.1
+		sikandar.4
+		sikandar.44445
+		sikandar.1
+		#delhi_empire.102
+		delhi_empire.560
+		delhi_empire.561  
+		delhi_empire.559 
+		ming_emperor.3
+	}
+}
+
+on_war_won = {
+	events = { 
+		sikandar.4
+		sikandar.44444
+		sikandar.444
+		rus_independence.2
+		rus_independence.6
+		ming_emperor.1
+		ming_emperor.11
+		WarTwoPetersFlavor.9
+		WarTwoPetersFlavor.10		
+	}
+}
+
+on_war_lost = {
+	events = { 
+		rus_independence.3
+		rus_independence.33
+	}
+}
+
+on_monarch_death = {
+	events = { 
+		serbian_flavour.2
+		serbian_flavour.4
+		delhi_empire.102
+	}
+}
+
+on_enforce_rebel_demands = {
+	events = { 
+		timurlane.123
+	}
+}
+
+
+on_siege_won_country = {
+	events = {
+		delhi_empire.556 # Sack of Delhi - Sindh, End of Delhi
+	}
+}

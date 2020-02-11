@@ -261,7 +261,6 @@ CAS_ideas = {
 	trigger = {
 		OR = {
 			tag = CAS
-			tag = CTR
 			tag = SEV
 		}
 	}
@@ -419,7 +418,7 @@ FRA_ideas = {
 }
 
 
-TUR_ideas = {
+TUR_ideas = { #1356
 	start = {
 		discipline = 0.05
 		tolerance_heathen = 3
@@ -1038,6 +1037,7 @@ MAM_ideas = {
 }
 
 
+
 NAP_ideas = {
 	start = {
 		global_institution_spread = 0.1 #University of Naples, Angevine Heritage, Academies, centre of Neapolitan renaissance.
@@ -1274,7 +1274,7 @@ MLO_ideas = {
 }
 
 
-BYZ_ideas = {
+BYZ_ideas = {#1356
 	start = {
 		advisor_cost = -0.10
 		tolerance_own = 3
@@ -1289,7 +1289,9 @@ BYZ_ideas = {
 	}
 	free = yes
 	
-	
+	regulations_for_mercenaries = {
+		merc_maintenance_modifier = -0.15
+	}
 	repopulation_of_countryside = {
 		global_trade_goods_size_modifier = 0.05
 		global_manpower_modifier = 0.10
@@ -1308,9 +1310,6 @@ BYZ_ideas = {
 	}
 	ecumenical_patriarch = {
 		global_missionary_strength = 0.03
-	}
-	regulations_for_mercenaries = {
-		merc_maintenance_modifier = -0.15
 	}
 }
 
@@ -3276,7 +3275,7 @@ TRE_ideas = {
 	}
 }
 
-GEO_ideas = {
+GEO_ideas = { #1356
 	start = {
 		defensiveness = 0.25
 		infantry_power = 0.1
@@ -4956,7 +4955,7 @@ baltic_crusader_state_ideas = { #Formely TEU_ideas
 	}
 }
 
-BUL_ideas = {
+BUL_ideas = { #1356
 	start = {	
 		merchants = 1
 		core_creation = -0.1		
@@ -4993,6 +4992,7 @@ BUL_ideas = {
 		legitimacy = 1
 	}
 }
+
 
 KIE_ideas = {
 	start = {

@@ -24,6 +24,6 @@ discovered_by = NZH
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
-discovered_by = GLH
+discovered_by = WHI
 discovered_by = AST
 discovered_by = QAS

@@ -1,8 +1,8 @@
 # 2218 - Sarvestan (1356)
 # Changes: PER/TIM
 
-owner = FRS
-controller = FRS
+owner = MUZ
+controller = MUZ
 culture = persian
 religion = sunni
 capital = "Shiraz"
@@ -12,6 +12,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
+add_core = MUZ
 add_core = FRS
 fort_15th = yes
 discovered_by = muslim

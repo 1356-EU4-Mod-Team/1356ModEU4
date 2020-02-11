@@ -1,8 +1,8 @@
 # 2741 - Jeju (1356)
 # Changes: YUA/religion
 
-owner = YUA
-controller = YUA
+owner = KOR
+controller = KOR
 culture = korean
 religion = mahayana
 capital = "Jeju"
@@ -13,7 +13,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = YUA
 add_core = KOR
 #add_core = GYO
 

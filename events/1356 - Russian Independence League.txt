@@ -1,0 +1,1001 @@
+namespace = rus_independence
+
+# The Revolt of the Three Feudatories
+# Rewritten by Daniel Tolman
+country_event = {
+	id = rus_independence.1
+	title = rus_independence.1.t
+	desc = rus_independence.1.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#tag = WHI
+		#is_year = 1380
+		#NOT = { is_year = 1385 }
+		OR = {
+			MOS = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}
+			RYA = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}
+			OKA = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}
+			SMO = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}
+			RSO = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}			
+			TVE = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}
+			YAR = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}
+			MRM = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}
+			NZH = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}
+			BLO = {
+				is_subject_of = ROOT
+				liberty_desire = 25
+			}				
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					MOS = {
+						is_subject_of = WHI
+						#total_development = 50
+						has_country_flag = russian_independence_league_leader_flag
+					}
+				}
+				if = {
+					limit = {
+						RYA = {
+							is_subject_of = ROOT
+						}
+					}
+					RYA = {
+						create_alliance = MOS
+					}
+				}
+				if = {
+					limit = {
+						OKA = {
+							is_subject_of = ROOT
+						}
+					}
+					OKA = {
+						create_alliance = MOS
+					}
+				}
+				if = {
+					limit = {
+						SMO = {
+							is_subject_of = ROOT
+						}
+					}
+					SMO = {
+						create_alliance = MOS
+					}
+				}
+				if = {
+					limit = {
+						TVE = {
+							is_subject_of = ROOT
+						}
+					}
+					TVE = {
+						create_alliance = MOS
+					}
+				}
+				if = {
+					limit = {
+						YAR = {
+							is_subject_of = ROOT
+						}
+					}
+					YAR = {
+						create_alliance = MOS
+					}
+				}
+				if = {
+					limit = {
+						RSO = {
+							is_subject_of = ROOT
+						}
+					}
+					RSO = {
+						create_alliance = MOS
+					}
+				}			
+				if = {
+					limit = {
+						MRM = {
+							is_subject_of = ROOT
+						}
+					}
+					MRM = {
+						create_alliance = MOS
+					}
+				}
+				if = {
+					limit = {
+						BLO = {
+							is_subject_of = ROOT
+						}
+					}
+					BLO = {
+						create_alliance = MOS
+					}
+				}				
+				if = {
+					limit = {
+						NZH = {
+							is_subject_of = ROOT
+						}
+					}
+					NZH = {
+						create_alliance = MOS
+					}
+				}				
+			}
+			else = {
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						#total_development = 53
+						has_country_flag = russian_independence_league_leader_flag
+						OR = {
+							tag = MOS
+							tag = RYA
+							tag = OKA
+							tag = SMO
+							tag = TVE
+							tag = RSO
+							tag = YAR
+							tag = MRM
+							tag = NZH
+							tag = BLO
+						}
+					}
+					save_event_target_as = russian_independence_league_leader
+					#set_country_flag = russian_independence_league_leader_flag
+				}
+				if = {
+					limit = {
+						RYA = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					RYA = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}
+				if = {
+					limit = {
+						OKA = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					OKA = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}
+				if = {
+					limit = {
+						SMO = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					SMO = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}
+				if = {
+					limit = {
+						TVE = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					TVE = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}
+				if = {
+					limit = {
+						RSO = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					RSO = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}				
+				if = {
+					limit = {
+						YAR  = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					YAR = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}
+				if = {
+					limit = {
+						MRM  = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					MRM = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}					
+				if = {
+					limit = {
+						NZH = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					NZH = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}
+				if = {
+					limit = {
+						BLO = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					BLO = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}
+				if = {
+					limit = {
+						MOS = {
+							NOT = { has_country_flag = russian_independence_league_leader_flag }
+							is_subject_of = ROOT
+						}
+					}
+					MOS = {
+						create_alliance = event_target:russian_independence_league_leader
+					}
+				}				
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_mch.EVTOPTA5"
+		if = {
+			limit = {
+				MOS = {
+					is_subject_of = ROOT
+					total_development = 50
+				}
+			}
+			MOS = {
+				tambov_area = {
+					add_core = MOS
+				}
+				add_country_modifier = {
+					name = "leader_of_the_russian_independence_league"
+					duration = -1
+				}
+				set_country_flag = russian_independence_league_leader_flag	
+				set_global_flag = russian_independence_league_fired
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_independence_war
+				}
+			}
+		}
+		else = {
+			event_target:russian_independence_league_leader = {
+				tambov_area = {
+					add_core = event_target:russian_independence_league_leader
+				}
+				add_country_modifier = {
+					name = "leader_of_the_russian_independence_league"
+					duration = -1
+				}			
+				set_global_flag = russian_independence_league_fired
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_independence_war
+				}
+			}
+		}
+	}
+}
+#Leader of the league vassalize princes who didn't seperate peace
+country_event = {
+	id = rus_independence.2
+	title = rus_independence.2.t
+	desc = rus_independence.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		has_country_flag = russian_independence_league_leader_flag
+		#NOT = { war_with = WHI }
+		NOT = { is_at_war = yes }
+	}	
+	
+	option = { #Curses
+		name = rus_independence.2.a	
+		remove_country_modifier = leader_of_the_russian_independence_league	
+		add_country_modifier = {
+			name = "saviour_of_the_rus"
+			duration = 18250
+		}		
+		#clr_global_flag = russian_independence_league_fired
+		set_global_flag = russian_independence_won		
+		if = {
+			limit = { 
+				has_custom_ideas = no
+				NOT = { tag = MOS }
+			}
+			swap_non_generic_missions = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas				
+		}		
+		if = {
+			limit = {
+				NZH = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = NZH
+				}	
+			}
+		}
+		if = {
+			limit = {
+				RYA = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = RYA
+				}	
+			}
+		}
+		if = {
+			limit = {
+				OKA = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = OKA
+				}	
+			}
+		}
+		if = {
+			limit = {
+				SMO = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = SMO
+				}	
+			}
+		}		
+		if = {
+			limit = {
+				MRM = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = MRM
+				}	
+			}
+		}
+		if = {
+			limit = {
+				YAR = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = YAR
+				}	
+			}
+		}
+		if = {
+			limit = {
+				RSO = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = RSO
+				}	
+			}
+		}
+		if = {
+			limit = {
+				TVE = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = TVE
+				}	
+			}
+		}
+		if = {
+			limit = {
+				BLO = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = BLO
+				}	
+			}
+		}
+		if = {
+			limit = {
+				MOS = {
+					NOT = { has_country_flag = russian_independence_league_leader_flag }
+					NOT = { is_subject_of = WHI }
+					NOT = { total_development = 26 }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = MOS
+				}	
+			}
+		}			
+	}
+}
+
+country_event = { #Princes who seperate peace become tributes again
+	id = rus_independence.3
+	title = sikandar.444.t
+	desc = sikandar.444.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	#fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = russian_independence_league_fired
+		NOT = { is_year = 1390 }
+		OR = {
+			tag = MOS
+			tag = RYA
+			tag = OKA
+			tag = SMO
+			tag = TVE
+			tag = RSO
+			tag = YAR
+			tag = MRM
+			tag = NZH
+			tag = BLO
+		}
+	}
+	
+	option = { #Curses
+		name = sikandar.444.a
+		custom_tooltip = sikandar.3.a.tt
+		WHI = {
+			create_subject = {
+				subject_type = tributary_state
+				subject = ROOT
+			}	
+		}		
+	}
+}
+country_event = { #Failsafe if White Horde breaks Tribute
+	id = rus_independence.999
+	title = sikandar.444.t
+	desc = sikandar.444.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	#is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		has_country_flag = russian_independence_league_leader_flag
+		NOT = { has_global_flag = russian_independence_league_fired }
+		is_year = 1380
+		NOT = { is_year = 1385 }
+		OR = {
+			tag = MOS
+			tag = RYA
+			tag = OKA
+			tag = SMO
+			tag = TVE
+			tag = RSO
+			tag = YAR
+			tag = MRM
+			tag = NZH
+			tag = BLO
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 1
+	}
+	
+	option = { #Curses
+		name = sikandar.1.a
+		custom_tooltip = sikandar.3.a.tt
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = russian_independence_league_leader_flag
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			WHI = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = ROOT
+				}	
+			}
+		}
+		WHI = {
+			country_event = { id = rus_independence.1 } 
+		}		
+	}
+}
+
+country_event = { #Leader loses 'Leader of the Russian League' modifier
+	id = rus_independence.33
+	title = sikandar.444.t
+	desc = sikandar.444.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	#fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = leader_of_the_russian_independence_league
+		has_global_flag = russian_independence_league_fired
+		OR = {
+			tag = MOS
+			tag = RYA
+			tag = OKA
+			tag = SMO
+			tag = TVE
+			tag = RSO
+			tag = YAR
+			tag = MRM
+			tag = NZH
+			tag = BLO
+		}
+	}
+	
+	option = { #Curses
+		name = sikandar.444.a
+		remove_country_modifier = leader_of_the_russian_independence_league			
+	}
+}
+
+country_event = { #White Horde Startup information event
+	id = rus_independence.4
+	title = rus_independence.4.t
+	desc = rus_independence.4.d
+	picture = MONGOL_BANNERS_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = WHI
+	}
+	
+	option = { #Curses
+		name = rus_independence.4.a
+		custom_tooltip = rus_independence.4.a.tt
+	}
+}
+
+province_event = { #Council to decide Russian League Leader
+	id = rus_independence.5
+	title = rus_independence.5.t
+	desc = rus_independence.5.d
+	picture = CULTURE_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		#NOT = { has_global_flag = counter_reformation }
+		is_year = 1376
+		NOT = { is_year = 1385 }
+		religion = orthodox
+		owner = {
+			total_development = 53
+			NOT = { tag = NOV }
+			is_colonial_nation = no
+			capital_scope = {
+				region = russia_region
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+		owner = {
+			set_country_flag = russian_independence_league_leader_flag
+		}
+	}
+	
+	option = {
+		name = rus_independence.5.a		
+	}
+}
+
+country_event = { #White Horde defeats Russian league
+	id = rus_independence.6
+	title = rus_independence.6.t
+	desc = rus_independence.6.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = WHI
+		has_global_flag = russian_independence_league_fired
+		NOT = { has_global_flag = russian_independence_won }
+		NOT = { is_at_war = yes }
+	}
+	
+	option = { #Curses
+		name = rus_independence.6.a
+		#clr_global_flag = russian_independence_league_fired
+		custom_tooltip = rus_independence.6.a.tt
+		add_mil_power = 150
+		add_dip_power = 150
+		add_adm_power = 150
+		add_stability = 1
+		add_horde_unity = 25
+		2408 = { add_devastation = 65 }
+		4261 = { add_devastation = 65 }
+		312 = { add_devastation = 65 }
+		4263 = { add_devastation = 65 }
+		4245 = { add_devastation = 65 }
+		293 = { add_devastation = 65 }
+		oka_area = { add_devastation = 65  }
+		ryazan_area = { add_devastation = 65 }	
+		suzdal_area = { add_devastation = 65 }
+		vladimir_area = { add_devastation = 65 }	
+		moscow_area = { add_devastation = 65 }
+		tver_area = { add_devastation = 65 }
+		galich_area = { add_devastation = 65 }
+		yaroslavl_area = { add_devastation = 65 }
+		if = {
+			limit = {
+				NZH = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = NZH
+				}	
+			}
+		}
+		if = {
+			limit = {
+				RYA = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = RYA
+				}	
+			}
+		}
+		if = {
+			limit = {
+				OKA = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = OKA
+				}	
+			}
+		}
+		if = {
+			limit = {
+				SMO = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = SMO
+				}	
+			}
+		}		
+		if = {
+			limit = {
+				MRM = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = MRM
+				}	
+			}
+		}
+		if = {
+			limit = {
+				YAR = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = subject_type = tributary_state
+					subject = YAR
+				}	
+			}
+		}
+		if = {
+			limit = {
+				RSO = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = RSO
+				}	
+			}
+		}
+		if = {
+			limit = {
+				TVE = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = TVE
+				}	
+			}
+		}
+		if = {
+			limit = {
+				BLO = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = BLO
+				}	
+			}
+		}
+		if = {
+			limit = {
+				MOS = {
+					NOT = { is_subject_of = WHI }
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = MOS
+				}	
+			}
+		}			
+		hidden_effect = {
+			oka_area = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			ryazan_area = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			suzdal_area = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			vladimir_area = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}	
+		hidden_effect = {
+			moscow_area = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}	
+		hidden_effect = {
+			tver_area = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			galich_area = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			yaroslavl_area = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			2408 = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			4261 = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			312 = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			4263 = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			4245 = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}
+		hidden_effect = {
+			293 = {
+				remove_loot = {
+					who = ROOT
+					amount = 100
+				}	
+			}
+		}		
+	}
+}

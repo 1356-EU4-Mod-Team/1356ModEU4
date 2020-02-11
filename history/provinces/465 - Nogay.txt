@@ -1,8 +1,8 @@
 # 465 - Nogay (1356)
 # Changes: WHI
 
-owner = WHI
-controller = WHI
+owner = BLU
+controller = BLU
 culture = nogaybak
 religion = sunni
 capital = "Saraychik"
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = WHI
+add_core = BLU
 add_core = NOG
 
 discovered_by = muslim

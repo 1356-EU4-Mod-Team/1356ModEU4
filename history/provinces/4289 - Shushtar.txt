@@ -1,9 +1,9 @@
 # 4289 - Shushtar (1356)
 # Changes: JLR/TIM/IRQ
 
-owner = JLR
-controller = JLR
-culture = persian
+owner = BSR
+controller = BSR
+culture = luri
 religion = shiite
 capital = "Shushtar"
 trade_goods = silk
@@ -12,7 +12,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = JLR
+add_core = BSR
 add_core = MSY
 add_core = LRI 
 
@@ -23,14 +23,6 @@ discovered_by = nomad_group
 discovered_by = indian
 
 #fort_15th = yes # Shushtar, Dezful
-
-1356.12.24  = {
-			owner = LRI controller = LRI
-} #BT In
-
-1356.12.26  = {
-			owner = JLR controller = JLR
-} #BT Out
 
 1394.1.1  = { owner = TIM controller = TIM add_core = TIM }
 1409.5.13 = { owner = JLR controller = JLR remove_core = TIM }

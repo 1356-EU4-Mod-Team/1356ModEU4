@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = chinese_kingdom_government_reform
+add_government_reform = autocracy_reform
 government_rank = 2
 technology_group = chinese
 religion = confucianism
@@ -7,26 +7,26 @@ add_harmonized_religion = mahayana
 primary_culture = jianghuai
 
 historical_rival = YUA
-historical_rival = KHA
-historical_rival = CZH
-historical_rival = CXI
-historical_rival = WUU
-historical_rival = CGS
-historical_rival = HUA
-historical_rival = QIN
-historical_rival = LNG
-historical_rival = JIN
-historical_rival = YAN
-historical_rival = QIC
-historical_rival = TNG
-historical_rival = CHC
-historical_rival = NNG
-historical_rival = SHU
-historical_rival = YUE
-historical_rival = MIN
-historical_rival = CMI
-historical_rival = QNG
-historical_rival = CSH
+#historical_rival = KHA
+#historical_rival = CZH
+#historical_rival = CXI
+#historical_rival = WUU
+#historical_rival = CGS
+#historical_rival = HUA
+#historical_rival = QIN
+#historical_rival = LNG
+#historical_rival = JIN
+#historical_rival = YAN
+#historical_rival = QIC
+#historical_rival = TNG
+#historical_rival = CHC
+#historical_rival = NNG
+#historical_rival = SHU
+#historical_rival = YUE
+#historical_rival = MIN
+#historical_rival = CMI
+#historical_rival = QNG
+#historical_rival = CSH
 
 capital = 1821	# Nanjing
 
@@ -36,10 +36,14 @@ capital = 1821	# Nanjing
 		dynasty = "Zhu"
 		birth_date = 1328.10.21
 		adm = 6
-		dip = 4
+		dip = 5
 		mil = 6
-		leader = { name = "Yuanzhang Zhu" type = general fire = 3 shock = 5 manuever = 2 siege = 2 }
+		leader = { name = "Yuanzhang Zhu" type = general fire = 4 shock = 6 manuever = 4 siege = 3 }
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = humane_personality	
 }
 
 1368.9.14 = {

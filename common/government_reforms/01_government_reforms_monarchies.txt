@@ -563,8 +563,8 @@ mamluk_government = {
 		}
 	}
 	legacy_equivalent = mamluk_government_legacy
-	heir = no
 	queen = no
+	fixed_rank = 2
 
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
@@ -574,13 +574,19 @@ mamluk_government = {
 	}
 
 	modifiers = {
-		num_accepted_cultures = 3
+		#num_accepted_cultures = 3
 		#-50% cost to promote cultures
-		global_autonomy = -0.025
-		monarch_admin_power = 2
-		same_culture_advisor_cost = -0.25
-		promote_culture_cost = -0.5
-		max_states = 1
+		#global_autonomy = -0.025
+		#monarch_admin_power = 2
+		#same_culture_advisor_cost = -0.25
+		#promote_culture_cost = -0.5
+		#max_states = 1
+		#######1356 Rework#####
+		#promote_culture_cost = -0.5
+		#num_accepted_cultures = 3
+		monarch_admin_power = 1
+		state_maintenance_modifier = -0.20
+		min_autonomy_in_territories = -0.1
 	}
 
 	conditional = {
@@ -588,6 +594,7 @@ mamluk_government = {
 		government_abilities = {
 			mamluk_mechanic
 		}
+		heir = no
 		foreign_slave_rulers = yes
 	}
 }
@@ -604,7 +611,6 @@ feudal_theocracy = {
 			}
 			AND = {
 				religion = zoroastrian
-				has_reform = feudal_theocracy
 			}
 			AND = {
 				is_playing_custom_nation = yes
@@ -1416,7 +1422,7 @@ chinese_kingdom_government_reform = {
 	allow_normal_conversion = no
 	potential = {
 		NOT = { has_reform = celestial_empire }
-		#government_rank = 2
+		government_rank = 2
 		culture_group = east_asian
 		OR = {
 			religion_group = eastern
@@ -1430,10 +1436,10 @@ chinese_kingdom_government_reform = {
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	modifiers = {
-		max_states = 5
-		province_warscore_cost = -0.35
-		ae_impact = -0.25
-		diplomatic_upkeep = -4	
+		max_states = 2
+		province_warscore_cost = -0.2
+		ae_impact = -0.15
+		diplomatic_upkeep = -1	
 	}
 	custom_attributes = {
 		locked_government_type = yes

@@ -1,8 +1,8 @@
 # 2213 - Markazi (1356)
 # Changes: PER/religion
 
-owner = MUZ
-controller = MUZ
+owner = CHB
+controller = CHB
 culture = persian
 religion = sunni
 capital = "Qom"
@@ -12,7 +12,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = MUZ
+add_core = CHB
 add_core = QOM
 
 discovered_by = muslim

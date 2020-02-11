@@ -1,8 +1,8 @@
 # 4199 - Tongren (1356)
 # Changes: YUA/CZH
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = miao
 religion = animism
 capital = "Tongren"
@@ -13,6 +13,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = YUA
+add_core = MIN
 #add_core = CZH
 add_core = CMI
 

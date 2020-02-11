@@ -1,18 +1,18 @@
 # 446 - Herat (1356)
 # Changes: AFG
 
-owner = AFG
-controller = AFG
+owner = HER
+controller = HER
 culture = khorasani
 religion = sunni
 capital = "Herat"
 trade_goods = paper
 hre = no
-base_tax = 5 
-base_production = 5
-base_manpower = 3
+base_tax = 7 
+base_production = 7
+base_manpower = 7
 is_city = yes
-add_core = AFG
+add_core = HER
 fort_15th = yes
 extra_cost = 16
 center_of_trade = 2
@@ -31,7 +31,7 @@ add_province_triggered_modifier = 1356_goharshad_mosque_mosque_great_project_pro
 	}
 }
 
-1380.1.1   = { owner = TIM controller = TIM add_core = TIM remove_province_modifier = large_nestorian_community add_permanent_province_modifier = { name = small_nestorian_community duration = -1	} }
+1380.1.1   = { owner = TIM controller = TIM add_core = TIM }
 1449.2.1   = { # Conquered by Babur bin Baysunkur
 		owner = KHO
 		controller = KHO

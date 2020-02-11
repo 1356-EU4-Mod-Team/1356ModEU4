@@ -15,6 +15,7 @@ steppe_horde = {
 			has_reform = steppe_horde
 			culture_group = altaic
 			culture_group = tartar
+			culture_group = evenks			
 		}
 		has_reform = steppe_horde
 		NOT = { has_reform = great_mongol_state_reform }
@@ -140,7 +141,6 @@ siberian_tribe = {
 }
 
 ######1356 Changes#######
-
 tribal_federation_ilkhan_reform = { #Tribes
 	icon = "tribal_council"
 	potential = {

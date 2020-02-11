@@ -1,9 +1,9 @@
 # 4396 - Bitlis and Hakkari (1356)
 # Changes: QAR/AKK/TIM
 
-owner = QAR
-controller = QAR
-culture = armenian
+owner = BTL
+controller = BTL
+culture = kurdish
 religion = coptic
 capital = "Bitlis"
 trade_goods = wool
@@ -12,8 +12,6 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = QAR
-add_core = IRQ
 add_core = BTL
 
 discovered_by = east_african

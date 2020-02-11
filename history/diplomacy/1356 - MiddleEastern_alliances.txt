@@ -1,7 +1,7 @@
-# GLHden Horde Tributaries (not Russian)
+# White Horde Tributaries (not Russian)
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = FEO
 	start_date = 1355.1.1
 	end_date = 1385.1.1
@@ -9,7 +9,7 @@ dependency = {
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = CIR
 	start_date = 1355.1.1
 	end_date = 1385.1.1
@@ -17,7 +17,7 @@ dependency = {
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = AVR
 	start_date = 1355.1.1
 	end_date = 1385.1.1
@@ -25,7 +25,7 @@ dependency = {
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GLH
+	first = WHI
 	second = GAZ
 	start_date = 1355.1.1
 	end_date = 1385.1.1
@@ -40,41 +40,41 @@ dependency = {
 #	end_date = 1394.1.1
 #}
 
-# Georgia and Imeretia
+# Georgia and Imeretia ##### Removed in Denmark Update
 #union = {
 #	first = GEO
 #	second = IME
 #	start_date = 1330.1.1
 #	end_date = 1387.1.1
 #}
+#
+#union = {
+#	first = GEO
+#	second = IME
+#	start_date = 1392.1.1
+#	end_date = 1396.1.1
+#}
 
-union = {
-	first = GEO
-	second = IME
-	start_date = 1392.1.1
-	end_date = 1396.1.1
-}
+#vassal = {
+#	first = GEO
+#	second = SME
+#	start_date = 1355.1.1 
+#	end_date = 1396.1.1 
+#}
 
-vassal = {
-	first = GEO
-	second = SME
-	start_date = 1355.1.1 
-	end_date = 1396.1.1 
-}
+#vassal = {
+#	first = CHB
+#	second = ARM
+#	start_date = 1356.1.1 
+#	end_date = 1360.1.1 
+#}
 
-vassal = {
-	first = CHB
-	second = ARM
-	start_date = 1356.1.1 
-	end_date = 1360.1.1 
-}
-
-vassal = {
-	first = MUZ
-	second = KRM
-	start_date = 1356.1.1 
-	end_date = 1360.1.1 
-}
+#vassal = {
+#	first = MUZ
+#	second = KRM
+#	start_date = 1356.1.1 
+#	end_date = 1360.1.1 
+#}
 
 vassal = {
 	first = TUR
@@ -90,81 +90,81 @@ guarantee = {
 	end_date = 1443.12.30 #So it won't overlap with vanilla
 }
 
-# Shirvan under Chobanids
-vassal = {
-	first = CHB
-	second = SRV
-	start_date = 1355.1.1
-	end_date = 1358.1.1
-}
-
 # Ardabil under Chobanids
+#vassal = {
+#	first = CHB
+#	second = ARL
+#	start_date = 1355.1.1
+#	end_date = 1358.1.1
+#}
+
+# Qara Qoyunlu under Jalayrids
 vassal = {
-	first = CHB
-	second = ARL
-	start_date = 1355.1.1
-	end_date = 1358.1.1
+	first = JLR
+	second = QAR
+	start_date = 1366.1.1
+	end_date = 1387.1.1
 }
 
-# Golden Horde and White Horde
-alliance = {
-	first = GLH
-	second = WHI
-	start_date = 1356.1.1
+vassal = {
+	first = BLU
+	second = SHY
+	start_date = 1346.1.1
 	end_date = 1372.1.1
 }
 
 vassal = {
 	first = WHI
+	second = CRI
+	start_date = 1346.1.1
+	end_date = 1372.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = KAZ
+	start_date = 1353.1.1
+	end_date = 1380.9.8
+}
+
+union = {
+	first = BLU
 	second = KZH
 	start_date = 1356.1.1
 	end_date = 1372.1.1
 }
 
 union = {
-	first = GLH
+	first = BLU
 	second = WHI
 	start_date = 1372.1.1
 	end_date = 1374.1.1
-}
-
-vassal = {
-	first = GLH
-	second = KZH
-	start_date = 1372.1.1
-	end_date = 1374.1.1
-}
-
-alliance = {
-	first = GLH
-	second = WHI
-	start_date = 1374.1.1
-	end_date = 1378.1.1
 }
 
 vassal = {
 	first = WHI
 	second = KZH
+	start_date = 1372.1.1
+	end_date = 1374.1.1
+}
+
+vassal = {
+	first = WHI
+	second = SHY
 	start_date = 1374.1.1
 	end_date = 1378.1.1
 }
 
 union = {
-	first = GLH
-	second = WHI
+	first = WHI
+	second = KZH
 	start_date = 1378.1.1
 	end_date = 1427.1.1
 }
 
 vassal = {
-	first = GLH
-	second = KZH
-	start_date = 1378.1.1
-	end_date = 1396.1.1
-}
-
-vassal = {
-	first = WHI
+	first = BLU
 	second = SIB
 	start_date = 1355.1.1
 	end_date = 1378.1.1
@@ -194,12 +194,12 @@ casus_belli = {
 	end_date = 1369.1.1
 }
 
-vassal = {
-	first = TRS
-	second = KHI
-	start_date = 1355.1.1
-	end_date = 1370.4.9
-}
+#vassal = {
+#	first = TRS
+#	second = KHI
+#	start_date = 1355.1.1
+#	end_date = 1370.4.9
+#}
 
 vassal = {
 	first = TIM
@@ -291,7 +291,7 @@ alliance = {
 }
 
 alliance = {
-	first = GLH
+	first = WHI
 	second = NOG
 	start_date = 1397.1.1
 	end_date = 1419.1.1

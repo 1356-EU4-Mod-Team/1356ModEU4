@@ -1,8 +1,8 @@
 # 4266 - Izhkar (1356)
 # Changes: GOL
 
-owner = GLH
-controller = GLH
+owner = PRM
+controller = PRM
 capital = "Izhkar"
 culture = uralic
 religion = tengri_pagan_reformed # Sami Shamanism
@@ -12,8 +12,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = GLH
-add_core = KAZ
+add_core = PRM
 
 discovered_by = eastern
 discovered_by = western
@@ -25,7 +24,7 @@ discovered_by = GOL
 
 1438.1.1  = {	owner = KAZ
 		controller = KAZ
-		remove_core = GLH
+		remove_core = WHI
 	    } # Khanate of Kazan
 1552.10.2 = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
 1600.1.1  = { culture = russian religion = orthodox }

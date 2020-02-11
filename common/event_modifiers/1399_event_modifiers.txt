@@ -2,6 +2,16 @@ rush_of_colonists = {
 	colonists = 1
 }
 
+#England-France War
+hundred_years_war_claims = {
+	province_warscore_cost = -0.33
+}
+
+castile_no_provinces = {
+	province_warscore_cost = 10.0
+}
+
+
 #Center of Trade Modifiers
 
 golden_gate = {
@@ -207,6 +217,34 @@ disunited_tribes = {
 	land_morale = -0.10
 	land_forcelimit = -15
 }
+
+saviour_of_the_rus = {
+	reduced_liberty_desire = 90
+	liberty_desire_from_subject_development = -0.33
+	diplomatic_annexation_cost = -0.25
+	diplomatic_upkeep = 3
+	diplomatic_reputation = 2
+	years_of_nationalism = -5
+	global_unrest = -2
+}
+
+the_south_feudatory = {
+	liberty_desire = -50
+	global_unrest = -2
+	development_cost = -0.1
+	max_states = 3
+}
+
+the_tatar_yoke = {
+	reduced_liberty_desire = 10
+	prestige = 0.5
+}
+
+leader_of_the_russian_independence_league = {
+	diplomatic_upkeep = 5
+	defensiveness = 0.20
+}
+
 
 #Far East Region
 

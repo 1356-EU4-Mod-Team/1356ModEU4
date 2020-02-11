@@ -1,8 +1,8 @@
 # 2153 - Tingzhou (1356)
 # Changes: YUA/CZH
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = hakka
 religion = confucianism
 capital = "Tingzhou"

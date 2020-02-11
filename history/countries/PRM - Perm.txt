@@ -3,7 +3,8 @@ add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = uralic
 religion = tengri_pagan_reformed
-technology_group = nomad_group
+secondary_religion = orthodox
+technology_group = eastern
 capital = 1963	# Cherdyn
 
 1356.1.1 = {

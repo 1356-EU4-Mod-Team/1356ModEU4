@@ -1,0 +1,142 @@
+country_decisions = {
+
+	turkish_nation_1356 = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_rum_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = TUR }
+			NOT = { exists = RUM }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = BYZ }
+			NOT = { tag = RUS }
+			NOT = { tag = PRU }
+			NOT = { tag = ENG }
+			is_emperor_of_china = no
+			primary_culture = turkish
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = rum_area
+				area = ankara_area
+				area = kastamonu_area
+				area = karaman_area
+				area = aydin_area
+				area = germiyan_area
+				province_id = 327
+				province_id = 2302
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			is_at_war = no
+			is_subject = no #Cannot even be a tributary
+			is_nomad = no
+			religion_group = muslim
+			NOT = { exists = RUM }	
+			rum_area = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					 is_core = ROOT
+				}
+			}
+			ankara_area = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					 is_core = ROOT
+				}
+			}	
+			kastamonu_area = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					 is_core = ROOT
+				}
+			}
+			karaman_area = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					 is_core = ROOT
+				}
+			}
+			aydin_area = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					 is_core = ROOT
+				}
+			}
+			germiyan_area = {
+				type = all
+				AND = {
+					owned_by = ROOT
+					 is_core = ROOT
+				}
+			}
+			327 = {
+				AND = {
+					owned_by = ROOT
+					 is_core = ROOT
+				}
+			}
+			2302 = {
+				AND = {
+					owned_by = ROOT
+					 is_core = ROOT
+				}
+			}			
+		}	
+		effect = {
+			change_tag = RUM
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			anatolia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = RUM
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_prestige = 25
+			set_country_flag = formed_rum_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

@@ -1,8 +1,8 @@
 # 475 - Bashkortostan (1356)
 # Changes: GOL/KAZ/religion
 
-owner = GLH
-controller = GLH
+owner = WHI
+controller = WHI
 culture = bashkir
 religion = tengri_pagan_reformed
 capital = "Bashkort"
@@ -13,8 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = GLH
-add_core = KAZ
+add_core = WHI
 add_core = BSH
 
 discovered_by = eastern
@@ -23,7 +22,7 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 1375.1.1  = { religion = sunni }
-1438.1.1  = { owner = KAZ controller = KAZ remove_core = GLH } # Khanate of Kazan
+1438.1.1  = { owner = KAZ controller = KAZ remove_core = WHI } # Khanate of Kazan
 1453.1.1  = { discovered_by = western }
 1552.10.2 = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
 1574.1.1  = { capital = "Ufa" culture = russian religion = orthodox remove_core = BSH }

@@ -23,10 +23,9 @@ discovered_by = ottoman
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
-discovered_by = GLH
+discovered_by = WHI
 discovered_by = AST
 discovered_by = QAS
-
 1419.12.1 = { revolt = { type = hussite_rebels size = 2 } controller = REB } # Hussite Wars, Battle of Nekmir
 1436.7.5  = { revolt = {} controller = BOH } # Peace is signed in Jihlava
 1457.1.1  = { unrest = 5 } # George of Podiebrand had to secure recognition from the German and Catholic towns

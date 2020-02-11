@@ -1,0 +1,332 @@
+namespace = ming_emperor
+
+country_event = { #Ming wins and becomes Emperor
+	id = ming_emperor.1
+	title =  ming_emperor.1.t
+	desc =  ming_emperor.1.d
+	picture = CULTURE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = MNG
+		is_at_war = no
+		has_dlc = "Mandate of Heaven"
+	}
+	
+	option = { #Curses
+		name = ming_emperor.1.a
+		set_global_flag = ming_emperor_of_china_1356
+		custom_tooltip = ming_emperor.6.a.tt
+		set_emperor_of_china = MNG
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = YUA
+					OR = {
+						region = south_china_region
+						region = north_china_region
+						area = ordos_area
+						area = amdo_area
+						region = xinan_region
+						area = liaoning_area
+					}
+					is_core = YUA
+				}
+				cede_province = MNG
+				add_core = MNG
+				set_local_autonomy = -100
+			}
+		}	
+		if = {
+			limit = {
+				WUU = {
+					was_player = no
+				}
+			}
+			MNG = {
+				inherit = WUU
+			}
+		}		
+		if = {
+			limit = {
+				CXI = {
+					was_player = no
+				}
+			}
+			MNG = {
+				inherit = CXI
+			}
+		}
+		if = {
+			limit = {
+				SHU = {
+					was_player = no
+				}
+			}
+			MNG = {
+				inherit = SHU
+			}
+		}
+		if = {
+			limit = {
+				QIC = {
+					was_player = no
+				}
+			}
+			MNG = {
+				inherit = QIC
+			}
+		}
+		if = {
+			limit = {
+				MIN = {
+					was_player = no
+				}
+			}
+			MNG = {
+				create_subject = {
+					subject_type = vassal
+					subject = MIN
+				}
+			}		
+		}		
+		hidden_effect = {
+			xinan_region = {
+				add_core = MNG
+				remove_core = YUA
+			}
+		}
+		hidden_effect = {
+			north_china_region = {
+				add_core = MNG
+				remove_core = YUA
+			}
+		}
+		hidden_effect = {
+			south_china_region = {
+				remove_core = YUA
+			}
+		}
+		hidden_effect = {
+			amdo_area = {
+				remove_core = YUA
+			}
+		}
+		hidden_effect = {
+			liaoning_area = {
+				remove_core = YUA
+			}
+		}		
+		hidden_effect = {
+			YUA = {
+				change_government = tribal
+				change_technology_group = nomad_group
+				change_unit_type = nomad_group				
+			}
+		}			
+	}
+}
+
+country_event = { #Ming wins and becomes Emperor
+	id = ming_emperor.11
+	title =  ming_emperor.1.t
+	desc =  ming_emperor.1.d
+	picture = CULTURE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = MNG
+		is_at_war = no
+		NOT = { has_dlc = "Mandate of Heaven" }
+	}
+	
+	option = { #Curses
+		name = ming_emperor.1.a
+		set_global_flag = ming_emperor_of_china_1356
+		custom_tooltip = ming_emperor.6.a.tt
+		#set_emperor_of_china = MNG
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = YUA
+					OR = {
+						region = south_china_region
+						region = north_china_region
+						area = ordos_area
+						area = amdo_area
+						region = xinan_region
+						area = liaoning_area
+					}
+					is_core = YUA
+				}
+				cede_province = MNG
+				add_core = MNG
+				set_local_autonomy = -100
+			}
+		}	
+		if = {
+			limit = {
+				WUU = {
+					was_player = no
+				}
+			}
+			MNG = {
+				inherit = WUU
+			}
+		}		
+		if = {
+			limit = {
+				CXI = {
+					was_player = no
+				}
+			}
+			MNG = {
+				inherit = CXI
+			}
+		}
+		if = {
+			limit = {
+				SHU = {
+					was_player = no
+				}
+			}
+			MNG = {
+				inherit = SHU
+			}
+		}
+		if = {
+			limit = {
+				QIC = {
+					was_player = no
+				}
+			}
+			MNG = {
+				inherit = QIC
+			}
+		}
+		if = {
+			limit = {
+				MIN = {
+					was_player = no
+				}
+			}
+			MNG = {
+				create_subject = {
+					subject_type = vassal
+					subject = MIN
+				}
+			}		
+		}		
+		hidden_effect = {
+			xinan_region = {
+				add_core = MNG
+				remove_core = YUA
+			}
+		}
+		hidden_effect = {
+			north_china_region = {
+				add_core = MNG
+				remove_core = YUA
+			}
+		}
+		hidden_effect = {
+			south_china_region = {
+				remove_core = YUA
+			}
+		}
+		hidden_effect = {
+			amdo_area = {
+				remove_core = YUA
+			}
+		}
+		hidden_effect = {
+			liaoning_area = {
+				remove_core = YUA
+			}
+		}		
+		hidden_effect = {
+			YUA = {
+				change_government = tribal
+				change_technology_group = nomad_group
+				change_unit_type = nomad_group
+				set_government_rank = 2
+				remove_country_modifier = the_mandate_of_heaven
+				add_country_modifier = {
+					name = "lost_mandate_of_heaven"
+					duration = 7300
+				}								
+			}
+		}			
+	}
+}
+
+country_event = { #Council to decide Russian League Leader
+	id = ming_emperor.2
+	title = rus_independence.5.t
+	desc = rus_independence.5.d
+	picture = CULTURE_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		tag = MIN
+		has_global_flag = ming_emperor_of_china_1356
+		#NOT = { is_at_war = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #Curses
+		name = ming_emperor.2.a
+		set_government_rank = 1
+		add_country_modifier = {
+			name = "the_south_feudatory"
+			duration = -1
+		}					
+	}
+}
+
+country_event = { #Council to decide Russian League Leader
+	id = ming_emperor.3
+	title = rus_independence.5.t
+	desc = rus_independence.5.d
+	picture = CULTURE_eventPicture
+	
+	#fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	
+	trigger = {
+		OR = {
+			tag = OIR
+			tag = KHA
+			tag = HMI
+			culture_group = evenks
+		}		
+		has_global_flag = ming_emperor_of_china_1356
+		NOT = { has_country_flag = manchu_tribes_nomad_fix }
+	}
+	
+	#mean_time_to_happen = {
+	#	days = 1
+	#}
+	
+	option = { #Curses
+		name = ming_emperor.2.a
+		add_government_reform = steppe_horde
+		set_government_rank = 1
+		change_unit_type = nomad_group
+		change_technology_group = nomad_group
+		set_country_flag = manchu_tribes_nomad_fix		
+	}
+}

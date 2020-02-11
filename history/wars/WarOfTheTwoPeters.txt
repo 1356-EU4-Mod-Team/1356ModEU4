@@ -1,42 +1,24 @@
 # Audax Validator "!" Ignore_ALL
 # War of the Two Peters
-#
-#name = "War of the Two Peters"
-#casus_belli = cb_insult
-#war_goal = {
-#	type = superiority_insult_mutual
-#	casus_belli = cb_insult
-#}
-#
-#1356.1.1 = { # Claim in kingdom of Valencia, more access to mediterrean sea
-#	add_attacker = CAS
-#	add_attacker = CTR
-#	add_attacker = POR
-#	add_attacker = GEN
-#	add_attacker = GRA
-#	add_defender = FRA
-#	add_defender = ARA	
-#	add_defender = ALE
-#	add_defender = ANJ
-#	add_defender = AUV
-#	add_defender = BOU
-#	add_defender = DAU
-#	add_defender = ORL
-#}
 
- #End of war
-#1366.3.13 = { # Start of Castillian Civil War
-#	rem_attacker = CAS
-#	rem_attacker = CTR
-#	rem_attacker = POR
-#	rem_attacker = GEN
-#	rem_attacker = GRA
-#	rem_defender = FRA
-#	rem_defender = ARA
-#	rem_defender = ALE
-#	rem_defender = ANJ
-#	rem_defender = AUV
-#	rem_defender = BOU
-#	rem_defender = DAU
-#	rem_defender = ORL
-#}
+name = "War of the Two Peters"
+war_goal = {
+	type = take_capital_throne_castile
+	casus_belli = cb_castile_civil_war
+	tag = CAS
+}
+
+1356.1.1 = { # Claim in kingdom of Valencia, more access to mediterrean sea
+	add_attacker = CTR
+	add_attacker = ARA
+	add_defender = CAS
+	add_defender = POR	
+}
+
+
+1366.3.13 = { # Start of Castillian Civil War
+	rem_attacker = CTR
+	rem_attacker = ARA
+	rem_defender = CAS
+	rem_defender = POR
+}

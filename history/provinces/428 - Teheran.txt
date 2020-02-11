@@ -1,8 +1,8 @@
 # 428 - Rey (1356)
 # Changes: PER
 
-owner = MUZ
-controller = MUZ
+owner = CHB
+controller = CHB
 culture = persian
 religion = shiite
 capital = "Teheran"
@@ -12,7 +12,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
-add_core = MUZ
+add_core = CHB
 add_core = QOM
 
 discovered_by = muslim

@@ -1,8 +1,8 @@
 # 2748 - Jianchang (1356)
 # Changes: YUA/CZH
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = yi
 religion = animism
 capital = "Jianchang"
@@ -14,6 +14,7 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 add_core = YUA
+add_core = MIN
 #add_core = CXI #Should they have a core here?
 add_core = CYI
 add_core = CDL

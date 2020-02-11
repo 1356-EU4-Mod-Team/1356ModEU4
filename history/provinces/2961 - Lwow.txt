@@ -18,7 +18,6 @@ base_manpower = 2
 estate = estate_church # or burghers
 is_city = yes
 add_core = VOL
-add_claim = POL
 
 discovered_by = eastern
 discovered_by = western
@@ -27,21 +26,13 @@ discovered_by = ottoman
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
-discovered_by = GLH
+discovered_by = WHI
 discovered_by = AST
 discovered_by = QAS
 extra_cost = 8
 center_of_trade = 1
 
-1356.12.24  = { 
-				remove_claim = POL
-} #BT In
-
-1356.12.26  = { 
-				add_claim = POL
-} #BT Out 
-
-1387.2.1  = { owner = POL controller = POL remove_claim = POL add_core = POL }
+1387.2.1  = { owner = POL controller = POL add_core = POL }
 1569.7.1  = {	owner = PLC
 		controller = PLC
 		remove_core = POL

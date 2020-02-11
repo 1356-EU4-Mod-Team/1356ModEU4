@@ -1,8 +1,8 @@
 # 2159 - Leichow (1356)
 # Changes: YUA/CZH
 
-owner = YUA
-controller = YUA
+owner = MIN
+controller = MIN
 culture = chimin
 religion = confucianism
 capital = "Leichow"

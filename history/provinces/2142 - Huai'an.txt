@@ -1,8 +1,8 @@
 # 2142 - Huai'an (1356)
 # Changes: QIC/YUA
 
-owner = QIC
-controller = QIC
+owner = MNG
+controller = MNG
 culture = jianghuai
 religion = confucianism
 capital = "Huai'an"

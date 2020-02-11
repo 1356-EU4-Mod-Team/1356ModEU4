@@ -6,6 +6,18 @@ primary_culture = crimean
 capital = 284	# Crimea
 religious_school = hanafi_school
 
+
+1356.8.1 = {
+	monarch = {
+		name = "Otemesh"
+		dynasty = Hablemitoglu
+		birth_date = 1337.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
 1441.1.1 = {
 	monarch = {
 		name = "Haji I"

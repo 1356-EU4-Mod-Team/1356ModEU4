@@ -1,8 +1,8 @@
 # 474 - Yaik (1356)
 # Changes: GOL
 
-owner = GLH
-controller = GLH
+owner = WHI
+controller = WHI
 culture = nogaybak
 religion = sunni
 capital = "Yaik"
@@ -13,7 +13,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = GLH
+add_core = WHI
 add_core = NOG
 
 discovered_by = muslim
@@ -21,7 +21,7 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
-1391.7.1  = { owner = NOG controller = NOG remove_core = GLH }
+1391.7.1  = { owner = NOG controller = NOG remove_core = WHI }
 1613.1.1  = { owner = RUS controller = RUS add_core = RUS remove_core = NOG culture = russian religion = orthodox capital = "Yaitsky Gorodok" } # Yaik Cossacks settle the area
 1773.9.13 = { revolt = { type = anti_tax_rebels size = 4 leader = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion begins here
 1775.2.1  = { revolt = {} controller = RUS unrest = 0 capital = "Uralsk" base_tax = 4 

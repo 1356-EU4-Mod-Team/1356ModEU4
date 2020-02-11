@@ -111,6 +111,7 @@ GUN = "countries/Guanche.txt"
 
 #Central Asia
 WHI = "countries/White Horde.txt"
+BLU = "countries/Blue Horde.txt"
 
 #Persia	
 CHB = "countries/Chobanids.txt"

@@ -15,6 +15,7 @@ add_core = LIT
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
+discovered_by = WHI
 discovered_by = AST
 discovered_by = QAS
 discovered_by = western

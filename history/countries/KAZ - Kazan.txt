@@ -2,10 +2,24 @@ government = tribal
 add_government_reform = steppe_horde
 primary_culture = kazani
 religion = sunni
+mercantilism = 0.12
 technology_group = nomad_group
 capital = 1082	# Kazan
-historical_rival = GOL
 religious_school = hanafi_school
+
+1346.1.1 = {
+	government_rank = 1
+	monarch = {
+		name = "Yadigar Muhammad"
+		dynasty = "Tuqay"
+		birth_date = 1341.1.1
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+	add_treasury = 27
+	add_prestige = 26
+}
 
 1438.1.1 = {
 	monarch = {

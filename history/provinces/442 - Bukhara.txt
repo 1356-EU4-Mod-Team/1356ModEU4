@@ -9,9 +9,8 @@ capital = "Bukhara"
 trade_goods = salt
 hre = no
 base_tax = 5 
-
-base_production = 5
-base_manpower = 5
+base_production = 4
+base_manpower = 4
 fort_15th = yes
 is_city = yes
 add_core = TRS
@@ -31,7 +30,7 @@ discovered_by = indian
 
 1365.7.1  = { controller = CHG }
 1369.1.1  = { controller = TRS }
-1370.4.9  = { owner = TIM controller = TIM add_core = TIM remove_province_modifier = medium_nestorian_communnity }
+1370.4.9  = { owner = TIM controller = TIM }
 1409.5.13 = { # Ulugh Beg is made Governor of Samarkand
 		owner = TRS
 		controller = TRS

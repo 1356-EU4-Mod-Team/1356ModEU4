@@ -16,13 +16,15 @@ base_manpower = 1
 
 
 
+
 discovered_by = western
 discovered_by = eastern
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
-discovered_by = GLH
+discovered_by = WHI
 discovered_by = AST
+
 
 #add_local_autonomy = 25
 

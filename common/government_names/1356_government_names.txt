@@ -1,0 +1,36 @@
+serbian_empire = {
+	rank = {
+		3 = TSARDOM
+		2 = KINGDOM
+		1 = PRINCEDOM
+	}
+
+	ruler_male = {
+		3 = TSAR
+		2 = KING
+		1 = PRINC		
+	}
+	
+	ruler_female = {
+		3 = TSARITSA
+		2 = QUEEN
+		1 = PRINCEZA		
+	}
+	
+	consort_male = {
+		1 = PRINC
+		2 = KING
+		3 = TSAR
+	}
+
+	consort_female = {
+		1 = PRINCEZA
+		2 = QUEEN
+		3 = TSARITSA
+	}
+	trigger = {
+		tag = SER
+		government = monarchy
+		has_reform = serbian_government_reform
+	}
+}

@@ -1,10 +1,10 @@
 # 4342 - Malamir (1356)
 # Changes: JLR/TIM/religion
 
-owner = JLR
-controller = JLR
+owner = BSR
+controller = BSR
 culture = luri
-religion = sunni
+religion = shiite
 capital = "Malamir"
 trade_goods = wool
 hre = no
@@ -13,7 +13,8 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = JLR
+add_core = BSR
+add_core = LRI
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian

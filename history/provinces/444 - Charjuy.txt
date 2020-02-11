@@ -1,20 +1,19 @@
 # 444 - Charjuy (1356)
 # Changes: TRS
 
-owner = TRS
-controller = TRS
+owner = HER
+controller = HER
 culture = uzbehk
 religion = sunni
 capital = "Charjuy"
 trade_goods = livestock
 hre = no
 base_tax = 2 
-
 base_production = 2
 base_manpower = 2
 is_city = yes
+add_core = HER
 add_core = TRS
-add_core = KHI
 
 discovered_by = KAS
 discovered_by = muslim
