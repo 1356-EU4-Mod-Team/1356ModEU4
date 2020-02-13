@@ -1,8 +1,8 @@
 # 1048 - Udskoye (1356)
 # Changes: YUA
 
-owner = YUA
-controller = YUA
+owner = NVK
+controller = NVK
 add_core = NVK
 culture = evenk
 religion = tengri_pagan_reformed
@@ -13,11 +13,9 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = YUA
 
 discovered_by = nomad_group
 
-1388.11.1 = { owner = MYR controller = MYR remove_core = YUA }
 1542.1.1  = { discovered_by = POR }
 1643.1.1  = { discovered_by = RUS } # Vasily Poyarkov
 1653.1.1  = {	owner = RUS

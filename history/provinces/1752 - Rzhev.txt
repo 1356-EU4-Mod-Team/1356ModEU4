@@ -1,8 +1,5 @@
-# 1752 - Rzhev (1356)
-# Changes: TVE/NOV/MOS/LIT
-
-owner = TVE
-controller = TVE
+owner = LIT
+controller = LIT
 culture = russian
 religion = orthodox
 hre = no
@@ -14,11 +11,22 @@ base_manpower = 3
 capital = "Rzhev"
 estate = estate_nobles
 is_city = yes
-add_core = TVE
+add_core = LIT
+add_core = MOS
 
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
+
+
+1356.12.24  = { 
+				owner = NOV controller = NOV add_core = NOV
+} #BT In
+
+1356.12.26  = { 
+				owner = LIT controller = LIT add_core = LIT remove_core = NOV
+} #BT Out
+
 
 1360.1.1  = { owner = NOV controller = NOV add_core = NOV }
 1385.1.1  = { owner = MOS controller = MOS add_core = MOS }

@@ -17,7 +17,20 @@ national_focus = ADM
 		adm = 2
 		dip = 2
 		mil = 2
+		
+		leader = {
+			name = Ivan
+			type = general
+			fire = 2
+			shock = 2
+			manuever = 1
+			siege = 0
+		}
+
 	}
+	add_ruler_personality = benevolent_personality
+
+	
 	queen = {
 		country_of_origin = MOS
 		name = " Alexandra Vassilievna"

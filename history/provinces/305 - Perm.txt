@@ -1,10 +1,9 @@
 # 305 - Perm (1356)
-# Changes: GOL
 
 owner = PRM
 controller = PRM     
-culture = uralic
-religion = tengri_pagan_reformed # Sami Shamanism
+culture = permic_culture
+religion = finnish_pagan_reformed # Sami Shamanism
 hre = no
 base_tax = 4
 base_production = 4

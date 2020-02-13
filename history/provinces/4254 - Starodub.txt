@@ -1,8 +1,8 @@
 # 4254 - Starodub (1356)
-# Changes: NZH
 
-owner = NZH
-controller = NZH
+
+owner = SDU
+controller = SDU
 culture = russian
 religion = orthodox
 hre = no
@@ -12,15 +12,14 @@ trade_goods = grain
 base_manpower = 2
 capital = "Starodub"
 is_city = yes
-add_core = NZH
-add_core = MOS
-discovered_by = GOL
+add_core = SDU
+discovered_by = WHI
 discovered_by = KAZ
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
-1392.1.1  = { owner = MOS controller = MOS }
+1392.1.1  = { owner = MOS controller = MOS add_core = MOS }
 1450.1.1  = { discovered_by = SIB }
 1503.4.1  = {	owner = RUS 
 		controller = RUS

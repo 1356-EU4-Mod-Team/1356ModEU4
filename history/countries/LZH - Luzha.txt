@@ -1,0 +1,20 @@
+#Represents the Ryazani Principalities
+
+government_rank = 1
+government = monarchy
+add_government_reform = principality
+primary_culture = ryazanian
+religion = orthodox
+technology_group = eastern
+capital = 296	# Kaluga
+fixed_capital = 296 # Cannot move capital away from this province & no power cost to move to it
+
+1336.1.1 = {
+	monarch = {
+		name = "Sergej"
+		dynasty = "Rurikovich"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

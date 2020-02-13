@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = mazovian
+capital = 256	# Plock
+
+1355.11.26 = {
+	monarch = {
+		name = "Test"
+		dynasty = "Piast"
+		birth_date = 1320.1.1
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+	heir = {
+		name = "Test II"
+		monarch_name = "Janusz I"
+		dynasty = "Piast"
+		birth_date = 1350.1.1
+		death_date = 1429.12.8
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+# Merged with Poland 1526.3.9

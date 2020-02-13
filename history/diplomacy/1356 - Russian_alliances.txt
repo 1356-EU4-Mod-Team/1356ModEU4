@@ -42,14 +42,6 @@ dependency = {
 dependency = {
 	subject_type = "tributary_state"
 	first = WHI
-	second = BLO
-	start_date = 1355.1.1
-	end_date = 1380.9.8
-}
-
-dependency = {
-	subject_type = "tributary_state"
-	first = WHI
 	second = YAR
 	start_date = 1355.1.1
 	end_date = 1380.9.8
@@ -67,6 +59,86 @@ dependency = {
 	subject_type = "tributary_state"
 	first = WHI
 	second = MRM
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = DMT
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = VLD
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = SDU
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = MIA
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = BOG
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = UDM
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = MRR
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = MR1
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = MR2
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = WHI
+	second = MI1
 	start_date = 1355.1.1
 	end_date = 1380.9.8
 }
@@ -139,12 +211,20 @@ vassal = {
 	end_date = 1363.1.1
 }
 
+# Moskovite vassal - Kostroma
+vassal = {
+	first = MOS
+	second = KMA
+	start_date = 1356.1.1
+	end_date = 1363.1.1
+}
+
 # Moskovite vassal - Beloozero
 vassal = {
 	first = MOS
 	second = BLO
-	start_date = 1389.1.1
-	end_date = 1444.1.1
+	start_date = 1330.1.1
+	end_date = 1389.1.1
 }
 
 # Novgorod vassal - Great Perm
@@ -154,6 +234,15 @@ vassal = {
 	start_date = 1356.1.1
 	end_date = 1440.1.1
 }
+
+# Novgorod vassal - Vyatskaya Zemlya
+vassal = {
+	first = NOV
+	second = VYL
+	start_date = 1356.1.1
+	end_date = 1440.1.1
+}
+
 
 # Ryazanian Anti-Moskovite Alliance ## Changed to be a White Horde Tribute
 dependency = {

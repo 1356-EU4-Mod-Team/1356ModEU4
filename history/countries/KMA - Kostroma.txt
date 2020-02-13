@@ -1,0 +1,20 @@
+#Represents the principality of Kostroma
+
+government_rank = 1
+government = monarchy
+add_government_reform = principality
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 1753	# Kostroma
+fixed_capital = 1753 # Cannot move capital away from this province & no power cost to move to it
+
+1336.1.1 = {
+	monarch = {
+		name = "Nikolaj"
+		dynasty = "Rurikovich"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

@@ -1,8 +1,7 @@
 # 1753 - Kostroma (1356)
-# Changes: GLY
 
-owner = GLY
-controller = GLY
+owner = KMA
+controller = KMA
 culture = russian 
 religion = orthodox
 hre = no
@@ -12,7 +11,7 @@ trade_goods = cloth
 base_manpower = 3
 capital = "Kostroma"
 is_city = yes
-add_core = GLY
+add_core = KMA
 
 discovered_by = eastern
 discovered_by = western

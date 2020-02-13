@@ -1,8 +1,8 @@
 # 2353 - Tortkara (1356)
-# Changes: WHI
+# Changes: BLU
 
-owner = WHI
-controller = WHI
+owner = BLU
+controller = BLU
 culture = khazak
 religion = sunni
 capital = "Tortkara"
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = WHI
+add_core = BLU
 add_core = KZH
 add_core = NOG
 
@@ -23,7 +23,7 @@ discovered_by = nomad_group
 discovered_by = ottoman
 discovered_by = muslim
 
-1427.1.1 = { controller = NOG owner = NOG remove_core = WHI }
+1427.1.1 = { controller = NOG owner = NOG remove_core = BLU }
 1468.1.1 = { controller = KZH owner = KZH remove_core = NOG } # Kazakhs take over
 1622.1.1 = { discovered_by = RUS }
 1740.1.1 = { owner = ZUN controller = ZUN } # Dzungarian invasion

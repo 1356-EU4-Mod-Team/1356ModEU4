@@ -1,0 +1,32 @@
+country_decisions = {
+
+	lithuania_ultimatum_vassals = {
+		major = yes
+		potential = {
+			always = no #disabled until its finished and localised
+			tag = LIT
+			NOT = { has_country_flag = lituaniaultimatum }
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			stability = 1
+			PDA = { is_subject = no }
+			KIE = { is_subject = no }
+			CHR = { is_subject = no }
+		}
+		effect = {
+			country_event = { id = flavor_lit.0001 }
+			vassalize = PDA
+			PDA = { add_liberty_desire = -50 }
+			vassalize = KIE
+			KIE = { add_liberty_desire = -50 }
+			vassalize = CHR
+			CHR = { add_liberty_desire = -50 }
+			set_country_flag = lituaniaultimatum
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,26 @@
+#Lithuanian Conquest of Rzhev
+#12/18/2019
+
+name = "Lithuanian Conquest of Rzhev"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1752 # Rzhev
+}
+
+1356.1.1 = {
+	add_attacker = LIT
+	add_defender = MOS
+	add_defender = DMT
+	add_defender = GLY
+	add_defender = KMA
+}
+
+# Rzhev is ceded to Lithuania
+1356.6.1 = {
+	rem_attacker = LIT
+	rem_defender = MOS
+	rem_defender = DMT
+	rem_defender = GLY
+	rem_defender = KMA
+}

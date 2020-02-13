@@ -1,8 +1,8 @@
 # 479 - Kerey (1356)
-# Changes: KZH/WHI/religion
+# Changes: KZH/BLU/religion
 
-owner = KZH
-controller = KZH
+owner = SHY
+controller = SHY
 culture = khazak
 religion = tengri_pagan_reformed
 capital = "Kerey"

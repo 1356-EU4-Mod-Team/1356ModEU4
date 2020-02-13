@@ -1,19 +1,18 @@
 # 2352 - Alty-Kuduk (1356)
-# Changes: WHI/KZH
+# Changes: BLU/KZH
 
-owner = WHI
-controller = WHI
+owner = BLU
+controller = BLU
 culture = khazak
 religion = sunni
 capital = "Alty-Kuduk"
 trade_goods = fish
 hre = no
 base_tax = 3 
-
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = WHI
+add_core = BLU
 add_core = KZH
 add_core = SHY
 
@@ -25,7 +24,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1396.1.1 = { owner = KZH controller = KZH }
-1430.1.1 = { owner = SHY controller = SHY remove_core = WHI }
+1430.1.1 = { owner = SHY controller = SHY remove_core = BLU }
 1465.1.1 = { controller = KZH }
 1468.1.1 = { owner = KZH remove_core = SHY } # Kazakhs take over
 1622.1.1 = { discovered_by = RUS }

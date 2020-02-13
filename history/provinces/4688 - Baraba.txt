@@ -1,8 +1,8 @@
 #4688 - Baraba
 
-owner = KZH
-controller = KZH
-add_core = KZH
+owner = SHY
+controller = SHY
+add_core = SHY
 culture = kirgiz
 religion = tengri_pagan_reformed
 capital = "Baraba"
@@ -13,11 +13,12 @@ base_production = 1
 base_manpower = 2
 is_city = yes
 add_core = SIB
+add_core = KZH
 discovered_by = nomad_group
 
-1391.7.1 = { owner = WHI controller = WHI add_core = WHI }
+1391.7.1 = { owner = BLU controller = BLU add_core = BLU }
 1396.1.1 = { owner = KZH controller = KZH }
-1429.1.1 = { owner = SHY controller = SHY remove_core = WHI }
+1429.1.1 = { owner = SHY controller = SHY remove_core = BLU }
 1430.1.1 = { religion = sunni }
 1444.1.1 = { unrest = 15 }
 1468.1.1 = {

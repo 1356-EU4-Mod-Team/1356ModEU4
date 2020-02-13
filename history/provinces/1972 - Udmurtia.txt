@@ -1,11 +1,11 @@
 # 1972 - Udmurtia (1356)
-# Changes: GOL
+# Changes: UDM
 
-owner = KAZ
-controller = KAZ
+owner = UDM
+controller = UDM
 capital = "Elabuga"
-culture = uralic
-religion = tengri_pagan_reformed # Sami Shamanism
+culture = udmurt
+religion = finnish_pagan_reformed
 trade_goods = grain
 hre = no
 base_tax = 2 
@@ -13,7 +13,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = KAZ
+add_core = UDM
 
 discovered_by = SIB
 discovered_by = NOG

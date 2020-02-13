@@ -1641,6 +1641,19 @@
  fra_feud_vassal_integrate_mission_9_title: "Integrate Brittany"
  fra_feud_vassal_integrate_mission_9_desc: "The Kingdom of Brittany has been subjugated. It now comes time to integrate Brittany, they are nearly the last stepping stone on our path to a fully centralized French Kingdom!"
  
+ ###Suomenusko Eastern Europe Missions###
+ uralic_force_limit_starting_modifier: "Ineffective Levies"
+ uralic_army_starting_modifier: "Unreformed Army"
+ uralic_religion_starting_modifier: "Unreformed Religion"
+ uralic_suomenusko_reform_levies_title: "Reform our Ineffective Levies"
+ uralic_suomenusko_reform_levies_desc: "Our ineffective tribal levies have done us well in the past, but they are proving to be less than stellar in the current year. Perhaps it is time to pass some new reforms?"
+ uralic_suomenusko_reform_army_title: "Reform our Army"
+ uralic_suomenusko_reform_army_desc: "We may now have a standing army, but that does not mean it is effective! We must maintain the highest of quality troops to ensure our further survival!"
+ uralic_suomenusko_reform_religion_title: "Reform our Religion"
+ uralic_suomenusko_reform_religion_desc: "Our religion must withstand the onslaught of the cross and the moon! In order for us to survive culturally we must put in place a reformed religion!"
+ 
+
+ 
  #Group Garbage #These really dont need localised but I do it so Validator leaves me alone
  french_missions_breton_civil_war_slot: "Group"
  fra_conquer_low_countries_slot: "Group"

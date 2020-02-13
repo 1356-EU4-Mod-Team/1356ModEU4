@@ -1,11 +1,11 @@
 # 1081 - Simbirsk (1356)
-# Changes: GOL
+# Changes: MI1
 
-owner = KAZ
-controller = KAZ
+owner = MI1
+controller = MI1
 capital = "Bolgar"
-culture = kazani
-religion = sunni
+culture = mordvin
+religion = finnish_pagan_reformed
 trade_goods = iron
 hre = no
 base_tax = 1 
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = KAZ
+add_core = MI1
 
 discovered_by = eastern
 discovered_by = western

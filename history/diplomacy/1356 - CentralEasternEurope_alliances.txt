@@ -261,18 +261,20 @@ vassal = {
 #	end_date = 1444.11.10
 #}
 
-vassal = {
+#### LITHUANIAN REGION ####
+
+union = {
 	first = LIT
-	second = KIE
+	second = TAK
 	start_date = 1356.1.1
-	end_date = 1363.1.1
+	end_date = 1413.1.1
 }
 
 vassal = {
-	first = LIT
-	second = CHR
+	first = TAK
+	second = SMG
 	start_date = 1356.1.1
-	end_date = 1363.1.1
+	end_date = 1413.1.1
 }
 
 # Polish vassals
@@ -285,8 +287,22 @@ union = {
 
 vassal = { #Changed dates to be vanilla compatible. 
 	first = POL
-	second = MAZ
-	start_date = 1356.1.1
+	second = PLK
+	start_date = 1351.12.26
+	end_date = 1443.12.31
+}
+
+vassal = { #Changed dates to be vanilla compatible. 
+	first = POL
+	second = WRW
+	start_date = 1351.12.26
+	end_date = 1443.12.31
+}
+
+vassal = { #Changed dates to be vanilla compatible. 
+	first = POL
+	second = DRZ
+	start_date = 1352.12.26
 	end_date = 1443.12.31
 }
 
@@ -297,7 +313,14 @@ march = { #Changed Dates to be Vanilla Compatible
 	end_date = 1443.12.31
 }
 
-# Louis I of Hungary/Poland
+######HUNGARY START VASSALS######
+
+vassal  = {
+	first = HUN
+	second = MOL
+	start_date = 1356.1.1
+	end_date = 1359.9.10
+}
 
 union = {
 	first = HUN
@@ -305,6 +328,9 @@ union = {
 	start_date = 1342.7.16
 	end_date = 1526.8.30
 }
+
+
+# Louis I of Hungary/Poland
 
 vassal = {
 	first = HUN
@@ -316,13 +342,6 @@ vassal = {
 union = {
 	first = HUN
 	second = POL
-	start_date = 1370.11.5
-	end_date = 1382.9.10
-}
-
-vassal  = {
-	first = HUN
-	second = VOL
 	start_date = 1370.11.5
 	end_date = 1382.9.10
 }

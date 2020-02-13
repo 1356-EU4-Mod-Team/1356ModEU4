@@ -1,11 +1,11 @@
 # 1082 - Kazan (1356)
-# Changes: GOL
+# Changes: MRR
 
-owner = KAZ
-controller = KAZ
+owner = MR2
+controller = MR2
 capital = "Kazan"
-culture = kazani
-religion = sunni
+culture = mari_culture
+religion = finnish_pagan_reformed
 trade_goods = grain
 hre = no
 base_tax = 6 
@@ -13,7 +13,7 @@ base_production = 6
 base_manpower = 3
 is_city = yes
 fort_15th = yes
-add_core = KAZ
+add_core = MR2
 
 discovered_by = eastern
 discovered_by = western

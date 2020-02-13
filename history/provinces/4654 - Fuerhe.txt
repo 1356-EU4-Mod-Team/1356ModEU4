@@ -1,7 +1,7 @@
-owner = YUA
-controller = YUA
-add_core = YUA
+owner = MJZ
+controller = MJZ
 add_core = MJZ
+
 culture = manchu
 religion = confucianism
 capital = "Fu'erhe"

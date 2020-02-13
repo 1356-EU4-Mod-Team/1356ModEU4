@@ -6,19 +6,27 @@ add_accepted_culture = byelorussian
 add_accepted_culture = ruthenian
 religion = baltic_pagan_reformed
 technology_group = eastern
-#historical_friend = POL
+historical_rival = TEU
 capital = 272 # Vilnius
 
 1345.1.1 = {
 	set_country_flag = time_of_peace
 	monarch = {
 		name = "Algirdas"
-		dynasty = "Gediminai"
+		dynasty = "Gediminaiciai"
 		birth_date = 1296.4.8
 		adm = 4
-		dip = 4
-		mil = 6		
-		leader = { name = "Algirdas"	type = general	fire = 2	shock = 4	manuever = 6	siege = 0 } 
+		dip = 5
+		mil = 5
+		
+		leader = { 
+			name = "Algirdas"	
+			type = general	
+			fire = 2	
+			shock = 4	
+			manuever = 6	
+			siege = 0
+		}		
 	}
 }
 
@@ -40,32 +48,40 @@ capital = 272 # Vilnius
 	heir = {
 		name = "Jogaila"
 		monarch_name = "Jogaila"
-		dynasty = "Gediminai"
+		dynasty = "Gediminaiciai"
 		birth_date = 1352.1.1
 		death_date = 1434.6.1
 		claim = 95
-		adm = 3
+		adm = 4
 		dip = 4
 		mil = 5
-	}
+		leader = {
+			name = "Jogaila"
+			type = general
+			fire = 3	
+			shock = 3	
+			manuever = 3	
+			siege = 1
+		}		
+	}	
 }
 
 1377.5.29 = {
 	monarch = { # 1st time
 		name = "Jogaila"
-		dynasty = Gediminai
+		dynasty = Jagiellon
 		birth_date = 1352.1.1
-		adm = 3
+		adm = 4
 		dip = 4
 		mil = 5
-		leader = { name = "Jogaila"	type = general	fire = 2	shock = 4	manuever = 4	siege = 1 } 
+		leader = { name = "Jogaila"	type = general	fire = 3	shock = 3	manuever = 3	siege = 1 } 
 	}
 }
 
 1381.8.1 = {
 	monarch = {
 		name = "Kestutis"
-		dynasty = Gediminai
+		dynasty = Gediminaiciai
 		birth_date = 1297.1.1
 		adm = 1
 		dip = 1
@@ -74,7 +90,7 @@ capital = 272 # Vilnius
 	heir = {
 		name = "Vytautas"
 		monarch_name = "Vytautas the Great"
-		dynasty = "Gediminai"
+		dynasty = "Gediminaiciai"
 		birth_date = 1350.1.1
 		death_date = 1430.10.27
 		claim = 95
@@ -87,7 +103,7 @@ capital = 272 # Vilnius
 1382.8.15 = {
 	monarch = { # 2nd time
 		name = "Jogaila"
-		dynasty = Gediminai
+		dynasty = Jagiellon
 		birth_date = 1352.1.1
 		adm = 3
 		dip = 4
@@ -102,7 +118,7 @@ capital = 272 # Vilnius
 1386.3.4 = { # regent
 	monarch = {
 		name = "Skirgaila"
-		dynasty = Gediminai
+		dynasty = Gediminaiciai
 		birth_date = 1354.1.1
 		adm = 2
 		dip = 2
@@ -113,7 +129,7 @@ capital = 272 # Vilnius
 1392.8.4 = { # regent
 	monarch = {
 		name = "Vytautas"
-		dynasty = Gediminai
+		dynasty = Gediminaiciai
 		birth_date = 1350.1.1
 		adm = 5
 		dip = 5
@@ -125,7 +141,7 @@ capital = 272 # Vilnius
 1430.10.27 = { # regent
 	monarch = {
 		name = "Svitrigaila"
-		dynasty = Gediminai
+		dynasty = Gediminaiciai
 		birth_date = 1370.1.1
 		adm = 2
 		dip = 2
@@ -136,7 +152,7 @@ capital = 272 # Vilnius
 1432.8.1 = { # regent
 	monarch = {
 		name = "Zygimantas"
-		dynasty = Gediminai
+		dynasty = Gediminaiciai
 		birth_date = 1365.1.1
 		adm = 0
 		dip = 3
@@ -146,7 +162,6 @@ capital = 272 # Vilnius
 
 1440.3.20 = {
 	clr_country_flag = time_of_peace
-	historical_friend = POL
 	government = monarchy
 	add_government_reform = grand_duchy_reform
 	monarch = {

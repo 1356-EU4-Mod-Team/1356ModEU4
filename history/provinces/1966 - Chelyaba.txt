@@ -1,17 +1,18 @@
 # 1966 - Chelyaba (1356)
 # Changes: KZH/SIB/religion
 
-owner = KZH
-controller = KZH
+owner = BLU
+controller = BLU
 capital = "Chelyaba"
 culture = bashkir
-religion = tengri_pagan_reformed
+religion = finnish_pagan_reformed
 trade_goods = fur
 hre = no
 base_tax = 3 
 base_production = 3
 base_manpower = 3
 is_city = yes
+add_core = BLU
 add_core = KZH
 add_core = NOG
 add_core = BSH
@@ -21,7 +22,7 @@ discovered_by = muslim
 
 1375.1.1   = { religion = sunni }
 1391.7.1   = { owner = WHI controller = WHI add_core = WHI remove_core = KZH }
-1427.1.1   = { owner = NOG controller = NOG add_core = SIB remove_core = WHI unrest = 15 }
+1427.1.1   = { owner = NOG controller = NOG add_core = SIB unrest = 15 }
 1468.1.1   = { owner = SIB controller = SIB  remove_core = NOG unrest = 0 
 	     } # Sibir Khanate formed from northern Uzbek lands
 1582.10.23 = { discovered_by = RUS owner = RUS controller = RUS add_core = RUS remove_core = SIB } # Yermak Timofeevich

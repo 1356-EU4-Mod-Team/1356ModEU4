@@ -1,10 +1,10 @@
 # 2422 - Veda-Suvar (1356)
-# Changes: GOL
+# Changes: NZH
 
-owner = KAZ
-controller = KAZ
-culture = kazani
-religion = sunni
+owner = NZH
+controller = NZH
+culture = russian
+religion = orthodox
 capital = "Veda-Suvar"
 trade_goods = grain
 hre = no
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = KAZ
+add_core = NZH
 
 discovered_by = eastern
 discovered_by = western

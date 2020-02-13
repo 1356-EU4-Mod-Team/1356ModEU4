@@ -1,0 +1,20 @@
+#Represents the principality of Vyatskaya Zemlya
+
+government_rank = 1
+government = monarchy
+add_government_reform = principality
+primary_culture = novgorodian
+religion = orthodox
+technology_group = eastern
+capital = 1079	# Viatka
+fixed_capital = 1079 # Cannot move capital away from this province & no power cost to move to it
+
+1336.1.1 = {
+	monarch = {
+		name = "Paul"
+		dynasty = "Rurikovich"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

@@ -1,8 +1,7 @@
 #Edala
 
-owner = YUA
-controller = YUA
-add_core = YUA
+owner = MHX
+controller = MHX
 add_core = MHX
 culture = manchu
 religion = confucianism

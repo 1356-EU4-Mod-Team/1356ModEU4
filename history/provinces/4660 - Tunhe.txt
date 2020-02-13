@@ -1,8 +1,7 @@
 #Tunhe
 
-owner = YUA
-controller = YUA
-add_core = YUA
+owner = NHX
+controller = NHX
 add_core = NHX
 culture = manchu
 religion = tengri_pagan_reformed

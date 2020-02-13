@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = eastern
+religion = finnish_pagan_reformed
+primary_culture = mari_culture
+capital = 1082 # Kazan
+
+1356.1.1 = {
+	add_country_modifier = {
+		name = "uralic_army_starting_modifier"
+		duration = -1
+	}
+	add_country_modifier = {
+		name = "uralic_force_limit_starting_modifier"
+		duration = -1
+	}
+	add_country_modifier = {
+		name = "uralic_religion_starting_modifier"
+		duration = -1
+	}
+}

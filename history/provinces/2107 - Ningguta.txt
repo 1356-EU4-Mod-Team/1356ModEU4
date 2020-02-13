@@ -1,7 +1,9 @@
 # 2107 - Ningguta (1356)
+
 owner = MJZ
 controller = MJZ
 add_core = MJZ
+
 culture = manchu
 religion = confucianism
 capital = "Ningguta"

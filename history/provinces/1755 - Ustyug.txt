@@ -1,8 +1,8 @@
 # 1755 - Ustyug (1356)
-# Changes: NOV
+# Changes: RSO
 
-owner = NOV
-controller = NOV    
+owner = RSO
+controller = RSO    
 culture = russian 
 religion = orthodox
 hre = no
@@ -12,7 +12,7 @@ trade_goods = fur
 base_manpower = 1
 capital = "Ustyug"
 is_city = yes
-add_core = NOV
+add_core = RSO
 
 discovered_by = eastern
 discovered_by = western

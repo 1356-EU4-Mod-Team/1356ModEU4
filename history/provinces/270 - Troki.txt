@@ -1,8 +1,8 @@
 # 270 Troki (1356)
 # Changes: religion
 
-owner = LIT
-controller = LIT
+owner = TAK
+controller = TAK
 religion = baltic_pagan_reformed
 culture = lithuanian
 capital = "Trakai"
@@ -13,8 +13,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 2 
 is_city = yes
-#fort_15th = yes #Trakai Castles "Little Marienburg"
-add_core = LIT
+add_core = TAK
 
 discovered_by = western
 discovered_by = eastern

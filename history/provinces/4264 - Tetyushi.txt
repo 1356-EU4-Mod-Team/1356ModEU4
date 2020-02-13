@@ -1,10 +1,10 @@
 # 4264 - Tetyushi (1356)
-# Changes: GOL
+# Changes: MR1
 
-owner = KAZ
-controller = KAZ
-culture = kazani
-religion = sunni
+owner = MR1
+controller = MR1
+culture = mari_culture
+religion = finnish_pagan_reformed
 capital = "Tetyushi"
 trade_goods = grain
 hre = no
@@ -13,7 +13,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = KAZ
+add_core = MR1
 
 discovered_by = eastern
 discovered_by = western

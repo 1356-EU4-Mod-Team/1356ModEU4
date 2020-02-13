@@ -1,8 +1,8 @@
 # 1936 - Kovno (1356)
 # Changes: religion
 
-owner = LIT
-controller = LIT
+owner = TAK
+controller = TAK
 culture = lithuanian
 religion = baltic_pagan_reformed
 capital = "Kovno"
@@ -13,8 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-fort_15th = yes
-add_core = LIT
+add_core = TAK
 
 discovered_by = western
 discovered_by = eastern
@@ -42,3 +41,4 @@ discovered_by = QAS
 1795.10.24 = { owner = RUS controller = RUS add_core = RUS } # Annexed by Russia, third partition
 1812.6.28  = { controller = FRA } # Occupied by French troops
 1812.12.10 = { controller = RUS }
+

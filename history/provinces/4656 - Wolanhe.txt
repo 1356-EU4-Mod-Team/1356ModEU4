@@ -1,8 +1,7 @@
 # Wolanhe
 
-owner = YUA
-controller = YUA
-add_core = YUA
+owner = EJZ
+controller = EJZ
 add_core = EJZ
 culture = manchu
 religion = tengri_pagan_reformed

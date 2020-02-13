@@ -1,6 +1,5 @@
-owner = YUA
-controller = YUA
-add_core = YUA
+owner = SOL
+controller = SOL
 add_core = SOL
 culture = evenk
 religion = tengri_pagan_reformed

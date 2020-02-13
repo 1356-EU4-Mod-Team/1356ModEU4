@@ -1,5 +1,5 @@
 # 2357 - Aksary (1356)
-# Changes: KZH/WHI/religion
+# Changes: KZH/BLU/religion
 
 owner = SHY
 controller = SHY

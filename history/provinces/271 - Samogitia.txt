@@ -1,8 +1,8 @@
 # 271 - Samogitia (1356)
 # Changes: TEU/religion
 
-owner = LIT
-controller = LIT
+owner = SMG
+controller = SMG
 culture = lithuanian
 religion = baltic_pagan_reformed
 capital = "Varniai"
@@ -14,7 +14,7 @@ base_production = 3
 base_manpower = 3
 is_city = yes
 estate = estate_nobles
-add_core = LIT
+add_core = SMG
 
 discovered_by = western
 discovered_by = eastern
@@ -31,13 +31,11 @@ discovered_by = QAS
 1356.12.24  = { 
 				owner = KUR controller = KUR add_core = KUR remove_core = LIT
 				base_tax = 4 base_production = 3 base_manpower = 3
-				religion = baltic_pagan_reformed
 } #BT In
 
 1356.12.26  = { 
-				owner = LIT controller = LIT add_core = LIT remove_core = KUR add_core = LIV
+				owner = SMG controller = SMG add_core = SMG remove_core = KUR add_core = LIV
 				base_tax = 3 base_production = 3 base_manpower = 3
-				religion = catholic
 } #BT Out
 
 1398.1.1   = { owner = TEU controller = TEU add_core = TEU religion = catholic }

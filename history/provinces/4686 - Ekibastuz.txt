@@ -1,7 +1,7 @@
 # 4686 - Ekibastuz
 
-owner = KZH
-controller = KZH
+owner = SHY
+controller = SHY
 culture = khazak
 religion = sunni
 capital = "Ekibastuz"
@@ -12,6 +12,7 @@ base_production = 2
 base_manpower = 1
 is_city = yes
 add_core = KZH
+add_core = SHY
 
 
 
@@ -22,9 +23,9 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 
-1391.7.1 = { owner = WHI controller = WHI add_core = WHI }
+1391.7.1 = { owner = BLU controller = BLU add_core = BLU }
 1396.1.1 = { owner = KZH controller = KZH }
-1429.1.1 = { owner = SHY controller = SHY add_core = SHY remove_core = WHI }
+1429.1.1 = { owner = SHY controller = SHY remove_core = BLU }
 
 1465.1.1 = { controller = KZH }
 1468.1.1 = { owner = KZH remove_core = SHY } # Kazakhs take over

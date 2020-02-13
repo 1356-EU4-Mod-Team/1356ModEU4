@@ -1,8 +1,7 @@
 #Nangha'er
 
-owner = YUA
-controller = YUA
-add_core = YUA
+owner = NVK
+controller = NVK
 add_core = NVK
 culture = evenk
 religion = animism

@@ -4,8 +4,8 @@
 owner = PRM
 controller = PRM
 capital = "Izhkar"
-culture = uralic
-religion = tengri_pagan_reformed # Sami Shamanism
+culture = permic_culture
+religion = finnish_pagan_reformed
 trade_goods = iron
 hre = no
 base_tax = 2

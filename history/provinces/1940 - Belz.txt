@@ -1,8 +1,8 @@
 # 1940 - Belz (1356)
-# Changes: VOL
+# Changes: LIT
 
-owner = VOL
-controller = VOL
+owner = LIT
+controller = LIT
 capital= "Belz"
 culture = ruthenian
 religion = orthodox
@@ -14,8 +14,6 @@ base_manpower = 2
 is_city = yes
 estate = estate_nobles
 add_core = LIT
-add_core = VOL
-add_claim = POL
 
 discovered_by = western
 discovered_by = eastern
@@ -29,11 +27,11 @@ discovered_by = AST
 discovered_by = QAS
 
 1356.12.24  = { 
-				remove_core = LIT remove_claim = POL
+				owner = VOL controller = VOL add_core = VOL remove_core = LIT
 } #BT In
 
 1356.12.26  = { 
-				add_core = LIT add_claim = POL
+				owner = LIT controller = LIT add_core = LIT
 } #BT Out
 
 1370.11.5 = { remove_core = LIT }

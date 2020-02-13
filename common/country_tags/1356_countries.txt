@@ -68,9 +68,21 @@ RET = "countries/Rethel.txt"
 LOO = "countries/Loon.txt"
 WOO = "countries/Wallonia.txt"
 
-#Russia 
+#Russia + Lithuania + Poland
 GLY = "countries/Galich.txt"
 MRM = "countries/Murom.txt"
+LZH = "countries/Luzha.txt"
+DMT = "countries/Dmitrov.txt"
+VLD = "countries/Vladimir.txt"
+KMA = "countries/Kostroma.txt"
+SMG = "countries/Samogitia.txt"
+PDA = "countries/Podolia.txt"
+PLK = "countries/Plock.txt"
+WRW = "countries/Warsaw-Rawa.txt"
+DRZ = "countries/Dobrzyn.txt"
+SDU = "countries/Starodub.txt"
+VYL = "countries/VyatskayaZemlya.txt"
+TAK = "countries/Trakai.txt"
 ING = "countries/Ingria.txt"
 
 #Arabia	
@@ -112,6 +124,13 @@ GUN = "countries/Guanche.txt"
 #Central Asia
 WHI = "countries/White Horde.txt"
 BLU = "countries/Blue Horde.txt"
+BOG = "countries/Bolgars.txt"
+UDM = "countries/Udmurtia.txt"
+MRR = "countries/Mari.txt"
+MR1 = "countries/Olyk Mari.txt"
+MR2 = "countries/Kyryk Mari.txt"
+MIA = "countries/Mordvia.txt"
+MI1 = "countries/Mokshet.txt"
 
 #Persia	
 CHB = "countries/Chobanids.txt"
@@ -123,6 +142,9 @@ KRT = "countries/Kurtid.txt"
 INT = "countries/Injuid.txt"
 MIH = "countries/Mihrabanid.txt"
 TPM = "countries/TimuridEmpireAbsolute.txt"
+HER = "countries/Herat.txt"
+RAD = "countries/Astarabad.txt"
+RHT = "countries/Rasht.txt"
 
 #North America
 

@@ -1,0 +1,20 @@
+#Represents the principality of Dmitrov
+
+government_rank = 1
+government = monarchy
+add_government_reform = principality
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 4248	# Kashin
+fixed_capital = 4248 # Cannot move capital away from this province & no power cost to move to it
+
+1336.1.1 = {
+	monarch = {
+		name = "Boris"
+		dynasty = "Rurikovich"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

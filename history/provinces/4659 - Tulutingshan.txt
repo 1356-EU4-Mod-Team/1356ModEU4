@@ -1,8 +1,7 @@
 # Tulutingshan
 
-owner = YUA
-controller = YUA
-add_core = YUA
+owner = MYR
+controller = MYR
 add_core = MYR
 #culture = manchu
 culture = evenk

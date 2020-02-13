@@ -1,8 +1,8 @@
 # 4259 - Velsk (1356)
-# Changes: (MOS)
+# Changes: (YAR)
 
-owner = NOV
-controller = NOV
+owner = YAR
+controller = YAR
 culture = russian 
 religion = orthodox
 hre = no
@@ -12,11 +12,11 @@ trade_goods = fur
 base_manpower = 1
 capital = "Velsk"
 is_city = yes
-add_core = NOV
+add_core = YAR
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
-
+1440.1.1 = { owner = NOV controller = NOV add_core = NOV remove_core = YAR }
 1462.1.1 = { owner = MOS controller = MOS add_core = MOS remove_core = NOV }
 1503.4.1 = {	owner = RUS
 		controller = RUS

@@ -1,0 +1,49 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = lithuanian
+add_accepted_culture = byelorussian
+add_accepted_culture = ruthenian
+religion = baltic_pagan_reformed
+technology_group = eastern
+capital = 270 # Trakai
+fixed_capital = 270
+
+1336.1.1 = {
+	monarch = {
+		name = "Kestutis"
+		dynasty = "Gediminaiciai"
+		birth_date = 1297.6.2
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1349.1.1 = {
+	queen = {
+		name = "Birute"
+		dynasty = "Palanga"
+		birth_date = 1330.4.6
+		death_date = 1382.10.1
+		female = yes
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}
+
+1350.2.2 = {
+	heir = {
+		name = "Vytautas"
+		monarch_name = "Vytautas"
+		dynasty = "Gediminaiciai"
+		birth_date = 1350.2.2
+		death_date = 1430.10.27
+		claim = 100
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+

@@ -1,20 +1,20 @@
 # 4525 - Dobryzn
 
-owner = POL
-controller = POL
+owner = DRZ
+controller = DRZ
 capital = "Dobryzn"
 is_city = yes
-culture = mazovian
+culture = polish
 religion = catholic
 trade_goods = grain
 hre = no
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = POL
+add_core = DRZ
 discovered_by = KAZ
 discovered_by = CRI
-discovered_by = GOL
+discovered_by = WHI
 discovered_by = AST
 discovered_by = QAS
 discovered_by = western

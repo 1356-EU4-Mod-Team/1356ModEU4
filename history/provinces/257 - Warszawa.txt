@@ -1,9 +1,9 @@
 #257 - Mazovia
 
-owner = MAZ
-controller = MAZ
+owner = WRW
+controller = WRW
 capital = "Warszawa"
-culture = mazovian
+culture = polish
 religion = catholic
 trade_goods = cloth
 hre = no
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 is_city = yes
-add_core = MAZ
+add_core = WRW
 
 
 discovered_by = KAZ

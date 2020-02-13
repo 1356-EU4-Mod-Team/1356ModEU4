@@ -1,20 +1,20 @@
 # 2369 - Lower Ishim (1356)
-# Changes: KZH/WHI/religion
+# Changes: KZH/BLU/religion
 
-owner = KZH
-controller = KZH
+owner = SIB
+controller = SIB
 culture = khazak
 religion = tengri_pagan_reformed
 capital = "Zhanibek"
 trade_goods = iron
 hre = no
 base_tax = 1 
+
 base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = KZH
 add_core = SIB
-
 
 discovered_by = KZH
 discovered_by = KAZ

@@ -1,7 +1,7 @@
 #4539 - Kremenets
 
-owner = LIT
-controller = LIT
+owner = KIE
+controller = KIE
 culture = ruthenian
 religion = orthodox
 hre = no
@@ -11,9 +11,7 @@ trade_goods = livestock
 base_manpower = 1
 capital = "Kremenets"
 is_city = yes
-add_core = VOL
-add_core = LIT
-
+add_core = KIE
 
 
 discovered_by = western
@@ -23,11 +21,11 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 1356.12.24  = { 
-				owner = VOL controller = VOL remove_core = LIT
+				owner = VOL controller = VOL add_core = VOL remove_core = KIE
 } #BT In
 
 1356.12.26  = { 
-				owner = LIT controller = LIT add_core = LIT
+				owner = KIE controller = KIE add_core = KIE
 } #BT Out
 
 1569.3.26 = { owner = POL controller = POL add_core = POL } # annexed by Poland
