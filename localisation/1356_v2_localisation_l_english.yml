@@ -242,7 +242,8 @@
  gutnish_culture: "Gutnish"
  geat_culture: "Geatish"
  jamatland_culture: "Trondish"
- 
+ permic_culture: "Permic"
+ finnish_pagan_reformed: "Finno-Uralic"
  #Policies
  early_game_policy_mil: "Mandatory Service"
  desc_early_game_policy_mil: "In times of war it is necessary peasants may be forcibly drafted into our army in order to keep its numbers high. It's not a great idea to draft too frequently however, as it could lower birth rates and cause troubles drafting peasants in the future."

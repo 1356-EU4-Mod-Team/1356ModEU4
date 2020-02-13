@@ -2109,8 +2109,25 @@ finno_ugric = { #Finno-Ugric #1356
 			Chechama Chenksa Cherava Chindyapa Chindyayka Chinzhay Chitska  
 		}
 	}
+	permic_culture = { #1356
+		primary = PRM
+		male_names = {
+			Andyamo Chichayka Chumbulat Dergun Deryab Dobrinya Erziya Inzhay Kezhapa Kezhay Kezhedey Kezhevat Kichay Kubrat Malyaka Malyy Meltsayka Mordvinko Moksha
+			Nalka Nuyaksha Nuyanza Nuyat Ovtay Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka
+			Tyueykezhut Uchva Varaka Vechkas Velmayka Virdyan Viryas Viryay Atyamas Azyren Chipaz Kardaz Kinyak Koshel Murunza Naruchad Nishkepaz Orunza Puresh Purysho 
+			Saksa Shkay Surt Tul Tunya Tutyra Tylmache Tylze Tyushten Tyushtya Uzhara Varmanpaz
+		}
+		female_names = {
+			Anava Ashava Asrava Azra-Va Chechama Chenksa Cherava Chichayka Chindyapa Chindyayka Chinzhay Chitska Elyuva Inyava Kanyava Kanyuva
+			Kirdyava Kunava Kunyavka Litava Liyava Mazava Megurka Mel'shay Nezayka Nulzyava Nuyanza Nyal'ka Nyayka Olota Ordava Oshama Parava Pekshayka
+			Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Ruzava Sanal'ka Sangasa Sernyava Serzhay Setyamka Seyamka Shonzhava
+			Shukshtoroyka Sinyava Siyamka Slyugan'ka Sochava Styaka Syryava Tatka Tekay Tetyava Tikshayka Toyaksha Tundava Tundya Unzhutka Upurga
+			Utyayka Valdava Vergava Vezhav Vidyava Virtyava Yalgava Litova Mastorava Noroava
+		}
+		dynasty_names = { "Mastoron Kirdi" "Rjazanskijid" "Chipazid" }
+	}
 	mordvin = { #1356
-		#primary = MRD
+		primary = MIA
 		male_names = {
 			Andyamo Chichayka Chumbulat Dergun Deryab Dobrinya Erziya Inzhay Kezhapa Kezhay Kezhedey Kezhevat Kichay Kubrat Malyaka Malyy Meltsayka Mordvinko Moksha
 			Nalka Nuyaksha Nuyanza Nuyat Ovtay Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka
@@ -2127,7 +2144,7 @@ finno_ugric = { #Finno-Ugric #1356
 		dynasty_names = { "Mastoron Kirdi" "Rjazanskijid" "Chipazid" }
 	}
 	udmurt = { #1356
-		#primary = MRD
+		primary = UDM
 		male_names = {
 			Andyamo Chichayka Chumbulat Dergun Deryab Dobrinya Erziya Inzhay Kezhapa Kezhay Kezhedey Kezhevat Kichay Kubrat Malyaka Malyy Meltsayka Mordvinko Moksha
 			Nalka Nuyaksha Nuyanza Nuyat Ovtay Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka
@@ -2144,7 +2161,7 @@ finno_ugric = { #Finno-Ugric #1356
 		dynasty_names = { "Mastoron Kirdi" "Rjazanskijid" "Chipazid" }
 	}
 	mari_culture = { #1356
-		#primary = MRD
+		primary = MRR
 		male_names = {
 			Andyamo Chichayka Chumbulat Dergun Deryab Dobrinya Erziya Inzhay Kezhapa Kezhay Kezhedey Kezhevat Kichay Kubrat Malyaka Malyy Meltsayka Mordvinko Moksha
 			Nalka Nuyaksha Nuyanza Nuyat Ovtay Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka
