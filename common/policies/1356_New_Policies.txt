@@ -165,32 +165,32 @@ invite_brilliant_minds  = {
 	}
 }
 
-royal_banking_system  = {
+maths_of_national_enrichment  = {
 	monarch_power = ADM
 	
 	potential = {
-		has_idea_group = administrative_ideas
+		has_idea_group = economic_ideas
 		has_idea_group = royal_education_ideas
 	}
 	
 	allow = {
-		full_idea_group = administrative_ideas
+		full_idea_group = economic_ideas
 		full_idea_group = royal_education_ideas
 	}	
 
-	inflation_reduction = -0.05
-	interest = -2
+	advisor_cost = -0.1
+	development_cost = -0.1
 
 	ai_will_do = {
 		factor = 1
 	}
 }
 
-maths_of_national_enrichment = {
+royal_banking_system = {
 	monarch_power = ADM
 	
 	potential = {
-		has_idea_group = economic_ideas
+		has_idea_group = administrative_ideas
 		has_idea_group = royal_education_ideas
 	}
 	
@@ -209,7 +209,7 @@ maths_of_national_enrichment = {
 }
 
 mounted_national_guardsmen = {
-	monarch_power = ADM
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = imperial_ideas
@@ -281,7 +281,7 @@ patronage_of_the_polymaths = {
 	}
 	
 	naval_forcelimit_modifier = 0.2
-	all_power_cost = -0.01
+	all_power_cost = -0.02
 	
 	ai_will_do = {
 		factor = 2
@@ -355,7 +355,7 @@ engineered_imperial_army_supplies = {
 
 
 noble_diplomatic_marriage_policy = {
-	monarch_power = ADM
+	monarch_power = DIP
 	
 	potential = {
 		has_idea_group = imperial_ideas
@@ -367,6 +367,7 @@ noble_diplomatic_marriage_policy = {
 	}
 	
 	diplomatic_upkeep = 2
+	free_dip_policy = 1
 	
 	ai_will_do = {
 		factor = 1
@@ -430,7 +431,7 @@ national_chaplain_act = {
 	}
 	
 	global_missionary_strength = 0.01
-	infantry_shock = 0.1
+	infantry_shock = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -450,8 +451,8 @@ national_unity_policy = {
 		full_idea_group = diplomatic_ideas
 	}
 	
-	development_cost = -0.10
-	production_efficiency = 0.1
+	build_time = -0.33
+	production_efficiency = 0.15
 	female_advisor_chance = 0.15
 
 	ai_will_do = {
@@ -536,7 +537,7 @@ national_war_accounts_act = {
 		full_idea_group = grand_court_ideas
 	}
 	
-	global_tax_modifier = 0.10
+	global_tax_modifier = 0.15
 	war_exhaustion = -0.03
 
 	ai_will_do = {
@@ -545,7 +546,7 @@ national_war_accounts_act = {
 }
 
 come_what_may = {
-	monarch_power = ADM
+	monarch_power = DIP
 	
 	potential = {
 		has_idea_group = permanent_war_ideas
@@ -779,7 +780,7 @@ technocratic_governing_council = {
 }
 
 extended_diplomacy = {
-	monarch_power = DIP
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = quantity_ideas
@@ -791,8 +792,8 @@ extended_diplomacy = {
 		full_idea_group = grand_court_ideas
 	}	
 
-	diplomatic_reputation = 1
-	free_dip_policy = 1
+	infantry_power = 0.1
+	advisor_cost = -0.1
 	
 	ai_will_do = {
 		factor = 2
@@ -812,7 +813,7 @@ divinity_of_all = {
 		full_idea_group = grand_court_ideas
 	}	
 	
-	improve_relation_modifier = 20
+	improve_relation_modifier = 0.25
 	prestige = 1
 	
 	ai_will_do = {
@@ -833,7 +834,7 @@ i_came_i_saw_i_conquered = {
 		full_idea_group = diplomatic_ideas
 	}	
 	
-	province_warscore_cost = -0.1
+	ae_impact = -0.1
 	min_autonomy_in_territories = -0.1
 	
 	ai_will_do = {
@@ -942,8 +943,8 @@ foreign_advisors = {
 		full_idea_group = grand_court_ideas
 	}	
 	
-	development_cost = -0.05
-	diplomatic_reputation = 1
+	monthly_splendor = 2
+	development_cost = -0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -953,7 +954,7 @@ foreign_advisors = {
 
 
 national_military_stables_act = {
-	monarch_power = DIP
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = aristocracy_ideas
@@ -965,8 +966,8 @@ national_military_stables_act = {
 		full_idea_group = grand_court_ideas
 	}	
 	
-	cavalry_cost = -0.15
-	cav_to_inf_ratio = 0.3
+	cavalry_shock = 0.25
+	cav_to_inf_ratio = 0.2
 	
 	ai_will_do = {
 		factor = 1
@@ -1192,7 +1193,7 @@ black_arts_map_company = {
 }
 
 positions_for_soldiers = {
-	monarch_power = MIL
+	monarch_power = DIP
 	
 	potential = {
 		has_idea_group = offensive_ideas
@@ -1246,7 +1247,7 @@ the_royal_fortresses = {
 	}
 
 	
-	defensiveness = 0.2
+	land_morale = 0.1
 	prestige = 1
 	
 	ai_will_do = {
@@ -1488,7 +1489,7 @@ national_womens_supply_corp = {
 	}	
 	
 	land_morale = 0.075
-	development_cost = -0.1
+	defensiveness = 0.1
 	female_advisor_chance = 0.15
 
 	
@@ -1542,7 +1543,7 @@ warrior_monks = {
 }
 
 samurai_diplomats = {
-	monarch_power = MIL
+	monarch_power = DIP
 	
 	potential = {
 		has_idea_group = defensive_ideas
@@ -1637,12 +1638,12 @@ kingdom_of_castles = {
 	
 	potential = {
 		has_idea_group = marcher_lord_ideas
-		has_idea_group = innovative_ideas
+		has_idea_group = innovativeness_ideas
 	}
 	
 	allow = {
 		full_idea_group = marcher_lord_ideas
-		full_idea_group = innovative_ideas
+		full_idea_group = innovativeness_ideas
 	}	
 	
 	global_tax_modifier = 0.1
@@ -1668,8 +1669,8 @@ wealthy_peasants_act = {
 	}	
 	
 	global_manpower_modifier = 0.15
-	production_efficiency = 0.15
-	global_tax_modifier = -0.05
+	production_efficiency = 0.20
+	global_tax_modifier = -0.10
 
 	
 		ai_will_do = {
@@ -1736,7 +1737,8 @@ tolerant_imperial_military = {
 		full_idea_group = humanist_ideas
 	}	
 	
-	land_morale = 0.15
+	land_morale = 0.1
+	leader_land_manuever = 1
 	
 	
 		ai_will_do = {
@@ -1745,7 +1747,7 @@ tolerant_imperial_military = {
 }
 
 new_land_integration_policy = {
-	monarch_power = MIL
+	monarch_power = ADM
 	
 	potential = {
 		has_idea_group = marcher_lord_ideas
@@ -1779,8 +1781,9 @@ peoples_abundance_policy = {
 		full_idea_group = imperial_ideas
 	}	
 	
-	development_cost = -0.1
-	manpower_recovery_speed = 0.1
+	reduced_liberty_desire = 10	
+	state_maintenance_modifier = -0.2
+	
 	
 	
 		ai_will_do = {
@@ -1789,7 +1792,7 @@ peoples_abundance_policy = {
 }
 
 la_guerre_eternelle = {
-	monarch_power = MIL
+	monarch_power = ADM
 	
 	potential = {
 		has_idea_group = marcher_lord_ideas
@@ -1801,8 +1804,8 @@ la_guerre_eternelle = {
 		full_idea_group = permanent_war_ideas
 	}	
 	
-	global_manpower_modifier = 0.2
-	hostile_attrition = 1
+	global_manpower_modifier = 0.15
+	global_tax_modifier = 0.1
 	
 	
 		ai_will_do = {
@@ -1846,7 +1849,7 @@ noble_elan = {
 	}	
 	
 	reduced_liberty_desire = 10
-	cavalry_power = 0.1
+	free_dip_policy = 1
 	
 	
 		ai_will_do = {
@@ -1877,7 +1880,7 @@ ambassador_recruitment_act = {
 }
 
 firebrand_kings = {
-	monarch_power = MIL
+	monarch_power = DIP
 	
 	potential = {
 		has_idea_group = marcher_lord_ideas
@@ -1889,9 +1892,8 @@ firebrand_kings = {
 		full_idea_group = royal_education_ideas
 	}	
 	
-	
-	discipline = 0.025
 	power_projection_from_insults = 0.5
+	diplomatic_upkeep = 1
 	
 		ai_will_do = {
 		factor = 1
@@ -1912,8 +1914,8 @@ harmonious_sons_of_heaven = {
 	}	
 	
 	
-	diplomatic_reputation = 1
-	development_cost = -0.1
+	merchants = 1
+	development_cost = -0.10
 	
 		ai_will_do = {
 		factor = 1
@@ -1978,14 +1980,14 @@ royal_merchant_ambassador_seal = {
 		full_idea_group = trade_ideas
 	}	
 	
-	
-	diplomatic_reputation = 1
+	global_prov_trade_power_modifier = 0.15
 	merchants = 1
 	
 		ai_will_do = {
 		factor = 1
 	}
 }
+
 
 doctrine_field_hospitals = {
 	monarch_power = ADM
@@ -2024,8 +2026,8 @@ doctrine_national_equipment_standards = {
 	}	
 	
 	
-	land_maintenance_modifier = -0.05
-	army_tradition_decay = -0.005
+	production_efficiency = 0.1
+	land_attrition = -0.1 
 	
 		ai_will_do = {
 		factor = 1
@@ -2047,7 +2049,7 @@ fortified_monastaries_doctrine = {
 	
 	
 	global_missionary_strength = 0.01
-	garrison_size = 0.1
+	garrison_size = 0.15
 	
 		ai_will_do = {
 		factor = 1
@@ -2118,7 +2120,7 @@ shaolin_monks = {
 }
 
 national_conscription_tables = {
-	monarch_power = MIL
+	monarch_power = ADM
 	
 	potential = {
 		has_idea_group = military_doctrine_ideas
@@ -2140,7 +2142,7 @@ national_conscription_tables = {
 }
 
 guild_of_imperial_architects = {
-	monarch_power = MIL
+	monarch_power = ADM
 	
 	potential = {
 		has_idea_group = military_doctrine_ideas
@@ -2162,7 +2164,7 @@ guild_of_imperial_architects = {
 }
 
 foreign_military_cooperation_doctrine = {
-	monarch_power = MIL
+	monarch_power = DIP
 	
 	potential = {
 		has_idea_group = military_doctrine_ideas
@@ -2195,8 +2197,8 @@ foreign_military_cooperation_doctrine = {
 		full_idea_group = influence_ideas
 	}	
 	
-	diplomatic_reputation = 1
-	army_tradition = 0.5	
+	fire_damage_received = -0.075
+	leader_land_manuever = 1
 	
 		ai_will_do = {
 		factor = 1
@@ -2217,7 +2219,7 @@ overseas_companies_incorporations_act = {
 	}	
 	
 	range = 0.5
-	fabricate_claims_cost= -0.15	
+	fabricate_claims_cost= -0.15
 	
 		ai_will_do = {
 		factor = 1
