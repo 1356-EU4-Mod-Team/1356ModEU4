@@ -111,10 +111,11 @@ country_event = {
 		is_year = 1357
 		religion = sunni
 		primary_culture = al_misr_arabic
+		#360 = { religion = coptic }
 	}
 	
 	mean_time_to_happen = {
-		months = 30
+		months = 5
 	}
 	
 	option = { #Tolerance!

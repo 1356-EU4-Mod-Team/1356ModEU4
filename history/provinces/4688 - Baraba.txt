@@ -1,8 +1,8 @@
 #4688 - Baraba
 
-owner = SHY
-controller = SHY
-add_core = SHY
+owner = BLU
+controller = BLU
+add_core = BLU
 culture = kirgiz
 religion = tengri_pagan_reformed
 capital = "Baraba"

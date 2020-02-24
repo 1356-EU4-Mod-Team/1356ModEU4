@@ -69,7 +69,7 @@ country_event = {
 	
 	trigger = {
 		tag = ALX
-		is_year = 1360
+		is_year = 1358
 		NOT = { is_year = 1375 }
 		owns_core_province = 358
 		religion = sunni
@@ -87,7 +87,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 24
 	}
 	
 	option = { #Yes!
@@ -159,7 +159,7 @@ province_event = {
 		owner = { 
 			tag = ALX
 			NOT = { has_global_flag = alexandria_massacure_flag }
-			NOT = { culture_group = byzantine }
+			#NOT = { culture_group = byzantine }
 			NOT = { primary_culture = old_egyptian_mod }
 		}
 		culture = old_egyptian_mod
@@ -167,7 +167,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 12
 	}
 	
 	option = { #No extra help to the minorities -If Mamluks/Alexandria pick this then remove the Coptic Advisor events from Mamluks

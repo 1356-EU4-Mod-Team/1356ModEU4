@@ -152,6 +152,194 @@ capital = 1816	# Beijing
 	}
 }
 
+1356.1.1 = { 
+	add_country_modifier = { #Nomadic Brothers
+		name = yuan_starting_modifiers
+		duration = -1
+		desc = yuan_starting_modifiers_tooltip
+	}
+	add_country_modifier = { #Diplomats/Rival Cost
+		name = yua_toqtoa_diplomacy_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_1_modifier_tt
+	}
+	add_country_modifier = { #Dip Rep/AE
+		name = yua_toqtoa_diplomacy_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_2_modifier_tt
+	}
+	add_country_modifier = { #Improve Relations/Travel Time
+		name = yua_toqtoa_diplomacy_reform_mission_3_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_3_modifier_tt
+	}
+	add_country_modifier = { #Diplomatic Slots
+		name = yua_toqtoa_diplomacy_reform_mission_4_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_4_modifier_tt
+	}
+	add_country_modifier = { #Vassal Loyalty
+		name = yua_toqtoa_diplomacy_reform_mission_5_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_5_modifier_tt
+	}
+	add_country_modifier = { #General Vassal Bonuses
+		name = yua_toqtoa_diplomacy_reform_mission_6_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_6_modifier_tt
+	}
+	add_country_modifier = { #Offense and Defense
+		name = yua_toqtoa_spies_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_spies_reform_mission_1_modifier_tt
+	}
+	add_country_modifier = { #Relations, Rebel Support, etc
+		name = yua_toqtoa_spies_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_spies_reform_mission_2_modifier_tt
+	}
+	add_country_modifier = { #Claims, Trade Conflict, Enemy Core Cost, Claim Duration.
+		name = yua_toqtoa_spies_reform_mission_3_modifier
+		duration = -1
+		desc = yua_toqtoa_spies_reform_mission_3_modifier_tt
+	}
+	add_country_modifier = { #Merchants, Efficiency, Range
+		name = yua_toqtoa_trade_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_trade_reform_mission_1_modifier_tt
+	}
+	add_country_modifier = { #Caravan Power, Global Trade Power, Trade Steering
+		name = yua_toqtoa_trade_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_trade_reform_mission_2_modifier_tt
+	}
+	add_country_modifier = { #Global Trade Power, Foreign Trade Power, Embargo Efficiency
+		name = yua_toqtoa_trade_reform_mission_3_modifier
+		duration = -1
+		desc = yua_toqtoa_trade_reform_mission_3_modifier_tt
+	}
+ 	add_country_modifier = { #Advisors
+		name = yua_toqtoa_administration_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_administration_reform_mission_1_modifier_tt
+	}
+ 	add_country_modifier = { #General Advisor Costs
+		name = yua_toqtoa_administration_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_administration_reform_mission_2_modifier_tt
+	}
+ 	add_country_modifier = { #Specific Advisor Costs
+		name = yua_toqtoa_administration_reform_mission_3_modifier
+		duration = -1
+		desc = yua_toqtoa_administration_reform_mission_3_modifier_tt
+	}
+ 	add_country_modifier = { #Min Autonomy/Global Autonomy
+		name = yua_toqtoa_administration_reform_mission_7_modifier
+		duration = -1
+		desc = yua_toqtoa_administration_reform_mission_7_modifier_tt
+	}
+ 	add_country_modifier = { #Autonomy Change Time/Territories Autonomy
+		name = yua_toqtoa_administration_reform_mission_8_modifier
+		duration = -1
+		desc = yua_toqtoa_administration_reform_mission_8_modifier_tt
+	}
+ 	add_country_modifier = { #Global Autonomy/Autonomy Change Time
+		name = yua_toqtoa_administration_reform_mission_9_modifier
+		duration = -1
+		desc = yua_toqtoa_administration_reform_mission_9_modifier_tt
+	}
+ 	add_country_modifier = { #Heir Chance, Corruption, Prestige
+		name = yua_toqtoa_royal_family_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_royal_family_reform_mission_1_modifier_tt
+	}
+ 	add_country_modifier = { #Legitimacy, Mandate
+		name = yua_toqtoa_royal_family_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_royal_family_reform_mission_2_modifier_tt
+	}
+ 	add_country_modifier = { #Monarch Power Gains
+		name = yua_toqtoa_royal_family_reform_mission_3_modifier
+		duration = -1
+		desc = yua_toqtoa_royal_family_reform_mission_3_modifier_tt
+	}
+ 	add_country_modifier = { #Can convert again!
+		name = yua_toqtoa_religion_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_religion_reform_mission_1_modifier_tt
+	}
+ 	add_country_modifier = { #Harmony, Instution Spread, Heretic Tolerance, Unity
+		name = yua_toqtoa_religion_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_religion_reform_mission_2_modifier_tt
+	}
+ 	add_country_modifier = { #Can't convert Hethens, Religious Unity
+		name = yua_toqtoa_religion_reform_mission_3_modifier
+		duration = -1
+		desc = yua_toqtoa_religion_reform_mission_3_modifier_tt
+	}
+ 	add_country_modifier = { #Culture Conversion Cost
+		name = yua_toqtoa_culture_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_culture_reform_mission_1_modifier_tt
+	}
+ 	add_country_modifier = { #Culture Conversion Cost, Promote Culture Cost, Accepted Cultures
+		name = yua_toqtoa_culture_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_culture_reform_mission_2_modifier_tt
+	}
+ 	add_country_modifier = { #Stab Cost/Tech Cost/Institution Spread
+		name = yua_toqtoa_stability_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_stability_reform_mission_1_modifier_tt
+	}
+ 	add_country_modifier = { #Stab Cost/Harsh Treatment Cost/Idea Cost
+		name = yua_toqtoa_stability_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_stability_reform_mission_2_modifier_tt
+	}
+ 	add_country_modifier = { #Tax Modifier/Build Cost/Build Time/Interest/Inflation
+		name = yua_toqtoa_economy_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_economy_reform_mission_1_modifier_tt
+	}
+ 	add_country_modifier = { #Tax Modifier/Production Modifier/Inflation Cost/Trade Goods Produced
+		name = yua_toqtoa_economy_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_economy_reform_mission_2_modifier_tt
+	}
+ 	add_country_modifier = { #Getting the Manpower Back Force Limit/Recruit Speed/Manpower Modifier/Manpower Recovery Speed
+		name = yua_quell_red_turban_mission_1_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_1_modifier_tt
+	}
+ 	add_country_modifier = { #Getting the Manpower Back Force Limit/Recruit Speed/Manpower Modifier/Manpower Recovery Speed
+		name = yua_quell_red_turban_mission_2_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_2_modifier_tt
+	}
+ 	add_country_modifier = { #Morale/Infantry Power/Tradition Decay
+		name = yua_quell_red_turban_mission_3_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_3_modifier_tt
+	}
+ 	add_country_modifier = { #Calvary Power/Cav Flanking/Tradition Decay/Reinforce Speed
+		name = yua_quell_red_turban_mission_4_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_4_modifier_tt
+	}
+ 	add_country_modifier = { #Discipline/Tradition Decay/Recover Morale Speed
+		name = yua_quell_red_turban_mission_5_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_5_modifier_tt
+	}
+ 	add_country_modifier = { #Price of stuff
+		name = yua_quell_red_turban_mission_6_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_6_modifier_tt
+	}
+}
+
 1368.9.14 = {
 	technology_group = nomad_group
 	government = tribal

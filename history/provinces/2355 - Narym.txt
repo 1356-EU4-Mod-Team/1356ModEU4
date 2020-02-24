@@ -1,8 +1,8 @@
 # 2355 - Narym (1356)
 # Changes: KZH/religion
 
-owner = KZH
-controller = KZH
+owner = BLU
+controller = BLU
 culture = khazak
 religion = tengri_pagan_reformed
 capital = "Narym"
@@ -15,7 +15,7 @@ base_manpower = 1
 is_city = yes
 #add_core = BLU
 add_core = KZH
-add_core = SHY
+add_core = BLU
 
 discovered_by = KZH
 discovered_by = KAZ
