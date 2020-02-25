@@ -22,5 +22,6 @@ tags={
 }
 name="1356 - V2 Early ALPHA"
 picture="picture="thumbnail.jpg"
+path="mod\1356ModEU4"
 supported_version="1.29.5"
 remote_file_id="1896965304"
