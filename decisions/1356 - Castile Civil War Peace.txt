@@ -1,5 +1,5 @@
 country_decisions = {
-
+	
 	trastamara_offers_status_quo = {
 		potential = {
 			tag = CTR
@@ -19,6 +19,7 @@ country_decisions = {
 			factor = 1000
 		}
 	}
+	}
 	
 	castile_offers_status_quo = {
 		potential = {
@@ -34,10 +35,10 @@ country_decisions = {
 			set_country_flag = offering_peace
 			CTR = { 
 				country_event = { id = WarTwoPetersFlavor.11 } 
+			}
 		}
 		ai_will_do = {
 			factor = 1000
 		}
-	}
-	
+	}	
 }
