@@ -604,3 +604,27 @@ zur_bustling_city = { #Province Modifier
 	local_institution_spread = 0.25
 	trade_goods_size = 0.2
 }
+
+##Uralic Minors##
+
+uralic_technology_starting_modifier = {
+	global_institution_spread = -0.8
+	technology_cost = 0.2
+}
+
+uralic_force_limit_starting_modifier = {
+	land_forcelimit_modifier = -0.2
+	reinforce_cost_modifier = 0.2
+	reinforce_speed = -0.2
+}
+
+uralic_army_starting_modifier = {
+	land_morale = -0.10
+	discipline = -0.05
+	siege_ability = -0.1
+}
+
+uralic_religion_starting_modifier = {
+	global_missionary_strength = -0.05
+	global_tax_modifier = -0.20
+}

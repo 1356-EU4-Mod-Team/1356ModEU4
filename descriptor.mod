@@ -22,5 +22,5 @@ tags={
 }
 name="1356 - V2 Early ALPHA"
 picture="1356_loadscreen.jpg"
-supported_version="1.29.3"
+supported_version="1.29.5"
 remote_file_id="1896965304"

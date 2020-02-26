@@ -3,7 +3,7 @@
 
 owner = WHI
 controller = WHI
-culture = kazani
+culture = nogaybak
 religion = sunni
 capital = "Samara"
 trade_goods = livestock

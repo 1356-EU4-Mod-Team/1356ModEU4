@@ -8,11 +8,15 @@ capital = 1972 # Kazan
 
 1356.1.1 = {
 	add_country_modifier = {
-		name = "uralic_army_starting_modifier"
+		name = "uralic_technology_starting_modifier"
 		duration = -1
 	}
 	add_country_modifier = {
 		name = "uralic_force_limit_starting_modifier"
+		duration = -1
+	}
+	add_country_modifier = {
+		name = "uralic_army_starting_modifier"
 		duration = -1
 	}
 	add_country_modifier = {
