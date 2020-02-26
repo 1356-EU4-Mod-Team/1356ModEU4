@@ -14,7 +14,7 @@ base_manpower = 3
 is_city = yes
 estate = estate_burghers
 add_core = SAV
-#add_core = SWI
+add_core = SWI
 add_claim = PBG
 
 discovered_by = western

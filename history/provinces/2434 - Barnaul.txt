@@ -13,9 +13,9 @@ native_ferocity = 1
 native_hostileness = 3
 
 1356.12.25 = {
-	owner = SHY
-	controller = SHY
-	add_core = SHY
+	owner = BLU
+	controller = BLU
+	add_core = BLU
 	is_city = yes
 	trade_goods = livestock
 }

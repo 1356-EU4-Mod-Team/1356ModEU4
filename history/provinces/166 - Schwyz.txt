@@ -1,7 +1,7 @@
 #166 - Schwyz
 
-owner = ZUR
-controller = ZUR
+owner = SWI
+controller = SWI
 culture = swiss
 religion = catholic
 capital = "Schwyz"
@@ -11,7 +11,8 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = ZUR
+#add_core = ZUR
+add_core = SWI
 
 
 

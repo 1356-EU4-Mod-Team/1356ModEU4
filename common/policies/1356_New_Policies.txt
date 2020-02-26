@@ -2315,12 +2315,12 @@ office_of_the_imperial_cabinet = {
 	
 	potential = {
 		has_idea_group = military_doctrine_ideas
-		has_idea_group = grand_court_ideas
+		has_idea_group = royal_education_ideas
 	}
 	
 	allow = {
 		full_idea_group = military_doctrine_ideas
-		full_idea_group = grand_court_ideas
+		full_idea_group = royal_education_ideas
 	}	
 	
 	leader_land_shock = 1

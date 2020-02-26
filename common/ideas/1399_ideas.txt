@@ -1,6 +1,6 @@
-Country Idea Fixes:
+#Country Idea Fixes:
 
-#French region ideas
+#French region ideas 1399.J.Ideas.File
 
 	#French Ducal Ideas
 NRM_ideas = { #Norman ideas
@@ -765,7 +765,7 @@ PBG_ideas = { #Lesser Burgundy ideas
 
 ARS_ideas = { #Artois ideas
 	start = {
-		global_missionary_strength = 0.02
+		global_missionary_strength = 0.01
 		infantry_power = 0.1
 	}
 	
@@ -845,6 +845,8 @@ HAI_ideas = { #Hainaut ideas
 	}
 }
 
+#End French Minor Ideas
+
 AQT_ideas = { #Aquitaine ideas
 	start = {
 		diplomatic_upkeep = 2
@@ -915,7 +917,7 @@ ARE_ideas = { #Arles ideas
 	}
 	ARE_karling_history = { #Orignally owned by the Karlings, we have a lot of history behind us. Constantly being seperated between two rival nations, no more! Arles is a united nation, with a rich history!
 		diplomatic_reputation = 2
-		prestige = 1
+		prestige = 2
 	}
 	ARE_leaders_from_far = { 
 		free_leader_pool = 1
@@ -952,7 +954,7 @@ LOT_ideas = { #Lotharingia ideas
 	}
 	
 	LOT_imperial_ambitions_idea = { 
-		imperial_authority = 0.1
+		imperial_authority = 0.15
 		diplomatic_reputation = 2
 	}
 	LOT_recover_quickly = { 
@@ -961,6 +963,7 @@ LOT_ideas = { #Lotharingia ideas
 	}
 	LOT_lothar = { 
 		stability_cost_modifier = -0.15
+		heir_chance = 0.25
 	}
 
     LOT_road_between_nations = {
@@ -1109,7 +1112,7 @@ CTR_ideas = { #Just spains ideas, same localisation and all
 
 JLR_ideas = {
 	start = {
-		global_unrest = -1
+		global_unrest = -2
 		land_morale = 0.10
 	}
 	bonus = {
@@ -1134,7 +1137,7 @@ JLR_ideas = {
 		global_tax_modifier = 0.1
 	}
 	jlr_rise_of_the_eagle = {
-	    global_manpower_modifier = 0.20
+	    global_manpower_modifier = 0.25
 	}
 	jlr_strenghten_central_authority = {
 		legitimacy = 1
@@ -1190,7 +1193,10 @@ MUZ_ideas = {
 		discipline = 0.05
 	}
 	trigger = {
-		tag = MUZ
+		OR = {
+			tag = MUZ
+			tag = HER
+		}
 	}
 	free = yes
 	
@@ -1226,7 +1232,7 @@ MUZ_ideas = {
 
 INT_ideas = {
 	start = {
-	    core_creation = -0.25
+	    core_creation = -0.2
 		embracement_cost = -0.25
 	}
 	bonus = {
@@ -1726,7 +1732,7 @@ RAE_ideas = {
 		free_adm_policy = 1
 	}
 	RAE_generic_ideas_6 = { #Swiss Mines
-		trade_goods_size = 0.1
+		global_trade_goods_size_modifier = 0.1
 	}
 	RAE_generic_ideas_7 = { #Defensive Location
 			defensiveness = 0.2
@@ -1756,12 +1762,10 @@ ALX_ideas = {
 		legitimacy = 2
 	}
 	alx_idea_5 = { #To help with how isolated it is
-		religious_unity = 0.15
-		tolerance_heretic = 1
-		tolerance_heathen = 1
+		tolerance_heathen = 2
 	}
 	alx_idea_3 = { 
-		land_maintenance_modifier = -0.05
+		reinforce_speed = 0.15
 	}
 	alx_idea_1 = { #The Nile allows for many populated cities
 		development_cost = -0.1
@@ -2296,7 +2300,7 @@ thai_nation_ideas = { #Siamese ideas. United Thai.
    
     
     1356_grand_canals = {
-		trade_goods_size = 0.1
+		global_trade_goods_size_modifier = 0.1
 		development_cost = -0.1 
     }
     1356_maharaj_taksin = {
@@ -2362,7 +2366,7 @@ thai_nation_ideas = { #Siamese ideas. United Thai.
     }
 
     1356_undang_undang_malacca = {
-		trade_goods_size = 0.1
+		global_trade_goods_size_modifier = 0.1
         development_cost = -0.1
     }
     1356_tradition_of_gunpowder = {
@@ -2839,5 +2843,82 @@ SWB_ideas = {
 	}
 	staufer_architektur = {
 		build_cost = -0.1
+	}
+}
+
+TRO_ideas = { #Special thanks to @Raumarici from our discord for these
+	start = { 
+		infantry_power = 0.15 
+		technology_cost = -0.1
+	}
+	
+	bonus = { 
+		colonists = 1 
+	}
+	
+	trigger = {
+		tag = TRO
+	}
+	free = yes
+	tro_idea_6 = { 
+		global_tax_modifier = 0.1
+	}
+	tro_idea_7 = { 
+		technology_cost = -0.1 
+	}
+	tro_idea_1 = {
+		tolerance_own = 2
+	}
+	tro_idea_2 = { 
+		hostile_attrition = 1 
+	}
+	tro_idea_3 = { 
+		legitimacy = 1
+		horde_unity = 1
+		republican_tradition = 0.3
+	}
+	tro_idea_4 = { 
+		land_morale = 0.1
+	}
+	tro_idea_5 = { 
+		trade_efficiency = 0.1 
+	}
+}
+
+ING_ideas = { #Ingria #Built around the idea that they exist only for Novgorod to have as a March against the Swedes
+	start = { 
+		garrison_size = 0.2
+		fort_maintenance_modifier = -0.15
+	}
+	
+	bonus = { 
+		years_of_nationalism = -5
+	}
+	
+	trigger = {
+		tag = ING
+	}
+	free = yes
+	ing_idea_1 = { 
+		land_attrition = -0.1
+	}
+	ing_idea_2 = { #Many Foreign Nobles were asked to serve Ingria
+		advisor_cost = -0.15 
+	}
+	ing_idea_3 = {
+		stability_cost_modifier = -0.1
+	}
+	ing_idea_4 = { 
+		global_regiment_cost = -0.1
+	}
+	ing_idea_5 = { 
+		global_manpower_modifier = 0.15
+	}
+	ing_idea_6 = { 
+		envoy_travel_time = -0.25
+		improve_relation_modifier = 0.2
+	}
+	ing_idea_7 = { 
+		leader_siege = 1
 	}
 }
