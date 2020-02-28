@@ -1117,17 +1117,16 @@ marcher_lord_ideas = {
 	}
 	loyal_suzerainty = {
 		liberty_desire_from_subject_development = -0.1
-
 	}
 	imperial_fortifications = {
 		diplomatic_reputation = 1
-		fort_maintenance_modifier = -0.1
+		defensiveness = 0.15
 	}
 	crown_supply_reforms = {
 		land_maintenance_modifier = -0.05
 	}
 	marcher_officer_training = {
-		shock_damage = 0.05
+		shock_damage = 0.1
 	}
 }
 
@@ -1135,39 +1134,41 @@ royal_education_ideas = {
 	category = DIP
 
 	bonus = {
-		free_policy = 1
-		yearly_absolutism = 0.5
+		global_trade_goods_size_modifier = 0.05
+		free_dip_policy = 1
 	}
-	
-	laws_of_inheritance = {
-		heir_chance = 0.75
-		reelection_cost = -0.05
-	}
+
 	royal_communications = {
 		power_projection_from_insults = 0.5
 	}
-	pragmatic_inheritance = {
-		may_recruit_female_generals = yes
-    }
-	ways_of_war = {
-		army_tradition_decay = -0.01
-	}
-	proper_education = {
-		legitimacy = 2
-		republican_tradition = 0.2
-		devotion = 2
-		horde_unity = 1
-		meritocracy = 1
-	}
-	importance_of_public_works = {
-		development_cost = -0.10
+
+	laws_of_inheritance = {
+		heir_chance = 0.5
 	}
 	
 	the_royal_turn = {
 		prestige = 1
-		improve_relation_modifier = 0.25
-
 	}
+	ways_of_war = {
+		army_tradition_decay = -0.01
+	}
+	
+	importance_of_public_works = {
+		development_cost = -0.10
+	}
+	proper_education = {
+		legitimacy = 1
+		republican_tradition = 0.2
+		devotion = 1
+		horde_unity = 0.5
+		meritocracy =0.5
+	}
+
+	pragmatic_inheritance = {
+		monarch_military_power = 1	 
+		candidate_random_bonus = 1   
+	}
+
 	ai_will_do = {
 		factor = 0.4
 	}
@@ -1178,14 +1179,15 @@ grand_court_ideas = {
 	category = DIP
 
 	bonus = {
-		monarch_diplomatic_power = 1
+	monarch_diplomatic_power = 1
+	candidate_random_bonus = 1	
 	}
 
 permanent_diplomacy = {
 	diplomatic_upkeep = 1
 	}
 grand_viziers = {
-	advisor_cost = -0.10
+	advisor_cost = -0.1
 	free_leader_pool = 1
 }
 
@@ -1201,9 +1203,8 @@ artists_and_mathematicians = {
 	diplomats = 1
 }
 noble_pride = {
-	monthly_splendor = 2
+	monthly_splendor = 3
 	prestige_decay = -0.005
-
 }
 pride_of_subjects = {
 	global_manpower_modifier = 0.15
@@ -1226,6 +1227,7 @@ theocratic_ideas = { #1356
 		OR = {
 			government = theocracy
 			government = feudal_theocracy
+			has_reform = feudal_theocracy
 		}
 	}
 	
@@ -1301,6 +1303,7 @@ imperial_ideas = {
 
 	bonus = {
 		monarch_admin_power = 1
+		candidate_random_bonus = 1
 		harmonization_speed = 0.1
 	}
 	
@@ -1330,7 +1333,6 @@ imperial_ideas = {
 	
 	imperial_land_grants = {
 		province_warscore_cost = -0.1
-		warscore_cost_vs_other_religion = -0.1
 	}
 
 	1356_compel_problem = {
@@ -1373,7 +1375,7 @@ military_doctrine_ideas = {
 	}
 
 	holding_the_line = {
-		infantry_shock = 0.2
+		infantry_shock = 0.25
 	}
 
 	1356_advisory_committee = {
@@ -1382,7 +1384,7 @@ military_doctrine_ideas = {
 
 	standardized_calibres = { 
 		backrow_artillery_damage = 0.1
-		artillery_cost = -0.1
+		artillery_cost = -0.15
 	}
 
 	unified_conscription_laws = {
@@ -1392,4 +1394,4 @@ military_doctrine_ideas = {
 	ai_will_do = {
 		factor = 1
 		}		
-}
+	}
