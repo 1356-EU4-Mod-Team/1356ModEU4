@@ -261,6 +261,7 @@ CAS_ideas = {
 	trigger = {
 		OR = {
 			tag = CAS
+			tag = CTR
 			tag = SEV
 		}
 	}
@@ -418,7 +419,7 @@ FRA_ideas = {
 }
 
 
-TUR_ideas = { #1356
+TUR_ideas = {
 	start = {
 		discipline = 0.05
 		tolerance_heathen = 3
@@ -1037,7 +1038,6 @@ MAM_ideas = {
 }
 
 
-
 NAP_ideas = {
 	start = {
 		global_institution_spread = 0.1 #University of Naples, Angevine Heritage, Academies, centre of Neapolitan renaissance.
@@ -1274,7 +1274,7 @@ MLO_ideas = {
 }
 
 
-BYZ_ideas = {#1356
+BYZ_ideas = {
 	start = {
 		advisor_cost = -0.10
 		tolerance_own = 3
@@ -1289,9 +1289,7 @@ BYZ_ideas = {#1356
 	}
 	free = yes
 	
-	regulations_for_mercenaries = {
-		merc_maintenance_modifier = -0.15
-	}
+	
 	repopulation_of_countryside = {
 		global_trade_goods_size_modifier = 0.05
 		global_manpower_modifier = 0.10
@@ -1310,6 +1308,9 @@ BYZ_ideas = {#1356
 	}
 	ecumenical_patriarch = {
 		global_missionary_strength = 0.03
+	}
+	regulations_for_mercenaries = {
+		merc_maintenance_modifier = -0.15
 	}
 }
 
@@ -1917,14 +1918,13 @@ LIT_ideas = {
 	warlord_dukes = {
 		leader_land_shock = 1
 		global_manpower_modifier = 0.15
-		
 	}
 	statutes_of_lithuania = {
 		years_of_nationalism = -5
 	}
 	lithuanian_hussars = {
 		cavalry_power = 0.25
-
+	}
 	auksine_laisve = {
 		stability_cost_modifier = -0.1
 	}
@@ -1934,7 +1934,7 @@ LIT_ideas = {
 	magnate_estates = {
 		production_efficiency = 0.1
 	}
-		}
+		
 }
 
 
@@ -3275,7 +3275,7 @@ TRE_ideas = {
 	}
 }
 
-GEO_ideas = { #1356
+GEO_ideas = {
 	start = {
 		defensiveness = 0.25
 		infantry_power = 0.1
@@ -4955,7 +4955,7 @@ baltic_crusader_state_ideas = { #Formely TEU_ideas
 	}
 }
 
-BUL_ideas = { #1356
+BUL_ideas = {
 	start = {	
 		merchants = 1
 		core_creation = -0.1		
@@ -4992,7 +4992,6 @@ BUL_ideas = { #1356
 		legitimacy = 1
 	}
 }
-
 
 KIE_ideas = {
 	start = {
