@@ -13,7 +13,6 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = MSY
-add_core = JLR
 fort_15th = yes # Falak-ol-Aflak
 
 discovered_by = muslim
@@ -32,9 +31,9 @@ discovered_by = indian
 			owner = LRI controller = LRI add_core = LRI
 } #BT In
 
-1356.12.26  = {
-			owner = JLR controller = JLR remove_core = LRI
-} #BT Out
+#1356.12.26  = {
+#			owner = JLR controller = JLR remove_core = LRI
+#} #BT Out
 
 1392.1.1  = { owner = TIM controller = TIM add_core = TIM remove_province_modifier = small_nestorian_community }
 1400.1.1  = { religion = shiite }

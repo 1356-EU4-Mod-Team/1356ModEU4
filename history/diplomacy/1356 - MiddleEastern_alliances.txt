@@ -107,6 +107,14 @@ vassal = {
 }
 
 vassal = {
+	first = JLR
+	second = ARD
+	start_date = 1356.12.26
+	end_date = 1387.1.1
+}
+
+
+vassal = {
 	first = BLU
 	second = SHY
 	start_date = 1346.1.1
@@ -320,7 +328,7 @@ guarantee = {
 }
 
 guarantee = {
-	first = JLR
+	first = BSR
 	second = ALH
 	start_date = 1356.1.1
 	end_date = 1444.1.1

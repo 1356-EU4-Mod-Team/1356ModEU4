@@ -244,6 +244,7 @@ republic = {
 		novgorod_republic_gov_legacy
 		ahm_republic
 		viking_republic_legacy
+		caspian_peasants_republic_legacy
 		#####1356 Additions End#####
 	}
 	reform_levels = {
@@ -272,6 +273,7 @@ republic = {
 				novgorod_republic_gov
 				ahm_republic_reform
 				viking_republic_reform
+				caspian_peasants_republic_reform
 				#####1356 Additions End#####
 			}
 		}
@@ -361,6 +363,7 @@ republic = {
 		swiss_canton_reform
 		ahm_republic_reform
 		viking_republic_reform
+		caspian_peasants_republic_reform
 		######End 1356 Changes#####
 	}
 	exclusive_reforms = {

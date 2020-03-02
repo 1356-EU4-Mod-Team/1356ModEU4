@@ -1,12 +1,12 @@
 government = tribal
 add_government_reform = tribal_federation_ilkhan_reform
 technology_group = muslim
+capital = 415 #Kirkuk	### Previously Baghdad ####
 primary_culture = al_iraqiya_arabic
 add_accepted_culture = kurdish
 religion = shiite
 #historical_rival = TIM
 #historical_rival = PER
-capital = 410	# Baghdad
 religious_school = jafari_school
 
 1356.1.1 = {
@@ -39,6 +39,8 @@ religious_school = jafari_school
 		mil = 3
 	}
 }
+
+1356.12.25 = { capital = 415 } # Tabriz
 
 1358.1.1 = { capital = 416 } # Tabriz
 

@@ -2592,6 +2592,40 @@ peasants_republic_legacy = {
 	}
 }
 
+caspian_peasants_republic_legacy = {
+	# government mechanics flags go here
+	icon = "peasant_republic"
+	legacy_government = yes
+	allow_normal_conversion = yes
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	duration = 5
+
+	republican_name = yes
+	royal_marriage = no
+
+	republic = yes
+	modifiers = {
+		max_states = 1
+		merchants = 1
+		land_morale = 0.10
+		max_absolutism = -30
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
 veche_republic_legacy = {
 	# government mechanics flags go here
 	icon = "merchant"

@@ -2,10 +2,10 @@ government = republic
 add_government_reform = caspian_peasants_republic_reform
 mercantilism = 15
 primary_culture = mazandarani
-religion = shiite #Zaidiyyah
+religion = sunni #Zaidiyyah
 technology_group = muslim
-capital = 417 # Lahijan
-religious_school = zaidi_school
+capital = 4339 # Lahijan
+religious_school = shafii_school
 
 1356.12.25 = {
 	monarch = {
@@ -16,6 +16,7 @@ religious_school = zaidi_school
 		regent = yes
 	}
 }
+
 
 1430.1.1 = {
 	monarch = {

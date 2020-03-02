@@ -31,9 +31,9 @@ discovered_by = indian
 			owner = ARD controller = ARD
 } #BT In
 
-1356.12.26  = {
-			owner = JLR controller = JLR
-} #BT Out
+#1356.12.26  = {
+#			owner = JLR controller = JLR
+#} #BT Out
 
 1392.1.1  = { owner = TIM controller = TIM add_core = TIM }
 1409.5.13 = { owner = ARD controller = ARD }

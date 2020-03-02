@@ -22,7 +22,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { owner = AQT controller = AQT add_core = AQT remove_core = GUY } #BT In
-1356.12.26  = { owner = FRA controller = FRA add_core = FRA add_core = GUY remove_core = FRA remove_core = AQT } #BT Out
+1356.12.26  = { owner = FRA controller = FRA add_core = FRA add_core = GUY remove_core = AQT } #BT Out
 
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
 1370.9.1   = { controller = FRA } # Siege of Limoges 

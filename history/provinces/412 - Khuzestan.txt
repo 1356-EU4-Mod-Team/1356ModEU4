@@ -28,7 +28,7 @@ discovered_by = indian
 } #BT In
 
 1356.12.26  = {
-			owner = JLR controller = JLR remove_core = ABS
+			owner = BSR controller = BSR remove_core = ABS
 } #BT Out
 
 1394.1.1  = { owner = TIM controller = TIM add_core = TIM }
