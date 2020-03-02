@@ -6,6 +6,16 @@ technology_group = muslim
 capital = 408	# Basra
 government_rank = 1
 
+1356.12.25 = {
+	monarch = {
+		name = "Local Noble"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
 1534.1.1 = {
 	monarch = {
 		name = "Rashid"

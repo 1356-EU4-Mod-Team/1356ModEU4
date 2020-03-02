@@ -10,26 +10,36 @@ historical_rival = HAJ
 historical_friend = BAL
 # Kartidid Empire
 
-1332.1.1 = {
-	capital = 446
+1345.1.1 = {
 	monarch = {
-		name = "Mu'izz-uddin Husayn"
-		dynasty = "Kurtid"
+		name = "Qazaghan"
+		dynasty = "Qara'una"
 		adm = 3
-		dip = 1
-		mil = 3
+		dip = 3
+		mil = 5
 	}
 }
 
-1370.1.1 = {
+1358.1.1 = {
 	monarch = {
-		name = "Ghiyath-uddin Ali"
-		dynasty = "Kurtid"
+		name = "Abdullah"
+		dynasty = "Qara'una"
 		adm = 1
-		dip = 3
-		mil = 3
+		dip = 2
+		mil = 2
 	}
 }
+
+1359.1.1 = {
+	monarch = {
+		name = "Amir Husayn"
+		dynasty = "Qara'una"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
 
 # Timurid Governors of Kabul, Soyurghatmish
 1424.1.1 = {
