@@ -3,7 +3,7 @@ country_decisions = {
 #Expand on to be more than Nubia 2.0
 #Handle government change in a seperate event after reformation?
 	aksum_nation = {
-		major = yes
+		major = no
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
