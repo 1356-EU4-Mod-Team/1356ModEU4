@@ -3369,12 +3369,12 @@ GEO_ideas = {
 
 AFG_ideas = {
 	start = {
-		army_tradition = 0.5
-		global_own_trade_power = 0.1
+		ae_impact = -0.20
+		cavalry_cost = -0.15
 	}
 	
 	bonus = {
-		enemy_core_creation = 0.5
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -3382,20 +3382,24 @@ AFG_ideas = {
 	}
 	free = yes
 	
-	pashtunwali = {
-		war_exhaustion_cost = -0.10
+	durrani_imperialism = {
+		cavalry_power = 0.20
+		cavalry_flanking = 0.5
 	}
+	pashtunwali = {
+		war_exhaustion = -0.05
+		fabricate_claims_cost= -0.2
+	}
+	afghan_diaspora = {
+		core_creation = -0.05
+		province_warscore_cost = -0.10
+	}	
 	shadows_of_the_hindu_kush = {
-		defensiveness = 0.25
+		defensiveness = 0.15
+		rival_border_fort_maintenance = -0.25
 	}
 	tureh = {
 		global_manpower_modifier = 0.2
-	}
-	afghan_diaspora = {
-		diplomatic_reputation = 1
-	}
-	durrani_imperialism = {
-		cavalry_power = 0.15
 	}
 	institutionalized_loya_jirga = {
 		legitimacy = 1

@@ -1112,11 +1112,11 @@ CTR_ideas = { #Just spains ideas, same localisation and all
 
 JLR_ideas = {
 	start = {
-		global_unrest = -2
-		land_morale = 0.10
+		core_creation = -0.10
+		leader_land_shock = 1 
 	}
 	bonus = {
-		shock_damage = 0.1
+		general_cost = -0.25
 	}
 	trigger = {
 		tag = JLR
@@ -1124,26 +1124,28 @@ JLR_ideas = {
 	free = yes
 	
 	jlr_citadels_and_fortesses = {
-		core_creation = -0.15
+		 leader_siege = 1
 	}
 	jlr_ayyubid_heritage = {
-		siege_ability = 0.15
+		development_cost = -0.1
 	}
 	jlr_righteousness_of_the_faith = {
-		prestige = 1
-        army_tradition_from_battle = 0.5
+		caravan_power = 0.15
 	}
 	jlr_elite_warriors = {
-		global_tax_modifier = 0.1
+		leader_land_fire = 1
 	}
 	jlr_rise_of_the_eagle = {
-	    global_manpower_modifier = 0.25
+	    leader_land_manuever = 1
+		movement_speed = 0.05
 	}
 	jlr_strenghten_central_authority = {
-		legitimacy = 1
+		missionaries = 1
+		global_heretic_missionary_strength = 0.02
+		monthly_piety = -0.001
 	}
 	jlr_state_economics = {
-		ae_impact = -0.20
+		global_trade_goods_size_modifier = 0.1
 	}
 }
 
@@ -1156,7 +1158,7 @@ CHB_ideas = {
 		leader_land_shock = 1
 	}
 	trigger = {
-		tag = CHB
+		tag = KRT
 	}
 	free = yes
 	
@@ -1194,8 +1196,7 @@ MUZ_ideas = {
 	}
 	trigger = {
 		OR = {
-			tag = MUZ
-			tag = HER
+			tag = MIH
 		}
 	}
 	free = yes
