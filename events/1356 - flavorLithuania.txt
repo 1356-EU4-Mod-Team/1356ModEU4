@@ -123,6 +123,7 @@ province_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
+		ai = yes #Not for players
 		religion = baltic_pagan_reformed		
 		NOT = { is_religion_enabled = protestant }
 		OR = {

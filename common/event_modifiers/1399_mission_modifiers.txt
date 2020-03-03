@@ -628,3 +628,9 @@ uralic_religion_starting_modifier = {
 	global_missionary_strength = -0.05
 	global_tax_modifier = -0.20
 }
+
+#Finland
+
+1356_finland_trade_focus = {
+ 	trade_efficiency = 0.1
+}

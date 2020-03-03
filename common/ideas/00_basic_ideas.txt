@@ -514,11 +514,11 @@ economic_ideas = {
 }
 
 
-exploration_ideas = {
+exploration_ideas = { #1356
 	category = DIP
 	important = yes
 
-	trigger = {
+	trigger = { #1356
 		OR = {
 			has_country_flag = age_of_discovery_decision_flag
 			NOT = { current_age = age_of_feudalism }
@@ -558,7 +558,7 @@ exploration_ideas = {
 		naval_forcelimit_modifier = 0.25
 	}
 
-	ai_will_do = {
+	ai_will_do = { #1356
 		factor = 0.75
 		modifier = {
 			factor = 0
@@ -586,8 +586,8 @@ exploration_ideas = {
 				} 
 			}
 		}
-		modifier = {
-			factor = 0.1
+		modifier = { #1356 #Tweaked these values slightly
+			factor = 0.3
 			NOT = { num_of_ports = 3 }
 			NOT = { 
 				any_owned_province = { 
@@ -596,13 +596,17 @@ exploration_ideas = {
 				}
 			}
 		}
-		modifier = {
+		modifier = { #1356
 			factor = 0.1
 			NOT = { has_institution = renaissance }
 			NOT = { tag = POR }
 			NOT = { tag = CAS }
+			NOT = { tag = CTR } #1356
+			NOT = { tag = ENG } #1356
+			NOT = { tag = BRI } #1356
+			NOT = { tag = NAV } #1356
 		}
-		modifier = {
+		modifier = { #1356
 			factor = 0.1
 			capital_scope = {
 				NOT = {
@@ -610,6 +614,7 @@ exploration_ideas = {
 					region = iberia_region
 					region = british_isles_region
 					region = low_countries_region
+					region = italy_region #1356
 				}
 			}
 			NOT = { technology_group = high_american }
@@ -618,9 +623,9 @@ exploration_ideas = {
 			factor = 0.5
 			tag = ARA
 		}
-		modifier = {
+		modifier = { #1356
 			factor = 0.1
-			NOT = { is_year = 1490 }
+			NOT = { is_year = 1450 } #1356 #modified this
 			capital_scope = {
 				NOT = {
 					region = iberia_region
@@ -639,23 +644,26 @@ exploration_ideas = {
 			factor = 2.0
 			num_of_ports = 10
 		}
-		modifier = {
-			factor = 2.0
+		modifier = { #1356
+			factor = 2.5 #1356
 			num_of_ports = 15
 		}
-		modifier = {
-			factor = 2.0
+		modifier = { #1356
+			factor = 3.0 #1356
 			num_of_ports = 20
 		}
-		modifier = {
+		modifier = { #1356
 			factor = 1000
 			OR = {
 				tag = POR
 				tag = CAS
 				tag = SPA
+				tag = NAV #1356
+				tag = CTR #1356
+				tag = ADU #1356
 			}
 		}
-		modifier = {
+		modifier = { #1356
 			factor = 2
 			OR = {
 				tag = GBR
@@ -663,6 +671,16 @@ exploration_ideas = {
 				tag = ENG
 				tag = FRA
 				tag = KUR
+				tag = BRI #1356
+				tag = IRE #1356
+				tag = SCO #1356 #Bankrupt Scottish Colonies gogogogo!
+				tag = PRO #1356
+				tag = AQT #1356
+				tag = NCH #1356
+				tag = MOR #1356
+				tag = TUN #1356
+				tag = FZA #1356 #Same reason for other Maghreb
+				tag = BYZ #1356 #Gotta keep it fresh yo
 			}
 		}
 	}
@@ -811,11 +829,11 @@ quantity_ideas = {
 }
 
 
-expansion_ideas = {
+expansion_ideas = { #1356
 	category = ADM
 	important = yes
 
-	trigger = {
+	trigger = { #1356
 		OR = {
 			has_country_flag = age_of_discovery_decision_flag
 			NOT = { current_age = age_of_feudalism }
@@ -855,7 +873,7 @@ expansion_ideas = {
 		global_trade_power = 0.2
 	}
 
-	ai_will_do = {
+	ai_will_do = { #1356
 		factor = 0.48
 		modifier = {
 			factor = 10
@@ -864,12 +882,14 @@ expansion_ideas = {
 				is_colonial_nation = yes
 			}
 		}
-		modifier = {
+		modifier = { #1356
 			factor = 5
 			OR = {
 				tag = CAS
 				tag = POR
 				tag = SPA
+				tag = CTR #1356
+				tag = NAV #1356
 			}
 		}
 		modifier = {

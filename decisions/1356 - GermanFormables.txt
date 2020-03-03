@@ -1,8 +1,9 @@
 country_decisions = {
 	
-	swabian_nation = {
+	swabian_nation = { #Disabled
 		major = yes
 		potential = {
+			always = no #defunct
 			primary_culture = swabian 
 			NOT = { exists = SWB }
 			NOT = { tag = SAX }

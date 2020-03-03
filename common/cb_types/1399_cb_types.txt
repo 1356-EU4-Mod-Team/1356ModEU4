@@ -67,6 +67,30 @@ cb_chinese_civil_war = {
 	
 }
 
+cb_restore_personal_union_burgundy = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 240
+
+	prerequisites = {
+		tag = BUR
+		government = monarchy
+		is_revolution_target = no
+		FROM = {
+			government = monarchy
+			#is_subject = no
+		}
+	}
+	
+	attacker_disabled_po = {
+		po_become_vassal
+		po_become_tributary_state
+	}
+
+	war_goal = take_capital_personal_union_burgundy
+}
+
 cb_medieval_crusade = {
 
 	prerequisites = {

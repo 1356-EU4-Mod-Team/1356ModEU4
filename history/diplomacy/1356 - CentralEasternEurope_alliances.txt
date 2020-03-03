@@ -159,52 +159,52 @@ union = {
 }
 
 # Austria - Thurgau I
-vassal = {
-	first = HAB
-	second = THG
-	start_date = 1282.12.17
-	end_date = 1379.9.25
-}
+#vassal = {
+#	first = HAB
+#	second = THG
+#	start_date = 1282.12.17
+#	end_date = 1379.9.25
+#}
 
 # Styria - Thurgau I
-vassal = {
-	first = STY
-	second = THG
-	start_date = 1379.9.25
-	end_date = 1406.7.15
-}
+#vassal = {
+#	first = STY
+#	second = THG
+#	start_date = 1379.9.25
+#	end_date = 1406.7.15
+#}
 
 # Tirol - Thurgau
-vassal = {
-	first = TIR
-	second = THG
-	start_date = 1406.7.15
-	end_date = 1439.6.24
-}
+#vassal = {
+#	first = TIR
+#	second = THG
+#	start_date = 1406.7.15
+#	end_date = 1439.6.24
+#}
 
 # Austria - Thurgau II
-vassal = {
-	first = HAB
-	second = THG
-	start_date = 1439.6.24
-	end_date = 1452.1.1
-}
+#vassal = {
+#	first = HAB
+#	second = THG
+#	start_date = 1439.6.24
+#	end_date = 1452.1.1
+#}
 
 # Styria - Thurgau II
-vassal = {
-	first = STY
-	second = THG
-	start_date = 1452.1.1
-	end_date = 1457.11.24
-}
+#vassal = {
+#	first = STY
+#	second = THG
+#	start_date = 1452.1.1
+#	end_date = 1457.11.24
+#}
 
 # Austria - Thurgau III
-vassal = {
-	first = HAB
-	second = THG
-	start_date = 1457.11.24
-	end_date = 1460.1.1
-}
+#vassal = {
+#	first = HAB
+#	second = THG
+#	start_date = 1457.11.24
+#	end_date = 1460.1.1
+#}
 
 # Styria - Gorz I
 vassal = {

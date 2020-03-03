@@ -248,7 +248,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -328,7 +328,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -405,7 +405,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -479,7 +479,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -553,7 +553,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -627,7 +627,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -701,7 +701,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -775,7 +775,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -849,7 +849,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -923,7 +923,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -997,7 +997,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1071,7 +1071,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1212,7 +1212,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1286,7 +1286,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1360,7 +1360,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1434,7 +1434,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1508,7 +1508,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1582,7 +1582,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1659,7 +1659,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1733,7 +1733,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1807,7 +1807,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1881,7 +1881,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -1955,7 +1955,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -2029,7 +2029,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery
@@ -2103,7 +2103,7 @@ country_decisions = {
 			OR = {
 				AND = {
 					current_age = age_of_feudalism
-					has_age_ability = ab_justified_wars
+					has_age_ability = ab_gothic_cathedrals
 				}
 				AND = {
 					current_age = age_of_discovery

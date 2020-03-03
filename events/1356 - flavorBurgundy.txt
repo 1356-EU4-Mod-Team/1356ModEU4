@@ -209,7 +209,7 @@ country_event = { #Burgundians being told they need to fight or back off
 		BUR = {
 			declare_war_with_cb = {
 				who = FLA
-				casus_belli = cb_claim_throne
+				casus_belli = cb_restore_personal_union_burgundy
 			}
 			set_country_flag = bur_fought_for_flanders_flag
 		}
@@ -498,7 +498,7 @@ country_event = { #Burgundy being told Brabant said no
 		BUR = {
 			add_casus_belli = {
 				target = BRB
-				type = cb_claim_throne
+				type = cb_restore_personal_union_burgundy
 				#duration = 5475
 			}
 		}

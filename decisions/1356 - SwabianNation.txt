@@ -5,6 +5,16 @@ country_decisions = {
 		potential = {
 			primary_culture = swabian 
 			NOT = { exists = SWB }
+			NOT = { tag = SAX }
+			NOT = { tag = GER }
+			NOT = { tag = HAB }
+			NOT = { tag = BRA }
+			NOT = { tag = TEU }
+			NOT = { tag = SWB }
+			NOT = { tag = HAN }
+			NOT = { tag = BOH }
+			NOT = { tag = RHI }
+			NOT = { tag = FRA }
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {

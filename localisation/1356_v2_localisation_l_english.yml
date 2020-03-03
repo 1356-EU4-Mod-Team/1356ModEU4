@@ -1,5 +1,9 @@
 ﻿l_english:
 
+ #cb
+ cb_restore_personal_union_burgundy: "Restore Personal Union"
+ take_capital_personal_union_burgundy: "Take Capital"
+
  #Institutions
  gunpowder_institution: "Gunpowder"
  gunpowder_institution_date: "1400"
@@ -1572,6 +1576,8 @@
  1356_tribal_feudal_spread_rng_tt: "!!THIS HAS NO EFFECT!! This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 150 years without modifiers."
  1356_tribal_feudal_spread_border_tt: "!!THIS HAS NO EFFECT!! This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 250 months."
  1356_tribal_feudal_spread_vassal_tt: "!!THIS HAS NO EFFECT!! This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 100 months."
+ 
+ 1356_finland_trade_focus: "Trade Focus"
  
  #Missions
   
