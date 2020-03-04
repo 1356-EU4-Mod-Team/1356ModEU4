@@ -1220,7 +1220,7 @@ country_decisions = {
 	
 	zoroastrian_royal_fires = {
 		potential = {
-			NOT = { has_country_modifier = royal_fires_modifier }
+			NOT = { has_country_modifier = royal_fires_modifier_1356 }
 			religion = zoroastrian
 		}
 		allow = {
