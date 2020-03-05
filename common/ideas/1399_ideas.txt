@@ -2762,7 +2762,7 @@ SHU = {
 	}
 }
 
-YR_ideas = {
+SYR_ideas = {
 	start = {
 		global_tax_modifier = 0.1
 		legitimacy = 1 	
