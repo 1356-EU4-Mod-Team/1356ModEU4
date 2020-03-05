@@ -1288,38 +1288,10 @@ country_event = {
 			}
 		}
 		add_prestige = -15
-		add_legitimacy = -20
-	}
-	option = { #Become Subject FRA
-		name = flavor_fla_fra.25.b
-		trigger = { is_subject = no exists = FRA }
-		ai_chance = { factor = 80 }
-		FRA = {
-			create_subject = {
-				subject_type = vassal
-				subject = BRI
-			}
-		}
-		add_prestige = -15
-		add_legitimacy = -15
+		add_legitimacy = -25
 	}
 	option = { #No Subjugation
 		name = flavor_fla_fra.25.c
-		trigger = { is_subject = no exists = FRA }
-		ai_chance = { factor = 20 }
-		add_mil_power = 200
-		add_legitimacy = 10
-		add_prestige = 10
-		FRA = {
-			add_casus_belli = {
-				target = BRI
-				type = cb_vassalize
-				months = 48
-			}
-		}
-	}
-	option = { #No Subjugation
-		name = flavor_fla_fra.25.e
 		trigger = { is_subject = no exists = FRA }
 		ai_chance = { factor = 20 }
 		add_mil_power = 200
