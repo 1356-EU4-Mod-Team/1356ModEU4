@@ -605,6 +605,7 @@ exploration_ideas = { #1356
 			NOT = { tag = ENG } #1356
 			NOT = { tag = BRI } #1356
 			NOT = { tag = NAV } #1356
+			NOT = { tag = MAL } #1356
 		}
 		modifier = { #1356
 			factor = 0.1
@@ -681,6 +682,7 @@ exploration_ideas = { #1356
 				tag = TUN #1356
 				tag = FZA #1356 #Same reason for other Maghreb
 				tag = BYZ #1356 #Gotta keep it fresh yo
+				tag = MAL #1356 #Historical-ish
 			}
 		}
 	}
