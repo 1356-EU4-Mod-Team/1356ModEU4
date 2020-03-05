@@ -1,25 +1,25 @@
-bookmark =
-{
-	name = "empire_east_NAME"
-	desc = "empire_east_DESC"
-	date = 1356.12.25
-	
-	center = 446	
-	
-	country = DLH
-	country = BAH
-	country = AHM
-	country = JLR
-	country = YUA
-	country = HAJ
-	country = VIJ	
-	country = GUJ
-	country = MNG
-	country = TAB
-
-	
-	easy_country = JLR
-	easy_country = HAJ
-	easy_country = MNG
-	easy_country = AHM
-}
+#bookmark =
+#{
+#	name = "empire_east_NAME"
+#	desc = "empire_east_DESC"
+#	date = 1356.12.25
+#	
+#	center = 446	
+#	
+#	country = DLH
+#	country = BAH
+#	country = AHM
+#	country = JLR
+#	country = YUA
+#	country = HAJ
+#	country = VIJ	
+#	country = GUJ
+#	country = MNG
+#	country = TAB
+#
+#	
+#	easy_country = JLR
+#	easy_country = HAJ
+#	easy_country = MNG
+#	easy_country = AHM
+#}

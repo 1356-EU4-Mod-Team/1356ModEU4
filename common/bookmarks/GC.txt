@@ -17,12 +17,11 @@ bookmark =
 	country = TUR	
 	country = LIT
 	country = JLR
-	country = PAD
 	country = TRS
 	#country = POR
 
 	
-	easy_country = CAS
+	easy_country = CTR
 	easy_country = DAN
 	easy_country = ENG
 	easy_country = JLR
