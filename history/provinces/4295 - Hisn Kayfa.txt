@@ -21,8 +21,8 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
-1356.12.24 = { owner = QON controller = QON add_core = QON } #BT In
-1356.12.26 = { owner = HSN controller = HSN remove_core = QON } #BT Out
+1356.12.24 = { owner = BTL controller = BTL add_core = BTL } #BT In
+1356.12.26 = { owner = HSN controller = HSN remove_core = BTL } #BT Out
 
 1462.1.1 = {
 	owner = AKK

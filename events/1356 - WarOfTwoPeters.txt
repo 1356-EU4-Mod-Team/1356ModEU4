@@ -279,6 +279,7 @@ country_event = { # d'Ivrée Total Victory
 		change_heir_adm = 3
 		change_heir_mil = 3
 		change_heir_dip = 3
+		remove_country_modifier = castile_no_provinces
 	}	
 }
 country_event = { # d'Ivrée Proposes Peace ####Trastamara Recieves the Event####
@@ -353,8 +354,10 @@ country_event = { # Trastamara Proposes Peace  ####Castile Recieves Event####
 	option = {
 		ai_chance = { 
 			factor = 60
-		}		
-		name = WarTwoPetersFlavor.333.c #England sends no support
+		}
+		CTR = {
+			country_event = { id = WarTwoPetersFlavor.14 } 
+		}				
 	}		
 }
 
@@ -419,36 +422,22 @@ country_event = { # Trastamara Surrender (Castile Agree to terms)
 		}
 		if = {
 			limit = {
-				224 = { controlled_by = CTR }
+				224 = { controlled_by = CAS }
 			}
 			224 = { cede_province = CAS }
 		}
 		if = {
 			limit = {
-				1749 = { controlled_by = CTR }
+				1749 = { controlled_by = CAS }
 			}
 			1749 = { cede_province = CAS }
 		}				
 		CTR = {
 			change_tag = SEV
-		}	
-	}
-
-	option = {
-		name = WarTwoPetersFlavor.333.b #England sends 5k and a General
-		add_manpower = -5
-		add_mil_power = -75
-		add_army_tradition = -5.0
-		reverse_add_opinion = {
-			who = CAS
-			modifier = supported_us_castile
-		}		
+		}
 		CAS = {
-			country_event = { id = WarTwoPetersFlavor.445 } 
-		}	
-	}
-	option = {
-		name = WarTwoPetersFlavor.333.c #England sends no support
+			remove_country_modifier = castile_no_provinces
+		}			
 	}
 }
 
@@ -469,9 +458,9 @@ country_event = { # Trastamara recieves Offer Declined
 			who = CAS
 			modifier = supported_us_castile
 		}
-		CAS = {
-			country_event = { id = rus_independence.1 } 
-		}	
+		#CAS = {
+		#	country_event = { id = rus_independence.1 } 
+		#}	
 	}
 
 	option = {
@@ -535,22 +524,22 @@ country_event = { # d'Ivrée Surrender (Trastamara Agree to terms)
 		}			
 	}
 
-	option = {
-		name = WarTwoPetersFlavor.333.b #England sends 5k and a General
-		add_manpower = -5
-		add_mil_power = -75
-		add_army_tradition = -5.0
-		reverse_add_opinion = {
-			who = CAS
-			modifier = supported_us_castile
-		}		
-		CAS = {
-			country_event = { id = WarTwoPetersFlavor.445 } 
-		}	
-	}
-	option = {
-		name = WarTwoPetersFlavor.333.c #England sends no support
-	}
+	#option = {
+	#	name = WarTwoPetersFlavor.333.b #England sends 5k and a General
+	#	add_manpower = -5
+	#	add_mil_power = -75
+	#	add_army_tradition = -5.0
+	#	reverse_add_opinion = {
+	#		who = CAS
+	#		modifier = supported_us_castile
+	#	}		
+	#	CAS = {
+	#		country_event = { id = WarTwoPetersFlavor.445 } 
+	#	}	
+	#}
+	#option = {
+	#	name = WarTwoPetersFlavor.333.c #England sends no support
+	#}
 }
 
 country_event = { # d'Ivrée recieves Offer Declined
@@ -570,9 +559,9 @@ country_event = { # d'Ivrée recieves Offer Declined
 			who = CAS
 			modifier = supported_us_castile
 		}
-		CAS = {
-			country_event = { id = rus_independence.1 } 
-		}	
+		#CAS = {
+		#	country_event = { id = rus_independence.1 } 
+		#}	
 	}
 
 	option = {

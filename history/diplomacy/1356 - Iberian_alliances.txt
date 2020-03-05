@@ -28,3 +28,10 @@ alliance = { #Historical!
 	start_date = 1356.12.26
 	end_date = 1360.1.1 #Need an end date
 }
+
+alliance = { #Added for Civil war functionality
+	first = CAS
+	second = CTR
+	start_date = 1356.12.25
+	end_date = 1356.12.26 #Need an end date
+}

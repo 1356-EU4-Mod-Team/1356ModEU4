@@ -24,6 +24,15 @@ discovered_by = indian
 
 #fort_15th = yes # Shushtar, Dezful
 
+1356.12.24  = {
+			owner = ABS controller = ABS add_core = ABS
+} #BT In
+
+
+1356.12.26  = {
+			owner = BSR controller = BSR remove_core = ABS
+} #BT Out
+
 1394.1.1  = { owner = TIM controller = TIM add_core = TIM }
 1409.5.13 = { owner = JLR controller = JLR remove_core = TIM }
 1432.1.1  = { owner = IRQ controller = IRQ add_core = IRQ }
