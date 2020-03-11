@@ -221,9 +221,9 @@ disunited_tribes = {
 saviour_of_the_rus = {
 	reduced_liberty_desire = 90
 	liberty_desire_from_subject_development = -0.33
-	diplomatic_annexation_cost = -0.25
-	diplomatic_upkeep = 3
-	diplomatic_reputation = 2
+	diplomatic_annexation_cost = -0.40
+	diplomatic_upkeep = 2
+	diplomatic_reputation = 3
 	years_of_nationalism = -5
 	global_unrest = -2
 }
