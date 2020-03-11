@@ -61,9 +61,6 @@ country_event = {
 	}
 	option = {
 		name = "flavor_cum.1.a"
-#		trigger = {
-#
-#		}
 		create_march = CUM
 		CUM = {
 			add_opinion = {
@@ -89,6 +86,51 @@ country_event = {
 			casus_belli = cb_independence_war
 			war_goal_province = 4126 #Bacs
 		}
+	}
+	option = {
+		name = "flavor_cum.1.c"
+		
+		trigger = {
+			ai = no
+		}
+		switch_tag = CUM
+		declare_war_with_cb = {
+			who = CUM
+			casus_belli = cb_independence_war
+			war_goal_province = 4126 #Bacs
+		}
+		
+		europe = { discover_country = CUM }
+		maghreb_region = { discover_country = CUM }
+		egypt_region = { discover_country = CUM }
+		mashriq_region = { discover_country = CUM }
+		anatolia_region = { discover_country = CUM }
+		persia_region = { discover_country = CUM }
+		khorasan_region = { discover_country = CUM }
+		arabia_region = { discover_country = CUM }
+		caucasia_region = { discover_country = CUM }
+		hindusthan_region = { discover_country = CUM }
+		bengal_region = { discover_country = CUM }
+		west_india_region = { discover_country = CUM }
+		deccan_region = { discover_country = CUM }
+		coromandel_region  = { discover_country = CUM }
+		mediterrenean_region = { discover_country = CUM }
+		arabian_sea_region = { discover_country = CUM }
+		baltic_sea_region = { discover_country = CUM }
+		north_sea_area = { discover_country = CUM }
+		norwegian_sea_area = { discover_country = CUM }
+		celtic_sea_area = { discover_country = CUM }
+		english_channel_area = { discover_country = CUM }
+		denmark_strait_area = { discover_country = CUM }
+		central_asia_region  = { discover_country = CUM}
+		baltic_sea_region = { discover_country = CUM }
+		north_sea_area = { discover_country = CUM }
+		norwegian_sea_area = { discover_country = CUM }
+		white_sea_area = { discover_country = CUM }
+		celtic_sea_area = { discover_country = CUM }
+		english_channel_area = { discover_country = CUM }
+		north_atlantic_area = { discover_country = CUM }
+		bay_of_biscay_area = { discover_country = CUM }
 	}
 }
 	

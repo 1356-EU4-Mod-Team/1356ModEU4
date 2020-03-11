@@ -4,7 +4,7 @@
 owner = BOG
 controller = BOG
 culture = bolghar
-religion = finnish_pagan_reformed
+religion = tengri_pagan_reformed
 hre = no
 base_tax = 2 
 

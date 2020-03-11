@@ -358,7 +358,7 @@ age_of_discovery = { #Partially edited by #1356
 	can_start = {
 		any_country = { 
 			exploration_ideas = 2
-			dip_tech = 8
+			dip_tech = 6
 		}
 	}
 	

@@ -1472,7 +1472,7 @@ crusader_state_reform = {
 		locked_government_type = yes
 		royal_marriage = yes
 		queen = yes
-		heir = no
+		heir = yes #CHANGE INTO SLAVE RULER MECHANICS MAYBE?
 	}
 }
 
