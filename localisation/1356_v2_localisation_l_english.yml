@@ -1142,12 +1142,22 @@
  flavor_cum.d.1: "The Cumans of the Bacs province have risen up and declared their intention to be a completly autonomous region of our nation. They state that their unique heritage and background are not governable by our current laws, and would serve better as an autonomous region of our nation that offers more troops in exchange for said autonomy. Historically the Cumans clashed with the Hungarian Nobility often throughout history, and they never managed to see eye to eye."
  flavor_cum.1.a: "The Cumans would serve well as a March."
  flavor_cum.1.b: "They are nothing more than Subjects to the [Root.Monarch.GetTitle]!"
+ flavor_cum.1.b: "We shall no longer be Subjects to the [Root.Monarch.GetTitle]!"
  
  goldenbullculture.t.1: "The Winds of Change"
  goldenbullculture.d.1: "As of recent many nobility, and the literate in our country have been looking back at the past of our people, and have been wishing that again they could ride on horseback day in and day out. Long gone are those times, but many elders in our society still recall those memories. While they may be in the past, there has been speak from the elders that we have strayed too far from our ancestry. That we are more deserving than to live in the shadow of another peoples! These ideas have taken hold in the younger generations now, and many are clamoring for us to once again call ourselves 'Avars'."
  goldenbullculture.1.a: "We must accept these changes."
  goldenbullculture.1.b: "We must stay civilized and resist!"
  goldenbullculture.1.c: "These changes do not go far enough! Back into the saddle!"
+ 
+ flavor_fla_fra.29.t: "Breton Response"
+ flavor_fla_fra.29.desc: "Brittany appears to have responded to our subjugation offer."
+ flavor_fla_fra.29.a: "Acceptance, perfect..."
+ flavor_fla_fra.29.c: "We'll get them next time"
+ flavor_fla_fra.29.f: "Backup Event- Something broke!"
+ french_breton_sub_acceptance_tt: "Brittany has accepted the request to become our subject!"
+ french_breton_sub_decline_tt: "Brittany has Declined the request to become our subject, we must now bring war to them for this insult!"
+ 
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
  eng_reinstate_duke_of_cornwall_decision_desc: "At one point the title 'Duke of Cornwall' was lost and our eldest son no longer held the title. Now that we are able to we should grant this title to our eldest son once more to both reward him and to gain more power ourselves!"

@@ -1282,6 +1282,10 @@ country_event = {
 		trigger = { is_subject = no exists = FRA }
 		ai_chance = { factor = 80 }
 		FRA = {
+			country_event = { 
+				id = flavor_fla_fra.29
+				days = 1
+			}
 			create_subject = {
 				subject_type = vassal
 				subject = BRI
@@ -1298,6 +1302,10 @@ country_event = {
 		add_legitimacy = 10
 		add_prestige = 10
 		FRA = {
+			country_event = { 
+				id = flavor_fla_fra.29
+				days = 1
+			}
 			add_casus_belli = {
 				target = BRI
 				type = cb_vassalize
@@ -1421,5 +1429,48 @@ country_event = {
 		}
 		
 		
+	}
+}
+
+#Brittany event to become a subject of France
+country_event = {
+	id = flavor_fla_fra.29
+	title = flavor_fla_fra.29.t
+	desc = flavor_fla_fra.29.desc
+	picture = FEAST_eventPicture
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	option = { #Became Subject
+		name = flavor_fla_fra.29.a
+		trigger = { 
+			BRI = { is_subject_of = FRA }
+		}
+		custom_tooltip = french_breton_sub_acceptance_tt 
+	}
+	option = { #No Subjugation
+		name = flavor_fla_fra.29.c
+		trigger = { 
+			BRI = { is_subject = no }
+		}
+		custom_tooltip = french_breton_sub_decline_tt 
+		add_casus_belli = {
+			target = BRI
+			type = cb_vassalize
+			months = 48
+		}
+	}
+	option = { #Backuk
+		name = flavor_fla_fra.29.f
+		trigger = { 
+			OR = {
+				NOT = { exists = BRI }
+				AND = {
+					BRI = { is_subject = yes }
+					BRI = { NOT = { is_subject_of = FRA } }
+				}
+			}
+		}
 	}
 }

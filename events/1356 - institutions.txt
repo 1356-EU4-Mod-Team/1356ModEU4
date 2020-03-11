@@ -839,11 +839,17 @@ country_event = { #Spreads gunpowder through hostile nations at war
 		NOT = { has_country_flag = institution_gunpowder_captured_research_flag }
 		NOT = { has_country_flag = institution_gunpowder_captured_use_flag }
 		is_year = 1370
+		NOT = { is_year = 1450 }
 		mil_tech = 4 #Hand Cannon
 		NOT = { government = tribal }
 		NOT = { government = native }
 		 any_enemy_country = { 
-			has_institution = gunpowder_institution 
+			has_institution = gunpowder_institution
+			is_neighbor_of = ROOT		
+		}
+		OR = {
+		 	had_recent_war = 2
+			is_at_war = yes
 		}
 	}
 	mean_time_to_happen = {	
@@ -884,6 +890,7 @@ country_event = { #Sale of Gunpowder
 		has_institution = gunpowder_institution
 		NOT = { has_country_flag = 1356_selling_institution_flag }
 		is_year = 1370
+		NOT = { is_year = 1450 }
 		mil_tech = 4 #Hand Cannon
 		NOT = { government = tribal }
 		NOT = { government = native }
@@ -905,11 +912,11 @@ country_event = { #Sale of Gunpowder
 				NOT = { has_country_flag = 1356_declined_to_buy_gunpowder_institution_flag }
 			}
 			country_event = { 
-				id = new_institution_events.63
+				id = new_institution_events.64
 				days = 30
 			}
 		}
-		set_country_flag = has_country_flag = 1356_selling_institution_flag
+		set_country_flag = 1356_selling_institution_flag
 	}
 	option = { #No, we will not.
 		name = new_institution_events.63.b
@@ -964,7 +971,7 @@ country_event = { #Sale of Gunpowder
 				 has_country_flag = 1356_selling_institution_flag
 			}
 			country_event = { 
-				id = new_institution_events.65
+				id = new_institution_events.66
 				days = 30
 			}
 		}
