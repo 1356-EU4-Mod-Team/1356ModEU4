@@ -109,6 +109,7 @@ country_event = {
 		tag = MAM
 		NOT = { is_year = 1380 }
 		is_year = 1357
+		NOT = { has_global_flag = 1356_bt_start_flag }
 		religion = sunni
 		primary_culture = al_misr_arabic
 		#360 = { religion = coptic }

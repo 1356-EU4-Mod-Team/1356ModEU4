@@ -454,10 +454,20 @@ country_event = { #Sweden Challenges the Novgorodian religion
 	}
 	option = { #It may just be better to attack them...
 		name = scan_djm.8.b
+		trigger = { 
+			is_subject = no
+		}
 		ai_chance = { factor = 10 }
 		declare_war_with_cb = {
 			who = NOV
 			casus_belli = cb_annex
+		}
+	}
+	option = { #Never Mind... (Subject only)
+		name = scan_djm.8.c
+		ai_chance = { factor = 0 }
+		trigger = { 
+			is_subject = yes
 		}
 	}
 }
@@ -583,6 +593,12 @@ country_event = { #Sweden may receive an Insult OR declare war right away over t
 	}
 	option = { #War right away!
 		name = scan_djm.12.b
+		trigger = { 
+			OR = { 
+				is_subject = no
+				ai = no
+			}
+		}
 		SWE = {
 			add_historical_rival = NOV
 			declare_war_with_cb = {

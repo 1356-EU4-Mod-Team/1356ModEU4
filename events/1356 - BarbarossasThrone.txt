@@ -13,6 +13,10 @@ country_event = {
 		NOT = { started_in = 1356.12.26 }
 	}
 	
+	immediate = {
+		set_global_flag = 1356_bt_start_flag
+	}
+	
 	option = {
 		trigger = {	normal_or_historical_nations = yes }
 		name = "barbarossa.1.ger" #Germany
