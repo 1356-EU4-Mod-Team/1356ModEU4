@@ -92,14 +92,14 @@ technology = { #MOVED VANILLA feudal_monarchy
 	
 	#despotic_monarchy = yes #vanilla location
 	#feudal_monarchy = yes #vanilla location 
-	oligarchic_republic = yes
+	allowed_idea_groups = 2
 }
 
 technology = {
 	# Tech 4
 	year = 1443
 	
-	allowed_idea_groups = 2
+	oligarchic_republic = yes
 }
 
 technology = {
@@ -114,8 +114,8 @@ technology = { #National Ideas
 	year = 1466
 
 	#Constable & Temple
-	production_efficiency	 =	0.02
 	#noble_republic = yes 
+	allowed_idea_groups = 3
 }
 
 technology = { #Workshop
@@ -125,6 +125,7 @@ technology = { #Workshop
 	#Workshop
 	farm_estate = yes
 	workshop = yes
+	allowed_idea_groups = 3
 }
 
 technology = { #Renaissance Thought
@@ -132,7 +133,7 @@ technology = { #Renaissance Thought
 	year = 1492
 	
 	#Noble Republic
-	allowed_idea_groups = 3
+	production_efficiency	 =	0.02
 
 }
 

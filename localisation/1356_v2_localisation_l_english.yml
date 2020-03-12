@@ -1158,6 +1158,8 @@
  french_breton_sub_acceptance_tt: "Brittany has accepted the request to become our subject!"
  french_breton_sub_decline_tt: "Brittany has Declined the request to become our subject, we must now bring war to them for this insult!"
  
+ scan_djm.8.c: "Never mind"
+ 
  #Decisions
  eng_reinstate_duke_of_cornwall_decision_title: "Reinstate the Duke of Cornwall"
  eng_reinstate_duke_of_cornwall_decision_desc: "At one point the title 'Duke of Cornwall' was lost and our eldest son no longer held the title. Now that we are able to we should grant this title to our eldest son once more to both reward him and to gain more power ourselves!"
@@ -1588,6 +1590,8 @@
  1356_tribal_feudal_spread_vassal_tt: "!!THIS HAS NO EFFECT!! This decision will allow the spread of Feudalism to your nation through event, making embracing Feudalism easier for Tribals. If you meet the requirements for this decision this event will fire on average every 100 months."
  
  1356_finland_trade_focus: "Trade Focus"
+ 
+ 1356_late_feudalism_mechanics_ethiopia: "Late Feudalism - Christian/Jewish/Zoroastrian African"
  
  #Missions
   

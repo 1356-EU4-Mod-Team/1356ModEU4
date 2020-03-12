@@ -76,12 +76,12 @@ royal_marriage = {
 	first = SWB
 	second = ENG
 	start_date = 1204.1.1
-	end_date = 1356.12.27
+	end_date = 1356.12.26
 }
 
 alliance = {
 	first = SWB
 	second = ENG
 	start_date = 1254.1.1
-	end_date = 1356.12.27
+	end_date = 1356.12.26
 }

@@ -71,6 +71,7 @@ country_event = {
 		tag = ALX
 		is_year = 1358
 		NOT = { is_year = 1375 }
+		NOT = { has_global_flag = 1356_bt_start_flag }
 		owns_core_province = 358
 		religion = sunni
 		primary_culture = al_misr_arabic
@@ -156,6 +157,7 @@ province_event = {
 	trigger = {
 		province_id = 358
 		NOT = { is_year = 1380 }
+		NOT = { has_global_flag = 1356_bt_start_flag }
 		owner = { 
 			tag = ALX
 			NOT = { has_global_flag = alexandria_massacure_flag }
@@ -233,6 +235,7 @@ country_event = {
 	trigger = {
 		has_global_flag = alexandria_massacure_flag
 		religion = coptic
+		NOT = { has_global_flag = 1356_bt_start_flag }
 		# OR = {
 			# tag = ETH
 			# tag = ALO
