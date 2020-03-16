@@ -437,7 +437,7 @@ country_event = {
 			limit = {
 				MOS = {
 					is_subject_of = ROOT
-					total_development = 50
+					has_country_flag = russian_independence_league_leader_flag
 				}
 			}
 			MOS = {
