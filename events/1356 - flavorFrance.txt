@@ -1271,7 +1271,7 @@ country_event = {
 country_event = {
 	id = flavor_fla_fra.25
 	title = flavor_fla_fra.25.t
-	desc = flavor_fla_fra.25.desc
+	desc = flavor_fla_fra.25.d
 	picture = FEAST_eventPicture
 	
 	fire_only_once = yes	
@@ -1308,7 +1308,7 @@ country_event = {
 			}
 			add_casus_belli = {
 				target = BRI
-				type = cb_vassalize
+				type = cb_vassalise
 				months = 48
 			}
 		}
@@ -1324,7 +1324,7 @@ country_event = {
 country_event = {
 	id = flavor_fla_fra.26
 	title = flavor_fla_fra.26.t
-	desc = flavor_fla_fra.26.desc
+	desc = flavor_fla_fra.26.d
 	picture = FEAST_eventPicture
 	
 	hidden = yes	
@@ -1359,7 +1359,7 @@ province_event = { #Is this done correct?
 
 	trigger = {
 		has_province_modifier = 1356_fra_alencon_family_rule_prov
-		NOT = { tag = FRA }
+		owner = { NOT = { tag = FRA } }
 	}	
 	mean_time_to_happen = {
 		months = 12
@@ -1457,7 +1457,7 @@ country_event = {
 		custom_tooltip = french_breton_sub_decline_tt 
 		add_casus_belli = {
 			target = BRI
-			type = cb_vassalize
+			type = cb_vassalise
 			months = 48
 		}
 	}

@@ -8,6 +8,7 @@ country_event = { #Revolt of the Crimean Khanate
 	picture = HORDE_ON_HORSEBACK_eventPicture
 
 	trigger = {
+		always = no #Exists in 1356. Rework.
 		OR = {
 			tag = GLH
 			tag = GOL

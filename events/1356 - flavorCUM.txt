@@ -68,12 +68,7 @@ country_event = {
 				modifier = allowed_kalmyk_settlement
 			}
 		}
-		4126 = {
-			limit = {
-				is_core = ROOT
-			}
-			remove_core = ROOT
-		}
+		4126 = { remove_core = HUN }
 	}
 	option = {
 		name = "flavor_cum.1.b"

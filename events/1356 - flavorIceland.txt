@@ -185,9 +185,10 @@ country_event = {
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
-	major = yes
+	hidden = yes
 
-	trigger = {
+	trigger = { #Removed due to the sheer imossibility of someone else taking it.
+		always = no
 		is_year = 1356
 		NOT = { is_year = 1400 }
 		OR = {
@@ -195,21 +196,21 @@ country_event = {
 				NOT = { owns = 1104 }
 				1104 = { 
 					is_empty = no
-					NOT = { owner = NOR }
+					NOT = { owner = NOR } #Audax Validator "." Ignore_ALL
 				}
 			}
 			AND = {
 				NOT = { owns = 1105 }
 				1105 = { 
 					is_empty = no
-					NOT = { owner = NOR }
+					NOT = { owner = NOR } #Audax Validator "." Ignore_ALL
 				}
 			}
 			AND = {
 				NOT = { owns = 980 }
 				980 = { 
 					is_empty = no
-					NOT = { owner = NOR }
+					NOT = { owner = NOR } #Audax Validator "." Ignore_ALL
 				}
 			}
 		}

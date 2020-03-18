@@ -197,21 +197,15 @@ country_event = { #Comes before the previous event
 		}
 		OR = {
 			mashriq_region = {
-				limit = {
-					culture = assyrian
-				}
+				culture = assyrian
 				owner = { corruption = 15 }
 			}
 			mashriq_region = {
-				limit = {
-					culture = assyrian
-				}
+				culture = assyrian
 				unrest = 15
 			}
 			mashriq_region = {
-				limit = {
-					culture = assyrian
-				}
+				culture = assyrian
 				owner = { overextension_percentage = 1 }
 			}
 		}

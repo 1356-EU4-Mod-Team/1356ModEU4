@@ -1,0 +1,60 @@
+﻿l_english:
+ 
+ #Events
+ new_institution_events.67.t: "Gunpowder Weaponry!"
+ new_institution_events.67.d: "While Gunpowder has existed for centuries before this it was not common in weapons until recently. During the 1300's-1400's various nations in Asia experimented with what we have come to understand as Gunpowder weaponry. These weapons while still primitive in nature are very dangerous and posess the ability to kill hundreds of men at once. It is in our best interest to steal some of these early weapons for our own use so we do not fall too far behind our rivals."
+ new_institution_events.67.a: "This changes everything..."
+ new_institution_events.67.a.tt: ""Countries that have not yet fully §YEmbraced§! the §YGunpowder§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!.""
+ 
+ new_institution_events.68.t: "Gunpowder Weaponry!"
+ new_institution_events.68.d: "Travelers speak of massive weapons that sound like the clap of thunder from the sky with the ability to cut down large numbers of troops or fortifications of any kind in a split second. We can only pray that these are rumors and nothing more."
+ new_institution_events.68.a: "This changes everything..."
+ 
+ barbarossa.999.t: "HIDDEN EVENT"
+ barbarossa.999.d: "If you're seeing this you've discovered a workaround to a bug! Congrats, this tag shouldn't be played here but will not cause harm if you do so. This event actually is to kill this tag so it doesnt exist. Sorry."
+ barbarossa.999.e: "Excuse me?"
+ sikandar.4444.t: "Hidden"
+ sikandar.4444.d: "Hidden"
+ sikandar.4444.a: "Hidden"
+ flavor_cum.1.c: "We shall throw off the shackles of our oppressors!"
+ delhi_empire.559.t: "Hidden"
+ delhi_empire.559.d: "Hidden"
+ delhi_empire.559.a: "Hidden"
+ 
+ fla_eng_wls_tt: "We can offer the Welsh independence for a hefty price, we could gain quite a lot from extorting them after all."
+ flaeng.4.c: "It is never too late!" 
+ flavor_fla_fra.26.t: "Hidden"
+ flavor_fla_fra.26.d: "Hidden"
+ flavor_fla_fra.26.a: "Hidden"
+ flavor_fla_fra.27.desc: "Hidden"
+ 
+ icelandflavor.4.t: "temp"
+ icelandflavor.4.d: "temp"
+ icelandflavor.4.a: "temp"
+ 
+ flaflavorlith.6.t: "The Union of Queen Jogaila"
+ flaflavorlith.6.d: "LOCALISE ME PLS DEVS"
+ flaflavorlith.6.a: "We must retain the Jagiellon Dynasty"
+ flaflavorlith.6.b: "We shall stay true to our roots!"
+ 
+ flaflavorlith.5.c: "We do not need this!"
+ 
+ fla_maghreb.8.t: "The Unique Culture of Tripolitania"
+ fla_maghreb.8.a: "We are not just Berbers!"
+ fla_maghreb.8.b: "No! We stay true to our roots."
+ 
+ fla_maghreb.7.t: "The Unique Culture of Shilha"
+ fla_maghreb.7.d: "North Africa has been changing ever since the Arab occupation of it centuries ago. However some Berber tribes in the region has tried hard to resist the change as they do not agree with the teachings that are brought to them. It appears our people are slowly begining to accept these changes, we must react to this soon otherwise our people may make the decision for us."
+ fla_maghreb.7.a: "We are not just Berbers!"
+ fla_maghreb.7.b: "No! We stay true to our roots."
+ 
+ fla_maghreb.6.t: "The Unique Culture of Kabylia"
+ fla_maghreb.6.d: "North Africa has been changing ever since the Arab occupation of it centuries ago. However some Berber tribes in the region has tried hard to resist the change as they do not agree with the teachings that are brought to them. It appears our people are slowly begining to accept these changes, we must react to this soon otherwise our people may make the decision for us."
+ fla_maghreb.6.a: "We are not just Berbers anymore!"
+ fla_maghreb.6.b: "No! We stay true to our roots."
+ 
+ crusader_states.3.a: "Now that we hold it, it shall hold its proper name!"
+ 
+ #Decisions
+ arles_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Arles§ you will no longer be allowed to form the §YKingdom of Lotharingia§."
+ lotharingia_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Lotharingia§ you will no longer be allowed to form the §YKingdom of Arles§." 

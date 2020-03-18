@@ -824,6 +824,24 @@ country_event = { #Gunpowder Spawn Event
 			}
 		}
 		add_mil_power = 100
+		hidden_effect = {
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+					knows_country = ROOT
+				}
+				country_event = { id = new_institution_events.67 }
+			}
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+					NOT = { knows_country = ROOT }
+				}
+				country_event = { id = new_institution_events.681 }
+			}
+		}
 	}
 }
 
@@ -1006,5 +1024,82 @@ country_event = { #Sale of Gunpowder - Declined
 	option = { #
 		name = new_institution_events.66.a
 		clr_country_flag = 1356_selling_institution_flag	
+	}
+}
+
+country_event = { #Notifys players of Gunpowder spawning
+	id = new_institution_events.67
+	title = new_institution_events.67.t
+	desc = new_institution_events.67.d
+	picture = {
+		trigger = {
+			OR = {
+				NOT = { has_dlc = "Cradle of Civilization" }
+				NOT = { religion_group = muslim }
+			}
+		}
+		picture = PAINTER_ARTIST_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			religion_group = muslim
+		}
+		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = new_institution_events.67.a
+		custom_tooltip = new_institution_events.67.2.a.tt
+	}
+}
+
+#Far away travellers...
+country_event = { #Notifys far away players of Gunpowder spawning
+	id = new_institution_events.68
+	title = new_institution_events.68.t
+	desc = new_institution_events.68.d
+	picture = {
+		trigger = {
+			OR = {
+				NOT = { has_dlc = "Cradle of Civilization" }
+				NOT = { religion_group = muslim }
+			}
+		}
+		picture = PAINTER_ARTIST_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			religion_group = muslim
+		}
+		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = new_institution_events.68.a
+		custom_tooltip = new_institution_events.67.2.a.tt
 	}
 }
