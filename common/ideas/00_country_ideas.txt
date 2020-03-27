@@ -91,7 +91,7 @@ SWE_ideas = {
 	}
 
 	bonus = {
-		fire_damage = 0.1
+		leader_land_shock = 1
 	}
 	
 	trigger = {
@@ -263,7 +263,7 @@ CAS_ideas = {
 			tag = CAS
 			tag = CTR
 			tag = SEV
-		}
+		}	
 	}
 	free = yes		#will be added at load.
 	the_reconquista = {
@@ -513,7 +513,7 @@ PRU_ideas = {
 	}
 	
 	trigger = {
-		tag = PRU
+			tag = PRU
 	}
 	free = yes		#will be added at load.
 	
@@ -586,12 +586,12 @@ POR_ideas = {
 
 POL_ideas = {
 	start = {
-		cav_to_inf_ratio = 0.10
+		cavalry_cost = -0.1
 		num_accepted_cultures = 1
 	}
 	
 	bonus = {
-	 	no_religion_penalty = yes
+		no_religion_penalty = yes
 	}
 	
 	trigger = {
@@ -615,7 +615,7 @@ POL_ideas = {
 	}
 	winged_hussars = {
 		cavalry_power = 0.33
-		cavalry_flanking = 0.33
+		cav_to_inf_ratio = 0.10
 	}
 	wojsko_komputoe = {
 		global_regiment_cost = -0.10
@@ -624,7 +624,7 @@ POL_ideas = {
 		discipline = 0.05
 	}
 	focus_on_field_defences = {
-		land_morale = 0.10
+		land_morale = 0.15
 	}
 }
 
@@ -637,6 +637,7 @@ HAB_ideas = {
 	
 	bonus = {
 		land_morale = 0.15
+		global_missionary_strength = 0.02
 	}
 	
 	trigger = {
@@ -652,29 +653,29 @@ HAB_ideas = {
 
 	imperial_ambitions = {
 		imperial_authority = 0.1
-		diplomatic_annexation_cost = -0.20
+		diplomatic_annexation_cost = -0.2
 	}
 	military_border = {
-		build_time = -0.10
-		fort_maintenance_modifier = -0.25
+		garrison_size = 0.15
+		fort_maintenance_modifier = -0.2
 	}
 	fugger_banks = {
 		inflation_reduction = 0.05
 		interest = -0.5
 	}
 	habsburg_dominance = {
-		 prestige = 1
-		 free_dip_policy = 1
-	}
-	study_the_hussite_houfnice = {
-		backrow_artillery_damage = 0.1
-		artillery_shock = 0.50
-	}
+		prestige = 1
+		free_dip_policy = 1
+   }
+   study_the_hussite_houfnice = {
+	backrow_artillery_damage = 0.1
+	artillery_shock = 0.50
+}
 	austrian_court = {
 		diplomatic_upkeep = 1
 	}
 	hofkriegsrat = {
-		reinforce_speed = 0.2
+		reinforce_speed = 0.3
 		discipline = 0.05
 	}
 }
@@ -1396,7 +1397,7 @@ AYU_ideas = {
 
 NOR_ideas = {
 	start = {
-		land_maintenance_modifier = -0.05
+		global_regiment_cost = -0.1
 		land_morale = 0.10
 	}
 	
@@ -1422,21 +1423,19 @@ NOR_ideas = {
 	}
 	nor_shipbuilding = {
 		global_ship_cost = -0.05
-		ship_durability = 0.05
+		ship_durability = 0.1
 	}
 	seize_the_opportunity = {
- 		global_trade_power = 0.1
-		global_tariffs = 0.1
+ 		global_trade_power = 0.15
 	}
 	nor_fishing = {
 		production_efficiency = 0.1
 	}
 	write_new_sagas = {
 		prestige = 1
-		general_cost = -0.5
+		prestige_from_land = 0.50
 	}
 }
-
 
 OMA_ideas = {
 	start = {
@@ -1742,7 +1741,7 @@ ETH_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	
+
 	eth_reformed_armies = {
 		infantry_power = 0.1
 	}
@@ -1894,7 +1893,6 @@ SAX_ideas = {
 		discipline = 0.05
 	}
 }
-
 
 LIT_ideas = {
 	start = {
@@ -2146,8 +2144,8 @@ PAP_ideas = {
 
 SER_ideas = {
 	start = {
-		infantry_power = 0.10 #manpower_recovery_speed = 0.15
-		reinforce_speed = 0.15
+		leader_land_manuever = 1
+		infantry_power = 0.10
 	}
 	
 	bonus = {
@@ -2434,11 +2432,12 @@ TUS_ideas = {
 USA_ideas = {
 	start = {
 		merchants = 1
-		religious_unity = 0.2
+		infantry_power = 0.15
 	}
 	
 	bonus = {
 		republican_tradition = 0.5
+		global_ship_trade_power = 0.15
 	}
 	
 	trigger = {
@@ -2456,16 +2455,17 @@ USA_ideas = {
 		colonists = 1
 	}
 	lessons_of_valley_forge = {
-		land_morale = 0.10
+		land_morale = 0.1
 	}
 	workshop_of_the_world = {
 		global_trade_goods_size_modifier = 0.15
 	}
 	shining_city_on_a_hill = {
-		prestige = 1
+		development_cost = -0.1
 	}
 	indian_removal = {
 		cb_on_primitives = yes
+		global_colonial_growth = 20 
  	}
 }
 
@@ -3219,7 +3219,7 @@ MDI_ideas = {
 		leader_naval_manuever = 1
 	}
 	mdi_east_african_gold_trade = {
-		global_trade_power = 0.15
+		global_trade_power = 0.1
 	}
 	city_of_mogadishu = {
 		development_cost = -0.1
@@ -3317,55 +3317,8 @@ GEO_ideas = {
 	}
 }
 
-# javan_ideas = { #1356 Moved to 1356 group ideas to prevent overrides of unique SEA/Malay ideas
-	# start = {
-		# tolerance_heathen = 2
-		# prestige_decay = -0.01	
-	# }
-	
-	# bonus = {
-		# naval_maintenance_modifier = -0.2
-	# }
-	
-	# trigger = {
-		# OR = {
-			# tag = MAJ
-			# tag = SUN
-			# AND = {
-				# NOT = { religion_group = muslim }
-				# OR = {
-					# primary_culture = bornean
-					# primary_culture = sumatran
-					# primary_culture = javanese
-				# }
-			# }
-		# }
-	# }
-	# free = yes
-	
-	# candi_shrines = {
-		# religious_unity = 0.20
-	# }
-	# indianization = {
-		# global_institution_spread = 0.1
-	# }
-	# dharmasastra = {
-		# global_missionary_strength = 0.02
-	# }
-	# pan_asian_trade = {
-		# merchants = 1
-		# trade_steering = 0.10
-	# }
-	# bi_yearly_harvest = {
-		# global_trade_goods_size_modifier = 0.10
-	# }
-	# modernized_shipbuilding = {
-		# global_ship_cost = -0.10
-	# }
-	# terracotta_banking = {
-		# trade_efficiency = 0.1
-	# }
-# }
+
+
 
 AFG_ideas = {
 	start = {
@@ -3406,6 +3359,7 @@ AFG_ideas = {
 	}
 	graveyard_of_empires = {
 		hostile_attrition = 1
+		garrison_size = 0.15
 	}
 }
 
@@ -3870,7 +3824,7 @@ AJU_ideas = {
 	}
 	gareen_imams = {
 		missionaries = 1
-		monthly_piety = 0.002
+		monthly_piety = 0.01
 		}
 	
 	aju_muslim_migrations = {
@@ -4242,8 +4196,8 @@ mossi_ideas = {
 
 fulani_jihad_ideas = {
 	start = {
-		recover_army_morale_speed = 0.05
-		cavalry_cost = -0.10
+		land_morale = 0.15
+		global_regiment_cost = -0.1
 	}
 	
 	bonus = {
@@ -4262,31 +4216,27 @@ fulani_jihad_ideas = {
 	wandering_scholars = {
 		missionaries = 1
 	}
-	
 	unrighteous_kings = { 
 		defensiveness = 0.15
 	}
-	
 	fulani_jihads = {
-		global_missionary_strength = 0.01
+        global_missionary_strength = 0.02
+        manpower_recovery_speed = 0.25
 	}
-	
 	imams_and_emirs = { 
-		land_morale = 0.1
+		infantry_power = 0.20
 	}
-	
 	islamic_scholarship = {
 		tolerance_own = 2
 	}
-	
-	community_of_the_faithful = {
-		num_accepted_cultures = 1
-	}
-
 	caliph_in_africa = {
-		prestige = 1
+        prestige = 1
+        monthly_piety = -0.02
 	}
-	
+	community_of_the_faithful = {
+        cb_on_religious_enemies = yes	
+        extra_manpower_at_religious_war = yes
+	}
 }
 
 TAR_ideas = {
@@ -4503,7 +4453,10 @@ GOT_ideas = {
 	}
 	
 	trigger = {
-		tag = GOT
+		OR = {
+			tag = GOT
+			tag = ICE
+		}
 	}
 	free = yes
 	
@@ -5799,12 +5752,12 @@ ZAZ_ideas = {
 CAN_ideas = {
 	start = {
 		trade_efficiency = 0.1
-		land_attrition = -0.15
+		fire_damage = 0.1
 	}
 	
 	bonus = {
-		republican_tradition = 0.5
-		legitimacy = 1
+		republican_tradition = 0.3
+		leader_siege = 1
 	}
 	
 	trigger = {
@@ -5818,6 +5771,7 @@ CAN_ideas = {
 	}	
 	the_hudson_bay_company = {
 		merchants = 1
+		global_trade_power = 0.15
 	}
     settling_the_interior = {
 		colonists = 1
@@ -5826,7 +5780,7 @@ CAN_ideas = {
 		navy_tradition = 1
 	}
 	the_quebec_act = {
-		tolerance_heretic = 2
+		no_religion_penalty = yes
 	}
 	legacy_of_the_empire = {
 		trade_steering = 0.15
@@ -5862,16 +5816,16 @@ QUE_ideas = {
 		diplomatic_upkeep = 1
 	}
 	fortifications_of_quebec = {
-		defensiveness = 0.15
+		defensiveness = 0.2
 	}
 	college_of_quebec = {
-		global_institution_spread = 0.1
+		global_institution_spread = 0.15
 	}
 	commissions_for_noble_sons = {
 		free_leader_pool = 1
 	}
 	jesuit_missions = {
-		global_missionary_strength = 0.01
+		global_missionary_strength = 0.02
 	}
 }
 
@@ -9957,7 +9911,10 @@ HAN_ideas = {
 		discipline = 0.05
 	}
 	trigger = {
+		OR = {
 		tag = HAN
+		tag = WES
+		}
 	}
 	free = yes
 	
@@ -12032,10 +11989,7 @@ DLH_ideas = {
 	dlh_throne_of_india = {
 		cavalry_shock = 0.25
 		legitimacy = 1
-	}
-}
-
-BHA_ideas = {
+	
 	start = {
 		stability_cost_modifier = -0.1
 		state_maintenance_modifier = -0.15
@@ -12298,7 +12252,7 @@ GUJ_ideas = {
 SND_ideas = {
 	start = {
 		land_forcelimit_modifier = 0.25
-		infantry_shock = 0.20
+		missionaries = 1
 	}
 	
 	bonus = {
@@ -12321,7 +12275,6 @@ SND_ideas = {
 	}
 	snd_makli_necropolis = {
 		tolerance_own = 1
-		missionaries = 1
 	}
 	snd_end_judicial_corruption = {
 		yearly_corruption = -0.1
@@ -12412,7 +12365,7 @@ MYS_ideas = {
 
 RIG_ideas = {
 	start = {
-		garrison_growth = 0.25
+		garrison_size = 0.15
 		development_cost = -0.1
 	}
 	bonus = {
