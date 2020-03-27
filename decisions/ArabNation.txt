@@ -1,6 +1,6 @@
 country_decisions = {
 	
-	arab_nation = { #1356 - Added NOT = ILK, Changed Tech
+	arab_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -12,8 +12,10 @@ country_decisions = {
 			}
 			NOT = { exists = ARB }
 			NOT = { tag = HLR }
+			NOT = { tag = TUR }
+			NOT = { tag = AKS }
 			NOT = { tag = PAP }
-			NOT = { tag = ILK }
+			NOT = { tag = PER }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -49,8 +51,10 @@ country_decisions = {
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
+			religion_group = muslim
+
 			is_at_war = no
-			adm_tech = 16 #Orignal is 10
+			adm_tech = 13
 			owns_core_province = 358			#Alexandria
 			owns_core_province = 361			#Cairo
 			owns_core_province = 377			#Aleppo
@@ -100,9 +104,14 @@ country_decisions = {
 			add_prestige = 25
 			set_country_flag = formed_arabia_flag
 			change_tag = ARB
+			
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 }
