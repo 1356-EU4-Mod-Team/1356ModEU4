@@ -1,0 +1,255 @@
+##################################################
+# Late Feudalism Mechanics
+##################################################
+
+1356_late_feudalism_mechanics = { #Mechanics for Settled Nations
+	potential = { #Seperate Eastern one day?
+		current_age = age_of_feudalism
+		OR = {
+			technology_group = western
+			technology_group = eastern
+			technology_group = high_american
+		}
+	}
+	trigger = {
+		current_age = age_of_feudalism
+	}
+	#core_creation = 0.5
+	core_decay_on_your_own = 5
+	development_cost = 0.2
+	reform_progress_growth = -0.2
+	build_time = 0.3
+	diplomatic_upkeep = 2
+	unjustified_demands = 0.6
+	ae_impact = 0.4
+	improve_relation_modifier = -0.35
+	envoy_travel_time = 0.35
+	province_warscore_cost = 0.45
+	diplomatic_annexation_cost = 0.15
+	
+	#reduced_liberty_desire = 5
+	years_of_nationalism = 10
+	global_manpower_modifier = -0.25
+	reinforce_speed = -0.25
+	recover_army_morale_speed = 0.1
+	merc_maintenance_modifier = -0.25
+	mercenary_cost = -0.20
+	possible_mercenaries = 2
+	artillery_cost = 0.3
+}
+
+1356_late_feudalism_mechanics_muslim = { #Mechanics for Muslims
+	potential = {
+		current_age = age_of_feudalism
+		OR = {
+			technology_group = ottoman
+			technology_group = muslim
+		}
+	}
+	trigger = {
+		current_age = age_of_feudalism
+	}
+	#core_creation = 0.45
+	core_decay_on_your_own = 5
+	development_cost = 0.2
+	reform_progress_growth = -0.2
+	global_institution_spread = 0.1
+	embracement_cost = -0.1
+	build_time = 0.25
+	unjustified_demands = 0.6
+	ae_impact = 0.5
+	improve_relation_modifier = -0.2
+	province_warscore_cost = 0.45
+	diplomatic_annexation_cost = 0.15
+	years_of_nationalism = 10
+	global_manpower_modifier = -0.2
+	reinforce_speed = -0.2
+	recover_army_morale_speed = 0.1
+	merc_maintenance_modifier = -0.20
+	mercenary_cost = -0.2
+	possible_mercenaries = 1.5
+	leader_siege = 1
+	artillery_cost = 0.3
+}
+
+1356_late_feudalism_mechanics_asian = { #Mechanics for Asians
+	potential = {
+		current_age = age_of_feudalism
+		OR = {
+			technology_group = indian
+			technology_group = chinese
+		}
+	}
+	trigger = {
+		current_age = age_of_feudalism
+	}
+	#core_creation = 0.35
+	core_decay_on_your_own = 5
+	development_cost = 0.2
+	reform_progress_growth = -0.2
+	global_institution_spread = 0.2
+	build_time = 0.25
+	unjustified_demands = 0.6
+	years_of_nationalism = 10
+	province_warscore_cost = 0.45
+	ae_impact = 0.45
+	improve_relation_modifier = -0.2
+	diplomatic_annexation_cost = 0.2
+	global_manpower_modifier = -0.2
+	reinforce_speed = -0.15
+	recover_army_morale_speed = 0.15
+	merc_maintenance_modifier = -0.2
+	mercenary_cost = -0.2
+	possible_mercenaries = 1.5
+	artillery_cost = 0.3
+}
+
+1356_late_feudalism_mechanics_african = { #Mechanics for Settled Africans #Not Christians/Jews/Zoro's
+	potential = {
+		current_age = age_of_feudalism
+		OR = {
+			technology_group = east_african
+			technology_group = central_african
+			technology_group = sub_saharan
+		}
+	}
+	trigger = {
+		current_age = age_of_feudalism
+		NOT = { religion_group = christian }
+		NOT = { religion_group = jewish_group }
+		NOT = { religion_group = zoroastrian_group }
+		
+	}
+	#core_creation = 0.75
+	core_decay_on_your_own = 5
+	development_cost = 0.2
+	reform_progress_growth = -0.3
+	global_institution_spread = -0.5
+	embracement_cost = 0.4
+	years_of_nationalism = 10
+	ae_impact = 0.55
+	improve_relation_modifier = -0.25
+	envoy_travel_time = 0.3
+	unjustified_demands = 0.6
+	province_warscore_cost = 0.5
+	diplomatic_annexation_cost = 0.2
+	loot_amount = 0.6
+	global_manpower_modifier = 0.1
+	reinforce_speed = -0.1
+	global_supply_limit_modifier = 0.1
+	land_attrition = -0.15
+	recover_army_morale_speed = 0.1
+	possible_mercenaries = -0.5
+	artillery_cost = 0.5
+}
+
+1356_late_feudalism_mechanics_natives = { #Mechanics for American Natives
+	potential = {
+		current_age = age_of_feudalism
+		OR = {
+			technology_group = north_american
+			technology_group = mesoamerican
+			technology_group = south_american
+			technology_group = andean
+		}
+	}
+	trigger = {
+		current_age = age_of_feudalism
+		OR = {
+			technology_group = north_american
+			technology_group = mesoamerican
+			technology_group = south_american
+			technology_group = andean
+		}
+	}
+	core_decay_on_your_own = 5
+	development_cost = 0.1
+	loot_amount = 1
+	global_institution_spread = -0.75
+	embracement_cost = 1
+	build_time = 0.4
+	inflation_reduction = 0.05
+	native_advancement_cost = 0.5
+	diplomatic_annexation_cost = 0.2
+	province_warscore_cost = 0.3 
+	ae_impact = 0.5
+	years_of_nationalism = 10
+	harsh_treatment_cost = 0.25
+	recover_army_morale_speed = 0.15
+}
+
+1356_late_feudalism_mechanics_nomads = { #Mechanics for Nomads
+	potential = {
+		current_age = age_of_feudalism
+		technology_group = nomad_group
+	}
+	trigger = {
+		current_age = age_of_feudalism
+		technology_group = nomad_group
+	}
+	
+	core_decay_on_your_own = 5 #They never go away...
+	unjustified_demands = 0.8
+	reform_progress_growth = -0.4
+	province_warscore_cost = 0.3
+	#ae_impact = 0.15 
+	development_cost = 0.5
+	loot_amount = 1
+	raze_power_gain = 0.3
+	global_institution_spread = -0.5
+	embracement_cost = 0.25
+	build_time = 0.5
+	improve_relation_modifier = -1
+	promote_culture_cost = 1 #Swap for less promoted cultures?
+	war_exhaustion = -0.05
+	harsh_treatment_cost = -0.05
+	years_of_nationalism = 10
+	leader_land_manuever = 1
+	hostile_attrition = 1
+	land_attrition = -0.2
+	cavalry_cost = -0.1
+	cav_to_inf_ratio = 0.15
+	cavalry_flanking = 0.1
+	shock_damage = 0.1
+	recover_army_morale_speed = 0.1
+}
+
+1356_late_feudalism_mechanics_ethiopia = { #Mechanics for Christian/Jewish/Zoroastrian Africans
+	potential = { 
+		current_age = age_of_feudalism
+		OR = {
+			technology_group = east_african
+			technology_group = central_african
+			technology_group = sub_saharan
+		}
+	}
+	trigger = {
+		current_age = age_of_feudalism
+		OR = {
+			religion_group = christian
+			religion_group = jewish_group
+			religion_group = zoroastrian_group
+		}
+	}
+	
+	
+	core_decay_on_your_own = 5
+	development_cost = 0.2
+	reform_progress_growth = -0.2
+	build_time = 0.25
+	diplomatic_upkeep = 1
+	unjustified_demands = 0.6
+	ae_impact = 0.4
+	improve_relation_modifier = -0.3
+	envoy_travel_time = 0.25
+	province_warscore_cost = 0.4
+	diplomatic_annexation_cost = 0.15
+	years_of_nationalism = 10
+	global_manpower_modifier = -0.25
+	reinforce_speed = -0.25
+	recover_army_morale_speed = 0.1
+	merc_maintenance_modifier = -0.25
+	mercenary_cost = -0.20
+	possible_mercenaries = 2
+	artillery_cost = 0.3
+}
