@@ -1145,6 +1145,7 @@ JLR_ideas = {
    jlr_state_economics = {
 	   global_trade_goods_size_modifier = 0.1
    }
+}
 
 CHB_ideas = {
 	start = {
@@ -1823,6 +1824,7 @@ EGY_ideas = {
 }
 
 #Cuman note, the following tribes are the ones that migrated into hungary, useful for later content I'm sure
+
 #Koncsog, Ilunesuk, Kol/Kor, Ulas/Olas, Curtan/Csertan, Burdjogli/Borchol, Toqsoba/Toksobichi
 
 CUM_ideas = {
@@ -1905,6 +1907,7 @@ ahm_ideas = {
 		diplomatic_reputation = 1
 	}
 }
+
 bra_ideas = {
 	start = {
 		improve_relation_modifier = 0.25
@@ -2331,17 +2334,13 @@ thai_nation_ideas = { #Siamese ideas. United Thai.
 		global_trade_power = 0.2
 		land_attrition = -0.2
     }
- 
     bonus = {
 		max_states = 5
-        leader_naval_manuever = 1
     }
-   
     trigger = {
         tag = MSA 
     }
     free = yes
-   
     1356_malayan_tolerance = {
 		tolerance_heretic = 3 
 		tolerance_heathen = 3
@@ -2356,12 +2355,10 @@ thai_nation_ideas = { #Siamese ideas. United Thai.
 		naval_forcelimit_modifier = 0.25
         global_sailors_modifier = 0.25
     }
-
     1356_sea_traditions = {
 		naval_morale = 0.2 
 		merchants = 1 
     }
-
     1356_undang_undang_malacca = {
 		global_trade_goods_size_modifier = 0.1
         development_cost = -0.1
@@ -2594,7 +2591,6 @@ ZBB_Ideas = { #Submitted by "The Janitor", slight tweaks by CountFlandy
 	}
 
 }
-
 
 SAP_ideas = { #Sapmi ideas
 	start = {

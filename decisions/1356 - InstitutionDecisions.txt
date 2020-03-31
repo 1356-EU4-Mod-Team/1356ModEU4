@@ -3,7 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			current_age = age_of_feudalism
-			has_port = yes
+			num_of_ports = 1
 			ai = no
 			NOT = { government = native }
 			NOT = { has_country_flag = age_of_discovery_decision_flag }
@@ -34,14 +34,14 @@ country_decisions = {
 		major = yes
 		potential = {
 			current_age = age_of_feudalism
-			has_port = yes
+			num_of_ports = 1
 			ai = no
 			NOT = { government = native }
 			NOT = { has_country_flag = unlock_expansion_ideas_decision }
 		}
 		allow = {
 			current_age = age_of_feudalism
-			#has_port = yes
+			num_of_ports = 1
 			#NOT = { government = tribal }
 			is_at_war = no
 			is_subject = no
