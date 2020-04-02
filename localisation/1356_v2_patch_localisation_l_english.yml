@@ -58,3 +58,18 @@
  #Decisions
  arles_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Arles§ you will no longer be allowed to form the §YKingdom of Lotharingia§."
  lotharingia_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Lotharingia§ you will no longer be allowed to form the §YKingdom of Arles§." 
+ fla_maghreb.8.d: "There was a time when being considered a Berber was common, and even furthermore when the Berbers were not mere Nomadic Muslims from North Africa. However today they are little more than tribal pests to our great [ROOT.GovernmentName]. It appears that the Berbers of [Root.GetName] have begun to assimilate into our ways and beliefs."
+ 
+ serbian_flavour.999.t: "temp"
+ serbian_flavour.999.d: "temp"
+ fla_nestorian.37.a.tt: "The Nestorians in the  §YKashgaria§ area are coming out of hiding."
+ fla_nestorian.39.a.tt: "The Nestorians in the  §YMalabar§ area are coming out of hiding."
+ fla_nestorian.35.a.tt: "The Nestorians in the  §YJerusalem§ area are coming out of hiding."
+ fla_nestorian.33.a.tt: "The Nestorians in the  §YAntioch§ area are coming out of hiding."
+ fla_nestorian.31.a.tt: "The Nestorians in the  §YBaghdad§ area are coming out of hiding."
+ 
+ new_institution_events.67.2.a.tt: "Countries that have not yet fully §YEmbraced§! the §YGunpowder§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
+ 
+ new_institution_events.61.t: "The Beginning of Gunpowder Weaponry"
+ new_institution_events.61.d: "Even though Gunpowder weapons have been around for around a century only recently have people begun to take interest in these strange weapons from the far east. However our researchers now have innovated on existing designs and may have created the first hand held cannon. The 'Handcannon' is the first of its kind, and perhaps is a sign of things to come... Perhaps this is the edge our nation has always needed in warfare?"
+ new_institution_events.61.a: "Interesting..."

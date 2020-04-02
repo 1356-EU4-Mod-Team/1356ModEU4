@@ -806,7 +806,7 @@
  new_institution_events.50.b: "Let us keep this information to ourselves for now"
  new_institution_events.51.t: "The Growth of Mercantilism"
  new_institution_events.51.d: "The rise of Mercantilist policies in the various Hanseatic Merchant Republics have laid the road to new ideals in Monarchies as well as Republics. Local Counts have begun making deals with various merchant families to generate more revenue between them. While these policies seem to work well on a local level there are possibilities we can expand on this at a Kingdom level, however we could also let things continue as they are now and raise the taxes on a local level instead."
- new_institution_events.51.a: "Let us adopt this at the [ROOT.Government.Name] level"
+ new_institution_events.51.a: "Let us adopt these reforms at the national level."
  new_institution_events.51.b: "Raise the taxes!"
  
  new_institution_events.60.t: "The Handcannon"

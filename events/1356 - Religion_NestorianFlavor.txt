@@ -558,15 +558,11 @@ province_event = { #Get rid of Nestorians if taken expell decision, alternativly
 					has_province_modifier = small_nestorian_community
 				}
 				owner = {
-					AND = {
-						has_country_modifier = expelled_nestorian 
-						had_recent_war = 10
-					}
+					has_country_modifier = expelled_nestorian 
+					had_recent_war = 10
 				}
 			}
-			AND = {
-				religion = nestorian
-			}
+			religion = nestorian
 		}
 	}
 	

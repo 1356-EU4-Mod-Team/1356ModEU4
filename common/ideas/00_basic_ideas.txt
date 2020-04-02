@@ -196,8 +196,19 @@ innovativeness_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.8
-
+		factor = 0.3
+		modifier = {
+			factor = 2
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 50
+		}
 	}
 }
 
@@ -806,7 +817,7 @@ expansion_ideas = {
 
 	trigger = {
 		OR = {
-			has_country_flag = age_of_discovery_decision_flag
+			has_country_flag = unlock_expansion_ideas_decision
 			NOT = { current_age = age_of_feudalism }
 			AND = {
 				ai = yes

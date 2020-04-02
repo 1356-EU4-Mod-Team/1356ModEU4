@@ -11989,7 +11989,11 @@ DLH_ideas = {
 	dlh_throne_of_india = {
 		cavalry_shock = 0.25
 		legitimacy = 1
-	
+	}
+}
+
+BHA_ideas = {
+
 	start = {
 		stability_cost_modifier = -0.1
 		state_maintenance_modifier = -0.15

@@ -123,9 +123,6 @@ passage_to_india = {
 	
 	global_colonial_growth = 10
 	center_of_trade_upgrade_cost = -0.1
-
-
-	 = 0.5
 	
 	ai_will_do = {
 		factor = 1

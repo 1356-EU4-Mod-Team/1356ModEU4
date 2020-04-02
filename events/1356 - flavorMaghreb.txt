@@ -16,8 +16,8 @@ province_event = { #Moroccan
 		region = maghreb_region
 		NOT = { has_province_flag = maghreb_province_culture_converted_flag }
 		NOT = { owner = { has_global_flag = global_berber_tribal_government_unified_berbers_flag } }
-		owner = { year = 1400 }
-		NOT = { owner = { year = 1600 } }
+		is_year = 1400
+		NOT = { is_year = 1600 }
 		OR = {
 			culture = shilha
 			culture = kabyle
@@ -35,9 +35,10 @@ province_event = { #Moroccan
 			factor = 4
 			owner = { is_at_war = yes }
 		}
+		# Audax Validator "." Ignore_NEXT
 		modifier = { #Slightly Faster if low local autonomy
 			factor = 0.9
-			ROOT = { local_autonomy_above_min = 15 }
+			local_autonomy_above_min = 15
 		}
 		modifier = { #2x Slower if below 10 Dev
 			factor = 2
@@ -45,7 +46,8 @@ province_event = { #Moroccan
 		}
 		modifier = { #1.5x Slower if a territorial core
 			factor = 1.5
-			is_territorial_core = ROOT
+		# Audax Validator "." Ignore_NEXT
+			ROOT = { is_territorial_core = ROOT }
 		}
 		modifier = { #2x Slower if not owners religion
 			factor = 2
@@ -86,6 +88,7 @@ province_event = { #Moroccan
 		}
 		modifier = { #Slightly Faster if a core province
 			factor = 0.85
+			# Audax Validator "." Ignore_NEXT
 			is_state_core = ROOT
 		}
 		modifier = { #Slightly Faster if ruler is Moroccan
@@ -111,8 +114,8 @@ province_event = { #Tunisian
 		region = maghreb_region
 		NOT = { has_province_flag = maghreb_province_culture_converted_flag }
 		NOT = { owner = { has_global_flag = global_berber_tribal_government_unified_berbers_flag } }
-		owner = { year = 1400 }
-		NOT = { owner = { year = 1600 } }
+		is_year = 1400
+		NOT = { is_year = 1600 }
 		OR = {
 			culture = shilha
 			culture = kabyle
@@ -132,6 +135,7 @@ province_event = { #Tunisian
 		}
 		modifier = { #Slightly Faster if low local autonomy
 			factor = 0.9
+			# Audax Validator "." Ignore_NEXT
 			ROOT = { local_autonomy_above_min = 15 }
 		}
 		modifier = { #2x Slower if below 10 Dev
@@ -140,7 +144,8 @@ province_event = { #Tunisian
 		}
 		modifier = { #1.5x Slower if a territorial core
 			factor = 1.5
-			is_territorial_core = ROOT
+			# Audax Validator "." Ignore_NEXT
+			ROOT = { is_territorial_core = ROOT }
 		}
 		modifier = { #2x Slower if not owners religion
 			factor = 2
@@ -181,6 +186,7 @@ province_event = { #Tunisian
 		}
 		modifier = { #Slightly Faster if a core province
 			factor = 0.85
+			# Audax Validator "." Ignore_NEXT
 			is_state_core = ROOT
 		}
 		modifier = { #Slightly Faster if ruler is tunisian
@@ -206,8 +212,8 @@ province_event = { #Algerian
 		region = maghreb_region
 		NOT = { has_province_flag = maghreb_province_culture_converted_flag }
 		NOT = { owner = { has_global_flag = global_berber_tribal_government_unified_berbers_flag } }
-		owner = { year = 1400 }
-		owner = { NOT = { year = 1600 } }
+		is_year = 1400
+		 NOT = { is_year = 1600 }
 		OR = {
 			culture = shilha
 			culture = kabyle
@@ -227,6 +233,7 @@ province_event = { #Algerian
 		}
 		modifier = { #Slightly Faster if low local autonomy
 			factor = 0.9
+			# Audax Validator "." Ignore_NEXT
 			ROOT = { local_autonomy_above_min = 15 }
 		}
 		modifier = { #2x Slower if below 10 Dev
@@ -235,7 +242,8 @@ province_event = { #Algerian
 		}
 		modifier = { #1.5x Slower if a territorial core
 			factor = 1.5
-			is_territorial_core = ROOT
+			# Audax Validator "." Ignore_NEXT
+			ROOT = { is_territorial_core = ROOT }
 		}
 		modifier = { #2x Slower if not owners religion
 			factor = 2
@@ -276,6 +284,7 @@ province_event = { #Algerian
 		}
 		modifier = { #Slightly Faster if a core province
 			factor = 0.85
+			# Audax Validator "." Ignore_NEXT
 			is_state_core = ROOT
 		}
 		modifier = { #Slightly Faster if ruler is algerian
@@ -301,8 +310,8 @@ province_event = { #Unique Fezzan Culture?
 		region = maghreb_region
 		NOT = { has_province_flag = maghreb_province_culture_converted_flag }
 		NOT = { owner = { has_global_flag = global_berber_tribal_government_unified_berbers_flag } }
-		owner = { year = 1400 }
-		NOT = { owner = { year = 1600 } }
+		is_year = 1400
+		NOT = { is_year = 1600 }
 		OR = {
 			culture = shilha
 			culture = kabyle
@@ -324,6 +333,7 @@ province_event = { #Unique Fezzan Culture?
 		}
 		modifier = { #Slightly Faster if low local autonomy
 			factor = 0.9
+			# Audax Validator "." Ignore_NEXT
 			ROOT = { local_autonomy_above_min = 15 }
 		}
 		modifier = { #2x Slower if below 10 Dev
@@ -332,7 +342,8 @@ province_event = { #Unique Fezzan Culture?
 		}
 		modifier = { #1.5x Slower if a territorial core
 			factor = 1.5
-			is_territorial_core = ROOT
+			# Audax Validator "." Ignore_NEXT
+			ROOT = { is_territorial_core = ROOT }
 		}
 		modifier = { #2x Slower if not owners religion
 			factor = 2
@@ -360,7 +371,8 @@ province_event = { #Unique Fezzan Culture?
 		}
 		modifier = { #Slightly Faster if a core province
 			factor = 0.85
-			is_state_core = ROOT
+			# Audax Validator "." Ignore_NEXT
+			is_state_core = FZA
 		}
 		modifier = { #Slightly Faster if ruler is Fezzan
 			factor = 0.95
@@ -395,7 +407,7 @@ country_event = { #Berber into Fezzan
 	
 	option = {
 		name = fla_maghreb.5.a
-		change_culture = fezzan
+		change_primary_culture = fezzan_culture
 		change_graphical_culture = africangfx
 		if = {
 			limit = {

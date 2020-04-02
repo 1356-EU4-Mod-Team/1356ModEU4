@@ -371,6 +371,7 @@ country_event = {
 			factor = 80 
 		}
 		create_union = LIT
+		#Audax Validator "." Ignore_NEXT
 		set_dynasty = "Jagiellon"
 		define_general = {
 			name = "Jogaila Jagiellon"

@@ -1,121 +1,118 @@
 namespace = flacrimea
 
 
-country_event = { #Revolt of the Crimean Khanate
-	id = flacrimea.1
-	title = flacrimea.1.t
-	desc = flacrimea.1.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+# country_event = { #Revolt of the Crimean Khanate
+	# id = flacrimea.1
+	# title = flacrimea.1.t
+	# desc = flacrimea.1.d
+	# picture = HORDE_ON_HORSEBACK_eventPicture
 
-	trigger = {
-		always = no #Exists in 1356. Rework.
-		OR = {
-			tag = GLH
-			tag = GOL
-		}
-		NOT = { exists = CRI }
-		is_year = 1356
-		NOT = { is_year = 1440}
-		OR = {
-			owns = 284
-			owns = 2413
-			owns = 2412
-			owns = 1974
-		}
-		is_year = 1356
-		NOT = { is_year = 1440}
-		
-	}
+	# trigger = {
+		# always = no #Exists in 1356. Rework.
+		# OR = {
+			# tag = GLH
+			# tag = GOL
+		# }
+		# NOT = { exists = CRI }
+		# is_year = 1356
+		# NOT = { is_year = 1440}
+		# OR = {
+			# owns = 284
+			# owns = 2413
+			# owns = 2412
+			# owns = 1974
+		# }		
+	# }
 	
-	immediate = {
-		hidden_effect = {
-			if = {
-				every_owned_province = {
-					limit = {
-						area = crimea_region
-						culture = crimean
-					}
-					add_core = CRI
-				}
-				release = CRI
-				CRI = {
-					change_government = tribal
-					add_government_reform = steppe_horde
-					define_ruler = {
-						name = "Shahin"
-						dynasty = Giray
-						male = yes
-						#birth_date = 1340.4.8 #It doesn't take this into account saddly
-						adm = 2
-						dip = 2
-						mil = 2
-					}
-				define_ruler_to_general = {
-					fire = 4
-					shock = 4
-					manuever = 4
-					siege = 1
-				}	
-					adopt_reform_progress = ROOT
-					capital_scope = {
-						build_to_forcelimit = {
-							infantry = 0.6
-							cavalry = 0.3
-						}
-					}
-				}
-			}
-		}
-	}
+	# immediate = {
+		# hidden_effect = {
+			# if = {
+				# limit = {
+					# every_owned_province = {
+						# region = crimea_region
+						# culture = crimean
+					# }
+					# add_core = CRI
+				# }
+				# release = CRI
+				# CRI = {
+					# change_government = tribal
+					# add_government_reform = steppe_horde
+					# define_ruler = {
+						# name = "Shahin"
+						# dynasty = Giray
+						# male = yes
+						# #birth_date = 1340.4.8 #It doesn't take this into account saddly
+						# adm = 2
+						# dip = 2
+						# mil = 2
+					# }
+				# define_ruler_to_general = {
+					# fire = 4
+					# shock = 4
+					# manuever = 4
+					# siege = 1
+				# }	
+					# adopt_reform_progress = ROOT
+					# capital_scope = {
+						# build_to_forcelimit = {
+							# infantry = 0.6
+							# cavalry = 0.3
+						# }
+					# }
+				# }
+			# }
+		# }
+	# }
 	
-	mean_time_to_happen = {
-		months = 450
-	}
-	option = { #Contest this
-		name = flacrimea.1.a
-		ai_chance = { 
-			factor = 50
-		}
-		declare_war_with_cb = {
-			who = CRI
-			casus_belli = cb_core
-			war_goal_province = 284
-		}
+	# mean_time_to_happen = {
+		# months = 450
+	# }
+	# option = { #Contest this
+		# name = flacrimea.1.a
+		# ai_chance = { 
+			# factor = 50
+		# }
+		# declare_war_with_cb = {
+			# who = CRI
+			# casus_belli = cb_core
+			# war_goal_province = 284
+		# }
 		
-	}
-	option = { #We can not afford a revolt right now, let us grant them autonomy.
-		name = flacrimea.1.b
-		trigger = { is_subject = no }
-		create_march = CRI
-		CRI = {
-			add_opinion = {
-				who = ROOT
-				modifier = allowed_kalmyk_settlement
-			}
-		}
-		crimea_region = {
-			limit = {
-				is_core = ROOT
-				is_core = CRI
-				culture = crimean
-			}
-			remove_core = ROOT
-		}
-	}
-	option = { #We can not afford a revolt right now, let them go.
-		name = flacrimea.1.c
-		ai_chance = { 
-			factor = 50
-		}
-		add_prestige = -5
-		crimea_region = {
-			limit = {
-				is_core = ROOT
-				is_core = CRI
-				culture = crimean
-			}
-			remove_core = ROOT
-		}
-	}
-}
+	# }
+	# option = { #We can not afford a revolt right now, let us grant them autonomy.
+		# name = flacrimea.1.b
+		# trigger = { is_subject = no }
+		# create_march = CRI
+		# CRI = {
+			# add_opinion = {
+				# who = ROOT
+				# modifier = allowed_kalmyk_settlement
+			# }
+		# }
+		# crimea_region = {
+			# limit = {
+				# is_core = ROOT
+				# is_core = CRI
+				# culture = crimean
+			# }
+			# remove_core = ROOT
+		# }
+	# }
+	# option = { #We can not afford a revolt right now, let them go.
+		# name = flacrimea.1.c
+		# ai_chance = { 
+			# factor = 50
+		# }
+		# add_prestige = -5
+		# crimea_region = {
+			# limit = {
+				# is_core = ROOT
+				# is_core = CRI
+				# culture = crimean
+			# }
+			# remove_core = ROOT
+		# }
+	# }
+# }
 

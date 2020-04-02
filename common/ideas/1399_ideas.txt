@@ -1,8 +1,7 @@
-Country Idea Fixes:
+#French region ideas
 
-#French region ideas 1399.J.Ideas.File
+#French Ducal Ideas
 
-	#French Ducal Ideas
 NRM_ideas = { #Norman ideas
 	start = {
 		fort_maintenance_modifier = -0.1

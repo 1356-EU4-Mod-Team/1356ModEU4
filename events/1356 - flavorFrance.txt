@@ -1308,7 +1308,7 @@ country_event = {
 			}
 			add_casus_belli = {
 				target = BRI
-				type = cb_vassalise
+				type = cb_vassalize_mission
 				months = 48
 			}
 		}
@@ -1457,7 +1457,7 @@ country_event = {
 		custom_tooltip = french_breton_sub_decline_tt 
 		add_casus_belli = {
 			target = BRI
-			type = cb_vassalise
+			type = cb_vassalize_mission
 			months = 48
 		}
 	}

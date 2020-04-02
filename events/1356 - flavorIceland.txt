@@ -177,83 +177,83 @@ country_event = { #Maintance event for greenland
 	}
 }
 
-#Event preventing anyone that is NOT norway from owning the province
-country_event = {
-	id = icelandflavor.4
-	title = icelandflavor.4.t
-	desc = icelandflavor.4.d
-	picture = BAD_WITH_MONARCH_eventPicture
+# #Event preventing anyone that is NOT norway from owning the province #Disabled due to that being impossible outside of Custom Nations
+# country_event = {
+	# id = icelandflavor.4
+	# title = icelandflavor.4.t
+	# desc = icelandflavor.4.d
+	# picture = BAD_WITH_MONARCH_eventPicture
 	
-	fire_only_once = yes
-	hidden = yes
+	# fire_only_once = yes
+	# hidden = yes
 
-	trigger = { #Removed due to the sheer imossibility of someone else taking it.
-		always = no
-		is_year = 1356
-		NOT = { is_year = 1400 }
-		OR = {
-			AND = {
-				NOT = { owns = 1104 }
-				1104 = { 
-					is_empty = no
-					NOT = { owner = NOR } #Audax Validator "." Ignore_ALL
-				}
-			}
-			AND = {
-				NOT = { owns = 1105 }
-				1105 = { 
-					is_empty = no
-					NOT = { owner = NOR } #Audax Validator "." Ignore_ALL
-				}
-			}
-			AND = {
-				NOT = { owns = 980 }
-				980 = { 
-					is_empty = no
-					NOT = { owner = NOR } #Audax Validator "." Ignore_ALL
-				}
-			}
-		}
-	}
+	# trigger = { #Removed due to the sheer imossibility of someone else taking it.
+		# always = no
+		# is_year = 1356
+		# NOT = { is_year = 1400 }
+		# OR = {
+			# AND = {
+				# NOT = { owns = 1104 }
+				# 1104 = { 
+					# is_empty = no
+					# NOT = { owned_by = NOR } 
+				# }
+			# }
+			# AND = {
+				# NOT = { owns = 1105 }
+				# 1105 = { 
+					# is_empty = no
+					# NOT = { owned_by = NOR } 
+				# }
+			# }
+			# AND = {
+				# NOT = { owns = 980 }
+				# 980 = { 
+					# is_empty = no
+					# NOT = { owned_by = NOR } 
+				# }
+			# }
+		# }
+	# }
 	
-	mean_time_to_happen = {
-		months = 12
-	}
+	# mean_time_to_happen = {
+		# months = 12
+	# }
 		
-	option = { #Curses!
-		name = icelandflavor.4.a
-		1104 = {
-			limit ={
-				owner = ROOT
-			}
-			remove_core = NOR
-			remove_core = ROOT
-			cede_province = XXX
-			change_culture = inuit
-			change_religion = animism
-		}
-		1105 = {
-			limit ={
-				owner = ROOT
-			}
-			remove_core = NOR
-			remove_core = ROOT
-			cede_province = XXX
-			change_culture = inuit
-			change_religion = animism
-		}
-		980 = {
-			limit ={
-				owner = ROOT
-			}
-			remove_core = NOR
-			remove_core = ROOT
-			cede_province = XXX
-			change_culture = cree
-			change_religion = totemism
-		}
-	}
-}
+	# option = { #Curses!
+		# name = icelandflavor.4.a
+		# 1104 = {
+			# limit ={
+				# owned_by = ROOT
+			# }
+			# remove_core = NOR
+			# remove_core = ROOT
+			# cede_province = XXX
+			# change_culture = inuit
+			# change_religion = animism
+		# }
+		# 1105 = {
+			# limit ={
+				# owned_by = ROOT
+			# }
+			# remove_core = NOR
+			# remove_core = ROOT
+			# cede_province = XXX
+			# change_culture = inuit
+			# change_religion = animism
+		# }
+		# 980 = {
+			# limit ={
+				# owned_by = ROOT
+			# }
+			# remove_core = NOR
+			# remove_core = ROOT
+			# cede_province = XXX
+			# change_culture = cree
+			# change_religion = totemism
+		# }
+	# }
+# }
 
 country_event = { #Event forcing Norway to lose vision on said tiles after they lose the provinces
 	id = icelandflavor.5
