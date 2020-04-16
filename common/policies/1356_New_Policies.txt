@@ -153,9 +153,6 @@ invite_brilliant_minds  = {
 	
 	religious_unity = 0.2
 	advisor_cost = -0.1
-
-
-	 = 0.5
 	
 	ai_will_do = {
 		factor = 1
