@@ -676,6 +676,8 @@ frisian_republic_legacy = {
 	allow_convert = no
 
 	republic = yes
+	rulers_can_be_generals = no
+	
 	modifiers = {
 		max_states = 1
 		global_trade_goods_size_modifier = 0.05

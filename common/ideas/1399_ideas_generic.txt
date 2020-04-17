@@ -163,7 +163,7 @@ gen_BRI_ideas = {
  	}
 }
 
-1356_barbary_pirate_ideas = {
+golden_bull_barbary_pirate_ideas = {
 	start = {
 		galley_power = 0.2
 		privateer_efficiency = 0.2
@@ -188,26 +188,26 @@ gen_BRI_ideas = {
 		}
 	}
 	free = yes
-	1356_barbary_slave_trade = {
+	golden_bull_barbary_slave_trade = {
 		trade_efficiency = 0.1
 	}
-	1356_galley_slaves = {
+	golden_bull_galley_slaves = {
 		global_sailors_modifier = 0.25
 		galley_cost = -0.2
 	}
-	1356_vengeful_refugees = {
+	golden_bull_vengeful_refugees = {
 		own_coast_naval_combat_bonus = 1
 	}
-	1356_mazmorras = {
+	golden_bull_mazmorras = {
 		diplomatic_reputation = 1
 	}
-	1356_barbary_fortified_strongholds = {
+	golden_bull_barbary_fortified_strongholds = {
 		defensiveness = 0.2
 	}
-	1356_heirs_of_al_andalus = {
+	golden_bull_heirs_of_al_andalus = {
 		unjustified_demands = -0.25
 	}
-	1356_barbary_board_of_captains = {
+	golden_bull_barbary_board_of_captains = {
 		pr_captains_influence = 0.1
 		possible_mil_policy = 1
 	}

@@ -1109,7 +1109,7 @@ CTR_ideas = { #Just spains ideas, same localisation and all
 
 JLR_ideas = {
 	start = {
-		e_creation = -0.15
+		core_creation = -0.15
 		leader_land_shock = 1 
 	}
 	bonus = {
@@ -2328,7 +2328,7 @@ thai_nation_ideas = { #Siamese ideas. United Thai.
     }
 }
 
-1356_malaya_nation_ideas = { #United Malaya
+golden_bull_malaya_nation_ideas = { #United Malaya
     start = {
 		global_trade_power = 0.2
 		land_attrition = -0.2
@@ -2336,33 +2336,36 @@ thai_nation_ideas = { #Siamese ideas. United Thai.
     bonus = {
 		max_states = 5
     }
+	
     trigger = {
         tag = MSA 
     }
+	
     free = yes
-    1356_malayan_tolerance = {
+	
+    golden_bull_malayan_tolerance = {
 		tolerance_heretic = 3 
 		tolerance_heathen = 3
     }
-    1356_settle_the_islands = {
+    golden_bull_settle_the_islands = {
 		global_colonial_growth = 25
     }
-    1356_reforms_of_tun_perak = {
+    golden_bull_reforms_of_tun_perak = {
         infantry_power = 0.10
     }
-    1356_people_of_the_seas = {
+    golden_bull_people_of_the_seas = {
 		naval_forcelimit_modifier = 0.25
         global_sailors_modifier = 0.25
     }
-    1356_sea_traditions = {
+    golden_bull_sea_traditions = {
 		naval_morale = 0.2 
 		merchants = 1 
     }
-    1356_undang_undang_malacca = {
+   golden_bull_undang_undang_malacca = {
 		global_trade_goods_size_modifier = 0.1
         development_cost = -0.1
     }
-    1356_tradition_of_gunpowder = {
+    golden_bull_tradition_of_gunpowder = {
 		fire_damage = 0.1
     }
 }
@@ -2418,7 +2421,7 @@ javan_ideas = { #1356 #Expanded to allow non muslim Malayans to have ideas #Move
 	}
 }
 
-1356_barbary_pirate_ideas = { #cloned from vanilla
+golden_bull_barbary_pirate_ideas = { #cloned from vanilla
 	start = {
 		galley_power = 0.2
 		privateer_efficiency = 0.2
@@ -2443,26 +2446,26 @@ javan_ideas = { #1356 #Expanded to allow non muslim Malayans to have ideas #Move
 		}
 	}
 	free = yes
-	1356_barbary_slave_trade = {
+	golden_bull_barbary_slave_trade = {
 		trade_efficiency = 0.1
 	}
-	1356_galley_slaves = {
+	golden_bull_galley_slaves = {
 		global_sailors_modifier = 0.25
 		galley_cost = -0.2
 	}
-	1356_vengeful_refugees = {
+	golden_bull_vengeful_refugees = {
 		own_coast_naval_combat_bonus = 1
 	}
-	1356_mazmorras = {
+	golden_bull_mazmorras = {
 		diplomatic_reputation = 1
 	}
-	1356_barbary_fortified_strongholds = {
+	golden_bull_barbary_fortified_strongholds = {
 		defensiveness = 0.2
 	}
-	1356_heirs_of_al_andalus = {
+	golden_bull_heirs_of_al_andalus = {
 		unjustified_demands = -0.25
 	}
-	1356_barbary_board_of_captains = {
+	golden_bull_barbary_board_of_captains = {
 		pr_captains_influence = 0.1
 		possible_mil_policy = 1
 	}

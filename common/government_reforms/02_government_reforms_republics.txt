@@ -286,6 +286,7 @@ peasants_republic = {
 		have_had_reform = peasants_republic
 	}
 	valid_for_nation_designer = yes
+	rulers_can_be_generals = no
 	nation_designer_cost = 20
 	legacy_equivalent = peasants_republic_legacy
 	modifiers = {
@@ -870,6 +871,7 @@ frisian_republic_gov = {
 			has_reform = frisian_republic_gov
 		}
 	}
+	rulers_can_be_generals = no
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 	legacy_equivalent = frisian_republic_legacy
