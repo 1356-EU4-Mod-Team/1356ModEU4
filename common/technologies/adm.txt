@@ -125,7 +125,6 @@ technology = { #Workshop
 	#Workshop
 	farm_estate = yes
 	workshop = yes
-	allowed_idea_groups = 3
 }
 
 technology = { #Renaissance Thought

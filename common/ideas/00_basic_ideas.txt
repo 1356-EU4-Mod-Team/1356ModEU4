@@ -1099,6 +1099,8 @@ naval_ideas = {
 	}
 }
 
+#Everything Below is 1356
+
 marcher_lord_ideas = {
 	category = MIL
 
@@ -1165,7 +1167,7 @@ royal_education_ideas = {
 	}
 
 	pragmatic_inheritance = {
-		monarch_military_power = 1	 
+		heir_chance = 1	 
 		candidate_random_bonus = 1   
 	}
 
@@ -1180,8 +1182,7 @@ grand_court_ideas = {
 	category = DIP
 
 	bonus = {
-	monarch_diplomatic_power = 1
-	candidate_random_bonus = 1	
+		advisor_pool = 2
 	}
 
 permanent_diplomacy = {
@@ -1204,6 +1205,7 @@ artists_and_mathematicians = {
 	envoy_travel_time = -0.25
 	diplomats = 1
 }
+
 noble_pride = {
 	monthly_splendor = 3
 	prestige_decay = -0.005
@@ -1308,8 +1310,7 @@ imperial_ideas = {
 	category = ADM
 
 	bonus = {
-		monarch_admin_power = 1
-		candidate_random_bonus = 1
+		power_projection_from_insults = 0.15
 		harmonization_speed = 0.1
 	}
 	

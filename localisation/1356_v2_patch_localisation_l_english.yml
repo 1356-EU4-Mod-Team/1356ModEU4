@@ -118,3 +118,22 @@
  golden_bull_elections.31.d: "At the most recent yearly meeting our Council had they discussed vital matters of the military. As it stands currently we are on the verge of war and our troops are not only poorly equipped, but we are short a significant portion of our expected recruits for this year. We must act now if we wish to prevent this from causing more trouble then it currently is. How shall we tackle this problem?"
  golden_bull_elections.31.a: "A long term plan is best"
  golden_bull_elections.31.b: "A short term plan will work better currently"
+ 
+ flaeng.32.c: "Down with the King!"
+ 
+ flaageevents.3.t: "The Begining of Colonialism"
+ flaageevents.3.d: "Our recent choice to explore unfamiliar waters has lead to an increase in Sailors joining the ranks of our Navy, which in turn has lead to an increase in the number of boats sailing out of our ports! On top of all this there are whispers from the Nobles that a well known sailor is interested in finding a westernly route to the Indies in an effort to reduce the time it takes to send and recieve goods from the area. Perhaps this man may be exactly what we need?"
+ flaageevents.3.a: "I smell profit!"
+ 
+ flaageevents.4.t: "The Begining of Colonialism"
+ flaageevents.4.d: "The news has been around the court all week! A well known sailor from a nearby nation has set off to discover a westernly route to the Indies in an effort to reduce the time and cost required to aquire the sought after goods of the east! Some look down on this sailor and others hold high hopes for him, however our Advisors and Spies are keeping a close eye on the situation at hand for us. It sounds that if nothing else a new Age on the world stage may beginning, what some call the Age of Colonialism!"
+ flaageevents.4.a: "Colonialism? Indies? What is this nonsense! Feudalism never will end!"
+ flaageevents.4.tt: "The Age of Feudalism will end in 120 Months, afterwards the Age of Discovery will begin!"
+ 
+ flaageevents.5.t: "The Begining of Colonialism"
+ flaageevents.5.d: "The news has been around the court all week! A well known sailor from a far away nation has set off to discover a westernly route to the Indies in an effort to reduce the time and cost required to aquire the sought after goods of the east! Some look down on this sailor and others hold high hopes for him, however our Advisors and Spies are keeping a close eye on the situation at hand for us. It sounds that if nothing else a new Age on the world stage may beginning, what some call the Age of Colonialism!"
+ flaageevents.5.a: "What is this nonsense? Feudalism will never end!"
+ 
+ flaageevents.10.t: "Hidden event"
+ flaageevents.10.d: "This hidden event removes vision of NA for countries who do not have a land connection to it, who are not Natives, or Norway."
+ flaageevents.10.a: "Hidden Response"

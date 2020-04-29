@@ -224,6 +224,7 @@ gen_moroccan_ideas = {
 	trigger = {
 		primary_culture = moroccan
 		NOT = { tag = MOR }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	free = yes
 	gen_mor_powerful_viziers = {
@@ -263,6 +264,7 @@ gen_algerian_ideas = { #Generic Algerian group
 	trigger = {
 		primary_culture = algerian
 		NOT = { tag = ALG }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	free = yes
 	gen_algerian_royal_guard = {
@@ -302,6 +304,7 @@ gen_tunisian_ideas = {
 	trigger = {
 		primary_culture = tunisian
 		NOT = { tag = TUN }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	free = yes
 	gen_tun_catalan_guard = {
@@ -344,6 +347,7 @@ gen_berber_ideas = { #Geneal Berber culture group ideas
 	trigger = {
 		culture_group = berber_culture_group
 		NOT = { tag = GUN }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	free = yes
 	

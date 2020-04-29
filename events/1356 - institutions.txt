@@ -437,6 +437,7 @@ province_event = { #Event to Boost Mercantilism in nations with paper provinces
 	}
 }
 
+#Commented out the next 3 events as they still have problems
 province_event = { #Event to Boost Mercantilism in nations with center of trades
 	id = new_institution_events.36
 	title = new_institution_events.36.t
@@ -445,6 +446,7 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	picture = TRADEGOODS_eventPicture
 	
 	trigger = {
+		always = no
 		NOT = { owner = { has_institution = mercantilism_institution } }
 		NOT = { owner = { government = tribal } }
 		NOT = { mercantilism_institution = 100 }
@@ -480,6 +482,7 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	picture = TRADEGOODS_eventPicture
 	
 	trigger = {
+		always = no
 		NOT = { owner = { has_institution = mercantilism_institution } }
 		NOT = { owner = { government = tribal } }
 		NOT = { mercantilism_institution = 100 }
@@ -515,6 +518,7 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	picture = TRADEGOODS_eventPicture
 	
 	trigger = {
+		always = no
 		NOT = { owner = { has_institution = mercantilism_institution } }
 		NOT = { mercantilism_institution = 100 }
 		NOT = { owner = { government = tribal } }
@@ -936,6 +940,7 @@ country_event = { #Sale of Gunpowder
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
+		always = no
 		has_institution = gunpowder_institution
 		NOT = { has_country_flag = 1356_selling_institution_flag }
 		is_year = 1370
@@ -1080,16 +1085,13 @@ country_event = { #Notifys players of Gunpowder spawning
 	}
 
 	is_triggered_only = yes
-	
 
 	trigger = {
 		always = yes			#
 	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
-
 	option = {
 		name = new_institution_events.67.a
 		custom_tooltip = new_institution_events.67.2.a.tt
@@ -1120,7 +1122,6 @@ country_event = { #Notifys far away players of Gunpowder spawning
 
 	is_triggered_only = yes
 	
-
 	trigger = {
 		always = yes			#
 	}

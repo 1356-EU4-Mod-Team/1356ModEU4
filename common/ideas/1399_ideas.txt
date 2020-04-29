@@ -115,13 +115,13 @@ AMG_ideas = { #Armagnac ideas
 		diplomatic_reputation = 1
 		heir_chance = 0.25
 	}
-	ARM_stability = { #Honestly my research into Armagnac fielded little more than the above, so I'm basing this and everything below this on the characteristics exibited by the Nobility and how the state typically acted.
+	AMG_stability = { #Honestly my research into Armagnac fielded little more than the above, so I'm basing this and everything below this on the characteristics exibited by the Nobility and how the state typically acted.
 		stability_cost_modifier = -0.15
 	}
-	ARM_production = {
+	AMG_production = {
 		production_efficiency = 0.1
 	}
-	ARM_agressive_expansion = {
+	AMG_agressive_expansion = {
 		ae_impact = -0.15
 	}
 }
