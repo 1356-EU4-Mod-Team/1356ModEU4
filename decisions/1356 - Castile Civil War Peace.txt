@@ -4,7 +4,7 @@ country_decisions = {
 		potential = {
 			tag = CTR
 			war_with = CAS
-			NOT = { year = 1366 }
+			NOT = { is_year = 1366 }
 			NOT = { has_country_flag = offering_peace }
 		}
 		allow = {
@@ -14,18 +14,18 @@ country_decisions = {
 			set_country_flag = offering_peace
 			CAS = { 
 				country_event = { id = WarTwoPetersFlavor.12 } 
+			}
 		}
 		ai_will_do = {
 			factor = 1000
 		}
-	}
 	}
 	
 	castile_offers_status_quo = {
 		potential = {
 			tag = CAS
 			war_with = CTR
-			NOT = { year = 1366 }
+			NOT = { is_year = 1366 }
 			NOT = { has_country_flag = offering_peace }
 		}
 		allow = {
@@ -38,7 +38,7 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 1000
+			factor = 100
 		}
-	}	
+	}
 }

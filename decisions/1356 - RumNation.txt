@@ -53,57 +53,41 @@ country_decisions = {
 			NOT = { exists = RUM }	
 			rum_area = {
 				type = all
-				AND = {
-					owned_by = ROOT
-					 is_core = ROOT
-				}
+				owned_by = ROOT
+				is_core = ROOT
 			}
 			ankara_area = {
 				type = all
-				AND = {
-					owned_by = ROOT
-					 is_core = ROOT
-				}
+				owned_by = ROOT
+				is_core = ROOT
 			}	
 			kastamonu_area = {
 				type = all
-				AND = {
-					owned_by = ROOT
-					 is_core = ROOT
-				}
+				owned_by = ROOT
+				is_core = ROOT
 			}
 			karaman_area = {
 				type = all
-				AND = {
-					owned_by = ROOT
-					 is_core = ROOT
-				}
+				owned_by = ROOT
+				is_core = ROOT
 			}
 			aydin_area = {
 				type = all
-				AND = {
-					owned_by = ROOT
-					 is_core = ROOT
-				}
+				owned_by = ROOT
+				is_core = ROOT
 			}
 			germiyan_area = {
 				type = all
-				AND = {
-					owned_by = ROOT
-					 is_core = ROOT
-				}
+				owned_by = ROOT
+				is_core = ROOT
 			}
 			327 = {
-				AND = {
-					owned_by = ROOT
-					 is_core = ROOT
-				}
+				owned_by = ROOT
+				is_core = ROOT
 			}
 			2302 = {
-				AND = {
-					owned_by = ROOT
-					 is_core = ROOT
-				}
+				owned_by = ROOT
+				is_core = ROOT
 			}			
 		}	
 		effect = {

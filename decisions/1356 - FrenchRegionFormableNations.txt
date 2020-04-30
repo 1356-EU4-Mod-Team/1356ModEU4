@@ -681,7 +681,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			tag = FRD
+			#tag = FRD
 			NOT = { exists = FRA }
 			OR = {
 				ai = no

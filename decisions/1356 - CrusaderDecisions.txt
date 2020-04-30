@@ -11,7 +11,7 @@ country_decisions = {
 				tag = CIC
 				tag = ATO
 				tag = EDE
-				tag = TPO
+				tag = TPL
 			}
 			OR = {
 				government = monarchy
@@ -28,7 +28,7 @@ country_decisions = {
 				tag = CIC
 				tag = ATO
 				tag = EDE
-				tag = TPO
+				tag = TPL
 			}
 			religion = catholic #for clarity
 			primary_culture = crusader_culture

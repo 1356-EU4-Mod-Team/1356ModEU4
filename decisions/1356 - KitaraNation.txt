@@ -56,9 +56,7 @@ country_decisions = {
         
         change_tag = WAK
         swap_non_generic_missions = yes
-        if = {
-            set_government_rank = 3
-        }
+        set_government_rank = 3
         add_country_modifier = {
             name = "centralization_modifier"
             duration = 5475
@@ -127,10 +125,15 @@ country_decisions = {
         potential = {
             tag = WAK
             NOT = { has_country_flag = kitaran_hegemony_restored_JIBM_flag }
-            provinces_to_highlight = {
-                region = central_african_region
-                }
+		}	
+		
+        provinces_to_highlight = {
+			region = central_african_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
+		
         allow = {
             central_african_region = {
          type = all

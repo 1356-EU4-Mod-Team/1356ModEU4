@@ -24,18 +24,11 @@ country_decisions = {
 			NOT = { has_country_flag = bukharan_nation }
 		}
 		provinces_to_highlight = {
-			province_id = 442
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				province_id = 442
+				province_id = 1970
+				province_id = 901
 			}
-
-			province_id = 1970
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			province_id = 901
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }

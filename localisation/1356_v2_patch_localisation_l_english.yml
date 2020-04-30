@@ -137,3 +137,9 @@
  flaageevents.10.t: "Hidden event"
  flaageevents.10.d: "This hidden event removes vision of NA for countries who do not have a land connection to it, who are not Natives, or Norway."
  flaageevents.10.a: "Hidden Response"
+ aksum_nation_title: "Reform Aksum"
+ 
+ reform_diplomancy_ai_title: "Hidden AI decision"
+ reform_diplomancy_ai_desc: "Hidden AI decision"
+ reform_the_army_ai_title: "Hidden AI decision"
+ reform_the_army_ai_desc: "Hidden AI decision"

@@ -1,3 +1,4 @@
+# Audax Validator "!" Ignore_1001
 country_decisions = {
 
 	malayan_nation = {

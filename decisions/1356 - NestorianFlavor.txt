@@ -64,7 +64,7 @@ country_decisions = {
 			modifier = { #Tolerance towards Nestorians below 0
 				factor = 100
 				NOT = { religion_group = christian }
-				NOT = { Nestorian = 0 }
+				NOT = { nestorian = 0 }
 			}
 			#Add more as we can
 			modifier = { #Prevents anyone with this from removing them
@@ -72,15 +72,17 @@ country_decisions = {
 				NOT = { tag = MNG }
 				NOT = { tag = TIM }
 				NOT = { tag = MUG }
-				NOT = { religion = Zoroastrianism }
-				NOT = { religion = Nestorian}
-				AND = { 
-					NOT = { religion_group = christian }
-					Nestorian = 0
-				}
-				AND = {
-					is_emperor_of_china = yes
-					stability = 0
+				NOT = { religion = zoroastrianism }
+				NOT = { religion = nestorian}
+				OR = {
+					AND = { 
+						NOT = { religion_group = christian }
+						nestorian = 0
+					}
+					AND = {
+						is_emperor_of_china = yes
+						stability = 0
+					}
 				}
 				
 			}
