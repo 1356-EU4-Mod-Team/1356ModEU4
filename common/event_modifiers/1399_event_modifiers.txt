@@ -389,12 +389,12 @@ mercantilism_embracement_faster_empire = {
 
 Lake_Alberta_Metalworks_JIBM = { #Kitara Flavor
     shock_damage_received = -0.03
-    trade_goods_size = 0.4
+    trade_goods_size = 1
 }
 
 kitaran_african_expansion_JIBM = { #Kitara Flavor
     colonists = 1
-    global_colonial_growth = 55
+    global_colonial_growth = 35
     manpower_recovery_speed = 0.15
 }
 
