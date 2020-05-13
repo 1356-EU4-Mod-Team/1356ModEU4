@@ -8,8 +8,8 @@ country_decisions = {
 			OR = {
 				tag = CTR
 				tag = SEV
-				tag = GAC
-				tag = LON
+				#tag = GAL #Its a bit odd for either of these two to form Castile, commented out for now.
+				#tag = LON
 			}			
 			NOT = { has_country_flag = formed_castile_flag }
 			OR = {

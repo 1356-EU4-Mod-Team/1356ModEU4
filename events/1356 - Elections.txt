@@ -1,0 +1,466 @@
+namespace = golden_bull_elections
+
+########################################################################################################
+###1356 Unique Election events, cloned from the original Elections Vanilla file, made by Count Flandy###
+##Special Thanks to Seelöwe from the EU4 Mod Coop for actually cleaning up 2.5k lines of nonsense code##
+########################################################################################################
+
+#Note for the code below, never trigger it through a decision or another event into another event, as that will keep
+#the same random seed every time, causing the same ruler stats.
+
+#Frisian Republic"elections"
+country_event = { 
+	id = golden_bull_elections.1
+	title = golden_bull_elections.1.t
+	desc = golden_bull_elections.1.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = FRI #Frisia
+			tag = EFR #East Frisia
+			tag = DTT #Dithmarshen
+		}
+		has_reform = frisian_republic_gov
+		primary_culture = frisian
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = { which = frisia_election_variable value = 1 }
+			friesland_election_group = {	
+				limit = {
+					culture = frisian
+					owned_by = ROOT
+				}
+				PREV = {
+					change_variable = { which = frisia_election_counter value = 1 }
+				}
+				random_list = {
+				
+					#4 = { #Commented out and added to the 3 middle numbers 
+					#	#No effect
+					#}
+					
+					16 = { #1/1/1
+						PREV = {
+							change_variable = { which = frisia_election_variable value = 1 }
+						}
+					}
+					17 = { #2/2/2
+						PREV = {
+							change_variable = { which = frisia_election_variable value = 2 }
+						}
+					}
+					17 = { #3/3/3
+						PREV = {
+							change_variable = { which = frisia_election_variable value = 3 }
+						}
+					}
+					17 = { #4/4/4
+						PREV = {
+							change_variable = { which = frisia_election_variable value = 4 }
+						}
+					}
+					17 = { #5/5/5
+						PREV = {
+							change_variable = { which = frisia_election_variable value = 5 }
+						}
+					}
+					16 = { #6/6/6
+						PREV = {
+							change_variable = { which = frisia_election_variable value = 6 }
+						}
+					}
+				}
+			}
+			divide_variable = { which = frisia_election_variable which = frisia_election_counter }
+		}
+	}
+	
+	option = { #Administrative Ruler
+		name = golden_bull_elections.1.a
+		if = { #6/6/6 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 5.5 }
+			}
+			define_ruler = { adm = 6 dip = 6 mil = 6 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #5/5/5 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 4.5 }
+			}
+			define_ruler = { adm = 6 dip = 5 mil = 4 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #4/4/4 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 3.5 }
+			}
+			define_ruler = { adm = 5 dip = 3 mil = 4 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #3/3/3 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 2.5 }
+			}
+			define_ruler = { adm = 4 dip = 3 mil = 2 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #2/2/2 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 1.5 }
+			}
+			define_ruler = { adm = 3 dip = 2 mil = 1 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #2/1/0 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 0.5 }
+			}
+			define_ruler = { adm = 2 dip = 1 mil = 1 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else = { #0/0/0 Ruler, AKA error Ruler.
+			define_ruler = { adm = 0 dip = 0 mil = 0 fixed = yes culture = frisian name = "Something broke in your code. Or the event fired twice. Sorry about that."}
+		}
+		hidden_effect = {
+			set_variable = { which = frisia_election_variable value = 0 }
+			set_variable = { which = frisia_election_counter value = 0 }
+		}
+	}
+	option = { #Balanced Rulers. AKA No changes.
+		name = golden_bull_elections.1.b
+		if = { #6/6/6 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 5.5 }
+			}
+			define_ruler = { adm = 6 dip = 6 mil = 6 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #5/5/5 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 4.5 }
+			}
+			define_ruler = { adm = 5 dip = 5 mil = 5 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #4/4/4 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 3.5 }
+			}
+			define_ruler = { adm = 4 dip = 4 mil = 4 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #3/3/3 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 2.5 }
+			}
+			define_ruler = { adm = 3 dip = 3 mil = 3 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #2/2/2 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 1.5 }
+			}
+			define_ruler = { adm = 2 dip = 2 mil = 2 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #1/1/1 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 0.5 }
+			}
+			define_ruler = { adm = 1 dip = 1 mil = 1 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else = { #Ruler Broke
+			define_ruler = { adm = 0 dip = 0 mil = 0 fixed = yes culture = frisian name = "Something broke in your code. Or the event fired twice. Sorry about that."}
+		}
+		hidden_effect = {
+			set_variable = { which = frisia_election_variable value = 0 }
+			set_variable = { which = frisia_election_counter value = 0 }
+		}
+	}
+	option = { #Diplomatic Ruler
+		name = golden_bull_elections.1.c
+		if = { #6/6/6 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 5.5 }
+			}
+			define_ruler = { adm = 6 dip = 6 mil = 6 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #5/6/4 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 4.5 }
+			}
+			define_ruler = { adm = 5 dip = 6 mil = 4 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #4/5/3 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 3.5 }
+			}
+			define_ruler = { adm = 4 dip = 5 mil = 3 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #3/4/2 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 2.5 }
+			}
+			define_ruler = { adm = 3 dip = 4 mil = 2 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #2/3/1 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 1.5 }
+			}
+			define_ruler = { adm = 2 dip = 3 mil = 1 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else_if = { #1/2/0 Ruler
+			limit = {
+				check_variable = { which = frisia_election_variable value = 0.5 }
+			}
+			define_ruler = { adm = 1 dip = 2 mil = 0 fixed = yes name = "The Frisian Council" age = 20 culture = frisian }
+		}
+		else = { #Broken Ruler
+			define_ruler = { adm = 0 dip = 0 mil = 0 fixed = yes culture = frisian name = "Something broke in your code. Or the event fired twice. Sorry about that."}
+		}
+		hidden_effect = {
+			set_variable = { which = frisia_election_variable value = 0 }
+			set_variable = { which = frisia_election_counter value = 0 }
+		}
+	}
+}
+
+#"Election" flavor 10-25
+#country_event = { 
+#	id = golden_bull_elections.10
+#	title = "golden_bull_elections.10.t"
+#	desc = golden_bull_elections.10.d
+#	picture = ELECTION_REPUBLICAN_eventPicture
+#	
+#	trigger = {
+#		always = no
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	
+#	option = {
+#		name = golden_bull_elections.10.a
+#		
+#	}
+#}
+
+#Council Flavor 26-40
+country_event = { #Buff Council Adm
+	id = golden_bull_elections.26
+	title = golden_bull_elections.26.t
+	desc = golden_bull_elections.26.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = FRI #Frisia
+			tag = EFR #East Frisia
+			tag = DTT #Dithmarshen
+		}
+		has_reform = frisian_republic_gov
+		NOT = { ADM = 6 }
+		NOT = { has_ruler_flag = monarch_point_added_adm }
+		NOT = { has_ruler_flag = monarch_point_declined_adm }
+	}
+	
+	mean_time_to_happen = {
+		months = 120 #10 years-ish. This is what Hinduism uses. Too long for republics?
+	}
+	
+	option = { #Buff Stat
+		name = golden_bull_elections.26.a
+		change_adm = 1
+		set_ruler_flag = monarch_point_added_adm
+	}
+	option = { #Free Power
+		name = golden_bull_elections.26.b
+		add_adm_power = 25 
+		set_ruler_flag = monarch_point_declined_adm
+	}
+}
+
+country_event = { #Buff Council Dip
+	id = golden_bull_elections.27
+	title = golden_bull_elections.27.t
+	desc = golden_bull_elections.27.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = FRI #Frisia
+			tag = EFR #East Frisia
+			tag = DTT #Dithmarshen
+		}
+		has_reform = frisian_republic_gov
+		NOT = { DIP = 6 }
+		NOT = { has_ruler_flag = monarch_point_added_dip }
+		NOT = { has_ruler_flag = monarch_point_declined_dip }
+	}
+	
+	mean_time_to_happen = {
+		months = 120 #10 years-ish. This is what Hinduism uses. Too long for republics?
+	}
+	
+	option = { #Buff Stat
+		name = golden_bull_elections.27.a
+		change_dip = 1
+		set_ruler_flag = monarch_point_added_dip
+	}
+	option = { #Free Power
+		name = golden_bull_elections.27.b
+		add_dip_power = 25 
+		set_ruler_flag = monarch_point_declined_dip
+	}
+}
+
+country_event = { #Buff Council Mil
+	id = golden_bull_elections.28
+	title = golden_bull_elections.28.t
+	desc = golden_bull_elections.28.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = FRI #Frisia
+			tag = EFR #East Frisia
+			tag = DTT #Dithmarshen
+		}
+		has_reform = frisian_republic_gov
+		NOT = { mil = 6 }
+		NOT = { has_ruler_flag = monarch_point_added_mil }
+		NOT = { has_ruler_flag = monarch_point_declined_mil }
+	}
+	
+	mean_time_to_happen = {
+		months = 180 #15 years-ish. This is 5 years longer then what Hinduism uses. Too long for republics?
+	}
+	
+	option = { #Buff Stat
+		name = golden_bull_elections.28.a
+		change_mil = 1
+		set_ruler_flag = monarch_point_added_mil
+	}
+	option = { #Free Power
+		name = golden_bull_elections.28.b
+		add_mil_power = 25 
+		set_ruler_flag = monarch_point_declined_mil
+	}
+}
+
+country_event = { #Debuff Council Adm
+	id = golden_bull_elections.29
+	title = golden_bull_elections.29.t
+	desc = golden_bull_elections.29.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = FRI #Frisia
+			tag = EFR #East Frisia
+			tag = DTT #Dithmarshen
+		}
+		has_reform = frisian_republic_gov
+		NOT = { ADM = 1 }
+		NOT = { has_ruler_flag = monarch_point_removed_adm }
+		NOT = { has_ruler_flag = monarch_point_declined_removal_adm }
+	}
+	
+	mean_time_to_happen = {
+		months = 120 #10 years-ish. This is what Hinduism uses. Too long for republics?
+	}
+	
+	option = { #Debuff Stat
+		name = golden_bull_elections.29.a
+		change_adm = -1
+		set_ruler_flag = monarch_point_removed__adm
+	}
+	option = { #Free Power
+		name = golden_bull_elections.29.b
+		add_adm_power = -25 
+		set_ruler_flag = monarch_point_declined_removal_adm
+	}
+}
+
+country_event = { #Debuff Council Dip
+	id = golden_bull_elections.30
+	title = golden_bull_elections.30.t
+	desc = golden_bull_elections.30.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = FRI #Frisia
+			tag = EFR #East Frisia
+			tag = DTT #Dithmarshen
+		}
+		has_reform = frisian_republic_gov
+		NOT = { DIP = 1 }
+		NOT = { has_ruler_flag = monarch_point_remo`ved_dip }
+		NOT = { has_ruler_flag = monarch_point_declined_removal_dip }
+	}
+	
+	mean_time_to_happen = {
+		months = 120 #10 years-ish. This is what Hinduism uses. Too long for republics?
+	}
+	
+	option = { #Debuff Stat
+		name = golden_bull_elections.30.a
+		change_dip = -1
+		set_ruler_flag = monarch_point_removed_dip
+	}
+	option = { #Free Power
+		name = golden_bull_elections.30.b
+		add_dip_power = -25 
+		set_ruler_flag = monarch_point_declined_removal_dip
+	}
+}
+
+country_event = { #Debuff Council Mil
+	id = golden_bull_elections.31
+	title = golden_bull_elections.31.t
+	desc = golden_bull_elections.31.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = FRI #Frisia
+			tag = EFR #East Frisia
+			tag = DTT #Dithmarshen
+		}
+		has_reform = frisian_republic_gov
+		NOT = { mil = 1 }
+		NOT = { has_ruler_flag = monarch_point_removed_mil }
+		NOT = { has_ruler_flag = monarch_point_declined_removal_mil }
+	}
+	
+	mean_time_to_happen = {
+		months = 180 #15 years-ish. This is 5 years longer then what Hinduism uses. Too long for republics?
+	}
+	
+	option = { #Debuff Stat
+		name = golden_bull_elections.31.a
+		change_mil = -1
+		set_ruler_flag = monarch_point_removed_mil
+	}
+	option = { #Free Power
+		name = golden_bull_elections.31.b
+		add_mil_power = -25 
+		set_ruler_flag = monarch_point_declined_removal_mil
+	}
+}
+
+#Bordering Nations Flavor 41-55
+
+
+#Flandy notes:
+# expand on this, make autonomy, Revolt Risk, prosperity, etc play into this.
+# Test this in on_actions...
+# Random events where neighboring nations can try to "exert" power over frisia?
+# Better represent Local elections somehow?
+# Implement more Bishopric power over Friesland to represent power local bishops held
+# Ensure nothing about "nobility" can fire/exist
+# Implement events to fall into chiefdoms later if not managed correctly, ala PLC?
+# HYW plugin events? (Allied to valois during HYW)
+# Ensure "election" events feel more like yearly meetings every 4 years.
+# Implement more Veltkopers vs Schieringers mechanics
+# Splitup Friesland? Add releaseable tag?
+# Research what land was "Frisian" in 1356
+#Change Frisia's Ruler Title when its the "Council" so its not Counsul
+

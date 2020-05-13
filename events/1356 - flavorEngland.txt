@@ -311,11 +311,11 @@ country_event = { #Revolt of Owain Glyndŵr - A Peaceful Resolution - England St
 	
 	option = { #Offer them independence
 		name = flaeng.6.a
-		break_union = WLS
-		add_adm_power = 200
-		add_dip_power = 200
-		add_mil_power = 200
-		add_treasury = 100
+		country_event = { 
+			id = flaeng.21
+			days = 5
+		}
+		custom_tooltip = fla_eng_wls_tt
 	}
 	option = { #Laugh in their face
 		name = flaeng.6.b
@@ -719,37 +719,34 @@ country_event = { #Revolt of Owain Glyndŵr - Owain himself donates his entire F
 #Continued from flaeng.6#
 #########################
 
-#England
-country_event = { #Revolt of Owain Glyndŵr - A Peaceful Resolution - Wales Requests Independence
-	id = flaeng.20
-	title = "flaeng.20.t"
-	desc = "flaeng.20.desc"
-	picture = CITY_VIEW_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #They can have it...for a price.
-		name = flaeng.20.a
-		ai_chance = { factor = 20 }
-		WLS = {
-			country_event = { 
-				id = flaeng.21
-				days = 15
-			}
-		}
-		
-	}
-	option = { #No peace for the Welsh!
-		name = flaeng.20.b
-		ai_chance = { factor = 80 }
-		WLS = {
-			country_event = { 
-				id = flaeng.4
-				days = 10
-			}
-		}
-	}
-}
+# #England
+# country_event = { #Revolt of Owain Glyndŵr - A Peaceful Resolution - Wales Requests Independence
+	# id = flaeng.20
+	# title = "flaeng.20.t"
+	# desc = "flaeng.20.desc"
+	# picture = CITY_VIEW_eventPicture
+	# is_triggered_only = yes
+	# option = { #They can have it...for a price.
+		# name = flaeng.20.a
+		# ai_chance = { factor = 20 }
+		# WLS = {
+			# country_event = { 
+				# id = flaeng.21
+				# days = 15
+			# }
+		# }
+	# }
+	# option = { #No peace for the Welsh!
+		# name = flaeng.20.b
+		# ai_chance = { factor = 80 }
+		# WLS = {
+			# country_event = { 
+				# id = flaeng.4
+				# days = 10
+			# }
+		# }
+	# }
+# }
 
 #Wales
 country_event = { #Revolt of Owain Glyndŵr - A Peaceful Resolution - England Offers Independence
@@ -894,9 +891,9 @@ country_event = { #England losing Duke of Cornwall when Cornwall is lost
 		trigger = { exists = ENG }
 		add_legitimacy = 5
 		add_prestige = 5
-		add_adm_power = 25
-		add_dip_power = 25
-		add_mil_power = 25
+		add_adm_power = 15
+		add_dip_power = 15
+		add_mil_power = 15
 		233 = { remove_province_modifier = duchy_of_cornwall_modifier_province }	
 		ENG = {
 			country_event = { 
@@ -911,9 +908,9 @@ country_event = { #England losing Duke of Cornwall when Cornwall is lost
 		trigger = { exists = GBR }
 		add_legitimacy = 5
 		add_prestige = 5
-		add_adm_power = 25
-		add_dip_power = 25
-		add_mil_power = 25
+		add_adm_power = 15
+		add_dip_power = 15
+		add_mil_power = 15
 		233 = { remove_province_modifier = duchy_of_cornwall_modifier_province }	
 		GBR = {
 			country_event = { 
@@ -922,6 +919,19 @@ country_event = { #England losing Duke of Cornwall when Cornwall is lost
 				random = 90
 			}
 		}
+	}
+option = { #Revoke the Duchy from GBR
+		name = flaeng.32.c
+		trigger = { 
+			NOT = { exists = ENG }
+			NOT = { exists = GBR }
+		}
+		add_legitimacy = 5
+		add_prestige = 5
+		add_adm_power = 15
+		add_dip_power = 15
+		add_mil_power = 15
+		233 = { remove_province_modifier = duchy_of_cornwall_modifier_province }	
 	}
 }
 

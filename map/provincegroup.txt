@@ -1,0 +1,9 @@
+
+#mytestgroup = {
+#	1 2 3
+#}
+
+#1356 code beyond here
+friesland_election_group = { #Province group pertaining to the frisian election events
+	100 4381 4382 1931 99 98 95 1742 2974 97 4383 96 1744 92 1865 90 55 1874 54 44 1857 53 1775 13 4141
+}

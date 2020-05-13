@@ -171,3 +171,158 @@ country_event = { #Event to give Nations with Exploration Ideas a range bonus. #
 	
 }
 
+country_event = { #Gives Colonial Power that triggers the End of Feudalism an event notifying them what they did
+	id = flaageevents.3
+	title = "flaageevents.3.t"
+	desc = "flaageevents.3.d"
+	picture = HARBOUR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = age_of_discovery_decision_flag
+		has_idea = colonial_ventures
+		dip_tech = 6
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = flaageevents.3.a
+		add_navy_tradition = 15
+		add_yearly_sailors = 2
+		create_explorer = 50
+		hidden_effect = {
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+					knows_country = ROOT
+				}
+				country_event = { id = flaageevents.4 }
+			}
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+					NOT = { knows_country = ROOT }
+				}
+				country_event = { flaageevents.5 }
+			}
+		}
+	}
+}
+
+country_event = { #Notifys players of Feudalism Ending Near Colonial Power
+	id = flaageevents.4
+	title = flaageevents.4.t
+	desc = flaageevents.4.d
+	picture = {
+		trigger = {
+			OR = {
+				NOT = { has_dlc = "Cradle of Civilization" }
+				NOT = { religion_group = muslim }
+			}
+		}
+		picture = PAINTER_ARTIST_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			religion_group = muslim
+		}
+		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = flaageevents.4.a
+		custom_tooltip = flaageevents.4.tt
+	}
+}
+
+#Far away travellers...
+country_event = { #Notifys far away players of Feudalism Ending
+	id = flaageevents.5
+	title = flaageevents.5.t
+	desc = flaageevents.5.d
+	picture = {
+		trigger = {
+			OR = {
+				NOT = { has_dlc = "Cradle of Civilization" }
+				NOT = { religion_group = muslim }
+			}
+		}
+		picture = PAINTER_ARTIST_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			religion_group = muslim
+		}
+		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = flaageevents.5.a
+		custom_tooltip = flaageevents.4.tt
+	}
+}
+
+country_event = { #Removes America Vision for European Nations who dont have Exploration pre 1444
+	id = flaageevents.10
+	title = "flaageevents.10.t"
+	desc = "flaageevents.10.d"
+	picture = HARBOUR_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		ai = no
+		NOT = { tag = NOR }
+		NOT = { government = native }
+		NOT = { has_idea_group = exploration_ideas }
+		is_year = 1420
+		NOT = { is_year = 1500 }
+		NOT = { has_country_flag = vision_purged_americas_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = flaageevents.10.a
+		north_america = {
+			limit = {
+				is_in_capital_area = no
+			}
+			undiscover_country = ROOT
+		}
+		
+		#american_east_coast_region = {
+		#	limit = {
+		#		is_in_capital_area = no
+		#	}
+		#	undiscover_country = ROOT
+		#}
+		set_country_flag = vision_purged_americas_flag
+	}
+}

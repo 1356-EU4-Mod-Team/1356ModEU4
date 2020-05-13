@@ -353,7 +353,7 @@ province_event = { #Removes the paper from the west midlands since it failed his
 		name = flaprices.8.a
 		change_trade_goods = unknown
 		add_base_production = -2
-		add_treasury = -50
+		owner = { add_treasury = -50 }
 	}
 }
 

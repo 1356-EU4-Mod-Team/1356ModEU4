@@ -1246,7 +1246,7 @@ country_event = {
 	}
 	option = { #Denmark Welcomes Novgorod
 		name = scan_djm.29.b
-		trigger = { TAG = DAN }
+		trigger = { tag = DAN }
 		set_country_flag = responded_to_novgorod_loss_flag
 		add_historical_friend = NOV
 		NOV = { add_historical_friend = DAN }

@@ -123,7 +123,7 @@ province_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		ai = yes #Not for players
+		owner = { ai = yes } #Not for players
 		religion = baltic_pagan_reformed		
 		NOT = { is_religion_enabled = protestant }
 		OR = {
@@ -245,6 +245,7 @@ province_event = {
 #		}
 #	}
 #}
+
 #Jadwiga of Poland
 country_event = {
 	id = flaflavorlith.5
@@ -370,7 +371,8 @@ country_event = {
 			factor = 80 
 		}
 		create_union = LIT
-		set_dynasty = Jagiellon
+		#Audax Validator "." Ignore_NEXT
+		set_dynasty = "Jagiellon"
 		define_general = {
 			name = "Jogaila Jagiellon"
 			fire = 3

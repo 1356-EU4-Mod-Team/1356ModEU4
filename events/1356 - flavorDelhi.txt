@@ -402,9 +402,7 @@ country_event = {
 				limit = {
 					NOT = { tag = ROOT }
 					NOT = { tag = HAJ }
-					OR = {
-						is_subject_of = DLH
-					}
+					is_subject_of = DLH
 				}
 				country_event = { id = delhi_empire.103 }
 			}
@@ -615,6 +613,7 @@ country_event = {
 	}
 
 	option = {
+		name = delhi_empire.559.a
 		set_government_rank = 1
 		define_ruler = {
 			adm = 2
@@ -643,6 +642,7 @@ country_event = {
 	}
 
 	option = {
+		name = delhi_empire.559.a
 		set_government_rank = 1
 		define_ruler = {
 			adm = 2
@@ -671,6 +671,7 @@ country_event = {
 	}
 
 	option = {
+		name = delhi_empire.559.a
 		set_government_rank = 1
 		define_ruler = {
 			adm = 2

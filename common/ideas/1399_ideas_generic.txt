@@ -163,7 +163,7 @@ gen_BRI_ideas = {
  	}
 }
 
-1356_barbary_pirate_ideas = {
+golden_bull_barbary_pirate_ideas = {
 	start = {
 		galley_power = 0.2
 		privateer_efficiency = 0.2
@@ -188,26 +188,26 @@ gen_BRI_ideas = {
 		}
 	}
 	free = yes
-	1356_barbary_slave_trade = {
+	golden_bull_barbary_slave_trade = {
 		trade_efficiency = 0.1
 	}
-	1356_galley_slaves = {
+	golden_bull_galley_slaves = {
 		global_sailors_modifier = 0.25
 		galley_cost = -0.2
 	}
-	1356_vengeful_refugees = {
+	golden_bull_vengeful_refugees = {
 		own_coast_naval_combat_bonus = 1
 	}
-	1356_mazmorras = {
+	golden_bull_mazmorras = {
 		diplomatic_reputation = 1
 	}
-	1356_barbary_fortified_strongholds = {
+	golden_bull_barbary_fortified_strongholds = {
 		defensiveness = 0.2
 	}
-	1356_heirs_of_al_andalus = {
+	golden_bull_heirs_of_al_andalus = {
 		unjustified_demands = -0.25
 	}
-	1356_barbary_board_of_captains = {
+	golden_bull_barbary_board_of_captains = {
 		pr_captains_influence = 0.1
 		possible_mil_policy = 1
 	}
@@ -224,6 +224,7 @@ gen_moroccan_ideas = {
 	trigger = {
 		primary_culture = moroccan
 		NOT = { tag = MOR }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	free = yes
 	gen_mor_powerful_viziers = {
@@ -263,6 +264,7 @@ gen_algerian_ideas = { #Generic Algerian group
 	trigger = {
 		primary_culture = algerian
 		NOT = { tag = ALG }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	free = yes
 	gen_algerian_royal_guard = {
@@ -302,6 +304,7 @@ gen_tunisian_ideas = {
 	trigger = {
 		primary_culture = tunisian
 		NOT = { tag = TUN }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	free = yes
 	gen_tun_catalan_guard = {
@@ -344,6 +347,7 @@ gen_berber_ideas = { #Geneal Berber culture group ideas
 	trigger = {
 		culture_group = berber_culture_group
 		NOT = { tag = GUN }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	free = yes
 	

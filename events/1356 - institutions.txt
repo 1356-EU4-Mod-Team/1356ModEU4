@@ -411,7 +411,7 @@ province_event = { #Event to Boost Mercantilism in nations with paper provinces
 	
 	trigger = {
 		NOT = { is_year = 1420 }
-		NOT = { government = tribal }
+		NOT = { owner = { government = tribal } }
 		NOT = { owner = { has_institution = mercantilism_institution } }
 		NOT = { mercantilism_institution = 100 }
 		trade_goods = paper
@@ -424,17 +424,20 @@ province_event = { #Event to Boost Mercantilism in nations with paper provinces
 		name = new_institution_events.35.a
 		random_owned_province = {
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
-				which = mercantilism_institution
-				value = 100
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
+					which = mercantilism_institution
+					value = 100
+				}
 			}
 		}
-		add_years_of_income = 0.2
+		owner = { add_years_of_income = 0.2 }
 	}
 }
 
+#Commented out the next 3 events as they still have problems
 province_event = { #Event to Boost Mercantilism in nations with center of trades
 	id = new_institution_events.36
 	title = new_institution_events.36.t
@@ -443,8 +446,9 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	picture = TRADEGOODS_eventPicture
 	
 	trigger = {
+		always = no
 		NOT = { owner = { has_institution = mercantilism_institution } }
-		NOT = { government = tribal }
+		NOT = { owner = { government = tribal } }
 		NOT = { mercantilism_institution = 100 }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 3
@@ -457,14 +461,16 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 		name = new_institution_events.36.a
 		random_owned_province = {
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
-				which = mercantilism_institution
-				value = 100
+				limit = {
+					province_has_center_of_trade_of_level = 3
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
+					which = mercantilism_institution
+					value = 100
+				}
 			}
 		}
-		add_mercantilism = 2 #Is this too powerful?
 	}
 }
 
@@ -476,8 +482,9 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	picture = TRADEGOODS_eventPicture
 	
 	trigger = {
+		always = no
 		NOT = { owner = { has_institution = mercantilism_institution } }
-		NOT = { government = tribal }
+		NOT = { owner = { government = tribal } }
 		NOT = { mercantilism_institution = 100 }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 2
@@ -490,14 +497,16 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 		name = new_institution_events.37.a
 		random_owned_province = {
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
-				which = mercantilism_institution
-				value = 100
+				limit = {
+					province_has_center_of_trade_of_level = 2 
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
+					which = mercantilism_institution
+					value = 100
+				}
 			}
 		}
-		add_mercantilism = 1 #Is this too powerful?
 	}
 }
 
@@ -509,9 +518,10 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 	picture = TRADEGOODS_eventPicture
 	
 	trigger = {
+		always = no
 		NOT = { owner = { has_institution = mercantilism_institution } }
 		NOT = { mercantilism_institution = 100 }
-		NOT = { government = tribal }
+		NOT = { owner = { government = tribal } }
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 1
 		development = 10
@@ -523,11 +533,13 @@ province_event = { #Event to Boost Mercantilism in nations with center of trades
 		name = new_institution_events.38.a
 		random_owned_province = {
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
-				which = mercantilism_institution
-				value = 100
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
+					which = mercantilism_institution
+					value = 100
+				}
 			}
 		}
 	}
@@ -544,11 +556,11 @@ country_event = { #Event to Boost Mercantilism in Merchant Republics
 		NOT = { has_institution = mercantilism_institution }
 		NOT = { is_year = 1420 }
 		OR = { #Any form of a Merchant Republic, or Florence/Tuscany
-			government = venice_merchants_reform
-			government = merchants_reform
-			government = trading_city
-			government = veche_republic
-			government = plutocratic_reform
+			has_reform = venice_merchants_reform
+			has_reform = merchants_reform
+			has_reform = trading_city
+			has_reform = veche_republic
+			has_reform = plutocratic_reform
 			AND = {
 				tag = LAN
 				government = republic
@@ -568,11 +580,13 @@ country_event = { #Event to Boost Mercantilism in Merchant Republics
 		name = new_institution_events.40.a
 		capital_scope = {
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
-				which = mercantilism_institution
-				value = 100
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
+					which = mercantilism_institution
+					value = 100
+				}
 			}
 		}
 		add_mercantilism = 1 #Is this too powerful?
@@ -631,65 +645,79 @@ country_event = { #Yuan #Sync this up with Genos new Chinese content
 		name = new_institution_events.50.a
 		capital_scope = {
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
 				which = mercantilism_institution
 				value = 100
+				}
 			}
 		}
 		random_core_province = { 
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
 				which = mercantilism_institution
 				value = 100
+				}
 			}
 		}
 		random_core_province = { 
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
 				which = mercantilism_institution
 				value = 100
+				}
 			}
 		}
 		random_core_province = { 
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
 				which = mercantilism_institution
 				value = 100
+				}
 			}
 		}
 		random_core_province = { 
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
 				which = mercantilism_institution
 				value = 100
+				}
 			}
 		}
 		random_core_province = { 
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
 				which = mercantilism_institution
 				value = 100
+				}
 			}
 		}
 		random_core_province = { 
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
 				which = mercantilism_institution
 				value = 100
+				}
 			}
 		}
 	}
@@ -730,29 +758,36 @@ country_event = { #England
 		name = new_institution_events.51.a
 		capital_scope = {
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
 				which = mercantilism_institution
 				value = 100
+				}
+			}
+
+		}
+		random_core_province = { 
+			if = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
+				which = mercantilism_institution
+				value = 100
+				}
 			}
 		}
 		random_core_province = { 
 			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
+				limit = {
+					NOT = { mercantilism_institution = 100}
+				}
+				add_institution_embracement = {
 				which = mercantilism_institution
 				value = 100
-			}
-		}
-		random_core_province = { 
-			if = {
-				NOT = { mercantilism_institution = 100}
-			}
-			add_institution_embracement = {
-				which = mercantilism_institution
-				value = 100
+				}
 			}
 		}
 	}
@@ -794,7 +829,7 @@ country_event = { #First to reach gunpowder
 	}
 	option = {
 		name = new_institution_events.60.a
-		mil_power = 200
+		add_mil_power = 200
 		add_army_tradition = 15
 		add_navy_tradition = 15
 	}
@@ -824,6 +859,24 @@ country_event = { #Gunpowder Spawn Event
 			}
 		}
 		add_mil_power = 100
+		hidden_effect = {
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+					knows_country = ROOT
+				}
+				country_event = { id = new_institution_events.67 }
+			}
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+					NOT = { knows_country = ROOT }
+				}
+				country_event = { id = new_institution_events.68 }
+			}
+		}
 	}
 }
 
@@ -887,6 +940,7 @@ country_event = { #Sale of Gunpowder
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
+		always = no
 		has_institution = gunpowder_institution
 		NOT = { has_country_flag = 1356_selling_institution_flag }
 		is_year = 1370
@@ -894,7 +948,7 @@ country_event = { #Sale of Gunpowder
 		mil_tech = 4 #Hand Cannon
 		NOT = { government = tribal }
 		NOT = { government = native }
-		random_neighbor_country = { 
+		any_neighbor_country = { 
 			NOT = { has_institution = gunpowder_institution }
 			NOT = { has_country_flag = 1356_declined_to_buy_gunpowder_institution_flag }
 		}
@@ -1006,5 +1060,78 @@ country_event = { #Sale of Gunpowder - Declined
 	option = { #
 		name = new_institution_events.66.a
 		clr_country_flag = 1356_selling_institution_flag	
+	}
+}
+
+country_event = { #Notifys players of Gunpowder spawning
+	id = new_institution_events.67
+	title = new_institution_events.67.t
+	desc = new_institution_events.67.d
+	picture = {
+		trigger = {
+			OR = {
+				NOT = { has_dlc = "Cradle of Civilization" }
+				NOT = { religion_group = muslim }
+			}
+		}
+		picture = PAINTER_ARTIST_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			religion_group = muslim
+		}
+		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = new_institution_events.67.a
+		custom_tooltip = new_institution_events.67.2.a.tt
+	}
+}
+
+#Far away travellers...
+country_event = { #Notifys far away players of Gunpowder spawning
+	id = new_institution_events.68
+	title = new_institution_events.68.t
+	desc = new_institution_events.68.d
+	picture = {
+		trigger = {
+			OR = {
+				NOT = { has_dlc = "Cradle of Civilization" }
+				NOT = { religion_group = muslim }
+			}
+		}
+		picture = PAINTER_ARTIST_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			religion_group = muslim
+		}
+		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = new_institution_events.68.a
+		custom_tooltip = new_institution_events.67.2.a.tt
 	}
 }

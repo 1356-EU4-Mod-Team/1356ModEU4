@@ -445,6 +445,7 @@ country_decisions = {
 			owns = 1878 #Aachen
 		}
 		effect = {
+			custom_tooltip = lotharingia_formation_warning_tt
 			1878 = { #Aachen
 				move_capital_effect = yes
 			}
@@ -521,6 +522,7 @@ country_decisions = {
 			romandie_area = { type = all owned_by = ROOT }	
 		}
 		effect = {
+			custom_tooltip = arles_formation_warning_tt
 			201 = { #Provence
 				move_capital_effect = yes
 			}
@@ -679,7 +681,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			tag = FRD
+			#tag = FRD
 			NOT = { exists = FRA }
 			OR = {
 				ai = no

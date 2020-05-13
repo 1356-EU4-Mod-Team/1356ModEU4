@@ -514,11 +514,11 @@ economic_ideas = {
 }
 
 
-exploration_ideas = { #1356
+exploration_ideas = {
 	category = DIP
 	important = yes
 
-	trigger = { #1356
+	trigger = {
 		OR = {
 			has_country_flag = age_of_discovery_decision_flag
 			NOT = { current_age = age_of_feudalism }
@@ -558,7 +558,7 @@ exploration_ideas = { #1356
 		naval_forcelimit_modifier = 0.25
 	}
 
-	ai_will_do = { #1356
+	ai_will_do = {
 		factor = 0.75
 		modifier = {
 			factor = 0
@@ -586,8 +586,8 @@ exploration_ideas = { #1356
 				} 
 			}
 		}
-		modifier = { #1356 #Tweaked these values slightly
-			factor = 0.3
+		modifier = {
+			factor = 0.1
 			NOT = { num_of_ports = 3 }
 			NOT = { 
 				any_owned_province = { 
@@ -596,18 +596,13 @@ exploration_ideas = { #1356
 				}
 			}
 		}
-		modifier = { #1356
+		modifier = {
 			factor = 0.1
 			NOT = { has_institution = renaissance }
 			NOT = { tag = POR }
 			NOT = { tag = CAS }
-			NOT = { tag = CTR } #1356
-			NOT = { tag = ENG } #1356
-			NOT = { tag = BRI } #1356
-			NOT = { tag = NAV } #1356
-			NOT = { tag = MAL } #1356
 		}
-		modifier = { #1356
+		modifier = {
 			factor = 0.1
 			capital_scope = {
 				NOT = {
@@ -615,7 +610,6 @@ exploration_ideas = { #1356
 					region = iberia_region
 					region = british_isles_region
 					region = low_countries_region
-					region = italy_region #1356
 				}
 			}
 			NOT = { technology_group = high_american }
@@ -624,9 +618,9 @@ exploration_ideas = { #1356
 			factor = 0.5
 			tag = ARA
 		}
-		modifier = { #1356
+		modifier = {
 			factor = 0.1
-			NOT = { is_year = 1450 } #1356 #modified this
+			NOT = { is_year = 1490 }
 			capital_scope = {
 				NOT = {
 					region = iberia_region
@@ -645,26 +639,23 @@ exploration_ideas = { #1356
 			factor = 2.0
 			num_of_ports = 10
 		}
-		modifier = { #1356
-			factor = 2.5 #1356
+		modifier = {
+			factor = 2.0
 			num_of_ports = 15
 		}
-		modifier = { #1356
-			factor = 3.0 #1356
+		modifier = {
+			factor = 2.0
 			num_of_ports = 20
 		}
-		modifier = { #1356
+		modifier = {
 			factor = 1000
 			OR = {
 				tag = POR
 				tag = CAS
 				tag = SPA
-				tag = NAV #1356
-				tag = CTR #1356
-				tag = ADU #1356
 			}
 		}
-		modifier = { #1356
+		modifier = {
 			factor = 2
 			OR = {
 				tag = GBR
@@ -672,17 +663,6 @@ exploration_ideas = { #1356
 				tag = ENG
 				tag = FRA
 				tag = KUR
-				tag = BRI #1356
-				tag = IRE #1356
-				tag = SCO #1356 #Bankrupt Scottish Colonies gogogogo!
-				tag = PRO #1356
-				tag = AQT #1356
-				tag = NCH #1356
-				tag = MOR #1356
-				tag = TUN #1356
-				tag = FZA #1356 #Same reason for other Maghreb
-				tag = BYZ #1356 #Gotta keep it fresh yo
-				tag = MAL #1356 #Historical-ish
 			}
 		}
 	}
@@ -831,13 +811,13 @@ quantity_ideas = {
 }
 
 
-expansion_ideas = { #1356
+expansion_ideas = {
 	category = ADM
 	important = yes
 
-	trigger = { #1356
+	trigger = {
 		OR = {
-			has_country_flag = age_of_discovery_decision_flag
+			has_country_flag = unlock_expansion_ideas_decision
 			NOT = { current_age = age_of_feudalism }
 			AND = {
 				ai = yes
@@ -875,7 +855,7 @@ expansion_ideas = { #1356
 		global_trade_power = 0.2
 	}
 
-	ai_will_do = { #1356
+	ai_will_do = {
 		factor = 0.48
 		modifier = {
 			factor = 10
@@ -884,14 +864,12 @@ expansion_ideas = { #1356
 				is_colonial_nation = yes
 			}
 		}
-		modifier = { #1356
+		modifier = {
 			factor = 5
 			OR = {
 				tag = CAS
 				tag = POR
 				tag = SPA
-				tag = CTR #1356
-				tag = NAV #1356
 			}
 		}
 		modifier = {
@@ -1121,6 +1099,8 @@ naval_ideas = {
 	}
 }
 
+#Everything Below is 1356
+
 marcher_lord_ideas = {
 	category = MIL
 
@@ -1149,6 +1129,39 @@ marcher_lord_ideas = {
 	}
 	marcher_officer_training = {
 		shock_damage = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		
+		modifier = {
+			factor = 0.1
+			vassal = 0
+		}
+
+		modifier = {
+			factor = 0.05
+			tributary = 1
+		}
+
+		modifier = {
+			factor = 1.5
+			vassal = 1
+		}
+
+		modifier = {
+			factor = 3
+			march = 2
+		}
+
+		modifier = {
+			personal_union = 2
+			factor = 1.5
+		}
+		modifier = {
+			factor = 0.2
+			colony = 1
+		}
 	}
 }
 
@@ -1179,6 +1192,11 @@ royal_education_ideas = {
 		development_cost = -0.10
 	}
 	proper_education = {
+		idea_cost = -0.1
+		global_institution_spread = 0.15
+	}
+
+	pragmatic_inheritance = {
 		legitimacy = 1
 		republican_tradition = 0.2
 		devotion = 1
@@ -1186,30 +1204,32 @@ royal_education_ideas = {
 		meritocracy =0.5
 	}
 
-	pragmatic_inheritance = {
-		monarch_military_power = 1	 
-		candidate_random_bonus = 1   
-	}
-
 	ai_will_do = {
-		factor = 0.4
+		factor = 0.3
+
+		modifier = {
+			factor = 2.5
+			government = monarchy
+		}
 	}
 }
+
 
 
 grand_court_ideas = {
 	category = DIP
 
 	bonus = {
-	monarch_diplomatic_power = 1
-	candidate_random_bonus = 1	
+		advisor_pool = 2
+		num_accepted_cultures = 1
 	}
 
 permanent_diplomacy = {
 	diplomatic_upkeep = 1
 	}
+	
 grand_viziers = {
-	advisor_cost = -0.1
+	advisor_cost = -0.2
 	free_leader_pool = 1
 }
 
@@ -1221,19 +1241,27 @@ courtly_tolerance = {
 }
 
 artists_and_mathematicians = {
-	envoy_travel_time = -0.25
 	diplomats = 1
 }
+
 noble_pride = {
-	monthly_splendor = 3
-	prestige_decay = -0.005
+	prestige_decay = -0.01
+	monthly_splendor = 2
 }
 pride_of_subjects = {
 	global_manpower_modifier = 0.15
 }
 
-ai_will_do = {
-	factor = 0.85
+	ai_will_do = {
+		factor = 0.75
+
+			modifier = {
+				factor = 5
+				OR = {
+				tag = BUR
+				tag = SIA
+				}
+			}
 	}
 }
 
@@ -1242,7 +1270,7 @@ theocratic_ideas = { #1356
 
 	bonus = {
 		infantry_power = 0.1
-		local_missionary_maintenance_cost = -0.25
+		missionary_maintenance_cost = -0.25
 	}
 
 	trigger = { 
@@ -1276,7 +1304,7 @@ theocratic_ideas = { #1356
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 2
 	}
 }
 
@@ -1285,38 +1313,55 @@ permanent_war_ideas = {
 
 	bonus = {
 		land_maintenance_modifier = -0.05
-		general_cost = -0.1
+		garrison_size = 0.25
 	}
 	
-	endless_forts = {
-		fort_maintenance_modifier = -0.2
+	tenacious_people = {
+		war_exhaustion = -0.1
 	}
 	
 	army_infrastructure = {
-		war_taxes_cost_modifier = -0.5
 		land_maintenance_modifier = -0.05
-	}
-	tenacious_people = {
-		war_exhaustion = -0.05
-	}
-	staff_headquarters = {
-		stability_cost_modifier = -0.2
-		advisor_cost = -0.1
-	}
-	national_pride = {
-		global_manpower_modifier = 0.25
-	}
-	wartime_smuggling = {
-		global_tax_modifier = 0.15
-	}
-	volunteers = {
-		global_regiment_cost = -0.1
-		reinforce_cost_modifier = -0.2
+		drill_decay_modifier = -0.33
 	}
 	
+	stiff_upper_lip_jibm = {
+		global_tax_modifier = 0.15
+	}
+
+	warfare_economics_jibm = {
+		state_maintenance_modifier = -0.33
+		privateer_efficiency = 0.33
+	}
+
+	national_pride = {
+		global_manpower_modifier = 0.33
+	}
+	
+	staff_headquarters = {
+		leader_cost = -0.1
+	}
+	
+	volunteers = {
+		global_regiment_cost = -0.05
+	}
 
 	ai_will_do = {
-		factor = 0.4
+		factor = 0.33
+
+		modifier = {
+			factor = 4
+			OR = {
+			tag = SCO
+			tag = OIR
+			tag = PRU
+			tag = PER
+			}
+		}
+		modifier = {
+			factor = 4
+			is_march = yes
+		}
 	}
 }
 
@@ -1324,8 +1369,7 @@ imperial_ideas = {
 	category = ADM
 
 	bonus = {
-		monarch_admin_power = 1
-		candidate_random_bonus = 1
+		diplomatic_upkeep = 1
 		harmonization_speed = 0.1
 	}
 	
@@ -1339,18 +1383,17 @@ imperial_ideas = {
 	}
 
 	imperial_engineering = {
-		build_cost = -0.1
+		build_cost = -0.15
 	}
 
 	robust_state_administration = {
-		max_states = 5
+		max_states = 7
 		trade_company_investment_cost = -0.1
 	}
 
-	1356_client_states = { 
-		vassal_income = 0.35
+	1356_client_states = {
+		vassal_income = 0.20
 		diplomatic_reputation = 2
-
 	}
 	
 	imperial_land_grants = {
@@ -1366,14 +1409,18 @@ imperial_ideas = {
 	ai_will_do = {
 		factor = 0.3
 		modifier = {
-			factor = 1.5
+			factor = 2
 			is_emperor = yes
 		}
 		modifier = {
-			factor = 2
-			total_development = 800
-		}	}
-	
+			factor = 5
+			total_development = 600
+		}
+		modifier = {
+			factor = 3
+			vassal = 3
+		}
+	}
 }
 
 military_doctrine_ideas = {
@@ -1414,6 +1461,10 @@ military_doctrine_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 1
-		}		
+		factor = 0.5
+		modifier = {
+			factor = 8
+			has_idea_group = innovativeness_ideas
+		}
 	}
+}

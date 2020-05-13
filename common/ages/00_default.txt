@@ -305,12 +305,14 @@ age_of_feudalism = {
 
 		ab_feudal_unique_sons_of_genghisid = { # Not sold on the idea yet
 			allow = {
-				tag = GLH
-				tag = YUA
-				tag = ILK
-				tag = JLR
-				tag = CHG
-				tag = KHA
+				OR = {
+					tag = GLH
+					tag = YUA
+					tag = ILK
+					tag = JLR
+					tag = CHG
+					tag = KHA
+				}
 			}
 			modifier = {
 				legitimacy = 0.5

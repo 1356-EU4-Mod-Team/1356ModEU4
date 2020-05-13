@@ -8,7 +8,8 @@ country_decisions = {
 				tag = YUA
 				tag = GLH
 				tag = ILK
-				was_never_end_game_tag_trigger = yes
+				tag = KHA #1356
+				#was_never_end_game_tag_trigger = yes #1356
 			}
 			OR = {
 				culture_group = altaic

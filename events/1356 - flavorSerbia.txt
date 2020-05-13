@@ -172,11 +172,9 @@ country_event = { #Uros V Sucessiom
 		tag = SER
 		has_regency = yes
 		has_country_flag = "serbian_sucession"
-		limit = {
-			OR = {
-				has_global_flag = "uros_death_natural"
-				has_global_flag = "uros_death_scripted"
-			}
+		OR = {
+			has_global_flag = "uros_death_natural"
+			has_global_flag = "uros_death_scripted"
 		}		
 	}
 
@@ -297,6 +295,7 @@ country_event = { #Wallachia Declines
 		add_prestige = -10	
 	}
 }	
+
 country_event = { #Ottoman Event, Hidden to the World
 	id = serbian_flavour.999
 	title = serbian_flavour.999.t
@@ -317,12 +316,12 @@ country_event = { #Ottoman Event, Hidden to the World
 	option = {
 		name = serbian_flavour.8.a
 		add_army_tradition = 25
-		define_heir_to_general = {
-			name = "Murad Osmanoglu"
-			fire = 4
-			shock = 6	
-			manuever = 4
-			siege = 2
-		}	
+		#define_heir_to_general = { #Commented out as this doesnt work in its current form. See: Validator error and Event if you force it through console
+		#	name = "Murad Osmanoglu"
+		#	fire = 4
+		#	shock = 6	
+		#	manuever = 4
+		#	siege = 2
+		#}	
 	}
 }		

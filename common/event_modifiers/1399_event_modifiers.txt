@@ -387,6 +387,17 @@ mercantilism_embracement_faster_empire = {
 	all_power_cost = 0.1
 }
 
+Lake_Alberta_Metalworks_JIBM = { #Kitara Flavor
+    shock_damage_received = -0.03
+    trade_goods_size = 1
+}
+
+kitaran_african_expansion_JIBM = { #Kitara Flavor
+    colonists = 1
+    global_colonial_growth = 35
+    manpower_recovery_speed = 0.15
+}
+
 ####THESE MAY NEED FURTHER BALANCING####
 
 mongol_gunpowder_modifier = { #Does this even work right?

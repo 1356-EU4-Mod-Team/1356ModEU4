@@ -1,8 +1,7 @@
-#Country Idea Fixes:
+#French region ideas
 
-#French region ideas 1399.J.Ideas.File
+#French Ducal Ideas
 
-	#French Ducal Ideas
 NRM_ideas = { #Norman ideas
 	start = {
 		fort_maintenance_modifier = -0.1
@@ -116,13 +115,13 @@ AMG_ideas = { #Armagnac ideas
 		diplomatic_reputation = 1
 		heir_chance = 0.25
 	}
-	ARM_stability = { #Honestly my research into Armagnac fielded little more than the above, so I'm basing this and everything below this on the characteristics exibited by the Nobility and how the state typically acted.
+	AMG_stability = { #Honestly my research into Armagnac fielded little more than the above, so I'm basing this and everything below this on the characteristics exibited by the Nobility and how the state typically acted.
 		stability_cost_modifier = -0.15
 	}
-	ARM_production = {
+	AMG_production = {
 		production_efficiency = 0.1
 	}
-	ARM_agressive_expansion = {
+	AMG_agressive_expansion = {
 		ae_impact = -0.15
 	}
 }
@@ -845,8 +844,6 @@ HAI_ideas = { #Hainaut ideas
 	}
 }
 
-#End French Minor Ideas
-
 AQT_ideas = { #Aquitaine ideas
 	start = {
 		diplomatic_upkeep = 2
@@ -934,7 +931,7 @@ ARE_ideas = { #Arles ideas
 
 LOT_ideas = { #Lotharingia ideas
 	start = {
-		land_morale = 0.15
+		land_morale = 0.1
 		diplomatic_upkeep = 2
 	}
 	
@@ -949,25 +946,25 @@ LOT_ideas = { #Lotharingia ideas
 	
 	
     LOT_reinforce = { 
-		reinforce_speed = 0.25
-        global_manpower_modifier = 0.15
+		reinforce_cost_modifier = -0.33
+        global_manpower_modifier = 0.1
 	}
 	
 	LOT_imperial_ambitions_idea = { 
-		imperial_authority = 0.15
 		diplomatic_reputation = 2
+        improve_relation_modifier = 0.25
 	}
 	LOT_recover_quickly = { 
 		recover_army_morale_speed = 0.05
-        war_exhaustion = -0.05
+        war_exhaustion = -0.03
 	}
 	LOT_lothar = { 
-		stability_cost_modifier = -0.15
+		stability_cost_modifier = -0.1
 		heir_chance = 0.25
 	}
 
     LOT_road_between_nations = {
-		defensiveness = 0.25
+		defensiveness = 0.2
 	}
     
 	LOT_spies = { 
@@ -1112,11 +1109,11 @@ CTR_ideas = { #Just spains ideas, same localisation and all
 
 JLR_ideas = {
 	start = {
-		core_creation = -0.10
+		core_creation = -0.15
 		leader_land_shock = 1 
 	}
 	bonus = {
-		general_cost = -0.25
+		shock_damage = 0.1
 	}
 	trigger = {
 		tag = JLR
@@ -1124,29 +1121,29 @@ JLR_ideas = {
 	free = yes
 	
 	jlr_citadels_and_fortesses = {
-		 leader_siege = 1
-	}
-	jlr_ayyubid_heritage = {
-		development_cost = -0.1
-	}
-	jlr_righteousness_of_the_faith = {
-		caravan_power = 0.15
-	}
-	jlr_elite_warriors = {
-		leader_land_fire = 1
-	}
-	jlr_rise_of_the_eagle = {
-	    leader_land_manuever = 1
-		movement_speed = 0.05
-	}
-	jlr_strenghten_central_authority = {
-		missionaries = 1
-		global_heretic_missionary_strength = 0.02
-		monthly_piety = -0.001
-	}
-	jlr_state_economics = {
-		global_trade_goods_size_modifier = 0.1
-	}
+		leader_siege = 1
+   }
+   jlr_ayyubid_heritage = {
+	   development_cost = -0.1
+   }
+   jlr_righteousness_of_the_faith = {
+	   caravan_power = 0.15
+   }
+   jlr_elite_warriors = {
+	   leader_land_fire = 1
+   }
+   jlr_rise_of_the_eagle = {
+	   leader_land_manuever = 1
+	   movement_speed = 0.05
+   }
+   jlr_strenghten_central_authority = {
+	   missionaries = 1
+	   global_heretic_missionary_strength = 0.02
+	   monthly_piety = -0.002
+   }
+   jlr_state_economics = {
+	   global_trade_goods_size_modifier = 0.1
+   }
 }
 
 CHB_ideas = {
@@ -1158,7 +1155,7 @@ CHB_ideas = {
 		leader_land_shock = 1
 	}
 	trigger = {
-		tag = KRT
+		tag = CHB
 	}
 	free = yes
 	
@@ -1195,9 +1192,7 @@ MUZ_ideas = {
 		discipline = 0.05
 	}
 	trigger = {
-		OR = {
-			tag = MIH
-		}
+		tag = MUZ
 	}
 	free = yes
 	
@@ -1614,7 +1609,7 @@ BRN_ideas = {
 	BRN_generic_ideas_6 = { #Diplomacy
 		diplomats = 1
 	}
-	BRN_generic_ideas_7 = { #The Bärengraben
+	BRN_generic_ideas_7 = { #The Barengraben
 		army_tradition = 0.5
 	}
 }
@@ -1763,10 +1758,12 @@ ALX_ideas = {
 		legitimacy = 2
 	}
 	alx_idea_5 = { #To help with how isolated it is
-		tolerance_heathen = 2
+		religious_unity = 0.15
+		tolerance_heretic = 1
+		tolerance_heathen = 1
 	}
 	alx_idea_3 = { 
-		reinforce_speed = 0.15
+		land_maintenance_modifier = -0.05
 	}
 	alx_idea_1 = { #The Nile allows for many populated cities
 		development_cost = -0.1
@@ -1826,6 +1823,7 @@ EGY_ideas = {
 }
 
 #Cuman note, the following tribes are the ones that migrated into hungary, useful for later content I'm sure
+
 #Koncsog, Ilunesuk, Kol/Kor, Ulas/Olas, Curtan/Csertan, Burdjogli/Borchol, Toqsoba/Toksobichi
 
 CUM_ideas = {
@@ -1908,6 +1906,7 @@ ahm_ideas = {
 		diplomatic_reputation = 1
 	}
 }
+
 bra_ideas = {
 	start = {
 		improve_relation_modifier = 0.25
@@ -2290,8 +2289,7 @@ thai_nation_ideas = { #Siamese ideas. United Thai.
     }
  
     bonus = {
-		manpower_recovery_speed = 0.15
-		global_manpower_modifier = 0.15
+		global_manpower_modifier = 0.25
     }
    
     trigger = {
@@ -2309,7 +2307,7 @@ thai_nation_ideas = { #Siamese ideas. United Thai.
     }
 
     1356_the_god_king = {
-		prestige = 2
+		prestige = 1
     }
 
     1356_the_white_elephant = {
@@ -2330,47 +2328,44 @@ thai_nation_ideas = { #Siamese ideas. United Thai.
     }
 }
 
-1356_malaya_nation_ideas = { #United Malaya
+golden_bull_malaya_nation_ideas = { #United Malaya
     start = {
 		global_trade_power = 0.2
 		land_attrition = -0.2
     }
- 
     bonus = {
 		max_states = 5
-        leader_naval_manuever = 1
     }
-   
+	
     trigger = {
         tag = MSA 
     }
+	
     free = yes
-   
-    1356_malayan_tolerance = {
+	
+    golden_bull_malayan_tolerance = {
 		tolerance_heretic = 3 
 		tolerance_heathen = 3
     }
-    1356_settle_the_islands = {
+    golden_bull_settle_the_islands = {
 		global_colonial_growth = 25
     }
-    1356_reforms_of_tun_perak = {
+    golden_bull_reforms_of_tun_perak = {
         infantry_power = 0.10
     }
-    1356_people_of_the_seas = {
+    golden_bull_people_of_the_seas = {
 		naval_forcelimit_modifier = 0.25
         global_sailors_modifier = 0.25
     }
-
-    1356_sea_traditions = {
+    golden_bull_sea_traditions = {
 		naval_morale = 0.2 
 		merchants = 1 
     }
-
-    1356_undang_undang_malacca = {
+   golden_bull_undang_undang_malacca = {
 		global_trade_goods_size_modifier = 0.1
         development_cost = -0.1
     }
-    1356_tradition_of_gunpowder = {
+    golden_bull_tradition_of_gunpowder = {
 		fire_damage = 0.1
     }
 }
@@ -2426,7 +2421,7 @@ javan_ideas = { #1356 #Expanded to allow non muslim Malayans to have ideas #Move
 	}
 }
 
-1356_barbary_pirate_ideas = { #cloned from vanilla
+golden_bull_barbary_pirate_ideas = { #cloned from vanilla
 	start = {
 		galley_power = 0.2
 		privateer_efficiency = 0.2
@@ -2451,26 +2446,26 @@ javan_ideas = { #1356 #Expanded to allow non muslim Malayans to have ideas #Move
 		}
 	}
 	free = yes
-	1356_barbary_slave_trade = {
+	golden_bull_barbary_slave_trade = {
 		trade_efficiency = 0.1
 	}
-	1356_galley_slaves = {
+	golden_bull_galley_slaves = {
 		global_sailors_modifier = 0.25
 		galley_cost = -0.2
 	}
-	1356_vengeful_refugees = {
+	golden_bull_vengeful_refugees = {
 		own_coast_naval_combat_bonus = 1
 	}
-	1356_mazmorras = {
+	golden_bull_mazmorras = {
 		diplomatic_reputation = 1
 	}
-	1356_barbary_fortified_strongholds = {
+	golden_bull_barbary_fortified_strongholds = {
 		defensiveness = 0.2
 	}
-	1356_heirs_of_al_andalus = {
+	golden_bull_heirs_of_al_andalus = {
 		unjustified_demands = -0.25
 	}
-	1356_barbary_board_of_captains = {
+	golden_bull_barbary_board_of_captains = {
 		pr_captains_influence = 0.1
 		possible_mil_policy = 1
 	}
@@ -2523,8 +2518,7 @@ AKS_ideas = {
 	}
 
 	bonus = {
-		land_attrition = -0.15
-		discipline = 0.025
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -2537,7 +2531,7 @@ AKS_ideas = {
 		religious_unity = 0.15
 	}
 	desert_cavalry_traditions = {
-		cavalry_power = 0.25
+		cavalry_power = 0.15
 	}
 	building_an_empire = {
 		build_cost = -0.15
@@ -2553,8 +2547,8 @@ AKS_ideas = {
 		global_trade_power = 0.15
 	}
 	fierce_warrior_traditions = {
-		shock_damage = 0.2
-        global_manpower_modifier = 0.2
+		shock_damage = 0.15
+        global_manpower_modifier = 0.25
 	}
 	
 }
@@ -2599,7 +2593,6 @@ ZBB_Ideas = { #Submitted by "The Janitor", slight tweaks by CountFlandy
 	}
 
 }
-
 
 SAP_ideas = { #Sapmi ideas
 	start = {
@@ -2847,6 +2840,125 @@ SWB_ideas = {
 	}
 }
 
+ARB_ideas = { 
+    start = {
+		global_missionary_strength = 0.02
+		leader_land_shock = 1
+    }
+ 
+    bonus = {
+		leader_siege = 1
+    }
+    trigger = {
+        tag = ARB 
+    }
+    free = yes
+   
+    arb_horses_jibm = {
+		cavalry_power = 0.15
+		cavalry_cost = -0.25
+    }
+    arb_trading_empire_jibm = {
+		global_trade_power = 0.15
+    }
+	land_of_the_prophet_jibm = {
+		tolerance_own = 2
+		monthly_piety = -0.02
+    }
+    ARB_tribal_honor = {
+		global_manpower_modifier = 0.15
+    }
+    arb_bedouin_traders_jibm = {
+		merchants = 2
+    }
+	arb_damascus_steel = {
+		shock_damage = 0.1
+	}
+	arb_expansive_empire = {
+		province_warscore_cost = -0.15
+	}
+}
+
+BUK_ideas = {
+
+start = {
+	cavalry_power = 0.25
+	core_creation = -0.15
+}
+
+bonus = {
+	manpower_recovery_speed = 0.2
+}
+trigger = {
+	tag = BUK
+}
+free = yes
+
+Bukharian_state_education = {
+	technology_cost = -0.05
+	innovativeness_gain = 0.5
+}
+buk_steppe_leaders = {
+	leader_land_shock = 1
+}
+buk_artists_and_poets = {
+	prestige = 1
+}
+buk_silk_road = {
+	merchants = 1
+}
+buk_steppe_warrior_culture = {
+	global_manpower_modifier = 0.25	
+}
+
+buk_famous_court = {
+	advisor_cost = -0.15
+}
+
+Buk_Khan_pride = {
+	land_morale = 0.1
+}
+}
+
+WAK_ideas = { #Kitara
+	start = {
+		global_manpower_modifier = 0.25
+		production_efficiency = 0.15
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = WAK
+	}
+	free = yes		#will be added at load.
+
+	lake_albert_salt_mine = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	JIBM_wak_tribal_soldiers = {
+		infantry_power = 0.1
+	}
+	JIBM_wak_agricultural_renaissance = {
+		development_cost = -0.15
+	}
+	wak_jungle_survivors = {
+		land_attrition = -0.1
+	}
+	wak_royal_tolerance = {
+		tolerance_own = 2
+		tolerance_heathen = 2
+	}
+	wak_heirs_of_kitara = {
+		prestige = 1
+	}
+	wak_bunyoro_metalllurgy = {
+		fire_damage = 0.1
+	}
+}
+
 TRO_ideas = { #Special thanks to @Raumarici from our discord for these
 	start = { 
 		infantry_power = 0.15 
@@ -2877,6 +2989,7 @@ TRO_ideas = { #Special thanks to @Raumarici from our discord for these
 		legitimacy = 1
 		horde_unity = 1
 		republican_tradition = 0.3
+		devotion = 0.5
 	}
 	tro_idea_4 = { 
 		land_morale = 0.1
@@ -2889,11 +3002,11 @@ TRO_ideas = { #Special thanks to @Raumarici from our discord for these
 ING_ideas = { #Ingria #Built around the idea that they exist only for Novgorod to have as a March against the Swedes
 	start = { 
 		garrison_size = 0.2
-		fort_maintenance_modifier = -0.15
+		fort_maintenance_modifier = -0.2
 	}
 	
 	bonus = { 
-		years_of_nationalism = -5
+		leader_land_shock = 1
 	}
 	
 	trigger = {
@@ -2901,10 +3014,10 @@ ING_ideas = { #Ingria #Built around the idea that they exist only for Novgorod t
 	}
 	free = yes
 	ing_idea_1 = { 
-		land_attrition = -0.1
+		global_manpower_modifier = 0.2
 	}
 	ing_idea_2 = { #Many Foreign Nobles were asked to serve Ingria
-		advisor_cost = -0.15 
+		advisor_cost = -0.1
 	}
 	ing_idea_3 = {
 		stability_cost_modifier = -0.1
@@ -2913,7 +3026,7 @@ ING_ideas = { #Ingria #Built around the idea that they exist only for Novgorod t
 		global_regiment_cost = -0.1
 	}
 	ing_idea_5 = { 
-		global_manpower_modifier = 0.15
+		land_attrition = 0.15
 	}
 	ing_idea_6 = { 
 		envoy_travel_time = -0.25

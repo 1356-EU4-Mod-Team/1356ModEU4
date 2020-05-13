@@ -18,7 +18,6 @@ country_event = {
 		name = fre_disaster_civil_war.1.a
 		add_prestige = -20
 		break_union = DAU
-		release_all_subjects = yes
 		GUY = { add_core = 194 } #Perigord
 		FRA = {
 			release = AMG
@@ -233,7 +232,7 @@ country_event = {
 				days = 10
 			}
 		}
-		ART = {
+		ARS = {
 			country_event = { 
 				id = fre_disaster_civil_war.3
 				days = 10

@@ -1,3 +1,4 @@
+# Audax Validator "!" Ignore_ALL
 country_decisions = {
 
 	brazil_nation = { #1356 - Changed Tech
@@ -116,7 +117,7 @@ country_decisions = {
 						colonial_region = colonial_brazil
 					}
 				}
-				FROM = { inherit = PREV }
+				BRZ = { inherit = POR }
 			}
 			custom_tooltip = brazil_move_capital_tooltip
 			hidden_effect = {

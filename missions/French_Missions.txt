@@ -38,7 +38,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 		}
 		effect = {
-			inherit = FOI
+			FOI = {
+				every_owned_province = {
+					add_core = FRA
+					cede_province = FRA
+				}
+			}
 			add_dip_power = -50
 			add_mil_power = -50
 			176 = { #Foix
@@ -81,7 +86,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 		}
 		effect = {
-			inherit = ORL
+			ORL = {
+				every_owned_province = {
+					add_core = FRA
+					cede_province = FRA
+				}
+			}
 			add_adm_power = -50
 			add_mil_power = -50
 			184 = { #Orleans
@@ -132,7 +142,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 		}
 		effect = {
-			inherit = ALE
+			ALE = {
+				every_owned_province = {
+					add_core = FRA
+					cede_province = FRA
+				}
+			}
 			add_dip_power = -50
 			add_mil_power = -50
 			1879 = { #Alencon
@@ -174,7 +189,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 		}
 		effect = {
-			inherit = FOZ
+			FOZ = {
+				every_owned_province = {
+					add_core = FRA
+					cede_province = FRA
+				}
+			}
 			add_dip_power = -50
 			add_mil_power = -50
 			203 = { #Lyonnais
@@ -216,7 +236,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 		}
 		effect = {
-			inherit = BOU
+			BOU = {
+				every_owned_province = {
+					add_core = FRA
+					cede_province = FRA
+				}
+			}
 			add_treasury = -200
 			add_mil_power = -50
 			190 = { #Bourbonnais
@@ -259,7 +284,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 		}
 		effect = {
-			inherit = ANJ
+			ANJ = {
+				every_owned_province = {
+					add_core = FRA
+					cede_province = FRA
+				}
+			}
 			add_mil_power = -100
 			177 = { #Maine
 				add_base_manpower = 1
@@ -308,7 +338,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 		}
 		effect = {
-			inherit = AUV
+			AUV = {
+				every_owned_province = {
+					add_core = FRA
+					cede_province = FRA
+				}
+			}
 			add_mil_power = -50
 			create_general = {
 				tradition = 50
@@ -351,7 +386,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 		}
 		effect = {
-			inherit = BRI
+			BRI = {
+				every_owned_province = {
+					add_core = FRA
+					cede_province = FRA
+				}
+			}
 			add_mil_power = -100
 		}
 	}	

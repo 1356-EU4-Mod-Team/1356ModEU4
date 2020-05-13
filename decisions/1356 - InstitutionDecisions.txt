@@ -3,7 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			current_age = age_of_feudalism
-			has_port = yes
+			num_of_ports = 1
 			ai = no
 			NOT = { government = native }
 			NOT = { has_country_flag = age_of_discovery_decision_flag }
@@ -34,14 +34,14 @@ country_decisions = {
 		major = yes
 		potential = {
 			current_age = age_of_feudalism
-			has_port = yes
+			num_of_ports = 1
 			ai = no
 			NOT = { government = native }
 			NOT = { has_country_flag = unlock_expansion_ideas_decision }
 		}
 		allow = {
 			current_age = age_of_feudalism
-			#has_port = yes
+			num_of_ports = 1
 			#NOT = { government = tribal }
 			is_at_war = no
 			is_subject = no
@@ -192,10 +192,6 @@ country_decisions = {
 				name = mongol_gunpowder_modifier
 				duration = 18250 
 			}	
-			add_country_modifier = { 
-				name = mongol_gunpowder_tech_modifier
-				duration = 3650  
-			}
 			set_country_flag = mongolic_gunpowder_flag
 			#remove_country_modifier = pre_gunpowder_modifier
 		}
@@ -280,7 +276,7 @@ country_decisions = {
 	boost_korean_gunpowder_decision = { #Decision to allow any Korean nation to embrace Gunpowder faster
 		major = yes
 		potential = {
-			culture = korean
+			primary_culture = korean
 			NOT = { has_institution = gunpowder_institution }
 			NOT = { has_country_flag = korean_gunpowder_flag }
 			#has_country_modifier = pre_gunpowder_modifier
@@ -434,8 +430,8 @@ country_decisions = {
 		potential = {
 			ai = no
 			government = tribal
-			NOT = { government = steppe_horde }
-			NOT = { government = great_mongol_state_reform }
+			NOT = { has_reform = steppe_horde }
+			NOT = { has_reform = great_mongol_state_reform }
 			NOT = { religion = mesoamerican_religion }
 			NOT = { religion = nahuatl }
 			NOT = { religion = inti }
@@ -443,8 +439,8 @@ country_decisions = {
 		}
 		allow = { 
 			government = tribal
-			NOT = { government = steppe_horde }
-			NOT = { government = great_mongol_state_reform }
+			NOT = { has_reform = steppe_horde }
+			NOT = { has_reform = great_mongol_state_reform }
 			NOT = { religion = mesoamerican_religion }
 			NOT = { religion = nahuatl }
 			NOT = { religion = inti }
@@ -471,8 +467,8 @@ country_decisions = {
 		potential = {
 			ai = no
 			government = tribal
-			NOT = { government = steppe_horde }
-			NOT = { government = great_mongol_state_reform }
+			NOT = { has_reform = steppe_horde }
+			NOT = { has_reform = great_mongol_state_reform }
 			NOT = { religion = mesoamerican_religion }
 			NOT = { religion = nahuatl }
 			NOT = { religion = inti }
@@ -480,8 +476,8 @@ country_decisions = {
 		}
 		allow = { 
 			government = tribal
-			NOT = { government = steppe_horde }
-			NOT = { government = great_mongol_state_reform }
+			NOT = { has_reform = steppe_horde }
+			NOT = { has_reform = great_mongol_state_reform }
 			NOT = { religion = mesoamerican_religion }
 			NOT = { religion = nahuatl }
 			NOT = { religion = inti }
@@ -513,8 +509,8 @@ country_decisions = {
 		potential = {
 			ai = no
 			government = tribal
-			NOT = { government = steppe_horde }
-			NOT = { government = great_mongol_state_reform }
+			NOT = { has_reform = steppe_horde }
+			NOT = { has_reform = great_mongol_state_reform }
 			NOT = { religion = mesoamerican_religion }
 			NOT = { religion = nahuatl }
 			NOT = { religion = inti }
@@ -522,8 +518,8 @@ country_decisions = {
 		}
 		allow = { 
 			government = tribal
-			NOT = { government = steppe_horde }
-			NOT = { government = great_mongol_state_reform }
+			NOT = { has_reform = steppe_horde }
+			NOT = { has_reform = great_mongol_state_reform }
 			NOT = { religion = mesoamerican_religion }
 			NOT = { religion = nahuatl }
 			NOT = { religion = inti }

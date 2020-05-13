@@ -1,0 +1,154 @@
+﻿l_english:
+ 
+ #Events
+ new_institution_events.67.t: "Gunpowder Weaponry!"
+ new_institution_events.67.d: "While Gunpowder has existed for centuries before this it was not common in weapons until recently. During the 1300's-1400's various nations in Asia experimented with what we have come to understand as Gunpowder weaponry. These weapons while still primitive in nature are very dangerous and posess the ability to kill hundreds of men at once. It is in our best interest to steal some of these early weapons for our own use so we do not fall too far behind our rivals."
+ new_institution_events.67.a: "This changes everything..."
+ new_institution_events.67.a.tt: ""Countries that have not yet fully §YEmbraced§! the §YGunpowder§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!.""
+ 
+ new_institution_events.68.t: "Gunpowder Weaponry!"
+ new_institution_events.68.d: "Travelers speak of massive weapons that sound like the clap of thunder from the sky with the ability to cut down large numbers of troops or fortifications of any kind in a split second. We can only pray that these are rumors and nothing more."
+ new_institution_events.68.a: "This changes everything..."
+ 
+ barbarossa.999.t: "HIDDEN EVENT"
+ barbarossa.999.d: "If you're seeing this you've discovered a workaround to a bug! Congrats, this tag shouldn't be played here but will not cause harm if you do so. This event actually is to kill this tag so it doesnt exist. Sorry."
+ barbarossa.999.e: "Excuse me?"
+ sikandar.4444.t: "Hidden"
+ sikandar.4444.d: "Hidden"
+ sikandar.4444.a: "Hidden"
+ flavor_cum.1.c: "We shall throw off the shackles of our oppressors!"
+ delhi_empire.559.t: "Hidden"
+ delhi_empire.559.d: "Hidden"
+ delhi_empire.559.a: "Hidden"
+ 
+ fla_eng_wls_tt: "We can offer the Welsh independence for a hefty price, we could gain quite a lot from extorting them after all."
+ flaeng.4.c: "It is never too late!" 
+ flavor_fla_fra.26.t: "Hidden"
+ flavor_fla_fra.26.d: "Hidden"
+ flavor_fla_fra.26.a: "Hidden"
+ flavor_fla_fra.27.desc: "Hidden"
+ 
+ icelandflavor.4.t: "temp"
+ icelandflavor.4.d: "temp"
+ icelandflavor.4.a: "temp"
+ 
+ flaflavorlith.6.t: "The Union of Queen Jogaila"
+ flaflavorlith.6.d: "LOCALISE ME PLS DEVS"
+ flaflavorlith.6.a: "We must retain the Jagiellon Dynasty"
+ flaflavorlith.6.b: "We shall stay true to our roots!"
+ 
+ flaflavorlith.5.c: "We do not need this!"
+ 
+ fla_maghreb.8.t: "The Unique Culture of Tripolitania"
+ fla_maghreb.8.a: "We are not just Berbers!"
+ fla_maghreb.8.b: "No! We stay true to our roots."
+ 
+ fla_maghreb.7.t: "The Unique Culture of Shilha"
+ fla_maghreb.7.d: "North Africa has been changing ever since the Arab occupation of it centuries ago. However some Berber tribes in the region has tried hard to resist the change as they do not agree with the teachings that are brought to them. It appears our people are slowly begining to accept these changes, we must react to this soon otherwise our people may make the decision for us."
+ fla_maghreb.7.a: "We are not just Berbers!"
+ fla_maghreb.7.b: "No! We stay true to our roots."
+ 
+ fla_maghreb.6.t: "The Unique Culture of Kabylia"
+ fla_maghreb.6.d: "North Africa has been changing ever since the Arab occupation of it centuries ago. However some Berber tribes in the region has tried hard to resist the change as they do not agree with the teachings that are brought to them. It appears our people are slowly begining to accept these changes, we must react to this soon otherwise our people may make the decision for us."
+ fla_maghreb.6.a: "We are not just Berbers anymore!"
+ fla_maghreb.6.b: "No! We stay true to our roots."
+ 
+ crusader_states.3.a: "Now that we hold it, it shall hold its proper name!"
+ 
+ #Decisions
+ arles_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Arles§ you will no longer be allowed to form the §YKingdom of Lotharingia§."
+ lotharingia_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Lotharingia§ you will no longer be allowed to form the §YKingdom of Arles§." 
+ fla_maghreb.8.d: "There was a time when being considered a Berber was common, and even furthermore when the Berbers were not mere Nomadic Muslims from North Africa. However today they are little more than tribal pests to our great [ROOT.GovernmentName]. It appears that the Berbers of [Root.GetName] have begun to assimilate into our ways and beliefs."
+ 
+ serbian_flavour.999.t: "temp"
+ serbian_flavour.999.d: "temp"
+ 
+ fla_nestorian.37.a.tt: "The Nestorians in the  §YKashgaria§ area are coming out of hiding."
+ fla_nestorian.39.a.tt: "The Nestorians in the  §YMalabar§ area are coming out of hiding."
+ fla_nestorian.35.a.tt: "The Nestorians in the  §YJerusalem§ area are coming out of hiding."
+ fla_nestorian.33.a.tt: "The Nestorians in the  §YAntioch§ area are coming out of hiding."
+ fla_nestorian.31.a.tt: "The Nestorians in the  §YBaghdad§ area are coming out of hiding."
+ 
+ new_institution_events.67.2.a.tt: "Countries that have not yet fully §YEmbraced§! the §YGunpowder§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
+ 
+ new_institution_events.61.t: "The Beginning of Gunpowder Weaponry"
+ new_institution_events.61.d: "Even though Gunpowder weapons have been around for around a century only recently have people begun to take interest in these strange weapons from the far east. However our researchers now have innovated on existing designs and may have created the first hand held cannon. The 'Handcannon' is the first of its kind, and perhaps is a sign of things to come... Perhaps this is the edge our nation has always needed in warfare?"
+ new_institution_events.61.a: "Interesting..."
+ 
+ golden_bull_elections.1.t: "Election time in [TAG]"
+ golden_bull_elections.1.d: "It's election time again in the Peasants Republic of [TAG]. The local leaders of each of the cities have been eleccted and now they must decide what they'd like to focus on during their time in office.\n In the Peasants Republic of Friesland there was no Nobility, the peasants ruled themselves, with a sort of Mayor leading each town independently. Each Mayor worked with the rest of the Frisian cities to create laws, and discuss other required topics. Only in times of war was there a central ruler. As such, the Frisian Government is based on a Council of all these cities, every 4 years this event will fire checking for various things in each frisian cultured province in the Low Countries, Lower Saxony, and Schleswig-Holstein areas."
+ golden_bull_elections.1.a: "An Administrative focused Council"
+ golden_bull_elections.1.b: "A Balanced Council"
+ golden_bull_elections.1.c: "A Diplomatic focused Council"
+ #From the defunct Flandy Code version of these events.
+ #golden_bull_elections.1.t: "Hidden Event - Golden Bull Elections 1"
+ #golden_bull_elections.1.d: "This event caculates a variable based on how many provinces in the Flanders, Netherlands, Holland, Frisian, Wester, Lower Saxony, and Holstein areas are Frisian. A number of 3/6/9/12/15/18 is picked, and then added to the previous numbers. This is all this event does."
+ #golden_bull_elections.1.a: "Hidden Event response"
+ #golden_bull_elections.2.t: "Hidden event- Golden Bull Elections 2"
+ #golden_bull_elections.2.d: "This event caculates how many provinces were used to get the previous sum."
+ #golden_bull_elections.2.a: "Hidden Event Response"
+ #golden_bull_elections.3.t: "Hidden Event - Golden Bull Elections 3"
+ #golden_bull_elections.3.d: "This event divides the values of golden_bull_elections.1 by golden_bull_elections.2 to determine their average."
+ #golden_bull_elections.3.a: "Hidden Event Response"
+ #golden_bull_elections.4.t: "Hidden Event - Golden Bull Elections 4"
+ #golden_bull_elections.4.d: "This event checks the number we got from golden_bull_elections.3 against 5 possible values, then gives us base ruler stats based on that. Example: 6 would be 2/2/2 because 2+2+2=6"
+ #golden_bull_elections.4.a: "Hidden Event Response"
+ 
+ golden_bull_elections.26.t: "The Frisian Council meeting of [GetYear]"
+ golden_bull_elections.26.d: "At the most recent yearly meeting our Council had they discussed administrative matters and how they can improve how each individual city handles administrative matters. A few topics were discussed, such as city planning, this year's harvest, and road connections between cities. There have been both short term and long term propositions to each problem, how shall we proceed?"
+ golden_bull_elections.26.a: "A long term plan is best"
+ golden_bull_elections.26.b: "A short term plan will work better currently"
+ golden_bull_elections.27.t: "The Frisian Council meeting of [GetYear]"
+ golden_bull_elections.27.d: "At the most recent yearly meeting our Council had they discussed diplomatic matters and how they can better improve relations with neighboring Nobles, the Papacy, and the Holy Roman Emperor. It is vital for us to ensure the next Holy Roman Emperor recognizes Frisian Freedom, and so we need to be proactive about combating these potential future problems. How shall we proceed?"
+ golden_bull_elections.27.a: "A long term plan is best"
+ golden_bull_elections.27.b: "A short term plan will work better currently"
+ golden_bull_elections.28.t: "The Frisian Council meeting of [GetYear]"
+ golden_bull_elections.28.d: "At the most recent yearly meeting our Council had they discussed matters of the military, specifically in how we can keep our levies trained and ready for if a war were to break out. We're short on weapons, and armor as it stands currently and it may be some time before we can have the proper tools to equip our troops. If we wanted we could try a short term solution with lower quality armor and weapons however this could backfire. How shall we proceed?"
+ golden_bull_elections.28.a: "A long term plan is best"
+ golden_bull_elections.28.b: "A short term plan will work better currently"
+ golden_bull_elections.29.t: "The Frisian Council meeting of [GetYear]"
+ golden_bull_elections.29.d: "At the most recent yearly meeting our Council had they discussed vital administrative matters. As it stands currently vital roads connecting our capital to many neighboring cities is in disrepair and is causing trouble with banditry. If we do not act soon this may grow into a much later problem that begins to drain our coffers. How shall we tackle this problem?"
+ golden_bull_elections.29.a: "A long term plan is best"
+ golden_bull_elections.29.b: "A short term plan will work better currently"
+ golden_bull_elections.30.t: "The Frisian Council meeting of [GetYear]"
+ golden_bull_elections.30.d: "At the most recent yearly meeting our Council had they discussed vital diplomatic matters and how they can be solved. Currently there are Nobility from neighboring Duchies that are trying to exert power over our villages and it is proving to be a problem. If we do not act soon we may find ourselves at war. How shall we tackle this problem?"
+ golden_bull_elections.30.a: "A long term plan is best"
+ golden_bull_elections.30.b: "A short term plan will work better currently"
+ golden_bull_elections.31.t: "The Frisian Council meeting of [GetYear]"
+ golden_bull_elections.31.d: "At the most recent yearly meeting our Council had they discussed vital matters of the military. As it stands currently we are on the verge of war and our troops are not only poorly equipped, but we are short a significant portion of our expected recruits for this year. We must act now if we wish to prevent this from causing more trouble then it currently is. How shall we tackle this problem?"
+ golden_bull_elections.31.a: "A long term plan is best"
+ golden_bull_elections.31.b: "A short term plan will work better currently"
+ 
+ flaeng.32.c: "Down with the King!"
+ 
+ flaageevents.3.t: "The Begining of Colonialism"
+ flaageevents.3.d: "Our recent choice to explore unfamiliar waters has lead to an increase in Sailors joining the ranks of our Navy, which in turn has lead to an increase in the number of boats sailing out of our ports! On top of all this there are whispers from the Nobles that a well known sailor is interested in finding a westernly route to the Indies in an effort to reduce the time it takes to send and recieve goods from the area. Perhaps this man may be exactly what we need?"
+ flaageevents.3.a: "I smell profit!"
+ 
+ flaageevents.4.t: "The Begining of Colonialism"
+ flaageevents.4.d: "The news has been around the court all week! A well known sailor from a nearby nation has set off to discover a westernly route to the Indies in an effort to reduce the time and cost required to aquire the sought after goods of the east! Some look down on this sailor and others hold high hopes for him, however our Advisors and Spies are keeping a close eye on the situation at hand for us. It sounds that if nothing else a new Age on the world stage may beginning, what some call the Age of Colonialism!"
+ flaageevents.4.a: "Colonialism? Indies? What is this nonsense! Feudalism never will end!"
+ flaageevents.4.tt: "The Age of Feudalism will end in 120 Months, afterwards the Age of Discovery will begin!"
+ 
+ flaageevents.5.t: "The Begining of Colonialism"
+ flaageevents.5.d: "The news has been around the court all week! A well known sailor from a far away nation has set off to discover a westernly route to the Indies in an effort to reduce the time and cost required to aquire the sought after goods of the east! Some look down on this sailor and others hold high hopes for him, however our Advisors and Spies are keeping a close eye on the situation at hand for us. It sounds that if nothing else a new Age on the world stage may beginning, what some call the Age of Colonialism!"
+ flaageevents.5.a: "What is this nonsense? Feudalism will never end!"
+ 
+ flaageevents.10.t: "Hidden event"
+ flaageevents.10.d: "This hidden event removes vision of NA for countries who do not have a land connection to it, who are not Natives, or Norway."
+ flaageevents.10.a: "Hidden Response"
+ aksum_nation_title: "Reform Aksum"
+ 
+ reform_diplomancy_ai_title: "Hidden AI decision"
+ reform_diplomancy_ai_desc: "Hidden AI decision"
+ reform_the_army_ai_title: "Hidden AI decision"
+ reform_the_army_ai_desc: "Hidden AI decision"
+ 
+ turkish_nation_1356_title: "Restore the Sultanate of Rum"
+ turkish_nation_1356_desc: "Centuries ago, our forefathers conquered much of Anatolia and established the Sultanate of Rum, a testament to the power of the Turkic peoples which was capable of defeating even the Sons of Rome. However, after the Mongol invasions the Sultanate went into steady decline until its dissolusion, resulting in the petty infighting witnessed in the last few decades. Now, however, we have reached a position where we stand as the dominant force in Asia Minor, and we can restore the Sultanate and unify our people once again!"
+ kitara_reborn_nation_title: "Proclaim Kitaran Hegemony"
+ kitara_reborn_nation_desc: "The Great Kitaran Empire was destroyed many years ago after its enemies sought to forcefully fulfil an ancient prophecy. Our people fled south, and after uniting our people once again we are now in a position to restore our past glory."
+ greater_zimbabwe_nation_title: "Unite Zimbabwe"
+ greater_zimbabwe_nation_desc: "After much conquest and diplomatic manoeuvering, we have managed to unite a majority of the Zimbabwean Plateau under one banner. Now, the next step is to unite our people under the title of Great Zimbabwe!"
+ aksum_nation_desc: "The Horn of Africa has been in a constant state of war and misery since time immemorial. Centuries ago, the Aksumite Empire was a powerful Empire dominating the Red Sea until the Ethiopian Empire crushed it. Now, after much conquest, we have destroyed the Ethiopians and can restore the ancient Empire!"
+ 

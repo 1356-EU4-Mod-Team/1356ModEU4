@@ -154,9 +154,10 @@ RHT = "countries/Rasht.txt"
 SCN = "countries/Sican.txt"
 
 #Africa
-NRI ="countries/Nri.txt"
+NRI = "countries/Nri.txt"
 ZBB = "countries/GreaterZimbabwe.txt"
 AKS = "countries/Aksum.txt"
+WAK = "countries/Kitara.txt"
 
 #Far East
 SRI = "countries/Srivijaya.txt"

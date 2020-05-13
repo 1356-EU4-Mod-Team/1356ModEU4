@@ -203,7 +203,7 @@ viking_republic_government_name_flavor = { #Special thanks to Raumarici on disco
 	trigger = {
 		tag = VIK
 		primary_culture = icelandic
-		primary_religion = norse_pagan_reformed
+		religion = norse_pagan_reformed
 		government = republic
 	}
 }
