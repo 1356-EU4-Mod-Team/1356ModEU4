@@ -1,0 +1,107 @@
+
+
+##############
+###Tier 1.1###
+############## 
+
+agricultural_hamlets_reform = {
+	icon = peasants
+	allow_normal_conversion = yes
+	modifiers = {
+		production_efficiency = 0.10
+	}
+	custom_attributes = {
+		enables_sovereign_taxation = yes #10% tax in vassals
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+urban_centers_reform = {
+	icon = people_walking
+	allow_normal_conversion = yes
+	modifiers = {
+		global_prov_trade_power_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_trader_strongholds = yes #2.5% base trade power in 25+ dev provinces
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+freedom_of_movement_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	modifiers = {
+		build_cost = -0.05
+	}
+	custom_attributes = {
+		enables_fertile_lands = yes #-10% development cost in grasslands and farmlands
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+##############
+###Tier 1.2###
+############## 
+
+representatives_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	modifiers = {
+		diplomatic_upkeep = 1
+	}
+	custom_attributes = {
+		enables_sovereign_militaries = yes #15% manpower and 15% forcelimit in vassals
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+foreign_pages_reform = {
+	icon = politician
+	allow_normal_conversion = yes
+	modifiers = {
+		diplomatic_reputation = 1
+	}
+	custom_attributes = {
+		enables_foreign_notables = yes #+0.1 legitimacy for each 100+ dev ally
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+kissing_the_ring_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	modifiers = {
+		reduced_liberty_desire = 10
+	}
+	custom_attributes = {
+		enables_bound_to_the_one_ring = yes #+15% vassal tax while no vassal has over 25% liberty desire
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+theatrical_performance_reform = {
+	icon = peacock_throne
+	allow_normal_conversion = yes
+	modifiers = {
+		prestige = 0.5
+	}
+	custom_attributes = {
+		enables_prestigeous_theatres = yes #+1 splendor if you have 50+ prestige
+	}
+	ai = {
+		factor = 1
+	}
+}
