@@ -2,7 +2,8 @@
 
  #New Idea Group Localization
  permanent_war_ideas: "Permanent War Ideas"
- permanent_war_ideas_desc: "Perm War Ideas"
+ permanent_war_ideas_desc: "Permanent War Ideas"
+ permanent_war_ideas_bonus: "Endless Warfare"
  tenacious_people: "Tenacious People"
  tenacious_people_desc: "There is no good in anything until it is finished. --Genghis Khan"
  army_infrastructure: "Training and Infrastructure"
@@ -20,6 +21,7 @@
  
  imperial_ideas: "Imperial Ideas"
  imperial_ideas_desc: "Empire Ideas"
+ imperial_ideas_bonus: "Eternal Empire"
  courtly_education: "Courtly Education"
  courtly_education_desc: "To know how to dissimulate is the knowledge of kings. --Cardinal Richelieu"
  imperial_centralization: "Imperial Centralization"
@@ -37,6 +39,7 @@
  
  marcher_lord_ideas: "Marcher Lord Ideas"
  marcher_lord_ideas_desc: "Vassal Swarm Ideas"
+ marcher_lord_ideas_bonus: "Bannerlord Warfare"
  feudal_levies: "Feudal Levies"
  feudal_levies_desc: "We make sure that the sons of free-owning landsmen are given honor by the lords of the realm. "
  honor_and_discipline: "Honor and Discipline"
@@ -54,6 +57,7 @@
  
  royal_education_ideas: "Royal Education Ideas"
  royal_education_ideas_desc: "Learned Royal Ideas"
+ royal_education_ideas_bonus: "TraditionallyEducated Kings"
  laws_of_inheritance: "Laws of Inheritance"
  laws_of_inheritance_desc: "While the King and Queen may find themselves barren, the land will never be in question as to its next leader."
  royal_communications: "Royal Communications"
@@ -71,6 +75,7 @@
  
  grand_court_ideas: "Grand Court Ideas"
  grand_court_ideas_desc: "Lush Court Ideas"
+ grand_court_ideas_bonus: "World Renowned Court"
  permanent_diplomacy: "Permanent Diplomacy"
  permanent_diplomacy_desc: "We have placed esteemed men of breeding at the important courts of the world."
  grand_viziers: "Grand Vizier"
@@ -88,6 +93,7 @@
  
  military_doctrine_ideas: "Military Doctrine Ideas"
  military_doctrine_ideas_desc: "Military Doctrine Ideas"
+ military_doctrine_ideas_bonus: "Ways of War"
  uniform_marshaling_points: "Uniform Marshaling Points"
  uniform_marshaling_points_desc: "In the early modern era, some nations made great innovations in streamlining how citizen soldiers formed into their units and headed towards the front."
  military_mentorship: "Military Mentorship"
@@ -232,13 +238,4 @@
  1356_trained_saboteurs: "Trained Saboteurs"
  office_of_the_imperial_cabinet: "Office of the Imperial Cabinet"
  1356_Gallant_Officers: "Gallant Officers"
- 
- 
-  
- 
- 
- 
-   
-  
- 
  

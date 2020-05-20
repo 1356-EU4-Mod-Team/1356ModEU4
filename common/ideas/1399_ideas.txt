@@ -3036,3 +3036,53 @@ ING_ideas = { #Ingria #Built around the idea that they exist only for Novgorod t
 		leader_siege = 1
 	}
 }
+
+
+
+MDL_ideas = { #Madagascar
+    start = {
+		tolerance_own = 1
+		privateer_efficiency = 0.33
+    }
+ 
+    bonus = {
+		global_sailors_modifier = 0.25
+		naval_forcelimit_modifier = 0.25
+    }
+    trigger = {
+        tag = MDL
+    }
+    free = yes
+   
+    
+    Malgasy_Kingdoms_jibm = {
+		global_tax_modifier = 0.1
+    }
+	Malgasy_piracy_jibm = {
+		may_perform_slave_raid = yes
+		may_perform_slave_raid_on_same_religion = yes
+		range = 0.33
+    }
+    respected_malgasy_governors_jibm = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 0.5
+	}
+
+	sakalava_trade_jibm = {
+		ship_power_propagation = 0.3
+		may_explore = yes
+	}
+	
+    malgasy_highland_warriors_jibm = {
+		land_morale = 0.1
+	}
+	foreignors_in_port_jibm = {
+		diplomatic_upkeep = 1
+		trade_range_modifier = 0.5
+	}
+	agricultural_dikes_jibm = {
+		development_cost = -0.1
+	}
+}

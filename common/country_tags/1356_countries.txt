@@ -158,6 +158,7 @@ NRI = "countries/Nri.txt"
 ZBB = "countries/GreaterZimbabwe.txt"
 AKS = "countries/Aksum.txt"
 WAK = "countries/Kitara.txt"
+MDL = "countries/Madagascar.txt"
 
 #Far East
 SRI = "countries/Srivijaya.txt"
