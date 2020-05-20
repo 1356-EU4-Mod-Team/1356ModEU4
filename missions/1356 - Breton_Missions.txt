@@ -6,6 +6,7 @@ bri_colonial_chain = {
 	
 	potential = {
 		tag = BRI	
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -160,6 +161,7 @@ bri_secure_borders = {
 	
 	potential = {
 		tag = BRI	
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -244,6 +246,7 @@ bri_end_the_succession = {
 			tag = BLS
 			tag = BRI
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -306,6 +309,7 @@ bri_celtic_reconquest = { #We must reunite the celtic nations under one banner!
 	
 	potential = {
 		tag = BRI	
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	

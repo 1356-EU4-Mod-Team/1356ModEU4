@@ -1037,6 +1037,7 @@ archduchy_reform = {
 			has_reform = archduchy_reform
 			have_had_reform = archduchy_reform
 		}
+		tag = HAB
 	}
 	legacy_equivalent = archduchy_legacy
 	lock_level_when_selected = yes

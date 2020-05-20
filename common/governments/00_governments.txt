@@ -260,6 +260,7 @@ republic = {
 		ahm_republic
 		viking_republic_legacy
 		caspian_peasants_republic_legacy
+		tsardom_republic_legacy
 		#####1356 Additions End#####
 	}
 	reform_levels = {
@@ -289,6 +290,7 @@ republic = {
 				ahm_republic_reform
 				viking_republic_reform
 				caspian_peasants_republic_reform
+				tsardom_republic
 				#####1356 Additions End#####
 			}
 		}

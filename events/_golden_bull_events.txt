@@ -1,0 +1,22 @@
+# Set Golden Bull global flag
+country_event = {
+	id = golden_bull_events.1
+	title = golden_bull_events.EVTNAME1
+	desc = golden_bull_events.EVTDESC1
+	picture = DIPLOMACY_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = golden_bull_mod_active
+		}
+	}
+
+	option = {
+		name = golden_bull_events1.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}

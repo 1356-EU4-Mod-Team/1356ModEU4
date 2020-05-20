@@ -8,6 +8,7 @@ bur_integrate_PBG_tree = { #Burgundy/Arles/Lotharingia - Conquest of Arles tree
 			tag = ARE
 			tag = LOT
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 		
@@ -56,6 +57,7 @@ bur_arles_conquest_tree = { #Burgundy/Arles/Lotharingia - Conquest of Arles tree
 			tag = BUR
 			tag = ARE
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 		
@@ -177,6 +179,7 @@ ARE_start_formation_tree = { #Burgundy/Arles - Form Arles Tree
 			tag = BUR
 			tag = ARE
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -300,6 +303,7 @@ bur_tree_5 = { #Burgundian Minor - Minor Tree to form Burgundy
 			tag = LOR 
 			tag = PBG
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -726,6 +730,7 @@ bur_lotharingia_imperial_tree = { #Burgundy/Arles/Lotharingia - Lotharingia Tree
 			tag = ARE
 			tag = LOT
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -1082,6 +1087,7 @@ bur_claims_lowlands_tree = { #Burgundy/Arles/Lotharingia - Lowland Claims Tree
 			tag = ARE
 			tag = LOT
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -1552,6 +1558,7 @@ LOT_tree_start = { #Burgundy/Lotharingia - Lotharingia Start Tree
 			tag = BUR
 			tag = LOT
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -1761,7 +1768,10 @@ bur_annex_auvergune = {#Burgundy/Arles/Lotharingia - Vassal/Union Tree #Needs mo
 	slot = 4
 	generic = no
 	ai = yes
-	potential = { tag = BUR }
+	potential = { 
+		tag = BUR
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 	
 	1356_bur_enforce_claim_over_auvergune = {
@@ -1795,6 +1805,7 @@ bur_vassal_tree = {#Burgundy/Arles/Lotharingia - Vassal/Union Tree
 			tag = ARE
 			tag = LOT
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 
@@ -1848,6 +1859,7 @@ bur_annex_normandy = {#Burgundy/Arles/Lotharingia - Misc French Claims Tree
 			tag = BUR
 			tag = ARE
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -1896,6 +1908,7 @@ bur_form_netherlands_tree = { #Burgundy - Form the Netherlands
 	ai = yes
 	potential = { 
 		tag = BUR
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -2124,6 +2137,7 @@ bur_integrate_nev_tree = { #Burgundy/Arles/Lotharingia - Integrate Nevers
 			tag = ARE
 			tag = LOT
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -2193,7 +2207,10 @@ bur_into_france_tree_frenchland = { #Burgundy - Push into France Tree
 	slot = 5
 	generic = no
 	ai = yes
-	potential = { tag = BUR }
+	potential = { 
+		tag = BUR 
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 	
 	1356_bur_cross_the_loire = {
@@ -2303,7 +2320,10 @@ bur_into_france_tree = { #Burgundy - Go Form France Tree
 	slot = 5
 	generic = no
 	ai = yes
-	potential = { tag = BUR }
+	potential = { 
+		tag = BUR
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 
 	1356_bur_annex_duchy_valois = {

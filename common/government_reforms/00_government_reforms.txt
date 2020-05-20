@@ -66,6 +66,48 @@ defaults_reform = {
 ######1356 Changes Start######
 #Legacy Governments
 
+tsardom_republic_legacy = {
+	# government mechanics flags go here
+	icon = "king"
+	monarchy = yes
+	legacy_government = yes
+	allow_normal_conversion = no
+	duration = 8
+
+	valid_for_new_country = no
+	allow_convert = no
+	
+	republican_name = yes
+	royal_marriage = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		culture_group = east_slavic
+		religion = orthodox
+	}
+
+    fixed_rank = 3
+	modifiers = {
+		max_states = 2
+		global_tax_modifier = 0.1
+		max_absolutism = -40
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+		claim_states = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
 patriarch_government_legacy = {
 	icon = "papacy"
 	allow_normal_conversion = no

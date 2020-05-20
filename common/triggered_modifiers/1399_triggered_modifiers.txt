@@ -196,29 +196,3 @@ pentarchy_mod_coptic = {
 	prestige = 0.5
 	missionaries = 1
 }
-
-###########################################
-# Jerusalem held by Abrahamic Faiths
-###########################################
-jerusalem_held = {
-	potential = {
-		normal_or_historical_nations = yes
-		OR = {
-			religion_group = christian
-			religion_group = muslim
-			religion = jewish
-		}
-		has_discovered = 379	# Judea
-	}
-
-	trigger = {
-		owns = 379 # Judea
-	}
-
-	missionaries = 1
-	prestige = 0.5
-	legitimacy = 0.5
-	horde_unity = 0.5
-	devotion = 1
-	republican_tradition = 0.25
-}

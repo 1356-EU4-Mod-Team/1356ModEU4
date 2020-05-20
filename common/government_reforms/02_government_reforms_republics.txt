@@ -773,6 +773,7 @@ novgorod_republic_gov = { #The New Russian Noble Republic Government
 	potential = {
 		NOT = { has_reform = tsardom }
 		NOT = { have_had_reform = tsardom }
+		NOT = { has_reform = tsardom_republic }
 		religion = orthodox
 		OR = {
 			culture_group = east_slavic
@@ -926,6 +927,64 @@ viking_republic_reform = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = no
 		enables_aristocratic_idea_group = yes
+	}
+}
+
+tsardom_republic = {
+	icon = "russian_principality"
+	allow_normal_conversion = yes
+	potential = {
+		religion = orthodox
+		OR = {
+			AND = {
+				tag = RUS
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = UKR
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = tsardom_republic
+			}
+		}
+	}
+	fixed_rank = 3
+	
+	republican_name = yes
+	royal_marriage = yes
+	duration = 4
+	legacy_equivalent = tsardom_republic_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		culture_group = east_slavic
+		religion = orthodox
+	}
+
+	modifiers = {
+		merchants = 1
+		global_manpower_modifier = 0.20
+		caravan_power = 0.33
+		global_trade_goods_size_modifier = 0.1
+		global_autonomy = -0.05
+		max_states = 5
+	}
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		is_merchant_republic = no
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+		claim_states = yes
 	}
 }
 

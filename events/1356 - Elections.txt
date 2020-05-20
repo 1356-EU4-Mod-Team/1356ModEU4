@@ -249,6 +249,7 @@ country_event = { #Buff Council Adm
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
+	always = no
 		OR = {
 			tag = FRI #Frisia
 			tag = EFR #East Frisia
@@ -283,6 +284,7 @@ country_event = { #Buff Council Dip
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
+	always = no
 		OR = {
 			tag = FRI #Frisia
 			tag = EFR #East Frisia
@@ -317,6 +319,7 @@ country_event = { #Buff Council Mil
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
+	always = no
 		OR = {
 			tag = FRI #Frisia
 			tag = EFR #East Frisia
@@ -351,6 +354,7 @@ country_event = { #Debuff Council Adm
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
+	always = no
 		OR = {
 			tag = FRI #Frisia
 			tag = EFR #East Frisia
@@ -385,6 +389,7 @@ country_event = { #Debuff Council Dip
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
+		always = no
 		OR = {
 			tag = FRI #Frisia
 			tag = EFR #East Frisia
@@ -392,7 +397,7 @@ country_event = { #Debuff Council Dip
 		}
 		has_reform = frisian_republic_gov
 		NOT = { DIP = 1 }
-		NOT = { has_ruler_flag = monarch_point_remo`ved_dip }
+		NOT = { has_ruler_flag = monarch_point_removed_dip }
 		NOT = { has_ruler_flag = monarch_point_declined_removal_dip }
 	}
 	
@@ -419,6 +424,7 @@ country_event = { #Debuff Council Mil
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
+	always = no
 		OR = {
 			tag = FRI #Frisia
 			tag = EFR #East Frisia

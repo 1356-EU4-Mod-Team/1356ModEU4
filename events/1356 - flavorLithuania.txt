@@ -389,7 +389,7 @@ country_event = {
 			adm = 5
 			dip = 3
 			mil = 5
-			female = yes
+			female = no
 		}
 		add_historical_friend = LIT
 		LIT = {
@@ -424,6 +424,7 @@ country_event = {
 		}
 	}
 }
+
 #Written by Genomega
 #Union of Krewo (Lithuania)
 country_event = {

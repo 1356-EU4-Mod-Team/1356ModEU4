@@ -6,3 +6,26 @@
 
 
 #Unused currently
+
+
+#Nations that have both 1356 & Paradox missions. Currently we're not using this on account of France & Burgundy requiring their trees to function.
+
+country_has_both_paradox_and_golden_bull_missions = { 
+	OR = {
+		tag = DAN
+		tag = BRI
+		tag = MNF
+		tag = BLS
+		tag = BUR
+		tag = HAI
+		tag = NRM
+		tag = CYP
+		tag = KNI
+		tag = KOJ
+		tag = ACH
+		tag = ATH
+		#Not included. Sami, France, French Minors, Finnland, Yuan, Gascony, Aquitaine, 
+		#tag = FRA #not included for compatibility reasons
+		#tag = YUA #Not included for compatibility reasons
+	}
+}

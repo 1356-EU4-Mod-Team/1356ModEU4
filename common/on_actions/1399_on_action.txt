@@ -71,27 +71,27 @@ on_siege_won_country = {
 
 #WIP
 
-on_four_year_pulse_4 = { #1356 Election Events
-	random_events = {
-		golden_bull_elections.1
-		
-	}
-
-}
-
-# country
-on_new_term_election = {
-	events = {
-		golden_bull_elections.1 #Peasant Republic/Frisian Republic
-	}
-}
+#on_four_year_pulse_4 = { #1356 Election Events
+#	random_events = {
+#		golden_bull_elections.1
+#		
+#	}
+#
+#}
 
 # country
-on_death_election = {
-	if = {
-		limit = {
-			has_reform = frisian_republic_gov
-		}
-		country_event = { id = golden_bull_elections.1 }
-	}
-}
+#on_new_term_election = {
+#	events = {
+#		golden_bull_elections.1 #Peasant Republic/Frisian Republic
+#	}
+#}
+
+# country
+#on_death_election = {
+#	if = {
+#		limit = {
+#			has_reform = frisian_republic_gov
+#		}
+#		country_event = { id = golden_bull_elections.1 }
+#	}
+#}

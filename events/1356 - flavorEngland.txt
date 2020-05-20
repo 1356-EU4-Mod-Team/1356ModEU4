@@ -85,7 +85,7 @@ country_event = { #Spawns Duchy of York circa 1380
 		245 = {
 			spawn_rebels = {
 			type = nationalist_rebels
-			friend = YRK
+			#friend = YRK
 			win = yes
 			size = 1
 			}
@@ -93,7 +93,7 @@ country_event = { #Spawns Duchy of York circa 1380
 		4368 = {
 			spawn_rebels = {
 			type = nationalist_rebels
-			friend = YRK
+			#friend = YRK
 			win = yes
 			size = 1
 			}
@@ -101,7 +101,7 @@ country_event = { #Spawns Duchy of York circa 1380
 		4367 = {
 			spawn_rebels = {
 			type = nationalist_rebels
-			friend = YRK
+			#friend = YRK
 			win = yes
 			size = 1
 			}
