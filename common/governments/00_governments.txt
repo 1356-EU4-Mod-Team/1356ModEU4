@@ -48,6 +48,21 @@ monarchy = {
 				#####END 1356 CHANGES#####
 			}
 		}
+		tier_1 = {
+			reforms = {
+				agricultural_hamlets_reform
+				urban_centers_reform
+				freedom_of_movement_reform
+			}
+		}
+		tier_2 = {
+			reforms = {
+				representatives_reform
+				foreign_pages_reform
+				kissing_the_ring_reform
+				theatrical_performance_reform
+			}
+		}
 		hereditary_vs_nobility = {
 			reforms = {
 				enforce_privileges_reform
