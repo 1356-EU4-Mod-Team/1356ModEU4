@@ -85,8 +85,6 @@ grand_duchy_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		max_states = 3
-		movement_speed = 0.1
-		discipline = 0.015
 	}
 }
 
