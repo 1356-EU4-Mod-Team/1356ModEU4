@@ -1346,7 +1346,15 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 	on_start = new_institution_events.61
 
 	can_embrace = {
-		owner = { NOT = { government = tribal } }
+		owner = { 
+			OR = {
+				NOT = { government = native }
+				NOT = { government = tribal_federation }
+				NOT = { government = tribal_despotism }
+				NOT = { government = tribal_kingdom }
+				NOT = { government = siberian_tribe }
+			}
+		}
 	}
 
 	embracement_speed = { #Needs more work

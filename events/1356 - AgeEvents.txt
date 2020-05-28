@@ -143,6 +143,7 @@ country_event = { #Event to give Nations with Exploration Ideas a range bonus. #
 		NOT = { has_country_flag = exploration_ideas_early_bonus }
 		num_of_ports = 6
 		treasury = 75
+		technology_group = western 
 	}
 	
 	mean_time_to_happen = {
@@ -173,8 +174,8 @@ country_event = { #Event to give Nations with Exploration Ideas a range bonus. #
 
 country_event = { #Gives Colonial Power that triggers the End of Feudalism an event notifying them what they did
 	id = flaageevents.3
-	title = "flaageevents.3.t"
-	desc = "flaageevents.3.d"
+	title = flaageevents.3.t
+	desc = flaageevents.3.d
 	picture = HARBOUR_eventPicture
 	
 	fire_only_once = yes
@@ -188,8 +189,10 @@ country_event = { #Gives Colonial Power that triggers the End of Feudalism an ev
 	mean_time_to_happen = {
 		months = 1
 	}
+		
 	option = {
 		name = flaageevents.3.a
+		
 		add_navy_tradition = 15
 		add_yearly_sailors = 2
 		create_explorer = 50
@@ -208,7 +211,7 @@ country_event = { #Gives Colonial Power that triggers the End of Feudalism an ev
 					NOT = { tag = ROOT }
 					NOT = { knows_country = ROOT }
 				}
-				country_event = { flaageevents.5 }
+				country_event = { id = flaageevents.5 }
 			}
 		}
 	}
@@ -218,33 +221,13 @@ country_event = { #Notifys players of Feudalism Ending Near Colonial Power
 	id = flaageevents.4
 	title = flaageevents.4.t
 	desc = flaageevents.4.d
-	picture = {
-		trigger = {
-			OR = {
-				NOT = { has_dlc = "Cradle of Civilization" }
-				NOT = { religion_group = muslim }
-			}
-		}
-		picture = PAINTER_ARTIST_eventPicture
-	}
-	picture = {
-		trigger = {
-			has_dlc = "Cradle of Civilization"
-			religion_group = muslim
-		}
-		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
-	}
+	picture = PAINTER_ARTIST_eventPicture
 
 	is_triggered_only = yes
 
-	trigger = {
-		always = yes			#
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
 	option = {
 		name = flaageevents.4.a
+		
 		custom_tooltip = flaageevents.4.tt
 	}
 }
@@ -254,32 +237,9 @@ country_event = { #Notifys far away players of Feudalism Ending
 	id = flaageevents.5
 	title = flaageevents.5.t
 	desc = flaageevents.5.d
-	picture = {
-		trigger = {
-			OR = {
-				NOT = { has_dlc = "Cradle of Civilization" }
-				NOT = { religion_group = muslim }
-			}
-		}
-		picture = PAINTER_ARTIST_eventPicture
-	}
-	picture = {
-		trigger = {
-			has_dlc = "Cradle of Civilization"
-			religion_group = muslim
-		}
-		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
-	}
+	picture = PAINTER_ARTIST_eventPicture
 
 	is_triggered_only = yes
-	
-	trigger = {
-		always = yes			#
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
 
 	option = {
 		name = flaageevents.5.a

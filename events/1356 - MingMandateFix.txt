@@ -36,6 +36,8 @@ country_event = { #Ming wins and becomes Emperor
 					is_core = YUA
 				}
 				cede_province = MNG
+				remove_core = YUA
+				remove_core = KHA
 				add_core = MNG
 				set_local_autonomy = -100
 			}

@@ -150,15 +150,15 @@ province_event = {
 	}
 	
 	option = {
-	name = flaflavorlith.2.a
-	change_religion = catholic
-	add_province_modifier = {
-		name = "religious_zeal_at_conv"
-		duration = 1500
-	}
-	
+		name = flaflavorlith.2.a
+		change_religion = catholic
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 1500
+		}
 	}
 }
+
 #Written by DanJonMin
 #country_event = {
 #	id = flaflavorlith.3
@@ -320,7 +320,7 @@ country_event = {
 	}	
 }
 
-#Union of Krewo (Poland)
+#Union of Krewo (Poland) (Poland is a player version & Lith is an AI)
 country_event = {
 	id = flaflavorlith.6
 	title = flaflavorlith.6.t
@@ -337,7 +337,6 @@ country_event = {
 		ai = no
 		has_regency = no
 		is_female = yes
-		NOT = { has_reform = celestial_empire }
 		LIT  = {
 			ai = yes
 			exists = yes
@@ -426,6 +425,7 @@ country_event = {
 }
 
 #Written by Genomega
+
 #Union of Krewo (Lithuania)
 country_event = {
 	id = flaflavorlith.4
@@ -440,13 +440,12 @@ country_event = {
 	trigger = {
 		tag = LIT
 		is_subject = no
-		NOT = { has_reform = celestial_empire }
 		POL = {
 			ai = yes
 			exists = yes
 			is_subject = no
 			was_player = no
-			NOT = { junior_union_with = LIT }
+			#NOT = { junior_union_with = LIT } #Redundant if you check for is_subject
 			dynasty = "d'Anjou"
 			is_female = yes
 		}

@@ -10,7 +10,7 @@ province_event = {
 	fire_only_once = yes
 
 	trigger = {
-		ai = no
+		owner = { ai = no }
 		358 = {
 			has_great_project = great_library
 		}
@@ -48,7 +48,7 @@ country_event = {
 
 	option = {
 		name = "flagreatproject.2.a"
-		owner = { add_prestige = 30 }
+		add_prestige = 30
 		add_country_modifier = { 
 			name = alx_great_library_perma_modifier
 			duration = -1 
@@ -69,7 +69,7 @@ country_event = {
 	trigger = {
 		has_country_modifier = alx_great_library_perma_modifier
 		NOT = { owns = 358 }
-		has_great_project = great_library
+		358 = { has_great_project = great_library }
 	}
 	
 	mean_time_to_happen = {
@@ -78,7 +78,7 @@ country_event = {
 
 	option = {
 		name = "flagreatproject.3.a"
-		owner = { add_prestige = -15 }
+		add_prestige = -15
 		remove_country_modifier = alx_great_library_perma_modifier
 	}
 }
@@ -145,7 +145,7 @@ country_event = {
 		}
 		OR = {
 			owns = 151
-			controlled_by = ROOT
+			151 = { controlled_by = ROOT }
 		}
 	}
 	
@@ -213,7 +213,6 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		151 = { has_province_modifier = 1356_theodosian_walls_project_province_modifier }
 		151 = { has_great_project = theodosian_walls_great_project }
 		has_country_flag = destroyed_theodosian_walls_flag
 		has_country_flag = great_project_theodosian_walls_flag
@@ -228,7 +227,7 @@ country_event = {
 	option = {
 		name = "flagreatproject.8.a"
 		 add_prestige = 10
-		 remove_country_flag = destroyed_theodosian_walls_flag
+		 clr_country_flag = destroyed_theodosian_walls_flag
 	}
 }
 
@@ -243,7 +242,6 @@ country_event = {
 	major = yes
 
 	trigger = {
-		1020 = { has_province_modifier = 1356_kinkaku_ji_great_project_province_modifier }
 		1020 = { has_great_project = kinkaku_ji_great_project }
 		has_country_flag = great_project_kinkaku_ji_flag
 		owns = 1020
@@ -277,8 +275,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		361 = { has_province_modifier = 1356_madrassa_mosque_great_project_province_modifier }
-		361 = { has_great_project = build_madrassa_mosque_great_project }
+		361 = { has_great_project = madrassa_mosque_great_project }
 		has_country_flag = great_project_madrassa_mosque_flag
 		owns = 361
 	}
@@ -311,8 +308,8 @@ country_event = {
 	major = yes
 
 	trigger = {
-		563 = { has_province_modifier = 1356_adina_mosque_great_project_province_modifier }
-		563 = { has_great_project = 1356_adina_mosque_great_project_province_modifier }
+		#563 = { has_province_modifier = 1356_adina_mosque_great_project_province_modifier }
+		563 = { has_great_project = adina_mosque_great_project }
 		has_country_flag = great_project_adina_mosque_flag
 		owns = 563
 	}
@@ -345,7 +342,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		85 = { has_province_modifier = 1356_cologne_cathedral_great_project_province_modifier }
+		#85 = { has_province_modifier = 1356_cologne_cathedral_great_project_province_modifier }
 		85 = { has_great_project = cologne_cathedral_great_project }
 		has_country_flag = great_project_cologne_cathedral_flag
 		owns = 85
@@ -379,7 +376,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		116 = { has_province_modifier = 1356_florence_cathedral_great_project_province_modifier }
+		#116 = { has_province_modifier = 1356_florence_cathedral_great_project_province_modifier }
 		116 = { has_great_project = florence_cathedral_great_project }
 		has_country_flag = great_project_florence_cathedral_flag
 		owns = 116
@@ -413,7 +410,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		104 = { has_province_modifier = 1356_milan_cathedral_great_project_province_modifier }
+		#104 = { has_province_modifier = 1356_milan_cathedral_great_project_province_modifier }
 		104 = { has_great_project = milan_cathedral_great_project }
 		has_country_flag = great_project_milan_cathedral_flag
 		owns = 104
@@ -447,7 +444,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		75 = { has_province_modifier = 1356_strasbourg_cathedral_great_project_province_modifier }
+		#75 = { has_province_modifier = 1356_strasbourg_cathedral_great_project_province_modifier }
 		75 = { has_great_project = strasbourg_cathedral_great_project }
 		has_country_flag = great_project_strasbourg_cathedral_flag
 		owns = 75
@@ -481,7 +478,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		295 = { has_province_modifier = 1356_moscow_cathedral_great_project_province_modifier }
+		#295 = { has_province_modifier = 1356_moscow_cathedral_great_project_province_modifier }
 		295 = { has_great_project = moscow_cathedral_great_project }
 		has_country_flag = great_project_moscow_cathedral_flag
 		owns = 295
@@ -515,7 +512,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		224 = { has_province_modifier = 1356_seville_cathedral_great_project_province_modifier }
+		#224 = { has_province_modifier = 1356_seville_cathedral_great_project_province_modifier }
 		224 = { has_great_project = seville_cathedral_great_project }
 		has_country_flag = great_project_seville_cathedral_flag
 		owns = 224
@@ -549,7 +546,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		266 = { has_province_modifier = 1356_prague_cathedral_great_project_province_modifier }
+		#266 = { has_province_modifier = 1356_prague_cathedral_great_project_province_modifier }
 		266 = { has_great_project = prague_cathedral_great_project }
 		has_country_flag = great_project_prague_cathedral_flag
 		owns = 266
@@ -583,7 +580,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		134 = { has_province_modifier = 1356_wein_cathedral_great_project_province_modifier }
+		#134 = { has_province_modifier = 1356_wein_cathedral_great_project_province_modifier }
 		134 = { has_great_project = wein_cathedral_great_project }
 		has_country_flag = great_project_wein_cathedral_flag
 		owns = 134
@@ -617,7 +614,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		236 = { has_province_modifier = 1356_london_cathedral_great_project_province_modifier }
+		#236 = { has_province_modifier = 1356_london_cathedral_great_project_province_modifier }
 		236 = { has_great_project = london_cathedral_great_project }
 		has_country_flag = great_project_london_cathedral_flag
 		owns = 236
@@ -651,7 +648,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		1744 = { has_province_modifier = 1356_antwerp_cathedral_great_project_province_modifier }
+		#1744 = { has_province_modifier = 1356_antwerp_cathedral_great_project_province_modifier }
 		1744 = { has_great_project = antwerp_cathedral_great_project }
 		has_country_flag = great_project_antwerp_cathedral_flag
 		owns = 1744
@@ -685,7 +682,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		257 = { has_province_modifier = 1356_warsaw_cathedral_great_project_province_modifier }
+		#257 = { has_province_modifier = 1356_warsaw_cathedral_great_project_province_modifier }
 		257 = { has_great_project = warsaw_cathedral_great_project }
 		has_country_flag = great_project_warsaw_cathedral_flag
 		owns = 257
@@ -719,7 +716,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		121 = { has_province_modifier = 1356_naples_cathedral_great_project_province_modifier }
+		#121 = { has_province_modifier = 1356_naples_cathedral_great_project_province_modifier }
 		121 = { has_great_project = naples_cathedral_great_project }
 		has_country_flag = great_project_naples_cathedral_flag
 		owns = 121
@@ -753,7 +750,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		227 = { has_province_modifier = 1356_lisboa_cathedral_great_project_province_modifier }
+		#227 = { has_province_modifier = 1356_lisboa_cathedral_great_project_province_modifier }
 		227 = { has_great_project = lisboa_cathedral_great_project }
 		has_country_flag = great_project_lisboa_cathedral_flag
 		owns = 227
@@ -787,7 +784,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		219 = { has_province_modifier = 1356_toledo_cathedral_great_project_province_modifier }
+		#219 = { has_province_modifier = 1356_toledo_cathedral_great_project_province_modifier }
 		219 = { has_great_project = toledo_cathedral_great_project }
 		has_country_flag = great_project_toledo_cathedral_flag
 		owns = 219
@@ -821,7 +818,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		220 = { has_province_modifier = 1356_valencia_cathedral_great_project_province_modifier }
+		#220 = { has_province_modifier = 1356_valencia_cathedral_great_project_province_modifier }
 		220 = { has_great_project = valencia_cathedral_great_project }
 		has_country_flag = great_project_valencia_cathedral_flag
 		owns = 220
@@ -855,7 +852,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		1841 = { has_province_modifier = 1356_teutonic_order_cathedral_great_project_province_modifier }
+		#1841 = { has_province_modifier = 1356_teutonic_order_cathedral_great_project_province_modifier }
 		1841 = { has_great_project = teutonic_order_cathedral_great_project }
 		has_country_flag = great_project_teutonic_order_cathedral_flag
 		owns = 1841
@@ -889,7 +886,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		12 = { has_province_modifier = 1356_denmark_cathedral_great_project_province_modifier }
+		#12 = { has_province_modifier = 1356_denmark_cathedral_great_project_province_modifier }
 		12 = { has_great_project = denmark_cathedral_great_project }
 		has_country_flag = great_project_denmark_cathedral_flag
 		owns = 12
@@ -923,7 +920,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		1 = { has_province_modifier = 1356_stockholm_cathedral_great_project_province_modifier }
+		#1 = { has_province_modifier = 1356_stockholm_cathedral_great_project_province_modifier }
 		1 = { has_great_project = stockholm_cathedral_great_project }
 		has_country_flag = great_project_stockholm_cathedral_flag
 		owns = 1
@@ -957,7 +954,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		1224 = { has_province_modifier = 1356_debre_libanos_cathedral_great_project_province_modifier }
+		#1224 = { has_province_modifier = 1356_debre_libanos_cathedral_great_project_province_modifier }
 		1224 = { has_great_project = debre_libanos_cathedral_great_project }
 		has_country_flag = great_project_debre_libanos_cathedral_flag
 		owns = 1224
@@ -991,7 +988,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		2140 = { has_province_modifier = 1356_qufu_temple_of_confucius_great_project_province_modifier }
+		#2140 = { has_province_modifier = 1356_qufu_temple_of_confucius_great_project_province_modifier }
 		2140 = { has_great_project = qufu_temple_of_confucius_great_project }
 		has_country_flag = great_project_qufu_temple_of_confucius_flag
 		owns = 2140
@@ -1026,7 +1023,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		446 = { has_province_modifier = 1356_goharshad_mosque_mosque_great_project_province_modifier }
+		#446 = { has_province_modifier = 1356_goharshad_mosque_mosque_great_project_province_modifier }
 		446 = { has_great_project = goharshad_mosque_mosque_great_project }
 		has_country_flag = great_project_goharshad_mosque_mosque_cathedral_flag
 		owns = 446
@@ -1061,7 +1058,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		4230 = { has_province_modifier = 1356_jongmyo_temple_great_project_province_modifier }
+		#4230 = { has_province_modifier = 1356_jongmyo_temple_great_project_province_modifier }
 		4230 = { has_great_project = jongmyo_temple_great_project }
 		has_country_flag = great_project_jongmyo_temple_flag
 		owns = 4230
@@ -1096,10 +1093,10 @@ country_event = {
 	major = yes
 
 	trigger = {
-		owns = 1816
-		1816 = { has_province_modifier = 1356_temple_of_heaven_great_project_province_modifier }
+		#1816 = { has_province_modifier = 1356_temple_of_heaven_great_project_province_modifier }
 		1816 = { has_great_project = temple_of_heaven_great_project }
 		has_country_flag = great_project_temple_of_heaven_flag
+		owns = 1816
 	}
 	
 	mean_time_to_happen = {

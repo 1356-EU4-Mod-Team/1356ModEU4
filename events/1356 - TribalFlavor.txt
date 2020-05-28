@@ -10,8 +10,8 @@ country_event = { #Feudalism spread - Vassals (Easy)
 	
 	trigger = {
 		government = tribal
-		NOT = { government = steppe_horde }
-		NOT = { government = great_mongol_state_reform }
+		NOT = { has_reform = steppe_horde }
+		NOT = { has_reform = great_mongol_state_reform }
 		NOT = { religion = mesoamerican_religion }
 		NOT = { religion = nahuatl }
 		NOT = { religion = inti }
@@ -131,8 +131,8 @@ country_event = { #Feudalism spread - Near Feudals (Normal)
 	
 	trigger = { #Double check this works?
 		government = tribal
-		NOT = { government = steppe_horde }
-		NOT = { government = great_mongol_state_reform }
+		NOT = { has_reform = steppe_horde }
+		NOT = { has_reform = great_mongol_state_reform }
 		NOT = { religion = mesoamerican_religion }
 		NOT = { religion = nahuatl }
 		NOT = { religion = inti }
@@ -253,8 +253,8 @@ country_event = { #Feudalism spread - Random Event Chain (Hard)
 	trigger = { #Allow Natives?
 		government = tribal
 		NOT = { government = native }
-		NOT = { government = steppe_horde }
-		NOT = { government = great_mongol_state_reform }
+		NOT = { has_reform = steppe_horde }
+		NOT = { has_reform = great_mongol_state_reform }
 		NOT = { has_institution = feudalism }
 		NOT = { religion = mesoamerican_religion }
 		NOT = { religion = nahuatl }

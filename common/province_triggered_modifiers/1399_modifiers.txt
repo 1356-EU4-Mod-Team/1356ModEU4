@@ -667,6 +667,29 @@
 	}
 }
 
+1356_teutonic_order_cathedral_great_project_province_modifier = { #
+	potential = {		
+		41 = { has_great_project = teutonic_order_cathedral_great_project }
+		
+	}
+	
+	trigger = {
+		41 = { has_great_project = teutonic_order_cathedral_great_project }
+	}
+	
+	local_missionary_strength = -0.02
+	allowed_num_of_buildings = 1
+	local_build_cost = -0.1
+	
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
 ############################
 #Nestorian Holy Site Control
 ############################
