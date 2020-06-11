@@ -493,6 +493,8 @@ country_event = { #Forces the most powerful Chinese Minor to usurp the Mandate a
 	desc = chineseflv.6.d
 	picture = LAND_MILITARY_eventPicture
 	
+	fire_only_once = yes
+	
 	trigger = {
 		culture_group = east_asian
 		has_dlc = "Mandate of Heaven"

@@ -463,4 +463,61 @@ spriteTypes = {
 		texturefile = "gfx/interface/coptic_netural_estate.dds"
 		noOfFrames = 1
 	}
+#The Janitors Idea Additions
+	
+	spriteType = {
+		name = "GFX_idea_grand_court_ideas"
+		texturefile = "gfx//interface//ideas//idea_grand_court_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    
+    spriteType = {
+		name = "GFX_idea_imperial_ideas"
+		texturefile = "gfx//interface//ideas//idea_imperial_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    
+    spriteType = {
+        name = "GFX_idea_marcher_lord_ideas"
+		texturefile = "gfx//interface//ideas//idea_marcher_lord_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+    spriteType = {
+        name = "GFX_idea_permanent_war_ideas"
+		texturefile = "gfx//interface//ideas//idea_permanent_war_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    
+    spriteType = {
+        name = "GFX_idea_royal_education_ideas"
+		texturefile = "gfx//interface//ideas//idea_royal_education_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    
+    spriteType = {
+        name = "GFX_idea_theocratic_ideas"
+		texturefile = "gfx//interface//ideas//idea_theocratic_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    
+	spriteType = {
+        name = "GFX_idea_military_doctrine_ideas"
+		texturefile = "gfx//interface//ideas//idea_military_doctrine_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
 }

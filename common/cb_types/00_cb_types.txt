@@ -325,12 +325,12 @@ cb_nationalist = {
 }
 
 # Napoleonic era imperialism
-cb_imperial = {
+cb_imperial = { #1356
 	valid_for_subject = no
 
 	prerequisites = {
 		OR = {
-			dip_tech = 23
+			dip_tech = 29 #1356
 			invasion_nation = yes
 		}
 		is_free_or_tributary_trigger = yes
@@ -342,12 +342,12 @@ cb_imperial = {
 }
 
 # War Against the World CB for pirates
-cb_war_against_the_world = {
+cb_war_against_the_world = { #1356
 	valid_for_subject = no
 	
 	prerequisites = {
 		has_reform = war_against_the_world_doctrine_reform
-		dip_tech = 23
+		dip_tech = 29 #1356
 		is_free_or_tributary_trigger = yes
 		is_revolution_target = no
 	}

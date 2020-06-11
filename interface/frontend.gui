@@ -943,6 +943,60 @@ guiTypes = {
 					orientation = "UPPER_LEFT"
 				}
 
+				editBoxType = {
+					position = { x = 6 y = 125 }
+					name = "largefonts_lobby_chat_edit"
+					textureFile = "gfx\\interface\\small_tiles_dialog.dds"
+					font = "chat_largefont"
+					borderSize = {x = 8 y = 4}
+					size = { x=520 y=32}
+					instantTextBoxType = no
+
+					orientation = "UPPER_LEFT"
+				}
+
+				editBoxType = {
+					position = { x = 6 y = 125 }
+					name = "speech_enabled_lobby_chat_edit"
+					textureFile = "gfx\\interface\\small_tiles_dialog.dds"
+					font = "vic_18"
+					borderSize = {x = 8 y = 4}
+					size = { x=520 y=32}
+					instantTextBoxType = no
+
+					orientation = "UPPER_LEFT"
+				}
+
+				editBoxType = {
+					position = { x = 6 y = 125 }
+					name = "speech_enabled_largefonts_lobby_chat_edit"
+					textureFile = "gfx\\interface\\small_tiles_dialog.dds"
+					font = "chat_largefont"
+					borderSize = {x = 8 y = 4}
+					size = { x=520 y=32}
+					instantTextBoxType = no
+
+					orientation = "UPPER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "speech_enabled_lobby_chat_button"
+					position = { x = 636 y = 125 }
+					quadTextureSprite ="GFX_standard_button_105"
+					buttonText = "SEND"
+					buttonFont = "vic_18"
+					Orientation = "UPPER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "mic_button"
+					position = { x = 526 y = 125 }
+					quadTextureSprite ="GFX_mic_button_105"
+					buttonText = "CHAT_CVAA_MIC"
+					buttonFont = "vic_18"
+					Orientation = "UPPER_LEFT"
+				}
+
 				guiButtonType = {
 					name = "lobby_chat_button"
 					position = { x = 526 y = 125 }
@@ -1395,6 +1449,17 @@ guiTypes = {
 					position = { x = 20 y = -152 }
 					quadTextureSprite ="GFX_checkbox_gold_32"
 					Orientation = "LOWER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "gameoptions_button"
+					position = { x = 18 y = -104 }
+					quadTextureSprite ="button_type_4"
+					buttonText = "MENU_BAR_GAME_OPTIONS"
+					buttonFont = "vic_18"
+					Orientation = "LOWER_LEFT"
+					clicksound = click
+					shortcut = "f"
 				}
 
 				guiButtonType = {
@@ -2421,6 +2486,92 @@ guiTypes = {
 	}
 
 	windowType = {
+		name = "largefonts_multiplayer_entry_server"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=150 y= 38 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+			position = { x= -16 y = -4 }
+			name = "player_shield"
+			quadTextureSprite ="GFX_shield_small"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		iconType =
+		{
+			name ="out_of_sync_icon"
+			spriteType = "GFX_icon_out_of_sync"
+			position = { x= -16 y = -4 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="status_indicator"
+			spriteType = "GFX_lobby_mp_status_indicator"
+			position = { x= 0 y = 10 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 20 y =-5 }
+			format = left
+			font = "Main_24"
+			maxWidth = 196
+			maxHeight = 26
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+			truncate = yes
+		}
+		guiButtonType = {
+			name = "button_co_host"
+			position = { x=136 y=0 }
+			tooltipText = "CO_HOST_TOOLTIP"
+			quadTextureSprite ="GFX_checkbox_gold_32"
+		}
+		guiButtonType = {
+			name = "button_kick"
+			quadTextureSprite = "GFX_button_kick"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			position = { x=160 y =0}
+		}
+		##### CODER REMOVE
+		guiButtonType = {
+			name = "button_ban"
+			quadTextureSprite = "GFX_button_ban"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			position = { x=180 y =0}
+		}
+
+		instantTextBoxType = {
+			name = "save_progress"
+			position = { x = 20 y =15 }
+			format = left
+			font = "Main_16"
+			maxWidth = 256
+			maxHeight = 32
+			Orientation = "UPPER_LEFT"
+		}
+
+
+
+	}
+	
+	windowType = {
 		name = "multiplayer_entry"
 		backGround=""
 		position = { x=0 y=0 }
@@ -2488,6 +2639,74 @@ guiTypes = {
 
 	}
 
+	windowType = {
+		name = "largefonts_multiplayer_entry"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=150 y= 39 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+			position = { x= -16 y = -4 }
+			name = "player_shield"
+			quadTextureSprite ="GFX_shield_small"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		iconType =
+		{
+			name ="out_of_sync_icon"
+			spriteType = "GFX_icon_out_of_sync"
+			position = { x= -16 y = -4 }
+			Orientation = "UPPER_LEFT"
+		}
+
+#		iconType =
+#		{
+#			name ="out_of_sync_icon02"
+#			spriteType = "GFX_icon_out_of_sync"
+#			position = { x= -16 y = -4 }
+#			Orientation = "UPPER_LEFT"
+#		}
+
+		iconType =
+		{
+			name ="status_indicator"
+			spriteType = "GFX_lobby_mp_status_indicator"
+			position = { x= 0 y = 10 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 20 y =-5 }
+			format = left
+			font = "vic_22"
+			maxWidth = 196
+			maxHeight = 26
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+			truncate = yes
+		}
+
+		instantTextBoxType = {
+			name = "save_progress"
+			position = { x = 20 y =15 }
+			format = left
+			font = "Main_16"
+			maxWidth = 256
+			maxHeight = 32
+			Orientation = "UPPER_LEFT"
+		}
+
+	}
+	
 	windowType = {
 		name = "team_entry"
 		backGround=""
@@ -2562,8 +2781,66 @@ guiTypes = {
 
 			Orientation = "UPPER_LEFT"
 		}
+		guiButtonType =	{
+			name = "highlight"
+			position = { x = -5 y = 0 }
+			size = { x = 720 y = 20 }
+			no_clicksound = yes
+			spriteType = "gfx__message_selection_frame"
+		}
 
+		guiButtonType =	{
+			name = "select"
+			font="vic_18"
+			text="CHAT_CVAA_EMPTY_TEXT"
+			position = { x = 0 y = 2 }
+			size = { x = 720 y = 22 }
+			no_clicksound = yes
+		}
 	}
+
+	windowType = {
+		name = "largefonts_lobby_chat_text"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=720 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		instantTextBoxType = {
+			name = "messagelogtext"
+			position = { x = 0 y = 0 }
+
+			font = "chat_largefont"
+			borderSize = {x = 1 y = 1}
+			text = ""
+			maxWidth = 720
+			maxHeight = 24
+
+			Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType =	{
+			name = "highlight"
+			position = { x = 0 y = 0 }
+			size = { x = 720 y = 24 }
+			no_clicksound = yes
+			spriteType = "gfx__message_selection_frame"
+		}
+
+		guiButtonType =	{
+			name = "select"
+			font="vic_18"
+			text="CHAT_CVAA_EMPTY_TEXT"
+			position = { x = 0 y = 2 }
+			size = { x = 720 y = 22 }
+			no_clicksound = yes
+		}
+	}
+
 
 	### bookmark entry
 	windowType = {

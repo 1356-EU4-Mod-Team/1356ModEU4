@@ -268,27 +268,23 @@ country_event = {
 	}	
 }
 #Female Ruler Becomes General
-country_event = {
-	id = delhi_empire.6
-	title = delhi_empire.6.t
-	desc = delhi_empire.6.d
-	picture = NEW_HEIR_eventPicture
-	
-	fire_only_once = yes
-	hidden = yes
-	is_triggered_only = yes
-	
-	
-	immediate = {
-		set_country_flag = delhi_female_heir_happened
-	}
-	
-	option = {
-		name = delhi_empire.5.a
-		convert_female_heir_to_general = yes
-		remove_country_modifier = delhi_female_heir
-	}
-}
+# country_event = {
+	# id = delhi_empire.6
+	# title = delhi_empire.6.t
+	# desc = delhi_empire.6.d
+	# picture = NEW_HEIR_eventPicture
+	# fire_only_once = yes
+	# hidden = yes
+	# is_triggered_only = yes
+	# immediate = {
+		# set_country_flag = delhi_female_heir_happened
+	# }
+	# option = {
+		# name = delhi_empire.5.a
+		# convert_female_heir_to_general = yes
+		# remove_country_modifier = delhi_female_heir
+	# }
+# }
 
 ##### Delhian Raja's Event Chain ######
 #Delhi Vassals Information Event

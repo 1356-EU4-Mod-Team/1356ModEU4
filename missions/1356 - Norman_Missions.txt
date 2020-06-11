@@ -4,7 +4,10 @@ nrm_secure_northern_france_england = {
 	generic = no
 	ai = yes
 	
-	potential = { tag = NRM }
+	potential = { 
+		tag = NRM
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 	
 	nrm_secure_our_duchy = { #Take Normandy the Duchy
@@ -314,7 +317,10 @@ nrm_norman_independence = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = { tag = NRM	}
+	potential = { 
+		tag = NRM
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 	
 	nrm_secure_our_independence = { #FREEDOM
@@ -341,6 +347,7 @@ NRM_missions_colonial = { #Colonize and such. Taken from Vanilla France.
 	potential = {
 		tag = NRM		
 		is_random_new_world = no
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	NRM_build_fleet = { #Make a Navy
@@ -492,7 +499,10 @@ nrm_norman_legacy = {
 	generic = no
 	ai = yes
 	
-	potential = { tag = NRM }
+	potential = { 
+		tag = NRM
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 	
 	nrm_secure_our_past_lands = { #Take Sicily

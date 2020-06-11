@@ -437,6 +437,7 @@ country_event = { #Sweden Challenges the Novgorodian religion
 		exists = NOV
 		NOV = {	religion = orthodox }
 		current_age = age_of_feudalism
+		is_at_war = no
 	}
 	mean_time_to_happen = {
 		months = 180

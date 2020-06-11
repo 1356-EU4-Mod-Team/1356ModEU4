@@ -14,6 +14,7 @@ country_event = {
 	title = flaprices.1.t
 	desc = flaprices.1.d
 	picture = TRADEGOODS_eventPicture
+	
 	fire_only_once = yes
 	major = yes
 
@@ -21,6 +22,7 @@ country_event = {
 		has_institution = mercantilism_institution
 		dip = 4
 		dip_tech = 3
+		is_year = 1375
 	}
 	
 	mean_time_to_happen = {
@@ -36,7 +38,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = INCREASED_PAPER_DEMAND
-			value = 1
+			value = 0.5
 			duration = -1
 		}
 		random_owned_province = {

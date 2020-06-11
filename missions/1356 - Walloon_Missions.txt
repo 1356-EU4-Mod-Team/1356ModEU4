@@ -12,6 +12,7 @@ wal_buffer_states_north_p1 = {
 			tag = ARS
 			tag = WOO
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -57,6 +58,7 @@ wal_buffer_states_north = {
 	
 	potential = { 
 		tag = WOO
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -203,6 +205,7 @@ wal_unite_the_walloons_start_tree = {
 			tag = ARS
 			tag = WOO
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -262,6 +265,7 @@ wal_conquer_germany_tree = {
 	
 	potential = { 
 		tag = WOO
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -388,6 +392,7 @@ wal_conquer_slot_3 = {
 			tag = ARS
 			tag = WOO
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -458,6 +463,7 @@ wal_take_friesland_tree = {
 	
 	potential = { 
 		tag = WOO
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -502,6 +508,7 @@ wal_secure_french_border = {
 	
 	potential = { 
 		tag = WOO
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -548,6 +555,7 @@ wal_beyond_europe_2 = {
 	
 	potential = { 
 		tag = WOO
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -672,6 +680,7 @@ wal_beyond_europe = {
 	
 	potential = { 
 		tag = WOO
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 		

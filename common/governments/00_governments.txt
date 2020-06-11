@@ -18,6 +18,7 @@ monarchy = {
 				iqta
 				ottoman_government
 				prussian_monarchy
+				austrian_dual_monarchy
 				principality
 				tsardom
 				mamluk_government
@@ -27,6 +28,8 @@ monarchy = {
 				english_monarchy
 				mandala_reform
 				revolutionary_empire_reform
+				holy_state_reform
+				austrian_archduchy_reform
 				###1356 ADDITION#######
 				elective_feudal_monarchy_reform
 				chinese_kingdom_government_reform
@@ -36,7 +39,7 @@ monarchy = {
 				kalmar_union_reform
 				beylik_reform
 				earldom_reform
-				archduchy_reform
+				#archduchy_reform
 				byzantine_empire_reform
 				serbian_government_reform
 				delhi_sultanate_reform
@@ -48,6 +51,25 @@ monarchy = {
 				#####END 1356 CHANGES#####
 			}
 		}
+		
+		#1356 Start
+		tier_1 = { 
+			reforms = {
+				agricultural_hamlets_reform
+				urban_centers_reform
+				freedom_of_movement_reform
+			}
+		}
+		tier_2 = {
+			reforms = {
+				representatives_reform
+				foreign_pages_reform
+				kissing_the_ring_reform
+				theatrical_performance_reform
+			}
+		}
+		#1356 Changes End
+		
 		hereditary_vs_nobility = {
 			reforms = {
 				enforce_privileges_reform
@@ -59,6 +81,9 @@ monarchy = {
 				khalsa_reform
 				deccani_society_reform
 				mughal_government
+				black_army_reform
+				legion_of_honor_reform
+				imperial_nobility_reform
 			}
 		}
 		bureaucracy = {
@@ -68,6 +93,9 @@ monarchy = {
 				sidhi_recruitment
 				mansabdari_reform
 				council_of_the_indies_reform
+				penal_colonies_reform
+				liberte_reform
+				fraternite_reform
 			}
 		}
 		growth_of_administration = {
@@ -79,6 +107,9 @@ monarchy = {
 				zabt_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
+				revolutionary_principle_reform
+				equality_principle_reform
+				imperial_principle_reform
 			}
 		}
 		deliberative_assembly = {
@@ -88,12 +119,19 @@ monarchy = {
 				aristocratic_court_reform
 				general_estates_reform
 				states_general_reform
+				legislative_sejm
+				integrated_sejmiks
+				feuillant_reform
+				two_chamber_reform
+				imperial_decree_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
 			reforms = {
 				letat_cest_moi_reform
 				regional_representation_reform
+				consulate_reform
+				military_electorate_reform
 			}
 		}
 		separation_of_power = {
@@ -102,6 +140,9 @@ monarchy = {
 				legislative_houses_reform
 				become_a_republic_reform
 				install_theocratic_government_reform
+				emperor_of_the_revolution_reform
+				enlightened_monarchy_reform
+				become_rev_republic_reform
 			}
 		}
 	}
@@ -109,7 +150,7 @@ monarchy = {
 	basic_reform = monarchy_mechanic
 
 	legacy_government = {
-		despotic_monarchy
+				despotic_monarchy
 		feudal_monarchy
 		administrative_monarchy
 		constitutional_monarchy
@@ -128,6 +169,7 @@ monarchy = {
 		indep_daimyo_legacy
 		principality_legacy
 		tsardom_legacy
+		holy_state_legacy
 		###1356 ADDITION#######
 		elective_feudal_monarchy
 		chinese_kingdom_government
@@ -137,7 +179,7 @@ monarchy = {
 		french_vassal_feudal_monarchy
 		earldom_legacy
 		beylik_legacy
-		archduchy_legacy
+		#archduchy_legacy
 		serbian_government_legacy
 		delhi_sultanate_legacy
 		bengali_sultanate_legacy
@@ -161,6 +203,7 @@ monarchy = {
 		parliamentary_reform
 		english_monarchy
 		states_general_reform
+		states_general_reform
 		###1356 ADDITION#######
 		elective_feudal_monarchy_reform
 		chinese_kingdom_government_reform
@@ -169,6 +212,17 @@ monarchy = {
 		earldom_reform
 		beylik_reform
 		#####END 1356 CHANGES#####
+	}
+
+	# Dictatorships etc
+	exclusive_reforms = {
+		military_dictatorship_reform
+		protectorate_parliament_reform
+		prussian_republic_reform
+		admiralty_reform
+		nepotism_reform
+		lottery_reform
+		dutch_republic
 	}
 
 	#States General works with few others
@@ -239,12 +293,13 @@ republic = {
 		war_against_the_world_government
 		black_market_consortium_government
 		#####1356 Additions#####
-		swiss_canton
+		#swiss_canton
 		frisian_republic_legacy
 		novgorod_republic_gov_legacy
 		ahm_republic
 		viking_republic_legacy
 		caspian_peasants_republic_legacy
+		tsardom_republic_legacy
 		#####1356 Additions End#####
 	}
 	reform_levels = {
@@ -265,15 +320,22 @@ republic = {
 				dutch_republic
 				peasants_republic
 				revolutionary_republic_reform
+				junior_revolutionary_republic_reform
 				presidential_despot_reform
 				cossacks_reform
+				military_dictatorship_reform
+				signoria_reform
+				protectorate_parliament_reform
+				prussian_republic_reform
+				united_cantons_reform
 				#####1356 Additions#####
-				swiss_canton_reform
+				#swiss_canton_reform
 				frisian_republic_gov
 				novgorod_republic_gov
 				ahm_republic_reform
 				viking_republic_reform
 				caspian_peasants_republic_reform
+				tsardom_republic
 				#####1356 Additions End#####
 			}
 		}
@@ -285,16 +347,23 @@ republic = {
 				council_of_captains_reform
 				articles_of_agreement_reform
 				smugglers_haven_reform
+				liberte_reform
+				egalite_reform
+				fraternite_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
 			reforms = {
 				frequent_elections_reform
 				consolidation_of_power_reform
+				consolidate_power_in_doge_reform
+				consolidate_power_in_cities_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				lottery_reform
 				council_of_the_indies_reform
+				legislative_assembly_reform
+				national_constituent_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -302,6 +371,7 @@ republic = {
 				provincial_governments_reform
 				administrative_divisions_reform
 				union_of_states_reform
+				penal_colonies_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -311,24 +381,37 @@ republic = {
 				pirate_king_reform
 				war_against_the_world_doctrine_reform
 				black_market_consortium_reform
+				imperial_diplomacy_reform
+				municipal_self_defense_reform
+				feuillant_reform
+				two_chamber_reform
 			}
 		}
 		consolidation_of_power_category = {
 			reforms = {
 				broaden_executive_powers_reform
 				devolution_of_powers_reform
+				absolute_president_reform
+				revolutionary_council_reform
 			}
 		}
 		guiding_principle_of_administration = {
 			reforms = {
 				political_principle_reform
 				moral_principle_reform
+				revolutionary_principle_reform
+				equality_principle_reform
+				imperial_principle_reform
 			}
 		}
 		electorate = {
 			reforms = {
 				landholders_reform
 				citizenry_reform
+				admiralty_reform
+				equal_electorate_reform
+				three_classes_reform
+				military_electorate_reform
 			}
 		}
 		office_selection = {
@@ -345,6 +428,9 @@ republic = {
 				strengthen_executive_powers_reform
 				reinforce_republican_values_reform
 				pirates_become_republic_reform
+				president_for_life_reform
+				government_for_people_reform
+				become_rev_empire_reform
 			}
 		}
 	}
@@ -359,8 +445,10 @@ republic = {
 		american_republic
 		revolutionary_republic_reform
 		pirate_republic_reform
+		protectorate_parliament_reform
+		prussian_republic_reform
 		#########Begin 1356 Changes#####
-		swiss_canton_reform
+		#swiss_canton_reform
 		ahm_republic_reform
 		viking_republic_reform
 		caspian_peasants_republic_reform
@@ -371,6 +459,21 @@ republic = {
 		venice_merchants_reform
 		dutch_republic
 		pirate_republic_reform
+		admiralty_reform
+		prussian_republic_reform
+		military_dictatorship_reform
+	}
+	exclusive_reforms = {
+		free_city
+		administrative_divisions_reform
+	}
+	exclusive_reforms = {
+		free_city
+		presidential_reform
+	}
+	exclusive_reforms = {
+		feuillant_reform
+		military_electorate_reform
 	}
 }
 
@@ -429,6 +532,8 @@ tribal = {
 		}
 		tribal_reformation = {
 			reforms = {
+				horde_barbaric_despoilers_reform
+				horde_tribal_unity_reform
 				tribe_becomes_monarchy_reform
 				tribe_becomes_republic_reform
 				tribe_becomes_theocracy_reform
@@ -456,6 +561,7 @@ theocracy = { #1356
 		papal_government
 		theocratic_government
 		monastic_order_government
+		holy_state_legacy
 		patriarch_government_legacy #1356
 	}
 	reform_levels = {
@@ -464,6 +570,8 @@ theocracy = { #1356
 				leading_clergy_reform
 				monastic_order_reform
 				papacy_reform
+				holy_state_reform
+				united_cantons_reform
 				patriarch_government_reform #1356
 			}
 		}
@@ -471,6 +579,8 @@ theocracy = { #1356
 			reforms = {
 				internal_mission_reform
 				external_mission_reform
+				mission_to_civilize_reform
+				mission_to_kill_pirates_reform
 			}
 		}
 		divine_cause = {
@@ -478,6 +588,8 @@ theocracy = { #1356
 				safeguard_holy_sites_reform
 				combat_heresy_reform
 				expel_heathens_reform
+				guru_advisors_reform
+				kingdom_of_god_reform
 			}
 		}
 		clergy_in_administration = {
@@ -486,15 +598,50 @@ theocracy = { #1356
 				religious_administrators_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
+				loyal_nobility_reform
+				pious_merchants_reform
+				monastic_breweries_reform
+				warrior_monks_reform
 			}
 		}
 		secularization = {
 			reforms = {
+				partial_secularisation_reform
 				maintain_religious_head_reform
 				hereditary_religious_leadership_reform
 				crown_leader_reform
 				proclaim_republic_reform
 				battle_pope_reform
+				conciliarism_reform
+			}
+		}
+		separation_of_power_theocracy = {
+			reforms = {
+				clerical_commission_reform
+				divine_guidance_reform
+				theocratic_democracy_reform
+				regionally_elected_commanders
+				monastic_elections_reform
+				commander_king_reform
+				admiral_king_reform
+			}
+		}
+		nature_of_faith = {
+			reforms = {
+				church_and_state_reform
+				religious_harmony_reform
+				god_and_man_reform
+				organising_our_religion_reform
+			}
+		}
+		faith_and_the_world = {
+			reforms = {
+				religion_in_one_country_reform
+				religious_permanent_revolution_reform
+				many_fingers_of_god_reform
+				priestly_autonomy_reform
+				proclaim_religious_head_reform
+				all_under_tengri_reform
 			}
 		}
 	}
@@ -619,7 +766,7 @@ pre_dharma_mapping = {
 	}
 	trading_city = {
 		government = republic
-		legacy_government = trading_city_legacy
+		legacy_government = imperial_city_legacy
 	}
 	ambrosian_republic = {
 		government = republic

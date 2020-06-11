@@ -7,115 +7,115 @@ ahead_of_time = {
 }
 
 
-technology = {
+technology = { #1356
 	#tech0
 	year = 1336
 	trade_range =   100
 	naval_maintenance =	0.1
-	naval_morale =	1.5
-	range =	90
+	naval_morale =	2.0
+	range = 100
+	merchants = yes
+	
+}
+
+technology = { #1356
+	#tech1
+	year = 1348
+	
 	enable = cog
 	enable = galley
 	enable = crayer
-	merchants = yes
+	may_fabricate_claims = yes
 	global_colonial_growth = 10
 	
 }
 
-technology = {
-	#tech1
-	year = 1348
-	
-	enable = hulk
-	
-}
-
 # Pre-era techs
-technology = {
+technology = { #1356
 	#tech2
 	year = 1360
 	
-	naval_morale = 0.2
-	
+	naval_morale 			= 	0.1
+	trade_range				=	10
 }
 
-technology = {
+technology = { #1356
 	#tech3
 	year = 1372
 	trade_range				=	30
+	naval_maintenance		= 	0.1
+	enable 					= 	hulk
 	
 }
 
-technology = {
+technology = { #1356
 	#tech4
 	year = 1384	
 	trade_efficiency 		= 	0.02
+	naval_morale 			= 	0.1
 	marketplace = yes 
 	
 }
 
 # Pre-era techs
-technology = {
+technology = { #1356
 	# Tech 5
 	year = 1396
 	range					= 	15	
-	trade_range				=	35
+	trade_range				=	30
 
 }
 
-technology = {
+technology = { #1356
 	# Tech 6
 	year = 1408
 	
 	range					= 	15	
-	naval_morale = 0.2
+	naval_morale 			=	0.1
 	
 }
 
-technology = {
+technology = { #1356
 	# Tech 7
 	year = 1419
 
-	trade_range				=	35
-	enable 		= barque
-
+	trade_range				=	30
+	trade_efficiency 		= 	0.02
+	enable 					= barque
 }
 
 # The 30 big techs from here on - add 6 to number
 
-technology = { #The Early Carrack
+technology = { #The Early Carrack #1356
 	# Tech 3
 	year = 1431
 
 	naval_morale			=	0.2
 	naval_maintenance		= 	0.1
-	trade_efficiency 		= 	0.02
-	#global_colonial_growth	= 	15
-	
-	enable = early_carrack
-
+	enable 					= 	early_carrack
 }
 
-technology = {
+technology = { #1356
 
 	year = 1443
 	range					= 	50		
 	global_colonial_growth	= 	15
 }
 
-technology = {
+technology = { #1356
 	# Tech 4
 	year = 1454
 		
-	trade_range	= 25
-
+	naval_morale 			= 	0.2
+	trade_range				= 	25
 }
 
-technology = {
+technology = { #1356
 	# Tech 5
 	year = 1466
 	
 	trade_efficiency 		= 	0.02
+	coastal_defence 		= 	yes
 }
 
 technology = { #Shipyards
@@ -133,6 +133,7 @@ technology = { #Naval Ambitions
 	
 	naval_morale			=	0.3
 	range					= 	115
+	impressment_offices 	= yes
 	
 }
 
@@ -187,6 +188,8 @@ technology = { #Man of War
 	year = 1557
 	naval_morale			=	0.4
 	may_slander_merchants = yes
+	
+	naval_battery = yes
 
 	
 }
@@ -387,6 +390,7 @@ technology = { #Insurance Companies
 	# Tech 30
 	year = 1805
 	
+	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	may_infiltrate_administration = yes
 }
@@ -398,13 +402,13 @@ technology = { #Superior Ship Design
 	naval_morale			=	0.5
 	naval_maintenance		= 	0.1	
 	num_accepted_cultures = 1
-	trade_efficiency 		= 	0.02
 }
 
 technology = { #The Gold Standard
 	# Tech 32
 	year = 1835
 	
+	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	global_colonial_growth  = 	50
 }

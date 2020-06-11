@@ -164,6 +164,47 @@ plutocracy_ideas = {
 	}
 }
 
+theocratic_ideas = { #1356
+	category = MIL
+
+	bonus = {
+		missionary_maintenance_cost = -0.25
+	}
+
+	trigger = { 
+		OR = {
+			government = theocracy
+			has_reform = feudal_theocracy
+		}
+	}
+	
+	the_word_of_god = { 
+		global_missionary_strength = 0.02
+	}
+	the_right_of_god = {
+		core_creation = -0.1
+	}
+	the_zeal_of_god = {
+		land_morale = 0.10
+	}
+	the_lieutenant_of_god = {
+		free_leader_pool = 1
+	}
+	the_messenger_of_god = {
+		missionaries = 1
+	}
+	the_peace_of_god = {
+		stability_cost_modifier = -0.15
+	}
+	the_fire_of_god = {
+		leader_land_fire = 1
+	}
+	
+	ai_will_do = {
+		factor = 2
+	}
+}
+
 
 innovativeness_ideas = {
 	category = ADM
@@ -1262,49 +1303,6 @@ pride_of_subjects = {
 				tag = SIA
 				}
 			}
-	}
-}
-
-theocratic_ideas = { #1356
-	category = MIL
-
-	bonus = {
-		infantry_power = 0.1
-		missionary_maintenance_cost = -0.25
-	}
-
-	trigger = { 
-		OR = {
-			government = theocracy
-			government = feudal_theocracy
-			has_reform = feudal_theocracy
-		}
-	}
-	
-	the_word_of_god = { 
-		global_missionary_strength = 0.02
-	}
-	the_right_of_god = {
-		core_creation = -0.1
-	}
-	the_zeal_of_god = {
-		land_morale = 0.10
-	}
-	the_lieutenant_of_god = {
-		free_leader_pool = 1
-	}
-	the_messenger_of_god = {
-		missionaries = 1
-	}
-	the_peace_of_god = {
-		stability_cost_modifier = -0.15
-	}
-	the_fire_of_god = {
-		leader_land_fire = 1
-	}
-	
-	ai_will_do = {
-		factor = 2
 	}
 }
 

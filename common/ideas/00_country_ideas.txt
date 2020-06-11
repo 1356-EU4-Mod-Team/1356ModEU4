@@ -5775,9 +5775,11 @@ jerusalem_ideas = {
 	}
 	land_of_the_heathen = {
 		missionaries = 1
+		missionary_maintenance_cost = -0.15
 	}
 	crusader_aristocracy = {
-		cavalry_power = 0.25
+		leader_land_shock = 1
+		free_leader_pool = 1 
 	}
 	crusader_castles = {
 		defensiveness = 0.25

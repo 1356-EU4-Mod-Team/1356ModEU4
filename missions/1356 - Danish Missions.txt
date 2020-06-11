@@ -4,6 +4,7 @@ danish_missions = {
 	ai = yes
 	potential = {
 		tag = DAN
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -79,6 +80,7 @@ danish_missions_2 = {
 	ai = yes
 	potential = {
 		tag = DAN
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 
@@ -283,6 +285,7 @@ danish_missions_3 = {
 	ai = yes
 	potential = {
 		tag = DAN
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -429,6 +432,7 @@ danish_missions_5 = {
 	ai = yes
 	potential = {
 		tag = DAN
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	

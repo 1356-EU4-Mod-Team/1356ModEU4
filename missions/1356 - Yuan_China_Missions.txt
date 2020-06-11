@@ -6,6 +6,7 @@ yuan_toqtoa_red_turban_rebellion_xinan_region_group = { #Toqto's Return - Crush 
 	potential = { 
 		tag = YUA
 		has_country_flag = yuan_toqto_returns_flag
+		
 		#NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
 	has_country_shield = yes	

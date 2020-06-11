@@ -2,6 +2,7 @@ country_decisions = {
 	adopt_crusader_state_government = {
 		major = yes
 		potential = {
+			always = no #disabled for now
 			NOT = { current_age = age_of_absolutism }
 			NOT = { current_age = age_of_revolutions }
 			OR = {

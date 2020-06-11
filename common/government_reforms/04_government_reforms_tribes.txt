@@ -15,7 +15,6 @@ steppe_horde = {
 			has_reform = steppe_horde
 			culture_group = altaic
 			culture_group = tartar
-			culture_group = evenks			
 		}
 		has_reform = steppe_horde
 		NOT = { has_reform = great_mongol_state_reform }
@@ -71,7 +70,10 @@ great_mongol_state_reform = {
 		cav_to_inf_ratio = 0.25
 		movement_speed = 0.2
 		years_of_nationalism = -5
-		has_banners = 1
+	}
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		allow_banners = yes
 	}
 }
 
@@ -191,9 +193,9 @@ ilkhanate_government_tribal_reform = { #Ilkhanate itself
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	modifiers = {
-		max_states = 7
-		unjustified_demands = -0.17
+		unjustified_demands = -0.2
 		legitimacy = 0.5
+		cav_to_inf_ratio = 0.25
 		max_absolutism = 10
 	}
 	legacy_equivalent = ilkhanate_government_tribal
@@ -207,6 +209,7 @@ ilkhanate_government_tribal_reform = { #Ilkhanate itself
 		locked_government_type = yes
 	}
 }
+
 #tribal_republic_gov = { #Cut for now as I had issues actually getting the Republic Mechanics to work here.
 #	icon = "shaman"
 #	allow_normal_conversion = yes
@@ -235,6 +238,15 @@ martial_society_reform = {
 	modifiers = {
 		global_manpower_modifier = 0.2
 	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			any_enemy_country = {
+				army_size = root
+			}
+		}
+	}
 }
 
 civil_society_reform = {
@@ -243,6 +255,17 @@ civil_society_reform = {
 	modifiers = {
 		global_tax_modifier = 0.05
 		yearly_corruption = -0.05
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				is_in_deficit = yes
+				num_of_loans = 5
+				corruption = 5
+			}
+		}
 	}
 }
 
@@ -254,6 +277,17 @@ religious_societies_reform = {
 	modifiers = {
 		stability_cost_modifier = -0.1
 		religious_unity = 0.15
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 0.5
+			religious_unity = 0.9
+		}
 	}
 }
 
@@ -267,31 +301,73 @@ lip_service_reform = {
 
 #Modernizantion
 
-retain_tribal_hierarchy_reform = { #1356 #We tweaked the AI chance values here
+retain_tribal_hierarchy_reform = {
 	icon = "retain_tribal_hierarchy"
 	allow_normal_conversion = yes
 	modifiers = {
-		max_states = 3
+		governing_capacity = 150
 		max_absolutism = 10
 	}
 	ai = {
-		factor = 5
+		factor = 1
+		modifier = {
+			factor = 0.5
+			NOT = {
+				any_owned_province = {
+					is_territorial_core = root
+				}
+			}
+		}
 	}
 }
 
-centralize_tribal_power_reform = { #1356 #We tweaked the AI chance values here
+centralize_tribal_power_reform = {
 	icon = "tribal_centralize_power"
 	allow_normal_conversion = yes
 	modifiers = {
 		core_creation = -0.05
 		stability_cost_modifier = -0.05
 	}
+}
+
+horde_barbaric_despoilers_reform = {
+	icon = "rioting_burning_2"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+		}
+		has_dlc = "The Cossacks"
+	}
+	modifiers = {
+		raze_power_gain = 0.33
+		
+	}
 	ai = {
-		factor = 5
+		factor = 2
 	}
 }
 
-tribe_becomes_monarchy_reform = { #1356 #We tweaked the AI chance values here
+horde_tribal_unity_reform = {
+	icon = "fist_in_air"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = great_mongol_state_reform
+		}
+		has_dlc = "The Cossacks"
+	}
+	modifiers = {
+		horde_unity = 2
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+tribe_becomes_monarchy_reform = {
 	icon = "king_highlighted"
 	allow_normal_conversion = yes
 	effect = {
@@ -333,13 +409,16 @@ tribe_becomes_monarchy_reform = { #1356 #We tweaked the AI chance values here
 		change_government = monarchy
 	}
 	ai = {
-		factor = 40
+		factor = 1
 	}
 }
 
-tribe_becomes_republic_reform = { #1356 #We tweaked the AI chance values here
+tribe_becomes_republic_reform = {
 	icon = "parliament_highlighted"
 	allow_normal_conversion = yes
+	trigger = {
+		NOT = { is_lesser_in_union = yes }
+	}
 	effect = {
 		set_country_flag = populists_in_government
 		lose_reforms = 4
@@ -379,13 +458,31 @@ tribe_becomes_republic_reform = { #1356 #We tweaked the AI chance values here
 		change_government = republic
 	}
 	ai = {
-		factor = 10
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_reform = steppe_horde
+				has_reform = great_mongol_state_reform
+				NOT = { trade_income_percentage = 0.3 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				num_of_centers_of_trade = 5
+				trade_income_percentage = 0.4
+			}
+		}
 	}
 }
 
-tribe_becomes_theocracy_reform = { #1356 #We tweaked the AI chance values here
+tribe_becomes_theocracy_reform = {
 	icon = "pope_highlighted"
 	allow_normal_conversion = yes
+	trigger = {
+		NOT = { is_lesser_in_union = yes }
+	}
 	effect = {
 		set_country_flag = populists_in_government
 		lose_reforms = 4
@@ -425,11 +522,19 @@ tribe_becomes_theocracy_reform = { #1356 #We tweaked the AI chance values here
 		change_government = theocracy
 	}
 	ai = {
-		factor = 5
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_reform = steppe_horde
+				has_reform = great_mongol_state_reform
+				NOT = { religion_group = muslim }
+			}
+		}
 	}
 }
 
-tribe_becomes_horde_reform = {  #1356 #We tweaked the AI chance values here
+tribe_becomes_horde_reform = {
 	icon = "horde_riding_highlighted"
 	allow_normal_conversion = yes
 	effect = {
@@ -447,6 +552,6 @@ tribe_becomes_horde_reform = {  #1356 #We tweaked the AI chance values here
 		NOT = { has_reform = great_mongol_state_reform }
 	}
 	ai = {
-		factor = 1
+		factor = 0
 	}
 }

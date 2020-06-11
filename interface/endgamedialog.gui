@@ -89,7 +89,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "your_score_label"
-			position = { x = 925 y = 144 } #was x = 910 y = 174
+			position = { x = 925 y = 144 } #1356 #was x = 910 y = 174
 			
 			font = "vic_29"
 			borderSize = {x = 4 y = 4}
@@ -102,14 +102,14 @@ guiTypes = {
 		iconType = {
 			name ="end_score"
 			spriteType = "GFX_icon_end_score"
-			position = { x = 927 y = 178 } #was x = 912 y = 178
+			position = { x = 927 y = 178 } #1356 #was x = 912 y = 208
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "LEDGER_SCORE"
 		}	
 		
 		instantTextBoxType = {
 			name = "score_value"
-			position = { x = 940 y = 178 } #was x = 925 y = 208
+			position = { x = 940 y = 178 } #1356 #was x = 925 y = 208
 			
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}
@@ -123,14 +123,14 @@ guiTypes = {
 		iconType = {
 			name ="is_ironman_icon"
 			spriteType = "GFX_ironman_icon"
-			position = { x = 965 y = 294 } #was x = 928 y = 294
+			position = { x = 965 y = 294 } #1356 #was x = 928 y = 294
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "FE_IRONMAN"
 		}	
 		
 		instantTextBoxType = {
 			name = "is_ironman"
-			position = { x = 995 y = 299 } #was x = 958 y = 299
+			position = { x = 995 y = 299 } #1356 #was x = 958 y = 299
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -378,14 +378,14 @@ guiTypes = {
 		iconType = {
 			name ="icon_manpower2"
 			spriteType = "GFX_icon_manpower2"
-			position = { x = 671 y = 163 } #was x = 576 y = 163
+			position = { x = 671 y = 163 } #1356 #was x = 576 y = 163
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "HINT_MANPOWER_TITLE"
 		}		
 		
 		instantTextBoxType = {
 			name = "manpower_value"
-			position = { x = 712 y = 168 } #was x = 634 y = 168
+			position = { x = 712 y = 168 } #1356 #was x = 634 y = 168
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -399,14 +399,14 @@ guiTypes = {
 		iconType = {
 			name ="land_forcelimit_icon"
 			spriteType = "GFX_land_forcelimit_icon"
-			position = { x = 669 y = 131 } #was x = 574 y = 131
+			position = { x = 669 y = 131 } #1356 #was x = 574 y = 131
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "LAND_FORCELIMIT"
 		}	
 		
 		instantTextBoxType = {
 			name = "land_forcelimit_value"
-			position = { x = 712 y = 134 } #was x = 634 y = 134
+			position = { x = 712 y = 134 } #1356 #was x = 634 y = 134
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -420,14 +420,14 @@ guiTypes = {
 		iconType = {
 			name ="naval_forcelimit_icon"
 			spriteType = "GFX_naval_forcelimit_icon"
-			position = { x = 793 y = 135 } #was x = 715 y = 135
+			position = { x = 793 y = 135 } #1356 #was x = 715 y = 135
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "NAVAL_FORCELIMIT"
 		}	
 		
 		instantTextBoxType = {
 			name = "naval_forcelimit_value"
-			position = { x = 834 y = 135 } #was x = 765 y = 135
+			position = { x = 834 y = 135 } #1356 #was x = 765 y = 135
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -441,14 +441,14 @@ guiTypes = {
 		iconType = {
 			name ="infantry_icon"
 			spriteType = "GFX_infantry_icon"
-			position = { x = 670 y = 199 } #was x = 575 y = 199
+			position = { x = 670 y = 199 } #1356 #was x = 575 y = 199
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "INFANTRY"
 		}		
 		
 		instantTextBoxType = {
 			name = "total_infantry"
-			position = { x = 729 y = 211 } #was x = 645 y = 211
+			position = { x = 729 y = 211 } #1356 #was x = 645 y = 211
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -462,14 +462,14 @@ guiTypes = {
 		iconType = {
 			name ="cavalry_icon"
 			spriteType = "GFX_cavalry_icon"
-			position = { x = 670 y = 242 } #was x = 575 y = 242
+			position = { x = 670 y = 242 } #1356 #was x = 575 y = 242
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "CAVALRY"
 		}
 		
 		instantTextBoxType = {
 			name = "total_cavalry"
-			position = { x = 729 y = 255 } #was x = 645 y = 255
+			position = { x = 729 y = 255 } #1356 #was x = 645 y = 255
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -483,14 +483,14 @@ guiTypes = {
 		iconType = {
 			name ="artillery_icon"
 			spriteType = "GFX_artillery_icon"
-			position = { x = 667 y = 279 } #was x = 572 y = 279
+			position = { x = 667 y = 279 } #1356 #was x = 572 y = 279
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "ARTILLERY"
 		}		
 		
 		instantTextBoxType = {
 			name = "total_artillery"
-			position = { x = 729  y = 289 } #was x = 645 y = 289
+			position = { x = 729  y = 289 } #1356 #was x = 645 y = 289
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -504,14 +504,14 @@ guiTypes = {
 		iconType = {
 			name ="big_ship_icon"
 			spriteType = "GFX_big_ship_icon"
-			position = { x = 787 y = 175 } #was x = 705 y = 175
+			position = { x = 787 y = 175 } #1356 #was x = 705 y = 175
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "HINT_HEAVYSHIPS_TITLE"
 		}		
 		
 		instantTextBoxType = {
 			name = "total_bigships"
-			position = { x = 834 y = 180 } #was x = 765 y = 180
+			position = { x = 834 y = 180 } #1356 #was x = 765 y = 180
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -525,14 +525,14 @@ guiTypes = {
 		iconType = {
 			name ="light_ship_icon"
 			spriteType = "GFX_light_ship_icon"
-			position = { x = 789 y = 215 } #was x = 707 y = 215
+			position = { x = 789 y = 215 } #1356 #was x = 707 y = 215
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "HINT_LIGHTSHIPS_TITLE"
 		}
 		
 		instantTextBoxType = {
 			name = "total_lightships"
-			position = { x = 834 y = 220 } #was x = 765 y = 220
+			position = { x = 834 y = 220 } #1356 #was x = 765 y = 220
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -546,14 +546,14 @@ guiTypes = {
 		iconType = {
 			name ="galley_icon"
 			spriteType = "GFX_galley_icon"
-			position = { x = 793 y = 258 } #was x = 711 y = 258
+			position = { x = 793 y = 258 } #1356 #was x = 711 y = 258
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "HINT_GALLEYS_TITLE"
 		}		
 		
 		instantTextBoxType = {
 			name = "total_galleys"
-			position = { x = 834 y = 258 } #was x = 765 y = 258
+			position = { x = 834 y = 258 } #1356 #was x = 765 y = 258
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -567,14 +567,14 @@ guiTypes = {
 		iconType = {
 			name ="transport_icon"
 			spriteType = "GFX_transport_icon"
-			position = { x = 793 y = 290 } #was x = 711 y = 290
+			position = { x = 793 y = 290 } #1356 #was x = 711 y = 290
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "HINT_TRANSPORTS_TITLE"
 		}		
 		
 		instantTextBoxType = {
 			name = "total_transports"
-			position = { x = 834 y = 290 } #was x = 765 y = 290
+			position = { x = 834 y = 290 } #1356 #was x = 765 y = 290
 			
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -737,44 +737,44 @@ guiTypes = {
 			maxHeight = 16	
 			format = center
 		}
-		iconType =
-		{
-			name ="idea_icon_9"
-			spriteType = "GFX_idea_empty"
-			position = { x= 556 y = 227 }
-			Orientation = "UPPER_LEFT"
+		iconType = #1356
+		{ #1356
+			name ="idea_icon_9" #1356
+			spriteType = "GFX_idea_empty" #1356
+			position = { x= 556 y = 227 } #1356
+			Orientation = "UPPER_LEFT" #1356
 
-		}
-		instantTextBoxType = {
-			name = "idea_value_9"
-			position = { x = 571 y = 295 }
-			
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			text = "0"	
-			maxWidth = 32
-			maxHeight = 16	
-			format = center
-		}
-		iconType =
-		{
-			name ="idea_icon_10"
-			spriteType = "GFX_idea_empty"
-			position = { x= 608 y = 227 }
-			Orientation = "UPPER_LEFT"
-
-		}
-		instantTextBoxType = {
-			name = "idea_value_10"
-			position = { x = 623 y = 295 }
-			
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			text = "0"	
-			maxWidth = 32
-			maxHeight = 16	
-			format = center
-		}
+		} #1356
+		instantTextBoxType = { #1356
+			name = "idea_value_9" #1356
+			position = { x = 571 y = 295 } #1356
+			 #1356
+			font = "vic_18" #1356
+			borderSize = {x = 0 y = 0} #1356
+			text = "0"	 #1356
+			maxWidth = 32 #1356
+			maxHeight = 16	 #1356
+			format = center #1356
+		} #1356
+		iconType = #1356
+		{ #1356
+			name ="idea_icon_10" #1356
+			spriteType = "GFX_idea_empty" #1356
+			position = { x= 608 y = 227 } #1356
+			Orientation = "UPPER_LEFT" #1356
+ #1356
+		} #1356
+		instantTextBoxType = { #1356
+			name = "idea_value_10" #1356
+			position = { x = 623 y = 295 } #1356
+			 #1356
+			font = "vic_18" #1356
+			borderSize = {x = 0 y = 0} #1356
+			text = "0"	 #1356
+			maxWidth = 32 #1356
+			maxHeight = 16	 #1356
+			format = center #1356
+		} #1356
 		
 		instantTextBoxType = {
 			name = "historical_scores_label"
@@ -910,7 +910,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "campaign_stats"
-			position = { x=932 y=225 } #was x=911 y=95
+			position = { x=932 y=225 } #1356 #was x=911 y=95
 			quadTextureSprite ="gfx_stats_button"
 			tooltip = ""
 			tooltipText =""

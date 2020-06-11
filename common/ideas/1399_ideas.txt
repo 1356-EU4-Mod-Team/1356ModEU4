@@ -275,7 +275,7 @@ AUV_ideas = { #Auvergne ideas
 		defensiveness = 0.20
 	}
 	AUV_inflation_reduction = { #Double Check this value later. Chosen because their early currency use and their many mines.
-		inflation_reduction = -0.05
+		inflation_reduction = 0.05
 	}
 	AUV_friends_in_low_places = { #Chosen because their ability to raise their tribal banners together to defend against the romans.
 			diplomatic_reputation = 2
@@ -493,8 +493,7 @@ TOU_ideas = { #Toulouse ideas
 	}
 	
 	bonus = {
-		build_cost = -0.1
-		build_time = -0.2
+		build_cost = -0.15
 	}
 	
 	trigger = {
@@ -2712,7 +2711,7 @@ WEI_ideas = {
 	}
 }
 
-SHU = {
+SHU_ideas = {
 	start = {
 		build_cost = -0.1
 		trade_efficiency = 0.1
@@ -3046,7 +3045,6 @@ MDL_ideas = { #Madagascar
     }
  
     bonus = {
-		global_sailors_modifier = 0.25
 		naval_forcelimit_modifier = 0.25
     }
     trigger = {
@@ -3059,7 +3057,6 @@ MDL_ideas = { #Madagascar
 		global_tax_modifier = 0.1
     }
 	Malgasy_piracy_jibm = {
-		may_perform_slave_raid = yes
 		may_perform_slave_raid_on_same_religion = yes
 		range = 0.33
     }

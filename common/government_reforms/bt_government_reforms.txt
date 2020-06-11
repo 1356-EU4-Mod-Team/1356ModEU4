@@ -21,7 +21,7 @@ german_kingdom = {
 	}
 	
 	modifiers = {
-		max_states = 2
+		governing_capacity = 100
 		global_autonomy = -0.10
 		war_exhaustion = -0.02
 		unjustified_demands = -0.1
