@@ -1,13 +1,5 @@
 monarch_power = MIL
 
-#Tech rework notes
-#North/South Americans may need their whole trees reworked
-#Central Americans need to be more powerful than North/South Americans
-#Nomads have a large gap in their unit tree
-#Chinese have a large gap in their unit tree
-
-#Indian, Muslim, Anatolian, and Africans have not been touched yet.
-
 #1356 techs
 
 technology = {
@@ -826,11 +818,11 @@ technology = {
 	year = 1805
 	
 	#Impulse Warfare
-	sprite_level = 5	
+	sprite_level = 5	#This is commented out in Vanilla why is it here?
 	
 	military_tactics	=	0.25
 	land_morale			=	0.85
-	maneuver_value = 0.25
+	maneuver_value 		= 	0.25
 	
 	enable = russian_mass
 	enable = mixed_order_infantry	
