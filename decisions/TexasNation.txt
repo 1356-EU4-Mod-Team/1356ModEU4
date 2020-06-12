@@ -1,15 +1,32 @@
 country_decisions = {
 
-	texas_nation = { #1356 - Changed Tech
+	texas_nation = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			was_never_end_game_tag_trigger = yes
 			is_nomad = no
-			is_random_new_world = no			
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
 			OR = {
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = rio_grande_region
+						is_core = ROOT
+					}
+				}
 			}
 			capital_scope = {
 				region = rio_grande_region
@@ -23,31 +40,40 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 888
-				province_id = 886
-				province_id = 4627
-				province_id = 883
-			}
+			region = rio_grande_region
 			OR = {
 				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				is_city = no
 			}
 		}
 		allow = {
-			adm_tech = 16 #Was Tech 10
-			is_former_colonial_nation = yes
+			adm_tech = 16 #1356
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = TEX }
-			owns_core_province = 888
-			owns_core_province = 886
-			owns_core_province = 4627
-			owns_core_province = 883
+			num_of_owned_provinces_with = {
+				value = 4
+				region = rio_grande_region
+				is_city = yes
+			}
 		}
 		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+				}
+			}
 			change_tag = TEX
-			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }

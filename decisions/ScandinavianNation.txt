@@ -1,6 +1,6 @@
 country_decisions = {
 
-	scandinavian_nation = { #1356 - Changed Tech
+	scandinavian_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -19,7 +19,7 @@ country_decisions = {
 				AND = {
 					ai = yes
 					num_of_cities = 10
-					adm_tech = 26 #Orignally 20
+					adm_tech = 20
 				}
 			}
 			is_colonial_nation = no
@@ -46,7 +46,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 26 #Orignally 20
+			adm_tech = 26 #1356
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

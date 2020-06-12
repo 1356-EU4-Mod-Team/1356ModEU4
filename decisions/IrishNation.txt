@@ -1,6 +1,6 @@
 country_decisions = {
 
-	irish_nation = { #1356 - Changed Tech
+	irish_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -32,32 +32,34 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 372			# Ulster
-				province_id = 373			# Meath
-				province_id = 374			# Leinster
-				province_id = 375			# Munster
-				province_id = 376			# Connaught
-				province_id = 4118			# Desmond
-				province_id = 4119			# Sligo
-				province_id = 4120			# Kildare
-				province_id = 4121			# Ulster
+				area = munster_area
+				area = connacht_area
+				area = leinster_area
+				area = ulster_area
 			}
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
-			adm_tech = 16 #Orignally 10
+			adm_tech = 16 #1356
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			owns = 372			# Ulster
-			owns = 373			# Meath
-			owns = 374			# Leinster
-			owns = 375			# Munster
-			owns = 376			# Connaught
-			owns = 4118			# Desmond
-			owns = 4119			# Sligo
-			owns = 4120			# Kildare
-			owns = 4121			# Ulster
+			munster_area = {
+				type = all
+				owned_by = ROOT
+			}
+			connacht_area = {
+				type = all
+				owned_by = ROOT
+			}
+			leinster_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ulster_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
 			change_tag = IRE

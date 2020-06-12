@@ -4,8 +4,8 @@ government_rank = 1
 primary_culture = venetian
 religion = catholic
 technology_group = western
-capital = 108	# Verona
-
+capital = 108
+fixed_capital = 108 # Cannot move capital away from this province & no power cost to move to it
 # Lords of Verona #
 
 1352.9.13 = {
@@ -122,4 +122,9 @@ capital = 108	# Verona
 		dip = 2
 		mil = 2
 	}
+}
+
+1440.1.1 = {
+	government = republic
+	add_government_reform = oligarchy_reform
 }

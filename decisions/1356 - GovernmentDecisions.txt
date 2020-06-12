@@ -2,6 +2,7 @@ country_decisions = {
 	frisian_government_decision = {
 		major = yes
 		potential = {
+			always = no
 			primary_culture = frisian
 			NOT = { has_reform = frisian_republic_gov }
 		}

@@ -1,15 +1,32 @@
 country_decisions = {
 
-	quebec_nation = { #1356 - Changed Tech
+	quebec_nation = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			is_nomad = no
 			is_random_new_world = no			
 			was_never_end_game_tag_trigger = yes
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
 			OR = {
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						colonial_region = colonial_canada
+						is_core = ROOT
+					}
+				}
 			}
 			colonial_canada = {
 				owned_by = ROOT
@@ -23,45 +40,48 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 996	# Innu
-				province_id = 995	# Atikamekw
-				province_id = 994	# stadacona
-				province_id = 990	# Kwedech
-				province_id = 992	# Algonquin
-				province_id = 1002	# Abitbi
-				province_id = 1000	# Cree
-				province_id = 999	# Nunavik
-				province_id = 998	# Ungava
-				province_id = 997	# Labrador
-			}
+			colonial_region = colonial_canada
 			OR = {
 				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				is_city = no
 			}
 		}
 		allow = {
-			adm_tech = 16 #Orignally 10
-			is_former_colonial_nation = yes
+			adm_tech = 16 #1356
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = QUE }
-			owns_core_province = 996	# Innu
-			owns_core_province = 995	# Atikamekw
-			owns_core_province = 994	# stadacona
-			owns_core_province = 990	# Kwedech
-			owns_core_province = 992	# Algonquin
-			owns_core_province = 1002	# Abitbi
-			owns_core_province = 1000	# Cree
-			owns_core_province = 999	# Nunavik
-			owns_core_province = 998	# Ungava
-			owns_core_province = 997	# Labrador
+			capital_scope = {
+				colonial_region = colonial_canada
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				colonial_region = colonial_canada
+				is_city = yes
+			}
 		}
 		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+				}
+			}
 			change_tag = QUE
-			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
 				set_government_rank = 2
 			}
 			colonial_canada = {

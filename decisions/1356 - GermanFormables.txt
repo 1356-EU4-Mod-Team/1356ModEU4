@@ -1,86 +1,11 @@
 country_decisions = {
 	
-	swabian_nation = { #Disabled
-		major = yes
-		potential = {
-			always = no #defunct
-			primary_culture = swabian 
-			NOT = { exists = SWB }
-			NOT = { tag = SAX }
-			NOT = { tag = GER }
-			NOT = { tag = HAB }
-			NOT = { tag = BRA }
-			NOT = { tag = TEU }
-			NOT = { tag = SWB }
-			NOT = { tag = HAN }
-			NOT = { tag = BOH }
-			NOT = { tag = RHI }
-			NOT = { tag = FRA }
-			was_never_end_game_tag_trigger = yes
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 1872
-				province_id = 74
-				province_id = 75
-				province_id = 69
-				province_id = 70
-				province_id = 72
-				province_id = 68
-				province_id = 1868
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		allow = {
-			adm_tech = 16
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
-			is_at_war = no
-			OR = {
-				NOT = { is_part_of_hre = yes }
-				is_elector = yes
-			}
-			owns_core_province = 1872
-			owns_core_province = 74
-			owns_core_province = 75
-			owns_core_province = 69
-			owns_core_province = 70
-			owns_core_province = 72
-			owns_core_province = 68
-			owns_core_province = 1868
-		}
-		effect = {
-			change_tag = SWB
-			add_prestige = 10
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 3650
-			}
-			change_government = monarchy
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
-			if = {
-				limit = {
-					is_playing_custom_nation = no
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	prussian_nation_old_prussian = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
+			was_never_german_regional_tag_trigger = yes
 			NOT = { has_country_flag = formed_prussia_flag }
 			primary_culture = old_prussian
 			NOT = { tag = PRU }
@@ -173,149 +98,12 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	saxon_nation = {
-		major = yes
-		potential = {
-			primary_culture = saxon 
-			NOT = { exists = SAX }
-			NOT = { tag = SAX }
-			NOT = { tag = GER }
-			NOT = { tag = HAB }
-			NOT = { tag = BRA }
-			NOT = { tag = TEU }
-			NOT = { tag = SWB }
-			NOT = { tag = HAN }
-			NOT = { tag = BOH }
-			NOT = { tag = RHI }
-			NOT = { tag = BAV }
-			NOT = { tag = FRA }
-			was_never_end_game_tag_trigger = yes
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 59
-				province_id = 62
-				province_id = 63
-				province_id = 61
-				province_id = 2965
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		allow = {
-			adm_tech = 16
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
-			is_at_war = no
-			OR = {
-				NOT = { is_part_of_hre = yes }
-				is_elector = yes
-			}
-			owns_core_province = 59
-			owns_core_province = 62
-			owns_core_province = 63
-			owns_core_province = 61
-			owns_core_province = 2965
-		}
-		effect = {
-			change_tag = SAX
-			add_prestige = 10
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 3650
-			}
-			change_government = monarchy
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
-			if = {
-				limit = {
-					is_playing_custom_nation = no
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	bavarian_nation = {
-		major = yes
-		potential = {
-			primary_culture = bavarian 
-			NOT = { exists = BAV }
-			NOT = { tag = BAV }
-			NOT = { tag = SAX }
-			NOT = { tag = GER }
-			NOT = { tag = HAB }
-			NOT = { tag = BRA }
-			NOT = { tag = TEU }
-			NOT = { tag = SWB }
-			NOT = { tag = HAN }
-			NOT = { tag = BOH }
-			NOT = { tag = RHI }
-			NOT = { tag = FRA }
-			was_never_end_game_tag_trigger = yes
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 2955
-				province_id = 2957
-				province_id = 2956
-				province_id = 64
-				province_id = 65
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		allow = {
-			adm_tech = 16
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
-			is_at_war = no
-			OR = {
-				NOT = { is_part_of_hre = yes }
-				is_elector = yes
-			}
-			owns_core_province = 2955
-			owns_core_province = 2957
-			owns_core_province = 2956
-			owns_core_province = 64
-			owns_core_province = 65
-		}
-		effect = {
-			change_tag = BAV
-			add_prestige = 10
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 3650
-			}
-			change_government = monarchy
-				if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
-			if = {
-				limit = {
-					is_playing_custom_nation = no
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	rhineland_nation = {
 		major = yes
 		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			was_never_german_regional_tag_trigger = yes
 			primary_culture = hessian 
 			NOT = { exists = RHI }
 			NOT = { tag = BAV }
@@ -329,7 +117,6 @@ country_decisions = {
 			NOT = { tag = BOH }
 			NOT = { tag = RHI }
 			NOT = { tag = FRA }
-			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -349,10 +136,6 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			OR = {
-				NOT = { is_part_of_hre = yes }
-				is_elector = yes
-			}
 			owns_core_province = 1876 #Frankfurt
 			owns_core_province = 77 #Heidelberg
 			owns_core_province = 85 #Cologne
@@ -368,12 +151,6 @@ country_decisions = {
 				duration = 3650
 			}
 			change_government = monarchy
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
 			if = {
 				limit = {
 					is_playing_custom_nation = no

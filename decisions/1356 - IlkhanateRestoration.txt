@@ -4,16 +4,17 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = formed_ilknanate_flag }
+			was_never_end_game_tag_trigger = yes
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = ILK }
 			NOT = { tag = TIM }
-			OR = {
+			#OR = {
                culture_group = iranian
-               primary_culture = al_iraqiya_arabic			   
-			}			
+               #primary_culture = al_iraqiya_arabic			   
+			#}			
 			OR = {
 				ai = no
 				AND = {
@@ -21,8 +22,6 @@ country_decisions = {
 					num_of_cities = 5
 				}
 			}
-			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_ilknanate_flag }
 		}
 		
 		provinces_to_highlight = {
@@ -49,10 +48,10 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			OR = {
+			#OR = {
                culture_group = iranian
-               primary_culture = al_iraqiya_arabic			   
-			}			
+               #primary_culture = al_iraqiya_arabic			   
+			#}			
 			owns_core_province = 410
 			owns_core_province = 412
 			owns_core_province = 408
@@ -78,7 +77,7 @@ country_decisions = {
 					government = monarchy
 				}
 				change_government = monarchy
-				set_legacy_government = tribal_federation_ilkhan
+				#set_legacy_government = tribal_federation_ilkhan
 				add_government_reform = tribal_federation_ilkhan_reform
 			}
 			remove_non_electors_emperors_from_empire_effect = yes

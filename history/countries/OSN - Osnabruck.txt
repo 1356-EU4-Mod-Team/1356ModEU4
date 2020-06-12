@@ -4,4 +4,10 @@ government_rank = 1
 primary_culture = hannoverian
 religion = catholic
 technology_group = western
-capital = 56	# Osnabrück
+capital = 56	# Osnabruck
+fixed_capital = 56 # Cannot move capital away from this province & no power cost to move to it
+
+1440.1.1 = {
+	government = theocracy
+	add_government_reform = leading_clergy_reform
+}

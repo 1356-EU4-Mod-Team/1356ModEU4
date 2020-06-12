@@ -3,13 +3,15 @@ country_decisions = {
 	ava_nation = { #Needs updating
 		major = yes
 		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			is_emperor_of_china = no
+			NOT = { exists = AVA }
 			OR = {
 				tag = PIN
 				tag = SAG
 				tag = TAU
 			}
-			NOT = { exists = AVA }
-			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			OR = {

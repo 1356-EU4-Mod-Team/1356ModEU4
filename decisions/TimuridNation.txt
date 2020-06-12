@@ -144,7 +144,8 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			OR = {
-				TRS = { has_ruler = "Timur" }
+				ROOT = { has_ruler = "Timur" }
+				ROOT = { dynasty = "Timurid" }
 				AND = {
 					owns_core_province = 454	# Samarkand
 					owns_core_province = 446	# Herat

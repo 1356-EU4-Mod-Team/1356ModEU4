@@ -13,7 +13,7 @@ country_decisions = {
 			religion = catholic
 			NOT = { government = republic }
 			NOT = { has_reform = celestial_empire }
-			OR = {
+			OR = {#1356
 				owns = 379
 				tag = KNI
 				tag = CYP
@@ -21,12 +21,21 @@ country_decisions = {
 				tag = CIC
 				tag = NRM
 				AND = {
+					tag = NAX
+					primary_religion = catholic
+				}
+				AND = { 
+					tag = EPI
+					primary_religion = catholic
+				
+				}
+				AND = {
 					tag = ATH
-					primary_culture = occitain
+					primary_religion = catholic
 				}
 				AND = {
 					tag = ACH
-					primary_culture = sicilian
+					primary_religion = catholic
 				}
 		
 			}
@@ -81,6 +90,11 @@ country_decisions = {
 							NOT = { tag = NRM }
 							NOT = { tag = ATH }
 							NOT = { tag = ACH }
+							NOT = { tag = NAX }
+							NOT = { tag = EPI }
+							NOT = { has_mission = EMP_crusader_antioch }
+							NOT = { capital_scope = { region = arabia_region } }
+							NOT = { capital_scope = { region = egypt_region } }
 						}
 						was_never_end_game_tag_trigger = no
 					}
@@ -98,8 +112,19 @@ country_decisions = {
 						tag = ATH
 						tag = ACH
 						tag = NRM
+						tag = NAX
+						tag = EPI
+						has_mission = EMP_crusader_antioch
+						capital_scope = { region = arabia_region }
+						capital_scope = { region = egypt_region }
 					}
 					was_never_end_game_tag_trigger = yes
+				}
+				if = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
 				}
 				change_tag = KOJ
 				if = {
@@ -111,15 +136,23 @@ country_decisions = {
 				limit = { tag = KNI }
 				set_country_flag = knights_formed_jerusalem
 			}
-			KOJ = {
+				KOJ = {
 				set_capital = 379 #Jerusalem
 				change_religion = catholic
 				if = {
 					limit = {
-						NOT = { government = monarchy }
+						NOT = { government = theocracy }
 					}
-					change_government = monarchy
-					set_legacy_government = feudal_monarchy
+					change_government_to_monarchy = yes
+					add_government_reform = holy_state_reform
+					#set_legacy_government = holy_state_legacy
+				}
+				else_if = {
+					limit = {
+						government = theocracy
+					}
+					add_government_reform = holy_state_reform
+					#set_legacy_government = holy_state_theocracy
 				}
 				if = {
 					limit = {
@@ -128,6 +161,7 @@ country_decisions = {
 					set_government_rank = 2
 				}
 				set_country_flag = formed_jerusalem
+				swap_non_generic_missions = yes
 			}
 		}
 		ai_will_do = {

@@ -1,22 +1,25 @@
 country_decisions = {
 	resettle_gallipoli = {
 		potential = {
-			owns = 149
+			owns = 4779
 			NOT = { tag = TUR }
-			149 = { has_province_modifier = turkish_settlement }
+			4779 = { has_province_modifier = turkish_settlement }
 			OR = {
-				owns = 151
+				owns = 4779
 				primary_culture = greek
 				religion = orthodox	
 			}
 		}
 		allow = {
-			owns = 149
-			owns = 2296
+			owns = 4779
+			OR = {
+				owns = 2296
+				owns = 151
+			}
 		}
 		effect = {
 
-			149 = {
+			4779 = {
 				remove_province_modifier = turkish_settlement
 				add_base_tax = 3
 				add_base_production = 3	

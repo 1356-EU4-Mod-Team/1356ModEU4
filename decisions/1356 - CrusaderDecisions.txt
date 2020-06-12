@@ -54,6 +54,7 @@ country_decisions = {
 	start_accepting_crusaders_into_ranks = {
 		major = yes
 		potential = {
+			always = no
 			has_reform = crusader_state_reform
 			NOT = { has_country_modifier = crusader_state_received_aid_recently_modifier }
 			NOT = { has_country_modifier = crusader_state_borders_religious_enemy_modifier }

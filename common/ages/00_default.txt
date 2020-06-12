@@ -22,10 +22,20 @@ age_of_feudalism = {
 				mercantilism = 20
 			}
 		}
-		obj_powerful_estate = { #I want more out of this...
-			num_of_powerful_estates = 1
-			num_of_revolts = 0
-			#NOT = { average_unrest = 2 } Not sure if this can be balanced fairly
+		obj_powerful_estate = { 
+			num_of_powerful_estates = 3
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 55
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 55
+			}
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 55
+			}
 		}		
 						
 		obj_papal_controller = { 
@@ -78,7 +88,7 @@ age_of_feudalism = {
 			num_of_aspects = 1
 			check_variable = { which = num_converted_religion value = 10 }
 	 	}				
-		obj_feudalism_muslim_piety = { #Piety
+		obj_feudalism_muslim_piety = { 
 			allow = { religion_group = muslim }
 			OR = {
 				piety = 0.75
@@ -97,15 +107,15 @@ age_of_feudalism = {
 					religion = buddhism
 					religion = vajrayana
 					religion = mahayana
+					religion = hindu
 				}
 			}
-			karma = 0
-			religious_unity = 0.80 #Adjust as needed
+			government_rank = 2
+			total_development = 300
 	 	}
 		obj_feudalism_hindu_pagan_gods = { 
 			allow = {
 				OR = {
-					religion = hinduism
 					religion = finnish_pagan_reformed
 					religion = baltic_pagan_reformed
 					religion = slavic_pagan_reformed
@@ -178,7 +188,7 @@ age_of_feudalism = {
 				owns_core_province = 2313 #Antioch
 				owns_core_province = 151 #Constantanopole
 				owns_core_province = 358 #Alexandria
-				owns_core_province = 118 #Rome
+				#owns_core_province = 118 #Rome #No early Golden Age for Pope now
 			}
 		}
 		obj_muslim_holy_war = { #Create Crusade Mechanics and integrate them into this instead?
@@ -232,7 +242,7 @@ age_of_feudalism = {
 				factor = 10
 			}
 		}
-		ab_feudalism_institution_gain = { #Not sold on this idea yet either
+		ab_feudalism_institution_gain = { #
 			modifier = {
 				 global_institution_spread = 0.4
 				 embracement_cost = -0.15
@@ -266,7 +276,7 @@ age_of_feudalism = {
 		ab_mercs_over_chevaliers = { #Suggested by Mexdus on the workshop suggestion thread
 			modifier = {
 				merc_maintenance_modifier = -0.15
-				mercenary_cost = -0.2
+				mercenary_manpower = 0.15
 			}
 			ai_will_do = {
 				factor = 10
@@ -274,7 +284,7 @@ age_of_feudalism = {
 		}
 		ab_chevauchee = { #Historically this is a strategy to siege a fort down without harming it
 			modifier = {
-				loot_amount = 0.50
+				loot_amount = 0.75
 				siege_ability = 0.1
 			}
 			ai_will_do = {
@@ -283,7 +293,8 @@ age_of_feudalism = {
 		}
 		ab_feudalism_iron_fisted_rule = { #May require a better name
 			modifier = {
-				administrative_efficiency = 0.075
+				state_governing_cost = 0.15
+				expand_administration_cost = 0.15
 			}
 			ai_will_do = {
 				factor = 10

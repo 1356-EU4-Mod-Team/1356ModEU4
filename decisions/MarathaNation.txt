@@ -1,6 +1,6 @@
 country_decisions = {
 
-	maratha_nation = { #1356 - Changed Tech
+	maratha_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -51,7 +51,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = MAR }
 			is_at_war = no
-			adm_tech = 26 #Orignally 20
+			adm_tech = 26 #1356
 			is_free_or_tributary_trigger = yes
 			owns_core_province = 546 #Nagpur
 			owns_core_province = 1946 #Satar
@@ -66,8 +66,6 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = MAR
-			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			deccan_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -81,6 +79,13 @@ country_decisions = {
 				add_permanent_claim = MAR
 			}
 			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = indian }
+				}
+				change_technology_group = indian
+				change_unit_type = indian
+			}
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

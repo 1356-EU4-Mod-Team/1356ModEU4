@@ -1,6 +1,6 @@
 country_decisions = {
 
-	gond_nation = { #1356 - Changed Tech
+	gond_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -49,7 +49,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = NAG }
-			adm_tech = 16 #Orignally 10
+			adm_tech = 16 #1356
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			owns_core_province = 551 #Mandla
@@ -68,8 +68,6 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = NAG
-			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			546 = {
 				change_province_name = "Nagpur"
 				rename_capital = "Nagpur"

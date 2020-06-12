@@ -21,7 +21,6 @@ LNC = "countries/Lancaster.txt"
 #Poland-Hungary-Lithuania
 CUM = "countries/Cumania.txt"
 KOG = "countries/Konigsberg.txt"
-LUS = "countries/Lusatia.txt"
 OPR = "countries/OldPrussia.txt"
 
 #France 
@@ -33,7 +32,6 @@ FOZ = "countries/Forez.txt"
 POU = "countries/Poitou.txt"
 AQT = "countries/Aquitaine.txt"
 ARE = "countries/Arles.txt"
-LOT = "countries/Lotharingia.txt"
 VLS = "countries/Valois.txt"
 NCH = "countries/CharlamagneEmpire.txt"
 OCC = "countries/Occitania.txt"
@@ -42,7 +40,6 @@ OCC = "countries/Occitania.txt"
 	
 #HRE
 GOR = "countries/Gorizia.txt"
-BRG = "countries/Berg.txt"
 OST = "countries/Osterland.txt" #Covered in BT
 FRB = "countries/Freiburg.txt"
 THG = "countries/Thurgau.txt"
@@ -59,7 +56,6 @@ CTR = "countries/Trastamara.txt"
 SEV = "countries/Sevilla.txt"
 
 #Italy
-VRN = "countries/Verona.txt"
 
 
 #Low Countries

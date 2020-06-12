@@ -15,9 +15,15 @@ country_decisions = {
 				type = all
 				is_core = ROOT
 			}
+			culture_group = east_asian
+			OR = {
+				religion_group = eastern
+				religion_group = pagan
+			}
 		}
 		effect = {
 			change_government = monarchy
+			add_government_reform = feudal_monarchy
 			set_government_rank = 3
 			add_prestige = 200
 			add_stability = 3

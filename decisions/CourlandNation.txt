@@ -16,7 +16,7 @@ country_decisions = {
 			}
 			NOT = { exists = KUR }
 			OR = {
-				ai = no
+				#1356
 				is_religion_enabled = protestant
 				is_religion_enabled = reformed
 			}
@@ -32,13 +32,13 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #1356
 			is_nomad = no			
 			is_at_war = no
 			OR = {
 				religion = reformed
 				religion = protestant
-                religion = hussite
+				religion = hussite #1356
 			}
 			owns_core_province = 39	 # Kurland
 			owns_core_province = 1935	 # Semigallia
@@ -61,8 +61,8 @@ country_decisions = {
 				limit = {
 					government = theocracy
 				}
-				change_government = monarchy
-				set_legacy_government = feudal_monarchy
+				change_government_to_monarchy = yes
+				#set_legacy_government = feudal_monarchy
 			}
 			every_neighbor_country = {
 				limit = { government = monarchy }

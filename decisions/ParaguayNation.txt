@@ -1,12 +1,14 @@
 country_decisions = {
 
-	paraguay_nation = { #1356 - Changed Tech
+	paraguay_nation = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			is_nomad = no
 			was_never_end_game_tag_trigger = yes
-			is_random_new_world = no			
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
 			OR = {
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
@@ -23,33 +25,45 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 775	# Xeres
-				province_id = 776	# Itenines
-				province_id = 2883	# Melodia
-				province_id = 799	# Chaco Boreal
-			}
+			area = paraguay_area
 			OR = {
 				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				is_city = no
 			}
 		}
 		allow = {
-			adm_tech = 16 #Orignally 10
+			adm_tech = 16 #1356
 			is_former_colonial_nation = yes
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = PRG }
-			owns_core_province = 775	# Xeres
-			owns_core_province = 776	# Itenines
-			owns_core_province = 2883	# Melodia
-			owns_core_province = 799	# Chaco Boreal
+			num_of_owned_provinces_with = {
+				value = 3
+				area = paraguay_area
+				is_city = yes
+			}
 		}
 		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+				}
+			}
 			change_tag = PRG
-			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
 				set_government_rank = 2
 			}
 			colonial_la_plata = {

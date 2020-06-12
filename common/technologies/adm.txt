@@ -32,6 +32,7 @@ technology = { #1356
 
 	tribal_democracy_legacy = yes
 	tribal_kingdom_legacy = yes
+	development_efficiency = 0.01
 	production_efficiency	=	0.01	
 }
 
@@ -39,6 +40,7 @@ technology = { #1356
 	#tech2
 	year = 1360
 	
+	development_efficiency = 0.01 
 	may_support_rebels = yes
 }
 
@@ -47,7 +49,8 @@ technology = { #1356
 	year = 1372
 	
 	elective_feudal_monarchy = yes
-	production_efficiency	=	0.01
+	production_efficiency	=	0.1
+	development_efficiency = 0.01 
 	
 }
 
@@ -56,6 +59,7 @@ technology = { #1356
 	year = 1384
 	
 	production_efficiency =	0.05
+	development_efficiency = 0.01
 	allowed_idea_groups = 1
 	
 }
@@ -65,6 +69,7 @@ technology = { #1356
 	# Tech 5
 	year = 1396
 	production_efficiency	=	0.01
+	development_efficiency = 0.01
 	despotic_monarchy = yes	
 	
 }
@@ -73,7 +78,9 @@ technology = { #1356
 	# Tech 6
 	year = 1408
 	
+	temple = yes
 	production_efficiency	=	0.05	
+	development_efficiency = 0.01
 
 }
 
@@ -81,7 +88,8 @@ technology = { #1356
 	# Tech 7
 	year = 1419
 	
-	temple = yes
+	allowed_idea_groups = 2
+	development_efficiency = 0.02
 
 }
 
@@ -92,15 +100,18 @@ technology = { #MOVED VANILLA feudal_monarchy #1356
 	year = 1431
 	
 	#despotic_monarchy = yes #vanilla location
+	
 	#feudal_monarchy = yes #vanilla location 
-	allowed_idea_groups = 2
+	
 	production_efficiency	=	0.01
+	development_efficiency = 0.02
 }
 
 technology = { #1356
 	# Tech 4
 	year = 1443
 	
+	development_efficiency = 0.02
 	oligarchic_republic = yes
 }
 
@@ -108,6 +119,7 @@ technology = { #1356
 
 	year = 1454
 	production_efficiency	 =	0.02
+	development_efficiency = 0.02
 	
 }
 

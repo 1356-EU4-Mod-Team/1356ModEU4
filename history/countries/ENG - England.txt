@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = english_monarchy
-mercantilism = 25
+mercantilism = 10
 technology_group = western
 primary_culture = english
 add_accepted_culture = northumbrian
@@ -262,6 +262,7 @@ national_focus = DIP
 		dip = 4
 		mil = 4
 	}
+	mercantilism = 20
 }
 
 1450.1.1 = { leader = {	name = "John Mowbray"		type = general	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1461.3.4 } }

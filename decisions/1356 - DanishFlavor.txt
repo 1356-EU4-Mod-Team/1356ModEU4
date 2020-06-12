@@ -1,9 +1,7 @@
 country_decisions = {
 
 	vassalise_holstein = {
-	
-	major = yes
-	
+		major = yes
 		potential = {
 			tag = DAN
 			exists = SHL
