@@ -78,6 +78,7 @@ aristocracy_ideas = {
 
 	bonus = {
 		leader_siege = 1
+		nobles_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -96,7 +97,7 @@ aristocracy_ideas = {
 	}
 	local_nobility = {
 		global_autonomy = -0.025
-		yearly_absolutism = 0.1
+		yearly_absolutism = 0.5
 	}
 	serfdom = {
 		global_manpower_modifier = 0.33
@@ -110,7 +111,7 @@ aristocracy_ideas = {
 		free_leader_pool = 1
 	}
 	noble_resilience = {
-		possible_mercenaries = 0.20
+		mercenary_manpower = 0.20
 	}
 	
 
@@ -130,6 +131,8 @@ plutocracy_ideas = {
 
 	bonus = {
 		global_institution_spread = 0.10
+		burghers_loyalty_modifier = 0.1
+		vaisyas_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -137,7 +140,7 @@ plutocracy_ideas = {
 	}
 
 	tradition_of_payment = {
-		possible_mercenaries = 0.10
+		mercenary_manpower = 0.10
 		mercenary_discipline = 0.025
 	}
 	abolished_serfdom = {
@@ -169,6 +172,7 @@ theocratic_ideas = { #1356
 
 	bonus = {
 		missionary_maintenance_cost = -0.25
+		church_loyalty_modifier = 0.1
 	}
 
 	trigger = { 
@@ -259,6 +263,8 @@ religious_ideas = {
 
 	bonus = {
 		culture_conversion_cost = -0.25
+		brahmins_hindu_loyalty_modifier = 0.1
+		church_loyalty_modifier = 0.1
 	}
 
 	missionary_schools = {
@@ -426,7 +432,7 @@ defensive_ideas = {
 	}
 
 	battlefield_commisions = {
-		army_tradition = 1
+		army_tradition_from_battle = 1.0
 	}
 	military_drill = {
 		land_morale = 0.15
@@ -593,7 +599,7 @@ exploration_ideas = {
  		envoy_travel_time = -0.20
  	}
 	free_colonies = {
-		expel_minorities_cost = -0.25
+		expel_minorities_cost = -1.0
 	}
 	global_empire = {
 		naval_forcelimit_modifier = 0.25
@@ -619,7 +625,41 @@ exploration_ideas = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { num_of_ports = 1 }
+			current_age = age_of_revolutions #too late
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					sea_zone = {
+						NOT = { area = eastern_mediterrenean_area }
+					}
+				}
+			}
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				} 
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					sea_zone = {
+						OR = {
+							NOT = { region = mediterrenean_region }
+							province_id = 1293 #Gibraltar
+							province_id = 1294 #Almeria
+						}
+						NOT = { area = red_sea_area }
+						NOT = { area = baltic_area }
+					}
+				}
+			}
 			NOT = { 
 				any_owned_province = { 
 					is_in_capital_area = yes
@@ -868,8 +908,8 @@ expansion_ideas = {
 	}
 
 	bonus = {
- 		cb_on_overseas = yes
- 		max_states = 5
+ 		#cb_on_overseas = yes ## At this time removed like vanilla but still appears to be a bug #Geno
+ 		min_autonomy_in_territories = -0.1
 	}
 
 	additional_colonists = {
@@ -948,11 +988,11 @@ administrative_ideas = {
 	category = ADM
 
 	bonus = {
-		max_states = 5
+		governing_capacity_modifier = 0.25
 	}
 
 	organised_mercenary_payment = {
-		mercenary_cost = -0.25
+		mercenary_cost = -0.10
 	}
 	adaptability = {
 		core_creation = -0.25
@@ -964,7 +1004,7 @@ administrative_ideas = {
 		interest = -0.5
 	}
 	organised_mercenary_recruitment = {
-		possible_mercenaries = 0.25
+		mercenary_manpower = 0.25
 	}
 	administrative_efficiency_idea = {
 		advisor_pool = 1
@@ -988,6 +1028,8 @@ humanist_ideas = {
 	bonus = {
 		idea_cost = -0.1
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
+		brahmins_muslim_loyalty_modifier = 0.1
+		dhimmi_loyalty_modifier = 0.1
 	}
 
 	tolerance_idea = {
@@ -1078,6 +1120,7 @@ naval_ideas = {
 
 	bonus = {
 		ship_durability = 0.1
+		allowed_marine_fraction = 0.05
 	}
 
 	boarding_parties = {
@@ -1378,6 +1421,7 @@ imperial_ideas = {
 	imperial_centralization = {
 		global_autonomy = -0.03
 		max_absolutism = 10
+		max_revolutionary_zeal= 10
 	}
 
 	imperial_engineering = {
@@ -1385,7 +1429,7 @@ imperial_ideas = {
 	}
 
 	robust_state_administration = {
-		max_states = 7
+		governing_capacity  = 250
 		trade_company_investment_cost = -0.1
 	}
 

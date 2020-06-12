@@ -2,46 +2,46 @@
 
 #French Ducal Ideas
 
-NRM_ideas = { #Norman ideas
-	start = {
-		fort_maintenance_modifier = -0.1
-		infantry_power = 0.1
-	}
-	
-	bonus = {
-		discipline = 0.05
-	}
-	
-	trigger = {
-		tag = NRM
-	}
-	free = yes
-	
-	norman_leadership = { #Our leaders took us to Sicily and beyond, why can't it do it a second time?
-		leader_land_shock = 1
-	}
-    norman_religious_conviction = { #Quickly adapting to the christian faith, we Normans fervently follow our faith.
-		tolerance_own = 2
-	}
-	
-	norman_shipbuilders = { #Normans sailed across the known world, just like the vikings! From Normandy to Sicily and further, we truly were the explorers of our time!
-		global_ship_cost = -0.10
-	}
-	viking_roots = { #While we may now be civilized frenchmen, that doesn't mean we ourselves can't take inspiration from our ancestors!
-		may_perform_slave_raid = yes
-	}
-
-	norman_colonizers = { #While the rest of the world sets out to explore the new lands to the west, we must once again show the world we adapt the best to new environments!
-		global_colonial_growth = 10
-	}
-	norman_prestige = { #Being known for conquest, colonizing, and adapting to other areas of Europe has to account for something, right?
-		prestige = 1
-	}
-	norman_seafarers = { #We must once again show the world the strength of the Norman Navy! Maybe we'll even rival the English?
-		leader_naval_shock = 1
-
-	}
-}
+#NRM_ideas = { #Norman ideas
+#	start = {
+#		fort_maintenance_modifier = -0.1
+#		infantry_power = 0.1
+#	}
+#	
+#	bonus = {
+#		discipline = 0.05
+#	}
+#	
+#	trigger = {
+#		tag = NRM
+#	}
+#	free = yes
+#	
+#	norman_leadership = { #Our leaders took us to Sicily and beyond, why can't it do it a second time?
+#		leader_land_shock = 1
+#	}
+#    norman_religious_conviction = { #Quickly adapting to the christian faith, we Normans fervently follow our faith.
+#		tolerance_own = 2
+#	}
+#	
+#	norman_shipbuilders = { #Normans sailed across the known world, just like the vikings! From Normandy to Sicily and further, we truly were the explorers of our time!
+#		global_ship_cost = -0.10
+#	}
+#	viking_roots = { #While we may now be civilized frenchmen, that doesn't mean we ourselves can't take inspiration from our ancestors!
+#		may_perform_slave_raid = yes
+#	}
+#
+#	norman_colonizers = { #While the rest of the world sets out to explore the new lands to the west, we must once again show the world we adapt the best to new environments!
+#		global_colonial_growth = 10
+#	}
+#	norman_prestige = { #Being known for conquest, colonizing, and adapting to other areas of Europe has to account for something, right?
+#		prestige = 1
+#	}
+#	norman_seafarers = { #We must once again show the world the strength of the Norman Navy! Maybe we'll even rival the English?
+#		leader_naval_shock = 1
+#
+#	}
+#}
 
 DAU_ideas = { #Dauphine ideas -Apparently Dauphin is french for Dolphin?-
 	start = { #Papal bonus because the power of the local Bishops was a problem for many Dauphine rulers, represents their strength. Protestant bonus because they became a Huguenot stronghold later.
@@ -63,6 +63,7 @@ DAU_ideas = { #Dauphine ideas -Apparently Dauphin is french for Dolphin?-
 	the_dauphin_of_france = { #After the Duchy of Dauphin fell into the hands of the King of France, by the terms of the treaty of romans, france would hold Dauphin, but all future heirs were to be called "le dauphin". This happened up till the french revolution.
 		legitimacy = 1
 		prestige = 0.5
+		nobles_loyalty_modifier = 0.15
 	}
 	dau_delphinal_statute = { #Part of dauphin's treaty was tax exemption for the people residing in the duchy, the crown honored this for a period of time.
 		global_tax_modifier = 0.1
@@ -101,7 +102,7 @@ AMG_ideas = { #Armagnac ideas
 	free = yes
 	
 	the_armagnacs = { #After the hundred years war ended, many veterens of it joined a merc band known as "The armagnacs" which became notorious in france.
-		possible_mercenaries = 0.5
+		mercenary_manpower = 0.5
 		merc_maintenance_modifier = -0.15
 	}
 	taxes_of_the_black_prince = { #During the short reign of the black prince over Armagnac he levied heavy taxes on the nobility, and gave many priviliges to the towns.
@@ -212,7 +213,7 @@ BOU_ideas = { #Bourbonnais ideas
 	}
 	
 	bonus = {
-		max_states = 3
+		 state_governing_cost = 0.1
 	}
 	
 	trigger = {
@@ -278,7 +279,7 @@ AUV_ideas = { #Auvergne ideas
 		inflation_reduction = 0.05
 	}
 	AUV_friends_in_low_places = { #Chosen because their ability to raise their tribal banners together to defend against the romans.
-			diplomatic_reputation = 2
+		diplomatic_reputation = 2
 	}
 	AUV_discipline = {
 		discipline = 0.05
@@ -301,7 +302,7 @@ FOZ_ideas = { #Forez ideas
 	free = yes
 	
 	FOZ_mercs = { 
-		possible_mercenaries = 0.5
+		mercenary_manpower = 0.5
 		merc_maintenance_modifier = -0.15
 	}
 	FOZ_tech_cost = { 
@@ -1145,268 +1146,6 @@ JLR_ideas = {
    }
 }
 
-CHB_ideas = {
-	start = {
-		reduced_liberty_desire = 10
-        cavalry_power = 0.10
-	}
-	bonus = {
-		leader_land_shock = 1
-	}
-	trigger = {
-		tag = CHB
-	}
-	free = yes
-	
-	CHB_citadels_and_fortesses = {
-		defensiveness = 0.15
-	}
-	CHB_ayyubid_heritage = {
-		legitimacy = 1
-	}
-	CHB_righteousness_of_the_faith = {
-		shock_damage = 0.1
-	}
-	CHB_elite_warriors = {
-		global_unrest = -1
-	}
-	CHB_rise_of_the_eagle = {
-	    discipline = 0.05
-	}
-	CHB_strenghten_central_authority = {
-		land_morale = 0.10
-	}
-	CHB_state_economics = {
-		global_tax_modifier = 0.1
-	}
-}
-
-MUZ_ideas = {
-	start = {
-		land_forcelimit_modifier  = 0.25
-        global_regiment_cost = -0.1
-	}
-
-	bonus = {
-		discipline = 0.05
-	}
-	trigger = {
-		tag = MUZ
-	}
-	free = yes
-	
-	MUZ_ayyubid_heritage = {
-		years_of_nationalism = -5
-	}
-    
-    MUZ_citadels_and_fortesses = {
-		defensiveness = 0.2
-		fort_maintenance_modifier = -0.1
-	}
-	
-	MUZ_righteousness_of_the_faith = {
-		global_heretic_missionary_strength = 0.01
-        merchants = 1
-	}
-
-	MUZ_elite_warriors = {
-		land_morale = 0.1
-	}
-	MUZ_rise_of_the_eagle = {
-	    caravan_power = 0.2
-	}
-
-	MUZ_strenghten_central_authority = {
-        global_autonomy = -0.05
-	}
-
-	MUZ_state_economics = {
-		trade_efficiency = 0.1
-	}
-}
-
-INT_ideas = {
-	start = {
-	    core_creation = -0.2
-		embracement_cost = -0.25
-	}
-	bonus = {
-		prestige_decay = -0.015
-	}
-	trigger = {
-		tag = INT
-	}
-	free = yes
-	
-	INT_citadels_and_fortesses = {
-		war_exhaustion = -0.1
-	}
-	INT_ayyubid_heritage = {
-		leader_land_shock = 1
-	}
-	INT_righteousness_of_the_faith = {
-		hostile_attrition = 1
-	}
-	INT_elite_warriors = {
-		infantry_power = 0.15
-	}
-	INT_rise_of_the_eagle = {
-	    trade_efficiency = 0.1
-	}
-	INT_strenghten_central_authority = {
-		land_morale = 0.15
-	}
-	INT_state_economics = {
-		technology_cost = -0.10
-	}
-}
-
-SAB_ideas = {
-	start = {
-		defensiveness = 0.2
-		land_morale = 0.10
-	}
-	bonus = {
-		diplomats = 1
-	}
-	trigger = {
-		tag = SAB
-	}
-	free = yes
-	
-	SAB_citadels_and_fortesses = {
-		army_tradition = 0.5
-	}
-	SAB_ayyubid_heritage = {
-	    hostile_attrition = 1
-	}
-	SAB_righteousness_of_the_faith = {
-		leader_land_shock = 1
-	}
-	SAB_elite_warriors = {
-		yearly_corruption = -0.1
-	}
-	SAB_rise_of_the_eagle = {
-	    missionaries = 1
-		global_missionary_strength = 0.02
-	}
-	SAB_strenghten_central_authority = {
-		global_tax_modifier = 0.1
-	}
-	SAB_state_economics = {
-		cavalry_power = 0.15
-	}
-}
-
-KRT_ideas = {
-	start = {
-		hostile_attrition = 2
-		army_tradition = 0.1
-	}
-	bonus = {
-		advisor_cost = -0.20
-	}
-	trigger = {
-		tag = KRT
-	}
-	free = yes
-	
-	KRT_citadels_and_fortesses = {
-		global_prov_trade_power_modifier = 0.20
-	}
-	KRT_ayyubid_heritage = {
-	    merchants = 1
-	}
-	KRT_righteousness_of_the_faith = {
-		ae_impact = -0.15
-	}
-	KRT_elite_warriors = {
-		fabricate_claims_cost = -0.50
-	}
-	KRT_rise_of_the_eagle = {
-	    idea_cost = -0.1
-	}
-	KRT_strenghten_central_authority = {
-		discipline = 0.05
-	}
-	KRT_state_economics = {
-		leader_siege = 1
-	}
-}
-
-MIH_ideas = {
-	start = {
-		leader_land_shock = 1
-		leader_land_manuever = 1
-	}
-	bonus = {
-		leader_siege = 1
-	}
-	trigger = {
-		tag = MIH
-	}
-	free = yes
-	
-	MIH_citadels_and_fortesses = {
-		province_warscore_cost = -0.15
-	}
-	MIH_ayyubid_heritage = {
-	    free_leader_pool = 2
-	}
-	MIH_righteousness_of_the_faith = {
-		ae_impact = -0.15
-	}
-	MIH_elite_warriors = {
-		global_unrest = -2
-	}
-	MIH_rise_of_the_eagle = {
-	    core_creation = -0.20
-	}
-	MIH_strenghten_central_authority = {
-		discipline = 0.05
-	}
-	MIH_state_economics = {
-		diplomatic_upkeep = 1
-	}
-}
-
-PAD_ideas = {
-	start = {
-		development_cost = -0.1
-		global_missionary_strength = 0.02
-	}
-	bonus = {
-		global_trade_power = 0.25
-	}
-	trigger = {
-		tag = PAD
-	}
-	free = yes
-	
-	PAD_citadels_and_fortesses = {
-		caravan_power = 0.1
-	    production_efficiency = 0.1
-	}
-	PAD_ayyubid_heritage = {
-	    trade_steering = 0.25
-	}
-	PAD_righteousness_of_the_faith = {
-		missionaries = 1
-	}
-	PAD_elite_warriors = {
-		trade_efficiency = 0.1
-	}
-	PAD_rise_of_the_eagle = {
-	    land_maintenance_modifier = -0.10
-	}
-	PAD_strenghten_central_authority = {
-		merchants = 1
-	}
-	PAD_state_economics = {
-		diplomatic_reputation = 2
-	}
-}
-
 GYO_ideas = { #Needs Tweaks
 	start = {
 		spy_offence = 0.15
@@ -1487,44 +1226,44 @@ bergian_ideas = {
     }
 }
  
-colognian_ideas = {
-    start = {
-        papal_influence = 2
-        stability_cost_modifier = -0.1
-    }
- 
-    bonus = {
-        missionaries = 1
-    }
-   
-    trigger = {
-        tag = KOL
-    }
-    free = yes
-   
-    stadtmauer = {
-        defensiveness = 0.25
-    }
-    biblical_magi = {
-        global_tax_modifier = 0.2
-    }
-    koelner_dom = {
-        papal_influence = 2
-        land_morale = 0.1
-    }
-    stapelrecht = {
-        global_prov_trade_power_modifier = 0.10
-    }
-    catholic_bastion = {
-        tolerance_own = 2
-    }
-    free_city = {
-        enemy_core_creation = 0.25
-    }
-    carneval = {
-        prestige = 1
-    }
-}
+#colognian_ideas = {
+    #start = {
+   #     papal_influence = 2
+  #      stability_cost_modifier = -0.1
+ #   }
+# 
+   # bonus = {
+   #     missionaries = 1
+   # }
+   #
+    #trigger = {
+    #    tag = KOL
+    #}
+   # free = yes
+   #
+    #stadtmauer = {
+    #    defensiveness = 0.25
+    #}
+    #biblical_magi = {
+     #   global_tax_modifier = 0.2
+   # }
+  #  koelner_dom = {
+    #    papal_influence = 2
+ #       land_morale = 0.1
+#    }
+#    stapelrecht = {
+#        global_prov_trade_power_modifier = 0.10
+#    }
+    #catholic_bastion = {
+   #     tolerance_own = 2
+  #  }
+ #   free_city = {
+ #       enemy_core_creation = 0.25
+ #   }
+  #  carneval = {
+ #      prestige = 1
+#    }
+#}
 
 #Swiss Minor Ideas
 
@@ -2333,7 +2072,7 @@ golden_bull_malaya_nation_ideas = { #United Malaya
 		land_attrition = -0.2
     }
     bonus = {
-		max_states = 5
+		governing_capacity_modifier = 0.1
     }
 	
     trigger = {
@@ -2595,7 +2334,7 @@ ZBB_Ideas = { #Submitted by "The Janitor", slight tweaks by CountFlandy
 
 SAP_ideas = { #Sapmi ideas
 	start = {
-		enemy_core_creation = 0.5
+		core_creation = -0.15
 		tolerance_heathen = 2
 	}
 	bonus = {
@@ -2676,7 +2415,7 @@ WEI_ideas = {
 	}
 	
 	bonus = {
-		max_states = 5
+		governing_capacity = 300
 	}
 	
 	trigger = {
@@ -2783,6 +2522,7 @@ SYR_ideas = {
 	}
 	birthplace_of_empire = {
 		core_creation = -0.10
+		nobles_loyalty_modifier = 0.05
 	}
 	restore_the_overland_route_to_asia = {
 		global_trade_power = 0.1 
@@ -3083,3 +2823,79 @@ MDL_ideas = { #Madagascar
 		development_cost = -0.1
 	}
 }
+
+WHI_ideas = {
+	start = {
+		embracement_cost = -0.15
+		num_accepted_cultures = 2
+	}
+	bonus = {
+		years_of_nationalism = -5
+	}
+	trigger = {
+		tag = WHI
+	}
+	free = yes
+	
+	traditions_of_the_great_khan = {
+		cavalry_power = 0.20
+	}
+	glh_secure_the_trade_routes = {
+		global_prov_trade_power_modifier = 0.10
+	}
+	glh_legacy_of_the_golden_horde = {
+		horde_unity = 1
+		legitimacy = 1
+	}
+	tradition_of_conquest = {
+		core_creation = -0.25
+	}	
+	logistics_of_khan = { #Used by horde_ideas
+		manpower_recovery_speed = 0.2
+	}
+	yams_of_the_great_khan = {
+		envoy_travel_time = -0.25
+		reinforce_cost_modifier = -0.15
+	}
+	steppe_leaders = {
+		leader_land_shock = 1
+	}
+}
+
+BLU_ideas = {
+	start = {
+		horde_unity = 1
+		legitimacy = 1
+		cavalry_cost = -0.20
+	}
+	bonus = {
+		caravan_power = 0.25
+	}
+	trigger = {
+		tag = BLU
+	}
+	free = yes
+	
+	tradition_of_conquest = {
+		core_creation = -0.25
+	}	
+	horse_supplies = {
+		land_maintenance_modifier = -0.05
+	}
+	traditions_of_the_great_khan = {
+		cavalry_power = 0.20
+	}
+	life_of_steppe_warrior = {
+		land_attrition = -0.20
+	}
+	glh_religious_pragmatism = {
+		tolerance_heathen = 2
+	}	
+	logistics_of_khan = { #Used by horde_ideas
+		manpower_recovery_speed = 0.2
+	}
+	ilk_recruit_turkoman_gunners = {
+		fire_damage = 0.1
+	}
+}
+
