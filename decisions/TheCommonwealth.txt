@@ -19,11 +19,11 @@ country_decisions = {
 				was_player = no
 			}
 			OR = {
-			ai = no
+				ai = no
 				AND = {
 					senior_union_with = LIT
 					LIT = { #This overlaps with allow for AI, is meant to negate do_not_integrate
-						NOT = { num_of_cities = 48 } #Keep this number the same as in allow. Original 38 +10
+						NOT = { num_of_cities = 58 } #Keep this number the same as in allow. Original 38 +10
 					}
 				}
 			}
@@ -43,7 +43,7 @@ country_decisions = {
 		allow = {
 			LIT = { was_player = no }
 			LIT = {
-				NOT = { num_of_cities = 48 } #Keep this number the same as in potential. Original 38 +10
+				NOT = { num_of_cities = 58 } #Keep this number the same as in potential. Original 38 +10
 			}
 			adm_tech = 16 #Orignally 10
 			is_subject = no
@@ -155,7 +155,7 @@ country_decisions = {
 				AND = {
 					senior_union_with = POL
 					POL = { #This overlaps with allow for AI, is meant to negate do_not_integrate
-						NOT = { num_of_cities = 24 } #Keep this number the same as in allow. Original 14 +10
+						NOT = { num_of_cities = 32 } #Keep this number the same as in allow. Original 14 +10
 					}
 				}
 			}	
@@ -173,7 +173,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			POL = { NOT = { num_of_cities = 24 } } #Keep this number the same as in potential. Original 14+10
+			POL = { NOT = { num_of_cities = 32 } } #Keep this number the same as in potential. Original 22+10
 			adm_tech = 16 #Orignally 10
 			is_subject = no
 			is_nomad = no

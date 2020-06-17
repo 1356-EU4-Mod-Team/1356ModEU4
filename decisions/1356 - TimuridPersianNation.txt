@@ -5,6 +5,7 @@ country_decisions = {
 		potential = {
 			tag = TIM
 			government_rank = 3
+			is_emperor_of_china = no
 			NOT = { has_country_flag = formed_persia_flag }
 		}
 		provinces_to_highlight = {
@@ -61,7 +62,7 @@ country_decisions = {
 					government = monarchy
 				}
 				change_government = monarchy
-				set_legacy_government = timurid_government
+				#set_legacy_government = timurid_government
 				add_government_reform = timurid_government_reform
 				add_government_reform = political_absolutism_reform
 			}

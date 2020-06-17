@@ -1,6 +1,10 @@
+# Swabia
+
 graphical_culture = westerngfx
 
-color = { 158 108 20 }
+color = { 225  98  87 }
+revolutionary_colors = { 8  8  1 }
+
 
 historical_idea_groups = {
 	trade_ideas
@@ -8,9 +12,9 @@ historical_idea_groups = {
 	religious_ideas
 	economic_ideas
 	diplomatic_ideas
-	innovativeness_ideas
-	offensive_ideas
 	spy_ideas
+	offensive_ideas
+	quality_ideas
 }
 
 historical_units = {
@@ -23,7 +27,6 @@ historical_units = {
 	austrian_grenzer
 	austrian_hussar
 	austrian_white_coat
-	prussian_uhlan
 	austrian_jaeger
 	mixed_order_infantry
 	open_order_cavalry
@@ -32,65 +35,109 @@ historical_units = {
 }
 
 monarch_names = {
-	"Bernhard #0" = 70
-	"Christoph #0" = 40
-	"Karl #0" = 40
-	"Jakob #0" = 50
-	"Philipp #1" = 30
-	"August Georg #0" = 20
-	"Eduard Fortunat #0" = 20
-	"Ernst Friedrich #0" = 20
-	"Georg Friedrich #0" = 20
-	"Karl Friedrich #0" = 20
-	"Ludwig #0" = 20
-	"Ludwig Georg #0" = 20
-	"Ludwig Wilhelm #0" = 20
-	"Philibert #0" = 20
+	"Heinrich #1" = 100
+	"Friedrich #2" = 100
+	"Eberhard #0" = 60
+	"Ulrich #0" = 60
+	"Ludwig #0" = 50
+	"Friedrich #0" = 40
+	"Christoph #0" = 20
+	"Eberhard #0 Ludwig" = 20
+	"Friedrich Eugen #0" = 20
+	"Johann Friedrich #0" = 20
+	"Karl #0 Alexander" = 20
+	"Karl Eugen #0" = 20
+	"Ludwig Eugen #0" = 20
 	"Wilhelm #0" = 20
-	"Ferdinand Maximilian #0" = 15
-	"Hermann Fortunat #0" = 15
-	"Karl Joseph #0" = 15
-	"Karl Leopold #0" = 15
-	"Karl Ludwig #0" = 15
-	"Leopold Wilhelm #0" = 15
-	"Wilhelm Georg #0" = 15
-	"Rudolf #4" = 10
-	"Albrecht #0" = 10
-	"Albrecht Karl #0" = 10
-	"Christoph Gustav #0" = 10
-	"Ernst #0" = 10
-	"Georg #0" = 10
-	"Johann #0" = 10
-	"Johann Karl #0" = 10
-	"Markus #0" = 10
-	"Philipp Siegmund #0" = 10
-	"Wilhelm Ludwig #0" = 10
-	"Wolfgang #0" = 10
-	"Erich #0" = 0
-	"Gregor #0" = 0
-	"Isaak #0" = 0
-	"Oskar #0" = 0
-	"Wolfram #0" = 0
+	"Wilhelm Ludwig #0" = 20
+	"Ludwig #0 Friedrich" = 15
+	"Friedrich Ludwig #0" = 15
+	"Georg #0" = 15
+	"Heinrich #0" = 15
+	"August #0" = 10
+	"Christian Eberhard #0" = 10
+	"Eberhard #0 Friedrich" = 10
+	"Friedrich Achilles #0" = 10
+	"Georg Friedrich #0" = 10
+	"Joachim Friedrich #0" = 10
+	"Julius Friedrich #0" = 10
+	"Magnus #0" = 10
+	"Maximilian #0" = 10
+	"Paul #0" = 10
+	"Philipp Friedrich #0" = 10
+	"Adolf #0" = 0
+	"Bruno #0" = 0
+	"Dieter #0" = 0
+	"Emanuel #0" = 0
+	"Florian #0" = 0
+	"Hartmann #0" = 0
+	"Joachim #0" = 0
+	"Kreszenz #0" = 0
+	"Manfred #0" = 0
+	"Raimund #0" = 0
+	"Siegbert #0" = 0
+	"Tobias #0" = 0
 	
-	"Aurora #0" = -1
-	"Dorothea #0" = -1
-	"Henriette #0" = -1
+	"Johan Jacob #0" = 60
+	"Joseph #0" = 40
+	"Emanuel #0" = 20
+	"Henggi #0" = 0
+	"Michael #0" = 0
+	"Johann #0" = 0
+	"Gottlieb #0" = 0
+	"Friedrich #0" = 0
+	"Hans #0" = 0
+	"Gabriel #0" = 0
+	"Ferdinand #0" = 0
+	"Anselm #0" = 0
+	"Konrad #0" = 0
+	"Gustav #0" = 0
+	"Georg #0" = 0
+	"Joachim #0" = 0
+	"Franz #0" = 0
+	"David #0" = 0
+	"Johannes #0" = 0
+	"Rudolf #0" = 0
+	"Ernst #0" = 0
+	"Raphael #0" = 0
+	
+	"Gabriella #0" = -1
+	"Thekla #0" = -1
+	"Juliane #0" = -1
+	"Renata #0" = -1
+	"Sieglinde #0" = -1
+	"Ulrike #0" = -1
 }
 
-leader_names = { 
-	Albers BÃ¤chtold Baehr Beer Benthens Breh Eisenkolb Erb
-	Ferstenfeld Fischer GÃ¶hringer Grether Heitzmann Helff 
-	Kempf Klee Mackensen RÃ¶mermann SchÃ¼ÃŸler Steinmann 
-	Tientjen Tuve Wachsmuth
+leader_names = {
+	Breitmayer Danhauser Gohl Gute Helber Henke 
+	Kircher Klein Knapp Kopp Meck Roether Schupp
+	Stütz Sülzle Veit Vietz Vogel Weber Wieland Wurst
+	Ortlieb
+	Merkel
+	Humpis
+	Hummelberger
+	Börner
+	Pfeilsticker
+	Susenbrot
+	Buchner
+	Beich
+	Börrner
 }
 
 ship_names = {
-	"Markgraf Hermann" "Markgraf Bernard I" "Markgraf Karl I"
-	Linzgau LÃ¶rrach Freiburg Karlsruhe Mannheim Tauber Rhein
-	Bruchsal Bretten Constance Eberbach Feldberg Heidelberg
-	Kinzig Lahr Offenburg Rastatt Villingen
+	Wirtemberg "Kaiser Friedrich I" "Kaiser Friedrich II"
+	"Gräfin Mechthild" Stuttgart "Kaiser Heinrich VI"
+	Ravensburg Konstanz Breisgau
+	Marbach Neuffen Balingen Mömpelgard
+
+	"St. Sebaldus" Memmingen  "St. Kilian" "Tassilo III"
+	"König Arnulf" "Graf von Bogen"
+	"Graf von Sulzbach" "Graf von Diepolding" Otto
+	Augsburg Andechs Burgau Diessen Friedberg Kempten Lindau
+	Memmingen Mindel Oettingen Wolfstein Konstanz
 }
 
 army_names = {
-	"MarkgrÃ¤fische Garde" "Armee von $PROVINCE$" 
+	"Erste Schwäbische Armee" "Zweite Schwäbische Armee" "Dritte Schwäbische Armee" "Armee von $PROVINCE$" 
 }

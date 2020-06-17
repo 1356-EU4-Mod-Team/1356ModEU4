@@ -73,7 +73,7 @@ country_decisions = {
 				NOT = { tag = TIM }
 				NOT = { tag = MUG }
 				NOT = { religion = zoroastrianism }
-				NOT = { religion = nestorian}
+				NOT = { religion = nestorian }
 				OR = {
 					AND = { 
 						NOT = { religion_group = christian }

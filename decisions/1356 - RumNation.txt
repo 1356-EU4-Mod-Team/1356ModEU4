@@ -11,13 +11,11 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { tag = TUR }
+			NOT = { tag = RUM }
 			NOT = { exists = RUM }
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			NOT = { tag = BYZ }
-			NOT = { tag = RUS }
-			NOT = { tag = PRU }
-			NOT = { tag = ENG }
 			is_emperor_of_china = no
 			primary_culture = turkish
 			is_colonial_nation = no
@@ -50,7 +48,6 @@ country_decisions = {
 			is_subject = no #Cannot even be a tributary
 			is_nomad = no
 			religion_group = muslim
-			NOT = { exists = RUM }	
 			rum_area = {
 				type = all
 				owned_by = ROOT

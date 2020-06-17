@@ -7,12 +7,17 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
+			is_emperor_of_china = no
 			NOT = { has_country_flag = formed_aksum_flag }
+			NOT = { tag = AKS }
+			NOT = { exists = AKS }
 			NOT = { tag = ZBB }
 			NOT = { tag = MAM }
 			NOT = { tag = EGY }
 			NOT = { tag = ARB }
-			NOT = { exists = AKS }
+			NOT = { tag = MDL }
+			NOT = { tag = WAK }
+			NOT = { tag = SOK }
 			OR = { 
 				AND = {
 					culture_group = sudanese
@@ -43,6 +48,10 @@ country_decisions = {
 				province_id = 1213		# Shewa
 				province_id = 1215		# Tajura
 			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
@@ -70,12 +79,6 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			#if = {
-			#	limit = {
-			#		NOT = { primary_culture = nubian }
-			#	}
-			#	change_primary_culture = nubian
-			#}
 			set_country_flag = formed_aksum_flag
 			if = {
 				limit = { has_custom_ideas = no }

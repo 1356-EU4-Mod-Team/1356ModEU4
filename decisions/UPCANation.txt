@@ -1,12 +1,14 @@
 country_decisions = {
 
-	upca_nation = { #1356 - Changed tech
+	upca_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			is_nomad = no
-			is_random_new_world = no			
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -15,8 +17,23 @@ country_decisions = {
 			OR = {
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						region = central_america_region
+						is_core = ROOT
+					}
+				}
 			}
-			colonial_mexico = {
+			central_america_region = {
 				owned_by = ROOT
 			}
 			OR = {
@@ -28,36 +45,46 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 838	# Mosquito
-				province_id = 837	# Nicaragua
-				province_id = 840	# Honduras
-				province_id = 839	# Pipil
-				province_id = 841	# Guatemala
-				province_id = 842	# Petén
-				province_id = 843	# Belize
-			}
+			region = central_america_region
 			OR = {
 				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				is_city = no
 			}
 		}
 		allow = {
-			adm_tech = 16 #Orignally 10
-			is_former_colonial_nation = yes
+			adm_tech = 16 #1356
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = CAM }
-			owns_core_province = 838	# Mosquito
-			owns_core_province = 837	# Nicaragua
-			owns_core_province = 840	# Honduras
-			owns_core_province = 839	# Pipil
-			owns_core_province = 841	# Guatemala
-			owns_core_province = 842	# Petén
-			owns_core_province = 843	# Belize
+			num_of_owned_provinces_with = {
+				value = 5
+				region = central_america_region
+				is_city = yes
+			}
 		}
 		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+				}
+			}
 			change_tag = CAM
+			if = {
+				limit = {
+					NOT = { is_former_colonial_nation = yes }
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }

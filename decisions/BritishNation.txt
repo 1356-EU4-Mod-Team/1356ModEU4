@@ -1,6 +1,6 @@
 country_decisions = {
 
-	british_nation = { #1356 - Changed Tech
+	british_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -47,7 +47,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 16 #Orignal was 10
+			adm_tech = 16 #1356
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -62,13 +62,15 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			hidden_effect = {
+				complete_mission = eng_rb_war_of_roses
+			}
+			hidden_effect = {
 				if = {
 					limit = {
 						tag = SCO
 					}
 					complete_mission = eng_mighty_army
 					complete_mission = conquer_scotland
-					complete_mission = eng_rb_war_of_roses
 				}	
 			}
 			hidden_effect = {
@@ -78,7 +80,6 @@ country_decisions = {
 					}
 					complete_mission = eng_mighty_army
 					complete_mission = conquer_scotland
-					complete_mission = eng_rb_war_of_roses
 					complete_mission = conquer_ireland
 				}	
 			}
@@ -115,15 +116,10 @@ country_decisions = {
 					add_permanent_claim = GBR
 				}
 				1979 = {
-				add_permanent_claim = GBR
+					add_permanent_claim = GBR
 				}
-				iceland_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_claim = GBR
-				}
+				370 = { add_claim = GBR }
+				371 = { add_claim = GBR }
 			}
 			if = {
 				limit = {
@@ -149,7 +145,7 @@ country_decisions = {
 		ai_importance = 400
 	}
 	
-	british_nation_diplomatically = { #1356 - Changed Tech
+	british_nation_diplomatically = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -187,7 +183,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 16 #Orignal is 10
+			adm_tech = 16 #1356
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

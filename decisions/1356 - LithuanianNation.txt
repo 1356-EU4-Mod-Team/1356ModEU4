@@ -29,4 +29,87 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	reform_lithuania_nation = { 
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = reformed_lithuania_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = LIT }
+			NOT = { tag = POL }
+			NOT = { tag = PRU }
+			NOT = { tag = MOS }
+			NOT = { tag = NOV }
+			NOT = { exists = LIT }
+			primary_culture = lithuanian
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 272 #Vilna
+				province_id = 270 #Traki
+				province_id = 4536 #Lida
+				province_id = 770 #Braslaw
+				province_id = 4535 #Wilkimierz
+				province_id = 4534 #Upita
+				province_id = 1936 #Kovno
+				province_id = 271 #Samogitia
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 272 #Vilna
+			owns_core_province = 270 #Traki
+			owns_core_province = 4536 #Lida
+			owns_core_province = 770 #Braslaw
+			owns_core_province = 4535 #Wilkimierz
+			owns_core_province = 4534 #Upita
+			owns_core_province = 1936 #Kovno
+			owns_core_province = 271 #Samogitia
+			primary_culture = lithuanian
+		}
+		effect = {
+			change_tag = LIT
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_government_reform = grand_duchy_reform
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = reformed_lithuania_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }

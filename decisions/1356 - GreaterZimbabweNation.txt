@@ -5,11 +5,13 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
+			is_emperor_of_china = no
 			NOT = { has_country_flag = formed_zbb_flag }
 			NOT = { tag = ZBB }
 			NOT = { exists = ZBB }
 			NOT = { tag = ETH }
 			NOT = { tag = AKS }
+			NOT = { tag = MDL }
 			OR = {
 				culture_group = southern_african
 				primary_culture = shona
@@ -62,53 +64,31 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ZBB
-			remove_non_electors_emperors_from_empire_effect = yes
-			#if = {
-			#	limit = {
-			#		NOT = {
-			#			government = monarchy
-			#		}
-			#	}
-			#	change_government = monarchy
-			#}
 			set_government_rank = 3
-			
-			#add_government_reform = autocracy
-			#if = {
-			#	limit = {
-			#		has_reform = states_general_reform
-			#	}
-			#	remove_government_reform = states_general_reform
-			#}
-				add_country_modifier = {
+			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-
 			1184 = {
 				add_base_tax = 4
 				add_base_production = 1
 				add_base_manpower = 4
 			}
-
 			2950 = {
 				add_base_tax = 1
 				add_base_production = 1
 			}
-
 			2951 = {
 				add_base_tax = 1
 				add_base_production = 1
 			}
-
 			2952 = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
-			
 			add_prestige = 25
-			
 			set_country_flag = formed_zbb_flag
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

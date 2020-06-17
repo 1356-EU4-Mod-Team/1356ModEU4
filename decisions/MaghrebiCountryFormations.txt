@@ -18,7 +18,6 @@ country_decisions = {
 			#1356
 			primary_culture = moroccan
 			#1356
-			#1356
 			OR = {
 				ai = no
 				AND = {
@@ -118,7 +117,7 @@ country_decisions = {
 			if = {
 				limit = { NOT = { has_reform = celestial_empire } }
 				change_government = monarchy #Desert tribes settling down, theocracies become monarchies.
-				set_legacy_government = despotic_monarchy
+				#set_legacy_government = despotic_monarchy
 			}
 			change_primary_culture = moroccan
 			set_country_flag = formed_morocco_flag
@@ -267,7 +266,7 @@ country_decisions = {
 					is_tribal = yes	#Desert tribes settling down.
 				}
 				change_government = monarchy
-				set_legacy_government = despotic_monarchy
+				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
 			set_country_flag = formed_algiers_flag
@@ -373,7 +372,7 @@ country_decisions = {
 					is_tribal = yes
 				}
 				change_government = monarchy #Desert tribes settling down.
-				set_legacy_government = despotic_monarchy
+				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
 			set_country_flag = formed_tunisia_flag
@@ -478,7 +477,7 @@ country_decisions = {
 					is_tribal = yes #Desert tribes settling down.
 				}
 				change_government = monarchy
-				set_legacy_government = despotic_monarchy
+				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
 			set_country_flag = formed_tripoli_flag

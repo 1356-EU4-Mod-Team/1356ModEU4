@@ -1,6 +1,6 @@
 country_decisions = {
 
-	deccan_nation = { #1356 - Changed Tech
+	deccan_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -58,7 +58,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = DEC }
 			is_at_war = no
-			adm_tech = 26 #Orignally 20
+			adm_tech = 26 #1356
 			is_free_or_tributary_trigger = yes
 			owns_core_province = 1948 #Bidar
 			owns_core_province = 542 #Hyderabad

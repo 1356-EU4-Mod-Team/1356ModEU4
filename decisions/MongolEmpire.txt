@@ -14,7 +14,7 @@ country_decisions = {
 			OR = {
 				culture_group = altaic
 				culture_group = tartar
-				culture_group = mongolic_culture_group
+				culture_group = mongolic_culture_group #1356
 			}
 			NOT = { has_country_flag = mongol_empire_flag }
 			NOT = { tag = HLR }
@@ -56,6 +56,7 @@ country_decisions = {
 				tag = YUA
 				tag = GLH
 				tag = ILK
+				tag = KHA #1356
 			}
 			custom_trigger_tooltip = {
 				tooltip = mongolia_decision_tooltip
@@ -92,9 +93,6 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 		}
 		effect = {
-			2190 = {
-				move_capital_effect = yes
-			}
 			change_tag = MGE
 			if = {
 				limit = {
@@ -110,8 +108,11 @@ country_decisions = {
 				}
 				dismantle_empire_of_china = yes
 			}
-			change_government = tribal
-			add_government_reform = great_mongol_state_reform
+			if = {
+				limit = { is_revolutionary = no }
+				change_government = tribal
+				add_government_reform = great_mongol_state_reform
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -166,7 +167,7 @@ country_decisions = {
 			create_march = ILK
 			ILK = {
 				change_government = monarchy
-				set_legacy_government = despotic_monarchy
+				#set_legacy_government = despotic_monarchy
 				change_primary_culture = ROOT
 				change_religion = ROOT
 				define_ruler = {
@@ -194,6 +195,7 @@ country_decisions = {
 			OR = {
 				culture_group = tartar
 				culture_group = altaic
+				culture_group = mongolic_culture_group #1356
 			}
 			capital_scope = {
 				region = persia_region

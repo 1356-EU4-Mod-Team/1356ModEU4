@@ -42,7 +42,6 @@ country_decisions = {
 		allow = {
 			current_age = age_of_feudalism
 			num_of_ports = 1
-			#NOT = { government = tribal }
 			is_at_war = no
 			is_subject = no
 			stability = 2
@@ -174,6 +173,9 @@ country_decisions = {
 				has_reform = great_mongol_state_reform
 				tag = YUA
 				tag = JLR
+				tag = ILK
+				tag = GLH
+				tag = GOL
 				tag = CHB
 				#Did I miss any?
 				

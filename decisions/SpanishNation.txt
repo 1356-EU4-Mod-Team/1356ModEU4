@@ -97,7 +97,21 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = SPA
-			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { 
+						AND = {
+							has_dlc = "Golden Century" 
+							OR = {
+								tag = ARA
+								tag = CAT
+								tag = VAL
+							}
+						}
+					}
+				}
+				swap_non_generic_missions = yes
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
@@ -106,13 +120,6 @@ country_decisions = {
 			if = {
 				limit = {
 					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
@@ -120,7 +127,6 @@ country_decisions = {
 			hidden_effect = {
 				iberia_region = {
 					limit = {
-						NOT = { area = macaronesia_area }
 						NOT = { area = alentejo_area }
 						NOT = { area = beieras_area }
 					}
@@ -179,12 +185,12 @@ country_decisions = {
 				AND = {
 					ai = yes
 					tag = CAS
-					ARA = { NOT = { num_of_cities = 37 } } #Keep this number the same as below
+					ARA = { NOT = { num_of_cities = 40 } } #Keep this number the same as below
 				}
 				AND = {
 					ai = yes
 					tag = ARA
-					CAS = { NOT = { num_of_cities = 45 } } #Keep this number the same as below
+					CAS = { NOT = { num_of_cities = 47 } } #Keep this number the same as below
 				}
 			}
 		}
@@ -265,13 +271,6 @@ country_decisions = {
 			if = {
 				limit = {
 					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}

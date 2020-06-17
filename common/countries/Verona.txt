@@ -2,17 +2,17 @@
 
 graphical_culture = westerngfx
 
-color = { 102  102  204 }
+color = { 121 163 114 }
 
 historical_idea_groups = {
 	trade_ideas
-	religious_ideas
-	defensive_ideas
 	economic_ideas
-	diplomatic_ideas
+	defensive_ideas
+	innovativeness_ideas
 	spy_ideas
 	offensive_ideas
-	administrative_ideas
+	religious_ideas
+	diplomatic_ideas
 }
 
 historical_units = {
@@ -23,9 +23,9 @@ historical_units = {
 	spanish_tercio
 	austrian_tercio
 	austrian_grenzer
-	french_dragoon
-	french_bluecoat
-	french_impulse
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
 	mixed_order_infantry
 	open_order_cavalry
 	napoleonic_square
@@ -33,83 +33,106 @@ historical_units = {
 }
 
 monarch_names = {
-	"Alfonso #0" = 40
-	"Ercole #0" = 40
-	"Niccolò #2" = 20
-	"Borso #1" = 20
-	"Leonello #0" = 20
-	"Alessandro #0" = 15
-	"Ferdinando #0" = 15
-	"Folco #0" = 15
-	"Luigi #0" = 15
-	"Sigismondo #0" = 15
-	"Alberto #1" = 10
-	"Francesco #0" = 10
-	"Ippolito #0" = 10
-	"Azzo #3" = 5
-	"Aldobrandino #2" = 5
-	"Obizzo #2" = 5
-	"Rinaldo #1" = 5
-	"Agostino #0" = 0
-	"Baldasare #0" = 0
-	"Carlo #0" = 0
-	"Cesare #0" = 0
-	"Cosimo #0" = 0
-	"Cristiano #0" = 0
-	"Davide #0" = 0
-	"Ennio #0" = 0
-	"Fulgenzio #0" = 0
-	"Gennaro #0" = 0
-	"Giulio #0" = 0
-	"Giuseppe #0" = 0
-	"Lazzaro #0" = 0
-	"Martino #0" = 0
-	"Nicola #0" = 0
-	"Ottavio #0" = 0
-	"Panfilo #0" = 0
-	"Prospero #0" = 0
-	"Renato #0" = 0
-	"Ruggiero #0" = 0
-	"Torquato #0" = 0
-	"Ugo #0" = 0
-	"Vincenzo #0" = 0
+	"Alberto #2" = 35
+	"Antonio #2" = 35
+	"Bartolomeo #2" = 35
+	"Bruno #1" = 25
+	"Giovanni #0" = 25
+	"Mastino #2" = 25
+	"Alboino #2" = 20
+	"Cangrande #2" = 20
+	"Federico #0" = 20
+	"Cansignorio #1" = 15
+	"Canfrancesco #0" = 15
 	
-	"Gaia #0" = -1
-	"Liboria #0" = -1
-	"Marietta #0" = -1
+	"Agostino #0" = 0
+	"Alessandro #0" = 0
+	"Altichiero #0" = 0
+	"Andrea #0" = 0
+	"Angelo #0" = 0
+	"Anselmo #0" = 0
+	"Battista #0" = 0
+	"Benedetto #0" = 0
+	"Bernardino #0" = 0
+	"Biagio #0" = 0
+	"Bonifazio #0" = 0
+	"Carlo #0" = 0
+	"Ciro #0" = 0
+	"Claudio #0" = 0
+	"Cosimo #0" = 0
+	"Domenico #0" = 0
+	"Eliodoro #0" = 0
+	"Ercole #0" = 0
+	"Flavio #0" = 0
+	"Francesco #0" = 0
+	"Giacomo #0" = 0
+	"Giambettino #0" = 0
+	"Girolamo #0" = 0
+	"Giuseppe #0" = 0
+	"Guido #0" = 0
+	"Jacopo #0" = 0
+	"Lodovico #0" = 0
+	"Lorenzo #0" = 0
+	"Luca #0" = 0
+	"Luigi #0" = 0
+	"Maffeo #0" = 0
+	"Marco #0" = 0
+	"Martino #0" = 0
+	"Mauro #0" = 0
+	"Michele #0" = 0
+	"Odoardo #0" = 0
+	"Orazio #0" = 0
+	"Orlando #0" = 0
+	"Paolo #0" = 0
+	"Pasquale #0" = 0
+	"Pietro #0" = 0
+	"Saverio #0" = 0
+	"Sebastiano #0" = 0
+	"Sebeto #0" = 0
+	"Simone #0" = 0
+	"Stefano #0" = 0
+	"Tommaso #0" = 0
+	"Turone #0" = 0
+	"Vincenzo #0" = 0
+	"Vittorio #0" = 0
+	
+	"Caterina #0" = -1
+	"Giulia #0" = -1
+	"Lucrezia #0" = -1
 }
 
 leader_names = {
-	Allegri "d'Appiani d'Aragona" Araldini "di Ardizzone" Ariosto Avanzini
-	Bacciochi Barberini Battisti Boiardo Boncompagni Boncompagni-Ludovisi
-	Calcagnini Catena Colonna "del Cossa" d'Este Farini "di Farnese" "di Ferrari"
-	Giardini Grandi Graziosi Gualandelli Gucciardini Loschi
-	Malmussi Marescalchi Menotti Mitelli Montecuccoli Montefeltro Nardi Nobili
-	Ordelaffi Pavironica Peretti Pico Pio Rangoni "de Roberti" Rossetti
-	Santarosa "di Sauli" Tassoni "de Tolomei" "della Torre" Tura Viridis Zini
+	Amigazzi Avanzi
+	Bellunello Badile Barbieri Baroni Bassetti Benaglio Bernardi Buffetti Bonsignori
+	Calzetta Cabianca Caliari Canella Canera Calvi Canziani Cappelletti Caroto Cavazzola Ceroni Cignaroli "da Conegliano"
+	"Dalla Rosa" "Dall'Oca Bianca" Dondoli Dossi
+	Elenetti
+	Falcieri Farina Farinati Ferrari Flacco Frisoni
+	Ghirlandini Giarol Giolfino
+	Lanceni Lancerotti Lancioni Locatelli "dai Libri" Lorenzi
+	Maccari Maderni Marchesini Marcola Montemezzano "del Moro" Morone
+	Nani Noro
+	Ottini
+	Pachera Pajetta Panelli Perini Picenardi Pozzo Prunati
+	Riccio Ridolfi Rossetti Ruggieri
+	Scaligeri Squarcione Salis Semplice Spada
+	Torelli Tarabotti Robido Tumicelli Turchi
+	Ugolini
+	Verla "da Verona" Veronese Vini Voltolino
+	Zimengoli "da Zevio" Zenatello Zannoni Zanconti
 }
 
-ship_names = { 
-	Aguscello Albarea "Azzo VI d'Este"
-	Baura Boara "Borgo Scoline" Bova "Borso"
-	Casaglia Cassana "Castel Trivellino" "Chiesuol del Fosso" "Cocomaro di Cona"
-	"Cocomaro di Focomorto" Codrea Cona Contrapò Corlo Correggio
-	Denore
-	Ezzelino
-	Focomorto Francolino
-	Gaibana "Gaibanella Sant'Egidio" "Guglielmo Adelardi" 
-	"Malborghetto di Boara" "Malborghetto di Correggio" Marrara Mezzavia
-	Monestirolo Montalbano
-	"Niccoló III"
-	"Obizzo II"
-	Parasacco Pescara Pontegradella Pontelagoscuro "Ponte Travagli" Porotto Porporana
-	Quartesana
-	Ravalle
-	"S.Caterina" "S.Paolo" Sabbioni "San Bartolomeo in Bosco" "San Giorgio"
-	"San Martino" "San Mercuriale di Forlì" "San Michele" "Sant'Egidio" Spinazzino
-	Tedaldo "Torre della Fossa"
-	Uccellino 
-	Viconovo Villanova
+ship_names = {
+	Benvolio
+	Escalus
+	"Giulietta Capuleti"
+	Mercutio
+	Paris
+	"Romeo Montecchi"
+	Tebaldo
+	"San Babila" "San Bernardino alle Ossa" "San Cristoforo sul Naviglio" "San Giovanni in Conca" "San Gottardo" "San Lorenzo" "San Marco" "San Nazaro Maggiore" "San Simpliciano" "San Satiro" "Santa Maria dei Miracoli" Sant'Agostino Sant'Ambrogio Sant'Eustorgio "Santo Stefano" Sondrio
+}
+
 }
 
 army_names = {

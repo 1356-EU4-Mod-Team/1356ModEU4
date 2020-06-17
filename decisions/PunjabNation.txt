@@ -1,6 +1,6 @@
 country_decisions = {
 
-	punjab_nation = { #1356 - Changed Tech
+	punjab_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -48,7 +48,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = PUN }
-			adm_tech = 16 #Orignally 10
+			adm_tech = 16 #1356
 			is_at_war = no
 			religion = sikhism
 			is_free_or_tributary_trigger = yes
@@ -59,7 +59,6 @@ country_decisions = {
 		effect = {
 			change_tag = PUN
 			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			lahore_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

@@ -5,6 +5,7 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
+			is_emperor_of_china = no
 			NOT = { has_country_flag = formed_russia_flag }
 			OR = {
 				ai = no

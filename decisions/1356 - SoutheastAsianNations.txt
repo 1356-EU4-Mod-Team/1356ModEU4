@@ -3,12 +3,14 @@ country_decisions = {
 	1356_siamese_nation = {
 		major = yes
 		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			OR = {
 				primary_culture = central_thai
 				primary_culture = northern_thai
 			}
 			NOT = { exists = SIA }
-			was_never_end_game_tag_trigger = yes
+			is_emperor_of_china = no
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -19,15 +21,17 @@ country_decisions = {
 				province_id = 614 #Vientiane
 				#province_id = 2380 #Phnom Penh
 			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
 		}
 		
 		allow = {
-			adm_tech = 16
+			adm_tech = 26
 			is_at_war = no
 			is_subject = no
+			is_nomad = no
 			OR = {
 				religion = buddhism
 				religion = vajrayana

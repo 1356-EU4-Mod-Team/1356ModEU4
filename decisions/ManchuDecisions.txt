@@ -1,6 +1,6 @@
 country_decisions = {
-
-	manchu_nation_1 = { #1356
+#Note, we have edited nothing here.
+	manchu_nation_1 = { 
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -11,17 +11,39 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = MCH }
-			OR = { #1356 #to prevent manchu being destroyed and unable to reform it
+			OR = {
 				primary_culture = manchu
 				primary_culture = manchu_new
 			}
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 730		#Girin
-				province_id = 2108		#Huncun
-				culture = manchu
-				culture = manchu_new
+				OR = {
+					province_id = 730		#Girin
+					province_id = 2108		#Huncun
+				}
+				OR = {
+					AND = {
+						OR = {
+							culture = manchu
+							culture = manchu_new
+						}
+						ROOT = {
+							NOT = {
+								num_of_owned_provinces_with = {
+									value = 20
+									OR = {
+										culture = manchu
+										culture = manchu_new
+									}
+									owned_by = ROOT
+								}
+							}
+							owns_core_province = 730
+							owns_core_province = 2108
+						}
+					}
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -73,6 +95,20 @@ country_decisions = {
 						primary_culture = manchu
 					}
 					change_primary_culture = manchu_new
+					set_ruler_culture = manchu_new
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						set_heir_culture = manchu_new
+					}
+					if = {
+						limit = {
+							has_consort = yes
+							consort_culture = manchu
+						}
+						set_consort_culture = manchu_new
+					}
 				}
 			}
 			custom_tooltip = manchu_culture_tt
@@ -82,6 +118,7 @@ country_decisions = {
 			manchuria_region = {
 				limit = {
 					NOT = { is_core = ROOT }
+					is_city = yes
 				}
 				add_core = MCH
 			}
@@ -152,8 +189,14 @@ country_decisions = {
 				}
 				is_emperor_of_china = yes
 			}
-			else = {
+			else_if = {
+				limit = {
+					has_dlc = "Common Sense"
+				}
 				government_rank = 3
+			}
+			else = {
+				total_development = 1000
 			}
 		}
 		effect = {
@@ -192,7 +235,7 @@ country_decisions = {
 					has_reform = steppe_horde
 				}
 				change_government = monarchy
-				set_legacy_government = despotic_monarchy
+				#set_legacy_government = despotic_monarchy
 			}
 			if = {
 				limit = {

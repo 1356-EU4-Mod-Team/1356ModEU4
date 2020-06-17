@@ -1,6 +1,6 @@
 country_decisions = {
 
-	netherlands_nation = { #1356 - Changed Tech
+	netherlands_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -34,14 +34,27 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 95 # Breda
-				province_id = 96 # Zeeland
-				province_id = 97 # Holland
+				province_id = 97 # Amsterdam
 				province_id = 98 # Utrecht
 				province_id = 99 # Gelre
-				province_id = 100 # Friesland
 				province_id = 4383 # Den Haag
-				province_id = 4381 #Oversticht
-				province_id = 4382 #Groningen
+				AND = {
+					region = low_countries_region
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 10
+								region = low_countries_region
+								is_core = root
+							}
+						}
+						owns_core_province = 95
+						owns_core_province = 97
+						owns_core_province = 98
+						owns_core_province = 99
+						owns_core_province = 4383
+					}
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -49,35 +62,48 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 16 #Orignally 10
+			adm_tech = 16 #1356
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			NOT = { exists = NED }
 			owns_core_province = 95 # Breda
-			owns_core_province = 96 # Zeeland
-			owns_core_province = 97 # Holland
+			owns_core_province = 97 # Amsterdam
 			owns_core_province = 98 # Utrecht
 			owns_core_province = 99 # Gelre
-			owns_core_province = 100 # Friesland
-			owns_core_province = 4383 #Den Haag
-			owns_core_province = 4381 #Oversticht
-			owns_core_province = 4382 #Groningen
+			owns_core_province = 4383 # Den Haag
+			num_of_owned_provinces_with = {
+				value = 10
+				region = low_countries_region
+				is_core = root
+			}
+			if = {
+				limit = {
+					tag = BUR
+				}
+				NOT = { has_disaster = dutch_revolt_disaster }
+			}
 		}
 	 	effect = {
 			if = {
 				limit = {
-					any_owned_province = {
-						is_part_of_hre = yes
-					}
 					is_elector = no
 					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
+					OR = {
 						is_part_of_hre = yes
+						any_owned_province = {
+							is_part_of_hre = yes
+						}
 					}
-					set_in_empire = no
+				}
+				set_in_empire = no
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							is_part_of_hre = yes
+						}
+						set_in_empire = no
+					}
 				}
 			}
 	  		if = {
@@ -103,28 +129,6 @@ country_decisions = {
 	  				cede_province = FRA
 	  			}
 	  		}
-			if = {
-				limit = {
-					government = theocracy
-					religion = catholic
-				}
-				change_government = monarchy
-				set_legacy_government = administrative_monarchy
-				PAP = {
-					add_opinion = {
-						who = ROOT
-						modifier = opinion_displeased
-					}
-				}
-			}
-			if = {
-				limit = {
-					government = theocracy
-					NOT = { religion = catholic }
-				}
-				change_government = monarchy
-				set_legacy_government = administrative_monarchy
-			}
 			if = {
 				limit = {
 					tag = BUR
@@ -159,23 +163,8 @@ country_decisions = {
 			low_countries_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
-					NOT = { province_id = 87 }
-					NOT = { province_id = 181 }
-				}
-				add_permanent_claim = NED
-			}
-			wallonia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			picardy_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = {
-						province_id = 89
-					}
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { province_id = 1931 }
 				}
 				add_permanent_claim = NED
 			}

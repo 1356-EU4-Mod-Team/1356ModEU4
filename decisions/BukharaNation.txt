@@ -6,11 +6,16 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_bukhara_flag }
-			OR = {
+			OR = { #1356
 				primary_culture = uzbehk
 				primary_culture = turkmeni
 				primary_culture = khazak
 				primary_culture = nogaybak
+				tag = SHY
+			}
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
 			}
 			NOT = { exists = BUK }
 			NOT = { has_reform = celestial_empire }
@@ -30,24 +35,26 @@ country_decisions = {
 				NOT = { is_core = ROOT }
 			}
 
-			province_id = 1970 #Syghnak
+			province_id = 1970 #Syghnak #1356
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			province_id = 446 #Herat
+			province_id = 446 #Herat #1356
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {
-			religion_group = muslim 
-			OR = {
+			religion_group = muslim #1356
+			has_institution = feudalism
+			OR = { #1356
 				primary_culture = uzbehk
 				primary_culture = turkmeni
 				primary_culture = khazak
 				primary_culture = nogaybak
+				tag = SHY
 			}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -57,7 +64,7 @@ country_decisions = {
 			NOT = { 
 				overlord_of = SIB
 			}
-			adm_tech = 10
+			adm_tech = 16 #1356
 		}
 		
 		effect = {
@@ -80,8 +87,8 @@ country_decisions = {
 				}
 				442 = {
                     add_base_tax = 2 #Only the first time Bukhara is formed by anyone.
-                    add_base_production = 2
-                    add_base_manpower = 2
+                    add_base_production = 2 #1356
+                    add_base_manpower = 2 #1356
 				}
 			}
 			add_permanent_claim = 441 #Khiva
@@ -93,11 +100,16 @@ country_decisions = {
 			add_permanent_claim = 1973 #Urgench
 			add_permanent_claim = 2363 #Khujand
 			if = {
-				limit = { NOT = { government = monarchy } }
-				change_government = monarchy
-				set_legacy_government = despotic_monarchy
+				limit = { 
+					NOT = { government = monarchy }
+					is_revolutionary = no
+				}
+				change_government_to_monarchy = yes
 			}
-			add_government_reform = feudal_theocracy
+			if = {
+				limit = { is_revolutionary = no }
+				add_government_reform = feudal_theocracy #1356
+			}
 			change_technology_group = muslim
 			change_unit_type = muslim
 			set_global_flag = bukhara_formed

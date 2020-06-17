@@ -2,7 +2,9 @@
 
 graphical_culture = westerngfx
 
-color = { 177  117  114 }
+color = { 240 205 140 }
+
+revolutionary_colors = { 0 13 0 }
 
 historical_idea_groups = {
 	trade_ideas
@@ -10,9 +12,9 @@ historical_idea_groups = {
 	religious_ideas
 	economic_ideas
 	diplomatic_ideas
-	innovativeness_ideas
 	spy_ideas
 	offensive_ideas
+	innovativeness_ideas
 }
 
 historical_units = {
@@ -24,9 +26,8 @@ historical_units = {
 	austrian_tercio
 	austrian_grenzer
 	austrian_hussar
-	prussian_frederickian
-	prussian_uhlan
-	prussian_drill
+	austrian_white_coat
+	austrian_jaeger
 	mixed_order_infantry
 	open_order_cavalry
 	napoleonic_square
@@ -34,66 +35,106 @@ historical_units = {
 }
 
 monarch_names = {
-	"Johann #0" = 60
-	"Adolf #0" = 20
-	"Joachim #0" = 20
-	"Johann Wilhelm #0" = 20
-	"Wilhelm #0" = 20
-	"Achilles #0" = 10
-	"Karl Friedrich #0" = 10
-	"Philipp #8" = 5
-	"Engelbert #0" = 5
-	"Philipp #0" = 5
-	"Albrecht #0" = 0
-	"Barnabas #0" = 0
-	"Burkhard #0" = 0
-	"Denis #0" = 0
-	"Eberhard #0" = 0
-	"Elmer #0" = 0
-	"Erich #0" = 0
-	"Gerhard #0" = 0
-	"Gottlieb #0" = 0
-	"Gregor #0" = 0
-	"Hagan #0" = 0
-	"Helmut #0" = 0
-	"Heribert #0" = 0
-	"Isaak #0" = 0
-	"Isidor #0" = 0
-	"Ivo #0" = 0
-	"Joseph #0" = 0
-	"Kaspar #0" = 0
-	"Kreszenz #0" = 0
-	"Lothar #0" = 0
-	"Mathias #0" = 0
-	"Oskar #0" = 0
-	"Reimund #0" = 0
-	"Siegfried #0" = 0
-	"Stefan #0" = 0
-	"Thomas #0" = 0
-	"Walter #0" = 0
-	"Wenzel #0" = 0
-	"Werner #0" = 0
-	"Wolfram #0" = 0
+	"Gerhard #1" = 45
+	"Engelbert #0" = 35
+	"Johann Wilhelm #0" = 35
+	"Adolf #7" = 30
+	"Johann #0" = 30
+	"Wilhelm #2" = 30
+	"Wolfgang Wilhelm #0" = 30
+	"Karl Philip #0" = 25
+	"Maximilian Joseph #0" = 25
+	"Philip Wilhelm #0" = 25
+	"Karl Franz #0" = 20
+	"Karl Theodor #0" = 20
 	
-	"Amber #0" = -1
-	"Carla #0" = -1
-	"Georgina #0" = -1
+	"Adalbert #0" = 0
+	"Albrecht #0" = 0
+	"Alexander #0" = 0
+	"Ambrosius #0" = 0
+	"Andreas #0" = 0
+	"Arnold #0" = 0
+	"August #0" = 0
+	"Bernhard #0" = 0
+	"Bertram #0" = 0
+	"Bruno #0" = 0
+	"Clemens #0" = 0
+	"Dietrich #0" = 0
+	"Emil #0" = 0
+	"Erasmus #0" = 0
+	"Ernst #0" = 0
+	"Eugen #0" = 0
+	"Felix #0" = 0
+	"Franz #0" = 0
+	"Friedrich #0" = 0
+	"Heinrich #0" = 0
+	"Georg #0" = 0
+	"Gustav #0" = 0
+	"Johann Ludwig #0" = 0
+	"Jürgen #0" = 0
+	"Konstantin #0" = 0
+	"Lambert #0" = 0
+	"Leopold #0" = 0
+	"Ludwig #0" = 0
+	"Maximilian #0" = 0
+	"Michael #0" = 0
+	"Nikolaus #0" = 0
+	"Norbert #0" = 0
+	"Oswald #0" = 0
+	"Otto #0" = 0
+	"Paul #0" = 0
+	"Peter #0" = 0
+	"Philipp #0" = 0
+	"Ruprecht #0" = 0
+	"Stefan #0" = 0
+	"Viktor #0" = 0
+	"Walram #0" = 0
+	"Walter #0" = 0
+	
+	"Agnes #0" = -1
+	"Anna #0" = -1
+	"Barbara #0" = -1
+	"Beatrix #0" = -1
+	"Irmgard #0" = -1
+	"Margarete #0" = -1
 }
 
-leader_names = { 
-	Angenendt Becker Becking "von Beinom" Contze
-	Cronenberg Dennessen Derksen Engelbronner 
-	Holler Jenster Kroeger Meurs Nagel Rundt 
-	Sinsteden "Van Gelder" "von Oven"
+leader_names = {
+	Assing "von Althoven" "von Appen" Achenbach
+	Baumgarten "von der Broel" Bechstein Burgmüller
+	Collin Clasen "von Cornelius" Camphausen Curtens
+	Dietze "von Dinslaken"
+	"von Fuchsius"
+	"von Hatzfeld-Wildenburg"
+	Ghogreff Geither "von Geldern" "von Goltstein" "von Gruben" Gottschalk
+	Hardenrath "von Hompesch" "von der Horst" "von Hochkirchen" "von Hochstaden" Hasenclever
+	Josten
+	Klüber Köttgen "von Kalckreuth" Kaulen "de Kleist"
+	Lüninck "von Leerodt" "von der Leyen" "von Langer"
+	"von Nesselrode" "von Neuberg"
+	Olmans "von Orsbeck"
+	Ploennies "zum Pütz" "von der Pfalz"
+	"Raitz von Frentz"
+	Schädler "von Schaesberg" "von Sayn" Schramm Schöller Stüttgen Ströhling "von Sybel"
+	"von Velbrück" "von Vlatten" "von Villers" "Varnhagen von Ense"
+	Windscheid "von Wyle" "von und zu Winkelhausen" "von Wüllenweber" Wüllner
+	Zintgraff "von Zandt" "von Zimmermann"
 }
 
 ship_names = {
-	"Arnold I von Kleve" "Arnold II von Kleve"
-	"Adolf von Kleve" "Johann I von Kleve"
-	"Johann II von Kleve" Margarete Agnes Elisabeth
-	Mathilde "Dietrich von Kleve" "Gerhard von Kleve"
+	Altenberg
+	Berg Bochum Bliesgau
+	Cunigunda
+	Düsseldorf Deutz
+	Elberfeld Ezzo
+	Homburg
+	Lüdenscheid
+	Mark Monschau Münstereifel Mechthildis
+	Sinzig
+	Werden Windeck
+	Zulpich Zaubergreth
 }
 
 army_names = {
-	"Armee von $PROVINCE$" 
+	"Armee von $PROVINCE$"
 }

@@ -32,7 +32,7 @@ country_decisions = {
 			if = {
 				limit = { NOT = { has_reform = celestial_empire } }
 				change_government = monarchy #Desert tribes settling down, theocracies become monarchies.
-				set_legacy_government = despotic_monarchy
+				#set_legacy_government = despotic_monarchy
 			}
 			if = {
 				limit = { has_custom_ideas = no }
