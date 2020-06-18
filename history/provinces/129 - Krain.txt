@@ -1,11 +1,10 @@
 # 129 - Krain (1356)
-# Changes: STY
+# Changes: STY # HAB
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = STY
+controller = STY
 add_core = STY
-culture = slovenian
+culture = slovene
 religion = catholic
 base_tax = 7 
 
@@ -27,8 +26,11 @@ discovered_by = AST
 discovered_by = QAS
 
 1356.12.24  = { owner = KRN controller = KRN add_core = KRN add_core = TIR} #BT In
-1356.12.26  = { owner = HAB controller = HAB remove_core = KRN remove_core = TIR} #BT Out
+1356.12.26  = { owner = STY controller = STY remove_core = STY remove_core = TIR} #BT Out
 #Use a unique Flavor event to give Tirol claims on Krain, since its starting ruler did not inherit this province even though her father owned it.
+
+1360.1.1  = { owner = HAB controller = HAB add_core = HAB }
+#Rudolf IV Proclaims Archduchy of Austria. Represented in Imperial Accident/Rudolf Event chain in 1356 Start
 
 1379.9.25  = { owner = STY controller = STY remove_core = HAB add_claim = HAB }
 1439.10.27 = { owner = HAB controller = HAB remove_claim = HAB add_core = HAB }

@@ -49,27 +49,27 @@ namespace = fla_novgorod
 		# 4124 = { add_core = KRL } #Karelia
 		# 32 = { add_core = KRL } #Kexholm
 		# 309 = { add_core = KRL } #Olonets	
-		# 4152 = { add_core = ING remove_core = NOV } #Kainuu
-		# 1776 = { add_core = ING remove_core = NOV } #White Karrelia
-		# 4124 = { add_core = ING remove_core = NOV } #Karelia
-		# 32 = { add_core = ING remove_core = NOV } #Kexholm
-		# 1961 = { add_core = ING } #Ladoga
-		# 33 = { add_core = ING } #Neva
-		# 34 = { add_core = ING } #Ingermanland
-		# 33 = { cede_province = ING } #Neva
-		# 309 = { cede_province = ING } #Olonets
-		# 4152 = { cede_province = ING } #Kainuu
-		# 1776 = { cede_province = ING } #White Karrelia
+		# 4152 = { add_core = IN6 remove_core = NOV } #Kainuu
+		# 1776 = { add_core = IN6 remove_core = NOV } #White Karrelia
+		# 4124 = { add_core = IN6 remove_core = NOV } #Karelia
+		# 32 = { add_core = IN6 remove_core = NOV } #Kexholm
+		# 1961 = { add_core = IN6 } #Ladoga
+		# 33 = { add_core = IN6 } #Neva
+		# 34 = { add_core = IN6 } #Ingermanland
+		# 33 = { cede_province = IN6 } #Neva
+		# 309 = { cede_province = IN6 } #Olonets
+		# 4152 = { cede_province = IN6 } #Kainuu
+		# 1776 = { cede_province = IN6 } #White Karrelia
 		# 4124 = { #Karelia
-			# cede_province = ING
+			# cede_province = IN6
 			# add_building = fort_15th
 		# }
-		# 32 = { cede_province = ING } #Kexholm
+		# 32 = { cede_province = IN6 } #Kexholm
 		# 1961 = { #Ladoga
-			# cede_province = ING
+			# cede_province = IN6
 			# add_building = fort_15th
 		# } 
-		# 34 = { cede_province = ING } #Ingermanland
+		# 34 = { cede_province = IN6 } #Ingermanland
 		# ING = {
 			# define_ruler = { #Historical
 				# name = "Patrikas I"
@@ -87,7 +87,7 @@ namespace = fla_novgorod
 		# NOV = {
 			# create_subject = {
 				# subject_type = vassal
-				# subject = ING
+				# subject = IN6
 			# }
 		# }
 	# }
@@ -101,9 +101,9 @@ namespace = fla_novgorod
 		# 1776 = { add_core = KRL } #White Karrelia
 		# 4124 = { add_core = KRL } #Karelia
 		# 32 = { add_core = KRL } #Kexholm
-		# 1961 = { add_core = ING} #Ladoga
-		# 33 = { add_core = ING } #Neva
-		# 34 = { add_core = ING } #Ingermanland
+		# 1961 = { add_core = IN6} #Ladoga
+		# 33 = { add_core = IN6 } #Neva
+		# 34 = { add_core = IN6 } #Ingermanland
 	# }
 	# option = { #Things are fine as is
 		# name = "fla_novgorod.1.c"

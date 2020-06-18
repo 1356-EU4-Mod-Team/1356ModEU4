@@ -1,9 +1,9 @@
 # 110 - Trent (1356)
 # Changes: TIR
 
-owner = TIR
-controller = TIR
-add_core = TIR
+owner = TNT
+controller = TNT
+add_core = TNT
 culture = venetian
 religion = catholic
 hre = yes
@@ -22,7 +22,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { add_claim = HAB } #BT In
-1356.12.26  = { remove_claim = HAB } #BT Out
+1356.12.26  = { remove_claim = HAB add_core = TIR } #BT Out
 
 1363.1.13  = { add_claim = HAB }
 1439.6.24  = { owner = HAB controller = HAB remove_claim = HAB add_core = HAB add_core = STY } # Tyrol gets part of Habsburg in cause of game balancing

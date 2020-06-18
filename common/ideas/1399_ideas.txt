@@ -2749,7 +2749,7 @@ ING_ideas = { #Ingria #Built around the idea that they exist only for Novgorod t
 	}
 	
 	trigger = {
-		tag = ING
+		tag = IN6
 	}
 	free = yes
 	ing_idea_1 = { 

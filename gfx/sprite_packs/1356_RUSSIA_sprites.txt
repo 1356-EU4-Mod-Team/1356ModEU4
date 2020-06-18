@@ -1,0 +1,121 @@
+russian_tver_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		tag = DMT
+	}
+
+	sprite_infantry = {
+		0 = TVE_INFANTRY_1
+		1 = TVE_INFANTRY_2
+		2 = TVE_INFANTRY_3
+		3 = TVE_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = TVE_CAVALRY_1
+		1 = TVE_CAVALRY_2
+		2 = TVE_CAVALRY_3
+		3 = TVE_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = TVE_ARTILLERY_1
+		1 = TVE_ARTILLERY_2
+		2 = TVE_ARTILLERY_3
+		3 = TVE_ARTILLERY_4
+	}
+}
+
+dlc048_nog_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		tag = NOG
+	}
+
+	sprite_infantry = {
+		0 = NOG_INFANTRY_1
+		1 = NOG_INFANTRY_2
+		2 = NOG_INFANTRY_3
+		3 = NOG_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = NOG_CAVALRY_1
+		1 = NOG_CAVALRY_2
+		2 = NOG_CAVALRY_3
+		3 = NOG_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = NOG_ARTILLERY_1
+		1 = NOG_ARTILLERY_2
+		2 = NOG_ARTILLERY_3
+		3 = NOG_ARTILLERY_4
+	}
+}
+
+dlc048_shy_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = SHY
+			tag = BUK
+			tag = KZH
+		}
+	}
+
+	sprite_infantry = {
+		0 = SHY_INFANTRY_1
+		1 = SHY_INFANTRY_2
+		2 = SHY_INFANTRY_3
+		3 = SHY_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = SHY_CAVALRY_1
+		1 = SHY_CAVALRY_2
+		2 = SHY_CAVALRY_3
+		3 = SHY_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = SHY_ARTILLERY_1
+		1 = SHY_ARTILLERY_2
+		2 = SHY_ARTILLERY_3
+		3 = SHY_ARTILLERY_4
+	}
+}
+
+dlc048_tim_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = TIM
+			tag = KHO
+			tag = TRS
+			tag = ILK
+			tag = HER
+		}
+	}
+
+	sprite_infantry = {
+		0 = TIM_INFANTRY_1
+		1 = TIM_INFANTRY_2
+		2 = TIM_INFANTRY_3
+		3 = TIM_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = TIM_CAVALRY_1
+		1 = TIM_CAVALRY_2
+		2 = TIM_CAVALRY_3
+		3 = TIM_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = TIM_ARTILLERY_1
+		1 = TIM_ARTILLERY_2
+		2 = TIM_ARTILLERY_3
+		3 = TIM_ARTILLERY_4
+	}
+}

@@ -2229,7 +2229,7 @@ finno_ugric = { #Finno-Ugric #1356
 		}
 	}	
 	ingrian = {  
-		primary = ING
+		primary = IN6
 		male_names = {
 			Kahru Kahrulemb Gáktu Henes Járre Jeansa Juvven John Lágon Lávrrohas Leammá Mellet Mihka Igalemb Ihameel Ihar 
 			Ihatõiv Ihavald Illimar Ilmalemb Ilmar Ilvelemb Jaolemb Kaalep Lättelemb Manivald Mart Maru Mati Mats Meelis Mehis 

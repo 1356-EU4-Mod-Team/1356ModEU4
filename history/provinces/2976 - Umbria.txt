@@ -12,6 +12,7 @@ base_manpower = 1
 capital = "Perugia" 
 is_city = yes
 add_core = PAP
+add_core = PGA
 
 discovered_by = western
 discovered_by = eastern

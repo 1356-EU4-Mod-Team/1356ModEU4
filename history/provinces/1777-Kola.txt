@@ -21,9 +21,9 @@ discovered_by = western
 discovered_by = eastern
 
 1337.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
-	owner = ING
-	add_core = ING
-	controller = ING
+	owner = IN6
+	add_core = IN6
+	controller = IN6
 	remove_core = NOV
 }
 

@@ -1,9 +1,8 @@
 # 128 - Kärnten (1356)
 # Changes: STY
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = STY
+controller = STY
 add_core = STY
 add_core = CTH #Carinthia
 culture	= austrian
@@ -23,7 +22,11 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { owner = CTH controller = CTH } #BT In
-1356.12.26  = { owner = HAB controller = HAB } #BT Out
+1356.12.26  = { owner = STY controller = STY } #BT Out
+
+1360.1.1  = { owner = HAB controller = HAB add_core = HAB }
+#Rudolf IV Proclaims Archduchy of Austria. Represented in Imperial Accident/Rudolf Event chain in 1356 Start
+
 
 1379.9.25  = { owner = STY controller = STY remove_core = HAB add_claim = HAB }
 1439.10.27 = { owner = HAB controller = HAB remove_claim = HAB add_core = HAB }

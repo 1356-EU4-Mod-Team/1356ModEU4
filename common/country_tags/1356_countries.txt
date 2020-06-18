@@ -79,7 +79,7 @@ DRZ = "countries/Dobrzyn.txt"
 SDU = "countries/Starodub.txt"
 VYL = "countries/VyatskayaZemlya.txt"
 TAK = "countries/Trakai.txt"
-ING = "countries/Ingria.txt"
+IN6 = "countries/Ingria.txt"
 
 #Arabia	
 

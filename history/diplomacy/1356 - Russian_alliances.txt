@@ -264,7 +264,7 @@ alliance = {
 #Novgorod and Ingria
 vassal = {
 	first = NOV
-	second = ING
+	second = IN6
 	start_date = 1356.1.1 #sometime in 1337 historically
 	end_date = 1443.12.31
 	#end_date = 1478.1.15
@@ -273,7 +273,7 @@ vassal = {
 #Novgorod and Ingria II
 vassal = {
 	first = NOV
-	second = ING
+	second = IN6
 	start_date = 1444.1.1 #sometime in 1337 historically
 	end_date = 1478.1.15
 }

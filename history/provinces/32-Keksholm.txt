@@ -25,9 +25,9 @@ discovered_by = AST
 
 
 1337.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
-	owner = ING
-	add_core = ING
-	controller = ING
+	owner = IN6
+	add_core = IN6
+	controller = IN6
 	remove_core = NOV
 }
 
@@ -36,7 +36,7 @@ discovered_by = AST
 	controller = MOS
 	add_core = MOS
 	remove_core = NOV
-	remove_core = ING
+	remove_core = IN6
 	fort_15th = no #1356
 } # Muscovite annexation of Novgorod
 1503.4.1 = {

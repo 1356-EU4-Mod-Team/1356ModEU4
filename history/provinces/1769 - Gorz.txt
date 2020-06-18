@@ -7,7 +7,7 @@ add_core = GOR
 add_core = AQU
 add_claim = HAB 
 add_claim = STY
-culture = slovenian
+culture = slovene
 religion = catholic
 base_tax = 5 
 

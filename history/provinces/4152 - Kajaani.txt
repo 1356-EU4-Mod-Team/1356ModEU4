@@ -18,16 +18,16 @@ discovered_by = eastern
 discovered_by = western
 
 1337.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.
-	owner = ING
-	add_core = ING
-	controller = ING
+	owner = IN6
+	add_core = IN6
+	controller = IN6
 	remove_core = NOV
 }
 
 1440.1.1 = {	owner = SWE
 		controller = SWE
 		add_core = SWE
-		remove_core = ING
+		remove_core = IN6
 		is_city = yes
 		religion = catholic
 		trade_goods = fur
