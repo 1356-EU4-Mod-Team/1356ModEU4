@@ -16,13 +16,9 @@ ming_crisis = { #1356
 			OR = {
 				AND = {
 					NOT = { imperial_mandate = 50 }
-					MNG = { is_emperor_of_china = yes } #1356
+					is_emperor_of_china = yes
 				}
-				AND = { #1356 added
-					is_emperor_of_china = no #1356
-					NOT = { current_age = age_of_feudalism } #1356
-					NOT = { current_age = age_of_discovery } #1356
-				} #1356
+				NOT = { is_emperor_of_china = yes }
 			}
 		}
 		else = {
