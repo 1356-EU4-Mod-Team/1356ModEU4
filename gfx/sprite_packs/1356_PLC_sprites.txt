@@ -1,0 +1,95 @@
+lithuania_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = SMG
+			tag = TAK
+		}	
+	}
+
+	sprite_infantry = {
+		0 = LIT_INFANTRY_1
+		1 = LIT_INFANTRY_2
+		2 = LIT_INFANTRY_3
+		3 = LIT_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = LIT_CAVALRY_1
+		1 = LIT_CAVALRY_2
+		2 = LIT_CAVALRY_3
+		3 = LIT_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = LIT_ARTILLERY_1
+		1 = LIT_ARTILLERY_2
+		2 = LIT_ARTILLERY_3
+		3 = LIT_ARTILLERY_4
+	}
+}
+
+polish_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = WRW
+			tag = PLK
+			tag = DRZ
+		}	
+	}
+
+	sprite_infantry = {
+		0 = POL_NEW_INFANTRY_1
+		1 = POL_INFANTRY_2_catup
+		2 = POL_NEW_INFANTRY_3
+		3 = POL_NEW_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = POL_CAVALRY_1_hussar
+		1 = POL_CAVALRY_2_hussar
+		2 = POL_CAVALRY_3_hussar
+		3 = POL_CAVALRY_4_hussar
+	}
+
+	sprite_artillery = {
+		0 = POL_ARTILLERY_1
+		1 = POL_ARTILLERY_2_catup
+		2 = POL_ARTILLERY_3
+		3 = POL_ARTILLERY_4
+	}
+}
+
+
+ruthenian_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = PDA
+			tag = VOL
+		}	
+	}
+
+	sprite_infantry = {
+		0 = UKR_INFANTRY_1
+		1 = UKR_INFANTRY_2
+		2 = UKR_INFANTRY_3
+		3 = UKR_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = UKR_CAVALRY_1
+		1 = UKR_CAVALRY_2
+		2 = UKR_CAVALRY_3
+		3 = UKR_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = UKR_ARTILLERY_1
+		1 = UKR_ARTILLERY_2
+		2 = UKR_ARTILLERY_3
+		3 = UKR_ARTILLERY_4
+	}
+}
+

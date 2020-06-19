@@ -3481,7 +3481,7 @@ KNI_ideas = {
 	}
 	
 	trigger = {
-        	tag = KNI
+        tag = KNI
     }
 	free = yes        #will be added at load.
 	

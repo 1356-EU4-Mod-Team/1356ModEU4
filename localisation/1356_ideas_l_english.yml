@@ -44,6 +44,13 @@
  generic_the_swiss_confederation: "The Swiss Condfederation"
  generic_legacy_sejiuqs_empire: "Sejulks Empire"
  
+ polish_duchy_ideas_bonus: "Polish Ducal Ambitions"
+ polish_duchy_ideas_start: "Polish Ducal Traditions"
+ polish_duchy_ideas: "Polish Ducal Ideas"
+ CIC_ideas_bonus: "Cilician Ambitions"
+ CIC_ideas_start: "Cilician Traditions"
+ CIC_ideas: "Cilician Ideas"
+ 
  WOO_ideas_bonus: "Wallonian Ambitions"
  WOO_ideas_start: "Wallonian Traditions"
  WOO_ideas: "Wallonian Ideas"
