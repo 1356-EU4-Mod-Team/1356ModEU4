@@ -26,96 +26,158 @@ russian_tver_clones = {
 	}
 }
 
-dlc048_nog_sprite_pack = {
+russian_rostov_clones = {
 	# Tests against every tag in game
 	country_trigger = {
-		tag = NOG
+		tag = KMA
 	}
 
 	sprite_infantry = {
-		0 = NOG_INFANTRY_1
-		1 = NOG_INFANTRY_2
-		2 = NOG_INFANTRY_3
-		3 = NOG_INFANTRY_4
+		0 = RYA_INFANTRY_1
+		1 = RYA_INFANTRY_2
+		2 = RYA_INFANTRY_3
+		3 = RYA_INFANTRY_4
 	}
 
 	sprite_cavalry = {
-		0 = NOG_CAVALRY_1
-		1 = NOG_CAVALRY_2
-		2 = NOG_CAVALRY_3
-		3 = NOG_CAVALRY_4
+		0 = RYA_CAVALRY_1
+		1 = RYA_CAVALRY_2
+		2 = RYA_CAVALRY_3
+		3 = RYA_CAVALRY_4
 	}
 
 	sprite_artillery = {
-		0 = NOG_ARTILLERY_1
-		1 = NOG_ARTILLERY_2
-		2 = NOG_ARTILLERY_3
-		3 = NOG_ARTILLERY_4
+		0 = RYA_ARTILLERY_1
+		1 = RYA_ARTILLERY_2
+		2 = RYA_ARTILLERY_3
+		3 = RYA_ARTILLERY_4
 	}
 }
 
-dlc048_shy_sprite_pack = {
+russian_niz_novgorod_clones = {
 	# Tests against every tag in game
 	country_trigger = {
 		OR = {
-			tag = SHY
-			tag = BUK
-			tag = KZH
-		}
+			tag = MRM
+			tag = SDU
+		}	
 	}
 
 	sprite_infantry = {
-		0 = SHY_INFANTRY_1
-		1 = SHY_INFANTRY_2
-		2 = SHY_INFANTRY_3
-		3 = SHY_INFANTRY_4
+		0 = NZH_INFANTRY_1
+		1 = NZH_INFANTRY_2
+		2 = NZH_INFANTRY_3
+		3 = NZH_INFANTRY_4
 	}
 
 	sprite_cavalry = {
-		0 = SHY_CAVALRY_1
-		1 = SHY_CAVALRY_2
-		2 = SHY_CAVALRY_3
-		3 = SHY_CAVALRY_4
+		0 = NZH_CAVALRY_1
+		1 = NZH_CAVALRY_2
+		2 = NZH_CAVALRY_3
+		3 = NZH_CAVALRY_4
 	}
 
 	sprite_artillery = {
-		0 = SHY_ARTILLERY_1
-		1 = SHY_ARTILLERY_2
-		2 = SHY_ARTILLERY_3
-		3 = SHY_ARTILLERY_4
+		0 = NZH_ARTILLERY_1
+		1 = NZH_ARTILLERY_2
+		2 = NZH_ARTILLERY_3
+		3 = NZH_ARTILLERY_4
 	}
 }
 
-dlc048_tim_sprite_pack = {
+russian_muscovy_clones = {
 	# Tests against every tag in game
 	country_trigger = {
 		OR = {
-			tag = TIM
-			tag = KHO
-			tag = TRS
-			tag = ILK
-			tag = HER
-		}
+			tag = VLD
+			tag = GLY
+		}	
 	}
 
 	sprite_infantry = {
-		0 = TIM_INFANTRY_1
-		1 = TIM_INFANTRY_2
-		2 = TIM_INFANTRY_3
-		3 = TIM_INFANTRY_4
+		0 = RUS_NEW_INFANTRY_1
+		1 = RUS_NEW_INFANTRY_2
+		2 = RUS_NEW_INFANTRY_3
+		3 = RUS_NEW_INFANTRY_4
 	}
 
 	sprite_cavalry = {
-		0 = TIM_CAVALRY_1
-		1 = TIM_CAVALRY_2
-		2 = TIM_CAVALRY_3
-		3 = TIM_CAVALRY_4
+		0 = RUS_NEW_CAVALRY_1
+		1 = RUS_NEW_CAVALRY_2
+		2 = RUS_NEW_CAVALRY_3
+		3 = RUS_NEW_CAVALRY_4
 	}
 
 	sprite_artillery = {
-		0 = TIM_ARTILLERY_1
-		1 = TIM_ARTILLERY_2
-		2 = TIM_ARTILLERY_3
-		3 = TIM_ARTILLERY_4
+		0 = RUS_NEW_ARTILLERY_1
+		1 = RUS_NEW_ARTILLERY_2
+		2 = RUS_NEW_ARTILLERY_3
+		3 = RUS_NEW_ARTILLERY_4
 	}
+}
+
+russian_finno_perm_clones = {
+    # Tests against every tag in game
+    country_trigger = {
+        OR = {
+			tag = MMR
+			tag = MIA
+			tag = MI1
+			tag = MR1
+			tag = MR2
+			tag = UDM
+			tag = VYL
+			tag = BOG
+			tag = SMI
+		}	
+    }
+
+    sprite_infantry = {
+        0 = PRM_INFANTRY_1
+        1 = PRM_INFANTRY_2
+        2 = PRM_INFANTRY_3
+        3 = PRM_INFANTRY_4
+    }
+
+    sprite_cavalry = {
+        0 = PRM_CAVALRY_1
+        1 = PRM_CAVALRY_2
+        2 = PRM_CAVALRY_3
+        3 = PRM_CAVALRY_4
+    }
+
+    sprite_artillery = {
+        0 = PRM_ARTILLERY_1
+        1 = PRM_ARTILLERY_2
+        2 = PRM_ARTILLERY_3
+        3 = PRM_ARTILLERY_4
+    }
+}
+
+russian_ingria_units = {
+    # Tests against every tag in game
+    country_trigger = {
+        tag = IN6
+    }
+
+    sprite_infantry = {
+        0 = PSK_INFANTRY_1
+        1 = PSK_INFANTRY_2
+        2 = PSK_INFANTRY_3
+        3 = PSK_INFANTRY_4
+    }
+
+    sprite_cavalry = {
+        0 = PSK_CAVALRY_1
+        1 = PSK_CAVALRY_2
+        2 = PSK_CAVALRY_3
+        3 = PSK_CAVALRY_4
+    }
+
+    sprite_artillery = {
+        0 = PSK_ARTILLERY_1
+        1 = PSK_ARTILLERY_2
+        2 = PSK_ARTILLERY_3
+        3 = PSK_ARTILLERY_4
+    }
 }
