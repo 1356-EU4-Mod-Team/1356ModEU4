@@ -1347,13 +1347,11 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 
 	can_embrace = {
 		owner = { 
-			OR = {
-				NOT = { government = native }
-				NOT = { government = tribal_federation }
-				NOT = { government = tribal_despotism }
-				NOT = { government = tribal_kingdom }
-				NOT = { government = siberian_tribe }
-			}
+			NOT = { government = native }
+			NOT = { has_reform = tribal_federation }
+			NOT = { has_reform = tribal_despotism }
+			NOT = { has_reform = tribal_kingdom }
+			NOT = { has_reform = siberian_tribe }
 		}
 	}
 

@@ -1,5 +1,5 @@
 granada_succession_war = {
-	potential = { #1356
+	potential = {
 		OR = {
 			tag = GRA
 			tag = ADU
@@ -24,13 +24,17 @@ granada_succession_war = {
 
 	
 	
-	can_start = { #1356
+	can_start = {
 		has_any_disaster = no
 		has_regency = no
+		NOT = { heir_dynasty = Nasrid }
 		is_year = 1380 #1356
 		NOT = {
 			is_year = 1455
 		}
+		NOT = { heir_adm = 5 }
+		NOT = { heir_dip = 5 }
+		NOT = { heir_mil = 5 }
 	}
 	
 	
@@ -38,9 +42,12 @@ granada_succession_war = {
 		OR = {
 			has_any_disaster = yes
 			has_regency = yes
-			heir_adm = 5
-			heir_dip = 5
-			heir_mil = 5
+			AND = {
+				heir_adm = 5
+				heir_dip = 5
+				heir_mil = 5
+				heir_dynasty = Nasrid
+			}
 			NOT = {
 				government = monarchy
 			}
@@ -103,4 +110,3 @@ granada_succession_war = {
 		}
 	}
 }
-

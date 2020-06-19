@@ -8,7 +8,10 @@ religious_turmoil = {
 			religion = catholic
 			religion = protestant
 			religion = reformed
-			religion = hussite
+			AND = {
+				religion = hussite
+				NOT = { tag = BOH }
+			}
 		}
 		is_religion_enabled = hussite
 		NOT = { tag = FRA }

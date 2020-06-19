@@ -232,7 +232,7 @@ the_south_feudatory = {
 	liberty_desire = -50
 	global_unrest = -2
 	development_cost = -0.1
-	max_states = 3
+	governing_capacity = 150
 }
 
 the_tatar_yoke = {
