@@ -1,5 +1,5 @@
 great_library = {
-	ambient_object = great_library_alx 
+	ambient_object = alexandria_great_library
 	province = 358
 	time = 1#20 #Set back to 120 later
 	

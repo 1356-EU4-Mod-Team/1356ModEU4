@@ -1,0 +1,16 @@
+objectTypes = {
+	
+	###############################################################
+	#######   						 ######
+	#######                 World wonders			 ######
+	#######   						 ######
+	###############################################################
+
+pdxmesh = {
+		name = "alexandria_great_library"
+		file = "gfx/models/Buildings/1356_wonders/alexandria_library.mesh"
+		scale = 1.0
+		cull_distance = 700.0f
+	}
+
+}

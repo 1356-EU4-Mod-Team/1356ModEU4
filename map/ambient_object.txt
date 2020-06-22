@@ -2647,21 +2647,23 @@ type={
 
 #1356 
 type={
-	type="great_library_alx"
+	type="alexandria_great_library"
 	use_animation=no
-	scale=0.800000
+	scale=0.275000
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes
 	object={
 		name="alexandria_great_library"
-		hidden_on_start=yes
+		hidden_on_start=yes #yes
 		position={
-			3270.000 0.100 1158.000 
+			3248.000 0.100 1159.000 
 		}
 		rotation={
-			0.000 2.000 0.000 
+			0.000 -25.000 0.000 
 		}
 	}
 }
+
+
 
