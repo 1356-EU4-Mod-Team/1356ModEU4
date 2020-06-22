@@ -4,8 +4,8 @@ latent_trade_goods = {
 	coal
 }
 
-owner = MVA
-controller = MVA
+owner = BOH
+controller = BOH
 capital = "Olmütz"
 culture = moravian
 religion = catholic
@@ -15,7 +15,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-#add_core = BOH
+add_core = BOH
 add_core = MVA
 discovered_by = KAZ
 discovered_by = CRI

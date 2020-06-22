@@ -1,13 +1,15 @@
+# 0 Touraine - Principal cities: Tours
+
 owner = ORL
 controller = ORL
-capital = "Blois"
+capital = "Tours"
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic
 hre = no
 base_tax = 4
 base_production = 4
-trade_goods = wine
+trade_goods = cloth
 base_manpower = 3
 add_core = ORL
 discovered_by = eastern
@@ -15,12 +17,14 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1444.1.1  = {
-	owner = ORL
-	controller = ORL
-}
+1356.12.24  = { add_core = FRA } #BT In
+1356.12.26  = { remove_core = FRA } #BT Out
 
-
+1376.9.1   = { owner = FRA controller = FRA add_core = FRA } # Philippe I of Orleans dies, duchy returns to the royal domain of France
+1392.1.1   = { owner = ORL controller = ORL remove_core = FRA } # duchy is handed to Louis I
+1453.10.16 = { owner = FRA controller = FRA add_core = FRA add_local_autonomy = 25 estate = estate_nobles }
+#1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
+#1498.4.7   = { owner = FRA controller = FRA add_core = FRA } # Duchy returns to the royal domain of France
 1560.1.1 = { religion = reformed }
 1562.3.1 = { unrest = 5 }
 1562.3.20 = { revolt = { type = heretic_rebels size = 2 } controller = REB } # Huguenot rebels garrison Orléans & Dreux
@@ -30,12 +34,16 @@ discovered_by = ottoman
 1570.8.8 = { unrest = 10 } # Edict of Saint-Germain: temporary pacification
 1573.9.1 = { unrest = 15 } # Saint Barthelew's Day Massacre: the consequences in the land
 1574.5.1 = { unrest = 7 } # Charles IX dies, situation cools a bit	
-1574.5.3 = { owner = FRA controller = FRA add_core = FRA }
+#1574.5.3 = { owner = FRA controller = FRA }
 1584.1.1 = { unrest = 12 } # Situation heats up again
 1588.12.1 = { unrest = 15 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+1589.1.1 = { base_tax = 9 
+base_production = 9 } # At the Walls of Paris: French Wars of Religion
 1594.1.1 = { unrest = 10 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1598.4.13 = { unrest = 3 } # Edict of Nantes, alot more freedom to the protestants
 1598.5.2 = { unrest = 0 } # Peace of Vervins, formal end to the Wars of Religion
+1621.1.1 = { base_tax = 10 
+base_production = 10 } # Richelieu
 1650.1.14 = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
 1651.4.1 = { unrest = 4 } # An unstable peace is concluded
 1651.12.1 = { unrest = 7 } # Mazarin returns from exile, Condé sides with Spain, situation heats up again

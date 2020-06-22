@@ -32,80 +32,73 @@ historical_units = {
 }
 
 monarch_names = {
-	"Agbarjin #0" = 20
-	"Adai #0" = 20
-	"Altan #0" = 20
-	"Arigaba #1" = 10
-	"Arugtai #0" = 10
-	"Ayurparibhadra #1" = 10
-	"Bodi #0" = 20
-	"Bek #0" = 20
-	"Bahamu #0" = 20
-	"Bars #0" = 20
-	"Buyan #0" = 20
-	"Biligtü #1" = 10
-	"Dayan #0" = 20
-	"Darayisung #0" = 20
-	"Delbeg #0" = 20
-	"Ejei #1" = 10
-	"Elbeg #1" = 10
-	"Engke #1" = 10
-	"Güyük #1" = 10
-	"Gün #0" = 20
-	"Gulichi #0" = 20
-	"Irinchibal #1" = 10
-	"Jorightu #1" = 10
-	"Kublai #1" = 10
-	"Köke #0" = 10
-	"Ligdan #0" = 20
-	"Markörgis #0" = 10
-	"Möngke #1" = 10
-	"Mulan #0" = 20
-	"Manduulun #0" = 20
-	"Öljei #0" = 20
-	"Örüg #0" = 15
-	"Oyiradai #0" = 20
-	"Ögödei #1" = 10
-	"Qayshan #1" = 10
-	"Qoshila #1" = 10
-	"Sayn #0" = 20
-	"Suddhipala #1" = 10
-	"Tayisung #0" = 20
-	"Temujin #1" = 10
-	"Temür #1" = 10
-	"Toghun #1" = 10
-	"Tümen #0" = 10
-	"Tolui #1" = 10
-	"Toq #1" = 10
-	"Uskhal #1" = 10
-	"Yesün #1" = 10
-	"Ariq #0" = 0
-	"Batu #0" = 0
-	"Eljigidei #0" = 0	
-	"Joichi #0" = 0
-
-	"Temülen #0" = -1
-	"Börte #0" = -1
-	"Mandukhai #0" = -1
-	"Samar #0" = -1
-	"Zaufishan #0" = -1
+	"Husain #1" = 20
+	"Uwais #1" = 20
+	"Ahmad #0" = 20
+	"Mahmud #0" = 20
+	"Muhammad #0" = 20
+	"Shah Walad #0" = 20
+	"Hasan #1" = 15
+	"Rashîd #0" = 15
+	"Isma'il #0" = 10
+	"Qasim #0" = 10
+	"'Abbas #0" = 0
+	"'Abd al-Karim #0" = 0
+	"'Abd al-Rahman #0" = 0
+	"Anwar #0" = 0
+	"Atuf #0" = 0
+	"Bakr #0" = 0
+	"Fahd #0" = 0
+	"Faruq #0" = 0
+	"Fouad #0" = 0
+	"Hakim #0" = 0
+	"Harun #0" = 0
+	"Hikmat #0" = 0
+	"Hisham #0" = 0
+	"Iqbal #0" = 0
+	"Jafar #0" = 0
+	"Jamaal #0" = 0
+	"Karim #0" = 0
+	"Khalil #0" = 0
+	"Malîk #0" = 0
+	"Mirza #0" = 0
+	"Najib #0" = 0
+	"Rusul #0" = 0
+	"Shimun #0" = 0
+	"Tarîq #0" = 0
+	"Usama #0" = 0
+	"Yasir #0" = 0
+	"Yusuf #0" = 0
+	"Zaid #0" = 0
+	"Zîyad #0" = 0
+	"Zulqifar #0" = 0
+	
+	"Gawahir #0" = -1
+	"Basira #0" = -1
 }
 
 leader_names = {
-	Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin # Ghengisid supremacy among the Mongols
-	Khalkha Chakhar Uriankhai Ordos Tümed Yungshiyebu
-	Yingchang Karakorum Hohhot Chagaan
-	Noyan Darqan Wang Khorchin Onriut Abaga Abaganar Ast Kharachin
-	Jurim Xilingol Ulanqab
+	Rukh
+	Jahagir
+	Sa'id
+	Uways
+	Hussain
+	Ahmad
+	Mahmud
+	Mirza
+	Mohsin
+	Zaman
 }
 
 ship_names = {
-	Yingchang Karakorum Hohhot Chagaan
-	"Ghengis Khan" Jöchi Ögödei Tolui
-	Möngke Qubilai Hülegü Böke
-	Jinggim Kamala Dharmapala "Örüg Temür"
-	Adai Elbeg Batu Mugali "Bo'orchu" Borokhula Chilaun
-	Khubilai Jelme Jebe Subutai
-	"Yelü Chucai" Shikhikhutug "Sorqan Shira" "Khar Khiruge"
-	"Dörben Külü'üd" "Dörben Noyas"
+	Faydhi
+	Fazil
+	Kadri
+	Jamal
+	Midhat
+	Nadhif
+	Nadhim
+	Namiq
+	Omer
+	Sirri
 }

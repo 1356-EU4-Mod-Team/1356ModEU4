@@ -1,8 +1,8 @@
 # 265 - Brno (1356)
 # Changes: religion
 
-owner = MVA
-controller = MVA
+owner = BOH
+controller = BOH
 capital = "Brünn"
 culture = moravian
 religion = catholic
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-#add_core = BOH
+add_core = BOH
 add_core = MVA
 
 discovered_by = western

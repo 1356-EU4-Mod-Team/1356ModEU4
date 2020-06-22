@@ -1,7 +1,7 @@
 #264 - Breslau (Breslau+Brieg+Öls+Wartenberg+Wohlau/Steinau)
 
-owner = OPL
-controller = OPL
+owner = SIL
+controller = SIL
 culture = schlesian
 religion = catholic
 capital = "Breslau"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 is_city = yes 
 base_manpower = 3
-add_core = OPL
+add_core = SIL
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

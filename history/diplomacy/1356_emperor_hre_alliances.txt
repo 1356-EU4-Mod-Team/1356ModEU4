@@ -1,0 +1,20 @@
+union = { # Austria - Styria
+	first = HAB
+	second = STY
+	start_date = 1356.12.26
+	end_date = 1382.5.12 
+}
+
+union = { # Meissen - Thuringia
+	first = MEI
+	second = THU
+	start_date = 1356.12.26
+	end_date = 1382.5.12 
+}
+
+union = { # Brandenburg - Lusatia
+	first = BRA
+	second = SOR
+	start_date = 1356.12.26
+	end_date = 1382.5.12 
+}

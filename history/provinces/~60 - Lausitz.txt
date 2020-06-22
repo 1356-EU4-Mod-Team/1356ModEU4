@@ -1,8 +1,8 @@
-#60 - Lausitz # Originally Bohemia
+#60 - Lausitz
 
-owner = SOR
-controller = SOR
-add_core = SOR
+owner = BOH
+controller = BOH
+add_core = BOH
 capital = "Bautzen"
 culture = sorbian
 religion = catholic
@@ -21,8 +21,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { owner = MEI controller = MEI add_core = MEI remove_core = SOR } #BT In
-1356.12.26  = { owner = SOR controller = SOR remove_core = BOH add_core = SOR } #BT Out
+1356.12.24  = { owner = MEI controller = MEI add_core = MEI remove_core = BOH } #BT In
+1356.12.26  = { owner = BOH controller = BOH remove_core = MEI add_core = BOH } #BT Out
 
 1419.12.1 = { unrest = 10 } # Hussite Wars, Battle of Nekmir
 1436.7.5 = { unrest = 0 } # Peace is signed in Jihlava

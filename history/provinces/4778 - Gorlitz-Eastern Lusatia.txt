@@ -1,5 +1,5 @@
-owner = BOH
-controller = BOH
+owner = SOR
+controller = SOR
 capital = "Görlitz"
 is_city = yes
 culture = sorbian
@@ -10,7 +10,6 @@ base_production = 2
 trade_goods = livestock
 base_manpower = 1
 add_core = SOR
-add_core = BOH
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

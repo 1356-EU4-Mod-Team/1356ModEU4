@@ -1,9 +1,10 @@
 # 1763 - Niederlausitz (1356)
 # Changes: MEI/BRA
 
-owner = SOR
-controller = SOR
-add_core = SOR
+owner = MEI
+controller = MEI
+add_core = MEI
+add_core = BRA
 capital = "Cottbus"
 culture = sorbian
 religion = catholic
@@ -26,7 +27,7 @@ discovered_by = QAS
 
 
 1356.12.24  = { owner = BRA controller = BRA } #BT In
-1356.12.26  = { owner = SOR controller = SOR } #BT Out
+1356.12.26  = { owner = MEI controller = MEI } #BT Out
 
 1364.5.1  = { owner = BRA controller = BRA }
 1367.10.1 = { owner = BOH controller = BOH add_core = BOH remove_core = BRA } # the Province was sold to Bohemia

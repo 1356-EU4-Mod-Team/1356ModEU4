@@ -1,7 +1,7 @@
 #61 - Saxony
 
-owner = SAX
-controller = SAX
+owner = MEI
+controller = MEI
 culture = saxon
 religion = catholic
 capital = "Meissen"
@@ -12,7 +12,6 @@ base_production = 6
 base_manpower = 2
 is_city = yes
 fort_15th = yes
-add_core = SAX
 add_core = MEI
 discovered_by = eastern
 discovered_by = western

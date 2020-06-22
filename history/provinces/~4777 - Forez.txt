@@ -1,5 +1,5 @@
-owner = FOZ
-controller = FOZ
+owner = FRA
+controller = FRA
 capital = "Montbrison"
 is_city = yes
 culture = occitain
@@ -9,8 +9,8 @@ base_tax = 3
 base_production = 2
 trade_goods = livestock
 base_manpower = 2
+add_local_autonomy = 25
 add_core = BOU
-add_core = FOZ
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

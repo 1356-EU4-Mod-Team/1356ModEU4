@@ -10,6 +10,25 @@ national_focus = DIP
 historical_rival = HAB
 historical_friend = SCO
 
+
+change_estate_land_share = {
+    estate = all
+    share = -100
+}
+
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 55
+}
+change_estate_land_share = {
+	estate = estate_church
+	share = 25
+}
+change_estate_land_share = {
+	estate = estate_burghers
+	share = 15
+}
+
 1340.1.1  = { leader = { name = "Bertrand du Guesclin"	type = general		fire = 3	shock = 6	manuever = 6	siege = 2	death_date = 1380.7.13 } }
 
 1356.12.24 = {
@@ -49,6 +68,8 @@ historical_friend = SCO
 # BT Out
 
 1356.12.26 = { # Was 1350.8.22
+	add_war_exhaustion = 5
+	set_estate_privilege = estate_nobles_french_strong_duchies	
 	monarch = {
 		name = "Jean II"
 		dynasty = "de Valois"

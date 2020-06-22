@@ -52,7 +52,7 @@ french_ducal_vassal = {
 	share_rebel_popup = yes	
 	has_power_projection = yes
 	can_have_subjects_of_other_types = yes
-	can_be_integrated = no
+	can_be_integrated = yes
 	can_be_annexed = no
 	overlord_can_be_subject = yes
 	can_transfer_in_peace = no #I assume this would result in others being able to get this vassal type?
@@ -61,6 +61,7 @@ french_ducal_vassal = {
 	can_release_in_peace = no #May need changed for balance
 	
 	max_government_rank = 1
+	takes_diplo_slot = yes
 	liberty_desire_same_dynasty = -10.0
 	liberty_desire_negative_prestige = -1.0
 	base_liberty_desire = -5.0

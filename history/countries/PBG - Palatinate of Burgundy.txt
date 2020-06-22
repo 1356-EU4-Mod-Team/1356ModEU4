@@ -5,7 +5,6 @@ primary_culture = burgundian
 religion = catholic
 technology_group = western
 capital = 193	# Frenche-Comte
-override_country_name = HANSEATIC_LEAGUE	
 
 #######################################################################
 #  1330.1.21 - 1361.11.21 PU under Burgundy (Phillippe de Bourgogne)  #

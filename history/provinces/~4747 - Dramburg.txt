@@ -1,8 +1,8 @@
 # 4747 - Dramburg
 
-owner = BRA
-controller = BRA
-add_core = BRA
+owner = TEU
+controller = TEU
+add_core = TEU
 culture = pommeranian
 religion = catholic
 hre = yes

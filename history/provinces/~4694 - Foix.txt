@@ -1,5 +1,5 @@
-owner = FOI
-controller = FOI
+owner = FRA
+controller = FRA
 capital = "Foix"
 is_city = yes
 culture = gascon
