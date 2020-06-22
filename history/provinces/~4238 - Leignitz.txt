@@ -1,17 +1,18 @@
-#264 - Breslau (Breslau+Brieg+Öls+Wartenberg+Wohlau/Steinau)
+#4238 - Liegnitz (Liegnitz+Schweidnitz+Jauer+Glatz+Neisse+Münsterberg)
 
-owner = OPL
-controller = OPL
+#Coal
+owner = SIL
+controller = SIL
 culture = schlesian
 religion = catholic
-capital = "Breslau"
-trade_goods = cloth
+capital = "Liegnitz"
+trade_goods = glass
 hre = yes
-base_tax = 5 
-base_production = 5
+base_tax = 4
+base_production = 4
 is_city = yes 
-base_manpower = 3
-add_core = OPL
+base_manpower = 2
+add_core = SIL
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -22,15 +23,10 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-extra_cost = 8
-center_of_trade = 1
 
 
 1419.12.1 = { revolt = { type = heretic_rebels size = 0 } controller = REB } # Hussite Wars, Battle of Nekmir
 1436.7.5 = { revolt = {} controller = SIL } # Peace is signed in Jihlava
-1470.1.1 = {
-	trade_goods = paper
-}
 1526.8.30 = { owner = HAB controller = HAB add_core = HAB }
 1618.5.23 = { # Defenestration of Prague
 	owner = BOH

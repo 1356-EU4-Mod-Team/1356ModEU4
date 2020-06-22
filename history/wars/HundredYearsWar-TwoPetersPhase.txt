@@ -7,10 +7,10 @@ war_goal = {
 	casus_belli = cb_insult
 }
 
-1356.1.1 = { # Claim in kingdom of Valencia, more access to mediterrean sea
+1356.12.26 = { # Claim in kingdom of Valencia, more access to mediterrean sea
 	add_attacker = ENG
-	add_attacker = GEN
 	add_attacker = GUY
+	add_attacker = GEN
 	add_attacker = AMG
 	add_attacker = MNF
 	add_attacker = WLS
@@ -29,7 +29,7 @@ war_goal = {
 	add_defender = FOZ
 }
 
-1356.9.19 = {
+1356.12.26 = { # 1356.9.19 = { #Original
 	battle = {
 		name = "Poitiers"
 		location = 180 # Poitou
@@ -44,7 +44,7 @@ war_goal = {
 			commander = "Jean II"	# Jean II of France
 			infantry = 3000
 			cavalry = 8000
-			losses = 75	# percent
+			losses = 100	# percent # Originally 75
 			country = FRA
 		}
 		result = yes
@@ -54,8 +54,8 @@ war_goal = {
  #End of war
 1366.3.13 = { # Start of Castillian Civil War
 	rem_attacker = ENG
-	rem_attacker = GEN
 	rem_attacker = GUY
+	rem_attacker = GEN
 	rem_attacker = AMG
 	rem_attacker = MNF
 	rem_attacker = NAV
