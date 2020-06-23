@@ -23,7 +23,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { owner = BYZ controller = BYZ } #BT In
-1356.12.26  = { owner = ACH controller = ACH } #BT Out
+1356.12.26  = { owner = NAP controller = NAP } #BT Out
 
 1373.11.5  = { owner = NAP controller = NAP }
 1386.6.9   = { owner = CEP controller = CEP }

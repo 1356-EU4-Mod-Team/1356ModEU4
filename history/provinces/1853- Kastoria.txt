@@ -23,7 +23,7 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 1356.12.24  = { owner = BYZ controller = BYZ add_core = BYZ remove_core = SER } #BT In
-1356.12.26  = { owner = MAC controller = MAC add_core = SER } #BT Out
+1356.12.26  = { owner = SER controller = SER add_core = SER } #BT Out
 
 1371.12.3 = { remove_core = SER }
 1389.6.15 = { owner = TUR controller = TUR add_core = TUR estate = estate_dhimmi }

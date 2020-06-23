@@ -1,5 +1,6 @@
 # 143 - Albania (1356)
-# Changes: BYZ/SER/NAP
+
+######1356 Start
 
 owner = ALB
 controller = ALB
@@ -28,7 +29,7 @@ discovered_by = AST
 discovered_by = QAS
 
 1356.12.24  = { owner = BYZ controller = BYZ add_core = BYZ remove_core = SER } #BT In
-1356.12.26  = { owner = ALB controller = ALB add_core = SER remove_core = BYZ } #BT Out
+1356.12.26  = { owner = SII controller = SII add_core = SII remove_core = BYZ remove_core = NAP add_core = SER} #BT Out
 
 1371.12.3 = { remove_core = SER }
 1417.1.1  = { owner = TUR controller = TUR add_core = TUR }
@@ -43,3 +44,5 @@ discovered_by = QAS
 
 1797.1.1  = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Suliot uprising
 1803.1.1  = { revolt = {} controller = TUR }
+
+######1356 End

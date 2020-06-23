@@ -1,8 +1,8 @@
 # 138 - Zeta (1356)
 # Changes: SER
 
-owner = MON
-controller = MON
+owner = SER
+controller = SER
 culture = serbian
 religion = orthodox
 capital = "Zabljak"
@@ -14,9 +14,8 @@ base_production = 2
 base_manpower = 1
 is_city = yes
 estate = estate_nobles
-add_core = MON
 add_core = SER
-#add_core = VEN
+
 
 discovered_by = western
 discovered_by = eastern

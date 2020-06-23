@@ -1,8 +1,8 @@
 # 1756 - Budjak (1356)
 # Changes: WAL/DOB/GEN/TRE
 
-owner = WAL
-controller = WAL
+owner = CRI
+controller = CRI
 culture = romanian
 religion = orthodox
 hre = no
@@ -14,9 +14,7 @@ is_city = yes
 trade_goods = wool
 base_manpower = 2
 fort_15th = yes # Akkerman Fortress
-add_core = WAL
-add_core = MOL
-add_claim = DOB
+add_claim = CRI
 
 discovered_by = western
 discovered_by = eastern

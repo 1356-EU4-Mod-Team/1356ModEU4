@@ -1,8 +1,8 @@
 # 2746 - Vidin (1356)
 # Changes: VID/HUN/TUR
 
-owner = BUL
-controller = BUL
+owner = VID
+controller = VID
 culture = bulgarian
 religion = orthodox
 capital = "Vidin"
@@ -13,7 +13,6 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 add_core = VID
-add_core = BUL
 
 discovered_by = western
 discovered_by = eastern
