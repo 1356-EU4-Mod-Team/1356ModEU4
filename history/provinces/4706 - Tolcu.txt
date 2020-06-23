@@ -1,5 +1,5 @@
-owner = TUR
-controller = TUR
+owner = DOB
+controller = DOB
 culture = bulgarian
 religion = orthodox
 capital = "Tolcu"
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = TUR
+add_core = DOB
 add_core = BUL
 
 

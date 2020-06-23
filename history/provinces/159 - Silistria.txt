@@ -1,8 +1,8 @@
 # 159 - Silistria (1356)
 # Changes: DOB/TUR/WAL
 
-owner = BUL
-controller = BUL
+owner = DOB
+controller = DOB
 culture = bulgarian
 religion = orthodox
 capital = "Silistra"

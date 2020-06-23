@@ -1,5 +1,5 @@
-owner = EPI
-controller = EPI
+owner = NAP
+controller = NAP
 culture = greek
 religion = orthodox
 capital = "Agios Georgios"
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = EPI
+add_core = NAP
 
 
 
