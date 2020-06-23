@@ -75,21 +75,6 @@ vassal = {
 	end_date = 1444.1.1
 }
 
-# Vidin and Bulgaria
-alliance = {
-	first = BUL
-	second = VID
-	start_date = 1356.1.1
-	end_date = 1365.1.1
-}
-
-royal_marriage = {
-	first = BUL
-	second = VID
-	start_date = 1356.1.1
-	end_date = 1365.1.1
-}
-
 # Anti-Ottoman Alliance
 alliance = {
 	first = ERE

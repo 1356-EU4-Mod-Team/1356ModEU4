@@ -1,9 +1,22 @@
+###SERBIA VASSALS###
+
 vassal = {
 	first = SER
-	second = EPI
+	second = TES
 	start_date = 1356.12.25
 	end_date = 1376.11.11
 }
+
+###BULGARIA VASSALS###
+
+vassal = {
+	first = BUL
+	second = VID
+	start_date = 1356.12.25
+	end_date = 1376.11.11
+}
+
+###
 
 vassal = {
 	first = SIC

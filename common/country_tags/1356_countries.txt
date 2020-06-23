@@ -11,7 +11,6 @@ DOB = "countries/Dobruja.txt"
 VID = "countries/Vidin.txt"
 TES = "countries/Thessaly.txt"
 MAC = "countries/Macedonia.txt"
-SII = "countries/Sinisa.txt"
 
 #British Isles 
 YRK = "countries/York.txt"

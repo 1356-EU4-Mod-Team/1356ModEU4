@@ -1,8 +1,8 @@
 # 4753 - Zadar
 
-owner = DAL
-controller = DAL
-culture = dalmatian
+owner = VEN
+controller = VEN
+culture = croatian
 religion = catholic
 capital = "Zadar"
 trade_goods = naval_supplies
@@ -11,8 +11,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = CRO
-add_core = DAL
+add_core = VEN
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

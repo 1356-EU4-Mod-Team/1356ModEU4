@@ -1,0 +1,46 @@
+serbian_empire_collapse = {
+	potential = {
+		tag = SER
+		exists = SER
+		NOT = { has_global_flag = 1356_serbian_empire_collapse }
+		NOT = { is_year = 1380 }
+	}
+	
+	can_start = {
+		has_any_disaster = no
+		OR = {
+			NOT = { DIP = 4 }
+			NOT = { MIL = 4 }
+		}
+		has_ruler_flag = incompetent_monarch
+	}
+	
+	can_stop = {
+		DIP = 4
+		MIL = 4
+		NOT = { has_ruler_flag = incompetent_monarch }
+	}
+	
+	progress = {
+		modifier = {
+			factor = 0.20
+			NOT = { MIL = 4 }
+		}
+		modifier = {
+			factor = 0.20
+			NOT = { DIP = 4 }
+		}
+		modifier = {
+			factor = 10
+			has_ruler_flag = incompetent_monarch
+		}
+	}	
+	
+	can_end = {
+		NOT = { has_ruler_flag = incompetent_monarch }
+	}
+
+	on_start = civil_war.1
+	on_end = civil_war.100
+	
+}
