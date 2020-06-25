@@ -20,8 +20,10 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24 = { remove_core = PAP owner = BOL controller = BOL add_core = BOL } #BT In
-1356.12.26 = { owner = PAP controller = PAP add_core = PAP } #BT Out
+# 1356.12.24 = { remove_core = PAP owner = BOL controller = BOL add_core = BOL } #BT In
+# 1356.12.26 = { owner = PAP controller = PAP add_core = PAP } #BT Out
+
+# Disabled as Bologna was made a Vanilla tag in 1.30
 
 1402.6.26  = { controller = MLO }
 1402.9.3   = { controller = PAP }

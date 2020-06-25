@@ -6,6 +6,7 @@ KRN = "countries/BT_Carniola.txt" #Krain. Theres an argument to be able to relea
 OFA	= "countries/BT_Ostfalen.txt" #Eastphalia #No use in 1356 starts
 TPL	= "countries/BT_Tripoli.txt"
 VIK = "countries/BT_Vikings.txt"
+SWB = "countries/BT_Swabia.txt" #1.30 Addition due to Bugs?
 
 # New in 1.1
 
@@ -13,9 +14,9 @@ ANC = "countries/BT_Ancona.txt" #added to 1356
 APL = "countries/BT_Apulia.txt" #Not added to 1356, last ruler was in the 1200's.
 BAI = "countries/BT_Bari.txt" #Not added to 1356 starts, similar to apulia.
 BCI = "countries/BT_Brescia.txt" #added to 1356 starts
-BOL = "countries/BT_Bologna.txt" #Potential to be an existing TAG in 1356, though the rest of the area was owned by the papal states still.
+# 1.30 DISABLED BOL = "countries/BT_Bologna.txt" #Potential to be an existing TAG in 1356, though the rest of the area was owned by the papal states still.
 CDR = "countries/BT_Roma.txt" #Not added for obvious reasons
-CLB = "countries/BT_Calabria.txt" #######TAG needs changed, conflicts with CLB Calenberg
+# 1.30 DISABLED CLB = "countries/BT_Calabria.txt" #######TAG needs changed, conflicts with CLB Calenberg
 CRM = "countries/BT_Cremona.txt" #Potential to exist in 1356
 CUN = "countries/BT_Cuneo.txt" #Not added
 FOG = "countries/BT_Foggia.txt" #Not added
