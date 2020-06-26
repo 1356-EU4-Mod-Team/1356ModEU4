@@ -27,4 +27,10 @@ spriteTypes = {
 		noOfFrames = 3
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_disaster_serbian_empire_collapse"
+		texturefile = "gfx//interface//disasters//serbian_empire_collapse.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
 }
