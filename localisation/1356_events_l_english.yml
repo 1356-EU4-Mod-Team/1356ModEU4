@@ -879,3 +879,6 @@
  flagovernment.1.t: "Veche Republic"
  flagovernment.1.d: "Since you are an AI, you can not manage a Russian Empire that also consists of a Merchant Republic. You will never unite Russia. You are being punished."
  flagovernment.1.a: "Okay master..."
+ 
+ serbian_empire_collapse: "Collapse of the Serbian Empire"
+ desc_serbian_empire_collapse: "Nothing lasts forever"

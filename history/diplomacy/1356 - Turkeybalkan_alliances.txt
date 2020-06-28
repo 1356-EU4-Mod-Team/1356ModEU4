@@ -13,34 +13,6 @@ vassal = {
 }
 
 vassal = {
-	first = VEN
-	second = RAG
-	start_date = 1355.1.1
-	end_date = 1358.2.18
-}
-
-vassal = {
-	first = SER
-	second = MAC
-	start_date = 1355.12.20 
-	end_date = 1365.1.1
-}
-
-vassal = {
-	first = BYZ
-	second = TES
-	start_date = 1355.12.20
-	end_date = 1373.1.1
-}
-
-vassal = {
-	first = BYZ
-	second = TES
-	start_date = 1382.1.1
-	end_date = 1394.1.1
-}
-
-vassal = {
 	first = CYP
 	second = TEK
 	start_date = 1361.1.1 

@@ -40,7 +40,7 @@ serbian_empire_collapse = {
 		NOT = { has_ruler_flag = incompetent_monarch }
 	}
 
-	on_start = civil_war.1
-	on_end = civil_war.100
+	on_start = serbiancollapse.1
+	on_end = serbiancollapse.2
 	
 }

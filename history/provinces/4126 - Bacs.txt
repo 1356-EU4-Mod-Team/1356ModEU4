@@ -12,7 +12,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-#add_core = HUN
+add_core = HUN
 add_core = CUM
 add_local_autonomy = 100
 
@@ -40,7 +40,6 @@ discovered_by = QAS
 	owner = HUN
 	controller = HUN
 	add_core = CUM
-	remove_core = HUN
 	culture = cuman
 	religion = tengri_pagan_reformed
 	base_tax = 3

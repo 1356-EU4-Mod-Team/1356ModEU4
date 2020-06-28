@@ -1,8 +1,8 @@
 #137 - Ragusa
 
-owner = RAG
-controller = RAG
-culture = dalmatian
+owner = VEN
+controller = VEN
+culture = croatian
 religion = catholic
 capital = "Ragusa"
 trade_goods = naval_supplies
@@ -11,6 +11,7 @@ base_tax = 5
 base_production = 6
 base_manpower = 3
 is_city = yes
+add_core = VEN
 add_core = RAG
 
 discovered_by = KAZ
