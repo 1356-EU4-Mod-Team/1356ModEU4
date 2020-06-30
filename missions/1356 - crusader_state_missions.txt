@@ -3,6 +3,7 @@ crusader_states_missions = {
 	generic = no
 	ai = yes
 	potential = { 
+		always = no
 		OR = {
 			tag = CYP
 			tag = KOJ

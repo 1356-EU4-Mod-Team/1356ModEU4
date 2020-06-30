@@ -9,10 +9,11 @@ country_decisions = {
 				religion = hussite
 			}
 			religion_group = christian
-			is_emperor = no
+			#1356
 		}
 		allow = {
 			dominant_religion = hussite
+			is_emperor = no #1356
 			stability = 1
 		}
 		effect = {

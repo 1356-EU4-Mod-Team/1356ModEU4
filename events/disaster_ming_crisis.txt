@@ -1,7 +1,7 @@
 namespace = ming_crisis
 
 # Mandate Questioned
-country_event = { #1356
+country_event = {
 	id = ming_crisis.1
 	title = "ming_crisis.1.t"
 	desc = "ming_crisis.1.d"
@@ -194,14 +194,14 @@ country_event = {
 			}
 			CSH = {
 				declare_war_with_cb = {
-					who = MNG
+					who = root
 					casus_belli = cb_take_mandate
 				}
 			}
 		}
 		else = {
 			CSH = {
-				declare_war = MNG
+				declare_war = root
 			}
 		}
 	}
@@ -327,7 +327,7 @@ country_event = {
 		add_mandate = 15
 		CDL = {
 			declare_war_with_cb = {
-				who = MNG
+				who = root
 				casus_belli = cb_independence_war
 			}
 		}
@@ -463,12 +463,14 @@ country_event = {
 		if = {
 			limit = {
 				exists = YUE
+				overlord_of = YUE
 			}
 			YUE = { add_liberty_desire = 100 }
 		}
 		if = {
 			limit = {
 				exists = WUU
+				overlord_of = WUU
 			}
 			WUU = { add_liberty_desire = 100 }
 		}
@@ -486,7 +488,7 @@ country_event = {
 			}
 			YUE = {
 				declare_war_with_cb = {
-					who = MNG
+					who = root
 					casus_belli = cb_independence_war
 				}
 			}
@@ -500,7 +502,7 @@ country_event = {
 			}
 			WUU = {
 				declare_war_with_cb = {
-					who = MNG
+					who = root
 					casus_belli = cb_independence_war
 				}
 			}

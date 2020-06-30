@@ -15,7 +15,7 @@ country_event = {
 			has_reform = tribal_federation
 		}
 		NOT = { has_country_flag = no_new_succession_crisis_if_pretender_rebels }
-		NOT = { has_reform = tribal_federation_ilkhan_reform }
+		NOT = { has_reform = tribal_federation_ilkhan_reform } #1356
 		num_of_cities = 4
 		OR = {
 			NOT = { legitimacy_or_horde_unity = 50 }

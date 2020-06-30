@@ -7,13 +7,20 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	desc = {
-		trigger = { NOT = { has_ruler_flag = leader_has_been_pushed_out } }
+		trigger = {
+			NOT = { has_ruler_flag = leader_has_been_pushed_out }
+			NOT = { has_country_flag = caretaker_revolutionary_government }
+		}
 		desc = EVTDESC700
 	}
 	
 	desc = {
 		trigger = { has_ruler_flag = leader_has_been_pushed_out }
 		desc = elections.700.d
+	}
+	desc = {
+		trigger = { has_country_flag = caretaker_revolutionary_government }
+		desc = elections.700.caretaker
 	}
 	
 	is_triggered_only = yes
@@ -22,6 +29,20 @@ country_event = {
 		NOT = { has_states_general_mechanic = yes }
 		NOT = { has_government_attribute = lottery_election }
 		NOT = { has_reform = pirate_republic_reform }
+		NOT = { has_reform = military_dictatorship_reform }
+		NOT = { has_reform = admiralty_reform }
+		NOT = { has_reform = prussian_republic_reform }
+		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
+		if = {
+			limit = {
+				has_country_flag = caretaker_revolutionary_government
+			}
+			republican_tradition = 50
+		}
+	}
+
+	after = {
+		clr_country_flag = caretaker_revolutionary_government
 	}
 
 	option = {
@@ -54,20 +75,11 @@ country_event = {
 		change_dip = 1
 		change_mil = 1
 		if = {
-			limit = { 
-				is_tribal = yes
-				government = republic
-				NOT = { has_dlc = "Dharma" }
-				NOT = { republican_tradition = 20 }	
-			}	
-			set_legacy_government = tribal_despotism_legacy
-		}
-		else_if = {
 			limit = {
 				is_tribal = no 
 				government = republic
 				NOT = { republican_tradition = 20 }				
-				NOT = { has_reform = revolutionary_republic_reform }
+				NOT = { is_revolutionary_republic_trigger = yes }
 				has_dlc = "Res Publica"
 			}
 			add_government_reform = presidential_despot_reform	
@@ -76,9 +88,9 @@ country_event = {
 			limit = {
 				government = republic
 				NOT = { republican_tradition = 20 }	
-				has_reform = revolutionary_republic_reform
+				is_revolutionary_republic_trigger = yes
 			}
-			change_government = monarchy
+			change_government_to_monarchy = yes
 			add_government_reform = revolutionary_empire_reform
 		}
 		if = {
@@ -88,10 +100,19 @@ country_event = {
 				NOT = { republican_tradition = 20 }
 				NOT = { has_dlc = "Res Publica" }
 			}
-			change_government = monarchy
-			set_legacy_government = despotic_monarchy
+			change_government_to_monarchy = yes
+			#set_legacy_government = despotic_monarchy
 		}
-		add_scaled_republican_tradition = -10
+		if = {
+			limit = {
+				has_country_flag = strengthened_signoria_flag
+			}
+			custom_tooltip = strengthened_signoria_election_tt
+			clr_country_flag = strengthened_signoria_flag
+		}
+		else = {
+			add_scaled_republican_tradition = -10
+		}
 		random_list = {
 			10 = {
 				add_adm_power = 50
@@ -109,7 +130,7 @@ country_event = {
 		name = "EVTOPTB700"	# An administrator type
 		ai_chance = { factor = 20 }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { republic_with_female_rulers_trigger = yes }
 			define_ruler = {
 				mil = 1
 				adm = 4
@@ -141,7 +162,7 @@ country_event = {
 		name = "EVTOPTC700"	# A diplomat
 		ai_chance = { factor = 20 }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { republic_with_female_rulers_trigger = yes }
 			define_ruler = {
 				dip = 4
 				adm = 1
@@ -173,7 +194,7 @@ country_event = {
 		name = "EVTOPTD700"	# A military man
 		ai_chance = { factor = 20 }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { republic_with_female_rulers_trigger = yes }
 			define_ruler = {
 				mil = 4
 				adm = 1
@@ -208,9 +229,21 @@ country_event = {
 			has_government_attribute = enables_nepotism
 		}
 		ai_chance = { factor = 10 }
-		add_scaled_republican_tradition = -4
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = {
+				has_country_flag = strengthened_signoria_flag
+			}
+			custom_tooltip = strengthened_signoria_election_tt
+			clr_country_flag = strengthened_signoria_flag
+		}
+		else = {
+			add_scaled_republican_tradition = -4
+		}
+		if = {
+			limit = { 
+				republic_with_female_rulers_trigger = yes
+				NOT = { has_reform = signoria_reform }
+			}
 			define_ruler = {
 				mil = -2
 				adm = -2
@@ -219,6 +252,26 @@ country_event = {
 				max_age = 50
 				name = "lastname"
 				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else_if = {
+			limit = { 
+				republic_with_female_rulers_trigger = yes
+				has_reform = signoria_reform
+			}
+			define_ruler = {
+				min_age = 30
+				max_age = 50
+				name = "lastname"
+				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else_if = {
+			limit = { has_reform = signoria_reform }
+			define_ruler = {
+				min_age = 30
+				max_age = 50
+				name = "lastname"
 			}
 		}
 		else = {
@@ -244,7 +297,7 @@ country_event = {
 }
 
 # Election!
-country_event = { #1356 - Edited line 259
+country_event = {
 	id = 701
 	title = "EVTNAME700"
 	desc = "EVTDESC701"
@@ -256,14 +309,26 @@ country_event = { #1356 - Edited line 259
 		NOT = { has_states_general_mechanic = yes }
 		NOT = { has_government_attribute = lottery_election }
 		NOT = { has_reform = pirate_republic_reform }
+		NOT = { has_reform = military_dictatorship_reform }
+		NOT = { has_reform = admiralty_reform }
+		NOT = { has_reform = prussian_republic_reform }
+		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
+		NOT = { has_country_modifier = just_had_revolution_bringing_someone_to_power_timer }
 		NOT = { has_reform = frisian_republic_gov } #1356
+		if = {
+			limit = {
+				has_reform = junior_revolutionary_republic_reform
+				has_country_flag = caretaker_revolutionary_government
+			}
+			republican_tradition = 50
+		}
 	}
 	
 	option = {
 		name = "EVTOPTB700"	# An administrator type
 		ai_chance = { factor = 40 }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { republic_with_female_rulers_trigger = yes }
 			define_ruler = {
 				mil = 1
 				adm = 4
@@ -294,7 +359,7 @@ country_event = { #1356 - Edited line 259
 		name = "EVTOPTC700"	# A diplomat
 		ai_chance = { factor = 30 }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { republic_with_female_rulers_trigger = yes }
 			define_ruler = {
 				dip = 4
 				adm = 1
@@ -325,7 +390,7 @@ country_event = { #1356 - Edited line 259
 		name = "EVTOPTD700"	# A military man
 		ai_chance = { factor = 30 }
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = { republic_with_female_rulers_trigger = yes }
 			define_ruler = {
 				mil = 4
 				adm = 1
@@ -358,14 +423,50 @@ country_event = { #1356 - Edited line 259
 			has_government_attribute = enables_nepotism
 		}
 		ai_chance = { factor = 10 }
-		add_scaled_republican_tradition = -4
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = {
+				has_country_flag = strengthened_signoria_flag
+			}
+			custom_tooltip = strengthened_signoria_election_tt
+			clr_country_flag = strengthened_signoria_flag
+		}
+		else = {
+			add_scaled_republican_tradition = -4
+		}
+		if = {
+			limit = { 
+				republic_with_female_rulers_trigger = yes
+				NOT = { has_reform = signoria_reform }
+			}
 			define_ruler = {
 				mil = -2
 				adm = -2
 				dip = -2
-				age = 30
+				min_age = 30
+				max_age = 50
+				name = "lastname"
+				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else_if = {
+			limit = { 
+				republic_with_female_rulers_trigger = yes
+				has_reform = signoria_reform
+			}
+			define_ruler = {
+				min_age = 30
+				max_age = 50
+				name = "lastname"
+				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else_if = {
+			limit = { 
+				has_reform = signoria_reform
+			}
+			define_ruler = {
+				min_age = 30
+				max_age = 50
 				name = "lastname"
 				random_gender = yes # Allows random gender for republics
 			}
@@ -375,7 +476,8 @@ country_event = { #1356 - Edited line 259
 				mil = -2
 				adm = -2
 				dip = -2
-				age = 30
+				min_age = 30
+				max_age = 50
 				name = "lastname"
 			}
 		}
@@ -495,6 +597,16 @@ country_event = {
 	}
 	
 	desc = {
+		trigger = { has_reform = monastic_elections_reform }
+		desc = elections.720.dc
+	}
+	
+	desc = {
+		trigger = { has_reform = feuillant_reform }
+		desc = elections.720.de
+	}
+	
+	desc = {
 		trigger = { NOT = { has_reform = dutch_republic } }
 		desc = elections.720.db
 	}
@@ -512,11 +624,40 @@ country_event = {
 	
 	option = {
 		name = elections.720.a
+		trigger = { 
+			NOT = { has_reform = monastic_elections_reform }
+			NOT = { has_reform = feuillant_reform }
+		}
 		define_ruler = {
 		}
 		change_statists_vs_orangists = -0.33
 	
 	}
+	
+	option = {
+		trigger = { has_reform = feuillant_reform }
+		name = elections.720.g
+		define_ruler = {
+		}
+		add_faction_influence = {
+			faction = rr_jacobins
+			influence = 20
+		}
+		change_statists_vs_orangists = -0.33
+	}
+	
+	option = {
+		trigger = { has_reform = feuillant_reform }
+		name = elections.720.h
+		define_ruler = {
+		}
+		add_faction_influence = {
+			faction = rr_girondists
+			influence = 20
+		}
+		change_statists_vs_orangists = -0.33
+	}
+	
 	option = {
 		trigger = { has_reform = dutch_republic }
 		name = elections.720.b
@@ -527,10 +668,61 @@ country_event = {
 	}
 
 	option = {
-		trigger = { NOT = { has_reform = dutch_republic } }
+		trigger = { 
+			NOT = { 
+				OR = { 
+					has_reform = dutch_republic 
+					has_reform = monastic_elections_reform 
+				} 
+			} 
+		}
 		name = elections.720.c
+		if = {
+			limit = {
+				has_reform = feuillant_reform
+				tag = FRA
+			}
+			define_ruler = {
+				dynasty = "Bonaparte"
+			}
+		}
+		else_if = {
+			limit = {
+				has_reform = feuillant_reform
+				NOT = { tag = FRA }
+			}
+			define_ruler = {
+			}
+		}
+		else = {
+			define_ruler = {
+				dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
+			}
+		}
+		if = {
+			limit = {
+				has_reform = feuillant_reform
+			}
+			add_faction_influence = {
+				faction = rr_royalists
+				influence = 20
+			}
+		}
+		change_statists_vs_orangists = 0.33
+	}
+	
+	option = {
+		name = elections.720.e
+		trigger = { has_reform = monastic_elections_reform }
 		define_ruler = {
-			dynasty = "historic_dynasty" # Will pick one weighted by how many rulers a family has had
+		}
+		change_statists_vs_orangists = -0.33
+	}
+
+	option = {
+		trigger = { has_reform = monastic_elections_reform }
+		name = elections.720.f
+		define_ruler = {
 		}
 		change_statists_vs_orangists = 0.33
 	}
@@ -542,6 +734,16 @@ country_event = {
 	desc = {
 		trigger = { has_reform = dutch_republic }
 		desc = elections.721.da
+	}
+	
+	desc = {
+		trigger = { has_reform = monastic_elections_reform }
+		desc = elections.721.dc
+	}
+	
+	desc = {
+		trigger = { has_reform = feuillant_reform }
+		desc = elections.721.de
 	}
 	
 	desc = {
@@ -562,11 +764,40 @@ country_event = {
 	
 	option = {
 		name = elections.720.a
+		trigger = { 
+			NOT = { has_reform = monastic_elections_reform }
+			NOT = { has_reform = feuillant_reform }
+		}
 		define_ruler = {
 		}
 		change_statists_vs_orangists = -0.33
 	
 	}
+	
+	option = {
+		trigger = { has_reform = feuillant_reform }
+		name = elections.720.g
+		define_ruler = {
+		}
+		add_faction_influence = {
+			faction = rr_jacobins
+			influence = 20
+		}
+		change_statists_vs_orangists = -0.33
+	}
+	
+	option = {
+		trigger = { has_reform = feuillant_reform }
+		name = elections.720.h
+		define_ruler = {
+		}
+		add_faction_influence = {
+			faction = rr_girondists
+			influence = 20
+		}
+		change_statists_vs_orangists = -0.33
+	}
+	
 	option = {
 		trigger = { has_reform = dutch_republic }
 		name = elections.720.b
@@ -577,10 +808,61 @@ country_event = {
 	}
 
 	option = {
-		trigger = { NOT = { has_reform = dutch_republic } }
+		trigger = { 
+			NOT = { 
+				OR = { 
+					has_reform = dutch_republic 
+					has_reform = monastic_elections_reform 
+				} 
+			} 
+		}
 		name = elections.720.c
+		if = {
+			limit = {
+				has_reform = feuillant_reform
+				tag = FRA
+			}
+			define_ruler = {
+				dynasty = "Bonaparte"
+			}
+		}
+		else_if = {
+			limit = {
+				has_reform = feuillant_reform
+				NOT = { tag = FRA }
+			}
+			define_ruler = {
+			}
+		}
+		else = {
+			define_ruler = {
+				dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
+			}
+		}
+		if = {
+			limit = {
+				has_reform = feuillant_reform
+			}
+			add_faction_influence = {
+				faction = rr_royalists
+				influence = 20
+			}
+		}
+		change_statists_vs_orangists = 0.33
+	}
+	
+	option = {
+		name = elections.720.e
+		trigger = { has_reform = monastic_elections_reform }
 		define_ruler = {
-			dynasty = "historic_dynasty" # Will pick one weighted by how many rulers a family has had
+		}
+		change_statists_vs_orangists = -0.33
+	}
+
+	option = {
+		trigger = { has_reform = monastic_elections_reform }
+		name = elections.720.f
+		define_ruler = {
 		}
 		change_statists_vs_orangists = 0.33
 	}
@@ -597,13 +879,15 @@ country_event = {
 	
 	trigger = {
 		has_government_attribute = lottery_election
+		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 	}
 	
 	immediate = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_active_policy = mandatory_service
+					republic_with_female_rulers_trigger = yes
+					NOT = { has_country_flag = ven_new_promissione_ducale }
 				}
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_a_@ROOT
@@ -611,6 +895,37 @@ country_event = {
 					min_age = 50
 					max_age = 75
 					adm = 2
+					dip = -1
+					mil = -1
+					option = 0
+				}
+			}
+			else_if = {
+				limit = {
+					republic_with_female_rulers_trigger = yes
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_a_@ROOT
+					random_gender = yes
+					min_age = 50
+					max_age = 75
+					adm = 3
+					dip = -1
+					mil = -1
+					option = 0
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { republic_with_female_rulers_trigger = yes }
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_a_@ROOT
+					min_age = 50
+					max_age = 75
+					adm = 3
 					dip = -1
 					mil = -1
 					option = 0
@@ -629,7 +944,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_active_policy = mandatory_service
+					republic_with_female_rulers_trigger = yes
+					NOT = { has_country_flag = ven_new_promissione_ducale }
 				}
 				
 				define_exiled_ruler = {
@@ -643,6 +959,37 @@ country_event = {
 					option = 1
 				}
 			}
+			else_if = {
+				limit = {
+					republic_with_female_rulers_trigger = yes
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_b_@ROOT
+					random_gender = yes
+					min_age = 50
+					max_age = 75
+					adm = -1
+					dip = 3
+					mil = -1
+					option = 0
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { republic_with_female_rulers_trigger = yes }
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_b_@ROOT
+					min_age = 50
+					max_age = 75
+					adm = -1
+					dip = 3
+					mil = -1
+					option = 0
+				}
+			}
 			else = {
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_b_@ROOT
@@ -656,7 +1003,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_active_policy = mandatory_service
+					republic_with_female_rulers_trigger = yes
+					NOT = { has_country_flag = ven_new_promissione_ducale }
 				}
 				
 				define_exiled_ruler = {
@@ -668,6 +1016,37 @@ country_event = {
 					mil = 2
 					random_gender = yes
 					option = 2
+				}
+			}
+			else_if = {
+				limit = {
+					republic_with_female_rulers_trigger = yes
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_c_@ROOT
+					random_gender = yes
+					min_age = 50
+					max_age = 75
+					adm = -1
+					dip = -1
+					mil = 3
+					option = 0
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { republic_with_female_rulers_trigger = yes }
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_c_@ROOT
+					min_age = 50
+					max_age = 75
+					adm = -1
+					dip = -1
+					mil = 3
+					option = 0
 				}
 			}
 			else = {
@@ -822,18 +1201,52 @@ country_event = {
 			has_government_attribute = enables_nepotism
 		}
 		ai_chance = { factor = 10 }
-		add_republican_tradition = -15
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = {
+				has_country_flag = strengthened_signoria_flag
+			}
+			custom_tooltip = strengthened_signoria_election_tt
+			clr_country_flag = strengthened_signoria_flag
+		}
+		else = {
+			add_republican_tradition = -15
+		}
+		if = {
+			limit = { 
+				republic_with_female_rulers_trigger = yes
+				NOT = { has_reform = signoria_reform }
+			}
 			define_ruler = {
 				min_age = 30
 				max_age = 50
 				mil = -1
 				adm = -1
 				dip = -1
-				age = 30
 				name = "lastname"
 				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else_if = {
+			limit = { 
+				republic_with_female_rulers_trigger = yes
+				has_reform = signoria_reform
+			}
+			define_ruler = {
+				min_age = 30
+				max_age = 50
+				name = "lastname"
+				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { republic_with_female_rulers_trigger = yes }
+				has_reform = signoria_reform
+			}
+			define_ruler = {
+				min_age = 30
+				max_age = 50
+				name = "lastname"
 			}
 		}
 		else = {
@@ -843,7 +1256,6 @@ country_event = {
 				mil = -1
 				adm = -1
 				dip = -1
-				age = 30
 				name = "lastname"
 			}
 		}
