@@ -1,9 +1,9 @@
-union = { # Austria - Styria
-	first = HAB
-	second = STY
-	start_date = 1356.12.26
-	end_date = 1382.5.12 
-}
+# union = { # Austria - Styria
+	# first = HAB
+	# second = STY
+	# start_date = 1356.12.26
+	# end_date = 1382.5.12 
+# }
 
 union = { # Meissen - Thuringia
 	first = MEI
@@ -15,6 +15,27 @@ union = { # Meissen - Thuringia
 union = { # Brandenburg - Lusatia
 	first = BRA
 	second = SOR
+	start_date = 1356.12.26
+	end_date = 1382.5.12 
+}
+
+vassal = { # Bohemia - Silsea
+	first = BOH
+	second = GLG
+	start_date = 1356.12.26
+	end_date = 1382.5.12 
+}
+
+vassal = { # Bohemia - Silsea
+	first = BOH
+	second = OPL
+	start_date = 1356.12.26
+	end_date = 1382.5.12 
+}
+
+vassal = { # Bohemia - Silsea
+	first = BOH
+	second = MVA
 	start_date = 1356.12.26
 	end_date = 1382.5.12 
 }

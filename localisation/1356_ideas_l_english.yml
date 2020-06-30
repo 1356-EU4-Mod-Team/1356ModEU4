@@ -51,6 +51,14 @@
  CIC_ideas_start: "Cilician Traditions"
  CIC_ideas: "Cilician Ideas"
  
+ uralic_ideas_group_bonus: "Finno-Ugric Ambitions"
+ uralic_ideas_group_start: "Finno-Ugric Traditions"
+ uralic_ideas_group: "Finno-Ugric Ideas"
+ russian_prince_group_bonus: "Russian Principality Ambitions"
+ russian_prince_group_start: "Russian Principality Traditions"
+ russian_prince_group: "Russian Principality Ideas"
+ 
+ 
  WOO_ideas_bonus: "Wallonian Ambitions"
  WOO_ideas_start: "Wallonian Traditions"
  WOO_ideas: "Wallonian Ideas"

@@ -1,15 +1,26 @@
-# (*) Bohemia - Silesia
+# Bohemia - Silesia
 vassal = {
 	first = BOH
-	second = SIL
-	start_date = 1356.1.1
+	second = GLG
+	start_date = 1444.1.1
+	end_date = 1526.8.29
+}
+vassal = {
+	first = BOH
+	second = OPL
+	start_date = 1444.1.1
 	end_date = 1526.8.29
 }
 
-# Habsburg - Silesia
 vassal = {
 	first = HAB
-	second = SIL
+	second = GLG
+	start_date = 1526.8.30
+	end_date = 1675.11.21
+}
+vassal = {
+	first = HAB
+	second = OPL
 	start_date = 1526.8.30
 	end_date = 1675.11.21
 }
@@ -18,8 +29,8 @@ vassal = {
 union = {
 	first = BRA
 	second = ANS
-	start_date = 1415.4.30
-	end_date = 1440.9.20
+	start_date = 1415.1.1
+	end_date = 1440.9.21
 }
 
 # Brandenburg-Ansbach (Albrecht Achilles)
@@ -74,8 +85,8 @@ union = {
 union = {
 	first = HAB
 	second = HUN
-	start_date = 1453.1.1
-	end_date = 1457.11.23
+	start_date = 1452.1.1
+	end_date = 1457.11.24
 }
 
 # (*) Habsburg-Bohemia, Ladislaus is crowned king of Bohemia
@@ -83,7 +94,7 @@ union = {
 	first = HAB
 	second = BOH
 	start_date = 1453.10.28
-	end_date = 1457.11.23
+	end_date = 1457.11.24
 }
 
 # (*) Poland-Hungary
@@ -91,7 +102,7 @@ union = {
 	first = POL
 	second = HUN
 	start_date = 1439.10.27
-	end_date = 1444.11.10
+	end_date = 1444.11.11
 }
 
 # Bohemia-Hungary
@@ -110,6 +121,13 @@ union = {
 	end_date = 1620.8.11
 }
 
+# Croatia-Hungary, post-Ladislaus of Naples' attempt to take the Croatian and Hungarian crowns
+union = {
+	first = HUN
+	second = CRO
+	start_date = 1409.1.1
+	end_date = 1526.8.30
+}
 # Brandenburg-Ansbach (Albrecht Achilles)
 alliance = {
 	first = BRA
@@ -159,6 +177,7 @@ alliance = {
 }
 
 # Habsburg, Spain and Bavaria
+# + The Grand alliance
 alliance = {
 	first = HAB
 	second = SPA
@@ -238,18 +257,18 @@ alliance = {
 	end_date = 1678.9.19
 }
 
-# Austria and Poland (Holy League of 1684)
-alliance = {
-	first = HAB
-	second = PLC
-	start_date = 1684.3.5
-	end_date = 1699.1.26
-}
-
 # Austria and Venice (Holy League of 1684)
 alliance = {
 	first = HAB
 	second = VEN
+	start_date = 1684.3.5
+	end_date = 1699.1.26
+}
+
+# Austria and Poland (Holy League of 1684)
+alliance = {
+	first = HAB
+	second = PLC
 	start_date = 1684.3.5
 	end_date = 1699.1.26
 }

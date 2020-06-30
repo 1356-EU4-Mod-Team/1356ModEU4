@@ -431,12 +431,12 @@ royal_marriage = {
 }
 
 # Foix and Navarra
-alliance = {
-	first = FOI
-	second = NAV
-	start_date = 1464.12.2
-	end_date = 1479.2.13
-}
+# alliance = {
+	# first = FOI
+	# second = NAV
+	# start_date = 1464.12.2
+	# end_date = 1479.2.13
+# }
 
 royal_marriage = {
 	first = FOI
@@ -500,12 +500,12 @@ alliance = { #FRA
 	end_date = 1365.4.12
 }
 
-alliance = {
-	first = NAV
-	second = FOI
-	start_date = 1350.10.1
-	end_date = 1380.5.1
-}
+# alliance = {
+	# first = NAV
+	# second = FOI
+	# start_date = 1350.10.1
+	# end_date = 1380.5.1
+# }
 
 alliance = {
 	first = BRI

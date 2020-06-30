@@ -59,8 +59,9 @@ royal_marriage = {
 union = {
 	first = HAB
 	second = STY
-	start_date = 1324.10.5
-	end_date = 1356.12.26
+	# start_date = 1324.10.5
+	start_date = 1356.12.25
+	end_date = 1356.12.27
 }
 
 royal_marriage = {

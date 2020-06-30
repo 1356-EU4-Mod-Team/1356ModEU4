@@ -1,4 +1,12 @@
-# Trebizond guaranteed by Georgia
+#Albania guaranteed by Venice
+guarantee = {
+	first = VEN
+	second = ALB
+	start_date = 1444.1.1
+	end_date = 1468.1.1
+}
+
+#Trebizond guaranteed by Georgia
 guarantee = {
 	first = GEO
 	second = TRE
@@ -23,20 +31,20 @@ alliance = {
 }
 
 # Bosnia and the Ottomans
-#vassal = {
-#	first = TUR
-#	second = BOS
-#	start_date = 1389.1.1
-#	end_date = 1402.7.1
-#}
-#
+vassal = {
+	first = TUR
+	second = BOS
+	start_date = 1389.1.1
+	end_date = 1402.7.1
+}
+
 # Bosnia and the Ottomans
-#alliance = {
-#	first = TUR
-#	second = BOS
-#	start_date = 1389.1.1
-#	end_date = 1402.7.1
-#}
+alliance = {
+	first = TUR
+	second = BOS
+	start_date = 1389.1.1
+	end_date = 1402.7.1
+}
 
 # Bosnia and Serbia under Stjepan Tomasevic
 union = {
@@ -46,7 +54,7 @@ union = {
 	end_date = 1463.6.1
 }
 
-# Autonomous Serbian Subject of the Ottoman Empire
+#Autonomous Serbian Subject of the Ottoman Empire
 vassal = {
 	first = TUR
 	second = SER

@@ -494,4 +494,97 @@ polish_duchy_ideas = {
     }
 }
 
+uralic_ideas_group = {
+	start = {
+		heir_chance = 0.5
+		infantry_power = 0.15 
+	}
+    bonus = {
+        movement_speed = 0.15
+    }
+
+	trigger = {
+        OR = {
+			tag = MRR
+			tag = MIA
+			tag = MI1
+			tag = MR1
+			tag = MR2
+			tag = UDM
+			tag = BOG
+		}	
+    }
+
+    free = yes        #will be added at load.
+
+	smi_encourage_growth_of_the_winter_market = {
+		global_prov_trade_power_modifier = 0.1
+	}
+	smi_defend_noaidi_traditions = {
+		tolerance_own = 2
+	}
+	smi_living_of_the_land = {
+		land_attrition = -0.1
+	}
+	smi_standardized_literary_language = {
+		stability_cost_modifier = -0.1
+	}
+	warriors_of_taiga = {
+		leader_land_manuever = 1		
+	}
+	turkic_mercenaries = {
+		cavalry_cost = -0.1
+	}	
+	the_old_traditions = {
+		global_unrest = -1		
+	}
+}
+
+russian_prince_group = {
+	start = {
+		infantry_cost = -0.1
+		ae_impact = -0.15
+	}
+    bonus = {
+       manpower_in_true_faith_provinces= 0.33
+    }
+
+	trigger = {
+        OR = {
+			tag = VLD
+			tag = MRM
+			tag = DMT
+			tag = KMA
+			tag = GLY
+			tag = SDU
+			tag = VYL
+		}	
+    }
+
+    free = yes        #will be added at load.
+
+	pomestnoe_voisko = {
+		land_morale = 0.10
+	}
+	defend_against_muscowy = {
+		defensiveness = 0.2
+	}	
+	strength_of_the_boyars = {
+		stability_cost_modifier = -0.2
+ 	}
+	rso_political_influence = {
+		diplomats = 1
+	}
+	blo_scientific_patronage = {
+		technology_cost = -0.05
+	}
+	nzh_open_up_the_river_trade = {
+		trade_efficiency = 0.10
+	}
+	smo_western_mercenaries = {
+		merc_maintenance_modifier = -0.15
+	}
+}
+
+
 
