@@ -18,6 +18,10 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+1356.12.24  = { owner = BYZ controller = BYZ remove_core = GEN } #BT In
+1356.12.26  = { owner = GEN controller = GEN add_core = GEN} #BT Out
+
+
 1462.1.1 = {
 	owner = TUR
 	controller = TUR
