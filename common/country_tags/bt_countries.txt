@@ -28,7 +28,7 @@ BNV = "countries/BT_Benevento.txt" #Not added. Potential formable with its great
 BRS = "countries/BT_Breisgau.txt" #Could remove. Seems to be the same as Freiburg?
 SLR = "countries/BT_Salerno.txt" #Not added
 SDL = "countries/BT_Stendal.txt" #Could be independent, look more into.
-SPO = "countries/BT_Spoleto.txt" #Not added
+# 1.30 DISABLED SPO = "countries/BT_Spoleto.txt" #Not added
 TVO = "countries/BT_Treviso.txt" #Not sure either way
 
 # New in 1.2
