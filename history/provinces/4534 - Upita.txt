@@ -30,6 +30,8 @@ discovered_by = ottoman
 				owner = TAK controller = TAK add_core = TAK remove_core = KUR
 } #BT Out
 
+1411.2.1   = { owner = LIT controller = LIT add_core = LIT}
+
 1569.1.1 = { capital = "Raseiniai" }
 1569.7.1 = {
 	owner = PLC
