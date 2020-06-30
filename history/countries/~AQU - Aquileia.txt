@@ -83,6 +83,4 @@ government_rank = 1
 	}
 }
 
-1420.1.1 = {
-capital = 4738	# Trieste
-}
+# To Venice in 1402

@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = slovene
+primary_culture = slovenian
 add_accepted_culture = austrian
 capital = 1769	# Görz
 

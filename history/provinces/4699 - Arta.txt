@@ -14,6 +14,7 @@ is_city = yes
 add_core = TES
 add_core = BYZ
 add_core = SER
+add_core = EPI
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -24,6 +25,8 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+
+1366.7.1   = { owner = EPI controller = EPI remove_core = SER remove_core = TES }
 1449.3.24 = { capital = "Angelokastron" } # Arta falls to the Ottomans
 1460.1.1 = { capital = "Arta" owner = TUR controller = TUR add_core = TUR } # Angelokastron falls to the Ottomans, Epirus left with Vonitsa and Cephalonia
 1502.1.1 = { remove_core = BYZ remove_core = EPI }
