@@ -1,6 +1,6 @@
 owner = SAV
 controller = SAV
-culture = occitain
+culture = arpitan
 religion = catholic
 hre = yes
 base_tax = 3
@@ -10,7 +10,7 @@ base_manpower = 2
 capital = "Bourg-en-Bresse"
 is_city = yes	
 add_core = SAV
-
+add_claim = PBG
 
 
 discovered_by = eastern

@@ -1,5 +1,4 @@
-government = republic
-add_government_reform = peasants_republic
+government = tribal
 government_rank = 1
 primary_culture = frisian
 add_accepted_culture = hannoverian
@@ -232,6 +231,11 @@ capital = 1931	# Emden
 		dip = 4
 		mil = 6
 	}
+}
+
+1464.1.1 = {
+	government = republic
+	add_government_reform = frisian_republic_gov
 }
 
 #Using 1470 as the year when EFR Feudalizes

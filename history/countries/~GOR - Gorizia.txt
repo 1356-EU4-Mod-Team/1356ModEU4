@@ -1,0 +1,236 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = slovenian
+add_accepted_culture = austrian
+capital = 1769	# Görz
+
+1338.3.17  = {
+	monarch = {
+		name = "Albert III"
+		dynasty = "Meinhardiner"
+		culture = bavarian
+		birth_date = 1308.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	heir = {
+		name = "Meinhard"
+		monarch_name = "Meinhard VI"
+		dynasty = "Meinhardiner"
+		culture = bavarian
+		birth_date = 1325.1.1
+		death_date = 1385.5.6
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+
+1353.1.1 = { # (2nd wife)
+	queen = {
+		country_of_origin = HAB
+		name = "Katharina"
+		dynasty = "von Cilli"
+		culture = austrian
+		birth_date = 1335.1.1
+		death_date = 1385.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1365.1.1  = { 
+	monarch = {
+		name = "Meinhard VI"
+		dynasty = "Meinhardiner"
+		culture = bavarian
+		birth_date = 1325.1.1
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Katharina"
+		dynasty = "von Pfannberg"
+		culture = austrian
+		birth_date = 1325.1.1
+		death_date = 1375.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1375.7.1 = {
+	queen = {
+		country_of_origin = RAE
+		name = "Utehild"
+		dynasty = "von Matsch"
+		culture = swiss
+		birth_date = 1350.1.1
+		death_date = 1400.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1376.1.1 = {
+	heir = {
+		name = "Heinrich"
+		monarch_name = "Heirich VI"
+		dynasty = "Meinhardiner"
+		culture = bavarian
+		birth_date = 1376.1.1
+		death_date = 1454.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+
+1385.5.6  = {
+	monarch = {
+		name = "Heinrich VI"
+		dynasty = "Meinhardiner"
+		culture = bavarian
+		birth_date = 1376.1.1
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1400.1.1 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Elisabeth"
+		dynasty = "von Cilli"
+		culture = austrian
+		birth_date = 1385.1.1
+		death_date = 1426.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1427.1.1 = {
+	queen = {
+		country_of_origin = HUN
+		name = "Katalin"
+		dynasty = "Garai"
+		culture = hungarian
+		birth_date = 1405.1.1
+		death_date = 1475.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}	
+
+1433.1.1 = {
+	heir = {
+		name = "Johann"
+		monarch_name = "Johann II"
+		dynasty = "Meinhardiner"
+		culture = bavarian
+		birth_date = 1433.1.1
+		death_date = 1462.5.22
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+1454.1.1  = {
+	monarch = {
+		name = "Johnann II"
+		dynasty = "Meinhardiner"
+		culture = bavarian
+		birth_date = 1433.1.1
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Elisabeth"
+		dynasty = "von Cilli"
+		culture = austrian
+		birth_date = 1435.1.1
+		death_date = 1475.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Leonhard"
+		monarch_name = "Leonhard"
+		dynasty = "Meinhardiner"
+		culture = bavarian
+		birth_date = 1440.1.1
+		death_date = 1500.4.12
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+
+1462.5.22  = {
+	monarch = {
+		name = "Leonhard"
+		dynasty = "Meinhardiner"
+		culture = bavarian
+		birth_date = 1440.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+	queen = {
+		country_of_origin = CRO
+		name = "Hieronima"
+		dynasty = "Ilocki"
+		culture = croatian
+		birth_date = 1440.1.1
+		death_date = 1475.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1478.7.1 = {
+	queen = {
+		country_of_origin = MAN
+		name = "Paola"
+		dynasty = "Gonzaga"
+		culture = romagnan
+		birth_date = 1464.9.23
+		death_date = 1496.11.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
