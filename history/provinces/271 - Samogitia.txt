@@ -39,7 +39,7 @@ discovered_by = QAS
 } #BT Out
 
 1398.1.1   = { owner = TEU controller = TEU add_core = TEU religion = catholic }
-1411.2.1   = { owner = LIT controller = LIT remove_core = TEU }
+1411.2.1   = { owner = LIT controller = LIT add_core = LIT remove_core = TEU }
 1569.1.1   = { capital = "Raseiniai" }
 1569.7.1   = {	owner = PLC
 		controller = PLC
