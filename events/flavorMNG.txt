@@ -18,7 +18,6 @@ country_event = {
 	
 	trigger = {
 		tag = MNG
-		is_year = 1440
 		NOT = { is_year = 1470 }
 		has_faction = bureaucrats
 		has_faction = enuchs
@@ -165,6 +164,7 @@ country_event = {
 	}
 }
 
+
 # The Perfection of Ming Porcelain
 country_event = { #1356
 	id = flavor_mng.4
@@ -205,7 +205,7 @@ country_event = { #1356
 	}
 }
 
-# The Closure of China
+## The Closure of China
 country_event = {
 	id = flavor_mng.5
 	title = "flavor_mng.EVTNAME5"
@@ -297,13 +297,31 @@ country_event = {
 		OR = {
 			has_country_modifier = mng_closed_china
 			has_country_modifier = mng_open_china
+			AND = {
+				north_china_region = {
+					has_discovered = PAP
+				}
+				south_china_region = {
+					has_discovered = PAP
+				}
+				calc_true_if = {
+					all_province = {
+						OR = {
+							region = north_china_region
+							region = south_china_region
+						}
+						owner = { religion = catholic }
+					}
+					amount = 4 # Taiwan is three provinces, so at least one non-Taiwanese province must be taken
+				}
+			}
 		}
-		
-
+		NOT = { has_country_flag = mng_jesuits_have_arrived }
 	}
 	
 	immediate = {
 		hidden_effect = {
+			set_country_flag = mng_jesuits_have_arrived
 			random_owned_province = {
 				limit = {
 					is_capital = yes
@@ -355,6 +373,7 @@ country_event = {
 	option = {
 		name = "flavor_mng.EVTOPTB7"
 		add_stability_or_adm_power = yes
+		set_country_flag = mng_rejects_jesuits
 	}
 }
 
@@ -1044,7 +1063,7 @@ country_event = {
 				has_reform = celestial_empire
 			}
 			remove_government_reform = celestial_empire
-			set_legacy_government = feudal_monarchy
+			#set_legacy_government = feudal_monarchy
 		}
 	}
 }

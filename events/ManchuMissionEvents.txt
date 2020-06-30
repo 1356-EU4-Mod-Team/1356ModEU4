@@ -139,7 +139,7 @@ country_event = {
 	
 	trigger = {
 		tag = MNG
-		is_year = 1600
+		is_year = 1450 #1356
 		NOT = {
 			total_development = 600
 		}
