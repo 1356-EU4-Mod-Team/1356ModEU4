@@ -409,10 +409,10 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			OR = {
-				AND = {
-					has_country_flag = "bur_granted_imperial_title_flag"
-					tag = BUR
-				}
+				#AND = {
+				#	has_country_flag = "bur_granted_imperial_title_flag"
+				#	tag = BUR
+				#}
 				is_elector = yes
 				is_emperor = yes
 				NOT = { tag = BUR }
