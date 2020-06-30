@@ -1,3 +1,47 @@
+## Restored French vassals 1.30 ##
+
+# France-Orleans
+vassal = {
+	first = FRA
+	second = ORL
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+# France-Armagnac
+vassal = {
+	first = FRA
+	second = AMG
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+# France-Auvergne
+vassal = {
+	first = FRA
+	second = AUV
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+# France-Foix
+vassal = {
+	first = FRA
+	second = FOI
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+# France-Bourbon
+vassal = {
+	first = FRA
+	second = BOU
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+
+##################
 # France-Brittany
 union = {
 	first = FRA
@@ -15,7 +59,7 @@ union = {
 }
 
 # France-Genoa
-union = { 
+union = {
 	first = FRA
 	second = GEN
 	start_date = 1458.1.1
@@ -83,7 +127,7 @@ vassal = {
 }
 
 # Normandy, a French vassal
-vassal = { 
+vassal = {
 	first = FRA
 	second = NRM
 	start_date = 1465.8.15
@@ -103,7 +147,7 @@ vassal = {
 	first = FRA
 	second = NEV
 	start_date = 1465.1.1
-	end_date = 1477.1.5
+	end_date = 1539.1.5
 }
 
 # Nevers, a French vassal
@@ -650,6 +694,13 @@ union = {
 	end_date = 1808.6.6
 }
 
+# Napoleonic Grand Duchy of Berg
+union = {
+	first = FRA
+	second = BRG
+	start_date = 1808.8.1
+	end_date = 1809.3.17
+}
 # Spain during Joseph Bonaparte's rule
 vassal = {
 	first = FRA
@@ -716,7 +767,7 @@ royal_marriage = {
 }
 
 # Amadeo IX of Savoy and Yolande of Valois
-royal_marriage = { 
+royal_marriage = {
 	first = SAV
 	second = FRA
 	start_date = 1453.1.1
