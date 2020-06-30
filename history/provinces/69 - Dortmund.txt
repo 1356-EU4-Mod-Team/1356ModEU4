@@ -19,6 +19,15 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { 
+				owner = WES controller = WES add_core = WES add_core = OSN
+} #BT In
+
+1356.12.26  = { 
+				owner = RVA controller = RVA remove_core = WES remove_core = OSN
+} #BT Out
+
+
 1803.4.27 = {
 	owner = NSA
 	controller = NSA

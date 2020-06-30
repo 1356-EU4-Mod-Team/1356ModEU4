@@ -1,8 +1,9 @@
 # 4744 - Zwickau
 
-owner = MEI
-controller = MEI
+owner = SAX
+controller = SAX
 add_core = MEI
+add_core = SAX
 culture = saxon
 religion = catholic
 hre = yes

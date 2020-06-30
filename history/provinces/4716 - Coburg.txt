@@ -18,6 +18,10 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
+1356.12.24  = { owner = FRC controller = FRC add_core = FRC } #BT In
+
+1356.12.26  = { owner = THU controller = THU remove_core = FRC } #BT Out
+
 1531.1.1 = { religion = protestant }
 1790.8.1 = { unrest = 5 } # Peasant revolt
 1791.1.1 = { unrest = 0 }

@@ -19,6 +19,9 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24 = { owner = TOU controller = TOU } #BT In
+1356.12.26 = { owner = FRA controller = FRA add_core = FRA  } #BT Out # Jaime III agrees to sell this province in 1337, only goes to France after his death
+
 
 1560.1.1 = { religion = reformed }
 1565.1.1 = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear

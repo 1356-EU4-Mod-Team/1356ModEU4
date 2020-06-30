@@ -22,6 +22,9 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { owner = CRO controller = CRO add_core = CRO } #BT In
+1356.12.26  = { owner = VEN controller = VEN } #BT Out
+
 
 1420.1.1 = { owner = VEN controller = VEN add_core = VEN }
 1540.10.2 = { owner = TUR controller = TUR add_core = TUR } # A large part of Dalmatia is incorporated into the Ottoman empire
