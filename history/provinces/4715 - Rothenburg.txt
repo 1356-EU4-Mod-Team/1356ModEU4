@@ -16,6 +16,11 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+
+1356.12.24  = { owner = FRC controller = FRC add_core = FRC } #BT In
+
+1356.12.26  = { owner = MAI controller = MAI remove_core = FRC } #BT Out
+
 #Reichsdeputationshauptschluss
 1803.2.25 = {
 	owner = BAV

@@ -19,6 +19,10 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
+1356.12.24  = { owner = BYZ controller = BYZ remove_core = NAP add_core = BYZ } #BT In
+1356.12.26  = { owner = NAP controller = NAP add_core = NAP remove_core = BYZ } #BT Out
+
+
 1479.1.24 = { owner = TUR controller = TUR add_core = TUR }
 1500.12.24 = { controller = VEN } # end of the Siege of the Castle of Saint George
 1503.5.1 = { # Ottoman peace with Venice ratified in May of 1503

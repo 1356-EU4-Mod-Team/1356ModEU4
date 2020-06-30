@@ -71,3 +71,13 @@ AKS = {
 ZBB = {
 	is_core = ZBB
 }
+
+SWA = {
+	NOT = { has_global_flag = 1356_bt_start_flag}
+	NOT = { exists = SWB }
+}
+
+SWB = {
+	has_global_flag = 1356_bt_start_flag
+	NOT = { exists = SWA }
+}

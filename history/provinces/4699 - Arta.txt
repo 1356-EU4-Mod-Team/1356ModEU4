@@ -25,6 +25,9 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+1356.12.24  = { owner = BYZ controller = BYZ remove_core = TES remove_core = SER } #BT In
+1356.12.26  = { owner = TES controller = TES add_core = TES add_core = SER } #BT Out
+
 
 1366.7.1   = { owner = EPI controller = EPI remove_core = SER remove_core = TES }
 1449.3.24 = { capital = "Angelokastron" } # Arta falls to the Ottomans
