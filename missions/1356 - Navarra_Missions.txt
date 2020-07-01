@@ -1189,10 +1189,11 @@ nav_family_claims_1 = { #Integrate Flanders, Aachen, and the Bretons
 			add_prestige = 5
 		}
 	}
+	
 }
 
-nav_missions_1 = {
-	slot = 6
+nav_missions_1_extra = {
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {
@@ -1204,6 +1205,7 @@ nav_missions_1 = {
 	nav_basque_fisheries = {
 		icon = mission_early_game_buildings
 		required_missions = { nav_reclaim_coast }
+		position = 14
 		provinces_to_highlight = {
 			province_id = 209
 			OR = {
@@ -1217,7 +1219,6 @@ nav_missions_1 = {
 				}
 			}
 		}
-		position = 2
 		trigger = {
 			num_of_transport = 5
 			209 = {
@@ -1246,6 +1247,7 @@ nav_missions_1 = {
 	nav_north_sea_whaling = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { nav_basque_fisheries }
+		position = 15
 		provinces_to_highlight = {
 			province_id = 1975
 			NOT = {
@@ -1294,22 +1296,11 @@ nav_missions_1 = {
 			}
 		}
 	}
-}
-	
-nav_missions_1_b = {
-	slot = 6
-	generic = no
-	ai = yes
-	potential = {
-		tag = NAV
-		NOT = { map_setup = map_setup_random }
-		is_random_new_world = no
-	}
-	has_country_shield = yes
-	
+
 	nav_terranova = {
 		icon = mission_settlers_north_america
 		required_missions = { nav_north_sea_whaling }
+		position = 16
 		provinces_to_highlight = {
 			province_id = 2573
 			NOT = {
@@ -1318,7 +1309,6 @@ nav_missions_1_b = {
 			}
 			has_discovered = ROOT
 		}
-		position = 4
 		trigger = {
 			2573 = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1353,6 +1343,7 @@ nav_missions_1_b = {
 	nav_newfoundland_labrador = {
 		icon = mission_iberian_conquistador
 		required_missions = { nav_terranova }
+		position = 17
 		provinces_to_highlight = {
 			OR = {
 				AND = {
@@ -1396,28 +1387,17 @@ nav_missions_1_b = {
 			}
 		}
 	}
-}
 
-nav_missions_5 = {
-	slot = 7
-	generic = no
-	ai = yes
-	potential = {
-		tag = NAV
-		NOT = { map_setup = map_setup_random }
-		is_random_new_world = no
-	}
-	has_country_shield = yes
 	nav_aragonese_inheritance = {
 		icon = mission_monarch_in_throne_room
 		required_missions = {  }
+		position = 18
 		provinces_to_highlight = {
 			area = aragon_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		position = 3
 		trigger = {
 			aragon_area = {
 				type = all
@@ -1437,6 +1417,7 @@ nav_missions_5 = {
 	nav_dominate_espainiako = {
 		icon = mission_unite_home_region
 		required_missions = { nav_aragonese_inheritance }
+		position = 19
 		provinces_to_highlight = {
 			region = iberia_region
 			NOT = {
@@ -1457,3 +1438,4 @@ nav_missions_5 = {
 		}
 	}
 }
+	
