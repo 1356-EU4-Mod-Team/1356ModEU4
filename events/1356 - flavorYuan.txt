@@ -246,28 +246,28 @@ country_event = { #Toqto Returns! #Tied into the Red Turban Rebellion Disaster
 		#	}
 		#}
 	}
-	option = { #I thought we exiled you! Guards! Kill this man!
-		name = yua.4.b
-		ai_chance = { factor = 50 } #This should be the more likely option, but its been slightly modified.
-		#custom_tooltip = yua4b_killed_toqto_tooltip
-		#set_country_flag = yuan_toqto_killed_flag #This should go here, but commented out and replaced with option 1 to prevent blind thrill seakers
-		set_country_flag = yuan_toqto_returns_flag
-		#country_event = { #The Execution of Toqto'a
-		#	id = yua.30
-		#	days = 30
-		#}
-		#define_consort = {
-		#	name = "Lady Ki"
-		#	country_of_origin = GYO
-		#	dynasty = "Goryeo"
-		#	culture = korean
-		#	religion = mahayana
-		#	adm = 5
-		#	dip = 6
-		#	mil = 3
-		#	female = yes
-		#}
-	}
+	# option = { #I thought we exiled you! Guards! Kill this man!
+		# name = yua.4.b
+		# ai_chance = { factor = 50 } #This should be the more likely option, but its been slightly modified.
+		# custom_tooltip = yua4b_killed_toqto_tooltip
+		# set_country_flag = yuan_toqto_killed_flag #This should go here, but commented out and replaced with option 1 to prevent blind thrill seakers
+		# set_country_flag = yuan_toqto_returns_flag
+		# country_event = { #The Execution of Toqto'a
+			# id = yua.30
+			# days = 30
+		# }
+		# define_consort = {
+			# name = "Lady Ki"
+			# country_of_origin = GYO
+			# dynasty = "Goryeo"
+			# culture = korean
+			# religion = mahayana
+			# adm = 5
+			# dip = 6
+			# mil = 3
+			# female = yes
+		# }
+	# }
 }
 
 country_event = { #Peasants flock to Toqto'as Side!
