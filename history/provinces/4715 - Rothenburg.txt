@@ -19,7 +19,7 @@ discovered_by = ottoman
 
 1356.12.24  = { owner = FRC controller = FRC add_core = FRC } #BT In
 
-1356.12.26  = { owner = MAI controller = MAI remove_core = FRC } #BT Out
+1356.12.26  = { owner = ROT controller = ROT remove_core = FRC } #BT Out
 
 #Reichsdeputationshauptschluss
 1803.2.25 = {

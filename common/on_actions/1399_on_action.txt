@@ -34,8 +34,8 @@ on_war_won = {
 		sikandar.444
 		rus_independence.2
 		rus_independence.6
-		ming_emperor.1
-		ming_emperor.11
+		#ming_emperor.1
+		#ming_emperor.11
 		WarTwoPetersFlavor.9
 		WarTwoPetersFlavor.10		
 	}

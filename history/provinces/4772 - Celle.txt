@@ -26,7 +26,7 @@ discovered_by = ottoman
 } #BT In
 
 1356.12.26  = { 
-				owner = GOS controller = GOS remove_core = OFA remove_core = EGN
+				owner = LUN controller = LUN add_core = LUN remove_core = OFA remove_core = EGN
 } #BT Out
 
 

@@ -57,6 +57,7 @@ country_event = { #Castile Wins Civil War
 	trigger = {
 		tag = CAS
 		OR = {
+			senior_union_with = CTR
 			219 = { controlled_by = CAS }
 			219 = { controlled_by = ENG }
 			219 = { controlled_by = GRA }
@@ -92,6 +93,7 @@ country_event = { #House Trastamara wins Civil War
 	trigger = {
 		tag = CTR
 		OR = {
+			senior_union_with = CAS
 			208 = { controlled_by = CTR }
 			208 = { controlled_by = ARA }
 			208 = { controlled_by = FRA }

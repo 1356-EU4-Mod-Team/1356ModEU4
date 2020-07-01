@@ -26,7 +26,7 @@ discovered_by = AST
 discovered_by = QAS
 
 1356.12.24  = { owner = KRN controller = KRN add_core = KRN add_core = TIR} #BT In
-1356.12.26  = { owner = STY controller = STY remove_core = STY remove_core = TIR} #BT Out
+1356.12.26  = { owner = STY controller = STY remove_core = TIR} #BT Out
 #Use a unique Flavor event to give Tirol claims on Krain, since its starting ruler did not inherit this province even though her father owned it.
 
 1360.1.1  = { owner = HAB controller = HAB add_core = HAB }
