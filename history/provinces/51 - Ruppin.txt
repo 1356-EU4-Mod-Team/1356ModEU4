@@ -3,6 +3,7 @@
 owner = BRA
 controller = BRA
 add_core = BRA
+add_core = RUP
 culture = berliner
 religion = catholic
 hre = yes

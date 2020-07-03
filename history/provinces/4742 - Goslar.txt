@@ -22,11 +22,11 @@ discovered_by = ottoman
 
 
 1356.12.24  = { 
-				owner = OFA controller = OFA add_core = OFA add_core = EGN
+				owner = OFA controller = OFA add_core = OFA add_core = OST
 } #BT In
 
 1356.12.26  = { 
-				owner = GOS controller = GOS remove_core = OFA remove_core = EGN
+				owner = GOS controller = GOS remove_core = OFA remove_core = OST
 } #BT Out
 
 

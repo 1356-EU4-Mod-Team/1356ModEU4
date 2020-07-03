@@ -22,11 +22,11 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { 
-				owner = FRC controller = FRC add_core = FRC add_core = WES
+				owner = FKN controller = FKN add_core = FKN add_core = WES
 } #BT In
 
 1356.12.26  = { 
-				owner = KOL controller = KOL remove_core = FRC remove_core = WES
+				owner = KOL controller = KOL remove_core = FKN remove_core = WES
 } #BT Out
 
 1453.1.1 = { add_core = MUN }

@@ -22,13 +22,9 @@ center_of_trade = 1
 
 add_province_triggered_modifier = 1356_strasbourg_cathedral_great_project_province_modifier #1356 
 
-1356.12.24  = { 
-				owner = SWB controller = SWB add_core = SWB
-} #BT In
+1356.12.24  = { owner = SWA controller = SWA add_core = SWA } #BT In
 
-1356.12.26  = { 
-				owner = ALS controller = ALS remove_core = SWB
-} #BT Out
+1356.12.26  = { owner = ALS controller = ALS remove_core = SWA } #BT Out
 
 1467.6.15 = { add_core = BUR } # Charles the Bold ascends and lays claims on the Alsace
 1469.1.1 = { owner = BUR controller = BUR } # Upper Alsace given to Charles the Bold by Archduke Sigismund

@@ -19,6 +19,10 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { hre = yes } #BT In
+
+1356.12.26  = { hre = no } #BT Out
+
 1402.6.26  = { controller = MLO }
 1402.9.3   = { controller = PAP }
 

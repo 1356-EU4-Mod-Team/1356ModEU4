@@ -20,6 +20,9 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { hre = yes } #BT In
+
+1356.12.26  = { hre = no } #BT Out
 
 1481.1.1 = { owner = FRA controller = FRA add_core = FRA } # Provence added to France after the death of Duke Charles
 1526.5.22 = { controller = HAB } # Austria invades the Provence during the Franco-Habsburg war (1521-1529)

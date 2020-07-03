@@ -18,13 +18,9 @@ discovered_by = ottoman
 
 
 
-1356.12.24  = { #BT In
-				owner = SWB controller = SWB add_core = SWB remove_core = BAD
-}
+1356.12.24  = { owner = SWA controller = SWA add_core = SWA } #BT In
 
-1356.12.26  = { 
-				owner = BAD controller = BAD add_core = BAD remove_core = SWB 
-} #BT Out
+1356.12.26  = { owner = BAD controller = BAD add_core = BAD remove_core = SWA } #BT Out
 
 1715.6.1 = {
 	capital = "Karlsruhe"

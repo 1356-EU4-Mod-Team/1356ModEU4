@@ -18,13 +18,10 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
-1356.12.24  = { #BT In
-				owner = SWB controller = SWB add_core = SWB remove_core = KNZ
+1356.12.24  = { owner = SWA controller = SWA add_core = SWA } #BT In
 }
 
-1356.12.26  = { 
-				owner = KNZ controller = KNZ add_core = KNZ remove_core = SWB 
-} #BT Out
+1356.12.26  = { owner = KNZ controller = KNZ remove_core = SWA } #BT Out
 
 1525.1.1 = {
 	religion = reformed

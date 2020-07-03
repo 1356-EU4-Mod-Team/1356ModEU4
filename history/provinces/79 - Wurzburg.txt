@@ -20,11 +20,11 @@ discovered_by = ottoman
 is_city = yes
 
 1356.12.24  = { 
-				owner = FRC controller = FRC add_core = FRC
+				owner = FKN controller = FKN add_core = FKN
 } #BT In
 
 1356.12.26  = { 
-				owner = WBG controller = WBG remove_core = FRC
+				owner = WBG controller = WBG remove_core = FKN
 } #BT Out
 
 

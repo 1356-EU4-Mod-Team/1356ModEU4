@@ -19,12 +19,12 @@ extra_cost = 8
 center_of_trade = 1
 
 1356.12.24  = { 
-				owner = SWB controller = SWB add_core = SWB
+				owner = SWA controller = SWA add_core = SWA
 				base_tax = 6 base_production = 5 base_manpower = 4
 } #BT In
 
 1356.12.26  = { 
-				owner = ULM controller = ULM remove_core = SWB
+				owner = ULM controller = ULM remove_core = SWA
 				base_tax = 7 base_production = 7 base_manpower = 4
 } #BT Out
 

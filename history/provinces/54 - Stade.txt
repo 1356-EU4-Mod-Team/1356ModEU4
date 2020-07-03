@@ -21,13 +21,9 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { 
-				owner = EGN controller = EGN add_core = EGN
-} #BT In
+1356.12.24  = { owner = EGN controller = EGN add_core = EGN add_core = OFA } #BT In
 
-1356.12.26  = { 
-				owner = VER controller = VER remove_core = EGN
-} #BT Out
+1356.12.26  = { owner = VER controller = VER remove_core = EGN remove_core = OFA } #BT Out
 
 1529.1.1 = { religion = protestant }
 1648.10.24 = { owner = SWE controller = SWE add_core = SWE } # Swedish dominion, Peace of Westphalia

@@ -20,11 +20,11 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { 
-				owner = SWB controller = SWB add_core = SWB add_claim = FRC
+				owner = SWA controller = SWA add_core = SWA add_claim = FKN
 } #BT In
 
 1356.12.26  = { 
-				owner = ANS controller = ANS remove_core = SWB remove_claim = FRC
+				owner = ANS controller = ANS remove_core = SWA remove_claim = FKN
 } #BT Out
 
 1522.1.1 = { religion = protestant }

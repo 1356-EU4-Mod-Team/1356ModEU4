@@ -18,8 +18,8 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { hre = yes owner = CDR controller = CDR add_core = CDR } #BT In
-1356.12.26  = { hre = no owner = PAP controller = PAP remove_core = CDR } #BT Out
+1356.12.24  = { hre = yes owner = SPL controller = SPL add_claim = CDR remove_core = PAP } #BT In
+1356.12.26  = { hre = no owner = PAP controller = PAP remove_claim = CDR add_core = PAP } #BT Out
 
 
 1408.1.1 = { owner = NAP controller = NAP add_core = NAP } # Ladislas takes control of Ancona
