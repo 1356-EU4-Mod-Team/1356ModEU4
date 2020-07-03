@@ -293,8 +293,8 @@ age_of_feudalism = {
 		}
 		ab_feudalism_iron_fisted_rule = { #May require a better name
 			modifier = {
-				state_governing_cost = 0.15
-				expand_administration_cost = 0.15
+				state_governing_cost = -0.15
+				expand_administration_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 10

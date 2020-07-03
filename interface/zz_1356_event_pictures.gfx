@@ -23,4 +23,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_pictures_WiH/FEMALES_eventPicture.dds"
 		allwaystransparent = yes
 	}
+	
+	spriteType = {
+		name = "GOLDENBULL_eventPicture"
+		texturefile = "gfx/event_pictures/GOLDENBULL_eventPicture.dds"
+		allwaystransparent = yes
+	}	
 }

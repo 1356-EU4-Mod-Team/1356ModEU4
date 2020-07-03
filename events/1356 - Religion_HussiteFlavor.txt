@@ -1,4 +1,4 @@
-namespace=hussite_spr
+namespace = hussite_spr
 
 # The Hussite Reformation
 country_event = { #Spawn for the Hussites
