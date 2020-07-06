@@ -133,10 +133,10 @@ country_event = { #Spawn for the Hussites
 			factor = 1.1
 			government = tribal
 		}
-		modifier = { #MUCH slower if a Crusader 
-			factor = 10
-			government = crusader_state_reform
-		}
+		#modifier = { #MUCH slower if a Crusader 
+		#	factor = 10
+		#	government = crusader_state_reform
+		#}
 		modifier = { #Slower if Sami, Iceland, Cummania, Teutonic, or Livonian
 			factor = 3.0
 			OR = {
@@ -369,27 +369,29 @@ province_event = { #Event to force convert the Hussite Center of Reformation if 
 	
 	option = {
 		name = hussite_spr.4.a
-		add_prestige = -20
+		owner = { add_prestige = -20 }
 		change_religion = catholic
 		add_reform_desire = -0.25
-		set_heir_religion = catholic
+		owner = { set_heir_religion = catholic }
 		#set_ruler_religion = catholic
 		if = {
 			limit = {
-				has_heir = no
+				owner = { has_heir = no }
 			}
-			define_heir = {
-				male = yes
-				hide_skills = yes
-				dynasty = ROOT
-				religion = catholic
-				culture = ROOT
-				claim = 50
-				adm = 2
-				dip = 2
-				mil = 2
+			owner = {
+				define_heir = {
+					male = yes
+					hide_skills = yes
+					dynasty = ROOT
+					religion = catholic
+					culture = ROOT
+					claim = 50
+					adm = 2
+					dip = 2
+					mil = 2
+				}
 			}
 		}
-		exile_ruler_as = hussite_ruler_abdicated
+		owner = { exile_ruler_as = hussite_ruler_abdicated }
 	}
 }

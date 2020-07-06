@@ -1027,7 +1027,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			AND = {
+			#AND = {
 				owns_core_province = 82	# Westfalen
 				owns_core_province = 1762	# Kassel
 				OR = {
@@ -1036,7 +1036,7 @@ country_decisions = {
 					owns_core_province = 78	# Mainz
 					owns_core_province = 86	# Munster
 				}
-			}
+			#}
 			num_of_owned_provinces_with = {
 				value = 12 #out of 22
 				OR = {

@@ -1,9 +1,9 @@
 # 2980 - Lucca (1356)
+# Changes: PIS
 
-
-owner = LUC
-controller = LUC
-add_core = LUC
+owner = PIS
+controller = PIS
+add_core = PIS
 culture = tuscan
 religion = catholic
 hre = yes
@@ -13,6 +13,7 @@ trade_goods = cloth
 base_manpower = 2
 capital = "Lucca"
 is_city = yes
+add_core = LUC
 
 discovered_by = western
 discovered_by = eastern
@@ -21,9 +22,11 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
-1356.12.24  = { owner = LUC controller = LUC add_core = LUC } 
+1356.12.24  = { owner = LUC controller = LUC } #BT In
+1356.12.26  = {  owner = PIS controller = PIS } #BT Out
 
-1400.3.1  = { owner = MLO controller = MLO add_core = MLO }
+1370.3.1  = { owner = LUC controller = LUC }
+1400.3.1  = { owner = MLO controller = MLO }
 1402.9.3  = { owner = LUC controller = LUC }
 1495.1.1  = { hre = no }
 1805.6.10 = {	owner = FRA

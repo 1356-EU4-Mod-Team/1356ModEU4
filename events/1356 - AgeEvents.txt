@@ -286,3 +286,8 @@ country_event = { #Removes America Vision for European Nations who dont have Exp
 		set_country_flag = vision_purged_americas_flag
 	}
 }
+
+
+
+
+

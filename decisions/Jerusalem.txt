@@ -22,20 +22,20 @@ country_decisions = {
 				tag = NRM
 				AND = {
 					tag = NAX
-					primary_religion = catholic
+					religion = catholic
 				}
 				AND = { 
 					tag = EPI
-					primary_religion = catholic
+					religion = catholic
 				
 				}
 				AND = {
 					tag = ATH
-					primary_religion = catholic
+					religion = catholic
 				}
 				AND = {
 					tag = ACH
-					primary_religion = catholic
+					religion = catholic
 				}
 		
 			}

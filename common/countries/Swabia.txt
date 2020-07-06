@@ -68,7 +68,6 @@ monarch_names = {
 	"Adolf #0" = 0
 	"Bruno #0" = 0
 	"Dieter #0" = 0
-	"Emanuel #0" = 0
 	"Florian #0" = 0
 	"Hartmann #0" = 0
 	"Joachim #0" = 0
@@ -85,15 +84,12 @@ monarch_names = {
 	"Michael #0" = 0
 	"Johann #0" = 0
 	"Gottlieb #0" = 0
-	"Friedrich #0" = 0
 	"Hans #0" = 0
 	"Gabriel #0" = 0
 	"Ferdinand #0" = 0
 	"Anselm #0" = 0
 	"Konrad #0" = 0
 	"Gustav #0" = 0
-	"Georg #0" = 0
-	"Joachim #0" = 0
 	"Franz #0" = 0
 	"David #0" = 0
 	"Johannes #0" = 0
@@ -131,11 +127,11 @@ ship_names = {
 	Ravensburg Konstanz Breisgau
 	Marbach Neuffen Balingen Mömpelgard
 
-	"St. Sebaldus" Memmingen  "St. Kilian" "Tassilo III"
+	"St. Sebaldus" "St. Kilian" "Tassilo III"
 	"König Arnulf" "Graf von Bogen"
 	"Graf von Sulzbach" "Graf von Diepolding" Otto
 	Augsburg Andechs Burgau Diessen Friedberg Kempten Lindau
-	Memmingen Mindel Oettingen Wolfstein Konstanz
+	Memmingen Mindel Oettingen Wolfstein
 }
 
 army_names = {

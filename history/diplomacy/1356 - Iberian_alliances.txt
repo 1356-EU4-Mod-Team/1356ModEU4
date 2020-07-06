@@ -35,3 +35,10 @@ alliance = { #Added for Civil war functionality
 	start_date = 1356.12.25
 	end_date = 1356.12.26 #Need an end date
 }
+
+union = {
+	first = ARA
+	second = MJO
+	start_date = 1356.12.24
+	end_date = 1500.1.1 #Iberian wedding date pls
+}

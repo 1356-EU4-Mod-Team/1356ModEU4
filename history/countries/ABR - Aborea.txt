@@ -1,0 +1,89 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+religion = catholic
+primary_culture = sardinian
+capital = 4735	# Aborea
+fixed_capital = 4735 # Cannot move capital away from this province & no power cost to move to it
+
+1356.12.24 = {
+	monarch = { 
+		name = "Marianus IV" #"The Great"
+		dynasty = "De Arborea"
+		birth_date = 1329.1.1
+		dip = 5
+		mil = 4
+		adm = 5
+	}
+} 
+
+1375.1.1 = {
+	monarch = { 
+		name = "Hugh III"
+		dynasty = "De Arborea"
+		birth_date = 1350.1.1 #Guesstimate
+		dip = 2
+		mil = 3
+		adm = 2
+	}
+} 
+
+
+1383.1.1 = {
+	monarch = { 
+		name = "Eleonora"
+		dynasty = "De Arborea"
+		birth_date = 1347.1.1
+		dip = 4
+		mil = 4
+		adm = 4
+	}
+}
+
+1383.1.1 = {
+	heir = {
+		name = "Marianus"
+		monarch_name = "Marianus V"
+		dynasty = "De Arborea"
+		birth_date = 1368.1.1
+		death_date = 1407.1.1
+		claim = 80
+		dip = 3
+		mil = 2
+		adm = 3
+	}
+}
+
+1387.1.1 = {
+	monarch = { 
+		name = "Marianus V"
+		dynasty = "De Arborea"
+		dip = 3
+		mil = 2
+		adm = 3
+	}
+}
+
+1387.1.1 = {
+	heir = {
+		name = "Guglielmo"
+		monarch_name = "Guglielmo I"
+		dynasty = "De Arborea"
+		birth_date = 1387.1.1
+		death_date = 1430.1.1
+		claim = 80
+		dip = 2
+		mil = 1
+		adm = 1
+	}
+}
+
+1407.1.1 = {
+	monarch = { 
+		name = "Guglielmo I"
+		dynasty = "De Arborea"
+		dip = 2
+		mil = 1
+		adm = 1
+	}
+}

@@ -222,22 +222,22 @@ germanic = { #1356
 	dutch = {
 		primary = NED
 		male_names = {
-			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
-			Barnaerd Bernard Bartolomeus Bartolomeus
-			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
-			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
+			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnulf Balderik Barend 
+			Barnaerd Bernard Bartolomeus
+			Bavo Bertold Boudewijn Baldwin Claes Claeuwaert Daevit David Damaes Diederick 
+			Thierry Dirk Douwe Eduard Edward Egmund Ekbert
 			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
 			Gerulf
 			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
-			Gwijde Hendrik Henry Herman Herman Hubert
+			Hendrik Henry Herman Hubert
 			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
-			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
+			Kristof Christopher Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
 			Marquart Niclaes Nicholas
-			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
-			Robert Robert Robert Rodulf 
+			Olivier Oliver Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
+			Robert Rodulf 
 			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
-			Waelram Walter Walter
-			Wicher Willem William Wolfard Hendrik Maurits
+			Waelram Walter
+			Wicher Willem William Wolfard Maurits
 			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
 			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
 			Roeland Rogier Thomas Vincent Zacharias
@@ -1392,7 +1392,7 @@ latin = {
 		primary = FER
 
 		dynasty_names = {
-			Bevilacqua Boschetti Carandini Castelvetri Tassoni "Pico di Mirandola" Rangoni Monesi "da Fogliano" Bevilacqua "da Correggio" Platoni Biondelli Arrigoni Castiglione Cavriani d'Arco Ceresara Donesmondi
+			Bevilacqua Boschetti Carandini Castelvetri Tassoni "Pico di Mirandola" Rangoni Monesi "da Fogliano" "da Correggio" Platoni Biondelli Arrigoni Castiglione Cavriani d'Arco Ceresara Donesmondi
 		}
 	}
 	ligurian = {
@@ -1415,7 +1415,7 @@ latin = {
 			Lavincia Ledrus Liber
 			Messor Madecus
 			Naren
-			Paiio Panes Panias Panius Panentius Panthia Panes Panto Pinsus Pladomenus Platino
+			Paiio Panes Panias Panius Panentius Panthia Panto Pinsus Pladomenus Platino
 			Samuntio Seiio Silvanus Statanius Staticus Stato Status Sestus Sextus Sexto
 			Taulant  Teuta Tito Thana Tizius Tritus Titus
 			Varro Vidasus Vidaza
@@ -1425,9 +1425,9 @@ latin = {
 			Mares Marco Maroe Marinus Matheus Michael Nale Nichiforus Nicola
 			Pascalis Pasqualis Petragna Petrus Piero Perue Rassinus Rusco
 			Stane Thoma Tuone Vallius Vita
-			Adam Aguastin Alecuandur Aliau Aliard Andre Antune Antuone Blasi Buartol Bunedec Bunin Caunstantin
+			Adam Aguastin Alecuandur Aliau Aliard Antune Antuone Blasi Buartol Bunedec Bunin Caunstantin
 			Caurnel Clemiant Crastin Cuarl Dimitre Domienc Domienja Fabri Faguor Fiaurens Filip Frane
-			Giorgi Guaspar Jacop Jiolian Joan Jualb Liaun Marc Marjan Matei Mihial Mouro Muerten Nadual Nicaul
+			Guaspar Jacop Jiolian Joan Jualb Liaun Marc Marjan Matei Mihial Mouro Muerten Nadual Nicaul
 			Paladen Piar Ponsio Puol Puoskal Raimaun Savjan Simaun Sismaun Stanislau Sthepan Taumas Taumasin
 			Teodor Timotei Vait Valdemaur Vidual Vittaur
 		}
@@ -1436,11 +1436,11 @@ latin = {
 			Ane Aneta Ante Anka Albina Augustina Amaica Amaura Alecuandra Amilja Andreja
 			Bepina Blanca Bruva Buni Catriana Cauleta Caunstantina Cvita Ibrica Ivka
 			Joana Lucia Krysto Matija Manda Nicauleta Pernica Piara Puola
-			Antolina Antonia Anussa Babalio Bodacia Catarena Caterina Clara Clara
+			Antolina Antonia Anussa Babalio Bodacia Catarena Caterina Clara
 			Drase Dea Descia Deia Deussa Elena Eloija Fiaura Filippa Helene Giva
-			Jachussa Jacobica Jelussa Laurica Lene Helene
-			Magdalena Magdalena Margerita Margaret Maria Mauressa Micha Mira Nicoletta Nixa
-			Rade Rado Regina Regina Rossa Rosa Schimosa Thome Viola Vele Vittaurja
+			Jachussa Jacobica Jelussa Laurica Lene
+			Magdalena Margerita Margaret Maria Mauressa Micha Mira Nicoletta Nixa
+			Rade Rado Regina Rossa Rosa Schimosa Thome Viola Vele Vittaurja
 		}
 	}
 	neapolitan = {
@@ -1528,7 +1528,7 @@ latin = {
 		"di Castello" "Allucingolli" "di Conti" "di Squillache" "da Romano" "degli Ubaldini"
 		"Cybo" "Pallavicini" "Adorno" "Campofregoso" "Bentivoglio" "Tiepolo" "Gradenigo" "Borromeo"
 		"Capponi" "Castracani" "Cenci" "Grimaldi" "Colleoni" 
-		"Concini" "Obertenghi" "Crispo" "Dandolo" "Fieschi" "Gattilusio" "Bandinelli" "Serra" "Sfondrati" 
+		"Concini" "Obertenghi" "Crispo" "Fieschi" "Gattilusio" "Bandinelli" "Serra" "Sfondrati" 
 		"Doria" "di Morra" "Savelli" "Mancini" "da Correggio"
 		"Condulmer" "Moneta" "Parentucelli" "Valente" "Ziani" "Strozzi" "Sturzo" "di Piombino" "Monaldeschi"
 		"Sommaripa" "Borgia" "Orseolo" "Antelminelli" "Beccaria" "de Bonacolsi"
@@ -2458,7 +2458,7 @@ south_slavic = { #1356
 			Andrija Aljen Boric Bogisa Bogut Batalo Brailo Brajko Batic Beljak Budelja Celk Dabisa
 			Dragonja Danis Dragisa Drazen Franjo Grgur Hran Hrvoje Hval Ivanis Juraj Kulin Krsmir
 			Matej Mladen Miroslav Milovan Milten Mihailo Ninoslav Nikola Nikifor Odola Ostoja Prijezda
-			Pavao Petar Priboje Poznan Radivoj Radogost Radic Sibislav Stjepan Sanko Sibislav Sandalj 
+			Pavao Petar Priboje Poznan Radivoj Radogost Radic Sibislav Stjepan Sanko Sandalj 
 			Sancin Tvrtko Tomas Tisemir Vuk Vlatko Vladislav Vukmir Vukasin Vojislav Vukac
 		}
 		female_names = {

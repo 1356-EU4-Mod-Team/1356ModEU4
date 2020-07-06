@@ -3480,7 +3480,7 @@ country_event = {
 	}
 
 	option = {
-
+		name = consort_events_206.a #1356 #Just to shut validator up
 	}
 }
 

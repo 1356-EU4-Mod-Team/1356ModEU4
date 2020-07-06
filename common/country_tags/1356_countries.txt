@@ -134,7 +134,7 @@ CHB = "countries/Chobanids.txt"
 MUZ = "countries/Muzaffarids.txt"
 #PAD = "countries/Paduspanid.txt"
 SAB = "countries/Sarbadarid.txt"
-KRT = "countries/Kurtid.txt"
+#KRT = "countries/Kurtid.txt"
 # INT = "countries/Injuid.txt"
 MIH = "countries/Mihrabanid.txt"
 TPM = "countries/TimuridEmpireAbsolute.txt"
@@ -198,3 +198,8 @@ GYO = "countries/Goryeo.txt"
 
 #Southeast Asia % Malaya
 SIA = "countries/Siam.txt"
+
+#V2.1 
+
+#Italy
+ABR = "countries/Aborea.txt"

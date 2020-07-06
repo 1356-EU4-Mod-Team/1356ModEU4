@@ -62,6 +62,22 @@ vassal = {
 	end_date = 1444.1.1
 }
 
+vassal = {
+	first = ARA
+	second = SAR
+	start_date = 1356.12.1
+	end_date = 1409.1.1
+}
+
+#union = {
+#	first = ARA
+#	second = SAR
+#	start_date = 1409.12.2
+#	end_date = 1444.1.1
+#}
+
+
+
 #################
 # RM's		#
 #################
@@ -106,3 +122,5 @@ royal_marriage = {
 	end_date = 1392.1.1
 	#end_date = 1409.7.25 #So theres no vanilla overlap
 }
+
+

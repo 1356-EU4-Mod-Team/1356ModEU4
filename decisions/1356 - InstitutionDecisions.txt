@@ -486,7 +486,7 @@ country_decisions = {
 			NOT = { has_institution = feudalism }
 			OR = {
 				any_neighbor_country = { 
-					limit = { alliance_with = ROOT }
+					#limit = { alliance_with = ROOT }
 					has_institution = feudalism 	
 				}
 				any_neighbor_country = { 

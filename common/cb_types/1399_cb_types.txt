@@ -24,12 +24,12 @@ cb_castile_civil_war = {
 		po_release_annexed
 	}
 	
-	defender_disabled_po = {
-		po_demand_provinces
-		po_revoke_cores
-		po_release_vassals
-		po_release_annexed
-	}
+	#defender_disabled_po = {
+	#	po_demand_provinces
+	#	po_revoke_cores
+	#	po_release_vassals
+	#	po_release_annexed
+	#}
 
 
 	war_goal = take_capital_throne_castile

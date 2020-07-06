@@ -1,5 +1,7 @@
 namespace = delhi_empire
 
+# Audax Validator "!" Ignore_1005
+
 country_event = {
 	id = delhi_empire.1
 	title = delhi_empire.1.t
@@ -258,9 +260,9 @@ country_event = {
 				duration = -1
 			}
 		}	
-		hidden_effect = {
-			country_event = { id = delhi_empire.6 }
-		}		
+		#hidden_effect = {
+		#	country_event = { id = delhi_empire.6 }
+		#}		
 	}
 	option = {
 		name = delhi_empire.5.b
