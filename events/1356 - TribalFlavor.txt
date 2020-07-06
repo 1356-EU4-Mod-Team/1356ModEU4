@@ -86,7 +86,7 @@ country_event = { #Feudalism spread - Vassals (Easy)
 		
 	option = { #Yes, these new ways are better
 		name = africantribal.1.a
-		all_owned_province = {
+		every_owned_province  = {
 			limit = {
 				NOT = { feudalism = 90 }
 			}
@@ -140,7 +140,7 @@ country_event = { #Feudalism spread - Near Feudals (Normal)
 		
 		OR = {
 			any_neighbor_country = { 
-				limit = { alliance_with = ROOT }
+				alliance_with = ROOT
 				has_institution = feudalism 	
 			}
 			any_neighbor_country = { 
@@ -199,7 +199,7 @@ country_event = { #Feudalism spread - Near Feudals (Normal)
 		modifier = { #Faster if allied to neighbor with feudalism
 			factor = 1.5
 			any_neighbor_country = { 
-				limit = { alliance_with = PREV }
+				alliance_with = PREV
 				has_institution = feudalism 		
 			}			
 		}
@@ -207,7 +207,7 @@ country_event = { #Feudalism spread - Near Feudals (Normal)
 		
 	option = { #Yes, these new ways are better
 		name = africantribal.2.a
-		all_owned_province = {
+		every_owned_province  = {
 			limit = {
 				NOT = { feudalism = 90 }
 			}
@@ -318,7 +318,7 @@ country_event = { #Feudalism spread - Random Event Chain (Hard)
 		
 	option = { #Yes, these new ways are better
 		name = africantribal.3.a
-		all_owned_province = {
+		every_owned_province  = {
 			limit = {
 				NOT = { feudalism = 90 }
 			}

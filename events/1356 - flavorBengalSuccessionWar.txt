@@ -197,11 +197,11 @@ country_event = {
 	option = { #Curses
 		name = sikandar.69.a
 		ai_chance = { factor = 100 }
-		remove_ruler_modifier = {
-			name = "zafar_war_for_bengal"
-			duration = -1
-			hidden = yes
-		}
+		#remove_ruler_modifier = { #You can't remove these, they only go away on ruler death - Flandy
+		#	name = "zafar_war_for_bengal"
+		#	duration = -1
+		#	hidden = yes
+		#}
 		set_government_rank = 2
 		change_tag = BNG
 		add_government_reform = bengali_sultanate_reform
@@ -225,11 +225,11 @@ country_event = {
 		name = sikandar.333.a
 		ai_chance = { factor = 100 }
 		set_global_flag = went_to_war_with_delhi_bengal
-		add_ruler_modifier = {
-			name = "zafar_war_for_bengal"
-			duration = -1
-			hidden = yes
-		}
+		#add_ruler_modifier = { #Commented out as this modifier doesnt exist - Flandy
+		#	name = "zafar_war_for_bengal"
+		#	duration = -1
+		#	hidden = yes
+		#}
 		capital_scope = {
 			build_to_forcelimit = {
 				infantry = 0.5

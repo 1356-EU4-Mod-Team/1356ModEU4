@@ -1,5 +1,7 @@
 namespace = ming_emperor
 
+# Audax Validator "!" Ignore_1005
+
 country_event = { #Ming wins and becomes Emperor
 	id = ming_emperor.1
 	title =  ming_emperor.1.t
@@ -39,7 +41,7 @@ country_event = { #Ming wins and becomes Emperor
 				remove_core = YUA
 				remove_core = KHA
 				add_core = MNG
-				set_local_autonomy = -100
+				set_local_autonomy = 0
 			}
 		}	
 		if = {
@@ -169,7 +171,7 @@ country_event = { #Ming wins and becomes Emperor
 				}
 				cede_province = MNG
 				add_core = MNG
-				set_local_autonomy = -100
+				set_local_autonomy = 0
 			}
 		}	
 		if = {
@@ -258,7 +260,7 @@ country_event = { #Ming wins and becomes Emperor
 				change_technology_group = nomad_group
 				change_unit_type = nomad_group
 				set_government_rank = 2
-				remove_country_modifier = the_mandate_of_heaven
+				#remove_country_modifier = the_mandate_of_heaven
 				add_country_modifier = {
 					name = "lost_mandate_of_heaven"
 					duration = 7300

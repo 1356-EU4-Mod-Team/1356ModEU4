@@ -1,5 +1,9 @@
 namespace = rus_independence
 
+#The validator kept flagging the remove_loot command as invalid for a province scope
+# Audax Validator "!" Ignore_1007 
+# Audax Validator "!" Ignore_1006 
+
 # The Revolt of the Three Feudatories
 # Rewritten by Daniel Tolman
 country_event = {
