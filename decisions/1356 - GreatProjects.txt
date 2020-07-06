@@ -1,5 +1,8 @@
 country_decisions = {
 
+	# Audax Validator "!" Ignore_1006
+	# Audax Validator "!" Ignore_1007
+
 	build_great_library = { #Give Nation making this events related to this decision & a national modifier related to tech and idea cost.
 		major = yes
 		potential = {

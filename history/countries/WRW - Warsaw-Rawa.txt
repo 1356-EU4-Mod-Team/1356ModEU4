@@ -17,6 +17,7 @@ capital = 257	# Warsaw
 	}
 	heir = {
 		name = "Witosz"
+		monarch_name = "Witosz I"
 		dynasty = "Piast"
 		birth_date = 1350.1.1
 		death_date = 1429.12.8

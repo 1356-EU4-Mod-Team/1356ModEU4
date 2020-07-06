@@ -17,6 +17,6 @@ add_army_professionalism = 0.1
 	}
 }
 
-1356.12.26 = {
-	add_government_reform = swiss_canton_reform
-}
+#1356.12.26 = {
+	#add_government_reform = swiss_canton_reform
+#}

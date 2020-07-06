@@ -2486,7 +2486,7 @@ yuan_toqtoa_interior_spies_trade = { #Toqto's Return - Get our Spys back on trac
 	potential = { 
 		tag = YUA
 		has_country_flag = yuan_toqto_returns_flag
-		`NOT = { has_country_flag = yuan_toqto_killed_flag }
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
 	has_country_shield = yes	
 	

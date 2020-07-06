@@ -3,7 +3,6 @@ add_government_reform = merchants_reform
 government_rank = 1
 mercantilism = 0.25
 primary_culture = norn_culture
-add_accepted_culture = highlander
 add_accepted_culture = norwegian
 religion = catholic
 technology_group = western

@@ -29,18 +29,11 @@ country_decisions = {
 			NOT = { has_country_flag = bukharan_nation }
 		}
 		provinces_to_highlight = {
-			province_id = 442 #Bukhara
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				province_id = 442 #Bukhara
+				province_id = 1970 #Syghnak #1356
+				province_id = 446 #Herat #1356
 			}
-
-			province_id = 1970 #Syghnak #1356
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			province_id = 446 #Herat #1356
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }

@@ -224,7 +224,6 @@ country_decisions = {
 				tag = LIE
 				tag = LUX
 			}
-			was_never_end_game_tag_trigger = yes
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -309,7 +308,6 @@ country_decisions = {
 			NOT = { tag = NED }
 			NOT = { exists = BUR }
 			primary_culture = burgundian
-			was_never_end_game_tag_trigger = yes
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -389,7 +387,6 @@ country_decisions = {
 				tag = SAV
 				tag = DAU
 			}
-			was_never_end_game_tag_trigger = yes
 			is_nomad = no
 			is_colonial_nation = no
 		}

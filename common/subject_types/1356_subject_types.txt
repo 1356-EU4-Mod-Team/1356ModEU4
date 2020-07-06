@@ -235,7 +235,7 @@ nusantara = {
 
 	relative_power_class = 2
 
-	restoration_cb = cb_make_nusantara
+	#restoration_cb = cb_make_nusantara
 
 	# Subject Interactions:
 	place_relative_on_throne = yes
@@ -271,7 +271,7 @@ canton = {
 
 	relative_power_class = 1
 
-	restoration_cb = cb_canton
+	#restoration_cb = cb_canton
 
 	# Subject Interactions:
 	divert_trade = yes

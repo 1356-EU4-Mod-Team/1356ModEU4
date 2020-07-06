@@ -52,14 +52,12 @@ country_decisions = {
 					hre_size = 1
 				}
 				is_emperor = yes
-				is_elector #1356
-				} #1356
+				is_elector = yes #1356
+			} #1356
 				#AND = { #1356
 				#	has_country_flag "bur_granted_imperial_title_flag" #1356
 				#	tag = BUR #1356
 				#} #1356
-				
-			}
 		}
 		effect = {
 			1878 = {
@@ -96,5 +94,4 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
 }
