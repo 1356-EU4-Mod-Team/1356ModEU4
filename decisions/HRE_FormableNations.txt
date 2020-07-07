@@ -945,7 +945,7 @@ country_decisions = {
 			NOT = { exists = WES }
 			NOT = { has_reform = celestial_empire }
 			OR = {
-				primary_culture = hannoverian #Westphalian
+				primary_culture = lower_saxon #Westphalian
 				primary_culture = hessian
 			}
 			is_colonial_nation = no
@@ -990,7 +990,7 @@ country_decisions = {
 				}
 				AND = {
 					OR = {
-						culture = hannoverian
+						culture = lower_saxon
 						culture = hessian
 					}
 					region = north_german_region
@@ -999,7 +999,7 @@ country_decisions = {
 							num_of_owned_provinces_with = {
 								value = 12 #out of 22
 								OR = {
-									culture = hannoverian
+									culture = lower_saxon
 									culture = hessian
 								}
 								region = north_german_region
@@ -1040,7 +1040,7 @@ country_decisions = {
 			num_of_owned_provinces_with = {
 				value = 12 #out of 22
 				OR = {
-					culture = hannoverian
+					culture = lower_saxon
 					culture = hessian
 				}
 				region = north_german_region
@@ -1070,10 +1070,10 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { primary_culture = hannoverian }
-					NOT = { accepted_culture = hannoverian }
+					NOT = { primary_culture = lower_saxon }
+					NOT = { accepted_culture = lower_saxon }
 				}
-				add_accepted_culture = hannoverian
+				add_accepted_culture = lower_saxon
 			}
 			add_country_modifier = {
 				name = "decentralization_modifier"
@@ -1108,7 +1108,7 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 					OR = {
 						culture = hessian
-						culture = hannoverian
+						culture = lower_saxon
 					}
 					NOT = { area = westphalia_area }
 					NOT = { area = north_westphalia_area }

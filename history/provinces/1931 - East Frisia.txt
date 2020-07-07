@@ -39,7 +39,7 @@ add_permanent_province_modifier = {
 	controller = PRU
 	remove_core = EFR
 	add_core = PRU
-	culture = hannoverian #1356
+	culture = lower_saxon #1356
 } # Inherited on the death of Count Charles Edzard
 1757.1.1 = { controller = FRA } # Captured during the Seven Years' War
 1758.1.1 = { controller = PRU } # Liberated by Anglo-German forces
@@ -61,7 +61,7 @@ add_permanent_province_modifier = {
 	owner = PRU
 	controller = PRU
 	add_core = PRU
-	culture = hannoverian #1356
+	culture = lower_saxon #1356
 	remove_core = FRA
 } # Re-annexed by Prussia
 1815.1.1 = {

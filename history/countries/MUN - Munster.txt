@@ -1,7 +1,7 @@
 government = theocracy
 add_government_reform = leading_clergy_reform
 government_rank = 1
-primary_culture = hannoverian
+primary_culture = lower_saxon
 religion = catholic
 technology_group = western
 capital = 86	# Münster
@@ -102,7 +102,7 @@ fixed_capital = 86 # Cannot move capital away from this province & no power cost
 1456.10.4 = {
 	monarch = {
 		name = "Johann I"
-		culture = hannoverian
+		culture = lower_saxon
 		birth_date = 1429.1.1
 		adm = 2
 		dip = 1

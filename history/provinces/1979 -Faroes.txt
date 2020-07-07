@@ -17,9 +17,10 @@ add_core = NOR
 add_core = ORK
 
 discovered_by = western
+discovered_by = eastern
 
 1536.1.1 = {	religion = protestant
-		owner = DAN
-		controller = DAN
-		add_core = DAN
-	   }
+	owner = DAN
+	controller = DAN
+	add_core = DAN
+}

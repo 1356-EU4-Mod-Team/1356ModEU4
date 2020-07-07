@@ -2,7 +2,7 @@
 
 owner = MUN
 controller = MUN
-culture = hannoverian
+culture = lower_saxon
 religion = catholic
 capital = "Osnabrück"
 estate = estate_church
