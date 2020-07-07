@@ -553,7 +553,7 @@ mercantilism_institution = { #1356 New Content
 					owner = { primary_culture = flemish }
 					owner = { 
 						culture_group = east_asian
-						NOT = { tag = YUA } }
+						NOT = { tag = YUA }
 					}
 				}
 				NOT = { owner = { government = tribal } }
@@ -742,28 +742,28 @@ mercantilism_institution = { #1356 New Content
 				}
 			}
 		}
-		modifier = { #Burgher Estate
-			factor = 0.15
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { has_estate = estate_burghers }
-			}
-			custom_trigger_tooltip = {
-				tooltip = MERCHANTILISM_AND_BURGHERS
-				any_neighbor_province = {
-					mercantilism_institution = 100
-				}
-				owner = {
-					has_estate = estate_burghers
-					estate_loyalty = {
-						estate = estate_burghers
-						loyalty = 40
-					}
-				}
-				has_estate = estate_burghers
-			}
-		}
+		#modifier = { #Burgher Estate
+		#	factor = 0.15
+		#	scale = yes
+		#	force_potential = yes	# Hide the this modifier when potential is false
+		#	potential = {
+		#		owner = { has_estate = estate_burghers }
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = MERCHANTILISM_AND_BURGHERS
+		#		any_neighbor_province = {
+		#			mercantilism_institution = 100
+		#		}
+		#		owner = {
+		#			has_estate = estate_burghers
+		#			estate_loyalty = {
+		#				estate = estate_burghers
+		#				loyalty = 40
+		#			}
+		#		}
+		#		has_estate = estate_burghers
+		#	}
+		#}
 		modifier = { #For Colonies
 			factor = 5
 			scale = yes

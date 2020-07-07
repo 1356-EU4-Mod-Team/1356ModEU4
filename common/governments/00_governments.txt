@@ -170,7 +170,7 @@ monarchy = {
 		indep_daimyo_legacy
 		principality_legacy
 		tsardom_legacy
-		holy_state_legacy
+		#holy_state_legacy
 		###1356 ADDITION#######
 		elective_feudal_monarchy
 		chinese_kingdom_government
@@ -203,7 +203,6 @@ monarchy = {
 		principality
 		parliamentary_reform
 		english_monarchy
-		states_general_reform
 		states_general_reform
 		###1356 ADDITION#######
 		elective_feudal_monarchy_reform

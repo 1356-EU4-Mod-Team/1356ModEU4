@@ -108,7 +108,7 @@ bergian_ideas = {
 	jan_wellem = {
 		diplomatic_reputation = 1
 	}
-	gemaeldegalerie_düsseldorf = {
+	gemaeldegalerie_dusseldorf = {
 		prestige = 1
 	}
 	koenigsallee = {

@@ -1223,10 +1223,10 @@ marcher_lord_ideas = {
 			vassal = 0
 		}
 
-		modifier = {
-			factor = 0.05
-			tributary = 1
-		}
+		#modifier = {
+		#	factor = 0.05
+		#	tributary = 1
+		#}
 
 		modifier = {
 			factor = 1.5
