@@ -576,7 +576,7 @@ theocratic_democracy_reform = {
 regionally_elected_commanders = {
 	icon = "regionally_elected_commanders"
 	allow_normal_conversion = yes
-	fixed_rank = 0
+	#fixed_rank = 0
 	modifiers = {
 		global_unrest = -1
 	}
@@ -635,7 +635,7 @@ regionally_elected_commanders = {
 monastic_elections_reform = {
 	icon = "monastic_elections_reform"
 	allow_normal_conversion = yes
-	fixed_rank = 0
+	#fixed_rank = 2
 	modifiers = {
 		stability_cost_modifier = -0.1
 		max_absolutism = 20
@@ -659,13 +659,14 @@ monastic_elections_reform = {
 		allow = { has_dlc = "Res Publica" }
 		heir = no
 		election_on_death = yes
+		# Audax Validator "." Ignore_ALL
 		states_general_mechanic = {
 			militarists = {
 				manpower_recovery_speed = 0.2
 				warscore_cost_vs_other_religion = -0.15
 				army_tradition_from_battle = 0.5
 			}
-
+			# Audax Validator "." Ignore_ALL
 			theocrats = {
 				tolerance_own = 2
 				global_missionary_strength = 0.02
@@ -682,7 +683,7 @@ monastic_elections_reform = {
 commander_king_reform = {
 	icon = "commander_king_reform"
 	allow_normal_conversion = yes
-	fixed_rank = 0
+	#fixed_rank = 2
 	potential = {
 		OR = {
 			has_reform = monastic_order_reform
@@ -716,7 +717,7 @@ commander_king_reform = {
 admiral_king_reform = {
 	icon = "admiral_king_reform"
 	allow_normal_conversion = yes
-	fixed_rank = 0
+	#fixed_rank = 2
 	potential = {
 		OR = {
 			has_reform = monastic_order_reform

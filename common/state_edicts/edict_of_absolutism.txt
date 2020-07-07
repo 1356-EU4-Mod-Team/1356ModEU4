@@ -1,3 +1,6 @@
+# Audax Validator "!" Ignore_1001
+# Audax Validator "." Ignore_1000
+
 edict_of_absolutism = {
 	potential = {
 		current_age = age_of_absolutism

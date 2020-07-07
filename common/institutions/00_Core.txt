@@ -537,21 +537,23 @@ mercantilism_institution = { #1356 New Content
 					province_id = 4388 #Chartres
 					province_id = 34 #Ingermanland
 					province_id = 4546 #Malaga #Granada-ish. Would pick Granada itself but I dont want it to start with Mercantilism completly
-					owner = { government = merchants_reform }
-					owner = { government = venice_merchants_reform }
-					owner = { government = trading_city }
-					owner = { government = veche_republic }
-					owner = { government = free_city }
+					owner = { has_reform = merchants_reform }
+					owner = { has_reform = venice_merchants_reform }
+					owner = { has_reform = trading_city }
+					owner = { has_reform = veche_republic }
+					owner = { has_reform = free_city }
 				}
 			}
 			AND = { #Simplified, expand on later.
 				is_year = 1363
 				OR = {
 					owner = { culture_group = germanic }
-					owner = { culture_group = low_lands_culture_group }
+					owner = { primary_culture = dutch }
+					owner = { primary_culture = frisian }
+					owner = { primary_culture = flemish }
 					owner = { 
 						culture_group = east_asian
-						NOT = { owner = { tag = YUA } }
+						NOT = { tag = YUA } }
 					}
 				}
 				NOT = { owner = { government = tribal } }
@@ -623,12 +625,12 @@ mercantilism_institution = { #1356 New Content
 				is_year = 1379
 				owner = {
 					OR = {
-						culture = khorasani
+						primary_culture = khorasani
 						culture_group = hindusthani
 						culture_group = western_aryan
 						culture_group = dravidian
 						culture_group = central_indic
-						culture = icelandic
+						primary_culture = icelandic
 					}
 				}
 				NOT = { owner = { government = tribal } }
@@ -644,7 +646,7 @@ mercantilism_institution = { #1356 New Content
 				is_year = 1385
 				OR = {
 					culture_group = burman
-					culture_group = finnish_urgric_culture_group
+					culture_group = finno_ugric
 				}
 				NOT = { owner = { government = tribal } }
 				NOT = { religion_group = pagan }
@@ -824,7 +826,6 @@ mercantilism_institution = { #1356 New Content
 					trade_goods = coffee
 					trade_goods = sugar
 					trade_goods = cocoa
-					trade_goods = silk
 					trade_goods = dyes
 					trade_goods = incense
 					trade_goods = glass
@@ -963,7 +964,7 @@ mercantilism_institution = { #1356 New Content
 			force_potential = yes
 			potential = {
 				culture_group = east_asian
-				NOT = { tag = YUA }
+				NOT = { owner = { tag = YUA } }
 			}
 			custom_trigger_tooltip = {
 				tooltip = mercantilism_east_asians_tt
@@ -1132,7 +1133,6 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 					owner = { culture_group = tartar }
 					owner = { culture_group = finno_ugric }
 					owner = { culture_group = altaic }
-					owner = { culture_group = finnish_urgric_culture_group }
 					owner = { culture_group = carpathian }
 					owner = { culture_group = caucasian }
 				}
@@ -1192,14 +1192,15 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 					region = maghreb_region
 				}
 				OR = {
-					owner = { culture_group = finnish_urgric_culture_group }
 					owner = { culture_group = finno_ugric }
 					owner = { culture_group = british }
 					owner = { culture_group = gaelic }
 					owner = { culture_group = scandinavian }
 					owner = { culture_group = baltic }
 					owner = { culture_group = germanic }
-					owner = { culture_group = low_lands_culture_group }
+					owner = { primary_culture = dutch }
+					owner = { primary_culture = flemish }
+					owner = { primary_culture = frisian}
 					owner = { culture_group = west_slavic }
 					owner = { culture_group = latin }
 					owner = { culture_group = iberian }
@@ -1385,29 +1386,29 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 			}
 		}
 		#It would be nice to have a modifier based on if your allies have arty #Opposite of the next modifier
-		modifier = { #At war with someone who has embraced Gunpowder #Check balance
-			factor = 0.8
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = at_war_with_nation_embraced_gunpowder_tt
-				owner = { is_at_war = yes }
-				any_enemy_country = {
-					has_institution = gunpowder_institution
-					is_at_war = yes
-				}
-			}
-		}
-		modifier = { #Overlord has embraced the Institution #Check balance
-			factor = 0.8
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = owner_overlord_embraced_gunpowder_tt
-				owner = { is_subject_of_type = tributary_state }
-				overlord = {
-					has_institution = gunpowder_institution
-				}
-			}
-		}
+		#modifier = { #At war with someone who has embraced Gunpowder #Removed as it doesnt work
+		#	factor = 0.8
+		#	scale = yes
+		#	custom_trigger_tooltip = {
+		#		tooltip = at_war_with_nation_embraced_gunpowder_tt
+		#		owner = { is_at_war = yes }
+		#		any_enemy_country = {
+		#			has_institution = gunpowder_institution
+		#			is_at_war = yes
+		#		}
+		#	}
+		#}
+		#modifier = { #Overlord has embraced the Institution #Removed due to the way this checks for overlord being invalid
+		#	factor = 0.8
+		#	scale = yes
+		#	custom_trigger_tooltip = {
+		#		tooltip = owner_overlord_embraced_gunpowder_tt
+		#		owner = { is_subject_of_type = tributary_state }
+		#		overlord = {
+		#			has_institution = gunpowder_institution
+		#		}
+		#	}
+		#}
 		modifier = { #For Colonies
 			factor = 5
 			scale = yes
@@ -1437,30 +1438,25 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 				owner = { mil_tech = 12 }
 			}
 		}
-		modifier = { #4 Units of Arty in province #May need tweaks
-			factor = 0.5
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = {
-					NOT = { government = tribal }
-					NOT = { government = native }
-				}
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
-				NOT = { continent = new_world }
-			}
-			custom_trigger_tooltip = {
-				tooltip = gunpowder_arty_in_province_tt
-				artillery_in_province = 4
-				owner = { NOT = { unit_type = 1356-muslim_trebuchet_arty } }
-				owner = { NOT = { unit_type = 1356-anatolian_trebuchet_arty } }
-				owner = { NOT = { unit_type = 1356-eastern_trebuchet_arty } }
-				owner = { NOT = { unit_type = 1356-indian_early_arty } }
-				owner = { NOT = { unit_type = 1356-asian_early_arty } }
-				owner = { NOT = { unit_type = 1356-trebuchet_arty } }
-			}
-		}
+		#modifier = { #4 Units of Arty in province #Removed because it only checked for arty, so 4 trebs = 4 arty
+		#	factor = 0.5
+		#	scale = yes
+		#	force_potential = yes	# Hide the this modifier when potential is false
+		#	potential = {
+		#		owner = {
+		#			NOT = { government = tribal }
+		#			NOT = { government = native }
+		#		}
+		#		NOT = { continent = north_america }
+		#		NOT = { continent = south_america }
+		#		NOT = { continent = new_world }
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = gunpowder_arty_in_province_tt
+		#		artillery_in_province = 4
+		#		owner = { mil_tech }
+		#	}
+		#}
 		modifier = { #Province Owner already embraced the Institution
 			factor = 2
 			scale = yes
@@ -1512,8 +1508,8 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				OR = {
-					tag = BYZ
-					tag = KOR
+					owner = { tag = BYZ }
+					owner = { tag = KOR }
 					culture_group = east_asian
 					culture_group = tartar
 					culture_group = mongolic_culture_group
@@ -1524,11 +1520,11 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 				tooltip = gunpowder_unique_decision_flag_tt
 				OR = {
 					AND = { #Greek Fire
-						tag = BYZ
+						owner = { tag = BYZ }
 						has_country_flag = byzantine_gunpowder_flag
 					}
 					AND = { #Korean
-						tag = KOR
+						owner = { tag = KOR }
 						has_country_flag = korean_gunpowder_flag
 					}
 					AND = { #Chinese
@@ -4260,6 +4256,8 @@ industrialization = {
 					calc_true_if = {
 						amount = 2
 						all_subject_country = {
+						# Audax Validator "." Ignore_1006
+
 							is_colonial_nation = yes
 						}
 					}

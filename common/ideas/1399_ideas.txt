@@ -2332,41 +2332,6 @@ ZBB_Ideas = { #Submitted by "The Janitor", slight tweaks by CountFlandy
 
 }
 
-SAP_ideas = { #Sapmi ideas
-	start = {
-		core_creation = -0.15
-		tolerance_heathen = 2
-	}
-	bonus = {
-		missionaries = 1
-	}
-	trigger = { 
-		tag = SAP
-	}
-	free = yes
-	the_cold_north = {
-		hostile_attrition = 1
-	}
-	the_old_gods = {
-		religious_unity = 0.2
-	}
-	tribal_armies = {
-		discipline = 0.05
-	}
-	shamanism = {
-		tolerance_own = 2
-	}
-	fur_trade = {
-		merchants = 1
-	}
-	overland_trade = {
-		caravan_power = 0.25
-	}
-	sap_tribal_connections = {
-		same_culture_advisor_cost = -0.2
-	}
-}
-
 WUU_ideas = {
 	start = {
 		land_morale = 0.1

@@ -148,11 +148,9 @@ tribal_federation_ilkhan_reform = { #Tribes
 	potential = {
 		OR = {
 			tag = JLR
-			tag = INT
 			tag = CHB
 			tag = MUZ
 			tag = SAB
-			tag = KRT
 			has_reform = tribal_federation_ilkhan_reform
 			have_had_reform = tribal_federation_ilkhan_reform
 		}
@@ -314,6 +312,7 @@ retain_tribal_hierarchy_reform = {
 			factor = 0.5
 			NOT = {
 				any_owned_province = {
+				# Audax Validator "." Ignore_ALL
 					is_territorial_core = root
 				}
 			}
@@ -470,6 +469,7 @@ tribe_becomes_republic_reform = {
 		modifier = {
 			factor = 1.5
 			OR = {
+			# Audax Validator "." Ignore_ALL
 				num_of_centers_of_trade = 5
 				trade_income_percentage = 0.4
 			}

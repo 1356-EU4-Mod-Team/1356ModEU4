@@ -1,3 +1,5 @@
+# Audax Validator "!" Ignore_1007
+
 edict_religion_enforced = {
 	potential = {
 		current_age = age_of_reformation
