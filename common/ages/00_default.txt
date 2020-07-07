@@ -23,6 +23,7 @@ age_of_feudalism = {
 			}
 		}
 		obj_powerful_estate = { 
+			# Audax Validator "." Ignore_ALL
 			num_of_powerful_estates = 3
 			estate_loyalty = {
 				estate = estate_burghers
@@ -107,7 +108,7 @@ age_of_feudalism = {
 					religion = buddhism
 					religion = vajrayana
 					religion = mahayana
-					religion = hindu
+					religion = hinduism
 				}
 			}
 			government_rank = 2
@@ -123,7 +124,7 @@ age_of_feudalism = {
 					religion = norse_pagan_reformed
 				}
 			}
-			uses_personal_deities = yes
+			#uses_personal_deities = yes #Redundant
 			calc_true_if = {
 				all_core_province = {
 					religion = ROOT
