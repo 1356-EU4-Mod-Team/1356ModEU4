@@ -10,7 +10,6 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
-	major = yes
 		
 	option = { #Tolerate them! 
 		name = alexandriaflandy.1.a
@@ -38,7 +37,6 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes	
-	major = yes
 	
 	option = { #Tolerate them! 
 		name = alexandriaflandy.2.a

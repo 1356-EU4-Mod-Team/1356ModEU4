@@ -15,7 +15,7 @@ country_event = {
 	trigger = { # Any European country that has a gold province in Europe
 		capital_scope = { continent = europe }
 		religion = catholic
-		is_year = 1425
+		is_year = 1430 #1356 
 		any_owned_province = { 
 			continent = europe
 			trade_goods = gold

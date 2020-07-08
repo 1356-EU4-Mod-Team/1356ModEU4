@@ -319,5 +319,14 @@ country_event = { #Event forcing Norway to lose vision on said tiles after they 
 		1610 = {
 			undiscover_country = NOR
 		}
+		1484 = {
+			undiscover_country = NOR
+		}
+		1496 = {
+			undiscover_country = NOR
+		}
+		1494 = {
+			undiscover_country = NOR
+		}
 	}
 }
