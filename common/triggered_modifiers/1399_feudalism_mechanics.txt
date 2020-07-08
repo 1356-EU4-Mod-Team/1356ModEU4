@@ -184,7 +184,7 @@
 	embracement_cost = 1
 	build_time = 0.4
 	inflation_reduction = 0.05
-	native_advancement_cost = 0.5
+	#native_advancement_cost = 0.5
 	diplomatic_annexation_cost = 0.2
 	province_warscore_cost = 0.3 
 	ae_impact = 0.5

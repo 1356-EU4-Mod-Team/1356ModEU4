@@ -22,21 +22,20 @@ alexandria_coptic_church_province_modifier = { #For Alexandria 358
 	local_culture_conversion_cost = 0.35
 	local_unrest = -5
 	local_development_cost = -0.1
-	picture = "icon_religious.dds"
+	#picture = "icon_religious.dds"
 }
 
 ##Nestorian Minorities## #Really clones of the Parsi Minorities
 
 small_nestorian_community = {
 	trade_goods_size = 0.5
-	min_local_autonomy = 05
 	picture = "GFX_nestorian_neg_estate"
 }
 medium_nestorian_community = {
 	trade_goods_size = 0.75
 	local_development_cost = -0.05
 	local_unrest = -1
-	min_local_autonomy = 10
+
 	picture = "GFX_nestorian_netural_estate"
 }
 large_nestorian_community = {
@@ -44,7 +43,6 @@ large_nestorian_community = {
 	local_development_cost = -0.1
 	local_unrest = -2
 	local_culture_conversion_cost = 0.1
-	min_local_autonomy = 15
 	picture = "GFX_nestorian_pos_estate" #Make a Special Icon for this
 }
 
@@ -73,7 +71,6 @@ groenlands_knorr_stockholm_modifier = { #Stockholm
 	local_state_maintenance_modifier = 0.25
 	local_tax_modifier = -0.25
 	trade_goods_size_modifier = -0.25
-	min_local_autonomy = 50
 }
 
 #Wales/Ireland/Scotland
@@ -106,7 +103,6 @@ birthplace_of_gunpowder_modifier = {
 #England
 
 duchy_of_cornwall_modifier_province = {
-	min_local_autonomy = 20
 	local_development_cost = -0.1
 	local_state_maintenance_modifier = -0.3	
 }

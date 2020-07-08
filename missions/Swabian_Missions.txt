@@ -29,6 +29,7 @@ swabian_group_1 = {
 			owner = {
 				primary_culture = swabian
 				total_development = root
+				# Audax Validator "." Ignore_ALL
 				NOT = { tag = root }
 			}
 		}
@@ -40,6 +41,7 @@ swabian_group_1 = {
 				NOT = {
 					any_country = {
 						primary_culture = swabian
+						# Audax Validator "." Ignore_ALL
 						total_development = root
 					}
 				}
@@ -72,6 +74,7 @@ swabian_group_1 = {
 		
 		trigger = {
 			calc_true_if = {
+			# Audax Validator "." Ignore_ALL
 				desc = swa_swabian_league_mission_trigger_tooltip
 				all_province = {
 					region = south_german_region
@@ -97,6 +100,7 @@ swabian_group_1 = {
 				}
 				add_permanent_claim = root
 				hidden_effect = {
+				# Audax Validator "." Ignore_ALL
 					add_named_unrest = {
 						name = swabian_unification_unrest
 						value = 5
@@ -330,11 +334,13 @@ swabian_group_2 = {
 					NOT = { owned_by = HAB }
 				}
 			}
+			# Audax Validator "." Ignore_ALL
 			total_own_and_non_tributary_subject_development = HAB
 			army_size = HAB
 		}
 		
 		effect = {
+		# Audax Validator "." Ignore_ALL
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 25
@@ -391,6 +397,7 @@ swabian_group_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = root }
 			NOT = {
 				ROOT = {
+				# Audax Validator "." Ignore_1007
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 6
 						OR = {
@@ -404,6 +411,7 @@ swabian_group_2 = {
 		}
 
 		trigger = {
+		# Audax Validator "." Ignore_1007
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 6
 				OR = {
@@ -455,6 +463,7 @@ swabian_group_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = root }
 			NOT = {
 				ROOT = {
+				# Audax Validator "." Ignore_1007
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 18 #(out of 24)
 						OR = {
@@ -471,6 +480,7 @@ swabian_group_2 = {
 		}
 
 		trigger = {
+		# Audax Validator "." Ignore_1007
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 18 #(out of 24)
 				OR = {
@@ -543,6 +553,7 @@ swabian_group_2 = {
 					}
 					ROOT = {
 						NOT = {
+						# Audax Validator "." Ignore_1007
 							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 								value = 5
 								OR = {
@@ -570,6 +581,7 @@ swabian_group_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = root
 			}
+			# Audax Validator "." Ignore_1007
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				OR = {
@@ -633,6 +645,7 @@ swabian_group_2 = {
 							}
 							NOT = {
 								ROOT = {
+								# Audax Validator "." Ignore_ALL
 									has_won_war_against = {
 										who = prev
 										max_years_since = 50
@@ -677,6 +690,7 @@ swabian_group_2 = {
 						}
 						NOT = {
 							ROOT = {
+							# Audax Validator "." Ignore_ALL
 								has_won_war_against = {
 									who = prev
 									max_years_since = 50
@@ -789,6 +803,7 @@ swabian_group_3 = { #crusader group
 				}
 			}
 			calc_true_if = {
+			# Audax Validator "." Ignore_ALL
 				desc = swa_balkans_freed_trigger_tooltip
 				amount = 10
 				balkan_region = {

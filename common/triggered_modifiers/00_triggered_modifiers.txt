@@ -865,6 +865,7 @@ defense_of_the_empire_modifier = {
 			is_emperor = yes
 			is_elector = yes
 		}
+		# Audax Validator "." Ignore_1007
 		hre_reform_passed = emperor_reichskrieg
 	}
 	trigger = {

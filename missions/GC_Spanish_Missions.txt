@@ -134,6 +134,7 @@ gc_spain_1_b = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_caribbean
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
 					colonial_region = colonial_the_carribean
@@ -172,6 +173,7 @@ gc_spain_1_b = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = cas_spa_havana.tooltip
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value =  5
 					OR = {
@@ -256,6 +258,7 @@ gc_spain_1_b = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_california
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					colonial_region = colonial_california
@@ -432,6 +435,7 @@ gc_spain_2_b = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = cas_spa_hispaniola.tooltip
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					OR = {
@@ -541,6 +545,7 @@ gc_spain_2_b = {
 		
 		trigger = {
 			num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+			# Audax Validator "." Ignore_1006
 				has_holy_order_trigger = yes
 				region = mexico_region
 				value = 5
@@ -603,6 +608,7 @@ gc_spain_2_b = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = cas_spa_florida_forts.tooltip
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 3
 					OR = {
@@ -835,6 +841,7 @@ gc_spain_3_b = {
 		provinces_to_highlight = {
 			colonial_region = colonial_colombia
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			# Audax Validator "." Ignore_1006
 			has_discovered = yes
 		}
 		
@@ -843,6 +850,7 @@ gc_spain_3_b = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = spa_rb_spanish_main.tooltip
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					colonial_region = colonial_colombia
@@ -1171,6 +1179,7 @@ gc_spain_3_b = {
 		}
 		
 		trigger = {
+		# Audax Validator "." Ignore_1007
 			num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
 				has_holy_order_trigger = yes
 				OR = {
@@ -1539,12 +1548,14 @@ gc_spain_4_b = {
 				limit = {
 					exists = GBR
 				}
+				# Audax Validator "." Ignore_1006
 				num_of_heavy_ship = GBR
 			}
 			else_if = {
 				limit = {
 					exists = ENG
 				}
+				# Audax Validator "." Ignore_1006
 				num_of_heavy_ship = ENG
 			}
 			else = {
@@ -1750,12 +1761,14 @@ gc_spain_4_c = {
 		provinces_to_highlight = {
 			colonial_region = colonial_la_plata
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			# Audax Validator "." Ignore_1006
 			has_discovered = yes
 		}
 		
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = spa_rb_la_plata.tooltip
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					colonial_region = colonial_la_plata
@@ -2209,12 +2222,14 @@ gc_spain_5_c = {
 		}
 		
 		trigger = {
+		# Audax Validator "." Ignore_1007
 			num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
 				has_holy_order_trigger = yes
 				colonial_region = colonial_colombia
 				value = 5
 			}
 			colonial_colombia = {
+			# Audax Validator "." Ignore_1007
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}		

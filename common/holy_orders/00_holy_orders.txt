@@ -3,6 +3,7 @@ jesuit_order = {
     trigger = {
         OR = { #1356
 			culture_group = iberian
+			# Audax Validator "." Ignore_1007
 			primary_culture = moorish #1356
 		} #1356
         religion = catholic
@@ -33,6 +34,7 @@ dominican_order = {
     trigger = { #1356
         OR = { #1356
 			culture_group = iberian
+			# Audax Validator "." Ignore_1007
 			primary_culture = moorish #1356
 		} #1356
         religion = catholic
@@ -50,6 +52,7 @@ dominican_order = {
                 limit = {
                     trade_goods = slaves
                 }
+				# Audax Validator "." Ignore_ALL
                 change_trade_goods = random
             }
         }
@@ -78,6 +81,7 @@ franciscan_order = {
     trigger = { #1356
         OR = { #1356
 			culture_group = iberian
+			# Audax Validator "." Ignore_1007
 			primary_culture = moorish #1356
 		} #1356
         religion = catholic
@@ -111,7 +115,9 @@ shadhili_order = {
     icon = GFX_holy_order_shadhili
     trigger = { #1356
         OR = { #1356
+		# Audax Validator "." Ignore_1007
 			primary_culture = andalucian
+		# Audax Validator "." Ignore_1007
 			primary_culture = moorish #1356
 		} #1356
         religion_group = muslim
@@ -143,7 +149,9 @@ qadiri_order = {
     icon = GFX_holy_order_qadiri
     trigger = { #1356
         OR = { #1356
+		# Audax Validator "." Ignore_1007
 			primary_culture = andalucian
+			# Audax Validator "." Ignore_1007
 			primary_culture = moorish #1356
 		} #1356
         religion_group = muslim
@@ -175,7 +183,9 @@ aissawa_order = {
     icon = GFX_holy_order_aissawa
     trigger = { #1356
         OR = { #1356
+		# Audax Validator "." Ignore_1007
 			primary_culture = andalucian
+			# Audax Validator "." Ignore_1007
 			primary_culture = moorish #1356
 		} #1356
         religion_group = muslim

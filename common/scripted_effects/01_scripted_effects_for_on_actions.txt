@@ -832,6 +832,7 @@ thu_remain_von_wettin_effect = {
 			NOT = { dynasty = "von Wettin" }
 			is_in_war = {
 				attacker_leader = root
+				# Audax Validator "."Ignore_1007
 				defender = SAX
 				casus_belli = cb_independence_war
 			}

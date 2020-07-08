@@ -483,28 +483,28 @@
 	}
 }
 
-1356_teutonic_order_cathedral_great_project_province_modifier = { #
-	potential = {		
-		1841 = { has_great_project = teutonic_order_cathedral_great_project }
-		
-	}
-	
-	trigger = {
-		1841 = { has_great_project = teutonic_order_cathedral_great_project }
-	}
-	
-	local_missionary_strength = -0.02
-	local_manpower_modifier = 0.2
-	garrison_growth = 0.10
-	
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
+#1356_teutonic_order_cathedral_great_project_province_modifier = { #
+#	potential = {		
+#		1841 = { has_great_project = teutonic_order_cathedral_great_project }
+#		
+#	}
+#	
+#	trigger = {
+#		1841 = { has_great_project = teutonic_order_cathedral_great_project }
+#	}
+#	
+#	local_missionary_strength = -0.02
+#	local_manpower_modifier = 0.2
+#	garrison_growth = 0.10
+#	
+#	on_activation = {
+#	
+#	}
+#	
+#	on_deactivation = {
+#	
+#	}
+#}
 
 1356_denmark_cathedral_great_project_province_modifier = { #
 	potential = {		
@@ -623,12 +623,12 @@
 
 1356_jongmyo_temple_great_project_province_modifier = { #
 	potential = {		
-		4230 = { has_great_project = great_project_jongmyo_temple_great_project }
+		4230 = { has_great_project = jongmyo_temple_great_project }
 		
 	}
 	
 	trigger = {
-		4230 = { has_great_project = great_project_jongmyo_temple_great_project }
+		4230 = { has_great_project = jongmyo_temple_great_project }
 	}
 	
 	local_religious_unity_contribution = 0.15
@@ -646,12 +646,12 @@
 
 1356_temple_of_heaven_great_project_province_modifier = { #
 	potential = {		
-		446 = { has_great_project = great_project_temple_of_heaven_great_project }
+		446 = { has_great_project = temple_of_heaven_great_project }
 		
 	}
 	
 	trigger = {
-		446 = { has_great_project = great_project_temple_of_heaven_great_project }
+		446 = { has_great_project = temple_of_heaven_great_project }
 	}
 	
 	trade_goods_size_modifier = 0.1

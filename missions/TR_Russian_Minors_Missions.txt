@@ -140,6 +140,7 @@ tr_russian_minors_2 = {
 		icon = mission_sovereign_principality
 		required_missions = {  }
 		provinces_to_highlight = {
+		# Audax Validator "." Ignore_ALL
 			area_for_scope_province = {
 				is_capital_of = ROOT
 			}
@@ -149,6 +150,7 @@ tr_russian_minors_2 = {
 			is_subject = no
 			capital_scope = {
 				fort_level = 3
+				# Audax Validator "." Ignore_ALL
 				area_for_scope_province = {
 					type = all
 					owned_by = ROOT

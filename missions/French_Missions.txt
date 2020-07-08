@@ -19,7 +19,8 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			is_at_war = no
 			dip_power = 50
 			mil_power = 50
-			wns_or_non_sovereign_subject_of = 176
+			# Audax Validator "." Ignore_1007
+			owns_or_non_sovereign_subject_of = 176
 			OR = {
 				FOI = {
 					is_subject_of = FRA
@@ -170,6 +171,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			is_at_war = no
 			dip_power = 50
 			mil_power = 50
+			# Audax Validator "." Ignore_1007
 			owns_or_non_soverign_subject_of = 203
 			OR = {
 				FOZ = {
@@ -217,6 +219,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			is_year = 1385
 			is_at_war = no
 			mil_power = 50
+			# Audax Validator "." Ignore_1007
 			owns_or_non_soverign_subject_of = 190
 			OR = {
 				BOU = {
@@ -264,7 +267,9 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			is_year = 1390
 			is_at_war = no
 			mil_power = 100
+			# Audax Validator "." Ignore_1007
 			owns_or_non_soverign_subject_of = 177
+			# Audax Validator "." Ignore_1007
 			owns_or_non_soverign_subject_of = 178
 			OR = {
 				ANJ = {
@@ -319,6 +324,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			is_year = 1400
 			is_at_war = no
 			mil_power = 50
+			# Audax Validator "." Ignore_1007
 			owns_or_non_soverign_subject_of = 199
 			OR = {
 				AUV = {
@@ -637,9 +643,7 @@ french_missions_breton_civil_war_slot = {
 		trigger = {
 			exists = BRI
 			is_at_war = no
-			OR = {
-				BRI = { is_subject_of = FRA }
-			}
+			BRI = { is_subject_of = FRA }
 		}
 		effect = {
 			add_country_modifier = { 
@@ -1412,9 +1416,11 @@ french_hyw_missions_slot_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			country_or_non_sovereign_subject_holds = 186
-			country_or_non_sovereign_subject_holds = 4390
-			country_or_non_sovereign_subject_holds = 89
+			champagne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 89
 		}
 		effect = {
 			add_army_tradition = 5
@@ -1433,30 +1439,7 @@ french_hyw_missions_slot_4 = {
 				NOT = { war_with = ENG }
 				NOT = { exists = ENG }
 			}
-			brittany_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = brittany_area } }
-			normandy_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = normandy_area } }
-			provence_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = provence_area } }
-			guyenne_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = guyenne_area } }
-			languedoc_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = languedoc_area } }
-			massif_central_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = massif_central_area } }
-			champagne_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = champagne_area } }
-			ile_de_france_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = ile_de_france_area } }
-			loire_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = loire_area } }
-			poitou_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = poitou_area } }
-			pyrenees_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = pyrenees_area } }
-			champagne_area = { NOT = { is_core = ENG } }
-			ENG = { NOT = { owns_or_non_sovereign_subject_of = champagne_area } }
+			france_region = { NOT = { is_core = ENG } }
 		}
 		effect = { 	
 			87 = {	add_claim = FRA	} #Calais
@@ -1501,7 +1484,7 @@ french_hyw_missions_slot_4 = {
 	
 }
 
-france_expand_italy = { #Eventully script Napoleons conquest here
+france_expand_italy_2 = { #Eventully script Napoleons conquest here
 	slot = 4
 	generic = no
 	ai = yes

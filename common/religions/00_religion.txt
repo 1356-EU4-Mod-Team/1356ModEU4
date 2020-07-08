@@ -59,15 +59,33 @@ christian = { #1356
 			
 			
 			#Council of Trent Positions
+			
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			
 			harsh = {
+			# Audax Validator "!" Ignore_1007
 				relation_with_heretics = -20
 				global_religious_conversion_resistance = 0.25
 				global_institution_spread = -0.25
 				global_missionary_strength = 0.02
 			}
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
 			neutral = {
 				global_religious_conversion_resistance = -0.33
 			}
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
 			concilatory = {
 				relation_with_heretics = 10
 				global_religious_conversion_resistance = 0.25
@@ -76,6 +94,11 @@ christian = { #1356
 			}
 			
 			#Council of Trent Concessions
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
+			# Audax Validator "." Ignore_ALL
 			concessions = {
 				first_concession = {
 					harsh = {
@@ -294,6 +317,8 @@ christian = { #1356
 					}
 				}
 			}
+			# Audax Validator "." Ignore_ALL
+			
 			investigate_heresy = {
 				curia_treasury_cost = 500
 				potential = {

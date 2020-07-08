@@ -1204,7 +1204,7 @@ nav_missions_1_extra = {
 	
 	nav_basque_fisheries = {
 		icon = mission_early_game_buildings
-		required_missions = { nav_reclaim_coast }
+		required_missions = { }
 		position = 14
 		provinces_to_highlight = {
 			province_id = 209
