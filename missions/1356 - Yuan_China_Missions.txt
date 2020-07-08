@@ -2514,10 +2514,10 @@ yuan_toqtoa_interior_spies_trade = { #Toqto's Return - Get our Spys back on trac
 					is_at_war = yes
 					treasury = 250
 				}
-				has_spy_network_in = { #Goryeo
-					who = GYO
-					value = 20
-				}
+				#has_spy_network_in = { #Goryeo
+				#	who = GYO
+				#	value = 20
+				#}
 				KOR = {
 					has_spy_network_in = { #Korea
 						who = ROOT

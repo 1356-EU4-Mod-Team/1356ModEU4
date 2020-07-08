@@ -16,6 +16,7 @@ war_goal = {
 1358.2.19 = { # Treaty of Zadar
 	rem_attacker = CRO
 	rem_attacker = HUN
+	rem_attacker = MOL
 	rem_defender = VEN
 	rem_defender = RAG
 }
