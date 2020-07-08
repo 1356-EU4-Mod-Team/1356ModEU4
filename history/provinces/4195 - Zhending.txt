@@ -25,7 +25,7 @@ discovered_by = nomad_group
 	}
 }
 
-1368.9.14 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA remove_province_modifier = small_nestorian_minority }
+1368.9.14 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA }
 1608.1.1  = { discovered_by = SPA }
 1628.1.1  = { unrest = 6 } # Li Zicheng rebellion
 1644.1.1  = {	owner = CSH

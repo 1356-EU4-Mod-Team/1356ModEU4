@@ -24,7 +24,7 @@ discovered_by = ottoman
 1356.12.24  = { owner = AQT controller = AQT add_core = AQT } #BT In
 1356.12.26  = { owner = ORL remove_core = AQT controller = ENG } #BT Out
 
-1357.9.23  = { controller = FRA }
+1357.9.23  = { controller = ORL }
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
 1375.6.27  = { owner = FRA controller = FRA } # Treaty of Bruges
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }

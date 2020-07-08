@@ -70,8 +70,7 @@ discovered_by = QAS
 1570.1.1  = { remove_core = TRA	} # Treaty of Speyer
 1594.6.20 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Serbian revolt, against Ottoman rule
 1598.1.1  = { revolt = {} controller = TUR }
-1685.1.1  = {	controller = HAB
-	    } # Conquered/liberated by Charles of Lorraine, the Ottoman Turks are driven out of Hungary
+#1685.1.1  = {	controller = HAB  } # Conquered/liberated by Charles of Lorraine, the Ottoman Turks are driven out of Hungary
 1699.1.26 = { #1356	
 	#owner = CUM #Formerly HAB #1356
 	#controller = CUM #1356 #Added this
@@ -79,7 +78,7 @@ discovered_by = QAS
 	remove_core = TUR
 } # Treaty of Karlowitz
 1738.1.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Uprising against the imperial authority
-1739.1.1  = { revolt = {} controller = HAB }
+1739.1.1  = { revolt = {} controller = TUR }
 1745.1.1 = { #1356
 	#owner = CUM
 	#controller = CUM

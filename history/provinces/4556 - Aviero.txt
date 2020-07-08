@@ -23,8 +23,8 @@ discovered_by = eastern
 
 #fort_15th = yes
 1580.1.1 = { fort_16th = yes }
-1580.8.25 = { controller = SPA }
-1580.8.26 = { controller = POR }
+#1580.8.25 = { controller = SPA }
+#1580.8.26 = { controller = POR }
 1640.1.1 = { unrest = 8 } # Revolt headed by John of Bragança
 1640.12.1 = { unrest = 0 }
 1646.1.1 = { fort_16th = no fort_17th = yes }

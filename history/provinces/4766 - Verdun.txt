@@ -35,8 +35,8 @@ discovered_by = ottoman
 1594.1.1 = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1636.7.30 = { controller = HAB } # Habsburg forces ravage North Eastern France
 1636.10.10 = { controller = FRA } # Bernhard of Saxe-Weimar defeats the invaders and gradually pushes them back
-1650.1.14 = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
 1648.1.1 = { fort_16th = no fort_17th = yes }
+1650.1.14 = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
 1650.3.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Fronde rebels take control
 1650.12.13 = { revolt = {} controller = FRA } # Plessis-Praslin takes Rethel & surrounding lands
 1651.4.1 = { unrest = 4 } # An unstable peace is concluded

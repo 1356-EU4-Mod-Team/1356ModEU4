@@ -12,15 +12,16 @@ base_manpower = 3
 capital = "Bologna"
 is_city = yes
 add_core = BLG
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
 
 1356.12.24  = { hre = yes } #BT In
 
 1356.12.26  = { hre = no } #BT Out
 
-discovered_by = western
-discovered_by = eastern
-discovered_by = muslim
-discovered_by = ottoman
 
 1506.10.7 = { 
 	owner = PAP

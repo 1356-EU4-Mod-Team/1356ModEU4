@@ -31,9 +31,9 @@ discovered_by = ottoman
 
 
 1529.1.1 = { religion = protestant }
-1757.7.26 = { controller = FRA } # Battle of Hastenbeck, occupied by the French
-1757.11.5 = { controller = BRU } # Battle of Rossbach, the French are defeated by the Prussians
-1803.7.5 = { controller = FRA } # Occupied by French troops
+#1757.7.26 = { controller = FRA } # Battle of Hastenbeck, occupied by the French
+#1757.11.5 = { controller = BRU } # Battle of Rossbach, the French are defeated by the Prussians
+#1803.7.5 = { controller = FRA } # Occupied by French troops
 1805.12.15 = {
 	owner = PRU
 	controller = PRU

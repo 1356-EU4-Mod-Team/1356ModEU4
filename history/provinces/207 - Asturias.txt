@@ -10,6 +10,7 @@ controller = CTR
 add_core = CTR
 add_core = LON
 add_core = ASU
+add_core = CAS
 culture = leonese
 religion = catholic
 hre = no
@@ -19,14 +20,13 @@ trade_goods = livestock
 base_manpower = 3
 capital = "Oviedo" 
 is_city = yes
-add_core = CAS
 
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { owner = LON controller = LON remove_core = CAS remove_core = CTR } #BT In
+1356.12.24  = { owner = LON controller = LON add_core = LON remove_core = CAS remove_core = CTR } #BT In
 1356.12.26  = { owner = CTR controller = CAS add_core = CAS add_core = CTR } #BT Out
 
 1369.3.23  = { owner = CAS remove_core = CTR } # End of the First Castillian Civil War

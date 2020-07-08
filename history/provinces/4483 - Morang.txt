@@ -23,7 +23,9 @@ discovered_by = chinese
 	owner = MKP
 	controller = MKP
 	add_core = MKP
+	discovered_by = ENG
 }
+1707.5.12 = { discovered_by = GBR }
 1769.1.1 = {
 	owner = LWA
 	controller = LWA
@@ -34,6 +36,3 @@ discovered_by = chinese
 	add_core = NPL
 }
 #1774 #Gorkha
-1690.1.1 = { discovered_by = ENG }
-1707.5.12 = { discovered_by = GBR }
-

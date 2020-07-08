@@ -29,8 +29,8 @@ discovered_by = ottoman
     add_core = SPI
     remove_core = SIC
 } # Kingdom of Piedmont-Sardinia
-1792.9.1 = { controller = FRA } # Conquered by the French
-1798.1.1 = { owner = FRA add_core = FRA } # Stura Department
+#1792.9.1 = { controller = FRA } # Conquered by the French
+1798.1.1 = { owner = FRA controller = FRA add_core = FRA } # Stura Department
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1814.4.11 = {
     owner = SPI

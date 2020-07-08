@@ -13,7 +13,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-#add_core = BOH
 add_core = MVA
 
 discovered_by = western
@@ -28,6 +27,7 @@ discovered_by = AST
 discovered_by = QAS
 1419.12.1 = { revolt = { type = hussite_rebels size = 2 } controller = REB } # Hussite Wars, Battle of Nekmir
 1436.7.5  = { revolt = {} controller = MVA } # Peace is signed in Jihlava
+1444.1.1 = { owner = BOH controller = BOH add_core = BOH }
 1457.1.1  = { unrest = 5 } # George of Podiebrand had to secure recognition from the German and Catholic towns
 1464.1.1  = { unrest = 1 } # The Catholic nobility is still undermines the crown.
 1471.1.1  = { unrest = 0 }

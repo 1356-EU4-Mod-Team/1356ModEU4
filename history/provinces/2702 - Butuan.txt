@@ -18,7 +18,7 @@ center_of_trade = 1
 
 1450.1.1 = { religion = sunni }
 1521.1.1 = { discovered_by = SPA }
-1521.3.31 = {
+1521.3.30 = {
 	owner = SPA
 	controller = SPA
 	add_core = SPA

@@ -1,3 +1,4 @@
+# Audax Validator "!" Ignore_ALL
 clerical_poverty_aspect = {
 	cost = 100
 	modifier = {
