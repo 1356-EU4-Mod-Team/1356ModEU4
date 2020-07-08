@@ -3,10 +3,10 @@ RHI = {
 	is_core = RHI
 }
 
-SWB = {
-	culture = swabian
-	is_core = SWB
-}
+#SWB = {
+#	culture = swabian
+#	is_core = SWB
+#}
 
 NCH = {
 	culture_group = french
@@ -72,12 +72,12 @@ ZBB = {
 	is_core = ZBB
 }
 
-SWA = {
-	NOT = { has_global_flag = 1356_bt_start_flag}
-	NOT = { exists = SWB }
-}
+#SWA = {
+#	NOT = { has_global_flag = 1356_bt_start_flag}
+#	NOT = { exists = SWB }
+#}
 
-SWB = {
-	has_global_flag = 1356_bt_start_flag
-	NOT = { exists = SWA }
-}
+#SWB = {
+#	has_global_flag = 1356_bt_start_flag
+#	NOT = { exists = SWA }
+#}

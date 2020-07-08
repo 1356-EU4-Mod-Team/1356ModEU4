@@ -1,9 +1,9 @@
 # 206 - Galicia (1356)
 # Changes: CTR/revolts
 
-owner = CTR
+owner = CAS
 controller = CAS
-add_core = CTR
+add_core = CAS
 culture = galician
 religion = catholic
 hre = no
@@ -14,7 +14,6 @@ base_manpower = 3
 capital = "A Corunha" 
 is_city = yes
 estate = estate_church
-add_core = CAS
 add_core = GAL
 
 discovered_by = eastern

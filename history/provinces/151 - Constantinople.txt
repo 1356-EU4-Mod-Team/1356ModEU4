@@ -33,7 +33,7 @@ add_permanent_province_modifier = {
 #	duration = -1
 #}
 
-add_province_triggered_modifier = 1356_theodosian_walls_project_province_modifier #1356 #Replaces the old perma modifier
+#add_province_triggered_modifier = 1356_theodosian_walls_project_province_modifier #1356 #Replaces the old perma modifier
 
 1375.1.1  = { 
 	base_tax = 9 
@@ -44,7 +44,7 @@ add_province_triggered_modifier = 1356_theodosian_walls_project_province_modifie
 	owner = TUR
 	controller = TUR
 	add_core = TUR
-	remove_province_triggered_modifier = 1356_theodosian_walls_project_province_modifier #1356 #Replaces the old perma modifier
+	#remove_province_triggered_modifier = 1356_theodosian_walls_project_province_modifier #1356 #Replaces the old perma modifier
 } # The fall of the Byzantine Empire
 
 1459.1.1  = { culture = turkish religion = sunni }

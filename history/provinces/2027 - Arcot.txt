@@ -21,8 +21,6 @@ add_brahmins_or_church_effect = yes
 
 1378.1.1 = { owner = VIJ controller = VIJ add_local_autonomy = 25 }
 1428.1.1 = { add_core = VIJ }
-
-1428.1.1 = { add_core = VIJ }
 1498.1.1 = { discovered_by = POR }
 1645.1.1 = { controller = GOC } # Conquered by Golconda
 1646.1.1 = {

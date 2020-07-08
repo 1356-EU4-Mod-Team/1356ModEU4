@@ -23,8 +23,8 @@ native_hostileness = 9
 
 
 1400.1.1 = {
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = NOR
 	culture = inuit
 	religion = animism

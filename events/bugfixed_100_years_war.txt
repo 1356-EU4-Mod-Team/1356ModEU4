@@ -1,0 +1,30 @@
+namespace = eng_fixed_1356
+
+country_event = {
+	id = eng_fixed_1356.1
+	title = eng_fixed_1356.1.t
+	desc = eng_fixed_1356.1.d
+	picture = GOLDENBULL_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ENG
+	}
+	
+	
+	immediate = {
+	}
+	
+	option = {
+		name = reform_GE_1356_events.1.a
+		ENG = {
+			every_owned_province = {
+				kill_units = {
+					who = ENG
+				}
+			}	
+		}	
+	}
+}

@@ -2,7 +2,7 @@
 # Changes: SCJ
 
 owner = HSK
-controller = SCJ
+controller = HSK
 culture = japanese
 religion = shinto
 capital = "Nakamura"

@@ -23,7 +23,7 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
 
-1367.10.1 = { controller = MNG }
+# 1367.10.1 = { controller = MNG }
 1368.9.14 = { owner = MNG add_core = MNG remove_core = YUA }
 #1382.1.6  = { remove_core = CZH }
 1514.1.1  = { discovered_by = POR }

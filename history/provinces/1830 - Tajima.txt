@@ -2,7 +2,7 @@
 # Changes: IMG/SCJ
 
 owner = IMG
-controller = SCJ
+controller = IMG
 add_core = IMG
 culture = japanese
 religion = shinto

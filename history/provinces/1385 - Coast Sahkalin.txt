@@ -1,4 +1,3 @@
-discovered_by = JAP
 discovered_by = AMA
 discovered_by = ASA
 discovered_by = CSK
@@ -39,11 +38,6 @@ discovered_by = TKI
 discovered_by = UTN
 discovered_by = TTI
 discovered_by = ASK
-discovered_by = ANU
-discovered_by = HOD
-discovered_by = CHU
-discovered_by = CHV
-discovered_by = KMC
 discovered_by = MYR
 
 

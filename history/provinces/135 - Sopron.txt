@@ -28,11 +28,11 @@ discovered_by = AST
 discovered_by = QAS
 
 1356.12.24  = { 
-				HRE = no
+				hre = no
 } #BT In
 
 1356.12.26  = { 
-				HRE = yes
+				hre = yes
 } #BT Out
 
 1506.1.1  = { revolt = { type = anti_tax_rebels size = 0 } controller = REB } # Szekely rebellion

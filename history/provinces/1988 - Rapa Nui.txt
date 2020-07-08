@@ -12,8 +12,8 @@ native_size = 1
 native_ferocity = 1
 native_hostileness = 1
 
-1356.12.24  = { owner = CTR controller = CTR  } #BT In
-1356.12.26  = { owner = --- controller = --- remove_core = CTR = --- undiscover_country = CTR } #BT Out        ####Added to BT as a Vassal, Needed for Civil war to function correctly######
+#1356.12.24  = { owner = CTR controller = CTR  } #BT In
+#1356.12.26  = { owner = --- controller = --- remove_core = CTR = --- undiscover_country = CTR } #BT Out        ####Added to BT as a Vassal, Needed for Civil war to function correctly######
 
 
 1722.4.5 = {

@@ -6,7 +6,7 @@ bookmark = {
 	default = no
 	center = 112	
 	
-	country = SWB
+	country = SWA
 	country = ENG	
 	country = FRA
 	country = BYZ
@@ -14,7 +14,7 @@ bookmark = {
 	country = KOJ
 	country = VIK
 	
-	easy_country = SWB
+	easy_country = SWA
 	easy_country = BYZ
 	easy_country = KOJ
 }

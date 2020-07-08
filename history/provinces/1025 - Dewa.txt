@@ -2,7 +2,7 @@
 # Changes: SCJ
 
 owner = SBA
-controller = SCJ
+controller = SBA
 culture = togoku
 religion = shinto
 capital = "Yamagata"

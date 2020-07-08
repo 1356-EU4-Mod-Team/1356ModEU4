@@ -2,7 +2,7 @@
 # Changes: CTR
 
 owner = CTR
-controller = CAS
+controller = CTR
 add_core = CTR
 culture = castillian
 religion = catholic

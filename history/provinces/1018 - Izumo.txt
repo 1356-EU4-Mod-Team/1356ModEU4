@@ -2,7 +2,7 @@
 # Changes: STK/SCJ/MRI
 
 owner = STK
-controller = SCJ
+controller = STK
 culture = japanese
 religion = shinto
 capital = "Matsue"

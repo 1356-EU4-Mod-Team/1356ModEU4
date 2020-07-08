@@ -1,4 +1,4 @@
-1347.10.7 = { emperor = SWB }
+1347.10.7 = { emperor = SWA }
 1356.12.26 = { emperor = BOH } #Was 1347.10.7 pre merge
 1400.8.20 = { emperor = PAL }
 1410.5.18 = { emperor = BRA }

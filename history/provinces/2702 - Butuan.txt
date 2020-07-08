@@ -17,6 +17,7 @@ extra_cost = 8
 center_of_trade = 1
 
 1450.1.1 = { religion = sunni }
+1521.1.1 = { discovered_by = SPA }
 1521.3.31 = {
 	owner = SPA
 	controller = SPA
@@ -25,4 +26,3 @@ center_of_trade = 1
 	religion = catholic
 	trade_goods = tropical_wood
 } # Sultanate of Maguindanao
-1521.1.1 = { discovered_by = SPA }

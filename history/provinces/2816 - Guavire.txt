@@ -1,9 +1,6 @@
 # - Guaviare
 
 culture = guajiro
-
-
-
 discovered_by = south_american
 discovered_by = MCA
 
@@ -20,8 +17,6 @@ native_hostileness = 3
 
 
 
-
-1571.1.1 = { discovered_by = SPA } 
 1571.1.1 = {
 	discovered_by = SPA
 	owner = SPA
