@@ -22,7 +22,7 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 1356.12.24  = { 
-				owner = KUR controller = KUR add_core = KUR remove_core = LIT
+				owner = KUR controller = KUR add_core = KUR
 				base_tax = 4 base_production = 3 base_manpower = 3
 } #BT In
 
