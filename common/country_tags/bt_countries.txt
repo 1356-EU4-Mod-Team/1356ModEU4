@@ -1,12 +1,12 @@
 #New with Barbarossas Throne
 CTH = "countries/BT_Carinthia.txt" #Added to 1356 Start in 3 provinces
 EGN	= "countries/BT_Engern.txt" #No use in 1356 starts
-FRC	= "countries/BT_Franken.txt" #
+#FRC	= "countries/BT_Franken.txt" #
 KRN = "countries/BT_Carniola.txt" #Krain. Theres an argument to be able to release this is a habsburg is destroyed early on.
 OFA	= "countries/BT_Ostfalen.txt" #Eastphalia #No use in 1356 starts
 TPL	= "countries/BT_Tripoli.txt"
 VIK = "countries/BT_Vikings.txt"
-SWB = "countries/BT_Swabia.txt" #1.30 Addition due to Bugs?
+#SWB = "countries/BT_Swabia.txt" #1.30 Addition due to Bugs?
 
 # New in 1.1
 

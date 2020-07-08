@@ -1,7 +1,7 @@
 #1820 - Awa
 
 owner = HSK
-controller = SCJ
+controller = HSK
 culture = japanese
 religion = shinto
 capital = "Tokushima"

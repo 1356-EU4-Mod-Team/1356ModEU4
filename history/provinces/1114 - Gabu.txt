@@ -19,7 +19,6 @@ extra_cost = 8
 center_of_trade = 1
 
 1446.1.1 = { discovered_by = POR }
-
 1497.1.1 = { unrest = 4 } #Fulani incursions begin
 1499.1.1 = { unrest = 0 } #Fulani checked by Kaabu governors 
 1537.1.1 = { owner = KBU controller = KBU add_core = KBU remove_core = MAL } #Kaabu declares independece from Mali

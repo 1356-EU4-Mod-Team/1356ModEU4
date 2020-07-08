@@ -1,26 +1,26 @@
 royal_marriage = {
-	first = SWB
+	first = SWA
 	second = BAV
 	start_date = 1348.4.14
 	end_date = 1356.12.26
 }
 
 union = {
-	first = SWB
+	first = SWA
 	second = SIC
 	start_date = 1194.12.25
 	end_date = 1356.12.26
 }
 
 union = {
-	first = SWB
+	first = SWA
 	second = PBG
 	start_date = 1156.6.17
 	end_date = 1356.12.26
 }
 
 march = {
-	first = SWB
+	first = SWA
 	second = TEU
 	start_date = 1300.5.1
 	end_date = 1356.12.26
@@ -34,7 +34,7 @@ royal_marriage = {
 }
 
 royal_marriage = {
-	first = FRC
+	first = FKN
 	second = THU
 	start_date = 1347.5.25
 	end_date = 1356.12.26
@@ -74,14 +74,14 @@ royal_marriage = {
 # German-English-Alliance
 
 royal_marriage = {
-	first = SWB
+	first = SWA
 	second = ENG
 	start_date = 1204.1.1
 	end_date = 1356.12.26
 }
 
 alliance = {
-	first = SWB
+	first = SWA
 	second = ENG
 	start_date = 1254.1.1
 	end_date = 1356.12.26

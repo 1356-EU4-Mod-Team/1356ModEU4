@@ -2,7 +2,7 @@
 # Changes: HTK
 
 owner = SBA
-controller = SCJ
+controller = SBA
 culture = japanese
 religion = shinto
 capital = "Takefu"

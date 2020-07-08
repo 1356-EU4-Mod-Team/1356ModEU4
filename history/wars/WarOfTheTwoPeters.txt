@@ -8,7 +8,7 @@ war_goal = {
 	tag = CAS
 }
 
-1356.1.1 = { # Claim in kingdom of Valencia, more access to mediterrean sea
+1356.12.26 = { # Claim in kingdom of Valencia, more access to mediterrean sea
 	add_attacker = CTR
 	add_attacker = ARA
 	add_defender = CAS
@@ -16,7 +16,7 @@ war_goal = {
 }
 
 
-1366.3.13 = { # Start of Castillian Civil War
+1369.3.23 = { # Start of Castillian Civil War
 	rem_attacker = CTR
 	rem_attacker = ARA
 	rem_defender = CAS

@@ -2,7 +2,7 @@
 # Changes: AKM/SCJ
 
 owner = AKM
-controller = SCJ
+controller = AKM
 culture = japanese
 religion = shinto
 capital = "Himeji"

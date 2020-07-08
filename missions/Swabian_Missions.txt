@@ -15,7 +15,7 @@ swabian_group_1 = {
 			tag = AUG
 			tag = DWT
 			tag = SWA
-			tag = SWB #1356 #For now until we give BT's Swabia unique missions
+			#tag = SWB #1356 #For now until we give BT's Swabia unique missions
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -286,7 +286,7 @@ swabian_group_2 = {
 	potential = {
 		OR = { #1356
 			tag = SWA
-			tag = SWB #1356 #For now until we give BT's Swabia unique missions
+			#tag = SWB #1356 #For now until we give BT's Swabia unique missions
 		} #1356
 		NOT = { map_setup = map_setup_random }
 	}
@@ -712,7 +712,7 @@ swabian_group_3 = { #crusader group
 	potential = {
 		OR = { #1356
 			tag = SWA
-			tag = SWB #1356 #For now until we give BT's Swabia unique missions
+			#tag = SWB #1356 #For now until we give BT's Swabia unique missions
 		} #1356
 		NOT = { map_setup = map_setup_random }
 	}

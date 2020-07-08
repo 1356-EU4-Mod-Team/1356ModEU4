@@ -2,7 +2,7 @@
 # Changes: HTK/SCJ
 
 owner = HTK
-controller = SCJ
+controller = HTK
 culture = togoku
 religion = shinto
 capital = "Kawagoe"

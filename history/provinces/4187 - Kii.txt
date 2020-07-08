@@ -1,7 +1,7 @@
 #4187 - Kii
 
 owner = HTK
-controller = SCJ
+controller = HTK
 culture = japanese
 religion = shinto
 capital = "Wakayama"

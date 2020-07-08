@@ -6,7 +6,7 @@ latent_trade_goods = {
 }
 
 owner = CTR
-controller = CAS
+controller = CTR
 add_core = CTR
 add_core = LON
 add_core = ASU

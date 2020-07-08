@@ -34,8 +34,7 @@ discovered_by = east_african
 } #BT Out
 
 
-1401.4.1  = { controller = TIM }
-1401.7.1  = { owner = TIM add_core = TIM }
+1401.7.1  = { owner = TIM add_core = TIM controller = TIM }
 1405.2.19 = { owner = MAM controller = MAM remove_core = TIM }
 1515.1.1  = { discovered_by = POR }
 1516.8.24 = { owner = TUR controller = TUR add_core = TUR } # Part of the Ottoman Empire

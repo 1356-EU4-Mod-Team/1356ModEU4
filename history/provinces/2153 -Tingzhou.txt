@@ -22,7 +22,7 @@ add_core = MIN
 discovered_by = chinese
 discovered_by = nomad_group
 
-1367.10.1 = { controller = MNG }
+# 1367.10.1 = { controller = MNG }
 1368.9.14 = { owner = MNG add_core = MNG remove_core = YUA }
 #1382.1.6  = { remove_core = CZH }
 1595.1.1  = { discovered_by = SPA }

@@ -112,7 +112,7 @@ country_decisions = {
 			NOT = { tag = HAB }
 			NOT = { tag = BRA }
 			NOT = { tag = TEU }
-			NOT = { tag = SWB }
+			NOT = { tag = SWA }
 			NOT = { tag = HAN }
 			NOT = { tag = BOH }
 			NOT = { tag = RHI }

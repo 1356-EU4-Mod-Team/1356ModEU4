@@ -1,7 +1,7 @@
 #1027 - Hitachi
 
 owner = STK
-controller = SCJ
+controller = STK
 culture = togoku
 religion = shinto
 capital = "Ota"

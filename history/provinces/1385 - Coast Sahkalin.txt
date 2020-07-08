@@ -1,4 +1,3 @@
-discovered_by = JAP
 discovered_by = AMA
 discovered_by = ASA
 discovered_by = CSK
