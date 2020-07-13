@@ -130,12 +130,8 @@ MI1 = "countries/Mokshet.txt"
 
 #Persia	
 CHB = "countries/Chobanids.txt"
-#KHC = "countries/Khachen.txt"
 MUZ = "countries/Muzaffarids.txt"
-#PAD = "countries/Paduspanid.txt"
 SAB = "countries/Sarbadarid.txt"
-#KRT = "countries/Kurtid.txt"
-# INT = "countries/Injuid.txt"
 MIH = "countries/Mihrabanid.txt"
 TPM = "countries/TimuridEmpireAbsolute.txt"
 HER = "countries/Herat.txt"

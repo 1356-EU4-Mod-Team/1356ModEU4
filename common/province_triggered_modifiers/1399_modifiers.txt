@@ -149,7 +149,6 @@
 		85 = { has_great_project = cologne_cathedral_great_project }
 	}
 	
-	religious_conversion_resistance = 0.15
 	local_institution_spread = 0.1
 	local_monthly_devastation = -0.1
 	
@@ -196,7 +195,6 @@
 	}
 	
 	local_monthly_devastation = -0.1
-	religious_conversion_resistance = 0.1
 	allowed_num_of_buildings = 1
 	
 	on_activation = {
@@ -309,7 +307,6 @@
 		134 = { has_great_project = wein_cathedral_great_project }
 	}
 	
-	religious_conversion_resistance = 0.1
 	allowed_num_of_buildings = 1
 	local_build_cost = -0.1
 	

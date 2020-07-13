@@ -119,7 +119,7 @@ country_event = { #Maintance event for vinland
 		add_manpower = 2
 		980 = {
 			remove_core = NOR
-			cede_province = XXX
+			cede_province = ---
 			change_culture = cree
 			change_religion = totemism
 		}
@@ -162,14 +162,14 @@ country_event = { #Maintance event for greenland
 		add_manpower = 4
 		1104 = {
 			remove_core = NOR
-			cede_province = XXX
+			cede_province = ---
 			change_culture = inuit
 			change_religion = animism
 			remove_province_modifier = groenlands_knorr_prov_modifier
 		}
 		1105 = {
 			remove_core = NOR
-			cede_province = XXX
+			cede_province = ---
 			change_culture = inuit
 			change_religion = animism
 			remove_province_modifier = groenlands_knorr_prov_modifier
@@ -228,7 +228,7 @@ country_event = { #Maintance event for greenland
 			# }
 			# remove_core = NOR
 			# remove_core = ROOT
-			# cede_province = XXX
+			# cede_province = ---
 			# change_culture = inuit
 			# change_religion = animism
 		# }
@@ -238,7 +238,7 @@ country_event = { #Maintance event for greenland
 			# }
 			# remove_core = NOR
 			# remove_core = ROOT
-			# cede_province = XXX
+			# cede_province = ---
 			# change_culture = inuit
 			# change_religion = animism
 		# }
@@ -248,7 +248,7 @@ country_event = { #Maintance event for greenland
 			# }
 			# remove_core = NOR
 			# remove_core = ROOT
-			# cede_province = XXX
+			# cede_province = ---
 			# change_culture = cree
 			# change_religion = totemism
 		# }

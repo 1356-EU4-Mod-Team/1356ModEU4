@@ -195,7 +195,7 @@ country_event = { #Gives Colonial Power that triggers the End of Feudalism an ev
 		
 		add_navy_tradition = 15
 		add_yearly_sailors = 2
-		create_explorer = 50
+		create_explorer = { tradition = 50 }
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -240,6 +240,7 @@ country_event = { #Notifys far away players of Feudalism Ending
 	picture = PAINTER_ARTIST_eventPicture
 
 	is_triggered_only = yes
+	
 
 	option = {
 		name = flaageevents.5.a

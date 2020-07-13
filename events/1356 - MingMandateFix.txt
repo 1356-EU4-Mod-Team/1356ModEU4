@@ -85,11 +85,11 @@ country_event = { #Ming wins and becomes Emperor
 			}
 		}
 		if = {
-			limit = {
-				MIN = {
-					was_player = no
-				}
-			}
+			#limit = { #Doesnt work, game seems to think MIN is a value of sorts. - Flandy
+			#	MIN = {
+			#		was_player = no
+			#	}
+			#}
 			MNG = {
 				create_subject = {
 					subject_type = vassal
@@ -215,11 +215,11 @@ country_event = { #Ming wins and becomes Emperor
 			}
 		}
 		if = {
-			limit = {
-				MIN = {
-					was_player = no
-				}
-			}
+			#limit = { #Doesnt work, game seems to think this is a value of sorts (IE: MIN = 0 or something). Outputting an error in error.log - Flandy
+			#	MIN = {
+			#		was_player = no
+			#	}
+			#}
 			MNG = {
 				create_subject = {
 					subject_type = vassal

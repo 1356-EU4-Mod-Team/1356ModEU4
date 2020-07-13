@@ -152,7 +152,7 @@ country_event = { #The Game seems to output an error with these option names. Pe
 		ai_chance = { factor = 15 }
 		imperial_ban_allowed = yes
 		hre_inheritable = yes
-		SWB = { add_imperial_influence = 25 }
+		SWA = { add_imperial_influence = 25 }
 		every_country = {
 		limit = { OR = { tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
 		#Validator outputs this next line as an error, we sure this works?
@@ -163,7 +163,7 @@ country_event = { #The Game seems to output an error with these option names. Pe
 		ai_chance = { factor = 5 }
 		imperial_ban_allowed = yes
 		hre_inheritable = no
-		SWB = { add_imperial_influence = 35 }
+		SWA = { add_imperial_influence = 35 }
 		every_country = {
 		limit = { OR = { tag = BRA tag = HAB tag = BAV tag = HOL tag = MLO } } elector = yes }
 		#Validator outputs this next line as an error, we sure this works?
@@ -686,8 +686,8 @@ province_event = {
 	option = {
 		name = barbarossa.999.e
 		1988 = {
-			cede_province = xxx # Audax Validator "." Ignore_1006
-			change_controller = xxx # Audax Validator "." Ignore_1006
+			cede_province = --- 
+			change_controller = --- 
 			remove_core = CTR
 			remove_claim = CTR
 			undiscover_country = CTR

@@ -16,6 +16,7 @@ french_minor_take_land_slot_1 = {
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { tag = FRA }
+		NOT = { tag = PRO }
 	}
 	has_country_shield = yes
 	
@@ -73,6 +74,7 @@ french_minor_take_land_slot_2 = {
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { tag = FRA }
+		NOT = { tag = PRO }
 	}
 	has_country_shield = yes
 	
@@ -159,6 +161,7 @@ french_minor_take_land_slot_3 = {
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { tag = FRA }
+		NOT = { tag = PRO }
 	}
 	has_country_shield = yes
 	
@@ -273,6 +276,7 @@ french_minor_form_france = { #Would like to add a time window somewhat seperatin
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { tag = FRA }
+		NOT = { tag = PRO }
 	}
 	has_country_shield = yes
 	
@@ -309,6 +313,7 @@ french_minor_take_land_slot_4 = {
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { tag = FRA }
+		NOT = { tag = PRO }
 	}
 	has_country_shield = yes	
 
@@ -362,6 +367,7 @@ french_minor_take_land_slot_10 = {
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { tag = FRA }
+		NOT = { tag = PRO }
 	}
 	has_country_shield = yes	
 	
@@ -415,6 +421,7 @@ french_minor_take_land_slot_6 = {
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { tag = FRA }
+		NOT = { tag = PRO }
 	}
 	has_country_shield = yes	
 }

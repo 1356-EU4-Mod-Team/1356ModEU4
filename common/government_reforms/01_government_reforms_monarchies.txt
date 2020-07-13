@@ -705,7 +705,7 @@ feudal_theocracy = { #1356
 	nation_designer_trigger = {
 		OR = {
 			religion_group = muslim
-			primary_religion = zoroastrian #1356
+			religion = zoroastrian #1356
 		}
 	}
 	legacy_equivalent = feudal_theocracy_legacy

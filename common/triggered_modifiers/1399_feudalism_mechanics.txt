@@ -42,7 +42,6 @@
 	#Mercs
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.2
-	possible_mercenaries = 1
 	mercenary_manpower= 0.2
 }
 
@@ -78,7 +77,6 @@
 	#Mercs
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.2
-	possible_mercenaries = 1
 	mercenary_manpower= 0.2
 
 }
@@ -113,7 +111,6 @@
 	#Mercs
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.2
-	possible_mercenaries = 1
 	mercenary_manpower= 0.2
 }
 
@@ -154,7 +151,6 @@
 	#Mercs
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.2
-	possible_mercenaries = 1
 	mercenary_manpower= 0.2
 	artillery_cost = 0.4
 }
@@ -265,6 +261,5 @@
 	#Mercs
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.2
-	possible_mercenaries = 1
 	mercenary_manpower= 0.2
 }

@@ -631,7 +631,7 @@ wal_beyond_europe_2 = {
 		}
 		
 		effect = {
-			create_admiral = 80
+			create_admiral = { tradition = 80 } 
 		}
 	}
 

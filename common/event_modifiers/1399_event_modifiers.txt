@@ -144,7 +144,6 @@ dau_treaty_of_the_romans = {
 	local_autonomy = 0.05
 	local_development_cost = -0.25
 	local_missionary_strength = -0.02
-	religious_conversion_resistance = 0.2
 	local_culture_conversion_cost = 0.25
 	local_state_maintenance_modifier = -1
 	province_trade_power_modifier = 0.1
