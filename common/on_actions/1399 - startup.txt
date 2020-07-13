@@ -9,7 +9,7 @@ on_startup = {
 		#delhi_empire.101
 		#sikandar.66
 		#southern_india.101 #Vij Madurai conflict
-		serbian_flavour.999 #Ottoman Event to buff Heir
+		ottoman_golden_bull.999 #Ottoman Event to buff Heir
 		rus_independence.4
 		WarTwoPetersFlavor.1
 		WarTwoPetersFlavor.2
