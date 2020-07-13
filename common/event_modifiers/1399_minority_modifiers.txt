@@ -1,0 +1,22 @@
+expelled_nestorian = {
+
+}
+encourage_nestorian_growth = {
+
+}
+
+##Nestorian Minorities## #Really clones of the Parsi Minorities
+
+golden_bull_nestorian_community = { #Generic province replacement for the old modifiers, just one sizze.
+	trade_goods_size = 0.75
+	picture = "GFX_nestorian_netural_estate"
+}
+
+
+#Zoroastrian Minorities
+
+
+golden_bull_parsi_community = {
+	trade_goods_size = 0.75
+	picture = "GFX_zoroastrian_netural_estate"
+}

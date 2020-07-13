@@ -1,0 +1,207 @@
+estate_zoroastrian = {
+	icon = 6
+
+	independence_government = monarchy
+	starting_reform = feudalism_reform
+	independence_tech_group = muslim
+	
+	# If true, country will get estate
+	trigger = { #Theoretically this should work just fine
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = pirate_republic_reform }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { government = native }
+		NOT = { has_reform = trading_city }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { has_reform = revolutionary_empire_reform }
+		NOT = { has_reform = peasants_republic }
+		NOT = { has_reform = american_republic }
+		NOT = { has_reform = federal_republic }
+		NOT = { has_reform = frisian_republic_gov }
+		NOT = { religion = zoroastrian }
+		NOT = { religion_group = zoroastrian_group }
+		NOT = { secondary_religion = zoroastrian }
+		is_colonial_nation = no
+		any_owned_province = { 
+			is_core = ROOT
+			OR = {
+				has_province_modifier = golden_bull_parsi_community
+				religion = zoroastrian
+			}
+		}
+		#We shouldnt need this lower bit now that we check for the province modifier/religion
+		#OR = { #Muslims, Eastern, Chinese, Nomads, and Anatolians only. These are where these people existed mostly.
+		#	technology_group = muslim
+		#	#technology_group = eastern #Represents Georgia, Assyria, other Christian nations. #Should we really represent these though?
+		#	technology_group = chinese
+		#	technology_group = nomad_group
+		#	technology_group = ottoman
+		#}
+	}
+
+	#Modifiers require balalancing
+	country_modifier_happy = {
+		idea_cost = -0.1
+		global_trade_power = 0.1
+		development_cost = -0.1
+	}
+	country_modifier_neutral = {
+		global_trade_power = 0.05
+	}	
+	country_modifier_angry = {
+		idea_cost = 0.1 
+		global_trade_power = -0.1
+		religious_unity = -0.3
+	}
+	land_ownership_modifier = {
+		estate_zoroastrian_loyalty_modifier = 0.25
+	}
+
+	province_independence_weight = {
+		factor = 1
+		modifier = { #CoT 1 + zoroastrian
+			factor = 1.2
+			province_has_center_of_trade_of_level = 1
+			religion = zoroastrian 
+		}
+		modifier = { #CoT 2 + zoroastrian
+			factor = 2
+			province_has_center_of_trade_of_level = 2
+			religion = zoroastrian 
+		}
+		modifier = { #CoT 3 + zoroastrian
+			factor = 3
+			province_has_center_of_trade_of_level = 3
+			religion = zoroastrian 
+		}
+		modifier = { #Does this prevent it completly?
+			factor = 0
+			NOT = { religion = zoroastrian }
+			#NOT = { culture = assyrian }
+		}
+		modifier = { # zoroastrian
+			factor = 1.5
+			religion = zoroastrian
+		}
+		modifier = { #Dev 10 + zoroastrian
+			factor = 1.5
+			development = 10
+			religion = zoroastrian
+		}
+		modifier = { #Dev 15 + zoroastrian
+			factor = 2
+			development = 15
+			religion = zoroastrian
+		}
+		modifier = { # Dev 20 + zoroastrian
+			factor = 2.5
+			development = 20
+			religion = zoroastrian
+		}
+		modifier = {
+			factor = 0.001
+			NOT = { religion = zoroastrian }
+		}
+		#Commented out as this is theoretically impossible as of writing this
+		#modifier = { # Expelled zoroastrians + Province is zoroastrian still
+		#	factor = 5
+		#	owner = { has_country_modifier = expelled_zoroastrian }
+		#	religion = zoroastrian
+		#}
+	}
+	
+	# Influence modifiers
+	base_influence = 0
+	influence_modifier = { #+10 Influence if zoroastrian or zoroastrian Minority
+		desc = EST_VAL_RELIGIOUS_MINORITY
+		trigger = {
+			any_owned_province = {
+				OR = {
+					religion = zoroastrian
+					has_province_modifier = golden_bull_parsi_community
+				}
+			}
+		}
+		influence = 10		
+	}
+	influence_modifier = { #+20 Influence if dominant religion isnt your Base Religion, and you have zoroastrians or zoroastrian Minorities.
+		desc = EST_VAL_RULED_BY_RELIGIOUS_MINORITY
+		trigger = {
+			NOT = { dominant_religion = ROOT }
+			OR = {
+					religion = zoroastrian
+					has_province_modifier = golden_bull_parsi_community
+				}
+		}
+		influence = 20
+	}
+	
+	influence_from_dev_modifier = 0.5
+	
+	# Influence modifiers from Events:
+	influence_modifier = { #Other Estates in Power - Influence
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}	
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = { #Other Estates in Power - Loyalty
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	loyalty_modifier = { #+5 Loyalty if Consort is zoroastrian
+		desc = EST_VAL_NOBLE_CONSORT
+		trigger = {
+			has_dlc = "Rights of Man"
+			has_consort = yes
+			consort_religion = zoroastrian
+		}
+		loyalty = 5
+	}
+	
+	
+	color = { 200 50 125 }
+	
+	privileges = {
+		estate_zoroastrian_land_rights
+		estate_zoroastrian_zoroastrian_nobles
+		estate_zoroastrians_diplomatic_ties
+		estate_zoroastrians_more_zoroastrians_in_government
+		estate_zoroastrian_spies
+		estate_zoroastrians_forced_conscription
+		estate_zoroastrian_guaranteed_autonomy
+		estate_zoroastrians_encourage_growth
+		estate_zoroastrians_expell
+	}
+
+	agendas = {
+		estate_zoroastrian_hire_advisor
+		estate_zoroastrian_fire_advisor
+		estate_zoroastrian_develop_x
+		estate_zoroastrian_build_temple_in_y
+		estate_zoroastrian_build_university_in_y
+		estate_zoroastrian_stop_converting_province_x
+		estate_zoroastrian_increase_autonomy_in_province_x
+		estate_zoroastrian_three_privileges
+	}
+}

@@ -377,4 +377,10 @@
  hyw_push_english_out_of_the_north_fra_desc: "The English have claimed our northern provinces for far too long! It is time we reclaim what is rightfully Frances!"
  castile_no_provinces: "No Provinces"
  GOLDEN_BULL_ESTATE_MODIFIER: "Burgher Loyalty"
+ estate_nestorian: "Nestorian Minorities"
+ estate_nestorian_desc: "Nestorian Minorities exist all across Asia, from Baghdad to Bejing to even Kyoto there is evidence of them being spread far and wide. These minority groups are not very large, but they typically consist of well learned people, or those close to high ranking members of governments. They can make or break a nations government when it matters most if they are angered, however most Nestorians are content spreading the word of their lord and establishing communities in other nations."
+ estate_zoroastrian: "Parsi Communities"
+ 
+ #OVERRIDES
+ CS_NO_TECH:0 "You need diplomatic tech level 29 to create Client State."
  

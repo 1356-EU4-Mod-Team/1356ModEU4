@@ -1,0 +1,807 @@
+#Self note: Remove Nestorian religion from Dhimi's content.
+
+#Finished Nestorian
+estate_nestorian_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_nestorian
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_nestorian_land_rights }
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_territories = 1 }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_nestorian_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_nestorian_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_nestorian_nestorian_nobles = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.1
+	can_select = {
+	}
+	penalties = {
+		church_loyalty_modifier = -0.05
+		nobles_loyalty_modifier = -0.05
+	}
+	benefits = {
+		diplomats = 1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nestorians_diplomatic_ties = {
+	icon = privilege_patronize_jain_families
+	loyalty = 0.1
+	max_absolutism = -5
+	influence = 0.1
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		envoy_travel_time = -0.33
+		improve_relation_modifier = 0.15 
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nestorians_more_nestorians_in_government = {
+	icon = privilege_french_strong_duchies
+	loyalty = 0.1
+	max_absolutism = -10
+	influence = 0.1
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		state_governing_cost = 0.15
+		stability_cost_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nestorian_spies = {
+	icon = privilege_empty_throne
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	
+	can_select = {
+	}
+	penalties = {
+	}
+	benefits = {
+	 	spy_offence = 0.1
+		fabricate_claims_cost= -0.2
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nestorians_forced_conscription = {
+	icon = privilege_commission_jain_scripture
+	max_absolutism = -5
+	loyalty = -0.05
+	influence = 0.05
+	can_select = {
+	}
+	penalties = {
+		unrest_nestorian_provinces = 2
+	}
+	benefits = {
+		global_manpower_modifier = 0.15
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nestorian_guaranteed_autonomy = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = 0.2
+	influence = 0.05
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				religion = nestorian
+				has_province_modifier = golden_bull_nestorian_community
+			}
+			
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_nestorian_guaranteed_autonomy_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						religion = nestorian
+						has_province_modifier = golden_bull_nestorian_community
+					}
+				}
+				add_province_modifier = {
+					name = estate_nestorian_guaranteed_autonomy_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nestorian_guaranteed_autonomy_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_nestorian_guaranteed_autonomy_mod
+				}
+				remove_province_modifier = estate_nestorian_guaranteed_autonomy_mod
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_nestorian_guaranteed_autonomy_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_nestorian_guaranteed_autonomy_mod
+				}
+				remove_province_modifier = estate_nestorian_guaranteed_autonomy_mod
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					OR = {
+						NOT = { religion = nestorian }
+						NOT = { has_province_modifier = golden_bull_nestorian_community }
+					}
+				}
+			}
+		}
+	}
+}
+
+estate_nestorians_encourage_growth = {
+	icon = privilege_lighten_dhimmi_tax_burden
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				religion = nestorian
+				has_province_modifier = golden_bull_nestorian_community
+			}
+		}
+		NOT = { has_country_modifier = expelled_nestorian } 
+	}
+	on_granted = {
+		custom_tooltip = estate_nestorian_encourage_growth_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						religion = nestorian
+						has_province_modifier = golden_bull_nestorian_community
+					}
+				}
+				add_province_modifier = {
+					name = estate_nestorian_encourage_growth_modifier
+					duration = -1
+				}
+				add_country_modifier = {
+					name = encourage_nestorian_growth
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nestorian_encourage_growth_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_nestorian_encourage_growth_modifier
+				}
+				remove_province_modifier = estate_nestorian_encourage_growth_modifier
+			}
+			remove_country_modifier = encourage_nestorian_growth
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_nestorian_encourage_growth_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_nestorian_encourage_growth_modifier
+				}
+				remove_province_modifier = estate_nestorian_encourage_growth_modifier
+			}
+			remove_country_modifier = encourage_nestorian_growth
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					OR = {
+						NOT = { religion = nestorian }
+						NOT = { has_province_modifier = golden_bull_nestorian_community }
+					}
+				}
+			}
+		}
+		modifier = { #Tags that should NEVER encourage growth. Expand as more are found.
+			factor = 0
+			OR = {
+				tag = TIM
+				tag = MNG
+				tag = MUG
+			}
+		}
+		modifier = {
+			factor = 0
+			has_country_modifier = expelled_nestorian
+		}
+	}
+}
+
+estate_nestorians_expell = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = -0.05
+	influence = 0.05
+	
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				religion = nestorian
+				has_province_modifier = golden_bull_nestorian_community
+			}
+		}
+		NOT = { has_country_modifier = encourage_nestorian_growth } 
+	}
+	on_granted = {
+		custom_tooltip = estate_nestorian_expell_nestorians_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						religion = nestorian
+						has_province_modifier = golden_bull_nestorian_community
+					}
+				}
+				change_religion = ROOT
+				remove_province_modifier = golden_bull_nestorian_community
+			}
+			add_country_modifier = {
+				name = expelled_nestorian
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = expelled_nestorian
+	}
+	on_invalid = {
+		remove_country_modifier = expelled_nestorian
+	}
+	penalties = {	
+	}
+	benefits = {
+	}
+	ai_will_do = { #Only tags that will expell are Historical ones currently
+		factor = 0
+		modifier = {
+			factor = 100
+			OR = {
+				tag = TIM
+				tag = MNG
+				tag = MUG
+			}
+		}
+		modifier = { #Represents what Ming did historically
+			factor = 100
+			is_emperor_of_china = yes
+			NOT = { stability = 0 }
+		}
+		modifier = { #Non-Christian Nation Crusaded
+			factor = 100
+			is_crusade_target = yes
+		}
+		modifier = { #Tolerance towards Nestorians below 0
+			factor = 100
+			NOT = { religion_group = christian }
+			NOT = { nestorian = 0 }
+		}
+	}
+}
+
+#Finished Zoroastrian Estates
+estate_zoroastrian_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_zoroastrian
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_zoroastrian_land_rights }
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_territories = 1 }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_zoroastrian_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_zoroastrian_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_zoroastrian_zoroastrian_nobles = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.1
+	can_select = {
+	}
+	penalties = {
+		church_loyalty_modifier = -0.05
+		nobles_loyalty_modifier = -0.05
+	}
+	benefits = {
+		merchants = 1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_zoroastrians_merchant_ties = {
+	icon = privilege_patronize_jain_families
+	loyalty = 0.1
+	max_absolutism = -5
+	influence = 0.1
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		global_own_trade_power = 0.1
+		trade_efficiency = 0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_zoroastrians_more_zoroastrians_in_government = {
+	icon = privilege_french_strong_duchies
+	loyalty = 0.1
+	max_absolutism = -10
+	influence = 0.1
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		trade_company_governing_cost = 0.15
+		stability_cost_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_zoroastrian_spies = {
+	icon = privilege_empty_throne
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	
+	can_select = {
+	}
+	penalties = {
+	}
+	benefits = {
+	 	global_spy_defence = 0.1
+		discovered_relations_impact = -0.25
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_zoroastrians_forced_conscription = {
+	icon = privilege_commission_jain_scripture
+	max_absolutism = -5
+	loyalty = -0.05
+	influence = 0.05
+	can_select = {
+	}
+	penalties = {
+		unrest_zoroastrian_provinces = 2
+	}
+	benefits = {
+		global_manpower_modifier = 0.15
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_zoroastrian_guaranteed_autonomy = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = 0.2
+	influence = 0.05
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				religion = zoroastrian
+				has_province_modifier = golden_bull_parsi_community
+			}
+			
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_zoroastrian_guaranteed_autonomy_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						religion = zoroastrian
+						has_province_modifier = golden_bull_parsi_community
+					}
+				}
+				add_province_modifier = {
+					name = estate_zoroastrian_guaranteed_autonomy_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_zoroastrian_guaranteed_autonomy_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_zoroastrian_guaranteed_autonomy_mod
+				}
+				remove_province_modifier = estate_zoroastrian_guaranteed_autonomy_mod
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_zoroastrian_guaranteed_autonomy_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_zoroastrian_guaranteed_autonomy_mod
+				}
+				remove_province_modifier = estate_zoroastrian_guaranteed_autonomy_mod
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					OR = {
+						NOT = { religion = zoroastrian }
+						NOT = { has_province_modifier = golden_bull_parsi_community }
+					}
+				}
+			}
+		}
+	}
+}
+
+estate_zoroastrians_encourage_growth = {
+	icon = privilege_lighten_dhimmi_tax_burden
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				religion = zoroastrian
+				has_province_modifier = golden_bull_parsi_community
+			}
+		}
+		NOT = { has_country_modifier = expelled_zoroastrian } 
+	}
+	on_granted = {
+		custom_tooltip = estate_zoroastrian_encourage_growth_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						religion = zoroastrian
+						has_province_modifier = golden_bull_parsi_community
+					}
+				}
+				add_province_modifier = {
+					name = estate_zoroastrian_encourage_growth_modifier
+					duration = -1
+				}
+				add_country_modifier = {
+					name = encourage_zoroastrian_growth
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_zoroastrian_encourage_growth_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_zoroastrian_encourage_growth_modifier
+				}
+				remove_province_modifier = estate_zoroastrian_encourage_growth_modifier
+			}
+			remove_country_modifier = encourage_zoroastrian_growth
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_zoroastrian_encourage_growth_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_zoroastrian_encourage_growth_modifier
+				}
+				remove_province_modifier = estate_zoroastrian_encourage_growth_modifier
+			}
+			remove_country_modifier = encourage_zoroastrian_growth
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					OR = {
+						NOT = { religion = zoroastrian }
+						NOT = { has_province_modifier = golden_bull_parsi_community }
+					}
+				}
+			}
+		}
+		modifier = { #Tags that should NEVER encourage growth. Expand as more are found.
+			factor = 0
+			OR = {
+				tag = TIM
+				tag = MNG
+				tag = MUG
+			}
+		}
+		modifier = {
+			factor = 0
+			has_country_modifier = expelled_zoroastrian
+		}
+	}
+}
+
+estate_zoroastrians_expell = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = -0.05
+	influence = 0.05
+	
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				religion = zoroastrian
+				has_province_modifier = golden_bull_parsi_community
+			}
+		}
+		NOT = { has_country_modifier = encourage_zoroastrian_growth } 
+	}
+	on_granted = {
+		custom_tooltip = estate_zoroastrian_expell_zoroastrians_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						religion = zoroastrian
+						has_province_modifier = golden_bull_parsi_community
+					}
+				}
+				change_religion = ROOT
+				remove_province_modifier = golden_bull_parsi_community
+			}
+			add_country_modifier = {
+				name = expelled_zoroastrian
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = expelled_zoroastrian
+	}
+	on_invalid = {
+		remove_country_modifier = expelled_zoroastrian
+	}
+	penalties = {	
+	}
+	benefits = {
+	}
+	ai_will_do = { #Only tags that will expell are Historical ones currently
+		factor = 0
+		modifier = {
+			factor = 100
+			OR = {
+				tag = TIM
+				tag = MNG
+				tag = MUG
+			}
+		}
+		modifier = { #Represents what Ming did historically
+			factor = 100
+			is_emperor_of_china = yes
+			NOT = { stability = 0 }
+		}
+		modifier = { #Tolerance towards zoroastrians below 0
+			factor = 100
+			NOT = { religion_group = zoroastrian_group }
+			NOT = { zoroastrian = 0 }
+		}
+	}
+}

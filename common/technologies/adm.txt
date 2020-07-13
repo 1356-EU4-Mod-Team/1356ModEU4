@@ -272,7 +272,6 @@ technology = { #Land Clearance
 	
 	#Land Clearance
 	production_efficiency =	0.02
-	furnace = yes
 }
 
 technology = { #The Constitution
@@ -315,6 +314,7 @@ technology = { #Separation of Powers
 	year = 1745
 	
 	allowed_idea_groups 	= 	8
+	furnace = yes #1356
 }
 
 technology = { #Modern Bureaucracy

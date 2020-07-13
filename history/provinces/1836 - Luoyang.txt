@@ -21,12 +21,12 @@ discovered_by = nomad_group
 
 1356.12.25 = { 
 		add_permanent_province_modifier = {
-		name = large_nestorian_community
+		name = golden_bull_nestorian_community
 		duration = -1
 	}
 }
 
-1368.9.14 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA remove_province_modifier = large_nestorian_community }
+1368.9.14 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA remove_province_modifier = golden_bull_nestorian_community }
 1608.1.1  = { discovered_by = SPA }
 1628.1.1  = { unrest = 6 } # Li Zicheng rebellion
 1641.1.1  = { revolt = { type = anti_tax_rebels size = 0 } controller = REB }

@@ -25,26 +25,6 @@ alexandria_coptic_church_province_modifier = { #For Alexandria 358
 	#picture = "icon_religious.dds"
 }
 
-##Nestorian Minorities## #Really clones of the Parsi Minorities
-
-small_nestorian_community = {
-	trade_goods_size = 0.5
-	picture = "GFX_nestorian_neg_estate"
-}
-medium_nestorian_community = {
-	trade_goods_size = 0.75
-	local_development_cost = -0.05
-	local_unrest = -1
-
-	picture = "GFX_nestorian_netural_estate"
-}
-large_nestorian_community = {
-	trade_goods_size = 1
-	local_development_cost = -0.1
-	local_unrest = -2
-	local_culture_conversion_cost = 0.1
-	picture = "GFX_nestorian_pos_estate" #Make a Special Icon for this
-}
 
 #Greenland Carrier 
 

@@ -74,9 +74,9 @@ country_decisions = {
 			
 			if = {
 				limit = {
-					government = monarchy
+					government = tribal
 				}
-				change_government = monarchy
+				change_government = tribal
 				#set_legacy_government = tribal_federation_ilkhan
 				add_government_reform = tribal_federation_ilkhan_reform
 			}

@@ -479,8 +479,7 @@ mercantilism_institution = { #1356 New Content
 
 	penalty = 0.5
 	bonus = { #Tweak
-		trade_range_modifier = 0.15
-		global_prov_trade_power_modifier = 0.1
+		mercantilism_cost = -0.05
 	}
 	
 	trade_company_efficiency = 0.0
@@ -1329,6 +1328,7 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 			region = north_china_region
 			region = south_china_region
 			region = korea_region
+			region = tibet_region
 		}
 		OR = {
 			owner = { culture_group = east_asian }

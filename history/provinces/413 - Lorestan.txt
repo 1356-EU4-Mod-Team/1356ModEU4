@@ -22,7 +22,7 @@ discovered_by = indian
 
 1356.12.24 = { 
 	add_permanent_province_modifier = {
-		name = small_nestorian_community
+		name = golden_bull_nestorian_community
 		duration = -1
 	}
 	owner = LRI controller = LRI add_core = LRI
