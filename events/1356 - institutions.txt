@@ -388,7 +388,12 @@ country_event = { #Spread of Mercantilism ###UPDATE FOR 1.30####!!!!!
 					}
 					NOT = { has_estate = estate_burghers }
 				}
-				set_estate = estate_burghers #This will not be 1.30 compatible
+				add_estate_loyalty_modifier  = {
+					estate = estate_burghers
+					desc = GOLDEN_BULL_ESTATE_MODIFIER
+					loyalty = 10
+					duration = 7300
+				}
 			}
 		}
 	}

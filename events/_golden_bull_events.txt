@@ -1,3 +1,4 @@
+namespace = golden_bull_events
 # Set Golden Bull global flag
 country_event = {
 	id = golden_bull_events.1

@@ -161,7 +161,7 @@ finnish_missions = {
 }
 
 finnish_missions_2 = {
-	slot = 1
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {
@@ -171,6 +171,7 @@ finnish_missions_2 = {
 	
 	fin_baltic_fleet = {
 		icon = mission_galleys_in_port
+		slot = 4
 		trigger = {
 			navy_size_percentage = 0.9
 		}
@@ -184,6 +185,7 @@ finnish_missions_2 = {
 	
 	annex_aland = {
 		icon = mission_unite_home_region
+		slot = 5
 		required_missions = { fin_baltic_fleet gain_independence }
 		provinces_to_highlight = {
 			province_id = 1930
@@ -206,6 +208,7 @@ finnish_missions_2 = {
 	
 	conquer_estonia = {
 		icon = mission_unite_home_region
+		slot = 6
 		required_missions = { annex_aland }
 		provinces_to_highlight = {
 			OR = {

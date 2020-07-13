@@ -16,8 +16,8 @@ country_event = {
 		accepted_culture = old_egyptian_mod
 		NOT = {
 			employed_advisor = {
-				home_religion = coptic
-				home_culture = old_egyptian_mod
+				religion = coptic
+				culture = old_egyptian_mod
 			}
 		}
 		has_country_flag = mam_coptic_advisor_flag
@@ -62,8 +62,8 @@ country_event = {
 		accepted_culture = old_egyptian_mod
 		NOT = {
 			employed_advisor = {
-				home_religion = coptic
-				home_culture = old_egyptian_mod
+				religion = coptic
+				culture = old_egyptian_mod
 			}
 		}
 		has_country_flag = mam_coptic_advisor_flag

@@ -8,11 +8,11 @@ AQT_unite_our_home_2 = {
 		OR = {
 			tag = AQT
 			tag = AUV 
-			tag = PRO
 			tag = FOZ
 			tag = DAU
 			tag = TOU
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -200,11 +200,11 @@ AQT_minor_form_aqt = {
 	potential = { 
 		OR = {
 			tag = AUV 
-			tag = PRO
 			tag = FOZ
 			tag = DAU
 			tag = TOU
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -242,6 +242,7 @@ AQT_unite_our_home = {
 	
 	potential = { 
 		tag = AQT
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -341,7 +342,10 @@ AQT_put_france_in_check_p2 = { #Secondary tree
 	generic = no
 	ai = yes
 	
-	potential = { tag = AQT	}
+	potential = { 
+		tag = AQT
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 
 	AQT_annex_normandy = { #Navarra must not be allowed to keep control in this important region!
@@ -377,7 +381,10 @@ AQT_put_france_in_check = {
 	generic = no
 	ai = yes
 	
-	potential = { tag = AQT	}
+	potential = { 
+		tag = AQT
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 	
 	
@@ -456,7 +463,10 @@ AQT_put_france_in_check_p3 = {
 	generic = no
 	ai = yes
 	
-	potential = { tag = AQT	}
+	potential = { 
+		tag = AQT
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 
 	AQT_finish_off_the_french = { #Win the French War
@@ -568,11 +578,11 @@ AQT_independence = {
 		OR = {
 			tag = AQT
 			tag = AUV 
-			tag = PRO
 			tag = FOZ
 			tag = DAU
 			tag = TOU
 		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
@@ -600,7 +610,10 @@ aqt_fight_back = {
 	generic = no
 	ai = yes
 	
-	potential = { tag = AQT }
+	potential = { 
+		tag = AQT
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+	}
 	has_country_shield = yes
 	
 	AQT_larger_army = { #Make an Army!
@@ -742,6 +755,7 @@ AQT_african_ambitions = {
 	
 	potential = {
 		tag = AQT
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
