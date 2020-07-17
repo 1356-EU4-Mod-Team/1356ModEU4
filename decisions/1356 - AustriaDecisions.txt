@@ -1,0 +1,25 @@
+country_decisions = {
+	1356_abolish_rh = {
+		major = yes
+		potential = {
+			has_ruler = "Rudolf IV"
+			tag = HAB
+			set_country_flag = has_not_abolished_rh
+		}
+		allow = {
+			stability = 1
+			legitimacy = 100
+			adm_power = 200
+		}
+		effect = {
+			add_stability = -2
+			add_adm_power = -200
+			clr_country_flag = has_not_abolished_rh
+			add_country_modifier = {
+				name = 1356_hab_abolished_rh
+				duration = 3650
+			}
+			custom_tooltip = 1356_hab_abolished_rh_tt
+		}
+	}
+}
