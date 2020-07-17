@@ -437,3 +437,9 @@ pre_gunpowder_modifier = { #
 1356_early_firearms_capture_modifier = {
 	shock_damage = 0.1 #Would do fire but that'd be broken af early game.
 }
+
+#Austria
+1356_hab_abolished_rh = {
+	global_unrest = 8
+	stability_cost_modifier = 0.25
+}
