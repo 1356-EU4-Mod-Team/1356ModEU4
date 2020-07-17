@@ -1,0 +1,401 @@
+namespace = flavor_1356_hab
+
+country_event = {
+	id = flavor_1356_hab.1
+	title = flavor_1356_hab.1.t 
+	desc = flavor_1356_hab.1.d 
+	picture = BIG_BOOK_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1356
+		tag = HAB
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { #We will secure an heir before the law becomes necessary.
+		name = flavor_1356_hab.1.a 
+		custom_tooltip = flavor_1356_hab.1.tt 
+		set_country_flag = has_not_abolished_rh
+	}
+}
+
+country_event = { #Austria gets an heir in time
+	id = flavor_1356_hab.2
+	title = flavor_1356_hab.2.t 
+	desc = flavor_1356_hab.2.d 
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HAB
+		has_ruler_flag = 1356_rudolf_flag
+		has_heir = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { 
+		name = flavor_1356_hab.2.a 
+		clr_country_flag = has_not_abolished_rh
+		add_stability = 1
+	}
+}
+
+country_event = { #The death of Rudolf
+	id = flavor_1356_hab.3
+	title = flavor_1356_hab.3.t 
+	desc = flavor_1356_hab.3.d 
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		NOT = {
+			has_ruler_flag = 1356_rudolf_flag
+		}
+		tag = HAB 
+		has_country_flag = has_not_abolished_rh
+	}
+	
+	option = { #We must abide by the laws.
+		name = flavor_1356_hab.3.a 
+		clr_country_flag = has_not_abolished_rh
+		set_country_flag = flavor_hab_joint_rule_flag
+		add_stability = -1
+		define_ruler = {
+			name = "Albrecht"
+			dynasty = "von Habsburg"
+			adm = 3
+			dip = 3
+			mil = 5
+			age = 16
+			fixed = yes 
+			claim = 95
+		}
+	}
+}
+
+country_event = { #The death of Rudolf (laws abolished)
+	id = flavor_1356_hab.4
+	title = flavor_1356_hab.4.t 
+	desc = flavor_1356_hab.4.d 
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = {
+			has_ruler_flag	= 1356_rudolf_flag
+		}
+		tag = HAB 
+		NOT = { has_country_flag = has_not_abolished_rh }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #Support Albert's Claim
+		name = flavor_1356_hab.4.a 
+		define_ruler = {
+			name = "Albrecht"
+			dynasty = "von Habsburg"
+			adm = 3
+			dip = 3
+			mil = 5
+			age = 16
+			fixed = yes 
+			claim = 95
+		}
+		random = {
+			chance = 50
+			134 = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+					leader = "Leopold von Habsburg"
+				}
+			}
+		}
+	}
+	
+	option = { #Support Leopold's Claim
+		name = flavor_1356_hab.4.b 
+		define_ruler = {
+			name = "Leopold"
+			dynasty = "von Habsburg"
+			adm = 4
+			dip = 3
+			mil = 4
+			age = 16
+			fixed = yes 
+			claim = 95
+		}
+		random = {
+			chance = 50
+			134 = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+					leader = "Albrecht von Habsburg"
+				}
+			}
+		}
+	}
+}
+
+country_event = { #The Purchase of Breisgau
+	id = flavor_1356_hab.5
+	title = flavor_1356_hab.5.t 
+	desc = flavor_1356_hab.5.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HAB
+		STY = {
+			is_subject_of = HAB
+		}
+		72 = {
+			NOT = {
+				owned_by = HAB
+				owned_by = STY 
+			}
+			NOT = {
+				is_capital = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = { #buy it
+		name = flavor_1356_hab.5.a 
+		72 = {
+			owner = {
+				country_event = {
+					id = flavor_1356_hab.6
+				}
+			}
+		}
+		add_treasury = -125
+	}
+	
+	option = { #don't buy it
+		name = flavor_1356_hab.5.b 
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = flavor_1356_hab.6
+	title = flavor_1356_hab.6.t 
+	desc = flavor_1356_hab.6.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {#sell it
+		name = flavor_1356_hab.6.a 
+		FROM = {
+			country_event = {
+				id = flavor_1356_hab.7
+			}
+		}
+		add_treasury = 125
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {#don't sell it 
+		name = flavor_1356_hab.6.b 
+		FROM = {
+			country_event = {
+				id = flavor_1356_hab.8
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = flavor_1356_hab.7
+	title = flavor_1356_hab.7.t
+	desc = flavor_1356_hab.7.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_1356_hab.7.a 
+		72 = {
+			add_core = ROOT
+			cede_province = ROOT
+			remove_core = FROM
+		}
+	}
+}
+
+country_event = {
+	id = flavor_1356_hab.8
+	title = flavor_1356_hab.8.t 
+	desc = flavor_1356_hab.8.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = flavor_1356_hab.8.a 
+		72 = {
+			add_claim = ROOT 
+		}
+		add_treasury = 125
+	}
+}
+
+country_event = { #The Purchase of Breisgau
+	id = flavor_1356_hab.9
+	title = flavor_1356_hab.9.t 
+	desc = flavor_1356_hab.9.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = STY
+		NOT = {
+			is_subject = yes 
+		}
+		72 = {
+			NOT = {
+				owned_by = HAB
+				owned_by = STY 
+			}
+			NOT = {
+				is_capital = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = { #buy it
+		name = flavor_1356_hab.9.a 
+		72 = {
+			owner = {
+				country_event = {
+					id = flavor_1356_hab.6
+				}
+			}
+		}
+		add_treasury = -125
+	}
+	
+	option = { #don't buy it
+		name = flavor_1356_hab.9.b 
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = flavor_1356_hab.10
+	title = flavor_1356_hab.10.t 
+	desc = flavor_1356_hab.10.d 
+	picture = ACCUSATION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HAB
+		has_country_flag = flavor_hab_joint_rule_flag
+		senior_union_with = STY
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	immediate = {
+		hidden_effect = {
+			break_union = STY
+			if = {
+				limit = {
+					72 = {
+						owned_by = ROOT
+					}
+				}
+				cede_province = STY
+			}
+			if = {
+				limit = {
+					1880 = {
+						owned_by = ROOT
+					}
+				}
+				cede_province = STY
+			}
+			STY = {
+				country_event = {
+					id = flavor_1356_hab.11
+				}
+			}
+		}
+	}
+	
+	option = { #Go with Albert.
+		name = flavor_1356_hab.10.a 
+		add_prestige = -25
+		add_casus_belli = {
+			target = STY 
+			type = cb_restore_personal_union
+			months = 360
+		}
+		clr_country_flag = flavor_hab_joint_rule_flag
+	}
+}
+
+country_event = { #Leopold in Styria
+	id = flavor_1356_hab.11
+	title = flavor_1356_hab.11.t 
+	desc = flavor_1356_hab.11.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_1356_hab.11.a 
+		define_ruler = {
+			name = "Leopold"
+			dynasty = "von Habsburg"
+			adm = 4
+			dip = 3
+			mil = 3
+			fixed = yes
+			claim = 95
+		}
+		add_casus_belli = {
+			target = HAB
+			type = cb_restore_personal_union
+			months = 360
+		}
+	}
+}
