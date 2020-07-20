@@ -31,7 +31,7 @@ country_event = { #Nations take in Nestorian refugees
 		random_owned_province = {
 			add_base_tax = 2
 			add_permanent_province_modifier = { 
-				name = large_nestorian_community
+				name = golden_bull_nestorian_community
 				duration = -1  
 			}
 		}
@@ -53,9 +53,9 @@ country_event = { #A Chinese Warlord takes over a province holding Nestorians.
 		NOT = { has_country_flag = timur_didnt_exterminate_nestorians }
 		NOT = { has_country_modifier = expelled_nestorian }
 		OR = {
-			any_owned_province = { has_province_modifier = small_nestorian_community }
-			any_owned_province = { has_province_modifier = medium_nestorian_community }
-			any_owned_province = { has_province_modifier = large_nestorian_community }
+			any_owned_province = { has_province_modifier = golden_bull_nestorian_community }
+			any_owned_province = { has_province_modifier = golden_bull_nestorian_community }
+			any_owned_province = { has_province_modifier = golden_bull_nestorian_community }
 		}
 		is_subject = no
 		is_nomad = no

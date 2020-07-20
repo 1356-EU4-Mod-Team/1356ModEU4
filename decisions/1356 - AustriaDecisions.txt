@@ -4,7 +4,7 @@ country_decisions = {
 		potential = {
 			has_ruler = "Rudolf IV"
 			tag = HAB
-			set_country_flag = has_not_abolished_rh
+			has_country_flag = has_not_abolished_rh
 		}
 		allow = {
 			stability = 1

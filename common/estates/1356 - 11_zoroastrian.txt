@@ -21,6 +21,7 @@ estate_zoroastrian = {
 		NOT = { has_reform = federal_republic }
 		NOT = { has_reform = frisian_republic_gov }
 		NOT = { religion = zoroastrian }
+		NOT = { religion_group = muslim }
 		NOT = { religion_group = zoroastrian_group }
 		NOT = { secondary_religion = zoroastrian }
 		is_colonial_nation = no
@@ -180,12 +181,12 @@ estate_zoroastrian = {
 	}
 	
 	
-	color = { 200 50 125 }
+	color = { 187 227 170 }
 	
 	privileges = {
 		estate_zoroastrian_land_rights
 		estate_zoroastrian_zoroastrian_nobles
-		estate_zoroastrians_diplomatic_ties
+		estate_zoroastrians_merchant_ties
 		estate_zoroastrians_more_zoroastrians_in_government
 		estate_zoroastrian_spies
 		estate_zoroastrians_forced_conscription

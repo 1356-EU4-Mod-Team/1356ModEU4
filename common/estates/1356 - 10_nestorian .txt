@@ -21,6 +21,7 @@ estate_nestorian = {
 		NOT = { has_reform = federal_republic }
 		NOT = { has_reform = frisian_republic_gov }
 		NOT = { religion = nestorian }
+		NOT = { religion_group = muslim }
 		NOT = { religion_group = christian }
 		NOT = { secondary_religion = nestorian }
 		is_colonial_nation = no
@@ -184,7 +185,7 @@ estate_nestorian = {
 	}
 	
 	
-	color = { 200 50 125 }
+	color = { 173 173 125 }
 	
 	privileges = {
 		estate_nestorian_land_rights
