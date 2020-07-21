@@ -440,6 +440,9 @@
  nestorian_estate_events.9.t: "Local Nestorian Community Revolt"
  nestorian_estate_events.9.d: "Desperate to have their privileges redacted the Nestorian of [Root.GetName] have taken up arms against us!"
  nestorian_estate_events.9.a: "Ok"
+ 
+ gunpowder_institution_coal_modifier_tooltip: "Province has latent trade good: Coal"
+ gunpowder_institution_copper_or_iron_tooltip: "Province produces Copper or Iron"
 
  #OVERRIDES
  CS_NO_TECH:0 "You need diplomatic tech level 29 to create Client State."

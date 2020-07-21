@@ -1467,7 +1467,6 @@ beylik_reform = {
 	legacy_equivalent = beylik_legacy 
 	lock_level_when_selected = yes 
 	valid_for_nation_designer = no
-	nation_designer_cost = 0
 	maintain_dynasty = yes
 	#fixed_rank = 2	
 	modifiers = {
@@ -1495,7 +1494,6 @@ timurid_government_reform = {
 		}
 	}
 	valid_for_nation_designer = no
-	nation_designer_cost = 0
 	legacy_equivalent = timurid_government
 	fixed_rank = 3
 	maintain_dynasty = yes
@@ -1528,7 +1526,6 @@ earldom_reform = {
 		primary_culture = irish
 	}
 	valid_for_nation_designer = no 
-	nation_designer_cost = 0
 	lock_level_when_selected = yes
 	legacy_equivalent = earldom_legacy 
 	fixed_rank = 1
@@ -1557,7 +1554,6 @@ chinese_kingdom_government_reform = {
 	legacy_equivalent = chinese_kingdom_government
 	fixed_rank = 2
 	valid_for_nation_designer = no
-	nation_designer_cost = 0
 	modifiers = {
 		governing_capacity = 100
 		province_warscore_cost = -0.2
@@ -1598,6 +1594,63 @@ chinese_kingdom_government_reform = {
 #		heir = yes #CHANGE INTO SLAVE RULER MECHANICS MAYBE?
 #	}
 #}
+
+german_kingdom = {
+	icon = "crown"
+	allow_normal_conversion = no
+	monarchy = yes
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	fixed_rank = 3
+	potential = {
+		OR = { #Either? 
+			tag = SWA
+			tag = GER
+		}
+		has_global_flag = 1356_bt_start_flag #BT startup. Prevents Standard 1356 issues.
+		has_global_flag = golden_bull_bt_centralized_empire_flag #Centralized Empire
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	
+	modifiers = {
+		governing_capacity = 100
+		global_autonomy = -0.10
+		war_exhaustion = -0.02
+		unjustified_demands = -0.1
+		num_accepted_cultures = 2
+	}
+}
+
+populist_dictatorship = {
+
+	allow_normal_conversion = no
+	dictatorship = yes
+	legacy_equivalent = despotic_monarchy
+	lock_level_when_selected = yes
+	icon = "parliament_hall"
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+
+	modifiers = {
+		unjustified_demands = -0.1
+		war_exhaustion = -0.025
+		land_morale = 0.15
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	has_term_election = no
+}
 
 ######END 1356 CHANGES#####
 

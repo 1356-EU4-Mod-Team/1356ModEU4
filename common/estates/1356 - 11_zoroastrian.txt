@@ -45,15 +45,15 @@ estate_zoroastrian = {
 	#Modifiers require balalancing
 	country_modifier_happy = {
 		idea_cost = -0.1
-		global_trade_power = 0.1
+		global_trade_power = 0.15
 		development_cost = -0.1
 	}
 	country_modifier_neutral = {
-		global_trade_power = 0.05
+		global_trade_power = 0.1
 	}	
 	country_modifier_angry = {
 		idea_cost = 0.1 
-		global_trade_power = -0.1
+		global_trade_power = -0.15
 		religious_unity = -0.3
 	}
 	land_ownership_modifier = {

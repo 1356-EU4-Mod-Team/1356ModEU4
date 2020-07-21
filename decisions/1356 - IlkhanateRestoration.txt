@@ -11,10 +11,11 @@ country_decisions = {
 			}
 			NOT = { exists = ILK }
 			NOT = { tag = TIM }
-			#OR = {
+			OR = {
                culture_group = iranian
+			   tag = JLR
                #primary_culture = al_iraqiya_arabic			   
-			#}			
+			}			
 			OR = {
 				ai = no
 				AND = {

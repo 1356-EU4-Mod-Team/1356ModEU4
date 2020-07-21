@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-elector = yes
+#elector = yes
 technology_group = western
 primary_culture = berliner
 religion = catholic
@@ -38,6 +38,14 @@ capital = 50	# Berlin
 		dip = 3
 		mil = 1
 	}
+}
+
+1356.12.1 = { #BT in
+
+}
+
+1356.12.26 = { #BT out
+	elector = yes
 }
 
 1360.1.1 = {

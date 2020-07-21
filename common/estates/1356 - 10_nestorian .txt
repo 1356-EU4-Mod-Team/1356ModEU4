@@ -54,7 +54,7 @@ estate_nestorian = {
 	country_modifier_angry = {
 		technology_cost = 0.1 
 		global_institution_spread = -0.15
-		religious_unity = -0.3
+		development_cost = 0.1
 	}
 	land_ownership_modifier = {
 		estate_nestorian_loyalty_modifier = 0.25

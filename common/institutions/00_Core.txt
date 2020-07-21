@@ -1347,13 +1347,7 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 	on_start = new_institution_events.61
 
 	can_embrace = {
-		owner = { 
-			NOT = { government = native }
-			NOT = { has_reform = tribal_federation }
-			NOT = { has_reform = tribal_despotism }
-			NOT = { has_reform = tribal_kingdom }
-			NOT = { has_reform = siberian_tribe }
-		}
+			owner = { has_institution = mercantilism_institution }
 	}
 
 	embracement_speed = { #Needs more work
@@ -1465,7 +1459,6 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 					has_institution = gunpowder_institution
 				}
 			}
-			
 			custom_trigger_tooltip = {
 				tooltip = tooltip_gunpowder_embraced
 				is_owned_by_trade_company = no
@@ -1474,7 +1467,35 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 				}
 			}
 		}
-	
+		modifier = { #Province produces future coal
+			factor = 0.75
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				has_latent_trade_goods = coal
+			}
+			custom_trigger_tooltip = {
+				tooltip = gunpowder_institution_coal_modifier_tooltip
+				has_latent_trade_goods = coal
+			}
+		}
+		modifier = { #Province Produces Iron or Coal
+			factor = 0.75
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = copper
+					trade_goods = iron
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = gunpowder_institution_copper_or_iron_tooltip
+				OR = {
+					trade_goods = copper
+					trade_goods = iron
+				}
+			}
+		}
 		#Spread into Indus Valley faster (Sindh up to Delhi)
 		modifier = { #Unique tags that have embraced their pre gunpowder decisions #May need to split these up
 			factor = 0.75
@@ -1703,7 +1724,7 @@ renaissance = { #1356
 	
 	
 	can_embrace = {
-		owner = { has_institution = mercantilism_institution } #1356 #Not Gunpowder just in case it struggles to spread
+		owner = { has_institution = gunpowder_institution } #1356 
 	}
 
 

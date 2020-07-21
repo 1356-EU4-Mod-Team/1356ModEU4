@@ -52,18 +52,9 @@ country_event = {
 	option = {
 		name = "sweden_estate_opt1"
 		set_global_flag = sweden_reduced_noble_estates
-		if = {
-			limit = { has_dlc = "The Cossacks" }
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -20
-			}
-		}
-		if = {
-			limit = { NOT = { has_dlc = "The Cossacks" } }
-			every_owned_province = {
-				add_unrest = 1
-			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
 		}
 		ai_chance = { factor = 60 }
 	}
@@ -73,20 +64,8 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 10
 		}
-		if = {
-			limit = { has_dlc = "The Cossacks" }
-			every_owned_province = {
-				limit = {
-					has_estate = estate_nobles
-				}
-				add_local_autonomy = 20
-			}
-		}
-		if = {
-			limit = { NOT = { has_dlc = "The Cossacks" }}
-			every_owned_province = {
-				add_local_autonomy = 10
-			}
+		every_owned_province = {
+			add_local_autonomy = 10
 		}
 		ai_chance = { factor = 40 }
 	}
