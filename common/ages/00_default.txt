@@ -205,14 +205,217 @@ age_of_feudalism = {
 				owns_core_province = 382 #Damascus
 			}
 		}
-		obj_feudal_generic_non_abrahamic_competent_ruler = { #Create a generic Holy site system and use it for this?
+		obj_zoroastrian_holy_war = {
 			allow = {
-				NOT = { religion_group = christian }
-				NOT = { religion_group = muslim }
+				religion_group = zoroastrian_group
 			}
-			adm = 3
-			dip = 3
-			mil = 3
+			OR = {
+				owns_core_province = 433 #Yazd
+				owns_core_province = 426 #Amol
+				owns_core_province = 429 #Isfahan
+				owns_core_province = 445 #Merv
+				owns_core_province = 2219 #Bandar Langeh
+			}
+		}
+		obj_jewish_holy_war = {
+			allow = {
+				religion_group = jewish_group
+			}
+			OR = {
+				owns_core_province = 2771 #Semien
+				owns_core_province = 379 #Jerusalem
+				owns_core_province = 4316 #Sharqiya
+				owns_core_province = 464 #Astrakhan
+				owns_core_province = 219 #Toledo
+			}
+		}
+		obj_dharmic_holy_war = {
+			allow = {
+				religion_group = dharmic
+			}
+			OR = {
+				owns_core_province = 522 #Delhi
+				owns_core_province = 506 #Multan
+				owns_core_province = 1948 #Bidar
+				owns_core_province = 550 #Mahakoshal
+				owns_core_province = 556 #Lower Doab
+			}
+		}
+		obj_buddhist_holy_war = {
+			allow = {
+				OR = {
+					religion = buddhism
+					religion = mahayana
+					religion = vajrayana
+					religion = bon_reformed #Too lazy to make a unique one for these people
+				}
+			}
+			OR = {
+				owns_core_province = 677 #Lhasa
+				owns_core_province = 2133 #Dege
+				owns_core_province = 601 #Sukhothai
+				owns_core_province = 584 #Ava
+				owns_core_province = 2371 #Song La
+			}
+		}
+		obj_confu_holy_war = {
+			allow = {
+				religion = confucianism
+			}
+			OR = {
+				owns_core_province = 1816 #Beijing
+				owns_core_province = 1821 #Nanjing
+				owns_core_province = 667 #Canton
+				owns_core_province = 700 #Xi'an
+				owns_core_province = 682 #Wuchang
+			}
+		}
+		obj_shinto_holy_war = {
+			allow = {
+				religion = shinto
+			}
+			OR = {
+				owns_core_province = 1020 #Kyoto
+				owns_core_province = 1832 #Yamato
+				owns_core_province = 1029 #Kai
+				owns_core_province = 1012 #Satsuma
+				owns_core_province = 1015 #Okinawa
+			}
+		}
+		obj_meso_holy_war = {
+			allow = {
+				OR = {
+					religion = nahuatl
+					religion = mesoamerican_religion
+				}
+			}
+			OR = {
+				owns_core_province = 852 #Mexico
+				owns_core_province = 850 #Tlaxcala
+				owns_core_province = 4591 #Chikinchel
+				owns_core_province = 2644 #Cholula
+				owns_core_province = 844 #Zapotec
+			}
+		}
+		obj_meso_inti_holy_war = {
+			allow = {
+				religion = inti
+			}
+			OR = {
+				owns_core_province = 808 #Cuzco
+				owns_core_province = 812 #Chanchan
+				owns_core_province = 794 #Jujuy
+				owns_core_province = 835 #Panama
+				owns_core_province = 775 #Asuncion
+			}
+		}
+		obj_african_religion_holy_war = {
+			allow = {
+				religion = shamanism
+			}
+			OR = {
+				owns_core_province = 2256 #Dagbon
+				owns_core_province = 1224 #Gonder
+				owns_core_province = 1792 #Merina
+				owns_core_province = 1184 #Zimbabwe
+				owns_core_province = 1170 #Mpemba
+			}
+		}
+		obj_totemism_religion_holy_war = {
+			allow = {
+				religion = totemism
+			}
+			OR = {
+				owns_core_province = 905 #Iowa
+				owns_core_province = 960 #Onondaga
+				owns_core_province = 987 #Niagra
+				owns_core_province = 925 #Tuskegee
+				owns_core_province = 878 #Navajo
+			}
+		}
+		obj_animism_religion_holy_war = {
+			allow = {
+				religion = totemism
+			}
+			OR = {
+				owns_core_province = 2174 #Hengyang
+				owns_core_province = 2934 #Manaus
+				owns_core_province = 775 #Asuncion
+				owns_core_province = 828 #Cartagema
+				owns_core_province = 489 #Tortuga
+			}
+		}
+		obj_tengri_holy_war = {
+			allow = {
+				religion = tengri_pagan_reformed
+			}
+			OR = {
+				owns_core_province = 2190 #Qaraqorum
+				owns_core_province = 730 #Girin
+				owns_core_province = 2358 #Altyn
+				owns_core_province = 466 #Sari
+				owns_core_province = 715 #Urumqi
+			}
+		}
+		obj_norse_holy_war = {
+			allow = {
+				religion = norse_pagan_reformed
+			}
+			OR = {
+				owns_core_province = 1 #Stockholm
+				owns_core_province = 17 #Akershus
+				owns_core_province = 12 #Sjaelland
+				owns_core_province = 370 #Reykjavik
+				owns_core_province = 980 #Beothuk #Included for BT
+			}
+		}
+		obj_baltic_holy_war = {
+			allow = {
+				religion = baltic_pagan_reformed
+			}
+			OR = {
+				owns_core_province = 272 #Vilna
+				owns_core_province = 271 #Samogitia
+				owns_core_province = 35 #Osel
+				owns_core_province = 41 #Konigsberg
+				owns_core_province = 257 #Warszawa
+			}
+		}
+		obj_finnic_holy_war = {
+			allow = {
+				religion = finnish_pagan_reformed
+			}
+			OR = {
+				owns_core_province = 27 #Abo
+				owns_core_province = 33 #Neva
+				owns_core_province = 304 #Penza
+				owns_core_province = 18 #Lappland
+				owns_core_province = 1082 #Kazan
+			}
+		}
+		obj_slavic_holy_war = {
+			allow = {
+				religion = slavic_pagan_reformed
+			}
+			OR = {
+				owns_core_province = 295 #Moskva
+				owns_core_province = 293 #Smolensk
+				owns_core_province = 280 #Kiev
+				owns_core_province = 310 #Novgorod
+				owns_core_province = 257 #Warszawa
+			}
+		}
+		obj_hellenic_holy_war = {
+			allow = {
+				religion = hellenic_pagan
+			}
+			OR = {
+				owns_core_province = 146 #Athens
+				owns_core_province = 145 #Morea
+				owns_core_province = 151 #Constantinople
+				owns_core_province = 318 #Sugla
+				owns_core_province = 118 #Rome
+			}
 		}
 		
 		obj_many_vassals_f = { #Feudal Society
