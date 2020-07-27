@@ -35,11 +35,8 @@ country_event = {
 				}
 				release = CUM
 				CUM = {
-					change_government = tribal
-					add_government_reform = tribal_federation
-					add_government_reform = martial_society_reform
-					add_government_reform = lip_service_reform
-					add_government_reform = retain_tribal_hierarchy_reform
+					change_government = monarchy
+					add_government_reform = golden_bull_federation_government
 					#adopt_reform_progress = ROOT
 					capital_scope = {
 						build_to_forcelimit = {
@@ -64,6 +61,8 @@ country_event = {
 		name = "flavor_cum.1.a"
 		create_march = CUM
 		CUM = {
+			change_government = monarchy
+			add_government_reform = golden_bull_federation_government
 			add_opinion = {
 				who = ROOT
 				modifier = allowed_kalmyk_settlement
@@ -81,6 +80,10 @@ country_event = {
 			who = CUM
 			casus_belli = cb_independence_war
 			war_goal_province = 4126 #Bacs
+		}
+		CUM = {
+			change_government = monarchy
+			add_government_reform = golden_bull_federation_government
 		}
 	}
 	# option = {

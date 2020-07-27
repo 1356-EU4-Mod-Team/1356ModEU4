@@ -42,6 +42,6 @@ government_rank = 2
 
 1499.1.1 = {
 	government = monarchy
-	add_government_reform = feudalism_reform
+	add_government_reform = golden_bull_federation_government
 	technology_group = eastern
 }

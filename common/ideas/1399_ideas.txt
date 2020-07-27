@@ -2865,3 +2865,87 @@ BLU_ideas = {
 	}
 }
 
+UMI_ideas = { #Mari TAG ideas
+	start = {
+		defensiveness = 0.15
+		global_supply_limit_modifier = 0.33
+	}
+	bonus = {
+		administrative_efficiency = 0.1
+	}
+	trigger = {
+		tag = UMI
+	}
+	free = yes
+	
+	umi_idea_1 = {
+		production_efficiency = 0.15
+	}	
+	umi_idea_2 = {
+	 	ae_impact = -0.2
+	}
+	umi_idea_3 = {
+		movement_speed = 0.1
+	}
+	umi_idea_4 = {
+		culture_conversion_cost = -0.2
+		global_unrest = -2
+	}
+	umi_idea_5 = {
+		reinforce_speed = 0.25
+		manpower_recovery_speed = 0.15 
+	}	
+	umi_idea_6 = { 
+		reserves_organisation = 0.1
+		discipline = 0.05
+	}
+	umi_idea_7 = {
+		auto_explore_adjacent_to_colony = yes
+		colonists = 1
+		global_colonial_growth = 20
+	}
+}
+
+MRD_ideas = { #Mordvin TAG ideas
+	start = {
+		hostile_attrition = 2
+		global_supply_limit_modifier = 0.33
+	}
+	bonus = {
+		administrative_efficiency = 0.1
+	}
+	trigger = {
+		tag = MRD
+	}
+	free = yes
+	
+	mrd_idea_1 = { #Generals
+		free_leader_pool = 1
+		leader_cost = -0.1
+	}	
+	mrd_idea_2 = {
+		shock_damage_received = -0.1 
+		fire_damage_received = -0.1 
+	}
+	mrd_idea_3 = { #
+		state_maintenance_modifier = -0.2
+	}
+	mrd_idea_4 = {
+		army_tradition_decay = -0.1
+		army_tradition_from_battle = 0.5
+	}
+	mrd_idea_5 = { #Home Advantage
+		merchants = 1
+		caravan_power = 0.25
+	}	
+	mrd_idea_6 = { 
+		global_regiment_cost = -0.2
+		global_regiment_recruit_speed = -0.2
+	}
+	mrd_idea_7 = { #Colonize Eastward
+		auto_explore_adjacent_to_colony = yes
+		colonists = 1
+		global_colonial_growth = 20
+	}
+}
+
