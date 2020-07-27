@@ -16,6 +16,7 @@ is_city = yes
 fort_15th = yes # Klis Fortress
 add_core = HUN
 add_core = CRO
+add_core = DAL
 
 discovered_by = western
 discovered_by = eastern

@@ -2,6 +2,8 @@
 
 owner = PBG
 controller = PBG 
+add_core = PBG
+
 capital = "Salins"
 is_city = yes
 add_local_autonomy = 30 # The counts of Chalon-Arlay were very dominant in the region
