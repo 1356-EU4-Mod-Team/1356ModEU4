@@ -182,3 +182,33 @@ viking_republic_government_name_flavor = { #Special thanks to Raumarici on disco
 		government = republic
 	}
 }
+
+pirate_government_names_barbary_pirates = {
+	rank = {
+		1 = BARBARY_PIRATE_DUCHY
+		2 = BARBARY_PIRATE_KINGDOM
+		3 = BARBARY_PIRATE_EMPIRE
+	}
+
+	ruler_male = {
+		1 = CAPTAIN
+		2 = GRAND_CAPTAIN
+		3 = GRAND_ADMIRAL
+	}
+
+	ruler_female = {
+		1 = CAPTAIN_fem
+		2 = GRAND_CAPTAIN_fem
+		3 = ADMIRAL_fem
+	}
+
+	trigger = {
+		has_reform = pirate_republic_reform
+		NOT = { has_reform = pirate_king_reform }
+		NOT = { primary_culture = greek }
+		OR = {
+			culture_group = berber_culture_group
+			culture_group = maghrebi
+		}
+	}
+}

@@ -272,10 +272,10 @@ estate_nestorians_encourage_growth = {
 					name = estate_nestorian_encourage_growth_modifier
 					duration = -1
 				}
-				add_country_modifier = {
-					name = encourage_nestorian_growth
-					duration = -1
-				}
+			}
+			add_country_modifier = {
+				name = encourage_nestorian_growth
+				duration = -1
 			}
 		}
 	}
@@ -677,10 +677,10 @@ estate_zoroastrians_encourage_growth = {
 					name = estate_zoroastrian_encourage_growth_modifier
 					duration = -1
 				}
-				add_country_modifier = {
-					name = encourage_zoroastrian_growth_modifier
-					duration = -1
-				}
+			}
+			add_country_modifier = {
+				name = encourage_zoroastrian_growth_modifier
+				duration = -1
 			}
 		}
 	}

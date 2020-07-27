@@ -15,8 +15,10 @@ on_startup = {
 		WarTwoPetersFlavor.2
 	}
 	if = {
-		limit = { tag = SWA }
-		NOT = { is_year = 1360 }
+		limit = { 
+			tag = SWA 
+			NOT = { is_year = 1360 }
+		}
 		country_event = { id = barbarossa.10 }
 	}
 	if = {

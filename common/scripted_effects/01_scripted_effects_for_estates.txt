@@ -1111,7 +1111,7 @@ on_province_owner_change_estate_privileges_effect = {
 	if = { #1356
 		limit = {
 			owner = {
-				has_estate_privilege = encourage_zoroastrian_growth_modifier
+				has_estate_privilege = estate_zoroastrians_encourage_growth
 			}
 			NOT = { religion_group = muslim }
 			NOT = { religion = zoroastrian }
@@ -1124,7 +1124,7 @@ on_province_owner_change_estate_privileges_effect = {
 	if = { #1356
 		limit = {
 			owner = {
-				has_estate_privilege = encourage_nestorian_growth_modifier
+				has_estate_privilege = estate_nestorians_encourage_growth
 			}
 			NOT = { religion_group = muslim }
 			NOT = { religion = nestorian }

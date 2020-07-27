@@ -1595,7 +1595,7 @@ chinese_kingdom_government_reform = {
 #	}
 #}
 
-german_kingdom = {
+german_kingdoms = {
 	icon = "crown"
 	allow_normal_conversion = no
 	monarchy = yes

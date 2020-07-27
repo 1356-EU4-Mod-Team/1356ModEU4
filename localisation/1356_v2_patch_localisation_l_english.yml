@@ -456,6 +456,12 @@
  golden_bull_federation_government: "Federation"
  golden_bull_federation_government_desc: "Our former tribe has unified many smaller tribes into one big federation for the betterment of our cultures. Federations work similar to a Parliament where any tribe can bring something up for discussion and to vote on. Each member of the Federation gets one vote. In times of war if it is in defense of the Federation all tribes are required to provide troops for defense, however this is not required for acts of aggression on the Federations part."
  
+ BARBARY_PIRATE_DUCHY: "Barbary Pirates"
+ BARBARY_PIRATE_KINGDOM: "Barbary Pirates"
+ BARBARY_PIRATE_EMPIRE: "Barbary Empire"
+ hre_centralized: "Centralized Holy Roman Empire"
+ hre_heritable: "Inheritable Holy Roman Empire"
+ hre_traditional: "Traditional Holy Roman Empire"
 
  #OVERRIDES
  CS_NO_TECH:0 "You need diplomatic tech level 29 to create Client State."

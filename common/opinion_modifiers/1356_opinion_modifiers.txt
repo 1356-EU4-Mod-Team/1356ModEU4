@@ -99,3 +99,15 @@ supported_us_trastamara_france = {
 	yearly_decay = 1
 }
 
+hre_centralized = {
+	opinion = -50
+	yearly_decay = 1
+}
+hre_heritable = {
+	opinion = -50
+	yearly_decay = 1
+}
+hre_traditional = {
+	opinion = 50
+	yearly_decay = 1
+}

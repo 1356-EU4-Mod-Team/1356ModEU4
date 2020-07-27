@@ -8,6 +8,12 @@ technology_group = western
 add_accepted_culture = sorbian
 add_army_professionalism = 0.1
 
+change_estate_land_share = {
+	estate = estate_burghers
+	share = -5
+}
+
+
 1356.12.24 = {
 	monarch = {
 		name = "Wenzel IV"

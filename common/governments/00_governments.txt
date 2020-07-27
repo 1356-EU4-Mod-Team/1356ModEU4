@@ -1,5 +1,49 @@
 
 monarchy = {
+	basic_reform = monarchy_mechanic
+
+	legacy_government = {
+		despotic_monarchy
+		feudal_monarchy
+		administrative_monarchy
+		constitutional_monarchy
+		enlightened_despotism
+		revolutionary_empire
+		english_monarchy_legacy
+		mamluk_government_legacy
+		feudal_theocracy_legacy
+		elective_monarchy_legacy
+		celestial_empire_legacy
+		ottoman_government_legacy
+		prussian_monarchy_legacy
+		iqta_legacy
+		daimyo_legacy
+		shogunate_legacy
+		indep_daimyo_legacy
+		principality_legacy
+		tsardom_legacy
+		#holy_state_legacy
+		###1356 ADDITION#######
+		elective_feudal_monarchy
+		chinese_kingdom_government
+		timurid_government
+		barbary_sultanate
+		kalmar_union_legacy
+		french_vassal_feudal_monarchy
+		earldom_legacy
+		beylik_legacy
+		#archduchy_legacy
+		serbian_government_legacy
+		delhi_sultanate_legacy
+		bengali_sultanate_legacy
+		delhian_empire_legacy
+		bahamis_sultanate_legacy
+		vij_government_legacy		
+		gondi_kingdom_kingdom
+		byzantine_empire_gov
+		#####END 1356 CHANGES#####
+	}
+
 	reform_levels = {
 		feudalism_vs_autocracy = {
 			reforms = {
@@ -39,7 +83,6 @@ monarchy = {
 				kalmar_union_reform
 				beylik_reform
 				earldom_reform
-				golden_bull_federation_government
 				#archduchy_reform
 				byzantine_empire_reform
 				serbian_government_reform
@@ -50,6 +93,7 @@ monarchy = {
 				vij_government_reform
 				gondi_kingdom_kingdom_reform
 				german_kingdoms
+				golden_bull_federation_government
 				#####END 1356 CHANGES#####
 			}
 		}
@@ -149,49 +193,6 @@ monarchy = {
 		}
 	}
 
-	basic_reform = monarchy_mechanic
-
-	legacy_government = {
-				despotic_monarchy
-		feudal_monarchy
-		administrative_monarchy
-		constitutional_monarchy
-		enlightened_despotism
-		revolutionary_empire
-		english_monarchy_legacy
-		mamluk_government_legacy
-		feudal_theocracy_legacy
-		elective_monarchy_legacy
-		celestial_empire_legacy
-		ottoman_government_legacy
-		prussian_monarchy_legacy
-		iqta_legacy
-		daimyo_legacy
-		shogunate_legacy
-		indep_daimyo_legacy
-		principality_legacy
-		tsardom_legacy
-		#holy_state_legacy
-		###1356 ADDITION#######
-		elective_feudal_monarchy
-		chinese_kingdom_government
-		timurid_government
-		barbary_sultanate
-		kalmar_union_legacy
-		french_vassal_feudal_monarchy
-		earldom_legacy
-		beylik_legacy
-		#archduchy_legacy
-		serbian_government_legacy
-		delhi_sultanate_legacy
-		bengali_sultanate_legacy
-		delhian_empire_legacy
-		bahamis_sultanate_legacy
-		vij_government_legacy		
-		gondi_kingdom_kingdom
-		byzantine_empire_gov
-		#####END 1356 CHANGES#####
-	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
 

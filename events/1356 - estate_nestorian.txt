@@ -338,7 +338,7 @@ country_event = {
 				is_city = yes
 			}
 			add_province_modifier = {
-				name = "repression_of_influential_nestorian"
+				name = "repression_of_influential_dhimmi"
 				duration = 3650
 			}
 		}
@@ -454,7 +454,7 @@ country_event = {
 			}
 		}
 		add_country_modifier = {
-			name = "nestorian_administrators"
+			name = "dhimmi_administrators"
 			duration = 5475
 		}
 		add_estate_influence_modifier = {
