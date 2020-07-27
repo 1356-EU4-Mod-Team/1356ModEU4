@@ -39,6 +39,7 @@ monarchy = {
 				kalmar_union_reform
 				beylik_reform
 				earldom_reform
+				golden_bull_federation_government
 				#archduchy_reform
 				byzantine_empire_reform
 				serbian_government_reform
@@ -211,6 +212,7 @@ monarchy = {
 		french_vassal_feudal_monarchy_reform
 		earldom_reform
 		beylik_reform
+		golden_bull_federation_government
 		#####END 1356 CHANGES#####
 	}
 
@@ -247,6 +249,7 @@ monarchy = {
 		bahamis_sultanate_reform
 		vij_government_reform
 		gondi_kingdom_kingdom_reform
+		golden_bull_federation_government
 		#####END 1356 CHANGES#####
 		
 	}

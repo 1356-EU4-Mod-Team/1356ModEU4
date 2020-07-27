@@ -199,3 +199,7 @@ SIA = "countries/Siam.txt"
 
 #Italy
 ABR = "countries/Aborea.txt"
+
+#Russian Region
+MRD = "countries/MordvinNation.txt"
+UMI = "countries/MariNation.txt"

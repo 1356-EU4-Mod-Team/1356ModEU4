@@ -1,0 +1,181 @@
+country_decisions = {
+
+	form_mari_nation = { 
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_mari_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = UMI }
+			NOT = { tag = MOS }
+			NOT = { tag = NOV }
+			NOT = { exists = UMI }
+			OR = {
+				primary_culture = mari_culture
+				tag = MR1
+				tag = MR2
+				tag = MRR
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4264 #Tetyushi
+				province_id = 2422 #Veda-Suvar
+				province_id = 306 #Nizhny Novgorod
+				province_id = 1083 #Vetluga
+				province_id = 1082 #Kazan
+				province_id = 1079 #Viataka
+				province_id = 4267 #Bolgar
+				province_id = 2421 #Juketau
+				province_id = 4265 #Ar-Chally
+				province_id = 1972 #Udmurtia
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			adm_tech = 10
+			primary_culture = mari_culture
+			owns_core_province = 4264 #Tetyushi
+			owns_core_province = 2422 #Veda-Suvar
+			owns_core_province = 306 #Nizhny Novgorod
+			owns_core_province = 1083 #Vetluga
+			owns_core_province = 1082 #Kazan
+			owns_core_province = 1079 #Viataka
+			owns_core_province = 4267 #Bolgar
+			owns_core_province = 2421 #Juketau
+			owns_core_province = 4265 #Ar-Chally
+			owns_core_province = 1972 #Udmurtia
+		}
+		effect = {
+			change_tag = UMI
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					government = tribal
+				}
+				change_government = monarchy
+			}
+			add_government_reform = golden_bull_federation_government
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 15
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			
+			set_country_flag = formed_mari_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_mordvin_nation = { 
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_mordvin_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				tag = MI1
+				tag = MIA
+				primary_culture = mordvin
+			}
+			NOT = { tag = MRD }
+			NOT = { tag = MOS }
+			NOT = { tag = NOV }
+			NOT = { exists = MRD }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2423 #Alatyr
+				province_id = 304 #Penza
+				province_id = 1081 #Simbirsk
+				province_id = 2419 #Kanadey
+				province_id = 2422 #Veda-Suvar
+				province_id = 306 #Nizhny Novgorod
+				province_id = 1754 #Murom
+				province_id = 4254 #Starodub
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			primary_culture = mordvin
+			adm_tech = 10
+			owns_core_province = 2423 #Alatyr
+			owns_core_province = 304 #Penza
+			owns_core_province = 1081 #Simbirsk
+			owns_core_province = 2419 #Kanadey
+			owns_core_province = 2422 #Veda-Suvar
+			owns_core_province = 306 #Nizhny Novgorod
+			owns_core_province = 1754 #Murom
+			owns_core_province = 4254 #Starodub
+		}
+		effect = {
+			change_tag = MRD
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					government = tribal
+				}
+				change_government = monarchy
+			}
+			add_government_reform = golden_bull_federation_government
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 15
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_mordvin_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

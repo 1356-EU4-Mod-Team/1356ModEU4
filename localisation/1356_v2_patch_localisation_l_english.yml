@@ -443,6 +443,19 @@
  
  gunpowder_institution_coal_modifier_tooltip: "Province has latent trade good: Coal"
  gunpowder_institution_copper_or_iron_tooltip: "Province produces Copper or Iron"
+ 
+ UMI: "Mari"
+ UMI_ADJ: "Mari"
+ MRD: "Mordvin"
+ MRD_ADJ: "Mordvin"
+ 
+ form_mari_nation_title: "Unite the Mari Peoples"
+ form_mari_nation_desc: "Our tribes have been fragmented long before Genghis and his horde rode westward and subjugated our people. Now that the yoke of the Mongol Empire is slowly collapsing around us we have a change to finally unite our fragmeneted tribes, else we risk being absorbed into yet another large empire."
+ form_mordvin_nation_title: "Unite the Mordvin Peoples"
+ form_mordvin_nation_desc: "Our tribes have been fragmented long before Genghis and his horde rode westward and subjugated our people. Now that the yoke of the Mongol Empire is slowly collapsing around us we have a change to finally unite our fragmeneted tribes, else we risk being absorbed into yet another large empire."
+ golden_bull_federation_government: "Federation"
+ golden_bull_federation_government_desc: "Our former Tribe has unified many smaller tribes into one big federation for the betterment of our cultures. Federations work similar to a Parliament where any tribe can bring something up for discussion and to vote on. Each member of the Federation gets one vote. In times of war if it is in defense of the Federation all tribes are required to provide troops for defense, however this is not required for acts of aggression on the Federations part."
+ 
 
  #OVERRIDES
  CS_NO_TECH:0 "You need diplomatic tech level 29 to create Client State."
