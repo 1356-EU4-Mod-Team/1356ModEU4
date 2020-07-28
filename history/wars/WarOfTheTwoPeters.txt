@@ -11,6 +11,8 @@ war_goal = {
 1356.12.26 = { # Claim in kingdom of Valencia, more access to mediterrean sea
 	add_attacker = CTR
 	add_attacker = ARA
+	add_attacker = MJO
+	#add_attacker = SAR #Excluded for Balance
 	add_defender = CAS
 	add_defender = POR	
 }
@@ -19,6 +21,8 @@ war_goal = {
 1369.3.23 = { # Start of Castillian Civil War
 	rem_attacker = CTR
 	rem_attacker = ARA
+	rem_attacker = MJO
+	#rem_attacker = SAR 
 	rem_defender = CAS
 	rem_defender = POR
 }
