@@ -1,8 +1,8 @@
 #4365 - Mann
 
-owner = ENG
-controller = ENG
-culture = highland_scottish
+owner = KOI
+controller = KOI
+culture = manx_culture
 religion = catholic
 hre = no
 base_tax = 1 
@@ -12,7 +12,6 @@ base_manpower = 1
 capital = "Castletown"
 is_city = yes
 add_core = KOI
-add_core = SCO
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
@@ -20,7 +19,6 @@ discovered_by = eastern
 
 
 
-1356.1.1  = { owner = KOI controller = KOI }
 1399.1.1  = {owner = ENG controller = ENG add_core = ENG }
 1585.1.1 = { religion = protestant }
 1707.5.12 = {

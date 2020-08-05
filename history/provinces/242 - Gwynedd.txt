@@ -20,6 +20,7 @@ discovered_by = ottoman
 discovered_by = eastern
 
 1399.1.1  = { unrest = 20 } # Buildup to the Welsh Revolt
+1400.9.16 = { revolt = { type = pretender_rebels size = 2 name = "Owain Glyndwr" leader = "Owain Glyndwr" } } # The Welsh Revolt
 1404.1.1  = { unrest = 0 revolt = {} owner = WLS controller = WLS }
 1415.1.1  = { unrest = 0 revolt = {} owner = ENG controller = ENG add_core = ENG } # English rule is restored
 1453.1.1  = { unrest = 5 } # Start of the War of the Roses

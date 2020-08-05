@@ -5,6 +5,7 @@ technology_group = western
 primary_culture = welsh
 religion = catholic
 capital = 242	# Gwynedd
+historical_friend = NOL
 
 1400.9.16 = {
 	monarch = {

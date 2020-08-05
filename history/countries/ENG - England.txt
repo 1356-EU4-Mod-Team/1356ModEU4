@@ -11,6 +11,7 @@ historical_friend = BUR
 historical_friend = POR
 historical_rival = FRA
 historical_friend = MNF
+historical_friend = KOI
 capital = 236 # London
 national_focus = DIP
 

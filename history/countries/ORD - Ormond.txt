@@ -6,6 +6,17 @@ primary_culture = irish
 religion = catholic
 capital = 4377	# Ormond
 
+1356.1.1 = {
+	monarch = { #Made up person
+		name = "Brian"
+		dynasty = "O' Kennedy"
+		birth_date = 1340.12.2
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
 1405.9.7 = {
 	monarch = {
 		name = "James IV"

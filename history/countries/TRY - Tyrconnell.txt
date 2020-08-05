@@ -6,6 +6,17 @@ primary_culture = irish
 religion = catholic
 capital = 4380	# Donegal
 
+1356.1.1 = { #Made up person, correct dynasty
+	monarch = {
+		name = "Neachtan"
+		dynasty = "Ó Domhnaill"
+		culture = irish
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
 1439.1.1 = {
 	monarch = {
 		name = "Neachtan"

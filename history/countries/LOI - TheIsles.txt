@@ -6,6 +6,28 @@ technology_group = western
 capital = 4364 # inner hebrides
 government_rank = 1
 
+1356.1.1 = {
+	monarch = {
+		name = "John"
+		dynasty = "MacDonald"
+		culture = highland_scottish
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1386.1.1 = {
+	monarch = {
+		name = "Domhnall"
+		dynasty = "MacDonald"
+		culture = highland_scottish
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
 1423.1.1 = {
 	monarch = {
 		name = "Alasdair"

@@ -11,7 +11,6 @@ base_production = 3
 trade_goods = cloth
 base_manpower = 2
 capital = "York"
-estate = estate_nobles
 is_city = yes
 add_core = ENG
 add_core = NOL
@@ -27,6 +26,7 @@ center_of_trade = 1
 1385.1.1   = { owner = YRK controller = YRK remove_core = NOL remove_core = ENG }
 1405.1.1 = { culture = english }
 1415.10.25 = { owner = ENG controller = ENG add_core = ENG}
+
 1453.1.1   = { unrest = 5 } # Start of the War of the Roses
 1459.9.23  = { unrest = 0 revolt = { type = pretender_rebels size = 3 leader = "Edward of YRKk" } controller = REB } # The Battle of Blore Heath
 1459.10.12 = { revolt = {} unrest = 5 } # The Lancastrians are back in control after the battle of Ludford Bridge

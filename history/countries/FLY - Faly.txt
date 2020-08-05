@@ -6,6 +6,17 @@ primary_culture = irish
 religion = catholic
 capital = 4379	# Offaly
 
+1356.1.1 = { #Made up person, correct dynasty
+	monarch = {
+		name = "An Calbhach"
+		dynasty = "Ua Conchobhair Failghe"
+		culture = irish
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
 1425.1.1 = {
 	monarch = {
 		name = "An Calbhach"
@@ -14,10 +25,6 @@ capital = 4379	# Offaly
 		dip = 4
 		mil = 2
 	}
-}
-
-1440.1.1 = {
-	add_government_reform = earldom_reform
 }
 
 1458.1.1 = {

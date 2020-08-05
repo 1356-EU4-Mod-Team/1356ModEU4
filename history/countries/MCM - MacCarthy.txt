@@ -6,9 +6,20 @@ primary_culture = irish
 religion = catholic
 capital = 4378	# Kingdom of Desmond
 
+1356.1.1 = { #Made up person, correct dynasty
+	monarch = {
+		name = "Domhnall"
+		dynasty = "MacCarthy"
+		culture = irish
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
 1428.1.1 = {
 	monarch = {
-		name = "Domhnall an Dana"
+		name = "Domhnall II"
 		dynasty = "MacCarthy"
 		adm = 3
 		dip = 3
@@ -16,10 +27,6 @@ capital = 4378	# Kingdom of Desmond
 	}
 }
 
-1440.1.1 = {
-	government = monarchy
-	add_government_reform = earldom_reform
-}
 
 1469.1.1 = {
 	monarch = {

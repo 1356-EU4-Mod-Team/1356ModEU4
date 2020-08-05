@@ -8,6 +8,7 @@ religion = catholic
 capital = 244	# Chester
 fixed_capital = 244 # Cannot move capital away from this province & no power cost to move to it
 
+
 1345.9.22 = { 
 	capital = 244
 	monarch = {
@@ -72,4 +73,14 @@ fixed_capital = 244 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1405.1.1 = { primary_culture = english }
+1399.2.3 = { #AKA Henry IV Lancaster of England
+	monarch = {
+		name = "Henry II"
+		dynasty = "Lancaster"
+		culture = english
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+	primary_culture = english
+}

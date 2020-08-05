@@ -8,6 +8,17 @@ capital = 375	# Cork
 
 # Kings of Thomond
 
+1356.1.1 = { #Made up person, correct dynasty
+	monarch = {
+		name = "Turlough II"
+		dynasty = "O'Brien"
+		culture = irish
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
 1375.1.1 = {
 	monarch = {
 		name = "Turlough III"
@@ -69,7 +80,6 @@ capital = 375	# Cork
 # Tadhg deposed
 
 1438.1.1 = {
-	add_government_reform = earldom_reform
 	monarch = {
 		name = "Mathghamhain Dall"
 		dynasty = "O'Brien"
