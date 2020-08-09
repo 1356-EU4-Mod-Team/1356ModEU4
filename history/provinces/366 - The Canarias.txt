@@ -10,9 +10,8 @@ hre = no
 base_tax = 3 
 base_production = 3
 base_manpower = 1
-native_size = 5
-native_ferocity = 1
-native_hostileness = 0
+discovered_by = muslim
+discovered_by = ottoman
 
 1356.12.24  = { 
 	owner = HAM
@@ -30,21 +29,20 @@ native_hostileness = 0
 	capital = "Las Palmas"
 } #BT Out
 
-1402.1.1 = {
+1479.1.1 = {
 	discovered_by = western
-	discovered_by = muslim
-	discovered_by = ottoman
 	discovered_by = CAS
-
 	owner = CAS
 	controller = CAS
 	add_core = CAS
 	is_city = yes
+	#trade_goods = slaves
+	culture = portugese
 	religion = catholic
-	culture = castillian	
 	trade_goods = sugar
-	remove_core = GUN
-} # Castilian control
+	remove_core = GUN #1356
+}
+
 #1478.1.1 = { capital = "Las Palmas" }
 1516.1.23 = {
 	controller = SPA

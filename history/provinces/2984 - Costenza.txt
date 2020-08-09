@@ -12,6 +12,7 @@ base_manpower = 1
 capital = "Cosenza"
 is_city = yes 
 add_core = NAP
+add_core = CLB
 
 
 
@@ -21,7 +22,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
-1356.12.24  = { hre = yes owner = SIC controller = SIC remove_core = NAP add_core = SIC add_core = CLB add_claim = BYZ } #BT In
+1356.12.24  = { hre = yes owner = SIC controller = SIC remove_core = NAP add_core = SIC add_claim = BYZ } #BT In
 1356.12.26  = { hre = no owner = NAP controller = NAP add_core = NAP remove_core = SIC remove_claim = BYZ } #BT Out
 
 1494.1.1 = { add_core = FRA } # Angevine claims

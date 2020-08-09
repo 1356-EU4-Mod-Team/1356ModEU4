@@ -12,15 +12,17 @@ base_manpower = 2
 capital = "Reggio di Calabria"
 is_city = yes 
 add_core = NAP
+add_core = CLB
+add_core = SIC
 
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { hre = yes owner = SIC controller = SIC add_core = SIC add_core = CLB add_claim = BYZ remove_core = NAP } #BT In
+1356.12.24  = { hre = yes owner = SIC controller = SIC add_claim = BYZ remove_core = NAP } #BT In
 
-1356.12.26  = { hre = no owner = NAP controller = NAP add_core = NAP remove_core = CLB remove_core = SIC remove_claim = BYZ } #BT Out
+1356.12.26  = { hre = no owner = NAP controller = NAP add_core = NAP remove_claim = BYZ } #BT Out
 
 
 1494.1.1 = { add_core = FRA } # Angevine claims

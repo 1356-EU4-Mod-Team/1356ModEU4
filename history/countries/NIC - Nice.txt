@@ -1,10 +1,14 @@
 government = republic
-add_government_reform = free_city
+add_government_reform = signoria_reform
 government_rank = 1
 technology_group = western
 primary_culture = ligurian
 religion = catholic
 capital = 102 # Nice
+
+1356.12.24 = {
+	add_government_reform = free_city
+}
 
 1356.12.26 = {
 	add_government_reform = signoria_reform

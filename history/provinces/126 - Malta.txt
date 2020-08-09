@@ -12,17 +12,18 @@ base_manpower = 2
 capital = "Mdina" 
 is_city = yes
 add_core = SIC
+add_core = JAI
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { 
-				owner = KNI controller = KNI add_core = KNI
+				owner = KNI controller = KNI add_core = KNI remove_core = JAI
 } #BT In
 
 1356.12.26  = { 
-				owner = SIC controller = SIC remove_core = KNI
+				owner = SIC controller = SIC remove_core = KNI add_core = JAI
 } #BT Out
 
 1409.7.25 = {
@@ -31,6 +32,10 @@ discovered_by = ottoman
 	add_core = ARA
 	add_core = NAP
 } # Martin I inherits Sicily from his son
+
+1440.1.1 = { add_core = NAP }
+
+
 1516.1.23 = {
 	owner = SPA
 	controller = SPA
