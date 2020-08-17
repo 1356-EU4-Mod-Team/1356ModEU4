@@ -8,15 +8,15 @@ is_city = yes
 culture = poitou
 religion = catholic 
 hre = no
-base_tax = 5 
+base_tax = 4 
 
-base_production = 5
+base_production = 4
 trade_goods = salt
-base_manpower = 3
+base_manpower = 2
 add_core = FRA
 add_core = POU
 add_claim = ENG
-estate = estate_burghers
+
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -27,7 +27,7 @@ discovered_by = ottoman
 
 1357.9.23  = { controller = FRA }
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
-1375.6.27  = { owner = FRA controller = FRA } # Treaty of Bruges
+1375.6.27  = { owner = ORL controller = ORL add_core = ORL } # Treaty of Bruges
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 1560.1.1   = { religion = reformed }
 1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear

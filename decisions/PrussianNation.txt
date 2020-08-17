@@ -74,11 +74,6 @@ country_decisions = {
 				NOT = { exists = PRU }
 				ai = no
 			}
-			OR = {
-				#1356
-				is_religion_enabled = protestant
-				is_religion_enabled = reformed
-			}
 		}
 		provinces_to_highlight = {
 			OR = {

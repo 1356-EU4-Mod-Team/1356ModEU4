@@ -27,6 +27,9 @@ war_goal = {
 	add_defender = ORL
 	add_defender = BLS
 	add_defender = FOZ
+	add_defender = FBL
+	add_defender = FMA
+	add_defender = FPL
 }
 
 1356.12.26 = { # 1356.9.19 = { #Original
@@ -72,4 +75,7 @@ war_goal = {
 	rem_defender = ORL
 	rem_defender = BLS
 	rem_defender = FOZ
+	rem_defender = FBL
+	rem_defender = FMA
+	rem_defender = FPL
 }

@@ -92,8 +92,9 @@ monarchy = {
 				bahamis_sultanate_reform
 				vij_government_reform
 				gondi_kingdom_kingdom_reform
-				german_kingdoms
+				german_kingdom
 				golden_bull_federation_government
+				golden_bull_composite_monarchy
 				#####END 1356 CHANGES#####
 			}
 		}
@@ -214,6 +215,7 @@ monarchy = {
 		earldom_reform
 		beylik_reform
 		golden_bull_federation_government
+		golden_bull_composite_monarchy
 		#####END 1356 CHANGES#####
 	}
 

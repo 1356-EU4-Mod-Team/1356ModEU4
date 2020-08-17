@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = french_vassal_feudal_monarchy_reform
+government_rank = 1 #County
+technology_group = western
+primary_culture = occitain
+religion = catholic
+capital = 194	# Perigord
+fixed_capital = 194 # Cannot move capital away from this province & no power cost to move to it
+
+1336.1.1 = {
+	monarch = {
+		name = "Roger-Bernard"
+		dynasty = "de Talleyrand"
+		culture = cosmopolitan_french
+		birth_date = 1299.1.1 #Guesstimate
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

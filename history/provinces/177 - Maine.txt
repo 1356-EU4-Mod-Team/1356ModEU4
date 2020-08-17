@@ -14,15 +14,16 @@ base_production = 6
 trade_goods = cloth
 base_manpower = 4
 add_core = ANJ
+add_core = FMA #Maine was technally in a union under Anjou
 
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { add_core = FRA } #BT In
+1356.12.24  = { owner = ANJ controller = ANJ add_core = FRA } #BT In
 #1356.12.26  = { owner = FRA controller = FRA } #BT Out
-1356.12.26 = { owner = ANJ controller = ANJ remove_core = FRA } #BT Out  # Jean II, offers his 2nd son Louis II the duchy of Anjou
+1356.12.26 = { owner = FMA controller = FMA add_core = ANJ remove_core = FRA add_core = FMA } #BT Out  # Jean II, offers his 2nd son Louis II the duchy of Anjou
 
 1370.10.1  = { owner = ENG controller = ENG } # Captured by Robert Knoll
 1370.12.8  = { owner = ANJ controller = ANJ } # Maine is liberated after battle of pontavaillan

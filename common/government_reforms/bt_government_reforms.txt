@@ -1,18 +1,26 @@
 # New with Barbarossas Throne
 
 german_kingdom = {
-	
-	#color = { 179 120 100 }
-	
 	icon = "crown"
 	allow_normal_conversion = no
-	legacy_government = yes
 	monarchy = yes
+	lock_level_when_selected = yes
 	valid_for_new_country = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 100
+	valid_for_nation_designer = no
 	fixed_rank = 3
-	
+	potential = {
+		has_global_flag = 1356_bt_start_flag #BT startup. Prevents Standard 1356 issues.
+		OR = {
+			AND = {
+				has_global_flag = golden_bull_bt_centralized_empire_flag #Centralized Empire
+				tag = GER
+			}
+			AND = {
+				has_global_flag = golden_bull_bt_centralized_empire_flag #Centralized Empire
+				tag = SWA
+			}
+		}
+	}
 	conditional = {
 		allow = {
 			has_dlc = "Common Sense"
@@ -32,7 +40,6 @@ german_kingdom = {
 populist_dictatorship = {
 
 	allow_normal_conversion = no
-	legacy_government = yes
 	dictatorship = yes
 	lock_level_when_selected = yes
 	icon = "parliament_hall"

@@ -5,7 +5,7 @@ controller = FLA
 add_core = FLA
 is_city = yes
 capital = "Lille"
-culture = wallonian
+culture = flemish
 religion = catholic
 hre = no
 base_tax = 4
@@ -17,6 +17,10 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 fort_15th = yes
+
+1356.12.24 = { hre = yes } #BT In
+
+1356.12.26 = {	hre = no } #BT Out
 
 
 1477.1.5 = { owner = HAB controller = HAB add_core = HAB }

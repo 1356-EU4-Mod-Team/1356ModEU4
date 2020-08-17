@@ -8,10 +8,10 @@ is_city = yes
 culture = arpitan
 religion = catholic
 hre = yes
-base_tax = 5 
-base_production = 5
+base_tax = 4 
+base_production = 3
 trade_goods = wool
-base_manpower = 5
+base_manpower = 3
 add_core = DAU
 add_core = PRO
 
@@ -19,6 +19,9 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
+
+#1356.12.24 = { } #BT in
+#1356.12.26 = { } #BT out
 
 1378.1.6   = { hre = no add_core = FRA }
 1444.1.1 = { owner = FRA controller = FRA add_core = FRA }

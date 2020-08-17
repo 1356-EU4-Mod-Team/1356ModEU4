@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = french_vassal_feudal_monarchy_reform
+government_rank = 1 #County
+technology_group = western
+primary_culture = poitou
+add_accepted_culture = occitain
+religion = catholic
+capital = 4697	# La Marche
+fixed_capital = 4697 # Cannot move capital away from this province & no power cost to move to it
+
+1356.1.1 = {
+	monarch = {
+		name = "James I"
+		dynasty = "de Bourbon"
+		culture = occitain
+		birth_date = 1326.5.8 #Guesstimate
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

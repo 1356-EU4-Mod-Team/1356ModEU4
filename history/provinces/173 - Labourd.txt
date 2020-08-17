@@ -9,11 +9,11 @@ culture = gascon
 religion = catholic
 hre = no
 base_tax = 3 
-
 base_production = 3
 trade_goods = wine
 base_manpower = 4
-#add_core = ENG
+
+add_claim = ENG
 add_core = GUY
 add_core = NAV
 add_core = FRA
@@ -23,6 +23,11 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
+
+add_permanent_province_modifier = {
+	name = gironde_estuary_modifier
+	duration = -1
+}
 
 1356.12.24  = { owner = AQT controller = AQT add_core = AQT } #BT In
 1356.12.26  = { owner = GUY controller = GUY remove_core = AQT } #BT Out

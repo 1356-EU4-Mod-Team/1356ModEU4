@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
+government_rank = 2 #Kingdom
 primary_culture = cosmopolitan_french
 add_accepted_culture = gascon
 add_accepted_culture = occitain
@@ -8,6 +9,7 @@ technology_group = western
 capital = 183 # Paris
 national_focus = DIP
 historical_rival = HAB
+historical_friend = BOU
 historical_friend = SCO
 
 

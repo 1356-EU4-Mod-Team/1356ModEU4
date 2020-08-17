@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = golden_bull_composite_monarchy
 primary_culture = aragonese
 add_accepted_culture = catalan
 #add_accepted_culture = sicilian

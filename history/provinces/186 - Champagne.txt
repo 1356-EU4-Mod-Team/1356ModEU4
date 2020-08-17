@@ -8,11 +8,10 @@ is_city = yes
 culture = cosmopolitan_french
 religion = catholic
 hre = no
-base_tax = 8
-base_production = 8
+base_tax = 6
+base_production = 6
 trade_goods = wine
-base_manpower = 6
-estate = estate_church
+base_manpower = 4
 add_core = CHP
 add_core = FRA
 
@@ -24,6 +23,9 @@ extra_cost = 16
 center_of_trade = 2
 
 1349.10.6  = { add_core = NAV }
+1356.12.24  = { owner = CHP controller = CHP remove_core = NAV } #BT In
+1356.12.26  = { owner = FRA controller = FRA add_core = FRA add_core = NAV } #BT Out
+
 
 1356.12.24  = { owner = CHP controller = CHP } #BT In
 1356.12.26  = { owner = FRA controller = FRA add_core = FRA } #BT Out

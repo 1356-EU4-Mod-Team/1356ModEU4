@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = french_vassal_feudal_monarchy_reform
+government_rank = 1 #County
+technology_group = western
+primary_culture = cosmopolitan_french
+religion = catholic
+capital = 177	# Maine
+
+#1356.1.1 = { #Technally they should be independent in 1356, however it was the third son of the King of France. So until we have dynastic mechanics it stays.
+#	monarch = {
+#		name = "Louis I"
+#		dynasty = "de Valois"
+#		birth_date = 1340.11.30
+#		adm = 3
+#		dip = 3
+#		mil = 3
+#	}
+#}
+
+#Should be in a PU under Anjou

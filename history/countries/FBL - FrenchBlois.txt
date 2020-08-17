@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = french_vassal_feudal_monarchy_reform
+government_rank = 1
+technology_group = western
+primary_culture = cosmopolitan_french
+religion = catholic
+capital = 4776	# Blois
+
+1356.1.1 = { 
+	monarch = {
+		name = "Louis III"
+		dynasty = "de Blois"
+		birth_date = 1339.1.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+#Existed until 1391, then Blois (Province) went to Orleans

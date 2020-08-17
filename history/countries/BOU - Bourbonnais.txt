@@ -1,11 +1,14 @@
 government = monarchy
 add_government_reform = french_vassal_feudal_monarchy_reform
-government_rank = 1
+government_rank = 1 #Duchy
 primary_culture = cosmopolitan_french
 religion = catholic
 technology_group = western
 capital = 190	# Bourges
 fixed_capital = 190 # Cannot move capital away from this province & no power cost to move to it
+
+historical_friend = FRA
+historical_friend = VLS
 
 1342.1.29 = {
 	monarch = {

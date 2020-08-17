@@ -15,7 +15,7 @@ hre = no
 base_tax = 4
 base_production = 4
 trade_goods = iron
-base_manpower = 3
+base_manpower = 2
 add_core = AUV
 add_claim = BUR
 

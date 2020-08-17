@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1
+government_rank = 1 #Duchy
 technology_group = western
 religion = catholic
 primary_culture = arpitan
@@ -28,6 +28,9 @@ capital = 204	# Grenoble
 		mil = 2
 	}
 }
+
+#Ruled always by Frances heir the "Dauphin" 
+#Would REALLY like a way to represent this but I dont think its possible
 
 1515.1.1 = { government = monarchy
 add_government_reform = autocracy_reform }

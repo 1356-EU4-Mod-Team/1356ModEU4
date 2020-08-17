@@ -8,21 +8,18 @@ is_city = yes
 culture = cosmopolitan_french
 religion = catholic
 hre = no
-base_tax = 5 
-base_production = 5
+base_tax = 4 
+base_production = 4
 trade_goods = iron
 base_manpower = 4
 add_core = BOU
-#add_claim = BUR
 
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1399.1.1   = { add_core = FRA }
-#1435.9.21  = { remove_claim = BUR }
-1453.10.16 = { owner = FRA controller = FRA add_local_autonomy = 25 estate = estate_nobles }
+1453.10.16 = { owner = FRA controller = FRA add_core = FRA add_local_autonomy = 25 }
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 
 1531.9.22  = { owner = FRA controller = FRA } # Louise de Savoie dies, Bourbon added to France

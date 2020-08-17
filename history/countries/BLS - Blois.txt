@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = breton
 religion = catholic
 technology_group = western
-capital = 169	# Armor
+capital = 172	# Nantais
 add_historical_friend = FRA
 
 1341.4.30 = {

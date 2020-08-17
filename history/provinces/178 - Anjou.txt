@@ -1,17 +1,16 @@
 # 178 - Anjou (1356)
-# Changes: FRA/ANJ/ENG/(PRO)
 
-owner = FRA
-controller = FRA
+owner = ANJRA
+controller = ANJ
 capital = "Angers"
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic
 hre = no
-base_tax = 7
-base_production = 7
+base_tax = 5
+base_production = 5
 trade_goods = cloth
-base_manpower = 7
+base_manpower = 5
 add_core = ANJ
 fort_15th = yes 
 
@@ -20,12 +19,12 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { add_core = FRA owner = ANJ controller = ANJ } #BT In
+1356.12.24  = { add_core = FRA owner = ANJ controller = ANJ add_core = ANJ } #BT In
 1356.12.26  = { remove_core = FRA } #BT Out # Jean II, offers his 2nd son Louis II the duchy of Anjou
 
-#1356.12.26   = { controller = ENG }
+#1356.12.26   = { controller = ENG } #Commented out due to bug where AI would peace out right away
 #1357.9.23  = { controller = ANJ }
-1453.10.16 = { owner = FRA add_core = FRA controller = FRA estate = estate_church }
+1453.10.16 = { owner = FRA add_core = FRA controller = FRA  }
 #1474.8.1   = { owner = FRA controller = FRA } # Louis XI occupies Anjou because of being excluded of the Anjou inheritance
 #1476.1.1   = { owner = ANJ controller = ANJ } # Louis XI is reconciled, and Anjou is restored to Duke René
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }

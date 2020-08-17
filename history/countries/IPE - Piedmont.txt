@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1 #Duchy
+primary_culture = lombard
+religion = catholic
+technology_group = western
+capital = 1875 # Cuneo
+fixed_capital = 1875 # Cannot move capital away from this province & no power cost to move to it
+
+
+1334.1.1 = {
+	monarch = {
+		name = "James I"
+		dynasty = "di Savoia-Acaia"
+		birth_date = 1315.1.16
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

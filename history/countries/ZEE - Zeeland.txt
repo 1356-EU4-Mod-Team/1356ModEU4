@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1 #County
+technology_group = western
+religion = catholic
+primary_culture = dutch
+capital = 96	#Zeeland
+fixed_capital = 96 # Cannot move capital away from this province & no power cost to move to it
+
+1356.6.23 = {
+	monarch = { #Made up ruler
+		name = "Louis I"
+		dynasty = "von Wittelsbach"
+		birth_date = 1320.1.1
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}

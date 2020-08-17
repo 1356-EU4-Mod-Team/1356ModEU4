@@ -1,23 +1,12 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = french_vassal_feudal_monarchy_reform
 government_rank = 1
 technology_group = western
 primary_culture = cosmopolitan_french
 religion = catholic
 capital = 179	# Bourges
 
-1356.12.26 = { #Technally they should be independent in 1356, however it was the third son of the King of France. So until we have dynastic mechanics it stays.
-	monarch = {
-		name = "Jean I"
-		dynasty = "de Valois"
-		birth_date = 1340.11.30
-		adm = 4
-		dip = 5
-		mil = 2
-	}
-}
-
-1360.10.24 = {
+1356.1.1 = { #Technally they should be independent in 1356, however it was the third son of the King of France. So until we have dynastic mechanics it stays.
 	monarch = {
 		name = "Jean I"
 		dynasty = "de Valois"

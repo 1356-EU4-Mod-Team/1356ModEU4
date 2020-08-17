@@ -1595,62 +1595,6 @@ chinese_kingdom_government_reform = {
 #	}
 #}
 
-german_kingdoms = {
-	icon = "crown"
-	allow_normal_conversion = no
-	monarchy = yes
-	lock_level_when_selected = yes
-	legacy_equivalent = feudal_monarchy
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	fixed_rank = 3
-	potential = {
-		OR = { #Either? 
-			tag = SWA
-			tag = GER
-		}
-		has_global_flag = 1356_bt_start_flag #BT startup. Prevents Standard 1356 issues.
-		has_global_flag = golden_bull_bt_centralized_empire_flag #Centralized Empire
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-		has_parliament = yes
-	}
-	
-	modifiers = {
-		governing_capacity = 100
-		global_autonomy = -0.10
-		war_exhaustion = -0.02
-		unjustified_demands = -0.1
-		num_accepted_cultures = 2
-	}
-}
-
-populist_dictatorship = {
-
-	allow_normal_conversion = no
-	dictatorship = yes
-	legacy_equivalent = despotic_monarchy
-	lock_level_when_selected = yes
-	icon = "parliament_hall"
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-
-	modifiers = {
-		unjustified_demands = -0.1
-		war_exhaustion = -0.025
-		land_morale = 0.15
-	}
-
-	custom_attributes = {
-		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
-	has_term_election = no
-}
 
 golden_bull_federation_government = {
 	icon = "elective_monarchy"
@@ -1686,6 +1630,37 @@ golden_bull_federation_government = {
 		}
 	}
 }
+
+golden_bull_composite_monarchy = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = golden_bull_composite_monarchy
+			have_had_reform = golden_bull_composite_monarchy
+		}
+		OR = {
+			tag = ARA
+			tag = BUR
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		governing_capacity = 50
+		diplomatic_upkeep = 3
+		stability_cost_modifier = -0.2
+		diplomatic_reputation = 2
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	ai = {
+		factor = 2 
+	}
+}
+
 
 ######END 1356 CHANGES#####
 

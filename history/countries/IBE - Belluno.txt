@@ -1,0 +1,8 @@
+government = republic
+government_rank = 1 #County
+add_government_reform = republic_commune_government
+primary_culture = venetian
+religion = catholic
+technology_group = western
+capital = 1774 # Treviso
+

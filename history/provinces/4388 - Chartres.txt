@@ -19,9 +19,14 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.26 = { owner = FRA controller = FRA add_core = FRA }
+#Crown aquired this area in 1291 from Blois
+
+1356.12.24 = { remove_core = VLS } #BT in
+1356.12.26 = { add_core = VLS } #BT out
+
 1420.1.1 = { controller = ENG } # Captured by the English
 1437.1.1 = { controller = FRA } # Retaken by Charles VII
+
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 1571.1.1 = { unrest = 5 } # Unrest spreads in catholic territory: massacres of protestants in Rouen, Orange & Paris
 1573.8.23 = { unrest = 10 } # Saint Barthelew's Day Massacre
