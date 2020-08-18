@@ -25,6 +25,7 @@ discovered_by = ottoman
 1357.9.23  = { controller = FPL } 
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
 1375.6.27  = { owner = FPL controller = FPL add_core = FPL } # Treaty of Bruges
+1398.1.1 = { owner = ORL controller = ORL add_core = ORL }
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 1560.1.1   = { religion = reformed }
 1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear

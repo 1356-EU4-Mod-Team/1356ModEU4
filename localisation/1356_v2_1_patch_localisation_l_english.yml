@@ -4,4 +4,7 @@
  provencial_culture: "Provencial"
  golden_bull_composite_monarchy: "Composite Monarchy"
  golden_bull_composite_monarchy_desc: "Composite Monarchies are Monarchies that rule many nations under Personal Unions, however the other Unions are ruled by their local languages and customs. These other Unions tend to have more autonomy than your standard Personal Unions."
+ goldenbull_french_maint.1.t: "Hidden Event"
+ goldenbull_french_maint.1.d: "This hidden event is a pulse to check for if France has any Vanilla Vassals before a specific date, and if so convert them into French Feudal Subjects!"
+ goldenbull_french_maint.1.a: "Hidden Response"
  

@@ -4,11 +4,11 @@ emp_france_missions_1 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		always = no
 	}
 	potential = {
 		has_dlc = "Emperor"
 		tag = FRA
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -255,11 +255,11 @@ emp_france_missions_1_b = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		always = no
 	}
 	potential = {
 		has_dlc = "Emperor"
 		tag = FRA
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no 
 	}
@@ -419,11 +419,11 @@ emp_france_missions_2 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		always = no
 	}
 	potential = {
 		has_dlc = "Emperor"
 		tag = FRA
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -884,11 +884,11 @@ emp_france_missions_2_b = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		always = no
 	}
 	potential = {
 		has_dlc = "Emperor"
 		tag = FRA
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no 
 	}
@@ -978,11 +978,11 @@ emp_france_missions_2_c = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		always = no
 	}
 	potential = {
 		has_dlc = "Emperor"
 		tag = FRA
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1038,11 +1038,11 @@ emp_france_missions_3 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		always = no
 	}
 	potential = {
 		has_dlc = "Emperor"
 		tag = FRA
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1384,11 +1384,11 @@ emp_france_missions_4 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		always = no
 	}
 	potential = {
 		has_dlc = "Emperor"
 		tag = FRA
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1713,11 +1713,11 @@ emp_france_missions_5 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		always = no
 	}
 	potential = {
 		has_dlc = "Emperor"
 		tag = FRA
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

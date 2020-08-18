@@ -5,6 +5,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 	
 	potential = { 
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -409,6 +410,7 @@ france_expand_europe_hre = { #Take HRE land, eventully script HRE being dismantl
 	ai = yes
 	potential = { 
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -546,6 +548,7 @@ french_missions_integrate_dau = {
 	ai = yes
 	potential = {
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -585,6 +588,7 @@ french_missions_breton_civil_war_slot = {
 	ai = yes
 	potential = {
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -721,6 +725,7 @@ french_expand_external_europe_not_hre = { #Take stuff not in the HRE!
 	ai = yes
 	potential = { 
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -1034,6 +1039,7 @@ french_hundred_years_war_missions = { #French Royal Domaine Missions ONLY.
 	ai = yes
 	potential = { 
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -1105,6 +1111,7 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 	ai = yes
 	potential = { 
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -1117,6 +1124,7 @@ french_hyw_missions_slot_4 = {
 	ai = yes
 	potential = { 
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -1490,6 +1498,7 @@ france_expand_italy_2 = { #Eventully script Napoleons conquest here
 	ai = yes
 	potential = { 
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -1886,6 +1895,7 @@ fra_expand_asia_missions = { #Make Missions for France discovering Cape -> India
 	ai = yes
 	potential = { 
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -2089,6 +2099,7 @@ hyw_two_peters_phase_slot = {
 	ai = yes
 	potential = {
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -2165,6 +2176,7 @@ fra_conquer_low_countries_slot_3 = {
 	ai = yes
 	potential = {
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -2203,6 +2215,7 @@ fra_conquer_low_countries_slot = {
 	ai = yes
 	potential = {
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -2419,6 +2432,7 @@ fra_low_countries_slot_2 = {
 	ai = yes
 	potential = {
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
@@ -2464,6 +2478,7 @@ fra_expand_italy_extra = { #Other Italian Expansion Stuff
 	ai = yes
 	potential = { 
 		tag = FRA
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		#started_in = 1356.12.26
 	}
 	has_country_shield = yes
