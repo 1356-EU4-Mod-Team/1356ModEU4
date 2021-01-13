@@ -70,6 +70,11 @@ change_estate_land_share = {
 1356.12.26 = { # Was 1350.8.22
 	add_war_exhaustion = 5
 	set_estate_privilege = estate_nobles_french_strong_duchies	
+	add_country_modifier = { #Avignon Papacy
+		name = france_avignon_initial_buff_religious_modifier
+		duration = -1
+		desc = fra_avignon_papacy_tooltip
+	}
 	monarch = {
 		name = "Jean II"
 		dynasty = "de Valois"

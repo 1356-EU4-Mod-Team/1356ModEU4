@@ -288,8 +288,6 @@ canton = {
 	subject_opinion_modifier = is_vassal
 }
 
-
-
 SEA_tributary_state = {
 	#If similar subject added check if it needs to be added to these scripted triggers:
 	#is_subject_except_tributary_trigger
@@ -488,3 +486,51 @@ golden_horde_tributary_state = {
 		}
 	}
 }
+
+#Commented out as it seemed useless to do this.
+# avignon_unique_subject = {
+	# copy_from = vassal
+	# count = vassal
+	
+	# # Graphics:
+	# sprite = GFX_icon_vassal
+	# diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
+	# diplomacy_subject_sprite = GFX_diplomacy_amvassal
+
+	# # Properties:
+	# transfer_trade_if_merchant_republic = no
+	# can_be_annexed = no
+	# has_power_projection = yes
+	# gets_help_with_rebels = yes
+	# takes_diplo_slot = no
+	
+
+	# max_government_rank = 2
+
+	# liberty_desire_development_ratio = 0.25
+	# liberty_desire_same_dynasty = -5.0
+	# pays_overlord = 0
+	# forcelimit_bonus = 1.0
+	# forcelimit_to_overlord = 0
+
+	# relative_power_class = 2
+	
+	# restoration_cb = cb_disloyal_vassal
+
+	# # Subject Interactions:
+	
+	# scutage = yes
+	# divert_trade = yes
+	# #Has no other subject interactions
+
+	# # Modifiers:
+	# modifier_subject = {
+		# modifier = vassal_nation
+	# }
+	# modifier_overlord = {
+		# modifier = vassal_subject
+	# }
+
+	# overlord_opinion_modifier = is_vassal
+	# subject_opinion_modifier = is_vassal
+# }

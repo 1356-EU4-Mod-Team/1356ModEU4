@@ -30,4 +30,20 @@ on_startup = {
 		}
 		country_event = { id = flagreatproject.4 }
 	}
+	if = {
+		limit = {
+			tag = PAP
+			is_year = 1356
+			NOT = { is_year = 1365 }
+		}
+		country_event = { id = golden_bull_avignon_league_war.41 }
+	}
+	if = {
+		limit = {
+			tag = BOH
+			is_year = 1356
+			NOT = { is_year = 1365 }
+		}
+		country_event = { id = golden_bull_avignon_league_war.43 }
+	}
 }

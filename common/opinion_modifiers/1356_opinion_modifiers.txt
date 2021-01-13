@@ -115,3 +115,28 @@ hre_traditional = {
 	opinion = 50
 	yearly_decay = 1
 }
+
+golden_bull_papal_capital_rome_move = {
+	opinion = -75
+	yearly_decay = 0.75
+}
+
+golden_bull_papal_capital_rome_stay = {
+	opinion = 75
+	yearly_decay = 1
+}
+
+golden_bull_western_schism_opinion_neg = {
+	opinion = -200
+	yearly_decay = 1
+}
+
+golden_bull_western_schism_opinion_pos = {
+	opinion = 100
+	yearly_decay = 1
+}
+
+golden_bull_avi_schism_fra_betrayed_opinion = {
+	opinion = -150
+	yearly_decay = 1
+}
