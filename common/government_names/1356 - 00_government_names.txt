@@ -212,3 +212,27 @@ pirate_government_names_barbary_pirates = {
 		}
 	}
 }
+
+gov_avi_papal_government = {
+	rank = {
+		1 = PAPACY
+		2 = PAPACY
+		3 = PAPACY
+	}
+	
+	ruler_male = {
+		1 = POPE
+		2 = POPE
+		3 = POPE
+	}
+	
+	ruler_female  ={
+		1 = POPETTE
+		2 = POPETTE
+		3 = POPETTE
+	}
+	
+	trigger = {
+		has_reform = avignon_papacy_government
+	}
+}

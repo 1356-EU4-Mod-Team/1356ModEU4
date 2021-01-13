@@ -2,6 +2,7 @@ government = theocracy
 add_government_reform = papacy_reform
 government_rank = 2
 primary_culture = umbrian
+add_accepted_culture = provencial_culture
 religion = catholic
 technology_group = western
 capital = 118	# Roma

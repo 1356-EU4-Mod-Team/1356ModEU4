@@ -1,15 +1,464 @@
 namespace = golden_bull_avignon_league_war
 
-country_event = {
+#Western Schism Event chain by Count Flandy
+
+#Special Thanks to the folks over at the EU4 Mod Coop for helping figure out somethings I was not able to! 
+#Hehodas, Seelowe, LimonenZitrone,  Pieter / Pbhuh, AND MORE
+
+#Note, this whole file is locked behind Art of War.
+
+#####################################################
+#golden_bull_avignon_league_war 1-15 are core events#
+#####################################################
+
+country_event = { #Starts League War
 	id = golden_bull_avignon_league_war.1
 	title = golden_bull_avignon_league_war.1.t
 	desc = golden_bull_avignon_league_war.1.d
 	picture = RELIGION_eventPicture
 	
+	major = yes
 	fire_only_once = yes
 	
 	trigger = {
-		always = no
+		has_dlc = "Art of War"
+		NOT = { has_global_flag = avignon_papacy_league_start_flag }
+		NOT = { has_global_flag = avignon_papacy_league_flag }
+		NOT = { has_global_flag = avignon_papacy_league_won }
+		NOT = { has_global_flag = avignon_papacy_papal_won_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_year = 1365
+		NOT = { is_year = 1425 }
+		hre_leagues_enabled = no
+		tag = PAP
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 1
+			is_year = 1380
+		}
+		modifier = {
+			factor = 1
+			is_year = 1400
+		}		
+	}
+
+	option = {
+		name = "golden_bull_avignon_league_war.1.a"
+		set_global_flag = avignon_papacy_league_start_flag #For Events between the Schism and the war
+		country_event = { 
+			id = golden_bull_avignon_league_war.2
+			days = 1095
+			tooltip = avignon_papacy_schism_evt1_tt
+		}
+	}
+}
+
+country_event = { #Starts League War
+	id = golden_bull_avignon_league_war.2
+	title = golden_bull_avignon_league_war.2.t
+	desc = golden_bull_avignon_league_war.2.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			every_known_country = { 
+				limit = {
+					religion = catholic
+					ai = no
+				}
+				country_event = { 
+					id = golden_bull_avignon_league_war.4
+					days = 1
+					
+				}
+			}
+		}
+	}
+
+	option = { #AI only option
+		name = "golden_bull_avignon_league_war.2.a"
+		trigger = { ai = yes }
+		enable_religion = avignon_catholic
+		PAP = {
+			release = AVI
+			define_ruler = {
+				name = "Urban VI"
+				dynasty = "Prignano"
+				adm = 2
+				dip = 4
+				mil = 3
+				culture = umbrian
+				hide_skills = yes
+				fixed = yes
+				age = 60
+				claim = 50
+			}
+			change_primary_culture = umbrian
+		}
+		118 = {
+			move_capital_effect = yes
+		}
+		AVI = {
+			202 = { 
+				move_capital_effect = yes
+				add_reform_center = avignon_catholic
+			}
+			change_culture = provencial_culture
+			add_accepted_culture = occitain
+			add_government_reform = avignon_papacy_government
+			define_ruler = {
+				name = "Clement VII"
+				dynasty = "de Geneve"
+				adm = 2
+				dip = 5
+				mil = 2
+				culture = occitain
+				hide_skills = yes
+				fixed = yes
+				age = 60
+				claim = 50
+			}
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		FRA = {
+			#AI have no need to have a choice since they always should trigger the war
+			change_religion = avignon_catholic
+			create_alliance = AVI
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		country_event = { 
+			id = golden_bull_avignon_league_war.3
+			days = 1095
+			random = 365
+			tooltip = avignon_papacy_schism_evt2_tt
+		}
+	}
+	option = { #Player - Pope in Rome
+		name = "golden_bull_avignon_league_war.2.b"
+		trigger = { ai = no }
+		enable_religion = avignon_catholic
+		PAP = {
+			release = AVI
+			define_ruler = {
+				name = "Urban VI"
+				dynasty = "Prignano"
+				adm = 2
+				dip = 4
+				mil = 3
+				culture = umbrian
+				hide_skills = yes
+				fixed = yes
+				age = 60
+				claim = 50
+			}
+			change_primary_culture = umbrian
+		}
+		118 = {
+			move_capital_effect = yes
+		}
+		AVI = {
+			202 = { 
+				move_capital_effect = yes
+				add_reform_center = avignon_catholic
+			}
+			change_culture = provencial_culture
+			add_accepted_culture = occitain
+			add_government_reform = avignon_papacy_government
+			define_ruler = {
+				name = "Clement VII"
+				dynasty = "de Geneve"
+				adm = 2
+				dip = 5
+				mil = 2
+				culture = occitain
+				hide_skills = yes
+				fixed = yes
+				age = 60
+				claim = 50
+			}
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		FRA = {
+			country_event = {
+				id = golden_bull_avignon_league_war.23
+				tooltip = avignon_evt2_french_tt
+			}
+		}
+		country_event = { 
+			id = golden_bull_avignon_league_war.3
+			days = 1095
+			random = 365
+			tooltip = avignon_papacy_schism_evt2_tt
+		}
+	}
+	option = { #Player - Pope in Avignon
+		name = "golden_bull_avignon_league_war.2.c"
+		trigger = { ai = no }
+		enable_religion = avignon_catholic
+		PAP = {
+			release = AVI
+			define_ruler = {
+				name = "Urban VI"
+				dynasty = "Prignano"
+				adm = 2
+				dip = 4
+				mil = 3
+				culture = umbrian
+				hide_skills = yes
+				fixed = yes
+				age = 60
+				claim = 50
+			}
+			change_primary_culture = umbrian
+		}
+		118 = {
+			move_capital_effect = yes
+			add_reform_center = avignon_catholic
+		}
+		switch_tag = AVI	
+		AVI = {
+			add_government_reform = avignon_papacy_government
+			define_ruler = {
+				name = "Clement VII"
+				dynasty = "de Geneve"
+				adm = 2
+				dip = 5
+				mil = 2
+				culture = occitain
+				hide_skills = yes
+				fixed = yes
+				age = 60
+				claim = 50
+			}
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+			202 = { 
+				move_capital_effect = yes
+			}
+			change_culture = provencial_culture
+			add_accepted_culture = occitain
+		}
+		FRA = {
+			country_event = {
+				id = golden_bull_avignon_league_war.23
+				tooltip = avignon_evt2_french_tt
+			}
+		}
+		country_event = { 
+			id = golden_bull_avignon_league_war.3
+			days = 1095
+			random = 365
+			tooltip = avignon_papacy_schism_evt2_tt
+		}
+	}
+}
+
+country_event = { #Starts League War
+	id = golden_bull_avignon_league_war.3
+	title = golden_bull_avignon_league_war.3.t
+	desc = golden_bull_avignon_league_war.3.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			every_known_country = { 
+				limit = {
+					OR = {
+						religion = catholic
+						religion = avignon_catholic
+					}
+					ai = no
+				}
+				country_event = { 
+					id = golden_bull_avignon_league_war.5
+					days = 1
+				}
+			}
+		}
+		hidden_effect = {
+			every_known_country = { 
+				limit = {
+					OR = {
+						tag = AVI
+						tag = PAP
+						tag = FRA
+						tag = BOH
+					}
+				}
+				country_event = { 
+					id = golden_bull_avignon_league_war.6 #Event that forces BOH, FRA, AVI, PAP to pick proper side
+					days = 300
+					
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "golden_bull_avignon_league_war.3.a"
+		enable_hre_leagues = yes
+		set_global_flag = avignon_papacy_league_flag #Flags to trigger other related during-war things
+		clr_global_flag = avignon_papacy_league_start_flag #Clears event 1's flag
+		BOH = {
+			remove_country_modifier = hre_avignon_initial_nerf_religious_modifier
+			join_league = catholic
+		}
+		FRA = {
+			limit = {
+				religion = avignon_catholic
+			}
+			remove_country_modifier = france_avignon_initial_buff_religious_modifier
+			join_league = protestant
+		}
+		PAP = {
+			remove_country_modifier = papal_captivity_modifier
+			join_league = catholic
+		}
+		AVI = {
+			join_league = protestant
+		}
+	}
+}
+
+country_event = { #Tells human players who are catholic of event 2
+	id = golden_bull_avignon_league_war.4
+	title = golden_bull_avignon_league_war.4.t
+	desc = golden_bull_avignon_league_war.4.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "golden_bull_avignon_league_war.4.a"
+		
+	}
+}
+
+country_event = { #Tells human players who are catholic of event 3
+	id = golden_bull_avignon_league_war.5
+	title = golden_bull_avignon_league_war.5.t
+	desc = golden_bull_avignon_league_war.5.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = "golden_bull_avignon_league_war.5.a"
+		
+	}
+}
+
+country_event = { #Hidden event that forces Bohemia, Avignon, and the Pope to pick a side
+	id = golden_bull_avignon_league_war.6
+	title = golden_bull_avignon_league_war.6.t
+	desc = golden_bull_avignon_league_war.6.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	
+
+	option = {
+		name = "golden_bull_avignon_league_war.6.a"
+		BOH = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+		FRA = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			joiu_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		PAP = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+		AVI = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		
+	}
+}
+
+country_event = { #Hidden event that forces France and Avignon to pick a side, if they did not already
+	id = golden_bull_avignon_league_war.7
+	title = golden_bull_avignon_league_war.7.t
+	desc = golden_bull_avignon_league_war.7.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		tag = FRA
+		has_global_flag = avignon_papacy_league_flag
+		is_at_war = no
+		NOT = { in_league = protestant }
 	}
 	
 	mean_time_to_happen = {
@@ -17,7 +466,2746 @@ country_event = {
 	}
 
 	option = {
-		name = golden_bull_avignon_league_war.1.a
+		name = "golden_bull_avignon_league_war.7.a"
+		FRA = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			joiu_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		AVI = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
 		
 	}
 }
+
+country_event = { #War End - Papal
+	id = golden_bull_avignon_league_war.10
+	title = "golden_bull_avignon_league_war.10.t"
+	desc = "golden_bull_avignon_league_war.10.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	#Add unique perma Modifier
+	
+	trigger = {
+		has_dlc = "Art of War"
+		tag = PAP
+	}
+	
+	immediate = {
+		hidden_effect = {
+			enable_hre_leagues = no
+			every_country = {
+				limit = {
+					religion = avignon_catholic
+				}
+				change_religion = catholic
+			}
+			every_province = {
+				limit = {
+					religion = avignon_catholic
+				}
+				change_religion = catholic
+			}
+		}
+	}
+
+	option = {
+		name = "golden_bull_avignon_league_war.10.a"
+		set_global_flag = avignon_papacy_papal_won_flag #PAP Flag
+		clr_global_flag = avignon_papacy_league_flag #Clears the OG flag
+		add_prestige = 25
+		add_dip_power = 100
+		add_years_of_income = 2
+		#add unique modifier for pope here?
+		add_reform_desire = -50 #Tweak
+		add_historical_rival = FRA
+		FRA = {
+			add_historival_rival = PAP
+		}
+		inherit = AVI
+		118 = {
+			move_capital_effect = yes
+		}
+		every_known_country = {
+			limit = {
+				ai = no
+				OR = {
+					religion = catholic
+					religion = avignon_catholic
+				}
+			}
+			country_event = { 
+				id = golden_bull_avignon_league_war.32
+			}
+		}
+	}
+}
+
+country_event = { #War End - Avignon
+	id = golden_bull_avignon_league_war.11
+	title = "golden_bull_avignon_league_war.11.t"
+	desc = "golden_bull_avignon_league_war.11.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	#Give unique Perma modifier
+	
+	trigger = {
+		has_dlc = "Art of War"
+		tag = AVI
+	}
+	
+	immediate = {
+		hidden_effect = {
+			enable_hre_leagues = no
+			every_known_country = {
+				limit = {
+					religion = avignon_catholic
+				}
+				change_religion = catholic
+			}
+			every_owned_province = {
+				limit = {
+					religion = avignon_catholic
+				}
+				change_religion = catholic
+			}
+		}
+	}
+
+	option = {
+		name = "golden_bull_avignon_league_war.11.a"
+		set_global_flag = avignon_papacy_league_won #AVI Flag
+		clr_global_flag = avignon_papacy_league_flag #Clears the OG flag
+		add_prestige = 25
+		add_dip_power = 100
+		add_years_of_income = 2
+		add_reform_desire = -60 #Tweak
+		
+		#Perma modifier here
+		
+		inherit = PAP
+		change_tag = PAP
+		add_government_reform = papacy_reform
+		202 = {
+			move_capital_effect = yes
+		}
+		override_country_name = AVIGNON_PAPACY_NAME_CHANGE #NEEDS LOCALISED, CURRENTLY "Avignon Papal States"	
+		FRA = {
+			add_historical_friend = PAP
+			create_alliance = PAP
+		}
+		PAP = {
+			add_historical_friend = FRA
+		}
+		every_known_country = {
+			limit = {
+				ai = no
+				OR = {
+					religion = catholic
+					religion = avignon_catholic
+				}
+			}
+			country_event = { 
+				id = golden_bull_avignon_league_war.33
+			}
+		}
+	}
+}
+
+country_event = { #War End - White Peace - Peaceful Merger
+	id = golden_bull_avignon_league_war.12
+	title = "golden_bull_avignon_league_war.12.t"
+	desc = "golden_bull_avignon_league_war.12.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		OR = {
+			tag = AVI
+			tag = PAP
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			enable_hre_leagues = no
+			202 = { #Avignon
+				limit = {
+					religion = avignon_catholic
+					is_reformation_center = yes
+				}
+				remove_reform_center = avignon_catholic
+			}
+			
+			183 = { #Paris
+				limit = {
+					religion = avignon_catholic
+					is_reformation_center = yes
+				}
+				remove_reform_center = avignon_catholic
+			}
+			every_province = {
+				limit = {
+					religion = avignon_catholic
+					is_reformation_center = yes
+				}
+				remove_reform_center = avignon_catholic
+			}
+		}
+	}
+
+	option = {
+		name = "golden_bull_avignon_league_war.12.a"
+		set_global_flag = avignon_papacy_league_white_peace_flag #White Peace Flag
+		clr_global_flag = avignon_papacy_league_flag #Clears the OG flag
+		add_reform_desire = -25 #Tweak
+		FRA = {
+			add_historical_friend = AVI
+			create_alliance = AVI
+		}
+		AVI = {
+			add_historical_friend = AVI
+			kill_ruler = yes
+			add_prestige = 25
+			add_dip_power = 100
+			add_years_of_income = 2
+		}
+		PAP = { #Does this work?
+			add_historical_friend = emperor
+			#Test if PU's could work here?
+			vassalize = AVI
+			kill_ruler = yes
+			add_prestige = 25
+			add_dip_power = 100
+			add_years_of_income = 2
+		}
+		emperor = { #Does this work?
+			add_historical_friend = PAP
+			create_alliance = PAP
+		}
+		every_known_country = {
+			limit = {
+				ai = no
+				OR = {
+					religion = catholic
+					religion = avignon_catholic
+				}
+			}
+			country_event = { 
+				id = golden_bull_avignon_league_war.34
+			}
+		}
+	}
+}
+
+country_event = { #War End - White Peace #NEEDS WORK - Neverending Schism
+	id = golden_bull_avignon_league_war.13
+	title = "golden_bull_avignon_league_war.13.t"
+	desc = "golden_bull_avignon_league_war.13.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		OR = {
+			tag = AVI
+			tag = PAP
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			enable_hre_leagues = no
+			202 = { #Avignon
+				limit = {
+					religion = avignon_catholic
+					is_reformation_center = yes
+				}
+				remove_reform_center = avignon_catholic
+			}
+			
+			183 = { #Paris
+				limit = {
+					religion = avignon_catholic
+					is_reformation_center = yes
+				}
+				remove_reform_center = avignon_catholic
+			}
+			every_province = {
+				limit = {
+					religion = avignon_catholic
+					is_reformation_center = yes
+				}
+				remove_reform_center = avignon_catholic
+			}
+		}
+	}
+
+	option = {
+		name = "golden_bull_avignon_league_war.13.a"
+		set_global_flag = avignon_papacy_league_white_peace_flag #White Peace Flag
+		clr_global_flag = avignon_papacy_league_flag #Clears the OG flag
+		FRA = {
+			add_historical_friend = AVI
+			create_alliance = AVI
+		}
+		AVI = {
+			add_historical_friend = AVI
+		}
+		PAP = { #Does this work?
+			add_historical_friend = EMPEROR
+		}
+		EMPEROR = { #Does this work?
+			add_historical_friend = PAP
+			create_alliance = PAP
+		}
+		every_known_country = {
+			limit = {
+				ai = no
+				OR = {
+					religion = catholic
+					religion = avignon_catholic
+				}
+			}
+			country_event = { 
+				id = golden_bull_avignon_league_war.34
+			}
+		}
+	}
+}
+
+
+########################################################
+#golden_bull_avignon_league_war 21-40 are flavor events#
+########################################################
+
+country_event = { #Event to move Papal Capital Back to Rome
+	id = golden_bull_avignon_league_war.21
+	title = golden_bull_avignon_league_war.21.t
+	desc = golden_bull_avignon_league_war.21.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		tag = PAP
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		NOT = { is_year = 1400 }
+		FRA = { is_papal_controller = no }
+		NOT = { capital = 118 } #Rome
+		NOT = { exists = AVI }
+		is_at_war = no
+		is_subject = no
+		
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = { #Back to Rome
+		name = "golden_bull_avignon_league_war.21.a"
+		118 = {
+			move_capital_effect = yes
+			add_base_tax = 4
+			add_base_production = 4
+			add_base_manpower = 2
+		}
+		202 = {
+			add_base_tax = -4
+			add_base_production = -4
+			add_base_manpower = -2
+		}
+		FRA = {
+			add_opinion = {
+				who = PAP
+				modifier = golden_bull_papal_capital_rome_move
+			}
+		}
+		PAP = {
+			add_opinion = {
+				who = FRA
+				modifier = golden_bull_papal_capital_rome_move
+			}
+		}
+	}
+	option = { #Stay in Avignon
+		name = "golden_bull_avignon_league_war.21.b"
+		202 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 1
+		}
+				FRA = {
+			add_opinion = {
+				who = PAP
+				modifier = golden_bull_papal_capital_rome_stay
+			}
+		}
+		PAP = {
+			add_opinion = {
+				who = FRA
+				modifier = golden_bull_papal_capital_rome_stay
+			}
+		}
+	}
+}
+
+#The War of the Eight Saints would be interesting to represent here, but its so minor in the grand scheme of the schism it feels pointless.
+
+country_event = { #Event that triggers on Conversion to Avignon Religion
+	id = golden_bull_avignon_league_war.22
+	title = "golden_bull_avignon_league_war.22.t"
+	desc = "golden_bull_avignon_league_war.22.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		NOT = { is_year = 1500 }
+	}
+	
+	option = {
+		name = "golden_bull_avignon_league_war.22.a"
+		every_owned_province = {
+			limit = {
+				culture = ROOT #Does this work?
+				religion = catholic
+			}
+			change_religion = avignon_catholic
+		}
+		
+	}
+}
+
+country_event = { #Asks French players if they wish to convert or not.
+	id = golden_bull_avignon_league_war.23
+	title = "golden_bull_avignon_league_war.23.t"
+	desc = "golden_bull_avignon_league_war.23.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #We stand against the tyrany of the Pope in Rome!
+		name = "golden_bull_avignon_league_war.23.a"
+		change_religion = avignon_catholic
+		create_alliance = AVI
+		183 = {
+			limit = {
+				owner = FRA
+			}
+			add_reform_center = avignon_catholic
+		}
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}			
+		country_event = { #Converts Primary Cultured Prov to avignon_catholic
+			id = golden_bull_avignon_league_war.22
+			tooltip = avignon_religion_convert_event_tt
+		}
+	}
+	option = { #We want no part in this
+		name = "golden_bull_avignon_league_war.23.b"
+		trigger = { ai = no } #AI should always take the League War route
+		add_prestige = -25
+		add_stability = -1
+		remove_country_modifier = france_avignon_initial_buff_religious_modifier
+		reverse_add_opinion = {
+			WHO = PAP
+			modifier = golden_bull_avi_schism_fra_betrayed_opinion
+		}
+		AVI = {
+			country_event = { 
+				id = golden_bull_avignon_league_war.24
+			}
+		}
+		#Take a major hit to your prestige in the christian world
+	}
+}
+
+country_event = { #Tells Avignon that they are on their own
+	id = golden_bull_avignon_league_war.24
+	title = "golden_bull_avignon_league_war.24.t"
+	desc = "golden_bull_avignon_league_war.24.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #We are on our own
+		name = "golden_bull_avignon_league_war.24.a"
+		custom_tooltip = avi_schism_evt_24_opt_a_tt
+		add_prestige = 25
+		add_stability = 1
+		add_mil_power = 25
+	}
+	option = { #We are on our own, we must end it.
+		name = "golden_bull_avignon_league_war.24.b"
+		trigger = { ai = no } #The AI will be stubborn
+		custom_tooltip = avi_schism_evt_24_opt_b_tt
+		PAP = {
+			country_event = { 
+				id = golden_bull_avignon_league_war.25
+				days = 30
+				tooltip = golden_bull_avi_schism_end_tt
+			}
+		}
+	}
+}
+
+country_event = { #Papal chance to determine how this ends
+	id = golden_bull_avignon_league_war.25
+	title = "golden_bull_avignon_league_war.25.t"
+	desc = "golden_bull_avignon_league_war.25.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Peacefully our way
+		name = "golden_bull_avignon_league_war.25.a"
+		custom_tooltip = golden_bull_schism_evt_25_opt_a_tt
+		#Avignon gets integrated, player switches to PAP tag, religion gets removed.
+		AVI = {
+			country_event = {
+				id = golden_bull_avignon_league_war.26
+				days = 5
+			}
+		}
+	}
+	option = { #Common Ground
+		name = "golden_bull_avignon_league_war.25.b"
+		custom_tooltip = golden_bull_schism_evt_25_opt_b_tt
+		AVI = {
+			country_event = {
+				id = golden_bull_avignon_league_war.27
+				days = 5
+			}
+		}
+
+	}
+	option = { #Harsh Treatment
+		name = "golden_bull_avignon_league_war.25.c"
+		custom_tooltip = golden_bull_schism_evt_25_opt_c_tt
+		#Avignon gets integrated, player switches to PAP tag, religion gets removed, current Pope dies (Avignon), Avignon looses Dev, any current Catholiques get punishment.
+		AVI = {
+			country_event = {
+				id = golden_bull_avignon_league_war.28
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { #Pope offers Peace His Way
+	id = golden_bull_avignon_league_war.26
+	title = "golden_bull_avignon_league_war.26.t"
+	desc = "golden_bull_avignon_league_war.26.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Accept
+		name = "golden_bull_avignon_league_war.26.a"
+		PAP = {
+			exile_ruler_as = pap_schism_ruler_quick_exile
+		}
+		AVI = {
+			set_ruler_flag = pap_schism_ruler_quick_exile
+		}
+		inherit = PAP
+		change_tag = PAP
+		remove_government_reform = avignon_papacy_government
+		add_government_reform = papacy_reform
+		118 = {
+			move_capital_effect = yes
+		}
+		every_known_country = {
+			limit = {
+				religion = avignon_catholic
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.29
+				days = 10
+			}
+		}
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.10
+			}
+		}
+		
+		202 = {
+			limit = {
+				religion = avignon_catholic
+			}
+			change_religion = catholic
+		}
+		
+		183 = {
+			limit = {
+				religion = avignon_catholic
+			}
+			change_religion = catholic
+		}
+	}
+	option = { #No
+		name = "golden_bull_avignon_league_war.26.b"
+		custom_tooltip = golden_bull_schism_peace_offer_avi_decline_tt
+		add_prestige = -10
+
+	}
+
+}
+
+country_event = { #Pope offers Peace Common Ground
+	id = golden_bull_avignon_league_war.27
+	title = "golden_bull_avignon_league_war.27.t"
+	desc = "golden_bull_avignon_league_war.27.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		has_global_flag = avignon_papacy_league_flag
+	}
+	
+	option = { #Accept
+		name = "golden_bull_avignon_league_war.27.a"
+		inherit = PAP
+		AVI = {
+			kill_ruler = yes
+		}
+		PAP = {
+			kill_ruler = yes
+		}
+		change_tag = PAP
+		remove_government_reform = avignon_papacy_government
+		add_government_reform = papacy_reform
+		118 = {
+			move_capital_effect = yes
+		}
+		every_known_country = {
+			limit = {
+				religion = avignon_catholic
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.29
+				days = 10
+			}
+		}
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.10
+			}
+		}
+	}
+	option = { #No
+		name = "golden_bull_avignon_league_war.27.b"
+		custom_tooltip = golden_bull_schism_peace_offer_avi_decline_tt
+		add_prestige = -10
+
+	}
+
+}
+
+country_event = { #Pope only offers punishment
+	id = golden_bull_avignon_league_war.28
+	title = "golden_bull_avignon_league_war.28.t"
+	desc = "golden_bull_avignon_league_war.28.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Accept
+		name = "golden_bull_avignon_league_war.28.a"
+		PAP = {
+			exile_ruler_as = pap_schism_ruler_quick_exile
+		}
+		AVI = {
+			set_ruler_flag = pap_schism_ruler_quick_exile
+		}
+		inherit = PAP
+		change_tag = PAP
+		remove_government_reform = avignon_papacy_government
+		add_government_reform = papacy_reform
+		118 = {
+			move_capital_effect = yes
+			base_tax = 4
+			base_production = 4
+			base_manpower = 2
+		}
+		202 = {
+			base_tax = -4
+			base_production = -4
+			base_manpower = -2
+			change_culture = umbrian
+		}
+		every_known_country = {
+			limit = {
+				religion = avignon_catholic
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.29
+				days = 10
+			}
+		}
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.10
+			}
+		}
+	}
+	option = { #No
+		name = "golden_bull_avignon_league_war.28.b"
+		custom_tooltip = golden_bull_schism_peace_offer_avi_decline_tt
+		add_prestige = -10
+
+	}
+
+}
+
+country_event = { #Catholique goes away
+	id = golden_bull_avignon_league_war.29
+	title = "golden_bull_avignon_league_war.29.t"
+	desc = "golden_bull_avignon_league_war.29.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #It is over
+		name = "golden_bull_avignon_league_war.29.a"
+		every_known_country = {
+			limit = {
+				ai = no
+				OR = {
+					religion = catholic
+					religion = avignon_catholic
+				}
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.30
+			}
+		}
+		change_religion = catholic
+
+		every_owned_province = {
+			limit = {
+				religion = avignon_catholic
+			}
+			change_religion = catholic
+		}
+	}
+}
+
+country_event = { #Catholic Humans are told of Catholique's fall
+	id = golden_bull_avignon_league_war.30
+	title = "golden_bull_avignon_league_war.30.t"
+	desc = "golden_bull_avignon_league_war.30.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #It is over
+		name = "golden_bull_avignon_league_war.30.a"
+	}
+}
+
+country_event = { #Hidden event to remove BOH emperor modifier
+	id = golden_bull_avignon_league_war.31
+	title = "golden_bull_avignon_league_war.31.t"
+	desc = "golden_bull_avignon_league_war.31.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		tag = BOH
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		has_country_modifier = hre_avignon_initial_nerf_religious_modifier
+		is_emperor = no
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+		
+	option = { #
+		name = "golden_bull_avignon_league_war.31.a"
+		remove_country_modifier = hre_avignon_initial_nerf_religious_modifier
+	}
+}
+
+country_event = { #Papal Victory Event
+	id = golden_bull_avignon_league_war.32
+	title = "golden_bull_avignon_league_war.32.t"
+	desc = "golden_bull_avignon_league_war.32.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #
+		name = "golden_bull_avignon_league_war.32.a"
+	}
+}
+
+country_event = { #Avignon Victory Event
+	id = golden_bull_avignon_league_war.33
+	title = "golden_bull_avignon_league_war.33.t"
+	desc = "golden_bull_avignon_league_war.33.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #
+		name = "golden_bull_avignon_league_war.33.a"
+	}
+}
+
+country_event = { #White Peace Event
+	id = golden_bull_avignon_league_war.34
+	title = "golden_bull_avignon_league_war.34.t"
+	desc = "golden_bull_avignon_league_war.34.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #
+		name = "golden_bull_avignon_league_war.34.a"
+	}
+}
+
+country_event = { #CoR #3 Spawn
+	id = golden_bull_avignon_league_war.35
+	title = "golden_bull_avignon_league_war.35.t"
+	desc = "golden_bull_avignon_league_war.35.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	#Needs Localisation
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_religion_enabled = avignon_catholic
+		religion = catholic
+		OR = {
+			has_country_modifier = the_statue_in_restraint_of_appeals
+			historical_rival_with = PAP
+			is_rival = PAP
+			has_opinion = {
+				who = PAP
+				value = -50
+			}
+		}
+		is_at_war = no
+		is_subject = no
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+		
+	option = { #Against Pope
+		name = "golden_bull_avignon_league_war.35.a"
+		add_prestige = -5
+		every_owned_province = {
+			limit = {
+				culture = ROOT #Does this work?
+				religion = catholic
+			}
+			change_religion = avignon_catholic
+		}
+		capital_scope = { add_reform_center = avignon_catholic }
+		
+	}
+	option = { #Stand By Pope
+		name = "golden_bull_avignon_league_war.35.b"
+		trigger = { ai = no } 
+		add_prestige = 5
+		
+	}
+}
+
+##########################################################
+#golden_bull_avignon_league_war 41-60 are build up events#
+##########################################################
+
+country_event = { #Start up event to introduce player to the setup of the Pope.
+	id = golden_bull_avignon_league_war.41
+	title = "golden_bull_avignon_league_war.41.t"
+	desc = "golden_bull_avignon_league_war.41.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		tag = PAP
+		NOT = { has_global_flag = avignon_papacy_league_start_flag }
+		NOT = { has_global_flag = avignon_papacy_league_flag }
+		NOT = { has_global_flag = avignon_papacy_league_won }
+		NOT = { has_global_flag = avignon_papacy_papal_won_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_year = 1356
+		NOT = { is_year = 1365 }
+		tag = PAP
+	}
+
+	option = {
+		name = "golden_bull_avignon_league_war.41.a"
+	}
+}
+
+country_event = { #Start up event to introduce player to the setup of the Pope. #FRANCE
+	id = golden_bull_avignon_league_war.42
+	title = "golden_bull_avignon_league_war.42.t"
+	desc = "golden_bull_avignon_league_war.42.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		tag = FRA
+		NOT = { has_global_flag = avignon_papacy_league_start_flag }
+		NOT = { has_global_flag = avignon_papacy_league_flag }
+		NOT = { has_global_flag = avignon_papacy_league_won }
+		NOT = { has_global_flag = avignon_papacy_papal_won_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_year = 1356
+		NOT = { is_year = 1365 }
+		is_at_war = no
+		is_subject = no
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = "golden_bull_avignon_league_war.42.a"
+	}
+}
+
+country_event = { #Start up event to introduce player to the setup of the Pope. #EMPEROR
+	id = golden_bull_avignon_league_war.43
+	title = "golden_bull_avignon_league_war.43.t"
+	desc = "golden_bull_avignon_league_war.43.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		tag = BOH
+		NOT = { has_global_flag = avignon_papacy_league_start_flag }
+		NOT = { has_global_flag = avignon_papacy_league_flag }
+		NOT = { has_global_flag = avignon_papacy_league_won }
+		NOT = { has_global_flag = avignon_papacy_papal_won_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_year = 1356
+		NOT = { is_year = 1365 }
+	}
+
+	option = {
+		name = "golden_bull_avignon_league_war.43.a"
+	}
+}
+
+
+###############################################################
+#General Events to force specific people into the League 61-80#
+###############################################################
+
+#Notes while making these events:
+
+#Emperor and the Pope are "Catholic" and Avignon & France are "Protestant"
+
+country_event = { #Event that forces AI Scotland to join the Protestant Side, against England.
+	id = golden_bull_avignon_league_war.61
+	title = golden_bull_avignon_league_war.61.t
+	desc = golden_bull_avignon_league_war.61.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SCO
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_country_flag = neutral_avi_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = { #We support Avignon
+		name = "golden_bull_avignon_league_war.61.a"
+		SCO = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+		}
+		change_religion = avignon_catholic
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}			
+		country_event = { #Converts Primary Cultured Prov to avignon_catholic
+			id = golden_bull_avignon_league_war.22
+			tooltip = avignon_religion_convert_event_tt
+		}
+	}
+	option = { #We support the Papacy
+		name = "golden_bull_avignon_league_war.61.b"
+		trigger = { 
+			OR = {
+				ai = no
+				AND = {
+					ENG = {	in_league = protestant }
+					ai = yes
+				}
+			}
+		}
+		SCO = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+	}
+	option = { #We stay out 
+		name = "golden_bull_avignon_league_war.61.c"
+		trigger = { ai = no }
+		add_prestige = 5
+		set_country_flag = neutral_avi_flag
+	}
+}
+
+country_event = { #Event that forces AI England to join the Catholic Side, against France
+	id = golden_bull_avignon_league_war.62
+	title = golden_bull_avignon_league_war.62.t
+	desc = golden_bull_avignon_league_war.62.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_country_flag = neutral_avi_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = { #We support the Papacy
+		name = "golden_bull_avignon_league_war.62.a"
+		ENG = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+	}
+	option = { #We support Avignon
+		name = "golden_bull_avignon_league_war.62.b"
+		trigger = { 
+			OR = {
+				ai = no
+				AND = {
+					FRA = {	in_league = catholic }
+					ai = yes
+				}
+			}
+		}
+		ENG = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		
+	}
+	option = { #We stay out 
+		name = "golden_bull_avignon_league_war.62.c"
+		trigger = { ai = no }
+		add_prestige = 5
+		set_country_flag = neutral_avi_flag
+	}
+}
+
+country_event = { #Event that forces AI Denmark to join a side
+	id = golden_bull_avignon_league_war.63
+	title = golden_bull_avignon_league_war.63.t
+	desc = golden_bull_avignon_league_war.63.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DAN
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_country_flag = neutral_avi_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = { #We support the Papacy
+		name = "golden_bull_avignon_league_war.63.a"
+		DAN = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+	}
+	option = { #We support Avignon
+		name = "golden_bull_avignon_league_war.63.b"
+		trigger = { ai = no }
+		DAN = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+		}
+		change_religion = avignon_catholic
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}			
+		country_event = { #Converts Primary Cultured Prov to avignon_catholic
+			id = golden_bull_avignon_league_war.22
+			tooltip = avignon_religion_convert_event_tt
+		}
+	}
+	option = { #We stay out 
+		name = "golden_bull_avignon_league_war.63.c"
+		trigger = { ai = no }
+		add_prestige = 5
+		set_country_flag = neutral_avi_flag
+	}
+}
+
+country_event = { #Event that forces AI Sweden to pick a side
+	id = golden_bull_avignon_league_war.64
+	title = golden_bull_avignon_league_war.64.t
+	desc = golden_bull_avignon_league_war.64.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_country_flag = neutral_avi_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = { #We support Avignon
+		name = "golden_bull_avignon_league_war.64.a"
+		SWE = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+		}
+		change_religion = avignon_catholic
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}			
+		country_event = { #Converts Primary Cultured Prov to avignon_catholic
+			id = golden_bull_avignon_league_war.22
+			tooltip = avignon_religion_convert_event_tt
+		}
+	}
+	option = { #We support the Papacy
+		name = "golden_bull_avignon_league_war.64.b"
+		trigger = { 
+			OR = {
+				ai = no
+				AND = {
+					DAN = {	in_league = protestant }
+					ai = yes
+				}
+			}
+		}
+		SWE = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+	}
+	option = { #We stay out 
+		name = "golden_bull_avignon_league_war.64.c"
+		trigger = { ai = no }
+		add_prestige = 5
+		set_country_flag = neutral_avi_flag
+	}
+}
+
+country_event = { #Event that forces AI Holy Orders & Theocracies to support the Pope
+	id = golden_bull_avignon_league_war.65
+	title = golden_bull_avignon_league_war.65.t
+	desc = golden_bull_avignon_league_war.65.d
+	picture = RELIGION_eventPicture
+	
+	#Worried this event may slow game down too much - Count Flandy
+	
+	trigger = {
+		government = theocracy
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		NOT = { has_country_flag = holy_order_avi_flag }
+		NOT = { has_country_flag = neutral_avi_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { tag = AVI }
+		NOT = { tag = PAP }
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = { #We support the Papacy
+		name = "golden_bull_avignon_league_war.65.a"
+		trigger = {
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					OR = {
+						NOT = { is_rival = PAP }
+						is_rival = AVI 
+					}
+				}
+			}
+		}
+		ROOT = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+		set_country_flag = holy_order_avi_flag
+	}
+	option = { #We support Avignon
+		name = "golden_bull_avignon_league_war.65.b"
+		trigger = { 
+			OR = {
+				ai = no
+				AND = {
+					OR = {
+						is_rival = PAP
+						alliance_with = AVI 
+					}
+					ai = yes
+				}
+			}
+		}
+		ROOT = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+			set_country_flag = holy_order_avi_flag
+		}
+	}
+	option = { #We stay out 
+		name = "golden_bull_avignon_league_war.65.c"
+		trigger = { ai = no }
+		add_prestige = 5
+		set_country_flag = neutral_avi_flag
+	}
+}
+
+country_event = { #Event that forces AI Rivals of the Papacy/Ally of AVI to support Avignon --AI ONLY
+	id = golden_bull_avignon_league_war.66
+	title = golden_bull_avignon_league_war.66.t
+	desc = golden_bull_avignon_league_war.66.d
+	picture = RELIGION_eventPicture
+	
+	#Worried this event may slow game down too much - Count Flandy
+	hidden = yes
+
+	
+	trigger = {
+		ai = yes
+		OR = {
+			is_rival = PAP
+			alliance_with = AVI
+		}
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		NOT = { has_country_flag = holy_order_avi_flag }
+		NOT = { has_country_flag = neutral_avi_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { tag = AVI }
+		NOT = { tag = PAP }
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+
+	option = { #We support Avignon
+		name = "golden_bull_avignon_league_war.66.a"
+		ROOT = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+			set_country_flag = holy_order_avi_flag #Reusing this flag since this is an AI only event
+		}
+	}
+}
+
+country_event = { #Event that forces AI Rivals of the Avignon/Ally of PAP to support Papacy --AI ONLY
+	id = golden_bull_avignon_league_war.67
+	title = golden_bull_avignon_league_war.67.t
+	desc = golden_bull_avignon_league_war.67.d
+	picture = RELIGION_eventPicture
+	
+	#Worried this event may slow game down too much - Count Flandy
+	hidden = yes
+
+	
+	trigger = {
+		ai = yes
+		OR = {
+			is_rival = AVI
+			alliance_with = PAP
+		}
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		NOT = { has_country_flag = holy_order_avi_flag }
+		NOT = { has_country_flag = neutral_avi_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { tag = AVI }
+		NOT = { tag = PAP }
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+
+	option = { #We support Papacy
+		name = "golden_bull_avignon_league_war.67.a"
+		ROOT = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+			set_country_flag = holy_order_avi_flag #Reusing this flag since this is an AI only event
+		}
+	}
+}
+
+country_event = { #Event that forces Castile to pick a side
+	id = golden_bull_avignon_league_war.68
+	title = golden_bull_avignon_league_war.68.t
+	desc = golden_bull_avignon_league_war.68.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CAS
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_country_flag = neutral_avi_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = { #We support the Papacy
+		name = "golden_bull_avignon_league_war.68.a"
+		trigger = {
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					is_rival = FRA
+				}
+			}
+		}
+		CAS = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+	}
+	option = { #We support Avignon
+		name = "golden_bull_avignon_league_war.68.b"
+		trigger = { 
+			OR = {
+				ai = no
+				AND = {
+					FRA = {	in_league = catholic }
+					NOT = { is_rival = FRA }
+					ai = yes
+				}
+			}
+		}
+		CAS = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		
+	}
+	option = { #We stay out 
+		name = "golden_bull_avignon_league_war.68.c"
+		trigger = { ai = no }
+		add_prestige = 5
+		set_country_flag = neutral_avi_flag
+	}
+}
+
+country_event = { #Event that forces Aragon to pick a side
+	id = golden_bull_avignon_league_war.69
+	title = golden_bull_avignon_league_war.69.t
+	desc = golden_bull_avignon_league_war.69.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ARA
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_country_flag = neutral_avi_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = { #We support the Papacy
+		name = "golden_bull_avignon_league_war.69.a"
+		trigger = {
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					OR = {
+						is_rival = FRA
+						CAS = { in_league = protestant }
+						is_rival = CAS
+					}
+				}
+			}
+		}
+		ARA = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+	}
+	option = { #We support Avignon
+		name = "golden_bull_avignon_league_war.69.b"
+		trigger = { 
+			OR = {
+				ai = no
+				AND = {
+					CAS = {	in_league = catholic }
+					is_rival = CAS
+					ai = yes
+				}
+			}
+		}
+		ARA = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		
+	}
+	option = { #We stay out 
+		name = "golden_bull_avignon_league_war.69.c"
+		trigger = { ai = no }
+		add_prestige = 5
+		set_country_flag = neutral_avi_flag
+	}
+}
+
+country_event = { #Event that forces Portugal to pick a side
+	id = golden_bull_avignon_league_war.70
+	title = golden_bull_avignon_league_war.70.t
+	desc = golden_bull_avignon_league_war.70.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		is_religion_enabled = avignon_catholic
+		has_global_flag = avignon_papacy_league_flag
+		NOT = { has_country_flag = neutral_avi_flag }
+		NOT = { has_global_flag = 1356_bt_start_flag }
+		is_at_war = no
+		is_subject = no
+		NOT = { is_year = 1600 }
+		NOT = { in_league = protestant }
+		NOT = { in_league = catholic }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = { #We support the Papacy
+		name = "golden_bull_avignon_league_war.70.a"
+		trigger = {
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					OR = {
+						is_rival = FRA
+						is_rival = CAS
+						CAS = { in_league = protestant }
+						FRA = { in_league = protestant }
+					}
+				}
+			}
+		}
+		POR = {
+			limit ={
+				NOT = { in_league = catholic }
+			}
+			join_league = catholic
+		}
+	}
+	option = { #We support Avignon
+		name = "golden_bull_avignon_league_war.70.b"
+		trigger = { 
+			OR = {
+				ai = no
+				AND = {
+					CAS = {	in_league = catholic }
+					is_rival = CAS
+					ai = yes
+				}
+			}
+		}
+		POR = {
+			limit ={
+				NOT = { in_league = protestant }
+			}
+			join_league = protestant
+			change_religion = avignon_catholic
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			country_event = { #Converts Primary Cultured Prov to avignon_catholic
+				id = golden_bull_avignon_league_war.22
+				tooltip = avignon_religion_convert_event_tt
+			}
+		}
+		
+	}
+	option = { #We stay out 
+		name = "golden_bull_avignon_league_war.70.c"
+		trigger = { ai = no }
+		add_prestige = 5
+		set_country_flag = neutral_avi_flag
+	}
+}
+
+######################################
+##Peaceful Resolution events #81-100##
+######################################
+
+country_event = { #Avignon Peaceful Resolution 
+	id = golden_bull_avignon_league_war.81
+	title = "golden_bull_avignon_league_war.81.t"
+	desc = "golden_bull_avignon_league_war.81.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Send Demands
+		name = "golden_bull_avignon_league_war.81.a"
+		custom_tooltip = golden_bull_schism_evt_81_opt_a_tt
+		#Pope is integrated, exile current pope, Avignon becomes the new Papacy.
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.82
+				days = 5
+			}
+		}
+	}
+	option = { #Harsh Treatment
+		name = "golden_bull_avignon_league_war.81.b"
+		custom_tooltip = golden_bull_schism_evt_81_opt_b_tt
+		#Pope is integrated, exile current pope, Avignon becomes the new Papacy. Rome is burned, all standard Catholics get punished.
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.83
+				days = 5
+			}
+		}
+	}
+	option = { #Common Ground
+		name = "golden_bull_avignon_league_war.81.c"
+		custom_tooltip = golden_bull_schism_evt_81_opt_c_tt
+		#Simple white peace. #Note; AI should never offer this, and accepting should be difficult
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.84
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { #Send Demands - Avignon Sent
+	id = golden_bull_avignon_league_war.82
+	title = "golden_bull_avignon_league_war.82.t"
+	desc = "golden_bull_avignon_league_war.82.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Accept
+		name = "golden_bull_avignon_league_war.82.a"
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0.1
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 0.5
+				is_rival = AVI
+			}
+			modifier = {
+				factor = 0.5
+				AVI = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 2
+				army_strength = {
+					who = FRA
+					value = 1
+				}
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 0.5
+				is_rival = FRA
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 0.5
+				FRA = { is_rival = ROOT }
+				FRA = { in_league = protestant }
+			}
+		}
+		PAP = {
+			exile_ruler_as = pap_schism_ruler_quick_exile
+		}
+		AVI = {
+			set_ruler_flag = pap_schism_ruler_quick_exile
+		}
+		inherit = PAP
+		change_tag = PAP
+		remove_government_reform = avignon_papacy_government
+		add_government_reform = papacy_reform
+		118 = {
+			move_capital_effect = yes
+		}
+
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.11
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.89
+			}
+		}
+		
+		202 = {
+			limit = {
+				religion = avignon_catholic
+			}
+			change_religion = catholic
+		}
+		
+		183 = {
+			limit = {
+				religion = avignon_catholic
+			}
+			change_religion = catholic
+		}
+	}
+	option = { #No
+		name = "golden_bull_avignon_league_war.82.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 2
+				is_rival = AVI
+			}
+			modifier = {
+				factor = 2
+				AVI = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				army_strength = {
+					who = AVI
+					value = 1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				army_strength = {
+					who = FRA
+					value = 1
+				}
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 2
+				is_rival = FRA
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 2
+				FRA = { is_rival = ROOT }
+				FRA = { in_league = protestant }
+			}
+		}
+		custom_tooltip = golden_bull_schism_peace_offer_avi_decline_tt
+	}
+}
+
+country_event = { #Harsh Treatment - Avignon Sent
+	id = golden_bull_avignon_league_war.83
+	title = "golden_bull_avignon_league_war.83.t"
+	desc = "golden_bull_avignon_league_war.83.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Accept
+		name = "golden_bull_avignon_league_war.83.a"
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0.01
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 0.4
+				is_rival = AVI
+			}
+			modifier = {
+				factor = 0.4
+				AVI = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 2.5
+				army_strength = {
+					who = FRA
+					value = 1
+				}
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 0.4
+				is_rival = FRA
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 0.4
+				FRA = { is_rival = ROOT }
+				FRA = { in_league = protestant }
+			}
+		}
+		PAP = {
+			exile_ruler_as = pap_schism_ruler_quick_exile
+		}
+		AVI = {
+			change_primary_culture = cosmopolitan_french
+			set_ruler_flag = avi_schism_ruler_quick_exile
+		}
+		inherit = PAP
+		change_tag = PAP
+		remove_government_reform = avignon_papacy_government
+		add_government_reform = papacy_reform
+		change_primary_culture = cosmopolitan_french
+		118 = { #Rome
+			base_tax = -4
+			base_production = -4
+			base_manpower = -2
+			change_culture = cosmopolitan_french
+		}
+		202 = { #Avignon
+			move_capital_effect = yes
+			base_tax = 4
+			base_production = 4
+			base_manpower = 2
+			change_culture = cosmopolitan_french
+			change_religion = catholic
+		}
+		PAP = { #Avignon Victory
+			country_event = {
+				id = golden_bull_avignon_league_war.11
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.89
+			}
+		}
+	}
+	option = { #No
+		name = "golden_bull_avignon_league_war.83.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 2
+				is_rival = AVI
+			}
+			modifier = {
+				factor = 2
+				AVI = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				army_strength = {
+					who = AVI
+					value = 1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				army_strength = {
+					who = FRA
+					value = 1
+				}
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 2
+				is_rival = FRA
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 2
+				FRA = { is_rival = ROOT }
+				FRA = { in_league = protestant }
+			}
+		}
+		custom_tooltip = golden_bull_schism_peace_offer_avi_decline_tt
+	}
+}
+
+country_event = { #White Peace - Both Sides - Papal Recieving/Avignon Sending
+	id = golden_bull_avignon_league_war.84
+	title = "golden_bull_avignon_league_war.84.t"
+	desc = "golden_bull_avignon_league_war.84.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Accept
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0.1
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 0.3
+				is_rival = AVI
+			}
+			modifier = {
+				factor = 0.3
+				AVI = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 0.2
+				army_strength = {
+					who = PAP
+					value = 1
+				}
+			}
+			modifier = {
+				factor = 1.5
+				army_strength = {
+					who = FRA
+					value = 1
+				}
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 0.3
+				is_rival = FRA
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 0.3
+				FRA = { is_rival = ROOT }
+				FRA = { in_league = protestant }
+			}
+		}
+		name = "golden_bull_avignon_league_war.84.a"
+		switch_tag = AVI
+		inherit = PAP
+		AVI = {
+			kill_ruler = yes
+		}
+		PAP = {
+			kill_ruler = yes
+		}
+		change_tag = PAP
+		remove_government_reform = avignon_papacy_government
+		add_government_reform = papacy_reform
+		118 = {
+			move_capital_effect = yes
+		}
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.12
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.89
+			}
+		}
+	}
+	option = { #No
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 5
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 2
+				is_rival = AVI
+			}
+			modifier = {
+				factor = 2
+				AVI = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 2
+				army_strength = {
+					who = PAP
+					value = 1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				army_strength = {
+					who = FRA
+					value = 1
+				}
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 2
+				is_rival = FRA
+				FRA = { in_league = protestant }
+			}
+			modifier = {
+				factor = 2
+				FRA = { is_rival = ROOT }
+				FRA = { in_league = protestant }
+			}
+		}
+		name = "golden_bull_avignon_league_war.84.b"
+		custom_tooltip = golden_bull_schism_peace_offer_avi_decline_tt
+	}
+
+}
+
+country_event = { #White Peace - Both Sides - Avignon Recieving/Papal Sending
+	id = golden_bull_avignon_league_war.85
+	title = "golden_bull_avignon_league_war.85.t"
+	desc = "golden_bull_avignon_league_war.85.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Yes
+		name = "golden_bull_avignon_league_war.85.a"
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0.1
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 0.3
+				is_rival = PAP
+			}
+			modifier = {
+				factor = 0.3
+				PAP = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 0.2
+				army_strength = {
+					who = AVI
+					value = 1
+				}
+			}
+			modifier = {
+				factor = 1.5
+				army_strength = {
+					who = emperor
+					value = 1
+				}
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 0.3
+				is_rival = emperor
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 0.3
+				emperor = { is_rival = ROOT }
+				emperor = { in_league = catholic }
+			}
+		}
+		switch_tag = PAP
+		inherit = AVI
+		AVI = {
+			kill_ruler = yes
+		}
+		PAP = {
+			kill_ruler = yes
+		}
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.12
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.92
+			}
+		}
+	}
+	option = { #No
+		name = "golden_bull_avignon_league_war.85.b"
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 5
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 2
+				is_rival = PAP
+			}
+			modifier = {
+				factor = 2
+				PAP = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 2
+				army_strength = {
+					who = AVI
+					value = 1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				army_strength = {
+					who = emperor
+					value = 1
+				}
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 2
+				is_rival = emperor
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 2
+				emperor = { is_rival = ROOT }
+				emperor = { in_league = catholic }
+			}
+		}
+		custom_tooltip = golden_bull_schism_peace_offer_avi_decline_tt
+	}
+
+}
+
+country_event = { #Papal States Peaceful Resolution 
+	id = golden_bull_avignon_league_war.86
+	title = "golden_bull_avignon_league_war.86.t"
+	desc = "golden_bull_avignon_league_war.86.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	#Needs Localisation
+	
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Send Demands
+		name = "golden_bull_avignon_league_war.86.a"
+		custom_tooltip = golden_bull_schism_evt_86_opt_a_tt
+		#Avignon gets integrated
+		AVI = {
+			country_event = {
+				id = golden_bull_avignon_league_war.87
+				days = 5
+			}
+		}
+	}
+	option = { #Harsh Treatment
+		name = "golden_bull_avignon_league_war.86.b"
+		custom_tooltip = golden_bull_schism_evt_86_opt_b_tt
+		#Avignon is integrated. Avignon is burned, all standard Catholiques get punished.
+		AVI = {
+			country_event = {
+				id = golden_bull_avignon_league_war.88
+				days = 5
+			}
+		}
+	}
+	option = { #Common Ground
+		name = "golden_bull_avignon_league_war.86.c"
+		custom_tooltip = golden_bull_schism_evt_86_opt_c_tt
+		#Simple white peace. #Note; AI should never offer this, and accepting should be difficult
+		AVI = {
+			country_event = {
+				id = golden_bull_avignon_league_war.85 #White Peace - Avignon Recieves/Papal Sent
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { #Send Demands - Papal Sent
+	id = golden_bull_avignon_league_war.87
+	title = "golden_bull_avignon_league_war.87.t"
+	desc = "golden_bull_avignon_league_war.87.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	#Localise needed
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Accept
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0.1
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 0.5
+				is_rival = PAP
+			}
+			modifier = {
+				factor = 0.5
+				PAP = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 2
+				army_strength = {
+					who = emperor
+					value = 1
+				}
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 0.5
+				is_rival = emperor
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 0.5
+				emperor = { is_rival = ROOT }
+				emperor = { in_league = catholic }
+			}
+		}
+		name = "golden_bull_avignon_league_war.87.a"
+		inherit = AVI
+		118 = {
+			move_capital_effect = yes
+		}
+
+		PAP = {
+			country_event = {
+				id = golden_bull_avignon_league_war.10
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.89
+			}
+		}
+		
+		202 = {
+			limit = {
+				religion = avignon_catholic
+			}
+			change_religion = catholic
+		}
+		
+		183 = {
+			limit = {
+				religion = avignon_catholic
+			}
+			change_religion = catholic
+		}
+	}
+	option = { #No
+		name = "golden_bull_avignon_league_war.87.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 2
+				is_rival = PAP
+			}
+			modifier = {
+				factor = 2
+				PAP = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				army_strength = {
+					who = PAP
+					value = 1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				army_strength = {
+					who = emperor
+					value = 1
+				}
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 2
+				is_rival = emperor
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 2
+				emperor = { is_rival = ROOT }
+				emperor = { in_league = catholic }
+			}
+		}
+		custom_tooltip = golden_bull_schism_peace_offer_avi_decline_tt
+	}
+}
+
+
+
+country_event = { #Harsh Treatment - Papal Sent
+	id = golden_bull_avignon_league_war.88
+	title = "golden_bull_avignon_league_war.88.t"
+	desc = "golden_bull_avignon_league_war.88.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	#Needs Localisation
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #Accept
+		name = "golden_bull_avignon_league_war.88.a"
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0.01
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 0.4
+				is_rival = PAP
+			}
+			modifier = {
+				factor = 0.4
+				PAP = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 2.5
+				army_strength = {
+					who = emperor
+					value = 1
+				}
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 0.4
+				is_rival = emperor
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 0.4
+				emperor = { is_rival = ROOT }
+				emperor = { in_league = catholic }
+			}
+		}
+
+		AVI = {
+			change_primary_culture = umbrian
+			set_ruler_flag = avi_schism_ruler_quick_exile
+		}
+		inherit = AVI
+
+		202 = { #Avignon
+			base_tax = -4
+			base_production = -4
+			base_manpower = -2
+			change_culture = umbrian
+		}
+		118 = { #Rome
+			move_capital_effect = yes
+			base_tax = 4
+			base_production = 4
+			base_manpower = 2
+			change_culture = umbrian
+			change_religion = catholic
+		}
+		PAP = { #Avignon Victory
+			country_event = {
+				id = golden_bull_avignon_league_war.10
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.89
+			}
+		}
+	}
+	option = { #No
+		name = "golden_bull_avignon_league_war.88.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 2
+				is_rival = PAP
+			}
+			modifier = {
+				factor = 2
+				PAP = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				army_strength = {
+					who = PAP
+					value = 1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				army_strength = {
+					who = emperor
+					value = 1
+				}
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 2
+				is_rival = emperor
+				emperor = { in_league = catholic }
+			}
+			modifier = {
+				factor = 2
+				emperor = { is_rival = ROOT }
+				emperor = { in_league = catholic }
+			}
+		}
+		custom_tooltip = golden_bull_schism_peace_offer_avi_decline_tt
+	}
+}
+
+country_event = { #Hidden Event that is a gateway to event 90
+	id = golden_bull_avignon_league_war.89
+	title = "golden_bull_avignon_league_war.89.t"
+	desc = "golden_bull_avignon_league_war.89.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { 
+		name = "golden_bull_avignon_league_war.89.a"
+		every_known_country = {
+			limit = {
+				OR = {
+					religion = catholic
+					religion = avignon_catholic
+				}
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.90
+			}
+		}
+	}
+}
+
+country_event = { #Catholique merged with Catholic
+	id = golden_bull_avignon_league_war.90
+	title = "golden_bull_avignon_league_war.90.t"
+	desc = "golden_bull_avignon_league_war.90.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #It is over
+		name = "golden_bull_avignon_league_war.90.a"
+		every_known_country = {
+			limit = {
+				ai = no
+				OR = {
+					religion = catholic
+					religion = avignon_catholic
+				}
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.91
+			}
+			change_religion = catholic
+		}
+		every_owned_province = {
+			limit = {
+				religion = avignon_catholic
+			}
+			change_religion = catholic
+		}
+		
+	}
+}
+
+country_event = { #Catholic and Cathlique are told of religion merger/Papal Loss
+	id = golden_bull_avignon_league_war.91
+	title = "golden_bull_avignon_league_war.91.t"
+	desc = "golden_bull_avignon_league_war.91.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #It is over
+		name = "golden_bull_avignon_league_war.91.a"
+	}
+}
+
+country_event = { #Hidden Event that is a gateway to event 93
+	id = golden_bull_avignon_league_war.92
+	title = "golden_bull_avignon_league_war.92.t"
+	desc = "golden_bull_avignon_league_war.92.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { 
+		name = "golden_bull_avignon_league_war.92.a"
+		every_known_country = {
+			limit = {
+				OR = {
+					religion = catholic
+					religion = avignon_catholic
+				}
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.93
+			}
+		}
+	}
+}
+
+country_event = { #Catholique merged with Catholic
+	id = golden_bull_avignon_league_war.93
+	title = "golden_bull_avignon_league_war.93.t"
+	desc = "golden_bull_avignon_league_war.93.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	option = { #It is over
+		name = "golden_bull_avignon_league_war.93.a"
+		every_known_country = {
+			limit = {
+				ai = no
+				OR = {
+					religion = catholic
+					religion = avignon_catholic
+				}
+			}
+			country_event = {
+				id = golden_bull_avignon_league_war.94
+			}
+			change_religion = catholic
+		}
+		every_owned_province = {
+			limit = {
+				religion = avignon_catholic
+			}
+			change_religion = catholic
+		}
+		
+	}
+}
+
+country_event = { #Catholic and Cathlique are told of religion merger/Papal Loss
+	id = golden_bull_avignon_league_war.94
+	title = "golden_bull_avignon_league_war.94.t"
+	desc = "golden_bull_avignon_league_war.94.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #It is over
+		name = "golden_bull_avignon_league_war.94.a"
+	}
+}
+
+

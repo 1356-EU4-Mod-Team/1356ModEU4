@@ -578,6 +578,7 @@ theocracy = { #1356
 				holy_state_reform
 				united_cantons_reform
 				patriarch_government_reform #1356
+				avignon_papacy_government #1356
 			}
 		}
 		internal_vs_external_mission = {

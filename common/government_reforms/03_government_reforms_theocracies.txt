@@ -87,6 +87,7 @@ patriarch_government_reform = {
 			AND = {
 				owns_core_province = 118 #Rome
 				NOT = { religion = catholic }
+				NOT = { tag = PAP }
 			}
 		}
 		OR = {
@@ -112,6 +113,54 @@ patriarch_government_reform = {
 		locked_government_type = yes
 	}
 }
+
+avignon_papacy_government = {
+	potential = {
+		tag = AVI
+	}
+
+	modifiers = {
+		prestige_per_development_from_conversion = 0.33
+		tolerance_own = 1
+		church_influence_modifier = 0.2
+	}
+	valid_for_nation_designer = no
+	icon = "papacy"
+	allow_normal_conversion = yes
+	papacy = yes 
+	allow_convert = no
+	lock_level_when_selected = yes
+	fixed_rank = 2
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+#Commented out for now as this would require a LOT of reworking of vanilla content to do properly
+
+# avignon_papacy_league_win_government = {
+	# potential = {
+		# tag = AVI
+	# }
+
+	# modifiers = {
+		# prestige_per_development_from_conversion = 0.33
+		# tolerance_own = 1
+		# church_influence_modifier = 0.2
+	# }
+	# valid_for_nation_designer = no
+	# icon = "papacy"
+	# allow_normal_conversion = yes
+	# papacy = yes
+	# allow_convert = no
+	# lock_level_when_selected = yes
+	# fixed_rank = 2
+
+	# custom_attributes = {
+		# locked_government_type = yes
+	# }
+# }
 
 #1356 changes end
 

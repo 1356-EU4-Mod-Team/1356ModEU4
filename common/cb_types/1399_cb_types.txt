@@ -142,3 +142,18 @@ cb_medieval_crusade = {
 #	war_goal = goal_feudalism_border_war
 #
 #}
+
+cb_avignon_papacy_league_war = {
+	valid_for_subject = yes
+	
+	prerequisites = { #THIS WILL NEED TWEAKS.
+		OR = {
+			tag = PAP
+			tag = AVI
+		}
+		has_global_flag = avignon_papacy_league_flag
+	}
+		
+
+	war_goal = superiority_religious_league
+}	
