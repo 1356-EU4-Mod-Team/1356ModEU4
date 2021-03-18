@@ -18,11 +18,15 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { 
-				owner = SHL controller = SHL add_core = SHL
+	owner = SHL 
+	controller = SHL 
+	add_core = SHL
 } #BT In
 
 1356.12.26  = { 
-				owner = DTT controller = DTT remove_core = SHL
+	owner = DTT 
+	controller = DTT 
+	remove_core = SHL
 } #BT Out
 
 1532.1.1 = { religion = protestant }

@@ -19,11 +19,15 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { 
-				owner = SWA controller = SWA add_core = SWA
+	owner = SWA 
+	controller = SWA 
+	add_core = SWA
 } #BT In
 
 1356.12.26  = { 
-				owner = TRI controller = TRI remove_core = SWA
+	owner = TRI 
+	controller = TRI 
+	remove_core = SWA
 } #BT Out
 
 1690.1.1 = { base_manpower = 1 } # Trier is repeatedly victim of French agression and population declines.

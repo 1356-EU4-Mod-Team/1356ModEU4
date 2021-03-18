@@ -3,7 +3,7 @@
 owner = MAG
 controller = MAG
 add_core = MAG
-culture = saxon
+culture = berliner
 religion = catholic
 hre = yes
 base_tax = 4
@@ -20,11 +20,19 @@ extra_cost = 16
 center_of_trade = 2
 
 1356.12.24  = { 
-				owner = OFA controller = OFA add_core = OFA add_claim = OST add_claim = BRA
+	owner = OFA 
+	controller = OFA 
+	add_core = OFA 
+	add_claim = OST 
+	add_claim = BRA
 } #BT In
 
 1356.12.26  = { 
-				owner = MAG controller = MAG remove_core = OFA remove_claim = OST remove_claim = BRA
+	owner = MAG 
+	controller = MAG 
+	remove_core = OFA 
+	remove_claim = OST 
+	remove_claim = BRA
 } #BT Out
 
 1524.1.1 = { religion = protestant }

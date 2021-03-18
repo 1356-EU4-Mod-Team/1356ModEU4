@@ -20,8 +20,16 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { owner = OST controller = OST add_core = OST } #BT In
-1356.12.26  = { owner = SAX controller = SAX remove_core = OST } #BT Out
+1356.12.24  = { 
+	owner = OST 
+	controller = OST 
+	add_core = OST 
+} #BT In
+1356.12.26  = { 
+	owner = SAX 
+	controller = SAX 
+	remove_core = OST 
+} #BT Out
 
 1485.8.26  = { owner = THU controller = THU add_core = THU remove_core = SAX } # Leipziger Teilung
 1520.12.10 = { religion = protestant reformation_center = protestant }

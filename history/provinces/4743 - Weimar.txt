@@ -13,8 +13,6 @@ base_manpower = 2
 capital = "Weimar"
 is_city = yes
 
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

@@ -11,16 +11,26 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-estate = estate_nobles
 add_core = BRU
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { owner = EGN controller = EGN add_core = EGN add_core = WES add_core = HOY} #BT In
+1356.12.24  = { 
+	owner = EGN 
+	controller = EGN 
+	add_core = EGN 
+	add_core = WES 
+	add_core = HOY
+} #BT In
 
-1356.12.26  = { owner = BRU controller = BRU remove_core = EGN remove_core = WES } #BT Out
+1356.12.26  = { 
+	owner = BRU 
+	controller = BRU 
+	remove_core = EGN 
+	remove_core = WES 
+} #BT Out
 
 1400.1.1 = { remove_core = HOY } #Unsure of when it fell into others hands, as it appears to be long after 1444.
 
