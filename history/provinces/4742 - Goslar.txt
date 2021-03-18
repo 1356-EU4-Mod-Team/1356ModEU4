@@ -13,8 +13,6 @@ base_manpower = 1
 capital = "Goslar"
 is_city = yes
 
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -22,11 +20,17 @@ discovered_by = ottoman
 
 
 1356.12.24  = { 
-				owner = OFA controller = OFA add_core = OFA add_core = OST
+	owner = OFA 
+	controller = OFA 
+	add_core = OFA 
+	add_core = OST
 } #BT In
 
 1356.12.26  = { 
-				owner = GOS controller = GOS remove_core = OFA remove_core = OST
+	owner = GOS 
+	controller = GOS 
+	remove_core = OFA 
+	remove_core = OST
 } #BT Out
 
 

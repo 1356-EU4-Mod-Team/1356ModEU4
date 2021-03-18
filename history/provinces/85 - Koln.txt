@@ -23,11 +23,15 @@ center_of_trade = 2
 add_province_triggered_modifier = 1356_cologne_cathedral_great_project_province_modifier #1356
 
 1356.12.24  = { 
-				owner = SWA controller = SWA add_core = SWA
+	owner = SWA 
+	controller = SWA 
+	add_core = SWA
 } #BT In
 
 1356.12.26  = { 
-				owner = KOL controller = KOL remove_core = SWA
+	owner = KOL
+	controller = KOL
+	remove_core = SWA
 } #BT Out
 
 1380.1.1 = { trade_goods = paper } #1356

@@ -19,9 +19,21 @@ discovered_by = ottoman
 
 hre = yes
 
-1356.12.24  = { owner = EGN controller = EGN add_core = EGN add_core = WES remove_core = BRG } #BT In
+1356.12.24  = { 
+	owner = EGN 
+	controller = EGN 
+	add_core = EGN 
+	add_core = WES 
+	remove_core = BRG 
+} #BT In
 
-1356.12.26  = { owner = BRG controller = BRG add_core = BRG remove_core = WES remove_core = EGN } #BT Out
+1356.12.26  = { 
+	owner = BRG 
+	controller = BRG 
+	add_core = BRG 
+	remove_core = WES 
+	remove_core = EGN 
+} #BT Out
 
 1511.9.6 = { owner = KLE controller = KLE add_core = KLE } # John III of Cleves inherits Berg through his marriage to Maria of Jülich-Berg
 1610.1.1 = { owner = BRA controller = BRA add_core = BRA }

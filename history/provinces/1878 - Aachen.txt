@@ -10,8 +10,8 @@ culture = hessian
 religion = catholic
 trade_goods = grain
 capital = "Aachen"
-base_tax = 5
-base_production = 5
+base_tax = 6
+base_production = 6
 is_city = yes
 add_core = AAC
 base_manpower = 2
@@ -24,11 +24,15 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { 
-				owner = SWA controller = SWA add_core = SWA
+	owner = SWA 
+	controller = SWA 
+	add_core = SWA
 } #BT In
 
 1356.12.26  = { 
-				owner = AAC controller = AAC remove_core = SWA
+	owner = AAC 
+	controller = AAC 
+	remove_core = SWA
 } #BT Out
 
 1690.1.1 = { base_manpower = 1 }

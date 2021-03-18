@@ -13,8 +13,6 @@ base_manpower = 2
 is_city = yes
 add_core = BRU
 
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -22,11 +20,17 @@ discovered_by = ottoman
 
 
 1356.12.24  = { 
-				owner = OFA controller = OFA add_core = OFA add_core = EGN
+	owner = OFA 
+	controller = OFA 
+	add_core = OFA 
+	add_core = EGN
 } #BT In
 
 1356.12.26  = { 
-				owner = BRU controller = BRU remove_core = OFA remove_core = EGN
+	owner = BRU 
+	controller = BRU 
+	remove_core = OFA 
+	remove_core = EGN
 } #BT Out
 
 

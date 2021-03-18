@@ -19,8 +19,16 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24 = { base_tax = 5 base_production = 5	base_manpower = 3 } #BT In
-1356.12.26 = { base_tax = 4 base_production = 4	base_manpower = 1 } #BT Out
+1356.12.24 = { 
+	base_tax = 5 
+	base_production = 5
+	base_manpower = 3
+} #BT In
+1356.12.26 = { 
+	base_tax = 4 
+	base_production = 4
+	base_manpower = 1 
+} #BT Out
 
 1391.12.21 = { owner = KLE controller = KLE add_core = KLE } # Cleves gets Ruler from Mark and becomes dominant power in the province
 1545.1.1   = { fort_15th = yes }
