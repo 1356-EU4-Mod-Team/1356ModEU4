@@ -1,6 +1,7 @@
 discovered_by = north_american
-discovered_by = CRE
-discovered_by = CHE
+# discovered_by = CRE
+# discovered_by = CHE
+# discovered_by = noreligion
 
 
 

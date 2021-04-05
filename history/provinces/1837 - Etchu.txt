@@ -19,11 +19,11 @@ add_core = HTK
 fort_15th = yes # Nanao Castle
 
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
-discovered_by = ANU
+# discovered_by = MCH
+# discovered_by = KHA
+# discovered_by = OIR
+# discovered_by = QNG
+# discovered_by = ANU
 
 1356.1.1  = { revolt = { type = ikko_ikki_rebels size = 1 } }
 1361.1.1  = { owner = SBA controller = SBA remove_core = HSK }

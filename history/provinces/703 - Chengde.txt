@@ -1,9 +1,9 @@
 # 703 - Chengde (1356)
 # Changes: YUA
 
-owner = KRC
-controller = KRC
-add_core = KRC
+owner = YUA
+controller = YUA
+add_core = YUA
 add_core = CHH
 culture = chahar
 religion = vajrayana

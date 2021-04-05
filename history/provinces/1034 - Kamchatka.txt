@@ -1,12 +1,12 @@
 #1034 - Kamchatka
 
-owner = KMC
-controller = KMC
-add_core = KMC
+# owner = KMC
+# controller = KMC
+# add_core = KMC
 culture = kamchatkan
 religion = tengri_pagan_reformed
 capital = "Kamchatka"
-trade_goods = fish
+trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1
@@ -14,14 +14,14 @@ base_manpower = 1
 native_size = 50
 native_ferocity = 2
 native_hostileness = 5
-is_city = yes
+# is_city = yes
 
 
 
-discovered_by = HOD
-discovered_by = CHU
-discovered_by = CHV
-discovered_by = KMC
+# discovered_by = HOD
+# discovered_by = CHU
+# discovered_by = CHV
+# discovered_by = KMC
 
 1647.1.1 = { discovered_by = RUS } # V. Atlasov
 

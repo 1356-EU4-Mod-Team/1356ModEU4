@@ -17,7 +17,7 @@ fort_15th = yes
 
 discovered_by = south_american
 discovered_by = andean
-discovered_by = CHM
+# discovered_by = CHM
 
 1375.1.1  = { owner = CHM controller = CHM add_core = CHM }
 1470.1.1  = {	owner = INC

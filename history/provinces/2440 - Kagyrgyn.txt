@@ -1,12 +1,12 @@
 #2440 - Kagyrgyn
 
-owner = CHU
-controller = CHU
-add_core = CHU
+# owner = CHU
+# controller = CHU
+# add_core = CHU
 culture = kamchatkan
 religion = tengri_pagan_reformed
 capital = "Kagyrgyn"
-trade_goods = fish
+trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1
@@ -14,15 +14,15 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 2
-is_city = yes
+# is_city = yes
 
 
 
-discovered_by = ANU
-discovered_by = HOD
-discovered_by = CHU
-discovered_by = CHV
-discovered_by = KMC
+# discovered_by = ANU
+# discovered_by = HOD
+# discovered_by = CHU
+# discovered_by = CHV
+# discovered_by = KMC
 
 
 1778.1.1 = {

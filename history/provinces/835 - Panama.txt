@@ -5,8 +5,7 @@ culture = muisca
 
 
 discovered_by = south_american
-discovered_by = MCA
-
+# discovered_by = MCA
 religion = animism
 capital = "Panama"
 trade_goods = unknown

@@ -16,6 +16,6 @@ is_city = yes
 base_manpower = 1
 
 discovered_by = sub_saharan
-discovered_by = FZA
+# discovered_by = FZA
 
 1425.1.1 = { religion = sunni }

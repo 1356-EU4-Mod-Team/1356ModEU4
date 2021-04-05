@@ -19,12 +19,12 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = WHI
-discovered_by = AST
-discovered_by = QAS
+# discovered_by = KAZ
+# discovered_by = CRI
+# discovered_by = GOL
+# discovered_by = WHI
+# discovered_by = AST
+# discovered_by = QAS
 1419.12.1 = { revolt = { type = hussite_rebels size = 2 } controller = REB } # Hussite Wars, Battle of Nekmir
 1436.7.5  = { revolt = {} controller = MVA } # Peace is signed in Jihlava
 1444.1.1 = { owner = BOH controller = BOH add_core = BOH }

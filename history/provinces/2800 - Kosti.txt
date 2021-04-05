@@ -14,8 +14,8 @@ base_production = 1
 
 
 
-discovered_by = ALO
-discovered_by = MAK
+# discovered_by = ALO
+# discovered_by = MAK
 
 
 1503.1.1 = {
