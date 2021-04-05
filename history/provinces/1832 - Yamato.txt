@@ -15,10 +15,10 @@ is_city = yes
 add_core = SCJ
 
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+# discovered_by = MCH
+# discovered_by = KHA
+# discovered_by = OIR
+# discovered_by = QNG
 
 1392.1.1   = { owner = TTI controller = TTI add_core = TTI remove_core = SCJ }
 1542.1.1   = { discovered_by = POR }

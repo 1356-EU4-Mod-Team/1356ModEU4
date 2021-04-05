@@ -19,10 +19,10 @@ add_core = MRI
 fort_15th = yes # Gassantoda Castle
 
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+# discovered_by = MCH
+# discovered_by = KHA
+# discovered_by = OIR
+# discovered_by = QNG
 
 1368.1.1   = { owner = STK controller = STK }
 1379.1.1   = { owner = YMN controller = YMN }

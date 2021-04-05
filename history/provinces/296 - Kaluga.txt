@@ -14,8 +14,8 @@ is_city = yes
 add_core = LZH
 discovered_by = eastern
 discovered_by = western
-discovered_by = GOL
-discovered_by = KAZ
+# discovered_by = GOL
+# discovered_by = KAZ
 discovered_by = nomad_group
 unrest = 15
 1360.1.1 = { add_core = MOS } 

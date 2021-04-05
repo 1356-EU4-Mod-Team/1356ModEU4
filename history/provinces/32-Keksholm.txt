@@ -17,11 +17,11 @@ fort_15th = yes #1356
 discovered_by = western
 discovered_by = eastern
 discovered_by = nomad_group
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = WHI
-discovered_by = AST
+# discovered_by = KAZ
+# discovered_by = CRI
+# discovered_by = GOL
+# discovered_by = WHI
+# discovered_by = AST
 
 
 1337.1.1 = { #Historically Narimantas was invited circa 1333 into the region, but for gameplay purposes we have an event to handle it dynamically.

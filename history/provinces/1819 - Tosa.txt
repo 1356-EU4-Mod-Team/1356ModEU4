@@ -15,10 +15,10 @@ is_city = yes
 add_core = HSK
 
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+# discovered_by = MCH
+# discovered_by = KHA
+# discovered_by = OIR
+# discovered_by = QNG
 
 1376.1.1   = { owner = HSK controller = HSK }
 1490.1.1   = { add_core = CSK }

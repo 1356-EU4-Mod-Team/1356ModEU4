@@ -1,9 +1,9 @@
 # 722 - Jurim (1356)
 
 
-owner = KRC
-controller = KRC
-add_core = KRC
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = chahar
 religion = vajrayana
 capital = "Jirem"

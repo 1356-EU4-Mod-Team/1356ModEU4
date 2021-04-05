@@ -1,8 +1,8 @@
 # 724 - Hulunbuir (1356)
 # Changes: YUA
 
-owner = YUA
-controller = YUA
+owner = X01
+controller = X01
 culture = buryat
 religion = tengri_pagan_reformed
 capital = "Hulunbuir"
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = YUA
+add_core = X01
 add_core = BRT
 
 discovered_by = chinese

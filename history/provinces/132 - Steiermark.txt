@@ -20,10 +20,10 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = AST
-discovered_by = QAS
+# discovered_by = KAZ
+# discovered_by = CRI
+# discovered_by = AST
+# discovered_by = QAS
 
 # 1.30.2 Golden Bull Update
 #1356.12.24  = { owner = STY controller = STY } #BT In

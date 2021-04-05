@@ -13,11 +13,11 @@ base_manpower = 2
 is_city = yes
 add_core = ASK
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
-discovered_by = ANU
+# discovered_by = MCH
+# discovered_by = KHA
+# discovered_by = OIR
+# discovered_by = QNG
+# discovered_by = ANU
 
 add_permanent_province_modifier = {
 	name = heian_kyo

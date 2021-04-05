@@ -15,10 +15,10 @@ is_city = yes
 add_core = TKD
 
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+# discovered_by = MCH
+# discovered_by = KHA
+# discovered_by = OIR
+# discovered_by = QNG
 
 1371.1.1   = { owner = IMG controller = IMG add_core = IMG }
 1392.1.1   = { owner = HSK controller = HSK add_core = HSK remove_core = IMG remove_core = TKD }

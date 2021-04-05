@@ -15,9 +15,9 @@ add_core = KON
 
 discovered_by = central_african
 
-discovered_by = KON
-discovered_by = NDO
-discovered_by = LOA
+# discovered_by = KON
+# discovered_by = NDO
+# discovered_by = LOA
 discovered_by = sub_saharan
 
 

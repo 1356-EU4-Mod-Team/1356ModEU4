@@ -15,11 +15,11 @@ is_city = yes
 add_core = SBA
 
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
-discovered_by = ANU
+# discovered_by = MCH
+# discovered_by = KHA
+# discovered_by = OIR
+# discovered_by = QNG
+# discovered_by = ANU
 
 1366.1.1   = { owner = HTK controller = HTK add_core = HTK }
 1380.1.1   = { owner = SBA controller = SBA remove_core = HTK }

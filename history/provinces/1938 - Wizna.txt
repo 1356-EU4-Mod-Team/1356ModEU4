@@ -15,12 +15,12 @@ estate = estate_nobles
 add_core = WRW
 
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = WHI
-discovered_by = AST
-discovered_by = QAS
+# discovered_by = KAZ
+# discovered_by = CRI
+# discovered_by = GOL
+# discovered_by = WHI
+# discovered_by = AST
+# discovered_by = QAS
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

@@ -16,10 +16,10 @@ is_city = yes
 add_core = YMN
 
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+# discovered_by = MCH
+# discovered_by = KHA
+# discovered_by = OIR
+# discovered_by = QNG
 
 1370.1.1  = { owner = IMG controller = IMG }
 1371.1.1  = { owner = YMN controller = YMN remove_core = IMG }

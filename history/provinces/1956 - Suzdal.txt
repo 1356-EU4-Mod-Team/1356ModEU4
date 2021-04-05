@@ -14,8 +14,8 @@ estate = estate_nobles
 is_city = yes
 add_core = VLD
 
-discovered_by = GOL
-discovered_by = KAZ
+# discovered_by = GOL
+# discovered_by = KAZ
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group

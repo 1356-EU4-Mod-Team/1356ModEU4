@@ -1,7 +1,7 @@
 #836 - Chorotega
 
 culture = muisca
-discovered_by = MCA
+# discovered_by = MCA
 religion = animism
 capital = "Chorotega"
 trade_goods = unknown

@@ -21,7 +21,7 @@ base_manpower = 2
 
 
 
-discovered_by = QTO
+# discovered_by = QTO
 
 
 1487.1.1 = {

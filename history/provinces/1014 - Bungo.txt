@@ -15,10 +15,10 @@ is_city = yes
 add_core = OTM
 
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+# discovered_by = MCH
+# discovered_by = KHA
+# discovered_by = OIR
+# discovered_by = QNG
 
 #1374.1.1  = { controller = OTM }
 
