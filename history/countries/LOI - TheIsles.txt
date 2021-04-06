@@ -28,6 +28,7 @@ government_rank = 1
 	}
 }
 
+
 1423.1.1 = {
 	monarch = {
 		name = "Alasdair"

@@ -1,5 +1,4 @@
 government = republic
-government_rank = 2
 add_government_reform = venice_merchants_reform
 mercantilism = 25
 primary_culture = venetian

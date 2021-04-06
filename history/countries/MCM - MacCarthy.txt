@@ -27,6 +27,10 @@ capital = 4378	# Kingdom of Desmond
 	}
 }
 
+# 1440.1.1 = {
+	# government = monarchy
+	# add_government_reform = earldom_reform
+# }
 
 1469.1.1 = {
 	monarch = {
