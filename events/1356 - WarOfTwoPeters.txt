@@ -1,5 +1,362 @@
 namespace = WarTwoPetersFlavor
 
+country_event = { #HYW Units redeployment
+	id = WarTwoPetersFlavor.10000000
+	title = WarTwoPetersFlavor.1.t
+	desc = WarTwoPetersFlavor.1.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	#major = yes
+	hidden = yes
+	
+	trigger = {
+		tag = ENG
+	}
+
+	option = {
+		name = WarTwoPetersFlavor.1.a
+		define_heir_to_general = {
+			name = "Edward, The Black Prince"
+			fire = 5
+			shock = 6
+			manuever = 4
+			siege = 2
+		}
+		every_owned_province = {
+			kill_units = {
+				who = owner
+				type = infantry
+			}
+		}	
+		every_owned_province = {
+			kill_units = {
+				who = owner
+				type = cavalry
+			}
+		}
+		FRA = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = infantry
+				}
+			}	
+		}	
+		FRA = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = cavalry
+				}
+			}
+		}	
+		LNC = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = infantry
+				}
+			}	
+		}	
+		LNC = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = cavalry
+				}
+			}
+		}
+		NOL = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = infantry
+				}
+			}	
+		}	
+		NOL = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = cavalry
+				}
+			}
+		}	
+		WLS = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = infantry
+				}
+			}	
+		}	
+		WLS = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = cavalry
+				}
+			}
+		}			
+		4111 = {
+			cede_province = ENG
+		}	
+		ENG = {
+			4111 = {
+				build_to_forcelimit = {
+					infantry = 0.5
+					cavalry = 0.15
+				}
+			}
+		}
+		4111 = {
+			cede_province = FRA
+			change_controller = ENG
+		}	
+
+		4387 = {
+			cede_province = ENG
+		}	
+		ENG = {
+			4387 = {
+				build_to_forcelimit = {
+					infantry = 1
+				}
+			}
+		}
+		4387 = {
+			cede_province = ORL
+			change_controller = ENG
+		}
+		
+
+		194 = {
+			cede_province = LNC
+		}	
+		LNC = {
+			194 = {
+				build_to_forcelimit = {
+					infantry = 1
+				}
+			}
+		}
+		194 = {
+			cede_province = FRA
+			change_controller = ENG
+		}
+		194 = {
+			cede_province = NOL
+		}	
+		NOL = {
+			194 = {
+				build_to_forcelimit = {
+					infantry = 1
+				}
+			}
+		}
+		194 = {
+			cede_province = FRA
+			change_controller = ENG
+		}	
+		194 = {
+			cede_province = WLS
+		}	
+		WLS = {
+			194 = {
+				build_to_forcelimit = {
+					infantry = 1
+				}
+			}
+		}
+		194 = {
+			cede_province = FRA
+			change_controller = ENG
+		}		
+		FRA = {
+			define_heir_to_general = {
+				name = "The Dauphin Charles"
+				fire = 3
+				shock = 5
+				manuever = 6
+				siege = 1
+			}
+			4389 = {
+				build_to_forcelimit = {
+					infantry = 0.4
+					cavalry = 0.15
+				}
+			}
+		}
+		FRA = {
+			179 = {
+				build_to_forcelimit = {
+					infantry = 0.9
+					cavalry = 0.1
+				}
+			}
+		}
+		CTR = {
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 5
+				siege = 2
+			}	
+		}
+		CAS = {
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 5
+				siege = 2
+			}	
+		}
+		CAS = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = infantry
+				}
+			}	
+		}	
+		CAS = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = cavalry
+				}
+			}
+		}	
+		ARA = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = infantry
+				}
+			}	
+		}	
+		ARA = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = cavalry
+				}
+			}
+		}
+		CTR = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = infantry
+				}
+			}	
+		}	
+		CTR = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = cavalry
+				}
+			}
+		}
+		POR = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = infantry
+				}
+			}	
+		}	
+		POR = {
+			every_owned_province = {
+				kill_units = {
+					who = owner
+					type = cavalry
+				}
+			}
+		}
+		CAS = {
+			4789 = {
+				build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.10
+				}
+			}
+		}	
+		CAS = {
+			217 = {
+				build_to_forcelimit = {
+					infantry = 1
+				}
+			}
+		}	
+		ARA = {
+			220 = {
+				build_to_forcelimit = {
+					infantry = 0.5
+					cavalry = 0.15
+				}
+			}
+		}	
+		ARA = {
+			4549 = {
+				build_to_forcelimit = {
+					infantry = 0.4
+					cavalry = 0.20
+				}
+			}
+		}
+		ARA = {
+			197 = {
+				build_to_forcelimit = {
+					infantry = 1
+				}
+			}
+		}
+		CTR = {
+			219 = {
+				build_to_forcelimit = {
+					infantry = 0.6
+					cavalry = 0.2
+				}
+			}
+		}	
+		CTR = {
+			4547 = {
+				build_to_forcelimit = {
+					infantry = 1
+				}
+			}
+		}	
+		POR = {
+			231 = {
+				build_to_forcelimit = {
+					infantry = 0.4
+					cavalry = 0.1
+				}
+			}
+		}	
+		POR = {
+			4150 = {
+				build_to_forcelimit = {
+					infantry = 1
+				}
+			}
+		}	
+		add_opinion = {
+			who = CAS
+			modifier = no_intervention_castile
+		}	
+		reverse_add_opinion = {
+			who = CAS
+			modifier = no_intervention_castile
+		}			
+	}
+}
+
+
+
 country_event = { #Castile
 	id = WarTwoPetersFlavor.1
 	title = WarTwoPetersFlavor.1.t
@@ -23,6 +380,7 @@ country_event = { #Castile
         custom_tooltip = WarTwoPetersFlavor.1.a.tt	
 	}
 }
+
 country_event = { #Trastamara
 	id = WarTwoPetersFlavor.2
 	title = WarTwoPetersFlavor.2.t
@@ -52,22 +410,25 @@ country_event = { #Castile Wins Civil War
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
-	major = yes
+	#major = yes
 	
 	trigger = {
 		tag = CAS
-		OR = {
-			senior_union_with = CTR
-			219 = { controlled_by = CAS }
-			219 = { controlled_by = ENG }
-			219 = { controlled_by = GRA }
-			219 = { controlled_by = POR }
-			219 = { controlled_by = GUY }
-			219 = { controlled_by = FOI }
-			219 = { controlled_by = AMG }
-			219 = { controlled_by = MNF }
-			219 = { controlled_by = NAV }			
-		}			
+		war_score_against = {
+			who = CTR
+			value = 40
+		}				
+		# OR = {
+			# 219 = { controlled_by = CAS }
+			# 219 = { controlled_by = ENG }
+			# 219 = { controlled_by = GRA }
+			# 219 = { controlled_by = POR }
+			# 219 = { controlled_by = GUY }
+			# 219 = { controlled_by = FOI }
+			# 219 = { controlled_by = AMG }
+			# 219 = { controlled_by = MNF }
+			# 219 = { controlled_by = NAV }			
+		# }			
         NOT = { has_global_flag = "trastamara_wins_civil_war" }
 	}
 
@@ -79,6 +440,14 @@ country_event = { #Castile Wins Civil War
 		name = WarTwoPetersFlavor.3.a
 		set_global_flag = "castile_wins_civil_war"
 		white_peace = CTR
+		remove_opinion = {
+			who = ENG
+			modifier = no_intervention_castile
+		}	
+		reverse_remove_opinion = {
+			who = ENG
+			modifier = no_intervention_castile
+		}	
 	}
 }
 country_event = { #House Trastamara wins Civil War
@@ -88,23 +457,26 @@ country_event = { #House Trastamara wins Civil War
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
-    major = yes
+    #major = yes
 	
 	trigger = {
 		tag = CTR
-		OR = {
-			senior_union_with = CAS
-			208 = { controlled_by = CTR }
-			208 = { controlled_by = ARA }
-			208 = { controlled_by = FRA }
-			208 = { controlled_by = AUV }
-			208 = { controlled_by = FOZ }
-			208 = { controlled_by = DAU }
-			208 = { controlled_by = BOU }
-			208 = { controlled_by = BLS }
-			208 = { controlled_by = ANJ }
-			208 = { controlled_by = ALE }			
-		}		
+		war_score_against = {
+			who = CAS
+			value = 40
+		}						
+		# OR = {
+			# 208 = { controlled_by = CTR }
+			# 208 = { controlled_by = ARA }
+			# 208 = { controlled_by = FRA }
+			# 208 = { controlled_by = AUV }
+			# 208 = { controlled_by = FOZ }
+			# 208 = { controlled_by = DAU }
+			# 208 = { controlled_by = BOU }
+			# 208 = { controlled_by = BLS }
+			# 208 = { controlled_by = ANJ }
+			# 208 = { controlled_by = ALE }			
+		# }		
 	}
 
 	mean_time_to_happen = {
@@ -122,6 +494,16 @@ country_event = { #House Trastamara wins Civil War
         set_government_rank = 2
         add_truce_with = POR
         add_truce_with = GRA 
+		hidden_effect = { # Just in Case
+			remove_opinion = {
+				who = ENG
+				modifier = no_intervention_castile
+			}	
+			reverse_remove_opinion = {
+				who = ENG
+				modifier = no_intervention_castile
+			}		
+		}	
 	}
 }
 country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Rival, Portugal as a Historical Friend
@@ -134,8 +516,8 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
 	
 	trigger = {
 		tag = CAS
-                has_global_flag = "castile_wins_civil_war"
-                NOT = { has_global_flag = "trastamara_wins_civil_war" }
+        has_global_flag = "castile_wins_civil_war"
+        NOT = { has_global_flag = "trastamara_wins_civil_war" }
 	}
 
 	mean_time_to_happen = {
@@ -150,9 +532,9 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
 		change_mil = 1
 		change_adm = 2
 		change_dip = 2
-		change_heir_adm = 3
-		change_heir_mil = 3
-		change_heir_dip = 3
+		change_heir_adm = 1
+		change_heir_mil = 2
+		change_heir_dip = 1
 		}	
 }
 country_event = { #Castile
@@ -161,7 +543,7 @@ country_event = { #Castile
 	desc = WarTwoPetersFlavor.6.d
 	picture = CIVIL_WAR_eventPicture
 	
-	major = yes
+	#major = yes
 	is_triggered_only = yes
 	
 
@@ -175,42 +557,43 @@ country_event = { #Castile
 		add_prestige = -15
 	}
 }
-country_event = { #Trastamara
-	id = WarTwoPetersFlavor.7
-	title = WarTwoPetersFlavor.7.t
-	desc = WarTwoPetersFlavor.7.d
-	picture = CIVIL_WAR_eventPicture
+# country_event = { #Trastamara               ##### Former Sevilla Event
+	# id = WarTwoPetersFlavor.7
+	# title = WarTwoPetersFlavor.7.t
+	# desc = WarTwoPetersFlavor.7.d
+	# picture = CIVIL_WAR_eventPicture
 
-	fire_only_once = yes
-	major = yes
+	# fire_only_once = yes
+	#major = yes
 	
-	trigger = {
-		tag = CTR
-		exists = CAS
-		is_year = 1360
-		is_at_war = no
-	}
+	# trigger = {
+		# tag = CTR
+		# exists = CAS
+		# is_year = 1360
+		# is_at_war = no
+		# is_free_or_tributary_trigger = yes
+	# }
 
-	mean_time_to_happen = {
-		days = 1
-	}
+	# mean_time_to_happen = {
+		# days = 1
+	# }
 
-	option = {
-		name = WarTwoPetersFlavor.7.a
-		change_tag = SEV
-		add_prestige = 25
-		add_legitimacy = 100
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		CAS = {
-			country_event = { 
-				id = WarTwoPetersFlavor.6
-				days = 15
-				random = 15
-			}
-		}
-	}
-}
+	# option = {
+		# name = WarTwoPetersFlavor.7.a
+		# change_tag = SEV
+		# add_prestige = 25
+		# add_legitimacy = 100
+		# add_adm_power = 100
+		# add_dip_power = 100
+		# add_mil_power = 100
+		# CAS = {
+			# country_event = { 
+				# id = WarTwoPetersFlavor.6
+				# days = 15
+				# random = 15
+			# }
+		# }
+	# }
+# }
 
 	
