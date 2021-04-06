@@ -80,6 +80,7 @@ capital = 375	# Cork
 # Tadhg deposed
 
 1438.1.1 = {
+	add_government_reform = earldom_reform
 	monarch = {
 		name = "Mathghamhain Dall"
 		dynasty = "O'Brien"

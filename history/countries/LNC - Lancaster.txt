@@ -8,7 +8,6 @@ religion = catholic
 capital = 244	# Chester
 fixed_capital = 244 # Cannot move capital away from this province & no power cost to move to it
 
-
 1345.9.22 = { 
 	capital = 244
 	monarch = {
@@ -84,3 +83,5 @@ fixed_capital = 244 # Cannot move capital away from this province & no power cos
 	}
 	primary_culture = english
 }
+
+1405.1.1 = { primary_culture = english }
