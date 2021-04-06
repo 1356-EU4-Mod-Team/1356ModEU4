@@ -1596,6 +1596,7 @@ chinese_kingdom_government_reform = {
 #}
 
 
+
 golden_bull_federation_government = {
 	icon = "elective_monarchy"
 	allow_normal_conversion = yes
@@ -1660,7 +1661,6 @@ golden_bull_composite_monarchy = {
 		factor = 2 
 	}
 }
-
 
 ######END 1356 CHANGES#####
 

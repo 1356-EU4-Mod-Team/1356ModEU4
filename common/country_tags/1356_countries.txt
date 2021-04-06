@@ -189,6 +189,7 @@ GON = "countries/GondwanaKingdom.txt"
 
 #China & Korea
 GYO = "countries/Goryeo.txt"
+X01 = "countries/Liaoyang.txt" # Yuan Governance of Manchuria
 
 #V2
 
