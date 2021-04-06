@@ -14,78 +14,79 @@ country_event = {
 	
 	fire_only_once = yes
 	major = yes
-	is_triggered_only = yes
+	#is_triggered_only = yes
 	
 	trigger = {
-		#tag = WHI
-		#is_year = 1356
-		#NOT = { is_year = 1385 }
+		tag = WHI
+		is_year = 1380
+		NOT = { is_year = 1390 }
+		has_global_flag = russian_independence_league_leader_decided
 		OR = {
 			MOS = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			RYA = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			OKA = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			SMO = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			RSO = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}			
 			TVE = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			YAR = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			MRM = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			NZH = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			BLO = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			SDU = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			KMA = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			GLY = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 			VLD = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}	
 			DMT = {
 				is_subject_of = ROOT
-				liberty_desire = 25
+				liberty_desire = 10
 			}			
 		}
 	}
 	
 	mean_time_to_happen = {
-		years = 1
+		years = 2
 	}
 	
 	immediate = {
@@ -493,6 +494,7 @@ country_event = {
 		has_country_flag = russian_independence_league_leader_flag
 		#NOT = { war_with = WHI }
 		NOT = { is_at_war = yes }
+		is_free_or_tributary_trigger = yes
 	}	
 	
 	option = { #Curses
@@ -777,72 +779,72 @@ country_event = { #Princes who seperate peace become tributes again
 		custom_tooltip = sikandar.3.a.tt
 		WHI = {
 			create_subject = {
-				subject_type = tributary_state
+				subject_type = golden_horde_tributary_state
 				subject = ROOT
 			}	
 		}		
 	}
 }
-country_event = { #Failsafe if White Horde breaks Tribute
-	id = rus_independence.999
-	title = sikandar.444.t
-	desc = sikandar.444.d
-	picture = GOOD_WITH_MONARCH_eventPicture
+# country_event = { #Failsafe if White Horde breaks Tribute
+	# id = rus_independence.999
+	# title = sikandar.444.t
+	# desc = sikandar.444.d
+	# picture = GOOD_WITH_MONARCH_eventPicture
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	#is_triggered_only = yes
-	hidden = yes
+	# hidden = yes    																	# NO LONGER NEEDED WITH NEW SUBJECT TYPE
 	
-	trigger = {
-		has_country_flag = russian_independence_league_leader_flag
-		NOT = { has_global_flag = russian_independence_league_fired }
-		is_year = 1380
-		NOT = { is_year = 1386 }
-		OR = {
-			tag = MOS
-			tag = RYA
-			tag = OKA
-			tag = SMO
-			tag = TVE
-			tag = RSO
-			tag = YAR
-			tag = MRM
-			tag = NZH
-			tag = BLO
-			tag = SDU
-			tag = KMA
-			tag = GLY
-			tag = VLD
-			tag = DMT
-		}
-	}
+	# trigger = {
+		# has_country_flag = russian_independence_league_leader_flag
+		# NOT = { has_global_flag = russian_independence_league_fired }
+		# is_year = 1380
+		# NOT = { is_year = 1386 }
+		# OR = {
+			# tag = MOS
+			# tag = RYA
+			# tag = OKA
+			# tag = SMO
+			# tag = TVE
+			# tag = RSO
+			# tag = YAR
+			# tag = MRM
+			# tag = NZH
+			# tag = BLO
+			# tag = SDU
+			# tag = KMA
+			# tag = GLY
+			# tag = VLD
+			# tag = DMT
+		# }
+	# }
 	
-	mean_time_to_happen = {
-		months = 6
-	}
+	# mean_time_to_happen = {
+		# months = 6
+	# }
 	
-	option = { #Curses
-		name = sikandar.1.a
-		custom_tooltip = sikandar.3.a.tt
-		if = {
-			limit = {
-				ROOT = {
-					has_country_flag = russian_independence_league_leader_flag
-					NOT = { is_subject_of = WHI }
-				}
-			}
-			WHI = {
-				create_subject = {
-					subject_type = tributary_state
-					subject = ROOT
-				}	
-			}
-		}
-		WHI = {
-			country_event = { id = rus_independence.1 } 
-		}		
-	}
-}
+	# option = { #Curses
+		# name = sikandar.1.a
+		# custom_tooltip = sikandar.3.a.tt
+		# if = {
+			# limit = {
+				# ROOT = {
+					# has_country_flag = russian_independence_league_leader_flag
+					# NOT = { is_subject_of = WHI }
+				# }
+			# }
+			# WHI = {
+				# create_subject = {
+					# subject_type = golden_horde_tributary_state
+					# subject = ROOT
+				# }	
+			# }
+		# }
+		# WHI = {
+			# country_event = { id = rus_independence.1 } 
+		# }		
+	# }
+# }
 
 country_event = { #Leader loses 'Leader of the Russian League' modifier
 	id = rus_independence.33
@@ -936,6 +938,7 @@ province_event = { #Council to decide Russian League Leader
 	
 	option = {
 		name = rus_independence.5.a		
+		set_global_flag = russian_independence_league_leader_decided
 	}
 }
 
@@ -946,8 +949,11 @@ country_event = { #White Horde defeats Russian league
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	
 	fire_only_once = yes
-	is_triggered_only = yes
 	major = yes
+	
+	mean_time_to_happen = {
+		months = 6
+	}	
 	
 	trigger = {
 		tag = WHI
@@ -987,7 +993,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = NZH
 				}	
 			}
@@ -1000,7 +1006,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = RYA
 				}	
 			}
@@ -1013,7 +1019,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = OKA
 				}	
 			}
@@ -1026,7 +1032,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = SMO
 				}	
 			}
@@ -1039,7 +1045,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = MRM
 				}	
 			}
@@ -1052,7 +1058,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = YAR
 				}	
 			}
@@ -1065,7 +1071,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = RSO
 				}	
 			}
@@ -1078,7 +1084,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = TVE
 				}	
 			}
@@ -1091,7 +1097,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = BLO
 				}	
 			}
@@ -1104,7 +1110,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = SDU
 				}	
 			}
@@ -1117,7 +1123,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = KMA
 				}	
 			}
@@ -1130,7 +1136,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = GLY
 				}	
 			}
@@ -1143,7 +1149,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = VLD
 				}	
 			}
@@ -1156,7 +1162,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = DMT
 				}	
 			}
@@ -1169,7 +1175,7 @@ country_event = { #White Horde defeats Russian league
 			}
 			ROOT = {
 				create_subject = {
-					subject_type = tributary_state
+					subject_type = golden_horde_tributary_state
 					subject = MOS
 				}	
 			}

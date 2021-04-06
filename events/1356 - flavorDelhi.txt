@@ -441,7 +441,7 @@ country_event = {  ####Samma Declares war on Delhi
 	trigger = {
 		tag = DLH
 		has_ruler = "Feroze Shah"
-		is_year = 1362
+		is_year = 1368
 		has_country_modifier = decentrialized_delhi_empire
 	}
 	immediate = {
