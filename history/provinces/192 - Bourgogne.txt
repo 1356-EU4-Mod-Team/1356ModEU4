@@ -1,5 +1,5 @@
 # 192 - Bourgogne (1356)
-
+# Changes: FRA
 
 owner = BUR
 controller = BUR 
@@ -8,11 +8,11 @@ is_city = yes
 culture = burgundian
 religion = catholic
 hre = no
-base_tax = 7 
+base_tax = 8 
 
-base_production = 7
+base_production = 8
 trade_goods = wine
-base_manpower = 6
+base_manpower = 7
 add_core = BUR
 fort_15th = yes
 
@@ -24,8 +24,7 @@ extra_cost = 16
 center_of_trade = 2
 
 1361.11.21 = { owner = FRA controller = FRA add_core = FRA } # Philippe I dies, his brother king of France inherits Burgundy
-1363.9.6   = { owner = BUR controller = BUR remove_core = FRA} # The king of France (Jean II) offers his youngest son Philippe the duchy of Burgundy for his efforts in the Battle of Poitiers
-
+1363.9.6   = { owner = BUR controller = BUR } # The king of France (Jean II) offers his youngest son Philippe the duchy of Burgundy for his efforts in the Battle of Poitiers
 1477.1.5   = { owner = FRA controller = FRA add_core = FRA } # Charles the Bold dies and transfers Bourgogne to France
 
 1526.1.14  = { add_core = HAB } # Treaty of Madrid, Austria claims Burgundy, but François I refuses to hand it over subsequently

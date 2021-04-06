@@ -1,8 +1,8 @@
 # 666 - Hainan (1356)
 # Changes: YUA/CZH
 
-owner = MIN
-controller = MIN
+owner = YUA
+controller = YUA
 culture = chimin
 religion = confucianism
 capital = "Kingchow"
@@ -14,7 +14,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = YUA
-add_core = MIN
+#add_core = MIN
 #add_core = CZH
 
 discovered_by = chinese

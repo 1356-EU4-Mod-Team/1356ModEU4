@@ -1,8 +1,8 @@
 # 2157 - Waichow (1356)
 # Changes: YUA/CZH
 
-owner = MIN
-controller = MIN
+owner = YUA
+controller = YUA
 culture = hakka
 religion = confucianism
 capital = "Waichow"
@@ -14,7 +14,7 @@ base_production = 7
 base_manpower = 3
 is_city = yes
 add_core = YUA
-add_core = MIN
+#add_core = MIN
 #add_core = CZH
 add_core = YUE
 add_core = HUA

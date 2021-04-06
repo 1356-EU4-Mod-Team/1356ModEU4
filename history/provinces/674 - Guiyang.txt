@@ -1,8 +1,8 @@
 # 674 - Guiyang (1356)
 # Changes: YUA/CZH
 
-owner = MIN
-controller = MIN
+owner = YUA
+controller = YUA
 culture = yi
 religion = animism
 capital = "Guiyang"
@@ -14,7 +14,7 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = YUA
-add_core = MIN
+#add_core = MIN
 add_core = CYI
 add_core = CDL
 

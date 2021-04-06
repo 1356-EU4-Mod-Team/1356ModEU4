@@ -1,7 +1,7 @@
 #4366 - Pembrokeshire+Camartenshire+Cardiganshire
 
-owner = WLS
-controller = WLS
+owner = ENG
+controller = ENG
 culture = welsh
 religion = catholic
 hre = no
@@ -11,16 +11,17 @@ trade_goods = livestock
 base_manpower = 1
 capital = "Carmarthen"
 is_city = yes
-add_core = WLS
+add_core = ENG
+add_core = WLS 
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
-1399.1.1  = { unrest = 20 } # Buildup to the Welsh Revolt
-1400.9.16 = { revolt = { type = pretender_rebels size = 2 name = "Owain Glyndwr" leader = "Owain Glyndwr" } } # The Welsh Revolt
-1404.1.1  = { unrest = 0 revolt = {} owner = WLS controller = WLS }
-1415.1.1 = { revolt = {} owner = ENG controller = ENG add_core = ENG } # English rule is restored
+
+1356.1.1  = { owner = WLS controller = WLS remove_core = ENG } 
+1400.9.16 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # The Welsh Revolt
+1415.1.1 = { revolt = {} owner = ENG controller = ENG } # English rule is restored
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 0 revolt = { type = revolutionary_rebels size = 2 leader = "Henry of Lancaster" } controller = REB } # Lancastrian Holdouts after Coronation of Edward IV
 1467.1.1 = { revolt = {} unrest = 5 } # Rivalry between Edward IV & Warwick

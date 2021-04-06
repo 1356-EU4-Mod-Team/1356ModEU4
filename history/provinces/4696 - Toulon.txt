@@ -4,9 +4,9 @@ owner = PRO
 controller = PRO 
 capital = "Toulon"
 is_city = yes
-culture = provencial_culture
+culture = occitain
 religion = catholic
-hre = yes
+hre = no
 base_tax = 4
 base_production = 4
 trade_goods = naval_supplies
@@ -20,8 +20,11 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { hre = yes } #BT In
 
-1481.12.10 = { owner = FRA controller = FRA add_core = FRA hre = no } # Provence added to France after the death of Duke Charles
+#1356.12.26  = { hre = no } #BT Out
+
+1481.1.1 = { owner = FRA controller = FRA add_core = FRA } # Provence added to France after the death of Duke Charles
 1526.5.22 = { controller = HAB } # Austria invades the Provence during the Franco-Habsburg war (1521-1529)
 1529.8.3 = { controller = FRA } # Treaty of Cambrai (Ladies' Peace): Back to status quo
 1536.7.1 = { controller = HAB } # Charles V again captures the Provence in another Franco-Habsburg war

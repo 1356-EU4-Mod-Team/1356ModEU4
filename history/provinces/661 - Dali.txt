@@ -1,8 +1,8 @@
 # 661 - Dali (1356)
 # Changes: YUA/CZH
 
-owner = MIN
-controller = MIN
+owner = YUA
+controller = YUA
 culture = bai
 religion = buddhism
 capital = "Dali"
@@ -14,7 +14,7 @@ base_production = 3
 base_manpower = 3
 is_city = yes
 add_core = YUA
-add_core = MIN
+#add_core = MIN
 add_core = CDL
 
 discovered_by = chinese

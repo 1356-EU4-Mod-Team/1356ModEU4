@@ -1,8 +1,8 @@
 # 667 - Guangzhou (1356)
 # Changes: YUA/CZH
 
-owner = MIN
-controller = MIN
+owner = YUA
+controller = YUA
 culture = cantonese
 religion = confucianism
 capital = "Canton"
@@ -13,7 +13,7 @@ base_production = 12
 base_manpower = 3
 is_city = yes
 add_core = YUA
-add_core = MIN
+#add_core = MIN
 #add_core = CZH
 add_core = YUE
 fort_15th = yes # More than 1 Weisuo
