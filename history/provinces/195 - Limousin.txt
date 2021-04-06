@@ -1,20 +1,19 @@
 # 195 - Limousin (1356)
 # Changes: ENG
 
-owner = BOU
-controller = BOU
+owner = FRA
+controller = FRA
 capital = "Limoges"
 is_city = yes
-culture = occitain
+culture = aquitaine
 religion = catholic
 hre = no
-base_tax = 3
+base_tax = 5 
 
-base_production = 3
+base_production = 5
 trade_goods = livestock
 base_manpower = 2
-add_core = BOU
-add_core = FLM #Subject of Bourbonnais
+add_core = FRA
 add_core = GUY
 
 discovered_by = eastern
@@ -22,15 +21,12 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.12.24  = { owner = AQT controller = AQT add_core = AQT remove_core = BOU remove_core = GUY } #BT In
-1356.12.26  = { owner = BOU controller = BOU add_core = BOU add_core = GUY add_core = BOU remove_core = AQT } #BT Out
+1356.12.24  = { owner = AQT controller = AQT add_core = AQT remove_core = GUY } #BT In
+1356.12.26  = { owner = FRA controller = FRA add_core = FRA add_core = GUY remove_core = AQT } #BT Out
 
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
-1370.9.1   = { controller = BOU } # Siege of Limoges 
-1375.6.27  = { owner = BOU controller = BOU } # Treaty of Bruges
-1435.1.1 = { owner = AMG controller = AMG add_core = AMG }
-1477.1.1 = { owner = BOU controller = BOU add_core = BOU }
-
+1370.9.1   = { controller = FRA } # Siege of Limoges 
+1375.6.27  = { owner = FRA controller = FRA } # Treaty of Bruges
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 1560.1.1   = { religion = reformed }
 1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear

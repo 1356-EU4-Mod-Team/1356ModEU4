@@ -19,7 +19,11 @@ add_local_autonomy = 35
 
 discovered_by = chinese
 discovered_by = nomad_group
-
+1356.12.26  = {	
+	owner = X01
+	controller = X01
+	add_core = X01
+}
 #1368.9.14 = { owner = GYO controller = GYO remove_core = YUA }
 1368.9.14 = { owner = KOR controller = KOR remove_core = YUA }
 1392.8.5 = { owner = KOR controller = KOR remove_core = GYO }

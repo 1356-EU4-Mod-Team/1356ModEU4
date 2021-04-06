@@ -1,8 +1,8 @@
 # 660 - Xishuan Banna (1356)
 # Changes: YUA/CZH/culture
 
-owner = MIN
-controller = MIN
+owner = YUA
+controller = YUA
 culture = kachin
 religion = buddhism
 capital = "Sibsongbanna"
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = MIN
+#add_core = MIN
 add_core = YUA
 #add_core = CZH
 add_core = CDL

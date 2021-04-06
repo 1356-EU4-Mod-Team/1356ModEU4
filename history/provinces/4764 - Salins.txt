@@ -6,7 +6,7 @@ add_core = PBG
 
 capital = "Salins"
 is_city = yes
-#add_local_autonomy = 30 # The counts of Chalon-Arlay were very dominant in the region
+add_local_autonomy = 30 # The counts of Chalon-Arlay were very dominant in the region
 culture = burgundian
 religion = catholic
 hre = yes
@@ -15,16 +15,11 @@ base_production = 3
 trade_goods = salt
 base_manpower = 2
 add_core = PBG
-add_core = BUR
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1384.1.30 = { owner = BUR controller = BUR } # The son of Margaret I, Louis II of Flanders dies and his son-in-law Phillippe II. of Burgundy inherits the province
-1404.4.27 = { owner = PBG controller = PBG } # Margaret III husband Phillippe II. dies and she takes power in Flanders and Palatinate Burgundy
-1405.3.21 = { owner = BUR controller = BUR add_local_autonomy = 30 } # Margaret III of Flanders dies, her son Jean II of Burgundy inherits the province
 
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA } # Charles the Bold dies and Louis XII of France takes Franche-Comté
 1493.8.19 = { owner = HAB controller = HAB add_core = HAB remove_core = FRA } # Frederick III dies and Charles VII cedes Franch-Comté to Maximilian I von Habsburg

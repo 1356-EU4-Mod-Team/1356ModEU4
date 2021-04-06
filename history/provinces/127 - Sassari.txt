@@ -1,8 +1,8 @@
 # 127 - Sardinia (1356)
 # Changes: ARA
 
-owner = SAR
-controller = SAR
+owner = ARA
+controller = ARA
 culture = sardinian 
 religion = catholic 
 hre = no 
@@ -13,6 +13,7 @@ base_manpower = 2
 fort_15th = yes
 capital = "Sassari" 
 is_city = yes
+add_core = ARA 
 add_core = SAR
 
 discovered_by = western
@@ -20,8 +21,9 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { owner = SAR controller = SAR remove_core = ARA }
 
-#1383.1.1  = { owner = SAR controller = SAR add_core = SAR } # Independent
+1383.1.1  = { owner = SAR controller = SAR } # Independent
 1409.1.1  = { owner = ARA controller = ARA add_core = ARA} # Conquered by Aragon
 
 1516.1.23 = {	owner = SPA

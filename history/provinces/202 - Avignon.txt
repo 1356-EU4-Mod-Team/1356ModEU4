@@ -5,10 +5,10 @@ owner = PAP
 controller = PAP
 capital = "Avignon"
 is_city = yes
-culture = provencial_culture
+culture = occitain
 religion = catholic
 hre = no
-base_tax = 4
+base_tax = 3 
 base_production = 3
 trade_goods = cloth
 base_manpower = 4
@@ -16,7 +16,6 @@ add_core = AVI
 add_core = PRO
 add_core = PAP 
 fort_15th = yes # Le Palais des Papes is super strong, and built on and beneath a natural rock formation
-
 center_of_trade = 2
 
 discovered_by = eastern
@@ -27,15 +26,17 @@ discovered_by = ottoman
 1356.12.24 = { add_core = PAP add_core = PRO}
 1356.12.26 = {  remove_core = PRO base_tax = 8 base_production = 7 base_manpower = 6 center_of_trade = 2 }
 
-
-1376.9.13 = { #Curia moves capital back to Rome
+1376.9.13 = { #Curia moves capital back to Rome, The Great Schism (1378-1417)
 	base_tax = 4
 	base_production = 3
 	base_manpower = 4
 	center_of_trade = 1
+	owner = AVI
+	controller = AVI
+	remove_core = PAP
+	hre = yes
 }
 
-1378.4.8   = { owner = AVI controller = AVI remove_core = PAP hre = yes } # The Great Schism (1378-1417)
 1417.10.18 = {	owner = PAP 
 		controller = PAP
 		add_core = PAP 

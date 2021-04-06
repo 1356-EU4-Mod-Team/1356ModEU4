@@ -7,22 +7,22 @@ religion = catholic
 hre = no
 base_tax = 2
 base_production = 2
-trade_goods = naval_supplies
+trade_goods = wool
 base_manpower = 1
 capital = "Scarborough"
 is_city = yes
 add_core = ENG
-add_core = NOL
+#add_core = NOL
 add_core = YRK
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
-1385.1.1   = { owner = YRK controller = YRK remove_core = NOL remove_core = ENG }
+1385.1.1   = { owner = YRK controller = YRK  remove_core = ENG }
 1405.1.1 = { culture = english }
-1415.10.25 = { owner = ENG controller = ENG add_core = NOL remove_core = YRK add_core = ENG}
-
+#1385.1.2  = { remove_core = NOL }
+1444.1.1 = { owner = ENG controller = ENG remove_core = YRK  add_core = ENG }
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1459.9.23 = { unrest = 0 revolt = { type = pretender_rebels size = 3 leader = "Edward of York" } controller = REB } # The Battle of Blore Heath
 1459.10.12 = { revolt = {} unrest = 5 } # The Lancastrians are back in control after the battle of Ludford Bridge

@@ -1,8 +1,7 @@
 # 0 Touraine - Principal cities: Tours
 
-owner = ANJ
-controller = ANJ
-add_core = ANJ
+owner = FRA
+controller = FRA
 capital = "Tours"
 is_city = yes
 culture = cosmopolitan_french
@@ -12,13 +11,14 @@ base_tax = 4
 base_production = 4
 trade_goods = cloth
 base_manpower = 3
-
+add_core = FRA
+add_core = ORL
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-1356.12.25 = { owner = ORL controller = ORL  add_core = ORL }#BT in
-1356.12.26 = { owner = ANJ controller = ANJ add_core = ANJ remove_core = FRA remove_core = ORL } #BT Out  # Jean II, offers his 2nd son Louis II the duchy of Anjou
+1356.12.25 = { owner = ORL controller = ORL  }#BT in
+1356.12.26 = { owner = FRA controller = FRA } #BT Out
 1376.9.1   = { owner = FRA controller = FRA add_core = FRA } # Philippe I of Orleans dies, duchy returns to the royal domain of France
 1392.1.1   = { owner = ORL controller = ORL remove_core = FRA } # duchy is handed to Louis I
 1453.10.16 = { owner = FRA controller = FRA add_core = FRA add_local_autonomy = 25 estate = estate_nobles }

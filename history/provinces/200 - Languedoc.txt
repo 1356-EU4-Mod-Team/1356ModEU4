@@ -7,10 +7,10 @@ is_city = yes
 culture = occitain
 religion = catholic
 hre = no
-base_tax = 6
-base_production = 5
+base_tax = 7
+base_production = 7
 trade_goods = cloth
-base_manpower = 5
+base_manpower = 6
 add_core = FRA
 add_core = TOU
 discovered_by = eastern
@@ -23,7 +23,7 @@ discovered_by = ottoman
 } #BT In
 
 1356.12.26  = {	owner = FRA controller = FRA add_core = FRA
-				base_tax = 6 base_production = 5 base_manpower = 5
+				base_tax = 6 base_production = 6 base_manpower = 5
 } #BT Out
 
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
