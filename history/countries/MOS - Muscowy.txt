@@ -10,6 +10,7 @@ fixed_capital = 295 # Cannot move capital away from this province & no power cos
 national_focus = ADM
 
 1353.4.27 = { # suceeded his brother Simeon after the Black Death
+	set_estate_privilege = estate_nobles_strong_duchies	
 	monarch = {
 		name = "Ivan II"
 		dynasty = "Rurikovich"

@@ -1,130 +1,149 @@
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = LMR
 	start_date = 1356.1.1
 	end_date = 1400.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = BEI
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = MEL
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = PLB
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = IND
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = MLC
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = PAH
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = ROK
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = PAT
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = HRU
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = PSA
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = KED
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = BTN
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = SRI
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = MKS
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = SAK
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = SDN
 	start_date = 1356.1.1
 	end_date = 1444.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = SED
 	start_date = 1356.1.1
 	end_date = 1444.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "SEA_tributary_state"
 	first = MAJ
 	second = SAM
 	start_date = 1356.1.1

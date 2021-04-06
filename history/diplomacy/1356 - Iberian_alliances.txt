@@ -24,7 +24,7 @@ alliance = { #Historical!
 
 alliance = { #Historical!
 	first = CAS
-	second = ENG
+	second = POR
 	start_date = 1356.12.26
 	end_date = 1360.1.1 #Need an end date
 }

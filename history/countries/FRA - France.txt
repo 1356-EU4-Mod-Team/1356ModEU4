@@ -1,16 +1,16 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 2 #Kingdom
 primary_culture = cosmopolitan_french
 add_accepted_culture = gascon
 add_accepted_culture = occitain
 religion = catholic
 technology_group = western
+government_rank = 2
 capital = 183 # Paris
 national_focus = DIP
 historical_rival = HAB
-historical_friend = BOU
 historical_friend = SCO
+historical_friend = BOU
 
 
 change_estate_land_share = {
@@ -98,7 +98,7 @@ change_estate_land_share = {
 		mil = 2
 	}
 	heir = {
-		name = "Charles"
+		name = "Dauphin Charles"
 		monarch_name = "Charles V"
 		dynasty = "de Valois"
 		birth_date = 1338.1.28

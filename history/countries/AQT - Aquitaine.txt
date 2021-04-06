@@ -1,6 +1,5 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1 #Duchy
 primary_culture = occitain
 add_accepted_culture = gascon
 add_accepted_culture = cosmopolitan_french
@@ -12,6 +11,7 @@ historical_rival = FRA
 
 1356.12.24 = { government_rank = 2 }
 1356.12.26 = { government_rank = 1 }
+
 1515.1.1 = { government = monarchy
 add_government_reform = autocracy_reform }
 
