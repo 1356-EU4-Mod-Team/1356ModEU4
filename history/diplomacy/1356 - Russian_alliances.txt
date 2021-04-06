@@ -1,6 +1,6 @@
 # WHIden Horde Tributaries (not Caucasus)
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = RSO
 	start_date = 1355.1.1
@@ -8,7 +8,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = MOS
 	start_date = 1355.1.1
@@ -16,7 +16,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = TVE
 	start_date = 1355.1.1
@@ -24,7 +24,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = NZH
 	start_date = 1355.1.1
@@ -32,7 +32,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = SMO
 	start_date = 1355.1.1
@@ -40,7 +40,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = YAR
 	start_date = 1355.1.1
@@ -48,7 +48,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = OKA
 	start_date = 1355.1.1
@@ -56,7 +56,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = MRM
 	start_date = 1355.1.1
@@ -64,7 +64,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = DMT
 	start_date = 1355.1.1
@@ -72,7 +72,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = VLD
 	start_date = 1355.1.1
@@ -80,7 +80,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = SDU
 	start_date = 1355.1.1
@@ -88,7 +88,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = MIA
 	start_date = 1355.1.1
@@ -96,7 +96,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = BOG
 	start_date = 1355.1.1
@@ -104,7 +104,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = UDM
 	start_date = 1355.1.1
@@ -112,7 +112,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = MRR
 	start_date = 1355.1.1
@@ -120,7 +120,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = MR1
 	start_date = 1355.1.1
@@ -128,7 +128,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = MR2
 	start_date = 1355.1.1
@@ -136,7 +136,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = MI1
 	start_date = 1355.1.1
@@ -246,7 +246,7 @@ vassal = {
 
 # Ryazanian Anti-Moskovite Alliance ## Changed to be a White Horde Tribute
 dependency = {
-	subject_type = "tributary_state"
+	subject_type = "golden_horde_tributary_state"
 	first = WHI
 	second = RYA
 	start_date = 1356.1.1

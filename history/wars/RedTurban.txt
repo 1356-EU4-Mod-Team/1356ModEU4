@@ -12,7 +12,7 @@ war_goal = {
 	add_attacker = CXI
 	add_attacker = SHU
 	add_attacker = WUU
-	add_attacker = MIN
+	#add_attacker = MIN
 	add_defender = YUA
 }
 
@@ -23,7 +23,7 @@ war_goal = {
 	rem_attacker = CXI
 	rem_attacker = SHU
 	rem_attacker = WUU
-	rem_attacker = MIN
+	#rem_attacker = MIN
 	rem_defender = YUA
 }
 	

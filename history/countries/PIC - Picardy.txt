@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1 #County
+government_rank = 1
 primary_culture = picard
 add_accepted_culture = cosmopolitan_french
 religion = catholic

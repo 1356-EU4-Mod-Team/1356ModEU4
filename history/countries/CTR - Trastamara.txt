@@ -16,9 +16,9 @@ national_focus = MIL
 		name = "Enrique II"
 		dynasty = "de Trastámara"
 		birth_date = 1334.1.13
-		adm = 2
+		adm = 3
 		dip = 3
-		mil = 3
+		mil = 4			
 	}
 }
 
@@ -30,9 +30,9 @@ national_focus = MIL
 		birth_date = 1339.1.1
 		death_date = 1381.3.27
 		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }
 

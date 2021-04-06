@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = french_vassal_feudal_monarchy_reform
-government_rank = 1 #Duchy
+government_rank = 1
 technology_group = western
 primary_culture = occitain
 religion = catholic

@@ -27,6 +27,10 @@ capital = 4379	# Offaly
 	}
 }
 
+1440.1.1 = {
+	add_government_reform = earldom_reform
+}
+
 1458.1.1 = {
 	monarch = {
 		name = "Conn"

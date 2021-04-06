@@ -12,9 +12,10 @@ war_goal = {
 	add_attacker = CTR
 	add_attacker = ARA
 	add_attacker = MJO
-	#add_attacker = SAR #Excluded for Balance
+	add_attacker = SAR #Excluded for Balance #### Readded with Genoa
 	add_defender = CAS
-	add_defender = POR	
+	add_defender = POR
+	add_defender = GEN	
 }
 
 
@@ -22,7 +23,8 @@ war_goal = {
 	rem_attacker = CTR
 	rem_attacker = ARA
 	rem_attacker = MJO
-	#rem_attacker = SAR 
+	rem_attacker = SAR 
 	rem_defender = CAS
 	rem_defender = POR
+	rem_defender = GEN
 }
