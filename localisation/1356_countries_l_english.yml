@@ -344,7 +344,11 @@
  TRV: "Turov"
  TRV_ADJ: "Turovian"
  
- #Patch 2.1 - Western Europe Update
+  # Post 1.31
+ X01: "Liaoyang"
+ X01_ADJ: "Liaoyang"
+ 
+  #Patch 2.1 - Western Europe Update
  FMA: "Maine"
  FMA_ADJ: "Maine"
  FBL: "Blois"
