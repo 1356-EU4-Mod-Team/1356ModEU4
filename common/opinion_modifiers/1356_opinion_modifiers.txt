@@ -84,6 +84,10 @@ supported_us_castile = {
 	yearly_decay = 1
 }
 
+no_intervention_castile = {
+	opinion = -100
+}
+
 supported_us_castile_england = {
 	opinion = 50
 	yearly_decay = 1

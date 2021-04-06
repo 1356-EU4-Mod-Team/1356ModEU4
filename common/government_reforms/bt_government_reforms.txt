@@ -40,6 +40,7 @@ german_kingdom = {
 populist_dictatorship = {
 
 	allow_normal_conversion = no
+	legacy_government = yes
 	dictatorship = yes
 	lock_level_when_selected = yes
 	icon = "parliament_hall"

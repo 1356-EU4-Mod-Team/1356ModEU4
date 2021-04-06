@@ -12,7 +12,7 @@ cb_hussite_conformance = {
 }
 
 cb_castile_civil_war = {
-	
+	ai_peace_desire = -100
 	prerequisites = {
 		always = no
 	}

@@ -100,7 +100,7 @@ superiority_insult_england_france = {
 }
 
 take_capital_throne_castile = {
-	type = take_capital
+	type = superiority
 	
 	attacker = {
 		badboy_factor = 0.25

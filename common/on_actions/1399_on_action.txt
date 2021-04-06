@@ -33,7 +33,7 @@ on_war_won = {
 		sikandar.44444
 		sikandar.444
 		rus_independence.2
-		rus_independence.6
+		#rus_independence.6
 		#ming_emperor.1
 		#ming_emperor.11
 		WarTwoPetersFlavor.9
