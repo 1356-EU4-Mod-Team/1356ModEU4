@@ -1,12 +1,11 @@
 # 1866 - Namur (1356)
-# Changes: HAI
 
 latent_trade_goods = {
 	coal
 }
 
-owner = HAI
-controller = HAI
+owner = NMR
+controller = NMR
 capital = "Namur"
 is_city = yes
 culture = wallonian
@@ -16,8 +15,9 @@ base_tax = 7
 base_production = 7
 trade_goods = iron
 base_manpower = 3
-estate = estate_church
-add_core = HAI
+#add_core = FLA #It split from Flander's due to succession laws at some point
+add_core = NMR
+#add_core = HAI #removed because it was sold in 1283
 fort_15th = yes
 
 discovered_by = eastern
