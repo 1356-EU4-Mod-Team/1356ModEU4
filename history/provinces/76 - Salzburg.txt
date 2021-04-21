@@ -14,13 +14,10 @@ is_city = yes
 add_core = SLZ
 center_of_trade = 1
 
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-
 
 1731.11.11 = { unrest = 5 } # Leopold von Firmian declared that all Protestants would be banished
 1732.1.1 = { unrest = 0 }
