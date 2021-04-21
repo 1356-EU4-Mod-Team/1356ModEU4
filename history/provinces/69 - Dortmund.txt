@@ -1,5 +1,5 @@
 # 69 - Dortmund
-culture = lower_saxon
+culture = hannoverian
 owner = RVA
 controller = RVA
 add_core = RVA

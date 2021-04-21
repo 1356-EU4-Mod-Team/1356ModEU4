@@ -2,10 +2,9 @@
 
 owner = MUN
 controller = MUN
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 capital = "Osnabrück"
-estate = estate_church
 trade_goods = salt
 hre = yes
 base_tax = 3

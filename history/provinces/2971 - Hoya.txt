@@ -2,7 +2,7 @@
 
 owner = BRU
 controller = BRU
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 capital = "Hoya"
 trade_goods = livestock
