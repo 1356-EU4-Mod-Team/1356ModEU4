@@ -1,7 +1,7 @@
 #Paderborn
 owner = KOL
 controller = KOL
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 trade_goods = wool
 capital = "Paderborn"

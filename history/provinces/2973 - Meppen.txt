@@ -2,7 +2,7 @@
 
 owner = MUN
 controller = MUN
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 trade_goods = cloth
 capital = "Meppen"
