@@ -3,10 +3,11 @@ add_government_reform = steppe_horde
 primary_culture = khazak
 religion = sunni
 technology_group = nomad_group
-historical_friend = WHI
-historical_rival = SHY
+# historical_friend = WHI
+# historical_rival = SHY    # Disabled for Nomadic Clans Subjects
 capital = 478	# Argyn
 religious_school = hanafi_school
+government_rank = 1
 
 ### 1344.1.1 - 1396.1.1 PU under WHI ###
 

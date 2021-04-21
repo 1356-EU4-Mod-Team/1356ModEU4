@@ -11,7 +11,6 @@ historical_friend = CYP
 historical_friend = CIC
 historical_friend = KOJ
 historical_friend = MRO
-add_army_professionalism = 0.1
 
 1355.8.24 = {
 	monarch = {

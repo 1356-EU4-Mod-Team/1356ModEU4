@@ -3,8 +3,10 @@ add_government_reform = steppe_horde
 primary_culture = khazak
 religion = sunni
 technology_group = nomad_group
-capital = 465	# Nogay
-historical_friend = SIB
+capital = 476	# Nogay
+#historical_friend = SIB # Made Nomadic Clan
+historical_rival = NOV
+historical_rival = WHI
 religious_school = hanbali_school
 
 1344.1.1 = { 

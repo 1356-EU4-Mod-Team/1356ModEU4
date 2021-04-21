@@ -11,7 +11,7 @@ religious_school = hanafi_school
 
 1356.1.1 = {
 	monarch = {
-		name = "S√ºleyman"
+		name = "S¸leyman"
 		dynasty = Karamanoglu
 		adm = 3
 		dip = 1
@@ -22,7 +22,7 @@ religious_school = hanafi_school
 
 1357.1.1 = {
 	monarch = {
-		name = "Al√¢edd√Æn Ali I"
+		name = "Al‚eddÓn Ali I"
 		dynasty = Karamanoglu
 		birth_date = 1341.1.1
 		adm = 4
@@ -66,8 +66,8 @@ religious_school = hanafi_school
 		mil = 2
 	}
 	heir = {
-		name = "Ibr√¢h√Æm"
-		monarch_name = "Ibr√¢h√Æm II"
+		name = "Ibr‚hÓm"
+		monarch_name = "Ibr‚hÓm II"
 		dynasty = "Karamanoglu"
 		birth_date = 1409.1.1
 		death_date = 1464.1.1
@@ -80,7 +80,7 @@ religious_school = hanafi_school
 
 1424.1.1 = {
 	monarch = {
-		name = "Ibr√¢h√Æm II"
+		name = "Ibr‚hÓm II"
 		dynasty = Karamanoglu
 		birth_date = 1409.1.1
 		adm = 0
@@ -92,8 +92,8 @@ religious_school = hanafi_school
 
 1424.1.1 = {
 	heir = {
-		name = "Sultanz√¢de"
-		monarch_name = "Sultanz√¢de Ish√¢k"
+		name = "Sultanz‚de"
+		monarch_name = "Sultanz‚de Ish‚k"
 		dynasty = "Karamanoglu"
 		birth_date = 1424.1.1
 		death_date = 1465.1.1
@@ -106,7 +106,7 @@ religious_school = hanafi_school
 
 1464.1.1 = {
 	monarch = {
-		name = "Sultanz√¢de Ish√¢k"
+		name = "Sultanz‚de Ish‚k"
 		dynasty = Karamanoglu
 		birth_date = 1424.1.1
 		adm = 1
@@ -117,8 +117,8 @@ religious_school = hanafi_school
 
 1464.1.1 = {
 	heir = {
-		name = "P√Ær"
-		monarch_name = "P√Ær Ahmed"
+		name = "PÓr"
+		monarch_name = "PÓr Ahmed"
 		dynasty = "Karamanoglu"
 		birth_date = 1450.1.1
 		death_date =1474.1.1
@@ -132,7 +132,7 @@ religious_school = hanafi_school
 
 1465.1.1 = {
 	monarch = {
-		name = "P√Ær Ahmed"
+		name = "PÓr Ahmed"
 		dynasty = Karamanoglu
 		birth_date = 1450.1.1
 		adm = 2
@@ -143,8 +143,8 @@ religious_school = hanafi_school
 
 1465.1.1 = {
 	heir = {
-		name = "K√¢sim"
-		monarch_name = "K√¢sim"
+		name = "K‚sim"
+		monarch_name = "K‚sim"
 		dynasty = "Karamanoglu"
 		birth_date = 1460.1.1
 		death_date = 1483.1.1
@@ -157,7 +157,7 @@ religious_school = hanafi_school
 
 1474.1.1 = {
 	monarch = {
-		name = "K√¢sim"
+		name = "K‚sim"
 		dynasty = Karamanoglu
 		birth_date = 1460.1.1
 		adm = 2
@@ -168,8 +168,8 @@ religious_school = hanafi_school
 
 1474.1.1 = {
 	heir = {
-		name = "Mahm√ªd"
-		monarch_name = "Turgutoglu Mahm√ªd"
+		name = "Mahm˚d"
+		monarch_name = "Turgutoglu Mahm˚d"
 		dynasty = "Karamanoglu"
 		birth_date = 1470.1.1
 		death_date = 1487.1.1
@@ -182,7 +182,7 @@ religious_school = hanafi_school
 
 1483.1.1 = {
 	monarch = {
-		name = "Turgutoglu Mahm√ªd"
+		name = "Turgutoglu Mahm˚d"
 		dynasty = Karamanoglu
 		birth_date = 1470.1.1
 		adm = 2

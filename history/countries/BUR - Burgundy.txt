@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = golden_bull_composite_monarchy
-government_rank = 1 #Duchy
+add_government_reform = high_feudal_monarchy_reform
+government_rank = 1
 primary_culture = burgundian
 religion = catholic
 technology_group = western

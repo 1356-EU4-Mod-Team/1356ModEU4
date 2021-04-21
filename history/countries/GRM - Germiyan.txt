@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = turkish
 religion = sunni
 technology_group = ottoman
-capital = 322 # KÃ¼tahya
+capital = 322 # Kütahya
 religious_school = hanafi_school
 historical_rival = MAM
 
@@ -21,7 +21,7 @@ historical_rival = MAM
 
 1361.1.1 = {
 	monarch = {
-		name = "SÃ¼leyman Sah"
+		name = "Süleyman Sah"
 		dynasty = Germiyanoglu
 		adm = 2
 		dip = 2

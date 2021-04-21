@@ -4,7 +4,6 @@ primary_culture = aztek
 religion = nahuatl
 technology_group = mesoamerican
 capital = 852	# Mexico
-add_army_professionalism = 0.1
 
 1376.1.1 = {
 	monarch = {

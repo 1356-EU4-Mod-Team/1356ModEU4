@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = high_feudal_monarchy_reform
 primary_culture = hungarian
 add_accepted_culture = slovak
 add_accepted_culture = transylvanian
@@ -26,8 +26,8 @@ historical_friend = HAB
 		dynasty = "d'Anjou"
 		birth_date = 1326.3.5
 		ADM = 6
-		DIP = 5
-		MIL = 5
+		DIP = 4
+		MIL = 4
 	}
 }
 

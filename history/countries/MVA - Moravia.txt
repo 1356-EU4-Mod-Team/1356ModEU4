@@ -1,8 +1,41 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = high_feudal_monarchy_reform
 primary_culture = moravian
 add_accepted_culture = czech
 religion = catholic
 government_rank = 1
 capital = 4237 # Olomouc
 technology_group = western
+
+1356.12.24 = { # BT ruler for Morovia
+	monarch = {  #
+		name = "Karl"
+		dynasty = "Premyslovci"
+		birth_date = 1336.5.14
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+1356.12.26 = { # John Henry
+	monarch = {  # 
+		name = "Jan Jindrich" # John Henry
+		monarch_name = "Jan I"
+		dynasty = "von Luxemburg"
+		birth_date = 1322.2.12
+		adm = 4
+		dip = 3
+		mil = 2 # Former Count of Tyrol
+	}
+	heir = {  # 
+		name = "Jošt" # Jošt, future Holy Roman Emperor
+		monarch_name = "Jošt I"
+		dynasty = "von Luxemburg"
+		birth_date = 1354.1.18
+		death_date = 1399.7.1
+		adm = 3
+		dip = 5
+		mil = 3 # Former Count of Tyrol
+	}
+}

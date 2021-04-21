@@ -1,0 +1,33 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = swiss
+capital = 4720
+add_army_professionalism = 0.1
+
+1356.1.1 = {
+	monarch = {
+		name = "Alamand de Saint-Jeoire"
+		adm = 4
+		dip = 1
+		mil = 3
+		birth_date = 1317.1.1 # Placeholder
+	}
+}
+
+
+1399.1.1 = {
+	monarch = {
+		name = "Die Tagsatzung"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1528.1.1 = { religion = reformed }
+
+1798.1.1 = { set_legacy_government = constitutional_republic }

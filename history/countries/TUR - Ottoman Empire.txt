@@ -5,7 +5,6 @@ add_accepted_culture = bulgarian
 add_accepted_culture = greek
 religion = sunni
 technology_group = ottoman
-historical_rival = GOL
 historical_rival = BUL
 historical_rival = KAR
 historical_rival = MAM
@@ -14,10 +13,20 @@ historical_rival = TIM
 historical_rival = HAB
 capital = 317 # Bursa
 national_focus = MIL
-add_army_professionalism = 0.1
 religious_school = hanafi_school
 
 1326.7.29 = { 
+	add_treasury = 250
+	add_ruler_modifier = {
+		name = cannot_disinherit_heir
+		duration = -1
+		hidden = yes
+	}	
+	add_country_modifier = {
+		name = ottoman_early_game_buff_ai
+		duration = -1
+		hidden = yes
+	}		
 	monarch = {
 		name = "Orhan"
 		dynasty = "Osmanoglu"
@@ -26,6 +35,8 @@ religious_school = hanafi_school
 		dip = 4
 		mil = 5
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
 }
 
 1326.7.29 = {
@@ -39,6 +50,7 @@ religious_school = hanafi_school
 		adm = 4
 		dip = 1
 		mil = 5
+		block_disinherit = yes
 	}
 }
 
@@ -60,7 +72,7 @@ religious_school = hanafi_school
 		dynasty = "Osmanoglu"
 		birth_date = 1326.6.29
 		adm = 4
-		dip = 1
+		dip = 2
 		mil = 5
 	}
 }

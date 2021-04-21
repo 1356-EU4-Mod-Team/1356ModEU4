@@ -5,8 +5,8 @@ primary_culture = austrian
 religion = catholic
 technology_group = western
 capital = 128 # Kärnten
-historical_friend = HAB
-historical_rival = STY
+# historical_friend = HAB
+# historical_rival = STY
 
 1342.4.8 = {
 	monarch = {

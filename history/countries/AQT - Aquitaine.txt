@@ -1,16 +1,14 @@
 government = monarchy
-add_government_reform = feudalism_reform
-primary_culture = occitain
+add_government_reform = high_feudal_monarchy_reform
+primary_culture = aquitaine
 add_accepted_culture = gascon
+add_accepted_culture = occitain
 add_accepted_culture = cosmopolitan_french
 religion = catholic
 technology_group = western
 capital = 174 # Aquitaine
 
 historical_rival = FRA
-
-1356.12.24 = { government_rank = 2 }
-1356.12.26 = { government_rank = 1 }
 
 1515.1.1 = { government = monarchy
 add_government_reform = autocracy_reform }

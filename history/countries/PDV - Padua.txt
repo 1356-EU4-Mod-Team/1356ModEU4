@@ -6,3 +6,13 @@ religion = catholic
 technology_group = western
 capital = 4729
 fixed_capital = 4729 # Cannot move capital away from this province & no power cost to move to it
+
+1356.1.1 = {
+	monarch = {
+		name = "Città-Stato"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}

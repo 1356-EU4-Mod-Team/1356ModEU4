@@ -18,6 +18,22 @@ dependency = {
 dependency = {
 	subject_type = "golden_horde_tributary_state"
 	first = WHI
+	second = CHR
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "golden_horde_tributary_state"
+	first = WHI
+	second = KIE
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
+dependency = {
+	subject_type = "golden_horde_tributary_state"
+	first = WHI
 	second = TVE
 	start_date = 1355.1.1
 	end_date = 1380.9.8
@@ -165,6 +181,14 @@ alliance = {
 	second = PSK
 	start_date = 1355.1.1
 	end_date = 1380.9.8
+}
+
+# Kiev and 'Lowlands' Union
+union = {
+	first = KIE
+	second = PDA
+	start_date = 1356.12.24
+	end_date = 1393.1.1
 }
 
 #alliance = {

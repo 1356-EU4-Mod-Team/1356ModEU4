@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = elective_feudal_monarchy_reform
 primary_culture = danish
 religion = catholic
 technology_group = western
@@ -14,7 +14,7 @@ capital = 12 # Sjaelland
 		birth_date = 1320.1.1
 		adm = 5
 		dip = 3
-		mil = 5
+		mil = 4
 	}
 	queen = {
 		country_of_origin = DAN

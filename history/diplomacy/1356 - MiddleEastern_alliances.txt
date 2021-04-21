@@ -65,21 +65,21 @@ dependency = {
 #vassal = {
 #	first = CHB
 #	second = ARM
-#	start_date = 1356.1.1 
+#	start_date = 1356.12.26 
 #	end_date = 1360.1.1 
 #}
 
 #vassal = {
 #	first = MUZ
 #	second = KRM
-#	start_date = 1356.1.1 
+#	start_date = 1356.12.26 
 #	end_date = 1360.1.1 
 #}
 
 vassal = {
 	first = TUR
 	second = SRU
-	start_date = 1356.1.1 
+	start_date = 1356.12.26 
 	end_date = 1390.1.1 
 }
 
@@ -114,34 +114,86 @@ vassal = {
 }
 
 
-vassal = {
+dependency = {
+	subject_type = "horde_clan_subject"
 	first = BLU
 	second = SHY
-	start_date = 1346.1.1
-	end_date = 1372.1.1
-}
-
-vassal = {
-	first = WHI
-	second = CRI
-	start_date = 1346.1.1
+	start_date = 1356.12.24
 	end_date = 1372.1.1
 }
 
 dependency = {
-	subject_type = "tributary_state"
-	first = WHI
-	second = KAZ
-	start_date = 1353.1.1
-	end_date = 1380.9.8
-}
-
-union = {
+	subject_type = "horde_clan_subject"
 	first = BLU
-	second = KZH
-	start_date = 1356.1.1
+	second = NOG
+	start_date = 1356.12.24
 	end_date = 1372.1.1
 }
+
+# vassal = { # Made a Nomadic Clan
+	# first = WHI
+	# second = CRI
+	# start_date = 1346.1.1
+	# end_date = 1372.1.1
+# }
+
+# dependency = { # Possible Nomadic clan?
+	# subject_type = "tributary_state"
+	# first = WHI
+	# second = KAZ
+	# start_date = 1353.1.1
+	# end_date = 1380.9.8
+# }
+
+dependency = {
+	subject_type = "horde_clan_subject"
+	first = BLU
+	second = KZH
+	start_date = 1356.12.24
+	end_date = 1372.1.1
+}
+
+dependency = {
+	subject_type = "horde_clan_subject"
+	first = BLU
+	second = KZH
+	start_date = 1356.12.24
+	end_date = 1372.1.1
+}
+
+dependency = {
+	subject_type = "horde_clan_subject"
+	first = WHI
+	second = QAS
+	start_date = 1356.12.24
+	end_date = 1372.1.1
+}
+
+dependency = {
+	subject_type = "horde_clan_subject"
+	first = WHI
+	second = BSH
+	start_date = 1356.12.24
+	end_date = 1372.1.1
+}
+
+dependency = {
+	subject_type = "horde_clan_subject"
+	first = WHI
+	second = AST
+	start_date = 1356.12.24
+	end_date = 1372.1.1
+}
+
+dependency = {
+	subject_type = "horde_clan_subject"
+	first = WHI
+	second = CRI
+	start_date = 1356.12.24
+	end_date = 1372.1.1
+}
+
+
 
 union = {
 	first = BLU
@@ -171,18 +223,20 @@ union = {
 	end_date = 1427.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "horde_clan_subject"
 	first = BLU
 	second = SIB
-	start_date = 1355.1.1
+	start_date = 1356.12.24
 	end_date = 1378.1.1
 }
 
 # Transoxania and Chagatai
-vassal = {
+dependency = {
+	subject_type = "horde_clan_subject"
 	first = CHG
 	second = TRS
-	start_date = 1356.1.1
+	start_date = 1356.12.26
 	end_date = 1358.1.1
 }
 
@@ -323,14 +377,14 @@ vassal = {
 guarantee = {
 	first = MAM
 	second = HED
-	start_date = 1356.1.1
+	start_date = 1356.12.26
 	end_date = 1444.1.1
 }
 
 guarantee = {
-	first = BSR
+	first = IDA
 	second = ALH
-	start_date = 1356.1.1
+	start_date = 1356.12.26
 	end_date = 1444.1.1
 }
 

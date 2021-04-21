@@ -1,8 +1,8 @@
 # 4289 - Shushtar (1356)
 # Changes: JLR/TIM/IRQ
 
-owner = BSR
-controller = BSR
+owner = IDA
+controller = IDA
 culture = luri
 religion = shiite
 capital = "Shushtar"
@@ -12,7 +12,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = BSR
+add_core = IDA
 add_core = MSY
 add_core = LRI 
 
@@ -30,7 +30,7 @@ discovered_by = indian
 
 
 1356.12.26  = {
-			owner = BSR controller = BSR remove_core = ABS
+			owner = IDA controller = IDA remove_core = ABS
 } #BT Out
 
 1394.1.1  = { owner = TIM controller = TIM add_core = TIM }

@@ -7,9 +7,6 @@ technology_group = western
 capital = 190	# Bourges
 fixed_capital = 190 # Cannot move capital away from this province & no power cost to move to it
 
-historical_friend = FRA
-historical_friend = VLS
-
 1342.1.29 = {
 	monarch = {
 		name = "Pierre I"

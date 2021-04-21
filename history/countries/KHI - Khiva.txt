@@ -7,6 +7,7 @@ historical_rival = SHY
 historical_rival = BUK
 capital = 439	# Mangyshlak
 religious_school = hanafi_school
+government_rank = 1
 
 # Choresm Safid Dynasty
 

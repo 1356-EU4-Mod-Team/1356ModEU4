@@ -6,7 +6,6 @@ religion = sunni
 historical_rival = TIM
 historical_rival = JLR
 capital = 429 # Isfahan
-add_army_professionalism = 0.05
 religious_school = hanafi_school
 
 1314.1.1 = {

@@ -7,7 +7,7 @@ add_accepted_culture = kurdish
 religion = shiite
 technology_group = muslim
 historical_rival = AKK
-capital = 2307 # Van
+capital = 4302 # Van
 religious_school = ismaili_school
 
 1355.1.1 = {

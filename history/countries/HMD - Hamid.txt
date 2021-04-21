@@ -10,7 +10,7 @@ religious_school = hanafi_school
 
 1355.1.1 = {
 	monarch = {
-		name = "HÃ¼sameddin Ilyas"
+		name = "Hüsameddin Ilyas"
 		dynasty = "Hamitogullari"
 		adm = 2
 		dip = 2
@@ -21,7 +21,7 @@ religious_school = hanafi_school
 
 1370.1.1 = {
 	monarch = {
-		name = "Kemalettin HÃ¼seyin"
+		name = "Kemalettin Hüseyin"
 		dynasty = "Hamitogullari"
 		adm = 2
 		dip = 2

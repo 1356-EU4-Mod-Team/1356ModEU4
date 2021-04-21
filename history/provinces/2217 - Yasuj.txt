@@ -1,8 +1,8 @@
 # 2217 - Yasuj (1356)
 # Changes: TIM/religion
 
-owner = BSR
-controller = BSR
+owner = IDA
+controller = IDA
 culture = luri
 religion = shiite
 capital = "Yasuj"
@@ -12,7 +12,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = BSR
+add_core = IDA
 add_core = LRI
 
 discovered_by = muslim
@@ -20,7 +20,7 @@ discovered_by = ottoman
 discovered_by = indian
 discovered_by = nomad_group
 
-1356.12.25 = { owner = LRI controller = LRI }
+1356.12.26 = { owner = IDA controller = IDA }
 
 1392.1.1  = { owner = TIM controller = TIM add_core = TIM }
 1400.1.1  = { religion = shiite }

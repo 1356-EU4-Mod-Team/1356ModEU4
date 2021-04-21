@@ -6,7 +6,6 @@ primary_culture = tuscan
 religion = catholic
 technology_group = western
 capital = 2980 # Lucca
-add_army_professionalism = 0.05
 
 1356.1.1 = {
 	monarch = {

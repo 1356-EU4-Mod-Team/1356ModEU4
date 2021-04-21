@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = high_feudal_monarchy_reform
 government_rank = 1
 technology_group = eastern
 religion = catholic
@@ -11,8 +11,8 @@ capital = 4524	# Dobrzyn
 		name = "Czyrzniech"
 		dynasty = "Piast"
 		birth_date = 1320.1.1
-		dip = 2
-		adm = 2
+		dip = 1
+		adm = 3
 		mil = 3
 	}
 	heir = {

@@ -19,6 +19,13 @@ union = { # Brandenburg - Lusatia
 	end_date = 1382.5.12 
 }
 
+union = { # Wolgast - Stettin
+	first = WOL
+	second = STE
+	start_date = 1356.12.26
+	end_date = 1368.5.12 
+}
+
 vassal = { # Bohemia - Silsea
 	first = BOH
 	second = GLG
@@ -38,4 +45,18 @@ vassal = { # Bohemia - Silsea
 	second = MVA
 	start_date = 1356.12.26
 	end_date = 1382.5.12 
+}
+
+vassal = { # Styria - Cilli
+	first = STY
+	second = CLI
+	start_date = 1356.12.26
+	end_date = 1360.5.12 
+}
+
+vassal = { # Styria - Cilli
+	first = CTH
+	second = GOR
+	start_date = 1356.12.26
+	end_date = 1360.5.12 
 }

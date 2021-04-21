@@ -21,7 +21,7 @@ religious_school = hanafi_school
 
 1386.1.1 = {
 	monarch = {
-		name = "Saban SÃ¼li"
+		name = "Saban Süli"
 		dynasty = Dulkadiroglu
 		adm = 2
 		dip = 2
@@ -49,8 +49,8 @@ religious_school = hanafi_school
 		mil = 2
 	}
 	heir = {
-		name = "SÃ¼laymÃ¢n"
-		monarch_name = "SÃ¼laymÃ¢n"
+		name = "Sülaymân"
+		monarch_name = "Sülaymân"
 		dynasty = "Dulkadiroglu"
 		birth_date = 1398.1.1
 		death_date = 1454.1.1
@@ -63,7 +63,7 @@ religious_school = hanafi_school
 
 1442.1.1 = {
 	monarch = {
-		name = "SÃ¼laymÃ¢n"
+		name = "Sülaymân"
 		dynasty = Dulkadiroglu
 		birth_date = 1398.1.1
 		adm = 2
@@ -101,7 +101,7 @@ religious_school = hanafi_school
 1454.1.1 = {
 	heir = {
 		name = "Budak"
-		monarch_name = "SÃ¢h Budak"
+		monarch_name = "Sâh Budak"
 		dynasty = "Dulkadiroglu"
 		birth_date = 1430.1.1
 		death_date = 1492.10.1
@@ -114,7 +114,7 @@ religious_school = hanafi_school
 
 1465.1.1 = {
 	monarch = {
-		name = "SÃ¢h Budak"
+		name = "Sâh Budak"
 		dynasty = Dulkadiroglu
 		birth_date = 1430.1.1
 		adm = 1
@@ -175,8 +175,8 @@ religious_school = hanafi_school
 
 1472.1.1 = {
 	heir = {
-		name = "AlaÃ¼ddevle"
-		monarch_name = "AlaÃ¼ddevle Bozkurt"
+		name = "Alaüddevle"
+		monarch_name = "Alaüddevle Bozkurt"
 		dynasty = "Dulkadiroglu"
 		birth_date = 1460.1.1
 		death_date = 1515.6.1
@@ -189,7 +189,7 @@ religious_school = hanafi_school
 
 1479.1.1 = {
 	monarch = {
-		name = "AlaÃ¼ddevle Bozkurt"
+		name = "Alaüddevle Bozkurt"
 		dynasty = Dulkadiroglu
 		birth_date = 1460.1.1
 		adm = 4

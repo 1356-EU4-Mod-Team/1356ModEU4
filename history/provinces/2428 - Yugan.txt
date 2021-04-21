@@ -17,6 +17,7 @@ is_city = yes
 
 discovered_by = nomad_group
 
+1350.1.1   = { owner = SHY controller = SHY add_core = SHY }
 1428.1.1   = { owner = SHY controller = SHY add_core = SHY }
 1440.1.1   = { religion = sunni }
 1468.1.1   = {	owner = SIB

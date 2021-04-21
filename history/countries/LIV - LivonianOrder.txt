@@ -9,7 +9,6 @@ religion = catholic
 historical_friend = TEU
 historical_friend = RIG
 capital = 37	# Livland
-add_army_professionalism = 0.1
 
 1345.12.1 = {
 	monarch = {

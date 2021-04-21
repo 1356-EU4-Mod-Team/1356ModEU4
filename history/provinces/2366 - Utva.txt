@@ -13,8 +13,8 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = BLU
-add_core = NOG
+
+1350.1.1   = { owner = NOG controller = NOG add_core = NOG }
 
 discovered_by = muslim
 discovered_by = ottoman

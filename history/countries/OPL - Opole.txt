@@ -1,0 +1,40 @@
+government = monarchy
+add_government_reform = high_feudal_monarchy_reform
+government_rank = 1
+technology_group = western
+primary_culture = schlesian
+religion = catholic
+capital = 4723
+
+1356.1.1 = {
+	monarch = {
+		name = "Vladislaus II"
+		dynasty = "Piast"
+		birth_date = 1332.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+	heir = {
+		name = "Henryk"
+		monarch_name = "Henryk I" 
+		dynasty = "Piast"
+		birth_date = 1338.9.18
+		death_date = 1370.7.1 # Random just to add functional heir
+		adm = 4
+		dip = 1
+		mil = 3
+	}	
+}
+
+
+1437.1.1 = {
+	monarch = {
+		name = "Mikolaj I"
+		dynasty = "Piast"
+		birth_date = 1424.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
