@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = high_feudal_monarchy_reform
 government_rank = 1
 technology_group = eastern
 religion = catholic
@@ -11,9 +11,9 @@ capital = 257	# Warsaw
 		name = "Mszczuj"
 		dynasty = "Piast"
 		birth_date = 1320.1.1
-		dip = 2
-		adm = 2
-		mil = 3
+		dip = 3
+		adm = 3
+		mil = 5
 	}
 	heir = {
 		name = "Witosz"

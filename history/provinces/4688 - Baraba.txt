@@ -16,6 +16,8 @@ add_core = SIB
 add_core = KZH
 discovered_by = nomad_group
 
+1350.1.1   = { owner = SHY controller = SHY add_core = SHY }
+
 1391.7.1 = { owner = BLU controller = BLU add_core = BLU }
 1396.1.1 = { owner = KZH controller = KZH }
 1429.1.1 = { owner = SHY controller = SHY remove_core = BLU }

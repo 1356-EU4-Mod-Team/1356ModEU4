@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = high_feudal_monarchy_reform
 government_rank = 1
 primary_culture = arpitan
 add_accepted_culture = piedmontese
@@ -7,7 +7,6 @@ religion = catholic
 technology_group = western
 historical_friend = BUR
 capital = 205 # Chambéry
-add_army_professionalism = 0.05
 
 1343.6.22 = {
 	monarch = {
@@ -365,7 +364,8 @@ add_army_professionalism = 0.05
 		mil = 4
 		leader = {	
 			name = "Emanuele Filiberto"
-			type = general
+			type = general
+
 			fire = 4
 			shock = 3
 			manuever = 3
@@ -396,7 +396,8 @@ add_government_reform = autocracy_reform }
 		mil = 4
 		leader = {	
 			name = "Emanuele Filiberto"
-			type = general
+			type = general
+
 			fire = 4
 			shock = 3
 			manuever = 3

@@ -1,8 +1,8 @@
 # 408 - Basra (1356)
 # Changes: JLR/TIM/IRQ
 
-owner = JLR
-controller = JLR
+owner = IDA
+controller = IDA
 culture = al_iraqiya_arabic
 religion = sunni
 capital = "Basra"
@@ -12,7 +12,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 5
 is_city = yes
-add_core = BSR
+add_core = IDA
 add_core = MSY
 
 discovered_by = east_african
@@ -33,7 +33,7 @@ add_permanent_province_modifier = {
 } #BT In
 
 1356.12.26  = {
-			owner = BSR controller = BSR remove_core = ABS
+			owner = IDA controller = IDA remove_core = ABS
 } #BT Out
 
 1394.1.1  = { owner = TIM controller = TIM add_core = TIM }

@@ -35,7 +35,7 @@ national_focus = ADM
 	}
 }
 
-1356.12.26 = { add_historical_friend = HUN remove_historical_rival = POL remove_historical_rival = BOH add_historical_rival = TUR add_historical_rival = FRA }
+1356.12.26 = { remove_historical_rival = POL remove_historical_rival = BOH add_historical_rival = TUR add_historical_rival = FRA } # Removed Hungary
 
 # BT Out
 
@@ -62,6 +62,17 @@ national_focus = ADM
 		DIP = 6
 		MIL = 2
 	}
+	heir = {
+		name = "Rudolf"
+		monarch_name = "Rudolf IV"
+		dynasty = "von Habsburg"
+		birth_date = 1339.11.1
+		death_date = 1365.7.27
+		claim = 95
+		ADM = 4
+		DIP = 4
+		MIL = 3
+	}	
 }
 
 1358.7.20 = {

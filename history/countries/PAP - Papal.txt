@@ -6,7 +6,6 @@ add_accepted_culture = provencial_culture
 religion = catholic
 technology_group = western
 capital = 118	# Roma
-add_army_professionalism = 0.05
 
 1309.3.3 = { capital = 202 } # Avignon - Curia is moved by Clement V (1305-1314)	
 

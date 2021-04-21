@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = high_feudal_monarchy_reform
 primary_culture = castillian
 add_accepted_culture = andalucian
 add_accepted_culture = leonese
@@ -9,7 +9,6 @@ historical_friend = POR
 historical_rival = GRA
 capital = 208 # Leon
 national_focus = MIL
-add_army_professionalism = 0.1
 
 1350.3.25 = {
 	capital = 208 # Leon
@@ -55,6 +54,7 @@ add_army_professionalism = 0.1
 		adm = 3
 		dip = 3
 		mil = 3
+		block_disinherit = yes		
 	}
 }
 

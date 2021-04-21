@@ -1,12 +1,11 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = high_feudal_monarchy_reform
 government_rank = 1
 primary_culture = lombard
 religion = catholic
 technology_group = western
 capital = 104 # Milano
 fixed_capital = 104 # Cannot move capital away from this province & no power cost to move to it
-add_army_professionalism = 0.05
 
 1354.10.5 = {
 	monarch = {

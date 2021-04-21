@@ -14,10 +14,10 @@ religious_school = jafari_school
 		name = "Shaikh Awais I"
 		dynasty = "Jalayirid"
 		birth_date = 1329.1.1
-		adm = 4
-		dip = 4	
-		mil = 5
-		leader = {	name = "Shaikh Awais I"	type = general	fire = 3	shock = 4	manuever = 3 siege = 2	personality = master_of_arms_personality }		
+		adm = 5
+		dip = 3
+		mil = 4
+		leader = {	name = "Shaikh Awais I"	type = general	fire = 3	shock = 3	manuever = 3 siege = 2	personality = master_of_arms_personality }		
 	}
 	add_piety = -0.10
 	clear_scripted_personalities = yes

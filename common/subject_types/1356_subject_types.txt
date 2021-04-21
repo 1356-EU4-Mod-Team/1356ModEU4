@@ -332,7 +332,6 @@ canton = {
 	# subject_opinion_modifier = is_vassal
 # }
 
-
 SEA_tributary_state = {
 	#If similar subject added check if it needs to be added to these scripted triggers:
 	#is_subject_except_tributary_trigger

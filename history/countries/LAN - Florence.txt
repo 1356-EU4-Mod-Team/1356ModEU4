@@ -6,7 +6,6 @@ primary_culture = tuscan
 religion = catholic
 technology_group = western
 capital = 116 # Firenze
-add_army_professionalism = 0.05
 
 1355.1.1 = { # leader of the "parte guelfa" terror reign
 	monarch = {

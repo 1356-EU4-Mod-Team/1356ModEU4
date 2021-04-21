@@ -1,13 +1,3 @@
-## Yuan Subjects 
-dependency = {
-	subject_type = "SEA_tributary_state"
-	first = YUA
-	second = X01
-	start_date = 1356.12.24
-	end_date = 1444.1.1
-}
-
-
 
 alliance = {
 	first = MNG

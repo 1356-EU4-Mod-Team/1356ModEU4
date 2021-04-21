@@ -5,6 +5,7 @@ religion = sunni
 technology_group = nomad_group
 capital = 466	# Sarai
 historical_rival = NOV
+historical_rival = BLU
 religious_school = hanafi_school
 
 1356.1.1 = {
@@ -20,6 +21,9 @@ religious_school = hanafi_school
 		name = "the_tatar_yoke"
 		duration = 8030
 	}
+	add_prestige = -25
+	add_horde_unity = -35
+	add_manpower = -2.5
 }
 
 1359.1.1 = {

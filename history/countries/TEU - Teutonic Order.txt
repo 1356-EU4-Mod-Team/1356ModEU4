@@ -8,14 +8,13 @@ technology_group = western
 historical_friend = LIV
 historical_rival = POL
 capital = 1841 # Marienburg
-add_army_professionalism = 0.1
 
 1351.9.14 = {
 	monarch = {
 		name = "Winrich von Kniprode"
 		birth_date = 1310.1.1
-		adm = 5
-		dip = 5
+		adm = 3
+		dip = 4
 		mil = 5
 	}
 }

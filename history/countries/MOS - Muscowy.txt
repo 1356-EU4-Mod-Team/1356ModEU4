@@ -15,9 +15,9 @@ national_focus = ADM
 		name = "Ivan II"
 		dynasty = "Rurikovich"
 		birth_date = 1326.3.30
-		adm = 2
-		dip = 2
-		mil = 2
+		adm = 3
+		dip = 3
+		mil = 3
 		
 		leader = {
 			name = Ivan

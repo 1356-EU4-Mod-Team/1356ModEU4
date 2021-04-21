@@ -10,7 +10,6 @@ capital = 112 # Venezia
 fixed_capital = 112 # Cannot move capital away from this province & no power cost to move to it
 historical_friend = KNI
 national_focus = DIP
-add_army_professionalism = 0.05
 
 1354.1.1 = { leader = {	name = "Vettor Pisani"	type = admiral		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1380.8.13 } }
 

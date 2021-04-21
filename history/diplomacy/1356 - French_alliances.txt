@@ -8,103 +8,52 @@
 #}
 
 
-#FlandyNote:
-#Blois, Perigord, La Marche, need subject relations
-#Rework Foix Subject status? (Event?)
-
 #########################################
-###############  Vassals  ###############
+# Vassals + Alliances of French minors	#
 #########################################
-
-# Blois, a French duchy vassal (????-1391 #Inherited by Orleans?)
-dependency = { 
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = FBL
-	start_date = 1356.1.1 # duchy created 
-	end_date = 1391.1.1 # duchy inherited
-}
-
-# Perigord, a French duchy vassal (????-????) #Dates are Guesstimated
-dependency = { 
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = FPL
-	start_date = 1356.1.1 # duchy created 
-	end_date = 1360.5.8 # duchy inherited
-}
-
-# Perigord, a French duchy vassal (????-????) #Dates are Guesstimated
-dependency = { 
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = FPL
-	start_date = 1375.6.27 # duchy created 
-	end_date = 1477.1.5 # duchy inherited
-}
-
-
-# La Marche, a French duchy vassal (????-????) #Commented out as this seems to be owned by Burbonnais Dynasty
-#dependency = { 
-#	subject_type = "french_ducal_vassal"
-#	first = FRA
-#	second = FLM
-#	start_date = 1356.1.1 # duchy created 
-#	end_date = 1416.6.15 # duchy inherited
-#}
-
 
 # Berry, a French duchy vassal (1360-1416)
-dependency = { 
+dependency = { #
 	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = BER
-	start_date = 1356.1.1 # duchy created #Was 1360
+	start_date = 1360.10.1 # duchy created
 	end_date = 1416.6.15 # duchy inherited
 }
 
-# Berry, a French vassal #Not Included in Vanilla
-#dependency = { 
-#	subject_type = "french_ducal_vassal"
-#	first = FRA
-#	second = BER
-#	start_date = 1444.1.1
-#	end_date = 1444.1.2
-#}
-
-# Bourbonnais, a French duchy vassal  (1327-1523) #Pre 1356
+# Bourbonnais, a French duchy vassal  (1327-1523)
 dependency = { 
 	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = BOU
 	start_date = 1327.12.27 # duchy created
-	end_date = 1356.1.1 
+	end_date = 1453.10.16 
 }
 
-# Bourbonnais, a French duchy vassal  (1327-1523) #1356
-dependency = { 
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = BOU
-	start_date = 1356.1.2 # duchy created
-	end_date = 1443.12.31 
-}
+#Bourbonnais, a French duchy vassal  (1327-1523)
+# dependency = { #FRA
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = BOU
+	# start_date = 1453.10.16 
+	# end_date = 1523.10.9 # duchy to Kingmother Louise de Savoie
+# }
 
-# France-Bourbon (1444-1532)
-dependency = { 
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = BOU
-	start_date = 1444.1.1
-	end_date = 1532.8.3
-}
+# # Bourbonnais, a French duchy vassal (1523-1531)
+# dependency = { #FRA
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = BOU
+	# start_date = 1523.10.9 # duchy to Kingmother Louise de Savoie
+	# end_date = 1531.9.22 # duchy inherited
+# }
 
 # Orleanais, a French duchy vassal (1344-1376)
 dependency = { #FRA
 	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = ORL
-	start_date = 1356.1.1 # duchy created
+	start_date = 1344.1.1 # duchy created
 	end_date = 1376.9.1 # duchy inherited
 }
 
@@ -114,17 +63,26 @@ dependency = { #
 	first = FRA
 	second = ORL
 	start_date = 1392.1.1 # duchy restaured
-	end_date = 1443.12.31 
+	end_date = 1453.10.16 
 }
 
-# France-Orleans 1444-1532
-dependency = { #Back to Vanilla
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = ORL
-	start_date = 1444.1.1
-	end_date = 1532.8.3
-}
+# # Orleanais, a French duchy (1392-1489)
+# dependency = { #FRA #Switch Feudal Vassals to Regular Vassals circa 1477?
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = ORL
+	# start_date = 1453.10.16 
+	# end_date = 1489.5.27 # becomes the King of France
+# }
+
+# # Orleanais, a French duchy vassal (1519-1545)
+# dependency = { #FRA
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = ORL
+	# start_date = 1519.3.31 # duchy created
+	# end_date = 1545.9.9 # duchy inherited
+# }
 
 # Alençon, a French county/duchy (1346-1458)
 dependency  = { 
@@ -132,72 +90,65 @@ dependency  = {
 	first = FRA
 	second = ALE
 	start_date = 1356.12.26 #was 1346.8.26
-	end_date = 1444.1.1 #was 1458.1.1
+	end_date = 1453.10.16 #was 1458.1.1
 }
 
-# Alençon, a French county/duchy (1346-1458)
-dependency  = { 
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = ALE
-	start_date = 1444.1.2 
-	end_date = 1458.10.16 #was 1458.1.1
-}
+# # Alençon, a French duchy vassal 1st phase (1461-1474)
+# dependency = {
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = ALE
+	# start_date = 1461.1.1 # duchy returned
+	# end_date = 1474.1.1
+# }
 
- # Alençon, a French duchy vassal 1st phase (1461-1474)
-dependency = {
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = ALE
-	start_date = 1461.1.1 # duchy returned
-	end_date = 1474.1.1
-}
+# # Alençon, a French duchy vassal 2nd phase (1478-1497)
+# dependency = { #FRA
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = ALE
+	# start_date = 1478.1.1 # duchy returned
+	# end_date = 1497.6.3 # under Duchy of Armagnac, but Alençon rule
+# }
 
-# Alençon, a French duchy vassal 2nd phase (1478-1497)
-dependency = {
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = ALE
-	start_date = 1478.1.1 # duchy returned
-	end_date = 1497.6.3 # under Duchy of Armagnac, but Alençon rule
-}
-
-# Armagnac, a French duchy (1369-1549) #1356
+# Armagnac, a French duchy (1369-1549)
 dependency = {
 	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = AMG
 	start_date = 1369.5.1 # French reqonquer Gascogne
-	end_date = 1444.1.1 
+	end_date = 1453.10.16 
 }
 
-# France-Armagnac (1369-1549) #Back to Vanilla
-dependency = { 
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = AMG
-	start_date = 1444.1.2
-	end_date = 1532.8.3
-}
+# # Armagnac, a French duchy (1369-1549)
+# dependency = { #FRA
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = AMG
+	# start_date = 1453.10.16 # Switches from FRA to FRA
+	# end_date = 1549.12.21 # duchy inherited by Navarra
+# }
 
-# Foix, a French county (1356-1532) #Dev note; Foix had much more autonomy than other subjects at the time. Reflect this somehow?
+
+# Foix, a French county
 dependency = { 
 	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = FOI
 	start_date = 1356.12.26 #This is because it is harder to make them vassals later on, as it's highly possible Foix will no longer exist by 1380.
 	#start_date = 1380.5.1 # becomes Lieutenant-général of Languedoc
-	end_date = 1444.1.1 
+	end_date = 1453.10.16 
 }
 
-# France-Foix (1356-1532)
-dependency = { 
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = FOI
-	start_date = 1444.1.2
-	end_date = 1532.8.3
-}
+# # Foix, a French county
+# dependency = { 
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = FOI
+	# start_date = 1453.10.16 
+	# #start_date = 1380.5.1 # becomes Lieutenant-général of Languedoc
+	# end_date = 1479.2.13 # becomes the King of Navarra
+# }
 
 # Forez, a French county
 dependency = { 
@@ -217,7 +168,7 @@ dependency = {
 	end_date = 1387.1.1 # (for now 1399), later = Treaty of Arras (1435.9.20)
 }
 
-# Auvergne, a French county (1350-1589)
+# Auvergne, a French county
 dependency = { 
 	subject_type = "french_ducal_vassal"
 	first = FRA
@@ -226,23 +177,46 @@ dependency = {
 	end_date = 1360.9.29 # part of BUR
 }
 
-# Auvergne, a French county (1350-1589)
+royal_marriage = { 
+	first = FRA
+	second = AUV
+	start_date = 1350.2.9 # Countess becomes Queen Consort 
+	end_date = 1360.9.29 # part of BUR
+}
+
+# Auvergne, a French county
 dependency = { 
 	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = AUV
 	start_date = 1361.11.21 # county again freed
-	end_date = 1444.1.1 # FRX to FRA
+	end_date = 1453.10.16 # FRX to FRA
 }
 
-# France-Auvergne (1350-1589)
-dependency = {
-	subject_type = "french_ducal_vassal"
-	first = FRA
-	second = AUV
-	start_date = 1444.1.2
-	end_date = 1532.8.3
-}
+# Auvergne, a French county
+# dependency = { #FRA #Rework this stage
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = AUV
+	# start_date = 1453.10.16 
+	# end_date = 1533.10.28 # county to dauphiné of France
+# }
+
+# Auvergne, a French vassal
+# dependency = { #FRA
+	# subject_type = "french_ducal_vassal"
+	# first = FRA
+	# second = AUV
+	# start_date = 1533.10.28 # county to dauphiné of France
+	# end_date = 1589.1.5 # county inherited by Navarra
+# }
+
+# royal_marriage = { #FRA
+	# first = FRA
+	# second = AUV
+	# start_date = 1533.10.28 # county to dauphiné of France
+	# end_date = 1589.1.5 # county inherited by Navarra
+# }
 
 # Brittany, a French duchy vassal
 dependency = { 
@@ -270,35 +244,6 @@ dependency = {
 	start_date = 1351.1.1 # county created
 	end_date = 1382.7.27
 }
-
-############################################
-# Later Subjects (Post Golden Bull Starts) #
-############################################
-
-# Nevers, a French vassal (1465-1539)
-vassal = { 
-	first = FRA
-	second = NEV
-	start_date = 1465.1.1
-	end_date = 1539.1.5
-}
-
-# Lorraine, a French vassal (1641-1670)
-vassal = {
-	first = FRA
-	second = LOR
-	start_date = 1641.1.1
-	end_date = 1670.1.1
-}
-
-# Normandy, a French vassal (1465-1466)
-vassal = {
-	first = FRA
-	second = NRM
-	start_date = 1465.8.15
-	end_date = 1466.3.6
-}
-
 
 #################################
 # Anjou - Provence - Neaples	#
@@ -369,6 +314,13 @@ alliance = {
 	end_date = 1434.11.12
 }
 
+alliance = {
+	first = BAR
+	second = LOR
+	start_date = 1419.8.13
+	end_date = 1434.11.12
+}
+
 royal_marriage = {
 	first = ANJ
 	second = BAR
@@ -376,34 +328,19 @@ royal_marriage = {
 	end_date = 1434.11.12
 }
 
-# (*) Lorraine under René of Anjou
-union = {
-	first = ANJ
+royal_marriage = {
+	first = BAR
 	second = LOR
-	start_date = 1434.11.12
-	end_date = 1442.6.2
-}
-
-union = {
-	first = PRO
-	second = LOR
-	start_date = 1442.6.2
-	end_date = 1453.2.28
+	start_date = 1419.8.13
+	end_date = 1434.11.12
 }
 
 #################
 # PU's		#
 #################
 
-# France Crown Land of Poitou, absorbed into Crown in 1417
-#union = { 
-#	first = FRA
-#	second = POU
-#	start_date = 1356.12.26
-#	end_date = 1417.1.1
-#}
+# Normandy (Évreux) under King of Navarra
 
-# Normandy (Évreux) under King of Navarra (1328-1404)
 #union = { #Removed to better balance the region/Navarra
 #	first = NAV
 #	second = NRM
@@ -411,7 +348,7 @@ union = {
 #	end_date = 1404.6.9
 #}
 
-# Dauphiné under King of France (1349-1461)
+# Dauphiné under King of France
 union = { #FRA
 	first = FRA
 	second = DAU
@@ -420,23 +357,15 @@ union = { #FRA
 	end_date = 1461.7.22 
 }
 
-# County of Forez under Duchy of Bourbonnais (1417-1531)
- union = { 
-	first = BOU
-	second = FOZ
-	start_date = 1417.9.22
-	end_date = 1531.9.22 
-}
+# County of Forez under Duchy of Bourbonnais
+# union = { #Commented out to prevent confusion
+	# first = BOU
+	# second = FOZ
+	# start_date = 1417.9.22
+	# end_date = 1531.9.22 
+# }
 
-# County of Maine under Duchy of Anjou (????-????)
- union = { 
-	first = ANJ
-	second = FMA
-	start_date = 1356.12.26
-	end_date = 1370.12.8
-}
-
-# Duchy of Alecon under Duchy of Armagnac (1497-1549) #Left out since this is post Golden Bull PU's
+# Duchy of Alecon under Duchy of Armagnac
 # union = { #Removed to minimize confusion
 	# first = AMG
 	# second = ALE
@@ -444,37 +373,19 @@ union = { #FRA
 	# end_date = 1549.12.21 # Death of the Marguerite de Valois-Angoulême
 # }
 
-# Duchy of Berry under Duchy of Armagnac (1525-1549) #Left out since this is post Golden Bull PU's
-#union = {
+# Duchy of Berry under Duchy of Armagnac
+# union = {
 	# first = AMG
 	# second = BER
 	# start_date = 1525.4.12 # Death of the Charles IV d'Alençon (supreme ruler of AMG)
 	# end_date = 1549.12.21 # Death of the Marguerite de Valois-Angoulême
 # }
 
-# France-Brittany (1491-1532)
-union = {
-	first = FRA
-	second = BRI
-	start_date = 1491.12.6
-	end_date = 1532.8.3
-}
+#################################
+# Other Dynastic Relations	#
+#################################
 
-
-###############################################
-# French Minor Alliances & Dynastic Relations #
-###############################################
-
-#France and Auvergune 1350-1360
-royal_marriage = { 
-	first = FRA
-	second = AUV
-	start_date = 1350.2.9 # Countess becomes Queen Consort 
-	end_date = 1360.9.29 # part of BUR
-}
-
-
-# Bourbonnais and Forez #1371-1417
+# Bourbonnais and Forez
 alliance = {
 	first = BOU
 	second = FOZ
@@ -489,37 +400,7 @@ royal_marriage = {
 	end_date = 1417.9.22
 }
 
-#Navarra and Foix 1350-1380
-alliance = {
-	first = NAV
-	second = FOI
-	start_date = 1350.10.1
-	end_date = 1380.5.1
-}
-
-royal_marriage = {
-	first = NAV
-	second = FOI
-	start_date = 1350.10.1
-	end_date = 1380.5.1
-}
-
-#Foix and Navarra 1464-1479
-alliance = {
-	first = FOI
-	second = NAV
-	start_date = 1464.12.2
-	end_date = 1479.2.13
-}
-
-royal_marriage = {
-	first = FOI
-	second = NAV
-	start_date = 1464.12.2
-	end_date = 1479.2.13
-}
-
-# Berry and Auvergne 1389-1416
+# Berry and Auvergne
 alliance = {
 	first = BER
 	second = AUV
@@ -534,7 +415,7 @@ royal_marriage = {
 	end_date = 1416.6.15
 }
 
-# Anjou and Naples 1423-1435
+# Anjou and Naples
 alliance = {
 	first = ANJ
 	second = NAP
@@ -549,7 +430,22 @@ royal_marriage = {
 	end_date = 1435.2.2
 }
 
-# Armangnac and Berry 1517-1525
+# Foix and Navarra
+# alliance = {
+	# first = FOI
+	# second = NAV
+	# start_date = 1464.12.2
+	# end_date = 1479.2.13
+# }
+
+royal_marriage = {
+	first = FOI
+	second = NAV
+	start_date = 1464.12.2
+	end_date = 1479.2.13
+}
+
+# Armangnac and Berry
 alliance = {
 	first = AMG
 	second = BER
@@ -564,7 +460,7 @@ royal_marriage = {
 	end_date = 1525.4.12
 }
 
-# Navarra and Armangnac 1527-1549
+# Navarra and Armangnac
 alliance = {
 	first = NAV
 	second = AMG
@@ -579,33 +475,10 @@ royal_marriage = {
 	end_date = 1549.12.21
 }
 
-royal_marriage = { #FRA
-	first = FRA
-	second = AUV
-	start_date = 1533.10.28 # county to dauphiné of France
-	end_date = 1589.1.5 # county inherited by Navarra
-}
+#########################
+# Other Alliances	#
+#########################
 
-#############################
-# Other Alliances & RM's	#
-#############################
-
-#Bar and Lorraine 1419-1434
-alliance = {
-	first = BAR
-	second = LOR
-	start_date = 1419.8.13
-	end_date = 1434.11.12
-}
-
-royal_marriage = { 
-	first = BAR
-	second = LOR
-	start_date = 1419.8.13
-	end_date = 1434.11.12
-}
-
-#France and Scotland 1419-1434
 guarantee = {
 	first = FRA
 	second = SCO
@@ -626,6 +499,13 @@ alliance = { #FRA
 	start_date = 1342.6.1
 	end_date = 1365.4.12
 }
+
+# alliance = {
+	# first = NAV
+	# second = FOI
+	# start_date = 1350.10.1
+	# end_date = 1380.5.1
+# }
 
 alliance = {
 	first = BRI

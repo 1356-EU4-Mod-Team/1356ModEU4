@@ -1,8 +1,8 @@
 # 412 - Khuzestan (1356)
 # Changes: JLR/TIM/IRQ
 
-owner = BSR
-controller = BSR
+owner = IDA
+controller = IDA
 culture = al_iraqiya_arabic
 religion = shiite
 capital = "Ahvaz"
@@ -12,7 +12,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 1
 is_city = yes
-add_core = BSR
+add_core = IDA
 add_core = MSY
 fort_15th = yes # Shushtar, Dezful
 
@@ -28,7 +28,7 @@ discovered_by = indian
 } #BT In
 
 1356.12.26  = {
-			owner = BSR controller = BSR remove_core = ABS
+			owner = IDA controller = IDA remove_core = ABS
 } #BT Out
 
 1394.1.1  = { owner = TIM controller = TIM add_core = TIM }

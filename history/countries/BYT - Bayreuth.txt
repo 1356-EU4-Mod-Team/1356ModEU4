@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = high_feudal_monarchy_reform
+government_rank = 1
+technology_group = western
+primary_culture = franconian
+religion = catholic
+capital = 4717	# Bayreuth
+fixed_capital = 4717 # Cannot move capital away from this province & no power cost to move to it
+
+# Made junior partner of Ansbach for gameplay reasons.
+#defining a dummy so that it knows von Hohenzollern as the native dynasty
+
+# Burgrave of Nuremberg which is presumed to be seperate from Free City Nuremberg 	##1356
+1356.1.1 = {
+	monarch = {
+		name = "John II"
+		dynasty = "von Hohenzollern"
+		birth_date = 1309.9.21
+		death_date = 1357.7.31
+		dip = 4
+		adm = 6
+		mil = 3
+	}
+	
+	heir = {
+		name = "Friedrich"
+		monarch_name = "Friedrich V"
+		dynasty = "von Hohenzollern"
+		birth_date = 1333.3.3
+		death_date = 1398.6.13
+		adm = 3
+		dip = 4
+		mil = 3
+	}		
+}
+
+1420.1.1 = {
+	monarch = {
+		name = "Friedrich VI"
+		dynasty = "von Hohenzollern"
+		birth_date = 1371.9.21
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+1533.1.1 = { religion = protestant }
+
+1608.5.14 = {
+	join_league = protestant
+}
+
+1635.5.30 = {
+	leave_league = protestant
+}
+
+# Merged with Prussia 1791.12.2

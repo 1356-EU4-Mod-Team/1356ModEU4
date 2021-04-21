@@ -1,7 +1,7 @@
 # 65 - München
-owner = UBV
-controller = UBV
-add_core = UBV
+owner = ING
+controller = ING
+add_core = ING
 culture = bavarian
 religion = catholic
 base_tax = 6 

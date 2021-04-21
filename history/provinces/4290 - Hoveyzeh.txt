@@ -1,8 +1,8 @@
 # 4290 - Hoveyzeh (1356)
 # Changes: JLR/TIM/IRQ
 
-owner = BSR
-controller = BSR
+owner = JLR
+controller = JLR
 culture = al_iraqiya_arabic
 religion = shiite
 capital = "Hoveyzeh"
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = BSR
+add_core = JLR
 add_core = MSY
 fort_15th = yes
 
@@ -28,7 +28,7 @@ discovered_by = indian
 
 
 1356.12.26  = {
-			owner = BSR controller = BSR remove_core = ABS
+			owner = JLR controller = JLR remove_core = ABS
 } #BT Out
 
 1394.1.1  = { owner = TIM controller = TIM add_core = TIM }
