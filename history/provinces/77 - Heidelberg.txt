@@ -5,14 +5,13 @@ culture = hessian
 religion = catholic
 trade_goods = wine
 owner = PAL
-base_tax = 4
+base_tax = 5
 base_production = 4
-base_manpower = 2
+base_manpower = 4
 is_city = yes
 controller = PAL
 add_core = PAL
 hre = yes
-
 
 discovered_by = eastern
 discovered_by = western
@@ -20,11 +19,11 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { 
-				owner = SWA controller = SWA add_core = SWA add_claim = FKN
+	owner = SWA controller = SWA add_core = SWA add_claim = FKN
 } #BT In
 
 1356.12.26  = { 
-				owner = PAL controller = PAL remove_core = SWA remove_claim = FKN
+	owner = PAL controller = PAL remove_core = SWA remove_claim = FKN
 } #BT Out
 
 1546.4.19 = { religion = protestant } # #Friedrich II converts the coutnry to protestant

@@ -18,7 +18,6 @@ discovered_by = ottoman
 
 
 1356.12.24  = { owner = FKN controller = FKN add_core = FKN } #BT In
-
 1356.12.26  = { owner = MAI controller = MAI remove_core = FKN } #BT Out
 
 
