@@ -335,8 +335,8 @@ republic = {
 				federal_republic
 				crown_colony_government
 				private_enterprise_colony_government
-				self_governing_colony_government				
-				dutch_republic				peasants_republic
+				self_governing_colony_government				dutch_republic
+				peasants_republic
 				revolutionary_republic_reform
 				junior_revolutionary_republic_reform
 				presidential_despot_reform
@@ -852,10 +852,10 @@ pre_dharma_mapping = {
 		government = republic
 		legacy_government = imperial_city
 	}
-	trading_city = {
-		government = republic
-		legacy_government = imperial_city_legacy
-	}
+	#trading_city = {
+	#	government = republic
+	#	legacy_government = imperial_city_legacy
+	#}
 	ambrosian_republic = {
 		government = republic
 		legacy_government = ambrosian_republic_legacy

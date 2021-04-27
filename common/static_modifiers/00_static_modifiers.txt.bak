@@ -1203,6 +1203,10 @@ trade_company_strong = {
 	merchants = 1
 }
 
+trade_company_dominant = {
+}
+
+
 large_colonial_nation = {
 	merchants = 1
 	global_trade_power = 0.05

@@ -723,7 +723,7 @@ commander_king_reform = {
 admiral_king_reform = {
 	icon = "admiral_king_reform"
 	allow_normal_conversion = yes
-	fixed_rank = 0
+	#fixed_rank = 2
 	potential = {
 		OR = {
 			has_reform = monastic_order_reform
@@ -753,8 +753,6 @@ admiral_king_reform = {
 		admirals_become_rulers = yes
 	}
 	has_term_election = no
-	queen = yes
-	royal_marriage = yes
 	heir = no
 	ai = {
 		factor = 0.1
@@ -874,7 +872,7 @@ religious_permanent_revolution_reform = {
 		custom_tooltip = world_crusade_tt
 	}
 	modifiers = {
-		enforce_religion_cost = -0.25
+		enforce_religion_cost = -0.4
 	}
 	ai = {
 		factor = 3

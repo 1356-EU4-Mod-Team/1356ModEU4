@@ -1882,14 +1882,12 @@ consolidate_power_in_doge_reform = {
 		OR = {
 			has_reform = venice_merchants_reform
 			has_reform = merchants_reform
-			has_reform = veche_republic
 		}
 	}
 	trigger = {
 		OR = {
 			has_reform = venice_merchants_reform
 			has_reform = merchants_reform
-			has_reform = veche_republic
 		}
 	}
 	modifiers = {
@@ -1914,14 +1912,12 @@ consolidate_power_in_cities_reform = {
 		OR = {
 			has_reform = venice_merchants_reform
 			has_reform = merchants_reform
-			has_reform = veche_republic
 		}
 	}
 	trigger = {
 		OR = {
 			has_reform = venice_merchants_reform
 			has_reform = merchants_reform
-			has_reform = veche_republic
 		}
 	}
 	modifiers = {
@@ -2669,38 +2665,5 @@ become_rev_empire_reform = {
 	}
 	ai = {
 		factor = 0
-	}
-}
-
-millenarian_theocracy_reform = {
-	icon = "rioting_burning_2"
-	allow_normal_conversion = yes
-	has_term_election = no
-	potential = {
-		religion = catholic
-		has_ruler = "Girolamo Savonarola"
-		OR = {
-			tag = LAN
-			tag = TUS
-		}
-	}
-	trigger = {
-		religion = catholic
-		has_ruler = "Girolamo Savonarola"
-		OR = {
-			tag = LAN
-			tag = TUS
-		}
-	}
-	modifiers = {
-		devotion = 1
-		tolerance_own = 2
-		global_missionary_strength = 0.02
-	}
-	custom_attributes = {
-		election_on_death = yes
-	}
-	ai = {
-		factor = 10
 	}
 }

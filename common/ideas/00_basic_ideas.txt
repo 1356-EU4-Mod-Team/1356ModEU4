@@ -86,6 +86,7 @@ aristocracy_ideas = {
 			has_government_attribute = enables_aristocratic_idea_group
 			government = tribal
 		}
+		NOT = { has_reform = steppe_horde }
 	}
 	
 	noble_knights = {
@@ -175,47 +176,172 @@ plutocracy_ideas = {
 	}
 }
 
-theocratic_ideas = { #1356
+
+horde_gov_ideas = {
 	category = MIL
-
+	
 	bonus = {
-		missionary_maintenance_cost = -0.25
-		church_loyalty_modifier = 0.1
-	}
-
-	trigger = { 
-		OR = {
-			government = theocracy
-			has_reform = feudal_theocracy
-		}
+		cavalry_power = 0.25
 	}
 	
-	the_word_of_god = { 
-		global_missionary_strength = 0.02
+	trigger = {
+		has_reform = steppe_horde
 	}
-	the_right_of_god = {
-		core_creation = -0.1
+	
+	horse_lords = {
+		cavalry_cost = -0.33
 	}
-	the_zeal_of_god = {
-		land_morale = 0.10
+	beyond_the_sun = {
+		ae_impact = -0.1
 	}
-	the_lieutenant_of_god = {
-		free_leader_pool = 1
+	mandate_of_the_khan = {
+		religious_unity = 0.25
 	}
-	the_messenger_of_god = {
-		missionaries = 1
+	there_shall_be_no_grass = {
+		land_attrition = -0.2
 	}
-	the_peace_of_god = {
-		stability_cost_modifier = -0.15
+	horde_loyalty = {
+		global_unrest = -1
 	}
-	the_fire_of_god = {
-		leader_land_fire = 1
+	watchers_of_the_silk_road = {	
+		caravan_power = 0.20
+	}
+	a_magnanimous_empire = {
+		num_accepted_cultures = 2
 	}
 	
 	ai_will_do = {
-		factor = 2
+		factor = 20
 	}
 }
+
+theocracy_gov_ideas = {
+	category = MIL
+	
+	bonus = {
+		global_heretic_missionary_strength = 0.01
+		church_loyalty_modifier = 0.1
+		brahmins_hindu_loyalty_modifier = 0.1
+		brahmins_muslim_loyalty_modifier = 0.1
+	}
+	
+	trigger = {
+		government = theocracy
+	}
+	servants_of_god = {
+		devotion = 1
+	}
+	by_the_grace_of_god = {
+		fire_damage_received = -0.1
+	}
+	friends_in_high_places = {
+		leader_cost = -0.2
+	}
+	flesh_is_weak = {
+		land_morale = 0.1
+	}
+	alpha_and_omega = {
+		enforce_religion_cost = -0.1
+		culture_conversion_cost = -0.1
+	}
+	conviction_of_sin = {
+		global_unrest = -2
+	}
+	martyrs = {
+		global_manpower_modifier = 0.15
+	}
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+	}
+}
+
+indigenous_ideas = {
+	category = MIL
+
+	bonus = {
+		global_institution_spread = 0.25
+	}
+
+	trigger = {
+		has_government_attribute = enables_natives_idea_group
+	}
+
+	indigenous_bountiful_land = {
+		tribal_development_growth = 0.05
+		development_cost = -0.05
+	}
+	indigenous_irregular_warfare = {
+		hostile_attrition = 1
+	}
+	indigenous_constitution = {
+		monthly_reform_progress_modifier = 0.25
+	}
+	indigenous_braves = {
+		land_morale = 0.10
+	}
+	indigenous_controlled_burns = {
+		global_manpower_modifier = 0.2
+	}
+	indigenous_trade_with_foreigners = {
+		idea_cost = -0.1
+	}
+	indigenous_treaties = {
+		province_warscore_cost = -0.2
+	}
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+
+
+
+# theocratic_ideas = { #1356
+	# category = MIL
+
+	# bonus = {
+		# missionary_maintenance_cost = -0.25
+		# church_loyalty_modifier = 0.1
+	# }
+
+	# trigger = { 
+		# OR = {
+			# government = theocracy
+			# has_reform = feudal_theocracy
+		# }
+	# }
+	
+	# the_word_of_god = { 
+		# global_missionary_strength = 0.02
+	# }
+	# the_right_of_god = {
+		# core_creation = -0.1
+	# }
+	# the_zeal_of_god = {
+		# land_morale = 0.10
+	# }
+	# the_lieutenant_of_god = {
+		# free_leader_pool = 1
+	# }
+	# the_messenger_of_god = {
+		# missionaries = 1
+	# }
+	# the_peace_of_god = {
+		# stability_cost_modifier = -0.15
+	# }
+	# the_fire_of_god = {
+		# leader_land_fire = 1
+	# }
+	
+	# ai_will_do = {
+		# factor = 2
+	# }
+# }
 
 
 innovativeness_ideas = {
@@ -1285,7 +1411,8 @@ expansion_ideas = {
 		global_colonial_growth = 20
 	}
 	factories = {
-		rival_border_fort_maintenance = -0.75
+		rival_border_fort_maintenance = -0.5
+		center_of_trade_upgrade_cost = -0.2
 	}
 	additional_diplomats = {
 		diplomatic_upkeep = 1
@@ -1391,8 +1518,7 @@ settlement_ideas_1356 = {
 	faster_colonists_1 = { # Defined in Text
 	}
 	factories_1 = {
-		rival_border_fort_maintenance = -0.5
-		center_of_trade_upgrade_cost = -0.25
+		rival_border_fort_maintenance = -0.75
 	}
 	additional_diplomats_1 = {
 		global_institution_spread = 0.2
@@ -1677,7 +1803,7 @@ naval_ideas = {
 
 	bonus = {
 		ship_durability = 0.1
-		allowed_marine_fraction = 0.05
+		allowed_marine_fraction = 0.10
 	}
 
 	boarding_parties = {

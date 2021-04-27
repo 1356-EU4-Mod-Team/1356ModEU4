@@ -181,20 +181,6 @@ siberian_tribe = {
 		global_institution_spread = -0.2
 	}
 }
-stateless_society = {
-	icon = "fist_in_air"
-	allow_normal_conversion = no
-	valid_for_nation_designer = yes
-	lock_level_when_selected = yes
-	nation_designer_cost = 0
-	modifiers = {
-		governing_capacity_modifier = -0.99
-		defensiveness = 0.75
-		land_morale = 0.15
-	}
-}
-
-
 
 ######1356 Changes#######
 tribal_federation_ilkhan_reform = { #Tribes
