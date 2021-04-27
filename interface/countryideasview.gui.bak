@@ -619,7 +619,7 @@ guiTypes = {
 			maxWidth = 220
 			maxHeight = 32
 			format = centre
-			alwaystransparent = yes
+			allwaystransparent = yes
 		}			
 	}	
 	

@@ -2430,7 +2430,7 @@ guiTypes = {
 				name = "make_state"
 				quadTextureSprite = "GFX_make_state_button"
 				position = { x = 378 y = 9 }
-			}
+			}			}
 
 			guiButtonType =
 			{
