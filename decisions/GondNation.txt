@@ -53,11 +53,14 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			owns_core_province = 551 #Mandla
-			owns_core_province = 546 #Nagpur
 			owns_core_province = 2082 #Raipur
 			owns_core_province = 547 #Bastar
 			owns_core_province = 2050 #Chanda
 			owns_core_province = 560 #Jharkhand
+			owns_core_province = 546 	#Nagpur
+			546 = {						#Nagpur
+				is_state = yes
+			}
 			OR = {
 				owns_core_province = 552 #Cuttack
 				owns_core_province = 548 #Illichpur

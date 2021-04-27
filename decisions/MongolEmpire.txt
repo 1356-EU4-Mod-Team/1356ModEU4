@@ -133,6 +133,7 @@ country_decisions = {
 				tag = YUA
 				tag = GLH
 				tag = MGE
+				tag = KHA #1356
 			}
 			NOT = { has_country_flag = restored_ilkhanate_decision_flag }
 			NOT = { has_mission = mission_conquer_persia_tatars }
@@ -167,7 +168,7 @@ country_decisions = {
 			create_march = ILK
 			ILK = {
 				change_government = monarchy
-				#set_legacy_government = despotic_monarchy
+				
 				change_primary_culture = ROOT
 				change_religion = ROOT
 				define_ruler = {

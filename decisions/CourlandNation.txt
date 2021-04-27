@@ -39,9 +39,13 @@ country_decisions = {
 				religion = reformed
 				religion = protestant
 				religion = hussite #1356
+				religion = anglican #1356
 			}
 			owns_core_province = 39	 # Kurland
 			owns_core_province = 1935	 # Semigallia
+			1935 = { 					# Semigallia
+				is_state = yes
+			}
 		}
 		effect = {
 			1935 = { # Semigallia

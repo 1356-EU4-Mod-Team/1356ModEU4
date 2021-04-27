@@ -101,6 +101,14 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
 			add_prestige = 25
 			if = {
 				limit = { has_custom_ideas = no }
@@ -136,7 +144,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 16 #1356
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			custom_trigger_tooltip = {

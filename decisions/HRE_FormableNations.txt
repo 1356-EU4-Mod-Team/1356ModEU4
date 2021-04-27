@@ -169,7 +169,7 @@ country_decisions = {
 		ai_importance = 400
 	}
 
-	pomerania_nation = {
+	pomerania_nation = { #1356
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -230,7 +230,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			adm_tech = 8
+			adm_tech = 8 #1356
 			if = {
 				limit = { NOT = { tag = WOL } }
 				OR = {

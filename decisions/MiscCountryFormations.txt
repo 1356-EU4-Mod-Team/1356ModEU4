@@ -70,7 +70,13 @@ country_decisions = {
 			owns_core_province = 146 #Athens
 			num_of_owned_provinces_with = {
 				value = 10
-				culture = greek
+				OR = {
+					culture = greek
+					culture = pontic_greek #1356
+					culture = bithynian #1356
+					culture = lykian #1356
+					culture = cappadocian #1356
+				}
 				OR = {
 					region = balkan_region
 					region = anatolia_region
@@ -192,8 +198,11 @@ country_decisions = {
 		allow = {
 			NOT = { num_of_cities = 4 }
 			is_at_war = no
-			owns_core_province = 370
 			owns_core_province = 371
+			owns_core_province = 370
+			370 = {
+				is_state = yes
+			}
 		}
 		effect = {
 			if = {
