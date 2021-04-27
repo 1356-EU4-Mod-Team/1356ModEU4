@@ -1942,7 +1942,11 @@ sulawesi_ideas = {
 	}
 	
 	trigger = {
-		primary_culture = sulawesi
+		OR = {
+			tag = MKS
+			tag = BTN
+			tag = LUW
+		}
 	}
 	free = yes
 	

@@ -14,7 +14,6 @@ technology = { #1356
 	naval_morale =	1.0
 	range = 50
 	merchants = yes
-	enable = war_canoe	
 	
 }
 
@@ -99,7 +98,6 @@ technology = { #The Early Carrack #1356
 	naval_morale = 0.2
 	naval_maintenance = 0.1
 	enable = early_carrack
-	may_build_flagships = yes
 	administrative_efficiency = 0.03
 }
 

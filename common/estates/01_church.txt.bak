@@ -215,49 +215,7 @@ estate_church =
 			religion = norse_pagan_reformed
 			primary_culture = icelandic
 		}
-	}
-	custom_name = {
-		desc = estate_kahuna
-		trigger = {
-			capital_scope = {
-				area = northern_polynesia_area
-			}
-			primary_culture = polynesian
-			religion = animism
-		}
-	}
-	custom_name = {
-		desc = estate_tohunga
-		trigger = {
-			primary_culture = maori
-			religion = animism
-		}
-	}		
-	custom_name = {
-		desc = estate_taula_otua
-		trigger = {
-			tag = TOG
-			religion = animism
-		}
-	}			
-	custom_name = {
-		desc = estate_taula_aitu
-		trigger = {
-			tag = SAM
-			religion = animism
-		}
-	}
-	custom_name = {
-		desc = estate_bete
-		trigger = {
-			OR = {
-				tag = LAI
-				tag = VIL
-				tag = VNL
-			}
-			religion = animism
-		}
-	}
+	}	
 
 	contributes_to_curia_treasury = yes
 	color = { 200 150 0 }

@@ -3,29 +3,6 @@
 
 #Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
 
-stateless_society = {
-	rank = {
-		1 = STATELESS_SOCIETY
-		2 = STATELESS_SOCIETY
-		3 = STATELESS_SOCIETY
-	}
-
-	ruler_male = {
-		1 = TRIBAL_LEADER
-		2 = TRIBAL_LEADER
-		3 = TRIBAL_LEADER
-	}
-
-	ruler_female = {
-		1 = TRIBAL_LEADER
-		2 = TRIBAL_LEADER
-		3 = TRIBAL_LEADER
-	}
-
-	trigger = {
-		has_reform = stateless_society
-	}
-}
 
 islamic_caliphate = {
 	rank = {
@@ -1687,10 +1664,7 @@ turkish_monarchy = {
 	}
 
 	trigger = {
-		OR = {
-			government = monarchy
-			government = has_harem
-		}		
+		government = monarchy
 		primary_culture = turkish
 	}
 }

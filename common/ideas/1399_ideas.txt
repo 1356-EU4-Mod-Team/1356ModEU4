@@ -2020,93 +2020,93 @@ united_berber_ideas = { #United Berber Culture Group ideas
 	}
 }
 
-thai_nation_ideas = { #Siamese ideas. United Thai.
-    start = {
-		advisor_cost = -0.15 
-		diplomatic_reputation = 2
-    }
+# thai_nation_ideas = { #Siamese ideas. United Thai.
+    # start = {
+		# advisor_cost = -0.15 
+		# diplomatic_reputation = 2
+    # }
  
-    bonus = {
-		global_manpower_modifier = 0.25
-    }
+    # bonus = {
+		# global_manpower_modifier = 0.25
+    # }
    
-    trigger = {
-        tag = SIA
-    }
-    free = yes
+    # trigger = {
+        # tag = SIA
+    # }
+    # free = yes
    
     
-    1356_grand_canals = {
-		global_trade_goods_size_modifier = 0.1
-		development_cost = -0.1 
-    }
-    1356_maharaj_taksin = {
-		land_morale = 0.15
-    }
+    # 1356_grand_canals = {
+		# global_trade_goods_size_modifier = 0.1
+		# development_cost = -0.1 
+    # }
+    # 1356_maharaj_taksin = {
+		# land_morale = 0.15
+    # }
 
-    1356_the_god_king = {
-		prestige = 1
-    }
+    # 1356_the_god_king = {
+		# prestige = 1
+    # }
 
-    1356_the_white_elephant = {
-		global_unrest = -2 
-    }
+    # 1356_the_white_elephant = {
+		# global_unrest = -2 
+    # }
 
-    1356_enlightened_kings = {
-		monarch_diplomatic_power = 1
-    }
+    # 1356_enlightened_kings = {
+		# monarch_diplomatic_power = 1
+    # }
 
-    1356_office_of_kalahom = {
-		leader_land_shock = 1
-		shock_damage_received = -0.15
-    }
-    1356_jungle_warfare = {
-		defensiveness = 0.25
-		hostile_attrition = 1
-    }
-}
+    # 1356_office_of_kalahom = {
+		# leader_land_shock = 1
+		# shock_damage_received = -0.15
+    # }
+    # 1356_jungle_warfare = {
+		# defensiveness = 0.25
+		# hostile_attrition = 1
+    # }
+# }
 
-golden_bull_malaya_nation_ideas = { #United Malaya
-    start = {
-		global_trade_power = 0.2
-		land_attrition = -0.2
-    }
-    bonus = {
-		governing_capacity_modifier = 0.1
-    }
+# golden_bull_malaya_nation_ideas = { #United Malaya
+    # start = {
+		# global_trade_power = 0.2
+		# land_attrition = -0.2
+    # }
+    # bonus = {
+		# governing_capacity_modifier = 0.1
+    # }
 	
-    trigger = {
-        tag = MSA 
-    }
+    # trigger = {
+        # tag = MSA 
+    # }
 	
-    free = yes
+    # free = yes
 	
-    golden_bull_malayan_tolerance = {
-		tolerance_heretic = 3 
-		tolerance_heathen = 3
-    }
-    golden_bull_settle_the_islands = {
-		global_colonial_growth = 25
-    }
-    golden_bull_reforms_of_tun_perak = {
-        infantry_power = 0.10
-    }
-    golden_bull_people_of_the_seas = {
-		naval_forcelimit_modifier = 0.25
-        global_sailors_modifier = 0.25
-    }
-    golden_bull_sea_traditions = {
-		naval_morale = 0.2 
-		merchants = 1 
-    }
-   golden_bull_undang_undang_malacca = {
-		global_trade_goods_size_modifier = 0.1
-        development_cost = -0.1
-    }
-    golden_bull_tradition_of_gunpowder = {
-		fire_damage = 0.1
-    }
-}
+    # golden_bull_malayan_tolerance = {
+		# tolerance_heretic = 3 
+		# tolerance_heathen = 3
+    # }
+    # golden_bull_settle_the_islands = {
+		# global_colonial_growth = 25
+    # }
+    # golden_bull_reforms_of_tun_perak = {
+        # infantry_power = 0.10
+    # }
+    # golden_bull_people_of_the_seas = {
+		# naval_forcelimit_modifier = 0.25
+        # global_sailors_modifier = 0.25
+    # }
+    # golden_bull_sea_traditions = {
+		# naval_morale = 0.2 
+		# merchants = 1 
+    # }
+   # golden_bull_undang_undang_malacca = {
+		# global_trade_goods_size_modifier = 0.1
+        # development_cost = -0.1
+    # }
+    # golden_bull_tradition_of_gunpowder = {
+		# fire_damage = 0.1
+    # }
+# }
 
 # javan_ideas = { #1356 #Expanded to allow non muslim Malayans to have ideas #Moved from 00_country_ideas to ensure compatibility with existing ideas
 	# start = {

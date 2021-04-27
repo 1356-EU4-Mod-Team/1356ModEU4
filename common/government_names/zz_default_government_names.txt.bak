@@ -39,9 +39,9 @@ default_monarchy = {
 	}
 
 	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
 	}
 
 	government_reform = monarchy_mechanic
@@ -103,9 +103,9 @@ default_theocracy = {
 	}
 
 	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
 	}
 
 	government_reform = theocracy_mechanic
@@ -153,9 +153,9 @@ default_tribal = {
 	}
 
 	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
 	}
 
 	government_reform = tribe_mechanic

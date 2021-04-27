@@ -899,6 +899,10 @@ age_of_discovery = { #Partially edited by #1356
 			}
 			ai_will_do = {
 				factor = 10
+				modifier = {
+					factor = 0
+					NOT = { num_of_colonists = 1 }
+				}
 			}
 		}
 		
@@ -948,6 +952,14 @@ age_of_discovery = { #Partially edited by #1356
 			}
 			ai_will_do = {
 				factor = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 20
+						}
+					}
+				}
 			}
 		}
 		ab_venice_ship_trade = {
@@ -975,6 +987,7 @@ age_of_reformation = {
 	
 	
 	religious_conflicts = yes
+	papacy = 1.25
 	
 	objectives = {
 		obj_christian_convert = {
@@ -982,6 +995,7 @@ age_of_reformation = {
 				religion = protestant
 				religion = reformed
 				religion = anglican
+				religion = hussite
 			}
 		}
 		
@@ -1014,6 +1028,10 @@ age_of_reformation = {
 			OR = {
 				trading_bonus = {
 					trade_goods = spices
+					value = yes
+				}
+				trading_bonus = {
+					trade_goods = cloves
 					value = yes
 				}
 				trading_bonus = {
@@ -1181,6 +1199,7 @@ age_of_absolutism = {
 		is_institution_enabled = global_trade
 	}
 	
+	papacy = 1.5
 	
 	absolutism = {
 		harsh_treatment = 1
@@ -1363,6 +1382,7 @@ age_of_revolutions = {
 		is_institution_enabled = enlightenment
 	}
 	
+	papacy = 2.0
 	absolutism = {
 		harsh_treatment = 1
 		stability = 1

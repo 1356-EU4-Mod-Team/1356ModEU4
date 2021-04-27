@@ -627,7 +627,6 @@ tributary_state = {
 	takes_diplo_slot = no
 	base_liberty_desire = -5
 	relative_power_class = 1
-	should_quit_wars_on_activation = no
 	can_send_tribute = yes
 	can_have_subjects_of_other_types = yes
 	uses_military_focus = no
@@ -638,8 +637,6 @@ tributary_state = {
 	can_transfer_in_peace = no
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no
-	overlord_can_fabricate_for = no
-	does_overlord_size_count_for_warscore_cost = no
 	
 	liberty_desire_development_ratio = 0.175
 	trust_on_start = 0
@@ -676,8 +673,6 @@ tributary_state = {
 	send_additional_troops = yes
 	demand_artifacts = yes
 	demand_additional_tribute = yes
-	block_settlement_growth = no
-	allow_settlement_growth = no
 	placate_rulers = no
 	knowledge_sharing = no
 	# (continuous)

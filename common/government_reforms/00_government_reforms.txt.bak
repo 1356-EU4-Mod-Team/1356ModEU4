@@ -1949,7 +1949,6 @@ great_mongol_state_legacy = {
 	allow_convert = no
 	tribal = yes
 	nomad = yes
-	raze_province = yes
 
 	nation_designer_cost = 0
 	nation_designer_trigger = {

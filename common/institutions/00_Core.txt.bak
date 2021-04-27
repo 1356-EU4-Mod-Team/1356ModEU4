@@ -3302,7 +3302,6 @@ manufactories = {
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
@@ -3436,7 +3435,6 @@ manufactories = {
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
@@ -4300,7 +4298,6 @@ industrialization = {
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
@@ -4434,7 +4431,6 @@ industrialization = {
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
