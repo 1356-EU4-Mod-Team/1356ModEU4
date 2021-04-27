@@ -4,7 +4,6 @@
 owner = STY
 controller = STY
 add_core = STY
-add_core = CTH #Carinthia
 culture = austrian
 religion = catholic
 base_tax = 4

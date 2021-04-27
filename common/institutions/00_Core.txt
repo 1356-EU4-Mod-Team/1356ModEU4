@@ -428,18 +428,18 @@ feudalism = { #Heavily Edited by #1356
 				# }
 			# }
 		# }
-		modifier = { #Spreads slower in Pagan Provinces
-			factor = -1
-			#1scale = yes
-			force_potential = yes
-			potential = {
-				religion_group = pagan
-			}
-			custom_trigger_tooltip = {
-				tooltip = pagan_province_feudalism
-				religion_group = pagan
-			}
-		}
+		# modifier = { #Spreads slower in Pagan Provinces
+			# factor = -1
+			# 1scale = yes
+			# force_potential = yes
+			# potential = {
+				# religion_group = pagan
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = pagan_province_feudalism
+				# religion_group = pagan
+			# }
+		# }
 		#End of 1356 Changes
 	}
 	
@@ -681,7 +681,7 @@ mercantilism_institution = { #1356 New Content
 	#on_start = institution_events.1
 
 	can_embrace = {
-		owner = { has_institution = feudalism }
+		always = yes
 	}
 
 	embracement_speed = {
@@ -695,18 +695,18 @@ mercantilism_institution = { #1356 New Content
 				}
 			}
 		}
-		modifier = { #Spreads slower in Pagan Provinces
-			factor = -1
-			#scale = yes
-			force_potential = yes
-			potential = {
-				religion_group = pagan
-			}
-			custom_trigger_tooltip = {
-				tooltip = pagan_province_feudalism
-				religion_group = pagan
-			}
-		}
+		# modifier = { #Spreads slower in Pagan Provinces
+			# factor = -1
+			# scale = yes
+			# force_potential = yes
+			# potential = {
+				# religion_group = pagan
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = pagan_province_feudalism
+				# religion_group = pagan
+			# }
+		# }
 		modifier = { #Owner has embraced institution
 			factor = 2
 			scale = yes
@@ -785,24 +785,30 @@ mercantilism_institution = { #1356 New Content
 			}
 		}
 		modifier = { #Is in Trade League
-			factor = 0.35
-			scale = yes
+			factor = 1.8
+			# scale = yes
 			custom_trigger_tooltip = {
 				tooltip = is_in_trade_league_mercantilism_tt
 				owner = { is_in_trade_league = yes }
+				owner = { is_trade_league_leader = no }
 			}
 		}
-		modifier = { #Trade League Leader
-			factor = 0.45
-			scale = yes
+		modifier = { # Nation with Merchant Republic Reform
+			factor = 3.2
+			# scale = yes
 			custom_trigger_tooltip = {
-				tooltip = trade_league_leader_mercantilism_tt
-				owner = { is_trade_league_leader = yes }
-
+				tooltip = trade_republics_reform_bonus.tt
+				owner = { 
+					OR = {
+						has_reform = veche_republic
+						has_reform = venice_merchants_reform
+						has_reform = merchants_reform
+					}	
+				}	
 			}
 		}
 		modifier = { #Province produces paper
-			factor = 0.75
+			factor = 0.25
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -813,8 +819,44 @@ mercantilism_institution = { #1356 New Content
 				trade_goods = paper
 			}
 		}
+		modifier = { #Post 1371 12 Development Province with Monarchy Government Type
+			factor = 2.8
+			# scale = yes
+			# force_potential = yes	# Hide the this modifier when potential is false
+			custom_trigger_tooltip = {
+				tooltip = mercantilism_year_catchup_tt
+				is_year = 1365
+				development = 12
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+				NOT = { continent = new_world }				
+				owner = {
+					NOT = {
+						government = tribal
+						government = native
+					}	
+				}				
+			}
+		}	
+		modifier = { #Diplomatic Tech provides benefits
+			factor = 1.5
+			# scale = yes
+			# force_potential = yes	# Hide the this modifier when potential is false
+			custom_trigger_tooltip = {
+				tooltip = mercantilism_diplomatic_tt
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+				NOT = { continent = new_world }				
+				owner = {
+					dip_tech = 7
+					NOT = {
+						government = native
+					}	
+				}				
+			}
+		}			
 		modifier = { #Luxury Trade Good in Province
-			factor = 0.4
+			factor = 0.15
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -859,55 +901,32 @@ mercantilism_institution = { #1356 New Content
 				NOT = { owner = { religion = mesoamerican_religion } }
 			}
 		}
-		modifier = { #Province Center of Trade 1
-			factor = 0.2
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = {
-					NOT = { government = tribal }
-					NOT = { government = native }
-				}
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
-				NOT = { continent = new_world }
-				province_has_center_of_trade_of_level = 1	
-			}
-			custom_trigger_tooltip = {
-				tooltip = merchantilism_cot_1_tt
-				province_has_center_of_trade_of_level = 1
-				OR = {
-					continent = europe
-					continent = asia
-				}
-			}
-		}
-		modifier = { #Province Center of Trade 2
-			factor = 0.4
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = {
-					NOT = { government = tribal }
-					NOT = { government = native }
-				}
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
-				NOT = { continent = new_world }
-				province_has_center_of_trade_of_level = 2	
-			}
-			custom_trigger_tooltip = {
-				tooltip = merchantilism_cot_2_tt
-				province_has_center_of_trade_of_level = 2	
-				OR = {
-					continent = europe
-					continent = asia
-				}
-			}
-		}
+		# modifier = { #Province Center of Trade 1 ###### Removed as adjustments were made to Trade 2 and 3 centers
+			# factor = 0.2
+			# scale = yes
+			# force_potential = yes	# Hide the this modifier when potential is false
+			# potential = {
+				# owner = {
+					# NOT = { government = tribal }
+					# NOT = { government = native }
+				# }
+				# NOT = { continent = north_america }
+				# NOT = { continent = south_america }
+				# NOT = { continent = new_world }
+				# province_has_center_of_trade_of_level = 1	
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = merchantilism_cot_1_tt
+				# province_has_center_of_trade_of_level = 1
+				# OR = {
+					# continent = europe
+					# continent = asia
+				# }
+			# }
+		# }
 		modifier = { #Province Center of Trade 3
-			factor = 0.8
-			scale = yes
+			factor = 2.8
+			# scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = {
@@ -917,7 +936,7 @@ mercantilism_institution = { #1356 New Content
 				NOT = { continent = north_america }
 				NOT = { continent = south_america }
 				NOT = { continent = new_world }
-				province_has_center_of_trade_of_level = 1	
+				province_has_center_of_trade_of_level = 3	
 			}
 			custom_trigger_tooltip = {
 				tooltip = merchantilism_cot_3_tt
@@ -928,6 +947,32 @@ mercantilism_institution = { #1356 New Content
 				}
 			}
 		}
+		modifier = { #Province Center of Trade 2
+			factor = 1.8
+			# scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					NOT = { government = tribal }
+					NOT = { government = native }
+				}
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+				NOT = { continent = new_world }
+				province_has_center_of_trade_of_level = 1	
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = merchantilism_cot_2_tt
+				province_has_center_of_trade_of_level = 2
+				NOT = { province_has_center_of_trade_of_level = 3 }				
+				OR = {
+					continent = europe
+					continent = asia
+					continent = africa
+				}
+			}
+		}		
 		modifier = { #Province Owner already embraced the Institution
 			factor = 2
 			scale = yes
@@ -946,7 +991,7 @@ mercantilism_institution = { #1356 New Content
 			}
 		}
 		modifier = { #Italians
-			factor = 5
+			factor = 2.4
 			scale = no
 			force_potential = yes
 			potential = {
@@ -958,7 +1003,7 @@ mercantilism_institution = { #1356 New Content
 			}
 		}
 		modifier = { #Chinese
-			factor = 5
+			factor = 2.25
 			scale = no
 			force_potential = yes
 			potential = {
@@ -971,7 +1016,7 @@ mercantilism_institution = { #1356 New Content
 			}
 		}
 		modifier = { #Indochinese
-			factor = 4
+			factor = 1.75
 			scale = no
 			force_potential = yes
 			potential = {
@@ -983,7 +1028,7 @@ mercantilism_institution = { #1356 New Content
 			}
 		}
 		modifier = { #Korea
-			factor = 5
+			factor = 2.5
 			scale = no
 			force_potential = yes
 			potential = {
@@ -1347,12 +1392,12 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 	on_start = new_institution_events.61
 
 	can_embrace = {
-			owner = { has_institution = mercantilism_institution }
+		always = yes
 	}
 
 	embracement_speed = { #Needs more work
 		modifier = { #Friendly Border Province has Institution
-			factor = 0.6
+			factor = 0.45
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_GUNPOWDER
@@ -1424,14 +1469,176 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 				}
 			}
 		}
-		modifier = { #Owner has Mil Tech 12 Arquebus
-			factor = 0.4
+		# modifier = { #Owner has Mil Tech 12 Arquebus
+			# factor = 0.4
+			# scale = yes
+			# custom_trigger_tooltip = {
+				# tooltip = owner_has_mil_tech_6_gunpowder_tt
+				# owner = { mil_tech = 12 }
+			# }
+		# }
+		## Dynamic spreading across groups
+		modifier = { # Gunpower spreading across Tech groups - Western
+			factor = 0.2
 			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = western
+				}				
+			}
 			custom_trigger_tooltip = {
-				tooltip = owner_has_mil_tech_6_gunpowder_tt
-				owner = { mil_tech = 12 }
+				tooltip = western_gunpower_country_established.tt
+				has_global_flag = western_invention_activated				
+				owner = {
+					technology_group = western
+				}
 			}
 		}
+		modifier = { # Gunpower spreading across Tech groups - Eastern
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = eastern
+				}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = eastern_gunpower_country_established
+				has_global_flag = eastern_invention_activated				
+				owner = {
+					technology_group = eastern
+				}
+			}
+		}	
+		modifier = { # Gunpower spreading across Tech groups - Muslim
+			factor = 0.25
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = muslim
+				}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = muslim_gunpower_country_established
+				has_global_flag = muslim_invention_activated				
+				owner = {
+					technology_group = muslim
+				}
+			}
+		}	
+		modifier = { # Gunpower spreading across Tech groups - Indian
+			factor = 0.25
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = indian
+				}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = indian_gunpower_country_established
+				has_global_flag = indian_invention_activated				
+				owner = {
+					technology_group = indian
+				}
+			}
+		}		
+		modifier = { # Gunpower spreading across Tech groups - Ottoman
+			factor = 0.33
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = ottoman
+				}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = anatolian_gunpower_country_established
+				has_global_flag = ottoman_invention_activated				
+				owner = {
+					technology_group = ottoman
+				}
+			}
+		}	
+		modifier = { # Gunpower spreading across Tech groups - Chinese
+			factor = 0.30
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = chinese
+				}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = asian_gunpower_country_established
+				has_global_flag = chinese_invention_activated				
+				owner = {
+					technology_group = chinese
+				}
+			}
+		}
+		modifier = { # Usage of Artillery
+			factor = 2.1
+			#scale = yes
+			#force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					mil_tech = 5
+				}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = invested_in_artillery_buildup
+				#has_global_flag = asian_gunpower_power_discovered				
+				owner = {
+					artillery_fraction = 0.20
+				}
+			}
+		}
+		modifier = { # Using Early Cannons or a form of Gunpowder siege weapon
+			factor = 1.5
+			#scale = yes
+			#force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					mil_tech = 5
+				}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = is_using_gunpowder_siege_weapons			
+				owner = {
+					OR = {
+						has_country_modifier = early_cannon_early_cannons
+						has_country_modifier = western_cannon_gunpowder
+						has_country_modifier = ottoman_gun_of_urban_gunpowder
+						has_country_modifier = chinese_rocketcart_gunpowder
+						has_country_modifier = early_cannon_hwacha
+					}	
+				}
+			}
+		}	
+		modifier = { # Mid 15th Century warfare with Gunpowder
+			factor = 0.5
+			scale = yes
+			#force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					mil_tech = 0
+				}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = gunpowder_war_exposure_mid			
+				owner = {
+					is_year = 1445
+					is_at_war = yes
+					NOT = { continent = north_america }
+					NOT = { continent = south_america }
+					NOT = { continent = new_world }	
+				}
+			}
+		}		
 		#modifier = { #4 Units of Arty in province #Removed because it only checked for arty, so 4 trebs = 4 arty
 		#	factor = 0.5
 		#	scale = yes
@@ -1468,7 +1675,7 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 			}
 		}
 		modifier = { #Province produces future coal
-			factor = 0.75
+			factor = 0.32
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1480,7 +1687,7 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 			}
 		}
 		modifier = { #Province Produces Iron or Coal
-			factor = 0.75
+			factor = 0.32
 			scale = yes
 			potential = {
 				OR = {
@@ -1499,70 +1706,68 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 		#Spread into Indus Valley faster (Sindh up to Delhi)
 		modifier = { #Unique tags that have embraced their pre gunpowder decisions #May need to split these up
 			factor = 0.75
-			#scale = yes
+			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				OR = {
-					area = sindh_area
-					area = northern_sindh_area
-					area = multan_area
-					area = lahore_area
-					area = sind_sagar_area
+					province_id = 2078
+					province_id = 578
+					province_id = 2077
+					province_id = 4511
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = gunpowder_indus_valley_tt
 				OR = {
-					area = sindh_area
-					area = northern_sindh_area
-					area = multan_area
-					area = lahore_area
-					area = sind_sagar_area
+					province_id = 2078
+					province_id = 578
+					province_id = 2077
+					province_id = 4511
 				}
 			
 			}
 		}	
 	
-		modifier = { #Unique tags that have embraced their pre gunpowder decisions #May need to split these up
-			factor = 0.75
+		# modifier = { #Unique tags that have embraced their pre gunpowder decisions #May need to split these up
+			# factor = 0.75
 			#scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				OR = {
-					owner = { tag = BYZ }
-					owner = { tag = KOR }
-					culture_group = east_asian
-					culture_group = tartar
-					culture_group = mongolic_culture_group
-					culture_group = altaic
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = gunpowder_unique_decision_flag_tt
-				OR = {
-					AND = { #Greek Fire
-						owner = { tag = BYZ }
-						has_country_flag = byzantine_gunpowder_flag
-					}
-					AND = { #Korean
-						owner = { tag = KOR }
-						has_country_flag = korean_gunpowder_flag
-					}
-					AND = { #Chinese
-						culture_group = east_asian
-						has_country_flag = chinese_gunpowder_modifier
-					}
-					AND = { #Mongolic/Steppe
-						OR = {
-							culture_group = tartar
-							culture_group = mongolic_culture_group
-							culture_group = altaic
-						}
-						has_country_flag = mongolic_gunpowder_flag
-					}
-				}
-			}
-		}
+			# force_potential = yes	# Hide the this modifier when potential is false
+			# potential = {
+				# OR = {
+					# owner = { tag = BYZ }
+					# owner = { tag = KOR }
+					# culture_group = east_asian
+					# culture_group = tartar
+					# culture_group = mongolic_culture_group
+					# culture_group = altaic
+				# }
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = gunpowder_unique_decision_flag_tt
+				# OR = {
+					# AND = { #Greek Fire
+						# owner = { tag = BYZ }
+						# has_country_flag = byzantine_gunpowder_flag
+					# }
+					# AND = { #Korean
+						# owner = { tag = KOR }
+						# has_country_flag = korean_gunpowder_flag
+					# }
+					# AND = { #Chinese
+						# culture_group = east_asian
+						# has_country_flag = chinese_gunpowder_modifier
+					# }
+					# AND = { #Mongolic/Steppe
+						# OR = {
+							# culture_group = tartar
+							# culture_group = mongolic_culture_group
+							# culture_group = altaic
+						# }
+						# has_country_flag = mongolic_gunpowder_flag
+					# }
+				# }
+			# }
+		# }
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
@@ -1603,7 +1808,7 @@ renaissance = { #1356
 	penalty = 0.5
 
 	bonus = {
-		development_cost = -0.05
+		global_institution_spread = 0.05
 		build_cost = -0.05
 	}
 
@@ -1724,7 +1929,9 @@ renaissance = { #1356
 	
 	
 	can_embrace = {
-		owner = { has_institution = gunpowder_institution } #1356 
+		owner = { has_institution = feudalism }
+		owner = { has_institution = mercantilism_institution }
+		owner = { has_institution = gunpowder_institution }
 	}
 
 
@@ -1768,10 +1975,18 @@ renaissance = { #1356
 				is_capital = yes
 				region = italy_region
 				culture_group = latin
-			}
-			
-			
+			}	
 		}
+		
+		modifier = {
+			factor = 1.9
+			custom_trigger_tooltip = {
+				tooltip = tooltip_full_scholar
+				owner = {
+					full_idea_group = royal_education_ideas
+				}
+			}
+		}		
 		modifier = {
 			factor = 0.05
 			scale = yes
@@ -2118,6 +2333,15 @@ new_world_i = {
 				}
 			}
 		}
+		modifier = {
+			factor = 2.5
+			custom_trigger_tooltip = {
+				tooltip = tooltip_invested_in_nav_or_settlement
+				owner = {
+					has_country_flag = invested_in_a_early_colonial_idea
+				}
+			}
+		}				
 		modifier = {
 			factor = 2
 			scale = yes
@@ -2468,6 +2692,15 @@ printing_press = {
 			}
 		}
 		modifier = {
+			factor = 1.9
+			custom_trigger_tooltip = {
+				tooltip = tooltip_full_majesty_ideas
+				owner = {
+					full_idea_group = grand_court_ideas
+				}
+			}
+		}		
+		modifier = {
 			factor = 1
 			scale = yes
 			potential = {
@@ -2753,6 +2986,16 @@ global_trade = {
 				}
 			}
 		}
+		
+		modifier = {
+			factor = 2.5
+			custom_trigger_tooltip = {
+				tooltip = tooltip_full_imperial_ideas
+				owner = {
+					full_idea_group = imperial_ideas
+				}
+			}
+		}			
 		
 		modifier = {
 			factor = 0.5

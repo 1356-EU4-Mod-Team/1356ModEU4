@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = caspian_peasants_republic_reform
+# government = republic
+# add_government_reform = caspian_peasants_republic_reform 				##### Same with Rasht sadly
 mercantilism = 15
 primary_culture = mazandarani
 religion = shiite #Zaidiyyah
@@ -7,13 +7,13 @@ technology_group = muslim
 capital = 417 # Lahijan
 religious_school = zaidi_school
 
-1356.12.25 = {
+1356.12.24 = {
 	monarch = {
-		name = "Peasant Council"
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
+		name = "Hasan"
+		dynasty = "Kiya"
+		adm = 1
+		dip = 2
+		mil = 2
 	}
 }
 

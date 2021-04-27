@@ -8,11 +8,11 @@ is_city = yes
 culture = poitou
 religion = catholic 
 hre = no
-base_tax = 5 
+base_tax = 4 
 
-base_production = 5
+base_production = 4
 trade_goods = salt
-base_manpower = 3
+base_manpower = 4
 add_core = FRA
 add_core = POU
 add_claim = ENG
@@ -23,7 +23,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24 = { owner = AQT controller = AQT add_core = AQT } #BT In
-1356.12.26 = { owner = FRA controller = ENG add_core = FRA remove_core = AQT } #BT Out
+1356.12.26 = { owner = FRA controller = ENG add_core = FRA remove_core = AQT add_devastation = 50 } #BT Out
 
 1357.9.23  = { controller = FRA }
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny

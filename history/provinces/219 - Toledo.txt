@@ -8,9 +8,9 @@ culture = castillian
 religion = catholic
 hre = no
 base_tax = 6 
-base_production = 6
+base_production = 5
 trade_goods = iron 
-base_manpower = 4
+base_manpower = 3
 capital = "Toledo" 
 is_city = yes
 fort_15th = yes
@@ -25,7 +25,7 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
-add_province_triggered_modifier = 1356_toledo_cathedral_great_project_province_modifier #1356
+#add_province_triggered_modifier = 1356_toledo_cathedral_great_project_province_modifier #1356
 
 1356.12.24  = { owner = CAS controller = CAS remove_core = CTR } #BT In
 1356.12.26  = { owner = CTR controller = CTR add_core = CTR } #BT Out                 ####Added to BT as a Vassal, Needed for Civil war to function correctly######

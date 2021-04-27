@@ -71,9 +71,9 @@
  
  new_institution_events.67.2.a.tt: "Countries that have not yet fully §YEmbraced§! the §YGunpowder§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
  
- new_institution_events.61.t: "The Beginning of Gunpowder Weaponry"
- new_institution_events.61.d: "Even though Gunpowder weapons have been around for around a century only recently have people begun to take interest in these strange weapons from the far east. However our researchers now have innovated on existing designs and may have created the first hand held cannon. The 'Handcannon' is the first of its kind, and perhaps is a sign of things to come... Perhaps this is the edge our nation has always needed in warfare?"
- new_institution_events.61.a: "Interesting..."
+ new_institution_events.61.t: "Normalization of Gunpowder Weaponry"
+ new_institution_events.61.d: "Though Gunpowder weapons have been around for only a century, only recently have nations begun to take interest in these deadly weapons on a large scale. As researchers have begun to innovate early Gunpowder weapon designs such as the Cannon, they have only since begun to see more usage on the battlefield as oppose to being used in limited situations such as a Siege against a Fortified stronghold. As traditional siege weapons such as the Trebuchet are being replaced by the ever increasingly superior Gunpowder powered Cannon, and researchers attempting to create a hand held cannon as an alternative to Melee, it is clear that warfare will soon be forever changed."
+ new_institution_events.61.a: "Interesting"
  
  golden_bull_elections.1.t: "Election time in [TAG]"
  golden_bull_elections.1.d: "It's election time again in the Peasants Republic of [TAG]. The local leaders of each of the cities have been eleccted and now they must decide what they'd like to focus on during their time in office.\n In the Peasants Republic of Friesland there was no Nobility, the peasants ruled themselves, with a sort of Mayor leading each town independently. Each Mayor worked with the rest of the Frisian cities to create laws, and discuss other required topics. Only in times of war was there a central ruler. As such, the Frisian Government is based on a Council of all these cities, every 4 years this event will fire checking for various things in each frisian cultured province in the Low Countries, Lower Saxony, and Schleswig-Holstein areas."
@@ -465,4 +465,344 @@
 
  #OVERRIDES
  CS_NO_TECH:0 "You need diplomatic tech level 29 to create Client State."
+ 
+ 
+ 
+ cannot_disinherit_heir: "Cannot Disinherit"
+ desc_cannot_disinherit_heir: "This heir is the only current legitimate heir to the nation. Disinheriting him would throw the country into chaos."
+ 
+ #1.31 Additions - tooltips
+ mercantilism_year_catchup_tt: "12 Development Province post 1365 with Non-Tribal Owner"
+ trade_republics_reform_bonus.tt: "Province Owner is a §TMerchant Republic§!"
+ mercantilism_diplomatic_tt: "Old World Country with DIP Tech 7"
+ western_gunpower_country_established.tt: "A Western Tech nation has already embraced Gunpowder and introduced a new §TInvention§!"
+ eastern_gunpower_country_established: "A Eastern Tech nation has already embraced Gunpowder and introduced a new §TInvention§!"
+ muslim_gunpower_country_established: "A Muslim Tech nation has already embraced Gunpowder and introduced a new §TInvention§!"
+ indian_gunpower_country_established: "Demand for §TIndus Valley Saltpetre§! for Gunpowder has increased"
+ anatolian_gunpower_country_established: "A Anatolian Tech nation has already embraced Gunpowder and introduced a new §TInvention§!"
+ asian_gunpower_country_established: "A Chinese Tech nation has already embraced Gunpowder and introduced a new §TInvention§!"
+ invested_in_artillery_buildup: "Owner's Army consist of at least 20% Artillery"
+ is_using_gunpowder_siege_weapons: "Owner is using §TEarly Cannons§! or another §TGunpowder§! Siege Weapon"
+ gunpowder_war_exposure_mid: "Year is at least 1445 and is fighting a war"
+ chevauchee_wars: "Enables the §G'Raid Provinces'§! Casus Belli."
+ chevauchee_loot_provinces: "Provinces occupied in war will immediately be fully looted and incur an additional §R+5§! §YDevastation§!. Provinces will also lose §R1§! Development per 10 Development."
+ AGE_OF_DISCOVERY_HOW_IT_STARTS: "\n§YThe Age of Discovery§! will start by default in §T1435§!. §RHowever,§! if §YRome§! or §YConstantinople§! is conquered by a §GNon-Christian§! power, the §YAge of Discovery§! can instead start in §T1425§!."
+ fought_in_a_war_10_years: "Participated in a §Ywar§! in the last §Y10 years§!"
+ disables_professionalism_gain: "§RDisables Professionalism gain for the Age of Feudalism§!"
+ tooltip_full_scholar: "Province Owner has Full §YScholarly Ideas§!"
+ tooltip_invested_in_nav_or_settlement: "Province Owner invested in §YNavigation§! or §YSettlement Ideas§!"
+ tooltip_full_majesty_ideas: "Province Owner has Full §YMajesty Ideas§!"
+ tooltip_full_imperial_ideas: "Province Owner has Full §YImperial Ideas§!"
+ 
+ timurid_emergence_tooltip.1: "§YKhiva§! will be asked to become a vassal under us"
+ timurid_emergence_tooltip.2: "§GOur current Ruler will be exiled and Timur will become the new Ruler. Futhermore the§! §Y'Establish Timurid Empire'§! §Gdecision will become available.§!"
+ timurid_emergence_tooltip.3: "§GWe will become independent from Chagatai§!"
+ timurid_emergence_tooltip.4: "§RWe will lose opinion with major members of the Borjigin dynasty and all countries in Persia§!"
+ 
+ 
+ cannot_use_early_siege_weaponry: "§YOur§! §RTechnology Group§! §Yprevents us from using Early Siege Weapons.§! §YInstead we will gain the modifier below until 1465.§!"
+ mil_tech_13_warning: "§YWhen each nation reaches§! §TMilitary Technology 13§!§Y, all associated Early Siege Weaponry modifiers will be removed. Early Siege Weaponry and Invention decisions will also become unavailable.§!"
+ founders_keep_bonus: "§GNations who introduced an invention will retain their 'Introduced invention' modifier until it’s expiration§!"
+ nations_without_siege_weapons_lose_bonus: "§YNations who did not previously use Siege weapons will lose their bonus for not having one.§!"
+ 
+ western_nations_technology_boost: "§GNations in the Western Technology group who have not embraced§! §YGunpowder§! §Gwill now recieve a spread bonus.§! §GFuthermore, nations in the Western Technology group who have embraced§! §YGunpowder§! §Gcan pick the§! §Y[western_cannon_invention_nation.GetAdjective] Cannon§! §Gthrough the§! §Y'Choose a new Siege Weapon'§! §Gdecision.§!"
+ eastern_nations_technology_boost: "§GNations in the Eastern Technology group who have not embraced§! §YGunpowder§! §Gwill now recieve a spread bonus.§! §GFuthermore, nations in the Eastern Technology group who have embraced§! §YGunpowder§! §Gcan enact a decision to experiment with the§! §Y[eastern_cannon_invention_nation.GetAdjective] Arquebus.§!"
+ chinese_nations_technology_boost: "§GNations in the Chinese Technology group who have not embraced§! §YGunpowder§! §Gwill now recieve a spread bonus. Futhermore, nations in the Chinese Technology group who have embraced§! §YGunpowder§! §Gcan pick the§! §Y[chinese_cannon_invention_nation.GetAdjective] Rocket Cart§! §Gthrough the§! §Y'Choose a new Siege Weapon'§! §Gdecision.§!"
+ muslim_nations_technology_boost: "§GNations in the Muslim Technology group who have not embraced§! §YGunpowder§! §Gwill now recieve a spread bonus. Futhermore, nations in the Muslim Technology group who have embraced§! §YGunpowder§! §Gcan enact a decision to equip their Diplomats and Merchants with the§! §Y[muslim_cannon_invention_nation.GetAdjective] Handcannon.§!"
+ ottoman_nations_technology_boost: "§GNations in the Anatolian Technology group who have not embraced§! §YGunpowder§! §Gwill now recieve a spread bonus. Futhermore, nations in the Anatolian Technology group who have embraced§! §YGunpowder§! §Gcan pick the§! §YUrban Gun§! §Gthrough the§! §Y'Choose a new Siege Weapon'§! §Gdecision.§!"
+ indian_nations_technology_boost: "§GNations in the Indian Technology group who have not embraced§! §YGunpowder§! §Gwill now recieve a spread bonus.§!"
+ 
+ has_selected_a_siege_weapon: "Has previously selected a Siege Weapon" 
+
+ idea_conversion_note: "§YSettlement§! and §YNavigation§! ideas will become §GExpansion§! and §GExploration§! ideas"
+ old_idea_progress_in_new_idea: "§YWe will gain the same amount of progress in these ideas based on our progress in the Settlement and Navigation ideas respectively§!"
+ modifiers_will_unlock_settle_nav: "§YAll modifiers that were unlocked and required switching to Expansion or Exploration ideas will now granted§!"
+ 
+ busy_conquering_the_world_and_your_next: "Too busy conquering the world and you're next!"
+ tamerlane_threat_persia: "Strategic Threat"
+ tamerlane_dethroned_borjigin: "Dethroned a Borjigin"
+ 
+ # 1.31 Additions - Governments
+ mechanic_ruler_reigns_until_death_or_appointment_yes: "Rulers are chosen by the Veche and reign until death"
+ mechanic_abolishes_novgordian_succession_yes: "Abolishes §YNovgorodian Princely Succession§!"
+ mechanic_improves_prince_attributes_yes: "Improves §Gbase attributes§! of §YForiegn Princes§! based on selection"
+ mechanic_improves_boyars_attributes_yes: "Improves §Gall base attributes§! of §YLocal Boyars§! in Princely succession"
+ mechanic_enables_regencies_tribes_if_rival_yes: "§YTribal Succession Crises§! will only happen when §YLegitimacy§! or §YHorde Unity§! is below §R20§!"
+ mechanic_regencies_remain_same_tribe_yes: "§YTribal Succession Crises§! caused by §YRegency§! remain the same"
+ mechanic_regencies_enabled_mongol_tribe_yes: "Disables §YTribal Succession Crises§! caused by §YRegency§!"
+ mechanic_tribal_succ_crisis_if_35_yes: "§YTribal Succession Crises§! will only happen when §YLegitimacy§! or §YHorde Unity§! is below §R35§!"
+ mechanic_prevents_regency_tribe_yes: "Disables §YTribal Succession Crises§!"
+ mechanic_tribal_succession_50_tribal_yes: "§YTribal Succession Crises§! will only happen when §YLegitimacy§! or §YHorde Unity§! is below §R50§!"
+ mechanic_enables_consorts_regent_regency_tribal_yes: "Enables §YRegency§! and §YConsort Regency§!"
+ mechanic_enables_nobles_estate_tribal_yes: "Enables §YNobility§! estate"
+ mechanic_enables_church_estate_tribal_yes: "Enables §YClergy§! estate"
+ mechanic_enables_merchants_estates_tribal_yes: "Enables §YBurghers§! estate"
+ mechanic_enables_tribes_estates_tribal_yes: "Enables §YTribes§! estate"
+ mechanic_provides_2_tribal_alligenance_yes: "Provides §G+2§! §YYearly Tribal Allegiance§!"
+ 
+ novgorod_republic: "Novgorod Grand Republic"
+ novgorod_republic_desc: "Novgorod is governed by the Veche, a council consisting of members of the Boyars, Clergy, and Merchant estates and even includes commoners across Novgorodian lands. The Veche maintains legislative and judicial authority while also controlling the appointment of the Grand Kniaz. §RThe Grand Kniaz rules as Prince of Novgorod at the behests of the Veche and can be removed from power if relations with the Veche estates become too low.§!"
+ nov_delegated_power_to_veche: "Consolidate Power to the Veche"
+ nov_delegated_power_to_veche_desc: "The title of the Prince of Novgorod has only subjected the Republic to political influence from the other Principalities. The time has come for us to lower the powers of the Prince and make it more of a ceremonial role."
+ nov_promote_local_boyars: "Promote Local Boyars"
+ nov_promote_local_boyars_desc: "The Veche should favor local Boyars over family members of the other Principalities. By encouraging local Boyars, we can keep the internal structure of Novgorod secure and prosperous."
+ nov_favor_princely_ties: "Favor Princely Ties"
+ nov_favor_princely_ties_desc: "For it’s political and economic security, the Republic should continue the appointment of foreign princely successors to the title of Prince of Novgorod."
+ 
+ 
+ 
+ tribal_1356_inheritance: "Tribal Inheritance"
+ tribal_winds_of_change: "Winds of Change"
+ 
+ subvert_rival_clans_reform_tribes: "Subvert Rival Tribes"
+ subvert_rival_clans_reform_tribes_desc: ""
+ mongolic_succession_reforms_tribes: "Mongol Succession"
+ mongolic_succession_reforms_tribes_desc: ""
+ tribal_rule_by_might_reform: "Rule by Might"
+ tribal_rule_by_might_reform_desc: "" 
+ tribal_hereditary_succession: "Lineage Succession"
+ tribal_hereditary_succession_desc: "" 
+ formalize_noble_caste_tribal: "Formalize Nobility Caste"
+ formalize_noble_caste_tribal_desc: ""  
+ formalize_clergical_caste_tribal: "Preserve Religious Text"
+ formalize_clergical_caste_tribal_desc: ""   
+ grow_trade_relations_tribal: "Monopolize Trade Relations"
+ grow_trade_relations_tribal_desc: ""    
+ fortify_structure_of_the_tribe_tribal: "Fortify Structure of the Tribe"
+ fortify_structure_of_the_tribe_tribal_desc: ""     
+ delegate_power_to_clan_leaders_tribal: "Into the World"
+ delegate_power_to_clan_leaders_tribal_desc: ""
+ 
+ 
+ high_feudal_monarchy_reform: "High Feudal Monarchy"
+ high_feudal_monarchy_reform_desc: "The Early Feudal Monarchy was a form of government in which often the combined power of the King's Vassals was greater than that of the King himself. Maintaining the crown meant that good relations with the various Dukes of the realm were essential."
+ 
+ 
+ # 1.31 Additions - Modifiers
+ 
+ recently_elected_new_ruler_nov: "Recently Elected a new Prince"
+ desc_recently_elected_new_ruler_nov: ""
+ veche_recently_deposed_ruler: "Veche recently deposed Prince"
+ 
+ splendor_tier_1: "Feudalistic Splendor Tier 1"
+ desc_splendor_tier_1: ""
+ splendor_tier_2: "Feudalistic Splendor Tier 2"
+ desc_splendor_tier_2: ""
+ splendor_tier_3: "Feudalistic Splendor Tier 3"
+ desc_splendor_tier_3: ""
+ splendor_tier_4: "Feudalistic Splendor Tier 4"
+ desc_splendor_tier_4: ""
+ splendor_tier_5: "Feudalistic Splendor Tier 5"
+ desc_splendor_tier_5: ""
+ splendor_tier_6: "Feudalistic Splendor Tier 6"
+ desc_splendor_tier_6: ""
+ splendor_tier_7: "Feudalistic Splendor Tier 7"
+ desc_splendor_tier_7: ""
+ 
+ exorted_merchants: "Extorted Merchants"
+ desc_exorted_merchants: "The Merchants of the realm are currently being heavily taxed."
+ implemented_new_trade_policies: "Implemented New Trading Policies"
+ desc_implemented_new_trade_policies: "Foreign trade policies have been adapted into our existing trade laws. This has enabled our merchants to find great success abroad." 
+ 
+ western_cannon_gunpowder: "Siege Weapon: Western Cannon"
+ desc_western_cannon_gunpowder: "The §Y[western_cannon_invention_nation.GetAdjective]§! Cannon is an improvement over earlier models of the cannon. The §Y[western_cannon_invention_nation.GetAdjective]§! cannon design allows it to be transported easier while also improving on its firepower and Siege effectiveness."
+ ottoman_gun_of_urban_gunpowder: "Siege Weapon: Urban Gun"
+ desc_ottoman_gun_of_urban_gunpowder: "Developed in the lands of §Y[ottoman_cannon_invention_nation.GetName]§!, the Gun of Urban brings with it devastating firepower when used in against opposing settlements, destroying walls with ease. However, due to their massive size they are difficult to transport"
+ chinese_rocketcart_gunpowder: "Siege Weapon: Rocket Cart"
+ desc_chinese_rocketcart_gunpowder: "Invented by the §Y[chinese_cannon_invention_nation.GetName]§!, the §Y[chinese_cannon_invention_nation.GetAdjective]§! Rocket Cart unleashes a barrage of devastating Rockets at enemy forces that can set the field aflame. However, these weapons are inferior to other siege weapons when used in Siege warfare."
+
+ early_siege_retrofitting: "Retrofitting Army"
+ desc_early_siege_retrofitting: "We are currently replacing old Siege weapons used in all our armies. It will take some time before this process is complete."
+ early_siege_cant_choose: "Recently acquired New Siege Weapons"
+ desc_early_siege_cant_choose: "We recently replaced the Siege weapons used throughout our armies with a new kind. It will take some time before we can replace our Siege weaponry again."
+
+ trebuchets_early_cannon: "Siege Weapon: Trebuchet"
+ desc_trebuchets_early_cannon: "The Trebuchet is an excellent tool on the Battlefield, however compared to Cannons it now falls short in Siege warfare where it once reigned supreme."
+ siege_towers_early_cannon: "Siege Weapon: Siege Towers"
+ desc_siege_towers_early_cannon: "Siege Towers are only really useful for Sieges as it provides a way for soldiers to assault the walls in mass. However outside sieges, they are glorified Archer towers and are susceptible to being set aflame."
+ early_cannon_early_cannons: "Siege Weapon: Early Cannons"
+ desc_early_cannon_early_cannons: "While Early Cannons were effective siege weapons, their biggest drawback was the ability to transport them great distance. However when used, they bring a significant advantage when compared to other Siege weapons."
+ early_cannon_hwacha: "Siege Weapon: Hwacha"
+ desc_early_cannon_hwacha: "Invented by the Koreans, the Hwacha unleashes devestating Rocket Barrages upon enemy forces. Their biggest downfall however is these weapons are inferior in Sieges when compared to Trebuchets or Cannons."
+
+ natives_siege_buff: "Tribal Affairs"
+ desc_natives_siege_buff: "Being part of the Native American Technology groups means we do not get access to early Siege Weaponry. Instead our warriors will fight better and we will gain a bonus in Reform progress."
+ natives_siege_buff: "Tribal Affairs"
+ desc_natives_siege_buff: "Being part of the Native American Technology groups means we do not get access to early Siege Weaponry. Instead our warriors will fight better and we will gain a bonus in Reform progress."
+ african_siege_buff: "Saharan Warfare"
+ desc_african_siege_buff: "Being part of the African Technology groups means we do not get access to early Siege Weaponry. Instead we will recieve a bonus to the amount of loot we can obtain from looting provinces and a Institution growth bonus in provinces belonging to our Religion."
+ steppe_nomads_buff: "Warriors of the Steppe"
+ desc_steppe_nomads_buff: "Being part of the Nomadic Technology group means we do not get access to early Siege Weaponry. Instead we will recieve a discount to our and recieve a bonus to our Siege ability and Monarch power recieved from razing provinces. (Siege Ability represents the surround tactics used early on in the initial Mongol Conquests.)"
+ founding_chinese_gunpowder: "Introduced Chinese Gunpowder Invention"
+ desc_founding_chinese_gunpowder: "Our country was one of the first to introduce a new Gunpowder invention to the world. Doing so has brought us great benefit"
+ founding_muslim_gunpowder: "Introduced Muslim Gunpowder Invention"
+ desc_founding_muslim_gunpowder: "Our country was one of the first to introduce a new Gunpowder invention to the world. Doing so has brought us great benefit"
+ founding_ottoman_gunpowder: "Introduced Anatolian Gunpowder Invention"
+ desc_founding_ottoman_gunpowder: "Our country was one of the first to introduce a new Gunpowder invention to the world. Doing so has brought us great benefit"
+ founding_eastern_gunpowder: "Introduced Eastern Gunpowder Invention"
+ desc_founding_eastern_gunpowder: "Our country was one of the first to introduce a new Gunpowder invention to the world. Doing so has brought us great benefit"
+ founding_western_gunpowder: "Introduced Western Gunpowder Invention"
+ desc_founding_western_gunpowder: "Our country was one of the first to introduce a new Gunpowder invention to the world. Doing so has brought us great benefit"
+ eastern_arquebus_gunpowder: "Arquebus Experiments"
+ desc_eastern_arquebus_gunpowder: "Portions of our armies have been equiped with the §Y[eastern_cannon_invention_nation.GetAdjective]§! Arquebus. While crude, it shows great potential for changing future warfare"
+ muslim_handcannon_gunpowder: "Protective Handcannon"
+ desc_muslim_handcannon_gunpowder: "Our Diplomats and Merchants have been gifted §Y[muslim_cannon_invention_nation.GetAdjective]§! Handcannons as a way to protect themselves. This should allow for a different kind of reaction when a assassination attempt is made with a knife."
+
+ 
+ indus_saltpetre_industry: "Indus Valley Saltpetre Industry"
+ desc_indus_saltpetre_industry: "In the Indus Valley lies one some of the oldest Saltpeters in the world. The rise of Gunpowder has given this Industry new life."
+ 
+ colonial_religious_schools: "Colonial Religious Schools"
+ desc_colonial_religious_schools: ""
+ colonial_settler_boost: "Influx of Settlers"
+ desc_colonial_settler_boost: ""
+ colonial_tax_boost_24: "Royal Patronage"
+ desc_colonial_tax_boost_24: ""
+ colonial_natives_bonus_uprising_assimilation: "Cooperation with the Natives"
+ desc_colonial_natives_bonus_uprising_assimilation: ""
+ colonial_free_leader: "Navigation Experts"
+ desc_colonial_free_leader: ""
+ colonial_global_tarrifs_permabuff: "Colonial Trading Web"
+ desc_colonial_global_tarrifs_permabuff: ""
+ colonial_sailor_buff_25: "Influx of Sailors"
+ desc_colonial_sailor_buff_25: ""
+ colonial_tresure_fleet_buff: "Efficient Treasure Fleet Routes"
+ desc_colonial_tresure_fleet_buff: ""
+ 
+ granted_autonomy_of_livonia: "Granted Autonomy over Livonia and Estonia"
+ desc_granted_autonomy_of_livonia: ""
+ 
+ # 1.31 Additions - Subjects
+ 
+ nomadic_clan_subject: "Nomadic Clan"
+ nomadic_clan_overlord: "Pledged Nomadic Clans" 
+ 
+ # Adding GFX to events code (For testing only)
+ golden_bull_events1.EVTOPT111: "Year is at least 1445 and is fighting a war £obj_feudal_generic_non_abrahamic_competent_ruler£"
+ golden_bull_events.EVTDESC1: "Year is at least 1445 and is fighting a war £obj_feudal_generic_non_abrahamic_competent_ruler£"
+ 
+ 
+ # Some Event related stuff
+ 
+ novgorod_princes.3.title: "Princely Appointment"
+ novgorod_princes.3.desc: "While the administrative heart of Novgorod is led by its Veche Council, the office of Prince of Novgorod is reserved for a political figure favored by the Veche most senior members. With the recent passing of the old Prince, it is time for the selection and appointment of a new one. While previous senior council members have favored members of a powerful Russian family as a means to influence the political landscape of Russia, a local Boyar leader may instead be a better alternative for the office."
+ novgorod_princes.3.ab: "Appoint a local §TBoyar§! to be Prince"
+ novgorod_princes.3.a: "The §Y[russian_prince_1.Monarch.Dynasty.GetName]§! of §T[russian_prince_1.GetName]§! may have a suitable Prince to rule Novgorod"
+ novgorod_princes.3.b: "A §Y[russian_prince_2.GetAdjective]§! §T[russian_prince_2.Monarch.Dynasty.GetName]§! is said to be a great warrior, we should invite him to rule"
+ novgorod_princes.3.c: "We need a Charismatic Prince, a §Y[russian_prince_3.Monarch.Dynasty.GetName]§! from §T[russian_prince_1.GetName]§! might be a suitable Prince"
+ novgorod_princes.6.title: "Prince Deposed by the Veche"
+ novgorod_princes.6.desc: "Relations between [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName] and the Veche estates of Novgorod have deteriorated to the point where the Veche Council have voted to depose the Prince. A new council election will be held immediately to determine the appointment of the next Prince."
+ novgorod_princes.6.b: "Let's hope the next Prince and the Veche can cooperate"
+ veche_exiled_tooptip: "§RA new Prince cannot be deposed for the next 10 years§!"
+ 
+ gunpowderinventions.1.t: "The §Y[western_cannon_invention_nation.GetAdjective]§! Cannon"
+ gunpowderinventions.1.d: "While European nations first experienced Gunpowder when being pushed out of the Holy lands by Muslim armies during the final crusades, it usage has remained relatively tamed across most of Western Europe. However in the lands of [western_cannon_invention_nation.GetName], the inventor [Root.western_inventor_name.GetName] from [western_cannon_invention_province.Location.GetName] has created a new design over Eastern cannons. Designed to be lighter, this variant of the Cannon would allow it to have a larger impact on battles fought in the field, something other cannons also offer, but have major drawbacks in terms of speed. While some countries may still prefer the older model, several others have already taken an interest in the [western_cannon_invention_nation.GetAdjective] Cannon."
+ gunpowderinventions.3.t: "The §Y[eastern_cannon_invention_nation.GetAdjective]§! Arquebus"
+ gunpowderinventions.3.d: "While cannons powered by Gunpowder can be instrumental in ending year-long sieges, an inventor named [Root.eastern_inventor_name.GetName] from the province of [eastern_cannon_invention_province.Location.GetName] has taken an interest in creating a weapon which can be used from hand. Named the Arquebus by the Inventor, this weapon allows its user to shoot metal pellets at their foes from afar akin to an arrow or bolt from the traditional Bow and Crossbow. While deadlier than the ranged weapons of old, it requires a heavier investment in resources to supply an army with these advanced weapons making it is unlikely that these weapons will take over the battlefield for the short term future."
+ gunpowderinventions.5.t: "The §Y[chinese_cannon_invention_nation.GetAdjective]§! Rocket Cart"
+ gunpowderinventions.5.d: "While Gunpowder Weaponry has an early history in Asia since the invention of the Fire Lance during the Jin-Song Wars in China, in the last century its usage has only increased greatly, leading to a series of innovations in the field of land artillery. One such innovation comes from an inventor named [Root.chinese_inventor_name.GetName] in the province of [chinese_cannon_invention_province.Location.GetName]. Given the name ‘Rocket Cart’ it allows for an army to bombard its foes with Rockets from a long distance. When compared to other gunpowder weapons such as the cannon, the Rocket Cart trades slow hard hitting shots for a rapid fire bombardment of Rockets that can set the field aflame."
+ gunpowderinventions.7.t: "The §Y[muslim_cannon_invention_nation.GetAdjective]§! Handcannon"
+ gunpowderinventions.7.d: "While Cannons powered by Gunpowder gave the Mamluks the tools to finish off the remaining Crusader Strongholds in the Holy lands proving them to be game changing weapons in Siege warfare, only until recently have a select few taken serious steps into transforming the concept of the cannon into a smaller deadly weapon in the form of a handheld weapon. An inventor named [Root.muslim_inventor_name.GetName] from the province of [muslim_cannon_invention_province.Location.GetName] has taken an interest in this concept for several years and has finally achieved a prototype. His invention has resulted in the first handheld cannon, named the ‘Handcannon’ and is the very first of its kind and perhaps the signs of various possibilities with gunpowder. Since the invention, [muslim_cannon_invention_nation.Monarch.GetTitle] [muslim_cannon_invention_nation.Monarch.GetName] has issued a royal decree, beginning production of these hand cannons and for them to be sold on the markets, and providing them to important Envoys."
+ gunpowderinventions.9.t: "The §YGun of Urban§!"
+ gunpowderinventions.9.d: "A Hungarian inventor by the name of Orbán who specializes in the field of Gunpowder recently arrived in [ottoman_cannon_invention_nation.GetName] where he was provided materials and funds from the [ottoman_cannon_invention_nation.GetAdjective] [ottoman_cannon_invention_nation.GovernmentName]. Through these investments, Orbán created a large artillery cannon he named the ‘Gun of Urban’ boasting that it could breach the walls of Babylon itself. While such a cannon is likely to be a liability in open battle on the field, such a cannon would be devastating when used in sieges."
+ gunpowderinventions.11.t: "Indus Valley Saltpetre"
+ gunpowderinventions.11.d: "The Indus Valley is home to one of the most ancient industries of Saltpetre in the world. Since the increased usage and demand of Gunpowder, these industries in the Valley have since only benefited from the increased demand of Saltpeter. It is also rumored by merchants that Indus Saltpeters can produce a unique spark unlike other Saltpeters."
+ 
+ gunpowderinventions.22.t: "Early Siege Weaponry"
+ gunpowderinventions.22.d: "During the late Medieval era, Siege weapons were crucial in affecting the flow of Warfare. While in battle, archers and crossbowmen could bombard the foe with arrows and bolt, Siege weapons could inflict mass casualties from afar and excelled in breaching fortified strongholds. As gunpowder weaponry is becoming ever more prevalent, the Siege weapons of old may soon be entirely replaced by weapons such as the Cannon."
+ gunpowderinventions.22.gun.a: "We shall use the §YTrebuchet§! for its firepower and cost effectiveness"
+ gunpowderinventions.22.gun.b: "§YSiege Towers§! would allow us to perform mass assaults against enemy walls"
+ gunpowderinventions.22.gun.c: "The §YEarly Cannon§!, while Crude, shows great potential"
+ gunpowderinventions.22.gun.korean: "We shall use the §YHwacha§!, its firepower on the battlefield is devastating."
+ gunpowderinventions.22.gun.africa: "The affair of the [Root.GovernmentName] are more important"
+ gunpowderinventions.22.gun.americas: "We should focus on the affairs of the Tribe instead"
+ gunpowderinventions.22.gun.steppe: "Our warriors do not need these weapons to make others bend"
+ 
+ gunpowderinventions.21.t: "A Change in Siege Weaponry"
+ gunpowderinventions.21.d: "Recent innovations in the field of Siege Weaponry has triggered the need for review of the Siege weapons our armies currently use. While some new inventions may be stronger, they may prove too expense for us to afford using."
+ gunpowderinventions.21.gun.a: "We shall use the §YTrebuchet§!, it’s cost effective firepower is still useful."
+ gunpowderinventions.21.gun.b: "§YSiege Towers§! are currently required for our armies, we need to assault the enemy"
+ gunpowderinventions.21.gun.c: "The §YEarly Cannon§! is needed now, older weapons are far inferior"
+ gunpowderinventions.22.gun.d: "We shall use the §YHwacha§!, its firepower on the battlefield is devastating."
+ gunpowderinventions.21.gun.western_gun: "The §Y[western_cannon_invention_nation.GetAdjective] Cannon§! from §Y[western_cannon_invention_nation.GetName]§! may prove game changing on the battlefield"
+ gunpowderinventions.21.gun.ottoman_gun: "The §YGun of Urban§! would vanquish enemy fortifications with ease."
+ gunpowderinventions.21.gun.chinese_gun: "The §Y[chinese_cannon_invention_nation.GetAdjective] Rocket Cart§! would crush enemy forces from afar on the battlefield"
+ 
+ gunpowderinventions.30.t: "Devaluation of Early Siege Weaponry"
+ gunpowderinventions.30.d: "With the steady emergence of Gunpowder as the driving factor on the field of battle, weapons of old such as the Trebuchet and even early variants of the cannon have slowly become obsolete and more a burden as time has progressed. With the introduction of the Large Cast Bronze Mortar and the Houfnice, recent inventions such as the [western_cannon_invention_nation.GetAdjective] Cannon and the Gun of Urban are also growing increasingly inferior."
+ gunpowderinventions.30.a: "Warfare has been forever changed by these weapons"
+ 
+ early_colonization.2.t: "An Age for Discovery"
+ early_colonization.2.d: "With the final days of the Feudal era upon, our expertise in Settlement building and Navigation are proving to be rewarding. With the rising interest in overseas exploration and the demand for new profitable trade routes, our nation stands at the cusp of being an influential power in achieving these feats. "
+ early_colonization.2.a: "We will become Titans in this new age"
+ 
+ teutonic_flavor_1356.1.t: "Fate of the Livonian Order"
+ teutonic_flavor_1356.1.d: "Since the beginning of the Northern Crusades, the Teutonic Order has maintained a firm grip on the lands belonging to the former Slavic and Romuviai tribes of Prussia, Livonia and Estonia. While the main base of operations for the Order is centered in Marienburg, the northern section of Teutonic lands was granted to a new section of the order, the Livonian Order. If we seek to make further advancements into the last major Pagan holdouts in Lithuania, we should consider delegating further autonomy to our Livonian branch. Preventing this could greatly harm our relations with our Livionian branch while also putting our good relations with the Holy Roman Emperor at risk."
+ teutonic_flavor_1356.1.a: "It is time the Livonian Order led the charge in the North"
+ teutonic_flavor_1356_tooltip.1: "The §YLivonian Order§! will become free and we will form an alliance with them"
+ teutonic_flavor_1356_tooltip.2: "§YBohemia§! will guarantee our independence"
+ teutonic_flavor_1356.1.b: "Lets reduce the Livonian Order autonomy instead"
+ 
+ teutonic_flavor_1356.2.t: "Teutonic Order grants us Autonomy!"
+ teutonic_flavor_1356.2.d: "The Teutonic Order has sanctioned the Livonian Branch as an autonomous branch. Furthermore they have given us their blessing to launch Crusades into Lithuania."
+ teutonic_flavor_1356.2.a: "Into Lithuania for God and Glory!"
+ 
+ timurid_emergence.1.t: "Rise of Tamerlane"
+ timurid_emergence.1.d: "While his status may belong to the lower ranking Barlas tribe, the young general named Timur ‘the Lame’ may be a worthy leader for our nation. While he is not a direct descendant of Genghis Khan, his skills in warfare is without question and his countless victories against dissent throughout Transoxiana is tremendous. Should we make him leader, our relations with Chagatai and the other Hordes will deteriorate and we will also become independent."
+ timurid_emergence.1.a: "Timur's ability to lead is without question, he must become Ruler of Transoxiana"
+ timurid_emergence.1.b: "Only a Borjigin can rule, but his accomplishments are notable, grant him a generalship."
+ timurid_emergence.1.c: "§MExecute him, he’s too dangerous to keep alive§!"
+ 
+ timurid_emergence.5.t: "Death of Tamerlane"
+ timurid_emergence.5.d: "The mighty Warlord of Transoxiana Timur is dead. For a man whose life was filled with several battles and many great conquests, the conqueror passed away peacefully during the midst of night. Only time will tell how his successors will handle his empire, whether it succumbs to infighting and corruption like the Ilkhanate or the ambition of distant cousins vying for power like Genghis' empire of old. It is without doubt however that his death will have a major impact on those who surrounded the former Amir’s empire."
+ timurid_emergence.5.a: "It is up to $Monarch$ to continue Timur’s legacy"	
+ 
+ timurid_emergence.2.t: "Timur demands our Subjugation"
+ timurid_emergence.2.d: "The Transoxianan Warlord Timur has sent a detachment to demand our subjugation. If we do not comply with his demands we risk invasion to his armies"
+ timurid_emergence.2.a: "We have no choice but to submit to the Amir"
+ timurid_emergence.2.b: "We will not give up our lands without a fight"
+ 
+ timurid_emergence.3.t: "Khiva accepts Subjugation"
+ timurid_emergence.3.d: "The ruler of Khiva has accepted our demand of subjugation. They will now be a loyal vassal under us however this act of aggression will potentially ruin our relations with the Blue horde in the north."
+ timurid_emergence.3.a: "With Khiva under our control we can focus our attention to Persia"
+ 
+ timurid_emergence.4.t: "Khiva rejects Subjugation"
+ timurid_emergence.4.d: "The ruler of Khiva has declined our demand for subjugation. Perhaps we should demonstrate to them what happens when you defy a generous offer."
+ timurid_emergence.4.a: "The lands of Khiva would be better under our direct control anyways"
+ 
+ # 1.31 Decisions
+ 
+ adopt_western_cannon_title: "Adopt §Y[western_cannon_invention_nation.GetAdjective]§! Cannon" 
+ early_siege_weapons_mega_decision_title: "Choose a new §YSiege Weapon§!"
+ early_siege_weapons_mega_decision_desc: "Should we feel that our current Siege weapon is no longer of use to us or a new one has been invented, we can switch to another at a cost."
+ 
+ muslim_nations_handcannon_purchase_title: "Distribute §Y[muslim_cannon_invention_nation.GetAdjective]§! Handcannons to Agents"
+ muslim_nations_handcannon_purchase_desc: "The recent invention of the §Y[muslim_cannon_invention_nation.GetAdjective]§! offers us a way to provide our Diplomats and Merchants with a personal defense tool that isn't a sword or dagger."
+ eastern_nations_arquebus_experiments_title: "Experiment with §Y[eastern_cannon_invention_nation.GetAdjective]§! Arquebus"
+ eastern_nations_arquebus_experiments_desc: "The §Y[eastern_cannon_invention_nation.GetAdjective]§! Arquebus may seem like a inferior range weapon currently, but we should conduct some experiments with it on the battlefield. Instruct our generals to create a small core in our armies that are equipped with this new weapon."
+ 
+ reform_government_old_reforms_title: "Transition to a more centralized State"
+ reform_government_old_reforms_desc: "With the final days of the Feudal era upon us, we should begin preparation to transition to a more centralized state. We should also begin the process of reducing the autonomy of our subjects."
+ 
+ establish_timurid_empire_title: "Establish the Timurid Empire"
+ establish_timurid_empire_desc: ""
+ 
+ leave_tatar_yoke_title: "Leave the Mongol Sphere"
+ leave_tatar_yoke_desc: ""
+ 
+ timur_ae_modifier: "The Scourge of God"
+ timur_ae_modifier_desc: ""
+ timur_combat_modifier: "The Sword of Islam"
+ timur_combat_modifier_desc: ""
+ 
+ 
+ # 1.31 Subject Types
+ 
+ horde_clan_subject: "Nomadic Clan"
+ horde_clan_subject_title: "Nomadic Clan"
+ horde_clan_subject_is_our: "Nomadic Clan"
+ horde_clan_subject_long_desc: ""
+ horde_clan_subject_title_plural: "Nomadic Clans"
+ 
+ 
  

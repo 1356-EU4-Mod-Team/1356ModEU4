@@ -4,6 +4,17 @@ estate_burghers =
 
 	# If true, country will get estate
 	trigger = {	
+		if = {
+			limit = {
+				OR = {
+					has_reform = steppe_horde
+					has_reform = mountain_khanate_chagatai
+					has_reform = golden_horde_khanate
+					has_reform = great_mongol_state_reform
+				}
+			}
+			has_reform = grow_trade_relations_tribal
+		}		
 		NOT = { has_estate = estate_vaisyas }
 		NOT = { has_estate = estate_jains }
 		NOT = { has_reform = pirate_republic_reform }
@@ -18,7 +29,7 @@ estate_burghers =
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
 		}
-		is_nomad = no
+		#is_nomad = no # 1356 Tribal changes affect this
 		is_colonial_nation = no
 		NOT = { has_reform = revolutionary_empire_reform }
 	}

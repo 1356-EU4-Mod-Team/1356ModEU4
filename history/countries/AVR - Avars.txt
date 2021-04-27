@@ -6,6 +6,17 @@ technology_group = muslim
 capital = 2198 #Khunzah
 religious_school = shafii_school
 
+1356.1.1 = {
+	monarch = { # Guess I'll follow Pdx lead here
+		name = "Bahu"
+		dynasty = "Avari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+
 1440.1.1 = {
 	monarch = {
 		name = "Gebek" #Fictional

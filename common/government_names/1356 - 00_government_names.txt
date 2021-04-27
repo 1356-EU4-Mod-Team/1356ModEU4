@@ -213,26 +213,31 @@ pirate_government_names_barbary_pirates = {
 	}
 }
 
-gov_avi_papal_government = {
+
+novgorod_prince_republic_names = {
 	rank = {
-		1 = PAPACY
-		2 = PAPACY
-		3 = PAPACY
+		1 = GRAND_REPUBLIC
+		2 = GRAND_REPUBLIC
+		3 = GREAT_REPUBLIC
 	}
-	
+
 	ruler_male = {
-		1 = POPE
-		2 = POPE
-		3 = POPE
+		1 = GRAND_KNIAZ
+		2 = GRAND_KNIAZ
+		3 = GREAT_KNIAZ
 	}
-	
-	ruler_female  ={
-		1 = POPETTE
-		2 = POPETTE
-		3 = POPETTE
+
+	ruler_female = {
+		1 = KNIAGINIA
+		2 = GRAND_KNIAGINIA
+		3 = GREAT_KNIAGINIA
 	}
-	
+
 	trigger = {
-		has_reform = avignon_papacy_government
+		OR = {
+			has_reform = novgorod_republic
+			has_reform = veche_republic
+		}
+		tag = NOV
 	}
 }

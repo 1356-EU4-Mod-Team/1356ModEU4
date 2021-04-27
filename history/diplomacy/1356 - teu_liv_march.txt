@@ -5,3 +5,11 @@ march = {
 	start_date = 1356.12.25
 	end_date = 1444.11.11
 }
+
+# Bohemia-Teutonic Order
+# guarantee = {
+	# first = TEU	
+	# second = BOH
+	# start_date = 1356.12.26
+	# end_date = 1378.11.29
+# }

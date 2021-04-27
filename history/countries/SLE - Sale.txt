@@ -8,6 +8,25 @@ fixed_capital = 4363 # Cannot move capital away from this province & no power co
 religious_school = maliki_school
 government_rank = 1
 
+1356.11.13 = {
+	monarch = {
+		name = "Fahd"
+		dynasty = "al-Ilighi"
+		adm = 3
+		dip = 4
+		mil = 1
+		birth_date = 1300.1.13
+	}
+	heir = {
+		name = "Abdallah"
+		dynasty = "al-Ilighi"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1336.1.13
+	}	
+}	
+
 1440.1.1 = {
 	government = republic
 	add_government_reform = pirate_republic_reform

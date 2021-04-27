@@ -417,7 +417,7 @@ NED_ideas = {
 
 DAN_ideas = {
 	start = {
-		ship_durability = 0.1
+		ship_durability = 0.05
 		global_tax_modifier = 0.10
 	}
 	
@@ -1158,10 +1158,8 @@ HAB_ideas = {
 	trigger = {
 		OR = {
 			tag = HAB
-			AND = {
-				tag = STY
-				dynasty = "von Habsburg"
-			}
+			tag = STY
+			tag = CTH
 		}
 	}
 	free = yes		#will be added at load.
@@ -1929,15 +1927,15 @@ NOR_ideas = {
 		naval_morale = 0.20
 		
 	}
+	nor_shipbuilding = {
+		global_ship_cost = -0.1
+	}	
 	call_of_our_forefathers = {
 		range = 0.33
 		may_explore = yes
 	}
 	pioneer_spirit = {
 		colonists = 1
-	}
-	nor_shipbuilding = {
-		global_ship_cost = -0.1
 	}
 	seize_the_opportunity = {
  		global_trade_power = 0.1
@@ -4084,20 +4082,29 @@ GEO_ideas = {
 
 
 
-javan_ideas = {
+javan_ideas = { #1356 #Expanded to allow non muslim Malayans to have ideas #Moved from 00_country_ideas to ensure compatibility with existing ideas
 	start = {
 		tolerance_heathen = 2
 		prestige_decay = -0.01	
 	}
 	
 	bonus = {
-		naval_maintenance_modifier = -0.2
+		infantry_power = 0.1
 	}
 	
 	trigger = {
 		OR = {
 			tag = MAJ
 			tag = SUN
+			AND = {
+				NOT = { religion_group = muslim }
+				OR = {
+					primary_culture = bornean
+					primary_culture = sumatran
+					primary_culture = javanese
+					primary_culture = malayan
+				}
+			}
 		}
 	}
 	free = yes
@@ -6535,7 +6542,7 @@ jerusalem_ideas = {
 		republican_tradition = 0.2
 	}
 	latin_patriarch = {
-		papal_influence = 5
+		papal_influence = 2
 	}
 	frontier_state = {
 		discipline = 0.05
@@ -8117,11 +8124,11 @@ LON_ideas = {
 	lon_leonese_cortes = {
 		global_unrest = -1
 	}
-	lon_conquistadores = {
-		colonists = 1
-	}
 	lon_school_of_salamanca = {
 		idea_cost = -0.10
+	}	
+	lon_conquistadores = {
+		colonists = 1
 	}
 	lon_expand_navy = {
 		naval_forcelimit_modifier = 0.25

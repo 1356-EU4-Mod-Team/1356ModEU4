@@ -126,14 +126,6 @@ vassal = {
 	end_date = 1370.11.13
 }
 
-# Bohemia-Teutonic Order
-guarantee = {
-	first = BOH
-	second = TEU
-	start_date = 1347.10.11
-	end_date = 1378.11.29
-}
-
 # Habsburg-Tyrol, during Rudolf IV
 union = {
 	first = HAB

@@ -5,3 +5,14 @@ religion = sunni
 technology_group = nomad_group
 capital = 475	# Bashkortostan
 religious_school = hanafi_school
+
+1356.1.1 = {
+	monarch = { # Generated rulers for Nomadic Clans
+		name = "Yamghurchi"
+		dynasty = "Borjigin"
+		dip = 1
+		adm = 2
+		mil = 1
+		birth_date = 1340.4.1
+	}
+}	

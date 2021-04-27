@@ -20,7 +20,7 @@ add_core = QIC
 discovered_by = chinese
 discovered_by = nomad_group
 
-add_province_triggered_modifier = 1356_qufu_temple_of_confucius_great_project_province_modifier #1356 
+#add_province_triggered_modifier = 1356_qufu_temple_of_confucius_great_project_province_modifier #1356 
 
 1367.7.1  = { owner = MNG controller = MNG add_core = MNG }
 1368.9.14 = { remove_core = YUA }

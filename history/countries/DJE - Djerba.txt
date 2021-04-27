@@ -6,3 +6,13 @@ technology_group = muslim
 capital = 2954
 fixed_capital = 2954 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
+
+1356.1.1 = { # Based on Ck2
+	monarch = {
+		name = "al-Walîd"
+		dynasty = "Sellami"
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}

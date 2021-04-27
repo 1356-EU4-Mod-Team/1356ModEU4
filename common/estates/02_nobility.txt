@@ -3,6 +3,17 @@ estate_nobles =
 	icon = 2
 	# If true, country will get estate
 	trigger = {
+		if = {
+			limit = {
+				OR = {
+					has_reform = steppe_horde
+					has_reform = mountain_khanate_chagatai
+					has_reform = golden_horde_khanate
+					has_reform = great_mongol_state_reform
+				}
+			}
+			has_reform = formalize_noble_caste_tribal
+		}		
 		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_reform = veche_republic }
@@ -32,7 +43,7 @@ estate_nobles =
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
 		}
-		is_nomad = no
+		# is_nomad = no # 1356 Tribal Changes adjust this
 		is_colonial_nation = no
 		OR = {
 			NOT = { has_dlc = "Common Sense" }

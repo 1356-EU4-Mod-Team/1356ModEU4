@@ -144,7 +144,7 @@ siberian_tribe = {
 
 ######1356 Changes#######
 tribal_federation_ilkhan_reform = { #Tribes
-	icon = "tribal_council"
+	icon = "ilkhanid_federation"
 	potential = {
 		OR = {
 			tag = JLR
@@ -178,7 +178,7 @@ tribal_federation_ilkhan_reform = { #Tribes
 }
 
 ilkhanate_government_tribal_reform = { #Ilkhanate itself
-	icon = "tribal_council"
+	icon = "ilkhanid_federation"
 	potential = {
 		tag = ILK
 		OR = {
@@ -267,6 +267,100 @@ civil_society_reform = {
 	}
 }
 
+## 1356 Tribal Inheritance
+
+subvert_rival_clans_reform_tribes = {
+	allow_normal_conversion = yes
+	icon = "subvert_rival_clans"
+	modifiers = {
+		harsh_treatment_cost = -0.2
+		monarch_lifespan = 0.20
+	}
+	custom_attributes = {
+		enables_regencies_tribes_if_rival = yes
+		regencies_remain_same_tribe = yes
+	}	
+	
+	ai = {
+		factor = 2	
+	}
+}
+
+mongolic_succession_reforms_tribes = {
+	allow_normal_conversion = yes
+	icon = "mongol_succession"
+	queen = no
+
+	potential = {
+		OR = {
+			has_reform = mongolic_succession_reforms_tribes
+			have_had_reform = mongolic_succession_reforms_tribes
+			tag = ILK
+			tag = GOL
+			tag = GLH
+			tag = CHG
+			tag = KHA
+			tag = OIR
+			tag = MGE
+			tag = BLU
+			tag = WHI
+			tag = TRS
+		}
+	}	
+	maintain_dynasty = yes	
+	modifiers = {
+		governing_capacity = 75
+		reform_progress_growth = -0.15
+		leader_land_shock = 1
+		free_leader_pool = 1
+	}
+	custom_attributes = {
+		regencies_enabled_mongol_tribe = yes
+		tribal_succ_crisis_if_35 = yes		
+	}		
+	ai = {
+		factor = 1000
+	}
+}
+
+tribal_rule_by_might_reform = {
+	allow_normal_conversion = yes
+	icon = "tribal_rule_by_might"
+	queen = no
+	heir = no
+	modifiers = {
+		stability_cost_modifier = -0.1
+		raze_power_gain = 0.10
+	}
+	custom_attributes = {
+		generals_become_rulers = yes
+		prevents_regency_tribe = yes
+	}		
+	ai = {
+		factor = 0.75
+	}
+}
+
+tribal_hereditary_succession = {
+	allow_normal_conversion = yes
+	icon = "indian_crown"
+	queen = yes
+	modifiers = {
+		legitimacy = 0.50
+		horde_unity = 0.50
+		infantry_cost = -0.10
+		heir_chance = 0.25
+	}
+	custom_attributes = {
+		enables_consorts_regent_regency_tribal = yes
+		tribal_succession_50_tribal = yes
+	}		
+	ai = {
+		factor = 2
+	}
+}
+
+
 #Religion vs Secularization
 
 religious_societies_reform = {
@@ -296,6 +390,91 @@ lip_service_reform = {
 		land_maintenance_modifier = -0.1
 	}
 }
+
+## 1356 Tribal Winds of Change
+
+formalize_noble_caste_tribal = {
+	allow_normal_conversion = yes
+	icon = "nobility_tribal"
+	modifiers = {
+		diplomats = 1
+		unjustified_demands = -0.10
+		nobles_loyalty_modifier = 0.1
+		nobles_influence_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_nobles_estate_tribal = yes
+	}		
+	ai = {
+		factor = 1	
+	}
+}
+
+formalize_clergical_caste_tribal = {
+	allow_normal_conversion = yes
+	icon = "clergical_estate_tribal"
+	modifiers = {
+		global_missionary_strength = 0.01
+		tolerance_own = 1
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_church_estate_tribal = yes	
+	}		
+	ai = {
+		factor = 2
+	}
+}
+
+grow_trade_relations_tribal = {
+	allow_normal_conversion = yes
+	icon = "formalize_merchant_caste"
+	modifiers = {
+		mercantilism_cost = -0.33
+		trade_efficiency = 0.1
+		burghers_loyalty_modifier = 0.1
+		burghers_influence_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_merchants_estates_tribal = yes	
+	}		
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				legitimacy = 85
+				horde_unity = 85
+			}
+		}
+	}
+}
+
+fortify_structure_of_the_tribe_tribal = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	modifiers = {
+		war_exhaustion = -0.05
+		war_taxes_cost_modifier = -0.50
+		nomadic_tribes_loyalty_modifier = 0.1
+		nomadic_tribes_influence_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_tribes_estates_tribal = yes	
+	}		
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				legitimacy = 85
+				horde_unity = 85
+			}
+		}
+	}
+}
+
 
 #Modernizantion
 
@@ -361,6 +540,29 @@ horde_tribal_unity_reform = {
 	modifiers = {
 		horde_unity = 2
 	}
+	ai = {
+		factor = 2
+	}
+}
+
+
+delegate_power_to_clan_leaders_tribal = {
+	icon = "delegate_power_to_tribes"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_tribal_allegiance = 2
+		land_morale = 0.10
+		prestige_decay = -0.01
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	custom_attributes = {
+		provides_2_tribal_alligenance = yes	
+	}		
 	ai = {
 		factor = 2
 	}

@@ -8,10 +8,10 @@ is_city = yes
 culture = gascon
 religion = catholic
 hre = no
-base_tax = 5 
+base_tax = 4 
 base_production = 5
 trade_goods = wool
-base_manpower = 5
+base_manpower = 4
 add_core = AMG
 add_core = GUY
 add_core = FRA
@@ -22,7 +22,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.24  = { add_core = AQT remove_core = GUY } #BT In
-1356.12.26  = { remove_core = AQT add_core = GUY } #BT Out
+1356.12.26  = { remove_core = AQT add_core = GUY add_devastation = 25 } #BT Out
 
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
 1373.6.28  = { controller = FRA } # Siege of Mauvezin

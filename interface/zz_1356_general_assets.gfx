@@ -148,6 +148,21 @@ spriteTypes = {
 		legacy_lazy_load=no
 	}
 	
+	spriteType = {
+		name = "GFX_icon_nomadicclan"
+		texturefile = "gfx/interface/icon_nomadicclan.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadnomadicclan"
+		texturefile = "gfx//interface//icon_diplomacy_leadnomadicclan.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amnomadicclan"
+		texturefile = "gfx//interface//icon_diplomacy_amnomadicclan.dds"
+		legacy_lazy_load=no
+	}	
+	
 
 # Age of Feudalism Objectives
 	spriteType = {
@@ -211,6 +226,98 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_obj_feudalism_obj_african_religion_holy_war"
+		texturefile = "gfx/interface/ages/obj_african_religion_holy_war.dds"	
+	}	
+
+	spriteType = {
+		name = "GFX_obj_animism_religion_holy_war"
+		texturefile = "gfx/interface/ages/obj_animism_religion_holy_war.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_obj_baltic_holy_war"
+		texturefile = "gfx/interface/ages/obj_baltic_holy_war.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_obj_buddhist_holy_war"
+		texturefile = "gfx/interface/ages/obj_buddhist_holy_war.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_obj_confu_holy_war"
+		texturefile = "gfx/interface/ages/obj_confu_holy_war.dds"	
+	}
+
+
+	spriteType = {
+		name = "GFX_obj_dharmic_holy_war"
+		texturefile = "gfx/interface/ages/obj_dharmic_holy_war.dds"	
+	}
+	
+	spriteType = {
+		name = "GFX_obj_feudal_generic_non_abrahamic_holy_war"
+		texturefile = "gfx/interface/ages/obj_feudal_generic_non_abrahamic_holy_war.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_obj_finnic_holy_war"
+		texturefile = "gfx/interface/ages/obj_finnic_holy_war.dds"	
+	}
+	
+	spriteType = {
+		name = "GFX_obj_hellenic_holy_war"
+		texturefile = "gfx/interface/ages/obj_hellenic_holy_war.dds"	
+	}	
+
+	spriteType = {
+		name = "GFX_obj_jewish_holy_war"
+		texturefile = "gfx/interface/ages/obj_jewish_holy_war.dds"	
+	}	
+	
+	spriteType = {
+		name = "GFX_obj_meso_holy_war"
+		texturefile = "gfx/interface/ages/obj_meso_holy_war.dds"	
+	}	
+	
+	spriteType = {
+		name = "GFX_obj_meso_inti_holy_war"
+		texturefile = "gfx/interface/ages/obj_meso_inti_holy_war.dds"	
+	}	
+	
+	spriteType = {
+		name = "GFX_obj_norse_holy_war"
+		texturefile = "gfx/interface/ages/obj_norse_holy_war.dds"	
+	}
+	
+	spriteType = {
+		name = "GFX_obj_shinto_holy_war"
+		texturefile = "gfx/interface/ages/obj_shinto_holy_war.dds"	
+	}		
+	
+	spriteType = {
+		name = "GFX_obj_slavic_holy_war"
+		texturefile = "gfx/interface/ages/obj_slavic_holy_war.dds"	
+	}	
+	
+	spriteType = {
+		name = "GFX_obj_tengri_holy_war"
+		texturefile = "gfx/interface/ages/obj_tengri_holy_war.dds"	
+	}	
+
+	spriteType = {
+		name = "GFX_obj_totemism_religion_holy_war"
+		texturefile = "gfx/interface/ages/obj_totemism_religion_holy_war.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_obj_zoroastrian_holy_war"
+		texturefile = "gfx/interface/ages/obj_zoroastrian_holy_war.dds"	
+	}		
+
+	
+	spriteType = {
 		name = "GFX_obj_feudalism_fetishist"
 		texturefile = "gfx/interface/ages/obj_feudalism_fetishist.dds"
 	}
@@ -229,11 +336,37 @@ spriteTypes = {
 		name = "GFX_obj_feudalism_confucianism_harmony"
 		texturefile = "gfx/interface/ages/obj_feudalism_confucianism_harmony.dds"
 	}
-
+	
+	
+	spriteType = {
+		name = "GFX_obj_king_takes_direct_command"
+		texturefile = "gfx/interface/ages/obj_king_takes_direct_command.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_twice_crowned"
+		texturefile = "gfx/interface/ages/obj_twice_crowned.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_obj_powerful_estate"
 		texturefile = "gfx/interface/ages/obj_powerful_estate.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_obj_powerful_estate_england"
+		texturefile = "gfx/interface/ages/obj_powerful_estate_england.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ab_cavalry_supremacy"
+		texturefile = "gfx/interface/ages/ab_cavalry_supremacy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_feudal_contracts"
+		texturefile = "gfx/interface/ages/ab_feudal_contracts.dds"
+	}	
 	
 	spriteType = {
 		name = "GFX_obj_feudalism_institution"
@@ -464,6 +597,24 @@ spriteTypes = {
 		noOfFrames = 1
 	}
 #The Janitors Idea Additions
+
+	spriteType = {
+		name = "GFX_idea_settlement_ideas_1356"
+		texturefile = "gfx//interface//ideas//idea_settlement_ideas_1356.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+    
+    spriteType = {
+		name = "GFX_idea_navigation_ideas_1356"
+		texturefile = "gfx//interface//ideas//idea_navigation_ideas_1356.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+
 	
 	spriteType = {
 		name = "GFX_idea_grand_court_ideas"

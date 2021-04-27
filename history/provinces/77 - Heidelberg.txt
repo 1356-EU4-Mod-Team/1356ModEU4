@@ -13,6 +13,7 @@ controller = PAL
 add_core = PAL
 hre = yes
 
+
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

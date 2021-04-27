@@ -10,6 +10,17 @@ estate_church =
 			}
 			NOT = { has_estate = estate_brahmins }
 		}
+		if = {
+			limit = {
+				OR = {
+					has_reform = steppe_horde
+					has_reform = mountain_khanate_chagatai
+					has_reform = golden_horde_khanate
+					has_reform = great_mongol_state_reform
+				}
+			}
+			has_reform = formalize_clergical_caste_tribal
+		}		
 		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = veche_republic }
@@ -26,7 +37,7 @@ estate_church =
 			NOT = { tag = USA }
 			government = theocracy
 		}
-		is_nomad = no
+		#is_nomad = no # 1356 Additions to Tribes impact this
 		is_colonial_nation = no
 		NOT = { has_reform = revolutionary_empire_reform }
 	}

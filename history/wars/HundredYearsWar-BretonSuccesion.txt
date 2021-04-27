@@ -10,7 +10,7 @@ war_goal = {
 1356.12.26 = { # Claim in kingdom of Valencia, more access to mediterrean sea
 	add_attacker = ENG
 	add_attacker = GUY
-	add_attacker = GEN
+	#add_attacker = GEN
 	add_attacker = AMG
 	add_attacker = MNF
 	add_attacker = WLS
@@ -19,20 +19,109 @@ war_goal = {
 	add_attacker = NAV
 	add_defender = FRA
 	add_defender = FOI
-	add_defender = ALE
+	#add_defender = ALE
 	add_defender = ANJ
 	add_defender = AUV
 	add_defender = BOU
 	add_defender = DAU
-	add_defender = ORL
+	#add_defender = ORL
 	add_defender = BLS
-	add_defender = FOZ
-	add_defender = FBL
-	add_defender = FMA
-	add_defender = FPL
+	#add_defender = FOZ
+	# add_defender = FBL
+	# add_defender = FMA
+	# add_defender = FPL
 }
 
-1356.12.26 = { # 1356.9.19 = { #Original
+1356.2.12 = { # 1356.9.19 = { #Original
+	battle = {
+		name = "Chevauchee of Quercy"
+		location = 4112 # Poitou
+		attacker = {
+			commander = "Edward, the Black Prince"	# Edward, the Black Prince
+			infantry = 4000
+			cavalry = 3000
+			losses = 0	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Local Garrison"	# Jean II of France
+			infantry = 1000
+			cavalry = 1000
+			losses = 100	# percent # Originally 75
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+1356.4.1 = { # 1356.9.19 = { #Original
+	battle = {
+		name = "Chevauchee of Toulouse"
+		location = 196 # Poitou
+		attacker = {
+			commander = "Edward, the Black Prince"	# Edward, the Black Prince
+			infantry = 4000
+			cavalry = 3000
+			losses = 0	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Local Garrison"	# Jean II of France
+			infantry = 1000
+			cavalry = 1000
+			losses = 100	# percent # Originally 75
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+1356.6.1 = { # 1356.9.19 = { #Original
+	battle = {
+		name = "Chevauchee of Foix"
+		location = 4694 # Foix
+		attacker = {
+			commander = "Edward, the Black Prince"	# Edward, the Black Prince
+			infantry = 4000
+			cavalry = 3000
+			losses = 0	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Local Garrison"	# Jean II of France
+			infantry = 1000
+			cavalry = 1000
+			losses = 100	# percent # Originally 75
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+1356.8.15 = { # 1356.9.19 = { #Original
+	battle = {
+		name = "Chevauchee of Angourmois"
+		location = 4387 # Foix
+		attacker = {
+			commander = "Edward, the Black Prince"	# Edward, the Black Prince
+			infantry = 4000
+			cavalry = 3000
+			losses = 0	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Local Garrison"	# Jean II of France
+			infantry = 1000
+			cavalry = 1000
+			losses = 100	# percent # Originally 75
+			country = FRA
+		}
+		result = yes
+	}
+}
+
+
+1356.9.19 = { # 1356.9.19 = { #Original
 	battle = {
 		name = "Poitiers"
 		location = 180 # Poitou
@@ -58,7 +147,7 @@ war_goal = {
 1366.3.13 = { # Start of Castillian Civil War
 	rem_attacker = ENG
 	rem_attacker = GUY
-	rem_attacker = GEN
+	#rem_attacker = GEN
 	rem_attacker = AMG
 	rem_attacker = MNF
 	rem_attacker = NAV
@@ -67,15 +156,15 @@ war_goal = {
 	rem_attacker = NOL
 	rem_defender = FRA
 	rem_defender = FOI
-	rem_defender = ALE
+	#rem_defender = ALE
 	rem_defender = ANJ
 	rem_defender = AUV
 	rem_defender = BOU
 	rem_defender = DAU
-	rem_defender = ORL
+	#rem_defender = ORL
 	rem_defender = BLS
-	rem_defender = FOZ
-	rem_defender = FBL
-	rem_defender = FMA
-	rem_defender = FPL
+	#rem_defender = FOZ
+	# rem_defender = FBL
+	# rem_defender = FMA
+	# rem_defender = FPL
 }

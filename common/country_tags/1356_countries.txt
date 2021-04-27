@@ -199,12 +199,29 @@ SIA = "countries/Siam.txt"
 
 #V2.1 
 
+#Italy
+ABR = "countries/Aborea.txt"
+
+IPA = "countries/Pavia.txt"
+IPE = "countries/Piedmont.txt"
+IBE = "countries/Belluno.txt"
+IAR = "countries/Arezzo.txt"
+
+#Low Countries
+GRO = "countries/Groningen.txt"
+FRR = "countries/Frisia.txt"
+ZEE = "countries/Zeeland.txt"
+NMR = "countries/Namur.txt"
+CAY = "countries/Cambray.txt"
 #Germany 
 CH5 = "countries/Chur.txt" #Replaces Three Leagues historically
 
 
-#Italy
-ABR = "countries/Aborea.txt"
+#France
+FBL = "countries/FrenchBlois.txt"
+FPL = "countries/Perigord.txt"
+FMA = "countries/FrenchMaine.txt"
+FLM = "countries/LaMarche.txt"
 
 #Russian Region
 MRD = "countries/MordvinNation.txt"

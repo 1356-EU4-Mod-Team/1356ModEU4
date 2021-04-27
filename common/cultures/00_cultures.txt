@@ -1373,62 +1373,6 @@ gaelic	= { #1356
 			Trifine Tristana Uriell Seva Perenn Meonre Ilcum Guigoëdon Drichglur Berthildis Argantmoet
 		}
 	}
-	manx_culture = {
-		primary = KOI
-
-		male_names = {
-			Aonghas Alasdair Ailbeart Adhamh Ailean Anndra Arailt Artair Aaron Amhlaidh Ailpein
-			Boisil Brian Benneit Beathan Brus Bruadar Breacan Bearnard Bhaltair
-			Cresdean Calum Conan Conal Cormac Cailean
-			Domhnall Donnchadh Dughall Daibhidh Diarmid Dolan Daniel Deorsa Dughlas
-			Eoghan Eobhann Eideard Eachann Eoin Eosaph Eanruig Ellair
-			Fearchar Faolan Fearghas Fionn Filib Frangan Friseal Fionnlagh
-			Gillebríghde Gillechreosd Gillecallum Gilleasp Gilleandrais Garbhan Goiridh Griogair
-			Hamish Harailt Horas
-			Iain Iacob Iosag Iomhar Iosaph Iona
-			Lucais Labhrainn
-			Maoilios Martain Mascual Marcus Mata Mecheil Morgan Mungan Murchadh
-			Neacal Niall Niallghas
-			Oilbhreis Oisean
-			Padraig Pol Peadar
-			Raibeart Ruadh Ruaraidh Raghnall Ruiseart
-			Seumas Seoras Somhairle Seleas Samuel Sachairi Steaphan
-			Thomais Tadhg Toibaid
-			Uilleam Uisdean 
-		}
-		female_names = {
-			Anna
-			Beathag Baraball Bearnas Beitiris Bhioctoria Brighde
-			Catreona Ceit Coinneach Claimha
-			Deirdre Deoiridh Diorbhail
-			Ealasaid Cibhlin Eubh
-			Floraidh Floireans Fionnaghal Frangag Fionnghuala
-			Gormal Gormlaith Giorsal
-			Iseabail 
-			Liusaidh Leagsaidh Leitis Lucrais Leosa
-			Mairead Marsail Marta Milread Moibeal Moire Mor Mairi
-			Nansaidh
-			Olibhia Oighrig
-			Peanaidh
-			Rut Raonaid Rebeca
-			Seonag Sorcha Sene Siusan Seleas
-			Tearlag Teasag
-			Una
-		}
-		dynasty_names = {
-			Arasgain
-			Bochanan Beitean Brus
-			Caimbeul Cinneide Caimbeulach Comyn Cochran
-			Donohoe Dernly
-			Gordan Grannd Guinne
-			Haig
-			Lamont
-			MacCongáil MacDhiarmaid Moireach MacPharlain MacLeoid MacDhomhnaill MacDhonnachaidh Munro MacNab
-			Ncill
-			Rothach Ros
-			Stiubhart Singlear Sutherlarach
-		}
-	}
 #1356 End Culture Changes
 }
 	
@@ -2084,38 +2028,6 @@ french	= { #1356
 	}
 
 	arpitan = { #Franco-Provençal #Couldnt find any sources on Names, left with French
-		primary = FOZ #Savoy perhaps?
-		male_names = {
-			Édouard Érrard Étienne Adémar Adrien Aimery Alain 
-			Aldebert Aldéric Alphonse Amaury Amédée Ancel André Antoine Archambaud Arnaud 
-			Arnault Arnoul Aubry Aymar Barthélémi Baudouin Benoît Bérenger Bernard Bertrand Bohemond 
-			Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques François 
-			Frédéric Gaucher Gaucelin Gauthier Geoffroi Géraud Gilbert Gilles Godefroi
-			Guichard Guiges Guilhem Guillaume Guy Hélie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques 
-			Jaufré Jaspert Jean Jourdain Julien Léon Léonard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
-			Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thiébaut 
-			Thierry Thomas Valeran Yves
-		}
-		female_names = {
-			Éléonore Élodie Étiennette Adèle Adalmode Adelaide Adelinde 
-			Agnès Aléarde Alice Aliénor Agathe
-			Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde 
-			Béatrice Béatrix Belleassez Benoîte Bérengère
-			Berthe Blanche Bonne Bourgogne Bourguigne Cécile Cathèrine 
-			Charlotte Constance Denise Douce Echive Eglantine
-			Elisabeth Emma Ermengarde Ermessinde Esclarmonde 
-			Euphrosine Eustachie Eve Gerberge Gisèle Guillaumette Héloise Helvis Hodierne Ide Ildégarde
-			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
-			Mascarose Mathilde Mélisande Mélisende Mélusine Péronelle Pernelle Perinne Pernette Plaisance 
-			Raymonde Sarrazine Solène Sophie Stéphanie Sybille Tiburge Valence Yolande
-		}
-		dynasty_names = {
-			"de Valois" "de Bourbon" Bonaparte "de la Tour" "d'Anjou" 
-			"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
-			"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" 
-		}
-	}
-	provencial_culture = { #Provençal #Couldnt find any sources on Names, left with French
 		primary = PRO
 		male_names = {
 			Édouard Érrard Étienne Adémar Adrien Aimery Alain 

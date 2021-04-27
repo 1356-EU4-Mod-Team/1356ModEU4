@@ -24,6 +24,11 @@ technology = { #1356
 	native_sweat_lodge = yes
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
+	
+	# development_efficiency = -0.30
+	# production_efficiency =	-0.30
+	# administrative_efficiency = -0.50
+	development_efficiency = -0.75
 }
 
 technology = { #1356
@@ -32,15 +37,20 @@ technology = { #1356
 
 	tribal_democracy_legacy = yes
 	tribal_kingdom_legacy = yes
-	development_efficiency = 0.01
-	production_efficiency	=	0.01	
+	#development_efficiency = 0.01
+	#production_efficiency =	0.01	
+	administrative_efficiency = 0.05
+	governing_capacity = 100
 }
 
 technology = { #1356
 	#tech2
 	year = 1360
 	
-	development_efficiency = 0.01 
+	#development_efficiency = 0.01 
+	administrative_efficiency = 0.05
+	development_efficiency = 0.10
+	governing_capacity = 50
 	may_support_rebels = yes
 }
 
@@ -48,9 +58,10 @@ technology = { #1356
 	#tech3
 	year = 1372
 	
-	elective_feudal_monarchy = yes
-	production_efficiency	=	0.1
-	development_efficiency = 0.01 
+	# elective_feudal_monarchy = yes
+	# production_efficiency	=	0.1
+	development_efficiency = 0.05
+	administrative_efficiency = 0.10
 	
 }
 
@@ -58,8 +69,9 @@ technology = { #1356
 	#tech4
 	year = 1384
 	
-	production_efficiency =	0.05
-	development_efficiency = 0.01
+	administrative_efficiency = 0.05
+	development_efficiency = 0.10
+	#development_efficiency = 0.01
 	allowed_idea_groups = 1
 	
 }
@@ -68,9 +80,12 @@ technology = { #1356
 technology = { #1356
 	# Tech 5
 	year = 1396
-	production_efficiency	=	0.01
-	development_efficiency = 0.01
-	despotic_monarchy = yes	
+	#production_efficiency	=	0.01
+	administrative_efficiency = 0.05
+	development_efficiency = 0.05
+	#development_efficiency = 0.01
+	#despotic_monarchy = yes	
+	governing_capacity = 50
 	
 }
 
@@ -79,8 +94,9 @@ technology = { #1356
 	year = 1408
 	
 	temple = yes
-	production_efficiency	=	0.05	
-	development_efficiency = 0.01
+	#production_efficiency	=	0.05	
+	development_efficiency = 0.15
+	administrative_efficiency = 0.05
 
 }
 
@@ -89,29 +105,32 @@ technology = { #1356
 	year = 1419
 	
 	allowed_idea_groups = 2
-	development_efficiency = 0.02
+	development_efficiency = 0.05
+	administrative_efficiency = 0.05
 
 }
 
 # The 30 big techs from here on - Add 6 to number
 
 technology = { #MOVED VANILLA feudal_monarchy #1356
-	# Tech 3
+	# Tech 3/8
 	year = 1431
 	
 	#despotic_monarchy = yes #vanilla location
 	
 	#feudal_monarchy = yes #vanilla location 
 	
-	production_efficiency	=	0.01
-	development_efficiency = 0.02
+	#production_efficiency	=	0.01
+	administrative_efficiency = 0.03
+	development_efficiency = 0.10
 }
 
 technology = { #1356
-	# Tech 4
+	# Tech 4/9
 	year = 1443
 	
-	development_efficiency = 0.02
+	development_efficiency = 0.05
+	administrative_efficiency = 0.02
 	oligarchic_republic = yes
 }
 
@@ -119,7 +138,6 @@ technology = { #1356
 
 	year = 1454
 	production_efficiency	 =	0.02
-	development_efficiency = 0.02
 	
 }
 
@@ -129,6 +147,7 @@ technology = { #National Ideas #1356
 
 	#Constable & Temple
 	allowed_idea_groups = 3
+	development_efficiency = 0.10
 }
 
 technology = { #Workshop

@@ -183,16 +183,16 @@ country_event = { #HYW Units redeployment
 			}
 			4389 = {
 				build_to_forcelimit = {
-					infantry = 0.4
-					cavalry = 0.15
+					infantry = 0.3
+					cavalry = 0.10
 				}
 			}
 		}
 		FRA = {
 			179 = {
 				build_to_forcelimit = {
-					infantry = 0.9
-					cavalry = 0.1
+					infantry = 0.6
+					cavalry = 0.05
 				}
 			}
 		}

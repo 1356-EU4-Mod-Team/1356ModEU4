@@ -906,7 +906,10 @@ cb_horde_vs_civ = {
 		FROM = {
 			is_nomad = no
 		}
-		is_nomad = yes
+		OR = {
+			is_nomad = yes
+			has_ruler_flag = is_tamerlane
+		}	
 		is_revolutionary = no
 	}
 

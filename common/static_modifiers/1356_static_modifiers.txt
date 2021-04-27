@@ -1,0 +1,12 @@
+nomadic_clan_subject = {
+	global_manpower = 1.5
+	land_forcelimit = -4
+	horde_unity = 1
+	development_cost = 0.50
+}
+
+nomadic_clan_overlord = {
+	land_forcelimit = 1
+	global_manpower = 1
+	horde_unity = 0.30
+}

@@ -1,0 +1,631 @@
+country_event = { # Hidden event that checks flags for a nation then triggers a event to add ideas accordinly
+	id = early_colonization.1
+	title = early_colonization.1.t
+	desc = early_colonization.1.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	hidden = yes
+
+	trigger = {
+		has_dlc = "Mandate of Heaven"
+		NOT = { current_age = age_of_feudalism }
+		OR = {
+			has_idea_group = settlement_ideas_1356
+			has_idea_group = navigation_ideas_1356
+		}	
+	}	
+
+	option = { # Converts and assigns Ideas accordinly
+		name = early_colonization.1.a		
+		if = {
+			limit = {
+				has_idea_group = settlement_ideas_1356
+			}	
+			set_country_flag = settle_ideas_check
+		}	
+		if = {
+			limit = {
+				has_idea = additional_colonists_1
+			}	
+			set_country_flag = settle_idea_1_check
+		}	
+		if = {
+			limit = {
+				has_idea = additional_merchants_1
+			}	
+			set_country_flag = settle_idea_2_check
+		}	
+		if = {
+			limit = {
+				has_idea = faster_colonists_1
+			}	
+			set_country_flag = settle_idea_3_check
+		}
+		if = {
+			limit = {
+				has_idea = factories_1
+			}	
+			set_country_flag = settle_idea_4_check
+		}	
+		if = {
+			limit = {
+				has_idea = additional_diplomats_1
+			}	
+			set_country_flag = settle_idea_5_check
+		}	
+		if = {
+			limit = {
+				has_idea = general_colonization_law_1
+			}	
+			set_country_flag = settle_idea_6_check
+		}
+		if = {
+			limit = {
+				has_idea = competetive_merchants_1
+			}	
+			set_country_flag = settle_idea_7_check
+		}
+		#### 
+		if = {
+			limit = {
+				has_idea_group = navigation_ideas_1356
+			}	
+			set_country_flag = navigation_ideas_check
+		}	
+		if = {
+			limit = {
+				has_idea = quest_for_the_new_world_1
+			}	
+			set_country_flag = navigation_ideas_1_check
+		}	
+		if = {
+			limit = {
+				has_idea = colonial_ventures_1
+			}	
+			set_country_flag = navigation_ideas_2_check
+		}	
+		if = {
+			limit = {
+				has_idea = overseas_exploration_1
+			}	
+			set_country_flag = navigation_ideas_3_check
+		}
+		if = {
+			limit = {
+				has_idea = land_of_opportunity_1
+			}	
+			set_country_flag = navigation_ideas_4_check
+		}	
+		if = {
+			limit = {
+				has_idea = vice_roys_1
+			}	
+			set_country_flag = navigation_ideas_5_check
+		}	
+		if = {
+			limit = {
+				has_idea = free_colonies_1
+			}	
+			set_country_flag = navigation_ideas_6_check
+		}
+		if = {
+			limit = {
+				has_idea = global_empire_1
+			}	
+			set_country_flag = navigation_ideas_7_check
+		}		
+		country_event = {
+			id = early_colonization.2
+		}	
+	}
+}
+
+country_event = { # Converts Ideas earlier for people with Mandate of heaven - Settlement
+	id = early_colonization.2
+	title = early_colonization.2.t
+	desc = early_colonization.2.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	# mean_time_to_happen = {
+		# months = 6
+	# }
+	is_triggered_only = yes
+
+	trigger = {
+		has_dlc = "Mandate of Heaven"
+		NOT = { current_age = age_of_feudalism }
+		OR = {
+			has_idea_group = settlement_ideas_1356
+			has_idea_group = navigation_ideas_1356
+		}	
+	}	
+
+	option = { # Converts and assigns Ideas accordinly
+		name = early_colonization.2.a		
+		set_country_flag = prep_flag_cleanup # will bloat save data if not cleared
+		custom_tooltip = idea_conversion_note
+		custom_tooltip = old_idea_progress_in_new_idea
+		custom_tooltip = modifiers_will_unlock_settle_nav
+		if = {
+			limit = {
+				has_country_flag = settle_ideas_check
+			}	
+			remove_idea_group = settlement_ideas_1356
+			add_idea_group = expansion_ideas
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_1_check
+			}	
+			add_idea = additional_colonists
+			add_splendor = 100
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_2_check
+			}	
+			add_idea = additional_merchants
+			add_country_modifier = {
+				name = colonial_religious_schools
+				duration = 7300
+			}	
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_3_check
+			}	
+			add_idea = faster_colonists
+			add_country_modifier = {
+				name = colonial_settler_boost
+				duration = 3650
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = settle_idea_4_check
+			}	
+			add_idea = factories
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_5_check
+			}	
+			add_idea = additional_diplomats
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_6_check
+			}	
+			add_idea = general_colonization_law
+			add_country_modifier = {
+				name = colonial_tax_boost_24
+				duration = 3650
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = settle_idea_7_check
+			}	
+			add_idea = competetive_merchants
+			add_country_modifier = {
+				name = colonial_natives_bonus_uprising_assimilation
+				duration = 9125
+			}	
+			set_country_flag = invested_in_a_early_colonial_idea
+		}
+		###
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_check
+			}	
+			remove_idea_group = navigation_ideas_1356
+			add_idea_group = exploration_ideas
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_1_check
+			}	
+			add_idea = quest_for_the_new_world
+			add_country_modifier = {
+				name = colonial_free_leader
+				duration = 5475
+			}	
+			create_explorer = { tradition = 75 }
+			create_conquistador = { tradition = 75 }
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_2_check
+			}	
+			add_idea = colonial_ventures
+			add_splendor = 100
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_3_check
+			}	
+			add_idea = overseas_exploration
+			add_country_modifier = {
+				name = colonial_global_tarrifs_permabuff
+				duration = -1
+			}	
+		}
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_4_check
+			}	
+			add_idea = land_of_opportunity
+			add_splendor = 100
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_5_check
+			}	
+			add_idea = vice_roys
+			add_sailors = 1000
+			add_country_modifier = {
+				name = colonial_sailor_buff_25
+				duration = 9125
+			}				
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_6_check
+			}	
+			add_idea = free_colonies
+			add_country_modifier = {
+				name = colonial_tresure_fleet_buff
+				duration = 36500
+			}		
+		}
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_7_check
+			}	
+			add_idea = global_empire	
+			set_country_flag = invested_in_a_early_colonial_idea
+		}		
+	}
+}
+
+
+
+
+
+
+country_event = { # Hidden event that checks flags for a nation then triggers a event to add ideas accordinly
+	id = early_colonization.11
+	title = early_colonization.1.t
+	desc = early_colonization.1.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	hidden = yes
+
+	trigger = {
+		NOT = { has_dlc = "Mandate of Heaven" }
+		is_year = 1430
+		OR = {
+			has_idea_group = settlement_ideas_1356
+			has_idea_group = navigation_ideas_1356
+		}	
+	}	
+
+	option = { # Converts and assigns Ideas accordinly
+		name = early_colonization.1.a		
+		if = {
+			limit = {
+				has_idea_group = settlement_ideas_1356
+			}	
+			set_country_flag = settle_ideas_check
+		}	
+		if = {
+			limit = {
+				has_idea = additional_colonists_1
+			}	
+			set_country_flag = settle_idea_1_check
+		}	
+		if = {
+			limit = {
+				has_idea = additional_merchants_1
+			}	
+			set_country_flag = settle_idea_2_check
+		}	
+		if = {
+			limit = {
+				has_idea = faster_colonists_1
+			}	
+			set_country_flag = settle_idea_3_check
+		}
+		if = {
+			limit = {
+				has_idea = factories_1
+			}	
+			set_country_flag = settle_idea_4_check
+		}	
+		if = {
+			limit = {
+				has_idea = additional_diplomats_1
+			}	
+			set_country_flag = settle_idea_5_check
+		}	
+		if = {
+			limit = {
+				has_idea = general_colonization_law_1
+			}	
+			set_country_flag = settle_idea_6_check
+		}
+		if = {
+			limit = {
+				has_idea = competetive_merchants_1
+			}	
+			set_country_flag = settle_idea_7_check
+		}
+		#### 
+		if = {
+			limit = {
+				has_idea_group = navigation_ideas_1356
+			}	
+			set_country_flag = navigation_ideas_check
+		}	
+		if = {
+			limit = {
+				has_idea = quest_for_the_new_world_1
+			}	
+			set_country_flag = navigation_ideas_1_check
+		}	
+		if = {
+			limit = {
+				has_idea = colonial_ventures_1
+			}	
+			set_country_flag = navigation_ideas_2_check
+		}	
+		if = {
+			limit = {
+				has_idea = overseas_exploration_1
+			}	
+			set_country_flag = navigation_ideas_3_check
+		}
+		if = {
+			limit = {
+				has_idea = land_of_opportunity_1
+			}	
+			set_country_flag = navigation_ideas_4_check
+		}	
+		if = {
+			limit = {
+				has_idea = vice_roys_1
+			}	
+			set_country_flag = navigation_ideas_5_check
+		}	
+		if = {
+			limit = {
+				has_idea = free_colonies_1
+			}	
+			set_country_flag = navigation_ideas_6_check
+		}
+		if = {
+			limit = {
+				has_idea = global_empire_1
+			}	
+			set_country_flag = navigation_ideas_7_check
+		}		
+		country_event = {
+			id = early_colonization.22
+		}	
+	}
+}
+
+country_event = { # Converts Ideas earlier for people with Mandate of heaven - Settlement
+	id = early_colonization.22
+	title = early_colonization.2.t
+	desc = early_colonization.2.d
+	picture = NAVAL_MILITARY_eventPicture
+
+	# mean_time_to_happen = {
+		# months = 6
+	# }
+	is_triggered_only = yes
+
+	# trigger = {
+		# has_dlc = "Mandate of Heaven"
+		# NOT = { current_age = age_of_feudalism }
+		# OR = {
+			# has_idea_group = settlement_ideas_1356
+			# has_idea_group = navigation_ideas_1356
+		# }	
+	# }	
+
+	option = { # Converts and assigns Ideas accordinly
+		name = early_colonization.1.a	
+		custom_tooltip = idea_conversion_note
+		custom_tooltip = old_idea_progress_in_new_idea
+		custom_tooltip = modifiers_will_unlock_settle_nav	
+		set_country_flag = prep_flag_cleanup # will bloat save data if not cleared
+		if = {
+			limit = {
+				has_country_flag = settle_ideas_check
+			}	
+			remove_idea_group = settlement_ideas_1356
+			add_idea_group = expansion_ideas
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_1_check
+			}	
+			add_idea = additional_colonists
+			add_splendor = 100
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_2_check
+			}	
+			add_idea = additional_merchants
+			add_country_modifier = {
+				name = colonial_religious_schools
+				duration = 7300
+			}	
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_3_check
+			}	
+			add_idea = faster_colonists
+			add_country_modifier = {
+				name = colonial_settler_boost
+				duration = 3650
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = settle_idea_4_check
+			}	
+			add_idea = factories
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_5_check
+			}	
+			add_idea = additional_diplomats
+		}	
+		if = {
+			limit = {
+				has_country_flag = settle_idea_6_check
+			}	
+			add_idea = general_colonization_law
+			add_country_modifier = {
+				name = colonial_tax_boost_24
+				duration = 3650
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = settle_idea_7_check
+			}	
+			add_idea = competetive_merchants
+			add_country_modifier = {
+				name = colonial_natives_bonus_uprising_assimilation
+				duration = 9125
+			}	
+			set_country_flag = invested_in_a_early_colonial_idea
+		}
+		###
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_check
+			}	
+			remove_idea_group = navigation_ideas_1356
+			add_idea_group = exploration_ideas
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_1_check
+			}	
+			add_idea = quest_for_the_new_world
+			add_country_modifier = {
+				name = colonial_free_leader
+				duration = 5475
+			}	
+			create_explorer = { tradition = 75 }
+			create_conquistador = { tradition = 75 }
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_2_check
+			}	
+			add_idea = colonial_ventures
+			add_splendor = 100
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_3_check
+			}	
+			add_idea = overseas_exploration
+			add_country_modifier = {
+				name = colonial_global_tarrifs_permabuff
+				duration = -1
+			}	
+		}
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_4_check
+			}	
+			add_idea = land_of_opportunity
+			add_splendor = 100
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_5_check
+			}	
+			add_idea = vice_roys
+			add_sailors = 1000
+			add_country_modifier = {
+				name = colonial_sailor_buff_25
+				duration = 9125
+			}				
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_6_check
+			}	
+			add_idea = free_colonies
+			add_country_modifier = {
+				name = colonial_tresure_fleet_buff
+				duration = 36500
+			}		
+		}
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_7_check
+			}	
+			add_idea = global_empire	
+			set_country_flag = invested_in_a_early_colonial_idea
+		}		
+	}
+}
+
+country_event = { # Remove modifiers for nations without Siege weapons initially
+	id = early_colonization.32
+	title = early_colonization.30.t
+	desc = early_colonization.30.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	hidden = yes
+
+	trigger = {
+		has_country_flag = prep_flag_cleanup	
+	}	
+
+	option = {
+		name = gunpowderinventions.31.a		
+		clr_country_flag = navigation_ideas_1_check
+		clr_country_flag = navigation_ideas_2_check
+		clr_country_flag = navigation_ideas_3_check	
+		clr_country_flag = navigation_ideas_4_check	
+		clr_country_flag = navigation_ideas_5_check	
+		clr_country_flag = navigation_ideas_6_check	
+		clr_country_flag = navigation_ideas_7_check	
+		clr_country_flag = navigation_ideas_check
+		clr_country_flag = settle_ideas_check
+		clr_country_flag = settle_idea_1_check
+		clr_country_flag = settle_idea_2_check
+		clr_country_flag = settle_idea_3_check
+		clr_country_flag = settle_idea_4_check
+		clr_country_flag = settle_idea_5_check
+		clr_country_flag = settle_idea_6_check
+		clr_country_flag = settle_idea_7_check
+		clr_country_flag = prep_flag_cleanup
+	}
+}
+

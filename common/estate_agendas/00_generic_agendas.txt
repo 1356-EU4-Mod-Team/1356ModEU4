@@ -2,7 +2,7 @@
 #Triggers: any province has the basic conditions, country has adm tech 4
 estate_church_build_temple_in_y = {
 	can_select = {
-		adm_tech = 10 #1356
+		adm_tech = 6 #1356
 		any_owned_province = {
 			is_state_core = root
 			NOT = { has_building = cathedral }
@@ -217,7 +217,7 @@ estate_church_build_temple_in_y = {
 
 estate_brahmins_build_temple_in_y = {
 	can_select = {
-		adm_tech = 10 #1356
+		adm_tech = 6 #1356
 		if = {
 			limit = {
 				NOT = { religion = hinduism }
@@ -484,7 +484,7 @@ estate_brahmins_build_temple_in_y = {
 
 estate_nobles_build_army_building_in_y = {
 	can_select = {
-		mil_tech = 10 #1356
+		mil_tech = 6 #1356
 		any_owned_province = {
 			is_state_core = root
 			OR = {
@@ -872,7 +872,7 @@ estate_nobles_build_army_building_in_y = {
 
 estate_rajput_build_army_building_in_y = {
 	can_select = {
-		mil_tech = 10 #1356
+		mil_tech = 6 #1356
 		any_owned_province = {
 			is_state_core = root
 			OR = {
@@ -1260,7 +1260,7 @@ estate_rajput_build_army_building_in_y = {
 
 estate_maratha_build_army_building_in_y = {
 	can_select = {
-		mil_tech = 12 #1356
+		mil_tech = 6 #1356
 		any_owned_province = {
 			is_state_core = root
 			OR = {
@@ -3511,7 +3511,7 @@ estate_maratha_build_fort_building_in_y = {
 
 estate_burghers_build_trade_building_in_y = {
 	can_select = {
-		dip_tech = 10 #1356
+		dip_tech = 4 #1356
 		any_owned_province = {
 			is_state_core = root
 			NOT = { has_building = stock_exchange }
@@ -3841,7 +3841,7 @@ estate_burghers_build_trade_building_in_y = {
 
 estate_burghers_build_port_building_in_y = {
 	can_select = {
-		dip_tech = 12 #1356
+		dip_tech = 6 #1356
 		any_owned_province = {
 			is_state_core = root
 			has_port = yes
@@ -4415,7 +4415,7 @@ estate_burghers_build_production_building_in_y = {
 
 estate_vaisyas_build_trade_building_in_y = {
 	can_select = {
-		dip_tech = 10 #1356
+		dip_tech = 4 #1356
 		any_owned_province = {
 			is_state_core = root
 			NOT = { has_building = stock_exchange }
@@ -4745,7 +4745,7 @@ estate_vaisyas_build_trade_building_in_y = {
 
 estate_vaisyas_build_port_building_in_y = {
 	can_select = {
-		dip_tech = 12 #1356
+		dip_tech = 6 #1356
 		any_owned_province = {
 			is_state_core = root
 			has_port = yes
@@ -5319,7 +5319,7 @@ estate_vaisyas_build_production_building_in_y = {
 
 estate_jains_build_trade_building_in_y = {
 	can_select = {
-		dip_tech = 10 #1356
+		dip_tech = 4 #1356
 		any_owned_province = {
 			is_state_core = root
 			NOT = { has_building = stock_exchange }
@@ -5648,7 +5648,7 @@ estate_jains_build_trade_building_in_y = {
 
 estate_jains_build_port_building_in_y = {
 	can_select = {
-		dip_tech = 12 #1356
+		dip_tech = 6 #1356
 		any_owned_province = {
 			is_state_core = root
 			has_port = yes
@@ -5963,7 +5963,7 @@ estate_jains_build_port_building_in_y = {
 
 estate_jains_build_production_building_in_y = {
 	can_select = {
-		adm_tech = 12 #1356
+		adm_tech = 6 #1356
 		any_owned_province = {
 			is_state_core = root
 			NOT = { has_building = counting_house }

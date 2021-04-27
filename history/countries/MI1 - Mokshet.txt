@@ -23,4 +23,21 @@ capital = 2419 # Kanadey
 		name = "uralic_religion_starting_modifier"
 		duration = -1
 	}
+	monarch = {
+		name = "Yuriy"
+		dynasty = "Rjazanskijid"
+		dip = 3
+		adm = 2
+		mil = 1
+		birth_date = 1315.5.2
+	}	
+	heir = {
+		name = "Vladimir"
+		dynasty = "Rjazanskijid"
+		dip = 6
+		adm = 2
+		mil = 3
+		birth_date = 1356.1.1
+		death_date = 1399.1.1
+	}	
 }

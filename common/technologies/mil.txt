@@ -8,11 +8,12 @@ technology = {
 	
 	sprite_level = 1
 
-	infantry_fire		= 	0.25
+	infantry_fire		= 	0.10
 	infantry_shock 		= 	0.10	
 	cavalry_shock  		= 	0.8	
 	#artillery_shock 	=	0.05
-	land_morale 		= 	2.0
+	land_morale 		= 	1.0
+	military_tactics = -0.45
 
 	fort_15th = yes
 	
@@ -80,6 +81,9 @@ technology = {
 	year = 1348
 	
 	infantry_shock 		= 	0.10
+	land_morale = 0.5
+	military_tactics = 0.15
+	administrative_efficiency = 0.05
 	
 }
 
@@ -87,7 +91,8 @@ technology = {
 	#tech2
 	year = 1360
 	
-	land_morale = 0.25
+	land_morale = 0.30
+	administrative_efficiency = 0.02
 	combat_width = 2 #PREV 4
 	#Western
 	enable = 1356-early_western_royal_guard 
@@ -111,7 +116,8 @@ technology = {
 	#tech3
 	year = 1372
 	
-	#land_morale = 0.2
+	land_morale = 0.50
+	military_tactics = 0.15
 	combat_width = 2
 	
 	#Anatolian
@@ -137,26 +143,14 @@ technology = {
 	infantry_fire = 0.1
 	#Western
 	enable = 1356-early_western_crossbowmen
-	enable = 1356-trebuchet_arty
 	enable = 1356-early_western_pikemen
 	
 	#Eastern
-	enable = 1356-eastern_trebuchet_arty
 	enable = 1356-early_eastern_pikemen
 	#Give Eastern an extra INF here like the Western get? Or perhaps an extra Cav?
 	
-	#Anatolian
-	enable = 1356-anatolian_trebuchet_arty
-	
 	#Muslim
-	enable = 1356-muslim_trebuchet_arty
 	enable = 1356-early_muslim_pikemen
-	
-	#Indian
-	enable = 1356-indian_early_arty
-	
-	#Chinese #I dont like how empty their units are from 4-12 for cav and 4-11 for inf
-	enable = 1356-asian_early_arty
 	
 	#Central American
 	enable = 1356-meso_macuahitlins
@@ -172,7 +166,17 @@ technology = { #OG Tech 0
 	# Tech 5
 	year = 1396
 	
-	land_morale = 0.2
+	enable = 1356-trebuchet_arty
+	enable = 1356-eastern_trebuchet_arty
+	enable = 1356-anatolian_trebuchet_arty
+	enable = 1356-muslim_trebuchet_arty
+	enable = 1356-indian_early_arty
+	enable = 1356-asian_early_arty	
+	
+	administrative_efficiency = 0.02
+	
+	land_morale = 0.3
+	infantry_fire = 0.10
 }
 
 technology = { #OG tech 1
@@ -180,6 +184,8 @@ technology = { #OG tech 1
 	year = 1408
 	
 	infantry_shock = 0.2
+	military_tactics = 0.20
+	administrative_efficiency = 0.05
 	#land_morale = 0.1
 	
 	#Eastern
@@ -233,9 +239,8 @@ technology = { #OG tech 2
 	year = 1419
 	
 	infantry_shock		= 	0.1
-	cavalry_shock		= 	0.2
+	administrative_efficiency = 0.03
 	
-	combat_width = 1
 	#Western
 	enable = halberd_infantry
 	enable = western_medieval_infantry
@@ -249,11 +254,13 @@ technology = { #OG tech 2
 # The 30 big techs from here on - add 6 to number
 
 technology = { #Didnt list anything here and below
-	# Tech 3
+	# Tech 3/8
 	year = 1431
 	
 	
-	military_tactics 	= 	0.10 #Added to fill morale
+	military_tactics = 	0.10 #Added to fill morale
+	cavalry_shock	= 	0.2
+	administrative_efficiency = 0.03
 	#land_morale = 	0.5
 	
 
@@ -262,8 +269,11 @@ technology = { #Didnt list anything here and below
 technology = {
 	year = 1443
 	
+	#tech 4/9
+	
 	#Armory
-	land_morale = 	0.5
+	land_morale = 	0.4
+	administrative_efficiency = 0.02
 	military_tactics 	= 	0.15
 }
 
@@ -273,7 +283,8 @@ technology = {
 	
 	#Pike Square
 	
-	combat_width = 2
+	combat_width = 5
+	infantry_fire = 0.10
 	#land_morale = 	0.5
 
 }
@@ -286,6 +297,8 @@ technology = {
 	supply_limit 		= 	0.5
 	infantry_shock		= 	0.15
 	cavalry_shock		= 	0.2
+
+
 
 	enable = western_men_at_arms	
 	enable = western_longbow	
@@ -370,7 +383,7 @@ technology = {
 	year = 1505
 	
 	#Pike and Shot
-	infantry_fire		= 	0.25
+	infantry_fire		= 	0.20
 	cavalry_shock		=	0.8
 
 	
@@ -657,7 +670,7 @@ technology = {
 	artillery_shock 	=	0.1
 	artillery_fire		=	2.0
 	
-	combat_width = 2
+	combat_width = 1
 	
 	conscription_center = yes
 
@@ -714,7 +727,7 @@ technology = {
 	military_tactics 	= 	0.25
 	land_morale			=	0.85
 
-	combat_width = 2
+	combat_width = 1
 }
 
 technology = {
@@ -818,10 +831,10 @@ technology = {
 	year = 1805
 	
 	#Impulse Warfare
-	sprite_level = 5	#This is commented out in Vanilla why is it here?
+	#sprite_level = 5	#This is commented out in Vanilla why is it here?
 	
 	military_tactics	=	0.25
-	land_morale			=	0.85
+	land_morale			=	0.8
 	maneuver_value 		= 	0.25
 	
 	enable = russian_mass

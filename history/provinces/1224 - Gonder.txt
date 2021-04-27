@@ -20,7 +20,7 @@ discovered_by = indian
 extra_cost = 16
 center_of_trade = 2
 
-add_province_triggered_modifier = 1356_debre_libanos_cathedral_great_project_province_modifier #1356 
+#add_province_triggered_modifier = 1356_debre_libanos_cathedral_great_project_province_modifier #1356 
 
 1475.1.1 = { unrest = 5 } #Repression against the Falasha by Baeda Maryam
 1476.1.1 = { unrest = 0 }

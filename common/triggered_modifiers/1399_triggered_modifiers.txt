@@ -54,7 +54,6 @@ hundred_years_war = {
 	manpower_recovery_speed = 0.15
 	global_supply_limit_modifier = 0.33
 	prestige_from_land = 1.0
-	war_taxes_cost_modifier = 15.0 #Modifier is essentially wartaxes
 	war_exhaustion = -0.05
 }
 
@@ -93,16 +92,17 @@ new_power = { #Do we really need this? I set most of these to Historical Lucky N
 			tag = BUR # Conquer Low Countries
 			tag = MOS
 		}
+		ai = yes
 		NOT = {
-			is_year = 1444
+			is_year = 1420
 		}
 	}
 
 	trigger = {
 		is_subject = no
 		NOT = { personal_union = 1 }
-		NOT = { vassal = 1 }
-		NOT = { num_of_cities = 15 }
+		NOT = { vassal = 3 }
+		NOT = { num_of_cities = 23 }
 		NOT = { has_country_flag = burgundian_low_countries }
 		NOT = { has_country_flag = aztec_empire }
 		NOT = { has_country_flag = scandinavian_union }
@@ -113,9 +113,15 @@ new_power = { #Do we really need this? I set most of these to Historical Lucky N
 	stability_cost_modifier = -0.2
 	land_forcelimit_modifier = 0.1
 	naval_forcelimit_modifier = 0.1
-	discipline = 0.05
+	discipline = 0.025
 	land_morale = 0.05
-	army_tradition = 1
+	global_tax_income = 24
+	army_tradition = 0.75
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+	global_manpower = 5
+	
 }
 
 shia_persia = {

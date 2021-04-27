@@ -28,7 +28,7 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
-add_province_triggered_modifier = 1356_prague_cathedral_great_project_province_modifier #1356 
+#add_province_triggered_modifier = 1356_prague_cathedral_great_project_province_modifier #1356 
 
 1419.12.1 = {	unrest = 5 
 		religion = hussite 

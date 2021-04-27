@@ -1,0 +1,1059 @@
+country_event = { # The Western Cannon
+	id = gunpowderinventions.1
+	title = gunpowderinventions.1.t
+	desc = gunpowderinventions.1.d
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = new_institution_events.68.a
+		custom_tooltip = western_nations_technology_boost
+		set_global_flag = western_invention_activated
+		add_prestige = 25
+		add_country_modifier = {
+			name = founding_western_gunpowder
+			duration = 18250
+		}
+		hidden_effect = {
+			country_event = {
+				id = gunpowderinventions.21
+			}
+		}	
+	}
+}
+
+country_event = { # Event Target set for DESC - Western
+	id = gunpowderinventions.2
+	title = gunpowderinventions.2.t
+	desc = gunpowderinventions.2.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {	
+		months = 24
+	}
+	fire_only_once = yes
+	hidden = yes
+	# is_triggered_only = yes
+	
+	
+	trigger = {
+		technology_group = western
+		has_institution = gunpowder_institution
+		total_development = 50 # So at least a decent size nation gets it proper
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			set_saved_name = { #deliberately never cleared
+				key = western_inventor_name #first_center_revolutionary_philosopher
+				type = advisor
+			}
+			random_owned_province = {
+				save_event_target_as = western_cannon_invention_province
+			}	
+		}		
+	}		
+
+	option = {
+		ROOT = {
+			save_global_event_target_as = western_cannon_invention_nation
+		}
+		country_event = {
+			id = gunpowderinventions.1 
+		}
+	}
+}
+
+country_event = { # The Eastern Arquebus
+	id = gunpowderinventions.3
+	title = gunpowderinventions.3.t
+	desc = gunpowderinventions.3.d
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = new_institution_events.68.a
+		custom_tooltip = eastern_nations_technology_boost
+		set_global_flag = eastern_invention_activated
+		add_prestige = 25
+		add_country_modifier = {
+			name = founding_eastern_gunpowder
+			duration = 18250
+		}	
+	}
+}
+
+country_event = { # Event Target set for DESC - Eastern
+	id = gunpowderinventions.4
+	title = gunpowderinventions.2.t
+	desc = gunpowderinventions.2.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {	# Most likely to be triggered
+		months = 48
+	}
+	fire_only_once = yes
+	hidden = yes
+	# is_triggered_only = yes
+	
+	
+	trigger = {
+		has_institution = gunpowder_institution
+		technology_group = eastern
+		total_development = 35
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			set_saved_name = { #deliberately never cleared
+				key = eastern_inventor_name #first_center_revolutionary_philosopher
+				type = advisor
+			}
+			random_owned_province = {
+				save_event_target_as = eastern_cannon_invention_province
+			}	
+		}		
+	}		
+
+	option = {
+		ROOT = {
+			save_global_event_target_as = eastern_cannon_invention_nation
+		}
+		country_event = {
+			id = gunpowderinventions.3 
+		}
+	}
+}
+
+
+country_event = { # The Asian Rocket Cart
+	id = gunpowderinventions.5
+	title = gunpowderinventions.5.t
+	desc = gunpowderinventions.5.d
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = new_institution_events.68.a
+		custom_tooltip = chinese_nations_technology_boost
+		set_global_flag = chinese_invention_activated
+		add_prestige = 25
+		add_country_modifier = {
+			name = founding_chinese_gunpowder
+			duration = 18250
+		}
+		hidden_effect = {
+			country_event = {
+				id = gunpowderinventions.21
+			}
+		}		
+	}
+}
+
+country_event = { # Event Target set for DESC - Eastern
+	id = gunpowderinventions.6
+	title = gunpowderinventions.2.t
+	desc = gunpowderinventions.2.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {	
+		months = 20
+	}
+	fire_only_once = yes
+	hidden = yes
+	# is_triggered_only = yes
+	
+	
+	trigger = {
+		has_institution = gunpowder_institution
+		technology_group = chinese
+		total_development = 40
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			set_saved_name = { #deliberately never cleared
+				key = chinese_inventor_name #first_center_revolutionary_philosopher
+				type = advisor
+			}
+			random_owned_province = {
+				save_event_target_as = chinese_cannon_invention_province
+			}	
+		}		
+	}		
+
+	option = {
+		ROOT = {
+			save_global_event_target_as = chinese_cannon_invention_nation
+		}
+		country_event = {
+			id = gunpowderinventions.5 
+		}
+	}
+}
+
+country_event = { # The Muslim Handcannon
+	id = gunpowderinventions.7
+	title = gunpowderinventions.7.t
+	desc = gunpowderinventions.7.d
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	
+	option = {
+		name = new_institution_events.68.a
+		custom_tooltip = muslim_nations_technology_boost
+		set_global_flag = muslim_invention_activated
+		add_prestige = 25
+		add_country_modifier = {
+			name = founding_muslim_gunpowder
+			duration = 18250
+		}		
+	}	
+}
+
+country_event = { # Event Target set for DESC - Eastern
+	id = gunpowderinventions.8
+	title = gunpowderinventions.2.t
+	desc = gunpowderinventions.2.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {	
+		months = 36
+	}
+	fire_only_once = yes
+	hidden = yes
+	# is_triggered_only = yes
+	
+	
+	trigger = {
+		has_institution = gunpowder_institution
+		technology_group = muslim
+		total_development = 75
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			set_saved_name = { #deliberately never cleared
+				key = muslim_inventor_name #first_center_revolutionary_philosopher
+				type = advisor
+			}
+			random_owned_province = {
+				save_event_target_as = muslim_cannon_invention_province
+			}	
+		}		
+	}		
+
+	option = {
+		ROOT = {
+			save_global_event_target_as = muslim_cannon_invention_nation
+		}
+		country_event = {
+			id = gunpowderinventions.7 
+		}
+	}
+}
+
+
+country_event = { # The Gun of Urban (Orban)
+	id = gunpowderinventions.9
+	title = gunpowderinventions.9.t
+	desc = gunpowderinventions.9.d
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = new_institution_events.68.a
+		custom_tooltip = ottoman_nations_technology_boost
+		set_global_flag = ottoman_invention_activated
+		add_prestige = 25
+		add_country_modifier = {
+			name = founding_ottoman_gunpowder
+			duration = 18250
+		}
+		hidden_effect = {
+			country_event = {
+				id = gunpowderinventions.21
+			}
+		}		
+	}	
+}
+
+country_event = { # Event Target set for DESC - Eastern
+	id = gunpowderinventions.10
+	title = gunpowderinventions.2.t
+	desc = gunpowderinventions.2.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {	
+		months = 24
+	}
+	fire_only_once = yes
+	hidden = yes
+	# is_triggered_only = yes
+	
+	
+	trigger = {
+		has_institution = gunpowder_institution
+		technology_group = ottoman
+		total_development = 30
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			# set_saved_name = { # Scripted to always be Orban
+				# key = ottoman_inventor_name #first_center_revolutionary_philosopher
+				# type = advisor
+			# }
+			random_owned_province = {
+				save_event_target_as = ottoman_cannon_invention_province
+			}	
+		}		
+	}		
+
+	option = {
+		ROOT = {
+			save_global_event_target_as = ottoman_cannon_invention_nation
+		}
+		country_event = {
+			id = gunpowderinventions.9 
+		}
+	}
+}
+
+
+country_event = { # Indian Saltpetre
+	id = gunpowderinventions.11
+	title = gunpowderinventions.11.t
+	desc = gunpowderinventions.11.d
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = new_institution_events.68.a
+		custom_tooltip = indian_nations_technology_boost
+		set_global_flag = indian_invention_activated
+		add_treasury = 500
+		2078 = {
+			change_trade_goods = salt		
+			add_permanent_province_modifier = {
+				name = "indus_saltpetre_industry"
+				duration = -1
+			}
+		}	
+		578 = {
+			change_trade_goods = salt		
+			add_permanent_province_modifier = {
+				name = "indus_saltpetre_industry"
+				duration = -1
+			}
+		}
+		2077 = {
+			change_trade_goods = salt
+			add_permanent_province_modifier = {
+				name = "indus_saltpetre_industry"
+				duration = -1
+			}
+		}
+		4511 = {		
+			add_permanent_province_modifier = {
+				name = "indus_saltpetre_industry"
+				duration = -1
+			}
+		}		
+	}
+}
+
+country_event = { # Event Target set for DESC - Indian
+	id = gunpowderinventions.12
+	title = gunpowderinventions.2.t
+	desc = gunpowderinventions.2.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {	
+		months = 12
+	}
+	fire_only_once = yes
+	hidden = yes
+	# is_triggered_only = yes
+	
+	
+	trigger = { # Indian Growth triggers differently 
+		is_year = 1408 
+		OR = {
+			owns = 2078
+			owns = 578
+			owns = 2077
+			owns = 4511
+		}	
+	}		
+
+	option = {
+		ROOT = {
+			save_global_event_target_as = indian_cannon_invention_nation
+		}
+		country_event = {
+			id = gunpowderinventions.11 
+		}
+	}
+}
+
+
+
+
+
+####### Early Siege Weapons Event for decision
+
+
+country_event = { # CHOOSE YOUR SIEGE(Fighter) Weapon
+	id = gunpowderinventions.21
+	title = gunpowderinventions.21.t
+	desc = gunpowderinventions.21.d
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = gunpowderinventions.21.gun.a
+		ai_chance = { factor = 45 }
+		trigger = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
+				technology_group = ottoman
+				technology_group = chinese
+				technology_group = indian
+			}
+		}
+		remove_country_modifier = trebuchets_early_cannon
+		remove_country_modifier = siege_towers_early_cannon
+		remove_country_modifier = early_cannon_early_cannons
+		remove_country_modifier = early_cannon_hwacha
+		remove_country_modifier = natives_siege_buff
+		remove_country_modifier = african_siege_buff
+		remove_country_modifier = steppe_nomads_buff
+		remove_country_modifier = chinese_rocketcart_gunpowder
+		remove_country_modifier = ottoman_gun_of_urban_gunpowder
+		remove_country_modifier = western_cannon_gunpowder		
+		add_country_modifier = {
+			name = "trebuchets_early_cannon"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}	
+		add_country_modifier = {
+			name = "early_siege_retrofitting"
+			duration = 3650
+		}			
+	}
+	option = {
+		name = gunpowderinventions.21.gun.b
+		ai_chance = { factor = 0 } # AI choosing this one would be diasater
+		trigger = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
+				technology_group = ottoman
+				technology_group = chinese
+				technology_group = indian
+			}
+		}
+		remove_country_modifier = trebuchets_early_cannon
+		remove_country_modifier = siege_towers_early_cannon
+		remove_country_modifier = early_cannon_early_cannons
+		remove_country_modifier = early_cannon_hwacha
+		remove_country_modifier = natives_siege_buff
+		remove_country_modifier = african_siege_buff
+		remove_country_modifier = steppe_nomads_buff
+		remove_country_modifier = chinese_rocketcart_gunpowder
+		remove_country_modifier = ottoman_gun_of_urban_gunpowder
+		remove_country_modifier = western_cannon_gunpowder		
+		add_country_modifier = {
+			name = "siege_towers_early_cannon"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}	
+		add_country_modifier = {
+			name = "early_siege_retrofitting"
+			duration = 3650
+		}			
+	}
+	option = {
+		name = gunpowderinventions.21.gun.c
+		ai_chance = { factor = 55 } # The Logical choice
+		trigger = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
+				technology_group = ottoman
+				technology_group = chinese
+				technology_group = indian
+			}
+		}
+		remove_country_modifier = trebuchets_early_cannon
+		remove_country_modifier = siege_towers_early_cannon
+		remove_country_modifier = early_cannon_early_cannons
+		remove_country_modifier = early_cannon_hwacha
+		remove_country_modifier = natives_siege_buff
+		remove_country_modifier = african_siege_buff
+		remove_country_modifier = steppe_nomads_buff
+		remove_country_modifier = chinese_rocketcart_gunpowder
+		remove_country_modifier = ottoman_gun_of_urban_gunpowder
+		remove_country_modifier = western_cannon_gunpowder		
+		add_country_modifier = {
+			name = "early_cannon_early_cannons"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}	
+		add_country_modifier = {
+			name = "early_siege_retrofitting"
+			duration = 3650
+		}			
+	}
+	
+	option = {
+		name = gunpowderinventions.22.gun.d # Korea
+		ai_chance = { factor = 1000 } # The Logical choice
+		trigger = {
+			OR = {
+				primary_culture = korean
+				accepted_culture = korean
+			}	
+		}
+		remove_country_modifier = trebuchets_early_cannon
+		remove_country_modifier = siege_towers_early_cannon
+		remove_country_modifier = early_cannon_early_cannons
+		remove_country_modifier = early_cannon_hwacha
+		remove_country_modifier = natives_siege_buff
+		remove_country_modifier = african_siege_buff
+		remove_country_modifier = steppe_nomads_buff
+		remove_country_modifier = chinese_rocketcart_gunpowder
+		remove_country_modifier = ottoman_gun_of_urban_gunpowder
+		remove_country_modifier = western_cannon_gunpowder		
+		add_country_modifier = {
+			name = "early_cannon_hwacha"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}	
+		add_country_modifier = {
+			name = "early_siege_retrofitting"
+			duration = 3650
+		}			
+	}	
+	
+	option = {
+		name = gunpowderinventions.21.gun.western_gun
+		ai_chance = { factor = 1000 } # Favored heavily
+		trigger = {
+			has_institution = gunpowder_institution
+			has_global_flag = western_invention_activated
+			OR = {
+				technology_group = western
+			}
+		}
+		remove_country_modifier = trebuchets_early_cannon
+		remove_country_modifier = siege_towers_early_cannon
+		remove_country_modifier = early_cannon_early_cannons
+		remove_country_modifier = early_cannon_hwacha
+		remove_country_modifier = natives_siege_buff
+		remove_country_modifier = african_siege_buff
+		remove_country_modifier = steppe_nomads_buff
+		remove_country_modifier = chinese_rocketcart_gunpowder
+		remove_country_modifier = ottoman_gun_of_urban_gunpowder
+		remove_country_modifier = western_cannon_gunpowder
+		add_country_modifier = {
+			name = "western_cannon_gunpowder"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}
+		add_country_modifier = {
+			name = "early_siege_retrofitting"
+			duration = 3650
+		}		
+	}	
+	
+	option = {
+		name = gunpowderinventions.21.gun.ottoman_gun
+		ai_chance = { factor = 1000 } # Favored heavily
+		trigger = {
+			has_institution = gunpowder_institution
+			has_global_flag = ottoman_invention_activated
+			OR = {
+				technology_group = ottoman
+			}
+		}
+		remove_country_modifier = trebuchets_early_cannon
+		remove_country_modifier = siege_towers_early_cannon
+		remove_country_modifier = early_cannon_early_cannons
+		remove_country_modifier = early_cannon_hwacha
+		remove_country_modifier = natives_siege_buff
+		remove_country_modifier = african_siege_buff
+		remove_country_modifier = steppe_nomads_buff
+		remove_country_modifier = chinese_rocketcart_gunpowder
+		remove_country_modifier = ottoman_gun_of_urban_gunpowder
+		remove_country_modifier = western_cannon_gunpowder
+		add_country_modifier = {
+			name = "ottoman_gun_of_urban_gunpowder"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}
+		add_country_modifier = {
+			name = "early_siege_retrofitting"
+			duration = 3650
+		}		
+	}
+
+	option = {
+		name = gunpowderinventions.21.gun.chinese_gun
+		ai_chance = { factor = 1000 } # Favored heavily
+		trigger = {
+			has_institution = gunpowder_institution
+			has_global_flag = chinese_invention_activated
+			OR = {
+				technology_group = chinese
+			}
+		}
+		remove_country_modifier = trebuchets_early_cannon
+		remove_country_modifier = siege_towers_early_cannon
+		remove_country_modifier = early_cannon_early_cannons
+		remove_country_modifier = early_cannon_hwacha
+		remove_country_modifier = natives_siege_buff
+		remove_country_modifier = african_siege_buff
+		remove_country_modifier = steppe_nomads_buff
+		remove_country_modifier = chinese_rocketcart_gunpowder
+		remove_country_modifier = ottoman_gun_of_urban_gunpowder
+		remove_country_modifier = western_cannon_gunpowder
+		add_country_modifier = {
+			name = "chinese_rocketcart_gunpowder"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}
+		add_country_modifier = {
+			name = "early_siege_retrofitting"
+			duration = 3650
+		}		
+	}	
+}
+
+##### Siege Event first choice when taking Mil tech 5
+
+country_event = { # First Event 
+	id = gunpowderinventions.22
+	title = gunpowderinventions.22.t
+	desc = gunpowderinventions.22.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		NOT = { is_year = 1460 } # Nearing Vanilla Cannons
+		NOT = { has_country_flag = can_use_early_siege }
+		NOT = { has_country_flag = early_siege_flag_to_prevent_exploit }
+		mil_tech = 5
+		NOT = { mil_tech = 13 }
+		OR = {
+			technology_group = western
+			technology_group = eastern
+			technology_group = muslim
+			technology_group = ottoman
+			technology_group = chinese
+			technology_group = indian
+			technology_group = nomad_group
+			technology_group = east_african
+			technology_group = central_african
+			technology_group = sub_saharan
+			technology_group = north_american
+			technology_group = mesoamerican 
+			technology_group = south_american
+			technology_group = andean 
+			# technology_group = polynesian # ?
+		}
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = early_siege_flag_to_prevent_exploit
+		}	
+	}	
+	
+	option = {
+		name = gunpowderinventions.22.gun.a
+		ai_chance = { factor = 45 } # Favored heavily
+		trigger = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
+				technology_group = ottoman
+				technology_group = chinese
+				technology_group = indian
+			}
+		}	
+		set_country_flag = can_use_early_siege		
+		add_country_modifier = {
+			name = "trebuchets_early_cannon"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}			
+	}
+	option = {
+		ai_chance = { factor = 0 } # Not allowed for AI currently
+		name = gunpowderinventions.22.gun.b
+		trigger = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
+				technology_group = ottoman
+				technology_group = chinese
+				technology_group = indian
+			}
+		}
+		set_country_flag = can_use_early_siege	
+		add_country_modifier = {
+			name = "siege_towers_early_cannon"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}		
+	}
+	option = {
+		ai_chance = { factor = 55 } # Favored heavily
+		name = gunpowderinventions.22.gun.c
+		trigger = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
+				technology_group = ottoman
+				technology_group = chinese
+				technology_group = indian
+			}
+		}
+		set_country_flag = can_use_early_siege	
+		add_country_modifier = {
+			name = "early_cannon_early_cannons"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}			
+	}
+	option = {
+		ai_chance = { factor = 1000 } # Favored heavily
+		name = gunpowderinventions.22.gun.korean # Hwacha
+		trigger = {
+			OR = {
+				primary_culture = korean
+				accepted_culture = korean
+			}	
+		}	
+		highlight = yes
+		set_country_flag = can_use_early_siege	
+		add_country_modifier = {
+			name = "early_cannon_hwacha"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "early_siege_cant_choose"
+			duration = 5475
+		}			
+	}
+	option = {
+		name = gunpowderinventions.22.gun.steppe # Steppe Nomads need no siege weapons
+		trigger = {
+			technology_group = nomad_group
+		}	
+		highlight = yes
+		set_country_flag = can_use_early_siege	
+		custom_tooltip = cannot_use_early_siege_weaponry
+		add_country_modifier = {
+			name = "steppe_nomads_buff"
+			duration = -1
+		}			
+	}	
+	option = {
+		name = gunpowderinventions.22.gun.africa # Africa
+		trigger = {
+			OR = {
+				technology_group = east_african
+				technology_group = central_african
+				technology_group = sub_saharan
+			}	
+		}	
+		set_country_flag = can_use_early_siege	
+		highlight = yes
+		custom_tooltip = cannot_use_early_siege_weaponry
+		add_country_modifier = {
+			name = "african_siege_buff"
+			duration = -1
+		}		
+	}
+	option = {
+		name = gunpowderinventions.22.gun.americas # Americas
+		trigger = {
+			OR = {
+				technology_group = north_american
+				technology_group = mesoamerican 
+				technology_group = south_american
+				technology_group = andean 
+			}	
+		}	
+		set_country_flag = can_use_early_siege	
+		highlight = yes
+		custom_tooltip = cannot_use_early_siege_weaponry
+		add_country_modifier = {
+			name = "natives_siege_buff"
+			duration = -1
+		}		
+	}	
+}
+
+country_event = { # Maintenance event for Western nations to adopt new cannon when they embrace gunpowder
+	id = gunpowderinventions.25
+	title = gunpowderinventions.30.t
+	desc = gunpowderinventions.30.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+
+	trigger = {
+		ai = yes #
+		technology_group = western
+		has_global_flag = western_invention_activated
+		has_institution = gunpowder_institution
+		NOT = { has_country_modifier = founding_western_gunpowder }
+		NOT = { has_country_modifier = founding_ottoman_gunpowder }
+		NOT = { has_country_modifier = founding_chinese_gunpowder }
+		NOT = { has_country_flag = ai_select_new_gun_fix }
+	}	
+	
+	immediate = {
+		set_country_flag = ai_select_new_gun_fix
+	}	
+
+	option = {
+		name = gunpowderinventions.31.a	
+		country_event = { 
+			id = gunpowderinventions.21
+		}		
+	}
+}
+
+country_event = { # Maintenance event for Turkish nations to adopt new cannon when they embrace gunpowder
+	id = gunpowderinventions.26
+	title = gunpowderinventions.30.t
+	desc = gunpowderinventions.30.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+
+	trigger = {
+		ai = yes #
+		technology_group = ottoman
+		has_global_flag = ottoman_invention_activated
+		has_institution = gunpowder_institution
+		NOT = { has_country_modifier = founding_western_gunpowder }
+		NOT = { has_country_modifier = founding_ottoman_gunpowder }
+		NOT = { has_country_modifier = founding_chinese_gunpowder }
+		NOT = { has_country_flag = ai_select_new_gun_fix }
+	}	
+	
+	immediate = {
+		set_country_flag = ai_select_new_gun_fix
+	}	
+
+	option = {
+		name = gunpowderinventions.31.a	
+		country_event = { 
+			id = gunpowderinventions.21
+		}		
+	}
+}
+
+country_event = { # Maintenance event for Chinese nations to adopt new cannon when they embrace gunpowder
+	id = gunpowderinventions.27
+	title = gunpowderinventions.30.t
+	desc = gunpowderinventions.30.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+
+	trigger = {
+		ai = yes #
+		technology_group = chinese
+		has_global_flag = chinese_invention_activated
+		has_institution = gunpowder_institution
+		NOT = { has_country_modifier = founding_western_gunpowder }
+		NOT = { has_country_modifier = founding_ottoman_gunpowder }
+		NOT = { has_country_modifier = founding_chinese_gunpowder }
+		NOT = { has_country_flag = ai_select_new_gun_fix }
+	}	
+	
+	immediate = {
+		set_country_flag = ai_select_new_gun_fix
+	}	
+
+	option = {
+		name = gunpowderinventions.31.a	
+		country_event = { 
+			id = gunpowderinventions.21
+		}		
+	}
+}
+
+
+### 30-3X deals with removing modifiers
+country_event = { # The End if Nigh... for Early weapons
+	id = gunpowderinventions.30
+	title = gunpowderinventions.30.t
+	desc = gunpowderinventions.30.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		is_year = 1444
+		ai = no # To prevent potential lag
+		NOT = { has_country_flag = early_weapons_ending_soon }
+	}	
+	
+	immediate = {
+		set_country_flag = early_weapons_ending_soon
+	}	
+
+	option = {
+		name = gunpowderinventions.30.a	
+		custom_tooltip = mil_tech_13_warning
+		custom_tooltip = founders_keep_bonus
+		custom_tooltip = nations_without_siege_weapons_lose_bonus		
+	}
+}
+
+
+country_event = { # Removes all siege related modifiers for Mil tech 13 nations
+	id = gunpowderinventions.31
+	title = gunpowderinventions.30.t
+	desc = gunpowderinventions.30.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	hidden = yes
+
+	trigger = {
+		mil_tech = 13
+		OR = {
+			has_country_modifier = early_cannon_hwacha
+			has_country_modifier = early_cannon_early_cannons
+			has_country_modifier = siege_towers_early_cannon
+			has_country_modifier = trebuchets_early_cannon
+			has_country_modifier = chinese_rocketcart_gunpowder
+			has_country_modifier = ottoman_gun_of_urban_gunpowder
+			has_country_modifier = western_cannon_gunpowder
+		}	
+	}	
+
+	option = {
+		name = gunpowderinventions.31.a		
+		remove_country_modifier = early_cannon_hwacha
+		remove_country_modifier = early_cannon_early_cannons
+		remove_country_modifier = siege_towers_early_cannon
+		remove_country_modifier = trebuchets_early_cannon
+		remove_country_modifier = chinese_rocketcart_gunpowder
+		remove_country_modifier = ottoman_gun_of_urban_gunpowder
+		remove_country_modifier = western_cannon_gunpowder		
+	}
+}
+
+
+
+country_event = { # Remove modifiers for nations without Siege weapons initially
+	id = gunpowderinventions.32
+	title = gunpowderinventions.30.t
+	desc = gunpowderinventions.30.d
+	picture = MILITARY_CAMP_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	hidden = yes
+
+	trigger = {
+		is_year = 1465
+		OR = {
+			has_country_modifier = steppe_nomads_buff
+			has_country_modifier = african_siege_buff
+			has_country_modifier = natives_siege_buff
+		}	
+	}	
+
+	option = {
+		name = gunpowderinventions.31.a		
+		remove_country_modifier = steppe_nomads_buff
+		remove_country_modifier = african_siege_buff
+		remove_country_modifier = natives_siege_buff	
+	}
+}

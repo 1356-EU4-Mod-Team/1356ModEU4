@@ -1,0 +1,573 @@
+
+# Flavor Events for 1.31. Written by Genomega
+
+### Teutonic Order-Livionia Order relations
+country_event = { 
+	id = teutonic_flavor_1356.1
+	title = teutonic_flavor_1356.1.t
+	desc = teutonic_flavor_1356.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TEU
+		LIV = {
+			is_subject_of = TEU
+		}	
+	}
+	
+	mean_time_to_happen = {
+		months = 64
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 85
+		}		
+		name = teutonic_flavor_1356.1.a
+		custom_tooltip = teutonic_flavor_1356_tooltip.1
+		custom_tooltip = teutonic_flavor_1356_tooltip.2
+		add_prestige = 10
+		LIV = {
+			country_event = { id = teutonic_flavor_1356.2 }				
+			grant_independence = yes
+			add_country_modifier = {
+				name = granted_autonomy_of_livonia
+				duration = 9125
+			}	
+		}	
+		create_alliance = LIV
+		BOH = {
+			create_guarantee = TEU
+		}
+		BOH = {
+			create_guarantee = LIV
+		}			
+	}
+	option = {
+		ai_chance = {
+			factor = 15
+		}		
+		name = teutonic_flavor_1356.1.b
+		add_prestige = -25
+		remove_historical_friend = LIV
+		LIV = {
+			remove_historical_friend = TEU
+			add_liberty_desire = 15
+			add_trust = {
+				who = TEU
+				value = -60
+				mutual = yes
+			}				
+		}	
+		create_subject = {
+			subject_type = vassal
+			subject = LIV
+		}
+	}	
+}
+
+country_event = { 
+	id = teutonic_flavor_1356.2
+	title = teutonic_flavor_1356.2.t
+	desc = teutonic_flavor_1356.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = teutonic_flavor_1356.2.a
+		add_prestige = 25
+		add_casus_belli = {
+			target = LIT
+			type = cb_crusade_pheasants
+			months = 240
+		}	
+		add_casus_belli = {
+			target = TAK
+			type = cb_crusade_pheasants
+			months = 240
+		}	
+		add_casus_belli = {
+			target = SMG
+			type = cb_crusade_pheasants
+			months = 240
+		}		
+	}
+}
+
+
+
+### Rise of Tamerlane
+country_event = { 
+	id = timurid_emergence.1
+	title = timurid_emergence.1.t
+	desc = timurid_emergence.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TRS
+		is_year = 1367
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 80
+		}		
+		name = timurid_emergence.1.a
+		custom_tooltip = timurid_emergence_tooltip.1
+		custom_tooltip = timurid_emergence_tooltip.2
+		custom_tooltip = timurid_emergence_tooltip.3
+		custom_tooltip = timurid_emergence_tooltip.4		
+		add_prestige = 50
+		add_mil_power = 100
+		add_adm_power = 100
+		add_dip_power = 100	
+		define_heir = {
+			name = "Timur"
+			monarch_name = "Timur I"
+			dynasty = "Barlas"
+			adm = 6
+			dip = 5
+			mil = 6
+			birth_date = 1336.4.9
+			fixed = yes
+		}	
+		hidden_effect = {
+			exile_ruler_as = last_transoxiana_borijin
+			add_truce_with = BLU
+			add_truce_with = CHG
+			add_treasury = 350
+			add_manpower = 25
+			BLU = {
+				add_truce_with = TRS
+			}
+			CHG = {
+				add_truce_with = TRS
+			}	
+			add_stability = 5
+			define_ruler_to_general = {
+				fire = 6
+				shock = 6
+				manuever = 5
+				siege = 4
+			}	
+			set_ruler_flag = is_tamerlane
+			add_government_reform = tribal_rule_by_might_reform
+			grant_independence = yes
+			clear_scripted_personalities = yes
+			add_ruler_personality = immortal_personality
+			add_ruler_personality = timur_ae_modifier
+			add_ruler_personality = timur_combat_modifier
+			KHI = {
+				country_event = { id = timurid_emergence.2 }
+			}	
+			# Opinion so Timur won't ally 
+			add_opinion = {
+				who = HER
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = AFG
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = RAD
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = KHO
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = MUZ
+				modifier = busy_conquering_the_world_and_your_next
+			}	
+			add_opinion = {
+				who = SIS
+				modifier = busy_conquering_the_world_and_your_next
+			}	
+			add_opinion = {
+				who = BAL
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = TAB
+				modifier = busy_conquering_the_world_and_your_next
+			}	
+			add_opinion = {
+				who = CHB
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = KRY
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = RHT
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = BPI
+				modifier = busy_conquering_the_world_and_your_next
+			}		
+			add_opinion = {
+				who = IDA
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = ARD
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = JLR
+				modifier = busy_conquering_the_world_and_your_next
+			}		
+			add_opinion = {
+				who = DLH
+				modifier = busy_conquering_the_world_and_your_next
+			}	
+			add_opinion = {
+				who = SND
+				modifier = busy_conquering_the_world_and_your_next
+			}	
+			add_opinion = {
+				who = KSH
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = KGR
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = FRS
+				modifier = busy_conquering_the_world_and_your_next
+			}
+			add_opinion = {
+				who = LRI
+				modifier = busy_conquering_the_world_and_your_next
+			}				
+			#Nations that will fear Timur
+			reverse_add_opinion = {
+				who = HER
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = AFG
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = RAD
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = KHO
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = MUZ
+				modifier = tamerlane_threat_persia
+			}	
+			reverse_add_opinion = {
+				who = SIS
+				modifier = tamerlane_threat_persia
+			}	
+			reverse_add_opinion = {
+				who = BAL
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = TAB
+				modifier = tamerlane_threat_persia
+			}	
+			reverse_add_opinion = {
+				who = CHB
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = KRY
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = RHT
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = BPI
+				modifier = tamerlane_threat_persia
+			}		
+			reverse_add_opinion = {
+				who = IDA
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = ARD
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = JLR
+				modifier = tamerlane_threat_persia
+			}		
+			reverse_add_opinion = {
+				who = DLH
+				modifier = tamerlane_threat_persia
+			}	
+			reverse_add_opinion = {
+				who = SND
+				modifier = tamerlane_threat_persia
+			}	
+			reverse_add_opinion = {
+				who = KSH
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = KGR
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = LRI
+				modifier = tamerlane_threat_persia
+			}
+			reverse_add_opinion = {
+				who = FRS
+				modifier = tamerlane_threat_persia
+			}				
+			# Mongol Nations who got pissed at dethroning a Borigjin
+			reverse_add_opinion = {
+				who = CHG
+				modifier = tamerlane_dethroned_borjigin
+			}	
+			reverse_add_opinion = {
+				who = BLU
+				modifier = tamerlane_dethroned_borjigin
+			}		
+			reverse_add_opinion = {
+				who = KHA
+				modifier = tamerlane_dethroned_borjigin
+			}	
+			reverse_add_opinion = {
+				who = WHI
+				modifier = tamerlane_dethroned_borjigin
+			}	
+			reverse_add_opinion = {
+				who = YUA
+				modifier = tamerlane_dethroned_borjigin
+			}			
+		}	
+	}
+	option = {
+		ai_chance = {
+			factor = 15
+		}		
+		name = timurid_emergence.1.b
+		add_prestige = -10
+		define_general = {
+			shock = 6
+			fire = 6
+			manuever = 5
+			siege = 4
+			name = "Timur Barlas"
+			age = 40
+			fixed = yes
+		}	
+	}	
+	option = {
+		ai_chance = {
+			factor = 5
+		}		
+		name = timurid_emergence.1.c
+		add_prestige = 25
+		add_mil_power = 250
+	}	
+}
+
+
+country_event = { # Fate of Khiva - Khiva Decides
+	id = timurid_emergence.2
+	title = timurid_emergence.2.t
+	desc = timurid_emergence.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Says yes
+		ai_chance = {
+			factor = 80
+		}	
+		name = timurid_emergence.2.a	
+		set_global_flag = tamerlane_arrived_in_transoixana		
+		TRS = {
+			country_event = { id = timurid_emergence.3 days = 5 }
+		}	
+	}
+	option = { # Says No
+		ai_chance = {
+			factor = 20
+		}	
+		name = timurid_emergence.2.b	
+		set_global_flag = tamerlane_arrived_in_transoixana		
+		add_prestige = 25
+		TRS = {
+			country_event = { id = timurid_emergence.4 days = 5 }
+		}		
+	}	
+}
+
+country_event = { # Fate of Khiva - Accepts
+	id = timurid_emergence.3
+	title = timurid_emergence.3.t
+	desc = timurid_emergence.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Perfection
+		name = timurid_emergence.3.a	
+		add_prestige = 10
+		random_owned_province = {
+			build_to_forcelimit = {
+				infantry = 0.5
+				cavalry = 0.5
+			}
+		}		
+		create_subject = {
+			subject_type = vassal
+			subject = KHI
+		}	
+		KHI = {
+			add_liberty_desire = -20
+		}	
+	}	
+}
+
+country_event = { # Khiva Declines
+	id = timurid_emergence.4
+	title = timurid_emergence.4.t
+	desc = timurid_emergence.4.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # It can't be helped
+		name = timurid_emergence.4.a
+		random_owned_province = {
+			build_to_forcelimit = {
+				infantry = 0.5
+				cavalry = 0.5
+			}
+		}		
+		438 = {
+			add_core = TRS
+		}
+		2370 = {
+			add_core = TRS
+		}	
+		2362 = {
+			add_core = TRS
+		}	
+		443 = {
+			add_core = TRS
+		}	
+		439 = {
+			add_core = TRS
+		}				
+	}
+}
+
+
+country_event = { # Tamerlane dies - By combat 
+	id = timurid_emergence.5
+	title = timurid_emergence.5.t
+	desc = timurid_emergence.5.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	
+	trigger = {
+		NOT = { has_ruler_flag = is_tamerlane }
+		has_global_flag = tamerlane_arrived_in_transoixana
+		NOT = { has_global_flag = tamerlane_is_dead }
+		OR = {
+			tag = TRS
+			tag = TIM
+		}
+	}	
+	
+	option = { 
+		set_global_flag = tamerlane_is_dead
+		name = timurid_emergence.5.a	
+	}	
+}
+
+country_event = { # Tamerlane dies - By natural causes
+	id = timurid_emergence.6
+	title = timurid_emergence.5.t
+	desc = timurid_emergence.5.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = {
+		months = 36
+	}	
+	
+	trigger = { 
+		has_ruler_flag = is_tamerlane
+		NOT = { has_global_flag = tamerlane_is_dead }
+		has_global_flag = tamerlane_arrived_in_transoixana
+		is_year = 1400
+		OR = {
+			tag = TRS
+			tag = TIM
+		}	
+	}	
+	
+	option = { 
+		name = timurid_emergence.5.a	
+		set_global_flag = tamerlane_is_dead
+	}	
+}
+
+
+country_event = { # Timurid dynasty forms
+	id = timurid_emergence.7
+	title = timurid_emergence.5.t
+	desc = timurid_emergence.5.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = { 
+		trigger = {
+			ai = no
+		}	
+		name = timurid_emergence.5.a	
+		set_dynasty = "Timurid"
+	}
+	option = { 
+		trigger = {
+			ai = yes
+		}	
+		name = timurid_emergence.5.a	
+		set_dynasty = "Timurid"
+		add_country_modifier = {
+			name = "luck"
+			duration = -1
+		}	
+	}		
+}

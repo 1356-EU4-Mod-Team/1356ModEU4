@@ -23,7 +23,7 @@ discovered_by = east_african
 extra_cost = 16
 center_of_trade = 2
 
-add_province_triggered_modifier = 1356_madrassa_mosque_great_project_province_modifier #1356 
+#add_province_triggered_modifier = 1356_madrassa_mosque_great_project_province_modifier #1356 
 
 1517.1.1 = {	owner = TUR
 	controller = TUR

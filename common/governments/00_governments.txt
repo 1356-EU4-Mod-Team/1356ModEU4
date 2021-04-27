@@ -92,9 +92,9 @@ monarchy = {
 				bahamis_sultanate_reform
 				vij_government_reform
 				gondi_kingdom_kingdom_reform
-				german_kingdom
+				german_kingdoms
 				golden_bull_federation_government
-				golden_bull_composite_monarchy
+				high_feudal_monarchy_reform
 				#####END 1356 CHANGES#####
 			}
 		}
@@ -215,7 +215,6 @@ monarchy = {
 		earldom_reform
 		beylik_reform
 		golden_bull_federation_government
-		golden_bull_composite_monarchy
 		#####END 1356 CHANGES#####
 	}
 
@@ -228,6 +227,7 @@ monarchy = {
 		nepotism_reform
 		lottery_reform
 		dutch_republic
+		novgorod_republic
 	}
 
 	#States General works with few others
@@ -253,6 +253,7 @@ monarchy = {
 		vij_government_reform
 		gondi_kingdom_kingdom_reform
 		golden_bull_federation_government
+		novgorod_republic
 		#####END 1356 CHANGES#####
 		
 	}
@@ -341,6 +342,7 @@ republic = {
 				viking_republic_reform
 				caspian_peasants_republic_reform
 				tsardom_republic
+				novgorod_republic
 				#####1356 Additions End#####
 			}
 		}
@@ -355,6 +357,9 @@ republic = {
 				liberte_reform
 				egalite_reform
 				fraternite_reform
+				nov_delegated_power_to_veche
+				nov_promote_local_boyars
+				nov_favor_princely_ties
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -457,6 +462,7 @@ republic = {
 		ahm_republic_reform
 		viking_republic_reform
 		caspian_peasants_republic_reform
+		novgorod_republic
 		######End 1356 Changes#####
 	}
 	exclusive_reforms = {
@@ -517,6 +523,14 @@ tribal = {
 				#####END 1356 CHANGES#####
 			}
 		}
+		tribal_1356_inheritance = {
+			reforms = {
+				subvert_rival_clans_reform_tribes
+				mongolic_succession_reforms_tribes
+				tribal_rule_by_might_reform
+				tribal_hereditary_succession
+			}		
+		}
 		tribal_cultural_values = {
 			reforms = {
 				martial_society_reform
@@ -529,6 +543,14 @@ tribal = {
 				lip_service_reform
 			}
 		}
+		tribal_winds_of_change = {
+			reforms = {
+				formalize_noble_caste_tribal
+				formalize_clergical_caste_tribal
+				grow_trade_relations_tribal
+				fortify_structure_of_the_tribe_tribal
+			}			
+		}		
 		tribal_modernization = {
 			reforms = {
 				centralize_tribal_power_reform
@@ -543,6 +565,7 @@ tribal = {
 				tribe_becomes_republic_reform
 				tribe_becomes_theocracy_reform
 				tribe_becomes_horde_reform
+				delegate_power_to_clan_leaders_tribal
 			}
 		}
 	}
@@ -578,7 +601,6 @@ theocracy = { #1356
 				holy_state_reform
 				united_cantons_reform
 				patriarch_government_reform #1356
-				avignon_papacy_government #1356
 			}
 		}
 		internal_vs_external_mission = {

@@ -790,6 +790,7 @@ veche_republic = {
 	icon = "merchant"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { have_had_reform = novgorod_republic }
 		OR = {
 			AND = {
 				culture_group = east_slavic
@@ -1121,7 +1122,7 @@ cossacks_reform = {
 
 ######1356 Changes#####
 
-novgorod_republic_gov = { #The New Russian Noble Republic Government
+novgorod_republic_gov = { #The New Russian Noble Republic Government ### For Russia tag specifically
 	icon = "russian_principality"
 	allow_normal_conversion = yes
 	potential = {
@@ -1171,6 +1172,177 @@ novgorod_republic_gov = { #The New Russian Noble Republic Government
 		}
 	}
 }
+
+novgorod_republic = { # For Novgorod ONLY
+	icon = "novgorod_republic"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = novgorod_republic
+	}
+	nation_designer_trigger = {
+		culture_group = east_slavic
+	}
+	modifiers = {
+		max_absolutism = -50
+		shock_damage_received = -0.10
+		nobles_influence_modifier = 0.10
+		burghers_influence_modifier = 0.10
+		church_influence_modifier = 0.10
+	}
+	
+	republican_name = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	boost_income = yes
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+		has_term_election = no
+		ruler_reigns_until_death_or_appointment = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+			NOT = { has_dlc = "Third Rome" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+			NOT = { has_dlc = "Third Rome" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Third Rome" }
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			NOT = { has_dlc = "Mare Nostrum" }
+			NOT = { has_dlc = "Res Publica" }
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			NOT = { has_dlc = "Mare Nostrum" }
+			has_dlc = "Res Publica"
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			has_dlc = "Mare Nostrum"
+			has_dlc = "Res Publica"
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+}
+
+nov_delegated_power_to_veche = { # For Novgorod ONLY tier 2
+	icon = "nov_delegated_power_to_veche"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = novgorod_republic
+	}
+	modifiers = {
+		merchants = 1
+		republican_tradition = 0.3
+		governing_capacity = 50
+	}
+	
+	republican_name = yes
+	duration = 4
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_term_election = yes
+		abolishes_novgordian_succession = yes
+	}
+}
+
+nov_promote_local_boyars = { # For Novgorod ONLY tier 2
+	icon = "nov_promote_local_boyars"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = novgorod_republic
+	}
+	modifiers = {
+		republican_tradition = -0.25
+		nobles_loyalty_modifier = 0.10
+		nobles_influence_modifier = -0.10
+		stability_cost_modifier = -0.1
+	}
+	
+	custom_attributes = {	
+		improves_boyars_attributes = yes
+	}
+}
+
+nov_favor_princely_ties = { # For Novgorod ONLY tier 2
+	icon = "nov_favor_princely_ties"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = novgorod_republic
+	}
+	modifiers = {
+		republican_tradition = -0.5
+		max_absolutism = 25
+		leader_land_shock = 1
+	}
+	
+	custom_attributes = {
+		improves_prince_attributes = yes
+	}
+}
+
 
 #swiss_canton_reform = { #Maybe give it access to Parlament mechanics?
 #	icon = "free_city"
@@ -1351,6 +1523,7 @@ republican_authoritarianism_reform = {
 	icon = "merchant"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = novgorod_republic }
 		NOT = {
 			has_reform = pirate_republic_reform
 		}
@@ -1371,6 +1544,7 @@ nepotism_reform = {
 	icon = "man_and_children"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = novgorod_republic }
 		NOT = {
 			has_reform = pirate_republic_reform
 		}
@@ -1396,6 +1570,7 @@ republicanism_reform = {
 	icon = "assembly_hall"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = novgorod_republic }
 		NOT = {
 			has_reform = pirate_republic_reform
 		}
@@ -1571,6 +1746,8 @@ lottery_reform = {
 				has_reform = military_dictatorship_reform
 				has_reform = admiralty_reform
 				has_reform = prussian_republic
+				has_reform = nov_favor_princely_ties
+				has_reform = nov_promote_local_boyars
 			}
 		}
 	}

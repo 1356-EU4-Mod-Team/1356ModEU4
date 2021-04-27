@@ -7,6 +7,17 @@ technology_group = muslim
 capital = 4296 # Bitlis
 religious_school = shafii_school
 
+1353.1.1 = { # Some Evidence seems to support rule by a Rojaki under the last days of the Ilkhanate?
+	monarch = {
+		name = "Ashot"
+		dynasty = "Rojaki"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+
 1440.1.1 = {
 	monarch = {
 		name = "Bidlo"
