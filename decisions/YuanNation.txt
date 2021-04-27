@@ -75,6 +75,9 @@ country_decisions = {
 			owns_core_province = 1816 #Beijing
 			owns_core_province = 2190 #Qaraqorum
 			owns_core_province = 2136 #Xuanha
+			1816 = {					#Beijing
+				is_state = yes
+			}
 			custom_trigger_tooltip = {
 				tooltip = subject_all_mongols
 				NOT = {
