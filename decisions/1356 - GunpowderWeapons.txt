@@ -1,0 +1,113 @@
+country_decisions = {
+
+	early_siege_weapons_mega_decision = { # This deals with early game Siege Tech
+		potential = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
+				technology_group = ottoman
+				technology_group = chinese
+				technology_group = indian
+			}		
+			NOT = { mil_tech = 13 }
+			NOT = { has_country_modifier = natives_siege_buff } 
+			NOT = { has_country_modifier = african_siege_buff } 
+			NOT = { has_country_modifier = steppe_nomads_buff } 
+		}
+		allow = {
+			mil_tech = 5
+			NOT = { mil_tech = 13 }
+			custom_trigger_tooltip = {
+				tooltip = has_selected_a_siege_weapon
+				has_country_flag = can_use_early_siege
+			}	
+			NOT = { has_country_modifier = early_siege_cant_choose } 
+		}		
+		effect = {
+			country_event = { 
+				id = gunpowderinventions.21	
+			}	
+		}	
+		ai_will_do = { # AI will currently only switch when they embrace gunpowder
+			factor = 0
+		}		
+	}		
+	
+	muslim_nations_handcannon_purchase = {
+		potential = {
+			technology_group = muslim
+			has_global_flag = muslim_invention_activated
+			NOT = { has_country_modifier = muslim_handcannon_gunpowder }
+			NOT = { has_country_flag = purchased_handcannon }
+			NOT = { is_year = 1465 }
+		}
+		allow = {
+			has_global_flag = muslim_invention_activated
+			treasury = 150
+			has_institution = gunpowder_institution
+		}		
+		effect = {
+			set_country_flag = purchased_handcannon
+			add_treasury = -150
+			add_country_modifier = {
+				name = "muslim_handcannon_gunpowder"
+				duration = 12775
+			}	
+		}	
+		ai_will_do = { # AI will currently only switch when they embrace gunpowder
+			factor = 1
+		}			
+	}
+
+	eastern_nations_arquebus_experiments = {
+		potential = {
+			technology_group = eastern
+			has_global_flag = eastern_invention_activated
+			NOT = { has_country_modifier = eastern_arquebus_gunpowder }
+			NOT = { has_country_flag = purchased_arquebus }
+			NOT = { is_year = 1465 }
+		}
+		allow = {
+			has_global_flag = eastern_invention_activated
+			treasury = 100
+			has_institution = gunpowder_institution
+		}		
+		effect = {
+			set_country_flag = purchased_arquebus
+			add_treasury = -100
+			add_country_modifier = {
+				name = "eastern_arquebus_gunpowder"
+				duration = 12775
+			}	
+		}	
+		ai_will_do = { # AI will currently only switch when they embrace gunpowder
+			factor = 1
+		}			
+	}	
+
+	reform_government_old_reforms = { # Transition out of Feudal age
+		potential = {
+			is_year = 1435
+			OR = {
+				technology_group = western
+				technology_group = eastern
+			}
+			OR = {
+				has_reform = high_feudal_monarchy_reform
+				has_reform = elective_feudal_monarchy_reform
+			}	
+		}
+		allow = {
+			government_reform_progress = 15
+			adm_tech = 9
+		}		
+		effect = {
+			change_government_reform_progress = -15
+			add_government_reform = feudalism_reform
+		}	
+		ai_will_do = { # AI will currently only switch when they embrace gunpowder
+			factor = 1000
+		}			
+	}	
+}	

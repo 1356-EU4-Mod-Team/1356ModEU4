@@ -19,18 +19,20 @@ country_decisions = {
 				AND = {
 					ai = yes
 					num_of_cities = 15
-					adm_tech = 20
+					adm_tech = 26 #1356 # was 26
 				}
 			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					NOT = { government = theocracy }
-				}
-			}
+			#OR = {
+			#	ai = no
+			#	AND = {
+			#		ai = yes
+			#		NOT = { government = theocracy }
+			#	}
+			#}
 			culture_group = germanic
 			NOT = { primary_culture = dutch }
+			NOT = { primary_culture = frisian } #1356
+			NOT = { primary_culture = flemish } #1356
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -194,7 +196,7 @@ country_decisions = {
 			emperor = {
 				country_event = { id = hre_event.5 }
 			}
-			set_government_rank = 3
+			GER = { set_government_rank = 3 }
 			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
