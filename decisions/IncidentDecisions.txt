@@ -4,7 +4,7 @@ country_decisions = {
 		potential = {
 			is_emperor = yes
 			NOT = { has_global_flag = italians_leave_hre }
-			is_year = 1440 #1356
+			is_year = 1445 #1356
 			NOT = { is_year = 1500 }
 		}		
 		allow = {

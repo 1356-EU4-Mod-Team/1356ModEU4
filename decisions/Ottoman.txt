@@ -23,10 +23,14 @@ country_decisions = {
 			owns = 149		# Edirne
 			owns = 316		# Bithnyia
 			owns = 317		# Bursa
-			owns = 1764		# Burgas			
+			owns = 1764		# Burgas		
+			151 = {
+				is_state = yes
+			}
 		}
 		effect = {
 			set_country_flag = relocated_capital_constantinople
+			set_global_flag = greek_need_restore_constantinople
 			add_stability = 1
 			add_core = 151
 			151 = {
@@ -51,6 +55,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		do_not_core = 151 # Constantinople
 	}
 
 	provincial_system = { #1356 - Changed Tech
