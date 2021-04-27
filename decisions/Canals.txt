@@ -15,15 +15,27 @@ country_decisions = {
 			has_discovered = 4141
 			1775 = {
 				range = ROOT
-				NOT = { has_great_project = kiel_canal }
-				NOT = { has_construction = canal }
+				NOT = { 
+					has_great_project = { 
+						type = kiel_canal 
+					}
+				}
+				NOT = { 
+					has_construction = kiel_canal
+				}
 			}
 			4141 = {
 				range = ROOT
-				NOT = { has_great_project = kiel_canal }
-				NOT = { has_construction = canal }
+				NOT = { 
+					has_great_project = {
+						type = kiel_canal 
+					}
+				}
+				NOT = { 
+					has_construction = kiel_canal
+				}
 			}
-			adm_tech = 26 #Orignal is 20
+			adm_tech = 24 #Orignal is 18
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -43,7 +55,6 @@ country_decisions = {
 			treasury = 10000
 		}
 		effect = {
-			add_treasury = -10000
 			1775 = {	# Holstein
 				add_great_project = kiel_canal
 			}
@@ -66,10 +77,16 @@ country_decisions = {
 			has_discovered = 4316
 			4316 = {
 				range = ROOT
-				NOT = { has_great_project = suez_canal }
-				NOT = { has_construction = canal }
+				NOT = { 
+					has_great_project = {
+						type = suez_canal 
+					}
+				}
+				NOT = { 
+					has_construction = suez_canal
+				}
 			}
-			adm_tech = 26 #Orignal is 20
+			adm_tech = 24 #Orignal is 18
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -89,7 +106,6 @@ country_decisions = {
 			treasury = 20000
 		}
 		effect = {
-			add_treasury = -20000
 			4316 = {	# Sharqiya
 				add_great_project = suez_canal
 			}
@@ -113,8 +129,14 @@ country_decisions = {
 			has_discovered = 835
 			835 = {
 				range = ROOT
-				NOT = { has_great_project = panama_canal }
-				NOT = { has_construction = canal }
+				NOT = { 
+					has_great_project = {
+						type = panama_canal 
+					}
+				}
+				NOT = { 
+					has_construction = panama_canal 
+				}
 			}
 			adm_tech = 26 #Orignal is 20
 		}
@@ -128,11 +150,10 @@ country_decisions = {
 		allow = {
 			owns_or_vassal_of = 835
 			is_subject = no
-			adm_tech = 32 #Orignal is 26
+			adm_tech = 28 #Orignal is 22
 			treasury = 30000
 		}
 		effect = {
-			add_treasury = -30000
 			835 = {	# Panama
 				add_great_project = panama_canal
 			}

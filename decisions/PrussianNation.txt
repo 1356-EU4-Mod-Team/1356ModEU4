@@ -1,62 +1,6 @@
 country_decisions = {
 
-	institute_prussian_republic = {
-		major = yes
-		potential = {
-			always = no
-			NOT = {
-				OR = {
-					has_dlc = "Dharma" 
-					has_dlc = "Emperor"
-				}
-			}
-			normal_or_historical_nations = yes
-			tag = PRU
-			government = republic
-			NOT = { has_reform = prussian_republic }
-		}
-
-		allow = {
-			OR = {
-				religion = protestant
-				religion = reformed
-				religion = hussite  #1356
-			}
-		}
-
-		effect = {
-			add_government_reform = prussian_republic
-		}
-	}
-	
-	institute_prussian_monarchy = {
-		major = yes
-		potential = {
-			always = no
-			NOT = {
-				OR = {
-					has_dlc = "Dharma" 
-					has_dlc = "Emperor"
-				}
-			}
-			normal_or_historical_nations = yes
-			tag = PRU
-			government = monarchy
-			NOT = { has_reform = prussian_monarchy_legacy }
-		}
-
-		allow = {
-			OR = {
-				religion = protestant
-				religion = reformed
-				religion = hussite  #1356
-			}
-		}
-
-		effect = {
-			add_government_reform = prussian_monarchy
-		}
-	}
+	#Removed defunct pre dharma decisions about governments
 
 	form_kingdom_of_prussia = {
 		major = yes
@@ -73,6 +17,12 @@ country_decisions = {
 			OR = {
 				NOT = { exists = PRU }
 				ai = no
+			}
+			OR = {
+				ai = no
+				is_religion_enabled = protestant
+				is_religion_enabled = reformed
+				is_religion_enabled = anglican
 			}
 		}
 		provinces_to_highlight = {
@@ -98,7 +48,8 @@ country_decisions = {
 			OR = {
 				religion = protestant
 				religion = reformed
-				religion = hussite  #1356
+				religion = hussite 
+				religion = anglican 
 			}
 			owns_core_province = 41			# Königsberg
 			OR = {
@@ -135,6 +86,7 @@ country_decisions = {
 						culture = pommeranian
 						culture = saxon
 						culture = prussian
+						culture = berliner #1356
 					}
 				}
 				add_base_tax = 1
@@ -170,6 +122,7 @@ country_decisions = {
 						OR = {
 							culture = saxon
 							culture = pommeranian
+							culture = berliner #1356
 						}
 					} 
 					change_culture = prussian
@@ -213,6 +166,12 @@ country_decisions = {
 				NOT = { exists = PRU }
 				ai = no
 			}
+			OR = {
+				ai = no
+				is_religion_enabled = protestant
+				is_religion_enabled = reformed
+				is_religion_enabled = anglican
+			}
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -236,9 +195,13 @@ country_decisions = {
 			OR = {
 				religion = reformed
 				religion = protestant
-				religion = hussite  #1356
+				religion = hussite
+				religion = anglican
 			}
 			owns_core_province = 41 # Königsberg
+			41 = { 					# Königsberg
+				is_state = yes
+			}
 		}
 		effect = {
 			41 = {
@@ -262,6 +225,7 @@ country_decisions = {
 			add_prestige = 25
 			if =  {
 				limit = {
+					is_revolutionary = no
 					NOT = {
 						government = republic
 					}
@@ -269,7 +233,10 @@ country_decisions = {
 				change_government_to_monarchy = yes
 				add_government_reform = prussian_monarchy
 			}
-			else = {
+			else_if = {
+				limit = {
+					is_revolutionary = no
+				}
 				add_government_reform = prussian_republic_reform
 			}
 			if = {
@@ -311,10 +278,16 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				ai = no
+				is_religion_enabled = protestant
+				is_religion_enabled = reformed
+				is_religion_enabled = anglican
+			}
+			OR = {
 				primary_culture = pommeranian
 				primary_culture = saxon
 				primary_culture = prussian
-				primary_culture = markish
+				primary_culture = markish #1356
 			}
 			NOT = { tag = PRU }
 			OR = {
@@ -365,7 +338,8 @@ country_decisions = {
 			OR = {
 				religion = reformed
 				religion = protestant
-				religion = hussite #1356
+				religion = hussite
+				religion = anglican
 			}
 			owns_core_province = 41			# Königsberg
 			owns_core_province = 42			# Warmia
@@ -400,6 +374,7 @@ country_decisions = {
 			}
 			if =  {
 				limit = {
+					is_revolutionary = no
 					NOT = {
 						government = republic
 					}
@@ -407,7 +382,10 @@ country_decisions = {
 				change_government_to_monarchy = yes
 				add_government_reform = prussian_monarchy
 			}
-			else = {
+			else_if = {
+				limit = {
+					is_revolutionary = no
+				}
 				add_government_reform = prussian_republic_reform
 			}
 			if = {
@@ -427,6 +405,7 @@ country_decisions = {
 					OR = {
 						culture = saxon
 						culture = pommeranian
+						culture = berliner #1356
 					}
 				} 
 				change_culture = prussian

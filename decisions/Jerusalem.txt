@@ -64,6 +64,18 @@ country_decisions = {
 			379 = {
 				is_state = yes
 			}
+			if = {
+				limit = {
+					OR = {
+						tag = KNI
+						tag = CYP
+						tag = PRO
+						has_mission = EMP_crusader_antioch
+					}
+					was_never_end_game_tag_trigger = yes
+				}
+				is_emperor = no
+			}
 		}
 		effect = {
 			add_prestige = 25
@@ -136,7 +148,7 @@ country_decisions = {
 				limit = { tag = KNI }
 				set_country_flag = knights_formed_jerusalem
 			}
-				KOJ = {
+			KOJ = {
 				set_capital = 379 #Jerusalem
 				change_religion = catholic
 				if = {
@@ -145,14 +157,14 @@ country_decisions = {
 					}
 					change_government_to_monarchy = yes
 					add_government_reform = holy_state_reform
-					#set_legacy_government = holy_state_legacy
+
 				}
 				else_if = {
 					limit = {
 						government = theocracy
 					}
 					add_government_reform = holy_state_reform
-					#set_legacy_government = holy_state_theocracy
+
 				}
 				if = {
 					limit = {

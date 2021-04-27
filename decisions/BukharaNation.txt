@@ -7,10 +7,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_bukhara_flag }
 			OR = { #1356
-				primary_culture = uzbehk
-				primary_culture = turkmeni
-				primary_culture = khazak
-				primary_culture = nogaybak
+				culture_group = altaic #1356
 				tag = SHY
 			}
 			OR = {
@@ -41,23 +38,21 @@ country_decisions = {
 		}
 		allow = {
 			religion_group = muslim #1356
+			adm_tech = 16 #1356
 			has_institution = feudalism
 			OR = { #1356
-				primary_culture = uzbehk
-				primary_culture = turkmeni
-				primary_culture = khazak
-				primary_culture = nogaybak
+				culture_group = altaic #1356
 				tag = SHY
 			}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 442 #Bukhara
-			owns_core_province = 446 #Herat
-			owns_core_province = 1970 #Syghnak
+			442 = {						#Bukhara				
+				is_state = yes
+			}
 			NOT = { 
 				overlord_of = SIB
 			}
-			adm_tech = 16 #1356
 		}
 		
 		effect = {
