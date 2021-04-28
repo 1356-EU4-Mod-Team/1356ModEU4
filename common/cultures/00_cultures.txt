@@ -6727,7 +6727,7 @@ east_asian = {	# Chinese Group #1356
 		Dong Lin Shen Ouyang Su Yu Ren Chai Xia Mo Dai Jiang Yue Jia Xiong Cui
 	}
 }
-
+}
 korean_g = {
 	graphical_culture = asiangfx
 	
