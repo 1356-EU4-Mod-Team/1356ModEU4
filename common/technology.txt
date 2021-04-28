@@ -154,7 +154,6 @@ groups = {
 		nation_designer_unit_type = south_american
 		is_primitive = yes
 	}	
-	
 	aboriginal_tech = {
 		start_level = 1
 		start_cost_modifier = 2.5
@@ -171,7 +170,6 @@ groups = {
 			value = 50
 		}
 	}
-	
 	
 	high_american = {
 		start_level = 3
