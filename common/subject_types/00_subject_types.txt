@@ -89,6 +89,7 @@ default = {
 	is_colony_subtype = no
 	is_march = no
 	forms_trade_companies = yes
+	can_concentrate_development = yes
 	max_government_rank = 0								# 0 means no limit
 	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
 	trust_on_start = 35									# Overlord and subject will each get this much extra trust with each other at game start
@@ -284,6 +285,7 @@ daimyo_vassal = {
 	allows_taking_land_without_independence = yes
 	can_use_claims = no
 	forms_trade_companies = no
+	can_concentrate_development = no
 
 	trust_on_start = 0
 	
@@ -363,6 +365,7 @@ personal_union = {
 	can_have_subjects_of_other_types = yes
 	can_union_break = yes
 	transfer_subjects_when_made = yes
+	can_concentrate_development = no
 
 	liberty_desire_negative_prestige = 1.0
 	military_focus = 0.66
@@ -445,6 +448,8 @@ colony = {
 	overlord_enforce_peace_attacking = yes
 	can_transfer_in_peace = no
 	press_sailors = yes
+	transfer_trade_power = yes
+	can_concentrate_development = no
 	
 	liberty_desire_development_ratio = 0.1
 
@@ -452,7 +457,7 @@ colony = {
 	cities_required_for_bonuses = 10
 
 	relative_power_class = 0
-	liberty_desire_revolution = 0
+	should_quit_wars_on_activation = yes
 
 	can_fight = {
 		other_overlord = colony
@@ -572,7 +577,7 @@ self_governing_colony = {
 	sailors_to_overlord = 0.05
 
 	# Subject Interactions:
-	transfer_trade_power = no
+
 	replace_governor = no
 	block_settlement_growth = no
 	allow_settlement_growth = no
@@ -640,6 +645,7 @@ tributary_state = {
 	can_send_missionary_to_subject = no
 	overlord_can_fabricate_for = no
 	does_overlord_size_count_for_warscore_cost = no
+	can_concentrate_development = no
 	
 	liberty_desire_development_ratio = 0.175
 	trust_on_start = 0

@@ -19,7 +19,7 @@ discovered_by = north_american
 1356.12.26 = { owner = --- controller = ---
 	culture = cree
 	religion = totemism
-	discovered_by = NOR
+	#discovered_by = NOR
 	remove_core = VIK
 	base_tax = 2
 	base_production = 2

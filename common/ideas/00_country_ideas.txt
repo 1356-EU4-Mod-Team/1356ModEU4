@@ -5615,7 +5615,7 @@ CYA_ideas = {
 		diplomatic_reputation = 1		
 	}
 	cya_idea_5 = {
-		enemy_core_creation = 0.25
+		advisor_cost = -0.10
 	}
 	cya_idea_6 = {
 		prestige = 1

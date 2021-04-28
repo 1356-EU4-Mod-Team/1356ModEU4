@@ -82,100 +82,102 @@ country_event = {
 	}
 }
 
-country_event = { #Maintance event for vinland
-	id = icelandflavor.2
-	title = icelandflavor.2.t
-	desc = icelandflavor.2.d
-	picture = BARBARY_PIRATES_eventPicture
-	
-	fire_only_once = yes
 
-	trigger = {
-		tag = NOR
-		is_year = 1360
-		NOT = { is_year = 1400 }
-		owns = 1104
-		owns = 1105
-		owns = 980
-	}
+## Maintenance Events relating to Greenland and Vinland disabled to do gamebreaking bug with cede_province = ---
+# country_event = { #Maintance event for vinland
+	# id = icelandflavor.2
+	# title = icelandflavor.2.t
+	# desc = icelandflavor.2.d
+	# picture = BARBARY_PIRATES_eventPicture
 	
-	mean_time_to_happen = {
-		months = 90
-	}
+	# fire_only_once = yes
+
+	# trigger = {
+		# tag = NOR
+		# is_year = 1360
+		# NOT = { is_year = 1400 }
+		# owns = 1104
+		# owns = 1105
+		# owns = 980
+	# }
+	
+	# mean_time_to_happen = {
+		# months = 90
+	# }
 		
-	option = { #Everything for our far away brothers!
-		name = icelandflavor.2.a
-		ai_chance = { factor = 0 }
-		add_treasury = -300
-		add_adm_power = -10
-		980 = {
-			add_base_production = 2
-			add_base_tax = 1
-		}
-	}
-	option = { #This may cost too much. Let us bring as many home as possible.
-		name = icelandflavor.2.b
-		ai_chance = { factor = 100 }
-		add_manpower = 2
-		980 = {
-			remove_core = NOR
-			cede_province = ---
-			change_culture = cree
-			change_religion = totemism
-		}
-		country_event = { 
-			id = icelandflavor.3
-			days = 200
-			random = 180
-		}
-	}
-}
+	# option = { #Everything for our far away brothers!
+		# name = icelandflavor.2.a
+		# ai_chance = { factor = 0 }
+		# add_treasury = -300
+		# add_adm_power = -10
+		# 980 = {
+			# add_base_production = 2
+			# add_base_tax = 1
+		# }
+	# }
+	# option = { #This may cost too much. Let us bring as many home as possible.
+		# name = icelandflavor.2.b
+		# ai_chance = { factor = 100 }
+		# add_manpower = 2
+		# 980 = {
+			# remove_core = NOR
+			# cede_province = ---
+			# change_culture = cree
+			# change_religion = totemism
+		# }
+		# country_event = { 
+			# id = icelandflavor.3
+			# days = 200
+			# random = 180
+		# }
+	# }
+# }
 
-country_event = { #Maintance event for greenland
-	id = icelandflavor.3
-	title = icelandflavor.3.t
-	desc = icelandflavor.3.d
-	picture = BARBARY_PIRATES_eventPicture
+# country_event = { #Maintance event for greenland
+	# id = icelandflavor.3
+	# title = icelandflavor.3.t
+	# desc = icelandflavor.3.d
+	# picture = BARBARY_PIRATES_eventPicture
 	
-	is_triggered_only = yes
-	major = yes
+	# is_triggered_only = yes
+	# major = yes
 
 		
-	option = { #Everything for our far away brothers!
-		name = icelandflavor.3.a
-		ai_chance = { factor = 0 }
-		add_treasury = -150
-		add_adm_power = -15
-		1104 = {
-			add_base_tax = 1
-			add_base_manpower = 1
-		}
-		1105 = {
-			add_base_tax = 1
-			add_base_manpower = 1
-		}
-	}
-	option = { #This may cost too much. Let us bring as many home as possible.
-		name = icelandflavor.3.b
-		ai_chance = { factor = 100 }
-		add_prestige = -5
-		add_manpower = 4
-		1104 = {
-			remove_core = NOR
-			cede_province = ---
-			change_culture = inuit
-			change_religion = animism
-			remove_province_modifier = groenlands_knorr_prov_modifier
-		}
-		1105 = {
-			remove_core = NOR
-			cede_province = ---
-			change_culture = inuit
-			change_religion = animism
-			remove_province_modifier = groenlands_knorr_prov_modifier
-		}
-	}
-}
+	# option = { #Everything for our far away brothers!
+		# name = icelandflavor.3.a
+		# ai_chance = { factor = 0 }
+		# add_treasury = -150
+		# add_adm_power = -15
+		# 1104 = {
+			# add_base_tax = 1
+			# add_base_manpower = 1
+		# }
+		# 1105 = {
+			# add_base_tax = 1
+			# add_base_manpower = 1
+		# }
+	# }
+	# option = { #This may cost too much. Let us bring as many home as possible.
+		# name = icelandflavor.3.b
+		# ai_chance = { factor = 100 }
+		# add_prestige = -5
+		# add_manpower = 4
+		# 1104 = {
+			# remove_core = NOR
+			# cede_province = ---
+			# change_culture = inuit
+			# change_religion = animism
+			# remove_province_modifier = groenlands_knorr_prov_modifier
+		# }
+		# 1105 = {
+			# remove_core = NOR
+			# cede_province = ---
+			# change_culture = inuit
+			# change_religion = animism
+			# remove_province_modifier = groenlands_knorr_prov_modifier
+		# }
+	# }
+# }
 
 # #Event preventing anyone that is NOT norway from owning the province #Disabled due to that being impossible outside of Custom Nations
 # country_event = {
@@ -255,78 +257,78 @@ country_event = { #Maintance event for greenland
 	# }
 # }
 
-country_event = { #Event forcing Norway to lose vision on said tiles after they lose the provinces
-	id = icelandflavor.5
-	title = icelandflavor.5.t
-	desc = icelandflavor.5.d
-	picture = EXPLORERS_eventPicture
+# country_event = { #Event forcing Norway to lose vision on said tiles after they lose the provinces
+	# id = icelandflavor.5
+	# title = icelandflavor.5.t
+	# desc = icelandflavor.5.d
+	# picture = EXPLORERS_eventPicture
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	trigger = {
-		tag = NOR
-		NOT = { is_year = 1400 }
-		NOT = { owns = 980 }
-		NOT = { owns = 1105 }
-		NOT = { owns = 1104 }
-		NOT = { is_year = 1400 }
-	}
+	# trigger = {
+		# tag = NOR
+		# NOT = { is_year = 1400 }
+		# NOT = { owns = 980 }
+		# NOT = { owns = 1105 }
+		# NOT = { owns = 1104 }
+		# NOT = { is_year = 1400 }
+	# }
 	
-	mean_time_to_happen = {
-		months = 12
-	}
-	option = {
-		name = icelandflavor.5.a
-		1481 = {
-			undiscover_country = NOR
-		}
-		1497 = {
-			undiscover_country = NOR
-		}
-		1924 = {
-			undiscover_country = NOR
-		}
-		1486 = {
-			undiscover_country = NOR
-		}
-		1482 = {
-			undiscover_country = NOR
-		}
-		1493 = {
-			undiscover_country = NOR
-		}
-		1495 = {
-			undiscover_country = NOR
-		}
-		980 = {
-			undiscover_country = NOR
-		}
-		2573 = {
-			undiscover_country = NOR
-		}
-		981 = {
-			undiscover_country = NOR
-		}
-		1104 = {
-			undiscover_country = NOR
-		}
-		1105 = {
-			undiscover_country = NOR
-		}
-		1804 = {
-			undiscover_country = NOR
-		}
-		1610 = {
-			undiscover_country = NOR
-		}
-		1484 = {
-			undiscover_country = NOR
-		}
-		1496 = {
-			undiscover_country = NOR
-		}
-		1494 = {
-			undiscover_country = NOR
-		}
-	}
-}
+	# mean_time_to_happen = {
+		# months = 12
+	# }
+	# option = {
+		# name = icelandflavor.5.a
+		# 1481 = {
+			# undiscover_country = NOR
+		# }
+		# 1497 = {
+			# undiscover_country = NOR
+		# }
+		# 1924 = {
+			# undiscover_country = NOR
+		# }
+		# 1486 = {
+			# undiscover_country = NOR
+		# }
+		# 1482 = {
+			# undiscover_country = NOR
+		# }
+		# 1493 = {
+			# undiscover_country = NOR
+		# }
+		# 1495 = {
+			# undiscover_country = NOR
+		# }
+		# 980 = {
+			# undiscover_country = NOR
+		# }
+		# 2573 = {
+			# undiscover_country = NOR
+		# }
+		# 981 = {
+			# undiscover_country = NOR
+		# }
+		# 1104 = {
+			# undiscover_country = NOR
+		# }
+		# 1105 = {
+			# undiscover_country = NOR
+		# }
+		# 1804 = {
+			# undiscover_country = NOR
+		# }
+		# 1610 = {
+			# undiscover_country = NOR
+		# }
+		# 1484 = {
+			# undiscover_country = NOR
+		# }
+		# 1496 = {
+			# undiscover_country = NOR
+		# }
+		# 1494 = {
+			# undiscover_country = NOR
+		# }
+	# }
+# }

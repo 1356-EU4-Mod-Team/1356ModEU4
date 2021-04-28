@@ -309,6 +309,11 @@ republic = {
 		pirate_kingdom
 		war_against_the_world_government
 		black_market_consortium_government
+		military_dictatorship
+		signoria
+		protectorate_parliament_legacy
+		prussian_republic
+		united_cantons_legacy		
 		#####1356 Additions#####
 		#swiss_canton
 		frisian_republic_legacy
@@ -336,7 +341,8 @@ republic = {
 				crown_colony_government
 				private_enterprise_colony_government
 				self_governing_colony_government				
-				dutch_republic				peasants_republic
+				dutch_republic				
+				peasants_republic
 				revolutionary_republic_reform
 				junior_revolutionary_republic_reform
 				presidential_despot_reform
@@ -531,7 +537,8 @@ tribal = {
 				gond_kingdom
 				great_mongol_state_reform
 				stateless_society
-				
+				polynesian_kingdom
+				polynesian_tribe				
 				####BEGIN 1356 CHANGES#####
 				tribal_federation_ilkhan_reform
 				ilkhanate_government_tribal_reform

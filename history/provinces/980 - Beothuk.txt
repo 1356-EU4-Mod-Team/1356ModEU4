@@ -23,15 +23,15 @@ native_hostileness = 4
 	base_manpower = 1
 }
 
-1356.12.26 = {
-	owner = NOR
-	controller = NOR
-	add_core = NOR
-	remove_core = VIK
-	culture = norwegian
-	religion = catholic
-	discovered_by = NOR
-}
+# 1356.12.26 = {
+	# owner = NOR
+	# controller = NOR
+	# add_core = NOR
+	# remove_core = VIK
+	# culture = norwegian
+	# religion = catholic
+	# discovered_by = NOR
+# }
 
 1360.1.1 = {
 	owner = ---

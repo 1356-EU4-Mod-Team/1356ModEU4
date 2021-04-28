@@ -833,7 +833,10 @@ malayan_ideas = {
 	}
 	
 	trigger = {
-		religion_group = muslim
+		OR = {
+			religion_group = muslim
+			tag = PAH
+		}
 		culture_group = malay
 		NOT = {
 			primary_culture = sumatran
@@ -931,7 +934,7 @@ latin_ideas = {
 		merc_maintenance_modifier = -0.15
 	}
 	italian_aristocracy = {
-		global_spy_defence = 0.05
+		global_spy_defence = 0.2
  	}
 	tracee_italienne = {
 		defensiveness = 0.05
