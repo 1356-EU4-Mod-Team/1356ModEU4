@@ -1,6 +1,6 @@
 # No previous file for Etchemins
 
-culture = huron
+culture = laurentian
 religion = totemism
 capital = "Etchemins"
 trade_goods = unknown

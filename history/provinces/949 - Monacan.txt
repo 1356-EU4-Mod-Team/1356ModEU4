@@ -1,6 +1,6 @@
 #949 - Monacan
 
-culture = catawba
+culture = yuchi
 religion = totemism
 capital = "Monacan"
 trade_goods = naval_supplies

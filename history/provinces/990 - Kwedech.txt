@@ -1,6 +1,6 @@
 #990 - Kwedech
 
-culture = huron
+culture = laurentian
 religion = totemism
 capital = "Kwedech"
 trade_goods = unknown

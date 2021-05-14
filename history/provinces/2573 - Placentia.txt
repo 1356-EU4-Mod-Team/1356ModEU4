@@ -1,6 +1,6 @@
 #2573 - Placientia
 
-culture = cree
+culture = algonquin
 religion = totemism
 capital = "Placentia"
 trade_goods = fish

@@ -1,6 +1,6 @@
 #995 - Atiamekw
 
-culture = cree
+culture = algonquin
 religion = totemism
 capital = "Tadoussac"
 trade_goods = unknown

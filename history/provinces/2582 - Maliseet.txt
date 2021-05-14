@@ -1,6 +1,6 @@
 # No previous file for Maliseet
 
-culture = abenaki
+culture = maliseet
 religion = totemism
 capital = "Maliseet"
 trade_goods = unknown

@@ -1,6 +1,6 @@
 #996 - Innu
 
-culture = cree
+culture = algonquin
 religion = totemism
 capital = "Innu"
 trade_goods = fish

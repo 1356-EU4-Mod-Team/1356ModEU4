@@ -1,6 +1,6 @@
 #912 - Sauk
 
-culture = anishinabe
+culture = chiwere
 religion = totemism
 capital = "Sauk"
 trade_goods = unknown

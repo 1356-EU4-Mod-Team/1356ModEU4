@@ -1,6 +1,6 @@
 # No previous file for Hebina
 
-culture = nakota
+culture = blackfoot
 religion = totemism
 capital = "Hebina"
 trade_goods = unknown

@@ -1,6 +1,6 @@
 # No previous file for Pennacook
 
-culture = abenaki
+culture = massachusset
 religion = totemism
 capital = "Pennacook"
 trade_goods = unknown

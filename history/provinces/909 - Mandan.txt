@@ -1,6 +1,6 @@
 #909 - Mandan
 
-culture = nakota
+culture = arapaho
 religion = totemism
 capital = "Mandan"
 trade_goods = unknown

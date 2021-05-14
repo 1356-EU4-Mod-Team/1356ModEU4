@@ -1,6 +1,6 @@
 # No previous file for Jicarilla
 
-culture = navajo
+culture = mescalero
 religion = totemism
 capital = "Jicarilla"
 trade_goods = unknown

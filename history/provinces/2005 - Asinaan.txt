@@ -1,6 +1,6 @@
 #2005 - Asinaan
 
-culture = cheyenne
+culture = blackfoot
 religion = totemism
 capital = "Asinaan"
 trade_goods = unknown

@@ -1,6 +1,6 @@
 # No previous file for Sipiwininiwak
 
-culture = cree
+culture = chipewyan
 religion = totemism
 capital = "Sipiwininiwak"
 trade_goods = unknown

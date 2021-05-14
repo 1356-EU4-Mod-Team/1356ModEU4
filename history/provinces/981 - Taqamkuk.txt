@@ -1,6 +1,6 @@
 #981 - Taqamkuk
 
-culture = cree
+culture = algonquin
 religion = totemism
 capital = "Taqamkuk"
 trade_goods = fur

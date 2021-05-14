@@ -1,6 +1,6 @@
 #1011 - Woods Cree
 
-culture = cree
+culture = plains_cree
 religion = totemism
 capital = "Woods cree"
 trade_goods = unknown

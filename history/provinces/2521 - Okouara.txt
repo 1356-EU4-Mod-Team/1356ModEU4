@@ -1,6 +1,6 @@
 # No previous file for Okouara
 
-culture = mesquakie
+culture = anishinabe
 religion = totemism
 capital = "Okouara"
 trade_goods = unknown

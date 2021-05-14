@@ -1,6 +1,6 @@
 # No previous file for Aroostook
 
-culture = abenaki
+culture = maliseet
 religion = totemism
 capital = "Aroostook"
 trade_goods = unknown

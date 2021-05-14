@@ -1,6 +1,6 @@
 # No previous file for Honniasont
 
-culture = susquehannock
+culture = tionontate
 religion = totemism
 capital = "Honniasont"
 trade_goods = unknown

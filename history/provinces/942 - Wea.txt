@@ -1,6 +1,6 @@
 #942 - Wea
 
-culture = illini
+culture = miami
 religion = totemism
 capital = "Wea" 
 trade_goods = fur

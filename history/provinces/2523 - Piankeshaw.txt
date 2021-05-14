@@ -1,6 +1,6 @@
 # No previous file for Piankeshaw
 
-culture = illini
+culture = miami
 religion = totemism
 capital = "Piankeshaw"
 trade_goods = unknown

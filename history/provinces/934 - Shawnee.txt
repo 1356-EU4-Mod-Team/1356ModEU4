@@ -1,6 +1,6 @@
 #934 - Shawnee
 
-culture = shawnee #yuchi
+culture = yuchi #yuchi
 religion = totemism
 capital = "Shawnee"
 trade_goods = grain

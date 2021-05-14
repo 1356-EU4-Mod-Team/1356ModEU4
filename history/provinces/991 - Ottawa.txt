@@ -1,6 +1,6 @@
 #991 - Nipissing
 
-culture = anishinabe
+culture = algonquin
 religion = totemism
 capital = "Nipissing"
 trade_goods = fur

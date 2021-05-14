@@ -1,6 +1,6 @@
 #881 - Piro
 
-culture = pueblo 
+culture = mescalero 
 religion = totemism
 capital = "Teypana"
 trade_goods = grain 
