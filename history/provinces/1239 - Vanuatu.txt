@@ -1,6 +1,6 @@
 #1239 - Vanuatu
 
-culture = polynesian
+culture = melanesian
 religion = animism
 capital = "Vanuatu"
 trade_goods = unknown

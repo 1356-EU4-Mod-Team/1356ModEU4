@@ -1,7 +1,7 @@
 #2731 - Guugu Yimithirr
 
-culture = aboriginal
-religion = animism
+culture = paman
+religion = dreamtime
 capital = "Guugu Yimithirr"
 trade_goods = unknown
 hre = no

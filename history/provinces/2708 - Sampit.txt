@@ -1,9 +1,9 @@
 # 2708 - Sampit (1356)
 # Changes: SAM
 
-owner = SAM
-controller = SAM
-add_core = SAM
+owner = S1P
+controller = S1P
+add_core = S1P
 culture = bornean
 religion = hinduism
 capital = "Sampit"

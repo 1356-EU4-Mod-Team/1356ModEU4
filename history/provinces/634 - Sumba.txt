@@ -1,6 +1,6 @@
 #634 - Sumba
 
-culture = papuan
+culture = nusa_tenggara
 religion = animism
 capital = "Sumba"
 trade_goods = unknown

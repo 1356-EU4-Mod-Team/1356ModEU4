@@ -257,7 +257,7 @@ vassal = {
 
 union = {
 	first = LIT
-	second = TAK
+	second = T5K
 	start_date = 1356.1.1
 	end_date = 1413.1.1
 }

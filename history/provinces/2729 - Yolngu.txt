@@ -1,7 +1,7 @@
 #2729 - Yolngu
 
-culture = aboriginal
-religion = animism
+culture = gunwinyguan
+religion = dreamtime
 capital = "Yolngu"
 hre = no
 trade_goods = unknown

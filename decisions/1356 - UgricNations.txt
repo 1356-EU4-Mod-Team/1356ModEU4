@@ -104,7 +104,7 @@ country_decisions = {
 			}
 			OR = {
 				tag = MI1
-				tag = MIA
+				tag = M2A
 				primary_culture = mordvin
 			}
 			NOT = { tag = MRD }

@@ -2311,7 +2311,7 @@ finno_ugric = { #Finno-Ugric #1356
 		dynasty_names = { "Mastoron Kirdi" "Rjazanskijid" "Chipazid" }
 	}
 	mordvin = { #1356
-		primary = MIA
+		primary = M2A
 		male_names = {
 			Andyamo Chichayka Chumbulat Dergun Deryab Dobrinya Erziya Inzhay Kezhapa Kezhay Kezhedey Kezhevat Kichay Kubrat Malyaka Malyy Meltsayka Mordvinko Moksha
 			Nalka Nuyaksha Nuyanza Nuyat Ovtay Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka

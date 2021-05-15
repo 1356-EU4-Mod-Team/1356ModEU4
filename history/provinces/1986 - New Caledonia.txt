@@ -1,6 +1,6 @@
 #1986 - New Caledonia
 
-culture = polynesian
+culture = melanesian
 religion = animism
 capital = "Nouméa"
 trade_goods = unknown

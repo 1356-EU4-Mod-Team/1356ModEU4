@@ -1,8 +1,5 @@
 #4656 - Barunggam
 
-add_core = GMI
-owner = GMI
-controller = GMI
 culture = gamilaraay
 religion = dreamtime
 capital = "Barunggam"

@@ -1,7 +1,7 @@
 #2728 - Tiwi
 
-culture = aboriginal
-religion = animism
+culture = gunwinyguan
+religion = dreamtime
 capital = "Tiwi"
 hre = no
 trade_goods = unknown

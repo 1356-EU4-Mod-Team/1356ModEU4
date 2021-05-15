@@ -1,6 +1,6 @@
 #2573 - Placientia
 
-culture = algonquin
+culture = innu
 religion = totemism
 capital = "Placentia"
 trade_goods = fish

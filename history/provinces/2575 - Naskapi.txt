@@ -1,6 +1,6 @@
 # No previous file for Naskapi
 
-culture = algonquin
+culture = innu
 religion = totemism
 capital = "Naskapi"
 trade_goods = unknown

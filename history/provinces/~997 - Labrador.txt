@@ -1,0 +1,45 @@
+#997 - Labrador
+
+culture = algonquin
+religion = totemism
+capital = "Labrador"
+trade_goods = fish
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 5
+native_ferocity = 2
+native_hostileness = 7
+discovered_by = north_american
+
+
+1356.12.25 = { owner = VIK controller = VIK add_core = VIK culture = icelandic religion = norse_pagan_reformed base_tax = 3 base_production = 3 base_manpower = 2 }
+
+1356.12.26 = { owner = --- controller = ---
+	culture = cree
+	religion = totemism
+	remove_core = VIK
+	base_tax = 1
+	base_production = 1
+	base_manpower = 1
+}
+
+1498.1.1 = { discovered_by = POR } # João Fernandes Lavrador
+1576.7.28 = { discovered_by = ENG } # Martin Frobisher
+
+1710.1.1 = {
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+	culture = cosmopolitan_french
+	religion = catholic
+	is_city = yes
+} # Fort La Forteau
+1750.1.1 = { trade_goods = fish }
+1763.2.10 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+	remove_core = FRA
+} # Treaty of Paris

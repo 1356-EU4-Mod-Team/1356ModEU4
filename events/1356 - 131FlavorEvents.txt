@@ -538,6 +538,7 @@ country_event = { # Tamerlane dies - By natural causes
 	option = { 
 		name = timurid_emergence.5.a	
 		set_global_flag = tamerlane_is_dead
+		kill_ruler = yes
 	}	
 }
 
@@ -568,6 +569,10 @@ country_event = { # Timurid dynasty forms
 		add_country_modifier = {
 			name = "luck"
 			duration = -1
+			hidden = yes	
+		}	
+		JLR = {
+			remove_country_modifier = luck
 		}	
 	}		
 }

@@ -1,9 +1,9 @@
 # 2674 - Peureulak (1356)
 # Changes: ATJ/religion
 
-owner = HRU
-controller = HRU
-culture = sumatran
+owner = PSA
+controller = PSA
+culture = acehnese
 religion = animism
 capital = "Kota Rentang"
 trade_goods = spices
@@ -13,7 +13,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = HRU
 add_core = PSA
 
 discovered_by = chinese

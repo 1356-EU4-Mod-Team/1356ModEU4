@@ -97,6 +97,7 @@ technology = { #1356
 	#production_efficiency	=	0.05	
 	development_efficiency = 0.15
 	administrative_efficiency = 0.05
+	governing_capacity = 50
 
 }
 
@@ -123,6 +124,7 @@ technology = { #MOVED VANILLA feudal_monarchy #1356
 	#production_efficiency	=	0.01
 	administrative_efficiency = 0.03
 	development_efficiency = 0.10
+	governing_capacity = 50
 }
 
 technology = { #1356

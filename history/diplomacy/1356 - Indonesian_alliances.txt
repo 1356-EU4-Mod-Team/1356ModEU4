@@ -41,7 +41,55 @@ dependency = {
 dependency = {
 	subject_type = "SEA_tributary_state"
 	first = MAJ
-	second = MLC
+	second = IND
+	start_date = 1356.1.1
+	end_date = 1405.1.1
+}
+
+dependency = {
+	subject_type = "SEA_tributary_state"
+	first = MAJ
+	second = DLI
+	start_date = 1356.1.1
+	end_date = 1405.1.1
+}
+
+dependency = {
+	subject_type = "SEA_tributary_state"
+	first = MAJ
+	second = JMB
+	start_date = 1356.1.1
+	end_date = 1405.1.1
+}
+
+dependency = {
+	subject_type = "SEA_tributary_state"
+	first = MAJ
+	second = PGR
+	start_date = 1356.1.1
+	end_date = 1405.1.1
+}
+
+dependency = {
+	subject_type = "SEA_tributary_state"
+	first = MAJ
+	second = BRS
+	start_date = 1356.1.1
+	end_date = 1405.1.1
+}
+
+dependency = {
+	subject_type = "SEA_tributary_state"
+	first = MAJ
+	second = KEL
+	start_date = 1356.1.1
+	end_date = 1405.1.1
+}
+
+dependency = {
+	subject_type = "SEA_tributary_state"
+	first = MAJ
+	second = HTR
 	start_date = 1356.1.1
 	end_date = 1405.1.1
 }
@@ -145,7 +193,7 @@ dependency = {
 dependency = {
 	subject_type = "SEA_tributary_state"
 	first = MAJ
-	second = SAM
+	second = S1P
 	start_date = 1356.1.1
 	end_date = 1444.1.1
 }

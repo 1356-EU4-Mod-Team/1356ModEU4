@@ -106,7 +106,7 @@ dependency = {
 dependency = {
 	subject_type = "golden_horde_tributary_state"
 	first = WHI
-	second = MIA
+	second = M2A
 	start_date = 1355.1.1
 	end_date = 1380.9.8
 }

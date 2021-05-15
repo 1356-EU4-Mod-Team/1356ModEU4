@@ -4,8 +4,8 @@ latent_trade_goods = {
 	coal
 }
 
-culture = aboriginal
-religion = animism
+culture = paman
+religion = dreamtime
 capital = "Baiali"
 trade_goods = unknown
 hre = no

@@ -32,7 +32,7 @@ discovered_by = ottoman
 } #BT In
 
 1356.12.26  = { 
-				owner = TAK controller = TAK add_core = TAK remove_core = KUR
+				owner = T5K controller = T5K add_core = T5K remove_core = KUR
 				base_tax = 3 base_production = 3 base_manpower = 3
 } #BT Out
 

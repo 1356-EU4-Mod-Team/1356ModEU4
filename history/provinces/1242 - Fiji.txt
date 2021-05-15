@@ -1,6 +1,6 @@
 #1242 - Fiji
 
-culture = polynesian
+culture = melanesian
 religion = animism
 capital = "Fiji"
 trade_goods = unknown

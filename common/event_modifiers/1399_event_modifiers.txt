@@ -468,25 +468,32 @@ veche_recently_deposed_ruler = { # Dummy modifier
 
 splendor_tier_1 = { # Dummy modifier 
 	monthly_splendor = 1
+	development_cost = 1
 }	
 splendor_tier_2 = { # Dummy modifier 
 	monthly_splendor = 2
+	development_cost = 1	
 }	
 splendor_tier_3 = { # Dummy modifier 
 	monthly_splendor = 3
+	development_cost = 1	
 }	
 splendor_tier_4 = { # Dummy modifier 
 	monthly_splendor = 4
+	development_cost = 1	
 }	
 splendor_tier_5 = { # Dummy modifier 
 	monthly_splendor = 5
+	development_cost = 1	
 }	
 splendor_tier_6 = { # Dummy modifier 
 	monthly_splendor = 6
+	development_cost = 1	
 }	
 splendor_tier_7 = { # Dummy modifier 
 	monthly_splendor = 7
-}	
+	development_cost = 1	
+}
 
 # Additional flavor for new insitutions - Geno
 
@@ -505,7 +512,6 @@ implemented_new_trade_policies = {
 western_cannon_gunpowder = {
 	artillery_fire = 0.85
 	backrow_artillery_damage = 0.15
-	artillery_bonus_vs_fort = 1
 }	
 
 founding_western_gunpowder = {
@@ -525,8 +531,7 @@ founding_eastern_gunpowder = {
 }	
 
 ottoman_gun_of_urban_gunpowder = {
-	artillery_fire = 0.75
-	artillery_bonus_vs_fort = 2
+	artillery_fire = 0.85
 	movement_speed = -0.10
 }
 
@@ -572,20 +577,20 @@ early_siege_cant_choose = {
 }	
 
 trebuchets_early_cannon = {
-	artillery_shock = 0.90
+	artillery_shock = 0.85
 	backrow_artillery_damage = -0.10
-	artillery_cost = -0.10
-	artillery_bonus_vs_fort = -1
+	artillery_cost = -0.30
+	artillery_bonus_vs_fort = -2
 }
 
 siege_towers_early_cannon = {
-	artillery_bonus_vs_fort = 2
 	artillery_cost = -0.50
 	backrow_artillery_damage = -0.80
 	artillery_shock = 0.20
 }
 
 early_cannon_early_cannons = { #How Original
+	artillery_bonus_vs_fort = -1
 	artillery_fire = 0.50
 	backrow_artillery_damage = 0.10
 	siege_ability = 0.10
@@ -595,8 +600,8 @@ early_cannon_early_cannons = { #How Original
 early_cannon_hwacha = {
 	artillery_fire = 0.75
 	backrow_artillery_damage = 0.10
-	artillery_cost = -0.10
-	artillery_bonus_vs_fort = -2
+	artillery_cost = -0.20
+	artillery_bonus_vs_fort = -3
 }	
 
 # Buffs for nations with no early Siege weapons

@@ -16,12 +16,21 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
 
-1444.1.1 = {
+1356.1.1 = {
 	owner = BNJ
 	controller = BNJ
 	add_core = BNJ
 	is_city = yes
 	trade_goods = spices
 }
+
+
+# 1444.1.1 = {
+	# owner = BNJ
+	# controller = BNJ
+	# add_core = BNJ
+	# is_city = yes
+	# trade_goods = spices
+# }
 
 1521.1.1 = { discovered_by = POR }

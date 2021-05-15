@@ -1,7 +1,7 @@
 #1094 - Gubbi Gubbi
 
-culture = aboriginal
-religion = animism
+culture = gamilaraay
+religion = dreamtime
 capital = "Brisbane"
 trade_goods = unknown
 hre = no

@@ -1,8 +1,8 @@
 # 2423 - Alatyr (1356)
 # Changes: MIA
 
-owner = MIA
-controller = MIA
+owner = M2A
+controller = M2A
 culture = mordvin
 religion = finnish_pagan_reformed
 hre = no
@@ -13,7 +13,7 @@ trade_goods = grain
 base_manpower = 2
 capital = "Alatyr"
 is_city = yes
-add_core = MIA
+add_core = M2A
 
 
 discovered_by = western

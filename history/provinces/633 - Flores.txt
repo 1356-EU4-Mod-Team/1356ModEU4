@@ -1,6 +1,6 @@
 #633 - Flores
 
-culture = papuan
+culture = nusa_tenggara
 religion = animism
 capital = "Flores"
 trade_goods = unknown

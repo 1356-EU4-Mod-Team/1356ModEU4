@@ -1,6 +1,6 @@
 #981 - Taqamkuk
 
-culture = algonquin
+culture = innu
 religion = totemism
 capital = "Taqamkuk"
 trade_goods = fur

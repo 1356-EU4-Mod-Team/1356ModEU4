@@ -1,8 +1,11 @@
 # 2677 - Jambi (1356)
 # Changes: SRI/religion
 
-owner = SRI
-controller = SRI
+# SRI became JMB in Leviathans
+
+
+owner = JMB
+controller = JMB
 culture = sumatran
 religion = hinduism
 capital = "Jambi"
@@ -13,7 +16,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = SRI
+add_core = JMB
 
 discovered_by = chinese
 discovered_by = indian

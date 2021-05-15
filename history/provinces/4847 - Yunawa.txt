@@ -1,14 +1,11 @@
 #4847 - Yunawa
 
-add_core = YNU
-owner = YNU
-controller = YNU
 culture = paman
 religion = dreamtime
 capital = "Yunawa"
 hre = no
 is_city = yes
-trade_goods = fish
+trade_goods = unknown
 base_manpower = 1
 base_tax = 1
 base_production = 1

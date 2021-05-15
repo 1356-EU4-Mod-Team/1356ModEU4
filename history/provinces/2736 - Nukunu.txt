@@ -1,7 +1,7 @@
 #2736 - Nukunu
 
-culture = aboriginal
-religion = animism
+culture = yura
+religion = dreamtime
 capital = "Nukunu"
 trade_goods = unknown
 hre = no

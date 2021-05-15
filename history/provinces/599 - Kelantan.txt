@@ -1,8 +1,8 @@
 # 599 - Kelantan (1356)
 # Changes: PAT/religion
 
-owner = PAT
-controller = PAT
+owner = KEL
+controller = KEL
 culture = malayan
 religion = hinduism
 capital = "Kelantan"
@@ -13,7 +13,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = PAT
+add_core = KEL
 add_core = JOH
 
 discovered_by = chinese

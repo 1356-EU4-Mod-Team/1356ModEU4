@@ -1,6 +1,6 @@
 #995 - Atiamekw
 
-culture = algonquin
+culture = innu
 religion = totemism
 capital = "Tadoussac"
 trade_goods = unknown

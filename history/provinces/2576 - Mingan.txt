@@ -1,6 +1,6 @@
 # No previous file for Mingan
 
-culture = algonquin
+culture = innu
 religion = totemism
 capital = "Mingan"
 trade_goods = unknown

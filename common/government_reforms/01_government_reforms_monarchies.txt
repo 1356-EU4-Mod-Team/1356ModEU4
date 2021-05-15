@@ -267,6 +267,7 @@ daimyo = {
 		NOT = { has_country_flag = formed_japan_flag }
 		overlord = { has_reform = shogunate }
 	}
+	replacement_on_independence_war = indep_daimyo
 	legacy_equivalent = daimyo_legacy
 	fixed_rank = 1
 	maintain_dynasty = yes
@@ -379,7 +380,7 @@ celestial_empire = {
 		church_influence_modifier = -0.1
 		nobles_influence_modifier = -0.1
 		burghers_influence_modifier = -0.1
-		governing_capacity = 300
+		governing_capacity = 470
 	}
 	
 	ai = {
@@ -1017,6 +1018,10 @@ mandala_reform = {
 			religion = animism
 		}
 		technology_group = chinese
+		OR = {
+			has_dlc = "Leviathan"
+			has_dlc = "Dharma"
+		}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
@@ -1029,6 +1034,10 @@ mandala_reform = {
 			religion_group = muslim
 		}
 		technology_group = chinese
+		OR = {
+			has_dlc = "Leviathan"
+			has_dlc = "Dharma"
+		}
 	}
 	legacy_equivalent = despotic_monarchy
 	modifiers = {
@@ -1192,7 +1201,7 @@ confucian_bureaucracy = {
 }
 
 sakdina_system_reform = {
-	icon = "warrior_monks_reform" #TODO
+	icon = "sakdina_system_reform" #TODO
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0

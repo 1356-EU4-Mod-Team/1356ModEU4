@@ -923,7 +923,7 @@ age_of_discovery = { #Partially edited by #1356
 				}
 			}
 			modifier = {
-				siege_ability = 0.33
+				siege_ability = 0.20
 			}
 			ai_will_do = {
 				factor = 100
@@ -936,7 +936,7 @@ age_of_discovery = { #Partially edited by #1356
 				tag = POR
 			}
 			modifier = {
-				global_colonial_growth = 50
+				global_colonial_growth = 35
 			}
 			ai_will_do = {
 				factor = 100
@@ -1014,7 +1014,7 @@ age_of_reformation = {
 		}
 		
 		obj_colonial_empire = {
-			colony = 5
+			num_of_colonies = 5
 		}
 		
 		obj_force_converted = {
