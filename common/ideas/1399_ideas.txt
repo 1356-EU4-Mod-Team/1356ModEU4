@@ -2948,3 +2948,42 @@ MRD_ideas = { #Mordvin TAG ideas
 	}
 }
 
+ERN_ideas = { #Eranshahr TAG ideas
+	start = {
+		global_unrest = -2
+		defensiveness = 0.25
+	}
+	bonus = {
+		free_policy = 1
+	}
+	trigger = {
+		tag = ERN
+	}
+	free = yes
+	
+	ern_reconquest_persia_idea = { # Reconquest of Persia
+		core_creation = -0.20
+	}	
+	ern_placate_muslim_subjects = { # Placate Muslim Subjects
+		reduced_liberty_desire = 15
+		diplomatic_upkeep = 1
+	}
+	ern_bureaucratic_innovations = { # Bureaucratic Innovations
+		governing_capacity = 250
+	}
+	ern_regional_governships = { # Regional Governships
+		vassal_forcelimit_bonus = 1
+		global_autonomy = -0.03
+	}
+	ern_renewed_zoroastrian_fervor = { # Renewed Zoroastrian Fervor
+		land_morale = 0.15
+		devotion = 0.5
+	}	
+	ern_zoroastrian_diaspora = { # Zoroastrian Diaspora
+		manpower_in_true_faith_provinces = 0.20
+	}
+	ern_resurgent_leviathan = { # The Resurging Leviathan
+		great_project_upgrade_cost = -0.25
+	}
+}
+

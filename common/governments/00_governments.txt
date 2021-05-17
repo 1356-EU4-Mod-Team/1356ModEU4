@@ -85,6 +85,7 @@ monarchy = {
 				kalmar_union_reform
 				beylik_reform
 				earldom_reform
+				theocratic_kingdom_eran
 				#archduchy_reform
 				byzantine_empire_reform
 				serbian_government_reform
@@ -260,6 +261,7 @@ monarchy = {
 		gondi_kingdom_kingdom_reform
 		golden_bull_federation_government
 		novgorod_republic
+		theocratic_kingdom_eran
 		#####END 1356 CHANGES#####
 		
 	}

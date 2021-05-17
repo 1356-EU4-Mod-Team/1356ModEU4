@@ -1280,3 +1280,22 @@
  mrd_idea_7_desc: "The land to our East is mostly untouched, and while a few small tribes may occupy the area currently it'd be in our best interest to occupy the region and integrate their tribes into our society. This allows our Federation to grow and prevent more land from falling into the hands of our rivals."
  
  
+ ERN_ideas_start: "Eranshahr Traditions"
+ ERN_ideas_bonus: "Eranshahr Ambition"
+ ERN_ideas: "Eranshahr Ideas"
+ ern_reconquest_persia_idea: "Reconquest of Persia"
+ ern_reconquest_persia_idea_desc: "When the Sasanian Empire was conquered by the Rashidun Caliphate, it marked the end of the last Zoroastrian empire. Now with the reemergence of a new Zoroastrian state we are tasked with reconquering our homeland."
+ ern_placate_muslim_subjects: "Placate Muslim Subjects"
+ ern_placate_muslim_subjects_desc: "While in centuries prior, Zoroastrians were the predominant faith throughout the Persian Heartland, recent centuries of conversion has reduced our faith to a small minority. If we are to govern as a Zoroastrian state, we will need to find a compromise with our Islamic subjects."
+ ern_bureaucratic_innovations: "Bureaucratic Innovation"
+ ern_bureaucratic_innovations_desc: "Our people have been ruled by the likes of the Abbasids, Seljuks Turks, and recently the Mongol Ilkhanate. As such we have gained insights into the way each of these countries administered their realms. Using this we can create a new Iranian Bureaucratic system that draws from each of these past empires."
+ ern_regional_governships: "Autonomous Governorships"
+ ern_regional_governships_desc: "We should enact a system of Local Governorships where our lands are governed by a local family. As long as these Governors remain loyal to the state, they will be granted special privileges that allow them to worship any faith and inherit on the same basis of a Zoroastrian citizen."
+ ern_renewed_zoroastrian_fervor: "Renewed Zoroastrian Fervor"
+ ern_renewed_zoroastrian_fervor_desc: "Zoroastrianism has been on the decline for centuries since the fall of the Sasanian Empire, and in many cases have forced faithful followers to convert to their new overlords faith or flee from persecution. With the establishment of a new Zoroastrian state, families of those who once fled are returning and followers of the faith have a renewed flame in their hearts to prevent the destruction of this new state."
+ ern_zoroastrian_diaspora: "Zoroastrian Diaspora"
+ ern_zoroastrian_diaspora_desc: "Throughout Asia, there exist small enclaves of those who have continued to practice Zoroastrianism even after the Rashidun Conquests that ended the Sasanians. As our nation expands, these enclaves have largely come out of hiding and have emerged as a strong and loyal caste in our society."
+ ern_resurgent_leviathan: "The Resurgining Leviathan"
+ ern_resurgent_leviathan_desc: "The Zoroastrian faithful have endured countless centuries of persecution and disenfranchisement, only to emerge stronger than ever. Our faith may be one of the oldest in the world but we will not be destroyed by the Crescent Moon or the Cross."
+ 
+ 

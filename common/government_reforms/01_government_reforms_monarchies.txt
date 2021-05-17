@@ -749,7 +749,7 @@ feudal_theocracy = { #1356
 				religion_group = muslim
 				has_reform = feudal_theocracy
 			}
-			religion = zoroastrian #1356
+			tag = TAB
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = feudal_theocracy
@@ -759,7 +759,7 @@ feudal_theocracy = { #1356
 	nation_designer_trigger = {
 		OR = {
 			religion_group = muslim
-			religion = zoroastrian #1356
+			tag = TAB
 		}
 	}
 	legacy_equivalent = feudal_theocracy_legacy
@@ -779,6 +779,26 @@ feudal_theocracy = { #1356
 		government_abilities = {
 			feudal_theocracy_mechanic
 		}
+	}
+}
+
+theocratic_kingdom_eran = { #1356
+	icon = "peacock_throne"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = theocratic_kingdom_eran
+			have_had_reform = theocratic_kingdom_eran
+		}
+	}	
+	valid_for_nation_designer = no
+	has_devotion = yes
+	modifiers = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+		tolerance_own = 1
+		church_loyalty_modifier = 0.05
+		monarch_admin_power = 2
 	}
 }
 

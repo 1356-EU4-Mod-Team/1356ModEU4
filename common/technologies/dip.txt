@@ -84,7 +84,7 @@ technology = { #1356
 	# Tech 7
 	year = 1419
 
-	enable 					= barque
+	enable = barque
 	administrative_efficiency = 0.02
 	num_accepted_cultures = 1
 }
@@ -114,8 +114,8 @@ technology = { #1356
 	# Tech 4
 	year = 1454
 		
-	naval_morale 			= 	0.2
-	trade_range				= 	25
+	naval_morale = 	0.2
+	trade_range	= 	25
 }
 
 technology = { #1356
@@ -141,9 +141,9 @@ technology = { #Naval Ambitions
 	# Tech 7
 	year = 1492
 	
-	naval_morale			=	0.3
-	range					= 	115
-	impressment_offices 	= yes
+	naval_morale =	0.3
+	range = 115
+	impressment_offices = yes
 	naval_engagement_width = 10	
 }
 

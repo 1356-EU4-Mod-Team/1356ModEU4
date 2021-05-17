@@ -549,6 +549,8 @@
  nov_favor_princely_ties: "Favor Princely Ties"
  nov_favor_princely_ties_desc: "For it’s political and economic security, the Republic should continue the appointment of foreign princely successors to the title of Prince of Novgorod."
  
+ theocratic_kingdom_eran: "Theocratic Kingdom"
+ theocratic_kingdom_eran_desc: ""
  
  
  tribal_1356_inheritance: "Tribal Inheritance"
@@ -794,6 +796,9 @@
  timur_ae_modifier_desc: ""
  timur_combat_modifier: "The Sword of Islam"
  timur_combat_modifier_desc: ""
+ 
+ eranshahr_nation_title: "Form Eranshahr"
+ eranshahr_nation_desc: "Since the conquest of surrounding neighboring regions, the possibility of a resurrected Zoroastrian Iranian state doesn’t seem absent anymore. If we can control major population centers in Persia we can proclaim a reborn Iranian state with Zoroastrianism as its main faith."
  
  
  # 1.31 Subject Types

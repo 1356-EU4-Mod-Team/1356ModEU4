@@ -1396,6 +1396,7 @@ HUN_ideas = {
 	start = {
 		cavalry_power = 0.20
 		recover_army_morale_speed = 0.05
+		num_accepted_cultures = 2
 	}
 	
 	bonus = {

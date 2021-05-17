@@ -38,14 +38,14 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 				}
-				add_permanent_claim = TPM
+				add_permanent_claim = TIM
 			}
 			khorasan_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 				}
-				add_permanent_claim = TPM
+				add_permanent_claim = TIM
 			}			
 			add_country_modifier = {
 				name = "timurid_centrialization"

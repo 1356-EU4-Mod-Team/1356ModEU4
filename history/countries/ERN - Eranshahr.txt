@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = theocratic_kingdom_eran
+technology_group = muslim
+primary_culture = persian
+religion = zoroastrian
+historical_rival = PER
+historical_rival = TIM
+historical_rival = TUR
+historical_rival = ILK
+capital = 429 # Isfahan

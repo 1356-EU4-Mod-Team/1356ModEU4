@@ -138,6 +138,7 @@ HER = "countries/Herat.txt"
 RAD = "countries/Astarabad.txt"
 RHT = "countries/Rasht.txt"
 IDA = "countries/Idaj.txt"
+ERN = "countries/Eranshahr.txt"
 
 #North America
 

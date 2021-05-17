@@ -1,11 +1,13 @@
 # government = republic
 # add_government_reform = caspian_peasants_republic_reform 				##### Same with Rasht sadly
-mercantilism = 15
+mercantilism = 10
 primary_culture = mazandarani
 religion = shiite #Zaidiyyah
 technology_group = muslim
 capital = 417 # Lahijan
 religious_school = zaidi_school
+government = monarchy
+add_government_reform = iqta
 
 1356.12.24 = {
 	monarch = {
