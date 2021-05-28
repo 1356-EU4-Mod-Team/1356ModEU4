@@ -1475,12 +1475,13 @@ RAE_ideas = {
 
 ALX_ideas = {
 	start = { #They were a center of technology for a time, and were very renouned
-		technology_cost = -0.1
+		technology_cost = -0.05
 		diplomatic_reputation = 2
 	}
 	
 	bonus = { 
-		army_tradition = 1
+		army_tradition = 0.5
+		great_project_upgrade_cost = -0.25
 	}
 	
 	trigger = {
@@ -1490,13 +1491,13 @@ ALX_ideas = {
 	
 	alx_idea_7 = { #Egypt should hold many boats
 		naval_forcelimit_modifier = 0.2
-        global_sailors_modifier = 0.5
+        global_sailors_modifier = 0.2
 	}
 	alx_idea_2 = { #Claim decendence from Ancient Egyptian Dynasty
-		legitimacy = 2
+		legitimacy = 1
 	}
 	alx_idea_5 = { #To help with how isolated it is
-		religious_unity = 0.15
+		religious_unity = 0.10
 		tolerance_heretic = 1
 		tolerance_heathen = 1
 	}
@@ -1505,7 +1506,7 @@ ALX_ideas = {
 	}
 	alx_idea_1 = { #The Nile allows for many populated cities
 		development_cost = -0.1
-		culture_conversion_cost = -0.15
+		culture_conversion_cost = -0.25
 	}
 	alx_idea_4 = { #A rich land with many goods
 		global_trade_goods_size_modifier = 0.1
@@ -2462,7 +2463,7 @@ SHU_ideas = {
 SYR_ideas = {
 	start = {
 		global_tax_modifier = 0.1
-		legitimacy = 1 	
+		legitimacy = 0.5 	
 	}
 	
 	bonus = {
@@ -2475,12 +2476,13 @@ SYR_ideas = {
 	
 	damascus_steel = {
 		infantry_power = 0.1
+		infantry_shock = 0.25
 	}
 	arameans_and_phoenicians = {
 		prestige = 1
 	}
 	entrepot_of_pilgrims = {
-		global_heretic_missionary_strength = 0.03 
+		global_heretic_missionary_strength = 0.02 
 	}
 	an_nasir_salah_ad_din = {
 		leader_land_manuever = 1 
@@ -2731,7 +2733,8 @@ ING_ideas = { #Ingria #Built around the idea that they exist only for Novgorod t
 		global_regiment_cost = -0.1
 	}
 	ing_idea_5 = { 
-		land_attrition = 0.15
+		land_attrition = -0.10
+		hostile_attrition = 1
 	}
 	ing_idea_6 = { 
 		envoy_travel_time = -0.25

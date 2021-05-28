@@ -1,0 +1,7 @@
+NDefines.NCountry.CONCENTRATE_DEVELOPMENT_DEVELOPMENT_DECREASE = 0.15 --- Reduced by 25%
+NDefines.NCountry.PILLAGE_CAPITAL_DEVELOPMENT_DECREASE = 0.15 --- Reduced by 25% 
+NDefines.NGovernment.CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.4 --- 50% Goes to Capital
+NDefines.NGovernment.CONCENTRATE_DEVELOPMENT_OTHER_STATE_PROVINCES_PROPORTION = 0.4 --- 50% Goes to other State Provinces
+NDefines.NGovernment.FREE_CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.5 --- 50% Goes to Capital
+NDefines.NGovernment.FREE_CONCENTRATE_DEVELOPMENT_OTHER_STATE_PROVINCES_PROPORTION = 0.5 --- 50% Goes to other State Provinces
+NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0.175	-- Reduced to 175 for Balance purposes

@@ -1,10 +1,6 @@
 # country_decisions = {
 	
 	####################### Leviathans Momuments have introduced a full review of this system. Perhaps we can use some assets from Ck2 to implement some of these Great works?
-	
-	
-	# Audax Validator "!" Ignore_1006
-	# Audax Validator "!" Ignore_1007
 
 	# build_great_library = { #Give Nation making this events related to this decision & a national modifier related to tech and idea cost.
 		# major = yes
@@ -18,9 +14,16 @@
 			# }
 			# is_core = 358
 			# 358 = {
-				# NOT = { has_great_project = great_library }
-				# NOT = { has_construction = great_library  } 
-			# }
+				# range = ROOT
+				# NOT = { 
+					# has_great_project = { 
+						# type = great_library 
+					# }
+				# }
+				# NOT = { 
+					# has_construction = great_library
+				# }
+			# }			
 			# adm_tech = 12 #Would be ADM 9 in vanilla?
 		# }
 		# provinces_to_highlight = {
@@ -39,16 +42,16 @@
 			# owns_or_vassal_of = 358
 			# is_subject = no			
 			# adm_tech = 18 #Would be ADM 15 in vanilla?
-			# treasury = 5000
-			# adm_power = 400
-			# dip_power = 400
-			# mil_power = 400
+			# treasury = -2500
+			# adm_power = 250
+			# dip_power = 250
+			# mil_power = 250
 		# }
 		# effect = {
-			# add_treasury = -5000
-			# add_adm_power = -400
-			# add_dip_power = -400
-			# add_mil_power = -400
+			# add_treasury = -2500
+			# add_adm_power = -250
+			# add_dip_power = -250
+			# add_mil_power = -250
 			# 358 = {	#Alexandria
 				# add_great_project = great_library
 			# }
@@ -2160,4 +2163,4 @@
 
 
 
-# }
+}

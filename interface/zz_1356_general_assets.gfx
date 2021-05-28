@@ -9,6 +9,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_great_project_great_library"	
+		texturefile = "gfx//interface//great_projects//great_project_alhambra.dds"
+	}	
+
+	spriteType = {
 		name = "cb_medieval_crusade"
 		texturefile = "gfx/interface/casus_bellis/cb_crusade.tga"
 		noOfFrames = 1

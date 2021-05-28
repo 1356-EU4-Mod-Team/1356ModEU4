@@ -1,7 +1,7 @@
 NDefines.NGame.START_DATE = "1356.12.25"
 NDefines.NGame.END_DATE = "1836.1.1"
-NDefines.NDiplomacy.IMPERIAL_REFORM_COST = 65
---NDefines.NDiplomacy.EMPEROR_REVOKE_AUTHORITY_COST = 65.0
+NDefines.NDiplomacy.IMPERIAL_REFORM_COST = 60
+--NDefines.NDiplomacy.EMPEROR_REVOKE_AUTHORITY_COST = 60.0
 NDefines.NDiplomacy.ALLY_AE_MULT = 1.8
 NDefines.NDiplomacy.DEFENDER_AE_MULT = 0.85
 NDefines.NCountry.FREE_IDEA_GROUP_COST  = 4
