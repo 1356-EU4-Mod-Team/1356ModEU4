@@ -1,0 +1,451 @@
+espionage_bribe_merchants = {
+	category = covert
+	require_acceptance = no
+
+	is_visible = {
+		always = yes
+		#is_subject = no
+		# government = monarchy
+		# ai = no
+		# NOT = { has_reform = elective_monarchy }
+		# FROM = {
+			# is_subject = no
+			# government = monarchy
+			# NOT = { has_reform = elective_monarchy }
+		# }
+	}
+	is_allowed = {
+		#always = yes
+		custom_trigger_tooltip = {
+			tooltip = DOES_NOT_HAVE_BRIBED_MERCHANTS	
+			FROM = {
+				NOT = { has_country_modifier = espionage_bribed_merchant_ongoing }
+			}	
+		}	
+		# FROM = {
+			# NOT = { has_country_modifier = espionage_bribed_merchant_ongoing }
+		# }			
+		has_idea_group = spy_ideas
+		has_idea = privateers	
+		# hidden_trigger = {
+			# is_subject = no
+			# government = monarchy
+			# NOT = { has_reform = elective_monarchy }
+			# FROM = {
+				# is_subject = no
+				# government = monarchy
+				# NOT = { has_reform = elective_monarchy }
+			# }
+		# }
+		#if = {
+			#limit = { ai = yes }
+			#treasury = 5000
+			#legitimacy_equivalent = 80
+			# OR = {
+				# NOT = {
+					# has_opinion = {
+						# who = FROM
+						# value = -50
+					# }
+				# }
+				# has_opinion_modifier = {
+					# modifier = insulted
+					# who = FROM
+				# }
+				# FROM = { has_heir = no }
+			# }
+		#}
+		if = {
+			# limit = {
+				# FROM = {
+					# NOT = { has_country_modifier = espionage_bribed_merchant_ongoing }
+				# }	
+			# }
+			# if = {
+				# limit = { FROM = { government_rank = 3 } }
+				# treasury = 2500
+			# }
+			# else_if = {
+				# limit = {
+					# FROM = { government_rank = 2 }
+				# }
+				# treasury = 500
+			# }
+			# else = {
+				# treasury = 100
+			# }
+			#is_at_war = no
+			#has_regency = no
+			has_spy_network_in = {
+				who = FROM
+				value = 60
+			}
+			#NOT = { dynasty = FROM }
+			# FROM = {
+				# has_regency = no
+				# marriage_with = ROOT
+				# ruler_age = 20
+				# is_at_war = no
+				# custom_trigger_tooltip = {
+					# tooltip = HAS_NO_OR_WEAK_HEIR
+					# OR = {
+						# has_heir = no
+						# AND = {
+							# has_heir = yes
+							# NOT = { heir_claim = 34 }
+						# }
+					# }
+				# }
+				# custom_trigger_tooltip = {
+					# tooltip = HEIR_NOT_ALREADY_SUPPORTED
+					# NOT = {
+						# OR = {
+							# has_country_flag = heir_supported_in_our_country
+							# has_country_modifier = just_got_pretender_rebels
+						# }
+					# }
+				# }
+			# }
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = WE_HAVE_NOT_BRIBED_MERCHANTS_LAST_FIVE_YEARS
+				always = no
+			}
+		}
+	}
+	on_accept = {
+		#FROM = { country_event = { id = thronanwaerter_spionage_option_events.1 } } ### Event Code for when you are Notified of Bribed Merhcants
+		add_spy_network_in = {
+			who = FROM
+			value = -60
+		}
+		# if = {
+			# limit = {
+				# FROM = { government_rank = 3 }
+			# }
+			# add_treasury = -2500
+		# }
+		# else_if = {
+			# limit = {
+				# FROM = { government_rank = 2 }
+			# }
+			# add_treasury = -500
+		# }
+		# else = {
+			# add_treasury = -100
+		# }
+		# set_country_flag = supported_heir_at_@FROM
+		FROM = {
+			add_country_modifier = {
+				name = espionage_bribed_merchant_ongoing
+				duration = 1825
+			}	
+		}
+		# export_to_variable = {
+			# which = year_of_last_try_to_support_heir_by_our_country
+			# value = trigger_value:is_year
+		# }
+		# change_variable = { which = year_of_last_try_to_support_heir_by_our_country value = -1 }
+	}
+
+	ai_will_do = {
+		factor = 0 # Ai will not do this
+	}
+}
+
+
+espionage_infiltrate_army = {
+	category = covert
+	require_acceptance = no
+
+	is_visible = {
+		always = yes
+		#is_subject = no
+		# government = monarchy
+		# ai = no
+		# NOT = { has_reform = elective_monarchy }
+		# FROM = {
+			# is_subject = no
+			# government = monarchy
+			# NOT = { has_reform = elective_monarchy }
+		# }
+	}
+	is_allowed = {
+		#always = yes
+		has_idea_group = spy_ideas
+		has_idea = masters_of_intrigue_espionage
+		# hidden_trigger = {
+			# is_subject = no
+			# government = monarchy
+			# NOT = { has_reform = elective_monarchy }
+			# FROM = {
+				# is_subject = no
+				# government = monarchy
+				# NOT = { has_reform = elective_monarchy }
+			# }
+		# }
+		#if = {
+			#limit = { ai = yes }
+			#treasury = 5000
+			#legitimacy_equivalent = 80
+			# OR = {
+				# NOT = {
+					# has_opinion = {
+						# who = FROM
+						# value = -50
+					# }
+				# }
+				# has_opinion_modifier = {
+					# modifier = insulted
+					# who = FROM
+				# }
+				# FROM = { has_heir = no }
+			# }
+		#}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = espionage_army_infiltrated }
+			}
+			# if = {
+				# limit = { FROM = { government_rank = 3 } }
+				# treasury = 2500
+			# }
+			# else_if = {
+				# limit = {
+					# FROM = { government_rank = 2 }
+				# }
+				# treasury = 500
+			# }
+			# else = {
+				# treasury = 100
+			# }
+			#is_at_war = no
+			#has_regency = no
+			has_spy_network_in = {
+				who = FROM
+				value = 70
+			}
+			#NOT = { dynasty = FROM }
+			# FROM = {
+				# has_regency = no
+				# marriage_with = ROOT
+				# ruler_age = 20
+				# is_at_war = no
+				# custom_trigger_tooltip = {
+					# tooltip = HAS_NO_OR_WEAK_HEIR
+					# OR = {
+						# has_heir = no
+						# AND = {
+							# has_heir = yes
+							# NOT = { heir_claim = 34 }
+						# }
+					# }
+				# }
+				# custom_trigger_tooltip = {
+					# tooltip = HEIR_NOT_ALREADY_SUPPORTED
+					# NOT = {
+						# OR = {
+							# has_country_flag = heir_supported_in_our_country
+							# has_country_modifier = just_got_pretender_rebels
+						# }
+					# }
+				# }
+			# }
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = WE_HAVE_NOT_INFILTRATE_THEIR_ARMY_IN_ONE_YEAR
+				always = no
+			}
+		}
+	}
+	on_accept = {
+		#FROM = { country_event = { id = thronanwaerter_spionage_option_events.1 } } ### Event Code for when you are Notified of Bribed Merhcants
+		add_spy_network_in = {
+			who = FROM
+			value = -70
+		}
+		# if = {
+			# limit = {
+				# FROM = { government_rank = 3 }
+			# }
+			# add_treasury = -2500
+		# }
+		# else_if = {
+			# limit = {
+				# FROM = { government_rank = 2 }
+			# }
+			# add_treasury = -500
+		# }
+		# else = {
+			# add_treasury = -100
+		# }
+		# set_country_flag = supported_heir_at_@FROM
+		# add_country_modifier = {
+			# name = countdown_next_thronanwaerter_spionage
+			# duration = 1825
+		# }
+		FROM = {
+			remove_fow = 24
+		}	
+		# export_to_variable = {
+			# which = year_of_last_try_to_support_heir_by_our_country
+			# value = trigger_value:is_year
+		# }
+		# change_variable = { which = year_of_last_try_to_support_heir_by_our_country value = -1 }
+	}
+
+	ai_will_do = {
+		factor = 0 # Ai will not do this
+	}
+}
+
+
+espionage_inflame_seperatist_sentiment = {
+	category = covert
+	require_acceptance = no
+
+	is_visible = {
+		always = yes
+		#is_subject = no
+		# government = monarchy
+		# ai = no
+		# NOT = { has_reform = elective_monarchy }
+		# FROM = {
+			# is_subject = no
+			# government = monarchy
+			# NOT = { has_reform = elective_monarchy }
+		# }
+	}
+	is_allowed = {
+		#always = yes
+		has_idea_group = spy_ideas
+		has_idea = masters_of_intrigue_espionage
+		custom_trigger_tooltip = {
+			tooltip = DOES_NOT_HAVE_INFLAMED_SEPERATISM	
+			FROM = {
+				NOT = { has_country_modifier = espionage_inflamed_seperatist_sentiment }
+			}	
+		}		
+		# hidden_trigger = {
+			# is_subject = no
+			# government = monarchy
+			# NOT = { has_reform = elective_monarchy }
+			# FROM = {
+				# is_subject = no
+				# government = monarchy
+				# NOT = { has_reform = elective_monarchy }
+			# }
+		# }
+		#if = {
+			#limit = { ai = yes }
+			#treasury = 5000
+			#legitimacy_equivalent = 80
+			# OR = {
+				# NOT = {
+					# has_opinion = {
+						# who = FROM
+						# value = -50
+					# }
+				# }
+				# has_opinion_modifier = {
+					# modifier = insulted
+					# who = FROM
+				# }
+				# FROM = { has_heir = no }
+			# }
+		#}
+		if = {
+			# if = {
+				# limit = { FROM = { government_rank = 3 } }
+				# treasury = 2500
+			# }
+			# else_if = {
+				# limit = {
+					# FROM = { government_rank = 2 }
+				# }
+				# treasury = 500
+			# }
+			# else = {
+				# treasury = 100
+			# }
+			#is_at_war = no
+			#has_regency = no
+			has_spy_network_in = {
+				who = FROM
+				value = 60
+			}
+			#NOT = { dynasty = FROM }
+			# FROM = {
+				# has_regency = no
+				# marriage_with = ROOT
+				# ruler_age = 20
+				# is_at_war = no
+				# custom_trigger_tooltip = {
+					# tooltip = HAS_NO_OR_WEAK_HEIR
+					# OR = {
+						# has_heir = no
+						# AND = {
+							# has_heir = yes
+							# NOT = { heir_claim = 34 }
+						# }
+					# }
+				# }
+				# custom_trigger_tooltip = {
+					# tooltip = HEIR_NOT_ALREADY_SUPPORTED
+					# NOT = {
+						# OR = {
+							# has_country_flag = heir_supported_in_our_country
+							# has_country_modifier = just_got_pretender_rebels
+						# }
+					# }
+				# }
+			# }
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = WE_HAVE_NOT_INFLAMED_SEPERATISM_FIVE_YEARS
+				always = no
+			}
+		}
+	}
+	on_accept = {
+		#FROM = { country_event = { id = thronanwaerter_spionage_option_events.1 } } ### Event Code for when you are Notified of Bribed Merhcants
+		add_spy_network_in = {
+			who = FROM
+			value = -60
+		}
+		# if = {
+			# limit = {
+				# FROM = { government_rank = 3 }
+			# }
+			# add_treasury = -2500
+		# }
+		# else_if = {
+			# limit = {
+				# FROM = { government_rank = 2 }
+			# }
+			# add_treasury = -500
+		# }
+		# else = {
+			# add_treasury = -100
+		# }
+		# set_country_flag = supported_heir_at_@FROM
+		FROM = {
+			add_country_modifier = {
+				name = espionage_inflamed_seperatist_sentiment
+				duration = 1825
+			}	
+		}
+		# export_to_variable = {
+			# which = year_of_last_try_to_support_heir_by_our_country
+			# value = trigger_value:is_year
+		# }
+		# change_variable = { which = year_of_last_try_to_support_heir_by_our_country value = -1 }
+	}
+
+	ai_will_do = {
+		factor = 0 # Ai will not do this
+	}
+}

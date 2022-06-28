@@ -70,11 +70,17 @@ country_decisions = {
 					owns_core_province = 261		#Ruthenia/Lvov -western
 					owns_core_province = 279		#Volhynia -western
 					owns_core_province = 283		#Zaporozhie -eastern/southern center of rebellions
+					280 = { 						#Kiev -center
+						is_state = yes
+					}
 				}
 				#or owns only core-core stuff but has god like ruler
 				AND = {
 					owns_core_province = 280		#Kiev -center				
 					owns_core_province = 283		#Zaporozhie -eastern/southern center of rebellions
+					280 = { 						#Kiev -center
+						is_state = yes
+					}
 					dip = 5
 				}
 			}
@@ -100,6 +106,13 @@ country_decisions = {
 			add_prestige = 25
 			change_tag = UKR
 			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					technology_group = nomad_group
+				}
+				change_technology_group = eastern
+				change_unit_type = eastern
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {

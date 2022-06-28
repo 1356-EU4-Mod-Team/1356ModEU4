@@ -3,7 +3,7 @@
 owner = BRA
 controller = BRA
 add_core = BRA
-add_core = STE
+add_core = WOL
 culture = pommeranian
 religion = catholic
 hre = yes

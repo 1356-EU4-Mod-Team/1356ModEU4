@@ -1,7 +1,7 @@
 #2732 - Wulgurukaba
 
-culture = aboriginal
-religion = animism
+culture = paman
+religion = dreamtime
 capital = "Wulgurukaba"
 trade_goods = unknown
 hre = no

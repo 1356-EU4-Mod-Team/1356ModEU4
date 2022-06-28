@@ -2,6 +2,7 @@ rush_of_colonists = {
 	colonists = 1
 }
 
+
 #England-France War
 hundred_years_war_claims = {
 	province_warscore_cost = -0.33
@@ -449,3 +450,249 @@ pre_gunpowder_modifier = { #
 	global_unrest = 8
 	stability_cost_modifier = 0.25
 }
+
+#1.31 Changes
+
+
+cannot_disinherit_heir = {
+	block_introduce_heir = yes
+}	
+
+recently_elected_new_ruler_nov = { # Dummy modifier 
+}	
+
+veche_recently_deposed_ruler = { # Dummy modifier 
+	global_autonomy = 0.05
+}	
+
+## Ages Dummy Modifiers for AI
+
+splendor_tier_1 = { # Dummy modifier 
+	monthly_splendor = 1
+	development_cost = 1
+}	
+splendor_tier_2 = { # Dummy modifier 
+	monthly_splendor = 2
+	development_cost = 1	
+}	
+splendor_tier_3 = { # Dummy modifier 
+	monthly_splendor = 3
+	development_cost = 1	
+}	
+splendor_tier_4 = { # Dummy modifier 
+	monthly_splendor = 4
+	development_cost = 1	
+}	
+splendor_tier_5 = { # Dummy modifier 
+	monthly_splendor = 5
+	development_cost = 1	
+}	
+splendor_tier_6 = { # Dummy modifier 
+	monthly_splendor = 6
+	development_cost = 1	
+}	
+splendor_tier_7 = { # Dummy modifier 
+	monthly_splendor = 7
+	development_cost = 1	
+}
+
+# Additional flavor for new insitutions - Geno
+
+exorted_merchants = {
+	global_tax_income = 24
+	global_prov_trade_power_modifier = -0.20
+}	
+
+implemented_new_trade_policies = {
+	placed_merchant_power = 10
+	trade_efficiency = 0.1
+}	
+
+## Invention Weapons - Gunpowder
+
+western_cannon_gunpowder = {
+	artillery_fire = 0.85
+	backrow_artillery_damage = 0.15
+}	
+
+founding_western_gunpowder = {
+	artillery_cost = -0.15
+	prestige = 0.50
+}
+
+eastern_arquebus_gunpowder = {
+	infantry_fire = 0.10
+	infantry_cost = 0.05
+}
+
+founding_eastern_gunpowder = {
+	infantry_cost = -0.33
+	mil_tech_cost_modifier = -0.10
+	prestige = 0.50
+}	
+
+ottoman_gun_of_urban_gunpowder = {
+	artillery_fire = 0.85
+	movement_speed = -0.10
+}
+
+founding_ottoman_gunpowder = {
+	siege_ability = 0.10
+	artillery_cost = -0.05
+	prestige = 0.50
+}	
+
+muslim_handcannon_gunpowder = {
+	spy_offence = 0.15
+	placed_merchant_power = 5
+}
+
+founding_muslim_gunpowder = {
+	trade_efficiency = 0.10
+	global_spy_defence = 0.20
+	prestige = 0.50
+}	
+
+chinese_rocketcart_gunpowder = {
+	artillery_fire = 0.60
+	artillery_shock = 0.15
+	artillery_bonus_vs_fort = -2
+}
+
+founding_chinese_gunpowder = {
+	backrow_artillery_damage = 0.10
+	land_morale = 0.05
+	prestige = 0.50
+}
+
+
+# Early Siege Weapons Options
+
+early_siege_retrofitting = { # For changing template
+	land_maintenance_modifier = 0.10
+	reinforce_speed = -0.25
+}	
+
+early_siege_cant_choose = {
+	picture = artillery_icon
+}	
+
+trebuchets_early_cannon = {
+	artillery_shock = 0.85
+	backrow_artillery_damage = -0.10
+	artillery_cost = -0.30
+	artillery_bonus_vs_fort = -2
+}
+
+siege_towers_early_cannon = {
+	artillery_cost = -0.50
+	backrow_artillery_damage = -0.80
+	artillery_shock = 0.20
+}
+
+early_cannon_early_cannons = { #How Original
+	artillery_bonus_vs_fort = -1
+	artillery_fire = 0.50
+	backrow_artillery_damage = 0.10
+	siege_ability = 0.10
+	movement_speed = -0.10
+}	
+
+early_cannon_hwacha = {
+	artillery_fire = 0.75
+	backrow_artillery_damage = 0.10
+	artillery_cost = -0.20
+	artillery_bonus_vs_fort = -3
+}	
+
+# Buffs for nations with no early Siege weapons
+
+natives_siege_buff = {
+	reform_progress_growth = 0.1
+	infantry_power = 0.10
+}
+
+african_siege_buff = {
+	available_province_loot = 0.50
+	institution_spread_from_true_faith = 0.15
+}
+
+steppe_nomads_buff = {
+	cavalry_cost = -0.10
+	siege_ability = 0.10
+	raze_power_gain = 0.10
+}	
+
+# Indus Gunpowder Buff	
+
+indus_saltpetre_industry = {
+	trade_goods_size = 1
+	backrow_artillery_damage = 0.025
+}	
+
+
+# Colonial Investment Modifiers
+
+colonial_religious_schools = {
+	global_missionary_strength = 0.01
+}
+
+colonial_settler_boost = {
+	global_colonial_growth = 15
+}
+
+colonial_tax_boost_24 = {
+	global_tax_income = 24
+}
+
+colonial_natives_bonus_uprising_assimilation = {
+	native_uprising_chance = -1
+	native_assimilation = 0.50
+}
+
+colonial_free_leader = {
+	free_leader_pool = 1
+}
+
+colonial_global_tarrifs_permabuff = {
+	global_tariffs = 0.05
+}
+
+colonial_sailor_buff_25 = {
+	global_sailors = 1000
+}
+
+colonial_tresure_fleet_buff = {
+	treasure_fleet_income = 0.2
+}
+
+# 1.31 Post Release modifiers
+
+# Teutonic-Livionian situtation
+
+granted_autonomy_of_livonia = {
+	discipline = 0.05
+	missionaries = 1
+	global_missionary_strength = 0.02
+	ae_impact = -0.15
+}	
+
+timurid_centrialization = {
+	administrative_efficiency = 0.30
+}	
+
+habsburg_imperial_dominance = {
+	improve_relation_modifier = 0.25
+	diplomatic_reputation = 2
+	global_tax_income = 24
+	diplomatic_upkeep = 1
+}	
+
+imperial_decadence = {
+	diplomatic_reputation = -2.5
+	improve_relation_modifier = -0.10
+	imperial_authority_value = -0.10
+}	
+bohemian_golden_bull_nerf = {
+	imperial_authority_value = -0.10
+}	

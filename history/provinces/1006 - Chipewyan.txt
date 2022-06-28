@@ -1,6 +1,6 @@
 #1006 - Chipewyan
 
-culture = chipewyan
+culture = inuit
 religion = totemism
 capital = "Chipewyan"
 trade_goods = unknown

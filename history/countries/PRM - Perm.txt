@@ -8,10 +8,10 @@ capital = 1963	# Cherdyn
 
 1356.1.1 = {
 	monarch = {
-		name = "Native Tribes"
-		adm = 3
-		dip = 3
-		mil = 3
+		name = "Interregnum"
+		adm = 4
+		dip = 4
+		mil = 4
 		regent = yes
 	}
 }

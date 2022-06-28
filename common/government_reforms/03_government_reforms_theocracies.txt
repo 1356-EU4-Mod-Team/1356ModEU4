@@ -7,8 +7,13 @@ theocracy_mechanic = {
 	different_religion_group_acceptance = -50
 	religion = yes
 	heir = yes
+	can_customise_heir = no
 	basic_reform = yes # = invisible/does not take up a slot
 	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
 
 	modifiers = {
 		brahmins_hindu_influence_modifier = 0.1
@@ -87,7 +92,6 @@ patriarch_government_reform = {
 			AND = {
 				owns_core_province = 118 #Rome
 				NOT = { religion = catholic }
-				NOT = { tag = PAP }
 			}
 		}
 		OR = {
@@ -113,54 +117,6 @@ patriarch_government_reform = {
 		locked_government_type = yes
 	}
 }
-
-avignon_papacy_government = {
-	potential = {
-		tag = AVI
-	}
-
-	modifiers = {
-		prestige_per_development_from_conversion = 0.33
-		tolerance_own = 1
-		church_influence_modifier = 0.2
-	}
-	valid_for_nation_designer = no
-	icon = "papacy"
-	allow_normal_conversion = yes
-	papacy = yes 
-	allow_convert = no
-	lock_level_when_selected = yes
-	fixed_rank = 2
-
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
-
-#Commented out for now as this would require a LOT of reworking of vanilla content to do properly
-
-# avignon_papacy_league_win_government = {
-	# potential = {
-		# tag = AVI
-	# }
-
-	# modifiers = {
-		# prestige_per_development_from_conversion = 0.33
-		# tolerance_own = 1
-		# church_influence_modifier = 0.2
-	# }
-	# valid_for_nation_designer = no
-	# icon = "papacy"
-	# allow_normal_conversion = yes
-	# papacy = yes
-	# allow_convert = no
-	# lock_level_when_selected = yes
-	# fixed_rank = 2
-
-	# custom_attributes = {
-		# locked_government_type = yes
-	# }
-# }
 
 #1356 changes end
 
@@ -257,7 +213,7 @@ kingdom_of_god_reform = {
 		global_manpower_modifier = 0.1
 		prestige = 1
 		devotion = 1
-		appoint_cardinal_cost = -0.5
+		appoint_cardinal_cost = -0.3
 		papal_influence_from_cardinals = 1.0
 	}
 	allow_normal_conversion = yes
@@ -463,7 +419,7 @@ conciliarism_reform = {
 		tag = PAP
 	}
 	modifiers = {
-		appoint_cardinal_cost = -0.5
+		appoint_cardinal_cost = -0.3
 	}
 	ai = {
 		factor = 3
@@ -583,18 +539,22 @@ theocratic_democracy_reform = {
 	
 	trigger = {
 		NOT = { has_reform = monastic_order_reform }
-		OR = {
-			NOT = { has_estate = estate_nobles }
-			crown_stronger_than_estate = { estate = estate_nobles }
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			OR = {
+				NOT = { has_estate = estate_nobles }
+				crown_stronger_than_estate = { estate = estate_nobles }
+			}
 		}
 	}
 
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
-	}
-	custom_attributes = {
-		blocked_call_diet = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+			disables_nobility = yes
+		}
 	}
 	ai = {
 		factor = 1
@@ -625,7 +585,7 @@ theocratic_democracy_reform = {
 regionally_elected_commanders = {
 	icon = "regionally_elected_commanders"
 	allow_normal_conversion = yes
-	#fixed_rank = 0
+	fixed_rank = 0
 	modifiers = {
 		global_unrest = -1
 	}
@@ -642,18 +602,22 @@ regionally_elected_commanders = {
 			has_reform = monastic_order_reform
 			tag = KOJ
 		}
-		OR = {
-			NOT = { has_estate = estate_nobles }
-			crown_stronger_than_estate = { estate = estate_nobles }
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			OR = {
+				NOT = { has_estate = estate_nobles }
+				crown_stronger_than_estate = { estate = estate_nobles }
+			}
 		}
 	}
 
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
-	}
-	custom_attributes = {
-		blocked_call_diet = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+			disables_nobility = yes
+		}
 	}
 	ai = {
 		factor = 1
@@ -684,7 +648,7 @@ regionally_elected_commanders = {
 monastic_elections_reform = {
 	icon = "monastic_elections_reform"
 	allow_normal_conversion = yes
-	#fixed_rank = 2
+    fixed_rank = 0
 	modifiers = {
 		stability_cost_modifier = -0.1
 		max_absolutism = 20
@@ -732,7 +696,7 @@ monastic_elections_reform = {
 commander_king_reform = {
 	icon = "commander_king_reform"
 	allow_normal_conversion = yes
-	#fixed_rank = 2
+	fixed_rank = 0
 	potential = {
 		OR = {
 			has_reform = monastic_order_reform
@@ -744,7 +708,7 @@ commander_king_reform = {
 			has_reform = monastic_order_reform
 			tag = KOJ
 		}
-		full_idea_group = aristocracy_ideas
+		full_idea_group = theocracy_gov_ideas
 	}
 	modifiers = {
 		devotion = 0.1
@@ -766,7 +730,7 @@ commander_king_reform = {
 admiral_king_reform = {
 	icon = "admiral_king_reform"
 	allow_normal_conversion = yes
-	#fixed_rank = 2
+	fixed_rank = 0
 	potential = {
 		OR = {
 			has_reform = monastic_order_reform
@@ -796,6 +760,8 @@ admiral_king_reform = {
 		admirals_become_rulers = yes
 	}
 	has_term_election = no
+	queen = yes
+	royal_marriage = yes
 	heir = no
 	ai = {
 		factor = 0.1
@@ -899,6 +865,7 @@ religion_in_one_country_reform = {
 religious_permanent_revolution_reform = {
 	icon = "religious_permanent_revolution_reform"
 	allow_normal_conversion = yes
+	force_conversion_gives_global_holy_war_released_modifier = yes
 	potential = {
 		NOT = {
 			religion = confucianism
@@ -915,7 +882,7 @@ religious_permanent_revolution_reform = {
 		custom_tooltip = world_crusade_tt
 	}
 	modifiers = {
-		enforce_religion_cost = -0.4
+		enforce_religion_cost = -0.25
 	}
 	ai = {
 		factor = 3

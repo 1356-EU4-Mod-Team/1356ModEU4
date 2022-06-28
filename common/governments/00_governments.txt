@@ -1,49 +1,5 @@
 
 monarchy = {
-	basic_reform = monarchy_mechanic
-
-	legacy_government = {
-		despotic_monarchy
-		feudal_monarchy
-		administrative_monarchy
-		constitutional_monarchy
-		enlightened_despotism
-		revolutionary_empire
-		english_monarchy_legacy
-		mamluk_government_legacy
-		feudal_theocracy_legacy
-		elective_monarchy_legacy
-		celestial_empire_legacy
-		ottoman_government_legacy
-		prussian_monarchy_legacy
-		iqta_legacy
-		daimyo_legacy
-		shogunate_legacy
-		indep_daimyo_legacy
-		principality_legacy
-		tsardom_legacy
-		#holy_state_legacy
-		###1356 ADDITION#######
-		elective_feudal_monarchy
-		chinese_kingdom_government
-		timurid_government
-		barbary_sultanate
-		kalmar_union_legacy
-		french_vassal_feudal_monarchy
-		earldom_legacy
-		beylik_legacy
-		#archduchy_legacy
-		serbian_government_legacy
-		delhi_sultanate_legacy
-		bengali_sultanate_legacy
-		delhian_empire_legacy
-		bahamis_sultanate_legacy
-		vij_government_legacy		
-		gondi_kingdom_kingdom
-		byzantine_empire_gov
-		#####END 1356 CHANGES#####
-	}
-
 	reform_levels = {
 		feudalism_vs_autocracy = {
 			reforms = {
@@ -54,7 +10,10 @@ monarchy = {
 				nayankara_reform
 				misl_confederacy_reform
 				rajput_kingdom
+				negusa_nagast
+				solomonic_empire
 				#Specific:
+				chinese_warlord
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
@@ -74,6 +33,10 @@ monarchy = {
 				revolutionary_empire_reform
 				holy_state_reform
 				austrian_archduchy_reform
+				siamese_absolutism
+				confucian_bureaucracy	
+				musa_rule
+				mossi_federal_kingdom							
 				###1356 ADDITION#######
 				elective_feudal_monarchy_reform
 				chinese_kingdom_government_reform
@@ -83,6 +46,7 @@ monarchy = {
 				kalmar_union_reform
 				beylik_reform
 				earldom_reform
+				theocratic_kingdom_eran
 				#archduchy_reform
 				byzantine_empire_reform
 				serbian_government_reform
@@ -92,9 +56,9 @@ monarchy = {
 				bahamis_sultanate_reform
 				vij_government_reform
 				gondi_kingdom_kingdom_reform
-				german_kingdom
+				german_kingdoms
 				golden_bull_federation_government
-				golden_bull_composite_monarchy
+				high_feudal_monarchy_reform
 				#####END 1356 CHANGES#####
 			}
 		}
@@ -131,6 +95,7 @@ monarchy = {
 				black_army_reform
 				legion_of_honor_reform
 				imperial_nobility_reform
+				uparaja_reform
 			}
 		}
 		bureaucracy = {
@@ -143,6 +108,8 @@ monarchy = {
 				penal_colonies_reform
 				liberte_reform
 				fraternite_reform
+				examination_system_reform
+				corvee_reform
 			}
 		}
 		growth_of_administration = {
@@ -157,6 +124,7 @@ monarchy = {
 				revolutionary_principle_reform
 				equality_principle_reform
 				imperial_principle_reform
+				sakdina_system_reform
 			}
 		}
 		deliberative_assembly = {
@@ -194,6 +162,53 @@ monarchy = {
 		}
 	}
 
+	basic_reform = monarchy_mechanic
+
+	legacy_government = {
+		despotic_monarchy
+		feudal_monarchy
+		administrative_monarchy
+		constitutional_monarchy
+		enlightened_despotism
+		revolutionary_empire
+		english_monarchy_legacy
+		mamluk_government_legacy
+		feudal_theocracy_legacy
+		elective_monarchy_legacy
+		celestial_empire_legacy
+		ottoman_government_legacy
+		prussian_monarchy_legacy
+		iqta_legacy
+		daimyo_legacy
+		shogunate_legacy
+		indep_daimyo_legacy
+		principality_legacy
+		tsardom_legacy
+		holy_state_legacy
+		negusa_nagast_legacy
+		solomonic_empire_legacy
+		musa_rule_legacy
+		mossi_federal_kingdom_legacy
+		###1356 ADDITION#######
+		elective_feudal_monarchy
+		chinese_kingdom_government
+		timurid_government
+		barbary_sultanate
+		kalmar_union_legacy
+		french_vassal_feudal_monarchy
+		earldom_legacy
+		beylik_legacy
+		#archduchy_legacy
+		serbian_government_legacy
+		delhi_sultanate_legacy
+		bengali_sultanate_legacy
+		delhian_empire_legacy
+		bahamis_sultanate_legacy
+		vij_government_legacy		
+		gondi_kingdom_kingdom
+		byzantine_empire_gov
+		#####END 1356 CHANGES#####
+	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
 
@@ -215,7 +230,6 @@ monarchy = {
 		earldom_reform
 		beylik_reform
 		golden_bull_federation_government
-		golden_bull_composite_monarchy
 		#####END 1356 CHANGES#####
 	}
 
@@ -228,6 +242,7 @@ monarchy = {
 		nepotism_reform
 		lottery_reform
 		dutch_republic
+		novgorod_republic
 	}
 
 	#States General works with few others
@@ -253,6 +268,8 @@ monarchy = {
 		vij_government_reform
 		gondi_kingdom_kingdom_reform
 		golden_bull_federation_government
+		novgorod_republic
+		theocratic_kingdom_eran
 		#####END 1356 CHANGES#####
 		
 	}
@@ -266,6 +283,11 @@ monarchy = {
 		parliamentary_reform
 	}
 
+	#Effects conflict with each other
+	exclusive_reforms = {
+		mughal_government
+		decentralize_reform
+	}
 	color = { 179 25 25 }
 }
 
@@ -297,6 +319,11 @@ republic = {
 		pirate_kingdom
 		war_against_the_world_government
 		black_market_consortium_government
+		military_dictatorship
+		signoria
+		protectorate_parliament_legacy
+		prussian_republic
+		united_cantons_legacy		
 		#####1356 Additions#####
 		#swiss_canton
 		frisian_republic_legacy
@@ -322,7 +349,10 @@ republic = {
 				american_republic
 				federal_republic
 				colonial_government
-				dutch_republic
+				crown_colony_government
+				private_enterprise_colony_government
+				self_governing_colony_government				
+				dutch_republic				
 				peasants_republic
 				revolutionary_republic_reform
 				junior_revolutionary_republic_reform
@@ -333,6 +363,8 @@ republic = {
 				protectorate_parliament_reform
 				prussian_republic_reform
 				united_cantons_reform
+				kongsi_federation
+				millenarian_theocracy_reform				
 				#####1356 Additions#####
 				#swiss_canton_reform
 				frisian_republic_gov
@@ -341,6 +373,7 @@ republic = {
 				viking_republic_reform
 				caspian_peasants_republic_reform
 				tsardom_republic
+				novgorod_republic
 				#####1356 Additions End#####
 			}
 		}
@@ -355,6 +388,9 @@ republic = {
 				liberte_reform
 				egalite_reform
 				fraternite_reform
+				nov_delegated_power_to_veche
+				nov_promote_local_boyars
+				nov_favor_princely_ties
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -457,6 +493,7 @@ republic = {
 		ahm_republic_reform
 		viking_republic_reform
 		caspian_peasants_republic_reform
+		novgorod_republic
 		######End 1356 Changes#####
 	}
 	exclusive_reforms = {
@@ -493,7 +530,12 @@ tribal = {
 		tribal_federation_legacy
 		steppe_horde_legacy
 		siberian_native_council
-		
+		sacred_kingdom_legacy
+		tribal_confederacy_legacy
+		shaka_regime_legacy
+		matrilineal_system_legacy
+		feudal_tribe_legacy
+		great_man_legacy		
 		####BEGIN 1356 CHANGES#####
 		tribal_federation_ilkhan
 		ilkhanate_government_tribal
@@ -510,12 +552,29 @@ tribal = {
 				siberian_tribe
 				gond_kingdom
 				great_mongol_state_reform
+				stateless_society
+				polynesian_kingdom
+				polynesian_tribe
+				sacred_kingdom
+				tribal_confederacy
+				shaka_regime
+				matrilineal_system
+				feudal_tribe
+				great_man				
 				####BEGIN 1356 CHANGES#####
 				tribal_federation_ilkhan_reform
 				ilkhanate_government_tribal_reform
 				#tribal_republic_gov #Its legacy uses Tribal Democracy
 				#####END 1356 CHANGES#####
 			}
+		}
+		tribal_1356_inheritance = {
+			reforms = {
+				subvert_rival_clans_reform_tribes
+				mongolic_succession_reforms_tribes
+				tribal_rule_by_might_reform
+				tribal_hereditary_succession
+			}		
 		}
 		tribal_cultural_values = {
 			reforms = {
@@ -529,6 +588,14 @@ tribal = {
 				lip_service_reform
 			}
 		}
+		tribal_winds_of_change = {
+			reforms = {
+				formalize_noble_caste_tribal
+				formalize_clergical_caste_tribal
+				grow_trade_relations_tribal
+				fortify_structure_of_the_tribe_tribal
+			}			
+		}		
 		tribal_modernization = {
 			reforms = {
 				centralize_tribal_power_reform
@@ -543,6 +610,9 @@ tribal = {
 				tribe_becomes_republic_reform
 				tribe_becomes_theocracy_reform
 				tribe_becomes_horde_reform
+				delegate_power_to_clan_leaders_tribal
+				tribe_remain_tribal_reform
+				tribe_tribal_unity
 			}
 		}
 	}
@@ -555,6 +625,51 @@ native = {
 		native_council_legacy
 	}
 	color = { 194 127 209 }
+
+	reform_levels = {
+		tribe_organization = {
+			reforms = {
+				native_chiefdom_reform
+				native_federation_reform
+				native_clan_council_reform
+				native_hereditary_reform
+			}
+		}
+
+		story_tradition = {
+			reforms = {
+				native_martial_tradition_reform
+				native_oral_tradition_reform
+				native_land_tradition_reform
+			}
+		}
+
+		agricultural_revolution = {
+			reforms = {
+				native_war_band_reform
+				native_settle_down_reform
+				native_seasonal_travel_reform
+			}
+		}
+
+		legal_basis = {
+			reforms = {
+				native_codified_power_reform
+				native_diplomatic_cermonies_reform
+				native_trading_with_foreigners_reform
+			}
+		}
+
+		national_identity = {
+			reforms = {
+				native_becomes_horde_reform
+				native_becomes_monarchy_reform
+				native_becomes_republic_reform
+				native_becomes_theocracy_reform
+				native_remain_being_native_reform
+			}
+		}
+	}
 }
 
 
@@ -578,7 +693,6 @@ theocracy = { #1356
 				holy_state_reform
 				united_cantons_reform
 				patriarch_government_reform #1356
-				avignon_papacy_government #1356
 			}
 		}
 		internal_vs_external_mission = {
@@ -770,10 +884,10 @@ pre_dharma_mapping = {
 		government = republic
 		legacy_government = imperial_city
 	}
-	#trading_city = {
-	#	government = republic
-	#	legacy_government = imperial_city_legacy
-	#}
+	trading_city = {
+		government = republic
+		legacy_government = imperial_city
+	}
 	ambrosian_republic = {
 		government = republic
 		legacy_government = ambrosian_republic_legacy

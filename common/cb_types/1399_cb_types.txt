@@ -12,17 +12,17 @@ cb_hussite_conformance = {
 }
 
 cb_castile_civil_war = {
-	ai_peace_desire = -100
+	ai_peace_desire = -1000
 	prerequisites = {
 		always = no
 	}
 		
-	attacker_disabled_po = {
-		po_demand_provinces
-		po_revoke_cores
-		po_release_vassals
-		po_release_annexed
-	}
+	# attacker_disabled_po = {
+		# po_demand_provinces
+		# po_revoke_cores
+		# po_release_vassals
+		# po_release_annexed
+	# }
 	
 	#defender_disabled_po = {
 	#	po_demand_provinces
@@ -50,18 +50,21 @@ cb_romuva_conformance = {
 
 cb_chinese_civil_war = {
 
+		# prerequisites = {
+			# OR = {
+				# culture_group = east_asian
+				# tag = YUA
+			# }
+			# FROM = { 
+				# OR = {
+				# culture_group = east_asian
+				# tag = YUA
+				# }
+			# }
+		# }
 		prerequisites = {
-			OR = {
-				culture_group = east_asian
-				tag = YUA
-			}
-			FROM = { 
-				OR = {
-				culture_group = east_asian
-				tag = YUA
-				}
-			}
-		}
+			NOT = { is_year = 1356 }
+		}		
 	
 	war_goal = goal_chinese_civil_war
 	
@@ -142,18 +145,3 @@ cb_medieval_crusade = {
 #	war_goal = goal_feudalism_border_war
 #
 #}
-
-cb_avignon_papacy_league_war = {
-	valid_for_subject = yes
-	
-	prerequisites = { #THIS WILL NEED TWEAKS.
-		OR = {
-			tag = PAP
-			tag = AVI
-		}
-		has_global_flag = avignon_papacy_league_flag
-	}
-		
-
-	war_goal = superiority_religious_league
-}	

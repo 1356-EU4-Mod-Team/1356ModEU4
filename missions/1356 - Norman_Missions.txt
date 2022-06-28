@@ -7,6 +7,7 @@ nrm_secure_northern_france_england = {
 	potential = { 
 		tag = NRM
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -320,6 +321,7 @@ nrm_norman_independence = {
 	potential = { 
 		tag = NRM
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -348,6 +350,7 @@ NRM_missions_colonial = { #Colonize and such. Taken from Vanilla France.
 		tag = NRM		
 		is_random_new_world = no
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	NRM_build_fleet = { #Make a Navy
@@ -502,6 +505,7 @@ nrm_norman_legacy = {
 	potential = { 
 		tag = NRM
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	

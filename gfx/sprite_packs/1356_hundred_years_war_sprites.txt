@@ -1,0 +1,259 @@
+english_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			#tag = GUY
+			tag = AQT
+		}	
+	}
+
+	sprite_infantry = {
+		0 = ENG_INFANTRY_1
+		1 = ENG_INFANTRY_2
+		2 = ENG_INFANTRY_3
+		3 = ENG_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = ENG_CAVALRY_1
+		1 = ENG_CAVALRY_2
+		2 = ENG_CAVALRY_3
+		3 = ENG_CAVALRY_4
+	}
+	
+	sprite_artillery = {
+		0 = ENG_ARTILLERY_1
+		1 = ENG_ARTILLERY_2
+		2 = ENG_ARTILLERY_3
+		3 = ENG_ARTILLERY_4
+	}
+}
+
+norththumberland_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = LNC
+			tag = YRK
+			tag = GUY
+		}	
+	}
+
+	sprite_infantry = {
+		0 = NRM_INFANTRY_1
+		1 = NRM_INFANTRY_2
+		2 = NRM_INFANTRY_3
+		3 = NRM_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = NRM_CAVALRY_1
+		1 = NRM_CAVALRY_2
+		2 = NRM_CAVALRY_3
+		3 = NRM_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = NRM_ARTILLERY_1
+		1 = NRM_ARTILLERY_2
+		2 = NRM_ARTILLERY_3
+		3 = NRM_ARTILLERY_4
+	}
+}
+
+# burgundy_clones = { # Disabled, SWI looks better
+	#Tests against every tag in game
+	# country_trigger = {
+		# OR = {
+			# tag = PBG
+		# }	
+	# }
+	# sprite_infantry = {
+		# 0 = BUR_INFANTRY_1
+	# }
+
+	# sprite_artillery = {
+		# 0 = BUR_ARTILLERY_1
+	# }
+# }
+
+
+french_CENTREAL_minors_clones = { # Uses Scottish Units but its because of COA display
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = ALE
+			tag = ANJ
+			tag = PBG
+		}	
+	}
+	sprite_infantry = {
+		0 = SWI_INFANTRY_1
+		1 = SWI_INFANTRY_2
+		2 = SWI_INFANTRY_3
+		3 = SWI_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = SWI_CAVALRY_1
+		1 = SWI_CAVALRY_2
+		2 = SWI_CAVALRY_3
+		3 = SWI_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = SWI_ARTILLERY_1
+		1 = SWI_ARTILLERY_2
+		2 = SWI_ARTILLERY_3
+		3 = SWI_ARTILLERY_4
+	}
+}
+
+french_OUTER_minors_clones = { # Uses Scottish Units but its because of COA display
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = BAR
+			tag = LOR
+			tag = NEV
+			tag = LUX
+		}	
+	}
+
+	sprite_infantry = {
+		0 = TRI_INFANTRY_1
+		2 = TRI_INFANTRY_3
+	}
+
+	sprite_cavalry = {
+		0 = TRI_CAVALRY_1
+		2 = TRI_CAVALRY_3
+	}
+
+	sprite_artillery = {
+		0 = TRI_ARTILLERY_1
+		2 = TRI_ARTILLERY_3
+	}
+}
+
+french_southern_minors_clones = { # Uses Scottish Units but its because of COA display
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = FOZ
+			tag = DAU
+			tag = NEV
+			tag = TOU
+		}	
+	}
+
+
+	sprite_infantry = {
+		0 = GEN_INFANTRY_1
+		1 = GEN_INFANTRY_2
+		2 = GEN_INFANTRY_3
+		3 = GEN_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = GEN_CAVALRY_1
+		1 = GEN_CAVALRY_2
+		2 = GEN_CAVALRY_3
+		3 = GEN_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = GEN_ARTILLERY_1
+		1 = GEN_ARTILLERY_2
+		2 = GEN_ARTILLERY_3
+		3 = GEN_ARTILLERY_4
+	}
+}
+
+savoy_fix_for_culture = { # Uses Scottish Units but its because of COA display
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = SAV
+		}	
+	}
+
+
+	sprite_infantry = {
+		0 = SAV_INFANTRY_1
+		1 = SAV_INFANTRY_2
+		2 = SAV_INFANTRY_3
+		3 = SAV_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = SAV_CAVALRY_1
+		1 = SAV_CAVALRY_2
+		2 = SAV_CAVALRY_3
+		3 = SAV_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = SAV_ARTILLERY_1
+		1 = SAV_ARTILLERY_2
+		2 = SAV_ARTILLERY_3
+		3 = SAV_ARTILLERY_4
+	}
+}
+
+brittney_minors_clones = { # Uses Scottish Units but its because of COA display
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = BLS
+			tag = MNF
+		}	
+	}
+	sprite_infantry = {
+		0 = CRN_INFANTRY_1
+		1 = CRN_INFANTRY_2
+		2 = CRN_INFANTRY_3
+		3 = CRN_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = CRN_CAVALRY_1
+		1 = CRN_CAVALRY_2
+		2 = CRN_CAVALRY_3
+		3 = CRN_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = CRN_ARTILLERY_1
+		1 = CRN_ARTILLERY_2
+		2 = CRN_ARTILLERY_3
+		3 = CRN_ARTILLERY_4
+	}
+}
+
+flemish_dutch_new_tags_clones = { # Uses Scottish Units but its because of COA display
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = HAI
+			tag = NMR
+		}	
+	}
+	sprite_infantry = {
+		0 = NED_INFANTRY_1
+		2 = NED_INFANTRY_3
+		3 = NED_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = NED_CAVALRY_1
+		2 = NED_CAVALRY_3
+		3 = NED_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = NED_ARTILLERY_1
+		2 = NED_ARTILLERY_3
+		3 = NED_ARTILLERY_4
+	}
+}

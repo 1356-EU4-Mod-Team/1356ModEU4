@@ -1,7 +1,7 @@
 #2726 - Malgana
 
-culture = aboriginal
-religion = animism
+culture = nyoongah
+religion = dreamtime
 capital = "Malgana"
 hre = no
 trade_goods = unknown

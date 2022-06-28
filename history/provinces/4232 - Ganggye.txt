@@ -1,8 +1,8 @@
 # 4232 - Ganggye (1356)
 # Changes: YUA/religion
 
-owner = YUA
-controller = YUA
+# owner = YUA
+# controller = YUA
 culture = korean
 religion = mahayana
 capital = "Ganggye"
@@ -12,7 +12,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = YUA
+# add_core = YUA
 add_core = KOR
 #add_core = GYO
 fort_15th = yes

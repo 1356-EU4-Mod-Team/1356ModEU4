@@ -1,2159 +1,2165 @@
-country_decisions = {
+# country_decisions = {
+	
+	####################### Leviathans Momuments have introduced a full review of this system. Perhaps we can use some assets from Ck2 to implement some of these Great works?
 
-	# Audax Validator "!" Ignore_1006
-	# Audax Validator "!" Ignore_1007
+	# build_great_library = { #Give Nation making this events related to this decision & a national modifier related to tech and idea cost.
+		# major = yes
+		# potential = {
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 10000
+					# owns_or_vassal_of = 358
+				# }
+			# }
+			# is_core = 358
+			# 358 = {
+				# range = ROOT
+				# NOT = { 
+					# has_great_project = { 
+						# type = great_library 
+					# }
+				# }
+				# NOT = { 
+					# has_construction = great_library
+				# }
+			# }			
+			# adm_tech = 12 #Would be ADM 9 in vanilla?
+		# }
+		# provinces_to_highlight = {
+			# province_id = 358
+			# OR = {
+				# NOT = { owned_by = ROOT }
+				# NOT = { owner = { vassal_of = ROOT } }
+			# }
+		# }
+		# allow = {
+			# OR = {
+				# religion = coptic
+				# religion = hellenic_pagan
+				# religion = nestorian
+			# }
+			# owns_or_vassal_of = 358
+			# is_subject = no			
+			# adm_tech = 18 #Would be ADM 15 in vanilla?
+			# treasury = -2500
+			# adm_power = 250
+			# dip_power = 250
+			# mil_power = 250
+		# }
+		# effect = {
+			# add_treasury = -2500
+			# add_adm_power = -250
+			# add_dip_power = -250
+			# add_mil_power = -250
+			# 358 = {	#Alexandria
+				# add_great_project = great_library
+			# }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_great_library = {
+		# major = yes
+		# potential = {
+			# ai = no
+			# owns_or_vassal_of = 358
+			# is_subject = no
+			# 358 = {
+				# has_construction = great_library 
+			# }
+		# }
+		# allow = {
+			# 358 = {
+				# has_construction = great_library
+			# }
+		# }
+		# effect = {
+			# 358 = {	# Alexandria
+				# cancel_construction = yes
+			# }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 
-	build_great_library = { #Give Nation making this events related to this decision & a national modifier related to tech and idea cost.
-		major = yes
-		potential = {
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 10000
-					owns_or_vassal_of = 358
-				}
-			}
-			is_core = 358
-			358 = {
-				NOT = { has_great_project = great_library }
-				NOT = { has_construction = great_library  } 
-			}
-			adm_tech = 12 #Would be ADM 9 in vanilla?
-		}
-		provinces_to_highlight = {
-			province_id = 358
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { owner = { vassal_of = ROOT } }
-			}
-		}
-		allow = {
-			OR = {
-				religion = coptic
-				religion = hellenic_pagan
-				religion = nestorian
-			}
-			owns_or_vassal_of = 358
-			is_subject = no			
-			adm_tech = 18 #Would be ADM 15 in vanilla?
-			treasury = 5000
-			adm_power = 400
-			dip_power = 400
-			mil_power = 400
-		}
-		effect = {
-			add_treasury = -5000
-			add_adm_power = -400
-			add_dip_power = -400
-			add_mil_power = -400
-			358 = {	#Alexandria
-				add_great_project = great_library
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_great_library = {
-		major = yes
-		potential = {
-			ai = no
-			owns_or_vassal_of = 358
-			is_subject = no
-			358 = {
-				has_construction = great_library 
-			}
-		}
-		allow = {
-			358 = {
-				has_construction = great_library
-			}
-		}
-		effect = {
-			358 = {	# Alexandria
-				cancel_construction = yes
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_great_cathedral_notre_dame = {
+		# major = yes
+		# potential = {
+			# always = no
+			# current_age = age_of_feudalism
+			# religion_group = christian
+			# owns_or_vassal_of  = 183 #Paris
+			# NOT = { has_country_flag = great_cathedral_notre_dame_build_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_cathedral_build_flag }
+				# }
+			# }
+			# 183 = {
+				# NOT = { has_great_project = great_cathedral_notre_dame }
+			# }
+		# }
+		# allow = {
+			# owns_or_vassal_of  = 183 #Paris
+			# current_age = age_of_feudalism
+			# religion_group = christian
+			# NOT = { has_country_flag = great_cathedral_build_flag }
+			# is_subject = no			
+			# treasury = 2000
+			# adm_power = 100
+			# dip_power = 100
+			# mil_power = 100
+		# }
+		# effect = {
+			# add_treasury = -2000
+			# add_adm_power = -100
+			# add_dip_power = -100
+			# add_mil_power = -100
+			# set_country_flag = great_cathedral_notre_dame_build_flag
+			# 183 = { add_great_project = great_cathedral_notre_dame }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_great_cathedral_notre_dame = {
+		# major = yes
+		# potential = {
+		# always = no
+			# ai = no
+			# is_subject = no
+			# 183 = {
+				# has_great_project = great_cathedral_notre_dame
+				# has_construction = great_project 
+			# }
+			# owns_or_vassal_of = 183
+		# }
+		# allow = {
+			# 183 = {
+				# has_great_project = great_cathedral_notre_dame
+				# has_construction = great_project 
+			# }
+		# }
+		# effect = {
+			# 183 = {	cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }	
 
-	build_great_cathedral_notre_dame = {
-		major = yes
-		potential = {
-			always = no
-			current_age = age_of_feudalism
-			religion_group = christian
-			owns_or_vassal_of  = 183 #Paris
-			NOT = { has_country_flag = great_cathedral_notre_dame_build_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_cathedral_build_flag }
-				}
-			}
-			183 = {
-				NOT = { has_great_project = great_cathedral_notre_dame }
-			}
-		}
-		allow = {
-			owns_or_vassal_of  = 183 #Paris
-			current_age = age_of_feudalism
-			religion_group = christian
-			NOT = { has_country_flag = great_cathedral_build_flag }
-			is_subject = no			
-			treasury = 2000
-			adm_power = 100
-			dip_power = 100
-			mil_power = 100
-		}
-		effect = {
-			add_treasury = -2000
-			add_adm_power = -100
-			add_dip_power = -100
-			add_mil_power = -100
-			set_country_flag = great_cathedral_notre_dame_build_flag
-			183 = { add_great_project = great_cathedral_notre_dame }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_great_cathedral_notre_dame = {
-		major = yes
-		potential = {
-		always = no
-			ai = no
-			is_subject = no
-			183 = {
-				#has_great_project = great_cathedral_notre_dame
-				has_construction = great_project 
-			}
-			owns_or_vassal_of = 183
-		}
-		allow = {
-			183 = {
-				#has_great_project = great_cathedral_notre_dame
-				has_construction = great_project 
-			}
-		}
-		effect = {
-			183 = {	cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}	
-
-	build_theodosian_walls_great_project = {
-		major = yes
-		potential = {
-			owns = 151 
-			OR = { #Christian or Turkish
-				religion_group = christian
-				primary_culture = turkish
-			}
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_theodosian_walls_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_theodosian_walls_flag }
-				}
-			}
-			151 = {
-				NOT = { has_great_project = theodosian_walls_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 151
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			tag = BYZ
-			religion = orthodox
-			#NOT = { has_country_flag = great_project_theodosian_walls_flag }
-			is_subject = no			
-			treasury = 250
-			adm_power = 300
-			dip_power = 200
-			mil_power = 400
-		}
-		effect = {
-			add_treasury = -250
-			add_adm_power = -300
-			add_dip_power = -200
-			add_mil_power = -400
-			set_country_flag = great_project_theodosian_walls_flag
-			151 = { add_great_project = theodosian_walls_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_theodosian_walls_great_project = { #Create an event to destroy these when the city is seiged? Or when its annexed? Dont forget if its occupied when creating the walls.
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			151 = {	has_construction = great_project }
-			owns_core_province = 151
-			#BYZ = { owns_core_province = 151 }
-			is_year = 1360
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			151 = {	has_construction = great_project }
-			owns_core_province = 151
-			#BYZ = { owns_core_province = 151 }
-		}
-		effect = {
-			151 = {	cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_theodosian_walls_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 151 
+			# OR = { #Christian or Turkish
+				# religion_group = christian
+				# primary_culture = turkish
+			# }
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_theodosian_walls_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_theodosian_walls_flag }
+				# }
+			# }
+			# 151 = {
+				# NOT = { has_great_project = theodosian_walls_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 151
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# tag = BYZ
+			# religion = orthodox
+			# NOT = { has_country_flag = great_project_theodosian_walls_flag }
+			# is_subject = no			
+			# treasury = 250
+			# adm_power = 300
+			# dip_power = 200
+			# mil_power = 400
+		# }
+		# effect = {
+			# add_treasury = -250
+			# add_adm_power = -300
+			# add_dip_power = -200
+			# add_mil_power = -400
+			# set_country_flag = great_project_theodosian_walls_flag
+			# 151 = { add_great_project = theodosian_walls_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_theodosian_walls_great_project = { #Create an event to destroy these when the city is seiged? Or when its annexed? Dont forget if its occupied when creating the walls.
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 151 = {	has_construction = great_project }
+			# owns_core_province = 151
+			# BYZ = { owns_core_province = 151 }
+			# is_year = 1360
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 151 = {	has_construction = great_project }
+			# owns_core_province = 151
+			# BYZ = { owns_core_province = 151 }
+		# }
+		# effect = {
+			# 151 = {	cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
 	#All decisions below here need balanced still
 	
-	build_kinkaku_ji_great_project = {
-		major = yes
-		potential = {
-			owns = 1020 
-			religion_group = eastern
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_kinkaku_ji_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_kinkaku_ji_flag }
-				}
-			}
-			1020 = {
-				NOT = { has_great_project = kinkaku_ji_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 1020
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = japanese_g
-			religion_group = eastern
-			#NOT = { has_country_flag = great_project_kinkaku_ji_flag }
-			is_subject = no			
-			treasury = 600
-			adm_power = 50
-			dip_power = 50
-			mil_power = 50
-		}
-		effect = {
-			add_treasury = -600
-			add_adm_power = -50
-			add_dip_power = -50
-			add_mil_power = -50
-			set_country_flag = great_project_kinkaku_ji_flag
-			1020 = { add_great_project = kinkaku_ji_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_kinkaku_ji_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			1020 = { has_construction = great_project }
-			owns_core_province = 1020
-			#BYZ = { owns_core_province = 1020 }
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			1020 = { has_construction = great_project }
-			owns_core_province = 1020
-			#BYZ = { owns_core_province = 1020 }
-		}
-		effect = {
-			1020 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}	
+	# build_kinkaku_ji_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 1020 
+			# religion_group = eastern
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_kinkaku_ji_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_kinkaku_ji_flag }
+				# }
+			# }
+			# 1020 = {
+				# NOT = { has_great_project = kinkaku_ji_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 1020
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = japanese_g
+			# religion_group = eastern
+			# NOT = { has_country_flag = great_project_kinkaku_ji_flag }
+			# is_subject = no			
+			# treasury = 600
+			# adm_power = 50
+			# dip_power = 50
+			# mil_power = 50
+		# }
+		# effect = {
+			# add_treasury = -600
+			# add_adm_power = -50
+			# add_dip_power = -50
+			# add_mil_power = -50
+			# set_country_flag = great_project_kinkaku_ji_flag
+			# 1020 = { add_great_project = kinkaku_ji_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_kinkaku_ji_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 1020 = { has_construction = great_project }
+			# owns_core_province = 1020
+			# BYZ = { owns_core_province = 1020 }
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 1020 = { has_construction = great_project }
+			# owns_core_province = 1020
+			# BYZ = { owns_core_province = 1020 }
+		# }
+		# effect = {
+			# 1020 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }	
 
-	build_madrassa_mosque_great_project = {
-		major = yes
-		potential = {
-			owns = 361 
-			religion_group = muslim
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_madrassa_mosque_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_madrassa_mosque_flag }
-				}
-			}
-			361 = {
-				NOT = { has_great_project = madrassa_mosque_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 361
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			OR = {
-				primary_culture = al_misr_arabic
-				primary_culture = old_egyptian_mod
-			}
-			religion_group = muslim
-			#NOT = { has_country_flag = great_project_madrassa_mosque_flag }
-			is_subject = no			
-			treasury = 800
-		}
-		effect = {
-			add_treasury = -800
-			set_country_flag = great_project_madrassa_mosque_flag
-			361 = { add_great_project = madrassa_mosque_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_madrassa_mosque_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			361 = { has_construction = great_project }
-			owns_core_province = 361
-			#BYZ = { owns_core_province = 361 }
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			361 = { has_construction = great_project }
-			owns_core_province = 361
-			#BYZ = { owns_core_province = 361 }
-		}
-		effect = {
-			361 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}	
+	# build_madrassa_mosque_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 361 
+			# religion_group = muslim
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_madrassa_mosque_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_madrassa_mosque_flag }
+				# }
+			# }
+			# 361 = {
+				# NOT = { has_great_project = madrassa_mosque_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 361
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# OR = {
+				# primary_culture = al_misr_arabic
+				# primary_culture = old_egyptian_mod
+			# }
+			# religion_group = muslim
+			# NOT = { has_country_flag = great_project_madrassa_mosque_flag }
+			# is_subject = no			
+			# treasury = 800
+		# }
+		# effect = {
+			# add_treasury = -800
+			# set_country_flag = great_project_madrassa_mosque_flag
+			# 361 = { add_great_project = madrassa_mosque_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_madrassa_mosque_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 361 = { has_construction = great_project }
+			# owns_core_province = 361
+			# BYZ = { owns_core_province = 361 }
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 361 = { has_construction = great_project }
+			# owns_core_province = 361
+			# BYZ = { owns_core_province = 361 }
+		# }
+		# effect = {
+			# 361 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }	
 	
-	build_adina_mosque_great_project = {
-		major = yes
-		potential = {
-			owns = 563 
-			religion_group = muslim
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_adina_mosque_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_adina_mosque_flag }
-				}
-			}
-			563 = {
-				NOT = { has_great_project = adina_mosque_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 563
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			primary_culture = bengali
-			religion_group = muslim
-			#NOT = { has_country_flag = great_project_adina_mosque_flag }
-			is_subject = no			
-			treasury = 600
-			mil_power = 150
-		}
-		effect = {
-			add_treasury = -600
-			add_mil_power = -150
-			set_country_flag = great_project_adina_mosque_flag
-			563 = { add_great_project = adina_mosque_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_adina_mosque_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			563 = { has_construction = great_project }
-			owns_core_province = 563
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			563 = { has_construction = great_project }
-			owns_core_province = 563
-		}
-		effect = {
-			563 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}	
+	# build_adina_mosque_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 563 
+			# religion_group = muslim
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_adina_mosque_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_adina_mosque_flag }
+				# }
+			# }
+			# 563 = {
+				# NOT = { has_great_project = adina_mosque_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 563
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# primary_culture = bengali
+			# religion_group = muslim
+			# NOT = { has_country_flag = great_project_adina_mosque_flag }
+			# is_subject = no			
+			# treasury = 600
+			# mil_power = 150
+		# }
+		# effect = {
+			# add_treasury = -600
+			# add_mil_power = -150
+			# set_country_flag = great_project_adina_mosque_flag
+			# 563 = { add_great_project = adina_mosque_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_adina_mosque_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 563 = { has_construction = great_project }
+			# owns_core_province = 563
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 563 = { has_construction = great_project }
+			# owns_core_province = 563
+		# }
+		# effect = {
+			# 563 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }	
 	
-	build_cologne_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 85 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_cologne_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_cologne_cathedral_flag }
-				}
-			}
-			85 = {
-				NOT = { has_great_project = cologne_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 85
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = germanic
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_cologne_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_cologne_cathedral_flag
-			85 = { add_great_project = cologne_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_cologne_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			85 = { has_construction = great_project }
-			owns_core_province = 85
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			85 = { has_construction = great_project }
-			owns_core_province = 85
-		}
-		effect = {
-			85 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_cologne_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 85 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_cologne_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_cologne_cathedral_flag }
+				# }
+			# }
+			# 85 = {
+				# NOT = { has_great_project = cologne_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 85
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = germanic
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_cologne_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_cologne_cathedral_flag
+			# 85 = { add_great_project = cologne_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_cologne_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 85 = { has_construction = great_project }
+			# owns_core_province = 85
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 85 = { has_construction = great_project }
+			# owns_core_province = 85
+		# }
+		# effect = {
+			# 85 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_florence_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 116 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_florence_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_florence_cathedral_flag }
-				}
-			}
-			116 = {
-				NOT = { has_great_project = florence_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 116
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = latin
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_florence_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_florence_cathedral_flag
-			116 = { add_great_project = florence_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_florence_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			116 = { has_construction = great_project }
-			owns_core_province = 116
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			116 = { has_construction = great_project }
-			owns_core_province = 116
-		}
-		effect = {
-			116 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_florence_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 116 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_florence_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_florence_cathedral_flag }
+				# }
+			# }
+			# 116 = {
+				# NOT = { has_great_project = florence_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 116
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = latin
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_florence_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_florence_cathedral_flag
+			# 116 = { add_great_project = florence_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_florence_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 116 = { has_construction = great_project }
+			# owns_core_province = 116
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 116 = { has_construction = great_project }
+			# owns_core_province = 116
+		# }
+		# effect = {
+			# 116 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_milan_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 104 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_milan_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_milan_cathedral_flag }
-				}
-			}
-			104 = {
-				NOT = { has_great_project = milan_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 104
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = latin
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_milan_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_milan_cathedral_flag
-			104 = { add_great_project = milan_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_milan_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			104 = { has_construction = great_project }
-			owns_core_province = 104
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			104 = { has_construction = great_project }
-			owns_core_province = 104
-		}
-		effect = {
-			104 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_milan_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 104 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_milan_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_milan_cathedral_flag }
+				# }
+			# }
+			# 104 = {
+				# NOT = { has_great_project = milan_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 104
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = latin
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_milan_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_milan_cathedral_flag
+			# 104 = { add_great_project = milan_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_milan_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 104 = { has_construction = great_project }
+			# owns_core_province = 104
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 104 = { has_construction = great_project }
+			# owns_core_province = 104
+		# }
+		# effect = {
+			# 104 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_strasbourg_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 75 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_strasbourg_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_strasbourg_cathedral_flag }
-				}
-			}
-			75 = {
-				NOT = { has_great_project = strasbourg_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 75
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = germanic
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_strasbourg_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_strasbourg_cathedral_flag
-			75 = { add_great_project = strasbourg_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_strasbourg_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			75 = { has_construction = great_project }
-			owns_core_province = 75
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			75 = { has_construction = great_project }
-			owns_core_province = 75
-		}
-		effect = {
-			75 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_strasbourg_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 75 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_strasbourg_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_strasbourg_cathedral_flag }
+				# }
+			# }
+			# 75 = {
+				# NOT = { has_great_project = strasbourg_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 75
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = germanic
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_strasbourg_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_strasbourg_cathedral_flag
+			# 75 = { add_great_project = strasbourg_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_strasbourg_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 75 = { has_construction = great_project }
+			# owns_core_province = 75
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 75 = { has_construction = great_project }
+			# owns_core_province = 75
+		# }
+		# effect = {
+			# 75 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 
-	build_moscow_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 295 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_moscow_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_moscow_cathedral_flag }
-				}
-			}
-			295 = {
-				NOT = { has_great_project = moscow_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 295
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = east_slavic
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_moscow_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			mil_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_mil_power = -150
-			set_country_flag = great_project_moscow_cathedral_flag
-			295 = { add_great_project = moscow_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_moscow_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			295 = { has_construction = great_project }
-			owns_core_province = 295
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			295 = { has_construction = great_project }
-			owns_core_province = 295
-		}
-		effect = {
-			295 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_moscow_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 295 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_moscow_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_moscow_cathedral_flag }
+				# }
+			# }
+			# 295 = {
+				# NOT = { has_great_project = moscow_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 295
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = east_slavic
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_moscow_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# mil_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_mil_power = -150
+			# set_country_flag = great_project_moscow_cathedral_flag
+			# 295 = { add_great_project = moscow_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_moscow_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 295 = { has_construction = great_project }
+			# owns_core_province = 295
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 295 = { has_construction = great_project }
+			# owns_core_province = 295
+		# }
+		# effect = {
+			# 295 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 
-	build_seville_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 224 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_seville_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_seville_cathedral_flag }
-				}
-			}
-			224 = {
-				NOT = { has_great_project = seville_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 224
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = iberian
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_seville_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_seville_cathedral_flag
-			224 = { add_great_project = seville_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_seville_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			224 = { has_construction = great_project }
-			owns_core_province = 224
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			224 = { has_construction = great_project }
-			owns_core_province = 224
-		}
-		effect = {
-			224 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_seville_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 224 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_seville_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_seville_cathedral_flag }
+				# }
+			# }
+			# 224 = {
+				# NOT = { has_great_project = seville_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 224
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = iberian
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_seville_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_seville_cathedral_flag
+			# 224 = { add_great_project = seville_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_seville_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 224 = { has_construction = great_project }
+			# owns_core_province = 224
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 224 = { has_construction = great_project }
+			# owns_core_province = 224
+		# }
+		# effect = {
+			# 224 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 
-	build_prague_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 266 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_prague_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_prague_cathedral_flag }
-				}
-			}
-			266 = {
-				NOT = { has_great_project = prague_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 266
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = west_slavic
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_prague_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_prague_cathedral_flag
-			266 = { add_great_project = prague_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_prague_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			266 = { has_construction = great_project }
-			owns_core_province = 266
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			266 = { has_construction = great_project }
-			owns_core_province = 266
-		}
-		effect = {
-			266 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_prague_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 266 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_prague_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_prague_cathedral_flag }
+				# }
+			# }
+			# 266 = {
+				# NOT = { has_great_project = prague_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 266
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = west_slavic
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_prague_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_prague_cathedral_flag
+			# 266 = { add_great_project = prague_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_prague_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 266 = { has_construction = great_project }
+			# owns_core_province = 266
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 266 = { has_construction = great_project }
+			# owns_core_province = 266
+		# }
+		# effect = {
+			# 266 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 
-	build_wein_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 134 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_wein_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_wein_cathedral_flag }
-				}
-			}
-			134 = {
-				NOT = { has_great_project = wein_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 134
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = germanic
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_wein_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_wein_cathedral_flag
-			134 = { add_great_project = wein_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_wein_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			134 = { has_construction = great_project }
-			owns_core_province = 134
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			134 = { has_construction = great_project }
-			owns_core_province = 134
-		}
-		effect = {
-			134 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_wein_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 134 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_wein_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_wein_cathedral_flag }
+				# }
+			# }
+			# 134 = {
+				# NOT = { has_great_project = wein_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 134
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = germanic
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_wein_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_wein_cathedral_flag
+			# 134 = { add_great_project = wein_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_wein_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 134 = { has_construction = great_project }
+			# owns_core_province = 134
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 134 = { has_construction = great_project }
+			# owns_core_province = 134
+		# }
+		# effect = {
+			# 134 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_london_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 236 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_london_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_london_cathedral_flag }
-				}
-			}
-			236 = {
-				NOT = { has_great_project = london_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 236
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = british
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_london_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_london_cathedral_flag
-			236 = { add_great_project = london_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_london_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			236 = { has_construction = great_project }
-			owns_core_province = 236
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			236 = { has_construction = great_project }
-			owns_core_province = 236
-		}
-		effect = {
-			236 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_london_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 236 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_london_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_london_cathedral_flag }
+				# }
+			# }
+			# 236 = {
+				# NOT = { has_great_project = london_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 236
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = british
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_london_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_london_cathedral_flag
+			# 236 = { add_great_project = london_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_london_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 236 = { has_construction = great_project }
+			# owns_core_province = 236
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 236 = { has_construction = great_project }
+			# owns_core_province = 236
+		# }
+		# effect = {
+			# 236 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_antwerp_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 1744 
-			religion_group = christian
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_antwerp_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_antwerp_cathedral_flag }
-				}
-			}
-			1744 = {
-				NOT = { has_great_project = antwerp_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 1744
-			OR = {
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			culture_group = low_lands_culture_group
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_antwerp_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_antwerp_cathedral_flag
-			1744 = { add_great_project = antwerp_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_antwerp_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			1744 = { has_construction = great_project }
-			owns_core_province = 1744
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			1744 = { has_construction = great_project }
-			owns_core_province = 1744
-		}
-		effect = {
-			1744 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_antwerp_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 1744 
+			# religion_group = christian
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_antwerp_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_antwerp_cathedral_flag }
+				# }
+			# }
+			# 1744 = {
+				# NOT = { has_great_project = antwerp_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 1744
+			# OR = {
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# culture_group = low_lands_culture_group
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_antwerp_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_antwerp_cathedral_flag
+			# 1744 = { add_great_project = antwerp_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_antwerp_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 1744 = { has_construction = great_project }
+			# owns_core_province = 1744
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 1744 = { has_construction = great_project }
+			# owns_core_province = 1744
+		# }
+		# effect = {
+			# 1744 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_warsaw_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 257 
-			religion_group = christian
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_warsaw_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_warsaw_cathedral_flag }
-				}
-			}
-			257 = {
-				NOT = { has_great_project = warsaw_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 257
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = west_slavic
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_warsaw_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_warsaw_cathedral_flag
-			257 = { add_great_project = warsaw_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_warsaw_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			257 = { has_construction = great_project }
-			owns_core_province = 257
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			257 = { has_construction = great_project }
-			owns_core_province = 257
-		}
-		effect = {
-			257 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_warsaw_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 257 
+			# religion_group = christian
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_warsaw_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_warsaw_cathedral_flag }
+				# }
+			# }
+			# 257 = {
+				# NOT = { has_great_project = warsaw_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 257
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = west_slavic
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_warsaw_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_warsaw_cathedral_flag
+			# 257 = { add_great_project = warsaw_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_warsaw_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 257 = { has_construction = great_project }
+			# owns_core_province = 257
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 257 = { has_construction = great_project }
+			# owns_core_province = 257
+		# }
+		# effect = {
+			# 257 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_naples_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 121 
-			religion_group = christian
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_naples_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_naples_cathedral_flag }
-				}
-			}
-			121 = {
-				NOT = { has_great_project = naples_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 121
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = latin
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_naples_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_naples_cathedral_flag
-			121 = { add_great_project = naples_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_naples_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			121 = { has_construction = great_project }
-			owns_core_province = 121
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			121 = { has_construction = great_project }
-			owns_core_province = 121
-		}
-		effect = {
-			121 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_naples_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 121 
+			# religion_group = christian
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_naples_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_naples_cathedral_flag }
+				# }
+			# }
+			# 121 = {
+				# NOT = { has_great_project = naples_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 121
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = latin
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_naples_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_naples_cathedral_flag
+			# 121 = { add_great_project = naples_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_naples_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 121 = { has_construction = great_project }
+			# owns_core_province = 121
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 121 = { has_construction = great_project }
+			# owns_core_province = 121
+		# }
+		# effect = {
+			# 121 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_lisboa_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 227 
-			religion_group = christian
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_lisboa_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_lisboa_cathedral_flag }
-				}
-			}
-			227 = {
-				NOT = { has_great_project = lisboa_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 227
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = iberian
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_lisboa_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_lisboa_cathedral_flag
-			227 = { add_great_project = lisboa_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_lisboa_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			227 = { has_construction = great_project }
-			owns_core_province = 227
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			227 = { has_construction = great_project }
-			owns_core_province = 227
-		}
-		effect = {
-			227 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_lisboa_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 227 
+			# religion_group = christian
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_lisboa_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_lisboa_cathedral_flag }
+				# }
+			# }
+			# 227 = {
+				# NOT = { has_great_project = lisboa_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 227
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = iberian
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_lisboa_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_lisboa_cathedral_flag
+			# 227 = { add_great_project = lisboa_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_lisboa_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 227 = { has_construction = great_project }
+			# owns_core_province = 227
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 227 = { has_construction = great_project }
+			# owns_core_province = 227
+		# }
+		# effect = {
+			# 227 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_toledo_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 219 
-			religion_group = christian
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_toledo_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_toledo_cathedral_flag }
-				}
-			}
-			219 = {
-				NOT = { has_great_project = toledo_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 219
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = iberian
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_toledo_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_toledo_cathedral_flag
-			219 = { add_great_project = toledo_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_toledo_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			219 = { has_construction = great_project }
-			owns_core_province = 219
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			219 = { has_construction = great_project }
-			owns_core_province = 219
-		}
-		effect = {
-			219 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_toledo_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 219 
+			# religion_group = christian
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_toledo_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_toledo_cathedral_flag }
+				# }
+			# }
+			# 219 = {
+				# NOT = { has_great_project = toledo_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 219
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = iberian
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_toledo_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_toledo_cathedral_flag
+			# 219 = { add_great_project = toledo_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_toledo_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 219 = { has_construction = great_project }
+			# owns_core_province = 219
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 219 = { has_construction = great_project }
+			# owns_core_province = 219
+		# }
+		# effect = {
+			# 219 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_valencia_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 220 
-			religion_group = christian
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_valencia_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_valencia_cathedral_flag }
-				}
-			}
-			220 = {
-				NOT = { has_great_project = valencia_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 220
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = iberian
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_valencia_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_valencia_cathedral_flag
-			220 = { add_great_project = valencia_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_valencia_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			220 = { has_construction = great_project }
-			owns_core_province = 220
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			220 = { has_construction = great_project }
-			owns_core_province = 220
-		}
-		effect = {
-			220 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_valencia_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 220 
+			# religion_group = christian
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_valencia_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_valencia_cathedral_flag }
+				# }
+			# }
+			# 220 = {
+				# NOT = { has_great_project = valencia_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 220
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = iberian
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_valencia_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_valencia_cathedral_flag
+			# 220 = { add_great_project = valencia_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_valencia_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 220 = { has_construction = great_project }
+			# owns_core_province = 220
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 220 = { has_construction = great_project }
+			# owns_core_province = 220
+		# }
+		# effect = {
+			# 220 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_teutonic_order_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 41 
-			religion_group = christian
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_teutonic_order_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_teutonic_order_cathedral_flag }
-				}
-			}
-			41 = {
-				NOT = { has_great_project = teutonic_order_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 41
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			OR = {
-				culture_group = germanic
-				culture_group = baltic
-			}
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_teutonic_order_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			mil_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_mil_power = -150
-			set_country_flag = great_project_teutonic_order_cathedral_flag
-			41 = { add_great_project = teutonic_order_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_teutonic_order_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			41 = { has_construction = great_project }
-			owns_core_province = 41
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			41 = { has_construction = great_project }
-			owns_core_province = 41
-		}
-		effect = {
-			41 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_teutonic_order_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 41 
+			# religion_group = christian
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_teutonic_order_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_teutonic_order_cathedral_flag }
+				# }
+			# }
+			# 41 = {
+				# NOT = { has_great_project = teutonic_order_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 41
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# OR = {
+				# culture_group = germanic
+				# culture_group = baltic
+			# }
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_teutonic_order_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# mil_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_mil_power = -150
+			# set_country_flag = great_project_teutonic_order_cathedral_flag
+			# 41 = { add_great_project = teutonic_order_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_teutonic_order_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 41 = { has_construction = great_project }
+			# owns_core_province = 41
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 41 = { has_construction = great_project }
+			# owns_core_province = 41
+		# }
+		# effect = {
+			# 41 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_denmark_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 12 
-			religion_group = christian
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_denmark_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_denmark_cathedral_flag }
-				}
-			}
-			12 = {
-				NOT = { has_great_project = denmark_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 12
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = scandinavian
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_denmark_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_denmark_cathedral_flag
-			12 = { add_great_project = denmark_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_denmark_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			12 = { has_construction = great_project }
-			owns_core_province = 12
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			12 = { has_construction = great_project }
-			owns_core_province = 12
-		}
-		effect = {
-			12 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_denmark_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 12 
+			# religion_group = christian
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_denmark_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_denmark_cathedral_flag }
+				# }
+			# }
+			# 12 = {
+				# NOT = { has_great_project = denmark_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 12
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = scandinavian
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_denmark_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_denmark_cathedral_flag
+			# 12 = { add_great_project = denmark_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_denmark_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 12 = { has_construction = great_project }
+			# owns_core_province = 12
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 12 = { has_construction = great_project }
+			# owns_core_province = 12
+		# }
+		# effect = {
+			# 12 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_stockholm_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 1 
-			religion_group = christian
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_stockholm_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_stockholm_cathedral_flag }
-				}
-			}
-			1 = {
-				NOT = { has_great_project = stockholm_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 1
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = scandinavian
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_stockholm_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_stockholm_cathedral_flag
-			1 = { add_great_project = stockholm_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_stockholm_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			1 = { has_construction = great_project }
-			owns_core_province = 1
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			1 = { has_construction = great_project }
-			owns_core_province = 1
-		}
-		effect = {
-			1 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_stockholm_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 1 
+			# religion_group = christian
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_stockholm_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_stockholm_cathedral_flag }
+				# }
+			# }
+			# 1 = {
+				# NOT = { has_great_project = stockholm_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 1
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = scandinavian
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_stockholm_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_stockholm_cathedral_flag
+			# 1 = { add_great_project = stockholm_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_stockholm_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 1 = { has_construction = great_project }
+			# owns_core_province = 1
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 1 = { has_construction = great_project }
+			# owns_core_province = 1
+		# }
+		# effect = {
+			# 1 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_debre_libanos_cathedral_great_project = {
-		major = yes
-		potential = {
-			owns = 1224 
-			religion_group = christian
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_debre_libanos_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_debre_libanos_cathedral_flag }
-				}
-			}
-			1224 = {
-				NOT = { has_great_project = debre_libanos_cathedral_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 1224
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = cushitic
-			religion_group = christian
-			#NOT = { has_country_flag = great_project_debre_libanos_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_debre_libanos_cathedral_flag
-			1224 = { add_great_project = debre_libanos_cathedral_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_debre_libanos_cathedral_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			1224 = { has_construction = great_project }
-			owns_core_province = 1224
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			1224 = { has_construction = great_project }
-			owns_core_province = 1224
-		}
-		effect = {
-			1224 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_debre_libanos_cathedral_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 1224 
+			# religion_group = christian
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_debre_libanos_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_debre_libanos_cathedral_flag }
+				# }
+			# }
+			# 1224 = {
+				# NOT = { has_great_project = debre_libanos_cathedral_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 1224
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = cushitic
+			# religion_group = christian
+			# NOT = { has_country_flag = great_project_debre_libanos_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_debre_libanos_cathedral_flag
+			# 1224 = { add_great_project = debre_libanos_cathedral_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_debre_libanos_cathedral_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 1224 = { has_construction = great_project }
+			# owns_core_province = 1224
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 1224 = { has_construction = great_project }
+			# owns_core_province = 1224
+		# }
+		# effect = {
+			# 1224 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_qufu_temple_of_confucius_great_project = {
-		major = yes
-		potential = {
-			owns = 2140 
-			religion_group = eastern
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_qufu_temple_of_confucius_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_qufu_temple_of_confucius_flag }
-				}
-			}
-			2140 = {
-				NOT = { has_great_project = qufu_temple_of_confucius_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 2140
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = east_asian
-			religion_group = eastern
-			#NOT = { has_country_flag = great_project_qufu_temple_of_confucius_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_qufu_temple_of_confucius_flag
-			2140 = { add_great_project = qufu_temple_of_confucius_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_qufu_temple_of_confucius_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			2140 = { has_construction = great_project }
-			owns_core_province = 2140
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			2140 = { has_construction = great_project }
-			owns_core_province = 2140
-		}
-		effect = {
-			2140 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_qufu_temple_of_confucius_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 2140 
+			# religion_group = eastern
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_qufu_temple_of_confucius_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_qufu_temple_of_confucius_flag }
+				# }
+			# }
+			# 2140 = {
+				# NOT = { has_great_project = qufu_temple_of_confucius_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 2140
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = east_asian
+			# religion_group = eastern
+			# NOT = { has_country_flag = great_project_qufu_temple_of_confucius_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_qufu_temple_of_confucius_flag
+			# 2140 = { add_great_project = qufu_temple_of_confucius_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_qufu_temple_of_confucius_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 2140 = { has_construction = great_project }
+			# owns_core_province = 2140
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 2140 = { has_construction = great_project }
+			# owns_core_province = 2140
+		# }
+		# effect = {
+			# 2140 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_goharshad_mosque_mosque_great_project = {
-		major = yes
-		potential = {
-			owns = 446 
-			religion_group = muslim
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_goharshad_mosque_mosque_cathedral_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_goharshad_mosque_mosque_cathedral_flag }
-				}
-			}
-			446 = {
-				NOT = { has_great_project = goharshad_mosque_mosque_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 446
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = iranian
-			religion_group = muslim
-			#NOT = { has_country_flag = great_project_goharshad_mosque_mosque_cathedral_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_goharshad_mosque_mosque_cathedral_flag
-			446 = { add_great_project = goharshad_mosque_mosque_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_goharshad_mosque_mosque_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			446 = { has_construction = great_project }
-			owns_core_province = 446
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			446 = { has_construction = great_project }
-			owns_core_province = 446
-		}
-		effect = {
-			446 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_goharshad_mosque_mosque_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 446 
+			# religion_group = muslim
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_goharshad_mosque_mosque_cathedral_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_goharshad_mosque_mosque_cathedral_flag }
+				# }
+			# }
+			# 446 = {
+				# NOT = { has_great_project = goharshad_mosque_mosque_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 446
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = iranian
+			# religion_group = muslim
+			# NOT = { has_country_flag = great_project_goharshad_mosque_mosque_cathedral_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_goharshad_mosque_mosque_cathedral_flag
+			# 446 = { add_great_project = goharshad_mosque_mosque_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_goharshad_mosque_mosque_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 446 = { has_construction = great_project }
+			# owns_core_province = 446
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 446 = { has_construction = great_project }
+			# owns_core_province = 446
+		# }
+		# effect = {
+			# 446 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_jongmyo_temple_great_project = {
-		major = yes
-		potential = {
-			owns = 4230 
-			religion_group = eastern
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_jongmyo_temple_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_jongmyo_temple_flag }
-				}
-			}
-			4230 = {
-				NOT = { has_great_project = jongmyo_temple_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 4230
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = korean_g
-			religion_group = eastern
-			#NOT = { has_country_flag = great_project_jongmyo_temple_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_jongmyo_temple_flag
-			4230 = { add_great_project = jongmyo_temple_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_jongmyo_temple_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			4230 = { has_construction = great_project }
-			owns_core_province = 4230
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			4230 = { has_construction = great_project }
-			owns_core_province = 4230
-		}
-		effect = {
-			4230 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_jongmyo_temple_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 4230 
+			# religion_group = eastern
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_jongmyo_temple_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_jongmyo_temple_flag }
+				# }
+			# }
+			# 4230 = {
+				# NOT = { has_great_project = jongmyo_temple_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 4230
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = korean_g
+			# religion_group = eastern
+			# NOT = { has_country_flag = great_project_jongmyo_temple_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_jongmyo_temple_flag
+			# 4230 = { add_great_project = jongmyo_temple_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_jongmyo_temple_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 4230 = { has_construction = great_project }
+			# owns_core_province = 4230
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 4230 = { has_construction = great_project }
+			# owns_core_province = 4230
+		# }
+		# effect = {
+			# 4230 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
-	build_temple_of_heaven_great_project = {
-		major = yes
-		potential = {
-			owns = 1816 
-			religion_group = eastern
-			OR = { #Feudal Age or Discovery Age
-				current_age = age_of_feudalism
-				current_age = age_of_discovery
-			}
-			NOT = { has_country_flag = great_project_temple_of_heaven_flag } #This might not be needed
-			OR = { #AI check
-				ai = no
-				AND = { #For AI's
-					treasury = 2000
-					NOT = { has_country_flag = great_project_temple_of_heaven_flag }
-				}
-			}
-			1816 = {
-				NOT = { has_great_project = temple_of_heaven_great_project }
-				NOT = { has_construction = great_project }
-			}
-		}
-		allow = {
-			owns_core_province = 1816
-			OR = {
-				AND = {
-					current_age = age_of_feudalism
-					has_age_ability = ab_gothic_cathedrals
-				}
-				AND = {
-					current_age = age_of_discovery
-					adm = 5
-					dip = 5
-				}
-			}
-			culture_group = east_asian
-			religion_group = eastern
-			#NOT = { has_country_flag = great_project_temple_of_heaven_flag }
-			is_subject = no			
-			treasury = 650
-			dip_power = 150
-		}
-		effect = {
-			add_treasury = -650
-			add_dip_power = -150
-			set_country_flag = great_project_temple_of_heaven_flag
-			1816 = { add_great_project = temple_of_heaven_great_project }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	cancel_temple_of_heaven_great_project = { 
-		major = yes
-		potential = {
-			ai = no
-			is_subject = no
-			1816 = { has_construction = great_project }
-			owns_core_province = 1816
-		}
-		allow = {
-			ai = no
-			is_subject = no
-			1816 = { has_construction = great_project }
-			owns_core_province = 1816
-		}
-		effect = {
-			1816 = { cancel_construction = yes }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	# build_temple_of_heaven_great_project = {
+		# major = yes
+		# potential = {
+			# owns = 1816 
+			# religion_group = eastern
+			# OR = { #Feudal Age or Discovery Age
+				# current_age = age_of_feudalism
+				# current_age = age_of_discovery
+			# }
+			# NOT = { has_country_flag = great_project_temple_of_heaven_flag } #This might not be needed
+			# OR = { #AI check
+				# ai = no
+				# AND = { #For AI's
+					# treasury = 2000
+					# NOT = { has_country_flag = great_project_temple_of_heaven_flag }
+				# }
+			# }
+			# 1816 = {
+				# NOT = { has_great_project = temple_of_heaven_great_project }
+				# NOT = { has_construction = great_project }
+			# }
+		# }
+		# allow = {
+			# owns_core_province = 1816
+			# OR = {
+				# AND = {
+					# current_age = age_of_feudalism
+					# has_age_ability = ab_gothic_cathedrals
+				# }
+				# AND = {
+					# current_age = age_of_discovery
+					# adm = 5
+					# dip = 5
+				# }
+			# }
+			# culture_group = east_asian
+			# religion_group = eastern
+			# NOT = { has_country_flag = great_project_temple_of_heaven_flag }
+			# is_subject = no			
+			# treasury = 650
+			# dip_power = 150
+		# }
+		# effect = {
+			# add_treasury = -650
+			# add_dip_power = -150
+			# set_country_flag = great_project_temple_of_heaven_flag
+			# 1816 = { add_great_project = temple_of_heaven_great_project }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	# cancel_temple_of_heaven_great_project = { 
+		# major = yes
+		# potential = {
+			# ai = no
+			# is_subject = no
+			# 1816 = { has_construction = great_project }
+			# owns_core_province = 1816
+		# }
+		# allow = {
+			# ai = no
+			# is_subject = no
+			# 1816 = { has_construction = great_project }
+			# owns_core_province = 1816
+		# }
+		# effect = {
+			# 1816 = { cancel_construction = yes }
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 
 
 

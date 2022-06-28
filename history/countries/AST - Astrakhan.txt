@@ -6,6 +6,35 @@ technology_group = nomad_group
 capital = 464	# Astrakhan
 religious_school = hanafi_school
 
+1356.1.1 = {
+	monarch = { # Generated rulers for Nomadic Clans
+		name = "Qadir Berdi"
+		dynasty = "Borjigin"
+		dip = 3
+		adm = 3
+		mil = 3
+		birth_date = 1320.1.2
+	}
+	heir = {
+		name = "Ahmad"
+		dynasty = "Borjigin"
+		dip = 3
+		adm = 2
+		mil = 4
+		birth_date = 1340.1.2
+		death_date = 1399.1.1
+		leader = {
+			name = "Ahmad Borjigin"
+			type = general
+			fire = 3	
+			shock = 5	
+			manuever = 5	
+			siege = 3
+		}
+	}
+}	
+
+
 1459.1.1 = {
 	monarch = {
 		name = "Mahmud"

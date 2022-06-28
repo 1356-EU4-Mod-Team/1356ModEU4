@@ -10,9 +10,9 @@ agricultural_hamlets_reform = {
 	modifiers = {
 		production_efficiency = 0.10
 	}
-	custom_attributes = {
-		enables_sovereign_taxation = yes #10% tax in vassals
-	}
+	# custom_attributes = {
+		# enables_sovereign_taxation = yes #10% tax in vassals
+	# }
 	ai = {
 		factor = 1
 	}
@@ -24,9 +24,9 @@ urban_centers_reform = {
 	modifiers = {
 		global_prov_trade_power_modifier = 0.1
 	}
-	custom_attributes = {
-		enables_trader_strongholds = yes #2.5% base trade power in 25+ dev provinces
-	}
+	# custom_attributes = {
+		# enables_trader_strongholds = yes #2.5% base trade power in 25+ dev provinces
+	# }
 	ai = {
 		factor = 1
 	}
@@ -38,9 +38,9 @@ freedom_of_movement_reform = {
 	modifiers = {
 		build_cost = -0.05
 	}
-	custom_attributes = {
-		enables_fertile_lands = yes #-10% development cost in grasslands and farmlands
-	}
+	# custom_attributes = {
+		# enables_fertile_lands = yes #-10% development cost in grasslands and farmlands
+	# }
 	ai = {
 		factor = 1
 	}
@@ -56,9 +56,9 @@ representatives_reform = {
 	modifiers = {
 		diplomatic_upkeep = 1
 	}
-	custom_attributes = {
-		enables_sovereign_militaries = yes #15% manpower and 15% forcelimit in vassals
-	}
+	# custom_attributes = {
+		# enables_sovereign_militaries = yes #15% manpower and 15% forcelimit in vassals
+	# }
 	ai = {
 		factor = 1
 	}
@@ -70,9 +70,9 @@ foreign_pages_reform = {
 	modifiers = {
 		diplomatic_reputation = 1
 	}
-	custom_attributes = {
-		enables_foreign_notables = yes #+0.1 legitimacy for each 100+ dev ally
-	}
+	# custom_attributes = {
+		# enables_foreign_notables = yes #+0.1 legitimacy for each 100+ dev ally
+	# }
 	ai = {
 		factor = 1
 	}
@@ -84,9 +84,9 @@ kissing_the_ring_reform = {
 	modifiers = {
 		reduced_liberty_desire = 10
 	}
-	custom_attributes = {
-		enables_bound_to_the_one_ring = yes #+15% vassal tax while no vassal has over 25% liberty desire
-	}
+	# custom_attributes = {
+		# enables_bound_to_the_one_ring = yes #+15% vassal tax while no vassal has over 25% liberty desire
+	# }
 	ai = {
 		factor = 1
 	}
@@ -98,9 +98,9 @@ theatrical_performance_reform = {
 	modifiers = {
 		prestige = 0.5
 	}
-	custom_attributes = {
-		enables_prestigeous_theatres = yes #+1 splendor if you have 50+ prestige
-	}
+	# custom_attributes = {
+		# enables_prestigeous_theatres = yes #+1 splendor if you have 50+ prestige
+	# }
 	ai = {
 		factor = 1
 	}

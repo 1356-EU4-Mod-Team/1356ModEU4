@@ -1,6 +1,6 @@
 # No previous file for Madawaska
 
-culture = abenaki
+culture = maliseet
 religion = totemism
 capital = "Madawaska"
 trade_goods = unknown

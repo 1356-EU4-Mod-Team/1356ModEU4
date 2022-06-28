@@ -1,7 +1,11 @@
 #2710 - Berau
 
-owner = TDG
-controller = TDG
+latent_trade_goods = {
+	coal
+}
+
+owner = BEU
+controller = BEU
 culture = bornean
 religion = hinduism
 capital = "Berau"

@@ -33,4 +33,18 @@ spriteTypes = {
 		noOfFrames = 3
 		loadType = "INGAME"
 	}
+	
+	spriteType = {
+		name = "GFX_tech_institution_gunpowder_institution"
+		texturefile = "gfx/interface/institutions/tech_institution_gunpowder_institution.dds"
+		noOfFrames = 5
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_tech_institution_mercantilism_institution"
+		texturefile = "gfx/interface/institutions/tech_institution_mercantilism_institution.dds"
+		noOfFrames = 5
+		transparencecheck = yes
+	}	
 }

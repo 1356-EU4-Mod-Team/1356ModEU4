@@ -1,5 +1,7 @@
-government = republic
-add_government_reform = caspian_peasants_republic_reform
+# government = republic                                          # Cool Idea but nothing seems to sadly support a formidable one
+# add_government_reform = caspian_peasants_republic_reform
+government = monarchy
+add_government_reform = iqta
 mercantilism = 15
 primary_culture = mazandarani
 religion = sunni #Zaidiyyah
@@ -7,13 +9,14 @@ technology_group = muslim
 capital = 4339 # Lahijan
 religious_school = shafii_school
 
-1356.12.25 = {
+
+1356.12.24 = {
 	monarch = {
-		name = "Peasant Council"
+		name = "Ali Mirza"
+		dynasty = "Kamal"
 		adm = 3
 		dip = 3
 		mil = 3
-		regent = yes
 	}
 }
 

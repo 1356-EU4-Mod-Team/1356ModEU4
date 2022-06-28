@@ -1,0 +1,144 @@
+﻿l_english:
+ ## Origins Patch
+ ## Early Game Policies
+ 1356_reconstruct_state_burucracy: "Reconstruct State Bureaucracy"
+ 1356_reconstruct_state_burucracy_desc: "The time of Feudalism is nearing its end, as such we should begin the process of centralizing the Government. While costly, it will put us on the path of modernization."
+ 1356_autonomous_lordships: "Autonomous Lordships"
+ 1356_autonomous_lordships_desc: "Our large state can be difficult to administer at times. Instead of vassals that hold strong power, we can instead elect to grant those who possess little power throughout our realm increased autonomy."
+ 1356_maintain_relam_peace: "Maintain Realm Peace"
+ 1356_maintain_relam_peace_desc: "Avoiding war at all cost should be our priority. If the State can avoid the cost of war, our people will prosper from it."
+ 1356_delegate_admin_policies: "Focus on Military and Diplomacy"
+ 1356_delegate_admin_policies_desc: "Our administration is in little need of restructuring, we should instead focus on Diplomatic and Military affairs."
+ 1356_royal_education_admin: "Royal Tutelage in the Matters of State"
+ 1356_royal_education_admin_desc: "We should ensure that the members of the Royal family are properly educated for future rule."
+ 1356_diverse_advisors: "Patronage Minority Scholars"
+ 1356_diverse_advisors_desc: " Our ruler needs the best possible advice, and sometimes, the best advisors can be found outside the Bureaucratic circle."
+ 1356_culture_adivsors: "Bureaucratic Appointments"
+ 1356_culture_adivsors_desc: "We should appoint advisors from those who have served our Dynasty for generations. While this will hurt the potential for Advise, we will secure a court of Loyalty"
+ 1356_justify_war_ae_debuff: "Justification of War"
+ 1356_justify_war_ae_debuff_desc: "We should send our Diplomats to foriegn courts to justify our reasons for war. This should allow us some credibility when expanding outside our borders."
+ 1356_office_foreign_affairs: "Office of Foreign Affairs"
+ 1356_office_foreign_affairs_desc: "By establishing an office of Foreign affairs, we can create a stronger diplomatic presence throughout the region."
+ 1356_estate_concessions_policy: "Concessions to the Estates"
+ 1356_estate_concessions_policy_desc: "A state that does not have the loyalty of its Estates cannot expect to be successful. We should offer some concessions in return for their loyalty."
+ 1356_focus_domestic_trade: "Focus on Domestic Trade"
+ 1356_focus_domestic_trade_desc: ""
+ 1356_delegate_dip_policies: "Focus on Administration and Military"
+ 1356_delegate_dip_policies_desc: "Our Diplomacy is in little need of restructuring, we should instead focus on Administrative and Military affairs."
+ 1356_royal_education_diplomatic: "Royal Tutelage in Diplomatic Affairs"
+ 1356_royal_education_diplomatic_desc: "We should ensure that the members of the Royal family are properly educated for affairs of Diplomacy."
+ 1356_grow_the_vassals_struct: "Grow the Vassal Structure"
+ 1356_grow_the_vassals_struct_desc: ""
+ 1356_focus_on_cav: "Focus on Cavalry"
+ 1356_focus_on_cav_desc: ""
+ 1356_permit_loot_warfare: "Permit Looting of Provinces"
+ 1356_permit_loot_warfare_desc: ""
+ 1356_free_leaders_policy: "Seek more Generals"
+ 1356_free_leaders_policy_desc: ""
+ 1356_focus_adm_dip_not_mil: "Focus on Administration and Diplomacy"
+ 1356_focus_adm_dip_not_mil_desc: "Our Military is in little need of restructuring, we should instead focus on Administrative and Diplomatic affairs."
+ 1356_glory_of_war_hordes: "Glory in War"
+ 1356_glory_of_war_hordes_desc: ""
+ 1356_royal_education_military: "Royal Tutelage in Military Affairs"
+ 1356_royal_education_military_desc: "We should ensure that the members of the Royal family are properly educated in the Art of War."
+ 1356_levy_the_war_taxes: "Levy War Taxes"
+ 1356_levy_the_war_taxes_desc: ""
+ 1356_invest_in_the_castles: "Invest in the Castles"
+ 1356_invest_in_the_castles_desc: ""
+ 
+ 1356_strengthen_religious_control: "Strengthen Religious Control"
+ 1356_strengthen_religious_control_desc: ""
+ 1356_theocratic_reform: "Theocratic Reform"
+ 1356_theocratic_reform_desc: ""
+ 1356_reelection_campaigns: "Re-election Campaigns"
+ 1356_reelection_campaigns_desc: ""
+ 1356_pursue_closer_bonds: "Pursue Closer Bonds"
+ 1356_pursue_closer_bonds_desc: ""
+ 1356_aid_the_poor_theo: "Aid the Poor"
+ 1356_aid_the_poor_theo_desc: ""
+ 1356_vision_of_commerce: "Visions of Commerce"
+ 1356_vision_of_commerce_desc: ""
+ 1356_patronage_the_shipwrights: "Patronage the Shipwrights"
+ 1356_patronage_the_shipwrights_desc: ""
+ 1356_guards_of_the_holy_sites: "Guards of the Holy Sites"
+ 1356_guards_of_the_holy_sites_desc: ""
+ 1356_expansion_of_the_merchant_fleet: "Expansion of the Merchant Fleet"
+ 1356_expansion_of_the_merchant_fleet_desc: ""
+ 
+ reliance_on_feudalism: "High Feudal Retainment"
+ reliance_on_feudalism_desc: ""
+ high_feudal_burecracy: "High Feudal Bureaucracy"
+ high_feudal_burecracy_desc: ""
+ high_feudal_ae_impact: "High Feudal War Justification"
+ high_feudal_ae_impact_desc: ""
+ relying_on_feudal_policies: "Reliance on High Feudal Policies"
+
+
+
+ 
+ # Modifiers
+ super_lucky_nations: "Timely Lucky Nation"
+ liaoyang_province: "Yuan Province of Liaoyang"
+ liaoyang_province_desc: "Liaoyang represents the Yuan empire admistration in the region of Manchuria. However with the Red Turban rebellion in full force, the governors are gradually losing power and Brigands run rampant in the countryside."
+ 
+ 
+ ## Events
+ WarTwoPetersFlavor.1.d: "Originally a war Orchestrated by Peter (Pedro) d’Ivree to seize the Kingdom of Valencia from Aragon, the War of Two Peters quickly escalated into a Civil war between King Peter and his Bastard brother, Enrique de Trastamara.The conflict would also earn the interest of the French and English Kings, with eventually both sides receiving support from one of the aforementioned Kingdoms."
+ WarTwoPetersFlavor_new.1.a.tt: "Provinces owned by Trastamara and Castile will be annexed on sieging them down, the Civil War will end and the opposing faction will be annexed when one side has accrued a significant advantage in Warscore. When occupying a Province belonging to ether faction, it will be instantly looted." 
+ WarTwoPetersFlavor_new.2.a.tt: "Valencia will be released and fall under Castilian Personal union"
+ WarTwoPetersFlavor_new.3.a.tt: "If Peter loses the Castilian War of Succession, Portugal will likely not have healthy relations with the new Trastamara dynasty."
+ 
+ WarTwoPetersFlavor.100.t: "Intervention in the Castilian War of Succession"
+ WarTwoPetersFlavor.100.d: "Originally a war Orchestrated by Peter (Pedro) d’Ivree to seize the Kingdom of Valencia from Aragon, the War of Two Peters quickly escalated into a Civil war between King Peter and his Bastard brother, Enrique de Trastamara.The conflict would also earn the interest of the French and English Kings, with eventually both sides receiving support from one of the aforementioned Kingdoms.Aragon being the original belligerent in this conflict, we can choose to mediate a peace deal with Castile now, conceding Valencia, or we can continue to support Enrique in his war to overthrow the Castilian King."
+ WarTwoPetersFlavor.100.a: "We will crush the Castilians and install Enrique as King!"
+ WarTwoPetersFlavor.100.b: "Mediate a peace deal with Castile (Concedes Valencia)"
+ WarTwoPetersFlavor.111.d: "Originally a war Orchestrated by Peter (Pedro) d’Ivree to seize the Kingdom of Valencia from Aragon, the War of Two Peters quickly escalated into a Civil war between King Peter and his Bastard brother, Enrique de Trastamara.The conflict would also earn the interest of the French and English Kings, with eventually both sides receiving support from one of the aforementioned Kingdoms."
+ 
+ WarTwoPetersFlavor.101.t: "Intervention in the Castilian War of Succession"
+ WarTwoPetersFlavor.101.d: "Originally a war Orchestrated by Peter (Pedro) d’Ivree to seize the Kingdom of Valencia from Aragon, the War of Two Peters quickly escalated into a Civil war between King Peter and his Bastard brother, Enrique de Trastamara.The conflict would also earn the interest of the French and English Kings, with eventually both sides receiving support from one of the aforementioned Kingdoms. Portugal being an intervening power in the War of Succession, we have the option of remaining and assisting Peter or instead withdrawing and abandoning the war."
+ WarTwoPetersFlavor.101.a: "Peter is the rightful King of Castile, we will crush the Bastard Enrique!"
+ WarTwoPetersFlavor.101.b: "Perhaps we shouldn’t be involved in Castilian internal affairs (Peaces out)"
+ 
+ collapse_of_liaoyang.1.t: "Liaoyang, Yuan Administration in Manchuria"
+ collapse_of_liaoyang.1.desc: "Since the fall of the Khitan Jin dynasty in 1234, the Jurchen tribes of Manchuria have since been under Mongol rule. While considered a fringe area of rule under the Yuan dynasty, it was still administered as part of the Province of Liaoyang. However, now as the blessing of the Mandate of Heaven slips further away from the Yuan dynasty, so does the ability for Yuan to effectively govern Liaoyang. There may come a time in the near future where Mongol administrators will be forced out by the rising Jurchen tribes."
+ collapse_of_liaoyang.1.a: "Dark times lie ahead…"
+ 
+ collapse_of_liaoyang.2.t: "Disintegration of Liaoyang"
+ collapse_of_liaoyang.2.desc: "Following continued neglect by the Yuan dynasty, control over the Province of Liaoyang has rapidly collapsed. All across Liaoyang, Jurchen tribesmen are executing Yuan officials or are forced out by small scale revolts. Brigands and Bandits now ravage the countryside with little repercussion. What little fragments remained of Yuan rule in Liaoyang have all but been shattered."
+ collapse_of_liaoyang.2.a: "So we splinter..."
+ collapse_of_liaoyang.2.b: "Side with the Jianzhou Tribe"
+ collapse_of_liaoyang.2.c: "Side with the Haixi Tribe"
+ collapse_of_liaoyang.2.d: "Side with the Donghai Tribe"
+ collapse_of_liaoyang.2.e: "Side with the Udege Tribe"
+ collapse_of_liaoyang.2.f: "Side with the Yeren Tribe"
+ collapse_of_liaoyang.2.g: "Its the Bandit's life for me!"
+  
+ 
+ 
+ 
+ # Decisions
+ 
+ check_for_new_missions_1356_title: "(Debug) Check for new Missions"
+ check_for_new_missions_1356_desc: "Use this decision if Missions are not appearing/Using another Mission related Mod."
+ disable_missions_1356_title: "(Debug) Disable 1356 Related Missions"
+ disable_missions_1356_desc: "Use this decision if you would like to disable 1356 Missions. Recommended if you are wanting to play with Mods like Flavor Universalis and Missions Expanded."
+ hide_debugging_decisions_title: "(Debug) Hide Debugging Decisions"
+ hide_debugging_decisions_desc: "Use this decision if you would like to hide the Debugging tools for immersion purposes. THIS ACTION IS NOT REVERSIBLE!!"
+ 
+ # Tooltips
+ has_selected_idea_1: "Is at least Administrative Technology 2"
+ collapse_of_liaoyang.tt: "Liaoyang starts as an Autonomous subject under Yuan, with the Red Turban Rebellion in full swing in China, resources used to previously govern Liaoyang have been diverted in hopes of restoring rule to China. Should Yuan continue to fracture past the year 1364, Liaoyang will cease to exist, being divided up into multiple Jurchen clans. The Goryeo dynasty in Korea may also take advantage of this crisis and invade. The remaining lands of Liaoyang that did not cede to the Jurchens will be divided amongst Brigands and Bandits. §YWhen this time comes, we will have the ability to play as one of the Jurchen Tribes or attempt to survive as a Bandit Tribe.§!"
+ disintegration_liaoyang_1.tt: "Liaoyang will cease to exist, with it's lands being divided up by the Jurchen and Mongol tribes. The remaining lands of Liaoyang will come under control of Bandits"
+ disintegration_liaoyang_2.tt: "§RBe careful when choosing to play as Bandits as they will be become a Stateless Society!§!"
+ 
+ # Ideas
+ 
+ blank_idea_slot_1: "Is an Early Game Policy"
+ blank_idea_slot_2: "Is an Early Game Policy"
+ 
+ # Countries
+ BANDITS_KINGDOM: "Bandits"
+ BANDITS_KINGDOM_ADJ: "Bandits and Brigands"
+ 
+ 
+ 

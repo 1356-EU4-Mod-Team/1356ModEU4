@@ -20,7 +20,7 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
-add_province_triggered_modifier = 1356_teutonic_order_cathedral_great_project_province_modifier #1356
+#add_province_triggered_modifier = 1356_teutonic_order_cathedral_great_project_province_modifier #1356
 
 1362.1.14 = { culture = prussian }
 1454.3.6 = { add_core = POL revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Beginning of the "thirteen years war"

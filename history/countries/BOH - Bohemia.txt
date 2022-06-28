@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = elective_feudal_monarchy_reform
+add_government_reform = high_feudal_monarchy_reform
 primary_culture = czech
 religion = catholic
 elector = yes
@@ -36,6 +36,18 @@ change_estate_land_share = {
 }
 
 1356.12.26 = { # Was 1353.5.27
+	add_imperial_influence = -20
+	add_mil_power = -40
+	add_adm_power = -80
+	add_dip_power = -40
+	add_treasury = -40
+	add_prestige = -20
+	add_inflation = 2.5
+	add_legitimacy = -20
+	add_country_modifier = {
+		name = "bohemian_golden_bull_nerf"
+		duration = 9125
+	}	
 	queen = {
 		country_of_origin = SIL
 		name = "Anna"

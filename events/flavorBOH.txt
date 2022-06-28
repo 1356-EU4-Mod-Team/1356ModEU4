@@ -65,7 +65,7 @@ country_event = {
 			limit = {
 				has_heir = yes
 			}
-			remove_heir = yes
+			remove_heir = {}
 		}
 		change_religion = hussite
 		define_ruler = {
@@ -111,7 +111,7 @@ country_event = {
 			limit = {
 				has_heir = yes
 			}
-			remove_heir = yes
+			remove_heir = {}
 		}
 		define_ruler = {
 			name = "Jirí"

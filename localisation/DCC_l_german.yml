@@ -1,0 +1,12 @@
+﻿l_german:
+ DCC_SpreadPrimaryTitle: "Eure Kultur verbreitet sich."
+ DCC_SpreadPrimary: "Die Menschen in einer unserer Provinzen integrieren sich immer besser in unsere Gesellschaft. Sie verhalten sich und sprechen inzwischen eigentlich so wie wir."
+ DCC_ApprovePrimarySpread: "Ausgezeichnet!"
+ DCC_DisapprovePrimarySpread: "Zur eigenen Kultur ermutigen"
+
+ DCC_SpreadAcceptedTitle: "Eine akzeptierte Kultur verbreitet sich."
+ DCC_SpreadAccepted: "Es sind Tendenzen erkennbar, dass die Menschen in einer unserer Provinzen anfangen, sich endlich in einer akzeptablen Art und Weise zu benehmen."
+ DCC_ApproveAcceptedSpread: "Sehr schön!"
+ DCC_DisapproveAcceptedSpread: "Zur eigenen Kultur ermutigen"
+ 
+ DCC_encourage_own_culture: "Kultur gewürdigt"

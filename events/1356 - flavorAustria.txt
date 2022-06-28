@@ -1,6 +1,42 @@
 namespace = flavor_1356_hab
 
 country_event = {
+	id = flavor_1356_hab.100
+	title = flavor_1356_hab.100.t 
+	desc = flavor_1356_hab.100.d 
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	option = { 
+		trigger = {
+			is_emperor = yes
+			NOT = { tag = HAB }
+		}	
+		name = flavor_1356_hab.100.a 
+		custom_tooltip = flavor_1356_hab.100.tt 
+		add_prestige = -25
+		add_legitimacy = -50
+		add_country_modifier = {
+			name = "imperial_decadence"
+			duration = 7325 #
+		}		
+	}
+	option = { 
+		trigger = {
+			tag = HAB
+			is_emperor = yes
+		}	
+		name = flavor_1356_hab.100.b
+		custom_tooltip = flavor_1356_hab.100.tt 
+		add_imperial_influence = 10
+	}	
+}
+
+
+country_event = {
 	id = flavor_1356_hab.1
 	title = flavor_1356_hab.1.t 
 	desc = flavor_1356_hab.1.d 
@@ -83,74 +119,74 @@ country_event = { #The death of Rudolf
 	}
 }
 
-country_event = { #The death of Rudolf (laws abolished)
-	id = flavor_1356_hab.4
-	title = flavor_1356_hab.4.t 
-	desc = flavor_1356_hab.4.d 
-	picture = DEATH_OF_HEIR_eventPicture
+# country_event = { #The death of Rudolf (laws abolished)
+	# id = flavor_1356_hab.4
+	# title = flavor_1356_hab.4.t 
+	# desc = flavor_1356_hab.4.d 
+	# picture = DEATH_OF_HEIR_eventPicture
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	trigger = {
-		NOT = {
-			has_ruler_flag	= 1356_rudolf_flag
-		}
-		tag = HAB 
-		NOT = { has_country_flag = has_not_abolished_rh }
-	}
+	# trigger = {
+		# NOT = {
+			# has_ruler_flag	= 1356_rudolf_flag
+		# }
+		# tag = HAB 
+		# NOT = { has_country_flag = has_not_abolished_rh }
+	# }
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+	# mean_time_to_happen = {
+		# days = 1
+	# }
 	
-	option = { #Support Albert's Claim
-		name = flavor_1356_hab.4.a 
-		define_ruler = {
-			name = "Albrecht"
-			dynasty = "von Habsburg"
-			adm = 3
-			dip = 3
-			mil = 5
-			age = 16
-			fixed = yes 
-			claim = 95
-		}
-		random = {
-			chance = 50
-			134 = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 2
-					leader = "Leopold von Habsburg"
-				}
-			}
-		}
-	}
+	# option = { #Support Albert's Claim
+		# name = flavor_1356_hab.4.a 
+		# define_ruler = {
+			# name = "Albrecht"
+			# dynasty = "von Habsburg"
+			# adm = 3
+			# dip = 3
+			# mil = 5
+			# age = 16
+			# fixed = yes 
+			# claim = 95
+		# }
+		# random = {
+			# chance = 50
+			# 134 = {
+				# spawn_rebels = {
+					# type = pretender_rebels
+					# size = 2
+					# leader = "Leopold von Habsburg"
+				# }
+			# }
+		# }
+	# }
 	
-	option = { #Support Leopold's Claim
-		name = flavor_1356_hab.4.b 
-		define_ruler = {
-			name = "Leopold"
-			dynasty = "von Habsburg"
-			adm = 4
-			dip = 3
-			mil = 4
-			age = 16
-			fixed = yes 
-			claim = 95
-		}
-		random = {
-			chance = 50
-			134 = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 2
-					leader = "Albrecht von Habsburg"
-				}
-			}
-		}
-	}
-}
+	# option = { #Support Leopold's Claim
+		# name = flavor_1356_hab.4.b 
+		# define_ruler = {
+			# name = "Leopold"
+			# dynasty = "von Habsburg"
+			# adm = 4
+			# dip = 3
+			# mil = 4
+			# age = 16
+			# fixed = yes 
+			# claim = 95
+		# }
+		# random = {
+			# chance = 50
+			# 134 = {
+				# spawn_rebels = {
+					# type = pretender_rebels
+					# size = 2
+					# leader = "Albrecht von Habsburg"
+				# }
+			# }
+		# }
+	# }
+# }
 
 country_event = { #The Purchase of Breisgau
 	id = flavor_1356_hab.5
@@ -314,62 +350,62 @@ country_event = { #The Purchase of Breisgau
 	}
 }
 
-country_event = {
-	id = flavor_1356_hab.10
-	title = flavor_1356_hab.10.t 
-	desc = flavor_1356_hab.10.d 
-	picture = ACCUSATION_eventPicture
+# country_event = { # Disabled but will be readding again soon
+	# id = flavor_1356_hab.10
+	# title = flavor_1356_hab.10.t 
+	# desc = flavor_1356_hab.10.d 
+	# picture = ACCUSATION_eventPicture
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	trigger = {
-		tag = HAB
-		has_country_flag = flavor_hab_joint_rule_flag
-		senior_union_with = STY
-	}
+	# trigger = {
+		# tag = HAB
+		# has_country_flag = flavor_hab_joint_rule_flag
+		# senior_union_with = STY
+	# }
 	
-	mean_time_to_happen = {
-		months = 240
-	}
+	# mean_time_to_happen = {
+		# months = 240
+	# }
 	
-	immediate = {
-		hidden_effect = {
-			break_union = STY
-			if = {
-				limit = {
-					72 = {
-						owned_by = ROOT
-					}
-				}
-				cede_province = STY
-			}
-			if = {
-				limit = {
-					1880 = {
-						owned_by = ROOT
-					}
-				}
-				cede_province = STY
-			}
-			STY = {
-				country_event = {
-					id = flavor_1356_hab.11
-				}
-			}
-		}
-	}
+	# immediate = {
+		# hidden_effect = {
+			# break_union = STY
+			# if = {
+				# limit = {
+					# 72 = {
+						# owned_by = ROOT
+					# }
+				# }
+				# cede_province = STY
+			# }
+			# if = {
+				# limit = {
+					# 1880 = {
+						# owned_by = ROOT
+					# }
+				# }
+				# cede_province = STY
+			# }
+			# STY = {
+				# country_event = {
+					# id = flavor_1356_hab.11
+				# }
+			# }
+		# }
+	# }
 	
-	option = { #Go with Albert.
-		name = flavor_1356_hab.10.a 
-		add_prestige = -25
-		add_casus_belli = {
-			target = STY 
-			type = cb_restore_personal_union
-			months = 360
-		}
-		clr_country_flag = flavor_hab_joint_rule_flag
-	}
-}
+	# option = { #Go with Albert.
+		# name = flavor_1356_hab.10.a 
+		# add_prestige = -25
+		# add_casus_belli = {
+			# target = STY 
+			# type = cb_restore_personal_union
+			# months = 360
+		# }
+		# clr_country_flag = flavor_hab_joint_rule_flag
+	# }
+# }
 
 country_event = { #Leopold in Styria
 	id = flavor_1356_hab.11

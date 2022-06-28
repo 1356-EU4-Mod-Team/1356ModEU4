@@ -1,6 +1,6 @@
 #904 - Nakota
 
-culture = dakota
+culture = chiwere
 religion = totemism
 capital = "Nakota"
 trade_goods = unknown

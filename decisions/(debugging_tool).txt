@@ -1,0 +1,47 @@
+country_decisions = {
+
+	check_for_new_missions_1356 = {
+		major = yes
+		potential = {
+			NOT = { has_global_flag = disabled_debugging_tool }
+		}
+		allow = {
+			always = yes
+			ai = no
+		}
+		effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+	
+
+	disable_missions_1356 = {
+		major = yes
+		potential = {
+			NOT = { has_global_flag = disabled_debugging_tool }
+			NOT = { has_global_flag = disabled_1356_related_missions }
+		}
+		allow = {
+			always = yes
+			ai = no
+		}
+		effect = {
+			set_global_flag = disabled_1356_related_missions
+		}
+		
+	}
+	
+	hide_debugging_decisions = {
+		major = yes
+		potential = {
+			NOT = { has_global_flag = disabled_debugging_tool }
+		}
+		allow = {
+			always = yes
+			ai = no
+		}
+		effect = {
+			set_global_flag = disabled_debugging_tool
+		}
+	}		
+}	

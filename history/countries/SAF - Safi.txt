@@ -7,3 +7,14 @@ capital = 345
 fixed_capital = 345 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
 government_rank = 1
+
+1356.11.13 = {
+	monarch = {
+		name = "Abu Inan"
+		dynasty = "Marinid"
+		adm = 2
+		dip = 2
+		mil = 1
+		birth_date = 1334.1.13
+	}
+}	

@@ -860,7 +860,7 @@ ladislaus_postumus_heir_died_effect = {
 		}
 		clr_country_flag = hun_ladislaus_postumus_heir
 		HAB = {
-			kill_heir = yes
+			kill_heir = {}
 			clr_country_flag = hab_ladislaus_postumus_heir
 		}
 	}
@@ -890,7 +890,7 @@ ladislaus_postumus_heir_died_effect = {
 		}
 		clr_country_flag = hab_ladislaus_postumus_heir
 		HUN = {
-			kill_heir = yes
+			kill_heir = {}
 			clr_country_flag = hun_ladislaus_postumus_heir
 		}
 	}
@@ -926,13 +926,16 @@ ladislaus_postumus_king_died_effect = {
 		limit = {
 			tag = HUN
 			has_country_flag = hun_ladislaus_postumus_king
+			NOT = {
+				has_country_flag = hun_keep_ladislaus_alive
+			}
 			HAB = {
 				has_heir = "Ladislaus Postumus"
 				has_country_flag = hab_ladislaus_postumus_heir
 			}
 		}
 		HAB = {
-			kill_heir = yes
+			kill_heir = {}
 			clr_country_flag = hab_ladislaus_postumus_heir
 		}
 	}
@@ -946,7 +949,7 @@ ladislaus_postumus_king_died_effect = {
 			}
 		}
 		HUN = {
-			kill_heir = yes
+			kill_heir = {}
 			clr_country_flag = hun_ladislaus_postumus_heir
 		}
 	}
@@ -961,6 +964,12 @@ ladislaus_postumus_king_died_effect = {
 			has_country_flag = hab_ladislaus_postumus_king
 		}
 		clr_country_flag = hab_ladislaus_postumus_king
+	}
+	if = {
+		limit = { 
+			has_country_flag = hun_keep_ladislaus_alive
+		}
+		clr_country_flag = hun_keep_ladislaus_alive
 	}
 }
 
@@ -1038,6 +1047,11 @@ burgundian_inheritance_start_effect = {
 			is_year = 1440
 			has_country_modifier = burgundian_succession_crisis
 			NOT = { has_country_flag = burgundian_succession_has_already_fired }
+			NOT = { 
+				BUR = {
+					is_subject = yes
+				}
+			}
 		}
 		set_country_flag = burgundian_succession_has_already_fired
 		remove_country_modifier = burgundian_succession_crisis
@@ -1080,7 +1094,6 @@ burgundian_inheritance_start_effect = {
 					mil = 3
 					claim = 50
 					female = yes
-					fixed = yes
 				}
 				set_ruler_flag = mary_is_heir
 			}
@@ -1104,5 +1117,36 @@ burgundian_inheritance_start_effect = {
 			duration = -1
 			hidden = yes
 		}
+	}
+}
+
+
+joan_de_trastamara_king_died_effect = {
+	if = {
+		limit = {
+			tag = NAV
+			is_lesser_in_union = no
+			ARA = {
+				exists = yes
+				has_heir_flag = joan_trastamara_flag
+				is_lesser_in_union = no
+			}
+		}
+		ARA = { kill_heir = {} }
+	}
+}
+
+joan_de_trastamara_heir_died_effect = {
+	if = {
+		limit = {
+			tag = ARA
+			is_lesser_in_union = no
+			NAV = {
+				exists = yes
+				has_ruler_flag = joan_trastamara_flag
+				is_lesser_in_union = no
+			}
+		}
+		NAV = { kill_ruler = yes }
 	}
 }

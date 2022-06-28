@@ -1,9 +1,9 @@
 # 732 - Hamgyeong (1356)
 # Changes: YUA/religion
 
-owner = YUA
-controller = YUA
-add_core = YUA
+# owner = YUA
+# controller = YUA
+# add_core = YUA
 add_core = KOR
 #add_core = GYO
 culture = korean

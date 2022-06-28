@@ -1,73 +1,73 @@
 # War of the Two Peters
-name = "The Hundred Years' War"
+# name = "The Hundred Years' War"
 # Audax Validator "." Ignore_1007
-casus_belli = cb_insult
-war_goal = {
-	type = superiority_insult_mutual
-	casus_belli = cb_insult
-}
+# casus_belli = cb_insult
+# war_goal = {
+	# type = superiority_insult_mutual
+	# casus_belli = cb_insult
+# }
 
-1356.12.26 = { # Claim in kingdom of Valencia, more access to mediterrean sea
-	add_attacker = ENG
-	add_attacker = GUY
-	add_attacker = AMG
-	add_attacker = MNF
-	add_attacker = WLS
-	add_attacker = LNC
-	add_attacker = NOL
-	add_attacker = NAV
-	add_defender = FRA
-	add_defender = FOI
-	add_defender = ALE
-	add_defender = ANJ
-	add_defender = AUV
-	add_defender = BOU
-	add_defender = DAU
-	add_defender = ORL
-	add_defender = BLS
-	add_defender = FOZ
-}
+# 1356.12.26 = { # Claim in kingdom of Valencia, more access to mediterrean sea
+	# add_attacker = ENG
+	# add_attacker = GUY
+	# add_attacker = AMG
+	# add_attacker = MNF
+	# add_attacker = WLS
+	# add_attacker = LNC
+	# add_attacker = NOL
+	# add_attacker = NAV
+	# add_defender = FRA
+	# add_defender = FOI
+	# add_defender = ALE
+	# add_defender = ANJ
+	# add_defender = AUV
+	# add_defender = BOU
+	# add_defender = DAU
+	# add_defender = ORL
+	# add_defender = BLS
+	# add_defender = FOZ
+# }
 
-1356.12.26 = { # 1356.9.19 = { #Original
-	battle = {
-		name = "Poitiers"
-		location = 180 # Poitou
-		attacker = {
-			commander = "Edward, the Black Prince"	# Edward, the Black Prince
-			infantry = 3000
-			cavalry = 3000
-			losses = 5	# percent
-			country = ENG
-		}
-		defender = {
-			commander = "Jean II"	# Jean II of France
-			infantry = 3000
-			cavalry = 8000
-			losses = 100	# percent # Originally 75
-			country = FRA
-		}
-		result = yes
-	}
-}
+# 1356.12.26 = { # 1356.9.19 = { #Original
+	# battle = {
+		# name = "Poitiers"
+		# location = 180 # Poitou
+		# attacker = {
+			# commander = "Edward, the Black Prince"	# Edward, the Black Prince
+			# infantry = 3000
+			# cavalry = 3000
+			# losses = 5	# percent
+			# country = ENG
+		# }
+		# defender = {
+			# commander = "Jean II"	# Jean II of France
+			# infantry = 3000
+			# cavalry = 8000
+			# losses = 100	# percent # Originally 75
+			# country = FRA
+		# }
+		# result = yes
+	# }
+# }
 
  #End of war
-1366.3.13 = { # Start of Castillian Civil War
-	rem_attacker = ENG
-	rem_attacker = GUY
-	rem_attacker = AMG
-	rem_attacker = MNF
-	rem_attacker = NAV
-	rem_attacker = WLS
-	rem_attacker = LNC
-	rem_attacker = NOL
-	rem_defender = FRA
-	rem_defender = FOI
-	rem_defender = ALE
-	rem_defender = ANJ
-	rem_defender = AUV
-	rem_defender = BOU
-	rem_defender = DAU
-	rem_defender = ORL
-	rem_defender = BLS
-	rem_defender = FOZ
-}
+# 1366.3.13 = { # Start of Castillian Civil War
+	# rem_attacker = ENG
+	# rem_attacker = GUY
+	# rem_attacker = AMG
+	# rem_attacker = MNF
+	# rem_attacker = NAV
+	# rem_attacker = WLS
+	# rem_attacker = LNC
+	# rem_attacker = NOL
+	# rem_defender = FRA
+	# rem_defender = FOI
+	# rem_defender = ALE
+	# rem_defender = ANJ
+	# rem_defender = AUV
+	# rem_defender = BOU
+	# rem_defender = DAU
+	# rem_defender = ORL
+	# rem_defender = BLS
+	# rem_defender = FOZ
+# }

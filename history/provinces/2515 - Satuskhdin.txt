@@ -1,6 +1,6 @@
 # No previous file for Satuskhdin
 
-culture = osage
+culture = yoron
 religion = totemism
 capital = "Satsukhdin"
 trade_goods = unknown

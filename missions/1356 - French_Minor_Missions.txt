@@ -15,6 +15,7 @@ french_minor_take_land_slot_1 = {
 			tag = VAL
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 
 	}
 	has_country_shield = yes
@@ -72,6 +73,7 @@ french_minor_take_land_slot_2 = {
 			tag = VAL
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 
 	}
 	has_country_shield = yes
@@ -158,6 +160,7 @@ french_minor_take_land_slot_3 = {
 			tag = VAL
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -271,6 +274,7 @@ french_minor_form_france = { #Would like to add a time window somewhat seperatin
 			tag = VAL
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 
 	}
 	has_country_shield = yes
@@ -307,6 +311,7 @@ french_minor_take_land_slot_4 = {
 			tag = VAL
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 
 	}
 	has_country_shield = yes	
@@ -360,6 +365,7 @@ french_minor_take_land_slot_10 = {
 			tag = VAL
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 
 	}
 	has_country_shield = yes	
@@ -413,6 +419,7 @@ french_minor_take_land_slot_6 = {
 			tag = VAL
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 
 	}
 	has_country_shield = yes	

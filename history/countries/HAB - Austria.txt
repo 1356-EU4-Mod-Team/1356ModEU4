@@ -59,7 +59,7 @@ national_focus = ADM
 		dynasty = "von Habsburg"
 		birth_date = 1298.12.12
 		ADM = 4
-		DIP = 6
+		DIP = 4
 		MIL = 2
 	}
 	heir = {
@@ -69,9 +69,9 @@ national_focus = ADM
 		birth_date = 1339.11.1
 		death_date = 1365.7.27
 		claim = 95
-		ADM = 4
-		DIP = 4
-		MIL = 3
+		ADM = 5
+		DIP = 5
+		MIL = 2
 	}	
 }
 

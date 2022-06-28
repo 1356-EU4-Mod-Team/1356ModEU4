@@ -1,7 +1,7 @@
 #2735 - Gunditjmara
 
-culture = aboriginal
-religion = animism
+culture = kulin
+religion = dreamtime
 capital = "Gunditjmara"
 hre = no
 trade_goods = unknown

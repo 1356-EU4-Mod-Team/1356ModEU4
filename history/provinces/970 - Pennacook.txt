@@ -1,6 +1,6 @@
 #970 - Pennacook
 
-culture = abenaki
+culture = massachusset
 religion = totemism
 capital = "Merrimack"
 trade_goods = unknown

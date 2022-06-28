@@ -1,6 +1,6 @@
 # No previous file for Manicouagan
 
-culture = cree
+culture = innu
 religion = totemism
 capital = "Manicouagan"
 trade_goods = unknown

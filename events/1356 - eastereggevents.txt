@@ -81,7 +81,7 @@ country_event = {
 	
 	option = { #Name Flandy heir
 		name = eastereggflandy.2.a
-		kill_heir = yes
+		kill_heir = {}
 		define_heir = {
 			name = "Flandy"
 			dynasty = "van Vladderen"
@@ -119,7 +119,7 @@ country_event = {
 	}
 	option = { #Well, onto the 4th son!
 		name = eastereggflandy.2.d
-		kill_heir = yes
+		kill_heir = {}
 		define_heir = {
 			dynasty = "van Vladderen"
 			male = yes

@@ -1,6 +1,6 @@
 # No previous file for Naskapi
 
-culture = cree
+culture = innu
 religion = totemism
 capital = "Naskapi"
 trade_goods = unknown

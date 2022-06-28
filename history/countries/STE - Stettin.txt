@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = pommeranian
 religion = catholic
 technology_group = western
-capital = 1858	# Stettin
+capital = 4746	# Stettin
 
 # Szczecin in 1356, Stettin in 1444  # Ruled Jointly until 1368, made PU junior under Wolgast
 

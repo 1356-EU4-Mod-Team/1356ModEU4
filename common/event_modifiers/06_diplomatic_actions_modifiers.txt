@@ -1,0 +1,159 @@
+
+#New Espionage Modifiers
+
+espionage_bribed_merchant_ongoing = {
+	placed_merchant_power = -20
+	trade_efficiency = -0.10
+}	
+espionage_inflamed_seperatist_sentiment = {
+	years_of_nationalism = 10
+	stability_cost_modifier = 0.20
+}	
+
+# New Espionage Decision and Event Modifiers
+
+espionage_network_founded = {
+	spy_offence = 0.10
+}
+
+recently_killed_heir_espionage = { # Dummy Modifier for Preventing incidents ## Used Transport Power as 1.32 broke blank modifiers
+	#transport_power = 0.01
+}	
+
+recently_recruited_from_network = { # Dummy Modifier for Recruting
+	#transport_power = 0.01
+}
+
+espionage_mil_specialization = { # Specialization
+	diplomats = 1
+}	
+
+espionage_diplo_specialization = { # Specialization
+	diplomats = 1
+}	
+
+espionage_adm_specialization = { # Specialization
+	diplomats = 1
+}	
+
+in_espionage_network_screen = { # Dummy modifier so event cant be spammed
+	transport_power = 0.1
+}
+
+# Specializations and Cooldowns
+
+adm_specialization_cooldown = { #  to track cooldown # Represents 'action in use'
+	diplomats = -1
+}
+
+dip_specialization_cooldown = { #  to track cooldown # Represents 'action in use'
+	diplomats = -1
+}
+
+mil_specialization_cooldown = { #  to track cooldown  # Represents 'action in use'
+	diplomats = -1
+}
+
+# Admin ones
+
+spy_enforce_vassal_payment = {
+	vassal_income = 0.50
+}
+
+spy_grow_heir_loyalty = {
+	monthly_heir_claim_increase = 0.6
+}
+
+spy_eye_for_talent = {
+	leader_cost = -0.20
+}
+
+spy_hunt_rebel_leaders = {
+	years_of_nationalism = -5
+}
+
+# Dip ones
+
+spy_strengthen_support_rebels = {
+	rebel_support_efficiency = 0.50
+}
+
+spy_claim_forgery = {
+	fabricate_claims_cost = -0.50
+}
+
+spy_fence_loan = {
+	interest = -0.5
+}
+
+spy_justiy_future_wars = {
+	ae_impact = -0.10
+}
+
+# Mil ones
+
+spy_siege_ability = {
+	siege_ability = 0.10
+}
+spy_loyal_general = {
+	free_land_leader_pool = 1
+}
+spy_bandits_in_pool = {
+	global_manpower = 5
+}
+spy_scounting_reports = {
+	land_attrition = -0.10
+}
+
+## Innovativeness
+
+patronaged_a_invetor_inno = {
+}
+
+is_considering_patronage_of_inventors = {
+}
+
+
+great_thinker_advisor_cooldown = {
+}
+
+great_thinker_adm = {
+	adm_advisor_cost = -0.1
+}
+
+great_thinker_dip = {
+	dip_advisor_cost = -0.1
+}
+
+great_thinker_mil = {
+	mil_advisor_cost = -0.1
+}
+
+# Naval Hegemons Related Modifiers
+hegemon_britain_rules_the_waves = {
+	naval_forcelimit_modifier = 0.25
+	heavy_ship_power = 0.10
+	naval_morale = 0.10
+	allowed_marine_fraction = 0.2
+}
+
+# hegemon_british_elite_sailors = { # Broken currently
+	# is_marine_modifier = yes
+	# infantry_fire = 0.5
+	# land_morale = 0.05
+# }
+
+regional_naval_hegemon = {
+	heavy_ship_power = 0.10
+	naval_forcelimit_modifier = 0.33
+	global_sailors = 10000
+	navy_tradition_decay = -0.01
+}	
+
+flagship_got_sunked = {
+	naval_morale = -0.10
+}
+flagship_got_captured = {
+	naval_morale = -0.05
+}
+	

@@ -8,6 +8,18 @@ capital = 344
 fixed_capital = 343 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
 
+1356.11.13 = {
+	monarch = {
+		name = "Rasul"
+		dynasty = "Hintata"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1325.1.13
+	}
+}	
+
+
 # Hintata Emirs
 
 1444.1.1 = {

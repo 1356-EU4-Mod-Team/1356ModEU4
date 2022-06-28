@@ -117,7 +117,7 @@ country_decisions = {
 			if = {
 				limit = { NOT = { has_reform = celestial_empire } }
 				change_government = monarchy #Desert tribes settling down, theocracies become monarchies.
-				#set_legacy_government = despotic_monarchy
+				
 			}
 			change_primary_culture = moroccan
 			set_country_flag = formed_morocco_flag
@@ -211,8 +211,11 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			owns_core_province = 338 #Algiers
 			owns_core_province = 2461 #Dahra
+			owns_core_province = 338 #Algiers
+			338 = {						#Algiers
+				is_state = yes
+			}
 			OR = {
 				owns_core_province = 336 #Tlemcen
 				owns_core_province = 339 #Kabylia
@@ -340,8 +343,11 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			owns_core_province = 341 #Tunis
 			owns_core_province = 2473 #Souss
+			owns_core_province = 341 #Tunis
+			341 = {						#Tunis
+				is_state = yes
+			}
 			OR = {
 				owns_core_province = 2454 #Kef
 				owns_core_province = 354 #Tripoli
@@ -372,7 +378,7 @@ country_decisions = {
 					is_tribal = yes
 				}
 				change_government = monarchy #Desert tribes settling down.
-				#set_legacy_government = despotic_monarchy
+
 			}
 			add_prestige = 25
 			set_country_flag = formed_tunisia_flag
@@ -406,7 +412,7 @@ country_decisions = {
 			NOT = { tag = HLR }
 			OR = {
 				primary_culture = tunisian
-				primary_culture = berber
+				primary_culture = tripolitanian_culture #1356
 			}
 			capital_scope = {
 				OR = {
@@ -446,8 +452,11 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			owns_core_province = 354 #Tripoli
 			owns_core_province = 2451 #Thubaqt
+			owns_core_province = 354	#Tripoli
+			354 = {						#Tripoli
+				is_state = yes
+			}
 			OR = {
 				owns_core_province = 355 #Sirt
 				owns_core_province = 353 #Djerba
@@ -477,7 +486,7 @@ country_decisions = {
 					is_tribal = yes #Desert tribes settling down.
 				}
 				change_government = monarchy
-				#set_legacy_government = despotic_monarchy
+				
 			}
 			add_prestige = 25
 			set_country_flag = formed_tripoli_flag

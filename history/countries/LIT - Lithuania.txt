@@ -66,6 +66,38 @@ capital = 272 # Vilnius
 	}	
 }
 
+1356.12.26 = {
+	set_estate_privilege = estate_nobles_land_rights
+	set_estate_privilege = estate_cossacks_cossack_self_governance
+	set_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+	set_estate_privilege = estate_cossacks_recruit_cossack_generals
+	set_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+	set_estate_privilege = estate_burghers_land_rights
+	set_estate_privilege = estate_church_clerical_oversight
+	set_estate_privilege = estate_nobles_command_of_the_military
+	change_estate_land_share = {
+		estate = estate_church
+		share = 7
+	}
+	change_estate_land_share = {
+		estate = estate_burghers
+		share = -5
+	}	
+	change_estate_land_share = {
+		estate = estate_nobles
+		share = -23
+	}
+	change_estate_land_share = {
+		estate = estate_cossacks
+		share = 5
+	}	
+	add_army_tradition = 20
+	add_manpower = 8
+	add_prestige = 20
+	add_treasury = 83
+}
+
+
 1377.5.29 = {
 	monarch = { # 1st time
 		name = "Jogaila"

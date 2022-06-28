@@ -15,19 +15,41 @@ edict_centralization_effort = {
 	
 	
 	ai_will_do = {
-		factor = 10
+		factor = 10.0
 		modifier = {
 			factor = 0
-			all_province_in_state = {
-				NOT = {
-					local_autonomy_above_min = 10
+			any_province_in_state = {
+				AND = {
+					NOT = { local_autonomy = 60 }
+					owned_by = FROM
 				}
 			}
 		}
 		modifier = {
-			factor = 3
-			all_province_in_state = {
-				local_autonomy_above_min = 10
+			factor = 5.0
+			any_province_in_state = {
+				AND = {
+					local_autonomy = 60
+					owned_by = FROM
+				}
+			}
+		}
+		modifier = {
+			factor = 5.0
+			any_province_in_state = {
+				AND = {
+					local_autonomy = 80
+					owned_by = FROM
+				}
+			}
+		}
+		modifier = {
+			factor = 5.0
+			any_province_in_state = {
+				AND = {
+					local_autonomy = 100
+					owned_by = FROM
+				}
 			}
 		}
 	}

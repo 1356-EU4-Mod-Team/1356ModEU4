@@ -1,0 +1,31 @@
+#New Estate Privs. for 1.33 France and England Update
+
+
+#New Nomadic Tribes Privileges
+
+# Intended to nerf White Horde and make it painful to play ## In 1356, they are experiencing a sea of revolts and assassinations but this is not represented yet so for now this will represent control with other modifiers
+estate_nomadic_tribes_command_of_the_military = {
+	icon = privilege_promote_purbias
+	land_share = 5
+	max_absolutism = -10
+	influence = 0.25
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		custom_tooltip = estate_nomadic_tribes_command_of_the_military_tt
+	}
+	penalties = {
+		min_autonomy = 33
+		raze_power_gain = -0.10
+	}
+	benefits = {
+		army_tradition_from_battle = 1
+		free_leader_pool = 2
+		leader_cost = -0.15
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

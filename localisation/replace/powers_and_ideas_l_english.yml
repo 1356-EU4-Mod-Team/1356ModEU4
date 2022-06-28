@@ -1,0 +1,55 @@
+﻿l_english:
+ overseas_merchants_maritime:0 "Overseas Merchants"
+ overseas_merchants_maritime_desc:0 "To grow trade we need to extend the rights of citizenship to people who live abroad, support our trade and are of the right social class."
+ bless_monarch:0 "Papal Sanctioned Warfare"
+ DEVELOPMENT_COST:0 "Global Development Cost"
+
+ overseas_exploration:0 "Overseas Exploration"
+ overseas_exploration_desc:0 "Setting up colonies in distant lands is pretty much a one-way trip. If strange new diseases don't get you, the amount of time it takes to sail back means you won't be coming home. If we remind people of the potential riches, we can encourage them to seek lands further afield.\nMay use the §Y‘Colonialism’§! Casus Belli against neighboring nations that follow §YInti, Mayan§! or §YNahuatl§!."
+ 
+ estate_cossacks_prime_herding_rights_effect_tooltip:0 "§G+25%§! manpower from all Steppe provinces\n§R-25%§! tax income from all Steppe provinces"
+ estate_cossacks_prime_herding_rights_mod:0 "Cossack Herding Rights"
+ 
+ global_empire:0 "Global Empire"
+ global_empire_desc:0 "Our commitment to our colonial empire has changed the attitude of people to jobs in the colonial administration. No longer a place for freebooters who seek to maximize their fortune, instead it is seen as a career for the brightest and the best. This is reflected in our taxes.\nUnlocks the ability to select the §YGrand Armada§! §YNaval Doctrine§!. (§GPortugal§!) cannot take this Doctrine."
+ 
+ competetive_merchants:0 "Competitive Merchants"
+ competetive_merchants_desc:0 "To bring trade home we must be able to beat the competition from other countries. We need to ensure that our legal system gives them every possible edge.\nUnlocks the ability to select the §YGrand Armada§! §YNaval Doctrine§!. (§GPortugal§!) cannot take this Doctrine."
+ 
+ trade_manipulation_desc:0 "At those key choke points where trade could go one way or another, the ability to gain an edge there is key to the growth of our trade income.\nUpgrades §OProtect Trade§! State Edict to §OMercantile Protect Trade§!, increasing §YLocal Trade Power§! Bonus to §Y75%§!"
+ merchant_marine_desc:0 "Let every merchant ship fly our merchant ensign with pride and know that our navy will always be there to protect them if needs must.\nEnables the §OMaritime Increase Sailors Enlistment§! State Edict, adding §G+100§! §YSailors§! each Province in a state (This works on §YInland§! Provinces)"
+ empiricism_desc: "With the search of knowledge also comes many false ideas. It is only with evidence and our experience of the world around us that we can prove or disprove that what is before us is in fact true.\nUnlocks a §YDecision§! to Patronage a local researcher in exchange for Innovativeness."
+ 
+ dynamic_court_desc:0 "A truly innovative court is one where any person may rise to shine. We must strive to make sure that old traditions, birth or wealth aren't a hindrance to the development of our court or a barrier to talented people wishing to seek their fortune in the service of our state.\nUnlocks a §YDecision§! to invite a §OGreat Thinker§! throughout our lands. This Great Thinker can be any §YAdvisor Type.§!"
+ 
+ national_bank_desc:0 "By establishing a central authority for financial matters, we will have better control over our nation's economy.\nUnlocks a §YDecision§! to Establish the National Bank."
+ 
+ MODIFIER_GREAT_PROJECT_UPGRADE_COST:0 "Monuments and Great Projects Upgrade Cost"
+ MODIFIER_LOCAL_GREAT_PROJECT_UPGRADE_COST:0 "Local Monuments and Great Projects Upgrade Cost"
+ 
+  organised_mercenary_recruitment_desc:0 "Money is not the only limit when it comes to recruiting mercenaries. The other bottleneck is having mercenary companies who actually wish to serve with us. Thus we must ensure our system allows every company to join us.\nReplaces §YGeneric§! Free Companies and Grand Companies with §OEminence§! Free Companies and Grand Companies. These §OEminence§! companies do not consume §YArmy Professionalism§! when recruited"
+  
+  zim_african_great_power: "Eminence Power Projection"
+  
+  efficient_spies_desc:0 "Most peasants will sell their own mother for cash but find those who can do something truly useful is more difficult. Through experience we are learning to separate the wheat from the chaff.\nUnlocks a §YDecision§! to Establish an §OEspionage Network§!"
+  agent_training_desc:0 "We have many covert operations planned but lack the men for the tasks. Establishing a training method for our spies will help bolster the available agents for dangerous missions.\nUnlocks a §YDecision§! to 'Remove' an unwanted §YHeir§! who is not an adult. This Decision requires having established the §OEspionage Network§!"
+ privateers:0 "Underhand Trade Tactics"
+ privateers_desc:0 "Waging war on enemy commerce rests on the apex of the first triad of victory. We will encourage crusty sea captains to strike at the enemy's trade.\nMay use the §OBribe Merchants§! Covert Action"
+ audit_checks:0 "Lethal Loyalty"
+ audit_checks_desc:0 "While we look to infiltrate other nations, we must be vigilant of poisonous ideas spreading around our own courts. Assembling an audit team to ensure our ministers are acting in the state's interest will help root out some rotten elements.\nMay recruit select §YAdvisors§! from the §OEspionage Network§!. These Advisors always start §YRank 1§!, §G-33%§! Cheaper, and share the Primary Culture"
+ state_propaganda:0 "State Propaganda"
+ state_propaganda_desc:0 "As with a man, a nation's reputation is everything, and the establishment of an official propaganda service will ensure our good name is not smeared by the lies of our enemies.\nMay expand the Espionage Network to include §OSpecialization§! Divisions."
+ 
+  #Ideas Renaming
+ diplomatic_ideas:0 "Eminence Ideas"
+ diplomatic_ideas_bonus:0 "Eminence Ambition"
+ theocracy_gov_ideas: "Theocratic Ideas"
+ theocracy_gov_ideas_bonus: "Full Theocratic"
+ horde_gov_ideas: "Nomadic Ideas"
+ horde_gov_ideas_bonus: "Full Nomadic Ideas"
+ trade_ideas: "Mercantile Ideas"
+ trade_ideas_bonus: "Full Mercantile"
+ naval_ideas: "Flotilla Ideas"
+ naval_ideas_bonus: "Full Flotila Ideas"
+ 
+ mechanic_has_parliament_yes:2 "Enables Parliament.\nDisables §O(Or in some cases Empowers)§! Nobility estate."

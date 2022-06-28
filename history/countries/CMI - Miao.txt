@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = chinese_kingdom_government_reform
+add_government_reform = chinese_warlord
 primary_culture = miao
 religion = animism
 technology_group = chinese

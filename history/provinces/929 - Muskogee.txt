@@ -1,6 +1,6 @@
 #929 - Muskogee
 
-culture = creek
+culture = catawba
 religion = totemism
 capital = "Guale"
 trade_goods = cotton

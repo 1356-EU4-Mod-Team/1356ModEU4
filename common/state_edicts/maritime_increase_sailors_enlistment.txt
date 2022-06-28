@@ -1,0 +1,50 @@
+edict_increase_sailor_enlistment = {
+	potential = {
+		has_idea = merchant_marine
+	}
+	
+	allow = {
+		has_idea = merchant_marine
+	}
+	
+	modifier = {
+		local_sailors = 100
+	}
+	
+	color = {  173 216 230  }
+	
+	
+	ai_will_do = {
+		factor = 15.0
+		modifier = {
+			factor = 0
+			any_province_in_state = {
+				is_capital_of = FROM
+			}
+		}
+		modifier = {
+			factor = 1.5
+			all_province_in_state = {
+				base_manpower = 5
+			}
+		}
+		modifier = {
+			factor = 5.0
+			all_province_in_state = {
+				AND = {
+					has_manpower_building_trigger = yes
+					owned_by = FROM
+				}
+			}
+		}
+		modifier = {
+			factor = 5.0
+			all_province_in_state = {
+				AND = {
+					xorme_additional_manpower_goods_trigger = yes
+					owned_by = FROM
+				}
+			}
+		}
+	}
+}

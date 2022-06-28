@@ -4,6 +4,17 @@ estate_burghers =
 
 	# If true, country will get estate
 	trigger = {	
+		if = {
+			limit = {
+				OR = {
+					has_reform = steppe_horde
+					has_reform = mountain_khanate_chagatai
+					has_reform = golden_horde_khanate
+					has_reform = great_mongol_state_reform
+				}
+			}
+			has_reform = grow_trade_relations_tribal
+		}		
 		NOT = { has_estate = estate_vaisyas }
 		NOT = { has_estate = estate_jains }
 		NOT = { has_reform = pirate_republic_reform }
@@ -18,7 +29,7 @@ estate_burghers =
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
 		}
-		is_nomad = no
+		#is_nomad = no # 1356 Tribal changes affect this
 		is_colonial_nation = no
 		NOT = { has_reform = revolutionary_empire_reform }
 	}
@@ -224,9 +235,23 @@ estate_burghers =
 	custom_name = {
 		desc = estate_merchant_guilds
 		trigger = {
-			NOT = { religion_group = christian } #Diversify a bit more.
+			OR = {	#Just like "NOT = { religion_group = Christian }", but at least it doesn't override estate names for new religion groups
+				#Still needs more diversity
+				religion_group = muslim
+				religion_group = eastern
+				religion_group = dharmic
+				religion_group = pagan
+				religion_group = jewish_group
+				religion_group = zoroastrian_group
+			}
 		}
 	}
+	custom_name = {
+		desc = estate_pochteca
+		trigger = {
+			religion = nahuatl
+		}
+	}	
 	custom_name = {
 		desc = estate_viking_merchants
 		trigger = {
@@ -251,6 +276,8 @@ estate_burghers =
 		estate_burghers_exclusive_trade_rights
 		estate_burghers_control_over_monetary_policy
 		estate_burghers_private_trade_fleets
+		estate_burghers_khmer_irrigation
+		estate_burghers_tropical_nation
 		estate_burghers_monopoly_of_textiles
 		estate_burghers_monopoly_of_dyes
 		estate_burghers_monopoly_of_glass
@@ -258,14 +285,17 @@ estate_burghers =
 		estate_burghers_enforced_interfaith_dialogue
 		estate_burghers_prussian_confederation
 		estate_burghers_statutory_rights
+		estate_burghers_orang_laut_alliances
+		estate_burghers_control_over_the_mint
+		estate_burghers_hydraulic_rights
 	}
 	agendas = {
 		estate_burghers_develop_x
-		estate_burghers_build_trade_building_in_y
-		estate_burghers_build_port_building_in_y
-		estate_burghers_build_production_building_in_y
-		estate_burghers_build_university_in_y
-		estate_burghers_build_manufactory_in_y
+		#estate_burghers_build_trade_building_in_y
+		#estate_burghers_build_port_building_in_y
+		#estate_burghers_build_production_building_in_y
+		#estate_burghers_build_university_in_y
+		#estate_burghers_build_manufactory_in_y
 		estate_burghers_pay_off_loans
 		estate_burghers_restore_republican_tradition
 		estate_burghers_restore_currency

@@ -3,6 +3,17 @@ estate_nobles =
 	icon = 2
 	# If true, country will get estate
 	trigger = {
+		if = {
+			limit = {
+				OR = {
+					has_reform = steppe_horde
+					has_reform = mountain_khanate_chagatai
+					has_reform = golden_horde_khanate
+					has_reform = great_mongol_state_reform
+				}
+			}
+			has_reform = formalize_noble_caste_tribal
+		}		
 		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_reform = veche_republic }
@@ -13,6 +24,7 @@ estate_nobles =
 		NOT = { is_revolutionary_republic_trigger = yes }
 		NOT = { has_reform = revolutionary_empire_reform }
 		NOT = { has_reform = peasants_republic }
+		NOT = { has_reform = kongsi_federation }
 		NOT = { has_reform = american_republic }
 		NOT = { has_reform = federal_republic }
 		NOT = { has_reform = frisian_republic_gov } #1356
@@ -32,25 +44,18 @@ estate_nobles =
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
 		}
-		is_nomad = no
+		# is_nomad = no # 1356 Tribal Changes adjust this
 		is_colonial_nation = no
-		OR = {
-			NOT = { has_dlc = "Common Sense" }
-			AND = {
-				NOT = { has_reform = english_monarchy }
-				NOT = { has_reform = parliamentary_reform }	
-				NOT = { has_reform = theocratic_democracy_reform }
-				NOT = { has_reform = regionally_elected_commanders }
-				NOT = { has_reform = protectorate_parliament_reform }
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_dlc = "Dharma" }
-			}
-			has_parliament = no
-		}
+		NOT = { has_government_attribute = disables_nobility }
 		NOT = { has_reform = revolutionary_empire_reform }
+		AND = {
+			NOT = { has_country_flag = ikko_ikki_peasants_flag }
+			OR = {
+				NOT = { has_reform = leading_clergy_reform }
+				NOT = { has_reform = monastic_order_reform }
+				NOT = { has_reform = peasants_republic }
+			}
+		}
 	}
 
 
@@ -223,6 +228,25 @@ estate_nobles =
 	
 	#Alternative naming of estates
 	custom_name = {
+		desc = estate_oyo_mesi
+		trigger = {
+			tag = OYO
+		}
+	}
+	custom_name = {
+		desc = estate_nakomse
+		trigger = {
+			primary_culture = mossi
+			religion = shamanism
+		}
+	}
+	custom_name = {
+		desc = estate_chieftains
+		trigger = {
+			has_reform = tribal_confederacy
+		}
+	}
+	custom_name = {
 		desc = estate_beys
 		trigger = {
 			technology_group = ottoman
@@ -340,6 +364,69 @@ estate_nobles =
 		}
 	}
 
+	custom_name = {
+		desc = estate_ariki
+		trigger = {
+			primary_culture = maori
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_alii
+		trigger = {
+			OR = {
+				capital_scope = {
+					area = northern_polynesia_area
+				}
+				tag = SAM
+			}
+			primary_culture = polynesian
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_rangatira
+		trigger = {
+			primary_culture = maori
+			religion = animism
+		}
+	}	
+	custom_name = {
+		desc = estate_eiki
+		trigger = {
+			tag = TOG
+			primary_culture = polynesian
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_ratu
+		trigger = {
+			OR = {
+				tag = LAI
+				tag = VIL
+				tag = VNL
+			}
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_warriors
+		trigger = {
+			OR = {
+				government = native
+				has_reform = siberian_tribe
+				has_reform = native_basic_reform
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_mani
+		trigger = {
+			tag = KON
+		}
+	}
+	
 	color = { 200 0 50 }
 	
 	privileges = {
@@ -361,14 +448,23 @@ estate_nobles =
 		estate_nobles_monopoly_of_livestock
 		estate_nobles_monopoly_of_gems
 		estate_nobles_statutory_rights
+		estate_nobles_command_of_the_military
+		estate_nobles_better_integration
+		estate_nobles_cawa_peace_keepers
+		estate_nobles_cawa_offensive_fighters
+		estate_nobles_neighbor_raids
+		estate_nobles_decentralized_tribe
+		estate_nobles_tribe_unification
+		estate_nobles_tribe_centralization
+		estate_nobles_grant_power_to_the_bashorun
 	}
 
 	agendas = {
 		estate_nobles_develop_x
-		estate_nobles_build_army_building_in_y
-		estate_nobles_build_fort_building_in_y
-		estate_nobles_build_university_in_y
-		estate_nobles_build_manufactory_in_y
+		#estate_nobles_build_army_building_in_y
+		#estate_nobles_build_fort_building_in_y
+		#estate_nobles_build_university_in_y
+		#estate_nobles_build_manufactory_in_y
 		estate_nobles_get_allies
 		estate_nobles_befriend_rival_of_rival
 		estate_nobles_restore_legitimacy

@@ -1,0 +1,9 @@
+sound = {
+	name = landcombat_musket_loop
+	file = landcombat_musket_loop.wav
+}
+
+sound = {
+	name = landcombat_melee_loop
+	file = landcombat_melee_loop.wav
+}

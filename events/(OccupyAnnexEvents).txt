@@ -1,0 +1,396 @@
+namespace = chinese_unification
+
+province_event = {
+	id = chinese_unification.1
+	title = chinese_unification.1.t
+	desc = { }
+	picture = SIEGE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#owner = {
+		#	NOT = { tag = ROOT }
+		#}
+		#has_global_flag = chinese_may_unify
+		NOT = { is_year = 1465 }
+		controller = {
+			culture_group = east_asian
+			#religion = confucianism
+			NOT = { primary_culture = vietnamese }
+			#ai = yes ## Changed based on player feedback
+		}
+		superregion = china_superregion
+		is_capital = no
+		owner = {
+			was_player = no
+		}			
+	}
+	
+	immediate = {
+		hidden_effect = {
+			cede_province = controller
+			add_core = controller
+			remove_loot = {
+				who = ROOT
+				amount = 100
+			}
+			add_devastation = 2			
+		}
+	}
+	option = {
+		name = "chinese_unification.1.a"
+		tooltip = {
+			cede_province = controller
+			add_core = controller
+		}
+	}
+}
+
+province_event = {
+	id = chinese_unification.2
+	title = chinese_unification.2.t
+	desc = { }
+	picture = SIEGE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#owner = {
+		#	NOT = { tag = ROOT }
+		#}
+		#has_global_flag = chinese_may_unify
+		NOT = { is_year = 1465 }
+		controller = {
+			culture_group = east_asian
+			#ai = yes## Changed based on player feedback
+			NOT = { primary_culture = vietnamese }
+		}
+		superregion = china_superregion
+		is_capital = yes
+		owner = {
+			was_player = no
+		}	
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_core = controller
+			remove_loot = {
+				who = ROOT
+				amount = 100
+			}
+			add_devastation = 2				
+		}
+	}
+	option = {
+		name = "chinese_unification.a"
+		tooltip = {
+			add_core = controller
+		}
+	}
+}
+
+
+
+province_event = { #Timurs Conquest Valid Province
+	id = timurid_emergence.1565
+	title = timurid_emergence.1565.t
+	desc = { }
+	picture = SIEGE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#owner = {
+		#	NOT = { tag = ROOT }
+		#}
+		NOT = { is_year = 1465 }
+		controller = {
+			ai = yes
+			has_ruler_flag = is_tamerlane
+		}
+		OR = {
+			region = khorasan_region
+			region = persia_region
+			region = mashriq_region
+		}	
+		is_capital = no
+		owner = {
+			was_player = no
+		}			
+	}
+	
+	immediate = {
+		hidden_effect = {
+			cede_province = controller
+			add_core = controller
+			remove_loot = {
+				who = ROOT
+				amount = 100
+			}
+			add_devastation = 10				
+		}
+	}
+	option = {
+		name = "chinese_unification.1.a"
+		tooltip = {
+			cede_province = controller
+			add_core = controller
+		}
+	}
+}
+
+province_event = { # Timurs Conquest Valid Province
+	id = timurid_emergence.1566
+	title = timurid_emergence.1565.t
+	desc = { }
+	picture = SIEGE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#owner = {
+		#	NOT = { tag = ROOT }
+		#}
+		#has_ruler_flag = is_tamerlane
+		NOT = { is_year = 1465 }
+		controller = {
+			ai = yes
+			has_ruler_flag = is_tamerlane
+		}
+		OR = {
+			region = khorasan_region
+			region = persia_region
+			region = mashriq_region
+		}	
+		is_capital = yes
+		owner = {
+			was_player = no
+		}	
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_core = controller
+			remove_loot = {
+				who = ROOT
+				amount = 100
+			}
+			add_devastation = 10
+		}
+	}
+	option = {
+		name = "chinese_unification.a"
+		tooltip = {
+			add_core = controller
+		}
+	}
+}
+
+
+province_event = { #Castilian Civil War Annexation Events - Trastamara
+	id = timurid_emergence.17778
+	title = timurid_emergence.17777.t
+	desc = { }
+	picture = SIEGE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#owner = {
+		#	NOT = { tag = ROOT }
+		#}
+		NOT = { is_year = 1465 }
+		NOT = { has_global_flag = trastamara_wins_civil_war }
+		NOT = { has_global_flag = castile_wins_civil_war }
+		controller = {
+			OR = { 
+				AND = {
+					tag = ARA
+					NOT = { has_country_flag = not_support_castilian_candidate }
+				}	
+				tag = CTR
+			}	
+		}
+		region = iberia_region
+		is_capital = no
+		owner = {
+			tag = CAS
+		}			
+	}
+	
+	immediate = {
+		hidden_effect = {
+			cede_province = CTR
+			add_core = CTR
+			remove_loot = {
+				who = ROOT
+				amount = 100
+			}
+			add_devastation = 4		
+			add_loot_from_province_effect = yes			
+		}
+	}
+	option = {
+		name = "chinese_unification.1.a"
+		tooltip = {
+			cede_province = CTR
+			add_core = CTR
+		}
+	}
+}
+
+province_event = { #Castilian Civil War Annexation Events
+	id = timurid_emergence.17777
+	title = timurid_emergence.17777.t
+	desc = { }
+	picture = SIEGE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#owner = {
+		#	NOT = { tag = ROOT }
+		#}
+		NOT = { is_year = 1465 }
+		NOT = { has_global_flag = trastamara_wins_civil_war }
+		NOT = { has_global_flag = castile_wins_civil_war }		
+		controller = {
+			OR = { 
+				AND = {
+					tag = ARA
+					NOT = { has_country_flag = not_support_castilian_candidate }
+				}
+				tag = CTR
+			}	
+		}
+		region = iberia_region	
+		is_capital = yes
+		owner = {
+			tag = CAS
+		}	
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_core = CTR
+			remove_loot = {
+				who = ROOT
+				amount = 100
+			}
+			add_devastation = 4	
+			add_loot_from_province_effect = yes				
+		}
+	}
+	option = {
+		name = "chinese_unification.a"
+		tooltip = {
+			add_core = CTR
+		}
+	}
+}
+
+
+
+province_event = { #Castilian Civil War Annexation Events - Castile
+	id = timurid_emergence.17779
+	title = timurid_emergence.17777.t
+	desc = { }
+	picture = SIEGE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#owner = {
+		#	NOT = { tag = ROOT }
+		#}
+		NOT = { is_year = 1465 }
+		NOT = { has_global_flag = trastamara_wins_civil_war }
+		NOT = { has_global_flag = castile_wins_civil_war }		
+		controller = {
+			OR = { 
+				AND = {
+					tag = POR
+					NOT = { has_country_flag = not_support_castilian_candidate }
+				}
+				tag = CAS
+			}	
+		}
+		region = iberia_region
+		is_capital = no
+		owner = {
+			tag = CTR
+		}			
+	}
+	
+	immediate = {
+		hidden_effect = {
+			cede_province = CAS
+			add_core = CAS
+			remove_loot = {
+				who = ROOT
+				amount = 100
+			}
+			add_devastation = 4	
+			add_loot_from_province_effect = yes	
+		}
+	}
+	option = {
+		name = "chinese_unification.1.a"
+		tooltip = {
+			cede_province = CAS
+			add_core = CAS
+		}
+	}
+}
+
+province_event = { #Castilian Civil War Annexation Events - Castile
+	id = timurid_emergence.17780
+	title = timurid_emergence.17777.t
+	desc = { }
+	picture = SIEGE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#owner = {
+		#	NOT = { tag = ROOT }
+		#}
+		NOT = { is_year = 1465 }
+		NOT = { has_global_flag = trastamara_wins_civil_war }
+		NOT = { has_global_flag = castile_wins_civil_war }		
+		controller = {
+			OR = { 
+				AND = {
+					tag = POR
+					NOT = { has_country_flag = not_support_castilian_candidate }
+				}
+				tag = CAS
+			}	
+		}
+		region = iberia_region	
+		is_capital = yes
+		owner = {
+			tag = CTR
+		}	
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_core = CAS
+			remove_loot = {
+				who = ROOT
+				amount = 100
+			}
+			add_devastation = 4
+			add_loot_from_province_effect = yes				
+		}
+	}
+	option = {
+		name = "chinese_unification.a"
+		tooltip = {
+			add_core = CAS
+		}
+	}
+}

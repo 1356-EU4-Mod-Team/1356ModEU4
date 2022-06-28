@@ -22,7 +22,7 @@ TUR = {
 	NOT = { 
 		is_year = 1700
 	}
-	is_year = 1370
+	is_year = 1350
 }
 
 RUS = {
@@ -77,7 +77,8 @@ POR = {
 	is_year = 1400
 }
 
-SWE = {
+SWE = { # Changed because Danes
+	is_year = 1430 
 	NOT = { 
 		is_year = 1700
 		exists = SCA
@@ -103,22 +104,22 @@ DAN = {
 	}
 }
 
-ARA = {
-	is_subject = no
-}
+# ARA = {
+	# is_subject = no
+# }
 
-LIT = {
-	NOT = {
-		is_year = 1420
-	}
-}
+# LIT = { # Straight up disabled
+	# NOT = {
+		# is_year = 1420
+	# }
+# }
 
-NOR = {
-	NOT = {
-		is_year = 1387
-		exists = SCA
-	}
-}
+# NOR = {
+	# NOT = {
+		# is_year = 1387
+		# exists = SCA
+	# }
+# }
 
 POL = {
 	NOT = { 
@@ -128,6 +129,9 @@ POL = {
 }
 
 TEU = {
+	POL = {
+		ai = no
+	}	
 	NOT = {
 		exists = PRU
 		exists = PLC
@@ -135,19 +139,28 @@ TEU = {
 	}
 }
 
-MNG = {
-	NOT = {
-		exists = QNG
-		exists = MCH
-		is_year = 1700
-	}
-}
+# MNG = { # No no ones likes a Lucky Ming
+	# NOT = {
+		# exists = QNG
+		# exists = MCH
+		# is_year = 1700
+	# }
+# }
 
-VIJ = { 
-	NOT = {
-		is_year = 1405
-	}
-}
+
+
+# JLR = {  # Moved to Timely Lucky Nations
+	# NOT = {
+		# exists = TIM
+	# }
+# }
+
+
+# VIJ = { 
+	# NOT = {
+		# is_year = 1405
+	# }
+# }
 
 SCA = {
 	NOT = {
@@ -162,18 +175,18 @@ ITA = {
 	always = yes
 }
 
-QNG = {
-	NOT = {
-		exists = MCH
-		exists = MNG
-	}
-}
+# QNG = {
+	# NOT = {
+		# exists = MCH
+		# exists = MNG
+	# }
+# }
 
-MCH = {
-	NOT = {
-		exists = QNG
-	}
-}
+# MCH = {
+	# NOT = {
+		# exists = QNG
+	# }
+# }
 
 GLH = {
 	NOT = {
@@ -193,19 +206,15 @@ RUM = {
 	is_year = 1370
 }
 
-TIM = {
-	NOT = {
-		exists = MUG
-		is_year = 1500
-	}
-}
+# TIM = {
+	# always = yes
+	# NOT = {
+		# exists = MUG
+	# }
+# }
 
 MUG = {
-	NOT = {
-		exists = TIM
-		is_year = 1750
-	}
-	is_year = 1500
+	always = yes
 }
 
 USA = {

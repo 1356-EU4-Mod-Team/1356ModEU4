@@ -1,7 +1,7 @@
 #1087 - Wurundjeri
 
-culture = aboriginal
-religion = animism
+culture = kulin
+religion = dreamtime
 capital = "Wurundjeri"
 hre = no
 trade_goods = unknown

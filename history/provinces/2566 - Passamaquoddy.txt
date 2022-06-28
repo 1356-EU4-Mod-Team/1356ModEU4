@@ -1,6 +1,6 @@
 # No previous file for Passamaquoddy
 
-culture = abenaki
+culture = maliseet
 religion = totemism
 capital = "Passamaquoddy"
 trade_goods = unknown

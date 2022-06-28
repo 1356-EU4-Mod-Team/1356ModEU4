@@ -1,6 +1,6 @@
 #997 - Labrador
 
-culture = cree
+culture = innu
 religion = totemism
 capital = "Labrador"
 trade_goods = fish

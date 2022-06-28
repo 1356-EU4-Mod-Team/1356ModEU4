@@ -1,0 +1,2042 @@
+1356_reconstruct_state_burucracy = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	NOT = { has_active_policy = 1356_autonomous_lordships }
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		government_rank = 2
+		NOT = { is_year = 1450 }
+	}
+	
+	administrative_efficiency = 0.1
+	monthly_reform_progress = -0.2
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1000
+			tag = TUR
+		}
+	}
+}
+
+1356_autonomous_lordships = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	NOT = { has_active_policy = 1356_reconstruct_state_burucracy }
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	governing_capacity = 150
+	min_autonomy = 20
+	#expand_administration_cost = 0.5
+
+	ai_will_do = {
+		factor = 0.25
+		modifier = {
+			factor = 1000
+			tag = LIT
+		}		
+	}
+}
+
+1356_maintain_relam_peace = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	is_at_war = no
+	stability = 2
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	global_prosperity_growth = 0.15
+	development_cost = -0.15
+	stability_cost_to_declare_war = 2
+	build_cost = -0.1
+	possible_mil_policy = -1
+
+	ai_will_do = { # Disabled for AI
+		factor = 0	
+	}
+}
+
+1356_delegate_admin_policies = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	NOT = { has_active_policy = 1356_delegate_dip_policies }
+	NOT = { has_active_policy = 1356_focus_adm_dip_not_mil }
+	NOT = { has_active_policy = 1356_reconstruct_state_burucracy }
+	NOT = { has_active_policy = 1356_autonomous_lordships }	
+	NOT = { has_active_policy = 1356_maintain_relam_peace }
+	NOT = { has_active_policy = 1356_royal_education_admin }
+	NOT = { has_active_policy = 1356_diverse_advisors }
+	NOT = { has_active_policy = 1356_culture_adivsors }
+	NOT = { has_active_policy = 1356_reelection_campaigns }
+	NOT = { has_active_policy = 1356_theocratic_reform }
+	NOT = { has_active_policy = 1356_strengthen_religious_control }	
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	possible_adm_policy = -1
+	free_mil_policy = 1
+	free_dip_policy = 1
+
+	ai_will_do = {
+		factor = 0.33
+		modifier = {
+			factor = 1000
+			tag = DAN
+		}		
+	}
+}
+
+1356_royal_education_admin = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		OR = {
+			government = monarchy
+			government = tribal
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		OR = {
+			government = monarchy
+			government = tribal
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	monarch_admin_power = 1
+	adm_advisor_cost = 0.15
+	monthly_support_heir_gain = 0.1
+
+	ai_will_do = {
+		factor = 0.4
+		modifier = {
+			factor = 1000
+			tag = ENG
+		}		
+	}
+}
+
+1356_diverse_advisors = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	NOT = { has_active_policy = 1356_culture_adivsors }
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	advisor_pool = 2
+	same_culture_advisor_cost = 0.20
+	monthly_splendor = 1.5
+
+	ai_will_do = { # Disabled for AI
+		factor = 0		
+	}
+}
+
+
+1356_culture_adivsors = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	NOT = { has_active_policy = 1356_diverse_advisors }
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	advisor_pool = -2
+	same_culture_advisor_cost = -0.25
+	reduced_liberty_desire = 10
+	all_estate_loyalty_equilibrium = 0.05
+
+	ai_will_do = { # Disabled for AI
+		factor = 0.3		
+	}
+}
+
+
+## Diplomatic Policies
+
+
+1356_justify_war_ae_debuff = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				# adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	ae_impact = -0.15
+	unjustified_demands = 0.1
+
+	ai_will_do = {
+		factor = 0.4
+	}
+}
+
+1356_office_foreign_affairs = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	improve_relation_modifier = 0.20
+	diplomats = 1
+
+	ai_will_do = {
+		factor = 0.3
+		modifier = {
+			factor = 1000
+			tag = FRA
+		}		
+	}
+}
+
+1356_estate_concessions_policy = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	all_estate_loyalty_equilibrium = 0.15
+	#possible_dip_policy = -1
+
+	ai_will_do = {
+		factor = 0.35
+		modifier = {
+			factor = 1000
+			tag = ENG
+		}	
+		modifier = {
+			factor = 1000
+			tag = POL
+		}		
+		modifier = {
+			factor = 1000
+			tag = HUN
+		}		
+	}
+}
+
+1356_focus_domestic_trade = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	num_of_merchants = 2
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	merchants = -1
+	placed_merchant_power = 15
+	trade_efficiency = 0.15
+
+	ai_will_do = {
+		factor = 0.35
+		modifier = {
+			factor = 1000
+			culture_group = latin
+		}		
+	}
+}
+
+1356_delegate_dip_policies = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+		NOT = { has_active_policy = 1356_delegate_admin_policies }
+		NOT = { has_active_policy = 1356_focus_adm_dip_not_mil }	
+		NOT = { has_active_policy = 1356_justify_war_ae_debuff }
+		NOT = { has_active_policy = 1356_office_foreign_affairs }
+		NOT = { has_active_policy = 1356_estate_concessions_policy }
+		NOT = { has_active_policy = 1356_focus_domestic_trade }
+		NOT = { has_active_policy = 1356_royal_education_diplomatic }
+		NOT = { has_active_policy = 1356_grow_the_vassals_struct }
+		NOT = { has_active_policy = 1356_aid_the_poor_theo }
+		NOT = { has_active_policy = 1356_vision_of_commerce }
+		NOT = { has_active_policy = 1356_pursue_closer_bonds }
+		custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	possible_dip_policy = -1
+	free_adm_policy = 1
+	free_mil_policy = 1
+
+	ai_will_do = {
+		factor = 0.23
+		modifier = {
+			factor = 1000
+			tag = MAM
+		}		
+	}
+}
+
+1356_royal_education_diplomatic = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+		OR = {
+			government = monarchy
+			government = tribal
+		}	
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		OR = {
+			government = monarchy
+			government = tribal
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	monarch_diplomatic_power = 1
+	dip_advisor_cost = 0.15
+	monthly_support_heir_gain = 0.1
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1000
+			tag = FRA
+		}		
+	}
+}
+
+
+1356_grow_the_vassals_struct = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	vassal = 1
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	reduced_liberty_desire = 15
+	fabricate_claims_cost = -0.5
+	vassal_forcelimit_bonus = 0.5
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1000
+			tag = MOS
+		}	
+		modifier = {
+			factor = 1000
+			tag = FRA
+		}	
+		modifier = {
+			factor = 1000
+			tag = HAB
+		}	
+		modifier = {
+			factor = 1000
+			tag = BUR
+		}		
+	}
+}
+
+
+# Military policies
+
+1356_focus_on_cav = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+		NOT = { is_horde = yes }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+		NOT = { is_horde = yes }
+	}
+	
+	cavalry_cost = -0.20
+	cavalry_flanking = 0.50
+	
+
+	ai_will_do = {
+		factor = 0.35
+		modifier = {
+			factor = 1000
+			tag = POL
+		}	
+		modifier = {
+			factor = 1000
+			tag = FRA
+		}		
+	}
+}
+
+1356_permit_loot_warfare = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	loot_amount = 0.50
+	available_province_loot = 0.50
+	ae_impact = 0.05
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1000
+			tag = ENG
+		}		
+		modifier = {
+			factor = 1000
+			tag = WHI
+		}		
+	}
+}
+
+1356_free_leaders_policy = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	free_leader_pool = 2
+	general_cost = -0.15
+	#possible_mil_policy = -1
+
+	ai_will_do = {
+		factor = 0.8
+		
+	}
+}
+
+1356_focus_adm_dip_not_mil = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	NOT = { has_active_policy = 1356_delegate_dip_policies }
+	NOT = { has_active_policy = 1356_delegate_admin_policies }	
+	NOT = { has_active_policy = 1356_focus_on_cav }
+	NOT = { has_active_policy = 1356_permit_loot_warfare }	
+	NOT = { has_active_policy = 1356_free_leaders_policy }
+	NOT = { has_active_policy = 1356_glory_of_war_hordes }
+	NOT = { has_active_policy = 1356_royal_education_military }
+	NOT = { has_active_policy = 1356_levy_the_war_taxes }
+	NOT = { has_active_policy = 1356_invest_in_the_castles }
+	NOT = { has_active_policy = 1356_patronage_the_shipwrights }
+	NOT = { has_active_policy = 1356_guards_of_the_holy_sites }		
+	NOT = { has_active_policy = 1356_expansion_of_the_merchant_fleet }	
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	possible_mil_policy = -1
+	free_adm_policy = 1
+	free_dip_policy = 1
+
+	ai_will_do = {
+		factor = 0.1
+		modifier = {
+			factor = 1000
+			tag = SER
+		}
+		modifier = {
+			factor = 1000
+			tag = TUR
+		}		
+	}
+}
+
+1356_glory_of_war_hordes = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+		OR = {
+			has_reform = great_mongol_state_reform
+			has_reform = steppe_horde
+		}	
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+		OR = {
+			has_reform = great_mongol_state_reform
+			has_reform = steppe_horde
+		}			
+	}
+	
+	prestige_from_land = 1
+	army_tradition_from_battle = 0.5
+	#possible_mil_policy = -1
+
+	ai_will_do = {
+		factor = 1000
+		
+	}
+}
+
+1356_royal_education_military = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+		OR = {
+			government = monarchy
+			government = tribal
+		}	
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		OR = {
+			government = monarchy
+			government = tribal
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	monarch_military_power = 1
+	mil_advisor_cost = 0.15
+	monthly_support_heir_gain = 0.1
+
+	ai_will_do = {
+		factor = 0.15
+		modifier = {
+			factor = 1000
+			tag = TUR
+		}
+		modifier = {
+			factor = 1000
+			tag = TRS
+		}	
+		modifier = {
+			factor = 1000
+			tag = JLR
+		}		
+	}
+}
+
+1356_levy_the_war_taxes = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	war_taxes_cost_modifier = -0.50
+	global_tax_modifier = 0.10
+	war_exhaustion = 0.02
+
+	ai_will_do = {
+		factor = 0.45
+		
+	}
+}
+
+1356_invest_in_the_castles = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+		NOT = { has_reform = great_mongol_state_reform  }	
+		NOT = { has_reform = steppe_horde  }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+		ai = no
+	}
+	
+	defensiveness = 0.20
+	rival_border_fort_maintenance = -0.50
+	#possible_mil_policy = -1
+
+	ai_will_do = {
+		factor = 0.7
+		
+	}
+}
+
+
+## New Hotfix #1 Policies
+
+1356_strengthen_religious_control = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	global_missionary_strength = 0.015
+	missionaries = 1
+	tolerance_heretic = -2
+	tolerance_heathen = -2
+	
+	ai_will_do = {
+		factor = 0.2
+		modifier = {
+			factor = 1000
+			tag = POR
+		}	
+		modifier = {
+			factor = 1000
+			tag = ETH
+		}		
+	}
+}
+
+1356_theocratic_reform = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		government = theocracy
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}
+			government = theocracy			
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	monthly_reform_progress = 0.20
+	tolerance_own = 2
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1000
+			tag = PAP
+		}		
+	}
+}
+
+1356_reelection_campaigns = {
+	monarch_power = ADM
+	potential = {
+		is_year = 1355
+		government = republic
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+			government = republic
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	reelection_cost = -0.2
+	republican_tradition = 0.3
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1000
+			tag = GEN
+		}
+		modifier = {
+			factor = 1000
+			tag = VEN
+		}		
+	}
+}
+
+
+1356_pursue_closer_bonds = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	monthly_favor_modifier = 0.25
+	
+	ai_will_do = {
+		factor = 0.6		
+	}
+}
+
+1356_aid_the_poor_theo = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		government = theocracy
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+			government = theocracy
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	global_monthly_devastation = -0.15
+	global_prosperity_growth = 0.1
+    global_tax_modifier = -0.07
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1000
+			tag = PAP
+		}		
+	}
+}
+
+1356_vision_of_commerce = {
+	monarch_power = DIP
+	potential = {
+		is_year = 1355
+		government = republic
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	num_of_total_ports = 3
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+			government = republic
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	trade_efficiency = 0.10
+	global_ship_trade_power = 0.33
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1000
+			tag = VEN
+		}		
+	}
+}
+
+1356_patronage_the_shipwrights = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+	}
+	
+	allow = {
+	num_of_total_ports = 3
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	global_ship_cost = -0.20
+	global_ship_recruit_speed = -0.20
+	
+	ai_will_do = {
+		factor = 0.3
+		modifier = {
+			factor = 5
+			culture_group = latin
+		}		
+	}
+}
+
+1356_guards_of_the_holy_sites = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+		government = theocracy
+	}
+	
+	allow = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+		}	
+		government = theocracy
+		NOT = { is_year = 1450 }
+	}
+	
+	global_manpower = 7.5
+	discipline = 0.025
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1000
+			tag = PAP
+		}		
+	}
+}
+
+1356_expansion_of_the_merchant_fleet = {
+	monarch_power = MIL
+	potential = {
+		is_year = 1355
+		NOT = { is_year = 1450 }
+		government = republic
+	}
+	
+	allow = {
+	num_of_total_ports = 3
+	custom_trigger_tooltip = {
+		tooltip = has_selected_idea_1
+			OR = {
+				has_idea_group = blank_idea_slot_1
+				has_idea_group = blank_idea_slot_2			
+				# has_idea_group = aristocracy_ideas
+				# has_idea_group = plutocracy_ideas
+				# has_idea_group = horde_gov_ideas
+				# has_idea_group = theocracy_gov_ideas
+				# has_idea_group = indigenous_ideas
+				# has_idea_group = innovativeness_ideas
+				# has_idea_group = religious_ideas
+				# has_idea_group = spy_ideas
+				# has_idea_group = diplomatic_ideas
+				# has_idea_group = offensive_ideas
+				# has_idea_group = defensive_ideas
+				# has_idea_group = trade_ideas
+				# has_idea_group = economic_ideas
+				# has_idea_group = navigation_ideas_1356
+				# has_idea_group = exploration_ideas
+				# has_idea_group = maritime_ideas
+				# has_idea_group = quality_ideas
+				# has_idea_group = quantity_ideas
+				# has_idea_group = expansion_ideas
+				# has_idea_group = settlement_ideas_1356
+				# has_idea_group = administrative_ideas
+				# has_idea_group = humanist_ideas
+				# has_idea_group = influence_ideas
+				# has_idea_group = naval_ideas
+				# has_idea_group = marcher_lord_ideas
+				# has_idea_group = royal_education_ideas
+				# has_idea_group = grand_court_ideas
+				# has_idea_group = permanent_war_ideas			
+				# has_idea_group = imperial_ideas
+				# has_idea_group = military_doctrine_ideas
+				adm_tech = 2
+			}	
+			government = republic
+		}	
+		NOT = { is_year = 1450 }
+	}
+	
+	light_ship_cost = -0.15
+	naval_forcelimit = 10
+	naval_tradition_from_trade = 1
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1000
+			tag = VEN
+		}	
+		modifier = {
+			factor = 1000
+			culture_group = latin
+		}			
+	}
+}

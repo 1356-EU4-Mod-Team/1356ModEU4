@@ -1,0 +1,370 @@
+# Startup event for Liaoyang
+country_event = {
+	id = collapse_of_liaoyang.1
+	title = "collapse_of_liaoyang.1.t"
+	desc = "collapse_of_liaoyang.1.desc"
+	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1355
+		NOT = { is_year = 1365 }
+		tag = X01
+	}
+
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { # Dark times lie ahead…
+		name = "collapse_of_liaoyang.1.a"
+		custom_tooltip = collapse_of_liaoyang.tt
+		add_stability = -2	
+	}
+}
+
+# Disintegration of Liaoyang
+country_event = {
+	id = collapse_of_liaoyang.2
+	title = "collapse_of_liaoyang.2.t"
+	desc = "collapse_of_liaoyang.2.desc"
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	trigger = {
+		is_year = 1364
+		tag = X01		
+	}
+	
+	fire_only_once = yes
+	major = yes
+
+	mean_time_to_happen = {
+		months = 8 # Generous
+	}
+	
+	immediate = {
+		hidden_effect = {
+			release = MJZ
+			release = EJZ
+			release = MYR
+			release = NVK
+			release = SOL
+			release = BRT
+			release = KRC
+			release = CHH
+			release = NHX
+			release = MHX			
+			MJZ = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95
+				}	
+			}	
+			EJZ = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95
+				}					
+			}
+			MYR = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95
+				}					
+			}
+			NVK = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95
+				}					
+			}
+			SOL = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95
+				}					
+			}
+			BRT = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95
+				}					
+			}				
+			KRC = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95
+				}					
+			}
+			CHH = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95
+				}					
+			}	
+			NHX = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95					
+				}					
+			}
+			MHX = {
+				add_treasury = 150
+				add_manpower = 18
+				add_stability = 1
+				change_government = tribal
+				add_government_reform = steppe_horde
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				change_religion = tengri_pagan_reformed
+					every_owned_province = {
+					remove_core = X01
+					add_local_autonomy = -95
+				}				
+			}	
+			grant_independence = yes
+		}	
+	}
+	
+	option = { # So we splinter... (Ai)
+		name = "collapse_of_liaoyang.2.a"
+		trigger = { ai = yes }
+		add_stability = -2
+		override_country_name = BANDITS_KINGDOM
+		remove_country_modifier = liaoyang_province
+		custom_tooltip = disintegration_liaoyang_1.tt		
+		hidden_effect = {
+			add_prestige = -100
+			change_government = tribal
+			add_government_reform = stateless_society
+			add_legitimacy = -100
+			add_treasury = -300
+			add_inflation = 30
+			add_corruption = 15
+			add_army_tradition = 75 # Bandits hate everyone
+			define_ruler = {
+				mil = 4
+				dip = 0
+				adm = 1
+				fixed = yes	
+			}			
+		}	
+	}
+	option = {	# Play with Jianzhou
+		name = "collapse_of_liaoyang.2.b"
+		trigger = { ai = no }		
+		switch_tag = MJZ
+		hidden_effect = {
+			X01 = {
+				add_stability = -2
+				override_country_name = BANDITS_KINGDOM
+				remove_country_modifier = liaoyang_province			
+				add_prestige = -100
+				change_government = tribal
+				add_government_reform = stateless_society
+				add_legitimacy = -100
+				add_treasury = -1500
+				add_inflation = 30
+				add_corruption = 15
+				add_army_tradition = 75 # Bandits hate everyone
+				define_ruler = {
+					mil = 4
+					dip = 0
+					adm = 1
+					fixed = yes	
+				}	
+			}	
+		}		
+	}
+	option = { # Play with Haixi
+		name = "collapse_of_liaoyang.2.c"
+		trigger = { ai = no }		
+		switch_tag = MHX
+		hidden_effect = {
+			X01 = {
+				add_stability = -2
+				override_country_name = BANDITS_KINGDOM
+				remove_country_modifier = liaoyang_province			
+				add_prestige = -100
+				change_government = tribal
+				add_government_reform = stateless_society
+				add_legitimacy = -100
+				add_treasury = -1500
+				add_inflation = 30
+				add_corruption = 15
+				add_army_tradition = 75 # Bandits hate everyone
+				define_ruler = {
+					mil = 4
+					dip = 0
+					adm = 1
+					fixed = yes	
+				}	
+			}	
+		}	
+	}
+	option = {		# Play with Donghai
+		name = "collapse_of_liaoyang.2.d"
+		trigger = { ai = no }		
+		switch_tag = EJZ
+		hidden_effect = {
+			X01 = {
+				add_stability = -2
+				override_country_name = BANDITS_KINGDOM
+				remove_country_modifier = liaoyang_province			
+				add_prestige = -100
+				change_government = tribal
+				add_government_reform = stateless_society
+				add_legitimacy = -100
+				add_treasury = -1500
+				add_inflation = 30
+				add_corruption = 15
+				add_army_tradition = 75 # Bandits hate everyone
+				define_ruler = {
+					mil = 4
+					dip = 0
+					adm = 1
+					fixed = yes	
+				}	
+			}	
+		}	
+	}
+	option = { # Play with Udege
+		name = "collapse_of_liaoyang.2.e"
+		trigger = { ai = no }		
+		switch_tag = NHX
+		hidden_effect = {
+			X01 = {
+				add_stability = -2
+				override_country_name = BANDITS_KINGDOM
+				remove_country_modifier = liaoyang_province			
+				add_prestige = -100
+				change_government = tribal
+				add_government_reform = stateless_society
+				add_legitimacy = -100
+				add_treasury = -1500
+				add_inflation = 30
+				add_corruption = 15
+				add_army_tradition = 75 # Bandits hate everyone
+				define_ruler = {
+					mil = 4
+					dip = 0
+					adm = 1
+					fixed = yes	
+				}	
+			}	
+		}	
+	}
+	option = {		# Play with Yeren
+		name = "collapse_of_liaoyang.2.f"
+		trigger = { ai = no }		
+		switch_tag = MYR
+		hidden_effect = {
+			X01 = {
+				add_stability = -2
+				override_country_name = BANDITS_KINGDOM
+				remove_country_modifier = liaoyang_province			
+				add_prestige = -100
+				change_government = tribal
+				add_government_reform = stateless_society
+				add_legitimacy = -100
+				add_treasury = -1500
+				add_inflation = 30
+				add_corruption = 15
+				add_army_tradition = 75 # Bandits hate everyone
+				define_ruler = {
+					mil = 4
+					dip = 0
+					adm = 1
+					fixed = yes	
+				}	
+			}	
+		}		
+	}	
+	option = {		# Play with Bandits
+		name = "collapse_of_liaoyang.2.g"
+		trigger = { ai = no }
+		highlight = yes
+		custom_tooltip = disintegration_liaoyang_2.tt
+		add_stability = -1
+		define_ruler = {
+			mil = 4
+			dip = 0
+			adm = 1
+			fixed = yes
+		}	
+		override_country_name = BANDITS_KINGDOM
+		remove_country_modifier = liaoyang_province
+		add_prestige = -50
+		change_government = tribal
+		add_government_reform = stateless_society
+		add_legitimacy = -50
+		add_inflation = 10
+		add_corruption = 8
+		add_army_tradition = 60 # Bandits hate everyone		
+	}		
+}

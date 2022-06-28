@@ -76,6 +76,14 @@ dependency = {
 #	end_date = 1360.1.1 
 #}
 
+# Sarbadars - Astarabad
+vassal = {
+	first = KHO
+	second = RAD
+	start_date = 1356.12.26 
+	end_date = 1360.1.1 
+}
+
 vassal = {
 	first = TUR
 	second = SRU

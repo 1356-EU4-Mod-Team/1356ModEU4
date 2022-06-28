@@ -307,7 +307,7 @@ estate_dhimmi_develop_x = {
 
 estate_dhimmi_build_temple_in_y = {
 	can_select = {
-		adm_tech = 10 #1356
+		adm_tech = 6 #1356
 		any_owned_province = {
 			NOT = { religion_group = root }
 			NOT = { has_building = cathedral }

@@ -32,6 +32,11 @@ avignon_pap_end = {
 	yearly_decay = 0.75
 }
 
+1356_austrian_rises = {
+	opinion = 100
+	yearly_decay = 1
+}
+
 # member_of_hansa_op = {
 	# opinion = 100
 # }
@@ -116,27 +121,30 @@ hre_traditional = {
 	yearly_decay = 1
 }
 
-golden_bull_papal_capital_rome_move = {
-	opinion = -75
-	yearly_decay = 0.75
-}
 
-golden_bull_papal_capital_rome_stay = {
-	opinion = 75
+tamerlane_threat_persia = {
+	opinion = -125
 	yearly_decay = 1
 }
 
-golden_bull_western_schism_opinion_neg = {
-	opinion = -200
-	yearly_decay = 1
-}
-
-golden_bull_western_schism_opinion_pos = {
-	opinion = 100
-	yearly_decay = 1
-}
-
-golden_bull_avi_schism_fra_betrayed_opinion = {
+tamerlane_dethroned_borjigin = {
 	opinion = -150
-	yearly_decay = 1
+	yearly_decay = 3
 }
+
+busy_conquering_the_world_and_your_next = {
+	opinion = -200
+	yearly_decay = 3
+}
+
+1356_liaoyang_bandits_from = {
+	opinion = -200
+}
+1356_liaoyang_bandits_is = {
+	opinion = -200
+}
+
+supported_ruthenian_independence_from_GLH = {
+	opinion = 100
+	yearly_decay = 1.5
+}		

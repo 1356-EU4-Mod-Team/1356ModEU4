@@ -1,7 +1,7 @@
 #1086 - Kaurna
 
-culture = aboriginal
-religion = animism
+culture = yura
+religion = dreamtime
 capital = "Kaurna"
 trade_goods = unknown
 hre = no

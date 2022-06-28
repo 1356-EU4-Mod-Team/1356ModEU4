@@ -8,3 +8,22 @@ technology_group = muslim
 capital = 2462	# Kabylia
 fixed_capital = 2462 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
+
+1356.1.1 = {
+	monarch = {
+		name = "Si Betka"
+		dynasty = "Abi Youcef"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1315.2.10
+	}
+	heir = {
+		name = "Abdesslam"
+		dynasty = "Abi Youcef"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1356.6.25
+	}		
+}

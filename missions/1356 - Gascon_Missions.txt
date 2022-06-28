@@ -6,6 +6,7 @@ gas_new_kingdom_group = { #Create a New Kingdom - Left Side
 		tag = GUY
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { has_country_flag = 1356_stay_gascony }
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -139,6 +140,7 @@ gas_new_kingdom_group_2 = { #Create a New Kingdom - Special Missions
 		tag = GUY
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { has_country_flag = 1356_stay_gascony }
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -260,6 +262,7 @@ gas_new_kingdom_group_3 = { #Create a New Kingdom - Right Side
 		tag = GUY
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
 		NOT = { has_country_flag = 1356_stay_gascony }
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -400,6 +403,7 @@ gas_secure_gascony_group = { #Secure Duchy of Gascony -
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -551,6 +555,7 @@ gas_minor_form_gascony_group = { #Gascon Minor form Gascony Group
 			tag = FOI
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -703,6 +708,7 @@ gas_form_aquitaine_group = { #Secure Duchy of Gascony/The Kingdom of Aquitaine -
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -769,6 +775,7 @@ gas_freedom = {
 			tag = GUY
 		}
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -817,6 +824,8 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -1038,6 +1047,7 @@ gas_secure_brittany = {
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 		
@@ -1092,6 +1102,7 @@ gas_secure_france = { #Either Take France OR Take the Pyrenees
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -1383,6 +1394,7 @@ gas_african_ambitions = { #Lifted from Aquitaine Missions
 	potential = { 
 		tag = GUY
 		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	

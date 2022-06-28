@@ -183,16 +183,16 @@ country_event = { #HYW Units redeployment
 			}
 			4389 = {
 				build_to_forcelimit = {
-					infantry = 0.4
-					cavalry = 0.15
+					infantry = 0.3
+					cavalry = 0.10
 				}
 			}
 		}
 		FRA = {
 			179 = {
 				build_to_forcelimit = {
-					infantry = 0.9
-					cavalry = 0.1
+					infantry = 0.6
+					cavalry = 0.05
 				}
 			}
 		}
@@ -360,8 +360,8 @@ country_event = { #HYW Units redeployment
 country_event = { #Castile
 	id = WarTwoPetersFlavor.1
 	title = WarTwoPetersFlavor.1.t
-	desc = WarTwoPetersFlavor.1.d
-	picture = CIVIL_WAR_eventPicture
+	desc = WarTwoPetersFlavor.111.d
+	picture = SIEGE_eventPicture
 
 	fire_only_once = yes
 	#major = yes
@@ -376,16 +376,16 @@ country_event = { #Castile
 
 	option = {
 		name = WarTwoPetersFlavor.1.a
-		set_global_flag = "WarTwoPetersFlavor"
-        custom_tooltip = WarTwoPetersFlavor.1.a.tt	
+		set_global_flag = war_of_two_peters_ongoing
+        custom_tooltip = WarTwoPetersFlavor_new.1.a.tt
 	}
 }
 
 country_event = { #Trastamara
 	id = WarTwoPetersFlavor.2
 	title = WarTwoPetersFlavor.2.t
-	desc = WarTwoPetersFlavor.2.d
-	picture = CIVIL_WAR_eventPicture
+	desc = WarTwoPetersFlavor.111.d
+	picture = SIEGE_eventPicture
 
 	fire_only_once = yes
 	
@@ -399,15 +399,120 @@ country_event = { #Trastamara
 
 	option = {
 		name = WarTwoPetersFlavor.2.a
-		set_global_flag = "WarTwoPetersFlavor"
-        custom_tooltip = WarTwoPetersFlavor.2.a.tt	
+        custom_tooltip = WarTwoPetersFlavor_new.1.a.tt
+		206 = {
+			cede_province = CAS
+		}
+		4554 = {
+			cede_province = CAS
+		}	
+		207 = {
+			cede_province = CAS
+		}			
 	}
 }
+
+country_event = { #Aragon
+	id = WarTwoPetersFlavor.100
+	title = WarTwoPetersFlavor.100.t
+	desc = WarTwoPetersFlavor.100.d
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ARA
+		NOT = { is_year = 1375 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}		
+		name = WarTwoPetersFlavor.100.a
+        custom_tooltip = WarTwoPetersFlavor_new.1.a.tt
+	}
+	option = {
+		ai_chance = {
+			factor = 0
+		}	
+		name = WarTwoPetersFlavor.100.b
+		add_country_flag = not_support_castilian_candidate
+        custom_tooltip = WarTwoPetersFlavor_new.2.a.tt
+		add_prestige = -25
+		white_peace = CAS
+		1750 = {
+			cede_province = VAL
+		}
+		4549 = {
+			cede_province = VAL
+		}	
+		220 = {
+			cede_province = VAL
+		}	
+		4550 = {
+			cede_province = VAL
+		}
+		2990 = {
+			cede_province = VAL
+			add_core = VAL
+		}		
+		CAS = {
+			add_prestige = 25
+			create_union = VAL
+		}	
+	}	
+}
+
+country_event = { #Portugal
+	id = WarTwoPetersFlavor.101
+	title = WarTwoPetersFlavor.101.t
+	desc = WarTwoPetersFlavor.101.d
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		NOT = { is_year = 1375 }		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 95
+		}		
+		name = WarTwoPetersFlavor.101.a
+		add_prestige = 10
+		add_army_tradition = 5
+        custom_tooltip = WarTwoPetersFlavor_new.1.a.tt
+	}
+	option = {
+		ai_chance = {
+			factor = 5
+		}		
+		name = WarTwoPetersFlavor.101.b
+		white_peace = CTR
+		add_country_flag = not_support_castilian_candidate
+		add_prestige = -25
+        custom_tooltip = WarTwoPetersFlavor_new.3.a.tt
+		
+	}	
+}
+
+
 country_event = { #Castile Wins Civil War
 	id = WarTwoPetersFlavor.3
 	title = WarTwoPetersFlavor.3.t
 	desc = WarTwoPetersFlavor.3.d
-	picture = CIVIL_WAR_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 	#major = yes
@@ -454,7 +559,7 @@ country_event = { #House Trastamara wins Civil War
 	id = WarTwoPetersFlavor.4
 	title = WarTwoPetersFlavor.4.t
 	desc = WarTwoPetersFlavor.4.d
-	picture = CIVIL_WAR_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
     #major = yes
@@ -510,7 +615,7 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
 	id = WarTwoPetersFlavor.5
 	title = WarTwoPetersFlavor.5.t
 	desc = WarTwoPetersFlavor.5.d
-	picture = CIVIL_WAR_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 	
@@ -541,7 +646,7 @@ country_event = { #Castile
 	id = WarTwoPetersFlavor.6
 	title = WarTwoPetersFlavor.6.t
 	desc = WarTwoPetersFlavor.6.d
-	picture = CIVIL_WAR_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 	
 	#major = yes
 	is_triggered_only = yes

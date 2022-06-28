@@ -404,7 +404,21 @@ country_event = { #Burgundian Event that sets off the PU or annex Brabant chain
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
-	is_triggered_only = yes
+	#is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		months = 120
+	}	
+	
+	trigger = {
+		senior_union_with = FLA
+		tag = BUR
+		BRB = {
+			is_subject = no
+			exists = BRB
+		}
+	}	
+	
 	
 	option = { #Make the PU!
 		name = flavor_fla_bur.13.a

@@ -1,0 +1,6 @@
+namespace = novgorod_princes # Special Elections for Novogord
+namespace = gunpowderinventions # Events for Gunpowder spread
+namespace = early_colonization # Events for Colonial Ideas conversion
+namespace = timurid_emergence
+namespace = teutonic_flavor_1356
+namespace = collapse_of_liaoyang # Deals with the collapse of Liaoyang

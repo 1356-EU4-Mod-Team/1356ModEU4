@@ -1,7 +1,7 @@
 #1092 - Bundjalung
 
 culture = aboriginal
-religion = animism
+religion = dreamtime
 capital = "Bundjalung"
 trade_goods = unknown
 hre = no

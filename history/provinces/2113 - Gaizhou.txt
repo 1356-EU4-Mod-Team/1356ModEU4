@@ -3,7 +3,7 @@
 
 owner = YUA
 controller = YUA
-culture = shandong_culture
+culture = chihan
 religion = confucianism
 capital = "Gaizhou"
 trade_goods = fish
@@ -13,8 +13,8 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = YUA
-add_core = QIC
+#add_core = YUA
+#add_core = QIC
 add_core = YAN
 
 

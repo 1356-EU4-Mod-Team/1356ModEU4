@@ -1,0 +1,12 @@
+﻿l_english:
+ DCC_SpreadPrimaryTitle: "Cultural changes."
+ DCC_SpreadPrimary: "After all those years under our reign, the people in a province of ours are slowly being becoming more and more integrated. By now, they almost behave and talk like we do."
+ DCC_ApprovePrimarySpread: "Fantastic!"
+ DCC_DisapprovePrimarySpread: "They are not one of us."
+
+ DCC_SpreadAcceptedTitle: "An accepted culture spreads."
+ DCC_SpreadAccepted: "The people in a province of ours finally behave in an acceptable manner. Although, you can still see that tey are not as civilized as we are."
+ DCC_ApproveAcceptedSpread: "Very well!"
+ DCC_DisapproveAcceptedSpread: "I will not let this happen."
+ 
+ DCC_encourage_own_culture: "Encouraged culture"

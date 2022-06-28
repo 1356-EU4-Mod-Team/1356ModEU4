@@ -21,9 +21,21 @@ religious_school = hanafi_school
 		name = "the_tatar_yoke"
 		duration = 8030
 	}
-	add_prestige = -25
-	add_horde_unity = -35
-	add_manpower = -2.5
+	add_prestige = -50
+	add_horde_unity = -100
+	add_manpower = -8
+	add_inflation = 10
+	add_estate_loyalty = {
+		estate = estate_nomadic_tribes
+		loyalty = -40
+	}
+	change_estate_land_share = {
+		estate = estate_nomadic_tribes
+		share = 20
+	}	
+	set_estate_privilege = estate_nomadic_tribes_share_of_the_spoils	
+	set_estate_privilege = estate_nomadic_tribes_chieftains_autonomy
+	set_estate_privilege = estate_nomadic_tribes_command_of_the_military	
 }
 
 1359.1.1 = {

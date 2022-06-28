@@ -4,8 +4,9 @@ bookmark =
 	desc = "GC2_DESC"
 	date = 1356.12.26
 	
-	default = yes
-	center = 112	
+	#default = yes
+	#center = 112	
+	center = 180
 	
 	country = CAS
 	country = CTR

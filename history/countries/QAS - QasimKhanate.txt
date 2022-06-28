@@ -7,6 +7,27 @@ religion = sunni
 capital = 1778	# Kasimov
 religious_school = hanafi_school
 
+#The Little Khanate who could. Made Nomadic Clan and may reserve for a Achievement if we revive that
+
+1356.7.7 = {
+	monarch = { # ahistorical but made good stats to entice a run with undoubtable hardest Nomadic Clan
+		name = "Qasim"
+		dynasty = "Borjigin"
+		dip = 4
+		adm = 4
+		mil = 5
+		leader = {
+			name = "Qasim Borjigin"
+			type = general
+			fire = 3	
+			shock = 5	
+			manuever = 3	
+			siege = 0
+		}		
+	}
+}
+
+
 #Khans
 1445.7.7 = {
 	monarch = {

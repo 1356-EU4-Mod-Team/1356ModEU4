@@ -1,6 +1,6 @@
 # No previous file for Mengkonkia
 
-culture = illini
+culture = miami
 religion = totemism
 capital = "Mengkonkia"
 trade_goods = unknown

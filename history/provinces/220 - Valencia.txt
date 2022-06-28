@@ -10,7 +10,7 @@ hre = no
 base_tax = 6 
 base_production = 5
 trade_goods = cloth
-base_manpower = 4
+base_manpower = 5
 fort_15th = yes
 capital = "València" 
 is_city = yes
@@ -21,7 +21,7 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
-add_province_triggered_modifier = 1356_valencia_cathedral_great_project_province_modifier #1356
+#add_province_triggered_modifier = 1356_valencia_cathedral_great_project_province_modifier #1356
 
 1356.12.24  = { owner = VAL controller = VAL } #BT In
 1356.12.26  = { owner = ARA controller = ARA } #BT Out

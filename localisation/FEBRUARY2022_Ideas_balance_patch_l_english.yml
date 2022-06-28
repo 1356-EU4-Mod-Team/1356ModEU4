@@ -1,0 +1,325 @@
+﻿l_english:
+ # New Diplomatic Options
+ espionage_bribe_merchants: "Bribe Merchants"
+ espionage_bribe_merchants_title: "Bribe Merchants"
+ espionage_bribe_merchants_tooltip: "Bribe the merchants in a foreign country, crippling their Trade Efficiency and reducing Merchants trade power generation."
+ espionage_bribe_merchants_desc: "Send a spy to bribe merchants in §Y[From.GetName]§! This action will reduce our §Y[From.GetAdjective]§! Spy Network by §R60§! and lower §Y[From.GetAdjective]§! §OTrade Efficiency§! by §R10%§! and §OPlaced Merchant Power§! by §R20§! for §Y5§! years."
+ 
+ espionage_infiltrate_army_title: "Infiltrate Army"
+ espionage_infiltrate_army_tooltip: "Infiltrate Army reveals a foreign country and it’s subjects Fog of War for 2 years to ourselves and our allies. Allies will only benefit from the Fog of War if we are fighting in the same war."
+ espionage_infiltrate_army_desc: "Send a spy to infiltrate the §Y[From.GetAdjective]§! Army and reveal the §Y[From.GetAdjective]§! §OFog of War§! to ourselves and our allies for §Y2§! years. This action will reduce our §Y[From.GetAdjective]§! Spy Network by §R70§!. "
+ 
+ espionage_inflame_seperatist_sentiment_title: "Inflame Seperatist Sentiment"
+ espionage_inflame_seperatist_sentiment_tooltip: "Incite Seperatist Sentiment in a foreign country, greatly increasing Unrest in recently conquered territory. This action will only affect provinces that have some form of Separatism."
+ espionage_inflame_seperatist_sentiment_desc: "Send a spy to incite Seperatist Sentiments in §Y[From.GetName]§!. This action will reduce our §Y[From.GetAdjective]§! Spy Network by §R60§! and increases §Y[From.GetAdjective]§! §OYears of Separatism§! by §R10§! and §OStability Cost Modifier§! by §R20%§! for §Y5§! years."
+ 
+ # New 'Ideas Modifiers'
+ espionage_infiltrate_army_bonus_faction_influence: "§WMay use§! §YInfiltrate Armies§! §Wfor Spy Network cost of§!" 
+ espionage_inflame_seperatism_bonus_faction_influence: "§WMay use§! §YInflame Separatist Sentiment§! §Wfor Spy Network cost of§!" 
+ eminence_base_power_projection_faction_influence: "§WPermanent§! §OPower Projection§!"
+ 
+ 
+ # New Modifiers
+ espionage_network_founded: "Extensive Espionage Network"
+ recently_killed_heir_espionage: "Recently murdered Heir"
+ recently_recruited_from_network: "Recently Recruited from Espionage Network"
+ espionage_mil_specialization: "Military Specialization Espionage Network"
+ espionage_diplo_specialization: "Foreign Affairs Specialization Espionage Network"
+ espionage_adm_specialization: "Internal Affairs Specialization Espionage Network"
+ in_espionage_network_screen: "In Espionage Network Screen"
+ adm_specialization_cooldown: "Spies on Internal Affairs Specialization mission"
+ dip_specialization_cooldown: "Spies on Foreign Affairs Specialization mission"
+ mil_specialization_cooldown: "Spies on Military Specialization mission"
+ spy_enforce_vassal_payment: "Pressure Vassals Tax Payment"
+ spy_grow_heir_loyalty: "Growing Legitimacy of Heir"
+ spy_eye_for_talent: "Searching the Realm for Talent"
+ spy_hunt_rebel_leaders: "Hunting down Rebel Leaders"
+ spy_strengthen_support_rebels: "Empowering Rebels Abroad"
+ spy_claim_forgery: "Claims Forgery"
+ spy_fence_loan: "Underground Fence Loans Secured"
+ spy_justiy_future_wars: "Justifying ongoing Conflicts"
+ spy_siege_ability: "Raiding Siege Supplies"
+ spy_loyal_general: "More Loyal Commanders"
+ spy_bandits_in_pool: "Employing Bandits and Brigands"
+ spy_scounting_reports: "Nightly Scouting Reports"
+ 
+ oversea_holdings_maritime: "Overseas Holdings"
+ oversea_holdings_maritime_desc: "Our Trade Companies overseas seek investment in order to be successful. Let us contribute to these newly established holdings and one day, reap the benefits of our investment." 
+ 
+ espionage_bribed_merchant_ongoing: "Merchants Bribed"
+ espionage_inflamed_seperatist_sentiment: "Seperatist Sentiment Inflamed"
+ patronaged_a_invetor_inno: "Patronaged an Inventor"
+ is_considering_patronage_of_inventors: "Is considering Patronage of Inventors"
+ great_thinker_advisor_cooldown: "Recruited Great Thinker"
+ great_thinker_adm: "Administrative Great Thinker"
+ great_thinker_dip: "Diplomatic Great Thinker"
+ great_thinker_mil: "Military Great Thinker"
+ 
+ hegemon_britain_rules_the_waves: "Britannia Rules the Waves! - British Hegemony"
+ hegemon_british_elite_sailors: "British Elite Marine Corp"
+ regional_naval_hegemon: "Regional Naval Hegemon"
+ 
+ pride_of_the_fleet_flagship: "Has a Pride of the Fleet"
+ pride_of_the_fleet_flagship_desc: "Our nations reveres having a National Flagship"
+ flagship_got_sunked: "Flagship recently sunked"
+ flagship_got_captured: "Flagship recently captured"
+ 
+ centrialize_the_governorships: "Centralize the Governorships"
+ centrialize_the_governorships_desc: "From Dukes to Counts, the division of our lands between various governors of sorts has led to an overall prosperous but sometimes inefficient administration of land. It is time we centrialize these varying governorships and increase authority of the Central Bureaucracy."
+ 
+ tur_rewarded_in_other_wars: "Concessions to the Janissaries"
+ tur_rewarded_in_other_wars_desc: "We have offered concessions to our Janissaries in ways other than gold"
+ 
+ #New Ideas Names
+ expanded_council_admin: "Expand the Advisory Board"
+ expanded_council_admin_desc: "For us to govern the state efficiently, we should expand our council of advisors to incorporate more people throughout our nation. While this may increase political intrigue, it will open us to more options for governance going forward."
+ masters_of_intrigue_espionage: "Masters of Intrigue"
+ masters_of_intrigue_espionage_desc: "Over the years, our spies have perfected the art of Intrigue, and in doing so, have made actions once thought inconceivable now possible. Should we manage to establish a strong network of spies in a foreign country we can incite Seperatist Sentiments, causing instability, and Infiltrate our foes armies, providing us intel on what a foreign nation might be plotting with its armies and navies.\nMay assign §OSpecialization Missions§! through the §Y'Assign Espionage Specializations Missions'§! Decision."
+ wonders_of_the_world_econ: "Wonders of the World"
+ wonders_of_the_world_econ_desc: "Throughout the World exists many Great Monuments waiting to be built. It is time we take the Initiative and begin construction of these Great Projects.\nUpgrades §OEncourage Development§! State Edict to §OEconomic Provincial Development§!, increasing §YLocal Development Cost§! Bonus to §G-15%§!"
+ 
+ # New Content related to Estates
+ estate_nobles_magna_carta:0 "The Magna Carta"
+ estate_nobles_magna_carta_desc:0 "The Magna Carta is a document guaranteeing English political liberties that was drafted at Runnymede, a meadow by the River Thames, and signed by King John on June 15, 1215, under pressure from his rebellious barons. By declaring the sovereign to be subject to the rule of law and documenting the liberties held by “free men,” it provided the foundation for individual rights in Anglo jurisprudence. "
+ estate_nomadic_tribes_command_of_the_military:0 "Tribal Military Structure"
+ estate_nomadic_tribes_command_of_the_military_desc:0 "Various Tribes are in control of the military, making us reliant on their favor to exert force."
+ estate_nomadic_tribes_command_of_the_military_tt:0 "Recruiting §YLeaders§! adds §Y5 Tribes Influence§!"
+ EST_VAL_TRIBES_LEADER:0 "Tribal Military Structure: §Y$VAL$%§!"
+ 
+ # New Tooltips
+ DOES_NOT_HAVE_BRIBED_MERCHANTS: "§Y[From.GetName]§! must §RNOT§! have Merchants already being bribed."
+ DOES_NOT_HAVE_INFLAMED_SEPERATISM: "§Y[From.GetName]§! must §RNOT§! have Seperatist Sentiment already inflamed."
+ FOUNDED_A_ESPIONAGE_NETWORK: "Has Founded an Espionage Network"
+ DID_NOT_KILL_HEIR: "Has §RNOT§! assassinated an Heir in the last 20 years"
+ NOT_RECENTLY_RECRUITED_FROM_SPIES: "Has §RNOT§! recruited from the Espionage Network in the last 15 years"
+ NOT_ALL_SPECIALIZATIONS_ACTIVE_MISSIONS: "Does §RNOT§! have all Specializations on an active mission"
+ DID_ALL_SPECIALIZATIONS: "Has created all Specializations Networks"
+ return_to_court_spy.tt: "We will assign no Specialization missions for now"
+ PATRONAGE_INVENTOR_COOLDOWN: "Has §RNOT§! an Inventor in the last 10 years"
+ GREAT_THINKER_COOLDOWN_TIMER: "Has §RNOT§! recruited a Great Thinker in the last 20 years."
+ 
+ grand_eminence_idea_full: "Full Eminence Ideas"
+ eminence_pp_info.tt: "This §OPower Projection§! is §OPermanent§! unless we get rid of §YEminence Ideas§!"
+ flavor_fra.6.a.guy.tt: "Should this result in War, we will be able to claim §YGascony§! cores like a Reconquest War."
+ 
+ BRITISH_NAVAL_HEGMON_CHECK: "Has the British Hegemony been claimed?"
+ BALTIC_NAVAL_HEGMON_CHECK: "Has the Baltic Sea Hegemony been claimed?"
+ MED_NAVAL_HEGMON_CHECK: "Has the Mediterranean Sea Hegemony been claimed?"
+ ARABIAN_NAVAL_HEGMON_CHECK: "Has the Arabian Sea Hegemony been claimed?"
+ BENGALI_NAVAL_HEGMON_CHECK: "Has the Eastern Indian Sea Hegemony been claimed?"
+ CHINESE_NAVAL_HEGMON_CHECK: "Has the Chinese Sea Hegemony been claimed"
+ add_relations_indicates_activity.tt: "§GNations present here are Naval Hegemons§!"
+ no_on_death_payment_tur.tt: "While we have the §YConcessions to the Janissaries§! modifier, we will not have to pay upkeep to the Janissaries on the ascension of a new Ruler."
+ only_janissary_units_reminder.tt: "This modifier only affects §YJanissaries§! units!"
+ 
+ # 1356
+ 
+ flaflavorlith.504.weakened.whitehorde.tooptip: "§RThe Russians Principalities will now be more likely to unite under a Russian Prince.§!"
+ flaflavorlith.501.a.tooltip: "Lithuania will §Rlikely§! intervene and support Kyiv and Chernigov"
+ flaflavorlith.502.b.tooltip: "The Russian Principalities may take this as a sign of weakness!"
+ flaflavorlith.505.ultimatum.tooltip: "§YThe White Horde will receive our Ultimatum§!"
+ flaflavorlith.505.a.tooltip: "In the event Independence is attained, we will inherit §YPodillia§! and become a vassal under §YLithuania§!"
+ flaflavorlith.505.b.tooltip: "In the event Independence is attained, we will become a vassal of §YLithuania§!"
+ flaflavorlith.505.bb.tooltip: "§ODisables the Kyivan and Chernihiv Independence event chain. Chernigov will find other avenues of independence...§!"
+ flaflavorlith.505.aa.tooltip: "§ODisables the Kyivan and Chernihiv Independence event chain. Kyiv will find other avenues of independence...§!"
+ 
+ 
+ 
+ # New Edicts
+ edict_protect_trade_mercantile: "§OMercantile§! Protect Trade"
+ edict_increase_sailor_enlistment: "§OMaritime§! Increase Sailors Enlistment"
+ edict_economic_ecnourage_development: "§OEconomic§! Provincial Development"
+ 
+ 
+ # New Decisions
+ hegemon_tracker_set_title: "§ONaval Hegemon Tracker§!"
+ hegemon_tracker_set_desc: "This decision serves as a tracker of all Naval Hegemons present in the world. Hover over the 'Reward' button to see any Hegemons. Nations who relations decrease with us are Naval Hegemons."
+ espionage_create_espionage_network_title: "Create the §OEspionage Network§!"
+ espionage_create_espionage_network_desc: "Placeholder"
+ espionage_kill_heir_title: "Arrange the §YAssassination§! of our Heir"
+ espionage_kill_heir_desc: "Placeholder"
+ espionage_recruit_from_espionage_network_title: "Recruit Advisors from Espionage Network"
+ espionage_recruit_from_espionage_network_desc: "Placeholder"
+ espionage_found_specialization_mil_title: "Create §OMilitary Specialization§! Network"
+ espionage_found_specialization_mil_desc: "Placeholder"
+ espionage_found_specialization_dip_title: "Create §OForeign Affairs§! Specialization Network"
+ espionage_found_specialization_dip_desc: "Placeholder"
+ espionage_found_specialization_adm_title: "Create §OInternal Affairs§! Specialization Network"
+ espionage_found_specialization_adm_desc: ""
+ espionage_access_the_network_title: "Assign §OEspionage Specialization§! Missions"
+ espionage_access_the_network_desc: "Placeholder"
+ patronage_local_researcher_inno_title: "Patronage a Local Inventor"
+ patronage_local_researcher_inno_desc: ""
+ invite_a_great_thinker_advisor_title: "Invite a §OGreat Thinker§!"
+ invite_a_great_thinker_advisor_desc: "Great Placeholder of Time"
+ establish_the_national_bank_title: "Found the National Bank"
+ establish_the_national_bank_desc: "Placeholder in Placeholder"
+ 
+ hegemon_britain_rules_the_waves_title: "Proclaim British Naval Hegemony"
+ hegemon_britain_rules_the_waves_desc: ""
+ hegemon_mediterranean_title: "Proclaim Mediterranean Naval Hegemony"
+ hegemon_mediterranean_desc: ""
+ hegemon_arabian_sea_title: "Proclaim Arabian Sea Hegemony"
+ hegemon_arabian_sea_desc: ""
+ hegemon_bengali_sea_title: "Proclaim Eastern Indian Ocean Hegemony"
+ hegemon_bengali_sea_desc: ""
+ hegemon_china_sea_title: "Proclaim China Sea Hegemony"
+ hegemon_china_sea_desc: ""
+ hegemon_baltic_sea_title: "Proclaim Baltic Sea Hegemony"
+ hegemon_baltic_sea_desc: ""
+
+ 
+ 
+ # New Events
+ new_ideas_events.1.t: "$HEIR$ has been Murdered!"
+ new_ideas_events.1.d: "Your guards awaken you in the middle of the night with grave news, $HEIR$ was found in a pool of blood in $HEIR_ADJ$ chambers. At this time, the guards have had no luck in finding any potential assailants."
+ new_ideas_events.1.a: "$HEIR$ NOOOOOO!!"
+ new_ideas_events.1.b: "What an unfortunate set of circumstances…"
+ 
+ new_ideas_events.2.t: "Recruitment from the Espionage Network"
+ new_ideas_events.2.d: "Your Network Spymaster brings you three promising members of the nation’s spy network. Each of them offer you their undying loyalty and would be honored to serve as an advisor on your court. The Spymaster suggests you only recruit one as the others could be better served as future elite spies."
+ new_ideas_events.2.a: "You in the middle, serve as my Court Spymaster"
+ new_ideas_events.2.b: "You on the left, join my court as a Treasurer"
+ new_ideas_events.2.c: "You on the right, share with me your knowledge on Fortifications"
+ 
+ new_ideas_events.10.t: "The Espionage Network of $COUNTRY$"
+ new_ideas_events.10.d: "The Espionage Network of $COUNTRY$ houses our most elite spies, who are loyal to $MONARCHTITLE$ $Monarch$ alone. While spies can conduct normal espionage actions, only our most elite spies, trained in a select specialization can undertake our most challenging missions. §GIf a Specialization cannot be selected, it is because it currently has an assigned mission.§!"
+ new_ideas_events.10.a: "Assign a Internal Specialization mission"
+ new_ideas_events.10.b: "Assign a Foreign Specialization mission"
+ new_ideas_events.10.c: "Assign a Military Specialization mission"
+ new_ideas_events.10.dd: "Return to Court for now"
+ 
+ new_ideas_events.11.t: "Internal Missions"
+ new_ideas_events.11.desc: "The Internal Affairs Specialization Network deals with managing internal affairs. While a mission is ongoing, we will lose one of our Diplomats."
+ new_ideas_events.11.a: "Enforce Vassal Payments"
+ new_ideas_events.11.b: "Grow Legitimacy for our Heir"
+ new_ideas_events.11.c: "Search the Realm for Talent"
+ new_ideas_events.11.d: "Hunt down and Assassinate Rebel Leaders"
+ 
+ new_ideas_events.12.t: "Foreign Missions"
+ new_ideas_events.12.desc: "The Foreign Affairs Specialization Network deals with managing affairs aboard, both in Government and Powerful Nobles. While a mission is ongoing, we will lose one of our Diplomats."
+ new_ideas_events.12.a: "Empower Rebellious causes abroad"
+ new_ideas_events.12.b: "Improve Claim Forgery"
+ new_ideas_events.12.c: "Secure Fence Loans"
+ new_ideas_events.12.d: "Justify ongoing Conflicts"
+ 
+ new_ideas_events.13.t: "Military Missions"
+ new_ideas_events.13.desc: "The Military Specialization Network deals with improving the security and proactivity of our armies while also securing additional support through unconventional means."
+ new_ideas_events.13.a: "Conduct Nightly Raids on Supplies"
+ new_ideas_events.13.b: "Secure a Loyal Captain"
+ new_ideas_events.13.c: "Employ Bandits and Brigands"
+ new_ideas_events.13.d: "Provide Scouting Reports"
+ 
+ new_ideas_events.20.t: "Offering Patronage"
+ new_ideas_events.20.desc: "An aspiring Inventor has arrived in $PROVINCECAPITAL$ to seek an audience with you. While one of your advisors initially wanted to send him away, another one intervened, saying this man could be the next great thinker of our time. As $MONARCHTITLE$ you control the funds of the state and can decide if this man’s aspirations are worth the investment."
+ new_ideas_events.20.a: "We shall offer him patronage, but only a small amount of the State’s resources."
+ new_ideas_events.20.b: "Provide him with a years’ worth of funds, but nothing more"
+ new_ideas_events.20.c: "This man is truly the next Great Thinker of our times! Fully fund him!"
+ 
+ new_ideas_events.21.t: "The Great Thinkers of $COUNTRY$"
+ new_ideas_events.21.desc: "Throughout $COUNTRY$ there are tales of many great thinkers. It will take a lot of resources for us to narrow down a specific individual, but it will be more than worth it."
+ new_ideas_events.21.a: "Begin the search for a Administrative Great Thinker"
+ new_ideas_events.21.b: "Begin the search for a Diplomatic Great Thinker"
+ new_ideas_events.21.c: "Begin the search for a Military Great Thinker"
+ 
+ new_ideas_events.22.t: "The Administrative Minds of the Time"
+ new_ideas_events.22.desc: "Throughout $COUNTRY$ there are tales of many great thinkers. It will take a lot of resources for us to narrow down a specific individual, but it will be more than worth it."
+ new_ideas_events.22.a: "We need a Grand Artist"
+ new_ideas_events.22.b: "Bring me one of the Greatest Inquisitors in the realm"
+ new_ideas_events.22.c: "A Master of Mint is what we truly need"
+ new_ideas_events.22.dd: "A Great Scientist will reward us greatly"
+ new_ideas_events.22.e: "One of the Great Philosophers of our time"
+ new_ideas_events.22.f: "A Great Theologian will do wonders" 
+ new_ideas_events.22.g: "A Treasurer to manage the State’s Coffers" 
+ 
+ new_ideas_events.23.t: "The Diplomatic Minds of the Time"
+ new_ideas_events.23.desc: "Throughout $COUNTRY$ there are tales of many great thinkers. It will take a lot of resources for us to narrow down a specific individual, but it will be more than worth it."
+ new_ideas_events.23.a: "A man of Exceptional knowledge of the colonies"
+ new_ideas_events.23.b: "One of the Histories’ Greatest Diplomats"
+ new_ideas_events.23.c: "A Reformer of the Navy"
+ new_ideas_events.23.dd: "A Renowned Navigator"
+ new_ideas_events.23.e: "Someone who is one with the Shadows"
+ new_ideas_events.23.f: "A Statesman worthy Patronage" 
+ new_ideas_events.23.g: "One of the wealthiest Merchants throughout $COUNTRY$" 
+ 
+ new_ideas_events.24.t: "The Military Minds of the Time"
+ new_ideas_events.24.desc: "Throughout $COUNTRY$ there are tales of many great thinkers. It will take a lot of resources for us to narrow down a specific individual, but it will be more than worth it."
+ new_ideas_events.24.a: "A Skilled Organizer of the Troops"
+ new_ideas_events.24.b: "A Reformer of the Army"
+ new_ideas_events.24.c: "A Renowned and Respected Commandant"
+ new_ideas_events.24.dd: "An Exceptional Grand Captain"
+ new_ideas_events.24.e: "Someone who can inspire Recruits"
+ new_ideas_events.24.f: "A Fortification Genius" 
+ new_ideas_events.24.g: "An Efficient Quartermaster" 
+ 
+ new_ideas_events.30.t: "The Sun Never Sets"
+ new_ideas_events.30.desc: "The people of $COUNTRY$ have a unique destiny in the future to come. Will the $COUNTRY_ADJ$ people come to rival those of the Roman and Mongol Empire?"
+ new_ideas_events.30.a: "We will make it so!"
+ 
+ flavor_eth.40.c: "Lets instead adopt the teachings of Beta Israel"
+ flavor_tur.EVTOPTA100.b: "We should instead focus on ensuring their loyalty"
+ 
+ # Historical Events
+ flaflavorlith.501.EVTNAME1: "Kyivan and Chernihiv Principalities Revolts"
+ flaflavorlith.501.EVTDESC1: "The Kyivan and Chernihiv Princes have revolted against our rule over the Rus’. This revolt is likely an orchestration fabricated by the Grand Duke of Lithuania to extinguish our control over Ruthenia. We must act quickly as if we lose here, the other princes of the Rus’ may launch similar revolts."
+ flaflavorlith.501.a: "Forgotten Batu Khan Campaigns already have they!"
+ flaflavorlith.501.b: "We cannot risk a war with the Grand Duchy of Lithuania"
+ flaflavorlith.502.EVTNAME2: "Kyiv and Chernigov Revolt against the Golden Horde"
+ flaflavorlith.502.EVTDESC2: "The Princes of Kyiv and Chernigov have revolted against their Mongol overlords in an attempt to break free from the Tatar Yoke. While in recent years $MONARCHTITLE$ $MONARCH$ and other members of the Lithuanian nobility have conversed with members of these principalities in a bid to bring them under Lithuanian protection, such efforts were never going to come without conflict with the Golden Horde. Should we intervene directly and secure Kyivan and Chernihiv independence, they will pledge themselves as loyal subjects to Lithuania."
+ flaflavorlith.502.a: "Kyiv and Chernigov will have our full support. To battle!"
+ flaflavorlith.502.b: "We are ill-prepared for a war against the Golden Horde"
+ flaflavorlith.503.EVTNAME3: "Victory at Blue Waters"
+ flaflavorlith.503.EVTDESC3: "Following a decisive victory through a coalition of Lithuanian and Kyivan forces at the Battle of Blue Waters, the White Horde wing of the Golden Horde is now in full retreat. With this battle, Mongol rule over Kyiv and Chernigov is over! $MONARCHTITLE$ $MONARCH$ hosts a glorious feast along with the members of the Kyivan and Chernihiv to celebrate this victory and the welcoming of Kyiv and Chernigov as loyal subjects under Lithuanian protection. "
+ flaflavorlith.503.a: "Kyiv and Chernigov will be welcomed as faithful vassals."
+ flaflavorlith.503.b: "We shall grant Kyiv and Chernigov the privilege of serving as Marches!"
+ flaflavorlith.504.EVTNAME4: "Defeat at Blue Waters"
+ flaflavorlith.504.EVTDESC4: "Mongol Forces were utterly crushed by a coalition of Lithuanian and Kyivan forces at the Battle of Blue Waters. This decisive defeat has severely weakened our influence over our remaining Rus’ subjects, and now they may be more eager to pursue mimicking revolts."
+ flaflavorlith.504.a: "Dark times ahead for the Golden Horde…"
+ flaflavorlith.505.t: "An Opportunity for Revolt"
+ flaflavorlith.505.d: "In recent years, our Lithuanian neighbors to the North have conversed with nobles throughout the Principality in a bid to sever ties with our Mongol overlords. Following a period of secret negotiations, the Princes of Kyiv and Chernigov, we can now launch a united offensive against the Golden Horde. Lithuania has also pledged to aid us in the event should war break out."
+ flaflavorlith.505.a: "The time has come to end Mongol rule!"
+ flaflavorlith.505.b: "The time has come to end Mongol rule!"
+ flaflavorlith.505.aa: "We will not fight for our freedom just to fall under Lithuanian influence."
+ flaflavorlith.505.bb: "We will not fight for our freedom just to fall under Lithuanian influence."
+ 
+ # New Merc Companies
+ merc__local_small_company_eminence:0 "§OEminence§! Free Company"
+ merc__local_free_city_company_eminence:0 "§OEminence§! Free City Company"
+ merc__local_free_company_eminence:0 "§OEminence§! Free Company"
+ merc__local_grand_company_eminence:0 "§OEminence§! Grand Company" 
+ 
+ # New Government Reforms
+ colonial_empire_reform: "Colonial Empire"
+ colonial_empire_reform_desc: "Placeholder"
+ french_feudal_nobility_reform: "French Feudal Nobility"
+ french_feudal_nobility_reform_desc: ""
+ french_monarchy_reform: "French Monarchy"
+ french_monarchy_reform_desc: ""
+ jan_hus_teaching_spreading: "Spread the Teachings of Jan Hus"
+ jan_hus_teaching_spreading_desc: ""
+ mos_patriarchy_reform: "Muscovite Patriarchy"
+ mos_patriarchy_reform_desc: ""
+ pol_ruthenian_elites_reform: "Integrated Ruthenian Elites"
+ pol_ruthenian_elites_reform_desc: ""
+ influence_spherial_projection_reform: "Spherical Projection"
+ influence_spherial_projection_reform_desc: ""
+ 
+ ottoman_devshrine_system_reform: "Devshirme System"
+ ottoman_devshrine_system_reform_desc: "By enrolling young men from newly conquered lands into service we can increase the efficiency of our recruitment process considerably. It is time we refine and expand this system in our government."
+ 
+ ottoman_provincial_government_system_reform: "Provincial Government System"
+ ottoman_provincial_government_system_reform_desc: "By appointing provincial governors we can improved administration of taxes. We should be wary however as ambitious governors may become more frequent to plot intrigue, resulting in more internal feuds."
+ 
+ # Ottoman Ideas update
+  tophane_foundry: "Tophane Foundry"
+ tophane_foundry_desc: "Through expansion of the armory and foundry at Tophane, we can massively increase the manufacture and power of our cannons, which will provide incredible firepower to our troops, superior to that seen anyplace elsewhere in Europe. All our foes will cower before the mighty rumble of Ottoman artillery."
+ sultanate_of_women: "Sultanate of Women"
+ sultanate_of_women_desc: "The women of the Ottoman harem dominate palace politics, being among the strongest supporters of the Ottoman Sultan. Many of these women are greatly capable, and have supported the construction of beautiful public works and philanthropic efforts throughout the Empire."
+ 
+ 
+ # New Bookmark
+ AFTERMATH_POITIERS_NAME: "Aftermath of Poitiers"
+ AFTERMATH_POITIERS_DESC: "Placeholder"
+ 
+ # New Opinion Modifiers
+ supported_ruthenian_independence_from_GLH: "Supported Ruthenian Independence from Tatar Yoke"

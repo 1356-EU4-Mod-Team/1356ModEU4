@@ -4,6 +4,7 @@ finnish_missions = {
 	ai = yes
 	potential = {
 		tag = FIN
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -166,6 +167,7 @@ finnish_missions_2 = {
 	ai = yes
 	potential = {
 		tag = FIN
+		NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	

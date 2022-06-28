@@ -22,7 +22,7 @@ discovered_by = ottoman
 } #BT In
 
 1356.12.26  = { 
-	owner = PAL controller = PAL remove_core = SWA base_manpower = 2
+	owner = PAL controller = PAL remove_core = SWA base_manpower = 3
 } #BT Out
 
 1546.4.19 = { religion = protestant } # #Friedrich II converts the coutnry to protestant

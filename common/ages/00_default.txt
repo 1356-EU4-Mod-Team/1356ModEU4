@@ -6,9 +6,16 @@ age_of_feudalism = {
 	}
 	
 	religious_conflicts = yes
+	papacy = 0.50
 	
 	objectives = {
-		obj_feudalism_institution = { #
+		obj_feudalism_institution = { # - Reserved for Theocracies now
+			allow = {
+				NOT = { government = monarchy }
+				NOT = { government = republic }
+				NOT = { has_reform = ottoman_government }
+				ai = no
+			}		
 			has_institution = feudalism
 			has_institution = mercantilism_institution
 	 		all_state_province = {
@@ -16,7 +23,26 @@ age_of_feudalism = {
 				feudalism = 100
 	 		}
 		}
+		obj_king_takes_direct_command = { #           - Reworked 
+			allow = {
+				NOT = { government = theocracy }
+				NOT = { government = tribal }
+				NOT = { government = native }
+				ai = no
+			}	
+			custom_trigger_tooltip = {
+				tooltip = fought_in_a_war_10_years
+				had_recent_war = 10		
+			}	
+			OR = {
+				is_monarch_leader = yes
+				is_heir_leader = yes
+			}	
+		}		
 		obj_trade_league = { #Suggested by Mexdus on the workshop suggestion thread 
+			allow = {
+				ai = no
+			}			
 			OR = {
 				is_in_trade_league = yes
 				mercantilism = 20
@@ -24,24 +50,64 @@ age_of_feudalism = {
 		}
 		obj_powerful_estate = { 
 			# Audax Validator "." Ignore_ALL
-			num_of_powerful_estates = 3
+			allow = {
+				NOT = { has_reform = english_monarchy }
+				ai = no
+			}			
 			estate_loyalty = {
 				estate = estate_burghers
-				loyalty = 55
+				loyalty = 60
 			}
 			estate_loyalty = {
 				estate = estate_church
-				loyalty = 55
+				loyalty = 60
 			}
 			estate_loyalty = {
 				estate = estate_nobles
-				loyalty = 55
+				loyalty = 60
+			}	
+			num_of_estate_privileges = {
+				estate = estate_burghers
+				value = 3
 			}
+			num_of_estate_privileges = {
+				estate = estate_church
+				value = 3
+			}
+			num_of_estate_privileges = {
+				estate = estate_nobles
+				value = 3
+			}			
 		}		
+		obj_powerful_estate_england = { # If player has English Government
+			# Audax Validator "." Ignore_ALL
+			allow = {
+				has_reform = english_monarchy
+				ai = no
+			}	
+			legitimacy = 85
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}	
+			num_of_estate_privileges = {
+				estate = estate_burghers
+				value = 3
+			}
+			num_of_estate_privileges = {
+				estate = estate_church
+				value = 3
+			}		
+		}			
 						
 		obj_papal_controller = { 
 			allow = { 
 				religion = catholic
+				ai = no
 			}
 			OR = {
 				is_papal_controller = yes
@@ -53,7 +119,10 @@ age_of_feudalism = {
 			}
 	 	}
 		obj_feudalism_orthodox_icons = { 
-			allow = { religion = orthodox }
+			allow = { 
+				religion = orthodox 
+				ai = no 
+			}
 			OR = {
 				current_icon = icon_michael
 				current_icon = icon_eleusa
@@ -74,7 +143,10 @@ age_of_feudalism = {
 			}
 	 	}	
 		obj_feudalism_nestorian = { 
-			allow = { religion = nestorian }
+			allow = { 
+				religion = nestorian 
+				ai = no 
+			}
 			num_of_active_blessings = 2
 			calc_true_if = {
 				all_core_province = {
@@ -84,13 +156,16 @@ age_of_feudalism = {
 			}
 	 	}		
 		obj_feudalism_hussite = { 
-			allow = { religion = hussite }
+			allow = { 
+				religion = hussite
+				ai = no 
+			}
 			church_power = 100
 			num_of_aspects = 1
 			check_variable = { which = num_converted_religion value = 10 }
 	 	}				
 		obj_feudalism_muslim_piety = { 
-			allow = { religion_group = muslim }
+			allow = { religion_group = muslim ai = no }
 			OR = {
 				piety = 0.75
 				NOT = { piety = -0.75}
@@ -98,12 +173,13 @@ age_of_feudalism = {
 			religious_unity = 0.80 #Adjust as needed
 	 	}
 		obj_feudalism_confucianism_harmony = { 
-			allow = { religion = confucianism }
+			allow = { religion = confucianism ai = no }
 			harmony = 70
 			religious_unity = 0.80 #Adjust as needed
 	 	}
 		obj_feudalism_buddhism_karma = { 
 			allow = { 
+				ai = no 
 				OR = {
 					religion = buddhism
 					religion = vajrayana
@@ -116,6 +192,7 @@ age_of_feudalism = {
 	 	}
 		obj_feudalism_hindu_pagan_gods = { 
 			allow = {
+				ai = no 
 				OR = {
 					religion = finnish_pagan_reformed
 					religion = baltic_pagan_reformed
@@ -135,11 +212,13 @@ age_of_feudalism = {
 		obj_feudalism_fetishist = { 
 			allow = {
 				religion = shamanism
+				ai = no 
 			}
 			num_of_unlocked_cults = 5
 	 	}	
 		obj_feudalism_zoroastrian_jewish_sikh = { #And misc heresies/minor converter religions
 			allow = {
+				ai = no 
 				OR = {
 					religion = zoroastrian
 					religion = sikhism
@@ -160,6 +239,7 @@ age_of_feudalism = {
 	 	}	
 		obj_non_christian_muslim_religious_unity = { 
 			allow = { 
+				ai = no 
 				OR = {
 					religion = shinto
 					religion = animism
@@ -181,7 +261,9 @@ age_of_feudalism = {
 			
 		obj_deus_vult = { #Suggested by Mexdus on the workshop suggestion thread #Create Crusade Mechanics and integrate them into this instead?
 			allow = {
+				ai = no 
 				religion_group = christian
+				NOT = { government = monarchy }
 			}
 			OR = {
 				is_defender_of_faith = yes
@@ -192,8 +274,18 @@ age_of_feudalism = {
 				#owns_core_province = 118 #Rome #No early Golden Age for Pope now
 			}
 		}
+		obj_twice_crowned = { # Something new for European nations
+			allow = {
+				ai = no 
+				religion_group = christian
+				government = monarchy
+			}
+			personal_union = 1
+			government_rank = 2
+		}		
 		obj_muslim_holy_war = { #Create Crusade Mechanics and integrate them into this instead?
 			allow = {
+				ai = no 
 				religion_group = muslim
 			}
 			OR = {
@@ -207,6 +299,7 @@ age_of_feudalism = {
 		}
 		obj_zoroastrian_holy_war = {
 			allow = {
+				ai = no 
 				religion_group = zoroastrian_group
 			}
 			OR = {
@@ -219,6 +312,7 @@ age_of_feudalism = {
 		}
 		obj_jewish_holy_war = {
 			allow = {
+				ai = no 
 				religion_group = jewish_group
 			}
 			OR = {
@@ -231,6 +325,7 @@ age_of_feudalism = {
 		}
 		obj_dharmic_holy_war = {
 			allow = {
+				ai = no 
 				religion_group = dharmic
 			}
 			OR = {
@@ -243,6 +338,7 @@ age_of_feudalism = {
 		}
 		obj_buddhist_holy_war = {
 			allow = {
+				ai = no 
 				OR = {
 					religion = buddhism
 					religion = mahayana
@@ -260,6 +356,7 @@ age_of_feudalism = {
 		}
 		obj_confu_holy_war = {
 			allow = {
+				ai = no 
 				religion = confucianism
 			}
 			OR = {
@@ -272,6 +369,7 @@ age_of_feudalism = {
 		}
 		obj_shinto_holy_war = {
 			allow = {
+				ai = no 
 				religion = shinto
 			}
 			OR = {
@@ -284,6 +382,7 @@ age_of_feudalism = {
 		}
 		obj_meso_holy_war = {
 			allow = {
+				ai = no 
 				OR = {
 					religion = nahuatl
 					religion = mesoamerican_religion
@@ -299,6 +398,7 @@ age_of_feudalism = {
 		}
 		obj_meso_inti_holy_war = {
 			allow = {
+				ai = no 
 				religion = inti
 			}
 			OR = {
@@ -311,6 +411,7 @@ age_of_feudalism = {
 		}
 		obj_african_religion_holy_war = {
 			allow = {
+				ai = no 
 				religion = shamanism
 			}
 			OR = {
@@ -323,6 +424,7 @@ age_of_feudalism = {
 		}
 		obj_totemism_religion_holy_war = {
 			allow = {
+				ai = no 
 				religion = totemism
 			}
 			OR = {
@@ -335,6 +437,7 @@ age_of_feudalism = {
 		}
 		obj_animism_religion_holy_war = {
 			allow = {
+				ai = no 
 				religion = totemism
 			}
 			OR = {
@@ -347,6 +450,7 @@ age_of_feudalism = {
 		}
 		obj_tengri_holy_war = {
 			allow = {
+				ai = no 
 				religion = tengri_pagan_reformed
 			}
 			OR = {
@@ -359,6 +463,7 @@ age_of_feudalism = {
 		}
 		obj_norse_holy_war = {
 			allow = {
+				ai = no 
 				religion = norse_pagan_reformed
 			}
 			OR = {
@@ -371,6 +476,7 @@ age_of_feudalism = {
 		}
 		obj_baltic_holy_war = {
 			allow = {
+				ai = no 
 				religion = baltic_pagan_reformed
 			}
 			OR = {
@@ -383,6 +489,7 @@ age_of_feudalism = {
 		}
 		obj_finnic_holy_war = {
 			allow = {
+				ai = no 
 				religion = finnish_pagan_reformed
 			}
 			OR = {
@@ -395,6 +502,7 @@ age_of_feudalism = {
 		}
 		obj_slavic_holy_war = {
 			allow = {
+				ai = no 
 				religion = slavic_pagan_reformed
 			}
 			OR = {
@@ -407,6 +515,7 @@ age_of_feudalism = {
 		}
 		obj_hellenic_holy_war = {
 			allow = {
+				ai = no 
 				religion = hellenic_pagan
 			}
 			OR = {
@@ -419,13 +528,19 @@ age_of_feudalism = {
 		}
 		
 		obj_many_vassals_f = { #Feudal Society
+			allow = {
+				ai = no 
+			}
 			government_rank = 2
 			num_of_subjects = 4
 		}		
 		
 		
 		obj_cav_army = { #Suggested by Mexdus on the workshop suggestion thread
-			cavalry_fraction = 0.6 #Too high?
+			allow = {
+				ai = no 
+			}		
+			cavalry_fraction = 0.4 #Too high?
 			army_size_percentage = 0.8
 		}
 	}
@@ -439,60 +554,88 @@ age_of_feudalism = {
 				set_country_flag = feudal_de_jure_law
 			}
 			modifier = {
-				vassal_income = 0.25
-				vassal_forcelimit_bonus = 0.25
-			}
+				min_autonomy_in_territories = -0.1
+				global_autonomy = -0.05
+			}	
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		ab_feudalism_institution_gain = { #
+		ab_feudalism_institution_gain = { # Renamed to Scholarly Studies - Geno
 			modifier = {
-				 global_institution_spread = 0.4
-				 embracement_cost = -0.15
+				global_institution_spread = 0.25
+				embracement_cost = -0.25
 			}
 			ai_will_do = {
 				factor = 10
 			}			
 		}
-		ab_gothic_cathedrals = { 
+		# ab_gothic_cathedrals = { # Reworked due to the Momuments, Replaced by Feudal Contracts
+			# modifier = {
+				# build_time = -0.25
+				# build_cost = -0.15 
+			# }
+			# effect = {
+				# custom_tooltip = ab_gothic_cathedrals_tt
+			# }
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
+		ab_feudal_contracts = {
+			rule = {
+				can_transfer_vassal_wargoal = yes
+			}		
 			modifier = {
-				build_time = -0.25
-				build_cost = -0.15 
-			}
-			effect = {
-				custom_tooltip = ab_gothic_cathedrals_tt
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		ab_feudalism_court_life = { #Suggested by Mexdus on the workshop suggestion thread
-			modifier = { #Was the AB that gave extra dip relations, removed due to being too powerful
-				advisor_cost = -0.15
-				advisor_pool = 2
-				prestige = 0.5
+				vassal_forcelimit_bonus = 0.5
+				vassal_income = 0.10
+				reduced_liberty_desire = 15
 			}
 			ai_will_do = {
 				factor = 10
 			}	
 		}	
-		ab_mercs_over_chevaliers = { #Suggested by Mexdus on the workshop suggestion thread
+		# ab_feudalism_court_life = { # Reworked into Cavalry Supremacy                       
+			# modifier = { #Was the AB that gave extra dip relations, removed due to being too powerful
+				# advisor_cost = -0.15
+				# advisor_pool = 2
+				# prestige = 0.5
+			# }
+			# ai_will_do = {
+				# factor = 10
+			# }	
+		# }	
+		ab_cavalry_supremacy = { # Reworked into Cavalry Supremacy                       
+			modifier = { #Was the AB that gave extra dip relations, removed due to being too powerful
+				cavalry_cost = -0.15
+				cav_to_inf_ratio = 0.15
+				cavalry_flanking = 0.50
+			}
+			ai_will_do = {
+				factor = 15
+			}	
+		}			
+		ab_mercs_over_chevaliers = { # Simply renamed to Mercenary Bands
 			modifier = {
-				merc_maintenance_modifier = -0.15
-				mercenary_manpower = 0.15
+				merc_maintenance_modifier = -0.20
+				mercenary_cost = -0.20
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		ab_chevauchee = { #Historically this is a strategy to siege a fort down without harming it
+		ab_chevauchee = { #Historically this is a strategy to siege a fort down without harming it ##1.31 Modified to account for Loot amount being added to base values. Now enables Loot Wars
+			# effect = { # Not yet implemented
+				# custom_tooltip = chevauchee_wars
+				# custom_tooltip = chevauchee_loot_provinces
+				# set_country_flag = allow_chevauchee_wars
+			# }		
 			modifier = {
-				loot_amount = 0.75
-				siege_ability = 0.1
+				available_province_loot = 0.25
+				siege_ability = 0.15
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 8 # Slightly less favored to prevent nation ruining
 			}
 		}
 		ab_feudalism_iron_fisted_rule = { #May require a better name
@@ -570,17 +713,27 @@ age_of_feudalism = {
 }
 
 age_of_discovery = { #Partially edited by #1356
-	start = 1400
+	start = 1425 #Historically? # Was 1400 but changed to 1425 to represent our reworked colonial ideas
 	
 	can_start = {
-		any_country = { 
-			exploration_ideas = 2
-			dip_tech = 6
-		}
+		custom_trigger_tooltip = {
+			tooltip = AGE_OF_DISCOVERY_HOW_IT_STARTS
+			OR = {
+				AND = {
+					is_year = 1415
+					151 = { NOT = { owner = { religion_group = christian } } }
+				}
+				AND = {
+					is_year = 1415
+					118 = { NOT = { owner = { religion_group = christian } } }
+				}
+				is_year = 1425
+			}    
+		}    
 	}
 	
 	religious_conflicts = yes
-	
+	papacy = 1.0
 
 	objectives = {
 		obj_discover_america = {
@@ -736,6 +889,10 @@ age_of_discovery = { #Partially edited by #1356
 			}
 			ai_will_do = {
 				factor = 10
+				modifier = {
+					factor = 0
+					NOT = { num_of_colonists = 1 }
+				}
 			}
 		}
 		
@@ -756,7 +913,7 @@ age_of_discovery = { #Partially edited by #1356
 				}
 			}
 			modifier = {
-				siege_ability = 0.33
+				siege_ability = 0.20
 			}
 			ai_will_do = {
 				factor = 100
@@ -769,7 +926,7 @@ age_of_discovery = { #Partially edited by #1356
 				tag = POR
 			}
 			modifier = {
-				global_colonial_growth = 50
+				global_colonial_growth = 35
 			}
 			ai_will_do = {
 				factor = 100
@@ -785,6 +942,14 @@ age_of_discovery = { #Partially edited by #1356
 			}
 			ai_will_do = {
 				factor = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 20
+						}
+					}
+				}
 			}
 		}
 		ab_venice_ship_trade = {
@@ -812,6 +977,7 @@ age_of_reformation = {
 	
 	
 	religious_conflicts = yes
+	papacy = 1.25
 	
 	objectives = {
 		obj_christian_convert = {
@@ -819,6 +985,7 @@ age_of_reformation = {
 				religion = protestant
 				religion = reformed
 				religion = anglican
+				religion = hussite
 			}
 		}
 		
@@ -837,7 +1004,7 @@ age_of_reformation = {
 		}
 		
 		obj_colonial_empire = {
-			colony = 5
+			num_of_colonies = 5
 		}
 		
 		obj_force_converted = {
@@ -851,6 +1018,10 @@ age_of_reformation = {
 			OR = {
 				trading_bonus = {
 					trade_goods = spices
+					value = yes
+				}
+				trading_bonus = {
+					trade_goods = cloves
 					value = yes
 				}
 				trading_bonus = {
@@ -1018,6 +1189,7 @@ age_of_absolutism = {
 		is_institution_enabled = global_trade
 	}
 	
+	papacy = 1.5
 	
 	absolutism = {
 		harsh_treatment = 1
@@ -1200,6 +1372,7 @@ age_of_revolutions = {
 		is_institution_enabled = enlightenment
 	}
 	
+	papacy = 2.0
 	absolutism = {
 		harsh_treatment = 1
 		stability = 1

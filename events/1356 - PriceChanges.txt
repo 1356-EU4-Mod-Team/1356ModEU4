@@ -9,48 +9,48 @@
 namespace = flaprices
 
 # Explosion of Early Modern Printing #Possibly make a follow up event so the world sees this? Same for Gunpowder?
-country_event = {
-	id = flaprices.1
-	title = flaprices.1.t
-	desc = flaprices.1.d
-	picture = TRADEGOODS_eventPicture
+# country_event = {
+	# id = flaprices.1
+	# title = flaprices.1.t
+	# desc = flaprices.1.d
+	# picture = TRADEGOODS_eventPicture
 	
-	fire_only_once = yes
-	major = yes
+	# fire_only_once = yes
+	# major = yes
 
-	trigger = {
-		has_institution = mercantilism_institution
-		dip = 4
-		dip_tech = 3
-		is_year = 1375
-	}
+	# trigger = {
+		# has_institution = mercantilism_institution
+		# dip = 4
+		# dip_tech = 3
+		# is_year = 1375
+	# }
 	
-	mean_time_to_happen = {
-		months = 1
-	}
+	# mean_time_to_happen = {
+		# months = 1
+	# }
 		
-	option = {
-		name = flaprices.1.a
-		ai_chance = {
-			factor = 100
-		}
-		add_innovativeness_small_effect = yes
-		change_price = {
-			trade_goods = paper
-			key = INCREASED_PAPER_DEMAND
-			value = 0.5
-			duration = -1
-		}
-		random_owned_province = {
-			limit = {
-				NOT = { trade_goods = paper }
-				is_state = yes
-				development = 10
-			}
-			change_trade_goods = paper
-		}
-	}
-}
+	# option = {
+		# name = flaprices.1.a
+		# ai_chance = {
+			# factor = 100
+		# }
+		# add_innovativeness_small_effect = yes
+		# change_price = {
+			# trade_goods = paper
+			# key = INCREASED_PAPER_DEMAND
+			# value = 0.5
+			# duration = -1
+		# }
+		# random_owned_province = {
+			# limit = {
+				# NOT = { trade_goods = paper }
+				# is_state = yes
+				# development = 10
+			# }
+			# change_trade_goods = paper
+		# }
+	# }
+# }
 
 #Commented out since there seems to be a vanilla event to spawn this later, perhaps adjust this to be compatible?
 

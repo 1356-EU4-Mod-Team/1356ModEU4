@@ -1,6 +1,6 @@
 #996 - Innu
 
-culture = cree
+culture = innu
 religion = totemism
 capital = "Innu"
 trade_goods = fish

@@ -1,8 +1,8 @@
 # 2742 - North Hamgyeong (1356)
 # Changes: YUA/religion
 
-owner = YUA
-controller = YUA
+# owner = YUA
+# controller = YUA
 culture = korean
 religion = mahayana
 capital = "Yukjin"
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = YUA
+# add_core = YUA
 #add_core = GYO
 add_core = KOR
 

@@ -1,0 +1,11 @@
+# This Mod File is Dedicated to Sub Mods that have been fully integrated or slightly integrated in some way
+
+# Dynamic Culture Conversion by gedorfpohm ## System is used exclusively for Colonial nations to spread culture overtime. 
+
+# Historic Colonization Lite by Firehawk ## Partially integrated to guide the AI along a preset Colonial path
+
+# (In Progress) Royal Eagle UI by CoYoT3 ## Age UI implemented and extended
+
+# This file is a WIP and will change overtime if more mods are implemented
+
+# Ratkus for his 'ratka's amyzong moap' mod. Adds a wonderful look to the map!

@@ -1,0 +1,33 @@
+bookmark =
+{
+	name = "AFTERMATH_POITIERS_NAME"
+	desc = "AFTERMATH_POITIERS_DESC"
+	date = 1356.9.20
+	
+	default = yes
+	center = 180	
+	
+	#country = CAS
+	#country = CTR
+	country = ENG
+	country = FRA
+	country = NAV
+	country = BUR
+	country = SCO
+	#country = DAN
+	#country = HAB
+	#country = BYZ
+	#country = TUR	
+	#country = LIT
+	#country = JLR
+	#country = TRS
+	#country = POR
+
+	
+	#easy_country = CTR
+	#easy_country = DAN
+	easy_country = ENG
+	#easy_country = JLR
+	#easy_country = LIT
+	#easy_country = POL
+}

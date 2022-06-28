@@ -30,4 +30,4 @@
 4244 = "Trubetsk" #Trubchevsk 
 4245 = "Viazma" #Vyazma 
 4246 = "Mstsislau" #Mstislav 
-4247 = "Zhytomyr" #Owrucz 
+4247 = "Owrucz" #Owrucz 

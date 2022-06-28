@@ -1,6 +1,6 @@
 #954 - Allegheny
 
-culture = susquehannock
+culture = tionontate
 religion = totemism
 capital = "Allegheny"
 trade_goods = unknown

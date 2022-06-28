@@ -23,4 +23,12 @@ capital = 1082 # Kazan
 		name = "uralic_religion_starting_modifier"
 		duration = -1
 	}
+	monarch = { # Ahistorical but lets give them something unique
+		name = "Afanasiy"
+		dynasty = "Schuvalov"
+		dip = 3
+		adm = 3
+		mil = 3
+		birth_date = 1325.9.9
+	}		
 }

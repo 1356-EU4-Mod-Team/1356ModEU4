@@ -2,9 +2,9 @@
 
 owner = GUJ
 controller = GUJ
-culture = marathi
-religion = hinduism
-capital = "Daman"
+culture = parsi
+religion = zoroastrian
+capital = "Sanjan"
 trade_goods = cloth
 hre = no
 base_tax = 4

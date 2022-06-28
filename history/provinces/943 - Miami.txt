@@ -3,7 +3,7 @@
 add_core = MMI
 owner = MMI
 controller = MMI
-culture = illini
+culture = miami
 religion = totemism
 capital = "Miami"
 trade_goods = fur

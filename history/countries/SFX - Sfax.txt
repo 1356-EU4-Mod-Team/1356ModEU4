@@ -6,3 +6,13 @@ religion = sunni
 technology_group = muslim
 capital = 2453
 fixed_capital = 2453 # Cannot move capital away from this province & no power cost to move to it
+
+1356.1.1 = {
+	monarch = {
+		name = "Habib"
+		dynasty = "Hadda"
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}

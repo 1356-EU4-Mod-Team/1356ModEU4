@@ -1,0 +1,12 @@
+﻿l_spanish:
+ DCC_SpreadPrimaryTitle: "Cambios culturales."
+ DCC_SpreadPrimary: "Después de todos estos años de nuestro gobierno, los habitantes de una de nuestras provincias poco a poco están adquiriendo nuestras costumbres. Almenos, ya parece que se comportan y hablan nuestra lengua."
+ DCC_ApprovePrimarySpread: "¡Fantástico!"
+ DCC_DisapprovePrimarySpread: "No son de los nuestros."
+
+ DCC_SpreadAcceptedTitle: "Se extiende la cultura aceptada."
+ DCC_SpreadAccepted: "Los habitantes de una de nuestras provincias finalmente tienen nuestras costumbres. Aunque, todavía no son tan civilizados como nosotros."
+ DCC_ApproveAcceptedSpread: "¡Muy bien!"
+ DCC_DisapproveAcceptedSpread: "No dejaré que esto ocurra."
+ 
+ DCC_encourage_own_culture: "Cultura animada"

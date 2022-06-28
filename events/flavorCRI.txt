@@ -111,7 +111,7 @@ country_event = { #1356
 				has_regency = yes
 				has_heir = yes
 			}
-			kill_heir = yes
+			kill_heir = {}
 			define_ruler = {
 				name = "Mengli"
 				dynasty = "Giray"
@@ -198,7 +198,7 @@ country_event = { #1356
 				has_regency = yes
 				has_heir = yes
 			}
-			kill_heir = yes
+			kill_heir = {}
 			define_ruler = {
 				name = "Nur Devlet"
 				dynasty = "Giray"

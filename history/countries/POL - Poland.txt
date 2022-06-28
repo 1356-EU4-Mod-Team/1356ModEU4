@@ -13,9 +13,9 @@ national_focus = ADM
 		name = "Kazimierz III"
 		dynasty = "Piast"
 		birth_date = 1310.4.30
-		ADM = 4
+		ADM = 6
 		DIP = 4
-		MIL = 5
+		MIL = 3
 	}
 }
 
@@ -37,10 +37,37 @@ national_focus = ADM
 				capital = 254 # Pozan
 } #BT In
 
-1356.12.26  = { 
-				capital = 262 # Krakow
-} #BT Out
-
+1356.12.26 = {
+	capital = 262 # BT Out
+	set_estate_privilege = estate_nobles_land_rights
+	set_estate_privilege = estate_cossacks_cossack_self_governance
+	set_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+	set_estate_privilege = estate_cossacks_recruit_cossack_generals
+	set_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+	set_estate_privilege = estate_burghers_land_rights
+	set_estate_privilege = estate_church_clerical_oversight
+	set_estate_privilege = estate_nobles_strong_duchies
+	change_estate_land_share = {
+		estate = estate_church
+		share = 7
+	}
+	change_estate_land_share = {
+		estate = estate_burghers
+		share = -5
+	}	
+	change_estate_land_share = {
+		estate = estate_nobles
+		share = -23
+	}
+	change_estate_land_share = {
+		estate = estate_cossacks
+		share = 5
+	}	
+	add_army_tradition = 20
+	add_manpower = 8
+	add_prestige = 20
+	add_treasury = 83
+}
 
 1365.1.1 = {
 	queen = {

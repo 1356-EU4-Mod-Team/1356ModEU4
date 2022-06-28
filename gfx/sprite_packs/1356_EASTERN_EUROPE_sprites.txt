@@ -1,0 +1,176 @@
+# Added as Unit packs appeared to Broke
+# Also offers the Opporunity to redo the HRE
+bohemia_clones = {
+	country_trigger = {
+		OR = {
+			tag = BOH
+			tag = MVA
+			tag = SOR
+		}	
+	}
+
+	sprite_infantry = {
+		0 = BOH_INFANTRY_1
+		2 = BOH_INFANTRY_3
+	}
+
+	sprite_cavalry = {
+		0 = BOH_CAVALRY_1
+		2 = BOH_CAVALRY_3
+	}
+
+	sprite_artillery = {
+		0 = BOH_ARTILLERY_1
+		2 = BOH_ARTILLERY_3
+	}	
+}
+
+hamburg_clones_units = {
+	country_trigger = {
+		NOT = { tag = HSA }
+		OR = {
+			primary_culture = lower_saxon
+			tag = OLD
+		}	
+	}
+
+	sprite_infantry = {
+		0 = HAM_INFANTRY_1
+		1 = HAM_INFANTRY_2
+		2 = HAM_INFANTRY_3
+		3 = HAM_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = HAM_CAVALRY_1
+		1 = HAM_CAVALRY_2
+		2 = HAM_CAVALRY_3
+		3 = HAM_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = HAM_ARTILLERY_1
+		1 = HAM_ARTILLERY_2
+		2 = HAM_ARTILLERY_3
+		3 = HAM_ARTILLERY_4
+	}
+}
+
+mainz_units_clones = {
+	country_trigger = {
+		OR = {
+			tag = LIE
+			tag = AAC
+			tag = KLE
+			tag = BRG
+			tag = RVA
+			tag = MUN
+			tag = NSA
+			tag = HES
+		}	
+	}
+
+	sprite_infantry = {
+		0 = MAI_INFANTRY_1
+		2 = MAI_INFANTRY_3
+	}
+
+	sprite_cavalry = {
+		0 = MAI_CAVALRY_1
+		2 = MAI_CAVALRY_3
+	}
+
+	sprite_artillery = {
+		0 = MAI_ARTILLERY_1
+		2 = MAI_ARTILLERY_3
+	}
+}
+
+crusader_clones = {
+	country_trigger = {
+		OR = {
+			tag = CIC
+			tag = CYP
+			tag = ATH
+			tag = ACH
+		}	
+	}
+	
+
+	sprite_infantry = {
+		0 = KNI_INFANTRY_1
+		1 = KNI_INFANTRY_2
+		2 = KNI_INFANTRY_3
+		3 = KNI_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = KNI_CAVALRY_1
+		1 = KNI_CAVALRY_2
+		2 = KNI_CAVALRY_3
+		3 = KNI_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = KNI_ARTILLERY_1
+		1 = KNI_ARTILLERY_2
+		2 = KNI_ARTILLERY_3
+		3 = KNI_ARTILLERY_4
+	}
+}
+
+swedish_clones = { # This is mostly just so Finland uses the Swedish Units
+	country_trigger = {
+		OR = {
+			tag = FIN
+			tag = JUT
+			tag = GTL
+			tag = SKN
+		}	
+	}
+	
+
+	sprite_infantry = {
+		0 = SWE_NEW_INFANTRY_1
+		2 = SWE_NEW_INFANTRY_3
+		3 = SWE_NEW_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = SWE_NEW_CAVALRY_1
+		2 = SWE_NEW_CAVALRY_3
+		3 = SWE_NEW_CAVALRY_4
+	}
+}
+
+
+dlc074_prm_sprite_pack = {
+    # Tests against every tag in game
+    country_trigger = {
+		AND = {
+			culture_group = finno_ugric
+			NOT = { tag = FIN }
+		}	
+    }
+
+    sprite_infantry = {
+        0 = PRM_INFANTRY_1
+        1 = PRM_INFANTRY_2
+        2 = PRM_INFANTRY_3
+        3 = PRM_INFANTRY_4
+    }
+
+    sprite_cavalry = {
+        0 = PRM_CAVALRY_1
+        1 = PRM_CAVALRY_2
+        2 = PRM_CAVALRY_3
+        3 = PRM_CAVALRY_4
+    }
+
+    sprite_artillery = {
+        0 = PRM_ARTILLERY_1
+        1 = PRM_ARTILLERY_2
+        2 = PRM_ARTILLERY_3
+        3 = PRM_ARTILLERY_4
+    }
+}

@@ -1,0 +1,47 @@
+#Nestorians #1356
+add_estate_nestorian_loyalty_effect = { #1356
+	if = {
+		limit = {
+			has_estate = estate_nestorian
+		}
+		add_estate_loyalty = {
+			estate = estate_nestorian
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_nestorian_loyalty_effect = { #1356
+	if = {
+		limit = {
+			has_estate = estate_nestorian
+		}
+		add_estate_loyalty = {
+			estate = estate_nestorian
+			loyalty = -10
+		}
+	}
+}
+
+#Zoroastrians #1356
+add_estate_zoroastrian_loyalty_effect = { #1356
+	if = {
+		limit = {
+			has_estate = estate_zoroastrian
+		}
+		add_estate_loyalty = {
+			estate = estate_zoroastrian
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_zoroastrian_loyalty_effect = { #1356
+	if = {
+		limit = {
+			has_estate = estate_zoroastrian
+		}
+		add_estate_loyalty = {
+			estate = estate_zoroastrian
+			loyalty = -10
+		}
+	}
+}

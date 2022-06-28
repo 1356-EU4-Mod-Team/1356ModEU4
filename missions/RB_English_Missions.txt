@@ -103,13 +103,13 @@ eng_rb_gibraltar = {
 				name = "eng_rb_gibraltar_mod"
 				duration = 5475
 			}
-			333 = {
+			4559= {
 				add_permanent_claim = ROOT
 			}
 			corsica_sardinia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -141,13 +141,13 @@ eng_rb_islands_med = {
 		provinces_to_highlight = {
 			OR = {
 				area = corsica_sardinia_area
-				province_id = 333
+				province_id = 4559
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			333 = {
+			4559 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			corsica_sardinia_area = {
@@ -420,6 +420,7 @@ eng_rb_burgundy = {
 			OR = {
 				area = picardy_area
 				area = bourgogne_area
+				area = west_burgundy_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -440,6 +441,10 @@ eng_rb_burgundy = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			west_burgundy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			bourgogne_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -448,6 +453,12 @@ eng_rb_burgundy = {
 		
 		effect = {
 			picardy_area = {
+				add_province_modifier = {
+					name = "eng_rb_local_conv"
+					duration = 5475
+				}
+			}
+			west_burgundy_area = {
 				add_province_modifier = {
 					name = "eng_rb_local_conv"
 					duration = 5475
@@ -816,33 +827,41 @@ eng_rb_conquest_europe = {
 			pyrenees_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			poitou_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			4388 = {
+			loire_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
-			4389			= {
+			orleans_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			199 = {
-				add_permanent_claim = ROOT
-			}
-			178 = {
 				add_permanent_claim = ROOT
 			}
 			194 = {
 				add_permanent_claim = ROOT
 			}
 			195 = {
+				add_permanent_claim = ROOT
+			}
+			4697 = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -858,12 +877,11 @@ eng_rb_conquest_europe = {
 			OR = {
 				area = pyrenees_area
 				area = poitou_area
-				province_id = 4388
-				province_id = 4389
+				area = loire_area
 				province_id = 199
-				province_id = 178
 				province_id = 194
 				province_id = 195
+				province_id = 4697
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -877,22 +895,20 @@ eng_rb_conquest_europe = {
 				type = all
 				owned_by = ROOT
 			}
-			4388 = {
-				owned_by = ROOT
-			}
-			4389			= {
+			loire_area = {
+				type = all
 				owned_by = ROOT
 			}
 			199 = {
-				owned_by = ROOT
-			}
-			178 = {
 				owned_by = ROOT
 			}
 			194 = {
 				owned_by = ROOT
 			}
 			195 = {
+				owned_by = ROOT
+			}
+			4697 = {
 				owned_by = ROOT
 			}
 		}
@@ -910,23 +926,23 @@ eng_rb_conquest_europe = {
 			picardy_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_burgundy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			bourgogne_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			champagne_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = ROOT
 			}
 		}
 	}
@@ -970,7 +986,8 @@ gbr_rb_empire_group = {
 					}
 				}
 				else = {
-					always = yes
+					NOT = { hre_size = 1 }
+					NOT = { exists = HLR }
 				}
 			}
 		}
@@ -991,7 +1008,15 @@ gbr_rb_empire_group = {
 			OR = {
 				ROOT = {
 					is_emperor = yes
-					hre_reform_level = 6
+					if = {
+						limit = {
+							has_dlc = "Emperor"
+						}
+						hre_reform_passed = emperor_erbkaisertum
+					}
+					else = {
+						hre_reform_passed = erbkaisertum
+					}
 				}
 				AND = {
 					NOT = { hre_size = 1 }
@@ -1063,14 +1088,14 @@ gbr_rb_spice_islands_group = {
 			kutai_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_claim = ROOT }
 				}
 				add_claim = ROOT
 			}
 			brunei_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_claim = ROOT }
 				}
 				add_claim = ROOT
 			}
@@ -1080,7 +1105,7 @@ gbr_rb_spice_islands_group = {
 				}
 				west_bengal_area = {
 					limit = {
-						NOT = { owned_by = ROOT }
+						NOT = { is_claim = ROOT }
 						NOT = { is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
@@ -1126,50 +1151,56 @@ gbr_rb_indian_group = {
 		}
 		
 		effect = {
-			telingana_area = {
+			golconda_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			maharashtra_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			gondwana_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			garjat_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			orissa_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			andhra_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jharkhand_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_mahanadi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			maidan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 		}
-	
 	}
 	
 	gbr_rb_india_coast = {
@@ -1197,31 +1228,31 @@ gbr_rb_indian_group = {
 		}
 		
 		effect = {
-			jharkhand_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			bihar_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			purvanchal_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			oudh_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gaur_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -1235,20 +1266,17 @@ gbr_rb_indian_group = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = jharkhand_area
 				area = bihar_area
 				area = purvanchal_area
 				area = oudh_area
+				area = gaur_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
+		
 		trigger = {
-			jharkhand_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			bihar_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1258,6 +1286,10 @@ gbr_rb_indian_group = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			oudh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gaur_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1293,25 +1325,26 @@ gbr_rb_india_princes = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = telingana_area
-				area = maharashtra_area
-				area = gondwana_area
+				area = golconda_area
+				area = maidan_area
 				area = garjat_area
+				area = jharkhand_area
+				area = upper_mahanadi_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = {
-			telingana_area = {
+			jharkhand_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			maharashtra_area = {
+			golconda_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			gondwana_area = {
+			maidan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1319,10 +1352,14 @@ gbr_rb_india_princes = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			upper_mahanadi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		
 		effect = {
-			telingana_area = {
+			golconda_area = {
 				limit = {
 					owned_by = ROOT
 				}
@@ -1331,7 +1368,7 @@ gbr_rb_india_princes = {
 					duration = 5475
 				}
 			}
-			maharashtra_area = {
+			maidan_area = {
 				limit = {
 					owned_by = ROOT
 				}
@@ -1466,36 +1503,51 @@ gbr_rb_northern_colonial = {
 					random_list = {
 						10 = {
 							change_province_name = "Novum Novum Eboracum"
+							rename_capital = "Novum Novum Eboracum"
 						}
 						10 = {
 							change_province_name = "Little London"
+							rename_capital = "Little London"
 						}
 						10 = {
 							change_province_name = "New Omagh"
+							rename_capital = "New Omagh"
 						}
 						10 = {
 							change_province_name = "New Burnley"
+							rename_capital = "New Burnley"
 						}
 						10 = {
 							change_province_name = "New Durham"
+							rename_capital = "New Durham"
 						}
 						10 = {
 							change_province_name = "New Harrogate"
+							rename_capital = "New Harrogate"
 						}
 						10 = {
 							change_province_name = "New Cornwall"
+							rename_capital = "New Cornwall"
 						}
 						10 = {
 							change_province_name = "Liverpool Secundum"
+							rename_capital = "Liverpool Secundum"
 						}
 						10 = {
 							change_province_name = "Pieter's Haven"
+							rename_capital = "Pieter's Haven"
 						}
-						9 = {
+						8 = {
 							change_province_name = "New Dublin"
+							rename_capital = "New Dublin"
 						}
 						1 = {
 							change_province_name = "Winterfell"
+							rename_capital = "Winterfell"
+						}
+						1 = {
+							change_province_name = "Jersey Ultima"
+							rename_capital = "Jersey Ultima"
 						}
 					}
 				}
@@ -1539,17 +1591,12 @@ eng_rb_thirteen_colonies_group = {
 		}
 		
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = eng_rb_own_thirteen_colonies.tooltip
-# Audax Validator "." Ignore_1007
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 15
-					colonial_region = colonial_eastern_america
-					is_city = yes
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				colonial_region = colonial_eastern_america
+				is_city = yes
 			}
 		}
-		
 		effect = {
 			add_country_modifier = {
 				name = "eng_rb_thirteen_colonies_mod"
@@ -1557,6 +1604,24 @@ eng_rb_thirteen_colonies_group = {
 			}
 		}
 	}
+}
+	
+eng_rb_trade_in_home_cot_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Rule Britannia"
+	}
+	potential = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_dlc = "Rule Britannia"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 	
 	eng_establish_trade_in_home_cot_gb = {
 		icon = mission_rb_monopolize_the_channel
@@ -1722,7 +1787,7 @@ eng_rb_thirteen_colonies_group = {
 			east_prussia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_claim = ROOT }
 				}
 				add_claim = ROOT
 			}

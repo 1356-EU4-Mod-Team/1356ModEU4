@@ -18,7 +18,8 @@ country_decisions = {
 							technology_group = andean
 							technology_group = high_american
 							technology_group = south_american
-
+							technology_group = aboriginal_tech
+							technology_group = polynesian_tech
 						}
 					}
 					capital_scope = {
@@ -92,6 +93,14 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
 			}
 			add_prestige = 25
 			set_country_flag = changed_from_colonial_nation

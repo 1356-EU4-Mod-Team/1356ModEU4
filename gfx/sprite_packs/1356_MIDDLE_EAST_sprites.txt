@@ -1,0 +1,215 @@
+
+ilkanid_units_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = JLR
+			tag = ILK
+			primary_culture = al_iraqiya_arabic
+		}
+	}
+
+	sprite_infantry = {
+		0 = QAR_INFANTRY_1
+		1 = QAR_INFANTRY_2
+		2 = QAR_INFANTRY_3
+		3 = QAR_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = QAR_CAVALRY_1
+		1 = QAR_CAVALRY_2
+		2 = QAR_CAVALRY_3
+		3 = QAR_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = QAR_ARTILLERY_1
+		1 = QAR_ARTILLERY_2
+		2 = QAR_ARTILLERY_3
+		3 = QAR_ARTILLERY_4
+	}
+}
+
+dlc080_alh_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		NOT = { tag = JLR }
+		NOT = { tag = ILK }
+		primary_culture = al_iraqiya_arabic
+	}
+
+	sprite_infantry = {
+		0 = ALH_INFANTRY_1
+		1 = ALH_INFANTRY_2
+		2 = ALH_INFANTRY_3
+		3 = ALH_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = ALH_CAVALRY_1
+		1 = ALH_CAVALRY_2
+		2 = ALH_CAVALRY_3
+		3 = ALH_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = ALH_ARTILLERY_1
+		1 = ALH_ARTILLERY_2
+		2 = ALH_ARTILLERY_3
+		3 = ALH_ARTILLERY_4
+	}
+}
+
+egyptian_units_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = old_egyptian_mod
+			primary_culture = al_suryah_arabic
+			primary_culture = al_misr_arabic
+		}
+	}
+
+	sprite_infantry = {
+		0 = MAM_INFANTRY_1
+		1 = MAM_INFANTRY_2
+		2 = MAM_INFANTRY_3
+		3 = MAM_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = MAM_CAVALRY_1
+		1 = MAM_CAVALRY_2
+		2 = MAM_CAVALRY_3
+		3 = MAM_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = MAM_ARTILLERY_1
+		1 = MAM_ARTILLERY_2
+		2 = MAM_ARTILLERY_3
+		3 = MAM_ARTILLERY_4
+	}
+}
+
+syrian_units_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = al_suryah_arabic
+		}
+	}
+
+	sprite_infantry = {
+		0 = SHM_INFANTRY_1
+		1 = SHM_INFANTRY_2
+		2 = SHM_INFANTRY_3
+		3 = SHM_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = SHM_CAVALRY_1
+		1 = SHM_CAVALRY_2
+		2 = SHM_CAVALRY_3
+		3 = SHM_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = SHM_ARTILLERY_1
+		1 = SHM_ARTILLERY_2
+		2 = SHM_ARTILLERY_3
+		3 = SHM_ARTILLERY_4
+	}
+}
+
+chaoui_units_clones = { # Fezzan Berbers+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = chaoui
+		}
+	}
+
+	sprite_infantry = {
+		0 = ADE_INFANTRY_1
+		1 = ADE_INFANTRY_2
+		2 = ADE_INFANTRY_3
+		3 = ADE_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = ADE_CAVALRY_1
+		1 = ADE_CAVALRY_2
+		2 = ADE_CAVALRY_3
+		3 = ADE_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = ADE_ARTILLERY_1
+		1 = ADE_ARTILLERY_2
+		2 = ADE_ARTILLERY_3
+		3 = ADE_ARTILLERY_4
+	}
+}
+
+kabyle_units_clones = { # Fezzan Berbers+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = kabyle
+		}
+	}
+
+	sprite_infantry = {
+		0 = ALG_INFANTRY_1
+		1 = ALG_INFANTRY_2
+		2 = ALG_INFANTRY_3
+		3 = ALG_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = ALG_CAVALRY_1
+		1 = ALG_CAVALRY_2
+		2 = ALG_CAVALRY_3
+		3 = ALG_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = ALG_ARTILLERY_1
+		1 = ALG_ARTILLERY_2
+		2 = ALG_ARTILLERY_3
+		3 = ALG_ARTILLERY_4
+	}
+}
+
+
+shilha_units_clones = { # Fezzan Berbers+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = shilha
+		}
+	}
+
+	sprite_infantry = {
+		0 = SLE_INFANTRY_1
+		1 = SLE_INFANTRY_2
+		2 = SLE_INFANTRY_3
+		3 = SLE_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = SLE_CAVALRY_1
+		1 = SLE_CAVALRY_2
+		2 = SLE_CAVALRY_3
+		3 = SLE_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = SLE_ARTILLERY_1
+		1 = SLE_ARTILLERY_2
+		2 = SLE_ARTILLERY_3
+		3 = SLE_ARTILLERY_4
+	}
+}

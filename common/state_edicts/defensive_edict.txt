@@ -13,7 +13,6 @@ edict_defensive_edict = {
 	
 	color = {  46 114 55  }
 	
-	
 	ai_will_do = {
 		factor = 0
 	}

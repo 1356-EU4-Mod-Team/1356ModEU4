@@ -31,7 +31,7 @@ country_decisions = {
 		}
 		effect = {
 			remove_government_reform = shogunate
-			#set_legacy_government = despotic_monarchy
+			
 			set_government_rank = 3
 			custom_tooltip = unite_japan_subject_tooltip
 			hidden_effect = {
@@ -92,7 +92,7 @@ country_decisions = {
 		effect = {
 			change_tag = JAP
 			remove_government_reform = shogunate
-			#set_legacy_government = despotic_monarchy
+			
 			set_country_flag = formed_japan_flag
 			set_government_rank = 3
 			add_legitimacy = 100
@@ -131,6 +131,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = JAP }
 			is_free_or_tributary_trigger = yes
+			is_at_war = no
 			owns = 1020
 			owns = 1028
 			all_country = {

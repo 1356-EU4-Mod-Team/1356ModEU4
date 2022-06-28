@@ -1,0 +1,91 @@
+country_decisions = {
+#Handle government change in a seperate event after reformation?
+	rise_of_the_habsburg_1356 = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			is_emperor_of_china = no
+			tag = HAB	
+			is_colonial_nation = no
+			NOT = { has_country_flag = united_austria_proper }
+			NOT = { is_year = 1475 }
+			started_in = 1356.12.26		
+		}
+		allow = {
+			STY = {
+				ai = yes
+			}
+			CTH = {
+				ai = yes
+			}	
+			TIR = {
+				ai = yes
+			}	
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				is_year = 1399
+				is_emperor = yes
+			}	
+			OR = {
+				religion_group = christian
+				religion = jewish
+			}
+			total_own_and_non_tributary_subject_development = 125
+		}
+		effect = {
+			inherit = STY
+			inherit = CTH
+			inherit = TIR
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = "habsburg_imperial_dominance"
+				duration = 14600 # 40 years
+			}			
+			add_prestige = 50
+			add_legitimacy = 50
+			add_stability = 3
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+			add_manpower = 12.5
+			set_country_flag = united_austria_proper
+			#BOH = {
+				#country_event = { id = flavor_1356_hab.100 }
+				#add_prestige = -25
+				#add_legitimacy = -50
+				#add_country_modifier = {
+				#	name = "decline_of_bohemia"
+				#	duration = 7325 #
+				#}
+			every_country = {
+				limit = {	
+					is_emperor = yes
+				}
+				country_event = { id = flavor_1356_hab.100 }
+			}	
+			every_country = {
+				limit = {	
+					is_elector = yes
+					NOT = { tag = BOH }
+				}
+				reverse_add_opinion = {
+					who = HAB
+					modifier = 1356_austrian_rises
+				}
+				add_opinion = {
+					who = HAB
+					modifier = 1356_austrian_rises
+				}
+			}			
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		ai_importance = 400
+	}
+	
+}

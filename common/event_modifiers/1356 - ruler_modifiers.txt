@@ -18,3 +18,19 @@ muzafarrid_conquest = {
 injuid_conquest = {
 
 }
+
+## New in 1.32
+
+
+
+liaoyang_province = {
+	monthly_reform_progress = -1
+	liberty_desire = -1000
+	min_autonomy = 66
+	global_unrest = -10 # Need to ensure loyalty
+	global_monthly_devastation = 0.25
+	land_forcelimit_modifier = -0.95
+	land_forcelimit = 9
+	global_manpower_modifier = -0.85	
+	global_sailors_modifier = -0.95
+}	

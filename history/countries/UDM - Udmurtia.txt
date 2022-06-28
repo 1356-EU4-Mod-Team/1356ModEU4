@@ -23,4 +23,20 @@ capital = 1972 # Kazan
 		name = "uralic_religion_starting_modifier"
 		duration = -1
 	}
+	monarch = { # Ahistorical but lets give them something unique
+		name = "Dmitriy"
+		dynasty = "Goltizin"
+		dip = 2
+		adm = 1
+		mil = 3
+		birth_date = 1328.8.16
+		leader = {
+			name = "Dmitriy Goltizin"
+			type = general
+			fire = 2	
+			shock = 3	
+			manuever = 3	
+			siege = 1
+		}
+	}		
 }

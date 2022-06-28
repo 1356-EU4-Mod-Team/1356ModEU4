@@ -14,7 +14,7 @@ capital = "Sich"
 is_city = yes
 add_core = CRI
 add_core = ZAZ
-fort_15th = yes
+# fort_15th = yes ## Removed for Balance, but acknowledged
 
 discovered_by = western
 discovered_by = eastern

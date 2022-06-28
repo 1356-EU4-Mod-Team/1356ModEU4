@@ -1,0 +1,26 @@
+edict_protect_trade_mercantile = {
+	potential = {
+		has_idea = trade_manipulation
+	}
+	
+	allow = {
+		has_idea = trade_manipulation
+	}
+	
+	modifier = {
+		province_trade_power_modifier = 0.75
+	}
+	
+	color = {  243 165 005 }
+	
+	
+	ai_will_do = {
+		factor = 10.0
+		modifier = {
+			factor = 0.5
+			any_province_in_state = {
+				is_capital_of = FROM
+			}
+		}
+	}
+}

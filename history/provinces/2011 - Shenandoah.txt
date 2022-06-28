@@ -1,6 +1,6 @@
 #2011 - Shenandoah
 
-culture = susquehannock
+culture = powhatan
 religion = totemism
 capital = "Manahoac"
 trade_goods = unknown

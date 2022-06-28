@@ -3,7 +3,7 @@
 owner = MAJ
 controller = MAJ
 add_core = MAJ
-culture = javanese
+culture = nusa_tenggara
 religion = hinduism
 capital = "Gianyar"
 trade_goods = cloth

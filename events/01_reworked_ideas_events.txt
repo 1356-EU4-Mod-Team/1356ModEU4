@@ -1,0 +1,801 @@
+########################################
+# Events concerning New ideas Mechanics
+
+namespace = new_ideas_events
+
+###Mechanical Events
+
+country_event = { # Death of Heir ## Poison
+	id = new_ideas_events.1
+	title = "new_ideas_events.1.t"
+	desc = "new_ideas_events.1.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.1.a"
+		kill_heir = {}
+	}
+	option = { 
+		name = "new_ideas_events.1.b"
+		kill_heir = {}
+	}	
+}
+
+country_event = { # Espionage Network Recruitment
+	id = new_ideas_events.2
+	title = "new_ideas_events.2.t"
+	desc = "new_ideas_events.2.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { #Treasure
+		name = "new_ideas_events.2.b"
+		define_advisor = {
+			type = treasurer
+			cost_multiplier = 0.67
+			skill = 1
+			religion = ROOT
+			culture = ROOT
+		}	
+	}
+	option = { #Spymaster
+		name = "new_ideas_events.2.a"
+		define_advisor = {
+			type = spymaster
+			cost_multiplier = 0.67
+			skill = 1
+			religion = ROOT
+			culture = ROOT
+			female = yes
+		}		
+	}
+	option = { # Military Engineer
+		name = "new_ideas_events.2.c"
+		define_advisor = {
+			type = fortification_expert
+			cost_multiplier = 0.67
+			skill = 1
+			religion = ROOT
+			culture = ROOT
+		}		
+	}	
+}
+
+country_event = { # Visiting the Espionage Network for Missions
+	id = new_ideas_events.10
+	title = "new_ideas_events.10.t"
+	desc = "new_ideas_events.10.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		trigger = {
+			NOT = {
+				has_country_modifier = adm_specialization_cooldown
+			}
+		}	
+		name = "new_ideas_events.10.a"
+		country_event = { id = new_ideas_events.11 } # Deals with Adm Special
+	}
+	option = { 
+		trigger = {
+			NOT = {
+				has_country_modifier = dip_specialization_cooldown
+			}
+		}		
+		name = "new_ideas_events.10.b"
+		country_event = { id = new_ideas_events.12 } # Deals with DIP Special
+	}	
+	option = { 
+		trigger = {
+			NOT = {
+				has_country_modifier = mil_specialization_cooldown
+			}
+		}		
+		name = "new_ideas_events.10.c"
+		country_event = { id = new_ideas_events.13 } # Deals with MIL Special		
+	}
+	option = { 
+		name = "new_ideas_events.10.dd"
+		custom_tooltip = return_to_court_spy.tt
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}	
+	}	
+}
+
+country_event = { # Adm Special
+	id = new_ideas_events.11
+	title = "new_ideas_events.11.t"
+	desc = "new_ideas_events.11.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.11.a"
+		add_country_modifier = {
+			name = "spy_enforce_vassal_payment"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "adm_specialization_cooldown"
+			duration = 3650
+		}			
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.11.b"
+		add_country_modifier = {
+			name = "spy_grow_heir_loyalty"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "adm_specialization_cooldown"
+			duration = 3650
+		}		
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}	
+	option = { 
+		name = "new_ideas_events.11.c"
+		add_country_modifier = {
+			name = "spy_eye_for_talent"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "adm_specialization_cooldown"
+			duration = 3650
+		}		
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.11.d"
+		add_country_modifier = {
+			name = "spy_hunt_rebel_leaders"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "adm_specialization_cooldown"
+			duration = 3650
+		}		
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}	
+	option = { 
+		name = "new_ideas_events.10.dd"
+		custom_tooltip = return_to_court_spy.tt
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}	
+	}	
+}
+
+country_event = { # DIP Special
+	id = new_ideas_events.12
+	title = "new_ideas_events.12.t"
+	desc = "new_ideas_events.12.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.12.a"
+		add_country_modifier = {
+			name = "spy_strengthen_support_rebels"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "dip_specialization_cooldown"
+			duration = 3650
+		}			
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.12.b"
+		add_country_modifier = {
+			name = "spy_claim_forgery"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "dip_specialization_cooldown"
+			duration = 3650
+		}		
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}	
+	option = { 
+		name = "new_ideas_events.12.c"
+		add_loan = {
+			interest_modifier = -2.5
+			#fixed_interest = yes # Maybe not needed?
+			duration = 120
+		}
+		add_loan = {
+			interest_modifier = -2.5
+			#fixed_interest = yes
+			duration = 120
+		}
+		add_loan = {
+			interest_modifier = -2.5
+			#fixed_interest = yes
+			duration = 120
+		}		
+		add_country_modifier = {
+			name = "spy_fence_loan"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "dip_specialization_cooldown"
+			duration = 3650
+		}	
+		
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.12.d"
+		add_country_modifier = {
+			name = "spy_justiy_future_wars"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "dip_specialization_cooldown"
+			duration = 3650
+		}		
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}	
+	option = { 
+		name = "new_ideas_events.10.dd"
+		custom_tooltip = return_to_court_spy.tt
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}	
+	}	
+}
+
+
+
+country_event = { # MIL Special
+	id = new_ideas_events.13
+	title = "new_ideas_events.13.t"
+	desc = "new_ideas_events.13.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.13.a"
+		add_country_modifier = {
+			name = "spy_siege_ability"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "mil_specialization_cooldown"
+			duration = 3650
+		}			
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.13.b"
+		add_country_modifier = {
+			name = "spy_loyal_general"
+			duration = 3650
+		}
+		create_general = { tradition = 50 }
+		add_country_modifier = {
+			name = "mil_specialization_cooldown"
+			duration = 3650
+		}		
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}	
+	option = { 
+		name = "new_ideas_events.13.c"
+		add_country_modifier = {
+			name = "spy_bandits_in_pool"
+			duration = 3650
+		}	
+		add_yearly_manpower = 2		
+		add_country_modifier = {
+			name = "mil_specialization_cooldown"
+			duration = 3650
+		}		
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.13.d"
+		add_country_modifier = {
+			name = "spy_scounting_reports"
+			duration = 3650
+		}	
+		add_country_modifier = {
+			name = "mil_specialization_cooldown"
+			duration = 3650
+		}		
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}		
+	}	
+	option = { 
+		name = "new_ideas_events.10.dd"
+		custom_tooltip = return_to_court_spy.tt
+		hidden_effect = {
+			remove_country_modifier = in_espionage_network_screen
+		}	
+	}	
+}
+
+country_event = { # Patronage
+	id = new_ideas_events.20
+	title = "new_ideas_events.20.t"
+	desc = "new_ideas_events.20.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.20.a"
+		add_years_of_income = -0.5	
+		change_innovativeness = 1
+		hidden_effect = {
+			remove_country_modifier = is_considering_patronage_of_inventors
+			add_country_modifier = {
+				name = patronaged_a_invetor_inno
+				duration = 3650
+				hidden = yes
+			}	
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.20.b"
+		add_years_of_income = -2	
+		change_innovativeness = 2	
+		hidden_effect = {
+			remove_country_modifier = is_considering_patronage_of_inventors
+			add_country_modifier = {
+				name = patronaged_a_invetor_inno
+				duration = 3650
+				hidden = yes
+			}				
+		}		
+	}	
+	option = { 
+		name = "new_ideas_events.20.c"
+		add_years_of_income = -3.5	
+		change_innovativeness = 3		
+		hidden_effect = {
+			remove_country_modifier = is_considering_patronage_of_inventors
+			add_country_modifier = {
+				name = patronaged_a_invetor_inno
+				duration = 3650
+				hidden = yes
+			}	
+		}		
+	}	
+}
+
+ 
+country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
+	id = new_ideas_events.21
+	title = "new_ideas_events.21.t"
+	desc = "new_ideas_events.21.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.21.a"	#Adm
+		country_event = { id = new_ideas_events.22 }	
+	}
+	option = { 
+		name = "new_ideas_events.21.b"	#Dip	
+		country_event = { id = new_ideas_events.23 }	
+	}	
+	option = { 
+		name = "new_ideas_events.21.c"	#Mil	
+		country_event = { id = new_ideas_events.24 }	
+	}	
+}
+
+
+country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
+	id = new_ideas_events.22
+	title = "new_ideas_events.22.t"
+	desc = "new_ideas_events.22.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.22.a"	#Adm
+		define_advisor = {
+			type = artist
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_adm"
+			duration = 7300
+		}	
+	}
+	option = { 
+		name = "new_ideas_events.22.b"	#Dip	
+		define_advisor = {
+			type = inquisitor
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_adm"
+			duration = 7300
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.22.c"	#Mil	
+		define_advisor = {
+			type = master_of_mint
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_adm"
+			duration = 7300
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.22.dd"	#Adm
+		define_advisor = {
+			type = natural_scientist
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_adm"
+			duration = 7300
+		}			
+	}
+	option = { 
+		name = "new_ideas_events.22.e"	#Dip	
+		define_advisor = {
+			type = philosopher
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_adm"
+			duration = 7300
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.22.f"	#Mil	
+		define_advisor = {
+			type = theologian
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_adm"
+			duration = 7300
+		}			
+	}
+	option = { 
+		name = "new_ideas_events.22.g"	#Mil	
+		define_advisor = {
+			type = treasurer
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_adm"
+			duration = 7300
+		}			
+	}		
+}
+
+country_event = { # Great Thinkers of Diplo
+	id = new_ideas_events.23
+	title = "new_ideas_events.23.t"
+	desc = "new_ideas_events.23.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.23.a"	#Adm
+		define_advisor = {
+			type = colonial_governor
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_dip"
+			duration = 7300
+		}	
+	}
+	option = { 
+		name = "new_ideas_events.23.b"	#Dip	
+		define_advisor = {
+			type = diplomat
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_dip"
+			duration = 7300
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.23.c"	#Mil	
+		define_advisor = {
+			type = naval_reformer
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_dip"
+			duration = 7300
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.23.dd"	#Adm
+		define_advisor = {
+			type = navigator
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_dip"
+			duration = 7300
+		}			
+	}
+	option = { 
+		name = "new_ideas_events.23.e"	#Dip	
+		define_advisor = {
+			type = spymaster
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_dip"
+			duration = 7300
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.23.f"	#Mil	
+		define_advisor = {
+			type = statesman
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_dip"
+			duration = 7300
+		}			
+	}
+	option = { 
+		name = "new_ideas_events.23.g"	#Mil	
+		define_advisor = {
+			type = trader
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_dip"
+			duration = 7300
+		}			
+	}		
+}
+
+country_event = { # Great Thinkers of Military
+	id = new_ideas_events.24
+	title = "new_ideas_events.24.t"
+	desc = "new_ideas_events.24.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.24.a"	#Adm
+		define_advisor = {
+			type = army_organiser
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_mil"
+			duration = 7300
+		}	
+	}
+	option = { 
+		name = "new_ideas_events.24.b"	#Dip	
+		define_advisor = {
+			type = army_reformer
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_mil"
+			duration = 7300
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.24.c"	#Mil	
+		define_advisor = {
+			type = commandant
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_mil"
+			duration = 7300
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.24.dd"	#Adm
+		define_advisor = {
+			type = grand_captain
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_mil"
+			duration = 7300
+		}			
+	}
+	option = { 
+		name = "new_ideas_events.24.e"	#Dip	
+		define_advisor = {
+			type = recruitmaster
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_mil"
+			duration = 7300
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.24.f"	#Mil	
+		define_advisor = {
+			type = fortification_expert
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_mil"
+			duration = 7300
+		}			
+	}
+	option = { 
+		name = "new_ideas_events.24.g"	#Mil	
+		define_advisor = {
+			type = quartermaster
+			cost_multiplier = 0.50
+			skill = 3
+			religion = ROOT
+			culture = ROOT
+		}
+		add_country_modifier = {
+			name = "great_thinker_mil"
+			duration = 7300
+		}			
+	}		
+}
+
+
+country_event = { # Full Eminence Completion
+	id = new_ideas_events.30
+	title = "new_ideas_events.30.t"
+	desc = "new_ideas_events.30.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_idea = diplomatic_corps
+		NOT = { has_country_flag = got_eminence_pp }
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = got_eminence_pp
+		}
+	}	
+	
+	option = { 
+		name = "new_ideas_events.30.a"	#Adm
+		add_power_projection = {
+			type = zim_african_great_power
+			amount = 15
+		}
+		custom_tooltip = eminence_pp_info.tt
+	}
+}

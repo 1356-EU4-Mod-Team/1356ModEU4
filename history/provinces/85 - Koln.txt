@@ -20,7 +20,7 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
-add_province_triggered_modifier = 1356_cologne_cathedral_great_project_province_modifier #1356
+#add_province_triggered_modifier = 1356_cologne_cathedral_great_project_province_modifier #1356
 
 1356.12.24  = { 
 	owner = SWA 

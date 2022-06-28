@@ -33,12 +33,19 @@ country_event = {
 		NOT = { has_reform = admiralty_reform }
 		NOT = { has_reform = prussian_republic_reform }
 		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
+		NOT = { has_reform = frisian_republic_gov }
+		if = {
+			limit = {
+				has_reform = novgorod_republic
+			}
+			has_reform = nov_delegated_power_to_veche
+		}
 		if = {
 			limit = {
 				has_country_flag = caretaker_revolutionary_government
 			}
 			republican_tradition = 50
-		}
+		}		
 	}
 
 	after = {
@@ -322,6 +329,12 @@ country_event = {
 			}
 			republican_tradition = 50
 		}
+		if = {
+			limit = {
+				has_reform = novgorod_republic
+			}
+			has_reform = nov_delegated_power_to_veche
+		}		
 	}
 	
 	option = {
@@ -616,6 +629,7 @@ country_event = {
 	
 	trigger = {
 		has_states_general_mechanic = yes
+		NOT = { has_reform = novgorod_republic }
 		OR = {
 			is_lesser_in_union = no
 			is_statists_in_power = yes
@@ -756,6 +770,7 @@ country_event = {
 	
 	trigger = {
 		has_states_general_mechanic = yes
+		NOT = { has_reform = novgorod_republic }
 		OR = {
 			is_lesser_in_union = no
 			is_statists_in_power = yes
@@ -879,6 +894,7 @@ country_event = {
 	
 	trigger = {
 		has_government_attribute = lottery_election
+		NOT = { has_reform = novgorod_republic }
 		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 	}
 	

@@ -78,7 +78,7 @@ WRW = "countries/Warsaw-Rawa.txt"
 DRZ = "countries/Dobrzyn.txt"
 SDU = "countries/Starodub.txt"
 VYL = "countries/VyatskayaZemlya.txt"
-TAK = "countries/Trakai.txt"
+T5K = "countries/Trakai.txt"
 IN6 = "countries/Ingria.txt"
 
 #Arabia	
@@ -125,7 +125,7 @@ UDM = "countries/Udmurtia.txt"
 MRR = "countries/Mari.txt"
 MR1 = "countries/Olyk Mari.txt"
 MR2 = "countries/Kyryk Mari.txt"
-MIA = "countries/Mordvia.txt"
+M2A = "countries/Mordvia.txt"
 MI1 = "countries/Mokshet.txt"
 
 #Persia	
@@ -138,6 +138,7 @@ HER = "countries/Herat.txt"
 RAD = "countries/Astarabad.txt"
 RHT = "countries/Rasht.txt"
 IDA = "countries/Idaj.txt"
+ERN = "countries/Eranshahr.txt"
 
 #North America
 
@@ -148,19 +149,19 @@ SCN = "countries/Sican.txt"
 
 #Africa
 NRI = "countries/Nri.txt"
-ZBB = "countries/GreaterZimbabwe.txt"
-AKS = "countries/Aksum.txt"
-WAK = "countries/Kitara.txt"
+#ZBB = "countries/GreaterZimbabwe.txt" # Defunct in 1.32
+#AKS = "countries/Aksum.txt" # Defunct in 1.32
+#WAK = "countries/Kitara.txt" # Defunct in 1.32
 MDL = "countries/Madagascar.txt"
 
 #Far East
-SRI = "countries/Srivijaya.txt"
+# SRI = "countries/Srivijaya.txt" # Added by Paradox in 1.31 new tag = JMB
 SDN = "countries/Sukadana.txt"
 LAM = "countries/Lampung.txt"
 MHA = "countries/Minahasa.txt"
 TOL = "countries/Tolaki.txt"
 SED = "countries/Sedu.txt"
-SAM = "countries/Sampit.txt"
+S1P = "countries/Sampit.txt"
 PIN = "countries/Pinya.txt"
 SAG = "countries/Sagaing.txt"
 KEN = "countries/Kengtung.txt"
@@ -170,11 +171,11 @@ LMR = "countries/Lamuri.txt"
 HRU = "countries/Haru.txt"
 HTR = "countries/Hatorusan.txt"
 ROK = "countries/Rokan.txt"
-IND = "countries/Indragiri.txt"
-PAH = "countries/Pahang.txt"
+SRI = "countries/Indragiri.txt" # IND became SRI post Leviathans
+#PAH = "countries/Pahang.txt" # In base game now
 TDG = "countries/Tidung.txt"
 MEL = "countries/Melanau.txt"
-BEU = "countries/Berau.txt"
+#BEU = "countries/Berau.txt"
 
 #Japan
 SCJ = "countries/SouthCourt.txt"
@@ -195,16 +196,35 @@ X01 = "countries/Liaoyang.txt" # Yuan Governance of Manchuria
 #V2
 
 #Southeast Asia % Malaya
-SIA = "countries/Siam.txt"
+# SIA = "countries/Siam.txt" # Added in base game
 
 #V2.1 
+
+#Italy
+ABR = "countries/Aborea.txt"
+
+IPA = "countries/Pavia.txt"
+IPE = "countries/Piedmont.txt"
+IBE = "countries/Belluno.txt"
+IAR = "countries/Arezzo.txt"
+
+#Low Countries
+GRO = "countries/Groningen.txt"
+FRR = "countries/Frisia.txt"
+ZEE = "countries/Zeeland.txt"
+NMR = "countries/Namur.txt"
+# CAY = "countries/Cambray.txt" # Disabled for now, Need to get with Flandy to fix
+
 
 #Germany 
 CH5 = "countries/Chur.txt" #Replaces Three Leagues historically
 
 
-#Italy
-ABR = "countries/Aborea.txt"
+#France
+FBL = "countries/FrenchBlois.txt"
+FPL = "countries/Perigord.txt"
+FMA = "countries/FrenchMaine.txt"
+FLM = "countries/LaMarche.txt"
 
 #Russian Region
 MRD = "countries/MordvinNation.txt"

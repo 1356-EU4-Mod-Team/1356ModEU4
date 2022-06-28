@@ -1,0 +1,21 @@
+#2740 - Waikato
+
+# add_core = TAN
+# owner = TAN
+# controller = TAN
+culture = maori
+religion = animism
+hre = no
+capital = "Kirikiriroa"
+trade_goods = unknown
+base_tax = 4 
+base_production = 4
+base_manpower = 2
+# discovered_by = polynesian_tech
+native_size = 10
+native_ferocity = 4
+native_hostileness = 9
+
+
+1642.1.1 = { discovered_by = NED } # Abel Tasman
+

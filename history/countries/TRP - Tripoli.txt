@@ -10,17 +10,17 @@ religious_school = maliki_school
 
 #Based in Djerba
 
-#1356.1.1 = {
-#	monarch = {
-#		name = "Thabit ibn"
-#		dynasty = "Thabitid"
-#		birth_date = 1330.1.1
-#		adm = 2
-#		dip = 2
-#		mil = 3
-#	}
-#	#capital = 353	# Djerba
-#}
+1356.1.1 = { # Transfer from Ck2
+	monarch = {
+		name = "Thabit ibn"
+		dynasty = "Thabitid"
+		birth_date = 1330.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	#capital = 353	# Djerba
+}
 
 1440.1.1 = { 
 	government = monarchy

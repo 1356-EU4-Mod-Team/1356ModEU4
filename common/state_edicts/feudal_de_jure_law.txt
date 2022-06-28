@@ -1,9 +1,6 @@
 edict_feudal_de_jure_law = {
 	potential = {
-		OR = { #1356
-			current_age = age_of_discovery
-			current_age = age_of_feudalism #1356
-		} #1356
+		current_age = age_of_discovery
 	}
 	
 	allow = {
@@ -11,10 +8,7 @@ edict_feudal_de_jure_law = {
 			tooltip = edict_feudal_de_jure_law_tooltip
 			has_country_flag = feudal_de_jure_law
 		}
-		OR = { #1356
-			current_age = age_of_discovery
-			current_age = age_of_feudalism #1356
-		} #1356
+		current_age = age_of_discovery
 	}
 	
 	modifier = { # OBS: Modify AI accordingly if this is changed
@@ -25,62 +19,6 @@ edict_feudal_de_jure_law = {
 	
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			OR = {
-				AND = {
-					NOT = {
-						has_state_edict = edict_feudal_de_jure_law
-					}
-					all_province_in_state = {
-						NOT = { unrest = 1 }
-					}
-				}
-				AND = {
-					has_state_edict = edict_feudal_de_jure_law
-					
-					all_province_in_state = {
-						NOT = { unrest = 1 }
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			NOT = {
-				has_state_edict = edict_feudal_de_jure_law
-			}
-			all_province_in_state = {
-				unrest = 1
-				NOT = { unrest = 5 }
-			}
-		}
-		modifier = {
-			factor = 3
-			NOT = {
-				has_state_edict = edict_feudal_de_jure_law
-			}
-			all_province_in_state = {
-				unrest = 1
-			}
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				AND = {
-					NOT = {
-						has_state_edict = edict_feudal_de_jure_law
-					}
-					any_province_in_state = {
-						unrest = 1
-						NOT = { unrest = 5 }
-					}
-				}
-				
-				has_state_edict = edict_feudal_de_jure_law
-			}
-		}
+		factor = 10.0
 	}
-	
 }

@@ -1,7 +1,7 @@
 #1091 - Kamilaroi
 
-culture = aboriginal
-religion = animism
+culture = gamilaraay
+religion = dreamtime
 hre = no
 capital = "Kamilaroi"
 trade_goods = unknown

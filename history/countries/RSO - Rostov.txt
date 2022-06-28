@@ -7,6 +7,27 @@ technology_group = eastern
 capital = 4147 # Moskva
 fixed_capital = 4147 # Cannot move capital away from this province & no power cost to move to it
 
+1356.1.1 = { # Bit diffcult to find a ruler in this timeline but Konstantin Vasilievich who ruled in 1360 was picked to rule with Fyodor Vasilievich dying in 1331 # Sources also seem to suggest its possible he could have taken full control of Rostov by 1356 as it states 'By the 1360'
+	monarch = {
+		name = "Konstantin" #Co-Ruler with Ivan
+		dynasty = "Vasilievich"
+		dip = 3
+		adm = 3
+		mil = 3
+		birth_date = 1326.1.1 # Generic but added to make him 30-35
+	}
+	heir = { # A historical, but added to give a heir
+		name = "Nestor" 
+		dynasty = "Vasilievich"
+		dip = 4
+		adm = 4
+		mil = 4
+		birth_date = 1350.1.1
+		death_date = 1370.1.1
+	}	
+}
+
+
 1444.1.1 = {
 	monarch = {
 		name = "Vladimir" #Co-Ruler with Ivan

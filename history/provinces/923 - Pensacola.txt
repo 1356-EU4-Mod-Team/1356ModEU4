@@ -1,6 +1,6 @@
 #923 - Pensacola
 
-culture = creek
+culture = choctaw
 religion = totemism
 capital = "Pensacola"
 trade_goods = cotton

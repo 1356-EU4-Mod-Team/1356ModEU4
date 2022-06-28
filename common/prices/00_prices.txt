@@ -128,11 +128,15 @@ gems = {
 }
 
 paper = { #1356 #Was 3.5
-	base_price = 2.5
+	base_price = 3.5
 }
 
 coal = {
 	base_price = 10
+}
+
+cloves = {
+	base_price = 8
 }
 
 unknown = {

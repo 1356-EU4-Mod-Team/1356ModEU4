@@ -13,36 +13,71 @@ country_event = {
 		OR = {
 			has_reform = steppe_horde
 			has_reform = tribal_federation
+			has_reform = mountain_khanate_chagatai
+			has_reform = great_mongol_state_reform
+			has_reform = golden_horde_khanate
+			has_reform = tribal_federation_ilkhan_reform
 		}
 		NOT = { has_country_flag = no_new_succession_crisis_if_pretender_rebels }
-		NOT = { has_reform = tribal_federation_ilkhan_reform } #1356
-		num_of_cities = 4
-		OR = {
-			NOT = { legitimacy_or_horde_unity = 50 }
-			has_regency = yes
+		NOT = { has_reform = tribal_rule_by_might_reform } #1356
+		if = {
+			limit = {
+				has_reform = subvert_rival_clans_reform_tribes
+			}	
+			OR = {
+				NOT = { legitimacy_or_horde_unity = 20 }
+				has_regency = yes
+				has_consort_regency = yes
+			}	
 		}
-		OR = {
-			NOT = { tag = CRI }
-			has_global_flag = death_of_haji_giray
-		}
+		if = {
+			limit = {
+				has_reform = mongolic_succession_reforms_tribes
+			}	
+			NOT = { legitimacy_or_horde_unity = 35 }	
+		}	
+		if = {
+			limit = {
+				has_reform = tribal_hereditary_succession
+			}	
+			NOT = { legitimacy_or_horde_unity = 40 }	
+		}	
+		if = {
+			limit = {
+				has_reform = tribal_hereditary_succession
+			}	
+			NOT = { legitimacy_or_horde_unity = 40 }	
+		}		
+		#num_of_cities = 6 # Government reforms offer more control
+		if = {
+			limit = {
+				NOT = { has_reform = tribal_hereditary_succession }
+				NOT = { has_reform = mongolic_succession_reforms_tribes }
+				NOT = { has_reform = subvert_rival_clans_reform_tribes }
+				NOT = { has_reform = tribal_rule_by_might_reform }
+			}	
+			OR = {
+				NOT = { legitimacy_or_horde_unity = 50 }
+				has_regency = yes
+			}	
+		}					
+		# OR = {
+			# NOT = { legitimacy_or_horde_unity = 50 }
+			# has_regency = yes
+		# }
 	}
 	
 	immediate = {
 		hidden_effect = {
-			if = {
+			random_owned_province = {
 				limit = {
-					NOT = { legitimacy_or_horde_unity = 50 }
+					is_capital = no
+					is_state = yes
 				}
-				random_owned_province = {
-					limit = {
-						is_capital = no
-						is_state = yes
-					}
-					spawn_rebels = {
-						type = pretender_rebels
-						size = 2
-						win = yes
-					}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+					win = yes
 				}
 			}
 		}
@@ -50,8 +85,8 @@ country_event = {
 	
 	option = {
 		name = tribal_succession.1.a
-		trigger = {
-			NOT = { legitimacy_or_horde_unity = 50 }
+		trigger = { # Additions of new reforms made this redundant
+			NOT = { has_regency = yes }
 		}
 		if = {
 			limit = {
@@ -85,7 +120,7 @@ country_event = {
 		define_ruler = {
 			dynasty = ROOT #Uncles, or other relatives were by far the most likely coup-makers
 		}
-		kill_heir = yes
+		kill_heir = {}
 		add_horde_unity = -25
 	}
 }
@@ -121,3 +156,22 @@ country_event = {
 	}
 }
 	
+	
+country_event = {
+	id = tribal_succession.333
+	title = tribal_succession.2.t
+	desc = tribal_succession.2.d
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		always = no
+	}
+	
+	# mean_time_to_happen = {
+		# days = 1
+	# }
+	
+	option = {
+		add_horde_unity = -100
+	}
+}	

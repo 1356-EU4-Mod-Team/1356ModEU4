@@ -14,17 +14,23 @@ edict_religious_unity = {
 	color = { 117 38 143 }
 	
 	ai_will_do = {
-		factor = 100
+		factor = 100.0
 		modifier = {
 			factor = 0
-			all_province_in_state = {
-				has_missionary = no
+			any_province_in_state = {
+				AND = {
+					has_missionary = no
+					owned_by = FROM
+				}
 			}
 		}
 		modifier = {
-			factor = 3
-			all_province_in_state = {
-				has_missionary = yes
+			factor = 10.0
+			any_province_in_state = {
+				AND = {
+					has_missionary = yes
+					owned_by = FROM
+				}
 			}
 		}
 	}

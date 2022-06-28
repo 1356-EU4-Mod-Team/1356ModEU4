@@ -49,7 +49,7 @@ country_event = { #A Chinese Warlord takes over a province holding Nestorians.
 	
 	trigger = {
 		culture_group = east_asian
-		has_reform = chinese_kingdom_government_reform
+		has_reform = chinese_warlord
 		NOT = { has_country_flag = timur_didnt_exterminate_nestorians }
 		NOT = { has_country_modifier = expelled_nestorian }
 		OR = {

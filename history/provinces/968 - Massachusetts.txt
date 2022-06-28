@@ -1,6 +1,6 @@
 #968 - Massachusetts
 
-culture = pequot
+culture = massachusset
 religion = totemism
 capital = "Massachusetts"
 trade_goods = unknown

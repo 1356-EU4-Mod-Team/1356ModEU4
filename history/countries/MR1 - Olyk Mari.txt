@@ -23,4 +23,20 @@ capital = 4264 # Tetyushi
 		name = "uralic_religion_starting_modifier"
 		duration = -1
 	}
+	monarch = { # Ahistorical but lets give them something unique
+		name = "Boris"
+		dynasty = "Mustislavki"
+		dip = 5
+		adm = 0
+		mil = 6
+		birth_date = 1342.5.2
+		leader = {
+			name = "Boris Mustislavki"
+			type = general
+			fire = 3	
+			shock = 5	
+			manuever = 5	
+			siege = 3
+		}
+	}	
 }

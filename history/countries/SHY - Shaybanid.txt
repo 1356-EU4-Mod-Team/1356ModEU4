@@ -9,6 +9,43 @@ capital = 4689	# Lower Ishim
 religious_school = hanafi_school
 government_rank = 1
 
+
+1356.1.1 = {
+	monarch = { # Generated rulers for Nomadic Clans
+		name = "Shahmurad"
+		dynasty = "Shaybanid"
+		dip = 4
+		adm = 3
+		mil = 4
+		birth_date = 1315.1.2
+		leader = {
+			name = "Shahmurad Shaybanid"
+			type = general
+			fire = 1	
+			shock = 4	
+			manuever = 6	
+			siege = 4
+		}
+	}
+	heir = {
+		name = "Nadir Muhammad"
+		dynasty = "Shaybanid"
+		dip = 3
+		adm = 3
+		mil = 5
+		birth_date = 1351.1.9
+		leader = {
+			name = "Nadir Muhammad Shaybanid"
+			type = general
+			fire = 3
+			shock = 3	
+			manuever = 3	
+			siege = 2
+		}
+	}
+}	
+
+
 1427.1.1 = { 
 	monarch = { 
 		name = "Abu'l-Khayr" 

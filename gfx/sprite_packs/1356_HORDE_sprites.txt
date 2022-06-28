@@ -1,0 +1,229 @@
+golden_horde_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = GOL
+			tag = GLH
+			tag = BLU
+		}
+	}
+
+	sprite_infantry = {
+		0 = GOL_INFANTRY_1
+		1 = GOL_INFANTRY_2
+		2 = GOL_INFANTRY_3
+		3 = GOL_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = GOL_CAVALRY_1
+		1 = GOL_CAVALRY_2
+		2 = GOL_CAVALRY_3
+		3 = GOL_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = GOL_ARTILLERY_1
+		1 = GOL_ARTILLERY_2
+		2 = GOL_ARTILLERY_3
+		3 = GOL_ARTILLERY_4
+	}
+}
+
+nogai_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		tag = NOG
+	}
+
+	sprite_infantry = {
+		0 = NOG_INFANTRY_1
+		1 = NOG_INFANTRY_2
+		2 = NOG_INFANTRY_3
+		3 = NOG_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = NOG_CAVALRY_1
+		1 = NOG_CAVALRY_2
+		2 = NOG_CAVALRY_3
+		3 = NOG_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = NOG_ARTILLERY_1
+		1 = NOG_ARTILLERY_2
+		2 = NOG_ARTILLERY_3
+		3 = NOG_ARTILLERY_4
+	}
+}
+
+uzbek_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = SHY
+			tag = BUK
+			tag = KZH
+		}
+	}
+
+	sprite_infantry = {
+		0 = SHY_INFANTRY_1
+		1 = SHY_INFANTRY_2
+		2 = SHY_INFANTRY_3
+		3 = SHY_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = SHY_CAVALRY_1
+		1 = SHY_CAVALRY_2
+		2 = SHY_CAVALRY_3
+		3 = SHY_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = SHY_ARTILLERY_1
+		1 = SHY_ARTILLERY_2
+		2 = SHY_ARTILLERY_3
+		3 = SHY_ARTILLERY_4
+	}
+}
+
+timurids_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = TIM
+			tag = KHO
+			tag = ILK
+			tag = HER
+			AND = {
+				tag = TRS
+				OR = {
+					dynasty = "Timurid"
+					dynasty = "Barlas"
+				}	
+			}	
+		}
+	}
+
+	sprite_infantry = {
+		0 = TIM_INFANTRY_1
+		1 = TIM_INFANTRY_2
+		2 = TIM_INFANTRY_3
+		3 = TIM_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = TIM_CAVALRY_1
+		1 = TIM_CAVALRY_2
+		2 = TIM_CAVALRY_3
+		3 = TIM_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = TIM_ARTILLERY_1
+		1 = TIM_ARTILLERY_2
+		2 = TIM_ARTILLERY_3
+		3 = TIM_ARTILLERY_4
+	}
+}
+
+chagatai_clones = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = KOK
+			AND = {
+				tag = TRS
+				NOT = { dynasty = "Timurid" }
+			}
+		}
+	}
+
+	sprite_infantry = {
+		0 = CHG_INFANTRY_1
+		1 = CHG_INFANTRY_2
+		2 = CHG_INFANTRY_3
+		3 = CHG_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = CHG_CAVALRY_1
+		1 = CHG_CAVALRY_2
+		2 = CHG_CAVALRY_3
+		3 = CHG_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = CHG_ARTILLERY_1
+		1 = CHG_ARTILLERY_2
+		2 = CHG_ARTILLERY_3
+		3 = CHG_ARTILLERY_4
+	}
+}
+ 
+dlc048_tim_sprite_pack = { # Merely to overwrite
+	# Tests against every tag in game
+	country_trigger = {
+		NOT = { tag = SHY }
+		NOT = { tag = TRS }
+		NOT = { tag = KOK }
+		OR = {
+			primary_culture = uzbehk
+			primary_culture = khorasani
+			dynasty = "Timurid"
+		}
+	}
+
+	sprite_infantry = {
+		0 = TIM_INFANTRY_1
+		1 = TIM_INFANTRY_2
+		2 = TIM_INFANTRY_3
+		3 = TIM_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = TIM_CAVALRY_1
+		1 = TIM_CAVALRY_2
+		2 = TIM_CAVALRY_3
+		3 = TIM_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = TIM_ARTILLERY_1
+		1 = TIM_ARTILLERY_2
+		2 = TIM_ARTILLERY_3
+		3 = TIM_ARTILLERY_4
+	}
+}
+
+dlc048_tim_sprite_pack = { # Merely to overwrite
+	# Tests against every tag in game
+	country_trigger = {
+	}
+
+	sprite_infantry = {
+		0 = TIM_INFANTRY_1
+		1 = TIM_INFANTRY_2
+		2 = TIM_INFANTRY_3
+		3 = TIM_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = TIM_CAVALRY_1
+		1 = TIM_CAVALRY_2
+		2 = TIM_CAVALRY_3
+		3 = TIM_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = TIM_ARTILLERY_1
+		1 = TIM_ARTILLERY_2
+		2 = TIM_ARTILLERY_3
+		3 = TIM_ARTILLERY_4
+	}
+}
+
+

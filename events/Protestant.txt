@@ -24,7 +24,7 @@ country_event = {
 		is_defender_of_faith = no	
 		NOT = { has_reform = papacy_reform }
 		reform_desire = 1
-		is_year = 1490
+		is_year = 1505
 		capital_scope = {
 			continent = europe
 		}
@@ -36,7 +36,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3000
+		months = 2000
 		
 		modifier = {
 			factor = 2

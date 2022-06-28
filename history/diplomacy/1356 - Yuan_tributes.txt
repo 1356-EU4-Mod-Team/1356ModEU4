@@ -27,10 +27,17 @@
 #	start_date = 1355.1.1
 #	end_date = 1380.9.8
 #}
-#dependency = {
-#	subject_type = "tributary_state"
-#	first = YUA
-#	second = LXA
-#	start_date = 1355.1.1
-#	end_date = 1380.9.8
-#}
+# dependency = {
+	# subject_type = "tributary_state"
+	# first = YUA
+	# second = LXA
+	# start_date = 1355.1.1
+	# end_date = 1380.9.8
+# }
+
+vassal = { # Liaoyang in Manchuria
+	first = YUA
+	second = X01
+	start_date = 1355.1.1
+	end_date = 1365.9.8
+}

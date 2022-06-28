@@ -1,6 +1,6 @@
-owner = KRC
-controller = KRC
-add_core = KRC
+owner = X01
+controller = X01
+add_core = X01
 culture = chahar
 religion = vajrayana
 capital = "Josutu"
@@ -10,15 +10,15 @@ base_tax = 2
 base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = CHH
+add_core = CHH # More to Chadar and less for Korchin
 
 discovered_by = chinese
 discovered_by = nomad_group
-1356.12.26  = {	
-	owner = X01
-	controller = X01
-	add_core = X01
-}
+# 1356.12.26  = {	
+	# owner = X01
+	# controller = X01
+	# add_core = X01
+# }
 1552.1.1 = {
 	owner = KHA
 	controller = KHA

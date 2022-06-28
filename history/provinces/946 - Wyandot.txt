@@ -1,6 +1,6 @@
 #946 - Wyandot
 
-culture = huron
+culture = miami
 religion = totemism
 capital = "Wyandot"
 trade_goods = unknown

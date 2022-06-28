@@ -18,5 +18,70 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_vijhindu_government"
 		texturefile = "gfx//interface//government_reform_icons//vij_government.dds"
-	}		
+	}	
+
+	spriteType = {
+		name = "government_reform_novgorod_republic"
+		texturefile = "gfx//interface//government_reform_icons//novgorod_republic.dds"
+	}
+	spriteType = {
+		name = "government_reform_nov_delegated_power_to_veche"
+		texturefile = "gfx//interface//government_reform_icons//nov_delegated_power_to_veche.dds"
+	}
+	spriteType = {
+		name = "government_reform_nov_promote_local_boyars"
+		texturefile = "gfx//interface//government_reform_icons//nov_promote_local_boyars.dds"
+	}
+	spriteType = {
+		name = "government_reform_nov_favor_princely_ties"
+		texturefile = "gfx//interface//government_reform_icons//nov_favor_princely_ties.dds"
+	}	
+	spriteType = {
+		name = "government_reform_mongol_succession"
+		texturefile = "gfx//interface//government_reform_icons//mongol_succession.dds"
+	}
+	spriteType = {
+		name = "government_reform_ilkhanid_federation"
+		texturefile = "gfx//interface//government_reform_icons//ilkhanid_federation.dds"
+	}	
+	spriteType = {
+		name = "government_reform_tribal_rule_by_might"
+		texturefile = "gfx//interface//government_reform_icons//tribal_rule_by_might.dds"
+	}
+	spriteType = {
+		name = "government_reform_subvert_rival_clans"
+		texturefile = "gfx//interface//government_reform_icons//subvert_rival_clans.dds"
+	}
+	spriteType = {
+		name = "government_reform_nobility_tribal"
+		texturefile = "gfx//interface//government_reform_icons//nobility_tribal.dds"
+	}	
+	spriteType = {
+		name = "government_reform_formalize_merchant_caste"
+		texturefile = "gfx//interface//government_reform_icons//formalize_merchant_caste.dds"
+	}
+	spriteType = {
+		name = "government_reform_clergical_estate_tribal"
+		texturefile = "gfx//interface//government_reform_icons//clergical_estate_tribal.dds"
+	}
+	spriteType = {
+		name = "government_reform_delegate_power_to_tribes"
+		texturefile = "gfx//interface//government_reform_icons//delegate_power_to_tribes.dds"
+	}	
+	spriteType = {
+		name = "government_reform_feudal_elective_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//feudal_elective_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_high_feudal_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//high_feudal_monarchy.dds"
+	}	
+	spriteType = {
+		name = "government_reform_barbary_pirates_icon"
+		texturefile = "gfx//interface//government_reform_icons//barbary_pirates_icon.dds"
+	}	
+	spriteType = {
+		name = "government_reform_the_sun_king"
+		texturefile = "gfx//interface//government_reform_icons//the_sun_king.dds"
+	}	
 }

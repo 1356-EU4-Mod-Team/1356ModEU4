@@ -27,7 +27,7 @@ Foreign_Notables_5 = {
 	legitimacy = 0.5
 }
 Bound_To_The_Ring = {
-	vassal_income = 0.25
+	vassal_income = 0.15
 }
 Prestigeous_Theatres = { 
 	monthly_splendor = 1

@@ -1,96 +1,105 @@
 country_decisions = {
 
-	persian_timurid_nation = {
+	establish_timurid_empire = {
 		major = yes
 		potential = {
-			tag = TIM
-			government_rank = 3
+			tag = TRS
+			has_global_flag = tamerlane_arrived_in_transoixana
 			is_emperor_of_china = no
-			NOT = { has_country_flag = formed_persia_flag }
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 414		# Hamadan
-				province_id = 429		# Isfahan
-				province_id = 433		# Yazd
-				province_id = 2213		# Qom
-				province_id = 2215		# Qazvin
-				AND = {
-					province_id = 426
-					ROOT = { NOT = { owns_core_province = 2218 } }
-				}
-				AND = {
-					province_id = 2218
-					ROOT = { NOT = { owns_core_province = 426 } }
-				}
-				AND = {
-					province_id = 416
-					ROOT = { NOT = { owns_core_province = 432 } }
-					ROOT = { NOT = { owns_core_province = 2221 } }
-				}
-				AND = {
-					province_id = 432
-					ROOT = { NOT = { owns_core_province = 416 } }
-					ROOT = { NOT = { owns_core_province = 2221 } }
-				}
-				AND = {
-					province_id = 2221
-					ROOT = { NOT = { owns_core_province = 416 } }
-					ROOT = { NOT = { owns_core_province = 432 } }
-				}
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
+			NOT = { has_global_flag = founded_timurid_empire }
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
-			is_tribal = no
-			tag = TIM
-			is_year = 1610
-			government_rank = 3
+			total_development = 120
+			tag = TRS
+			NOT = { exists = TIM }
 		}
 		effect = {
-			change_tag = TPM
-			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
+			change_tag = TIM
+			set_global_flag = founded_timurid_empire
 			if = {
 				limit = {
-					government = monarchy
+					has_custom_ideas = no
+					NOT = { has_idea_group = ARM_ideas }
 				}
-				change_government = monarchy
-				#set_legacy_government = timurid_government
-				add_government_reform = timurid_government_reform
-				add_government_reform = political_absolutism_reform
-			}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}			
+			set_government_rank = 3
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			change_government = monarchy
+			add_government_reform = iqta
+			hidden_effect = { # to give Timurid dynasty
+				country_event = { id = timurid_emergence.7 }
+			}				
 			persia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 				}
-				add_permanent_claim = TPM
+				add_permanent_claim = TIM
 			}
+			khorasan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = TIM
+			}	
+			mashriq_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = TIM
+			}			
 			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
+				name = "timurid_centrialization"
+				duration = 9125
 			}
 			add_prestige = 25
-			add_absolutism = 10
-			if = {
-				limit = {
-					NOT = { primary_culture = persian }
+			add_adm_tech = 2
+			add_mil_tech = 2
+			add_dip_tech = 2
+			change_technology_group = muslim
+			change_unit_type = muslim
+			every_owned_province = {
+				add_institution_embracement = {
+					which = feudalism
+					value = 100
 				}
-				change_primary_culture = persian
-			}
-			set_country_flag = formed_persia_flag
+				add_institution_embracement = {
+					which = mercantilism_institution
+					value = 100
+				}
+			}	
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		ai_importance = 400
+		ai_importance = 1000
 	}
+	
+	leave_tatar_yoke = {
+		major = yes
+		potential = {
+			is_subject_of_type = golden_horde_tributary_state
+			is_subject_of = WHI
+		}
+		allow = {
+			is_at_war = no
+			is_year = 1410
+			is_subject_of = WHI
+		}
+		effect = {	
+			add_prestige = -20
+			grant_independence = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}	
 	
 }

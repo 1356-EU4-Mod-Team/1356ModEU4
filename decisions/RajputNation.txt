@@ -58,7 +58,6 @@ country_decisions = {
 			adm_tech = 16 #1356
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			owns_core_province = 4497 #Kannauj
 			owns_core_province = 4461 #Ujjain
 			owns_core_province = 2053 #Patan
 			owns_core_province = 515 #Girnar
@@ -72,6 +71,10 @@ country_decisions = {
 			owns_core_province = 2067 #Mount Abu
 			owns_core_province = 506 #Multan
 			owns_core_province = 2095 #Varanasi
+			owns_core_province = 4497 	#Kannauj
+			4497 = {					#Kannauj
+				is_state = yes
+			}
 		}
 		effect = {
 			4497 = {

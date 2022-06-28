@@ -1,0 +1,305 @@
+country_decisions = {
+	espionage_create_espionage_network = {
+		major = yes
+		potential = {
+			has_idea_group = spy_ideas
+			#has_idea = efficient_spies
+			NOT = { has_country_modifier = espionage_network_founded }
+		}
+
+		allow = {
+			ai = no
+			has_idea_group = spy_ideas
+			has_idea = efficient_spies
+			adm_power = 100
+			dip_power = 100
+			mil_power  = 100
+			is_at_war = no
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "espionage_network_founded"
+				duration = -1
+			}	
+		}
+	}	
+	espionage_kill_heir = {
+		major = no
+		potential = {
+			has_idea_group = spy_ideas
+			#has_idea = agent_training
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = FOUNDED_A_ESPIONAGE_NETWORK
+				has_country_modifier = espionage_network_founded
+			}			
+			ai = no
+			has_idea_group = spy_ideas
+			has_idea = agent_training
+			is_at_war = no
+			has_heir = yes
+			NOT = { heir_age = 16 }
+			custom_trigger_tooltip = {
+				tooltip = DID_NOT_KILL_HEIR
+				NOT = { has_country_modifier = recently_killed_heir_espionage }
+			}	
+		}
+
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = "recently_killed_heir_espionage"
+					duration = 7300
+					hidden = yes
+				}	
+			}		
+			country_event = { id = new_ideas_events.1 } # Kill Heir via Hunting accident	
+		}
+	}
+	espionage_recruit_from_espionage_network = {
+		major = yes
+		potential = {
+			has_idea_group = spy_ideas
+			has_idea = efficient_spies
+			#NOT = { has_country_modifier = recently_recruited_from_network }
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = FOUNDED_A_ESPIONAGE_NETWORK
+				has_country_modifier = espionage_network_founded
+			}	
+			custom_trigger_tooltip = {
+				tooltip = NOT_RECENTLY_RECRUITED_FROM_SPIES
+				NOT = { has_country_modifier = recently_recruited_from_network }
+			}			
+			ai = no
+			has_idea_group = spy_ideas
+			has_idea = audit_checks
+		}
+
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = "recently_recruited_from_network"
+					duration = 5475
+					hidden = yes
+				}	
+			}		
+			country_event = { id = new_ideas_events.2  } # Pick a Adivsor from Network	
+		}
+	}	
+	espionage_found_specialization_mil = {
+		major = no
+		potential = {
+			has_idea_group = spy_ideas
+			#has_idea = agent_training
+			NOT = { has_country_modifier = espionage_mil_specialization }			
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = FOUNDED_A_ESPIONAGE_NETWORK
+				has_country_modifier = espionage_network_founded
+			}	
+			ai = no
+			has_idea_group = spy_ideas
+			has_idea = state_propaganda
+			is_at_war = no
+			mil_power = 200
+		}
+		effect = {
+			add_mil_power = -200
+			add_country_modifier = {
+				name = "espionage_mil_specialization"
+				duration = -1
+			}	
+		}
+	}	
+	espionage_found_specialization_dip = {
+		major = no
+		potential = {
+			has_idea_group = spy_ideas
+			#has_idea = agent_training
+			NOT = { has_country_modifier = espionage_diplo_specialization }			
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = FOUNDED_A_ESPIONAGE_NETWORK
+				has_country_modifier = espionage_network_founded
+			}	
+			ai = no
+			has_idea_group = spy_ideas
+			has_idea = state_propaganda
+			is_at_war = no
+			adm_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			add_country_modifier = {
+				name = "espionage_diplo_specialization"
+				duration = -1
+			}	
+		}
+	}	
+	espionage_found_specialization_adm = {
+		major = no
+		potential = {
+			has_idea_group = spy_ideas
+			#has_idea = agent_training
+			NOT = { has_country_modifier = espionage_adm_specialization }			
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = FOUNDED_A_ESPIONAGE_NETWORK
+				has_country_modifier = espionage_network_founded
+			}	
+			ai = no
+			has_idea_group = spy_ideas
+			has_idea = state_propaganda
+			is_at_war = no
+			adm_power = 200
+		}
+		effect = {
+			add_adm_power = -200
+			add_country_modifier = {
+				name = "espionage_adm_specialization"
+				duration = -1
+			}	
+		}
+	}	
+	espionage_access_the_network = {
+		major = yes
+		potential = {
+			has_idea_group = spy_ideas
+			#has_idea = agent_training
+			NOT = { has_country_modifier = in_espionage_network_screen }		
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = FOUNDED_A_ESPIONAGE_NETWORK
+				has_country_modifier = espionage_network_founded
+			}				
+			custom_trigger_tooltip = {
+				tooltip = DID_ALL_SPECIALIZATIONS
+				AND = {
+					has_country_modifier = espionage_adm_specialization
+					has_country_modifier = espionage_diplo_specialization
+					has_country_modifier = espionage_mil_specialization
+				}	
+			}
+			custom_trigger_tooltip = {
+				tooltip = NOT_ALL_SPECIALIZATIONS_ACTIVE_MISSIONS
+				NOT = {
+					AND = {
+						has_country_modifier = adm_specialization_cooldown
+						has_country_modifier = dip_specialization_cooldown
+						has_country_modifier = mil_specialization_cooldown
+					}
+				}	
+			}				
+			ai = no
+			has_idea_group = spy_ideas
+			full_idea_group = spy_ideas
+		}
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = "in_espionage_network_screen"
+					duration = -1
+					hidden = yes
+				}	
+			}	
+			country_event = { id = new_ideas_events.10 }	# Deals with Espionage Network Specializations	
+		}
+	}	
+	patronage_local_researcher_inno = {
+		major = yes
+		potential = {
+			has_idea_group = innovativeness_ideas
+			#has_idea = empiricism		
+			NOT = { has_country_modifier = is_considering_patronage_of_inventors }
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = PATRONAGE_INVENTOR_COOLDOWN
+				NOT = { has_country_modifier = patronaged_a_invetor_inno }
+			}	
+			treasury = 200
+			NOT = { num_of_loans = 5 }
+			ai = no
+			is_at_war = no
+			has_idea_group = innovativeness_ideas
+			has_idea = empiricism	
+		}
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = "is_considering_patronage_of_inventors"
+					duration = -1
+					hidden = yes
+				}	
+			}	
+			country_event = { id = new_ideas_events.20 }	#Deals with Patronage
+		}
+	}
+	invite_a_great_thinker_advisor = { # Selects an Advisor of Choice
+		major = yes
+		potential = {
+			has_idea_group = innovativeness_ideas
+			#has_idea = empiricism		
+			#NOT = { has_country_modifier = searching_for_great_thinker }
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = GREAT_THINKER_COOLDOWN_TIMER
+				NOT = { has_country_modifier = great_thinker_adm }
+				NOT = { has_country_modifier = great_thinker_dip }
+				NOT = { has_country_modifier = great_thinker_mil }
+			}	
+			ai = no
+			is_at_war = no
+			has_idea_group = innovativeness_ideas
+			has_idea = dynamic_court	
+			NOT = { has_country_modifier = searching_for_great_thinker }
+		}
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = "great_thinker_advisor_cooldown"
+					duration = 365
+					hidden = yes
+				}	
+			}	
+			country_event = { id = new_ideas_events.21 }	# The Search Begins	
+		}
+	}	
+	establish_the_national_bank = { # Bank is now Triggerable
+		major = yes
+		potential = {
+			has_idea_group = economic_ideas
+			#has_idea = empiricism		
+			#NOT = { has_country_modifier = searching_for_great_thinker }
+			NOT = { has_country_flag = bank }
+		}
+
+		allow = {
+			#ai = no
+			is_at_war = no
+			has_idea_group = economic_ideas
+			has_idea = national_bank	
+		}
+		effect = {
+			set_country_flag = bank
+			country_event = { id = 4042 }	# Bank Forms
+		}
+	}	
+}	

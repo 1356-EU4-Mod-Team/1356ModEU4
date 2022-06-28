@@ -1,6 +1,6 @@
 # No previous file for Anticosti
 
-culture = cree
+culture = innu
 religion = totemism
 capital = "Anticosti"
 trade_goods = unknown

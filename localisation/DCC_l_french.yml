@@ -1,0 +1,12 @@
+﻿l_french:
+ DCC_SpreadPrimaryTitle: "Changements culturel."
+ DCC_SpreadPrimary: "Après toutes ces années sous notre domination, le peuple dans une de nos province d'intègre progressivement. Maintenant, ils parlent et vivent presque comme nous."
+ DCC_ApprovePrimarySpread: "Fantastique !"
+ DCC_DisapprovePrimarySpread: "Ils ne font pas partie des notres."
+
+ DCC_SpreadAcceptedTitle: "Une culture acceptée s'étend."
+ DCC_SpreadAccepted: "Le peuple d'une de nos provinces se comporte enfin de manière acceptable, bien que vous pouvez voire qu'ils ne sont pas aussi civilisés que nous."
+ DCC_ApproveAcceptedSpread: "Très bien !"
+ DCC_DisapproveAcceptedSpread: "Je ne laisserais pas cela arriver."
+ 
+ DCC_encourage_own_culture: "Culture encouragée"

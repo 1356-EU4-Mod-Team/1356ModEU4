@@ -16,7 +16,7 @@ country_event = {
 	}
 
 	option = {
-		name = golden_bull_events1.EVTOPT1
+		name = golden_bull_events1.EVTOPT111
 
 		ai_chance = { factor = 100 }
 	}

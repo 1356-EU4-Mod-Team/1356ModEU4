@@ -3,6 +3,7 @@ crusader_states_missions = {
 	generic = no
 	ai = yes
 	potential = { 
+		NOT = { has_global_flag = disabled_1356_related_missions }
 		always = no
 		OR = {
 			tag = CYP

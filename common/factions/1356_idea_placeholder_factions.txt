@@ -1,0 +1,86 @@
+# For Modifier Icon:
+is_early_colonial_idea_faction = {
+	allow = {
+		always = no
+	}
+
+	monarch_power = ADM
+	always = yes
+
+	modifier = {
+	}
+}
+
+is_early_colonial_idea_2_faction = {
+	allow = {
+		always = no
+	}
+
+	monarch_power = ADM
+	always = yes
+
+	modifier = {
+	}
+}
+
+is_early_colonial_idea_3_faction = {
+	allow = {
+		always = no
+	}
+
+	monarch_power = ADM
+	always = yes
+
+	modifier = {
+	}
+}
+
+is_early_colonial_idea_4_faction = {
+	allow = {
+		always = no
+	}
+
+	monarch_power = ADM
+	always = yes
+
+	modifier = {
+	}
+}
+
+
+# Relating to Ideas
+espionage_infiltrate_army_bonus_faction = {
+	allow = {
+		always = no
+	}
+
+	monarch_power = ADM
+	always = no
+
+	modifier = {
+	}
+}
+
+espionage_inflame_seperatism_bonus_faction = {
+	allow = {
+		always = no
+	}
+
+	monarch_power = ADM
+	always = no
+
+	modifier = {
+	}
+}
+
+eminence_base_power_projection_faction = {
+	allow = {
+		always = no
+	}
+
+	monarch_power = ADM
+	always = no
+
+	modifier = {
+	}
+}

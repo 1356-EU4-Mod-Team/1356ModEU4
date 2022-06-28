@@ -21,7 +21,7 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
-add_province_triggered_modifier = 1356_antwerp_cathedral_great_project_province_modifier #1356
+#add_province_triggered_modifier = 1356_antwerp_cathedral_great_project_province_modifier #1356
 
 1477.1.5 = { owner = HAB controller = HAB add_core = HAB }
 1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB }

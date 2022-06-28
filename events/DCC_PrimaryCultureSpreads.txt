@@ -1,0 +1,152 @@
+namespace = dynamic_culture_conversion
+
+# spread of the primary culture in your country
+# spreads event gets activated by the province which will change culture
+province_event = {
+	id = dynamic_culture_conversion.1
+	title = "DCC_SpreadPrimaryTitle"
+	desc = "DCC_SpreadPrimary"
+	picture = CULTURE_eventPicture
+	fire_only_once = no
+	
+	trigger = {
+		owner = {
+			not = { has_country_modifier = culture_change_delay }
+			OR = {
+				has_reform = crown_colony_government
+				has_reform = private_enterprise_colony_government
+				has_reform = self_governing_colony_government
+			}
+		}	
+		has_owner_culture = no
+		not = { has_construction = culture } # no forceful culture conversion
+		#tolerance_to_this = 0 # the religion of the province has to be tolerated
+		is_core = owner # province must be cored
+		controlled_by = owner # province must not be occupied
+	}
+	
+	mean_time_to_happen = {
+		months = 120 # Time
+		modifier = { # convert much faster if in the same area as the capital
+			factor = 0.85
+			is_in_capital_area = yes
+		}
+		### ideas ###
+		modifier = { # accepted cultures convert even slower if idea Cultural Ties is bought
+			factor = 1.15 # makes accepted cultures give factor 2.0 all in all (threshold/3)
+			has_owner_accepted_culture = yes
+			has_idea = cultural_ties # accepted culture threshold -0.5
+		}
+		modifier = { # convert slower if coring is expensive
+			factor = 1.5 # core creation cost/2
+			has_idea = local_nobility # core creation cost +1.0
+		}
+		modifier = { # convert faster if coring is cheap
+			factor = 0.875 # core creation cost/2
+			has_idea = adaptability # core creation cost -0.25
+		}
+		modifier = { # convert faster if conversion is cheap
+			factor = 0.92 # conversion cost/3
+			has_idea = inquisition # culture conversion cost -0.25
+		}
+		### local autonomy ###
+		# make it resemble a logistical curve
+		modifier = {
+			factor = 1.04 # 1.04 overall
+			local_autonomy = 5
+		}
+		modifier = {
+			factor = 1.06 # ~1.10 overall
+			local_autonomy = 10
+		}
+		modifier = {
+			factor = 1.065 # ~1.17 overall
+			local_autonomy = 15
+		}
+		modifier = {
+			factor = 1.07 # ~1.26 overall
+			local_autonomy = 20
+		}
+		modifier = {
+			factor = 1.15 # ~1.44 overall
+			local_autonomy = 30
+		}
+		modifier = {
+			factor = 1.15 # ~1.66 overall
+			local_autonomy = 40
+		}
+		modifier = {
+			factor = 1.15 # ~1.91 overall
+			local_autonomy = 50
+		}
+		modifier = {
+			factor = 1.12 # ~2.14 overall
+			local_autonomy = 60
+		}
+		modifier = {
+			factor = 1.075 # ~2.30 overall
+			local_autonomy = 70
+		}
+		### prestige ###
+		modifier = { # all aboard the bandwagon
+			factor = 0.9
+			owner = {
+				prestige = 90
+				stability = 2
+			}
+		}
+		modifier = { # slower conversion if high development (high population)
+			factor = 1.3
+			development = 16
+		}
+		modifier = { # even slower conversion if very high development (huge population)
+			factor = 1.2
+			development = 26
+		}
+		modifier = { # even slower conversion if enormous development (metropolis)
+			factor = 1.1
+			development = 46
+		}
+		modifier = {
+			factor = 0.95
+			has_port = yes
+		}
+		### buildings ###
+		modifier = {
+			factor = 0.95
+			has_building = marketplace
+		}
+		modifier = {
+			factor = 0.965
+			has_building = trade_depot
+		}
+		modifier = {
+			factor = 0.98
+			has_building = stock_exchange
+		}
+		modifier = {
+			factor = 0.9
+			has_building = university
+		}
+	}
+	
+	#let the spread happen
+	option = {
+		name = "DCC_ApprovePrimarySpread"
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0 # 0% chance
+				unrest = 4
+			}
+		}
+		change_culture = owner
+		owner = {
+			add_country_modifier = {
+				name = culture_change_delay
+				duration = 180
+				hidden = yes
+			}	
+		}	
+	}
+}

@@ -1,6 +1,7 @@
 owner = YUA
 controller = YUA
 add_core = YUA
+add_core = KRC
 culture = chahar
 religion = vajrayana
 capital = "Bayisingtu"

@@ -391,6 +391,7 @@ country_event = {
 		add_historical_friend = LIT
 		LIT = {
 			add_historical_friend = POL
+			add_liberty_desire = -50
 		}
 		LIT = {
 			change_religion = catholic
@@ -405,7 +406,7 @@ country_event = {
 				}
 			}
 		}	
-		remove_heir = yes
+		remove_heir = {}
 	}
 	
 	option = {
@@ -469,9 +470,11 @@ country_event = {
 	option = {
 		name = flaflavorlith.4.a #We must retain the Jagiellon Dynasty
 		ai_chance = { 
-			factor = 90 
+			factor = 75 
 		}
+		add_stability = 1
 		create_union = POL
+		set_dynasty = "Jagiellon"
 		define_consort = {
 			name = "Hedvig"
 			dynasty = "d'Anjou"
@@ -480,10 +483,26 @@ country_event = {
 			dip = 5
 			mil = 3
 			female = yes
+			fixed = yes
+			birth_date = 1373.1.1 # 1.1 is used as default when we dont know the exact date
 		}
+		hidden_effect = {
+			add_prestige = 100 # When converting you will have to deal with losing 100 prestige this simply fixes it so Lithuania will not lose the Union
+			remove_heir = {}
+			define_heir = {
+				dynasty = "Jagiellon"
+				adm = 3
+				dip = 2
+				mil = 3
+				claim = 50
+				age = 0
+			}	
+		}	
 		add_historical_friend = POL
 		POL = {
 			add_historical_friend = LIT
+			add_liberty_desire = -50
+			add_stability = 2
 		}
 		change_religion = catholic	
 		every_owned_province = {
@@ -501,7 +520,7 @@ country_event = {
 	option = {
 		name = flaflavorlith.4.b #Stay Romuva.
 		ai_chance = { 
-			factor = 10
+			factor = 25
 		}
 		POL = {
 			add_opinion = {
@@ -513,5 +532,543 @@ country_event = {
 }
 
 ##### What am I doing
-#Ultimatum Kiev etc
+#Ultimatum Kiev etc ---- Originally planned by DanJonMin Team
 
+#Lithuanian Southern Expansion - Kyiv and Chernigov
+# Strengthens Lithuania Early
+
+# Kyivan and Chernihiv Flavor 
+# Heavily Inspired by vanilla Flavour events for Teutonic Order - The Prussian Confederation. Credits to Daniel Tolman
+
+# Kyivan and Chernihiv Principalities Revolts # White Horde
+country_event = { 
+	id = flaflavorlith.501
+	title = "flaflavorlith.501.EVTNAME1"
+	desc = "flaflavorlith.501.EVTDESC1"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1360
+		NOT = { is_year = 1375 }
+		NOT = { has_global_flag = disable_ruthenian_independence }
+		tag = WHI
+		OR = {
+			KIE = {
+				ai = yes
+				is_subject = yes
+			}	
+			CHR = {
+				ai = yes
+				is_subject = yes
+			}	
+		}	
+		OR = {
+			exists = KIE
+			exists = CHR
+		}	
+		exists = LIT
+		#is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.1
+			is_year = 1361
+		}
+	}
+	
+	option = { # Go to war
+		name = "flaflavorlith.501.a"
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = yes
+					war_exhaustion = 10
+				}
+			}
+			 
+		}
+		set_country_flag = fight_back_against_kyiv_chernivgov
+		KIE = {
+			create_alliance = CHR
+			# declare_war_with_cb = {
+				# who = WHI
+				# casus_belli = cb_independence_war
+			# }
+		}	
+		custom_tooltip = flaflavorlith.501.a.tooltip
+		hidden_effect = {
+			LIT = {
+				country_event = { id = flaflavorlith.502 }
+			}
+			LIT = {
+				create_guarantee = KIE
+			}
+			LIT = {
+				create_guarantee = CHR
+			}			
+		}
+	}
+	option = { # Let them go
+		name = "flaflavorlith.501.b"
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = no
+					NOT = { war_exhaustion = 10 }
+				}
+			}
+		}
+		custom_tooltip = flaflavorlith.502.b.tooltip
+		add_stability = -2
+		add_prestige = -25
+		LIT = {
+			set_country_flag = supported_ruthenian_independence
+		}	
+	}
+}
+
+# Kyiv and Chernigov Revolt against the Golden Horde # Lithuanian Response
+country_event = {
+	id = flaflavorlith.502
+	title = "flaflavorlith.502.EVTNAME2"
+	desc = "flaflavorlith.502.EVTDESC2"
+	picture = BATTLE_VISTULA_LAGOON_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = { # Aid Them
+		name = "flaflavorlith.502.a"
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = yes
+					war_exhaustion = 10
+				}
+			}
+		}
+		set_country_flag = supported_ruthenian_independence
+		add_opinion = {
+			who = KIE
+			modifier = supported_ruthenian_independence_from_GLH
+		}
+		KIE = {
+			add_opinion = {
+				who = ROOT
+				modifier = supported_ruthenian_independence_from_GLH
+			}
+		}
+		add_opinion = {
+			who = CHR
+			modifier = supported_ruthenian_independence_from_GLH
+		}
+		CHR = {
+			add_opinion = {
+				who = ROOT
+				modifier = supported_ruthenian_independence_from_GLH
+			}
+		}		
+		create_alliance = KIE
+		create_alliance = CHR
+		support_independence_of = KIE
+		support_independence_of = CHR
+		KIE = {
+			declare_war_with_cb = {
+				who = WHI
+				casus_belli = cb_independence_war
+			}
+		}	
+		hidden_effect = {
+			KIE = {
+				add_treasury = 100
+				add_army_tradition = 35
+				add_manpower = 6.5				
+				create_general = { tradition = 60 }
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+			}		
+			CHR = {
+				add_treasury = 100
+				add_army_tradition = 35
+				add_manpower = 6.5
+				create_general = { tradition = 60 }			
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+			}		
+		}	
+	}
+	option = { # stay out of this
+		name = "flaflavorlith.502.b"
+		ai_chance = { 
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = no
+					NOT = { war_exhaustion = 10 }
+				}
+			}
+		}
+		add_prestige = -10
+		hidden_effect = {
+			KIE = {
+				declare_war_with_cb = {
+					who = WHI
+					casus_belli = cb_independence_war
+				}
+			}
+			KIE = {
+				add_treasury = 100
+				add_army_tradition = 35
+				add_manpower = 6.5				
+				create_general = { tradition = 60 }
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+			}		
+			CHR = {
+				add_treasury = 100
+				add_army_tradition = 35
+				add_manpower = 6.5				
+				create_general = { tradition = 60 }			
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+			}					
+		}	
+	}
+}
+
+# Vicotry at Blue Waters # For Lithuania
+country_event = {
+	id = flaflavorlith.503
+	title = "flaflavorlith.503.EVTNAME3"
+	desc = "flaflavorlith.503.EVTDESC3"
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
+	trigger = {
+		NOT = { has_global_flag = disable_ruthenian_independence }
+		tag = LIT
+		OR = {
+			KIE = {
+				is_at_war = no
+				is_subject = no
+			}	
+		}	
+		OR = {
+			exists = KIE
+			exists = CHR
+		}	
+		has_country_flag = supported_ruthenian_independence
+		is_at_war = no
+	}	
+	
+	option = {
+		name = "flaflavorlith.503.a"
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 20
+		}		
+		if = {
+			limit = {
+				KIE = {
+					is_subject = no
+				}
+			}
+			LIT = {
+				vassalize = KIE
+			}
+			KIE = {
+				add_liberty_desire = -50
+			}	
+			KIE = {
+				inherit = PDA
+			}				
+		}	
+		if = {
+			limit = {
+				CHR = {
+					is_subject = no
+				}
+			}
+			LIT = {
+				vassalize = CHR
+			}
+			CHR = {
+				add_liberty_desire = -50
+			}				
+		}			
+		#vassalize = DNZ
+	}
+	
+	option = {
+		name = "flaflavorlith.503.b"
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 20
+		}
+		if = {
+			limit = {
+				KIE = {
+					is_subject = no
+				}
+			}
+			LIT = {
+				create_march = KIE
+			}
+			KIE = {
+				add_liberty_desire = -50
+			}	
+			KIE = {
+				inherit = PDA
+			}	
+		}	
+		if = {
+			limit = {
+				CHR = {
+					is_subject = no
+				}
+			}
+			LIT = {
+				create_march = CHR
+			}
+			CHR = {
+				add_liberty_desire = -50
+			}	
+		}	
+	}	
+}
+
+# Defeat at Blue Waters - Golden Horde
+country_event = {
+	id = flaflavorlith.504
+	title = "flaflavorlith.504.EVTNAME4"
+	desc = "flaflavorlith.504.EVTDESC4"
+	picture = IMPALED_SOLDIERS_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
+	trigger = {
+		NOT = { has_global_flag = disable_ruthenian_independence }
+		tag = WHI
+		OR = {
+			KIE = {
+				is_at_war = no
+				is_subject = yes
+			}	
+		}	
+		OR = {
+			exists = KIE
+			exists = CHR
+		}	
+		is_at_war = no
+		has_country_flag = fight_back_against_kyiv_chernivgov
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "flaflavorlith.504.a"
+		custom_tooltip = flaflavorlith.504.weakened.whitehorde.tooptip
+		add_stability = -2
+		add_prestige = -25
+	}
+}
+	
+# An Opportunity for Revolt - Player led Kyiv or Chernigov
+country_event = {
+	id = flaflavorlith.505
+	title = "flaflavorlith.505.t"
+	desc = "flaflavorlith.505.d"
+	picture = SIEGE_eventPicture
+	
+	trigger = {
+		is_year = 1358
+		NOT = { is_year = 1368 }
+		OR = {
+			AND = {
+				tag = KIE
+				was_player = yes
+			}
+			AND = {
+				tag = CHR
+				was_player = yes
+			}			
+		}	
+		is_subject = yes
+		is_at_war = no
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = { # It is time we sought Independence - Kyiv
+		trigger = {
+			tag = KIE
+		}	
+		name = flaflavorlith.505.a
+		custom_tooltip = flaflavorlith.505.ultimatum.tooltip # Ultimatum
+		custom_tooltip = flaflavorlith.505.a.tooltip # Will make note of Kyiv inheritance
+		hidden_effect = {
+			WHI = {
+				country_event = { id = flaflavorlith.5015 }
+			}			
+		}
+	}
+	option = { # It is time we sought Independence - Chernigov
+		trigger = {
+			tag = CHR
+		}	
+		name = flaflavorlith.505.b
+		custom_tooltip = flaflavorlith.505.ultimatum.tooltip # Ultimatum		
+		custom_tooltip = flaflavorlith.505.b.tooltip # Will make note of Chernigov situation
+		hidden_effect = {
+			WHI = {
+				country_event = { id = flaflavorlith.5015 }
+			}			
+		}
+	}	
+	option = { # We will find Independence in another way - Disables the entire event chain
+		trigger = {
+			tag = KIE
+		}	
+		name = flaflavorlith.505.aa
+		custom_tooltip = flaflavorlith.505.aa.tooltip # Will make note of Kyiv inheritance
+		set_global_flag = disable_ruthenian_independence
+	}
+	option = { # We will find Independence in another way - Disables the entire event chain
+		trigger = {
+			tag = CHR
+		}	
+		name = flaflavorlith.505.bb
+		custom_tooltip = flaflavorlith.505.bb.tooltip # Will make note of Kyiv inheritance
+		set_global_flag = disable_ruthenian_independence
+	}	
+}
+
+## Triggered only event for if Kyiv or Chernigov is a player. Just a copy of .501
+country_event = { 
+	id = flaflavorlith.5015
+	title = "flaflavorlith.501.EVTNAME1"
+	desc = "flaflavorlith.501.EVTDESC1"
+	picture = BATTLE_VISTULA_LAGOON_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		# is_year = 1360
+		# NOT = { is_year = 1375 }
+		tag = WHI
+		OR = {
+			KIE = {
+				is_subject = yes
+			}	
+			CHR = {
+				is_subject = yes
+			}	
+		}	
+		OR = {
+			exists = KIE
+			exists = CHR
+		}	
+		exists = LIT
+		#is_at_war = no
+	}
+	
+	
+	option = { # Go to war
+		name = "flaflavorlith.501.a"
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = yes
+					war_exhaustion = 10
+				}
+			}
+			 
+		}
+		set_country_flag = fight_back_against_kyiv_chernivgov
+		KIE = {
+			create_alliance = CHR
+			# declare_war_with_cb = {
+				# who = WHI
+				# casus_belli = cb_independence_war
+			# }
+		}	
+		custom_tooltip = flaflavorlith.501.a.tooltip
+		hidden_effect = {
+			LIT = {
+				country_event = { id = flaflavorlith.502 }
+			}
+			LIT = {
+				create_guarantee = KIE
+			}
+			LIT = {
+				create_guarantee = CHR
+			}			
+		}
+	}
+	option = { # Let them go
+		name = "flaflavorlith.501.b"
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = no
+					NOT = { war_exhaustion = 10 }
+				}
+			}
+		}
+		add_stability = -2
+		add_prestige = -25
+		LIT = {
+			set_country_flag = supported_ruthenian_independence
+		}	
+	}
+}

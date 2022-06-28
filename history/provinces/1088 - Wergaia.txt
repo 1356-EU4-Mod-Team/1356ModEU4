@@ -1,7 +1,7 @@
 #1088 - Wergaia
 
-culture = aboriginal
-religion = animism
+culture = kulin
+religion = dreamtime
 capital = "Wergaia"
 trade_goods = unknown
 hre = no
