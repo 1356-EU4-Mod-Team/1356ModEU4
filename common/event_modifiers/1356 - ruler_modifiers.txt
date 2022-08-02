@@ -1,3 +1,9 @@
+1356_burgundian_succession_crisis = {
+	heir_chance = -0.95
+	monthly_heir_claim_increase = -1
+	block_introduce_heir = yes
+}
+
 #Timur
 kurtid_conquest = {
 

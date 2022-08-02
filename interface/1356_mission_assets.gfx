@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "mission_1356_flanders"
+		texturefile = "gfx//interface//missions//mission_1356_flanders.dds"
+	}
+	spriteType = {
+		name = "mission_1356_brabant"
+		texturefile = "gfx//interface//missions//mission_1356_brabant.dds"
+	}
+	spriteType = {
+		name = "mission_1356_holland"
+		texturefile = "gfx//interface//missions//mission_1356_holland.dds"
+	}
+	spriteType = {
+		name = "mission_1356_luxembourg"
+		texturefile = "gfx//interface//missions//mission_1356_luxembourg.dds"
+	}
+	spriteType = {
+		name = "mission_1356_namur"
+		texturefile = "gfx//interface//missions//mission_1356_namur.dds"
+	}
+	spriteType = {
+		name = "mission_1356_hainaut"
+		texturefile = "gfx//interface//missions//mission_1356_hainaut.dds"
+	}
+	spriteType = {
+		name = "mission_1356_franche_comte"
+		texturefile = "gfx//interface//missions//mission_1356_franche_comte.dds"
+	}
+	spriteType = {
+		name = "mission_1356_guelders"
+		texturefile = "gfx//interface//missions//mission_1356_guelders.dds"
+	}
+}

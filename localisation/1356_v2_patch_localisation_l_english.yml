@@ -62,8 +62,8 @@
  crusader_states.3.a: "Now that we hold it, it shall hold its proper name!"
  
  #Decisions
- arles_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Arles§ you will no longer be allowed to form the §YKingdom of Lotharingia§."
- lotharingia_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Lotharingia§ you will no longer be allowed to form the §YKingdom of Arles§." 
+ arles_formation_warning_tt: "§RWARNING:§!\nBy forming §YThe Kingdom of Arles§! you will no longer be allowed to form the §YKingdom of Lotharingia§!."
+ lotharingia_formation_warning_tt: "§RWARNING:§!\nBy forming §YThe Kingdom of Lotharingia§! you will no longer be allowed to form the §YKingdom of Arles§!." 
  fla_maghreb.8.d: "There was a time when being considered a Berber was common, and even furthermore when the Berbers were not mere Nomadic Muslims from North Africa. However today they are little more than tribal pests to our great [ROOT.GovernmentName]. It appears that the Berbers of [Root.GetName] have begun to assimilate into our ways and beliefs."
  
  serbian_flavour.999.t: "temp"

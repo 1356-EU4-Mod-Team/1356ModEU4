@@ -1,4 +1,10 @@
 ﻿l_english:
+ #Rebels
+ holland_cod_faction_rebels_name:0 "Cod Faction"
+ holland_cod_faction_rebels_desc:0 "The Cod faction is composed of an alliance of Dutch cities seeking to topple our goverment and instating one more to their liking."
+ holland_cod_faction_rebels_army:0 "Cod Faction Army"
+ holland_cod_faction_rebels_demand:0 ""
+ holland_cod_faction_rebels_demand_desc:0 ""
 
  #cb
  cb_restore_personal_union_burgundy: "Restore Personal Union"

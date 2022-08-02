@@ -23,7 +23,7 @@ capital = 192	# Dijon
 	set_ruler_flag = "burgundy_inheritance"
 }
 
-1356.5.14 = { # 1 year before real
+1357.5.14 = {
 	queen = {
 		country_of_origin = FLA
 		name = "Marguerite"
@@ -168,12 +168,18 @@ capital = 192	# Dijon
 1467.6.16 = {
 	monarch = {
 		name = "Charles I"
-		dynasty = "de Bourgogne"
+		dynasty = "de Valois-Bourgogne"
 		birth_date = 1433.11.10
 		adm = 2
 		dip = 0
 		mil = 4
 		leader = { name = "Charles I le Téméraire"	type = general	fire = 3	shock = 3	manuever = 3	siege = 1}
+	}
+	set_ruler_flag = is_charles_of_burg_flag
+	add_country_modifier = {
+		name = burgundian_succession_crisis
+		duration = -1
+		hidden = yes
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
@@ -181,7 +187,7 @@ capital = 192	# Dijon
 	heir = {
 		name = "Marie"
 		monarch_name = "Marie I"
-		dynasty = "de Bourgogne"
+		dynasty = "de Valois-Bourgogne"
 		birth_date = 1457.2.13
 		death_date = 1482.3.27
 		claim = 95
@@ -209,7 +215,7 @@ capital = 192	# Dijon
 1477.1.6 = {
 	monarch = {
 		name = "Marie I"
-		dynasty = "de Bourgogne"
+		dynasty = "de Valois-Bourgogne"
 		birth_date = 1457.2.13
 		adm = 3
 		dip = 4
