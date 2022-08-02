@@ -1,4 +1,4 @@
-1356_burgundian_inheritance_heir_check = {
+burgundian_inheritance_heir_check_1356 = {
 	if = {
 		limit = {
 			is_year = 1430
@@ -23,7 +23,6 @@
 			}
 		}
 		set_heir_flag = 1356_is_charles_of_burg_flag
-		ROOT = { country_event = { id = fetishist_flavor.2 } }
 	}
 	else_if = {
 		limit = {
@@ -52,12 +51,12 @@
 	}
 }
 
-1356_burgundian_inheritance_start_effect = {
+burgundian_inheritance_start_effect_1356 = {
 	#Burgundian succession stuff
 	if = {
 		limit = {
 			tag = BUR
-			is_year = 1440
+			is_year = 1430
 			has_country_modifier = 1356_burgundian_succession_crisis
 			NOT = { has_country_flag = 1356_burgundian_succession_has_already_fired }
 			NOT = { 
@@ -83,7 +82,7 @@
 							NOT = { heir_claim = 51 }
 						}
 					}
-					NOT = { legitimacy = 40 } #medium to weak claimants should not be good enough
+					NOT = { legitimacy = 60 } #medium to weak claimants should not be good enough
 					has_ruler_flag = 1356_mary_is_heir
 					has_heir_flag = 1356_mary_is_heir
 				}
@@ -118,13 +117,13 @@
 	else_if = {
 		limit = {
 			tag = BUR
-			is_year = 1440	
+			is_year = 1430	
 			has_regency = no
 			has_ruler_flag = 1356_is_charles_of_burg_flag #this flag is assigned by 1356_burgundian_inheritance_heir_check
 			NOT = { has_country_modifier = 1356_burgundian_succession_crisis } 
 			NOT = { has_country_flag = 1356_burgundian_succession_has_already_fired }
 		}
-		clr_ruler_flag = is_charles_of_burg_flag
+		clr_ruler_flag = 1356_is_charles_of_burg_flag
 		add_country_modifier = { #country modifier used to weaken Charles's fertility, is also used as a trigger for the inheritance event above.
 			name = 1356_burgundian_succession_crisis
 			duration = -1

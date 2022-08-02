@@ -98,32 +98,10 @@ country_event = {
 		add_ruler_personality = silver_tongue_personality
 	}
 }
-##Hidden event setting up Burgundian Inheritance for ruler of BUR/ARE/LOT in 1440-1470s
-country_event = {
-	id = flavor_fla_bur.2
-	title = flavor_fla_bur.2.t
-	desc = flavor_fla_bur.2.desc
-	picture = DIPLOMACY_eventPicture
-
-	hidden = yes
-	
-	trigger = {
-		is_year = 1430
-		NOT = { is_year = 1470 }
-		NOT = { has_heir_flag = is_charles_of_burg_flag }
-		NOT = { has_ruler_flag = is_charles_of_burg_flag }
-	}	
-	immediate = {
-		set_heir_flag = is_charles_of_burg_flag
-	}	
-	option = {
-		ai_chance = { factor = 1 }
-	}
-}
 
 ### Mary is appointed regent - copied from Vanilla, adapted to work in 1356
 country_event = {
-	id = flavor_fla_bur.3
+	id = flavor_fla_bur.2
 	title = "incidents_bur_inheritance.0.t"
 	desc = "incidents_bur_inheritance.0.d"
 	picture = DEATH_OF_HEIR_eventPicture
@@ -141,14 +119,14 @@ country_event = {
 		OR = {
 			AND = {
 				has_heir = no
-				is_year = 1457
+				is_year = 1450
 			}
 			AND = {
 				OR = {
 					dynasty = "de Bourgogne"
 					dynasty = "de Valois-Bourgogne"
 				}
-				ruler_age = 43
+				ruler_age = 40
 				NOT = {
 					heir_age = 15
 				}
@@ -161,7 +139,7 @@ country_event = {
 
 		modifier = {
 			factor = 0.5
-			is_year = 1473
+			is_year = 1470
 		}
 	}
 	

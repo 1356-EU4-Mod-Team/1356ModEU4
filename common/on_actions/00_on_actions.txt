@@ -1104,8 +1104,7 @@ on_monarch_death = {
 		delhi_empire.102		
 		novgorod_princes.1
 	}
-	1356_burgundian_inheritance_start_effect = yes
-	1356_burgundian_inheritance_heir_check = yes
+	burgundian_inheritance_start_effect_1356 = yes
 }
 
 # country
@@ -1362,7 +1361,7 @@ on_new_heir = {
 		}
 		clr_country_flag = had_bmv
 	}
-	1356_burgundian_inheritance_heir_check = yes
+	burgundian_inheritance_heir_check_1356 = yes
 }
 
 # country
