@@ -12,7 +12,7 @@ trade_goods = paper
 base_manpower = 4    
 capital = "Ancona" 
 is_city = yes 
-estate = estate_burghers # Or nobles
+  # Or nobles
 add_core = PAP
 add_core = ANC
 

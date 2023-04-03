@@ -9,7 +9,7 @@ base_production = 5
 trade_goods = grain 
 base_manpower = 3
 capital = "Rzhev"
-estate = estate_nobles
+ 
 is_city = yes
 add_core = LIT
 add_core = MOS

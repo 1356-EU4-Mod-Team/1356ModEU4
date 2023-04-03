@@ -10,7 +10,7 @@ religion = shamanism #Fetishism
 capital = "Timbo"
 trade_goods = unknown
 hre = no
-estate = estate_nobles
+ 
 base_tax = 3 
 base_production = 3
 

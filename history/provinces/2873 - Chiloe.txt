@@ -16,7 +16,7 @@ base_production = 1
 base_manpower = 1
 
 discovered_by = south_american
-
+1356.12.27 = { owner = --- tribal_owner = --- }
 1520.1.1  = { discovered_by = SPA } # Discovered by Ferdinand Magellan
 1558.1.1  = {	owner = SPA
 		controller = SPA
@@ -26,8 +26,9 @@ discovered_by = south_american
 	    }
 1600.1.1  = { unrest = 9 } # Great uprising, all Spaniards south of Biobio are driven out
 1601.1.1  = { unrest = 0 }
-1810.9.18 = {	owner = CHL
-		controller = CHL
-		add_core = CHL
-	    } # First National Government Junta
+1810.9.18 = {	
+	owner = CHL
+	controller = CHL
+	add_core = CHL
+} # First National Government Junta
 

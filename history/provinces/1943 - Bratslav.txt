@@ -12,7 +12,7 @@ trade_goods = livestock
 base_manpower = 2 
 capital = "Bratslav"
 is_city = yes
-estate = estate_nobles
+ 
 add_core = PDA
 
 discovered_by = western

@@ -10,7 +10,7 @@ base_production = 1
 trade_goods = fish 
 base_manpower = 5
 capital = "Salerno" 
-estate = estate_nobles
+ 
 is_city = yes	# Estimated
 add_core = NAP
 

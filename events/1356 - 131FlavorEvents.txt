@@ -144,7 +144,7 @@ country_event = {
 			fixed = yes
 		}	
 		hidden_effect = {
-			exile_ruler_as = last_transoxiana_borijin
+			exile_ruler_as = { name = last_transoxiana_borijin }
 			add_truce_with = BLU
 			add_truce_with = CHG
 			add_treasury = 350
@@ -363,7 +363,7 @@ country_event = {
 				who = YUA
 				modifier = tamerlane_dethroned_borjigin
 			}			
-		}	
+		}
 	}
 	option = {
 		ai_chance = {

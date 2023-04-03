@@ -19,8 +19,9 @@ technology = {
 	infantry_shock 		= 	0.10	
 	cavalry_shock  		= 	0.8	
 	#artillery_shock 	=	0.05
-	land_morale 		= 	1.0
+	land_morale 		= 	1.1
 	military_tactics = -0.45
+	combat_width = 2 #PREV 4
 
 	fort_15th = yes
 	
@@ -99,7 +100,7 @@ technology = {
 	infantry_shock 	= 	0.10
 	land_morale = 0.5
 	military_tactics = 0.15
-	administrative_efficiency = 0.05
+	administrative_efficiency = 0.03
 	
 }
 
@@ -112,7 +113,8 @@ technology = {
 	}	
 	land_morale = 0.50
 	administrative_efficiency = 0.02
-	combat_width = 2 #PREV 4
+	military_tactics = 0.15
+	combat_width = 1	
 	#Western
 	enable = 1356-early_western_royal_guard 
 	#Eastern
@@ -138,22 +140,8 @@ technology = {
 		feudalism = 0.50
 		mercantilism_institution = 0.15		
 	}	
-	land_morale = 0.30
-	military_tactics = 0.15
-	combat_width = 2
-	
-	#Anatolian
-	enable = 1356-early_anatolian_inf
-	enable = 1356-early_anatolian_pikemen
-	
-	#Chinese
-	
-	#North American
-	enable = 1356-early_na_tomahawk_infantry
-	enable = 1356-early_na_war_shields
-	#South American
-	enable = 1356-early_sa_incan_axemen
-	enable = 1356-early_sa_incan_bola_warriors
+	land_morale = 0.15
+	combat_width = 1
 
 }
 
@@ -183,7 +171,23 @@ technology = {
 	enable = 1356-meso_zapotec_early_tribal_warriors
 	
 	#High American
-	enable = ha_xantican_warrior	
+	enable = ha_xantican_warrior
+
+
+	#Moved to Tech 4 to Standardised things
+	
+	#Anatolian
+	enable = 1356-early_anatolian_inf
+	enable = 1356-early_anatolian_pikemen
+	
+	#Chinese
+	
+	#North American
+	enable = 1356-early_na_tomahawk_infantry
+	enable = 1356-early_na_war_shields
+	#South American
+	enable = 1356-early_sa_incan_axemen
+	enable = 1356-early_sa_incan_bola_warriors	
 }
 
 # Pre-era techs
@@ -203,7 +207,7 @@ technology = { #OG Tech 0
 	
 	administrative_efficiency = 0.02
 	
-	land_morale = 0.3
+	land_morale = 0.25
 	infantry_fire = 0.10
 }
 
@@ -217,7 +221,7 @@ technology = { #OG tech 1
 	}	
 	infantry_shock = 0.2
 	military_tactics = 0.20
-	administrative_efficiency = 0.05
+	administrative_efficiency = 0.03
 	#land_morale = 0.1
 	
 	#Eastern
@@ -277,6 +281,7 @@ technology = { #OG tech 2
 	
 	infantry_shock		= 	0.1
 	administrative_efficiency = 0.03
+	land_morale = 0.10
 	
 	#Western
 	enable = halberd_infantry

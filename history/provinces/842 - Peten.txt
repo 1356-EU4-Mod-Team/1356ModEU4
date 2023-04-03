@@ -16,7 +16,7 @@ add_core = ITZ
 
 
 discovered_by = mesoamerican
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1440.1.1 = { owner = ITZ controller = ITZ }
 1522.1.1 = { discovered_by = SPA }
 

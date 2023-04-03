@@ -17,7 +17,7 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 2
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 discovered_by = mesoamerican
 
 1428.1.1  = { owner = AZT controller = AZT add_core = AZT }

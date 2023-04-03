@@ -10,7 +10,7 @@ base_production = 1
 trade_goods = grain 
 base_manpower = 1
 capital = "Bobrujsk"
-estate = estate_nobles
+ 
 is_city = yes
 add_core = LIT
 discovered_by = western

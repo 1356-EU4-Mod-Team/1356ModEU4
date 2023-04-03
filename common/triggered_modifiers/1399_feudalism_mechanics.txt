@@ -172,33 +172,3 @@ reliance_on_feudalism = { # High Feudal Retainment ### Nerfs for OP Policies
 	possible_policy = -1
 	#icon = 1
 }
-
-high_feudal_burecracy = { # High Feudal Retainment ### Nerf for Admin Eff policy
-	potential = {
-		has_institution = renaissance
-		ai = no
-	}
-
-	trigger = {
-		has_institution = renaissance
-		has_active_policy = 1356_reconstruct_state_burucracy	
-	}
-	
-	administrative_efficiency = -0.075
-	#icon = 1
-}
-
-high_feudal_ae_impact = { # High Feudal Retainment ### Nerf for Aggressive Expansion
-	potential = {
-		has_institution = renaissance
-		ai = no
-	}
-
-	trigger = {
-		has_institution = renaissance
-		has_active_policy = 1356_justify_war_ae_debuff	
-	}
-	
-	ae_impact = 0.10
-	#icon = 1
-}

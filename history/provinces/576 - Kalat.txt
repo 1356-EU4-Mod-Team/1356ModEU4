@@ -14,7 +14,7 @@ base_manpower = 3
 is_city = yes
 fort_15th = yes
 add_core = BAL
-estate = estate_nobles
+ 
 
 # discovered_by = KAS
 discovered_by = indian

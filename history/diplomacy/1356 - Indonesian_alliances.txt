@@ -147,7 +147,7 @@ dependency = {
 	first = MAJ
 	second = BTN
 	start_date = 1356.1.1
-	end_date = 1405.1.1
+	end_date = 1356.12.28
 }
 
 dependency = {
@@ -163,7 +163,7 @@ dependency = {
 	first = MAJ
 	second = MKS
 	start_date = 1356.1.1
-	end_date = 1405.1.1
+	end_date = 1356.12.28
 }
 
 dependency = {

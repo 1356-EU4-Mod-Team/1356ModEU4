@@ -16,7 +16,7 @@ is_city = yes
 
 discovered_by = nomad_group
 discovered_by = chinese
-1356.12.26  = {	
+1356.12.24  = {	
 	owner = X01
 	controller = X01
 	add_core = X01

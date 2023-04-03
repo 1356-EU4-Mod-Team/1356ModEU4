@@ -19,7 +19,7 @@ native_hostileness = 1
 
 
 discovered_by = north_american
-
+1356.12.27 = { owner = --- owner = --- owner = --- }
 1541.1.1 = { discovered_by = SPA } # Francisco Vásquez de Coronado
 
 1731.1.1 = {

@@ -147,4 +147,20 @@ busy_conquering_the_world_and_your_next = {
 supported_ruthenian_independence_from_GLH = {
 	opinion = 100
 	yearly_decay = 1.5
-}		
+}	
+
+
+# Scripted Relations
+1356_past_transgressions = {
+	opinion = -100
+	yearly_decay = 3.0
+}
+
+1356_past_cordial_relations = {
+	opinion = 100
+	yearly_decay = 2.0
+}
+
+
+	
+	

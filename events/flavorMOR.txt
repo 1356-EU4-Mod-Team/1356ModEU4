@@ -217,8 +217,8 @@ country_event = {
 				size = 3
 				culture = berber
 				religion = sunni
-				leader = "Muhammad ibn Yahya Wattasid"
-			}
+				leader = "Muhammad"
+				leader_dynasty = "ibn Yahya Wattasid"			}
 		}
 	}
 	
@@ -265,7 +265,7 @@ country_event = {
 			limit = {
 				has_heir = yes
 			}
-			kill_heir = {}
+			kill_heir = { allow_new_heir = no }
 		}
 	}
 	
@@ -281,7 +281,8 @@ country_event = {
 				size = 3
 				religion = sunni
 				culture = berber
-				leader = "Muhammad ibn Yahya Wattasid"
+				leader = "Muhammad"
+				leader_dynasty = "ibn Yahya Wattasid"
 			}
 		}
 	}

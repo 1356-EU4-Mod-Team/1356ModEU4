@@ -650,7 +650,7 @@ CHP_ideas = { #Champagne ideas
 	}
 	
 	bonus = {
-		artillery_bonus_vs_fort = 1
+		artillery_levels_available_vs_fort = 1
 	}
 	
 	trigger = {
@@ -2586,46 +2586,46 @@ ARB_ideas = {
 	}
 }
 
-BUK_ideas = {
+# BUK_ideas = { ## Removed in favor of Pdx's ideas ### Also was crashing the game
 
-start = {
-	cavalry_power = 0.25
-	core_creation = -0.15
-}
+# start = {
+	# cavalry_power = 0.25
+	# core_creation = -0.15
+# }
 
-bonus = {
-	manpower_recovery_speed = 0.2
-}
-trigger = {
-	tag = BUK
-}
-free = yes
+# bonus = {
+	# manpower_recovery_speed = 0.2
+# }
+# trigger = {
+	# tag = BUK
+# }
+# free = yes
 
-Bukharian_state_education = {
-	technology_cost = -0.05
-	innovativeness_gain = 0.5
-}
-buk_steppe_leaders = {
-	leader_land_shock = 1
-}
-buk_artists_and_poets = {
-	prestige = 1
-}
-buk_silk_road = {
-	merchants = 1
-}
-buk_steppe_warrior_culture = {
-	global_manpower_modifier = 0.25	
-}
+# Bukharian_state_education = {
+	# technology_cost = -0.05
+	# innovativeness_gain = 0.5
+# }
+# buk_steppe_leaders = {
+	# leader_land_shock = 1
+# }
+# buk_artists_and_poets = {
+	# prestige = 1
+# }
+# buk_silk_road = {
+	# merchants = 1
+# }
+# buk_steppe_warrior_culture = {
+	# global_manpower_modifier = 0.25	
+# }
 
-buk_famous_court = {
-	advisor_cost = -0.15
-}
+# buk_famous_court = {
+	# advisor_cost = -0.15
+# }
 
-Buk_Khan_pride = {
-	land_morale = 0.1
-}
-}
+# Buk_Khan_pride = {
+	# land_morale = 0.1
+# }
+# }
 
 # WAK_ideas = { #Kitara
 	# start = {
@@ -2990,3 +2990,38 @@ ERN_ideas = { #Eranshahr TAG ideas
 	}
 }
 
+TES_ideas = {
+	start = {
+		siege_ability = 0.15
+		development_cost = -0.1
+	}
+	bonus = {
+		technology_cost = -0.1
+	}
+	trigger = {
+		tag = TES
+	}	
+	free = yes
+	
+	code_of_laws = { # Same as Serbia
+	}
+	bastion_of_orthodoxy = { # Same as Serbia
+	}
+	# home_of_hussars = {
+		# cavalry_cost = -0.15
+		# cavalry_power = 0.15
+	# }	
+	byz_state_admin_reform = { # Same as Byzantium
+	}	
+	alemannic_guard = { # Same as Serbia
+	}
+	# gold_mines = {
+		# inflation_reduction = 0.1
+	# }
+	repopulation_of_countryside = { # Same as Byzantium
+	}	
+	stefan_dusan_legacy = { #PREV mercenary_armies
+	}	
+	balkan_hajduks = {
+	}
+}	

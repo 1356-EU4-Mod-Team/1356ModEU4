@@ -6,7 +6,7 @@ culture = transylvanian #Transylvanian Saxons
 religion = catholic
 capital = "Sibiu"
 trade_goods = cloth
-estate = estate_burghers
+ 
 hre = no
 base_tax = 3
 base_production = 3

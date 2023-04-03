@@ -18,7 +18,7 @@ discovered_by = andean
 extra_cost = 8
 center_of_trade = 1
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1467.1.1 = {
 	owner = INC
 	controller = INC

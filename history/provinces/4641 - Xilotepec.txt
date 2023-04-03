@@ -21,7 +21,7 @@ native_hostileness = 2
 
 discovered_by = mesoamerican
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1450.1.1 = { 
 	owner = TAR
 	controller = TAR

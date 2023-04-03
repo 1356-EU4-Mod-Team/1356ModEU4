@@ -4,9 +4,9 @@ gas_new_kingdom_group = { #Create a New Kingdom - Left Side
 	ai = yes
 	potential = { 
 		tag = GUY
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_country_flag = 1356_stay_gascony }
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_country_flag = 1356_stay_gascony }
+		#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -138,9 +138,9 @@ gas_new_kingdom_group_2 = { #Create a New Kingdom - Special Missions
 	ai = yes
 	potential = { 
 		tag = GUY
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_country_flag = 1356_stay_gascony }
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_country_flag = 1356_stay_gascony }
+		#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -260,9 +260,9 @@ gas_new_kingdom_group_3 = { #Create a New Kingdom - Right Side
 	ai = yes
 	potential = { 
 		tag = GUY
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_country_flag = 1356_stay_gascony }
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_country_flag = 1356_stay_gascony }
+		#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -402,8 +402,8 @@ gas_secure_gascony_group = { #Secure Duchy of Gascony -
 	potential = { 
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -545,160 +545,160 @@ gas_secure_gascony_group = { #Secure Duchy of Gascony -
 	}
 }
 
-gas_minor_form_gascony_group = { #Gascon Minor form Gascony Group
-	slot = 4
-	generic = no
-	ai = yes
-	potential = { 
-		OR = {
-			tag = AMG
-			tag = FOI
-		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
-	}
-	has_country_shield = yes
+# gas_minor_form_gascony_group = { #Gascon Minor form Gascony Group
+	# slot = 4
+	# generic = no
+	# ai = yes
+	# potential = { 
+		# OR = {
+			# tag = AMG
+			# tag = FOI
+		# }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	# }
+	# has_country_shield = yes
 	
-	GAS_minor_secure_our_duchy = { #Secure Gascony
-		icon = mission_unite_home_region
-		required_missions = { GAS_secure_our_independence }
-		position = 3
-		completed_by = 1821.1.1
-		provinces_to_highlight = {
-			OR = {
-				province_id = 173
-				province_id = 174
-				province_id = 175
-				province_id = 176
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			173 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			guyenne_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			194 = {
-				add_permanent_claim = ROOT
-			}
-			195 = {
-				add_permanent_claim = ROOT
-			}
-			4112 = {
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	GAS_minor_secure_our_culture = { #Secure the Gascons
-		icon = mission_conquer_50_development
-		required_missions = { GAS_minor_secure_our_duchy }
-		position = 4
-		completed_by = 1821.1.1
-		provinces_to_highlight = {
-			OR = {
-				province_id = 194
-				province_id = 195
-				province_id = 4112
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			194 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			195 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4112 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+	# GAS_minor_secure_our_duchy = { #Secure Gascony
+		# icon = mission_unite_home_region
+		# required_missions = { GAS_secure_our_independence }
+		# position = 3
+		# completed_by = 1821.1.1
+		# provinces_to_highlight = {
+			# OR = {
+				# province_id = 173
+				# province_id = 174
+				# province_id = 175
+				# province_id = 176
+			# }
+			# NOT = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+		# }
+		# trigger = {
+			# 173 = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# guyenne_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+		# }
+		# effect = {
+			# 194 = {
+				# add_permanent_claim = ROOT
+			# }
+			# 195 = {
+				# add_permanent_claim = ROOT
+			# }
+			# 4112 = {
+				# add_permanent_claim = ROOT
+			# }
+		# }
+	# }
+	# GAS_minor_secure_our_culture = { #Secure the Gascons
+		# icon = mission_conquer_50_development
+		# required_missions = { GAS_minor_secure_our_duchy }
+		# position = 4
+		# completed_by = 1821.1.1
+		# provinces_to_highlight = {
+			# OR = {
+				# province_id = 194
+				# province_id = 195
+				# province_id = 4112
+			# }
+			# NOT = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+		# }
+		# trigger = {
+			# 194 = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# 195 = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# 4112 = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 
-		}
-		effect = {
-			add_adm_power = 50
-			add_dip_power = 50
-			add_prestige = 5
-		}
-	}
+		# }
+		# effect = {
+			# add_adm_power = 50
+			# add_dip_power = 50
+			# add_prestige = 5
+		# }
+	# }
 	
-	gas_minor_form_gascony = { #Claim the title Kingdom of Gascony
-		icon = mission_monarch_in_throne_room
-		required_missions = { GAS_minor_secure_our_culture }
-		position = 6
-		completed_by = 1821.1.1
-		provinces_to_highlight = {
-			OR = {
-				province_id = 174
-				province_id = 173
-				province_id = 175
-				province_id = 176
-				province_id = 4112
-				province_id = 194
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			NOT = { exists = GUY }
-			is_at_war = no
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
-			primary_culture = gascon
-			owns_core_province = 174	# Aquitaine
-			owns_core_province = 173	# Labourd
-			owns_core_province = 175	# Armagnac
-			owns_core_province = 176	# Foix
-			owns_core_province = 4112	# Quercy
-			owns_core_province = 194	# Perigord
-		}
-		effect = {
-			change_tag = GUY
-			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
-			174 = { #Aquitaine
-				move_capital_effect = yes
-				add_base_manpower = 1
-				add_base_tax = 2
-			}
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			add_prestige = 25
-			if = {
-				limit = {
-					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			set_country_flag = formed_gascony_flag
-		}
-	}
+	# gas_minor_form_gascony = { #Claim the title Kingdom of Gascony
+		# icon = mission_monarch_in_throne_room
+		# required_missions = { GAS_minor_secure_our_culture }
+		# position = 6
+		# completed_by = 1821.1.1
+		# provinces_to_highlight = {
+			# OR = {
+				# province_id = 174
+				# province_id = 173
+				# province_id = 175
+				# province_id = 176
+				# province_id = 4112
+				# province_id = 194
+			# }
+			# NOT = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+		# }
+		# trigger = {
+			# NOT = { exists = GUY }
+			# is_at_war = no
+			# is_free_or_tributary_trigger = yes
+			# is_nomad = no
+			# primary_culture = gascon
+			# owns_core_province = 174	# Aquitaine
+			# owns_core_province = 173	# Labourd
+			# owns_core_province = 175	# Armagnac
+			# owns_core_province = 176	# Foix
+			# owns_core_province = 4112	# Quercy
+			# owns_core_province = 194	# Perigord
+		# }
+		# effect = {
+			# change_tag = GUY
+			# swap_non_generic_missions = yes
+			# remove_non_electors_emperors_from_empire_effect = yes
+			# 174 = { #Aquitaine
+				# move_capital_effect = yes
+				# add_base_manpower = 1
+				# add_base_tax = 2
+			# }
+			# if = {
+				# limit = {
+					# NOT = { government_rank = 2 }
+				# }
+				# set_government_rank = 2
+			# }
+			# add_country_modifier = {
+				# name = "centralization_modifier"
+				# duration = 7300
+			# }
+			# add_prestige = 25
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+					# OR = {
+						# ai = no
+						# AND = {
+							# ai = yes
+							# has_idea_group = default_ideas
+						# }
+					# }
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# set_country_flag = formed_gascony_flag
+		# }
+	# }
 	
-}
+# }
 
 gas_form_aquitaine_group = { #Secure Duchy of Gascony/The Kingdom of Aquitaine - Form Aquitaine
 	slot = 4
@@ -707,8 +707,8 @@ gas_form_aquitaine_group = { #Secure Duchy of Gascony/The Kingdom of Aquitaine -
 	potential = { 
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -774,8 +774,8 @@ gas_freedom = {
 			tag = FOI
 			tag = GUY
 		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -823,9 +823,9 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 	potential = { 
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
 		
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -1046,8 +1046,8 @@ gas_secure_brittany = {
 	potential = { 
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 		
@@ -1101,8 +1101,8 @@ gas_secure_france = { #Either Take France OR Take the Pyrenees
 	potential = { 
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+	#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -1393,8 +1393,8 @@ gas_african_ambitions = { #Lifted from Aquitaine Missions
 	
 	potential = { 
 		tag = GUY
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	

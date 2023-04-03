@@ -1,0 +1,2607 @@
+bur_integrate_PBG_tree = { #Burgundy/Arles/Lotharingia - Conquest of Arles tree
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		always = no
+		OR = {
+			tag = BUR
+			tag = ARE
+			tag = LOT
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+		
+	1356_bur_integrate_burgundy_county = {
+		icon = mission_unite_home_region
+		required_missions = { 1356_bur_enforce_union_over_flanders }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 88
+				province_id = 193
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			88 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			193 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = PBG }
+		}
+		effect = {
+			romandie_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			205 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+bur_arles_conquest_tree = { #Burgundy/Arles/Lotharingia - Conquest of Arles tree
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		always = no
+		OR = {
+			tag = BUR
+			tag = ARE
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+		
+	bur_romandie = {
+		icon = mission_unite_home_region
+		required_missions = { 1356_bur_integrate_burgundy_county }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = romandie_area
+				province_id = 205
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			romandie_area = {
+				type = all
+				owned_by = ROOT
+			}
+			205 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			provence_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			102 = {
+				add_permanent_claim = ROOT
+			}
+			1875 = {
+				add_permanent_claim = ROOT
+			}
+			103 = {
+				add_permanent_claim = ROOT
+			}
+			203 = {
+				add_permanent_claim = ROOT
+			}
+			204 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	bur_cisjurania = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { bur_romandie }
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = provence_area
+				province_id = 102
+				province_id = 1875
+				province_id = 103
+				province_id = 203
+				province_id = 204
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			provence_area = {
+				type = all
+				owned_by = ROOT
+			}
+			102 = {
+				owned_by = ROOT
+			}
+			1875 = {
+				owned_by = ROOT
+			}
+			103 = {
+				owned_by = ROOT
+			}
+			203 = {
+				owned_by = ROOT
+			}
+			204 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			
+			liguria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+			piedmont_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+}
+
+ARE_start_formation_tree = { #Burgundy/Arles - Form Arles Tree
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		always = no
+		OR = {
+			tag = BUR
+			tag = ARE
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	1356_bur_restore_arles_k = {
+		icon = mission_empire
+		required_missions = { bur_cisjurania 1356_petition_emperor_for_imperial_title }
+		position = 9
+		
+		trigger = {
+			tag = ARE
+			has_country_flag = formed_arles_flag
+		}	
+		effect = {
+			custom_tooltip = bur_form_are_tt
+			add_country_modifier = {
+				name = "bur_arles_mod"
+				duration = "7300"
+			}
+		}
+	}
+}
+
+ARE_push_west_tree = { #Arles - Push into Aquitaine Tree
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		tag = ARE
+		always = no
+	}
+	has_country_shield = yes
+	
+	1356_are_push_west_fra = { #Go take the Occitain provinces!
+		icon = mission_unite_home_region
+		required_missions = { 1356_bur_restore_arles_k }
+		position = 10
+		
+		provinces_to_highlight = {
+			OR = {
+				area = languedoc_area
+				province_id = 198
+				province_id = 199
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			languedoc_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			199 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			198 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+		}
+		effect = {
+			pyrenees_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			173 = { #Labourd
+				add_permanent_claim = ROOT
+			}
+			4112 = { 
+				add_permanent_claim = ROOT
+			}
+			194 = { 
+				add_permanent_claim = ROOT
+			}
+			195 = { 
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	1356_are_push_further_west_fra = {
+		icon = mission_cannons_firing
+		required_missions = { 1356_are_push_west_fra }
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				area = pyrenees_area
+				province_id = 173
+				province_id = 4112
+				province_id = 194
+				province_id = 195
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pyrenees_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			173 = { country_or_non_sovereign_subject_holds = ROOT }	
+			4112 = { country_or_non_sovereign_subject_holds = ROOT }	
+			194 = { country_or_non_sovereign_subject_holds = ROOT }	
+			195 = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		effect = {
+			add_country_modifier = {
+				name = "are_secured_lower_france"
+				duration = 7300
+			}
+		}
+	}
+
+	
+}
+
+bur_tree_5 = { #Burgundian Minor - Minor Tree to form Burgundy
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		always = no
+		OR = {
+			tag = NEV
+			tag = BAR 
+			tag = LOR 
+			tag = PBG
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	bur_minor_secure_our_independence = { #FREEDOM
+		icon = mission_monarch_in_throne_room
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		trigger = {
+			is_vassal = no
+			is_subject = no
+		}
+		effect = {
+			create_general = {
+				tradition = 35
+			}
+		}
+	}
+	bur_minor_take_burgundy = { #Take burgundy
+		icon = mission_conquer_50_development
+		required_missions = { bur_minor_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 191 #Nevers
+				province_id = 4392
+				province_id = 1877
+				province_id = 192
+				province_id = 193
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 191
+			owns_core_province = 4392
+			owns_core_province = 1877
+			owns_core_province = 192
+			owns_core_province = 193
+			
+		}
+		effect = {
+			add_prestige = 10
+		}
+	}
+	bur_minor_form_burgundy = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { bur_minor_take_burgundy }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 191 #Nevers
+				province_id = 4392
+				province_id = 1877
+				province_id = 192
+				province_id = 193
+			}
+	
+	}
+
+		trigger = {
+			NOT = { exists = BUR }
+			NOT = { has_country_flag = formed_burgundy_flag }
+			is_vassal = no
+			is_at_war = no
+			prestige = 15
+			legitimacy = 75
+			owns_core_province = 191
+			owns_core_province = 4392
+			owns_core_province = 1877
+			owns_core_province = 192
+			owns_core_province = 193	
+		}
+		effect = {
+			custom_tooltip = bur_minor_nation_form_tt
+			add_prestige = 5
+		}
+	}
+}
+
+LOT_lower_german_conquest_tree = { #Lotharingia - Lower German Conquest Tree
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		always = no
+		tag = LOT
+	}
+	has_country_shield = yes
+	
+	1356_LOT_trade_value = {
+		icon = mission_establish_high_seas_navy
+		required_missions = {  }
+		position = 4
+		
+		provinces_to_highlight = {
+			province_id = 1269
+			has_discovered = ROOT
+		}
+		trigger = {
+			1269 = {
+				highest_value_trade_node = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "lot_trade_value_mod"
+				duration = 7300
+			}
+		}
+	}
+	lot_create_universities = {
+		icon = mission_early_game_buildings
+		required_missions = { 1356_LOT_trade_value }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1878
+				province_id = 192
+			}
+		}
+		trigger = {
+			1878 = {
+				owned_by = ROOT
+				has_building = university
+			}
+			192 = {
+				owned_by = ROOT
+				has_building = university
+			}
+		}
+		effect = {
+			change_innovativeness = 3
+			add_country_modifier = {
+				name = "lot_built_universities"
+				duration = 7300
+			}
+		}
+	}
+	lot_manufacturies = {
+		icon = mission_have_manufactories
+		required_missions = { lot_create_universities }
+		position = 6
+		
+		trigger = {
+			OR = {
+				has_institution = enlightenment
+				is_year = 1700
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+			93 = {
+				owned_by = ROOT
+			}
+			94 = {
+				owned_by = ROOT
+			}	
+			189 = {
+				owned_by = ROOT
+			}	
+			1880 = {
+				owned_by = ROOT
+			}	
+		}
+		
+		effect = {
+			93 = {
+				add_base_production = 4
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "lot_built_manufacturies_mod"
+					duration = -1
+				}
+			}
+			94 = {
+				add_base_production = 4
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "lot_built_manufacturies_mod"
+					duration = -1
+				}
+			}
+			189 = {
+				add_base_production = 4
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "lot_built_manufacturies_mod"
+					duration = -1
+				}
+			}
+			1880 = {
+				add_base_production = 4
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "lot_built_manufacturies_mod"
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	1356_lot_annex_upper_rhine = {
+		icon = mission_cannons_firing
+		required_missions = { LOT_defend_aachen }
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				area = upper_rhineland_area
+				area = palatinate_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			upper_rhineland_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			palatinate_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+		}
+		effect = {
+			franconia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_swabia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_swabia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			romandie_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			switzerland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+}
+
+LOT_hre_conquer_tree = { #Not allowed for now, need to find a creative way some other time to let lotharingia conquer the HRE and form it.
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		always = no
+		tag = LOT
+	}
+	has_country_shield = yes
+	
+	1356_lot_conquer_swabia = {
+		icon = mission_cannons_firing
+		required_missions = { 1356_lot_annex_upper_rhine }
+		position = 12
+		
+		provinces_to_highlight = {
+			OR = {
+				area = franconia_area
+				area = lower_swabia_area
+				area = upper_swabia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			franconia_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			lower_swabia_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			upper_swabia_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			lower_bavaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_bavaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	1356_lot_conquer_bavaria = {
+		icon = mission_conquer_50_development
+		required_missions = { 1356_lot_conquer_swabia }
+		position = 13
+	
+		provinces_to_highlight = {
+			OR = {
+				area = lower_bavaria_area
+				area = upper_bavaria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			lower_bavaria_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			upper_bavaria_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+		}
+		effect = {
+			austria_proper_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			inner_austria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tirol_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	1356_lot_conquer_habsburg = {
+		icon = mission_1356_trebuchet_firing.dds
+		required_missions = { 1356_lot_conquer_bavaria }
+		position = 14
+		
+		provinces_to_highlight = {
+			OR = {
+				area = austria_proper_area
+				area = inner_austria_area
+				area = tirol_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			austria_proper_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			inner_austria_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			tirol_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+		}
+		effect = {
+			add_country_modifier = {
+				name = "lot_annexed_hab"
+				duration = 7300
+			}
+		}
+	}
+}
+
+bur_lotharingia_imperial_tree = { #Burgundy/Arles/Lotharingia - Lotharingia Tree/Imperial Tree #HEY, MAKE EXCEPTIONS FOR IF THE HRE DOESNT EXIST DUMMY
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { 
+		always = no
+		OR = {
+			tag = BUR
+			tag = ARE
+			tag = LOT
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	1356_bur_lorraine = { #Vanilla just moved/changed required missions, just added localization changes for it to make sense.
+		icon = mission_conquer_50_development
+		required_missions = { 1356_bur_enforce_union_over_flanders }
+		position = 2
+		
+		provinces_to_highlight = {
+			area = lorraine_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			lorraine_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			93 = {
+				add_permanent_claim = ROOT
+			}
+			1878 = {
+				add_permanent_claim = ROOT
+			}
+			2974 = {
+				add_permanent_claim = ROOT
+			}
+			1742 = {
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	bur_liege = { #Vanilla just moved
+		icon = mission_have_two_subjects
+		required_missions = { 1356_bur_lorraine }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 93
+				province_id = 1878
+				province_id = 2974
+				province_id = 1742
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			93 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1878 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2974 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1742 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "bur_diplo_mod"
+				duration = 5475
+			}
+		}
+	}
+
+#Imperial portion	
+	1356_bur_imperial_relations = {
+		icon = mission_alliances
+		required_missions = {  }
+		position = 6
+		
+		trigger = {
+			OR = {
+				AND = {
+					has_opinion = {
+# Audax Validator "." Ignore_NEXT
+						who = emperor
+						value = 150
+					}
+# Audax Validator "." Ignore_NEXT
+					NOT = { is_rival = emperor }
+# Audax Validator "." Ignore_NEXT
+					NOT = { historical_rival_with = emperor }
+				}
+				AND = {	
+					reverse_has_opinion = {
+							who = emperor
+							value = 150
+						}	
+					emperor = {
+						NOT = { is_rival = BUR }
+						NOT = { historical_rival_with = BUR }
+					}
+				}
+				is_emperor = yes
+				AND = {
+					NOT = { hre_size = 1 }
+					NOT = { exists = HLR }
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "bur_improved_imperial_relations"
+				duration = 7300
+			}
+		}
+	
+	}
+	1356_bur_petition_emperor_for_membership = {
+		icon = mission_alliances
+		required_missions = { 1356_bur_imperial_relations  }
+		position = 7
+		
+		trigger = {
+			OR = {
+				AND = {
+					imperial_influence = 25
+					is_at_war = no
+					is_part_of_hre = yes
+					is_nomad = no
+					owns_core_province = 192 #Dijonnais
+				}
+				AND = {
+					is_emperor = yes
+					owns_core_province = 192 #Dijonnais
+					is_at_war = no
+				}
+				AND = {
+					NOT = { hre_size = 1 }
+					NOT = { exists = HLR }
+				}
+			}
+			OR = {
+				religion = catholic 
+				religion = anglican
+				religion = hussite
+				religion = protestant
+				religion = reformed
+			}
+		}
+		
+		effect = {
+			192 = { #Moves Capital to Dijon and sets them in the Empire.
+				move_capital_effect = yes
+				set_in_empire = yes
+			}
+			add_prestige = 10
+			add_legitimacy = 10
+		}
+	
+	}	
+	1356_petition_emperor_for_imperial_title = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { 1356_bur_petition_emperor_for_membership  }
+		position = 8
+	
+		trigger = {
+			OR = { #4 Dip and 50 Papal infulence/50 Patriarch Authority/100 Prestige OR be emperor
+				papal_influence = 50
+				patriarch_authority = 0.5
+				prestige = 100
+				is_emperor = yes
+				AND = {
+					NOT = { hre_size = 1 }
+					NOT = { exists = HLR }
+				}
+			}
+			dip = 4
+			OR = { #Emperor Opinion
+				has_opinion = {
+ # Audax Validator "." Ignore_1006
+					who = emperor
+					value = 150
+				}
+				reverse_has_opinion = {
+# Audax Validator "." Ignore_1006
+					who = emperor
+					value = 150
+				}
+				is_emperor = yes
+				AND = {
+					NOT = { hre_size = 1 }
+					NOT = { exists = HLR }
+				}
+			
+			}
+			legitimacy = 90
+			prestige = 75
+		}
+		
+		effect = {
+			set_country_flag = "bur_granted_imperial_title_flag"
+			add_country_modifier = {
+				name = "1356_bur_granted_imperial_title"
+				duration = 7300
+			}
+		}
+	
+	}
+}
+
+are_eco_missions_tree = { #Arles Economy Missions
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		always = no
+		tag = ARE
+	}
+	has_country_shield = yes
+	
+	1356_are_trade_value = {
+		icon = mission_establish_high_seas_navy
+		required_missions = {  }
+		position = 9
+		
+		provinces_to_highlight = {
+			province_id = 1297
+			has_discovered = ROOT
+		}
+		trigger = {
+			1297 = {
+				highest_value_trade_node = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "are_trade_value_mod"
+				duration = 7300
+			}
+		}
+	}
+	are_create_universities = {
+		icon = mission_early_game_buildings
+		required_missions = { 1356_are_trade_value }
+		position = 10
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 201
+				province_id = 202
+			}
+		}
+		trigger = {
+			201 = {
+				owned_by = ROOT
+				has_building = university
+			}
+			202 = {
+				owned_by = ROOT
+				has_building = university
+			}
+		}
+		effect = {
+			change_innovativeness = 3
+			add_country_modifier = {
+				name = "lot_built_universities"
+				duration = 7300
+			}
+		}
+	}
+	are_manufacturies = {
+		icon = mission_have_manufactories
+		required_missions = { are_create_universities }
+		position = 11
+		
+		trigger = {
+			OR = {
+				has_institution = enlightenment
+				is_year = 1700
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+			199 = {
+				owned_by = ROOT
+			}
+			190 = {
+				owned_by = ROOT
+			}	
+			165 = {
+				owned_by = ROOT
+			}	
+			4390 = {
+				owned_by = ROOT
+			}	
+		}
+		
+		effect = {
+			199 = {
+				add_base_production = 4
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "lot_built_manufacturies_mod"
+					duration = -1
+				}
+			}
+			190 = {
+				add_base_production = 4
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "lot_built_manufacturies_mod"
+					duration = -1
+				}
+			}
+			165 = {
+				add_base_production = 4
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "lot_built_manufacturies_mod"
+					duration = -1
+				}
+			}
+			4390 = {
+				add_base_production = 4
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "lot_built_manufacturies_mod"
+					duration = -1
+				}
+			}
+		}
+	}	
+}
+
+bur_claims_lowlands_tree = { #Burgundy/Arles/Lotharingia - Lowland Claims Tree
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+		always = no
+		OR = {
+			tag = BUR
+			tag = ARE
+			tag = LOT
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	1356_bur_enforce_union_over_flanders = { #We were promised a marriage with the Duchess of Flanders! We should rule it in union, together. As husband and Wife! #Rework later
+		icon = mission_have_two_subjects
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1865
+				province_id = 90
+				province_id = 181
+				province_id = 191
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}	
+		trigger = {
+			OR = {
+				OR = { 
+					AND = { #Neither Nation Exists
+						NOT = { exists = FLA }
+						NOT = { exists = NEV }
+					}
+					AND = {	#Friendly Annexation
+						is_at_war = no
+						NOT = { is_rival = FLA }
+						FLA = { 
+							is_at_war = no 
+							is_female = yes
+							is_vassal = no
+						}
+						has_opinion = {
+							who = FLA
+							value = 175
+						}
+					}
+					AND = {	#War with Flanders, Flanders Exists and isn't a vassal
+						war_with = FLA
+						FLA = { 
+							is_vassal = no
+							war_score = -85
+						}
+						exists = FLA
+						BUR = { war_score = 85 }
+					}
+			}
+				OR = {
+					BUR = {
+						1865 = { country_or_non_sovereign_subject_holds = ROOT }
+						90 = { country_or_non_sovereign_subject_holds = ROOT }
+						181 = { country_or_non_sovereign_subject_holds = ROOT }
+						191 = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					AND = {
+						FLA = {	is_subject = yes }
+						BUR = { owns_core_province = 191 }				
+					}
+					FLA = { is_subject = yes }
+					AND = {
+						BUR = {
+							1865 = {
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							90 = {
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							181 = {
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+						}
+						NEV = {	is_vassal = yes	}	
+					}
+					AND = {
+						OR = {
+							NOT = { exists = FLA }
+							BUR = {
+								1865 = {
+									country_or_non_sovereign_subject_holds = ROOT
+								}
+								90 = {
+									country_or_non_sovereign_subject_holds = ROOT
+								}
+								181 = {
+									country_or_non_sovereign_subject_holds = ROOT
+								}
+							}
+					
+						}
+						OR = {
+							NOT = { exists = NEV }
+							BUR = { 
+								191 = {	country_or_non_sovereign_subject_holds = ROOT }
+							}
+						}
+					}
+				}
+				has_country_flag = bur_married_flanders_flag
+				AND = {
+					has_country_flag = bur_fought_for_flanders_flag
+					is_at_war = no
+					FLA = { is_subject = yes }
+				}
+				AND = {
+					has_country_flag = bur_is_coward_flag
+					is_year = 1400
+				}
+			}
+		}
+		effect = {
+			set_country_flag = bur_inherited_flanders_flag 
+			set_country_flag = bur_annexed_flanders_flag
+			add_prestige = 5
+		}
+	}
+	1356_bur_enforce_flemish_claim_over_brabant = { #Either have Brabant in a PU, or own Brabant
+		icon = mission_have_two_subjects
+		required_missions = { 1356_bur_enforce_union_over_flanders }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 92
+				province_id = 1744
+				province_id = 95
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}	
+		trigger = {
+			OR = {
+				AND = {#Burgundy Has Flemish PU
+					OR = { #One of the two Not cowardly outcomes of the chain
+						has_country_flag = bur_married_flanders_flag
+						has_country_flag = bur_fought_for_flanders_flag
+					}
+					OR = { #Flanders is Burgundy subject, or Flanders two starting provinces are owned by Burgundy
+						FLA = { is_subject_of = BUR }
+						AND = {
+							NOT = { exists = FLA }
+							owns = 90
+							owns = 1865
+						}
+					}
+				}
+				AND = { #Burgundy doesnt have Flemish PU
+					has_country_flag = bur_is_coward_flag
+					owns = 95
+					owns = 1744
+					owns = 92
+				
+				}
+			}
+			#is_year = 1370 #Will this be needed for Balance?
+		}
+		effect = {
+			set_country_flag = bur_can_make_brabant_union_flag
+			BUR = {
+				country_event = { 
+					id = flavor_fla_bur.13
+					days = 30
+					tooltip = flavor_fla_bur.13.tooltip
+				}
+			}
+			add_country_modifier = {
+				name = "1356_bur_many_vassals"
+				duration = 5475
+			}
+			91 = {
+				add_permanent_claim = ROOT
+			}
+			1866 = {
+				add_permanent_claim = ROOT
+			}
+			1743 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	1356_bur_annex_hainaut = { #Annex Hainaut
+		icon = mission_cannons_firing
+		required_missions = { 1356_bur_enforce_flemish_claim_over_brabant }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 91
+				province_id = 1866
+				province_id = 1743
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}	
+		trigger = {			
+			OR = {	#Own Hainaut's starting Provinces or have Hainaut as a subject
+				AND = { #Hainaut's Provinces
+					91 = { 
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					1866 = { 
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					1743 = { 
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				HAI = { is_subject = yes }
+			}
+		}	
+		effect = {
+			holland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		
+		}
+	}
+	1356_bur_holland_wallonian_union = { #Vassalize or Annex Holland
+		icon = mission_cannons_firing
+		required_missions = { 1356_bur_annex_hainaut }
+		position = 4
+		
+		provinces_to_highlight = {
+			area = holland_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}	
+		trigger = {			
+			OR = {	
+				holland_area = { 
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				HOL = { is_subject = yes }
+			}
+		}	
+		effect = {
+			94 = { #Luxembourg
+				add_permanent_claim = ROOT
+			}
+		
+		}
+	}
+	1356_bur_annex_luxemburg = {
+		icon = mission_1356_trebuchet_firing.dds
+		required_missions = { 1356_bur_holland_wallonian_union bur_liege }
+		position = 5
+		
+		provinces_to_highlight = {
+			province_id = 94
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			94 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			frisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	bur_frisia = {
+		icon = mission_cannons_firing
+		required_missions = { 1356_bur_annex_luxemburg }
+		position = 6
+		
+		provinces_to_highlight = {
+			area = frisia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			frisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			1975 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 20
+					key = bur_channel_ambition
+				}
+			}
+		}
+	}
+}
+	
+LOT_defend_capital_tree = { #Lotharingia - Germany Land Conquest #Expand further after HRE overhaul. Potential form Karlings?
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+			always = no
+		tag = LOT
+	}
+	has_country_shield = yes
+	
+	LOT_defend_aachen = { #Our rightful Capital and former Holy Roman Capital is a border Province, this is not acceptable. We must control the duchies bordering Aachen.
+		icon = mission_assemble_an_army
+		required_missions = { 1356_bur_form_lotharingia }
+		position = 10
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = lower_rhineland_area
+				area = north_rhine_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			north_rhine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_rhineland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "lot_secured_aachen"
+				duration = 7300
+			}
+			hesse_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			weser_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			braunschweig_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			westphalia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	1356_lot_annex_hannover = {
+		icon = mission_unite_home_region
+		required_missions = { LOT_defend_aachen LOT_subjugate_dutch_fully }
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				area = hesse_area
+				area = weser_area
+				area = braunschweig_area
+				area = westphalia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			hesse_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			weser_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			braunschweig_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			westphalia_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+		}
+		effect = {
+			upper_rhineland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palatinate_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+
+
+}
+
+LOT_conquer_swiss_tree = { #Lotharingia, Defunct for now until I can justify these missions for Lotharingia
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+			always = no
+		tag = LOT
+	}
+	has_country_shield = yes
+	
+	1356_lot_conquer_swiss = {
+		icon = mission_cannons_firing
+		required_missions = { 1356_lot_annex_upper_rhine }
+		position = 12
+		
+		provinces_to_highlight = {
+			OR = {
+				area = romandie_area
+				area = switzerland_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			romandie_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+			switzerland_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}	
+		}
+		effect = {
+			add_country_modifier = {
+				name = "lot_annexed_swi"
+				duration = 7300
+			}
+		}
+	}	
+}
+
+LOT_tree_start = { #Burgundy/Lotharingia - Lotharingia Start Tree 
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		OR = {
+			tag = BUR
+			tag = LOT
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	1356_bur_form_lotharingia = {
+		icon = mission_empire
+		required_missions = { 1356_petition_emperor_for_imperial_title bur_frisia }
+		position = 9
+	
+		trigger = {
+			tag = LOT
+			has_country_flag = formed_lotharingia_flag
+		}
+		
+		effect = {
+			custom_tooltip = bur_form_lot_tt
+			add_country_modifier = {
+				name = "lot_restored_mod"
+				duration = 7300
+			}
+		}
+	}
+}
+
+LOT_tree_two_burgundies = { #Lotharingia - Lotharingia Start Tree 
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		tag = LOT
+	}
+	has_country_shield = yes
+
+	LOT_romandie = {
+		icon = mission_unite_home_region
+		required_missions = { 1356_bur_form_lotharingia }
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				area = romandie_area
+				province_id = 205
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			romandie_area = {
+				type = all
+				owned_by = ROOT
+			}
+			205 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			provence_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			102 = {
+				add_permanent_claim = ROOT
+			}
+			1875 = {
+				add_permanent_claim = ROOT
+			}
+			103 = {
+				add_permanent_claim = ROOT
+			}
+			203 = {
+				add_permanent_claim = ROOT
+			}
+			204 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	LOT_cisjurania = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { LOT_romandie }
+		position = 12
+		
+		provinces_to_highlight = {
+			OR = {
+				area = provence_area
+				province_id = 102
+				province_id = 1875
+				province_id = 103
+				province_id = 203
+				province_id = 204
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			provence_area = {
+				type = all
+				owned_by = ROOT
+			}
+			102 = {
+				owned_by = ROOT
+			}
+			1875 = {
+				owned_by = ROOT
+			}
+			103 = {
+				owned_by = ROOT
+			}
+			203 = {
+				owned_by = ROOT
+			}
+			204 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "lot_two_burgundies_secure"
+				duration = 7300
+			}
+		}
+	}
+
+}
+
+ARE_conquest_tree_slot_4 = { #Arles - Tree
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		tag = ARE
+	}
+	has_country_shield = yes
+	
+	1356_are_west_italy = { #Take Western Italy
+		icon = mission_cannons_firing
+		required_missions = { 1356_bur_restore_arles_k }
+		position = 10
+		
+		provinces_to_highlight = {
+			OR = {
+				area = piedmont_area
+				area = liguria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			piedmont_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			liguria_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+		}
+		effect = {
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			333 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	1356_are_western_medi_isles = { #Take Western Isles
+		icon = mission_establish_high_seas_navy
+		required_missions = { 1356_are_west_italy }
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				area = corsica_sardinia_area
+				province_id = 333
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			corsica_sardinia_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			333 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+		}
+		effect = {
+			add_country_modifier = {
+				name = "are_secured_italy"
+				duration = 7300
+			}
+		}
+	}
+}
+
+bur_annex_auvergune = {#Burgundy/Arles/Lotharingia - Vassal/Union Tree #Needs more historical accuracy
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		tag = BUR
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	1356_bur_enforce_claim_over_auvergune = {
+		icon = mission_conquer_50_development
+		required_missions = {  }
+		position = 1
+		
+		provinces_to_highlight = {
+			province_id = 199
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+				199 = { country_or_non_sovereign_subject_holds = ROOT }
+				AUV = {	vassal_of = BUR	}	
+			}	
+		}
+		effect = {
+			add_prestige = 2
+		}
+	}
+}
+
+bur_vassal_tree = {#Burgundy/Arles/Lotharingia - Vassal/Union Tree
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		OR = {
+			tag = BUR
+			tag = ARE
+			tag = LOT
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+
+	bur_subjects = {
+		icon = mission_alliances
+		required_missions = { 1356_bur_enforce_union_over_flanders }
+		position = 2
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = bur_subjects.tooltip
+				NOT = {
+					any_subject_country = {
+						liberty_desire = 15
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "1356_bur_many_vassals"
+				duration = 7300
+			}		
+		}
+	}
+	1356_bur_integrate_some_subjects = {
+		icon = mission_have_two_subjects
+		required_missions = { bur_subjects }
+		position = 3
+		
+		trigger = {
+			num_of_subjects = 2
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "1356_integrating_new_provinces_bur"
+				duration = 7300
+			}	
+		}
+	}
+}
+
+bur_annex_normandy = {#Burgundy/Arles/Lotharingia - Misc French Claims Tree
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		OR = {
+			tag = BUR
+			tag = ARE
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	1356_bur_claim_normandy = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { 1356_bur_cross_the_loire }
+		position = 4
+		
+		provinces_to_highlight = {
+			area = normandy_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			normandy_area = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		effect = {
+			brittany_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	1356_bur_claim_brittany = {
+		icon = mission_cannons_firing
+		required_missions = { 1356_bur_claim_normandy }
+		position = 5
+		
+		provinces_to_highlight = {
+			area = brittany_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			brittany_area = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		effect = {
+			add_country_modifier = {
+				name = "bur_annexed_north_coast_mod"
+				duration = 7300
+			}
+		}
+	}	
+}
+	
+bur_form_netherlands_tree = { #Burgundy - Form the Netherlands
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		tag = BUR
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	bur_form_netherlands = {
+		icon = mission_empire
+		required_missions = { bur_frisia }
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 95
+				province_id = 96
+				province_id = 97
+				province_id = 98
+				province_id = 99
+				province_id = 100
+				province_id = 4383
+				province_id = 4381
+				province_id = 4382
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}	
+		trigger = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			NOT = { exists = NED }
+			legitimacy = 90
+			owns_core_province = 95 # Breda
+			owns_core_province = 96 # Zeeland
+			owns_core_province = 97 # Holland
+			owns_core_province = 98 # Utrecht
+			owns_core_province = 99 # Gelre
+			owns_core_province = 100 # Friesland
+			owns_core_province = 4383 #Den Haag
+			owns_core_province = 4381 #Oversticht
+			owns_core_province = 4382 #Groningen
+			OR = {
+				primary_culture = dutch
+				accepted_culture = dutch
+				primary_culture = flemish
+				primary_culture = wallonian
+				dominant_culture = dutch
+			}
+		}
+		
+		effect = {
+			remove_non_electors_emperors_from_empire_effect = yes
+	  		change_primary_culture = dutch
+			4383 = { move_capital_effect = yes }
+			if = { #Sends French Provinces to France if France exists
+				limit = {
+					tag = BUR
+					exists = FRA
+				}
+	  			france_region = {
+					limit = {
+						owned_by = BUR
+					}
+	  				remove_core = BUR
+	  				add_core = FRA
+	  				cede_province = FRA
+	  			}
+	  		}
+			if = { #Converts Catholic Theocracies to Monarchies
+				limit = {
+					government = theocracy
+					religion = catholic
+				}
+				change_government = monarchy
+				PAP = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_displeased
+					}
+				}
+			}
+			if = { #Converts Theocracys that are not Catholic to Monarchies
+				limit = {
+					government = theocracy
+					NOT = { religion = catholic }
+				}
+				change_government = monarchy
+			}
+			if = { #Remove Vassals and send to France if in French Region
+				limit = {
+					tag = BUR
+					exists = FRA
+					BUR = {
+						any_subject_country = {
+							france_region = {
+								owned_by = PREV
+							}
+						}
+					}
+				}
+				every_subject_country = {
+					limit = {
+						france_region = {
+							owned_by = PREV
+						}
+					}
+					france_region = {
+						limit = {
+							owned_by = PREV
+						}
+						remove_core = BUR
+						remove_core = PREV
+						add_core = FRA
+						cede_province = FRA
+					}
+				}
+	  		}
+			change_tag = NED
+			swap_non_generic_missions = yes
+			low_countries_region = { #Claims
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NED
+			}
+			wallonia_area = { #Wallonian Claims
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {	province_id = 94 }
+				}
+				add_permanent_claim = ROOT
+			}
+			picardy_area = { #Picard Claims
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {
+						province_id = 89
+					}
+				}
+				add_permanent_claim = NED
+			}
+			if = { #Government Rank Change
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			set_country_flag = formed_netherlands_flag
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = NED_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		
+		}
+	}
+}	
+	
+LOT_northern_conquest_tree = { #Lotharingia - Lotharingian Low Countries Conquest Tree 
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		always = no	
+		tag = LOT
+	}
+	has_country_shield = yes
+	
+	LOT_subjugate_dutch_fully = { #The Dutch control a rich and potentially exponetially useful region, it'd be better off under us.
+		icon = mission_have_two_subjects
+		required_missions = { 1356_bur_form_lotharingia }
+		position = 10
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = wallonia_area
+				area = flanders_area
+				area = holland_area
+				area = netherlands_area
+				area = frisia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			wallonia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			flanders_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			holland_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			netherlands_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			frisia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "lot_secured_lowlands"
+				duration = 7300
+			}
+			picardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	
+}
+
+bur_integrate_nev_tree = { #Burgundy/Arles/Lotharingia - Integrate Nevers
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		OR = {
+			tag = BUR
+			tag = ARE
+			tag = LOT
+		}
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	bur_nevers = {
+		icon = mission_have_two_subjects
+		required_missions = { 1356_bur_enforce_union_over_flanders }
+		position = 2
+		
+		provinces_to_highlight = {
+			province_id = 191
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			191 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			loire_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+LOT_lowland_subjugation_tree = { #Lotharingia - Lotharingian Lowland/North Conquest Tree #Expand more on during HRE overhaul.
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = { 
+			always = no
+		tag = LOT
+	}
+	has_country_shield = yes
+	
+	LOT_secure_picardie_and_calais = { #We can't risk the English controlling such an important port, we must take it and safeguard it with Picardie
+		icon = mission_unite_home_region
+		required_missions = { LOT_subjugate_dutch_fully }
+		position = 11
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 87
+				province_id = 89
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			87 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			89 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "lot_secured_the_north"
+				duration = 7300
+			}
+		}
+	}
+}
+
+bur_into_france_tree_frenchland = { #Burgundy - Push into France Tree
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		tag = BUR 
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	1356_bur_cross_the_loire = {
+		icon = mission_unite_home_region
+		required_missions = {  }
+		position = 3
+		
+		provinces_to_highlight = {
+			area = loire_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			loire_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+		}
+		effect = {
+			poitou_area = {
+				add_permanent_claim = ROOT
+			}
+			massif_central_area = {
+				add_permanent_claim = ROOT
+			}
+			guyenne_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	1356_bur_push_south_fra = {
+		icon = mission_conquer_5_states
+		required_missions = { 1356_bur_cross_the_loire }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = poitou_area
+				area = massif_central_area
+				area = guyenne_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			poitou_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			massif_central_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			guyenne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+		}
+		effect = {
+			pyrenees_area = {
+				add_permanent_claim = ROOT
+			}
+			languedoc_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	1356_bur_push_west_fra = {
+		icon = mission_cannons_firing
+		required_missions = { 1356_bur_push_south_fra }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = pyrenees_area
+				area = languedoc_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pyrenees_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			languedoc_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+		}
+		effect = {
+			provence_area = {
+				add_permanent_claim = ROOT
+			}
+			savoy_dauphine_area = {
+				add_permanent_claim = ROOT
+			}
+			ile_de_france_area = {
+				add_permanent_claim = ROOT
+			}
+			champagne_area = {
+				add_permanent_claim = ROOT
+			}
+			set_country_flag = bur_path_to_forming_france_flag
+		}
+	}
+}
+
+bur_into_france_tree = { #Burgundy - Go Form France Tree
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		tag = BUR
+		has_country_flag = use_golden_bull_missions_instead_of_paradox
+		NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+
+	1356_bur_annex_duchy_valois = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { 1356_bur_push_west_fra }
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = ile_de_france_area
+				province_id = 186
+				province_id = 4390
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			ile_de_france_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+			186 = {	country_or_non_sovereign_subject_holds = ROOT }	
+			4390 = {	country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		effect = {
+			add_country_modifier = {
+				name = "bur_into_fra_mod"
+				duration = 7300
+			}
+		}
+	}
+	
+	1356_bur_form_france = {
+		icon = mission_empire
+		required_missions = { 1356_bur_annex_duchy_valois }
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 177	# Maine
+				province_id = 179	# Blois
+				province_id = 182	# Vermandois
+				province_id = 183	# Île-de-France
+				province_id = 184	# Orléannais
+				province_id = 185	# Othe
+				province_id = 186	# Champagne
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		trigger = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			NOT = { exists = FRA }
+			owns_core_province = 177	# Maine
+			owns_core_province = 179	# Blois
+			owns_core_province = 182	# Vermandois
+			owns_core_province = 183	# Île-de-France
+			owns_core_province = 184	# Orléannais
+			owns_core_province = 185	# Othe
+			owns_core_province = 186	# Champagne		
+		}
+		effect = {
+			183 = { #Paris
+				move_capital_effect = yes
+			}
+			change_tag = FRA
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_france_flag
+		}
+	}
+}
+
+LOT_ARE_imperial_tree_1 = { #Arles/Lotharingia - Become Emperor and stuff
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		is_part_of_hre = yes
+		NOT = { hre_size = 1 }
+		num_of_electors = 1
+		OR = {
+			tag = LOT
+			tag = ARE
+		}
+	}
+	has_country_shield = yes
+	
+	LOT_ARE_imperial_ambitions = { #Before we begin our long journey to become the Emperor we must first show the world we are presitgious!
+		icon = mission_monarch_in_throne_room
+		required_missions = {  }
+		position = 2
+		completed_by = 1821.1.1
+		
+		trigger = {
+			OR = {
+				prestige = emperor
+				prestige = 85
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "1356_emperor_be_prestigious"
+				duration = 5400
+			}
+		}
+	}
+	LOT_ARE_imperial_ambitions_legitimate_monarch = { #Before we begin our long journey to become the Emperor we must first show the world we are the true Legitimate King of our nation!
+		icon = mission_alliances
+		required_missions = { LOT_ARE_imperial_ambitions }
+		position = 3
+		completed_by = 1821.1.1
+		
+		trigger = {
+			OR = {
+				legitimacy = 100
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "1356_emperor_be_legitimate"
+				duration = 5400
+			}
+		}
+	}
+	LOT_ARE_imperial_ambitions_become_emperor = { #Now that we have reason to be elected, we should do our best to convince the electors we would be a better emperor than $TAG
+		icon = mission_monarch_in_throne_room
+		required_missions = { LOT_ARE_imperial_ambitions_legitimate_monarch }
+		position = 4
+		completed_by = 1821.1.1
+		
+		trigger = {
+			is_emperor = yes
+			prestige = 85
+			legitimacy = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = "1356_emperor_get_elected"
+				duration = 7200
+			}
+		}
+	}
+}
+
+LOT_ARE_imperial_tree = { #Arles/Lotharingia - Be Emperor and do Emperor stuff. #Will expand on after HRE overhaul.
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+			always = no
+		is_part_of_hre = yes
+		is_emperor = yes
+		NOT = { hre_size = 1 }
+		OR = {
+			tag = LOT
+			tag = ARE
+		}
+	}
+	has_country_shield = yes
+
+	LOT_ARE_imperial_ambitions_improve_HRE_authority = { #Now that we are Emperor it is time to improve our authority!
+		icon = mission_have_two_subjects
+		required_missions = { LOT_ARE_imperial_ambitions_become_emperor }
+		position = 5
+		completed_by = 1821.1.1
+		
+		trigger = {
+			imperial_influence = 25
+		}
+		effect = {
+			add_country_modifier = {
+				name = "1356_emperor_imperial_authority"
+				duration = 5400
+			}
+		}
+	}
+	LOT_ARE_imperial_ambitions_ensure_7_electors = { #We need to maintain the Empire's integrity!
+		icon = mission_alliances
+		required_missions = { LOT_ARE_imperial_ambitions_improve_HRE_authority }
+		position = 6
+		completed_by = 1821.1.1
+		
+		trigger = {
+			num_of_electors = 7
+		}
+		effect = {
+			add_imperial_influence = 3
+		}
+	}
+	LOT_ARE_imperial_ambitions_50_members = { #We need to maintain the Empire's integrity!
+		icon = mission_alliances
+		required_missions = { LOT_ARE_imperial_ambitions_ensure_7_electors }
+		position = 7
+		completed_by = 1821.1.1
+		
+		trigger = {
+				hre_size = 50
+		}
+		effect = {
+			add_imperial_influence = 3
+		}
+	}
+}
+

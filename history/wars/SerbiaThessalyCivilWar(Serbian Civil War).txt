@@ -1,0 +1,27 @@
+name = "Serbian Civil War"
+#casus_belli = cb_serbian_civil
+war_goal = {
+	type = serbian_civil_war_wargoal
+	casus_belli = cb_serbian_civil
+	tag = SER
+}
+
+1356.12.26 = {
+	add_attacker = TES
+	add_defender = SER
+	# add_defender = X03
+	# add_defender = X04
+	# add_defender = X05
+	# add_defender = ALB
+	
+}
+
+# Peace
+1370.1.1 = {
+	rem_attacker = TES
+	rem_defender = SER
+	# rem_defender = X03
+	# rem_defender = X04
+	# rem_defender = X05
+	# rem_defender = ALB
+}

@@ -18,7 +18,7 @@ native_hostileness = 3
 
 
 discovered_by = north_american
-
+1356.12.27 = { owner = --- owner = --- owner = --- }
 1614.1.1 = { discovered_by = NED } # Adriaen Block (may or may not have reached this far north)
 1633.1.1 = { discovered_by = ENG }
 

@@ -1,0 +1,31 @@
+bookmark =
+{
+	name = "GC2_NAME"
+	desc = "GC2_DESC"
+	date = 1356.12.26
+	
+	default = no
+	center = 112	
+	#center = 180
+	
+	country = CAS
+	country = CTR
+	country = ENG
+	country = FRA
+	country = DAN
+	country = HAB
+	country = BYZ
+	country = TUR	
+	country = LIT
+	country = JLR
+	country = TRS
+	#country = POR
+
+	
+	easy_country = CTR
+	easy_country = DAN
+	easy_country = ENG
+	easy_country = JLR
+	easy_country = LIT
+	#easy_country = POL
+}

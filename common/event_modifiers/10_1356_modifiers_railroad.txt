@@ -1,0 +1,10 @@
+# Railroading Modifiers
+# For Ai vs Ai Direct Interaction (Never directly at the player, though can happen if player is allied to target nations that's attacked)
+
+death_note_modifier = {
+	diplomatic_reputation = -300
+}	
+
+being_railroad_forbidden_wars = { # Forcing the Ai into a certain direction
+	can_not_declare_war = yes
+}	

@@ -200,9 +200,9 @@ superiority_revolution = {
 		prestige_factor = 1.5
 		peace_cost_factor = 0.5		
 		
-		required_treaty_to_take_provinces = {
-			po_spread_revolution
-		}
+		#required_treaty_to_take_provinces = {
+		#	po_spread_revolution
+		#}
 
 		peace_options = {
 			po_become_vassal
@@ -221,9 +221,9 @@ superiority_revolution = {
 		prestige_factor = 1.5
 		peace_cost_factor = 0.5		
 	
-		required_treaty_to_take_provinces = {
-			po_dismantle_revolution
-		}
+		#required_treaty_to_take_provinces = {
+		#	po_dismantle_revolution
+		#}
 
 		peace_options = {
 			po_become_vassal
@@ -240,6 +240,51 @@ superiority_revolution = {
 	war_name = SPREAD_REVOLUTION_NAME
 }
 
+superiority_annex_revolution = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 0.25
+		prestige_factor = 1.5
+		peace_cost_factor = 0.25		
+		
+		#required_treaty_to_take_provinces = {
+		#	po_spread_revolution
+		#}
+
+		peace_options = {
+			po_become_vassal
+			po_demand_provinces
+			po_revoke_cores
+			po_release_vassals
+			po_release_annexed
+			po_gold
+			po_annul_treaties
+		}
+	}
+	
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 1.5
+		peace_cost_factor = 0.25		
+	
+		#required_treaty_to_take_provinces = {
+		#	po_dismantle_revolution
+		#}
+
+		peace_options = {
+			po_become_vassal
+			po_demand_provinces
+			po_revoke_cores
+			po_release_vassals
+			po_release_annexed
+			po_gold
+			po_annul_treaties
+		}
+	}
+	
+	war_name = ANNEX_REVOLUTION_WAR
+}
 take_capital_revolution = {
 	type = take_capital
 	
@@ -250,6 +295,7 @@ take_capital_revolution = {
 		
 		required_treaty_to_take_provinces = {
 			po_dismantle_revolution
+			po_extinguish_the_revolution
 		}
 
 		peace_options = {
@@ -262,6 +308,7 @@ take_capital_revolution = {
 			po_concede_defeat
 			po_annul_treaties
 			po_dismantle_revolution
+			po_extinguish_the_revolution
 		}
 	}
 	
@@ -673,9 +720,7 @@ take_border = {
 defend_capital_independence = {
 	type = defend_capital
 	
-	required_treaty_to_take_provinces = {
-		po_independence
-	}	
+
 	
 	attacker = {
 		badboy_factor = 1
@@ -1194,6 +1239,49 @@ superiority_world_crusade = {
 	war_name = WORLD_CRUSADE_WAR_NAME	
 }
 
+superiority_war_against_heresy = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 2
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			always = no
+		}
+		
+		peace_options = {
+			po_return_cores
+			po_change_religion
+			po_raid_churches
+			po_release_vassals
+		}
+		
+		country_desc = ALL_INFIDELS
+		prov_desc = NO_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 2
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_release_vassals
+		}
+		
+		country_desc = ALL_INFIDELS
+		prov_desc = ALL_PROVS
+	}	
+	
+	war_name = WAR_AGAINST_HERESY_NAME	
+}
 superiority_crusade = {
 	type = superiority
 	
@@ -1338,7 +1426,7 @@ take_province_excommunication = {
 			po_gold
 			po_concede_defeat
 		}
-		prov_desc = ALL_CGROUP_PROVS
+		prov_desc = ALL_CORES_AND_CLAIMS_AND_NEIGHBORS
 	}
 	
 	defender = {
@@ -1461,6 +1549,45 @@ take_province_ban = {
 	
 }
 
+take_capital_ban = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 2
+		peace_cost_factor = 0.75	
+		
+		allowed_provinces = {
+			is_part_of_hre = yes
+			owner = {
+				capital_scope = { is_part_of_hre = no }
+			}
+		}
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+			po_demand_provinces
+		}
+
+		prov_desc = ALL_HRE_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = BAN_WAR_INCIDENT_NAME	
+	
+}
 superiority_punitive = {
 	type = superiority
 	
@@ -1481,6 +1608,7 @@ superiority_punitive = {
 			po_revoke_cores
 			po_gold
 			po_concede_defeat
+			po_dismantle_revolution
 		}
 		prov_desc = ALL_CORES
 	}
@@ -2060,6 +2188,33 @@ blockade_ports = {
 	}
 }
 
+blockade_ports_mutual = {
+	type = blockade_ports
+	
+	attacker = {
+		peace_options = {
+			po_gold
+			po_concede_defeat
+			po_trade_power
+			po_steer_trade
+		}
+
+		transfer_trade_cost_factor = 0.5
+	}
+	
+	defender = {
+		peace_options = {
+			po_gold
+			po_concede_defeat
+			po_trade_power
+			po_steer_trade
+		}
+
+		transfer_trade_cost_factor = 0.5
+	}
+
+	war_name = TRADE_CONFLICT_TRIGGERED_WAR_NAME
+}
 take_capital_support_rebels = {
 	type = take_capital
 	
@@ -2546,4 +2701,114 @@ push_back_colonizers = {
 	}
 
 	war_name = PUSH_BACK_COLONIZERS
+}
+
+take_capital_norwegian_throne = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+		
+		required_treaty_to_take_provinces = {
+			po_claim_norwegian_throne
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_claim_norwegian_throne
+		}
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = NORWEGIAN_THRONE_WAR_NAME
+}
+
+war_goal_usurp_electorate = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1.0	
+		
+		allowed_provinces = {
+			always = no
+		}
+		
+		allowed_provinces_are_eligible = yes
+		
+		peace_options = {
+			po_claim_elector_role
+			po_revoke_cores
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+			po_gold
+			po_annul_treaties
+			po_trade_power
+			po_steer_trade
+			po_humiliate
+		}
+		
+		deny_annex = yes
+		country_desc = ALL_COUNTRIES
+		prov_desc = NO_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = USURPT_ELECTORATE_WAR_NAME
+}
+
+take_province_balkans = {
+	type = take_province
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 2
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			region = balkan_region
+		}
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_return_cores
+			po_demand_provinces
+		}
+
+		prov_desc = ALL_BALKAN_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = BALKAN_UNIFICATION_WAR_NAME	
 }

@@ -259,3 +259,218 @@ take_capital_personal_union_burgundy = {
 #	}
 #	war_name = CB_FEUDALISM_PU_WAR
 #}
+
+
+take_core_all_wargoal = {
+	type = superiority #take_core 
+
+	attacker = {
+		badboy_factor = 0.25
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			is_core = ROOT
+		}
+		
+		peace_options = {
+			#po_demand_provinces
+			#po_return_cores
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+			po_demand_provinces
+			po_revoke_cores
+			po_gold
+			po_concede_defeat			
+		}
+		
+		prov_desc = ALL_CORES
+	}
+	
+	defender = {
+		badboy_factor = 0.50
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+		}
+
+		
+		
+		prov_desc = ALL_CORES	
+	}
+	
+	war_name = CORE_WAR_NAME
+}
+
+
+ottoman_greek_conquest_wargoal = {
+	type = superiority #take_core 
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			#region = balkans_region
+			always = no
+		}
+		
+		allowed_provinces_are_eligible = yes #This solves so many issues | This command enforces which provinces can be taken or not
+		
+		peace_options = {
+			po_demand_provinces
+			po_ottoman_greek_conslidation
+		}
+		
+		# required_treaty_to_take_provinces = {
+			# po_ottoman_greek_conslidation
+		# }			
+		
+		prov_desc = ALL_PROVINCES_IN_BALKANS
+	}
+	
+	defender = {
+		badboy_factor = 0.50
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			region = balkans_region
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+		}
+
+		
+		
+		prov_desc = ALL_PROVINCES_IN_BALKANS	
+	}
+	
+	#war_name = CORE_WAR_NAME
+	war_name = OTTOMAN_WARS_OF_CONQUEST
+}
+
+
+ottoman_serbian_greek_conquest_wargoal = {
+	type = superiority #take_core 
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			#region = balkans_region
+			always = no
+		}
+		
+		allowed_provinces_are_eligible = yes #This solves so many issues | This command enforces which provinces can be taken or not
+		
+		peace_options = {
+			po_demand_provinces
+			po_serbian_greek_holdings
+		}
+		
+		# required_treaty_to_take_provinces = {
+			# po_ottoman_greek_conslidation
+		# }			
+		
+		prov_desc = ALL_PROVINCES_IN_BALKANS_SOUTH
+	}
+	
+	defender = {
+		badboy_factor = 0.50
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			region = balkans_region
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+		}
+
+		
+		
+		prov_desc = ALL_PROVINCES_IN_BALKANS	
+	}
+	
+	#war_name = CORE_WAR_NAME
+	war_name = OTTOMAN_WARS_OF_CONQUEST
+}
+
+
+
+
+serbian_civil_war_wargoal = {
+	type = superiority #take_core 
+
+	attacker = {
+		badboy_factor = 0.75
+		prestige_factor = 1
+		peace_cost_factor = 2
+
+		allowed_provinces = {
+			#region = balkans_region
+			always = no
+		}	
+	
+		peace_options = {
+			po_claim_the_serbian_empire
+			po_subjugate_vassal
+			po_crush_simeon_rebellion
+		}
+		
+		allowed_provinces_are_eligible = yes  # This solves so many issues
+		#deny_annex = yes
+		
+		
+		# required_treaty_to_take_provinces = {
+			# po_serbian_greek_holdings
+		# }		
+			
+		
+		prov_desc = ALL_PROVINCES_IN_BALKANS
+	}
+	
+	defender = {
+		badboy_factor = 0.75
+		prestige_factor = 1
+		peace_cost_factor = 2
+
+		allowed_provinces = {
+			#region = balkans_region
+			always = no
+		}
+		
+		allowed_provinces_are_eligible = yes #This solves so many issues | This command enforces which provinces can be taken or not
+		#deny_annex = yes
+		
+		peace_options = {
+			po_crush_simeon_rebellion
+			po_subjugate_vassal
+		}
+
+		# required_treaty_to_take_provinces = {
+			# po_serbian_greek_holdings
+		# }	
+		
+		
+		prov_desc = ALL_PROVINCES_IN_BALKANS	
+	}
+	
+	war_name = CORE_WAR_NAME
+}

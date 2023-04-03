@@ -19,7 +19,7 @@ native_hostileness = 4
 
 
 discovered_by = north_american
-
+1356.12.27 = { owner = --- tribal_owner = --- }
 1607.1.1 = { discovered_by = ENG } # John Smith
 1707.5.12 = { discovered_by = GBR } 
 

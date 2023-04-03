@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = serbian_princedom_reform
+primary_culture = serbian
+religion = orthodox
+technology_group = eastern
+capital = 4703	# Raska
+government_rank = 1
+
+############1356 Start
+
+1349.1.1 = {
+	monarch = {
+		name = "Dejan I"
+		dynasty = "Dejanovic"
+		birth_date = 1316.1.1 # Not  sure...
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

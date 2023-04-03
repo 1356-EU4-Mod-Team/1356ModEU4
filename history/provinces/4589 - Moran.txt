@@ -17,6 +17,7 @@ add_core = MAY
 
 
 discovered_by = mesoamerican
+1356.12.28 = { owner = --- tribal_owner = --- }
 1440.1.1 = { owner = CTM controller = CTM }
 1450.1.1 = { 
 	owner = ITZ

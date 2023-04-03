@@ -41,7 +41,7 @@ discovered_by = eastern
 	controller = LIT
 	add_core = LIT
 	remove_core = LIV
-	estate = estate_nobles
+	 
 } # Conquered by Lithuania
 1569.7.1 = {
 	owner = PLC

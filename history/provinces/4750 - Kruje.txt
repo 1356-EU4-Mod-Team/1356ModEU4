@@ -26,7 +26,7 @@ discovered_by = western
 
 1356.12.24  = { owner = ALB controller = ALB add_core = ALB } #BT In
 
-1356.12.26  = { owner = TES controller = TES remove_core = ALB } #BT Out
+#1356.12.26  = { owner = TES controller = TES remove_core = ALB } #BT Out
 
 1431.1.1 = { add_core = TUR }
 1478.6.16 = { owner = TUR controller = TUR }

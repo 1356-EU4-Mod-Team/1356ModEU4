@@ -1,0 +1,55 @@
+# Now home to Government Decisions
+
+country_decisions = {
+	tutor_heir_reform_power = {
+		major = no
+		potential = {
+			has_government_attribute = may_request_heir_tuterlage
+			#has_heir = yes
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = NOT_TUTOR_HEIR_THIS_RULER
+				NOT = { has_ruler_modifier = tutored_heir }	
+			}	
+			has_regency = no
+			heir_age = 10
+			NOT = { heir_age = 15 }
+			OR = {
+				has_adm_advisor_2 = yes
+				has_dip_advisor_2 = yes
+				has_mil_advisor_2 = yes
+			}	
+		}
+		effect = {
+			country_event = { id = court_politics.34 } # Tutor Heir
+		}
+	}	
+}	
+
+country_decisions = {
+	recruit_sixty_tradition_general = {
+		major = no
+		potential = {
+			has_government_attribute = may_recruit_sixty_tradition_general_fifthteen_years
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = HAS_NOT_RECRUITED_GENERAL_15
+				NOT = { has_country_modifier = hired_sixty_general }	
+			}	
+		}
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = "hired_sixty_general"
+					duration = 5475
+					hidden = yes
+				}
+			}	
+			create_general = { tradition = 60 }
+		}
+	}	
+}	

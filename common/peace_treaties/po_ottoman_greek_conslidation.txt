@@ -1,0 +1,100 @@
+# Completely scripted peace treaties are made here
+
+# THIS is the Taker and FROM the Giver in all scopes unless otherwise stated
+
+# This functionality was made to fully support modded subject types. It can probably also be used for other things, but has the following limitations:
+# These treaties don't support having a different Taker/Giver than the two countries that are negotiating.
+# Nor do they support setting provinces (like cede province) or third party countries (like annull treaties) as targets.
+
+# Example:
+
+
+po_ottoman_greek_conslidation = {
+	category = 6
+	power_projection = vassalized_rival
+	power_cost_base = 1.0
+	prestige_base = 0.5
+	ae_base = 0.25
+	requires_demand_independence = no
+	is_make_subject = yes
+	requires_is_allowed = yes
+
+	warscore_cost = {
+		all_provinces = 0.1 #0.20
+		no_provinces = 45.0
+		owner_keeps = 0.0
+		conquered = 0.0
+		returned_core = 0.0
+		released_nation = 0.0
+		cancelled_subject = 0.0
+		concede_colonial_region = 0.0
+	}
+	
+	warscore_cap = 45.0
+
+
+	is_visible = {
+		#ROOT = { has_country_modifier = ottoman_focus_on_balkans }
+		ROOT = { tag = TUR }
+	}
+	is_allowed = {
+		FROM = {
+			any_owned_province = {
+				OR = {
+					#area = macedonia_area
+					#area = northern_greece_area
+					#area = morea_area
+					#area = albania_area
+					#province_id = 149
+					region = balkan_region
+				}
+			}
+		}	
+	}
+	effect = {
+		FROM = {
+			every_owned_province = {
+				limit = {
+					NOT = { province_id = 151 }
+					OR = {
+						#area = macedonia_area
+						#area = northern_greece_area
+						#area = morea_area
+						#area = albania_area
+						#province_id = 149
+						region = balkan_region
+					}	
+				}
+				cede_province = TUR
+			}	
+			every_subject_country = {
+				limit = {
+					is_subject_of = FROM
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { province_id = 151 }
+						OR = {
+							#area = macedonia_area
+							#area = northern_greece_area
+							#area = morea_area
+							#area = albania_area
+							#province_id = 149
+							region = balkan_region
+						}	
+					}
+					cede_province = TUR
+				}	
+			}	
+		}	
+	}
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value
+			value = 1000 # The Ai should put high prio on this peace treaty
+		}
+	}
+}
+
+
+

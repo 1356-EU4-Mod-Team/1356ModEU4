@@ -19,7 +19,7 @@ native_hostileness = 2
 
 
 discovered_by = north_american
-
+1356.12.27 = { owner = --- owner = --- owner = --- remove_core = ATT tribal_owner = --- }
 1609.1.1 = { discovered_by = FRA } # Samuel de Champlain
 1611.1.1 = { discovered_by = ENG } # Henry Hudson claimed the area
 

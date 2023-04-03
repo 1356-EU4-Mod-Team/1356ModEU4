@@ -6,6 +6,7 @@ religion = orthodox
 technology_group = eastern
 historical_rival = TUR
 historical_rival = RUM
+historical_friend = BUL # Removed at Start
 capital = 151 # Constantinople
 fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
 
@@ -112,6 +113,7 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 		dip = 3
 		mil = 2
 	}
+	add_patriarch_authority = 0.25	
 }
 
 1376.8.12 = {

@@ -14,7 +14,7 @@ base_manpower = 4
 is_city = yes
 add_core = DLH
 add_core = SRH
-estate = estate_church
+ 
 fort_15th = yes # Lahore Fort
 
 discovered_by = indian

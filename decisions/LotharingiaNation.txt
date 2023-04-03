@@ -11,13 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				AND = {
-					tag = BUR
-					NOT = { has_dlc = "Emperor" }
-				}
 				tag = LOR
 				tag = BAR #1356
 				tag = LUX #1356
+				tag = BUR
 				#tag = AAC #1356
 			}
 			OR = {

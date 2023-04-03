@@ -1,0 +1,75 @@
+# Completely scripted peace treaties are made here
+
+# THIS is the Taker and FROM the Giver in all scopes unless otherwise stated
+
+# This functionality was made to fully support modded subject types. It can probably also be used for other things, but has the following limitations:
+# These treaties don't support having a different Taker/Giver than the two countries that are negotiating.
+# Nor do they support setting provinces (like cede province) or third party countries (like annull treaties) as targets.
+
+# Example:
+
+
+po_claim_the_serbian_empire = { # Thessaly Peace Deal
+	category = 6
+	power_projection = vassalized_rival
+	power_cost_base = 1.0
+	prestige_base = 0.3
+	ae_base = 0.25
+	requires_demand_independence = no
+	is_make_subject = yes
+	requires_is_allowed = yes
+
+	warscore_cost = {
+		#all_provinces = 0.1 #0.20
+		no_provinces = 50.0
+		owner_keeps = 0.0
+		conquered = 0.0
+		returned_core = 0.0
+		released_nation = 0.0
+		cancelled_subject = 0.0
+		concede_colonial_region = 0.0
+	}
+	
+	warscore_cap = 50.0
+
+
+	is_visible = {
+		#ROOT = { has_country_modifier = ottoman_focus_on_balkans }
+		ROOT = { tag = TES }
+	}
+	is_allowed = {
+		FROM = {
+			tag = SER
+		}	
+	}
+	effect = {
+		every_province = { # Idea is that you inherit Serbian claims, but not easy time integrating vassals
+			limit = { 
+				is_core = SER 
+				NOT = { is_core = X04 } 
+				NOT = { is_core = X05 } 
+				NOT = { is_core = X03 } 
+				NOT = { is_core = ALB }  
+			}
+			add_core = TES
+			remove_core = SER			
+		}	
+		ROOT = {
+			inherit = SER
+			country_event = { id = serbiancollapse.3 }
+		}	
+		SER = {
+			restore_country_name = yes
+			remove_government_reform = serbian_government_reform
+			add_government_reform = serbian_princedom_reform	
+		}	
+	}
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value
+			value = 1000 # The Ai should put high prio on this peace treaty
+		}
+	}
+}
+
+

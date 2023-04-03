@@ -1,362 +1,362 @@
-country_event = { # Triggers on Death, distributes flags to potential nations (Had to be done different to Theocracy for bug purposes)
-	id = novgorod_princes.1
-	title = "EVTNAME700"
-	desc = "EVTDESC701"
-	picture = ELECTION_REPUBLICAN_eventPicture
+# country_event = { # Triggers on Death, distributes flags to potential nations (Had to be done different to Theocracy for bug purposes)
+	# id = novgorod_princes.1
+	# title = "EVTNAME700"
+	# desc = "EVTDESC701"
+	# picture = ELECTION_REPUBLICAN_eventPicture
 	
-	is_triggered_only = yes
-	hidden = yes
+	# is_triggered_only = yes
+	# hidden = yes
 	
-	trigger = {
-		has_reform = novgorod_republic
-		NOT = { has_reform = nov_delegated_power_to_veche }
-		NOT = { has_country_modifier = recently_elected_new_ruler_nov }
-	}
+	# trigger = {
+		# has_reform = novgorod_republic
+		# NOT = { has_reform = nov_delegated_power_to_veche }
+		# NOT = { has_country_modifier = recently_elected_new_ruler_nov }
+	# }
 	
 
-	option = {
-		name = theocracy.1.b		# A Foreign Noble
-		hidden_effect = {
-			random_country = { 	# Russian Nation 1
-				limit = {
-					is_lesser_in_union = no
-					NOT = { government = republic }
-					NOT = { government = theocracy }					
-					OR = {
-						tag = TVE
-						tag = MOS
-						tag = LIT
-						tag = BLO
-						tag = YAR
-						tag = GLY
-						tag = KMA
-						tag = VLD
-						tag = RSO
-						tag = SDU
-						tag = MRM
-						tag = RYA
-						tag = OKA
-						tag = IN6
-						culture_group = east_slavic
-					}
-				}
-				set_country_flag = russian_prince_1_saved
-			}
-			random_country = {
-				limit = {
-					has_country_flag = russian_prince_1_saved
-				}
-				save_global_event_target_as = russian_prince_1
-			}
-			random_country = { 	# Russian Nation 2
-				limit = {
-					NOT = { has_country_flag = russian_prince_1_saved }
-					is_lesser_in_union = no
-					NOT = { government = republic }
-					NOT = { government = theocracy }					
-					OR = {
-						tag = TVE
-						tag = MOS
-						tag = LIT
-						tag = BLO
-						tag = YAR
-						tag = GLY
-						tag = KMA
-						tag = VLD
-						tag = RSO
-						tag = SDU
-						tag = MRM
-						tag = RYA
-						tag = OKA
-						tag = IN6
-						culture_group = east_slavic
-					}
-				}
-				set_country_flag = russian_prince_2_saved
-			}
-			random_country = {
-				limit = {
-					has_country_flag = russian_prince_2_saved
-				}
-				save_global_event_target_as = russian_prince_2
-			}						
-			random_country = { 	# Russian Nation 3
-				limit = {
-					NOT = { has_country_flag = russian_prince_1_saved }
-					NOT = { has_country_flag = russian_prince_2_saved }
-					is_lesser_in_union = no
-					NOT = { government = republic }
-					NOT = { government = theocracy }
-					OR = {
-						tag = TVE
-						tag = MOS
-						tag = LIT
-						tag = BLO
-						tag = YAR
-						tag = GLY
-						tag = KMA
-						tag = VLD
-						tag = RSO
-						tag = SDU
-						tag = MRM
-						tag = RYA
-						tag = OKA
-						tag = IN6
-						culture_group = east_slavic
-					}
-				}
-				set_country_flag = russian_prince_3_saved
-			}
-			random_country = {
-				limit = {
-					has_country_flag = russian_prince_3_saved
-				}
-				save_global_event_target_as = russian_prince_3
-			}				
-			country_event = { id = novgorod_princes.3 }			
-		}		
-	}
-}
+	# option = {
+		# name = theocracy.1.b		# A Foreign Noble
+		# hidden_effect = {
+			# random_country = { 	# Russian Nation 1
+				# limit = {
+					# is_lesser_in_union = no
+					# NOT = { government = republic }
+					# NOT = { government = theocracy }					
+					# OR = {
+						# tag = TVE
+						# tag = MOS
+						# tag = LIT
+						# tag = BLO
+						# tag = YAR
+						# tag = GLY
+						# tag = KMA
+						# tag = VLD
+						# tag = RSO
+						# tag = SDU
+						# tag = MRM
+						# tag = RYA
+						# tag = OKA
+						# tag = IN6
+						# culture_group = east_slavic
+					# }
+				# }
+				# set_country_flag = russian_prince_1_saved
+			# }
+			# random_country = {
+				# limit = {
+					# has_country_flag = russian_prince_1_saved
+				# }
+				# save_global_event_target_as = russian_prince_1
+			# }
+			# random_country = { 	# Russian Nation 2
+				# limit = {
+					# NOT = { has_country_flag = russian_prince_1_saved }
+					# is_lesser_in_union = no
+					# NOT = { government = republic }
+					# NOT = { government = theocracy }					
+					# OR = {
+						# tag = TVE
+						# tag = MOS
+						# tag = LIT
+						# tag = BLO
+						# tag = YAR
+						# tag = GLY
+						# tag = KMA
+						# tag = VLD
+						# tag = RSO
+						# tag = SDU
+						# tag = MRM
+						# tag = RYA
+						# tag = OKA
+						# tag = IN6
+						# culture_group = east_slavic
+					# }
+				# }
+				# set_country_flag = russian_prince_2_saved
+			# }
+			# random_country = {
+				# limit = {
+					# has_country_flag = russian_prince_2_saved
+				# }
+				# save_global_event_target_as = russian_prince_2
+			# }						
+			# random_country = { 	# Russian Nation 3
+				# limit = {
+					# NOT = { has_country_flag = russian_prince_1_saved }
+					# NOT = { has_country_flag = russian_prince_2_saved }
+					# is_lesser_in_union = no
+					# NOT = { government = republic }
+					# NOT = { government = theocracy }
+					# OR = {
+						# tag = TVE
+						# tag = MOS
+						# tag = LIT
+						# tag = BLO
+						# tag = YAR
+						# tag = GLY
+						# tag = KMA
+						# tag = VLD
+						# tag = RSO
+						# tag = SDU
+						# tag = MRM
+						# tag = RYA
+						# tag = OKA
+						# tag = IN6
+						# culture_group = east_slavic
+					# }
+				# }
+				# set_country_flag = russian_prince_3_saved
+			# }
+			# random_country = {
+				# limit = {
+					# has_country_flag = russian_prince_3_saved
+				# }
+				# save_global_event_target_as = russian_prince_3
+			# }				
+			# country_event = { id = novgorod_princes.3 }			
+		# }		
+	# }
+# }
 
 
-country_event = { # Cleanup crew on Dynasty and flags
-	id = novgorod_princes.2
-	title = "EVTNAME700"
-	desc = "EVTDESC701"
-	picture = ELECTION_REPUBLICAN_eventPicture
+# country_event = { # Cleanup crew on Dynasty and flags
+	# id = novgorod_princes.2
+	# title = "EVTNAME700"
+	# desc = "EVTDESC701"
+	# picture = ELECTION_REPUBLICAN_eventPicture
 	
-	is_triggered_only = yes
-	hidden = yes
+	# is_triggered_only = yes
+	# hidden = yes
 	
-	trigger = {
-		has_reform = novgorod_republic
-		NOT = { has_reform = nov_delegated_power_to_veche }		
-	}
+	# trigger = {
+		# has_reform = novgorod_republic
+		# NOT = { has_reform = nov_delegated_power_to_veche }		
+	# }
 
 
-	option = {
-		trigger = {
-			has_country_flag = selected_prince_1
-		}		
-		name = theocracy.1.a		# A Foreign Noble	
-		set_dynasty = event_target:russian_prince_1
-		clear_global_event_target = russian_prince_1
-		clear_global_event_target = russian_prince_2
-		clear_global_event_target = russian_prince_3
-		clr_country_flag = selected_prince_1
-		clr_country_flag = selected_prince_2
-		clr_country_flag = selected_prince_3	
-		clr_country_flag = selected_boyar		
-		set_country_flag = remove_modifier_nov_check
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_1_saved
-			}
-			clr_country_flag = russian_prince_1_saved
-		}
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_2_saved
-			}
-			clr_country_flag = russian_prince_2_saved
-		}	
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_3_saved
-			}
-			clr_country_flag = russian_prince_3_saved
-		}		
-	}
+	# option = {
+		# trigger = {
+			# has_country_flag = selected_prince_1
+		# }		
+		# name = theocracy.1.a		# A Foreign Noble	
+		# set_dynasty = event_target:russian_prince_1
+		# clear_global_event_target = russian_prince_1
+		# clear_global_event_target = russian_prince_2
+		# clear_global_event_target = russian_prince_3
+		# clr_country_flag = selected_prince_1
+		# clr_country_flag = selected_prince_2
+		# clr_country_flag = selected_prince_3	
+		# clr_country_flag = selected_boyar		
+		# set_country_flag = remove_modifier_nov_check
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_1_saved
+			# }
+			# clr_country_flag = russian_prince_1_saved
+		# }
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_2_saved
+			# }
+			# clr_country_flag = russian_prince_2_saved
+		# }	
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_3_saved
+			# }
+			# clr_country_flag = russian_prince_3_saved
+		# }		
+	# }
 	
-	option = {
-		trigger = {
-			has_country_flag = selected_prince_2
-		}			
-		name = theocracy.1.b		# A Foreign Noble	
-		set_dynasty = event_target:russian_prince_2
-		clear_global_event_target = russian_prince_1
-		clear_global_event_target = russian_prince_2
-		clear_global_event_target = russian_prince_3
-		clr_country_flag = selected_prince_1
-		clr_country_flag = selected_prince_2
-		clr_country_flag = selected_prince_3
-		clr_country_flag = selected_boyar		
-		set_country_flag = remove_modifier_nov_check		
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_1_saved
-			}
-			clr_country_flag = russian_prince_1_saved
-		}
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_2_saved
-			}
-			clr_country_flag = russian_prince_2_saved
-		}	
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_3_saved
-			}
-			clr_country_flag = russian_prince_3_saved
-		}		
-	}
+	# option = {
+		# trigger = {
+			# has_country_flag = selected_prince_2
+		# }			
+		# name = theocracy.1.b		# A Foreign Noble	
+		# set_dynasty = event_target:russian_prince_2
+		# clear_global_event_target = russian_prince_1
+		# clear_global_event_target = russian_prince_2
+		# clear_global_event_target = russian_prince_3
+		# clr_country_flag = selected_prince_1
+		# clr_country_flag = selected_prince_2
+		# clr_country_flag = selected_prince_3
+		# clr_country_flag = selected_boyar		
+		# set_country_flag = remove_modifier_nov_check		
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_1_saved
+			# }
+			# clr_country_flag = russian_prince_1_saved
+		# }
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_2_saved
+			# }
+			# clr_country_flag = russian_prince_2_saved
+		# }	
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_3_saved
+			# }
+			# clr_country_flag = russian_prince_3_saved
+		# }		
+	# }
 
-	option = {
-		trigger = {
-			has_country_flag = selected_prince_3
-		}			
-		name = theocracy.1.c		# A Foreign Noble	
-		set_dynasty = event_target:russian_prince_3
-		clear_global_event_target = russian_prince_1
-		clear_global_event_target = russian_prince_2
-		clear_global_event_target = russian_prince_3
-		clr_country_flag = selected_prince_1
-		clr_country_flag = selected_prince_2
-		clr_country_flag = selected_prince_3
-		clr_country_flag = selected_boyar		
-		set_country_flag = remove_modifier_nov_check		
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_1_saved
-			}
-			clr_country_flag = russian_prince_1_saved
-		}
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_2_saved
-			}
-			clr_country_flag = russian_prince_2_saved
-		}	
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_3_saved
-			}
-			clr_country_flag = russian_prince_3_saved
-		}		
-	}	
+	# option = {
+		# trigger = {
+			# has_country_flag = selected_prince_3
+		# }			
+		# name = theocracy.1.c		# A Foreign Noble	
+		# set_dynasty = event_target:russian_prince_3
+		# clear_global_event_target = russian_prince_1
+		# clear_global_event_target = russian_prince_2
+		# clear_global_event_target = russian_prince_3
+		# clr_country_flag = selected_prince_1
+		# clr_country_flag = selected_prince_2
+		# clr_country_flag = selected_prince_3
+		# clr_country_flag = selected_boyar		
+		# set_country_flag = remove_modifier_nov_check		
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_1_saved
+			# }
+			# clr_country_flag = russian_prince_1_saved
+		# }
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_2_saved
+			# }
+			# clr_country_flag = russian_prince_2_saved
+		# }	
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_3_saved
+			# }
+			# clr_country_flag = russian_prince_3_saved
+		# }		
+	# }	
 	
-	option = {
-		trigger = {
-			has_country_flag = selected_boyar
-		}			
-		name = theocracy.1.c		# A Foreign Noble	
-		clear_global_event_target = russian_prince_1
-		clear_global_event_target = russian_prince_2
-		clear_global_event_target = russian_prince_3
-		clr_country_flag = selected_prince_1
-		clr_country_flag = selected_prince_2
-		clr_country_flag = selected_prince_3
-		clr_country_flag = selected_boyar
-		set_country_flag = remove_modifier_nov_check		
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_1_saved
-			}
-			clr_country_flag = russian_prince_1_saved
-		}
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_2_saved
-			}
-			clr_country_flag = russian_prince_2_saved
-		}	
-		every_country = { # Random is missing somehow as all original nations are getting it somehow
-			limit = {
-				has_country_flag = russian_prince_3_saved
-			}
-			clr_country_flag = russian_prince_3_saved
-		}		
-	}		
-}
+	# option = {
+		# trigger = {
+			# has_country_flag = selected_boyar
+		# }			
+		# name = theocracy.1.c		# A Foreign Noble	
+		# clear_global_event_target = russian_prince_1
+		# clear_global_event_target = russian_prince_2
+		# clear_global_event_target = russian_prince_3
+		# clr_country_flag = selected_prince_1
+		# clr_country_flag = selected_prince_2
+		# clr_country_flag = selected_prince_3
+		# clr_country_flag = selected_boyar
+		# set_country_flag = remove_modifier_nov_check		
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_1_saved
+			# }
+			# clr_country_flag = russian_prince_1_saved
+		# }
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_2_saved
+			# }
+			# clr_country_flag = russian_prince_2_saved
+		# }	
+		# every_country = { # Random is missing somehow as all original nations are getting it somehow
+			# limit = {
+				# has_country_flag = russian_prince_3_saved
+			# }
+			# clr_country_flag = russian_prince_3_saved
+		# }		
+	# }		
+# }
 
-country_event = { # Main Event - Placed last due to Dynasty bugs with Republics
-	id = novgorod_princes.3
-	title = "novgorod_princes.3.title"
-	desc = "novgorod_princes.3.desc"
-	picture = {	
-		trigger = {
-			has_dlc = "Third Rome"
-		}
-		picture = OPRICHINA_eventPicture
-	}
-	picture = {	
-		trigger = {
-			NOT = { has_dlc = "Third Rome" }
-		}
-		picture = DEBATE_REPUBLICAN_eventPicture
-	}
+# country_event = { # Main Event - Placed last due to Dynasty bugs with Republics
+	# id = novgorod_princes.3
+	# title = "novgorod_princes.3.title"
+	# desc = "novgorod_princes.3.desc"
+	# picture = {	
+		# trigger = {
+			# has_dlc = "Third Rome"
+		# }
+		# picture = OPRICHINA_eventPicture
+	# }
+	# picture = {	
+		# trigger = {
+			# NOT = { has_dlc = "Third Rome" }
+		# }
+		# picture = DEBATE_REPUBLICAN_eventPicture
+	# }
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	trigger = {
-		has_reform = novgorod_republic
-		NOT = { has_reform = nov_delegated_power_to_veche }		
-	}
+	# trigger = {
+		# has_reform = novgorod_republic
+		# NOT = { has_reform = nov_delegated_power_to_veche }		
+	# }
 	
-	immediate = {
-		hidden_effect = {
-			add_country_modifier = { # To prevent infinite loop
-				name = recently_elected_new_ruler_nov
-				duration = -1
-				hidden = yes
-			}
-		}	
-	}	
+	# immediate = {
+		# hidden_effect = {
+			# add_country_modifier = { # To prevent infinite loop
+				# name = recently_elected_new_ruler_nov
+				# duration = -1
+				# hidden = yes
+			# }
+		# }	
+	# }	
 
-	option = {
-		name = novgorod_princes.3.ab	# A Local Boyar Noble
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 5
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 5
-			}
-		}
-		else_if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 5
-			}
-		}
-		if = {
-			limit = {
-				has_saved_event_target = noble_province
-			}
-			define_ruler = {
-				min_age = 25
-				max_age = 45
-				hidden = yes
-				culture = event_target:noble_province
-			}
-		}
-		else = {
-			define_ruler = {
-				min_age = 25
-				max_age = 45				
-				hidden = yes
-			}
-		}
-		add_prestige = 10
-		add_stability = 1
-		clr_country_flag = in_theocracy_heir_selection
-		custom_tooltip = theocracy.1.tt	
-		set_country_flag = selected_boyar
-	}
+	# option = {
+		# name = novgorod_princes.3.ab	# A Local Boyar Noble
+		# if = {
+			# limit = {
+				# has_estate = estate_nobles
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_nobles
+				# loyalty = 5
+			# }
+		# }
+		# if = {
+			# limit = {
+				# has_estate = estate_church
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_church
+				# loyalty = 5
+			# }
+		# }
+		# else_if = {
+			# limit = {
+				# has_estate = estate_burghers
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_burghers
+				# loyalty = 5
+			# }
+		# }
+		# if = {
+			# limit = {
+				# has_saved_event_target = noble_province
+			# }
+			# define_ruler = {
+				# min_age = 25
+				# max_age = 45
+				# hidden = yes
+				# culture = event_target:noble_province
+			# }
+		# }
+		# else = {
+			# define_ruler = {
+				# min_age = 25
+				# max_age = 45				
+				# hidden = yes
+			# }
+		# }
+		# add_prestige = 10
+		# add_stability = 1
+		# clr_country_flag = in_theocracy_heir_selection
+		# custom_tooltip = theocracy.1.tt	
+		# set_country_flag = selected_boyar
+	# }
 	
 	# option = {
 		# name = novgorod_princes.3.ab	# A Local Boyar Noble - Promote Local Boyars
@@ -412,347 +412,347 @@ country_event = { # Main Event - Placed last due to Dynasty bugs with Republics
 		# custom_tooltip = theocracy.1.tt	
 	# }	
 
-	option = {
-		name = novgorod_princes.3.a		# A Foreign Noble 1- Pre-Rival power rises
-		trigger = {
-			NOT = { has_global_flag = new_great_russian_power }
-		}	
-		define_ruler = { 
-			min_age = 18
-			max_age = 40
-			dynasty = " "			
-			culture = event_target:russian_prince_1
-			religion = event_target:russian_prince_1
-		}
-		add_stability = 1	
-		country_event = { id = novgorod_princes.4 }
-		reverse_add_opinion = { who = event_target:russian_prince_1  modifier = opinion_theocracy_noble }	
-		set_country_flag = selected_prince_1
-		custom_tooltip = theocracy.1.tt		
-	}
+	# option = {
+		# name = novgorod_princes.3.a		# A Foreign Noble 1- Pre-Rival power rises
+		# trigger = {
+			# NOT = { has_global_flag = new_great_russian_power }
+		# }	
+		# define_ruler = { 
+			# min_age = 18
+			# max_age = 40
+			# dynasty = " "			
+			# culture = event_target:russian_prince_1
+			# religion = event_target:russian_prince_1
+		# }
+		# add_stability = 1	
+		# country_event = { id = novgorod_princes.4 }
+		# reverse_add_opinion = { who = event_target:russian_prince_1  modifier = opinion_theocracy_noble }	
+		# set_country_flag = selected_prince_1
+		# custom_tooltip = theocracy.1.tt		
+	# }
 	
-	option = {
-		name = novgorod_princes.3.b		# A Foreign Noble 2 - Pre-Rival power rises
-		trigger = {
-			NOT = { has_global_flag = new_great_russian_power }
-		}	
-		define_ruler = { 
-			min_age = 18
-			max_age = 40	
-			dynasty = " "			
-			culture = event_target:russian_prince_2
-			religion = event_target:russian_prince_2
-		}	
-		add_stability = 1
-		country_event = { id = novgorod_princes.4 }
-		reverse_add_opinion = { who = event_target:russian_prince_2  modifier = opinion_theocracy_noble }	
-		set_country_flag = selected_prince_2
-		custom_tooltip = theocracy.1.tt		
-	}	
+	# option = {
+		# name = novgorod_princes.3.b		# A Foreign Noble 2 - Pre-Rival power rises
+		# trigger = {
+			# NOT = { has_global_flag = new_great_russian_power }
+		# }	
+		# define_ruler = { 
+			# min_age = 18
+			# max_age = 40	
+			# dynasty = " "			
+			# culture = event_target:russian_prince_2
+			# religion = event_target:russian_prince_2
+		# }	
+		# add_stability = 1
+		# country_event = { id = novgorod_princes.4 }
+		# reverse_add_opinion = { who = event_target:russian_prince_2  modifier = opinion_theocracy_noble }	
+		# set_country_flag = selected_prince_2
+		# custom_tooltip = theocracy.1.tt		
+	# }	
 	
-	option = {
-		name = novgorod_princes.3.c		# A Foreign Noble 3 - Pre-Rival power rises
-		trigger = {
-			NOT = { has_global_flag = new_great_russian_power }
-		}	
-		define_ruler = { 
-			min_age = 18
-			max_age = 40	
-			dynasty = " "			
-			culture = event_target:russian_prince_3
-			religion = event_target:russian_prince_3
-		}	
-		add_stability = 1
-		country_event = { id = novgorod_princes.4 }
-		reverse_add_opinion = { who = event_target:russian_prince_3  modifier = opinion_theocracy_noble }	
-		set_country_flag = selected_prince_3
-		custom_tooltip = theocracy.1.tt		
-	}	
+	# option = {
+		# name = novgorod_princes.3.c		# A Foreign Noble 3 - Pre-Rival power rises
+		# trigger = {
+			# NOT = { has_global_flag = new_great_russian_power }
+		# }	
+		# define_ruler = { 
+			# min_age = 18
+			# max_age = 40	
+			# dynasty = " "			
+			# culture = event_target:russian_prince_3
+			# religion = event_target:russian_prince_3
+		# }	
+		# add_stability = 1
+		# country_event = { id = novgorod_princes.4 }
+		# reverse_add_opinion = { who = event_target:russian_prince_3  modifier = opinion_theocracy_noble }	
+		# set_country_flag = selected_prince_3
+		# custom_tooltip = theocracy.1.tt		
+	# }	
 	
 	###### Muscovy or another Prince rises to power, creating a rival for Novgorod
-	option = {
-		name = theocracy.1.aa		# A Foreign Noble 1- Pre-Rival power rises
+	# option = {
+		# name = theocracy.1.aa		# A Foreign Noble 1- Pre-Rival power rises
+		set_country_flag = theo_foreign_noble_flag # USED IN DEVOTION.TXT
+		# trigger = {
+			# has_global_flag = new_great_russian_power
+		# }	
+		# if = {
+			# limit = {
+				# has_estate = estate_nobles
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_nobles
+				# loyalty = -5
+			# }
+		# }
+		# if = {
+			# limit = {
+				# has_estate = estate_church
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_church
+				# loyalty = -5
+			# }
+		# }
+		# else_if = {
+			# limit = {
+				# has_estate = estate_burghers
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_burghers
+				# loyalty = -5
+			# }
+		# }			
+		# define_ruler = { 
+			# min_age = 18
+			# max_age = 40	
+			# dynasty = ""			
+			# culture = event_target:russian_prince_1
+			# religion = event_target:russian_prince_1
+		# }	
+		# country_event = { id = novgorod_princes.4 }
+		# reverse_add_opinion = { who = event_target:russian_prince_1  modifier = opinion_theocracy_noble }	
+		# set_country_flag = selected_prince_1
+		# custom_tooltip = theocracy.1.tt		
+	# }
+	
+	# option = {
+		# name = theocracy.1.bb		# A Foreign Noble 2 - Pre-Rival power rises
 		#set_country_flag = theo_foreign_noble_flag # USED IN DEVOTION.TXT
-		trigger = {
-			has_global_flag = new_great_russian_power
-		}	
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -5
-			}
-		}
-		else_if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -5
-			}
-		}			
-		define_ruler = { 
-			min_age = 18
-			max_age = 40	
-			dynasty = ""			
-			culture = event_target:russian_prince_1
-			religion = event_target:russian_prince_1
-		}	
-		country_event = { id = novgorod_princes.4 }
-		reverse_add_opinion = { who = event_target:russian_prince_1  modifier = opinion_theocracy_noble }	
-		set_country_flag = selected_prince_1
-		custom_tooltip = theocracy.1.tt		
-	}
+		# trigger = {
+			# has_global_flag = new_great_russian_power
+		# }	
+		# if = {
+			# limit = {
+				# has_estate = estate_nobles
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_nobles
+				# loyalty = -5
+			# }
+		# }
+		# if = {
+			# limit = {
+				# has_estate = estate_church
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_church
+				# loyalty = -5
+			# }
+		# }
+		# else_if = {
+			# limit = {
+				# has_estate = estate_burghers
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_burghers
+				# loyalty = -5
+			# }
+		# }			
+		# define_ruler = { 
+			# min_age = 18
+			# max_age = 40	
+			# dynasty = ""
+			# culture = event_target:russian_prince_2
+			# religion = event_target:russian_prince_2
+		# }	
+		# country_event = { id = novgorod_princes.4 }
+		# reverse_add_opinion = { who = event_target:russian_prince_2  modifier = opinion_theocracy_noble }	
+		# set_country_flag = selected_prince_2
+		# custom_tooltip = theocracy.1.tt		
+	# }	
 	
-	option = {
-		name = theocracy.1.bb		# A Foreign Noble 2 - Pre-Rival power rises
+	# option = {
+		# name = theocracy.1.cc		# A Foreign Noble 3 - Pre-Rival power rises
 		#set_country_flag = theo_foreign_noble_flag # USED IN DEVOTION.TXT
-		trigger = {
-			has_global_flag = new_great_russian_power
-		}	
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -5
-			}
-		}
-		else_if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -5
-			}
-		}			
-		define_ruler = { 
-			min_age = 18
-			max_age = 40	
-			dynasty = ""
-			culture = event_target:russian_prince_2
-			religion = event_target:russian_prince_2
-		}	
-		country_event = { id = novgorod_princes.4 }
-		reverse_add_opinion = { who = event_target:russian_prince_2  modifier = opinion_theocracy_noble }	
-		set_country_flag = selected_prince_2
-		custom_tooltip = theocracy.1.tt		
-	}	
-	
-	option = {
-		name = theocracy.1.cc		# A Foreign Noble 3 - Pre-Rival power rises
-		#set_country_flag = theo_foreign_noble_flag # USED IN DEVOTION.TXT
-		trigger = {
-			has_global_flag = new_great_russian_power
-		}	
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -5
-			}
-		}
-		else_if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -5
-			}
-		}		
-		define_ruler = { 
-			min_age = 18
-			max_age = 40	
-			dynasty = ""			
-			culture = event_target:russian_prince_3
-			religion = event_target:russian_prince_3
-		}	
-		country_event = { id = novgorod_princes.4 }
-		reverse_add_opinion = { who = event_target:russian_prince_3  modifier = opinion_theocracy_noble }	
-		set_country_flag = selected_prince_3
-		custom_tooltip = theocracy.1.tt		
-	}		
-}
+		# trigger = {
+			# has_global_flag = new_great_russian_power
+		# }	
+		# if = {
+			# limit = {
+				# has_estate = estate_nobles
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_nobles
+				# loyalty = -5
+			# }
+		# }
+		# if = {
+			# limit = {
+				# has_estate = estate_church
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_church
+				# loyalty = -5
+			# }
+		# }
+		# else_if = {
+			# limit = {
+				# has_estate = estate_burghers
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_burghers
+				# loyalty = -5
+			# }
+		# }		
+		# define_ruler = { 
+			# min_age = 18
+			# max_age = 40	
+			# dynasty = ""			
+			# culture = event_target:russian_prince_3
+			# religion = event_target:russian_prince_3
+		# }	
+		# country_event = { id = novgorod_princes.4 }
+		# reverse_add_opinion = { who = event_target:russian_prince_3  modifier = opinion_theocracy_noble }	
+		# set_country_flag = selected_prince_3
+		# custom_tooltip = theocracy.1.tt		
+	# }		
+# }
 
-country_event = { # Another Dummy event for flags not being nice
-	id = novgorod_princes.4
-	title = "EVTNAME700"
-	desc = "EVTDESC701"
-	picture = ELECTION_REPUBLICAN_eventPicture
+# country_event = { # Another Dummy event for flags not being nice
+	# id = novgorod_princes.4
+	# title = "EVTNAME700"
+	# desc = "EVTDESC701"
+	# picture = ELECTION_REPUBLICAN_eventPicture
 	
-	is_triggered_only = yes
-	hidden = yes
+	# is_triggered_only = yes
+	# hidden = yes
 	
-	trigger = {
-		has_reform = novgorod_republic
-		NOT = { has_reform = nov_delegated_power_to_veche }		
-	}
+	# trigger = {
+		# has_reform = novgorod_republic
+		# NOT = { has_reform = nov_delegated_power_to_veche }		
+	# }
 
 
-	option = {
-		name = theocracy.1.b		# A Foreign Noble 1
-		country_event = { id = novgorod_princes.2 }
-	}
-}
+	# option = {
+		# name = theocracy.1.b		# A Foreign Noble 1
+		# country_event = { id = novgorod_princes.2 }
+	# }
+# }
 
-country_event = { # Dummy MTTH event to remove modifier, prevents the election from going in a infinite loop if a player decides to do the 2 month for event to expire
-	id = novgorod_princes.5
-	title = "EVTNAME700"
-	desc = "EVTDESC701"
-	picture = ELECTION_REPUBLICAN_eventPicture
+# country_event = { # Dummy MTTH event to remove modifier, prevents the election from going in a infinite loop if a player decides to do the 2 month for event to expire
+	# id = novgorod_princes.5
+	# title = "EVTNAME700"
+	# desc = "EVTDESC701"
+	# picture = ELECTION_REPUBLICAN_eventPicture
 	
-	hidden = yes
+	# hidden = yes
 	
-	trigger = {
-		has_country_modifier = recently_elected_new_ruler_nov
-		has_country_flag = remove_modifier_nov_check	
-	}
+	# trigger = {
+		# has_country_modifier = recently_elected_new_ruler_nov
+		# has_country_flag = remove_modifier_nov_check	
+	# }
 	
-	mean_time_to_happen = {
-		days = 3
-	}	
-
-
-	option = {
-		name = theocracy.1.b 
-		remove_country_modifier = recently_elected_new_ruler_nov
-		clr_country_flag = remove_modifier_nov_check
-	}
-}
-
-country_event = { # One of the Novgorod Veche estates overthrow the current Prince if loyalty is too low
-	id = novgorod_princes.6
-	title = "novgorod_princes.6.title"
-	desc = "novgorod_princes.6.desc"
-	picture = {	
-		trigger = {
-			has_dlc = "Third Rome"
-		}
-		picture = OPRICHINA_eventPicture
-	}
-	picture = {	
-		trigger = {
-			NOT = { has_dlc = "Third Rome" }
-		}
-		picture = DEBATE_REPUBLICAN_eventPicture
-	}
-	
-	trigger = {
-		has_reform = novgorod_republic
-		NOT = { has_reform = nov_delegated_power_to_veche }
-		NOT = { has_country_flag = nov_exiled_ruler_check }
-		NOT = { has_country_modifier = veche_recently_deposed_ruler }
-		OR = {
-			AND = {
-				has_estate = estate_nobles
-				NOT = {
-					estate_loyalty = {	
-						estate = estate_nobles
-						loyalty = 30
-					}
-				}		
-			}	
-			AND = {
-				has_estate = estate_church
-				NOT = {
-					estate_loyalty = {	
-						estate = estate_church
-						loyalty = 30
-					}
-				}		
-			}	
-			AND = {
-				has_estate = estate_burghers
-				NOT = {
-					estate_loyalty = {	
-						estate = estate_burghers
-						loyalty = 30
-					}
-				}		
-			}						
-		}			
-	}
-	
-	immediate = {
-		set_country_flag = nov_exiled_ruler_check
-	}	
-	
-	mean_time_to_happen = {
-		days = 3
-	}	
+	# mean_time_to_happen = {
+		# days = 3
+	# }	
 
 
-	option = {
-		name = novgorod_princes.6.b 
-		exile_ruler_as = veche_exiled_ruler
-		add_country_modifier = {
-			name = veche_recently_deposed_ruler
-			duration = 3650
-		}	
-		add_prestige = -25
-		custom_tooltip = veche_exiled_tooptip		
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 15
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 15
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 15
-			}
-		}		
-		clr_country_flag = nov_exiled_ruler_check
-	}
-}
+	# option = {
+		# name = theocracy.1.b 
+		# remove_country_modifier = recently_elected_new_ruler_nov
+		# clr_country_flag = remove_modifier_nov_check
+	# }
+# }
+
+# country_event = { # One of the Novgorod Veche estates overthrow the current Prince if loyalty is too low
+	# id = novgorod_princes.6
+	# title = "novgorod_princes.6.title"
+	# desc = "novgorod_princes.6.desc"
+	# picture = {	
+		# trigger = {
+			# has_dlc = "Third Rome"
+		# }
+		# picture = OPRICHINA_eventPicture
+	# }
+	# picture = {	
+		# trigger = {
+			# NOT = { has_dlc = "Third Rome" }
+		# }
+		# picture = DEBATE_REPUBLICAN_eventPicture
+	# }
+	
+	# trigger = {
+		# has_reform = novgorod_republic
+		# NOT = { has_reform = nov_delegated_power_to_veche }
+		# NOT = { has_country_flag = nov_exiled_ruler_check }
+		# NOT = { has_country_modifier = veche_recently_deposed_ruler }
+		# OR = {
+			# AND = {
+				# has_estate = estate_nobles
+				# NOT = {
+					# estate_loyalty = {	
+						# estate = estate_nobles
+						# loyalty = 30
+					# }
+				# }		
+			# }	
+			# AND = {
+				# has_estate = estate_church
+				# NOT = {
+					# estate_loyalty = {	
+						# estate = estate_church
+						# loyalty = 30
+					# }
+				# }		
+			# }	
+			# AND = {
+				# has_estate = estate_burghers
+				# NOT = {
+					# estate_loyalty = {	
+						# estate = estate_burghers
+						# loyalty = 30
+					# }
+				# }		
+			# }						
+		# }			
+	# }
+	
+	# immediate = {
+		# set_country_flag = nov_exiled_ruler_check
+	# }	
+	
+	# mean_time_to_happen = {
+		# days = 3
+	# }	
+
+
+	# option = {
+		# name = novgorod_princes.6.b 
+		# exile_ruler_as = veche_exiled_ruler
+		# add_country_modifier = {
+			# name = veche_recently_deposed_ruler
+			# duration = 3650
+		# }	
+		# add_prestige = -25
+		# custom_tooltip = veche_exiled_tooptip		
+		# if = {
+			# limit = {
+				# has_estate = estate_nobles
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_nobles
+				# loyalty = 15
+			# }
+		# }
+		# if = {
+			# limit = {
+				# has_estate = estate_church
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_church
+				# loyalty = 15
+			# }
+		# }
+		# if = {
+			# limit = {
+				# has_estate = estate_burghers
+			# }
+			# add_estate_loyalty = {
+				# estate = estate_burghers
+				# loyalty = 15
+			# }
+		# }		
+		# clr_country_flag = nov_exiled_ruler_check
+	# }
+# }

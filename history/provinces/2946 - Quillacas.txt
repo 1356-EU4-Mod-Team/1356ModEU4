@@ -18,7 +18,7 @@ base_manpower = 1
 owner = PCJ
 controller = PCJ
 add_core = PCJ
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1476.1.1 = {
 	owner = INC
 	controller = INC

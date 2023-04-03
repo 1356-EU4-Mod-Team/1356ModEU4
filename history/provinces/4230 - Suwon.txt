@@ -16,7 +16,7 @@ add_core = KOR
 #add_core = GYO
 discovered_by = chinese
 discovered_by = nomad_group
-estate = estate_nobles
+ 
 
 #add_province_triggered_modifier = 1356_jongmyo_temple_great_project_province_modifier #1356 
 

@@ -18,7 +18,7 @@ native_hostileness = 6
 discovered_by = north_american
 extra_cost = 8
 center_of_trade = 1
-
+1356.12.27 = { owner = --- owner = --- owner = --- }
 1535.1.1 = { discovered_by = FRA } # Jacques Cartier
 1642.5.17 = {
 	owner = FRA

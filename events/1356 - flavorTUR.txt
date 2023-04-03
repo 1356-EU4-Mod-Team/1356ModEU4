@@ -19,10 +19,14 @@ country_event = { #Ottoman Event, Hidden to the World
 	
 	option = {
 		name = ottoman_golden_bull.8.a
-		add_army_tradition = 35
-		add_stability = 3
+		add_army_tradition = 20
+		add_stability = 1
 		add_prestige = 25
 		add_manpower = 7.5
+		set_capital = 317
+		add_rival = BYZ
+		add_rival = AYD
+		add_rival = KAR
 		create_general = { tradition = 80 }
 		define_heir_to_general = {
 			name = "Murad Osmanoglu"
@@ -148,6 +152,94 @@ country_event = { #Byzantine Event, Hidden to the World > Deals with Ages rework
 			every_country = {
 				add_splendor = 500
 			}	
+		}		
+		# Post 2023 this event is also designated for unique startup relations
+		hidden_effect = {
+			HUN = {
+				add_opinion = {
+					who = SER
+					modifier = 1356_past_transgressions
+				}
+				reverse_add_opinion = {
+					who = SER
+					modifier = 1356_past_transgressions
+				}	
+				add_opinion = {
+					who = BUL
+					modifier = 1356_past_transgressions
+				}
+				reverse_add_opinion = {
+					who = BUL
+					modifier = 1356_past_transgressions
+				}					
+			}
+			SER = {
+				add_opinion = {
+					who = BUL
+					modifier = 1356_past_cordial_relations
+				}
+				reverse_add_opinion = {
+					who = BUL
+					modifier = 1356_past_cordial_relations
+				}
+				add_trust = {
+					who = BUL	
+					value = 30
+					mutual = yes
+				}	
+				remove_historical_friend = BUL
+				BUL = {
+					remove_historical_friend = SER
+				}	
+			}	
+			BUL = {
+				add_opinion = {
+					who = BYZ
+					modifier = 1356_past_cordial_relations
+				}
+				reverse_add_opinion = {
+					who = BYZ
+					modifier = 1356_past_cordial_relations
+				}
+				add_trust = {
+					who = BYZ	
+					value = 15
+					mutual = yes
+				}	
+				remove_historical_friend = BYZ
+				BYZ = {
+					remove_historical_friend = BUL
+				}	
+			}				
+		}	
+	}
+}	
+
+country_event = { #Byzantine Event, Hidden to the World > Deals with Ages rework in 1.31
+	id = ottoman_golden_bull.1100
+	title = ottoman_golden_bull.1100.t
+	desc = ottoman_golden_bull.1100.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		tag = BYZ
+		is_year = 1356
+		NOT = { is_year = 1430 }		 # Presume Age of Discovery start
+	}
+	
+	option = {
+		name = ottoman_golden_bull.8.a
+		# Nations with unique reform renaming goes here
+		SER = {
+			override_country_name = SERBIAN_EMPIRE_NAME
+		}	
+		BUL = {
+			override_country_name = BULGARIAN_EMPIRE_NAME
 		}		
 	}
 }	

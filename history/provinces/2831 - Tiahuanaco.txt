@@ -18,7 +18,7 @@ base_manpower = 2
 discovered_by = south_american
 discovered_by = andean
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1476.1.1 = {
 	owner = INC
 	controller = INC

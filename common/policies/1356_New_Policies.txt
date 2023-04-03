@@ -1575,7 +1575,7 @@ royal_engineering_academy = {
 	}	
 	
 	land_morale = 0.1
-	artillery_bonus_vs_fort = 1
+	artillery_levels_available_vs_fort = 1
 
 	
 		ai_will_do = {

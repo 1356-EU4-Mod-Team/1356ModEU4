@@ -20,7 +20,7 @@ discovered_by = chinese
 extra_cost = 16
 center_of_trade = 2
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan
 1565.6.4 = {
 	owner = SPA

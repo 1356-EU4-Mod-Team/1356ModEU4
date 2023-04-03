@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = serbian_princedom_reform
+primary_culture = serbian
+religion = orthodox
+technology_group = eastern
+capital = 4176	# Branicevo
+government_rank = 1

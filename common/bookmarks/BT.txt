@@ -3,6 +3,7 @@ bookmark = {
 	desc = "BT_DESC"
 	date = 1356.12.25
 	
+	#default = no ## Temporaily yes to prevent startup lag
 	default = no
 	center = 112	
 	

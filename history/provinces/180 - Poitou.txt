@@ -18,7 +18,7 @@ add_core = POU
 add_core = GUY
 add_claim = ENG
 fort_15th = yes
-estate = estate_burghers
+ 
 
 discovered_by = eastern
 discovered_by = western

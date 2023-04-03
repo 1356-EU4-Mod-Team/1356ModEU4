@@ -13,7 +13,7 @@ base_production = 2
 trade_goods = glass # Cadalso 
 base_manpower = 2
 capital = "Caceres"
-estate = estate_nobles 
+  
 is_city = yes
 add_core = CTR
 

@@ -1,6 +1,6 @@
 native_basic_reform = {
 	basic_reform = yes
-	native_mechanic = yes
+	#native_mechanic = yes
 	allow_migration = yes
 	valid_for_new_country = no
 	allow_convert = yes
@@ -158,10 +158,8 @@ native_land_tradition_reform = {
 
 	ai = {
 		factor = 0.5
-
 		modifier = {
 			factor = 2
-
 			capital_scope = {
 				any_empty_neighbor_province = { # We have land that is still not claimed.
 					tribal_land_of = none
@@ -181,14 +179,14 @@ native_war_band_reform = {
 		land_forcelimit_modifier = 0.15
 		land_morale = 0.05
 	}
-	conditional = {
-		allow = { has_dlc = "Conquest of Paradise" }
-		allow_migration = yes
-		custom_attributes = {
-			enable_settled_mechanics = no
-			enable_tribal_grazing = yes
-		}
-	}
+#	conditional = {
+#		allow = { has_dlc = "Conquest of Paradise" }
+#		allow_migration = yes
+#		custom_attributes = {
+#			enable_settled_mechanics = no
+#			enable_tribal_grazing = yes
+#		}
+#	}
 
 	ai = {
 		factor = 0.5 #generic
@@ -234,14 +232,14 @@ native_seasonal_travel_reform = {
 		migration_cost = -0.25
 		tribal_development_growth = 0.02
 	}
-	conditional = {
-		allow = { has_dlc = "Conquest of Paradise" }
-		allow_migration = yes
-		custom_attributes = {
-			enable_settled_mechanics = no
-			enable_tribal_grazing = yes
-		}
-	}
+#	conditional = {
+#		allow = { has_dlc = "Conquest of Paradise" }
+#		allow_migration = yes
+#		custom_attributes = {
+#			enable_settled_mechanics = no
+#			enable_tribal_grazing = yes
+#		}
+#	}
 
 	ai = {
 		factor = 0.5
@@ -280,14 +278,14 @@ native_settle_down_reform = {
 		add_tribal_land_cost = 2.0
 		governing_capacity_modifier = -0.25
 	}
-	conditional = {
-		allow = { has_dlc = "Conquest of Paradise" }
-		allow_migration = no
-		custom_attributes = {
-			enable_settled_mechanics = yes
-			enable_tribal_grazing = no
-		}
-	}
+#	conditional = {
+#		allow = { has_dlc = "Conquest of Paradise" }
+#		allow_migration = no
+#		custom_attributes = {
+#			enable_settled_mechanics = yes
+#			enable_tribal_grazing = no
+#		}
+#	}
 	removed_effect = {
 		add_stability = -1
 	}
@@ -355,10 +353,11 @@ native_trading_with_foreigners_reform = {
 	}
 
 	effect = {
-		every_tribal_land_province = {
-			limit = { NOT = { owner = { exists = yes } } }
-			settle_province = ROOT
-		}
+		add_mil_power = 50
+#		every_tribal_land_province = {
+#			limit = { NOT = { owner = { exists = yes } } }
+#			settle_province = ROOT
+#		}
 		if = {
 			limit = {
 				native_sponsor_scope = {
@@ -372,6 +371,7 @@ native_trading_with_foreigners_reform = {
 		else = {
 			custom_tooltip = "GOVERNMENT_FROM_NATIVE_SPONSOR"
 		}
+
 	}
 
 	ai = {
@@ -387,10 +387,10 @@ native_becomes_monarchy_reform = {
 		adm_tech = 10
 	}	
 	effect = {
-		every_tribal_land_province = {
-			limit = { NOT = { owner = { exists = yes } } }
-			settle_province = ROOT
-		}
+		#every_tribal_land_province = {
+		#	limit = { NOT = { owner = { exists = yes } } }
+		#	settle_province = ROOT
+		#}
 		set_country_flag = populists_in_government
 		change_government = monarchy
 		change_government_reform_progress = -450 # Doing it like this to avoid that migration code triggers
@@ -407,10 +407,10 @@ native_becomes_republic_reform = {
 		has_institution = feudalism
 	}
 	effect = {
-		every_tribal_land_province = {
-			limit = { NOT = { owner = { exists = yes } } }
-			settle_province = ROOT
-		}
+		#every_tribal_land_province = {
+		#	limit = { NOT = { owner = { exists = yes } } }
+		#	settle_province = ROOT
+		#}
 		set_country_flag = populists_in_government
 		change_government = republic
 		change_government_reform_progress = -250 # Doing it like this to avoid that migration code triggers
@@ -439,10 +439,10 @@ native_becomes_theocracy_reform = {
 		adm_tech = 10
 	}	
 	effect = {
-		every_tribal_land_province = {
-			limit = { NOT = { owner = { exists = yes } } }
-			settle_province = ROOT
-		}
+		#every_tribal_land_province = {
+		#	limit = { NOT = { owner = { exists = yes } } }
+		#	settle_province = ROOT
+		#}
 		set_country_flag = populists_in_government
 		change_government = theocracy
 		change_government_reform_progress = -250 # Doing it like this to avoid that migration code triggers
@@ -460,10 +460,10 @@ native_becomes_horde_reform = {
 		mil_tech = 10
 	}
 	effect = {
-		every_tribal_land_province = {
-			limit = { NOT = { owner = { exists = yes } } }
-			settle_province = ROOT
-		}
+		#every_tribal_land_province = {
+		#	limit = { NOT = { owner = { exists = yes } } }
+		#	settle_province = ROOT
+		#}
 		set_country_flag = populists_in_government
 		change_government = tribal
 		add_government_reform = steppe_horde

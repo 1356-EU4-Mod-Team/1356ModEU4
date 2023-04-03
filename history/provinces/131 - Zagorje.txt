@@ -14,8 +14,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 fort_15th = yes
-estate = estate_nobles
-add_core = HUN
+#add_core = HUN
 add_core = CRO
 
 discovered_by = western

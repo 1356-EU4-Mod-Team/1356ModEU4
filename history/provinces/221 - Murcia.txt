@@ -12,7 +12,7 @@ base_production = 3
 trade_goods = grain 
 base_manpower = 4
 capital = "Cartagena" 
-estate = estate_burghers
+ 
 is_city = yes
 add_core = CAS
 add_claim = ARA

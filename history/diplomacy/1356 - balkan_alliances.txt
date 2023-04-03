@@ -1,10 +1,45 @@
-###SERBIA VASSALS###
+###SERBIA VASSALS AND ALLIANCES###
+
+# vassal = { ### Now a Civil War
+	# first = SER
+	# second = TES
+	# start_date = 1356.12.25
+	# end_date = 1376.11.11
+# }
 
 vassal = {
 	first = SER
-	second = TES
-	start_date = 1356.12.25
+	second = X03
+	start_date = 1356.12.24
 	end_date = 1376.11.11
+}
+
+vassal = {
+	first = SER
+	second = X04
+	start_date = 1356.12.24
+	end_date = 1376.11.11
+}
+
+vassal = {
+	first = SER
+	second = X05
+	start_date = 1356.12.24
+	end_date = 1376.11.11
+}
+
+vassal = {
+	first = SER
+	second = ALB
+	start_date = 1356.12.24
+	end_date = 1376.11.11
+}
+
+alliance = {
+	first = SER
+	second = BUL
+	start_date = 1356.12.24
+	end_date = 1365.11.11 #Not sure but for now this | Also when Vukasin takes power
 }
 
 ###BULGARIA VASSALS###
@@ -15,6 +50,7 @@ vassal = {
 	start_date = 1356.12.25
 	end_date = 1376.11.11
 }
+
 
 ###
 

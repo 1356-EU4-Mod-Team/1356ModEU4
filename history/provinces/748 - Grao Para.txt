@@ -19,7 +19,7 @@ native_hostileness = 3
 
 
 
-
+1356.12.27 = { owner = --- tribal_owner = --- }
 1500.1.1 = { discovered_by = CAS discovered_by = POR } # Pinzón, Pedro Álvares Cabral 
 1516.1.23 = { discovered_by = SPA }
 

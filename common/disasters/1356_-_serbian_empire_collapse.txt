@@ -2,45 +2,34 @@ serbian_empire_collapse = {
 	potential = {
 		tag = SER
 		exists = SER
+		started_in = 1356.12.26
+		NOT = { started_in = 1372.1.1 }
 		NOT = { has_global_flag = 1356_serbian_empire_collapse }
+		NOT = { has_global_flag = 1356_serbian_empire_restored }
 		NOT = { is_year = 1380 }
 	}
 	
 	can_start = {
-		has_any_disaster = no
-		OR = {
-			NOT = { DIP = 4 }
-			NOT = { MIL = 4 }
-		}
-		has_ruler_flag = incompetent_monarch
+		#has_any_disaster = no
+		is_year = 1371
 	}
 	
 	can_stop = {
-		DIP = 4
-		MIL = 4
-		NOT = { has_ruler_flag = incompetent_monarch }
+		has_global_flag = 1356_serbian_empire_restored
 	}
 	
 	progress = {
 		modifier = {
-			factor = 0.20
-			NOT = { MIL = 4 }
-		}
-		modifier = {
-			factor = 0.20
-			NOT = { DIP = 4 }
-		}
-		modifier = {
-			factor = 10
-			has_ruler_flag = incompetent_monarch
+			factor = 20
+			is_year = 1371
 		}
 	}	
 	
 	can_end = {
-		NOT = { has_ruler_flag = incompetent_monarch }
+		always = yes
 	}
 
-	on_start = serbiancollapse.1
-	on_end = serbiancollapse.2
+	on_start = serbiancollapse.4
+	#on_end = serbiancollapse.2
 	
 }

@@ -2,9 +2,14 @@ lithuanian_missions_1 = {
 	slot = 1
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Lions of the North" }
+	}
 	potential = {
+		always = no
 		tag = LIT
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 	
@@ -18,26 +23,22 @@ lithuanian_missions_1 = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = develop_ukraine_tooltip
-				num_of_owned_provinces_with = {
-					region = ruthenia_region
-					development = 10
-					value = 10
-				}
+			num_of_owned_provinces_with = {
+				region = ruthenia_region
+				development = 10
+				value = 10
 			}
 		}
 		effect = {
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						region = ruthenia_region
-					}
-					add_province_modifier = {
-						name = restored_ruthenia
-						duration = -1
-					}
+			ruthenia_region = {
+				limit = { owned_by = root }
+				add_province_modifier = {
+					name = restored_ruthenia
+					duration = -1
 				}
+			}
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_orthodox_tolerance
 			}
 		}
 	}
@@ -166,9 +167,14 @@ lithuanian_missions_2 = {
 	slot = 4
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Lions of the North" }
+	}
 	potential = {
+		always = no
 		tag = LIT
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 	
@@ -250,6 +256,7 @@ lithuanian_missions_slot = {
 	generic = no
 	ai = no # independent lithuania path not for ai
 	potential = {
+		always = no
 		tag = LIT
 		NOT = { map_setup = map_setup_random }
 	}
@@ -279,18 +286,10 @@ lithuanian_missions_slot = {
 					estate = estate_cossacks
 					influence = 40
 				}
-				282 = {
-					has_estate = estate_cossacks
-					owned_by = ROOT
-				}
-				2406 = {
-					has_estate = estate_cossacks
-					owned_by = ROOT
-				}
-				283 = {
-					has_estate = estate_cossacks
-					owned_by = ROOT
-				}
+				has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+				owns_core_province = 282
+				owns_core_province = 2406
+				owns_core_province = 283
 			}
 			else = {
 				282 = {
@@ -421,7 +420,13 @@ lithuanian_missions_slot = {
 		icon = mission_noble_council
 		required_missions = {  }
 		trigger = {
-			is_year = 1370
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = plc_election_mission_tooltip
+					has_global_flag = plc_union_outcome_flag
+				}
+				is_year = 1370
+			}
 			is_subject = no
 			OR = {
 				is_rival = POL

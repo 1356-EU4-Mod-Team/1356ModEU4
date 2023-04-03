@@ -11,7 +11,7 @@ base_production = 3
 trade_goods = naval_supplies
 base_manpower = 1
 capital = "Goldingen"
-estate = estate_church #Pilten
+  #Pilten
 is_city = yes
 
 

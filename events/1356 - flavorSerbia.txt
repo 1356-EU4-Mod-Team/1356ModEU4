@@ -1,38 +1,195 @@
 namespace = serbiancollapse
+# Originally Planned by Mijo
+# Written by Genomega
 
-country_event = {
+country_event = { # Serbian Civil War
 	id = serbiancollapse.1
 	title = serbiancollapse.1.t
 	desc = serbiancollapse.1.d
-	picture = BAD_WITH_MONARCH_eventPicture
+	picture = CIVIL_WAR_eventPicture
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+	
+	trigger = {
+		tag = SER
+		started_in = 1356.12.26
+		NOT = { started_in = 1372.1.1 }
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = { #Thessaly declares independence
 		name = serbiancollapse.1.a
-		add_stability = -3
-		
-		declare_war_with_cb = {
-			who = TES
-			casus_belli = cb_annex
-		}
+		create_general = { tradition = 50 }
+		create_general = { tradition = 20 }
+		custom_tooltip = serbian_collapse_tooltip_1.tt
 	}
 	
 }
 
-country_event = {
+country_event = { # Thessaly Side
 	id = serbiancollapse.2
 	title = serbiancollapse.2.t
 	desc = serbiancollapse.2.d
-	picture = BAD_WITH_MONARCH_eventPicture
+	picture = BATTLE_eventPicture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = simeons_rebellion_buff
+				duration = 3650
+			}	
+			144 = {
+				build_to_forcelimit = {
+					infantry = 0.75
+					cavalry = 0.25
+				}
+			}
+			add_manpower = 4
+			convert_ruler_to_general = 40
+		}
+	}	
+	
+	trigger = {
+		tag = TES
+		started_in = 1356.12.26
+		NOT = { started_in = 1369.1.1 }	
+	}	
+	
 	option = { #End
 		name = serbiancollapse.2.a
-		set_country_flag = 1356_serbian_empire_collapse
-		add_stability = 1
+		tooltip = {
+			convert_ruler_to_general = 40
+			add_country_modifier = {
+				name = simeons_rebellion_buff
+				duration = 3650
+			}		
+		}		
+		custom_tooltip = serbian_collapse_tooltip_2.tt
 	}
 }
+
+country_event = { # Victory for Simeon Uros # Emperor of Serbs and Greeks
+	id = serbiancollapse.3
+	title = serbiancollapse.3.t
+	desc = serbiancollapse.3.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	
+	option = { #End
+		name = serbiancollapse.3.a
+		set_global_flag = 1356_serbian_empire_restored
+		remove_country_modifier = simeons_rebellion_buff
+		add_country_modifier = {
+			name = emperor_of_serbs_and_greeks
+			duration = -1
+		}	
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		change_heir_adm = 1
+		change_heir_dip = 1
+		change_heir_mil = 1		
+		custom_tooltip = serbian_collapse_tooltip_3.tt
+		hidden_effect = {
+			add_government_reform = serbian_government_reform
+			BYZ = {
+				every_owned_province = {
+					add_claim = TES
+				}
+			}	
+			if = {
+				limit = {
+					exists = BYZ
+					valid_for_personal_unions_trigger = yes
+					BYZ = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = BYZ
+				}
+			}		
+		}	
+	}
+}
+
+country_event = { # Collapse of the Serbian Empire
+	id = serbiancollapse.4
+	title = serbiancollapse.4.t
+	desc = serbiancollapse.4.d
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	option = { #End
+		name = serbiancollapse.4.a
+		set_global_flag = 1356_serbian_empire_collapse
+		add_country_modifier = {
+			name = collapse_of_the_serbian_empire_debuff
+			duration = 9125
+		}			
+		remove_government_reform = serbian_government_reform
+		add_government_reform = serbian_princedom_reform
+		set_government_rank = 1
+		release_all_subjects = yes
+		hidden_effect = {
+			end_disaster = serbian_empire_collapse
+		}	
+		#custom_tooltip = serbian_collapse_tooltip_3.tt
+	}
+}
+
+
+country_event = { # Serbia Restored (Prevents Disaster)
+	id = serbiancollapse.5
+	title = serbiancollapse.5.t
+	desc = serbiancollapse.5.d
+	picture = BIG_BOOK_eventPicture
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = 1356_serbian_empire_restored }
+		NOT = { has_global_flag = 1356_serbian_empire_collapse }
+		tag =  SER
+		total_own_and_non_tributary_subject_development = 200	
+		stability = 3
+		OR = {
+			all_subject_country = {
+				NOT = { liberty_desire = 10 }
+			}
+			NOT = { num_of_subjects = 1 }
+		}	
+	}	
+	
+	option = { #End
+		name = serbiancollapse.5.a
+		set_global_flag = 1356_serbian_empire_restored
+		custom_tooltip = serbian_collapse_tooltip_5.tt
+		add_country_modifier = {
+			name = new_serbian_golden_age
+			duration = 9125
+		}	
+		change_adm = 2
+		change_dip = 2
+		change_mil = 2
+		change_heir_adm = 1
+		change_heir_dip = 1
+		change_heir_mil = 1
+	}
+}
+

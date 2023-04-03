@@ -42,7 +42,7 @@ groups = {
 		}
 	}
 	ottoman = {
-		start_level = 3
+		start_level = 2
 		start_cost_modifier = 0.05
 		nation_designer_cost = {
 			trigger = {

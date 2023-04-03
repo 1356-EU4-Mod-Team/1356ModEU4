@@ -27,10 +27,10 @@ discovered_by = ottoman
 1449.3.24  = { # Fall of Routier
 		owner = ALE 
 		controller = ALE
-		estate = estate_nobles
+		 
 		add_local_autonomy = -80
 	     }
-1453.10.16 = { owner = FRA add_core = FRA controller = FRA estate = estate_nobles add_local_autonomy = 25 }
+1453.10.16 = { owner = FRA add_core = FRA controller = FRA   add_local_autonomy = 25 }
 #1458.10.10 = { owner = FRA controller = FRA add_core = FRA } # duchy confiscated, Jean II imprisoned
 #1461.8.15  = { owner = ALE controller = ALE remove_core = FRA } # duchy handed back to Jean II, has to comply terms of King of France
 #1474.7.18  = { owner = FRA controller = FRA add_core = FRA } # duchy confiscated, Jean II senteced to death

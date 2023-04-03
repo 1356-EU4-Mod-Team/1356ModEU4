@@ -18,7 +18,7 @@ add_core = QTO
 discovered_by = south_american
 discovered_by = andean
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1487.1.1 = {
 	owner = INC
 	controller = INC

@@ -32,7 +32,7 @@ discovered_by = ottoman
 1361.11.21 = { owner = AUV controller = AUV }
 1399.1.1   = { add_core = FRA }
 1435.9.21  = { remove_core = BUR }
-1453.10.16 = { add_core = BOU owner = FRA controller = FRA add_local_autonomy = 25 estate = estate_nobles } #HYW ENDS. All vassals integrate for simplcities sake.
+1453.10.16 = { add_core = BOU owner = FRA controller = FRA add_local_autonomy = 25   } #HYW ENDS. All vassals integrate for simplcities sake.
 1477.1.5 = { add_core = FRA owner = FRA controller = FRA }
 1560.1.1   = { religion = reformed }
 1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear

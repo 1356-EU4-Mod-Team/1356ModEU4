@@ -5,10 +5,11 @@ bri_colonial_chain = {
 	ai = yes
 	
 	potential = {
-		always = no
+		#always = no
 		tag = BRI	
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		# has_country_flag = use_golden_bull_missions_instead_of_paradox
+		# NOT = { has_global_flag = disabled_1356_related_missions }
+		NOT = { has_dlc = "Emperor" }		
 	}
 	has_country_shield = yes
 	
@@ -162,10 +163,10 @@ bri_secure_borders = {
 	ai = yes
 	
 	potential = {
-			always = no
+		NOT = { has_dlc = "Emperor" }		
 		tag = BRI	
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		# has_country_flag = use_golden_bull_missions_instead_of_paradox
+		# NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -245,14 +246,13 @@ bri_end_the_succession = {
 	ai = yes
 	
 	potential = {
-			always = no
+			#always = no
 		OR = {
 			tag = MNF
 			tag = BLS
-			tag = BRI
+			#tag = BRI
 		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		NOT = { has_dlc = "Emperor" }	
 	}
 	has_country_shield = yes
 	
@@ -314,10 +314,11 @@ bri_celtic_reconquest = { #We must reunite the celtic nations under one banner!
 	ai = yes
 	
 	potential = {
-			always = no
+			#always = no
 		tag = BRI	
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+		NOT = { has_dlc = "Emperor" }			
 	}
 	has_country_shield = yes
 	

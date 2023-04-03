@@ -4,6 +4,7 @@ swedish_missions = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }		
 	}
 	has_country_shield = yes
 	
@@ -171,6 +172,7 @@ swedish_missions_2 = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 	
@@ -374,6 +376,7 @@ swedish_missions_3 = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }		
 	}
 	has_country_shield = yes
 	
@@ -477,6 +480,7 @@ swedish_missions_5 = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }		
 	}
 	has_country_shield = yes
 	

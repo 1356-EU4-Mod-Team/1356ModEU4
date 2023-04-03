@@ -8,7 +8,7 @@ religion = catholic
 capital = "Pressburg"
 trade_goods = grain
 hre = yes
-estate = estate_burghers
+ 
 base_tax = 5
 base_production = 5
 base_manpower = 3

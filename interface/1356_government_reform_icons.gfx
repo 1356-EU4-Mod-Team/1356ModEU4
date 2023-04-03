@@ -84,4 +84,9 @@ spriteTypes = {
 		name = "government_reform_the_sun_king"
 		texturefile = "gfx//interface//government_reform_icons//the_sun_king.dds"
 	}	
+	
+	spriteType = { # Inspired heavily by Ante Bellum # Thank you Parm!!!
+		name = "GFX_1356_news_background"
+		texturefile = "gfx/interface/GFX_1356_news_background.dds"
+	}		
 }

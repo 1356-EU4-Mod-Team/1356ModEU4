@@ -1,6 +1,7 @@
 country_decisions = {
 	chinese_warlord_no_empire_decision = {
 		potential = {
+			NOT = { has_country_flag = became_china }
 			culture_group = east_asian
 			government = monarchy
 			has_reform = chinese_warlord #Warlord Government
@@ -22,6 +23,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = became_china
 			change_government = monarchy
 			add_government_reform = feudal_monarchy
 			set_government_rank = 3

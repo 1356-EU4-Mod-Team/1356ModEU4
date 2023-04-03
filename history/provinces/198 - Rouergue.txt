@@ -29,7 +29,7 @@ discovered_by = ottoman
 1360.5.25  = { owner = ENG controller = ENG } # Treaty of Bretigny
 1375.6.27  = { owner = AMG controller = AMG } # Treaty of Bruges
 
-1453.10.16 = { owner = FRA controller = FRA add_core = FRA add_local_autonomy = 25 estate = estate_nobles }
+1453.10.16 = { owner = FRA controller = FRA add_core = FRA add_local_autonomy = 25   }
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 
 1549.12.21 = { owner = NAV controller = NAV add_core = NAV } # Henri d'Albret (King of Navarra) owns it after Marguerite d'Angoulêmes death

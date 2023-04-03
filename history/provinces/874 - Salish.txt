@@ -19,7 +19,7 @@ native_hostileness = 6
 
 
 discovered_by = north_american
-
+1356.12.27 = { owner = --- owner = --- owner = --- }
 1543.1.1 = { discovered_by = SPA } # Sighted by Spanish explorers
 1741.1.1 = { discovered_by = RUS } # Vitus Bering & Aleksei Chirikov
 

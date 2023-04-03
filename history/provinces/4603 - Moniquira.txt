@@ -15,7 +15,7 @@ add_core = MCA
 discovered_by = south_american
 # discovered_by = MCA
 
-
+1356.12.27 = { owner = --- tribal_owner = --- }
 1539.1.1 = {
 	discovered_by = SPA
 	owner = SPA

@@ -1,42 +1,54 @@
 government = monarchy
-add_government_reform = high_feudal_monarchy_reform
+add_government_reform = serbian_princedom_reform
 historical_friend = BYZ
 technology_group = eastern
-primary_culture = greek
+#primary_culture = greek
+primary_culture = serbian
+add_accepted_culture = greek
 religion = orthodox
 capital = 147 # Larissa
+government_rank = 2
 
 1355.12.20 = {
 	monarch = {
 		name = "Simeon Uroš"
-		dynasty = "Palaiologos"
+		#dynasty = "Palaiologos"
+		dynasty = "Nemanjic"
 		birth_date = 1326.1.1
-		adm = 3
+		adm = 4
 		dip = 3
 		mil = 3
 	}
+	heir = {
+		name = "Jovan"
+		monarch_name = "Jovan Uroš"
+		dynasty = "Nemanjic"
+		birth_date = 1348.1.1
+		death_date = 1422.1.1
+		claim = 100
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1356.12.26 = {
+	government_rank = 3
+	add_treasury = 104
+	add_prestige = 10
 	queen = {
 		country_of_origin = EPI
 		name = "Thomais"
 		dynasty = "Orsini"
+		culture = greek
 		birth_date = 1330.1.1
+		death_date = 1371.1.1
 		female = yes
 		adm = 2
 		dip = 2
 		mil = 2
 	}
-	heir = {
-		name = "Jovan"
-		monarch_name = "Jovan Uroš"
-		dynasty = "Palaiologos"
-		birth_date = 1348.1.1
-		death_date = 1422.1.1
-		claim = 100
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
+}	
 
 1371.1.1 = {
 	monarch = {

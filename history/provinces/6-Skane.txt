@@ -13,7 +13,7 @@ trade_goods = fish # The Great Herring Market of Skåne
 base_manpower = 6
 capital = "Lund"
 is_city = yes
-estate = estate_nobles
+ 
 add_core = DAN
 add_core = SKN
 fort_15th = yes

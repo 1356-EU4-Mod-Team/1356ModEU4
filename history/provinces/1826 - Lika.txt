@@ -13,8 +13,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 is_city = yes
-estate = estate_nobles
-add_core = HUN
+#add_core = HUN
 add_core = CRO
 
 discovered_by = western

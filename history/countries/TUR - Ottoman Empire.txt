@@ -16,7 +16,8 @@ national_focus = MIL
 religious_school = hanafi_school
 
 1326.7.29 = { 
-	add_treasury = 250
+	add_treasury = 125
+	set_government_rank = 1
 	add_ruler_modifier = {
 		name = cannot_disinherit_heir
 		duration = -1

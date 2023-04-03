@@ -13,3 +13,5 @@ base_production = 2
 base_manpower = 3
 is_city = yes
 discovered_by = central_african
+
+1356.12.28 = { owner = --- tribal_owner = --- }

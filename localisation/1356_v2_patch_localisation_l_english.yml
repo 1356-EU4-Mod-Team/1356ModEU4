@@ -62,8 +62,8 @@
  crusader_states.3.a: "Now that we hold it, it shall hold its proper name!"
  
  #Decisions
- arles_formation_warning_tt: "§RWARNING:§!\nBy forming §YThe Kingdom of Arles§! you will no longer be allowed to form the §YKingdom of Lotharingia§!."
- lotharingia_formation_warning_tt: "§RWARNING:§!\nBy forming §YThe Kingdom of Lotharingia§! you will no longer be allowed to form the §YKingdom of Arles§!." 
+ arles_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Arles§ you will no longer be allowed to form the §YKingdom of Lotharingia§."
+ lotharingia_formation_warning_tt: "§RWarning§ by forming §YThe Kingdom of Lotharingia§ you will no longer be allowed to form the §YKingdom of Arles§." 
  fla_maghreb.8.d: "There was a time when being considered a Berber was common, and even furthermore when the Berbers were not mere Nomadic Muslims from North Africa. However today they are little more than tribal pests to our great [ROOT.GovernmentName]. It appears that the Berbers of [Root.GetName] have begun to assimilate into our ways and beliefs."
  
  serbian_flavour.999.t: "temp"
@@ -547,7 +547,9 @@
  mechanic_provides_2_tribal_alligenance_yes: "Provides §G+2§! §YYearly Tribal Allegiance§!"
  
  novgorod_republic: "Novgorod Grand Republic"
- novgorod_republic_desc: "Novgorod is governed by the Veche, a council consisting of members of the Boyars, Clergy, and Merchant estates and even includes commoners across Novgorodian lands. The Veche maintains legislative and judicial authority while also controlling the appointment of the Grand Kniaz. §RThe Grand Kniaz rules as Prince of Novgorod at the behests of the Veche and can be removed from power if relations with the Veche estates become too low.§!"
+ novgorod_republic_desc: "Novgorod is governed by the Veche, a council consisting of members of the Boyars, Clergy, and Merchant estates and even includes commoners across Novgorodian lands. The Veche maintains legislative and judicial authority while also controlling the appointment of the Grand Kniaz."
+ check_for_new_missions_1356_title: "(Debug) Mission Tree Swapper"
+ check_for_new_missions_1356_desc: "This decision simply exists as a Debugging tool for potentially fixing Mission tree errors. If using other mods that add new missions, please use this tool first to see if it fixes the issue.\n\n (Debug) Hide Debugging Decisions will make this decision disappear."
  nov_delegated_power_to_veche: "Consolidate Power to the Veche"
  nov_delegated_power_to_veche_desc: "The title of the Prince of Novgorod has only subjected the Republic to political influence from the other Principalities. The time has come for us to lower the powers of the Prince and make it more of a ceremonial role."
  nov_promote_local_boyars: "Promote Local Boyars"

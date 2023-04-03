@@ -13,7 +13,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 discovered_by = chinese
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan 
 1570.5.1 = {
 	owner = SPA

@@ -42,7 +42,7 @@
  obj_urbanisation: "Urbanisation"
  obj_urbanisation_desc: "Own a core province with 20 Development"
  obj_cav_army: "Cavalry Armies"
- obj_cav_army_desc: "Have at least 40% of your army be Cavalry, and be at 80% of your force limit"
+ obj_cav_army_desc: "Have at least 30% of your army be Cavalry, and maintain a standing force limit of 85% of your maximum force limit."
  obj_feudalism_muslim_piety: "Piety"
  obj_feudalism_muslim_piety_desc: "Have either 75 Piety, or -75 Piety, while maintaining at least 80% Religious Unity."
  obj_muslim_holy_war: "Jihad!"

@@ -15,7 +15,7 @@ capital = "Gladsax"
 is_city = yes
 add_core = DAN
 add_core = SKN
-estate = estate_nobles
+ 
 
 discovered_by = eastern
 discovered_by = western

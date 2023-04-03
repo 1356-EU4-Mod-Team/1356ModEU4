@@ -264,6 +264,185 @@ guiTypes = {
 					position = { x= -210 y = 15 }
 					Orientation = "UPPER_RIGHT"
 				}
+				
+				windowType = {  ### Massive Thanks to Parmelion of Ante Bellum!
+					name = "golden_bull_window"
+					if_resolution = {
+						min_height = 1080
+						position = { x = 25 y = 190 }
+					}
+					if_resolution = {
+						max_height = 1079
+						min_height = 1050
+						position = { x = 25 y = 185 }
+					}
+					if_resolution = {
+						max_height = 1049
+						position = { x = -470 y = 225 }
+						orientation = upper_right
+					}
+
+					iconType = {
+						name = "golden_bull_news_window_bg"
+						position = { x = 0 y = 10 }
+						spriteType = "GFX_1356_news_background"
+					}
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_title"
+						position = { x = 5 y = 142 }
+						format = center
+						font = "vic_29" # vic_29s
+						text = "golden_bull_NEWS_FEED"
+						maxWidth = 500
+						maxHeight = 40
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_first"
+						position = { x = 45 y = 175 }
+						format = left
+						font = "vic_29s" # vic_18
+						text = "golden_bull_ENTRY_1"
+						maxWidth = 500
+						maxHeight = 1000 # 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					
+					instantTextBoxType = {
+						name = "ab_news_entry_second"
+						position = { x = 45 y = 235 }
+						format = left
+						font = "vic_22s" # vic_18
+						text = "golden_bull_ENTRY_2"
+						maxWidth = 500
+						maxHeight = 1000 # 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_third"
+						position = { x = 45 y = 189 }
+						format = left
+						font = "vic_18"
+						text = "golden_bull_ENTRY_3"
+						maxWidth = 300
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_fourth"
+						position = { x = 45 y = 206 } # 226
+						format = left
+						font = "vic_18"
+						text = "golden_bull_ENTRY_4"
+						maxWidth = 300
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_eleventh"
+						position = { x = 45 y = 225 }
+						format = left
+						font = "vic_18"
+						text = "golden_bull_ENTRY_11"
+						maxWidth = 350
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}			
+
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_twelth"
+						position = { x = 45 y = 245 }
+						format = left
+						font = "vic_18"
+						text = "golden_bull_ENTRY_12"
+						maxWidth = 350
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}						
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_fifth"
+						position = { x = 45 y = 263 }
+						format = left
+						font = "vic_18"
+						text = "golden_bull_ENTRY_5"
+						maxWidth = 350
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_sixth"
+						position = { x = 45 y = 280 }
+						format = left
+						font = "vic_18"
+						text = "golden_bull_ENTRY_6"
+						maxWidth = 350
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_seventh"
+						position = { x = 45 y = 297 }
+						format = left
+						font = "vic_18"
+						text = "golden_bull_ENTRY_7"
+						maxWidth = 350
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_eight"
+						position = { x = 45 y = 314 }
+						format = left
+						font = "vic_18"
+						text = "golden_bull_ENTRY_8"
+						maxWidth = 350
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_ninth"
+						position = { x = 45 y = 331 } #351
+						format = left
+						font = "vic_18"
+						text = "golden_bull_ENTRY_9"
+						maxWidth = 350
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+					instantTextBoxType = {
+						name = "golden_bull_news_entry_ninth_nith"
+						position = { x = 45 y = 665 } #351
+						format = left
+						font = "vic_29s"
+						text = "golden_bull_ENTRY_99"
+						maxWidth = 500
+						maxHeight = 20
+						fixedsize = yes
+						alwaystransparent = yes
+					}					
+				}
 
 			}
 
@@ -1314,6 +1493,8 @@ guiTypes = {
 						text = "GAMESETUP_SHOW_UNSAFE"
 						orientation = "UPPER_LEFT"
 						format = left
+						fixedsize = yes
+						vertical_alignment = centre
 					}
 
 					checkboxType = {

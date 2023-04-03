@@ -16,7 +16,7 @@ base_manpower = 2
 add_core = MCA
 extra_cost = 8
 center_of_trade = 1
-
+1356.12.27 = { owner = --- tribal_owner = --- }
 1538.9.6 = {
 	discovered_by = SPA
 	owner = SPA

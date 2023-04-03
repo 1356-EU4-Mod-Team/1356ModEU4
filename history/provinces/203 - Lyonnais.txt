@@ -27,7 +27,7 @@ center_of_trade = 2
 1425.1.1   = { base_tax = 8 base_production = 8 base_manpower = 7 }
 1435.9.21  = { remove_core = BUR }
 
-1453.10.16 = { add_core = FRA owner = FRA controller = FRA estate = estate_burghers }
+1453.10.16 = { add_core = FRA owner = FRA controller = FRA   }
 
 1467.6.15  = { add_core = BUR } # Charles the Bold ascends to the throne and lays claims
 1477.1.5   = { remove_core = BUR add_core = FRA owner = FRA controller = FRA } # Charles the Bold dies

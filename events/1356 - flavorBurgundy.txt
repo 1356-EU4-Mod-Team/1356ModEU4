@@ -1,198 +1,78 @@
 namespace = flavor_fla_bur
-namespace = flavor_fla_are
 
-###############################################
-###	The Arelat Restoration
-###############################################
-country_event = {
-	id = flavor_fla_are.1
-	title = flavor_fla_are.1.t
-	desc = flavor_fla_are.1.desc
-	picture = HRE_eventPicture
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = flavor_fla_are.1.a
-		ai_chance = { factor = 50 }
-		trigger = {
-			NOT = { tag = LOT }
-		}
-		custom_tooltip = arles_formation_warning_tt
-		if = {
-			limit = { 201 = { owned_by = ROOT } }
-			201 = { #Aix-en-Provence
-				move_capital_effect = yes
-			}
-		}
-		change_tag = ARE
-		swap_non_generic_missions = yes
-		if = {
-			limit = {
-				NOT = { government_rank = 2 }
-			}
-			set_government_rank = 2
-			else = {
-				add_adm_power = 100
-			}
-		}
-		if = {
-			limit = { has_custom_ideas = no }
-			country_event = { id = ideagroups.1 } #Swap Ideas
-		}
-		set_country_flag = formed_arles_flag
-	}
-	option = {
-		name = flavor_fla_are.1.b
-		ai_chance = { factor = 50 }
-		trigger = {
-			tag = BUR
-		}
-		if = {
-			limit = {
-				NOT = { government_rank = 2 }
-			}
-			set_government_rank = 2
-			else = {
-				add_adm_power = 100
-			}
-		}
-	}
-}
-### Event establishing House de Valois-Bourgogne if Philippe I de Bourgogne doesn't get an heir quickly
+
+#This event orignally written by DanJonMin
 country_event = {
 	id = flavor_fla_bur.1
 	title = flavor_fla_bur.1.t
-	desc = flavor_fla_bur.1.desc
+	desc = flavor_fla_bur.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUR
+		senior_union_with = PBG
+		PBG = { ai = yes }
+		NOT = { has_ruler_flag = "burgundy_inheritance" }
+	}
+	
+	mean_time_to_happen = {
+		months = 32
+	}
+	
+	option = {
+		name = flavor_fla_bur.1.a
+		inherit = PBG
+		
+	}
+}
+
+###Burgundian Chain to Union Flanders###
+#Burgundian Event
+country_event = { #Burgundian Event to get a PU over Flanders
+	id = flavor_fla_bur.4
+	title = flavor_fla_bur.4.t
+	desc = flavor_fla_bur.4.desc
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
 	
 	trigger = {
-		has_heir = no
-		dynasty = "de Bourgogne"
+		tag = BUR
 		OR = {
-			tag = BUR
-			tag = ARE
-			tag = LOT
+			NOT = { has_ruler = "Louis II" }
+			is_female = yes
 		}
-		NOT = { is_year = 1380 }
+		FLA = {
+			is_subject = no
+			exists = FLA
+		}
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 3
 	}
 		
-	option = {
-		name = flavor_fla_bur.1.a
-		define_ruler = {
-			name = "Philippe II"
-			dynasty = "de Valois-Bourgogne"
-			birth_date = 1342.1.15
-			adm = 3
-			dip = 3
-			mil = 4
-			claim = 100
+	option = { #Take the PU!
+		name = flavor_fla_bur.4.a
+		ai_chance = { factor = 90 }
+		FLA = {
+			country_event = { 
+				id = flavor_fla_bur.5
+				days = 30
+				tooltip = flavor_fla_bur.4.tooltip
+			}
 		}
-		add_ruler_personality = silver_tongue_personality
+	}
+	
+	option = { #It is not worth our time!
+		name = flavor_fla_bur.4.b
+		ai_chance = { factor = 10 }
+		add_prestige = 10
+		add_legitimacy = 10
 	}
 }
-
-### Mary is appointed regent - copied from Vanilla, adapted to work in 1356
-country_event = {
-	id = flavor_fla_bur.2
-	title = "incidents_bur_inheritance.0.t"
-	desc = "incidents_bur_inheritance.0.d"
-	picture = DEATH_OF_HEIR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = BUR
-		has_country_modifier = burgundian_succession_crisis
-		NOT = { has_country_flag = burgundian_succession_start }
-		is_free_or_tributary_trigger = yes
-		government = monarchy
-		has_regency = no
-		NOT = { is_year = 1500 }
-		OR = {
-			AND = {
-				has_heir = no
-				is_year = 1450
-			}
-			AND = {
-				OR = {
-					dynasty = "de Bourgogne"
-					dynasty = "de Valois-Bourgogne"
-				}
-				ruler_age = 40
-				NOT = {
-					heir_age = 15
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-
-		modifier = {
-			factor = 0.5
-			is_year = 1470
-		}
-	}
-	
-	option = {
-		name = "incidents_bur_inheritance.0.a"
-		ai_chance = { 
-			factor = 10
-		}
-		if = {
-			limit = {
-				is_year = 1473
-			}
-			define_heir = {
-				name = "Marie"
-				dynasty = ROOT
-				birth_date = 1457.02.13
-				adm = 4
-				dip = 5
-				mil = 3
-				claim = 95
-				block_disinherit = yes
-				female = yes
-			}
-		}
-		else = {
-			define_heir = {
-				name = "Marie"
-				dynasty = ROOT
-				age = 16
-				adm = 4
-				dip = 5
-				mil = 3
-				claim = 95
-				block_disinherit = yes
-				female = yes
-			}
-		}
-
-		set_heir_flag = mary_is_heir
-	}
-	option = {
-		name = "incidents_bur_inheritance.0.b"
-		ai_chance = { 
-			factor = 10
-		}
-		add_legitimacy = 20
-	}
-}
-
-###############################################
-###	Burgundian Chain to form union with Flanders
-###############################################
-
 #Flemish Event
 country_event = { #Flemish notification that they need to marry the queen off, or fight!
 	id = flavor_fla_bur.5
@@ -206,24 +86,45 @@ country_event = { #Flemish notification that they need to marry the queen off, o
 		
 	option = { #No marriage! Tell the Burgundians they need to fight for their bride and land!
 		name = flavor_fla_bur.5.a
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 25 }
 		BUR = {
 			country_event = { 
 				id = flavor_fla_bur.7
-				days = 5
-				tooltip = flavor_fla_bur.5.a.tooltip
+				days = 30
+				tooltip = flavor_fla_bur.7.tooltip
 			}
 		}
 	}
 	
-	option = {
+	option = { #Agree to the marriage (Nevers)
 		name = flavor_fla_bur.5.b
-		ai_chance = { factor = 95 }
+		trigger = {
+			NEV = {
+				is_subject_of = FLA
+			}
+		}
+		ai_chance = { factor = 75 }
 		BUR = {
 			country_event = { 
 				id = flavor_fla_bur.6
-				days = 5
-				tooltip = flavor_fla_bur.5.b.tooltip
+				days = 30
+				tooltip = flavor_fla_bur.6.tooltip
+			}
+		}
+	}
+	option = { #Agree to the marriage (No nevers)
+		name = flavor_fla_bur.5.c
+		trigger = {
+			NEV = {
+				NOT = { is_subject_of = FLA }
+			}
+		}
+		ai_chance = { factor = 75 }
+		BUR = {
+			country_event = { 
+				id = flavor_fla_bur.6
+				days = 30
+				tooltip = flavor_fla_bur.6.tooltip
 			}
 		}
 	}
@@ -238,30 +139,56 @@ country_event = { #Burgundians being told they are getting a PU
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { 
-		name = flavor_fla_bur.6.a
-		ai_chance = { factor = 99 }
 		
-		if = {
-			limit = {
-				NEV = {
-					junior_union_with = FLA
-				}
+	option = { #Agree to the marriage (Nevers)
+		name = flavor_fla_bur.6.a
+		trigger = {
+			NEV = {
+				is_subject_of = FLA
 			}
-			ROOT = { vassalize = NEV }
 		}
-		create_union = FLA
-		define_consort = {
-			name = "Marguerite III"
-			country_of_origin = FLA
-			dynasty = "de Dampierre"
-			age = 30
-			culture = flemish
-			religion = catholic
-			adm = 3
-			dip = 4
-			mil = 2
-			female = yes
+		ai_chance = { factor = 60 }
+		BUR = {
+			create_union = FLA
+			create_vassal = NEV
+			define_consort = {
+				name = "Marguerite III"
+				country_of_origin = FLA
+				dynasty = "de Dampierre"
+				age = 30
+				culture = flemish
+				religion = catholic
+				adm = 3
+				dip = 4
+				mil = 2
+				female = yes
+			}
+			set_country_flag = bur_married_flanders_flag
+		}
+	}
+	option = { #Agree to the marriage (No nevers)
+		name = flavor_fla_bur.6.b
+		trigger = {
+			NEV = {
+				NOT = { is_subject_of = FLA }
+			}
+		}
+		ai_chance = { factor = 60 }
+		BUR = {
+			create_union = FLA
+			define_consort = {
+				name = "Marguerite III"
+				country_of_origin = FLA
+				dynasty = "de Dampierre"
+				age = 30
+				culture = flemish
+				religion = catholic
+				adm = 3
+				dip = 4
+				mil = 2
+				female = yes
+			}
+			set_country_flag = bur_married_flanders_flag			
 		}
 	}
 }
@@ -276,33 +203,110 @@ country_event = { #Burgundians being told they need to fight or back off
 	fire_only_once = yes
 	
 		
-	option = { #Claim their throne!
+	option = { #Fight!
 		name = flavor_fla_bur.7.a
 		ai_chance = { factor = 85 }
 		BUR = {
-			add_casus_belli = {
-				target = FLA
-				type = cb_restore_personal_union_burgundy
+			declare_war_with_cb = {
+				who = FLA
+				casus_belli = cb_restore_personal_union_burgundy
+			}
+			set_country_flag = bur_fought_for_flanders_flag
+		}
+	}
+
+	option = { #Back off
+		name = flavor_fla_bur.7.b
+		ai_chance = { factor = 15 }
+		add_prestige = -10
+		BUR = {
+			set_country_flag = bur_is_coward_flag
+		}
+	}
+}
+
+###Burgundian Chain to Purchase Namur###
+#Burgundian Event
+country_event = { #Burgundian Event to purchase Namur
+	id = flavor_fla_bur.8
+	title = flavor_fla_bur.8.t
+	desc = flavor_fla_bur.8.desc
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUR
+		treasury = 250
+		exists = HAI
+		HAI = { 
+			owns = 1866	
+			num_of_loans = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { #Yes, we'd like to send them an offer.
+		name = flavor_fla_bur.8.a
+		HAI = {
+			country_event = { 
+				id = flavor_fla_bur.9
+				days = 30
+				tooltip = flavor_fla_bur.9.tooltip
+			}
+		}
+	}
+	option = { #No, we do not have the money to do this right now.
+		name = flavor_fla_bur.8.b
+		add_prestige = -5
+	}
+
+}
+#Hainaut Event
+country_event = { #Burgundy would like to buy Namur for a lot of gold
+	id = flavor_fla_bur.9
+	title = flavor_fla_bur.9.t
+	desc = flavor_fla_bur.9.desc
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Yes! Please!
+		name = flavor_fla_bur.9.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 2
+				num_of_loans = 5
+			}
+		}
+		BUR = {
+			country_event = { 
+				id = flavor_fla_bur.10
+				days = 30
+				tooltip = flavor_fla_bur.10.tooltip
+			}
+		}
+	}
+	option = { #Never! You French Swine will get nothing!
+		name = flavor_fla_bur.9.b
+		ai_chance = { factor = 30 }
+		BUR = {
+			country_event = { 
+				id = flavor_fla_bur.11
+				days = 30
+				tooltip = flavor_fla_bur.11.tooltip
 			}
 		}
 	}
 
-	option = { #Back off for now
-		name = flavor_fla_bur.7.b
-		ai_chance = { factor = 15 }
-		add_prestige = -10
-		flanders_area = {
-			add_permanent_claim = ROOT
-		}
-		181 = { add_permanent_claim = ROOT }
-		191 = { add_permanent_claim = ROOT }
-	}
 }
-###############################################
-###	Burgundian Chain to Purchase Namur
-###############################################
-#Notifying the owner of Namur
-country_event = {
+#Burgundian Event
+country_event = { #Burgundian Event to purchease Namur
 	id = flavor_fla_bur.10
 	title = flavor_fla_bur.10.t
 	desc = flavor_fla_bur.10.desc
@@ -311,50 +315,49 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	option = {
+	
+	option = {#Yes we still want it!
 		name = flavor_fla_bur.10.a
-		ai_chance = {
-			factor = 50
+		ai_chance = { 
+			factor = 70
 			modifier = {
-				factor = 2
-				OR = {
-					tag = NMR
-					num_of_loans = 2
-				}
+				factor = 0
+				num_of_loans = 10
 			}
 		}
-		FROM = {
-			country_event = { 
-				id = flavor_fla_bur.11
-				days = 5
-				tooltip = flavor_fla_bur.10.a.tooltip
-			}
+		BUR = {
+			add_core = 1866
+			add_treasury = -450
 		}
+		1866 = {
+			cede_province = BUR
+		}
+		HAI = {
+			add_treasury = 500
+		}
+
 	}
-	option = { #It will cost them more gold than they could ever afford!
+	option = { #We changed our minds
 		name = flavor_fla_bur.10.b
 		ai_chance = { 
-			factor = 50 
+			factor = 30
 			modifier = {
-				factor = 0.5
-				OR = {
-					tag = NMR
-					num_of_loans = 2
-				}
+				factor = 100
+				num_of_loans = 10
 			}
 		}
-		FROM = {
-			country_event = { 
+		add_prestige = -5
+		HAI = {
+			country_event = { #Tell Hainaut Burgundy said never mind
 				id = flavor_fla_bur.12
-				days = 5
-				tooltip = flavor_fla_bur.10.b.tooltip
+				days = 30
+				tooltip = flavor_fla_bur.12.tooltip
 			}
 		}
 	}
-
 }
-#BUR - Namur owner accepts offer
-country_event = { 
+#Burgundian Event
+country_event = { #Burgundian Event telling them Hainaut said no
 	id = flavor_fla_bur.11
 	title = flavor_fla_bur.11.t
 	desc = flavor_fla_bur.11.desc
@@ -364,43 +367,102 @@ country_event = {
 	is_triggered_only = yes
 
 	
-	option = {#A pleasure doing business!
+	option = {
 		name = flavor_fla_bur.11.a
 		1866 = {
-			owner = { add_treasury = 200 }
-		}
-		ROOT = {
-			add_territorial_core = 1866
-			add_treasury = -200
-			add_dip_power = -50
-		}
-		1866 = {
-			cede_province = ROOT
+			add_claim = BUR
 		}
 	}
 }
-#BUR - Namur owner rejects offer
-country_event = {
+#Hainaut Event
+country_event = { #Hainaut Event telling them Burgundy backed out
 	id = flavor_fla_bur.12
 	title = flavor_fla_bur.12.t
 	desc = flavor_fla_bur.12.desc
 	picture = DIPLOMACY_eventPicture
-
+	
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	
-	option = {
+	option = {#Curses! Oh well. 
 		name = flavor_fla_bur.12.a
-		1866 = {
-			add_permanent_claim = ROOT
+		add_prestige = 2
+		add_casus_belli = {
+			target = BUR
+			type = cb_insult
+			#duration = 365
 		}
 	}
 }
 
-###############################################
-###	Burgundian Chain to PU Brabant
-###############################################
+###Brabant PU Chain###
+#Burgundian Event
+country_event = { #Burgundian Event that sets off the PU or annex Brabant chain
+	id = flavor_fla_bur.13
+	title = flavor_fla_bur.13.t
+	desc = flavor_fla_bur.13.desc
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	#is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		months = 120
+	}	
+	
+	trigger = {
+		senior_union_with = FLA
+		tag = BUR
+		BRB = {
+			is_subject = no
+			exists = BRB
+		}
+	}	
+	
+	
+	option = { #Make the PU!
+		name = flavor_fla_bur.13.a
+		ai_chance = { factor = 90 }
+		trigger = {
+			NOT = { has_country_flag = bur_is_coward_flag }
+		}
+		BRB = {
+			country_event = { 
+				id = flavor_fla_bur.14
+				days = 30
+				tooltip = flavor_fla_bur.14.tooltip
+			}
+		}
+	}
+	option = { #Annex them!
+		name = flavor_fla_bur.13.b
+		ai_chance = { factor = 90 }
+		trigger = {
+			has_country_flag = bur_is_coward_flag
+		}
+		BUR = {
+			add_claim = 92
+			add_claim = 1744
+			add_claim = 95
+		}
+	}
+	option = { #You know what, managing ANOTHER union is too much.
+		name = flavor_fla_bur.13.c
+		ai_chance = { factor = 10 }
+		trigger = {
+			NOT = {  has_country_flag = bur_is_coward_flag }
+		}
+		add_legitimacy = -5
+	}
+	option = { #Not worth the risk in annexing them currently
+		name = flavor_fla_bur.13.d
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = bur_is_coward_flag
+		}
+		add_legitimacy = -5
+	}
+}
 #Brabant Event
 country_event = { #Brabant being told of the Union
 	id = flavor_fla_bur.14
@@ -413,22 +475,22 @@ country_event = { #Brabant being told of the Union
 	
 	option = { #Accept the Union
 		name = flavor_fla_bur.14.a
-		ai_chance = { factor = 80 }
-		FROM = {
+		ai_chance = { factor = 70 }
+		BUR = {
 			country_event = { 
 				id = flavor_fla_bur.16
-				days = 5
+				days = 30
 				tooltip = flavor_fla_bur.16.tooltip
 			}
 		}
 	}
 	option = { #No, they must fight for it!
 		name = flavor_fla_bur.14.b
-		ai_chance = { factor = 20 }
-		FROM = {
-			country_event = {
+		ai_chance = { factor = 30 }
+		BUR = {
+			country_event = { 
 				id = flavor_fla_bur.15
-				days = 5
+				days = 30
 				tooltip = flavor_fla_bur.15.tooltip
 			}
 		}
@@ -446,8 +508,8 @@ country_event = { #Burgundy being told Brabant said no
 	
 	option = { #Fight for it!
 		name = flavor_fla_bur.15.a
-		ai_chance = { factor = 100 }
-		ROOT = {
+		ai_chance = { factor = 90 }
+		BUR = {
 			add_casus_belli = {
 				target = BRB
 				type = cb_restore_personal_union_burgundy
@@ -456,13 +518,14 @@ country_event = { #Burgundy being told Brabant said no
 		}
 		BRB = {
 			capital_scope = {
-				add_permanent_claim = ROOT
+				add_claim = BUR
 			}
 		}	
 	}
+	
 	option = { #Never mind...
 		name = flavor_fla_bur.15.b
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 10 }
 		add_prestige = -10
 		add_legitimacy = -5
 	}
@@ -477,986 +540,30 @@ country_event = { #Burgundy being told Brabant said yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	immediate = {
-		create_union = BRB
-	}
-	
 	option = {#Union!
 		name = flavor_fla_bur.16.a
-	}
-}
-###############################################
-###	Burgundian Chain to purchase Luxembourg
-###############################################
-country_event = {
-	id = flavor_fla_bur.20
-	title = flavor_fla_bur.20.t
-	desc = flavor_fla_bur.20.desc
-	picture = DIPLOMACY_eventPicture
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = flavor_fla_bur.20.a
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				OR = {
-					tag = LUX
-					num_of_loans = 2
-				}
-			}
+		ai_chance = { factor = 99 }
+		BUR = {
+			create_union = BRB
+			add_treasury = -100
+			set_country_flag = bur_married_brabant_flag
 		}
-		FROM = {
-			country_event = { 
-				id = flavor_fla_bur.21
-				days = 5
-				tooltip = flavor_fla_bur.10.a.tooltip
-			}
+		BRB = {
+			add_treasury = 100
 		}
 	}
-	option = { #It will cost them more gold than they could ever afford!
-		name = flavor_fla_bur.20.c
-		ai_chance = { 
-			factor = 50 
-			modifier = {
-				factor = 0.5
-				OR = {
-					tag = NMR
-					num_of_loans = 2
-				}
-			}
-		}
-		FROM = {
-			country_event = { 
-				id = flavor_fla_bur.22
-				days = 5
-				tooltip = flavor_fla_bur.10.b.tooltip
-			}
-		}
-	}
-}
-#BUR - Owner of Luxembourg owner accepts offer
-country_event = { 
-	id = flavor_fla_bur.21
-	title = flavor_fla_bur.21.t
-	desc = flavor_fla_bur.21.desc
-	picture = DIPLOMACY_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	
-	option = {#A pleasure doing business!
-		name = flavor_fla_bur.21.a
-		94 = {
-			owner = { add_treasury = 300 }
-		}
-		ROOT = {
-			add_territorial_core = 1866
-			add_treasury = -300
-			add_dip_power = -100
-		}
-		94 = {
-			cede_province = ROOT
-		}
-	}
-}
-#BUR - Owner of Luxembourg owner rejects offer
-country_event = {
-	id = flavor_fla_bur.22
-	title = flavor_fla_bur.22.t
-	desc = flavor_fla_bur.22.desc
-	picture = DIPLOMACY_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	
-	option = {
-		name = flavor_fla_bur.22.a
-		94 = {
-			add_permanent_claim = ROOT
+	option = {#Coward!
+		name = flavor_fla_bur.16.b
+		ai_chance = { factor = 1 }
+		add_prestige = -5
+		BUR = {
+			set_country_flag = bur_refused_brabant_union_flag
 		}
 	}
 }
 
-###############################################
-###	Burgundian Chain to agitate Holland
-###############################################
-country_event = {
-	id = flavor_fla_bur.30
-	title = flavor_fla_bur.30.t
-	desc = flavor_fla_bur.30.desc
-	picture = CONQUEST_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = flavor_fla_bur.30.a
-		set_global_flag = Cod_gold_and_manpower_secured@ROOT
-		HOL = {
-			country_event = {
-				id = flavor_fla_bur.31
-				days = 0
-			}
-		}
-		add_treasury = -100
-		add_manpower = -10
-	}
-	option = {
-		name = flavor_fla_bur.30.b
-		set_global_flag = Cod_gold_secured@ROOT
-		HOL = {
-			country_event = {
-				id = flavor_fla_bur.31
-				days = 0
-			}
-		}
-		add_treasury = -100
-	}
-	option = {
-		name = flavor_fla_bur.30.c
-	}
-}
-country_event = {
-	id = flavor_fla_bur.31
-	title = flavor_fla_bur.31.t
-	desc = flavor_fla_bur.31.desc
-	picture = BATTLE_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = flavor_fla_bur.31.a
-		trigger = {
-			OR = {
-				has_global_flag = Cod_gold_and_manpower_securedBUR
-				has_global_flag = Cod_gold_and_manpower_securedARE
-				has_global_flag = Cod_gold_and_manpower_securedLOT
-			}
-		}
-		97 = {
-			spawn_rebels = {
-				type = holland_cod_faction_rebels
-				size = 30
-				friend = FROM
-			}
-		}
-		96 = {
-			spawn_rebels = {
-				type = holland_cod_faction_rebels
-				size = 20
-				friend = FROM
-			}
-		}
-	}
-	option = {
-		name = flavor_fla_bur.31.a
-		trigger = {
-			OR = {
-				has_global_flag = Cod_gold_securedBUR
-				has_global_flag = Cod_gold_securedARE
-				has_global_flag = Cod_gold_securedLOT
-			}
-		}
-		97 = {
-			spawn_rebels = {
-				type = holland_cod_faction_rebels
-				size = 30
-				friend = FROM
-			}
-		}
-	}
-}
-country_event = {
-	id = flavor_fla_bur.32
-	title = flavor_fla_bur.32.t
-	desc = flavor_fla_bur.32.desc
-	picture = BATTLE_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		create_union = HOL
-	}
 
-	option = {
-		name = flavor_fla_bur.32.a
-		if = {
-			limit = {
-				NOT = { owns_or_non_sovereign_subject_of = 96 }
-			}
-			add_permanent_claim = 96
-		}
-		if = {
-			limit = {
-				NOT = { owns_or_non_sovereign_subject_of = 4383 }
-			}
-			add_permanent_claim = 4383
-		}
-		if = {
-			limit = {
-				NOT = { owns_or_non_sovereign_subject_of = 97 }
-			}
-			add_permanent_claim = 97
-		}
-	}
-	
-}
-#Event notifying HAI about Burgundy's demands
-country_event = {
-	id = flavor_fla_bur.40
-	title = flavor_fla_bur.40.t
-	desc = flavor_fla_bur.40.desc
-	picture = BATTLE_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = flavor_fla_bur.40.a
-		ai_chance = { factor = 90 }
-		FROM = {
-			country_event = {
-				id = flavor_fla_bur.41
-				days = 5
-			}
-		}
-	}
-	option = {
-		name = flavor_fla_bur.40.b
-		ai_chance = { factor = 10 }
-		FROM = {
-			country_event = {
-				id = flavor_fla_bur.42
-				days = 10
-			}
-		}
-	}
-}
-country_event = {
-	id = flavor_fla_bur.41
-	title = flavor_fla_bur.41.t
-	desc = flavor_fla_bur.41.desc
-	picture = BATTLE_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		create_union = HAI
-	}
-	
-	option = {
-		name = flavor_fla_bur.41.a
-		1743 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 1743 }
-			}
-			add_permanent_claim = root
-		}
-		91 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 91 }
-			}
-			add_permanent_claim = root
-		}
-	}
-}
-country_event = {
-	id = flavor_fla_bur.42
-	title = flavor_fla_bur.42.t
-	desc = flavor_fla_bur.42.desc
-	picture = BATTLE_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = flavor_fla_bur.42.a
-		1743 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 1743 }
-			}
-			add_permanent_claim = root
-		}
-		91 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 91 }
-			}
-			add_permanent_claim = root
-		}
-	}
-}
 
-###############################################
-###	Burgundian Chain to purchase the Duchy of Guelders
-###############################################
-#The Purchase of Guelders
-country_event = {
-	id = flavor_fla_bur.50
-	title = flavor_fla_bur.50.t
-	desc = flavor_fla_bur.50.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = { #Attempt to purchase the Duchy wholesale from [99.Owner.GetName]
-		name = flavor_fla_bur.50.a
-		ai_chance = {
-			factor = 100
-		}
-		trigger = {
-			OR = {
-				1742 = {
-					owner = {
-						owns = 99
-					}
-				}
-				99 = {
-					owner = {
-						owns = 1742
-					}
-				}
-			}
-		}
-		1742 = {
-			owner = {
-				country_event = { #[From.GetName] offers to purchase the Duchy of Guelders
-					id = flavor_fla_bur.51
-					days = 5
-				}
-			}
-		}
-	}
-	option = { #Let us buy Arnhem (Lower Gelre) from [99.Owner.GetName] first.
-		name = flavor_fla_bur.50.b
-		trigger = {
-			NOT = { owns = 99 }
-		}
-		ai_chance = {
-			factor = 45
-		}
-		99 = {
-			owner = {
-				country_event = { #[From.GetName] offers to buy [99.GetName]
-					id = flavor_fla_bur.54
-					days = 5
-				}
-			}
-		}
-	}
-	option = { #We should first try to purchase Upper Guelders from [1742.Owner.GetName]
-		name = flavor_fla_bur.50.c
-		trigger = {
-			NOT = { owns = 1742 }
-		}
-		ai_chance = { 
-			factor = 45
-		}
-		1742 = {
-			owner = {
-				country_event = { #[From.GetName] offers to buy [1742.GetName]
-					id = flavor_fla_bur.57
-					days = 5
-				}
-			}
-		}
-	}
-	option = { #Claim the Duchy! Why purchase what you can conquer?
-		name = flavor_fla_bur.50.d
-		ai_chance = { 
-			factor = 5
-		}
-		1742 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 1742 }
-			}
-			add_permanent_claim = root
-		}
-		99 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 99 }
-			}
-			add_permanent_claim = root
-		}
-	}
-}
-#[From.GetName] offers to purchase the Duchy of Guelders
-country_event = {
-	id = flavor_fla_bur.51
-	title = flavor_fla_bur.51.t
-	desc = flavor_fla_bur.51.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Everything can be sold for the right price.
-		name = flavor_fla_bur.51.a
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 2
-				has_opinion = {
-					who = FROM
-					value = 100
-				}
-			}
-			modifier = {
-				factor = 3
-				has_opinion = {
-					who = FROM
-					value = 150
-				}
-			}
-			modifier = {
-				factor = 0
-				is_rival = ROOT 
-			}
-		}
-		FROM = {
-			country_event = {
-				id = flavor_fla_bur.52
-				days = 5
-			}
-		}
-	}
-	option = { #Never!
-		name = flavor_fla_bur.51.b
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 5
-				is_rival = ROOT 
-			}
-		}
-		FROM = {
-			country_event = { 
-				id = flavor_fla_bur.53
-				days = 5
-			}
-		}
-	}
-}
-#[From.GetName] agrees!
-country_event = {
-	id = flavor_fla_bur.52
-	title = flavor_fla_bur.52.t
-	desc = flavor_fla_bur.52.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Great!
-		name = flavor_fla_bur.52.a
-		if = {
-			limit = {
-				FROM = {
-					NOT = { tag = GEL }
-				}
-			}
-			99 = { remove_core = FROM }
-		}
-		if = {
-			limit = {
-				FROM = {
-					NOT = { tag = GEL }
-				}
-			}
-			1742 = { remove_core = FROM }
-		}
-		99 = {
-			cede_province = ROOT
-			add_territorial_core = ROOT
-		}
-		1742 = {
-			cede_province = ROOT
-			add_territorial_core = ROOT
-		}
-		add_treasury = -600
-		FROM = { add_treasury = 600 }
-	}
-}
-#[From.GetName] has rejected our offer
-country_event = {
-	id = flavor_fla_bur.53
-	title = flavor_fla_bur.53.t
-	desc = flavor_fla_bur.53.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Attempt to purchase just [99.GetName] then.
-		name = flavor_fla_bur.53.a
-		trigger = {
-			NOT = { owns = 99 }
-			NOT = { has_country_flag = 99_purchase_rejected }
-		}
-		ai_chance = { factor = 50 }
-		99 = {
-			owner = {
-				country_event = { 
-					id = flavor_fla_bur.54
-					days = 5
-				}
-			}
-		}
-	}
-	option = { #Let us try to purchase [1742.GetName] instead
-		name = flavor_fla_bur.53.b
-		trigger = {
-			NOT = { owns = 1742 }
-			NOT = { has_country_flag = 1742_purchase_rejected }
-		}
-		ai_chance = { factor = 50 }
-		1742 = {
-			owner = {
-				country_event = { 
-					id = flavor_fla_bur.57
-					days = 5
-				}
-			}
-		}
-	}
-	option = { #Give up on this idea...
-		name = flavor_fla_bur.53.c
-		ai_chance = { factor = 5 }
-		1742 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 1742 }
-			}
-			add_permanent_claim = root
-		}
-		99 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 99 }
-			}
-			add_permanent_claim = root
-		}
-	}
-}
-#[From.GetName] offers to buy [99.GetName]
-country_event = {
-	id = flavor_fla_bur.54
-	title = flavor_fla_bur.54.t
-	desc = flavor_fla_bur.54.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Agree to their offer
-		name = flavor_fla_bur.54.a
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 2
-				has_opinion = {
-					who = FROM
-					value = 100
-				}
-			}
-			modifier = {
-				factor = 3
-				has_opinion = {
-					who = FROM
-					value = 150
-				}
-			}
-			modifier = {
-				factor = 0
-				is_rival = ROOT 
-			}
-		}
-		FROM = {
-			country_event = { 
-				id = flavor_fla_bur.55
-				days = 5
-			}
-		}
-	}
-	option = { #Never!
-		name = flavor_fla_bur.54.b
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 5
-				is_rival = ROOT 
-			}
-		}
-		FROM = { set_country_flag = 99_purchase_rejected }
-		FROM = {
-			country_event = { 
-				id = flavor_fla_bur.56
-				days = 5
-			}
-		}
-	}
-}
-#[From.GetName] agrees to sell [99.GetName]
-country_event = {
-	id = flavor_fla_bur.55
-	title = flavor_fla_bur.55.t
-	desc = flavor_fla_bur.55.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		if = {
-			limit = {
-				FROM = {
-					NOT = { tag = GEL }
-				}
-			}
-			99 = { remove_core = FROM }
-		}
-		99 = { 
-			cede_province = ROOT
-			add_territorial_core = ROOT
-		}
-		add_treasury = -300
-		FROM = { add_treasury = 300 }
-	}
-	
-	option = { #Great! Now let us contact the owner of [1742.GetName]
-		name = flavor_fla_bur.55.a
-		trigger = {
-			NOT = { owns = 1742 }
-			NOT = { has_country_flag = 1742_purchase_rejected }
-		}
-		ai_chance = { factor = 100 }
-		
-	}
-	option = { #This is enough for now...
-		name = flavor_fla_bur.55.b
-		ai_chance = { factor = 0 }
-		trigger = {
-			NOT = {
-				AND = {
-					owns = 99
-					owns = 1742
-				}
-			}
-		}
-		1742 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 1742 }
-			}
-			add_permanent_claim = root
-		}
-		99 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 99 }
-			}
-			add_permanent_claim = root
-		}
-	}
-	option = { #The Duchy of Guelders is ours!
-		name = flavor_fla_bur.55.c
-		trigger = {
-			AND = {
-				owns = 99
-				owns = 1742
-			}
-		}
-		ai_chance = { factor = 100 }
-		add_prestige = 20
-	}
-}
-#[From.GetName] refuses to sell [99.GetName]
-country_event = {
-	id = flavor_fla_bur.56
-	title = flavor_fla_bur.56.t
-	desc = flavor_fla_bur.56.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Let us try to purchase [1742.GetName] from its owner instead then.
-		name = flavor_fla_bur.56.a
-		trigger = {
-			NOT = { owns = 1742 }
-			NOT = { has_country_flag = 1742_purchase_rejected }
-		}
-		ai_chance = { factor = 100 }
-		1742 = {
-			owner = {
-				country_event = { 
-					id = flavor_fla_bur.57
-					days = 5
-					tooltip = flavor_fla_bur.56.a.tooltip
-				}
-			}
-		}
-	
-	}
-	option = { #Give up on this idea...
-		name = flavor_fla_bur.56.b
-		ai_chance = { factor = 0 }
-		1742 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 1742 }
-			}
-			add_permanent_claim = root
-		}
-		99 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 99 }
-			}
-			add_permanent_claim = root
-		}
-	}
-}
-#[From.GetName] offers to buy [1742.GetName]
-country_event = {
-	id = flavor_fla_bur.57
-	title = flavor_fla_bur.57.t
-	desc = flavor_fla_bur.57.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Agree to their offer
-		name = flavor_fla_bur.57.a
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 2
-				has_opinion = {
-					who = FROM
-					value = 100
-				}
-			}
-			modifier = {
-				factor = 3
-				has_opinion = {
-					who = FROM
-					value = 150
-				}
-			}
-			modifier = {
-				factor = 0
-				is_rival = ROOT 
-			}
-		}
-		FROM = {
-			country_event = { 
-				id = flavor_fla_bur.58
-				days = 5
-			}
-		}
-	
-	}
-	option = { #Never!
-		name = flavor_fla_bur.57.b
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 5
-				is_rival = ROOT 
-			}
-		}
-		FROM = { set_country_flag = 1742_purchase_rejected }
-		FROM = {
-			country_event = { 
-				id = flavor_fla_bur.59
-				days = 5
-			}
-		}
-	}
-}
-#[From.GetName] agrees to sell [1742.GetName]
-country_event = {
-	id = flavor_fla_bur.58
-	title = flavor_fla_bur.58.t
-	desc = flavor_fla_bur.58.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		if = {
-			limit = {
-				FROM = {
-					NOT = { tag = GEL }
-				}
-			}
-			1742 = { remove_core = FROM }
-		}
-		1742 = { 
-			cede_province = ROOT
-			add_territorial_core = ROOT
-		}
-		add_treasury = -300
-		FROM = { add_treasury = 300 }
-	}
-	
-	option = { #Great! Now let us contact the owner of [99.GetName]
-		name = flavor_fla_bur.58.a
-		trigger = {
-			NOT = { owns = 99 }
-			NOT = { has_country_flag = 99_purchase_rejected }
-		}
-		ai_chance = { factor = 100 }
-		99 = {
-			owner = {
-				country_event = { 
-					id = flavor_fla_bur.54
-					days = 5
-				}
-			}
-		}
-	}
-	option = { #This is enough for now...
-		name = flavor_fla_bur.58.b
-		trigger = {
-			NOT = {
-				AND = {
-					owns = 99
-					owns = 1742
-				}
-			}
-		}
-		ai_chance = { factor = 0 }
-		1742 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 1742 }
-			}
-			add_permanent_claim = root
-		}
-		99 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 99 }
-			}
-			add_permanent_claim = root
-		}
-	}
-	option = { #The Duchy of Guelders is ours!
-		name = flavor_fla_bur.58.c
-		trigger = {
-			AND = { 
-				owns = 99
-				owns = 1742
-			}
-		}
-		ai_chance = { factor = 100 }
-		add_prestige = 20
-	}
-}
-#[From.GetName] refuses to sell [1742.GetName]
-country_event = {
-	id = flavor_fla_bur.59
-	title = flavor_fla_bur.59.t
-	desc = flavor_fla_bur.59.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = { #Let us try to purchase [99.GetName] from its owner instead then.
-		name = flavor_fla_bur.59.a
-		trigger = {
-			NOT = { owns = 99 }
-			NOT = { has_country_flag = 99_purchase_rejected }
-		}
-		ai_chance = { factor = 100 }
-		99 = {
-			owner = {
-				country_event = { 
-					id = flavor_fla_bur.54
-					days = 5
-					tooltip = flavor_fla_bur.58.a.tooltip
-				}
-			}
-		}
-	}
-	option = { #Give up on this idea...
-		name = flavor_fla_bur.59.b
-		ai_chance = { factor = 0 }
-		1742 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 1742 }
-			}
-			add_permanent_claim = root
-		}
-		99 = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-				NOT = { owns_or_non_sovereign_subject_of = 99 }
-			}
-			add_permanent_claim = root
-		}
-	}
-}
 
-###############################################
-###	The Congress of Arras
-###############################################
-country_event = {
-	id = flavor_fla_bur.70
-	title = flavor_fla_bur.70.t
-	desc = flavor_fla_bur.70.desc
-	picture = DEBATE_REPUBLICAN_eventPicture
 	
-	is_triggered_only = yes
-	fire_only_once = yes
 
-	option = { #Offer extended peace treaty with France (and break alliance with England) in exchange for Picardie and Valois (lower acceptance chance)
-		name = flavor_fla_bur.70.a
-	}
-	option = { #Offer extended peace treaty with France (and break alliance with England) in exchange for just Picardie (higher acceptance chance)
-		name = flavor_fla_bur.70.b
-	}
-	option = { #Demand Calais from the English to break alliance with France, keep alliance with England
-		name = flavor_fla_bur.70.c
-	}
-	option = { #Demand Calais from the English to break alliance with France, truce with England
-		name = flavor_fla_bur.70.d
-	}
-	option = { #Demand Calais from the English to truce with England
-		name = flavor_fla_bur.70.e
-	}
-	option = { #Demand Calais, threaten war (and alliance with France)
-		name = flavor_fla_bur.70.f
-	}
-	option = { #Demand Picardie/Valois, threaten war (and alliance with England)
-		name = flavor_fla_bur.70.g
-	}
-}

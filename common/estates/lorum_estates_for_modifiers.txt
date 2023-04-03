@@ -1,0 +1,146 @@
+# Estates below have no functional purpose besides creating estate_loyalty and estate_influence modifiers for custom 'mechanics'
+
+
+
+# For Early Game General Policy
+estate_negative_general_penalty = {
+	icon = 1
+
+	independence_government = monarchy
+	starting_reform = feudalism_reform
+	independence_tech_group = muslim
+	
+	# If true, country will get estate
+	trigger = { #Theoretically this should work just fine
+		always = no
+		# NOT = { has_government_attribute = is_merchant_republic }
+		# NOT = { has_reform = pirate_republic_reform }
+		# NOT = { has_reform = veche_republic }
+		# NOT = { has_reform = cossacks_reform }
+		# NOT = { government = native }
+		# NOT = { has_reform = trading_city }
+		# NOT = { has_reform = siberian_tribe }
+		# NOT = { is_revolutionary_republic_trigger = yes }
+		# NOT = { has_reform = revolutionary_empire_reform }
+		# NOT = { has_reform = peasants_republic }
+		# NOT = { has_reform = american_republic }
+		# NOT = { has_reform = federal_republic }
+		# NOT = { has_reform = frisian_republic_gov }
+		# NOT = { religion = zoroastrian }
+		# NOT = { religion_group = muslim }
+		# NOT = { religion_group = zoroastrian_group }
+		# NOT = { secondary_religion = zoroastrian }
+		# is_colonial_nation = no
+		# any_owned_province = { 
+			# is_core = ROOT
+			# OR = {
+				# has_province_modifier = golden_bull_parsi_community
+				# religion = zoroastrian
+			# }
+		# }
+		#We shouldnt need this lower bit now that we check for the province modifier/religion
+		#OR = { #Muslims, Eastern, Chinese, Nomads, and Anatolians only. These are where these people existed mostly.
+		#	technology_group = muslim
+		#	#technology_group = eastern #Represents Georgia, Assyria, other Christian nations. #Should we really represent these though?
+		#	technology_group = chinese
+		#	technology_group = nomad_group
+		#	technology_group = ottoman
+		#}
+	}
+
+	#Modifiers require balalancing
+	country_modifier_happy = {
+	}
+	country_modifier_neutral = {
+	}	
+	country_modifier_angry = {
+	}
+	land_ownership_modifier = {
+		estate_zoroastrian_loyalty_modifier = 0.25
+	}
+
+	province_independence_weight = {
+		factor = 1
+		modifier = { #CoT 1 + zoroastrian
+			factor = 1.2
+			province_has_center_of_trade_of_level = 1
+			religion = zoroastrian 
+		}
+	}
+	
+	# Influence modifiers
+	# base_influence = 0
+	# influence_modifier = { #+10 Influence if zoroastrian or zoroastrian Minority
+		# desc = EST_VAL_RELIGIOUS_MINORITY
+		# trigger = {
+			# any_owned_province = {
+				# OR = {
+					# religion = zoroastrian
+					# has_province_modifier = golden_bull_parsi_community
+				# }
+			# }
+		# }
+		# influence = 10		
+	# }
+	# influence_modifier = { #+20 Influence if dominant religion isnt your Base Religion, and you have zoroastrians or zoroastrian Minorities.
+		# desc = EST_VAL_RULED_BY_RELIGIOUS_MINORITY
+		# trigger = {
+			# NOT = { dominant_religion = ROOT }
+			# OR = {
+					# religion = zoroastrian
+					# has_province_modifier = golden_bull_parsi_community
+				# }
+		# }
+		# influence = 20
+	# }
+	
+	#influence_from_dev_modifier = 0.5
+	
+	# Influence modifiers from Events:
+	# influence_modifier = { #Other Estates in Power - Influence
+		# desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		# trigger = {
+			# OR = {
+				# has_disaster = estate_church_disaster
+				# has_disaster = estate_burghers_disaster
+				# has_disaster = estate_brahmins_disaster
+				# has_disaster = estate_vaisyas_disaster
+				# has_disaster = estate_jains_disaster
+			# }
+		# }	
+		# influence = -40
+	# }
+	
+	#Loyalty Modifiers
+	# loyalty_modifier = { #Other Estates in Power - Loyalty
+		# desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		# trigger = {
+			# OR = {
+				# has_disaster = estate_church_disaster
+				# has_disaster = estate_burghers_disaster
+				# has_disaster = estate_brahmins_disaster
+				# has_disaster = estate_vaisyas_disaster
+				# has_disaster = estate_jains_disaster
+			# }
+		# }
+		# loyalty = -20
+	# }
+	# loyalty_modifier = { #+5 Loyalty if Consort is zoroastrian
+		# desc = EST_VAL_NOBLE_CONSORT
+		# trigger = {
+			# has_dlc = "Rights of Man"
+			# has_consort = yes
+			# consort_religion = zoroastrian
+		# }
+		# loyalty = 5
+	# }
+	
+	
+	color = { 187 227 170 }
+	
+	privileges = {
+	}
+
+	agendas = {
+	}
+}

@@ -16,7 +16,6 @@ native_hostileness = 2
 
 discovered_by = north_american
 
-1444.1.1 = { tribal_owner = CHI }
 1540.1.1 = { discovered_by = SPA } # Hernando de Soto
 1600.1.1 = {
 	owner = CHI

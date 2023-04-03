@@ -18,7 +18,7 @@ add_core = CLA
 discovered_by = south_american
 discovered_by = andean
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1448.1.1 = {
 	capital = "Puno"
 	owner = CSU

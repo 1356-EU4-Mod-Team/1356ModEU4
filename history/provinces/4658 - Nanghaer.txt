@@ -19,7 +19,7 @@ native_hostileness = 1
 
 
 discovered_by = chinese
-1356.12.26  = {	
+1356.12.24  = {	
 	owner = X01
 	controller = X01
 	add_core = X01

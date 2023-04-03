@@ -22,7 +22,7 @@ add_core = TAR
 # discovered_by = AZT
 discovered_by = mesoamerican
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 
 1465.1.1 = { 
 	owner = TAR

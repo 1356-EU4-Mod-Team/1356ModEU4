@@ -5,7 +5,7 @@ owner = NAV
 controller = NAV
 capital = "Rouen"
 is_city = yes
-estate = estate_burghers
+ 
 culture = normand
 religion = catholic
 hre = no

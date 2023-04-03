@@ -30,10 +30,10 @@ technology = { #1356
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
 	
-	# development_efficiency = -0.30
+	# development_cost_modifier = -0.30
 	# production_efficiency =	-0.30
 	# administrative_efficiency = -0.50
-	development_efficiency = -0.75
+	#development_cost_modifier = -0.75 ## Removing for now, will look at adding base later
 }
 
 technology = { #1356
@@ -45,10 +45,10 @@ technology = { #1356
 	}
 	tribal_democracy_legacy = yes
 	tribal_kingdom_legacy = yes
-	#development_efficiency = 0.01
+	#development_cost_modifier = 0.01
 	#production_efficiency =	0.01	
-	administrative_efficiency = 0.05
-	governing_capacity = 100
+	administrative_efficiency = 0.03
+	governing_capacity = 25
 }
 
 technology = { #1356
@@ -58,10 +58,11 @@ technology = { #1356
 		feudalism = 0.30
 		mercantilism_institution = 0.10
 	}	
-	#development_efficiency = 0.01 
-	administrative_efficiency = 0.05
-	development_efficiency = 0.10
-	governing_capacity = 50
+	#development_cost_modifier = 0.01 
+	administrative_efficiency = 0.03
+	#development_cost_modifier = 0.10
+	governing_capacity = 25
+
 	may_support_rebels = yes
 }
 
@@ -75,8 +76,9 @@ technology = { #1356
 	}	
 	# elective_feudal_monarchy = yes
 	# production_efficiency	=	0.1
-	development_efficiency = 0.05
-	administrative_efficiency = 0.10
+	#development_cost_modifier = 0.05
+	administrative_efficiency = 0.03
+		governing_capacity = 25
 	
 }
 
@@ -87,10 +89,11 @@ technology = { #1356
 		feudalism = 0.5
 		mercantilism_institution = 0.30
 	}	
-	administrative_efficiency = 0.05
-	development_efficiency = 0.10
-	#development_efficiency = 0.01
+	administrative_efficiency = 0.03
+	#development_cost_modifier = 0.10
+	#development_cost_modifier = 0.01
 	allowed_idea_groups = 1
+    governing_capacity = 25	
 	
 }
 
@@ -103,11 +106,12 @@ technology = { #1356
 		mercantilism_institution = 0.50
 	}	
 	#production_efficiency	=	0.01
-	administrative_efficiency = 0.05
-	development_efficiency = 0.05
-	#development_efficiency = 0.01
-	#despotic_monarchy = yes	
+	administrative_efficiency = 0.03
+	#development_cost_modifier = 0.05
+	#development_cost_modifier = 0.01
+	#despotic_monarchy = yes
 	governing_capacity = 50
+
 	
 }
 
@@ -121,9 +125,10 @@ technology = { #1356
 	}	
 	temple = yes
 	#production_efficiency	=	0.05	
-	development_efficiency = 0.15
-	administrative_efficiency = 0.05
-	governing_capacity = 50
+	#development_cost_modifier = 0.15
+	administrative_efficiency = 0.03
+	governing_capacity = 25	
+
 
 }
 
@@ -136,8 +141,9 @@ technology = { #1356
 		gunpowder_institution = 0.15		
 	}	
 	allowed_idea_groups = 2
-	development_efficiency = 0.05
-	administrative_efficiency = 0.05
+	#development_cost_modifier = 0.05
+	administrative_efficiency = 0.03
+	governing_capacity = 25	
 
 }
 
@@ -157,8 +163,9 @@ technology = { #MOVED VANILLA feudal_monarchy #1356
 	
 	#production_efficiency	=	0.01
 	administrative_efficiency = 0.03
-	development_efficiency = 0.10
+	#development_cost_modifier = 0.10
 	governing_capacity = 50
+
 }
 
 technology = { #1356
@@ -169,9 +176,10 @@ technology = { #1356
 		mercantilism_institution = 0.50
 		gunpowder_institution = 0.50		
 	}	
-	development_efficiency = 0.05
+	#development_cost_modifier = 0.05
 	administrative_efficiency = 0.02
 	oligarchic_republic = yes
+	governing_capacity = 50
 }
 
 technology = { #1356
@@ -182,6 +190,7 @@ technology = { #1356
 	}
 	year = 1454
 	production_efficiency	 =	0.02
+	governing_capacity = 50
 	expects_institution = {
 		feudalism = 0.5
 	}
@@ -200,7 +209,8 @@ technology = { #National Ideas #1356
 
 	#Constable & Temple
 	allowed_idea_groups = 3
-	development_efficiency = 0.10
+	#development_cost_modifier = 0.10
+	governing_capacity = 50
 }
 
 technology = { #Workshop
@@ -217,6 +227,7 @@ technology = { #Workshop
 	farm_estate = yes
 	workshop = yes
 	ramparts = yes
+	governing_capacity = 50
 }
 
 technology = { #Renaissance Thought #1356
@@ -231,6 +242,7 @@ technology = { #Renaissance Thought #1356
 	
 	#Noble Republic
 	production_efficiency	 =	0.02
+	governing_capacity = 50
 
 }
 
@@ -247,6 +259,7 @@ technology = { #Courthouse
 	courthouse = yes
 	governing_capacity = 100
 
+
 }
 
 technology = { #The Scythe
@@ -262,6 +275,7 @@ technology = { #The Scythe
 	
 	#The Scythe
 	production_efficiency 	=	0.02
+	governing_capacity = 100
 	
 
 }
@@ -279,6 +293,7 @@ technology = { #Modern Theocracy
 	
 	allowed_idea_groups = 4
 	theocratic_government = yes
+	governing_capacity = 50
 }
 
 technology = { #Textile Manufactory
@@ -294,6 +309,7 @@ technology = { #Textile Manufactory
 	
 	#Textile Manufactory
 	textile = yes  
+	governing_capacity = 50
 
 }
 
@@ -310,7 +326,8 @@ technology = { #Early Modern Administration
 	
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
-	governing_capacity = 100
+	governing_capacity = 50
+
 	state_house = yes
 }
 
@@ -328,6 +345,7 @@ technology = { #Improved Drainage
 	
 	#Improved Drainage
 	production_efficiency 	=	0.02
+	governing_capacity = 50
 }
 
 technology = { #Scientific Experimentation
@@ -344,6 +362,7 @@ technology = { #Scientific Experimentation
 	
 	plantations = yes
 	allowed_idea_groups	= 5
+	governing_capacity = 100
 }
 
 technology = { #Military Administration
@@ -360,6 +379,7 @@ technology = { #Military Administration
 	
 	may_force_march = yes
 	soldier_households = yes
+	governing_capacity = 50
 	
 }
 
@@ -377,6 +397,7 @@ technology = { #Metallurgy
 	
 	mills = yes
 	production_efficiency 	=	0.02
+	governing_capacity = 50
 
 
 }
@@ -395,10 +416,11 @@ technology = { #University
 	}
 	
 	university = yes	
-	governing_capacity = 250
+
 	
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1
+	development_cost_modifier = -0.1
+	governing_capacity = 100
 }
 
 technology = { #National Sovereignty
@@ -416,6 +438,7 @@ technology = { #National Sovereignty
 		printing_press = 0.5
 		global_trade = 0.3
 	}
+	governing_capacity = 50
 }
 
 technology = { #Cathedral
@@ -433,6 +456,7 @@ technology = { #Cathedral
 	
 	#Cathedral
 	cathedral = yes
+	governing_capacity = 50
 }
 
 technology = { #Absolute Rulership
@@ -449,7 +473,8 @@ technology = { #Absolute Rulership
 	}
 	
 	republican_dictatorship = yes
-	governing_capacity = 250
+	governing_capacity = 50
+
 }
 
 technology = { #Land Clearance
@@ -468,6 +493,7 @@ technology = { #Land Clearance
 	
 	#Land Clearance
 	production_efficiency =	0.02
+	governing_capacity = 50
 }
 
 technology = { #The Constitution
@@ -489,6 +515,7 @@ technology = { #The Constitution
 	constitutional_republic = yes  
 
 	town_hall = yes
+	governing_capacity = 100
 }
 
 technology = { #Measuring the World
@@ -506,7 +533,8 @@ technology = { #Measuring the World
 	}
 	
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1
+	development_cost_modifier = -0.1
+	governing_capacity = 50
 }
 
 technology = { #Bonds and Tontines
@@ -525,7 +553,8 @@ technology = { #Bonds and Tontines
 	}
 	
 	counting_house = yes  
-	governing_capacity = 250
+	governing_capacity = 50
+
 }
 
 technology = { #Improved Production
@@ -545,6 +574,7 @@ technology = { #Improved Production
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.02
+	governing_capacity = 50
 }
 
 technology = { #Separation of Powers
@@ -564,6 +594,7 @@ technology = { #Separation of Powers
 	
 	allowed_idea_groups 	= 	8
 	furnace = yes #1356
+	governing_capacity = 50
 }
 
 technology = { #Modern Bureaucracy
@@ -582,8 +613,9 @@ technology = { #Modern Bureaucracy
 	}
 
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1	
-	governing_capacity = 250
+	development_cost_modifier = -0.1	
+	governing_capacity = 50
+
 }
 
 technology = { #Rotherham Plough
@@ -604,6 +636,7 @@ technology = { #Rotherham Plough
 	
 	#Rotherham Plough
 	production_efficiency 	=	0.02
+	governing_capacity = 50
 }
 
 technology = { #Rights of Man
@@ -625,6 +658,7 @@ technology = { #Rights of Man
 	}
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
+	governing_capacity = 50
 }
 
 technology = { #Advanced Production
@@ -645,6 +679,7 @@ technology = { #Advanced Production
 	
 	#Improved Draft Animals
 	production_efficiency 	=	0.02
+	governing_capacity = 50
 }
 
 technology = { #Revolutionary Ideals
@@ -665,7 +700,8 @@ technology = { #Revolutionary Ideals
 	
 	revolutionary_republic = yes
 	revolutionary_empire = yes
-	governing_capacity = 500
+	governing_capacity = 100
+
 }
 
 technology = { #Four Field Rotation
@@ -687,5 +723,6 @@ technology = { #Four Field Rotation
 	#Four field rotation
 	production_efficiency 	=	0.02
 	allowed_idea_groups = 10
+	governing_capacity = 100
 	
 }

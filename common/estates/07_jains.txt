@@ -5,31 +5,39 @@ estate_jains = {
 	
 	trigger = {	
 		has_dlc = "Dharma"
-		technology_group = indian
-		NOT = { has_government_attribute = is_merchant_republic }
-		NOT = { has_reform = trading_city }
-		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { government = native }
-		NOT = { has_reform = siberian_tribe }
-		NOT = { has_reform = veche_republic }
-		NOT = { has_reform = cossacks_reform }
-		NOT = { has_reform = pirate_republic_reform }
-		is_nomad = no
-		is_colonial_nation = no
-		NOT = { has_reform = celestial_empire }
-		NOT = { has_reform = revolutionary_empire_reform }
+		NOT = { has_government_attribute = disables_jains }
+		NOT = { has_country_flag = disables_jains_flag }
+		OR = {
+			has_government_attribute = enables_jains
+			has_country_flag = enables_jains_flag
+			AND = {
+				technology_group = indian
+				#NOT = { has_government_attribute = is_merchant_republic }
+				#NOT = { has_reform = trading_city }
+				#NOT = { has_reform = veche_republic }
+				NOT = { is_revolutionary_republic_trigger = yes }
+				NOT = { government = native }
+				NOT = { has_reform = siberian_tribe }
+				NOT = { has_reform = cossacks_reform }
+				NOT = { has_government_attribute = is_pirate_republic_reform }
+				is_nomad = no
+				is_colonial_nation = no
+				NOT = { has_reform = celestial_empire }
+				NOT = { has_reform = revolutionary_empire_reform }
+			}
+		}
 	}
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		build_cost = -0.1
-		build_time = -0.1
+		build_cost = -0.05
+		build_time = -0.05
 	}
 	country_modifier_neutral = {
-		build_cost = -0.10
+		build_cost = -0.05
 	}	
 	country_modifier_angry = {
-		interest = 1
+		interest = 2
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
@@ -125,11 +133,11 @@ estate_jains = {
 	}
 	
 	agendas = {
-		#estate_jains_build_trade_building_in_y
-		#estate_jains_build_port_building_in_y
-		#estate_jains_build_production_building_in_y
-		#estate_jains_build_manufactory_in_y
-		#estate_jains_build_university_in_y
+		estate_jains_build_trade_building_in_y
+		estate_jains_build_port_building_in_y
+		estate_jains_build_production_building_in_y
+		estate_jains_build_manufactory_in_y
+		estate_jains_build_university_in_y
 		estate_jains_pay_off_loans
 		estate_jains_restore_republican_tradition
 		estate_jains_restore_currency

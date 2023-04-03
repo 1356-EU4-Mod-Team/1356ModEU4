@@ -16,7 +16,7 @@ add_core = MAY
 add_core = CTM
 
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 discovered_by = mesoamerican
 1440.1.1 = { owner = CTM controller = CTM }
 1502.1.1 = { discovered_by = CAS } # Christopher Columbus, no attempt to colonize

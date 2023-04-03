@@ -22,7 +22,7 @@ discovered_by = ottoman
 
 1399.1.1   = { add_core = FRA }
 #1435.9.21  = { remove_claim = BUR }
-1453.10.16 = { owner = FRA controller = FRA add_local_autonomy = 25 estate = estate_nobles }
+1453.10.16 = { owner = FRA controller = FRA add_local_autonomy = 25   }
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA }
 
 1531.9.22  = { owner = FRA controller = FRA } # Louise de Savoie dies, Bourbon added to France

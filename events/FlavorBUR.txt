@@ -249,7 +249,7 @@ country_event = {
 			}
 			else = {
 				every_enemy_country = {
-					country_event = { id = dutch_revolt.20 days = 1 }
+					country_event = { id = flavor_bur.20 days = 1 }
 				}
 			}
 			# Begin incident
@@ -264,6 +264,65 @@ country_event = {
 				set_imperial_incident = incident_dutch_revolt
 			}
 		}
+	}
+	
+	option = {
+		name = "flavor_bur.EVTOPTB10"
+		trigger = {
+			ai = no
+		}
+		NED = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		hidden_effect = {
+			NED = {
+				country_event = { id = flavor_bur.11 days = 1 }
+				set_country_flag = swapped_to_dutch_republic
+			}
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = NED }
+					any_owned_province = {
+						region = low_countries_region
+					}
+				}
+				country_event = { id = flavor_bur.12 days = 10 }
+			}
+			# Send messages to rivals allowing them to join
+			if = {
+				limit = {
+					NED = { is_part_of_hre = yes }
+					has_dlc = "Emperor"
+				}
+				every_enemy_country = {
+					limit = {
+						is_emperor = no
+					}
+					country_event = { id = flavor_bur.20 days = 1 }
+				}
+			}
+			else = {
+				every_enemy_country = {
+					country_event = { id = flavor_bur.20 days = 1 }
+				}
+			}
+			# Begin incident
+			if = {
+				limit = {
+					is_emperor = no
+					NED = {
+						is_part_of_hre = yes
+					}
+					has_dlc = "Emperor"
+				}
+				set_imperial_incident = incident_dutch_revolt
+			}
+		}
+		switch_tag = NED
 	}
 }
 
@@ -911,28 +970,23 @@ country_event = {
 
 	option = {
 		name = new_flavour_bur.4.A
+		change_tag = LOT
 		if = {
-			limit = { #1356 modification - will not change tag to LOT if already changed to ARE (Arles)
-				NOT = { tag = ARE }
-			}
-			change_tag = LOT
-			if = {
-				limit = {
-					NOT = {
-						government_rank = 2
-					}
+			limit = {
+				NOT = {
+					government_rank = 2
 				}
-				set_government_rank = 2
 			}
-			if = {
-				limit = {
-					has_custom_ideas = no
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			swap_non_generic_missions = yes
+			set_government_rank = 2
 		}
 		add_prestige = 20
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		swap_non_generic_missions = yes
 		ai_chance = {
 			factor = 1
 		}
@@ -1040,7 +1094,7 @@ country_event = {
 				capital_scope = {
 					region = france_region
 				}
-				liberty_desire = 50
+				#liberty_desire = 50
 			}
 			set_country_flag = FRA_vassal_to_be_given_to_BUR
 			custom_tooltip = THIS_vassalised_by_FROM

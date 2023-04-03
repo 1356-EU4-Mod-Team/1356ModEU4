@@ -1088,7 +1088,7 @@ gunpowder_institution = { #1356 New Content #This is more the search for better 
 
 	bonus = { 
 		siege_ability = 0.05
-		build_cost = -0.05
+		artillery_cost = -0.05
 	}
 	
 	trade_company_efficiency = 0.2
@@ -2154,7 +2154,7 @@ new_world_i = {
 				continent = europe
 				OR = {
 					owner = { has_idea = quest_for_the_new_world }
-					owner = { num_of_colonies = 1 }
+					owner = { colony = 1 }
 				}
 			}
 			AND = {
@@ -2224,6 +2224,7 @@ new_world_i = {
 	
 	can_start = {
 		is_year = 1500
+		is_institution_enabled = renaissance
 		OR = {
 			continent = europe
 			continent = asia
@@ -2528,6 +2529,7 @@ printing_press = {
 	
 	can_start = {
 		is_year = 1550
+		is_institution_enabled = new_world_i
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
@@ -2883,6 +2885,7 @@ global_trade = {
 	
 	can_start = {
 		is_year = 1600
+		is_institution_enabled = printing_press
 		is_island = no
 		highest_value_trade_node = yes
 		OR = {
@@ -3199,6 +3202,7 @@ manufactories = {
 	
 	can_start = {
 		is_year = 1650
+		is_institution_enabled = global_trade
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
@@ -3685,6 +3689,7 @@ enlightenment = {
 	
 	can_start = {
 		is_year = 1700
+		is_institution_enabled = manufactories
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
@@ -4039,6 +4044,7 @@ industrialization = {
 	
 	can_start = {
 		is_year = 1750
+		is_institution_enabled = enlightenment
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes

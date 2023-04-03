@@ -4,6 +4,7 @@ french_minor_take_land_slot_1 = {
 	ai = yes
 	
 	potential = { 
+		NOT = { has_dlc = "Emperor" }
 		OR = {
 			tag = POU
 			tag = BER
@@ -14,9 +15,8 @@ french_minor_take_land_slot_1 = {
 			tag = BOU
 			tag = VAL
 		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
-
+		# has_country_flag = use_golden_bull_missions_instead_of_paradox
+		# NOT = { has_global_flag = disabled_1356_related_missions }
 	}
 	has_country_shield = yes
 	
@@ -72,9 +72,7 @@ french_minor_take_land_slot_2 = {
 			tag = BOU
 			tag = VAL
 		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
-
+		NOT = { has_dlc = "Emperor" }
 	}
 	has_country_shield = yes
 	
@@ -159,8 +157,7 @@ french_minor_take_land_slot_3 = {
 			tag = BOU
 			tag = VAL
 		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		NOT = { has_dlc = "Emperor" }
 	}
 	has_country_shield = yes
 	
@@ -273,8 +270,7 @@ french_minor_form_france = { #Would like to add a time window somewhat seperatin
 			tag = BOU
 			tag = VAL
 		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		NOT = { has_dlc = "Emperor" }
 
 	}
 	has_country_shield = yes
@@ -310,8 +306,7 @@ french_minor_take_land_slot_4 = {
 			tag = BOU
 			tag = VAL
 		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		NOT = { has_dlc = "Emperor" }
 
 	}
 	has_country_shield = yes	
@@ -364,8 +359,7 @@ french_minor_take_land_slot_10 = {
 			tag = BOU
 			tag = VAL
 		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
+		NOT = { has_dlc = "Emperor" }
 
 	}
 	has_country_shield = yes	
@@ -400,27 +394,4 @@ french_minor_take_land_slot_10 = {
 			add_mil_power = 25
 		}
 	}
-}
-
-french_minor_take_land_slot_6 = { 
-	slot = 6
-	generic = no
-	ai = yes
-	
-	potential = { 
-		OR = {
-			tag = POU
-			tag = BER
-			tag = ORL
-			tag = ANJ
-			tag = ALE
-			tag = CHP
-			tag = BOU
-			tag = VAL
-		}
-		has_country_flag = use_golden_bull_missions_instead_of_paradox
-		NOT = { has_global_flag = disabled_1356_related_missions }
-
-	}
-	has_country_shield = yes	
 }

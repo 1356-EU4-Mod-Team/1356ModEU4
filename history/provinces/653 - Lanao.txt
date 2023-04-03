@@ -14,7 +14,7 @@ controller = MGD
 add_core = MGD
 add_core = LNO
 discovered_by = chinese
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1450.1.1 = { religion = sunni }
 1520.1.1 = {
 	owner = LNO

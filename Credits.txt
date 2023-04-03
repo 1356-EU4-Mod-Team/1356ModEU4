@@ -9,3 +9,7 @@
 # This file is a WIP and will change overtime if more mods are implemented
 
 # Ratkus for his 'ratka's amyzong moap' mod. Adds a wonderful look to the map!
+
+
+# March 2023 Update
+# 'News' GUI element by Parmelion of Ante Bellum. | Helps players get an idea what was changed in the latest update

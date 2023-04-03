@@ -14,7 +14,7 @@ trade_goods = naval_supplies
 base_manpower = 2
 capital = "Dorpat"
 is_city = yes
-estate = estate_nobles
+ 
 # discovered_by = KAZ
 # discovered_by = CRI
 # discovered_by = GOL

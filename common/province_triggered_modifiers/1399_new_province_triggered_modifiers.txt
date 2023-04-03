@@ -1,0 +1,14 @@
+theodosian_walls_new = { # For non-owners of Leviathan
+	potential = {
+		always = yes
+	}
+	trigger = {
+		owner = { tag = BYZ }
+	}
+	local_defensiveness = 0.5
+	local_defender_dice_roll_bonus = 2
+	local_garrison_size = 0.50
+	local_hostile_attrition = 2
+	local_fort_maintenance_modifier = -0.75
+	local_warscore_cost_modifier = 0.5
+}

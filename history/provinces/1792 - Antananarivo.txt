@@ -14,7 +14,7 @@ base_manpower = 2
 is_city = yes
 discovered_by = east_african
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1500.8.20 = { discovered_by = POR } #Diego Dias
 1540.1.1 = { fort_15th = yes }
 1572.1.1 = { capital = "Ambohidrabiby" }

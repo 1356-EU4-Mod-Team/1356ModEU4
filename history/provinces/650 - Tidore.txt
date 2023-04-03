@@ -18,7 +18,7 @@ add_core = TID
 discovered_by = chinese
 
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1486.1.1 = { religion = sunni }
 1512.1.1 = { discovered_by = POR } # Francisco Serrão
 1780.1.1 = { unrest = 6 } # Rebellion against the Dutch

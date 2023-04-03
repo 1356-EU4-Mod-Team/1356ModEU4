@@ -12,7 +12,7 @@ base_production = 2
 trade_goods = grain
 base_manpower = 2
 capital = "Skara"
-estate = estate_church #Skara, Brynolfsbo/Brunsbo
+  #Skara, Brynolfsbo/Brunsbo
 is_city = yes
  #"Domkyrkan i Skara"
 discovered_by = eastern

@@ -17,7 +17,7 @@ add_core = MAY
 discovered_by = mesoamerican
 
 add_province_triggered_modifier = mayan_chichen_itza
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1440.1.1 = { owner = COC controller = COC }
 1517.1.1 = { discovered_by = SPA } # Francisco Hernandez de Cordoba
 

@@ -1,0 +1,1143 @@
+# Designed to Railroad Ai Nations in certain Directions (Historical/Become a 'Rising Power')
+# Implemented by Genomega
+
+
+
+country_decisions = {
+	# Ottomans 
+
+	ottoman_anatolian_conslidation_ayd = { # Given this will 99% of the time be the first target, they also get the railroad modifier
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_ayd }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			AYD = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			is_year = 1357
+			is_at_war = no
+			AYD = { exists = yes } 
+			AYD = { ai = yes } 
+			NOT = { alliance_with = AYD }
+			NOT = { truce_with = AYD }
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = AYD
+				}	
+			}	
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_ayd
+			add_country_modifier = { # Ottomans cannot manually declare wars
+				name = "being_railroad_forbidden_wars"
+				duration = 10950
+			}				
+			AYD = {
+				limit = { owned_by = AYD }
+				every_owned_province = {
+					add_territorial_core = TUR
+				}
+			}						
+			AYD = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = AYD
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}
+
+	ottoman_anatolian_conslidation_hmd = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_hmd }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			HMD = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			is_year = 1358
+			is_at_war = no
+			HMD = { exists = yes } 
+			HMD = { ai = yes } 
+			NOT = { alliance_with = HMD }
+			NOT = { truce_with = HMD }
+			HMD = { is_subject = no }
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = HMD
+				}	
+			}		
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_hmd
+			HMD = {
+				limit = { owned_by = HMD }
+				every_owned_province = {
+					add_territorial_core = TUR
+				}
+			}	
+			HMD = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = HMD
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}
+	
+	ottoman_anatolian_conslidation_men = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_men }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			MEN = { exists = yes } 
+		}	
+		allow = {
+			is_year = 1358
+			is_at_war = no
+			MEN = { exists = yes } 
+			MEN = { ai = yes } 
+			NOT = { truce_with = MEN }
+			NOT = { alliance_with = MEN }
+			MEN = { is_subject = no }			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = MEN
+				}	
+			}		
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_men
+			MEN = {
+				every_owned_province = {
+					limit = { owned_by = MEN }
+					add_territorial_core = TUR
+				}
+			}	
+			MEN = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = MEN
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}
+
+	ottoman_anatolian_conslidation_teke = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_cnd }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			TEK = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			is_year = 1360
+			is_at_war = no
+			TEK = { exists = yes } 
+			TEK = { ai = yes } 
+			NOT = { truce_with = TEK }
+			NOT = { alliance_with = TEK }
+			TEK = { is_subject = no }			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = TEK
+				}	
+			}			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_tek
+			TEK = {
+				every_owned_province = {
+					add_territorial_core = TUR
+				}
+			}	
+			TEK = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = TEK
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}		
+	
+#### Ottomans Ai plots Route of Conquest
+	
+	ottoman_debate_on_conquest_path = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = debated_conquest_path }
+			KAR = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			total_development = 115	
+			is_year = 1363
+			is_at_war = no
+			NOT = { overextension_percentage = 0.10 }
+		}
+		effect = {
+			set_country_flag = debated_conquest_path
+			add_manpower = 5.0
+			random_list = {
+				80 = {
+					add_prestige = 25
+					add_country_modifier = {
+						name = ottoman_focus_on_balkans
+						duration = 9125
+					}	
+					bosnia_area = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_permanent_claim = from
+					}	
+					serbia_area = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_permanent_claim = from
+					}
+					rascia_area = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_permanent_claim = from
+					}	
+					bulgaria_area = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_permanent_claim = from
+					}	
+					# macedonia_area = {
+						# limit = {
+							# NOT = { is_core = from }
+							# NOT = { is_permanent_claim = from }
+						# }
+						# add_territorial_core = from
+					# }	
+					4702 = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_territorial_core = from
+					}	
+					1853 = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_territorial_core = from
+					}	
+					3001 = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_permanent_claim = from
+					}
+					4780 = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_permanent_claim = from
+					}					
+					northern_greece_area = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_territorial_core = from
+					}
+					morea_area = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_territorial_core = from
+					}	
+					149 = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_territorial_core = from
+					}	
+					4705 = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_territorial_core = from
+					}	
+					silistria_area = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_permanent_claim = from
+					}		
+					albania_area = {
+						limit = {
+							NOT = { is_core = from }
+							NOT = { is_permanent_claim = from }
+						}
+						add_permanent_claim = from
+					}
+					random_owned_province = {
+						build_to_forcelimit = {
+							infantry = 0.75
+							cavalry = 0.25
+						}
+					}						
+					modifier = {
+						factor = 0 # For players 
+						OR = {
+							BYZ = { ai = no } 
+							SER = { ai = no } 
+							TES = { ai = no } 
+							ATH = { ai = no } 
+							VEN = { ai = no } 
+							BUL = { ai = no } 
+							WAL = { ai = no } 
+							ACH = { ai = no } 
+							MOE = { ai = no } 
+							KNI = { ai = no }
+						}	
+					}
+				}
+				20 = {
+					add_prestige = 25
+					add_country_modifier = {
+						name = ottoman_focus_on_anatolia
+						duration = 9125
+					}
+					random_owned_province = {
+						build_to_forcelimit = {
+							infantry = 0.75
+							cavalry = 0.25
+						}
+					}					
+					modifier = {
+						factor = 0 # For players
+						OR = {
+							CND = { ai = no } 
+							ERE = { ai = no } 
+							KAR = { ai = no } 
+							CIC = { ai = no } 
+							JLR = { ai = no } 
+							GEO = { ai = no } 
+							AKK = { ai = no } 
+						}	
+					}					
+				}	
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}		
+	
+	
+#### If Ottomans Pursue a Balkan Path (Will be less inclined to do so if there is a Balkan player
+#### Not as Extensive as Anatolia to encourage randomness
+
+	ottoman_balkan_conslidation_ser = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_ser }
+			NOT = { has_country_flag = ottoman_balkans_done }
+			SER = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_balkans		
+			is_year = 1369
+			is_at_war = no
+			SER = { exists = yes } 
+			SER = { ai = yes } 
+			SER = { is_subject = no }
+			NOT = { alliance_with = SER } # Unlikely
+			NOT = { truce_with = SER }
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = SER
+				}	
+			}	
+			manpower_percentage = 0.50
+			mil_tech = 4
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_ser
+			#add_historical_rival = AVA
+			# SER = { # Not needed?
+				# every_owned_province = {
+					# limit = { owned_by = SER }
+					# add_territorial_core = TUR
+				# }
+			# }	
+			SER = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = SER
+				casus_belli = cb_ottoman_serbian_greek_conquest
+			}	
+			remove_casus_belli = {
+				target = SER
+				type = cb_ottoman_serbian_greek_conquest
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}	
+
+	ottoman_balkan_conslidation_ser_cleanup = { # Will require multiple wars
+		potential = {
+			tag = TUR
+			ai = yes
+			has_country_flag = ottoman_attacked_ser
+			NOT = { has_country_flag = ottoman_attacked_ser_cleanup }
+			NOT = { has_country_flag = ottoman_balkans_done }
+			SER = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_balkans		
+			is_year = 1380
+			is_at_war = no
+			SER = { exists = yes } 
+			SER = { ai = yes } 
+			NOT = { truce_with = SER }
+			SER = { is_subject = no }
+			NOT = { alliance_with = SER } # Unlikely			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = SER
+				}	
+			}	
+			manpower_percentage = 0.50
+			mil_tech = 6
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_ser_cleanup
+			#add_historical_rival = AVA
+			# SER = { # Not needed?
+				# every_owned_province = {
+					# limit = { owned_by = SER }
+					# add_territorial_core = TUR
+				# }
+			# }	
+			SER = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = SER
+				casus_belli = cb_annex
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}		
+
+
+	ottoman_balkan_conslidation_byzantine_lands = { # This is the most important war, as the Ottomans need Byzantine land, but must not take Consantinople
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_BYZ }
+			NOT = { has_country_flag = ottoman_balkans_done }
+			BYZ = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_balkans		
+			is_year = 1365
+			is_at_war = no
+			BYZ = { exists = yes } 
+			BYZ = { ai = yes } 
+			NOT = { truce_with = BYZ }
+			BYZ = { is_subject = no }
+			NOT = { alliance_with = BYZ } # Unlikely			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = BYZ
+				}	
+			}	
+			manpower_percentage = 0.50
+			mil_tech = 4			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_BYZ
+			#add_historical_rival = AVA
+			# SER = { # Not needed?
+				# every_owned_province = {
+					# limit = { owned_by = SER }
+					# add_territorial_core = TUR
+				# }
+			# }	
+			# BYZ = {
+				# every_owned_province = {
+					# limit = { owned_by = BUL }
+					# add_territorial_core = TUR
+				# }
+			# }				
+			BYZ = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = BYZ
+				casus_belli = cb_ottoman_greek_conquest
+			}	
+			remove_casus_belli = {
+				target = BYZ
+				type = cb_ottoman_greek_conquest
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}			
+	
+	ottoman_balkan_conslidation_bul = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_BUL }
+			NOT = { has_country_flag = ottoman_balkans_done }
+			BUL = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_balkans		
+			is_year = 1371
+			is_at_war = no
+			BUL = { exists = yes } 
+			BUL = { ai = yes } 
+			NOT = { truce_with = BUL }
+			BUL = { is_subject = no }
+			NOT = { alliance_with = BUL } # Unlikely			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = BUL
+				}	
+			}
+			manpower_percentage = 0.50
+			mil_tech = 4			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_BUL
+			#add_historical_rival = AVA
+			# SER = { # Not needed?
+				# every_owned_province = {
+					# limit = { owned_by = SER }
+					# add_territorial_core = TUR
+				# }
+			# }	
+			BUL = {
+				every_owned_province = {
+					limit = { owned_by = BUL }
+					add_territorial_core = TUR
+				}
+			}				
+			BUL = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = BUL
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}	
+
+
+	ottoman_balkan_conslidation_tes = { # Factoring in the Serbian Civil War
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_tes }
+			NOT = { has_country_flag = ottoman_balkans_done }
+			TES = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_balkans		
+			is_year = 1369
+			is_at_war = no
+			TES = { exists = yes } 
+			TES = { ai = yes } 
+			TES = { is_subject = no }
+			NOT = { alliance_with = TES } # Unlikely
+			NOT = { truce_with = TES }
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = TES
+				}	
+			}	
+			manpower_percentage = 0.50
+			mil_tech = 4
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_ser
+			#add_historical_rival = AVA
+			# SER = { # Not needed?
+				# every_owned_province = {
+					# limit = { owned_by = SER }
+					# add_territorial_core = TUR
+				# }
+			# }	
+			TES = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = TES
+				casus_belli = cb_ottoman_serbian_greek_conquest
+			}	
+			remove_casus_belli = {
+				target = TES
+				type = cb_ottoman_serbian_greek_conquest
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}	
+
+	ottoman_balkan_conslidation_tes_cleanup = { # Will require multiple wars
+		potential = {
+			tag = TES
+			ai = yes
+			has_country_flag = ottoman_attacked_tes
+			NOT = { has_country_flag = ottoman_attacked_tes_cleanup }
+			NOT = { has_country_flag = ottoman_balkans_done }
+			TES = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_balkans		
+			is_year = 1380
+			is_at_war = no
+			TES = { exists = yes } 
+			TES = { ai = yes } 
+			NOT = { truce_with = TES }
+			TES = { is_subject = no }
+			NOT = { alliance_with = TES } # Unlikely			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = TES
+				}	
+			}	
+			manpower_percentage = 0.50
+			mil_tech = 4			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_tes_cleanup
+			#add_historical_rival = AVA
+			# SER = { # Not needed?
+				# every_owned_province = {
+					# limit = { owned_by = SER }
+					# add_territorial_core = TUR
+				# }
+			# }	
+			TES = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = TES
+				casus_belli = cb_annex
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}		
+	
+	
+	
+#### If Ottomans Pursue a Anatolian Focus
+	
+	ottoman_anatolian_conslidation_karaman = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_kar }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			KAR = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_anatolia		
+			is_year = 1365
+			is_at_war = no
+			KAR = { exists = yes } 
+			KAR = { ai = yes } 
+			NOT = { truce_with = KAR }
+			KAR = { is_subject = no }
+			NOT = { alliance_with = KAR } # Unlikely			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = KAR
+				}	
+			}			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_KAR
+			KAR = {
+				every_owned_province = {
+					limit = { owned_by = KAR }
+					add_territorial_core = TUR
+				}
+			}	
+			KAR = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = KAR
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}	
+	
+	
+	ottoman_anatolian_conslidation_candar = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_cnd }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			CND = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_anatolia
+			is_year = 1364
+			is_at_war = no
+			CND = { exists = yes } 
+			CND = { ai = yes } 
+			NOT = { truce_with = CND }
+			CND = { is_subject = no }
+			NOT = { alliance_with = CND } # Unlikely			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = CND
+				}	
+			}			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_cnd
+			#add_historical_rival = AVA
+			CND = {
+				every_owned_province = {
+					add_territorial_core = TUR
+				}
+			}	
+			CND = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = CND
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}
+	
+	ottoman_anatolian_conslidation_canik = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_cni }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			CNI = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_anatolia		
+			is_year = 1364
+			is_at_war = no
+			CNI = { exists = yes } 
+			CNI = { ai = yes } 
+			NOT = { truce_with = CNI }
+			NOT = { overextension_percentage = 0.10 }
+			CNI = { is_subject = no }
+			NOT = { alliance_with = CNI } # Unlikely			
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = CNI
+				}	
+			}			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_cni
+			#add_historical_rival = AVA
+			CNI = {
+				every_owned_province = {
+					add_territorial_core = TUR
+				}
+			}	
+			CNI = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = CNI
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}
+
+	ottoman_anatolian_conslidation_eretna = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_eretna }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			ERE = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_anatolia		
+			is_year = 1369
+			is_at_war = no
+			ERE = { exists = yes } 
+			ERE = { ai = yes } 
+			NOT = { truce_with = ERE }
+			NOT = { overextension_percentage = 0.10 }
+			ERE = { is_subject = no }
+			NOT = { alliance_with = ERE } # Unlikely			
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = ERE
+				}	
+			}			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_eretna
+			#add_historical_rival = AVA
+			ERE = {
+				every_owned_province = {
+					add_territorial_core = TUR
+				}
+			}	
+			ERE = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = ERE
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}	
+	
+	ottoman_anatolian_conslidation_eretna_cleanup = { # Since this one will likely require a second war
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_eretna_cleanup }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			ERE = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_anatolia		
+			is_year = 1378
+			is_at_war = no
+			ERE = { exists = yes } 
+			ERE = { ai = yes } 
+			NOT = { truce_with = ERE }
+			NOT = { overextension_percentage = 0.10 }
+			ERE = { is_subject = no }
+			NOT = { alliance_with = ERE } # Unlikely			
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = ERE
+				}	
+			}			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_eretna_cleanup
+			#add_historical_rival = AVA
+			ERE = {
+				every_owned_province = {
+					add_territorial_core = TUR
+				}
+			}	
+			ERE = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = ERE
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}		
+	
+	ottoman_anatolian_conslidation_cilicia = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_cic }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			CIC = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_anatolia		
+			is_year = 1369
+			is_at_war = no
+			CIC = { exists = yes } 
+			CIC = { ai = yes } 
+			NOT = { truce_with = CIC }
+			CIC = { is_subject = no }
+			NOT = { alliance_with = CIC } # Unlikely			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = CIC
+				}	
+			}			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_cic
+			#add_historical_rival = AVA
+			CIC = {
+				every_owned_province = {
+					add_territorial_core = TUR
+				}
+			}	
+			CIC = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = CIC
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}	
+	
+	ottoman_anatolian_conslidation_dulkadir = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_attacked_dul }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			DUL = { exists = yes } 
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed			
+		}	
+		allow = {
+			has_country_modifier = ottoman_focus_on_anatolia		
+			is_year = 1369
+			is_at_war = no
+			DUL = { exists = yes } 
+			DUL = { ai = yes } 
+			NOT = { truce_with = DUL }
+			DUL = { is_subject = no }
+			NOT = { alliance_with = DUL } # Unlikely			
+			NOT = { overextension_percentage = 0.10 }
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = DUL
+				}	
+			}			
+		}
+		effect = {
+			set_country_flag = ottoman_attacked_cic
+			#add_historical_rival = AVA
+			DUL = {
+				every_owned_province = {
+					add_territorial_core = TUR
+				}
+			}	
+			DUL = {
+				add_country_modifier = {
+					name = "death_note_modifier"
+					duration = 20
+				}	
+			}	
+			declare_war_with_cb = {
+				who = DUL
+				casus_belli = cb_annex
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}		
+	
+
+#### Move for Consantinople
+#### Unlike Previous decisions if the owner is not Ai, they can still and will be targetted
+#### Not avaliable to players as I don't want to limit their judgement (Same with Hardcoded War Decs on Byzantium early on)
+	ottoman_conquest_of_constantinople = {
+		potential = {
+			tag = TUR
+			ai = yes
+			NOT = { has_country_flag = ottoman_constantinople_conquest }
+			NOT = { has_country_flag = ottoman_conslidated_anatolia }
+			NOT = { 151 = { owned_by = TUR } }
+			NOT = { is_year = 1470 } # Cutoff in case Ottoman ai is weak/destroyed
+		}	
+		allow = {
+			total_development = 320		
+			is_year = 1410
+			NOT = { 151 = { owned_by = TUR } } 
+			NOT = { overextension_percentage = 0.10 }
+			151 = {
+				any_neighbor_province = {
+					owned_by = TUR
+				}	
+			}			
+		}
+		effect = {
+			set_country_flag = ottoman_constantinople_conquest
+			#add_historical_rival = AVA
+			151 = {
+				add_core = TUR
+			}	
+			151 = {
+				owner = {
+					save_event_target_as = constantinople_owner
+				}	
+			}	
+			declare_war_with_cb = {
+				who = event_target:constantinople_owner
+				casus_belli = cb_core
+				war_goal_province = 151
+			}				
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 10
+	}		
+}	

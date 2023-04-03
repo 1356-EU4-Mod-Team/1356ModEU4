@@ -30,3 +30,11 @@
  norse_pagan_reformed: "Ásatrú"
  norse_pagan_reformed_religion_desc: "In the Early Middle Ages, the ancient Germanic belief system was dominant in Scandinavia and northern Germany. Its Pantheon of gods consisted of Odin (or Wodan) the wise warrior, Yggdrasil, the central sacred tree, Thor (Thunar) friend to mankind, and Frey (Freya) goddess of fertility." 
  zoroastrian_religion_desc: "Zoroastrians worship Ahura Mazda, the uncreated God, as proclaimed by the ancient Iranian prophet Zoroaster. It was the official religion of all Persian empires (except the Hellenic Seleucid Empire) until the Muslim conquest of the Sassanid Empire in 651. The ancient form of the religion involved great sacred hill top fires, the exposure of dead bodies to scavenger birds for cleansing, and religious close-kin marriages in imitation of Ahura Mazda and Zoroaster."
+ 
+ immortal_personality:0 "Legendary Ruler"
+ desc_immortal_personality:0 "This ruler is a figure of Legendary Proportions! Rulers with this trait are less likely to die by normal means."
+ immortal_personality_die_desc:0 "If it bleeds, it can be killed."
+ 
+ 
+ PROV4702:0 "Serres"
+ PROV_ADJ4702:0 "Serres"

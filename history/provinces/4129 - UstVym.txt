@@ -11,7 +11,7 @@ trade_goods = fur
 base_manpower = 1
 capital = "Ust-Vym"
 is_city = yes
-estate = estate_church #Bishop of Perm
+  #Bishop of Perm
 add_core = PRM
 add_core = NOV # Novgorodian claims
 discovered_by = eastern

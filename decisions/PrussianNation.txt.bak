@@ -1,69 +1,67 @@
 country_decisions = {
 
 	#Removed defunct pre dharma decisions about governments
-	institute_prussian_republic = {
-		major = yes
-		potential = {
-			always = no
-			NOT = {
-				OR = {
-					has_dlc = "Dharma" 
-					has_dlc = "Emperor"
-				}
-			}
-			normal_or_historical_nations = yes
-			tag = PRU
-			government = republic
-			NOT = { has_reform = prussian_republic }
-		}
-
-		allow = {
-			is_revolutionary = no
-			OR = {
-				religion = protestant
-				religion = reformed
-				religion = hussite
-				religion = anglican
-				religion = catholic
-			}
-		}
-
-		effect = {
-			add_government_reform = prussian_republic
-		}
-	}
-	
-	institute_prussian_monarchy = {
-		major = yes
-		potential = {
-			always = no
-			NOT = {
-				OR = {
-					has_dlc = "Dharma" 
-					has_dlc = "Emperor"
-				}
-			}
-			normal_or_historical_nations = yes
-			tag = PRU
-			government = monarchy
-			NOT = { has_reform = prussian_monarchy_legacy }
-		}
-
-		allow = {
-			is_revolutionary = no
-			OR = {
-				religion = protestant
-				religion = reformed
-				religion = hussite
-				religion = anglican
-				religion = catholic
-			}
-		}
-
-		effect = {
-			add_government_reform = prussian_monarchy
-		}
-	}
+	#institute_prussian_republic = {
+	#	major = yes
+	#	potential = {
+	#		always = no
+	#		NOT = {
+	#			OR = {
+	#				has_dlc = "Dharma" 
+	#				has_dlc = "Emperor"
+	#			}
+	#		}
+	#		normal_or_historical_nations = yes
+	#		tag = PRU
+	#		government = republic
+	#		NOT = { has_reform = prussian_republic }
+	#	}
+	#
+	#	allow = {
+	#		is_revolutionary = no
+	#		OR = {
+	#			religion = protestant
+	#			religion = reformed
+	#			religion = hussite
+	#			religion = anglican
+	#		}
+	#	}
+	#
+	#	effect = {
+	#		add_government_reform = prussian_republic
+	#	}
+	#}
+	#
+	#institute_prussian_monarchy = {
+	#	major = yes
+	#	potential = {
+	#		always = no
+	#		NOT = {
+	#			OR = {
+	#				has_dlc = "Dharma" 
+	#				has_dlc = "Emperor"
+	#			}
+	#		}
+	#		normal_or_historical_nations = yes
+	#		tag = PRU
+	#		government = monarchy
+	#		NOT = { has_reform = prussian_monarchy_legacy }
+	#	}
+	#
+	#	allow = {
+	#		is_revolutionary = no
+	#		OR = {
+	#			religion = protestant
+	#			religion = reformed
+	#			religion = hussite
+	#			religion = anglican
+	#		}
+	#	}
+	#
+	#	effect = {
+	#		add_government_reform = prussian_monarchy
+	#	}
+	#}
 
 	form_kingdom_of_prussia = {
 		major = yes
@@ -80,12 +78,6 @@ country_decisions = {
 			OR = {
 				NOT = { exists = PRU }
 				ai = no
-			}
-			OR = {
-				ai = no
-				is_religion_enabled = protestant
-				is_religion_enabled = reformed
-				is_religion_enabled = anglican
 			}
 		}
 		provinces_to_highlight = {
@@ -161,18 +153,26 @@ country_decisions = {
 			}
 			if =  {
 				limit = {
-					NOT = {
-						government = republic
-					}
+					is_revolutionary = no
+					NOT = { government = republic }
+					NOT = { government = theocracy }
 				}
 				change_government_to_monarchy = yes
 				add_government_reform = prussian_monarchy
 			}
-			else = {
+			else_if = {
 				limit = {
+					government = republic
 					is_revolutionary = no
 				}
 				add_government_reform = prussian_republic_reform
+			}
+			else_if = {
+				limit = {
+					government = theocracy
+					is_revolutionary = no
+				}
+				add_government_reform = prussian_theocratic_reform
 			}
 			if = {
 				limit = {
@@ -214,6 +214,11 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 10 }
+				NOT = { owns_core_province = 41 }
+			}
 		}
 		ai_importance = 1000
 	}
@@ -233,12 +238,6 @@ country_decisions = {
 			OR = {
 				NOT = { exists = PRU }
 				ai = no
-			}
-			OR = {
-				ai = no
-				is_religion_enabled = protestant
-				is_religion_enabled = reformed
-				is_religion_enabled = anglican
 			}
 			is_colonial_nation = no
 			OR = {
@@ -266,6 +265,13 @@ country_decisions = {
 				religion = catholic
 				religion = hussite
 				religion = anglican
+				if = {
+					limit = { has_dlc = "Lions of the North" }
+					custom_trigger_tooltip = {
+						tooltip = teu_kingdom_prussia_path_ct
+						has_country_flag = teu_prussian_path
+					}
+				}
 			}
 			owns_core_province = 41 # Königsberg
 			41 = { 					# Königsberg
@@ -295,16 +301,33 @@ country_decisions = {
 			if =  {
 				limit = {
 					is_revolutionary = no
-					NOT = {
-						government = republic
-					}
+					NOT = { government = republic }
 				}
 				change_government_to_monarchy = yes
+				if = {
+					limit = { 
+						has_dlc = "Lions of the North"
+						has_country_flag = teu_prussian_path
+					}
+					unlock_government_reform = {
+						government_reform = prussian_monarchy
+					}
+				}
 				add_government_reform = prussian_monarchy
 			}
 			else_if = {
 				limit = {
+					government = republic
 					is_revolutionary = no
+				}
+				if = {
+					limit = { 
+						has_dlc = "Lions of the North"
+						has_country_flag = teu_prussian_path
+					}
+					unlock_government_reform = {
+						government_reform = prussian_republic_reform
+					}
 				}
 				add_government_reform = prussian_republic_reform
 			}
@@ -329,11 +352,28 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
+			if = {
+				limit = {
+					OR = {
+						is_part_of_hre = no
+						is_elector = yes
+					}
+					is_free_or_tributary_trigger = yes
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			set_country_flag = formed_prussia_flag
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 10 }
+				NOT = { owns_core_province = 41 }
+			}
 		}
+
 		ai_importance = 1000
 	}
 	
@@ -346,12 +386,6 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
-			}
-			OR = {
-				ai = no
-				is_religion_enabled = protestant
-				is_religion_enabled = reformed
-				is_religion_enabled = anglican
 			}
 			OR = {
 				primary_culture = pommeranian
@@ -370,7 +404,6 @@ country_decisions = {
 			NOT = { has_reform = celestial_empire } 
 			NOT = {
 				tag = TEU
-				government = theocracy
 			}
 		}
 		provinces_to_highlight = {
@@ -408,6 +441,7 @@ country_decisions = {
 			OR = {
 				religion = reformed
 				religion = protestant
+				religion = catholic
 				religion = hussite
 				religion = anglican
 			}
@@ -442,21 +476,28 @@ country_decisions = {
 				}
 				add_permanent_claim = PRU
 			}
-			if =  {
+		if =  {
 				limit = {
 					is_revolutionary = no
-					NOT = {
-						government = republic
-					}
+					NOT = { government = republic }
+					NOT = { government = theocracy }
 				}
 				change_government_to_monarchy = yes
 				add_government_reform = prussian_monarchy
 			}
 			else_if = {
 				limit = {
+					government = republic
 					is_revolutionary = no
 				}
 				add_government_reform = prussian_republic_reform
+			}
+			else_if = {
+				limit = {
+					government = theocracy
+					is_revolutionary = no
+				}
+				add_government_reform = prussian_theocratic_reform
 			}
 			if = {
 				limit = {

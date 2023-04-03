@@ -32,7 +32,7 @@ discovered_by = western
 	controller = TLC
 	owner = TLC
 	remove_core = OUA
-	estate = estate_nobles
+	 
 	culture = algerian
 }
 

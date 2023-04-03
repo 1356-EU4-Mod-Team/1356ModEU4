@@ -1,0 +1,28 @@
+namespace = information_events
+## Events that fire to inform players of certain mechanics
+
+
+country_event = {
+	id = information_events.1
+	title = information_events.1.t
+	desc = information_events.1.d
+	picture = BATTLE_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		ai = no
+		NOT = { has_country_flag = player_knows_policies }
+	}
+	
+	immediate = {
+		set_country_flag = player_knows_policies
+	}
+	
+	option = {
+		name = information_events.1.a
+		custom_tooltip = information_events.1.tt
+	}
+}

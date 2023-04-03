@@ -14,7 +14,7 @@ base_production = 3
 base_manpower = 3
 is_city = yes
 fort_15th = yes 
-estate = estate_burghers
+ 
 add_core = TUR
 add_core = BYZ
 

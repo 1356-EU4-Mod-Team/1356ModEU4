@@ -18,6 +18,7 @@ native_hostileness = 5
 
 
 discovered_by = north_american
+1356.12.27 = { owner = --- owner = --- owner = --- }
 1650.1.1 = {
 	owner = FOX
 	controller = FOX

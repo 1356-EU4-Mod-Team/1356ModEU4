@@ -17,7 +17,7 @@ base_manpower = 1
 
 discovered_by = mesoamerican
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1546.1.1 = {
 	discovered_by = SPA
 	owner = SPA

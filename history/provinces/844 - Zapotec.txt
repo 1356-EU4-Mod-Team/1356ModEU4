@@ -16,7 +16,7 @@ add_core = ZAP
 
 
 discovered_by = mesoamerican
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1490.1.1 = {
 	owner = AZT
 	controller = AZT

@@ -6,7 +6,7 @@ controller = TAK
 culture = lithuanian
 religion = baltic_pagan_reformed
 capital = "Kovno"
-estate = estate_nobles
+ 
 trade_goods = livestock
 hre = no
 base_tax = 3

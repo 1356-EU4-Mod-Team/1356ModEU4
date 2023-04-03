@@ -19,6 +19,7 @@ discovered_by = north_american
 extra_cost = 8
 center_of_trade = 1
 
+1356.12.27 = { owner = --- owner = --- owner = --- tribal_owner = --- }
 1541.1.1 = { discovered_by = SPA } # Francisco Vásquez de Coronado
 1598.1.1 = {
 	owner = SPA

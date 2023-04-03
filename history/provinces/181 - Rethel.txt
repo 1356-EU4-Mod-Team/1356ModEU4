@@ -21,8 +21,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-#1328.1.1   = { owner = FLA controller = FLA add_core = FLA } # Countess Joan dies and county is inherited by Louis I of Flanders
-1328.1.1   = { owner = NEV controller = NEV add_core = NEV } # Moved to NEV for gameplay reasons
+1328.1.1   = { owner = FLA controller = FLA add_core = FLA } # Countess Joan dies and county is inherited by Louis I of Flanders
 
 1356.12.24  = { hre = yes } #BT In
 

@@ -5,7 +5,7 @@ controller = TRP
 culture = tripolitanian_culture
 religion = sunni
 capital = "Tripoli" #Tripoli in the West.
-estate = estate_nobles
+ 
 trade_goods = cloth
 hre = no
 base_tax = 5 

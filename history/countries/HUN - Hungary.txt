@@ -8,6 +8,7 @@ religion = catholic
 technology_group = eastern
 capital = 153 # Buda
 historical_friend = HAB
+historical_rival = TUR
 
 1356.12.24 = {
 	monarch = {

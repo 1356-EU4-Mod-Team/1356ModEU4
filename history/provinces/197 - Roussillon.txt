@@ -17,7 +17,7 @@ base_manpower = 2
 add_core = MJO
 add_core = ARA
 add_core = TOU
-estate = estate_nobles
+ 
 fort_15th = yes
 
 discovered_by = eastern

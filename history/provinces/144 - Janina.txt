@@ -17,7 +17,7 @@ add_core = EPI
 add_core = SER
 add_core = TES
 add_core = BYZ
-
+fort_15th = yes
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -35,7 +35,7 @@ discovered_by = western
 1359.7.1   = { owner = TES controller = TES }
 1366.7.1   = { owner = EPI controller = EPI }
 1371.12.3  = { remove_core = SER }
-1430.10.9  = { owner = TUR add_core = TUR controller = TUR capital = "Janina" estate = estate_dhimmi }
+1430.10.9  = { owner = TUR add_core = TUR controller = TUR capital = "Janina"   }
 1502.1.1   = { remove_core = EPI }
 1528.5.29  = { remove_core = BYZ }
 1555.1.1   = { unrest = 5 } # General discontent against the Janissaries' dominance

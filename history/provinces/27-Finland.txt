@@ -14,7 +14,7 @@ base_production = 3
 trade_goods = grain
 base_manpower = 2
 capital = "Åbo"
-estate = estate_church
+ 
 is_city = yes
 fort_15th = yes
 

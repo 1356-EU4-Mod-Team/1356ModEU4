@@ -1,0 +1,256 @@
+﻿l_english:
+
+ theodosian_walls_new: "Theodosian Walls"
+ theodosian_walls_new_desc: "Constructed during the reign of Emperor Theodosius, the Theodosian Walls have long protected Constantinople from outside sieges."
+ 
+ # Ideas
+ tur_the_janissaries_idea: "The Janissaries"
+ tur_the_janissaries_idea_desc: "The Ottoman army was traditionally mainly composed of cavalry. In the mid-14th century, Orhan I and later on his son, Murad I, introduced the Janissaries. Formed from prisoners of war and slaves, the Janissaries went on to become an elite standing infantry, regularly paid and highly disciplined."
+ tur_sultanate_of_women: "Sultanate of Women"
+ tur_sultanate_of_women_desc: "The women of the Ottoman harem dominate palace politics, being among the strongest supporters of the Ottoman Sultan. Many of these women are greatly capable, and have supported the construction of beautiful public works and philanthropic efforts throughout the Empire."
+ 
+ TES_ideas_start: "Thessalian Traditions"
+ TES_ideas: "Thessalian Ideas"
+ TES_ideas_bonus: "Thessalian Ambition"
+ 
+ # Decisions
+ make_adrianople_main_city_title: "Move Court to Adrianople"
+ make_adrianople_main_city_desc: "The once mighty Roman city of Adrianople is within striking distance of the glorious city of Constantinople. While the House of Osman home has been in Anatolia, securing Adrianople and relocating the court there would greatly bolster our legitimacy as the successors of the Sultanate of Rûm."
+ ottoman_anatolian_conslidation_ayd_title: "Conslidation of Anatolia (Aydin)"
+ ottoman_anatolian_conslidation_ayd_desc: "The Beyliks of Aydin are among the weaker Turkish Kingdoms in Anatolia. There people would be better served in our growing empire."
+ ottoman_anatolian_conslidation_hmd_title: "Conslidation of Anatolia (Hamid)"
+ ottoman_anatolian_conslidation_hmd_desc: "The Beyliks of Hamid are among the weaker Turkish Kingdoms in Anatolia. There people would be better served in our growing empire."
+ ottoman_anatolian_conslidation_men_title: "Conslidation of Anatolia (Mentese)"
+ ottoman_anatolian_conslidation_men_desc: "The Beyliks of Mentese are among the weaker Turkish Kingdoms in Anatolia. There people would be better served in our growing empire."
+ 
+ ottoman_anatolian_conslidation_teke_title: "Conslidation of Anatolia (Teke)"
+ ottoman_anatolian_conslidation_teke_desc: "The Beyliks of Teke are among the weaker Turkish Kingdoms in Anatolia. There people would be better served in our growing empire."
+ 
+ ottoman_debate_on_conquest_path_title: "Debate on Conquest"
+ ottoman_debate_on_conquest_path_desc: "Having consolidated the smaller Beyliks of Anatolia, the time has come for the House of Osman to decide its future. A Conquest of the Chaotic Balkans of restoring the borders of the fallen Sultanate of Rûm."
+ 
+ ottoman_balkan_conslidation_ser_title: "Push into Europe (Serbia)"
+ ottoman_balkan_conslidation_ser_desc: "The Serbian empire is in great disarray, let us exploit the situation in order to expand our European holdings."
+ 
+ ottoman_balkan_conslidation_ser_cleanup_title: "Finish up the Serbian Kingdom"
+ ottoman_balkan_conslidation_ser_cleanup_desc: "Since our initial expansion into the Balkans, Serbia has only since grown weaker. It is time we fully integrate their lands into the empire."
+ 
+ 
+ ottoman_balkan_conslidation_tes_title: "Push into Europe (Thessaly)"
+ ottoman_balkan_conslidation_tes_desc: "The Serbian empire is in great disarray, let us exploit the situation in order to expand our European holdings."
+ 
+ ottoman_balkan_conslidation_tes_cleanup_title: "Finish up the Thessalian Kingdom"
+ ottoman_balkan_conslidation_tes_cleanup_desc: "Since our initial expansion into the Balkans, Thessaly has only since grown weaker. It is time we fully integrate their lands into the empire."
+
+ 
+ ottoman_balkan_conslidation_byzantine_lands_title: "Seize Byzantine Holdings"
+ ottoman_balkan_conslidation_byzantine_lands_desc: "The 4th Crusades left the Byzantine empire a shattered realm. While the Byzantine Emperors have recovered influences in the preceding Decades, the Romans are far from their once glory days. While Constantinople remains nearly impossible to take, their outward holdings remain ripe for the taking."
+ 
+ ottoman_balkan_conslidation_bul_title: "Push into Europe (Bulgaria)"
+ ottoman_balkan_conslidation_bul_desc: "The Bulgarian empire is in great disarray, let us exploit the situation in order to expand our European holdings."
+ 
+ ottoman_anatolian_conslidation_karaman_title: "Conslidation of Anatolia (Karaman)"
+ ottoman_anatolian_conslidation_karaman_desc: "The Beyliks of Karaman are among some of the stronger Turkish Kingdoms in Anatolia. There people would be better served in our growing empire."
+ 
+ ottoman_anatolian_conslidation_candar_title: "Conslidation of Anatolia (Candar)"
+ ottoman_anatolian_conslidation_candar_desc: "The Beyliks of Candar are among some of the stronger Turkish Kingdoms in Anatolia. There people would be better served in our growing empire."
+ 
+ ottoman_anatolian_conslidation_canik_title: "Conslidation of Anatolia (Canik)"
+ ottoman_anatolian_conslidation_canik_desc: "The Beyliks of Canik are among some of the stronger Turkish Kingdoms in Anatolia. There people would be better served in our growing empire."
+ 
+ ottoman_anatolian_conslidation_eretna_title: "Conslidation of Anatolia (Eretna)"
+ ottoman_anatolian_conslidation_eretna_desc: "The Beyliks of Eretna are among some of the stronger Turkish Kingdoms in Anatolia. There people would be better served in our growing empire."
+ 
+ ottoman_anatolian_conslidation_eretna_cleanup_title: "Crush the Eretna Beyliks"
+ ottoman_anatolian_conslidation_eretna_cleanup_desc: "Since our initial conquest against the Eretna, they have been left nothing more than a Rump State. It is time we fully integrated their peoples into our growing empire."
+ 
+ ottoman_conquest_of_constantinople_title: "Invade Constantinople"
+ ottoman_conquest_of_constantinople_desc: "The Ottoman state has finally grown powerful enough to risk a challenge against the fortified City of Constantinople. Let us seize this glorious city for House of Osman!"
+ 
+ 
+ tutor_heir_reform_power_title: "Request an Advisor tutor our heir"
+ tutor_heir_reform_power_desc: "With $HEIR$ now in $HEIR_ADJ$ early teens, it is time to begin the next phase of $HEIR_ADJ$ royal education. A trusted and competent advisor will need to be entrusted with continuing $HEIR$ final education years in a specific field."
+ recruit_sixty_tradition_general_title: "Recruit an Elite General"
+ recruit_sixty_tradition_general_desc: "Send your Marshal to recruit an elite General. This action can only be taken once every 15 years."
+ 
+ # Modifiers
+ death_note_modifier: "Marked for Death"
+ death_note_modifier_desc: "This country, by 'mysterious means' has been marked for death. (Moddingway?)"
+ 
+ being_railroad_forbidden_wars: "Railroaded Wars"
+ being_railroad_forbidden_wars_desc: "This country, by 'mysterious means' will only have wars declared under certain circumstances. Possibly the works of the mysterious figure known as Moddingway."
+ 
+ ottoman_focus_on_balkans: "Focus on the Balkans"
+ ottoman_focus_on_balkans_desc: "The House of Osman shall focus on bringing the Balkans under Ottoman Dominion"
+ 
+ ottoman_focus_on_anatolia: "Focus on Anatolia"
+ ottoman_focus_on_anatolia_desc: "The House of Osman shall focus on bringing the Anatolia under Ottoman Dominion"
+ 
+ 
+ new_serbian_golden_age: "New Serbian Golden Age"
+ new_serbian_golden_age_desc: ""
+ emperor_of_serbs_and_greeks: "Emperor of Serbs and Greeks"
+ emperor_of_serbs_and_greeks_desc: ""
+ simeons_rebellion_buff: "Simeon's Rebellion"
+ simeons_rebellion_buff_desc: ""
+ collapse_of_the_serbian_empire_debuff: "Collapse of the Serbian Empire"
+ collapse_of_the_serbian_empire_debuff_desc: ""
+ 
+ 
+ 
+ # CBS | Peace Treaties | Wargoals
+ cb_ottoman_greek_conquest:0 "Conquest of Byzantine Holdings"
+ cb_ottoman_greek_conquest_desc:0 "The Byzantines are a shell of a once mighty empire. Seize their outer holdings!\n§YUnlocks the 'Seize Outer Balkan Holdings' Peace Treaty. This will force the defender to cede all holdings in the Balkans (Including Subjects!) to the aggressor.§!"
+ 
+ ottoman_greek_conquest_wargoal:0 "Show Superiority"
+ ottoman_greek_conquest_wargoal_desc:0 "War goal is to show them superiority by winning battles."
+ 
+ po_ottoman_greek_conslidation_desc: "Provinces owned by @[From.GetTag] [From.GetName] and its subjects located in the Balkan region will be ceded to @[Root.GetTag] [Root.GetName].\n§R(Constantinople will not be ceded!)§!"
+ PEACE_po_ottoman_greek_conslidation: " Seize Outer Balkan Holdings"
+ po_ottoman_greek_conslidation: " Seize Outer Balkan Holdings"
+ CB_ALLOWED_po_ottoman_greek_conslidation: "Enables the §Y'Seize Outer Balkan Holdings'§! Peace Treaty"
+ 
+ 
+ cb_ottoman_serbian_greek_conquest:0 "Conquest of Serbian Greek Holdings"
+ cb_ottoman_serbian_greek_conquest_desc:0 "The Serbian empire is a shell of a once mighty empire. Seize their outer holdings!\n§YUnlocks the 'Seize Southern Balkan Holdings' Peace Treaty. This will force the defender to cede all holdings in the Macedonia, Northern Greece, Morea, Albania, Bulgaria and Thrace States (Including Subjects!) to the aggressor.§!"
+ 
+ ottoman_serbian_greek_conquest_wargoal:0 "Show Superiority"
+ ottoman_serbian_greek_conquest_wargoal_desc:0 "War goal is to show them superiority by winning battles."
+ 
+ po_serbian_greek_holdings_desc: "Provinces owned by @[From.GetTag] [From.GetName] and its subjects located in the Macedonia, Northern Greece, Morea, Albania, Bulgaria and Thrace States will be ceded to @[Root.GetTag] [Root.GetName].\n§R(Constantinople will not be ceded if owned!)§!"
+ PEACE_po_serbian_greek_holdings: " Seize Southern Balkan Holdings"
+ po_po_serbian_greek_holdings: " Seize Southern Balkan Holdings"
+ CB_ALLOWED_po_serbian_greek_holdings: "Enables the §Y'Seize Southern Balkan Holdings'§! Peace Treaty"
+ 
+ 
+ 
+ po_claim_the_serbian_empire_desc: "All Provinces owned by @[From.GetTag] [From.GetName] will be annexed by @[Root.GetTag] [Root.GetName].\n@[Root.GetTag] [Root.GetName] will inherit all of @[From.GetTag] [From.GetName] foreign cores.\nThe event §Y'Emperor of Serbs and Greeks'§! happens"   
+ PEACE_po_claim_the_serbian_empire: " Claim the Serbian Throne"
+ po_claim_the_serbian_empire: " Claim the Serbian Throne"
+ CB_ALLOWED_po_claim_the_serbian_empire: "Enables the §Y'Claim the Serbian Throne'§! Peace Treaty"
+ 
+ po_crush_simeon_rebellion_desc: "All Provinces owned by @[From.GetTag] [From.GetName] will be annexed by @[Root.GetTag] [Root.GetName].\nAll cores belonging to @[From.GetTag] [From.GetName] will be removed."
+ PEACE_po_crush_simeon_rebellion: " Crush Simeon's Rebellion"
+ po_crush_simeon_rebellion: " Crush Simeon's Rebellion"
+ CB_ALLOWED_po_crush_simeon_rebellion: "Enables the §Y'Crush Simeon's Rebellion'§! Peace Treaty"
+ 
+ cb_serbian_civil:0 "Serbian Civil War"
+ cb_serbian_civil_desc:0 "We must put down this Rebellion!"
+ 
+ serbian_civil_war_wargoal:0 "Show Superiority"
+ serbian_civil_war_wargoal_desc:0 "War goal is to show them superiority by winning battles."
+ 
+ 
+                                    #### For Reference, #'FIRST' is Adjective and 'FIRST_NAME' is Country name ####
+ OTTOMAN_WARS_OF_CONQUEST:0 "$ORDER$$FIRST$ War of Conquest against $SECOND_NAME$"   
+ ALL_PROVINCES_IN_BALKANS:0 "All Provinces located in the §YBalkan Region§!"
+ ALL_PROVINCES_IN_BALKANS_SOUTH: "All Provinces located in the §YMacedonia, Northern Greece, Morea, Albania, Bulgaria and Thrace§! States"
+ 
+ NO_WAR_TUR_BYZ_EARLY: "The Ottomans may not manually attack Byzantium until 1405"
+ 
+ ## New Nations
+ X02: "Moravian Serbia"
+ X02_ADJ: "Moravian Serbian"
+ X03: "Zeta"
+ X03_ADJ: "Zeta"
+ X04: "Velbazd"
+ X04_ADJ: "Velbazd"
+ X05: "Hum"
+ X05_ADJ: "Hum"
+ 
+ 
+ # Nation Renaming
+ SERBIAN_EMPIRE_NAME: "Serbian Empire"
+ SERBIAN_EMPIRE_NAME_ADJ: "Serbian"
+ BULGARIAN_EMPIRE_NAME: "Bulgarian Empire"
+ BULGARIAN_EMPIRE_NAME_ADJ: "Bulgarian"
+ 
+ # New Reforms
+ serbian_princedom_reform: "Serbian Princedom"
+ serbian_princedom_reform_desc: ""
+ bulgarian_tsardom_reform_old: "Bulgarian Tsardom"
+ bulgarian_tsardom_reform_old_desc: ""
+ 
+ 
+ monarchy_court_politics: "Politics of the Court"
+ welsh_princedom: "Welsh Principality"
+ welsh_princedom_desc: ""
+ legate_heir_tuteladge: "Tutelage of the Heir"
+ legate_heir_tuteladge_desc: "One great Ruler legacy should not be diminished by a line of incompetent successors. Let's ensure that the children of the Monarch are well educated in all manners of zrulership. As one day, a time will come when they must take the throne."
+ legate_ties_to_the_guilds: "Ties to the Guilds"
+ legate_ties_to_the_guilds_desc: "The various merchant guilds throughout the nation have strong ties to commerce throughout the continent. We should strive to have a close relationship with these guilds to protect our trade interests at home."
+ legate_marshal_of_war: "Marshal of War"
+ legate_marshal_of_war_desc: "There will come a time when war will be at our doorsteps, as such we should create the office of the Marshal of War. During peacetime the Marshal will be charged with keeping the quality of our troops up while also ensuring there are competent generals to lead them into battle."
+ legate_connections_clergy: "Clerical Connections"
+ legate_connections_clergy_desc: "While the Monarch rules the state, the clergy possess considerable influence. For many, the church offers a pathway to salvation, and as such the clergy holds great sway over the peasantry of the state. A close alliance with the clergy will also guarantee the loyalty of the major religious leaders throughout the nation."
+ legate_crown_authority: "Authority of the Crown"
+ legate_crown_authority_desc: "The Monarch sits upon the top of the Feudal structure, as such all below must respect the authority of the crown. By reinforcing the Monarch as the head of state, subjects will think twice before aspiring rebellious sentiments. "
+ legate_imperial_diplomacy: "Imperial Diplomacy"
+ legate_imperial_diplomacy_desc: "The Holy Roman empire at its core is a decentralized entity comprising hundreds of political states. While the Emperor has always protected the Imperial free cities, the lesser princes and counties throughout the empire are more susceptible to being brought to heel. Through dutiful acts of Diplomacy with the Emperor and the various electorate states, we may be able to carve out a sizable realm." 
+ 
+ mechanic_may_request_heir_tuterlage_yes: "Unlocks a decision to have an advisor tutor the heir.\n§G+2§! level Advisors have a §Y20.0%§! chance of improving an heir's skill by §G+1§!.\nEach additional §OAdvisor level§! increases the chance to improve an heir's skill by §Y10.0%§! up to a maximum of §Y50.0%§! with §G+5§! level Advisors."
+ mechanic_may_recruit_sixty_tradition_general_fifthteen_years_yes: "Unlocks a decision to recruit a free §Y60§! tradition General every 15 years."
+ 
+ 
+ # Opinions
+ 1356_past_transgressions: "Past Transgressions"
+ 1356_past_cordial_relations: "Cordial Relations"
+ 
+ # Events
+ serbiancollapse.1.t: "The Serbian Civil War"
+ serbiancollapse.1.d: "Following the death of Stefan Uros IV Dusan and the ascension of Stefan Uros V to the throne, Serbia has seen its influence greatly diminish. While Uros IV was a proven ruler, modernizing and reforming the empire, Uros V has instead proven to be an incapable ruler. In recent months, Simeon Uros (Uncle to Uros IV), has consolidated his power base in Epirus and proclaimed himself ‘Emperor of Serbs and Greeks’ and now wages outright Civil War against us.\n\n Even if Simeon Uros is dealt with, we must contend with other Serbian noble families if the empire is to survive."
+ serbiancollapse.1.a: "Simeon will be crushed!"
+ 
+ serbiancollapse.2.t: "The Claims of Simeon Uros"
+ serbiancollapse.2.d: "Following the death of Stefan Uros IV Dusan and the ascension of Stefan Uros V to the throne, Serbia has seen its influence greatly diminish .While Uros IV was a proven ruler, modernizing and reforming the empire, Uros V has instead proven to be an incapable ruler. \n\nSuch incompetence has led Simeon to consolidate his power base in the southern region of the empire in Epirus. Should Simeon succeed in overthrowing his nephew and claiming the Serbian throne, the Nobles of Serbia would likely welcome his rule. Furthermore, Simeon familial connections to the Byzantine throne through his Mother would make him a viable candidate for claiming the throne of the Romans should he first seat the Serbian throne."
+ serbiancollapse.2.a: "The Emperor of the Serbs and Greeks will be victorious!"
+ 
+ serbiancollapse.3.t: "Emperor of Serbs and Greeks"
+ serbiancollapse.3.d: "With Stefan Uros V finally overthrown, $MONARCH$ now sits as the new $MONARCHTITLE$ of the Serbian Empire. Most of the powerful Serbian nobility have already offered pledges of loyalty to the new Emperor. Now only time will tell if $MONARCH$ reign will rival that of Stefan Dusan or instead suffer the decline that Stefan Uros V brought. Seeking to prove themselves a capable ruler, $MONARCH$ has already set their sights on the city of Constantinople."
+ serbiancollapse.3.a: "My reign will be one of glory"
+ 
+ serbiancollapse.4.t: "Collapse of the Serbian Empire"
+ serbiancollapse.4.d: "The reign of $MONARCHTITLE$ $MONARCH$ has seen nothing but Serbia thrust further into ruin. With the complete and total administration collapse of its bureaucracy, Serbia can no longer call itself an empire, let alone a kingdom."
+ serbiancollapse.4.a: "Stefan Dusan’s Legacy has been left to ruin…"
+ 
+ serbiancollapse.5.t: "An Empire Restored"
+ serbiancollapse.5.d: "The reign of $MONARCH$ initially looked bleak for the Serbian empire, the last decades has seen the empire survive all odds and has even seen the empire revitalized! Now $MONARCH$ is seen as being the bringer of a new Serbian Golden Age!"
+ serbiancollapse.5.a: "A worthy successor to Stefan Dusan!"
+ 
+ court_politics.34.t: "The Education of $HEIR$ $HEIR_DYNASTY$"
+ court_politics.34.d: "The time has come for $HEIR$ $HEIR_DYNASTY$ to receive the next steps in $HEIR_ADJ$ education. Luckily your advisors are more than welcome to tutor the young $MONARCHTITLE$ to be. Who should we entrust $HEIR_ADJ$ too?"
+ court_politics.34.a:  "$HEIR_CAP_S_PRONOUN$ shall be educated in the matters of Court and State"
+ court_politics.34.b: "$HEIR_CAP_S_PRONOUN$ shall be educated in the matters of Court and State"
+ court_politics.34.aa: "$HEIR$ must learn the importance of Foreign affairs"
+ court_politics.34.bb: "$HEIR$ must learn the importance of Foreign affairs"
+ court_politics.34.aaa: "It is a $MONARCHTITLE$ duty to learn the Arts of Warfare"
+ court_politics.34.bbb: "It is a $MONARCHTITLE$ duty to learn the Arts of Warfare"
+ 
+ 
+ 
+ 
+ # Tooltips
+ serbian_collapse_tooltip_1.tt: "In the Serbian Civil War, you cannot directly annex provinces, but instead must use the §Y‘Crush Simeon’s Rebellion’§! Peace Treaty to fully annex @TES §YThessaly§!. Be warned as @TES §YThessaly§! also has the §Y‘Claim the Serbian Throne’§! Peace Treaty and will instead attempt to §Rannex us§! if they are victorious.\n\nTo avoid the §Y‘Collapse of the Serbian Empire’§! Disaster, you must ensure all subjects have below §G-10.0%§! Liberty Desire, have §G+3§! Stability, and maintain a combined development of §Y200§! between @SER Serbia and it’s subjects. In the event Serbia has no subjects, then you only need to fulfill the Development and Stability requirement.\n\nThe §Y'Collapse of the Serbian Empire§! Disaster will fire in §Y1371§! if not prevented."
+ serbian_collapse_tooltip_2.tt: "In the Serbian Civil War, you cannot directly annex provinces, but instead must use the §Y‘Claim the Serbian Throne’§! Peace Treaty to fully annex @SER §YSerbia§!. Be warned as @SER §YSerbia§! also has the §Y‘Crush Simeon’s Rebellion’§!  Peace Treaty and will instead attempt to §Rannex us§! if they are victorious."
+ serbian_collapse_tooltip_3.tt: "Gains Claims on all @BYZ §YByzantine§! Provinces\nGains a §YRestoration of Union§! Casus Belli against @BYZ §YByzantium§!\nAdopts the @SER §YSerbian Tsardom§! Government Reform and renames to the §YSerbian Empire§!\n"
+ serbian_collapse_tooltip_5.tt: "Prevents the §YCollapse of the Serbian Empire§! Disaster"
+ 
+ 
+ has_adm_advisor_4_tooltip:0 "Is employing an §YAdministrative§! Advisor with at least Skill §Y4§!."
+ has_adm_advisor_5_tooltip:0 "Is employing an §YAdministrative§! Advisor with at least Skill §Y5§!."
+ has_dip_advisor_4_tooltip:0 "Is employing a §YDiplomatic§! Advisor with at least Skill §Y4§!."
+ has_dip_advisor_5_tooltip:0 "Is employing a §YDiplomatic§! Advisor with at least Skill §Y5§!."
+ has_mil_advisor_4_tooltip:0 "Is employing a §YMilitary§! Advisor with at least Skill §Y4§!"
+ has_mil_advisor_5_tooltip:0 "Is employing a §YMilitary§! Advisor with at least Skill §Y5§!."
+
+
+ NOT_TUTOR_HEIR_THIS_RULER: "Has §RNOT§! requested an Advisor tutor an heir in the last §Y15§! years"
+ only_one_heir_education.tt: "In the event our Heir §YDies§!, we will unable to tutor a §OSecondary Heir§! for §Y15§! years.\nThe new Heir must also be within the §Yage§! of §Y10-15!§!"
+ 
+ HAS_NOT_RECRUITED_GENERAL_15: "Has §RNOT§! recruited a general through this decision within the last 15 years"
+
+ 
+ # Flags
+ 1356_serbian_empire_restored: "The Serbian Empire has been Restored"
+ 1356_serbian_empire_collapse: "The Serbian Empire has Collapsed"
+ 

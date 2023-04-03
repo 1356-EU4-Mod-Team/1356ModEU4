@@ -5,7 +5,7 @@ owner = HAI
 controller = HAI
 capital = "Cambray"
 is_city = yes
-estate = estate_church
+ 
 culture = wallonian
 religion = catholic
 hre = yes

@@ -14,6 +14,6 @@ base_manpower = 1
 is_city = yes
 add_local_autonomy = 35 #Divided between various minor states.
 discovered_by = east_african
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1500.8.20 = { discovered_by = POR } #Diego Dias
 1817.1.1 = { owner = MIR controller = MIR add_core = MIR }

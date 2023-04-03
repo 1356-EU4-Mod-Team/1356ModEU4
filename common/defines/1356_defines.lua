@@ -1,4 +1,4 @@
-NDefines.NGame.START_DATE = "1356.12.26"
+NDefines.NGame.START_DATE = "1356.12.25"
 NDefines.NGame.END_DATE = "1836.1.1"
 NDefines.NDiplomacy.IMPERIAL_REFORM_COST = 60
 --NDefines.NDiplomacy.EMPEROR_REVOKE_AUTHORITY_COST = 60.0

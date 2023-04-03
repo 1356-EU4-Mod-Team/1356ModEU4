@@ -5,7 +5,7 @@ owner = PBG
 controller = PBG
 capital = "Besançon"
 is_city = yes
-estate = estate_burghers
+ 
 culture = burgundian
 religion = catholic
 hre = yes

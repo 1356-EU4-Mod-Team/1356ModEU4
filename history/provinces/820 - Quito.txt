@@ -15,7 +15,7 @@ base_manpower = 2
 add_core = QTO
 extra_cost = 8
 center_of_trade = 1
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1487.1.1 = {
 	owner = INC
 	controller = INC

@@ -22,7 +22,7 @@ native_hostileness = 2
 discovered_by = mesoamerican
 discovered_by = north_american
 
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1519.3.13 = { discovered_by = SPA } # Hernán Cortés
 
 1554.1.1 = {

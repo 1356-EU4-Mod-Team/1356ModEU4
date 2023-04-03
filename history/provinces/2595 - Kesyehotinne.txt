@@ -15,7 +15,7 @@ native_hostileness = 2
 
 
 discovered_by = north_american
-
+1356.12.27 = { owner = --- owner = --- owner = --- }
 1692.1.1 = { discovered_by = ENG } #Henry Kelsey
 1707.5.12 = { discovered_by = GBR }
 

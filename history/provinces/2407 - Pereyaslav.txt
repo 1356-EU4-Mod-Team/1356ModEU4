@@ -12,7 +12,7 @@ trade_goods = grain
 base_manpower = 1
 capital = "Pereyaslav"
 is_city = yes
-#estate = estate_nobles
+# 
 add_core = KIE
 
 discovered_by = eastern

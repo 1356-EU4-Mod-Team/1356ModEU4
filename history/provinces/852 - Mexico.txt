@@ -18,7 +18,7 @@ is_city = yes
 # discovered_by = ZAP
 extra_cost = 8
 center_of_trade = 1
-
+1356.12.28 = { owner = --- tribal_owner = --- }
 1519.1.1 = { discovered_by = SPA }
 
 1521.8.13 = {

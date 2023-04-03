@@ -14,7 +14,7 @@ trade_goods = naval_supplies
 base_manpower = 1
 capital = "Orense" 
 is_city = yes
-estate = estate_church
+ 
  # Santiago de Compostela pilgrimage
 discovered_by = eastern
 discovered_by = western

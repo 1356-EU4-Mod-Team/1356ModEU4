@@ -504,7 +504,7 @@ exorted_merchants = {
 }	
 
 implemented_new_trade_policies = {
-	placed_merchant_power = 10
+	placed_merchant_power = 4
 	trade_efficiency = 0.1
 }	
 
@@ -544,7 +544,7 @@ founding_ottoman_gunpowder = {
 
 muslim_handcannon_gunpowder = {
 	spy_offence = 0.15
-	placed_merchant_power = 5
+	placed_merchant_power = 6
 }
 
 founding_muslim_gunpowder = {
@@ -556,7 +556,7 @@ founding_muslim_gunpowder = {
 chinese_rocketcart_gunpowder = {
 	artillery_fire = 0.60
 	artillery_shock = 0.15
-	artillery_bonus_vs_fort = -2
+	artillery_levels_available_vs_fort = -2
 }
 
 founding_chinese_gunpowder = {
@@ -581,7 +581,7 @@ trebuchets_early_cannon = {
 	artillery_shock = 0.85
 	backrow_artillery_damage = -0.10
 	artillery_cost = -0.30
-	artillery_bonus_vs_fort = -2
+	artillery_levels_available_vs_fort = -2
 }
 
 siege_towers_early_cannon = {
@@ -591,7 +591,7 @@ siege_towers_early_cannon = {
 }
 
 early_cannon_early_cannons = { #How Original
-	artillery_bonus_vs_fort = -1
+	artillery_levels_available_vs_fort = -1
 	artillery_fire = 0.50
 	backrow_artillery_damage = 0.10
 	siege_ability = 0.10
@@ -602,7 +602,7 @@ early_cannon_hwacha = {
 	artillery_fire = 0.75
 	backrow_artillery_damage = 0.10
 	artillery_cost = -0.20
-	artillery_bonus_vs_fort = -3
+	artillery_levels_available_vs_fort = -3
 }	
 
 # Buffs for nations with no early Siege weapons
@@ -683,16 +683,18 @@ timurid_centrialization = {
 
 habsburg_imperial_dominance = {
 	improve_relation_modifier = 0.25
-	diplomatic_reputation = 2
+	diplomatic_reputation = 1
 	global_tax_income = 24
 	diplomatic_upkeep = 1
+	reasons_to_elect = 50
 }	
 
 imperial_decadence = {
-	diplomatic_reputation = -2.5
-	improve_relation_modifier = -0.10
-	imperial_authority_value = -0.10
+	#diplomatic_reputation = -2.5
+	#improve_relation_modifier = -0.10
+	reasons_to_elect = -50
+	imperial_authority_value = -0.15
 }	
 bohemian_golden_bull_nerf = {
-	imperial_authority_value = -0.10
+	imperial_authority_value = -0.25
 }	

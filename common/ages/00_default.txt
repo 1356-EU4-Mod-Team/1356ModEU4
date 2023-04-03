@@ -540,8 +540,8 @@ age_of_feudalism = {
 			allow = {
 				ai = no 
 			}		
-			cavalry_fraction = 0.4 #Too high?
-			army_size_percentage = 0.8
+			cavalry_fraction = 0.3 #Too high?
+			army_size_percentage = 0.85
 		}
 	}
 	
@@ -563,8 +563,8 @@ age_of_feudalism = {
 		}
 		ab_feudalism_institution_gain = { # Renamed to Scholarly Studies - Geno
 			modifier = {
-				global_institution_spread = 0.25
-				embracement_cost = -0.25
+				global_institution_spread = 0.20
+				embracement_cost = -0.20
 			}
 			ai_will_do = {
 				factor = 10
@@ -607,9 +607,9 @@ age_of_feudalism = {
 		# }	
 		ab_cavalry_supremacy = { # Reworked into Cavalry Supremacy                       
 			modifier = { #Was the AB that gave extra dip relations, removed due to being too powerful
-				cavalry_cost = -0.15
-				cav_to_inf_ratio = 0.15
-				cavalry_flanking = 0.50
+				cavalry_cost = -0.10
+				cav_to_inf_ratio = 0.10
+				cavalry_flanking = 0.25
 			}
 			ai_will_do = {
 				factor = 15
@@ -618,7 +618,7 @@ age_of_feudalism = {
 		ab_mercs_over_chevaliers = { # Simply renamed to Mercenary Bands
 			modifier = {
 				merc_maintenance_modifier = -0.20
-				mercenary_cost = -0.20
+				mercenary_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 10
@@ -641,7 +641,7 @@ age_of_feudalism = {
 		ab_feudalism_iron_fisted_rule = { #May require a better name
 			modifier = {
 				state_governing_cost = -0.15
-				expand_administration_cost = -0.15
+				expand_administration_cost = -0.20
 			}
 			ai_will_do = {
 				factor = 10
@@ -653,8 +653,8 @@ age_of_feudalism = {
 				tag = TIM
 			}
 			modifier = {
-				reinforce_cost_modifier = -0.33
-				reinforce_speed = 0.33
+				reinforce_cost_modifier = -0.50
+				reinforce_speed = 0.50
 			}
 			ai_will_do = {
 				factor = 100
@@ -789,9 +789,11 @@ age_of_discovery = { #Partially edited by #1356
 			custom_trigger_tooltip = {
 				tooltip = obj_30_development_city_tooltip
 				any_owned_province = {
-					is_core = ROOT
-					controlled_by = owner
-					development = 30
+					exclude_from_progress = {
+						is_core = ROOT
+						controlled_by = owner
+					}
+					development_discounting_tribal = 30
 				}
 			}
 		}
@@ -835,7 +837,7 @@ age_of_discovery = { #Partially edited by #1356
 	abilities = {
 		ab_disc_colonial_range = { #MOVED TO AGE OF FEUDALISM. WAS FEUDAL DEJURE LAW 
 			modifier = {
-				range = 0.25
+				range = 0.20
 				trade_range_modifier = 0.1
 			
 			}
@@ -854,8 +856,9 @@ age_of_discovery = { #Partially edited by #1356
 		}
 		
 
-		ab_transfer_vassal_wargoal = {
-			rule = {
+		ab_transfer_vassal_wargoal = 
+		{
+			modifier = {
 				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
 			}
@@ -876,7 +879,7 @@ age_of_discovery = { #Partially edited by #1356
 
 		ab_disc_general_cost_leader_pool = { #EDITED FROM VANILLA'S VALUES. CHANGED COMPLETLY. WAS CAV TO INF RATIO
 			modifier = {
-				general_cost = -0.15
+				general_cost = -0.10
 				free_leader_pool = 1
 			}
 			ai_will_do = {
@@ -884,7 +887,7 @@ age_of_discovery = { #Partially edited by #1356
 			}
 		}
 		ab_colony_boost_development = {
-			rule = {
+			modifier = {
 				can_colony_boost_development = yes
 			}
 			ai_will_do = {
@@ -897,7 +900,7 @@ age_of_discovery = { #Partially edited by #1356
 		}
 		
 		ab_attack_bonus_in_capital_terrain = {
-			rule = {
+			modifier = {
 				attack_bonus_in_capital_terrain = yes
 			}
 			ai_will_do = {
@@ -912,8 +915,10 @@ age_of_discovery = { #Partially edited by #1356
 					tag = RUM
 				}
 			}
-			modifier = {
-				siege_ability = 0.20
+			modifier = { # Nerfed to focus on Urban's contributions instead of large Siege ability
+				#siege_ability = 0.15
+				leader_siege = 1
+				mil_advisor_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 100
@@ -926,7 +931,7 @@ age_of_discovery = { #Partially edited by #1356
 				tag = POR
 			}
 			modifier = {
-				global_colonial_growth = 35
+				global_colonial_growth = 25
 			}
 			ai_will_do = {
 				factor = 100
@@ -1004,7 +1009,7 @@ age_of_reformation = {
 		}
 		
 		obj_colonial_empire = {
-			num_of_colonies = 5
+			colony = 5
 		}
 		
 		obj_force_converted = {
@@ -1338,7 +1343,10 @@ age_of_absolutism = {
 		}	
 		ab_sweden_manpower = {
 			allow = {
-				tag = SWE
+				OR = {
+					tag = SWE
+					tag = SCA
+				}
 			}
 			modifier = {
 				manpower_recovery_speed = 0.35
@@ -1353,6 +1361,16 @@ age_of_absolutism = {
 				OR = {
 					tag = MCH
 					tag = QNG
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						NOT = { primary_culture = manchu }
+						NOT = { primary_culture = manchu_new }
+						NOT = { has_government_attribute = allow_banners }
+					}
+					custom_tooltip = ab_manchu_banner_tt
 				}
 			}
 			modifier = {
@@ -1446,7 +1464,7 @@ age_of_revolutions = {
 
 		ab_napoleonic_warfare = {
 			modifier = {
-				artillery_bonus_vs_fort = 3
+				artillery_levels_available_vs_fort = 3
 			}
 			ai_will_do = {
 				factor = 10
@@ -1456,7 +1474,7 @@ age_of_revolutions = {
 
 		
 		ab_force_march = {
-			rule = {
+			modifier = {
 				force_march_free = yes
 			}
 			ai_will_do = {
@@ -1472,11 +1490,21 @@ age_of_revolutions = {
 			}
 		}
 		ab_no_distance_for_core = {
-			rule = {
+			modifier = {
 				ignore_coring_distance = yes
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 15
+				modifier = {
+					# AI peace code relies on being limited by coring range, or it will create crazy border gore where it can't reach its new lands
+					factor = 0
+					OR = {
+						is_subject = no
+						overlord = {
+							ai = yes
+						}
+					}
+				}
 			}
 		}
 		
@@ -1485,7 +1513,7 @@ age_of_revolutions = {
 				backrow_artillery_damage = 0.20
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 15
 			}
 		}
 		ab_same_contine_lib_desire = {
@@ -1507,7 +1535,10 @@ age_of_revolutions = {
 		}
 		ab_pru_military = {
 			allow = {
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = GER
+				}
 			}
 			modifier = {
 				fire_damage_received = -0.2
@@ -1540,7 +1571,10 @@ age_of_revolutions = {
 		}
 		ab_austria_rep = {
 			allow = {
-				tag = HAB
+				OR = {
+					tag = HAB
+					tag = HLR
+				}
 			}
 			modifier = {
 				diplomatic_reputation = 5

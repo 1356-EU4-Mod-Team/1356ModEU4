@@ -17,7 +17,7 @@ add_core = GUY
 add_claim = ENG
 #add_claim = GUY
 
-estate = estate_burghers
+ 
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

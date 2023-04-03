@@ -78,7 +78,7 @@ highland_charge = {
 	#icon = 1
 }
 
-new_power = { #Do we really need this? I set most of these to Historical Lucky Nations...
+new_power = { #
 	potential = {
 		OR = {
 			has_country_flag = anatolian_power
@@ -113,8 +113,8 @@ new_power = { #Do we really need this? I set most of these to Historical Lucky N
 	stability_cost_modifier = -0.2
 	land_forcelimit_modifier = 0.1
 	naval_forcelimit_modifier = 0.1
-	discipline = 0.025
-	land_morale = 0.05
+	#discipline = 0.025 ### Removed for Toxicity 
+	#land_morale = 0.05 ### Removed for Toxicity 
 	global_tax_income = 24
 	army_tradition = 0.75
 	country_admin_power = 1

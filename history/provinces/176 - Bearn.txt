@@ -23,7 +23,7 @@ discovered_by = ottoman
 1356.12.24  = { add_core = AQT remove_core = GUY } #BT In
 1356.12.26  = { remove_core = AQT add_core = GUY add_devastation = 75 } #BT Out
 
-1453.10.16 = { owner = FRA controller = FRA add_core = FRA add_local_autonomy = 25 estate = estate_nobles }
+1453.10.16 = { owner = FRA controller = FRA add_core = FRA add_local_autonomy = 25   }
 1477.1.5 = { add_core = FRA owner = FRA controller = FRA }
 1479.2.13  = { owner = NAV controller = NAV add_core = NAV } # Count of Foix becomes the King of Navarra
 1560.1.1   = { religion = reformed }

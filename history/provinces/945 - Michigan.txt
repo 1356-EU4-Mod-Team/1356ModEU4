@@ -19,7 +19,7 @@ native_hostileness = 4
 
 
 discovered_by = north_american
-
+1356.12.27 = { owner = --- owner = --- owner = --- }
 1634.1.1 = { discovered_by = FRA } # Jean Nicolet
 
 1650.1.1 = {

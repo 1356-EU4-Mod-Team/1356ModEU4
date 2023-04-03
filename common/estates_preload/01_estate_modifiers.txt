@@ -36,3 +36,23 @@ estate_nestorian = {
 	}
 }
 
+estate_negative_general_penalty = {
+	modifier_definition = {
+		type = loyalty
+		key = estate_negative_general_penalty_loyalty_modifier
+		trigger = {
+			#has_estate = estate_colonial_governor
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = estate_negative_general_penalty_influence_modifier
+		trigger = {
+			#has_estate = estate_colonial_governor
+			always = yes
+		}
+	}
+}
+

@@ -1,5 +1,8 @@
 ﻿l_english:
  # New Diplomatic Options
+ 
+ estate_negative_general_penalty_loyalty_modifier: "Army Professionalism from Recruiting Generals"
+ 
  espionage_bribe_merchants: "Bribe Merchants"
  espionage_bribe_merchants_title: "Bribe Merchants"
  espionage_bribe_merchants_tooltip: "Bribe the merchants in a foreign country, crippling their Trade Efficiency and reducing Merchants trade power generation."

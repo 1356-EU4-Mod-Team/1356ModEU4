@@ -10,7 +10,7 @@ war_goal = {
 	add_attacker = TUR
 	add_attacker = SRU
 	add_defender = GRM
-	add_defender = HMD
+	#add_defender = HMD
 }
 
 # Peace
@@ -18,5 +18,5 @@ war_goal = {
 	rem_attacker = TUR
 	rem_attacker = SRU
 	rem_defender = GRM
-	rem_defender = HMD
+	#rem_defender = HMD
 }

@@ -12,6 +12,12 @@ VID = "countries/Vidin.txt"
 TES = "countries/Thessaly.txt"
 MAC = "countries/Macedonia.txt"
 
+X02 = "countries/MoravianSerbia.txt"
+X03 = "countries/Zeta.txt"
+X04 = "countries/Velbazd.txt"
+X05 = "countries/Hum.txt"
+
+
 #British Isles 
 YRK = "countries/York.txt"
 LNC = "countries/Lancaster.txt"

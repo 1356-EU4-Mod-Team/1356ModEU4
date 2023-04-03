@@ -38,49 +38,64 @@ estate_cossacks = {
 	
 	trigger = {	
 		has_dlc = "The Cossacks"
-		NOT = { has_reform = pirate_republic_reform }
-		NOT = { has_reform = cossacks_reform }
-		NOT = { has_government_attribute = is_merchant_republic }
-		NOT = { has_reform = trading_city }
-		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { government = native }
-		NOT = { has_reform = siberian_tribe }
-		NOT = { has_reform = veche_republic }
-		is_nomad = no
-		is_colonial_nation = no
-		NOT = { has_reform = celestial_empire }
-		unit_type = eastern
-		NOT = { has_reform = revolutionary_empire_reform }
+		NOT = { has_government_attribute = disables_cossacks }
+		NOT = { has_country_flag = disables_cossacks_flag }
 		OR = {
-			religion_group = christian
+			tag = POL
 			tag = LIT
-			has_estate = estate_cossacks
-			any_owned_province = {
-				has_terrain = steppe
+			tag = PLC
+			has_government_attribute = enables_cossacks
+			has_country_flag = enables_cossacks_flag
+			AND = {
+				OR = {
+					has_unlocked_estate = { estate = estate_cossacks }
+					AND = {
+						unit_type = eastern
+						religion_group = christian
+						OR = {
+							has_estate = estate_cossacks
+							any_owned_province = {
+								has_terrain = steppe
+							}
+						}
+					}
+				}
+				NOT = { has_government_attribute = is_pirate_republic_reform }
+				NOT = { has_reform = cossacks_reform }
+				NOT = { is_revolutionary_republic_trigger = yes }
+				NOT = { government = native }
+				NOT = { has_reform = siberian_tribe }
+				is_nomad = no
+				is_colonial_nation = no
+				NOT = { has_reform = celestial_empire }
+				NOT = { has_reform = revolutionary_empire_reform }
 			}
 		}
+		#NOT = { has_government_attribute = is_merchant_republic }
+		#NOT = { has_reform = trading_city }
+		#NOT = { has_reform = veche_republic }
 	}
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		cavalry_cost = -0.2
+		cavalry_cost = -0.1
 		cavalry_power = 0.2
 		cav_to_inf_ratio = 0.10
 	}
 	country_modifier_neutral = {
-		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.10
+		cavalry_cost = -0.1
 	}	
 	country_modifier_angry = {
-		cavalry_cost = 0.2
-		cavalry_power = -0.1
-		global_unrest = 2
+		global_unrest = 4
+		global_tax_modifier = -0.15
 	}
 	land_ownership_modifier = {
 		cossacks_loyalty_modifier = 0.2
 	}
 
 	# Influence modifiers
-	base_influence = 0
+	base_influence = 10
 	influence_modifier = {
 		desc = EST_STEPPE_PROVINCES
 		trigger = {

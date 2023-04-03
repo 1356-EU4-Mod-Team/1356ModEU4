@@ -12,7 +12,7 @@ base_tax = 4
 base_production = 5
 trade_goods = wine
 base_manpower = 5
-estate = estate_church
+ 
 add_core = CHP
 add_core = FRA
 
