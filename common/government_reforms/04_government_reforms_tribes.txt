@@ -37,14 +37,14 @@ steppe_horde = {
 	start_territory_to_estates = 0.5
 
 	modifiers = {
-		global_manpower_modifier = 0.15
-		#land_forcelimit_modifier = 0.2
-		loot_amount = 0.50
+		loot_amount = 0.25
 		global_institution_spread = -0.15
-		reinforce_cost_modifier = -0.5
 		cav_to_inf_ratio = 0.25
 		movement_speed = 0.15
+		global_manpower_modifier = 0.15
+		land_forcelimit_modifier = 0.10
 		years_of_nationalism = -5
+		reinforce_cost_modifier = -0.33
 	}
 	custom_attributes = {
 		enables_horde_idea_group = yes
@@ -74,10 +74,10 @@ great_mongol_state_reform = {
 	modifiers = {
 		horde_unity = 1.5
 		global_manpower_modifier = 0.2
-		#land_forcelimit_modifier = 0.2
+		land_forcelimit_modifier = 0.2
 		loot_amount = 0.50
 		reinforce_cost_modifier = -0.5
-		cav_to_inf_ratio = 0.25
+		cav_to_inf_ratio = 0.5
 		movement_speed = 0.2
 		years_of_nationalism = -5
 	}
@@ -234,93 +234,245 @@ stateless_society = {
 	}		
 }
 
-
-
-######1356 Changes#######
-tribal_federation_ilkhan_reform = { #Tribes
-	icon = "ilkhanid_federation"
+gond_kingdom = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
 	potential = {
-		OR = {
-			tag = JLR
-			tag = CHB
-			tag = MUZ
-			tag = SAB
-			has_reform = tribal_federation_ilkhan_reform
-			have_had_reform = tribal_federation_ilkhan_reform
-		}
-		NOT = { tag = ILK }
+		has_dlc = "Dharma"
+		technology_group = indian
+		primary_culture = gondi
 	}
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
-	valid_for_nation_designer = no
+	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	nation_designer_trigger = {
+		technology_group = indian
+		primary_culture = gondi
+	}
+	legacy_equivalent = tribal_kingdom_legacy
 	modifiers = {
-		years_of_nationalism = -5
-		cav_to_inf_ratio = 0.25
-		province_warscore_cost = -0.20
-	}
-	legacy_equivalent = tribal_federation_ilkhan
-	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
-		government_abilities = {
-			tribal_federation_mechanic
-		}
-	}
-	custom_attributes = {
-		locked_government_type = yes
+		defensiveness = 0.2
 	}
 }
 
-ilkhanate_government_tribal_reform = { #Ilkhanate itself
-	icon = "ilkhanid_federation"
+sacred_kingdom = {
+	icon = "divine_guidance_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
 	potential = {
-		tag = ILK
+		has_dlc = "Origins"
+		religion_group = pagan
+	}
+	trigger = {
 		OR = {
-			has_reform = tribal_federation_ilkhan_reform
-			have_had_reform = tribal_federation_ilkhan_reform
+			NOT = { has_institution = enlightenment }	#Why should any enlightened person ever want to support this system?
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = sacred_kingdom
+			}
 		}
 	}
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
-	valid_for_nation_designer = no
-	nation_designer_cost = 0
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		religion_group = pagan
+	}
+	legacy_equivalent = sacred_kingdom_legacy
+	maintain_dynasty = yes
+	
+	removed_effect = {
+		if = {
+			limit = {
+				NOT = { has_institution = enlightenment }
+			}
+			add_stability = -2
+		}
+	}
+
 	modifiers = {
-		unjustified_demands = -0.2
+		tolerance_own = 2
+		max_absolutism = 25
 		legitimacy = 0.5
-		cav_to_inf_ratio = 0.25
-		max_absolutism = 10
-	}
-	legacy_equivalent = ilkhanate_government_tribal
-	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
-		government_abilities = {
-			tribal_federation_mechanic
-		}
-	}
-	custom_attributes = {
-		locked_government_type = yes
 	}
 }
 
-#tribal_republic_gov = { #Cut for now as I had issues actually getting the Republic Mechanics to work here.
-#	icon = "shaman"
-#	allow_normal_conversion = yes
-#	valid_for_nation_designer = yes
-#	valid_for_new_country = no
-#	allow_convert = yes
-#	nation_designer_cost = 0
-#	modifiers = {
-#		core_creation = -0.15
-#	}
-#	
-#	republic = yes
-#	rulers_can_be_generals = yes
-#	duration = 8
-#	
-#	legacy_equivalent = tribal_democracy_legacy
-#}
+matrilineal_system = {
+	icon = "british_queen"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = matrilineal_system_legacy
+	potential = {
+		OR = {
+			primary_culture = nubian
+			have_had_reform = matrilineal_system
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = nubian
+			have_had_reform = matrilineal_system
+		}
+	}
+	modifiers = {
+		heir_chance = -0.5
+		female_advisor_chance = 0.5
+		legitimacy = 1
+	}
+}
 
-#######END 1356 Changes#######
+tribal_confederacy = {
+	icon = "native_settle_down_reform"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 30
+	legacy_equivalent = tribal_confederacy_legacy
+
+	potential = {
+		have_had_reform = tribal_confederacy
+		NOT = { has_country_flag = centralized_tribes_level_3 }	#Already centralized the tribes
+	}
+
+	modifiers = {
+		nobles_influence_modifier = 0.15
+		nobles_loyalty_modifier = 0.1
+		global_unrest = -1
+		max_absolutism = -20
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		custom_attributes = {
+			has_internal_tribes = yes
+			locked_government_type = yes
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_dlc = "Origins"
+				}
+				set_estate_privilege = estate_nobles_decentralized_tribe
+			}
+		}
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+great_man = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = great_man_legacy
+	potential = {
+		OR = {
+			AND = {
+				religion = shamanism
+				capital_scope = {
+					has_terrain = jungle
+				}
+			}
+			have_had_reform = great_man
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				religion = shamanism
+				capital_scope = {
+					has_terrain = jungle
+				}
+			}
+			have_had_reform = great_man
+		}
+	}
+	modifiers = {
+		leader_cost = -0.1
+		production_efficiency = 0.1
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+shaka_regime = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = shaka_regime_legacy
+	potential = {
+		OR = {
+			tag = ZUL
+			have_had_reform = shaka_regime
+		}
+	}
+	trigger = {
+		OR = {
+			tag = ZUL
+			have_had_reform = shaka_regime
+		}
+	}
+	modifiers = {
+		monarch_military_power = 2
+		global_unrest = -2
+		war_exhaustion = -0.02
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Rights of Man"
+		}
+		government_abilities = {
+			militarization_mechanic
+		}
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+feudal_tribe = {
+	icon = "tribal_civil_society"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = feudal_tribe_legacy
+	lock_level_when_selected = yes
+	potential = {
+	}
+	trigger = {
+	}
+	modifiers = {
+		vassal_income = 0.1
+		global_tax_modifier = 0.1
+	}
+
+	conditional = {
+		allow = { 
+			has_dlc = "Mandate of Heaven"
+		}
+		custom_attributes = {
+			has_tributaries = yes
+		}
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
 
 #tribal_cultural_values
 
@@ -361,104 +513,6 @@ civil_society_reform = {
 	}
 }
 
-## 1356 Tribal Inheritance
-
-subvert_rival_clans_reform_tribes = {
-	allow_normal_conversion = yes
-	icon = "subvert_rival_clans"
-	modifiers = {
-		harsh_treatment_cost = -0.2
-		monarch_lifespan = 0.20
-	}
-	custom_attributes = {
-		enables_regencies_tribes_if_rival = yes
-		regencies_remain_same_tribe = yes
-	}	
-	
-	ai = {
-		factor = 2	
-	}
-}
-
-mongolic_succession_reforms_tribes = {
-	allow_normal_conversion = yes
-	icon = "mongol_succession"
-	queen = no
-
-	potential = {
-		OR = {
-			has_reform = mongolic_succession_reforms_tribes
-			have_had_reform = mongolic_succession_reforms_tribes
-			tag = ILK
-			tag = GOL
-			tag = GLH
-			tag = CHG
-			tag = KHA
-			tag = OIR
-			tag = MGE
-			tag = BLU
-			tag = WHI
-			tag = TRS
-		}
-	}	
-	maintain_dynasty = yes	
-	modifiers = {
-		governing_capacity = 75
-		reform_progress_growth = -0.15
-		leader_land_shock = 1
-		free_leader_pool = 1
-	}
-	custom_attributes = {
-		regencies_enabled_mongol_tribe = yes
-		tribal_succ_crisis_if_35 = yes		
-	}		
-	ai = {
-		factor = 1000
-	}
-}
-
-tribal_rule_by_might_reform = {
-	allow_normal_conversion = yes
-	icon = "tribal_rule_by_might"
-	queen = no
-	heir = no
-	modifiers = {
-		stability_cost_modifier = -0.1
-		raze_power_gain = 0.10
-	}
-	custom_attributes = {
-		generals_become_rulers = yes
-		prevents_regency_tribe = yes
-	}		
-	ai = {
-		factor = 0.75
-		modifier = {
-			factor = 0
-			tag = TRS
-		}		
-	}
-}
-
-tribal_hereditary_succession = {
-	allow_normal_conversion = yes
-	icon = "indian_crown"
-	queen = yes
-	modifiers = {
-		legitimacy = 0.50
-		horde_unity = 0.50
-		infantry_cost = -0.10
-		heir_chance = 0.25
-	}
-	custom_attributes = {
-		enables_consorts_regent_regency_tribal = yes
-		tribal_succession_50_tribal = yes
-	}		
-	ai = {
-		factor = 2
-	}
-}
-
-
 #Religion vs Secularization
 
 religious_societies_reform = {
@@ -489,90 +543,6 @@ lip_service_reform = {
 	}
 }
 
-## 1356 Tribal Winds of Change
-
-formalize_noble_caste_tribal = {
-	allow_normal_conversion = yes
-	icon = "nobility_tribal"
-	modifiers = {
-		diplomats = 1
-		unjustified_demands = -0.10
-		nobles_loyalty_modifier = 0.1
-		nobles_influence_modifier = 0.1
-	}
-	custom_attributes = {
-		enables_nobles_estate_tribal = yes
-	}		
-	ai = {
-		factor = 1	
-	}
-}
-
-formalize_clergical_caste_tribal = {
-	allow_normal_conversion = yes
-	icon = "clergical_estate_tribal"
-	modifiers = {
-		global_missionary_strength = 0.01
-		tolerance_own = 1
-		church_loyalty_modifier = 0.1
-		church_influence_modifier = 0.1
-	}
-	custom_attributes = {
-		enables_church_estate_tribal = yes	
-	}		
-	ai = {
-		factor = 2
-	}
-}
-
-grow_trade_relations_tribal = {
-	allow_normal_conversion = yes
-	icon = "formalize_merchant_caste"
-	modifiers = {
-		mercantilism_cost = -0.33
-		trade_efficiency = 0.1
-		burghers_loyalty_modifier = 0.1
-		burghers_influence_modifier = 0.1
-	}
-	custom_attributes = {
-		enables_merchants_estates_tribal = yes	
-	}		
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 2
-			OR = {
-				legitimacy = 85
-				horde_unity = 85
-			}
-		}
-	}
-}
-
-fortify_structure_of_the_tribe_tribal = {
-	allow_normal_conversion = yes
-	icon = "chieftain"
-	modifiers = {
-		war_exhaustion = -0.05
-		war_taxes_cost_modifier = -0.50
-		nomadic_tribes_loyalty_modifier = 0.1
-		nomadic_tribes_influence_modifier = 0.1
-	}
-	custom_attributes = {
-		enables_tribes_estates_tribal = yes	
-	}		
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 2
-			OR = {
-				legitimacy = 85
-				horde_unity = 85
-			}
-		}
-	}
-}
-
 
 #Modernizantion
 
@@ -589,7 +559,6 @@ retain_tribal_hierarchy_reform = {
 			factor = 0.5
 			NOT = {
 				any_owned_province = {
-				# Audax Validator "." Ignore_ALL
 					is_territorial_core = root
 				}
 			}
@@ -606,6 +575,7 @@ centralize_tribal_power_reform = {
 	}
 }
 
+#Tribal Reformation
 horde_barbaric_despoilers_reform = {
 	icon = "rioting_burning_2"
 	allow_normal_conversion = yes
@@ -618,7 +588,7 @@ horde_barbaric_despoilers_reform = {
 	}
 	modifiers = {
 		raze_power_gain = 0.15
-		discipline = 0.0025
+		discipline = 0.025
 		
 	}
 	ai = {
@@ -644,28 +614,6 @@ horde_tribal_unity_reform = {
 	}
 }
 
-
-delegate_power_to_clan_leaders_tribal = {
-	icon = "delegate_power_to_tribes"
-	allow_normal_conversion = yes
-	modifiers = {
-		yearly_tribal_allegiance = 2
-		land_morale = 0.10
-		prestige_decay = -0.01
-	}
-	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
-		government_abilities = {
-			tribal_federation_mechanic
-		}
-	}
-	custom_attributes = {
-		provides_2_tribal_alligenance = yes	
-	}		
-	ai = {
-		factor = 2
-	}
-}
 
 tribe_becomes_monarchy_reform = {
 	icon = "king_highlighted"
@@ -755,6 +703,16 @@ tribe_becomes_monarchy_reform = {
 			change_unit_type = chinese
 		}
 		change_government = monarchy
+		if = {
+			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
 	}
 	ai = {
 		factor = 1
@@ -847,6 +805,16 @@ tribe_becomes_republic_reform = {
 		change_government = republic
 		if = {
 			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
+		if = {
+			limit = {
 				have_had_reform = stateless_society
 			}
 			add_government_reform = peasants_republic
@@ -865,7 +833,6 @@ tribe_becomes_republic_reform = {
 		modifier = {
 			factor = 1.5
 			OR = {
-			# Audax Validator "." Ignore_ALL
 				num_of_centers_of_trade = 5
 				trade_income_percentage = 0.4
 			}
@@ -962,6 +929,16 @@ tribe_becomes_theocracy_reform = {
 			change_unit_type = chinese
 		}
 		change_government = theocracy
+		if = {
+			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
 	}
 	ai = {
 		factor = 1
@@ -1031,7 +1008,7 @@ tribe_tribal_unity = {
 		has_dlc = "Cradle of Civilization"
 	}
 	modifiers = {
-		yearly_tribal_allegiance = 1
+		yearly_government_power = 1
 		church_loyalty_modifier = 0.05
 		nobles_loyalty_modifier = 0.05
 		dhimmi_loyalty_modifier = 0.05

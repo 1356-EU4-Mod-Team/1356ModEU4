@@ -2,9 +2,9 @@ estate_cossacks = {
 	icon = 4
 	
 	# Used for when declaring independence
-	independence_government = tribal
-	starting_reform = steppe_horde
-	independence_tech_group = nomad_group
+	independence_government = republic
+	starting_reform = cossacks_reform
+	independence_tech_group = eastern
 
 	province_independence_weight = {
 		factor = 1
@@ -14,7 +14,10 @@ estate_cossacks = {
 		}
 		modifier = {
 			factor = 2
-			culture_group = east_slavic
+			OR = {
+				culture_group = east_slavic
+				culture_group = slavic
+			}
 		}
 		modifier = {
 			factor = 0.75
@@ -38,14 +41,11 @@ estate_cossacks = {
 	
 	trigger = {	
 		has_dlc = "The Cossacks"
-		NOT = { has_government_attribute = disables_cossacks }
-		NOT = { has_country_flag = disables_cossacks_flag }
+		NOT = { has_government_attribute = disables_estate_cossacks }
+		NOT = { has_country_flag = disables_estate_cossacks_flag }
 		OR = {
-			tag = POL
-			tag = LIT
-			tag = PLC
-			has_government_attribute = enables_cossacks
-			has_country_flag = enables_cossacks_flag
+			has_government_attribute = enables_estate_cossacks
+			has_country_flag = enables_estate_cossacks_flag
 			AND = {
 				OR = {
 					has_unlocked_estate = { estate = estate_cossacks }
@@ -61,7 +61,7 @@ estate_cossacks = {
 					}
 				}
 				NOT = { has_government_attribute = is_pirate_republic_reform }
-				NOT = { has_reform = cossacks_reform }
+				#NOT = { has_reform = cossacks_reform }
 				NOT = { is_revolutionary_republic_trigger = yes }
 				NOT = { government = native }
 				NOT = { has_reform = siberian_tribe }
@@ -88,7 +88,7 @@ estate_cossacks = {
 	}	
 	country_modifier_angry = {
 		global_unrest = 4
-		global_tax_modifier = -0.15
+		global_tax_modifier = -0.20
 	}
 	land_ownership_modifier = {
 		cossacks_loyalty_modifier = 0.2
@@ -146,6 +146,11 @@ estate_cossacks = {
 		estate_cossacks_expand_the_cossack_regiments
 		estate_cossacks_recruit_cossack_generals
 		estate_cossacks_prime_herding_rights
+		estate_cossacks_freedom_of_the_steppes
+		estate_cossacks_grant_military_leadership
+		estate_cossacks_exempt_from_bureaucracy
+		estate_cossacks_military_service
+		estate_cossacks_expand_cossacks_raiders
 	}
 
 	agendas = {

@@ -9,6 +9,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			NOT = { tag = TUR }
@@ -86,6 +90,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GRE
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -167,6 +172,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				ai = no
 				NOT = { num_of_cities = 4 }
 			}
@@ -235,6 +244,7 @@ country_decisions = {
 				}
 			}		
 			change_tag = ICE
+			on_change_tag_effect = yes
 			set_country_flag = formed_iceland
 			if = {
 				limit = { NOT = { primary_culture = norwegian } }

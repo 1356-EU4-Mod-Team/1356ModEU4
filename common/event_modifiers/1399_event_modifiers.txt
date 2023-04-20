@@ -226,6 +226,9 @@ saviour_of_the_rus = {
 	diplomatic_reputation = 3
 	years_of_nationalism = -5
 	global_unrest = -2
+	global_tax_income = 48
+	global_manpower = 8
+	land_forcelimit = 14
 }
 
 the_south_feudatory = {
@@ -467,34 +470,34 @@ veche_recently_deposed_ruler = { # Dummy modifier
 
 ## Ages Dummy Modifiers for AI
 
-splendor_tier_1 = { # Dummy modifier 
-	monthly_splendor = 1
-	development_cost = 1
-}	
-splendor_tier_2 = { # Dummy modifier 
-	monthly_splendor = 2
-	development_cost = 1	
-}	
-splendor_tier_3 = { # Dummy modifier 
-	monthly_splendor = 3
-	development_cost = 1	
-}	
-splendor_tier_4 = { # Dummy modifier 
-	monthly_splendor = 4
-	development_cost = 1	
-}	
-splendor_tier_5 = { # Dummy modifier 
-	monthly_splendor = 5
-	development_cost = 1	
-}	
-splendor_tier_6 = { # Dummy modifier 
-	monthly_splendor = 6
-	development_cost = 1	
-}	
-splendor_tier_7 = { # Dummy modifier 
-	monthly_splendor = 7
-	development_cost = 1	
-}
+# splendor_tier_1 = { # Dummy modifier 
+	# monthly_splendor = 1
+	# development_cost = 1
+# }	
+# splendor_tier_2 = { # Dummy modifier 
+	# monthly_splendor = 2
+	# development_cost = 1	
+# }	
+# splendor_tier_3 = { # Dummy modifier 
+	# monthly_splendor = 3
+	# development_cost = 1	
+# }	
+# splendor_tier_4 = { # Dummy modifier 
+	# monthly_splendor = 4
+	# development_cost = 1	
+# }	
+# splendor_tier_5 = { # Dummy modifier 
+	# monthly_splendor = 5
+	# development_cost = 1	
+# }	
+# splendor_tier_6 = { # Dummy modifier 
+	# monthly_splendor = 6
+	# development_cost = 1	
+# }	
+# splendor_tier_7 = { # Dummy modifier 
+	# monthly_splendor = 7
+	# development_cost = 1	
+# }
 
 # Additional flavor for new insitutions - Geno
 
@@ -635,6 +638,7 @@ indus_saltpetre_industry = {
 
 colonial_religious_schools = {
 	global_missionary_strength = 0.01
+	missionaries = 1
 }
 
 colonial_settler_boost = {
@@ -642,28 +646,30 @@ colonial_settler_boost = {
 }
 
 colonial_tax_boost_24 = {
-	global_tax_income = 24
+	global_tax_modifier = 0.15
 }
 
 colonial_natives_bonus_uprising_assimilation = {
-	native_uprising_chance = -1
-	native_assimilation = 0.50
-}
-
-colonial_free_leader = {
-	free_leader_pool = 1
+	native_uprising_chance = -0.5
+	native_assimilation = 1
 }
 
 colonial_global_tarrifs_permabuff = {
-	global_tariffs = 0.05
+	global_tariffs = 0.2
+	trade_efficiency = 0.05
 }
 
 colonial_sailor_buff_25 = {
-	global_sailors = 1000
+	global_ship_recruit_speed = -0.25
+	global_ship_cost = -0.25
 }
 
 colonial_tresure_fleet_buff = {
 	treasure_fleet_income = 0.2
+}
+
+colonial_navigation_legacy = { # Reworked into +1 free diplo policy for 
+	free_dip_policy = 1
 }
 
 # 1.31 Post Release modifiers

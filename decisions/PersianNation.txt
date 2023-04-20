@@ -11,6 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				ai = no
 				NOT = { exists = PER }
 			}
@@ -99,6 +103,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PER
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -106,12 +111,12 @@ country_decisions = {
 					NOT = { government = monarchy }
 					is_revolutionary = no
 				}
-				change_government_to_monarchy = yes
+				change_government = monarchy
 			}
 			set_government_rank = 3
 			if = {
 				limit = { is_revolutionary = no }
-				add_government_reform = feudal_theocracy
+				add_government_reform = persian_government_reform
 			}
 			if = {
 				limit = {
@@ -144,9 +149,32 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 414		# Hamadan
+						owns_core_province = 429		# Isfahan
+						owns_core_province = 433		# Yazd
+						owns_core_province = 2213		# Qom
+						owns_core_province = 2215		# Qazvin
+						OR = {
+							owns_core_province = 426		# Amol
+							owns_core_province = 2218		# Shiraz
+						}
+						OR = {
+							owns_core_province = 416		# Tabriz
+							owns_core_province = 432		# Kerman
+							owns_core_province = 2221		# Mashhad
+						}
+						amount = 5
+					}
+				}
+			}
 		}
 		ai_importance = 400
 	}
 	
 }
+

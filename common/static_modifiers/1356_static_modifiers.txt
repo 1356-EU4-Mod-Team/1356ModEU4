@@ -10,3 +10,10 @@ nomadic_clan_overlord = {
 	global_manpower = 1
 	horde_unity = 0.30
 }
+
+puppet_state_subject_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_income = 48
+	global_manpower = 2.5
+}

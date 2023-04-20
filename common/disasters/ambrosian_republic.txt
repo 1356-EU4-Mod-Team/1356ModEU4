@@ -6,7 +6,7 @@ ambrosian_republic_disaster = {
 		NOT = { has_country_flag = had_ambrosian_republic }
 		government = monarchy
 		NOT = { has_reform = celestial_empire }
-		is_year = 1400 #1356
+		is_year = 1450 #1356
 		NOT = {
 			is_year = 1550
 		}

@@ -87,6 +87,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = GON
+			on_change_tag_effect = yes
 			change_government = monarchy
 			set_legacy_government = gondi_kingdom_kingdom
 			add_government_reform = gondi_kingdom_kingdom_reform

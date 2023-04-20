@@ -17,7 +17,7 @@ religious_school = hanbali_school
 	}
 }
 
-1356.12.24  = { religion = coptic primary_culture = old_egyptian_mod add_government_reform = feudalism_reform } #BT In
+1356.12.24  = { religion = coptic primary_culture = old_egyptian_mod add_government_reform = high_feudal_monarchy_reform } #BT In
 1356.12.26  = { religion = sunni primary_culture = al_misr_arabic add_government_reform = iqta } #BT Out
 
 1361.1.1 = {

@@ -28,7 +28,7 @@ capital = 81	# Kassel
 	}
 }
 
-1356.12.24 = { capital = 86 government = monarchy add_government_reform = feudalism_reform religion = catholic }
+1356.12.24 = { capital = 86 government = monarchy add_government_reform = high_feudal_monarchy_reform religion = catholic }
 1356.12.26 = { capital = 81 government = republic religion = protestant }
 
 # BT Out

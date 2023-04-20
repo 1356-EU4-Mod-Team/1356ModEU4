@@ -1,6 +1,28 @@
 # Railroading Modifiers
 # For Ai vs Ai Direct Interaction (Never directly at the player, though can happen if player is allied to target nations that's attacked)
 
+# Generic | For all who take the Centralize State Decision
+centralization_modifier_golden_bull = {
+	global_autonomy = -0.05
+	global_unrest = 1.5
+	diplomatic_annexation_cost = -0.1
+	reform_progress_growth = 0.1	
+}
+
+# remove_high_feudal_policies = { #-8 will crash the game
+	# possible_policy = -4
+# }	
+
+# Court Politics
+
+tutored_heir = {
+
+}	
+
+hired_sixty_general = {
+
+}	
+
 # Serbia
 
 new_serbian_golden_age = {
@@ -39,17 +61,19 @@ collapse_of_the_serbian_empire_debuff = {
 ottoman_focus_on_balkans = {
 	ae_impact = -0.15
 	core_creation = -0.15
-	land_forcelimit = 7
-	global_manpower = 3.5
+	land_forcelimit = 14
+	global_manpower = 5
 	land_maintenance_modifier = -0.25	
-	global_tax_income = 24	
+	global_tax_income = 36	
+	land_morale = 0.10
 }	
 
 ottoman_focus_on_anatolia = {
 	ae_impact = -0.10
 	core_creation = -0.10
-	land_forcelimit = 7
-	global_manpower = 3.5
+	land_forcelimit = 14
+	global_manpower = 5
 	land_maintenance_modifier = -0.25	
-	global_tax_income = 24		
+	global_tax_income = 36
+	land_morale = 0.10	
 }	

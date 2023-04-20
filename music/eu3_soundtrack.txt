@@ -1,0 +1,270 @@
+song = {
+	name = "Battle of Damascus"
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+song = {
+	name = "Choose Your Path"
+	chance = {
+		modifier = {
+			factor = 0.5
+			technology_group = western
+			technology_group = eastern
+			technology_group = ottoman
+			technology_group = muslim
+			capital_scope = {
+				OR = {
+					superregion = europe_superregion
+					superregion = eastern_europe_superregion
+					superregion = near_east_superregion
+					superregion = persia_superregion
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					is_overseas = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			technology_group = chinese
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "City Of Jerusalem"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+song = {
+	name = "Conquistador - Main Theme"
+	chance = {
+		modifier = {
+			factor = 1.25
+			num_of_colonists = 1
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.5
+			num_of_colonists = 1
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				num_of_colonists = 1
+			}
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_of_colonists = 1
+			}
+			is_at_war = no
+		}
+	}
+}
+song = {
+	name = "Eine Kleine Court Musik"
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Emperor of These Lands"
+	chance = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				technology_group = chinese
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = east_indies_superregion
+					}
+				}
+			}
+		}
+	}
+}
+song = {
+	name = "The Highland Wanderer"
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Mare Atlanticum"
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}
+	}
+}
+song = {
+	name = "A Song for Merchants"
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Discover New Land"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+song = {
+	name = "Land of Glory"
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Night Falls Over Our Empire"
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Para Bellum"
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_at_war = no
+		}
+	}
+}
+song = {
+	name = "Prologue - Europa Universalis"
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Somewhere"
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Swashbuckling Privateers"
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Travel South"
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "A Cruce Victoria"
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "East vs West"
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+song = {
+	name = "To Constantinople"
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}

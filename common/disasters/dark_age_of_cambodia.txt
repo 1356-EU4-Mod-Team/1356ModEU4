@@ -10,10 +10,11 @@ dark_age_of_cambodia = {
 	}
 	
 	can_start = {
+		has_any_disaster = no	
 		tag = KHM
 		is_year = 1410
 		NOT = { is_year = 1465 } 
-		NOT = { stability = 1 }
+		NOT = { stability = 2 }
 	}
 	
 	can_stop = { 

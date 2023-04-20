@@ -1,0 +1,23 @@
+infantry = {
+	factor = 1
+}
+cavalry = {
+	factor = 1
+	modifier = {
+		factor = 3
+        OR = {
+            has_dharma_elephants_trigger = yes
+           # tag = POL
+            #tag = PLC
+			is_nomad = yes
+			has_reform = tribal_federation_ilkhan_reform
+        }
+	}
+}
+artillery = {
+	factor = 1
+	modifier = {
+		factor = 3
+		tag = SMO
+	}
+}

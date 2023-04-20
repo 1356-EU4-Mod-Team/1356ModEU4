@@ -11,6 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				NOT = { exists = SIA }
 				ai = no
 			}
@@ -34,7 +38,7 @@ country_decisions = {
 				NOT = {
 					tag = AYU
 				}
-				# TODO no dlc, AYU gets this as part of their mission tree
+				NOT = { has_dlc = "Leviathan" }
 			}
 		}
 		provinces_to_highlight = {
@@ -67,6 +71,7 @@ country_decisions = {
 		
 		effect = {
 			change_tag = SIA
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			indo_china_region = {
 				limit = {

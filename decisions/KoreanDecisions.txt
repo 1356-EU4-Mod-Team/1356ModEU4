@@ -1,5 +1,0 @@
-country_decisions = {
-
-	#Removed as Defunct
-
-} #End of country decisions

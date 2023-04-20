@@ -14,7 +14,6 @@ country_event = { # Heir Tutorledge options
 			add_ruler_modifier = { 
 				name = "tutored_heir" 
 				duration = 5475
-				hidden = yes
 			}
 		}
 	}
@@ -26,6 +25,12 @@ country_event = { # Heir Tutorledge options
 			NOT = { has_adm_advisor_3 = yes }
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}	
 		random = {
 			chance = 20
 			change_heir_adm = 1
@@ -38,6 +43,12 @@ country_event = { # Heir Tutorledge options
 			NOT = { has_adm_advisor_4 = yes }			
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 30
 			change_heir_adm = 1
@@ -51,6 +62,12 @@ country_event = { # Heir Tutorledge options
 			NOT = { has_adm_advisor_5 = yes }
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 40
 			change_heir_adm = 1
@@ -62,6 +79,12 @@ country_event = { # Heir Tutorledge options
 			has_adm_advisor_5 = yes
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 50
 			change_heir_adm = 1
@@ -75,6 +98,12 @@ country_event = { # Heir Tutorledge options
 			NOT = { has_dip_advisor_3 = yes }
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 20
 			change_heir_dip = 1
@@ -87,6 +116,12 @@ country_event = { # Heir Tutorledge options
 			NOT = { has_dip_advisor_4 = yes }			
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 30
 			change_heir_dip = 1
@@ -100,6 +135,12 @@ country_event = { # Heir Tutorledge options
 			NOT = { has_dip_advisor_5 = yes }
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 40
 			change_heir_dip = 1
@@ -111,6 +152,12 @@ country_event = { # Heir Tutorledge options
 			has_dip_advisor_5 = yes
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 50
 			change_heir_dip = 1
@@ -125,6 +172,12 @@ country_event = { # Heir Tutorledge options
 			NOT = { has_mil_advisor_3 = yes }
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 20
 			change_heir_mil = 1
@@ -137,6 +190,12 @@ country_event = { # Heir Tutorledge options
 			NOT = { has_mil_advisor_4 = yes }
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 30
 			change_heir_mil = 1
@@ -149,6 +208,12 @@ country_event = { # Heir Tutorledge options
 			NOT = { has_mil_advisor_5 = yes }
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 40
 			change_heir_mil = 1
@@ -160,6 +225,12 @@ country_event = { # Heir Tutorledge options
 			has_mil_advisor_5 = yes
 		}
 		custom_tooltip = only_one_heir_education.tt
+		tooltip = {
+			add_ruler_modifier = { 
+				name = "tutored_heir" 
+				duration = 5475
+			}
+		}			
 		random = {
 			chance = 50
 			change_heir_mil = 1
@@ -170,7 +241,24 @@ country_event = { # Heir Tutorledge options
 
 
 
+country_event = { # Just recyling appaanges_event.1 for High Feudal Monarchies
+	id = court_politics.100
+	title = court_politics.100.t
+	desc = appanages_event.1.desc
+	picture = DIPLOMACY_SIGNING_eventPicture
+	trigger = {
+		has_government_attribute = nobility_loyalty_hit_on_integration_high_feudal
+	}
+	is_triggered_only = yes
 
+	option = {
+		name = appanages_event.1.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+	}
+}
 
 
 

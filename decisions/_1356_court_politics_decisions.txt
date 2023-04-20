@@ -2,10 +2,11 @@
 
 country_decisions = {
 	tutor_heir_reform_power = {
-		major = no
+		color = { 173 189 237 }	
+		major = yes
 		potential = {
 			has_government_attribute = may_request_heir_tuterlage
-			#has_heir = yes
+			has_heir = yes
 		}
 
 		allow = {
@@ -26,11 +27,10 @@ country_decisions = {
 			country_event = { id = court_politics.34 } # Tutor Heir
 		}
 	}	
-}	
-
-country_decisions = {
+	
 	recruit_sixty_tradition_general = {
-		major = no
+		color = { 173 189 237 }	
+		major = yes
 		potential = {
 			has_government_attribute = may_recruit_sixty_tradition_general_fifthteen_years
 		}
@@ -42,14 +42,131 @@ country_decisions = {
 			}	
 		}
 		effect = {
-			hidden_effect = {
-				add_country_modifier = {
-					name = "hired_sixty_general"
-					duration = 5475
-					hidden = yes
-				}
-			}	
+			add_country_modifier = {
+				name = "hired_sixty_general"
+				duration = 5475
+			}
 			create_general = { tradition = 60 }
 		}
 	}	
+	
+	recruit_early_explorer_colonialization = {
+		color = { 173 189 237 }	
+		major = yes
+		potential = {
+			has_idea = quest_for_the_new_world_1
+			NOT = { has_country_flag = recruited_one_time_explorer }
+		}
+
+		allow = {
+			has_idea = quest_for_the_new_world_1
+			is_at_war = no
+		}
+		effect = {
+			set_country_flag = recruited_one_time_explorer
+			create_explorer = { tradition = 0 } 
+		}
+	}	
+	
+	reform_government_old_reforms = { # Transition out of Feudal age
+		color = { 183 183 183 }
+		major = yes
+		potential = {
+			# OR = {
+				# technology_group = western
+				# technology_group = eastern
+			# }
+			# OR = {
+				# has_reform = high_feudal_monarchy_reform
+				# has_reform = elective_feudal_monarchy_reform
+			# }	
+			NOT = { has_country_modifier = centralization_modifier_golden_bull }			
+			OR = {
+				AND = {
+					is_year = 1355
+					NOT = { is_year = 1465 }
+				}	
+				AND = {
+					is_year = 1465
+					OR = {
+						has_reform = high_feudal_monarchy_reform
+						has_reform = elective_feudal_monarchy_reform	
+					}	
+				}	
+			}	
+		}
+		allow = {
+			government_reform_progress = 100
+			adm_tech = 9
+			is_year = 1435
+			is_at_war = no
+			stability = 1
+			is_subject = no
+		}		
+		effect = {
+			custom_tooltip = centralize_power_to_state_gov_reform_tt		
+			add_country_modifier = {
+				name = "centralization_modifier_golden_bull"
+				duration = 10950
+			}		
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { has_reform = high_feudal_monarchy_reform }
+					NOT = { has_reform = elective_feudal_monarchy_reform }
+				}
+				change_government_reform_progress = -50	
+			}	
+			if = {
+				limit = {
+					has_reform = high_feudal_monarchy_reform
+				}
+				add_government_reform = feudalism_reform
+				change_government_reform_progress = -75	
+			}
+			if = {
+				limit = {
+					has_reform = elective_feudal_monarchy_reform
+				}
+				add_government_reform = elective_monarchy_reform
+				change_government_reform_progress = -75	
+			}								
+			add_years_of_estate_land_income = 0.5
+			change_estate_land_share = { 
+				estate = all 
+				share = -10 
+			}		
+		}	
+		ai_will_do = { # AI will currently only switch when they embrace gunpowder
+			factor = 10
+		}			
+	}
+	
+	# remove_high_feudal_policies = { # Removes all High Feudal Policies for the Ai #### Removed for Release 1.35 build as Ai no longer uses High Feudal Policies
+		# color = { 183 183 183 }
+		# major = yes
+		# potential = {
+			# ai = yes
+			# NOT = { has_country_flag = cleared_feudal_modifiers }
+		# }			
+		# allow = {
+			# is_year = 1451
+			# is_at_war = no
+			# has_institution = renaissance	
+			# NOT = { has_country_modifier = remove_high_feudal_policies }		
+		# }		
+		# effect = {	
+			# hidden_effect = {
+				# country_event = { id = removes_policy_1356.1 } # Tutor Heir	
+				# set_country_flag = cleared_feudal_modifiers				
+			# }	
+			# tooltip = {
+				# change_government_reform_progress = 25
+			# }				
+		# }	
+		# ai_will_do = { # AI will currently only switch when they embrace gunpowder
+			# factor = 10
+		# }			
+	# }		
 }	
+

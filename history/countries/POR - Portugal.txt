@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = high_feudal_monarchy_reform
+add_government_reform = portuguese_monarchy_reform
 primary_culture = portugese
 religion = catholic
 technology_group = western
@@ -247,7 +247,7 @@ national_focus = DIP
 1435.1.1 = { leader = {	name = "Earl of Avranches"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
 
 1438.9.10 = {
-	add_government_reform = feudalism_reform
+	add_government_reform = high_feudal_monarchy_reform
 	monarch = {
 		name = "Infante Pedro"
 		dynasty = "de Avis"

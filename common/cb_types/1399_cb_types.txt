@@ -247,3 +247,20 @@ cb_serbian_civil = {
 
 	war_goal = serbian_civil_war_wargoal
 }
+
+
+
+cb_domination_idea_subjugate = { # You will DOMINATE them
+	valid_for_subject = no
+
+	prerequisites = {
+		has_idea = domination_dip_idea_3
+		is_neighbor_of = FROM
+		FROM = {
+			NOT = { total_development = 100 }
+			is_subject = no
+		}	
+	}
+
+	war_goal = take_capital_vassalize_domination_idea
+}

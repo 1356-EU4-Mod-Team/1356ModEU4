@@ -6,9 +6,8 @@ ahead_of_time = {
 	development_cost = -0.05
 	innovativeness_gain = 0.1
 	#trade_efficiency = 0.2
-
-
 	#yearly_corruption = -0.05	
+	monthly_russian_modernization = 0.05	
 }
 
 

@@ -4,6 +4,7 @@ norwegian_missions = {
 	ai = yes
 	potential = {
 		tag = NOR
+		NOT = { has_dlc = "Lions of the North" }		
 	}
 	has_country_shield = yes
 	
@@ -244,6 +245,7 @@ norwegian_missions_2 = {
 	ai = yes
 	potential = {
 		tag = NOR
+		NOT = { has_dlc = "Lions of the North" }			
 	}
 	has_country_shield = yes
 	

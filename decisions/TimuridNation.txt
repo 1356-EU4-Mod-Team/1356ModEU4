@@ -92,13 +92,17 @@ country_decisions = {
 	timurid_nation = {
 		major = yes
 		potential = {
-			NOT = { TRS = { has_heir = "Tamerlan" } }
+			NOT = { TRS = { has_heir = "Tamerlane" } }
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_timurids_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -143,24 +147,21 @@ country_decisions = {
 			NOT = { exists = TIM }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			owns_core_province = 446	# Herat
+			owns_core_province = 454	# Samarkand
+			454 = {						# Samarkand
+				is_state = yes
+			}
 			OR = {
-				ROOT = { has_ruler = "Timur" }
-				ROOT = { dynasty = "Timurid" }
 				AND = {
-					owns_core_province = 454	# Samarkand
-					owns_core_province = 446	# Herat
-					OR = {
-						AND = {
-							owns_core_province = 429	# Isfahan
-							owns_core_province = 2213	# Qom
-							owns_core_province = 2218	# Shiraz
-						}
-						AND = {
-							owns_core_province = 451	# Kabul
-							owns_core_province = 445	# Merv
-							owns_core_province = 428	# Teheran/Rayy
-						}
-					}
+					owns_core_province = 429	# Isfahan
+					owns_core_province = 2213	# Qom
+					owns_core_province = 2218	# Shiraz
+				}
+				AND = {
+					owns_core_province = 451	# Kabul
+					owns_core_province = 445	# Merv
+					owns_core_province = 428	# Teheran/Rayy
 				}
 			}
 		}
@@ -169,6 +170,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = TIM
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -293,7 +295,15 @@ country_decisions = {
 			set_country_flag = formed_timurids_flag
 		}
 		ai_will_do = {
-			factor = 400
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { exists = MUG }	#Mughals should appear instead first
+			}
+			modifier = {
+				factor = 0
+				NOT = { exists = PER }	#Same goes for Persia
+			}
 		}
 		ai_importance = 600
 	}

@@ -128,7 +128,7 @@ capital = 12 # Sjaelland
 }
 
 1440.4.9 = {
-	add_government_reform = feudalism_reform
+	add_government_reform = high_feudal_monarchy_reform
 	monarch = {
 		name = "Christopher III"
 		dynasty = "von Wittelsbach"

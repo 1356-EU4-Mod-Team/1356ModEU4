@@ -43,7 +43,7 @@ capital = 2101 # Tirunelveli
 
 1431.1.1 = {
 	government = monarchy
-	add_government_reform = feudalism_reform
+	add_government_reform = high_feudal_monarchy_reform
 	religion = hinduism
 	monarch = {
 		name = "Parakrama"

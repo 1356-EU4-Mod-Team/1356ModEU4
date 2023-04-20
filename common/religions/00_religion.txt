@@ -155,7 +155,7 @@ christian = { #1356
 				}
 				allow = {
 					NOT = { war_with = PAP }
-					NOT = { prestige = 100 }
+
 					NOT = { has_country_modifier = papal_blessing }
 				}
 				effect = {
@@ -348,6 +348,7 @@ christian = { #1356
 			expel_heretics_aspect
 			diplomats_of_the_reformation_aspect
 			icons_of_the_church_aspect
+			spread_the_book_of_common_prayer
 		}
 		aspects_name = ANGLICAN_ASPECTS
 		
@@ -732,8 +733,11 @@ christian = { #1356
 				allow = {
 					always = yes
 				}
+				visible = {
+					always = yes
+				}
 				ai_will_do = {
-					factor = 1
+					factor = 0.05
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -752,8 +756,11 @@ christian = { #1356
 				allow = {
 					always = yes
 				}
+				visible = {
+					always = yes
+				}
 				ai_will_do = {
-					factor = 1
+					factor = 0.02
 					modifier = {
 						factor = 0
 						NOT = {
@@ -784,6 +791,9 @@ christian = { #1356
 				allow = {
 					always = yes
 				}
+				visible = {
+					always = yes
+				}
 				ai_will_do = {
 					factor = 0
 				}
@@ -792,6 +802,9 @@ christian = { #1356
 			icon_nicholas = {
 				improve_relation_modifier = 0.25
 				ae_impact = -0.1
+				visible = {
+					always = yes
+				}
 				allow = {
 					always = yes
 				}
@@ -803,6 +816,9 @@ christian = { #1356
 			icon_climacus = {
 				global_institution_spread = 0.25
 				embracement_cost = -0.2
+				visible = {
+					always = yes
+				}
 				allow = {
 					always = yes
 				}
@@ -1942,6 +1958,7 @@ eastern = {
 		icon = 10
 		country = {
 			land_morale = 0.1
+			tolerance_heretic = 2
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -2580,6 +2597,7 @@ dharmic = { #1356
 				trigger = {
 					is_year = 1708
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2688,9 +2706,6 @@ pagan = {#1356
 			tolerance_heathen = 2
 			diplomatic_reputation = 1
 		}
-		province = {
-			local_missionary_strength = 0.005
-		}
 		country_as_secondary = {
 			tolerance_own = 2
 			loot_amount = 0.25
@@ -2722,12 +2737,12 @@ pagan = {#1356
 		color = { 64 115 115 }
 		icon = 18
 		country = {
-			tolerance_own = 1
+			tolerance_own = 2
 			global_autonomy = -0.05
 		}
 
 		country_as_secondary = {
-			tolerance_own = 1
+			tolerance_own = 2
 			global_autonomy = -0.05
 		}
 		
@@ -3053,7 +3068,7 @@ jewish_group = {
 					limit = {
 						has_church_aspect = judaism_simchat_torah_aspect
 					}
-					change_government_reform_progress = 20
+					change_government_reform_progress = 25
 					add_legitimacy_equivalent = {
 						amount = 5
 						republican_tradition = 5

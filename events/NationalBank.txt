@@ -5,42 +5,40 @@ country_event = {
 	desc = "EVTDESC4042"
 	picture = ECONOMY_eventPicture
 	
-	# trigger = {
-		# NOT = { has_country_flag = bank }
-		# has_idea = national_bank
-		# adm = 4
-	# }
+	trigger = {
+		NOT = { has_country_flag = bank }
+		has_idea = national_bank
+		adm = 4
+	}
 
-	# mean_time_to_happen = {
-		# months = 480
+	mean_time_to_happen = {
+		months = 480
 		
-		# modifier = {
-			# factor = 0.9
-			# adm = 4
-		# }
-		# modifier = {
-			# factor = 0.9
-			# adm = 5
-		# }
-		# modifier = {
-			# factor = 0.8
-			# statesman = 3
-		# }
-		# modifier = {
-			# factor = 1.1
-			# NOT = { stability = 0 }
-		# }
-		# modifier = {
-			# factor = 1.1
-			# NOT = { stability = -1 }
-		# }
-		# modifier = {
-			# factor = 1.1
-			# NOT = { stability = -2 }
-		# }
-	# }
-	
-	is_triggered_only = yes
+		modifier = {
+			factor = 0.9
+			adm = 4
+		}
+		modifier = {
+			factor = 0.9
+			adm = 5
+		}
+		modifier = {
+			factor = 0.8
+			statesman = 3
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { stability = -2 }
+		}
+	}
 
 	option = {
 		name = "EVTOPTA4042"		# 
@@ -52,6 +50,7 @@ country_event = {
 			name = "national_bank_inflation"
 			duration = 18250
 		}
+		set_country_flag = bank
 	}
 	option = {
 		name = "EVTOPTB4042"		# 
@@ -63,6 +62,7 @@ country_event = {
 			name = "national_bank_interest"
 			duration = 18250
 		}
+		set_country_flag = bank
 	}
 }
 

@@ -1,0 +1,582 @@
+## Made Seperate from Basic Ideas to improve compability
+
+#Everything Below is 1356
+
+domination_ideas = { # Domineering Ideas
+	category = DIP
+
+	bonus = {
+		possible_condottieri = 0.25
+		governing_capacity = 100
+		free_dip_policy = 1
+		possible_dip_policy = 1
+	}
+	
+	domination_dip_idea_1 = {
+		ae_impact = -0.15
+	}	
+	domination_dip_idea_2 = {
+		overextension_impact_modifier = -0.20
+	}
+	domination_dip_idea_3 = {
+		#no_claim_cost_increasement = yes
+		#unjustified_demands = -0.33
+		can_claim_states = yes
+	}
+	domination_dip_idea_4 = {
+		#num_accepted_cultures = 2
+		#manpower_in_accepted_culture_provinces = 0.20
+		liberty_desire_from_subject_development = -0.25
+	}
+	domination_dip_idea_5 = {
+		transfer_trade_power_reasons = 15
+		accept_vassalization_reasons = 15
+	}
+	domination_dip_idea_6 = {
+		province_warscore_cost = -0.20
+	}
+	domination_dip_idea_7 = {
+		max_absolutism_effect = 0.10
+		max_absolutism = 15
+	}	
+
+	ai_will_do = {
+		factor = 0.8
+		modifier = {
+			factor = 1.1
+			OR = {
+				government_rank = 3
+				grown_by_development = 800
+				is_great_power = yes
+			}		
+		}		
+		modifier = {
+			factor = 1.1
+			num_of_subjects = 2
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_dip = 8 }
+		}
+		modifier = { # Ai will now always go a Mil idea first except in Explo/Expansion/Conversion ideas
+			factor = 0
+			NOT = {
+				adm_tech = 6	
+			}
+		}			
+	}
+}
+
+education_ideas = { # Formerly Scholarly Ideas
+	category = ADM
+
+	bonus = {
+		possible_condottieri = 0.25
+		free_adm_policy = 1
+		possible_adm_policy = 1
+		culture_conversion_time = -0.25		
+	}
+
+	
+	domination_adm_idea_1 = {
+		national_focus_years = -10
+	}	
+	print_culture = {
+		global_institution_spread = 0.25
+		embracement_cost = -0.25
+	}	
+	domination_adm_idea_3 = {
+		global_unrest = -2
+	}
+	domination_adm_idea_4 = {
+		#num_accepted_cultures = 2
+		#manpower_in_accepted_culture_provinces = 0.20
+		#stability_cost_modifier = -0.20
+	 	no_stability_loss_on_monarch_death = yes
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	domination_adm_idea_5 = {
+		development_cost_in_primary_culture = -0.15
+	}
+	domination_adm_idea_6 = {
+		state_governing_cost = -0.15
+		centralize_state_cost = -0.20
+	}
+	domination_adm_idea_7 = {
+		#global_autonomy = -0.075
+		advisor_cost = -0.20
+		advisor_pool = 2		
+	}		
+	
+
+	ai_will_do = {
+		factor = 0.78
+		modifier = {
+			factor = 0.6
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 1.25
+			innovativeness = 40
+			NOT = { is_year = 1550 }
+		}
+		modifier = {
+			factor = 1.25
+			OR = { 
+				ruler_has_personality = scholar_personality 
+				ruler_has_personality = free_thinker_personality
+				in_golden_age = yes 	
+			}
+		}
+		modifier = {
+			factor = 1.3
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 1.1
+			any_neighbor_country = { 
+				religion = ROOT
+			}
+		}	
+		modifier = { # Ai will now always go a Mil idea first except in Explo/Expansion/Conversion ideas
+			factor = 0
+			NOT = {
+				adm_tech = 6	
+			}
+		}			
+	}
+}
+
+
+
+
+professionalism_ideas = { #Professionalize Ideas
+	category = MIL
+
+
+	bonus = {
+		possible_condottieri = 0.25
+		possible_mil_policy = 1
+		free_mil_policy = 1
+		yearly_army_professionalism = 0.005
+	}
+	
+
+	
+	domination_mil_idea_1 = {
+		army_tradition_from_battle = 0.5
+	}	
+	domination_mil_idea_2 = {
+		military_tactics = 0.15
+	}	
+	domination_mil_idea_3 = {
+		warscore_from_battles_modifier = 0.25
+	}
+	domination_mil_idea_4 = {
+		manpower_in_accepted_culture_provinces = 0.15
+	}
+	domination_mil_idea_5 = {
+		max_general_shock = 1
+		max_general_fire = 1
+		max_general_maneuver = 1
+		max_general_siege = 1
+		max_admiral_shock = 1
+		max_admiral_fire = 1
+		max_admiral_maneuver = 1
+		max_admiral_siege = 1
+	}
+	domination_mil_idea_6 = {
+		artillery_levels_available_vs_fort = 1
+		artillery_level_modifier = 0.2		
+	}		
+	domination_mil_idea_7 = {
+		country_military_power = 1
+	}	
+
+	ai_will_do = {
+		factor = 3.0
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.1
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.1
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = {
+			factor = 1.05
+			is_year = 1500
+		}
+		modifier = { 
+			factor = 1.4
+			OR = { 
+				has_global_modifier_value = { 
+					which = infantry_power 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = cavalry_power 
+					value = 0.25
+				}
+				has_global_modifier_value = { 
+					which = artillery_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = heavy_ship_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = galley_power 
+					value = 0.15
+				}
+				has_global_modifier_value = { 
+					which = army_tradition
+					value = 0.01
+				}
+			}
+			
+		}
+	}
+}
+
+# Legacy Ideas | These are no longer used but remain in the code for potential use of Submods
+
+# imperial_ideas = { # Imperial Ideas
+	# category = ADM
+
+	# bonus = {
+		# possible_condottieri = 0.25
+		# governing_capacity = 150
+	# }
+	
+	# robust_state_administration = {
+		# core_creation = -0.1
+	# }	
+	
+	# imperial_land_grants = {
+		# global_trade_goods_size_modifier = 0.1
+	# }	
+	
+	# imperial_engineering = {
+		# state_maintenance_modifier = -0.25
+	# }	
+	
+	# courtly_education = {
+		# global_autonomy = -0.075
+	# }
+
+	# 1356_client_states = {
+		# max_absolutism = 15
+		# yearly_absolutism = 0.5
+	# }
+
+	# imperial_centralization = {
+		# inflation_action_cost = -0.50
+	# }
+
+	# 1356_compel_problem = {
+		# administrative_efficiency = 0.025
+	# }
+	
+	
+
+	# ai_will_do = {
+		# factor = 0.3
+		# modifier = {
+			# factor = 6
+			# absolutism = 50
+		# }
+		# modifier = {
+			# factor = 5
+			# total_development = 750
+		# }
+	# }
+# }
+
+# military_doctrine_ideas = { # Condottieri Ideas
+	# category = MIL
+
+	# trigger = {
+		# NOT = {	has_idea_group = permanent_war_ideas } 
+	# }
+
+	# bonus = {
+		# possible_condottieri = 0.25
+		# reinforce_cost_modifier = -0.33
+	# }
+
+	# uniform_marshaling_points = {
+		#possible_condottieri = 1
+		# shock_damage = 0.10
+		#yearly_army_professionalism = -1
+	# }
+	
+	# military_mentorship = {
+		# mercenary_cost = -0.25
+	# }
+
+	# academy_of_officers = {
+		# merc_maintenance_modifier = -0.33
+	# }
+
+	# holding_the_line = {
+		# mercenary_manpower= 0.50
+	# }
+
+	# 1356_advisory_committee = {
+		# mercenary_discipline = 0.075
+	# }
+
+	# standardized_calibres = { 
+		# loot_amount = 1
+		# available_province_loot = 0.50
+	# }
+
+	# unified_conscription_laws = {
+		# prestige_from_land = 1
+	# }
+
+	# ai_will_do = {
+		# factor = 0.9
+		# modifier = {
+			# factor = 1.4 # More likely to pick in early stages
+			# is_year = 1350
+			# NOT = { is_year = 1440 } 
+		# }
+		# modifier = {
+			# factor = 1000
+			# tag = BUR
+		# }		
+		# modifier = {
+			# factor = 1.1 # Less likely to pick in early stages
+			# is_year = 1440
+			# NOT = { is_year = 1520 } 
+		# }	
+		# modifier = {
+			# factor = 0.8 # Even Less likely to pick in ;ater stages
+			# is_year = 1520
+			# NOT = { is_year = 1600 } 
+		# }
+		# modifier = {
+			# factor = 0 # Professionalize will take over
+			# is_year = 1600
+		# }
+		# modifier = {
+			# factor = 2
+			# ruler_has_personality = fierce_negotiator_personality
+		# }			
+	# }
+# }
+
+
+# grand_court_ideas = { # Majesty Ideas
+	# category = DIP
+
+	# bonus = {
+		# possible_condottieri = 0.25
+		# development_cost = -0.1
+	# }
+
+# permanent_diplomacy = {
+	# dip_advisor_cost = -0.20
+# }
+	
+# grand_viziers = {
+	# global_unrest = -2
+# }
+
+# venerated_state_rituals = {
+	# promote_culture_cost = -0.50
+	# num_accepted_cultures = 2
+# }
+# courtly_tolerance = {
+	# diplomats = 1
+	# envoy_travel_time = -0.50
+# }
+
+# artists_and_mathematicians = {
+	# monthly_splendor = 3
+# }
+
+# noble_pride = {
+	# monarch_lifespan = 0.20
+# }
+# pride_of_subjects = {
+	# prestige_decay = -0.01
+# }
+
+	# ai_will_do = {
+		# factor = 0.8
+		# modifier = {
+			# factor = 2
+			# tag = FRA
+		# }	
+		# modifier = {
+			# factor = 1.4
+			# ruler_has_personality = well_advised_personality
+		# }	
+		# modifier = {
+			# factor = 1.4
+			# ruler_has_personality = free_thinker_personality
+		# }	
+		# modifier = {
+			# factor = 1.4
+			# ruler_has_personality = righteous_personality
+		# }		
+		# modifier = {
+			# factor = 1.2
+			# prestige = 85
+		# }	
+		# modifier = {
+			# factor = 0
+			# is_year = 1600 # Less about courts and more about a centrialized state
+		# }		
+		# modifier = { # French Culture nations will want to make grand court. Added some other cultures because Anjous
+			# factor = 3
+			# OR = {
+				# culture_group = french
+				# culture = hungarian
+				# culture = neapolitan
+			# }	
+		# }		
+	# }
+# }
+
+
+### These are 'Ideas' that serve as placeholders for Early Game Policies | Explanation: Eu4 requires two ideas in order to generate a policy icon, if those two ideas are not present, hovering of the Policy icon will hard crash the game
+
+blank_idea_slot_1 = { # Placeholder for Early Game Policies 
+	category = ADM
+
+	trigger = {
+		always = no
+	}
+
+	bonus = {
+		reinforce_cost_modifier = -0.33
+	}
+
+	uniform_marshaling_points = {
+		#possible_condottieri = 1
+		shock_damage = 0.10
+		yearly_army_professionalism = 0.003
+	}
+	
+	military_mentorship = {
+		mercenary_cost = -0.25
+	}
+
+	academy_of_officers = {
+		merc_maintenance_modifier = -0.33
+	}
+
+	holding_the_line = {
+		mercenary_manpower= 0.50
+	}
+
+	1356_advisory_committee = {
+		mercenary_discipline = 0.075
+	}
+
+	standardized_calibres = { 
+		loot_amount = 1
+		available_province_loot = 0.50
+	}
+
+	unified_conscription_laws = {
+		prestige_from_land = 1
+	}
+
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 1.4 # More likely to pick in early stages
+			is_year = 1350
+			NOT = { is_year = 1440 } 
+		}
+		modifier = {
+			factor = 1000
+			tag = BUR
+		}		
+		modifier = {
+			factor = 1.1 # Less likely to pick in early stages
+			is_year = 1440
+			NOT = { is_year = 1520 } 
+		}	
+		modifier = {
+			factor = 0.8 # Even Less likely to pick in ;ater stages
+			is_year = 1520
+			NOT = { is_year = 1600 } 
+		}
+		modifier = {
+			factor = 0 # Professionalize will take over
+			is_year = 1600
+		}
+		modifier = {
+			factor = 2
+			ruler_has_personality = fierce_negotiator_personality
+		}			
+	}
+}
+
+blank_idea_slot_2 = { # Placeholder for Early Game Policies
+	category = DIP
+
+	trigger = {
+		always = no
+	}
+
+	bonus = {
+	}
+
+	uniform_marshaling_points = {
+		#possible_condottieri = 1
+		shock_damage = 0.10
+		yearly_army_professionalism = -1
+	}
+	
+	military_mentorship = {
+		mercenary_cost = -0.25
+	}
+
+	academy_of_officers = {
+		merc_maintenance_modifier = -0.33
+	}
+
+	holding_the_line = {
+		mercenary_manpower= 0.50
+	}
+
+	1356_advisory_committee = {
+		mercenary_discipline = 0.075
+	}
+
+	standardized_calibres = { 
+		loot_amount = 1
+		available_province_loot = 0.50
+	}
+
+	unified_conscription_laws = {
+		prestige_from_land = 1
+	}
+
+	ai_will_do = {
+		factor = 0			
+	}
+}

@@ -1,5 +1,5 @@
 slavic_pagan_reformed_rebels = {
-
+	color = { 33 32 32 }
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = slavic_pagan_reformed

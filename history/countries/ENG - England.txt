@@ -23,7 +23,13 @@ change_estate_land_share = {
 	share = -10
 }
 
+change_estate_land_share = { #compensates for lack of nobles, distributes 20 between the remaining estates
+	estate = all
+	share = 20
+}
+
 1327.1.25 = {
+	set_estate_privilege = estate_nobles_english_villeinage
 	monarch = {
 		name = "Edward III"
 		dynasty = "Plantagenet"

@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = high_feudal_monarchy_reform
+add_government_reform = courts_of_navarra
 primary_culture = basque
 add_accepted_culture = normand
 add_accepted_culture = cosmopolitan_french

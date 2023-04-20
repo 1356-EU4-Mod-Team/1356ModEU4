@@ -1,5 +1,5 @@
 finnish_pagan_reformed_rebels = {
-
+	color = { 104 90 99 }
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = finnish_pagan_reformed

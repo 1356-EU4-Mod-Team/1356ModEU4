@@ -146,12 +146,15 @@ country_event = { #Boosts Mercantilism in nations with trade income %
 		NOT = { government = tribal }
 		NOT = { government = native }
 		NOT = { is_year = 1420 }
-		trade_income_percentage = 0.65 #Whats a fair ratio early game?
+		trade_income_percentage = 0.30 #Whats a fair ratio early game?
 		
 	}
-	mean_time_to_happen = {	
-		months = 120
-	}
+	# mean_time_to_happen = {	
+		# months = 120
+	# }
+	
+	is_triggered_only = yes
+	
 	option = {
 		name = new_institution_events.20.a
 		random_owned_province = {
@@ -220,9 +223,10 @@ province_event = { #Boosts Mercantilism in nations with X requirement
 		NOT = { is_year = 1420 }
 		province_has_center_of_trade_of_level = 2 #Does this need to be in a scope?	
 	}
-	mean_time_to_happen = {	 # Vastly increased + added ruler flag to prevent it from occuring often
-		months = 200
-	}
+	#mean_time_to_happen = {	 # Vastly increased + added ruler flag to prevent it from occuring often
+	#	months = 200
+	#}
+	is_triggered_only = yes # Made into a on_action bi_yearly pulse	
 	option = {
 		name = new_institution_events.22.a
 		owner = {
@@ -253,7 +257,7 @@ province_event = { #Boosts Mercantilism in nations with X requirement
 		name = new_institution_events.22.b
 		owner = {
 			add_mercantilism = -3
-			add_treasury = 100
+			add_years_of_income = 0.7
 			set_ruler_flag = trade_center_mercantilism_event
 			add_country_modifier = {
 				name = "exorted_merchants"
@@ -278,12 +282,14 @@ province_event = { #Boosts Mercantilism in nations with paper trade good
 		NOT = { is_year = 1420 }
 		NOT = { mercantilism_institution = 100 }
 		trade_goods = paper
-		development = 12		
+		base_production = 4 # was 12 but accounted for total development		
 	}
-	mean_time_to_happen = {	
-		months = 140
+	# mean_time_to_happen = {	
+		# months = 140
 		#days = 1
-	}
+	# }
+	is_triggered_only = yes # Made into a on_action bi_yearly pulse	
+	
 	option = {
 		name = new_institution_events.23.a
 		owner = {
@@ -305,14 +311,14 @@ province_event = { #Boosts Mercantilism in nations with paper trade good
 		name = new_institution_events.23.b
 		owner = {
 			set_ruler_flag = trade_paper_center_mercantilism
-			add_treasury = 200
+			add_years_of_income = 1.1
 		}	
 		owner = {
 			random_owned_province = {
 				limit = {
 					trade_goods = paper
 				}
-				add_base_production = -3	
+				add_base_production = -2
 			}	
 		}		
 	}
@@ -338,9 +344,10 @@ country_event = { #Event to Boost Mercantilism in nations with Low Autonomy AKA 
 			technology_group = eastern
 		}	
 	}
-	mean_time_to_happen = {	#Adjust as needed
-		months = 288 #24 years
-	}
+	#mean_time_to_happen = {	#Adjust as needed
+	#	months = 288 #24 years
+	#}
+	is_triggered_only = yes # Made into a on_action bi_yearly pulse		
 	option = {
 		name = new_institution_events.30.a
 		random_owned_province = {
@@ -352,8 +359,8 @@ country_event = { #Event to Boost Mercantilism in nations with Low Autonomy AKA 
 				value = 75
 			}
 		}
-		add_mercantilism = 2 #Is this too powerful?
-		add_years_of_income = 0.4
+		add_mercantilism = 2.5 #Is this too powerful?
+		add_years_of_income = 0.7
 	}
 }
 
@@ -796,11 +803,12 @@ country_event = { #England
 		NOT = { has_institution = mercantilism_institution }
 		NOT = { is_year = 1420 }
 		tag = ENG
-		adm = 3	
+		adm = 2	
 	}
-	mean_time_to_happen = {	#Adjust as needed
-		months = 120 #10 years
-	}
+	#mean_time_to_happen = {	#Adjust as needed
+	#	months = 120 #10 years
+	#}
+	is_triggered_only = yes # Made into a on_action bi_yearly pulse
 	option = { #3 provinces get a buff to Mercantilism
 		name = new_institution_events.51.a
 		capital_scope = {
@@ -893,10 +901,28 @@ country_event = { #Gunpowder Spawn Event
 	desc = new_institution_events.61.d
 	
 	picture = LAND_MILITARY_eventPicture
-	fire_only_once = yes
+	#fire_only_once = yes
+	#is_triggered_only = yes
+	#major = yes
+
 	is_triggered_only = yes
-	major = yes
+
+	goto = institution_origin
 	
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			from = { save_event_target_as = institution_origin }
+		}
+	}
+
 	option = {
 		name = new_institution_events.61.a
 		random_owned_province = {
@@ -1137,7 +1163,18 @@ country_event = { #Notifys players of Gunpowder spawning
 		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
 	}
 
+	goto = institution_origin
+	
 	is_triggered_only = yes
+	
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = new_institution_events.67.a
 		custom_tooltip = new_institution_events.67.2.a.tt
@@ -1167,6 +1204,15 @@ country_event = { #Notifys far away players of Gunpowder spawning
 	}
 
 	is_triggered_only = yes
+	
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
 
 	option = {
 		name = new_institution_events.68.a

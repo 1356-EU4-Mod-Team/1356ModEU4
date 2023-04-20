@@ -64,6 +64,7 @@ country_decisions = {
 				add_base_tax = 2
 			}
 			change_tag = AQT
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -169,6 +170,7 @@ country_decisions = {
 				add_base_tax = 2
 			}
 			change_tag = GUY
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -263,6 +265,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = WOO
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -345,6 +348,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = BUR
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -425,6 +429,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = ARE
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			#remove_non_electors_emperors_from_empire_effect = yes #You've been given this title, so it'd make no sense to do this.
 			if = {
@@ -515,6 +520,7 @@ country_decisions = {
 				add_base_tax = 2
 			}
 			change_tag = OCC
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -649,6 +655,7 @@ country_decisions = {
 				add_base_tax = 2
 			}
 			change_tag = FRA
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {

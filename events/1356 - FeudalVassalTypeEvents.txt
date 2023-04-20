@@ -120,7 +120,7 @@ country_event = { #TEST TO SEE IF THIS STILL WORKS
 			tag = AUV
 			tag = FOI
 		}
-		has_reform = french_vassal_feudal_monarchy_reform
+		has_reform = appanage_reform
 		NOT = { is_subject_of = FRA }
 		is_at_war = no
 		#OR = {

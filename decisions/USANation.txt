@@ -3,7 +3,25 @@ country_decisions = {
 	usa_nation = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				tag = TEX
+				tag = FLO
+				tag = CAL
+				tag = ALA
+				tag = LOU
+				tag = ILI
+				tag = VRM
+				AND = {
+					tag = UHW
+					capital_scope = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
+				NOT = { has_country_flag = changed_from_colonial_nation }
+			}
 			was_never_end_game_tag_trigger = yes
 			is_nomad = no
 			is_random_new_world = no
@@ -61,9 +79,11 @@ country_decisions = {
 						NOT = { is_former_colonial_nation = yes }
 					}
 					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
 				}
 			}
 			change_tag = USA
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			if = {
 				limit = {
@@ -111,8 +131,9 @@ country_decisions = {
 			set_country_flag = changed_from_colonial_nation
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
+		ai_importance = 400
 	}
 
 }

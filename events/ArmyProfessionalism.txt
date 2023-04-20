@@ -44,6 +44,7 @@ country_event = {
 					NOT = { has_country_flag = was_plundered }
 					had_country_flag = { flag = was_plundered days = 14600 } #40 Years
 				}
+				NOT = { tag = ROOT }
 			}
 		}
 	}
@@ -121,7 +122,6 @@ country_event = {
 		name = army_professionalism_events.1.c #Such are the rules of warfare
 		trigger = {
 			NOT = {
-				has_dlc = "Emperor"
 				FROM = {
 					is_capital = yes
 					owned_by = PAP
@@ -280,9 +280,9 @@ province_event = {
 	option = {
 		name = army_professionalism_events.3.a #Barbarians!
 		trigger = {
-			NOT = { 
-				owner = { tag = PAP }
-				has_dlc = "Emperor"
+			OR = {
+				owner = { NOT = { tag = PAP } }
+				NOT = { has_dlc = "Emperor" }
 			}
 		}
 		add_devastation = 100

@@ -3,6 +3,12 @@ country_decisions = {
 	move_the_court_to_versailles = { #1356 - Changed Tech
 	
 		potential = {
+			NOT = { 
+				OR = {
+					has_dlc = "Emperor"
+					has_dlc = "Leviathan"
+				}
+			}
 			tag = FRA
 			normal_or_historical_nations = yes
 			OR = {
@@ -138,10 +144,7 @@ country_decisions = {
 			culture_group = french
 			religion = catholic
 			owns_or_non_sovereign_subject_of = 184 # Orleans
-			OR = {
-				current_age = age_of_discovery
-				#
-			}
+			current_age = age_of_discovery
 		}
 		allow = {
 			owns_or_non_sovereign_subject_of = 183 # Paris

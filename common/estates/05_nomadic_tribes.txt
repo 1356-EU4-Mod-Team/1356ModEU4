@@ -3,37 +3,39 @@ estate_nomadic_tribes = {
 
 	# If true, country will get estate
 	trigger = {
-		if = {
-			limit = {
-				is_nomad = no
-			}
-			OR = {
-				has_reform = fortify_structure_of_the_tribe_tribal
-				has_reform = tribal_federation_ilkhan_reform
-			}	
-		}	
-		if = {
-			limit = {
-				is_nomad = yes
-			}
-			OR = {
-				has_reform = steppe_horde
-				has_reform = mountain_khanate_chagatai
-				has_reform = golden_horde_khanate
-				has_reform = great_mongol_state_reform
-			}	
-		}		
+		# if = {
+			# limit = {
+				# is_nomad = yes
+			# }
+			# OR = {
+				# has_reform = steppe_horde
+				# has_reform = mountain_khanate_chagatai
+				# has_reform = golden_horde_khanate
+				# has_reform = great_mongol_state_reform
+			# }	
+		# }		
 		has_dlc = "The Cossacks"
-		NOT = { has_government_attribute = disables_nomadic_tribes }
-		NOT = { has_country_flag = disables_nomadic_tribes_flag }
+		NOT = { has_government_attribute = disables_estate_nomadic_tribes }
+		NOT = { has_country_flag = disables_estate_nomadic_tribes_flag }
 		OR = { 
 			has_country_modifier = enable_estate_nomadic_tribes_modifier 
-			has_government_attribute = enables_nomadic_tribes
-			has_country_flag = enables_nomadic_tribes_flag
+			has_government_attribute = enables_estate_nomadic_tribes
+			has_country_flag = enables_estate_nomadic_tribes_flag
+			OR = {
+				has_reform = fortify_structure_of_the_tribe_tribal
+				has_reform = tribal_federation_ilkhan_reform	
+			}	
 			AND = {
+				OR = {
+					AND = {
+						is_nomad = yes
+						is_colonial_nation = no
+					}
+					has_unlocked_estate = { estate = estate_nomadic_tribes }
+				}
 				NOT = { has_government_attribute = is_merchant_republic }
 				NOT = { government = native }
-				NOT = { has_reform = siberian_tribe }
+				#NOT = { has_reform = siberian_tribe }
 				NOT = { has_reform = veche_republic }
 				NOT = { has_government_attribute = is_pirate_republic_reform }
 				NOT = { has_reform = cossacks_reform }
@@ -53,7 +55,7 @@ estate_nomadic_tribes = {
 	}
 	country_modifier_neutral = {
 		manpower_recovery_speed = 0.2
-		global_unrest = -2
+		global_unrest = -1
 	}	
 	country_modifier_angry = {
 		horde_unity = -4
@@ -107,6 +109,12 @@ estate_nomadic_tribes = {
 		estate_nomadic_tribes_tribal_host
 		estate_nomadic_tribes_primacy_to_the_bannermen
 		estate_nomadic_tribes_command_of_the_military
+		estate_nomadic_tribes_autonomy_of_the_tribes
+		estate_nomadic_tribes_freedom_of_the_steppes
+		estate_nomadic_tribes_grant_military_leadership
+		estate_nomadic_tribes_military_service
+		estate_nomadic_tribes_ensure_tribal_loyalty
+		estate_nomadic_tribes_secured_succession
 	}
 
 	agendas = {

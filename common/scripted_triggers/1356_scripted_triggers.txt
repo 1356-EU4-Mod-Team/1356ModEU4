@@ -122,3 +122,15 @@ has_dip_advisor_5 = {
 		}
 	}
 }
+
+
+is_a_horde_nation_1356 = {
+	OR = {
+		has_reform = steppe_horde
+		#has_reform = tribal_federation
+		has_reform = mountain_khanate_chagatai
+		has_reform = great_mongol_state_reform
+		has_reform = golden_horde_khanate
+		#has_reform = tribal_federation_ilkhan_reform
+	}
+}	

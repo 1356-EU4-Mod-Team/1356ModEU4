@@ -11,6 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				NOT = { exists = ORI }
 				ai = no
 			}
@@ -64,6 +68,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ORI
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			orissa_area = {
 				limit = {

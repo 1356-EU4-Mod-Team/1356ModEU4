@@ -1,5 +1,5 @@
 government = monarchy 
-add_government_reform = french_vassal_feudal_monarchy_reform
+add_government_reform = appanage_reform
 government_rank = 1
 primary_culture = cosmopolitan_french
 religion = catholic
@@ -175,7 +175,7 @@ fixed_capital = 1879 # Cannot move capital away from this province & no power co
 
 1440.1.1 = { 
 	government = monarchy
-	add_government_reform = feudalism_reform
+	add_government_reform = high_feudal_monarchy_reform
 }
 
 

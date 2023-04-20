@@ -638,24 +638,24 @@ spriteTypes = {
     }
     
     spriteType = {
-        name = "GFX_idea_marcher_lord_ideas"
-		texturefile = "gfx//interface//ideas//idea_marcher_lord_ideas.dds"
+        name = "GFX_idea_domination_ideas"
+		texturefile = "gfx//interface//ideas//idea_domination_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
     }
 
     spriteType = {
-        name = "GFX_idea_permanent_war_ideas"
-		texturefile = "gfx//interface//ideas//idea_permanent_war_ideas.dds"
+        name = "GFX_idea_professionalism_ideas"
+		texturefile = "gfx//interface//ideas//idea_professionalism_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
     }
     
     spriteType = {
-        name = "GFX_idea_royal_education_ideas"
-		texturefile = "gfx//interface//ideas//idea_royal_education_ideas.dds"
+        name = "GFX_idea_education_ideas"
+		texturefile = "gfx//interface//ideas//idea_education_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -692,4 +692,19 @@ spriteTypes = {
 		
 		effectFile = "gfx/FX/buttonstate.lua"
     }	
+	
+	## Major Thanks to the folks over at Europa Expanded!
+	## GFX_diplomacy_action_subsidies and GFX_diplomacy_action_province are the known avaliable templates that can be changed
+	spriteType = {
+		name = "GFX_diplomacy_action_province"
+		texturefile = "gfx//new_diplomatic_actions_gfx//subject_unique_interactions_icon_action.dds"
+		alwaystransparent = yes
+	}	
+	spriteType = {
+		name = "GFX_cb_domination_idea_subjugate"
+		texturefile = "gfx/interface/casus_bellis/cb_vassalize_mission.tga"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
 }

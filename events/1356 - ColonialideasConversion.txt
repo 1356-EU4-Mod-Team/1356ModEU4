@@ -11,8 +11,11 @@ country_event = { # Hidden event that checks flags for a nation then triggers a 
 	hidden = yes
 
 	trigger = {
-		has_dlc = "Mandate of Heaven"
-		NOT = { current_age = age_of_feudalism }
+		# has_dlc = "Mandate of Heaven"
+		OR = {
+			NOT = { current_age = age_of_feudalism }
+			is_year = 1435 
+		}	
 		OR = {
 			has_idea_group = settlement_ideas_1356
 			has_idea_group = navigation_ideas_1356
@@ -136,12 +139,7 @@ country_event = { # Converts Ideas earlier for people with Mandate of heaven - S
 	is_triggered_only = yes
 
 	trigger = {
-		has_dlc = "Mandate of Heaven"
-		NOT = { current_age = age_of_feudalism }
-		OR = {
-			has_idea_group = settlement_ideas_1356
-			has_idea_group = navigation_ideas_1356
-		}	
+		always = yes
 	}	
 
 	option = { # Converts and assigns Ideas accordinly
@@ -150,6 +148,78 @@ country_event = { # Converts Ideas earlier for people with Mandate of heaven - S
 		custom_tooltip = idea_conversion_note
 		custom_tooltip = old_idea_progress_in_new_idea
 		custom_tooltip = modifiers_will_unlock_settle_nav
+		###
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_check
+			}	
+			remove_idea_group = navigation_ideas_1356
+			add_idea_group = exploration_ideas
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_1_check
+			}	
+			add_idea = quest_for_the_new_world
+			create_explorer = { tradition = 80 }
+			create_conquistador = { tradition = 80 }
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_2_check
+			}	
+			add_idea = colonial_ventures
+			add_splendor = 100
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_3_check
+			}	
+			add_idea = free_colonies
+			add_country_modifier = {
+				name = colonial_global_tarrifs_permabuff
+				duration = -1
+			}	
+		}
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_4_check
+			}	
+			add_idea = overseas_exploration
+			add_mercantilism = 10
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_5_check
+			}	
+			add_idea = land_of_opportunity
+			add_country_modifier = {
+				name = colonial_sailor_buff_25
+				duration = 18250
+			}				
+		}	
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_6_check
+			}	
+			add_idea = factories
+			add_country_modifier = {
+				name = colonial_tresure_fleet_buff
+				duration = -1
+			}		
+		}
+		if = {
+			limit = {
+				has_country_flag = navigation_ideas_7_check
+			}	
+			add_idea = global_empire	
+			add_country_modifier = {
+				name = colonial_navigation_legacy
+				duration = -1
+			}					
+			set_country_flag = invested_in_a_early_colonial_idea
+		}	
+		#### Settlement Upgrades
 		if = {
 			limit = {
 				has_country_flag = settle_ideas_check
@@ -171,7 +241,7 @@ country_event = { # Converts Ideas earlier for people with Mandate of heaven - S
 			add_idea = additional_merchants
 			add_country_modifier = {
 				name = colonial_religious_schools
-				duration = 7300
+				duration = -1
 			}	
 		}	
 		if = {
@@ -181,14 +251,14 @@ country_event = { # Converts Ideas earlier for people with Mandate of heaven - S
 			add_idea = faster_colonists
 			add_country_modifier = {
 				name = colonial_settler_boost
-				duration = 3650
+				duration = 9125
 			}			
 		}
 		if = {
 			limit = {
 				has_country_flag = settle_idea_4_check
 			}	
-			add_idea = factories
+			add_idea = vice_roys
 		}	
 		if = {
 			limit = {
@@ -201,9 +271,9 @@ country_event = { # Converts Ideas earlier for people with Mandate of heaven - S
 				has_country_flag = settle_idea_6_check
 			}	
 			add_idea = general_colonization_law
-			add_country_modifier = {
+			add_country_modifier = { # made into 15% tax
 				name = colonial_tax_boost_24
-				duration = 3650
+				duration = 18250
 			}			
 		}
 		if = {
@@ -213,80 +283,8 @@ country_event = { # Converts Ideas earlier for people with Mandate of heaven - S
 			add_idea = competetive_merchants
 			add_country_modifier = {
 				name = colonial_natives_bonus_uprising_assimilation
-				duration = 9125
+				duration = 18250
 			}	
-			set_country_flag = invested_in_a_early_colonial_idea
-		}
-		###
-		if = {
-			limit = {
-				has_country_flag = navigation_ideas_check
-			}	
-			remove_idea_group = navigation_ideas_1356
-			add_idea_group = exploration_ideas
-		}	
-		if = {
-			limit = {
-				has_country_flag = navigation_ideas_1_check
-			}	
-			add_idea = quest_for_the_new_world
-			add_country_modifier = {
-				name = colonial_free_leader
-				duration = 5475
-			}	
-			create_explorer = { tradition = 75 }
-			create_conquistador = { tradition = 75 }
-		}	
-		if = {
-			limit = {
-				has_country_flag = navigation_ideas_2_check
-			}	
-			add_idea = colonial_ventures
-			add_splendor = 100
-		}	
-		if = {
-			limit = {
-				has_country_flag = navigation_ideas_3_check
-			}	
-			add_idea = overseas_exploration
-			add_country_modifier = {
-				name = colonial_global_tarrifs_permabuff
-				duration = -1
-			}	
-		}
-		if = {
-			limit = {
-				has_country_flag = navigation_ideas_4_check
-			}	
-			add_idea = land_of_opportunity
-			add_splendor = 100
-		}	
-		if = {
-			limit = {
-				has_country_flag = navigation_ideas_5_check
-			}	
-			add_idea = vice_roys
-			add_sailors = 1000
-			add_country_modifier = {
-				name = colonial_sailor_buff_25
-				duration = 9125
-			}				
-		}	
-		if = {
-			limit = {
-				has_country_flag = navigation_ideas_6_check
-			}	
-			add_idea = free_colonies
-			add_country_modifier = {
-				name = colonial_tresure_fleet_buff
-				duration = 36500
-			}		
-		}
-		if = {
-			limit = {
-				has_country_flag = navigation_ideas_7_check
-			}	
-			add_idea = global_empire	
 			set_country_flag = invested_in_a_early_colonial_idea
 		}		
 	}

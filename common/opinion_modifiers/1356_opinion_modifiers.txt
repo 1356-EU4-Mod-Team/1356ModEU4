@@ -162,5 +162,17 @@ supported_ruthenian_independence_from_GLH = {
 }
 
 
+1356_is_a_puppet_state = {
+	opinion = 25
+}	
 	
+regional_hegemon_ambition = {
+	opinion = -200
+}	
+
+
+# Dynamic Subject Colors
 	
+subject_adopted_my_regalia_colors = {
+	opinion = 5
+}	

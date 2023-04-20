@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = earldom_reform
+add_government_reform = tanistry_reform
 government_rank = 1
 technology_group = western
 primary_culture = irish
@@ -29,7 +29,7 @@ capital = 4378	# Kingdom of Desmond
 
 # 1440.1.1 = {
 	# government = monarchy
-	# add_government_reform = earldom_reform
+	# add_government_reform = tanistry_reform
 # }
 
 1469.1.1 = {

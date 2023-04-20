@@ -14,6 +14,11 @@
  TES_ideas_bonus: "Thessalian Ambition"
  
  # Decisions
+ 
+ russia_claim_unifying_candidate_title: "Claim Region Unifying Candidate @RUS (Russia)"
+ russia_claim_unifying_candidate_desc: "We will be the ones who unifies our people's into the nation of Russia!"
+ 
+ 
  make_adrianople_main_city_title: "Move Court to Adrianople"
  make_adrianople_main_city_desc: "The once mighty Roman city of Adrianople is within striking distance of the glorious city of Constantinople. While the House of Osman home has been in Anatolia, securing Adrianople and relocating the court there would greatly bolster our legitimacy as the successors of the Sultanate of Rûm."
  ottoman_anatolian_conslidation_ayd_title: "Conslidation of Anatolia (Aydin)"
@@ -73,9 +78,39 @@
  recruit_sixty_tradition_general_title: "Recruit an Elite General"
  recruit_sixty_tradition_general_desc: "Send your Marshal to recruit an elite General. This action can only be taken once every 15 years."
  
+ 
+ designiate_scribe_national_focus_title: "Designate Scribe National Focus"
+ designiate_scribe_national_focus_desc: "Issue a task to the scribes of the court to focus on an important matter of the state. This decision can only be taken every 25 years."
+ designiate_military_academia_focus_title: "Warfare Focus of the Military Academia"
+ designiate_military_academia_focus_desc: "Issue a focus on a specific area of Warfare for the Military Academia. This decision can only be taken every 25 years."
+ recruit_professional_general_idea_decision_title: "Promote a Promising General"
+ recruit_professional_general_idea_decision_desc: "Promote a promising general who has demonstrated himself in combat. This decision can only be taken every 20 years."
+ 
+ 
+ 
  # Modifiers
  death_note_modifier: "Marked for Death"
  death_note_modifier_desc: "This country, by 'mysterious means' has been marked for death. (Moddingway?)"
+ 
+ regional_unifying_candidate_lucky_modifier: "Regional Lucky Nation"
+ regional_unifying_candidate_lucky_modifier_desc: ""
+ 
+ tutored_heir: "Recently Advisors Tutored Heir"
+ tutored_heir_desc: ""
+ 
+ hired_sixty_general: "Recently Recruited 60 Tradition General"
+ hired_sixty_general_desc: ""
+ 
+ remove_high_feudal_policies: "Issued Edict of Policy Reform"
+ remove_high_feudal_policies_desc: "This nation is currently reforming from High Feudal Policies and is unable to take any other policies while this modifier is active"
+ 
+ remove_high_feudal_policies_title: "Edict of Policy Reform"
+ remove_high_feudal_policies_desc: "Issue an Edict, reforming us away from High Feudal Policies. This process will take a year to complete."
+ 
+ 
+ removes_policy_1356.1.t: "Edict of Policy Reform"
+ removes_policy_1356.1.d: "An Edict of Policy Reform Edict has been issued, reforming us away from High Feudal Policies. This process will take a year to complete."
+ removes_policy_1356.1.a: "An so the Feudal Age draws to a close"
  
  being_railroad_forbidden_wars: "Railroaded Wars"
  being_railroad_forbidden_wars_desc: "This country, by 'mysterious means' will only have wars declared under certain circumstances. Possibly the works of the mysterious figure known as Moddingway."
@@ -86,6 +121,9 @@
  ottoman_focus_on_anatolia: "Focus on Anatolia"
  ottoman_focus_on_anatolia_desc: "The House of Osman shall focus on bringing the Anatolia under Ottoman Dominion"
  
+ centralization_modifier_golden_bull: "Increased Centralization of the State"
+ centralization_modifier_golden_bull: "The country has moved towards a centralized state."
+ 
  
  new_serbian_golden_age: "New Serbian Golden Age"
  new_serbian_golden_age_desc: ""
@@ -95,6 +133,35 @@
  simeons_rebellion_buff_desc: ""
  collapse_of_the_serbian_empire_debuff: "Collapse of the Serbian Empire"
  collapse_of_the_serbian_empire_debuff_desc: ""
+ 
+ designated_scribe_focus_cooldown: "Recently Designated Scribe National Focus"
+ designated_scribe_focus_cooldown_desc: ""
+ scholarly_scribe_focus_adm: "Scribe Administrative Focus"
+ scholarly_scribe_focus_adm_desc: ""
+ scholarly_scribe_focus_dip: "Scribe Diplomatic Focus"
+ scholarly_scribe_focus_dip_desc: ""
+ scholarly_scribe_focus_mil: "Scribe Military Focus"
+ scholarly_scribe_focus_mil_desc: ""
+ 
+ designiate_military_academia_focus_cooldown: "Recently Designated Military Academia Focus"
+ designiate_military_academia_focus_cooldown_desc: ""
+ recruited_hundred_tradition_general_professional_ideas: "Recently Promoted a Promising General"
+ recruited_hundred_tradition_general_professional_ideas_desc: ""
+ military_academia_focus_fire: "Academia Focus on Fire Warfare"
+ military_academia_focus_shock: "Academia Focus on Shock Warfare"
+ military_academia_focus_manuever: "Academia Focus on Maneuverability"
+ military_academia_focus_siege: "Academia Focus on Siege Warfare"
+ 
+ puppet_state_subject_bonus: "Puppet State Subject"
+ 1356_is_a_puppet_state: "Puppet State"
+ 
+ # Music Channels
+ CHANNEL_music_eu3_soundtrack: "Europa Universalis III: General Soundtrack"
+ CHANNEL_music_1356_songs: "1356 Main Theme: In Taverns and Great Halls"
+ CHANNEL_music_eu3_music_of_the_world: "Europa Universalis III: Music of the World" 
+ in_taverns_and_great_halls: "In Taverns and Great Halls"
+ 
+ the_voyage_main_theme: "The Voyage"
  
  
  
@@ -148,6 +215,15 @@
  
  NO_WAR_TUR_BYZ_EARLY: "The Ottomans may not manually attack Byzantium until 1405"
  
+ 
+ ALL_COUNTRIES_WITH_100_DEV:0 "All Neighbors with less than §Y100§! Total Development."
+ 
+ take_capital_vassalize_domination_idea:0 "Take the capital and subjugate them"
+ take_capital_vassalize_domination_idea_desc:0 "War goal is to take the capital."
+ cb_domination_idea_subjugate:0 "Subjugation"
+ cb_domination_idea_subjugate_desc:0 "They are a weaker neighbor. We should bring them under our direct dominion."
+ 
+ 
  ## New Nations
  X02: "Moravian Serbia"
  X02_ADJ: "Moravian Serbian"
@@ -165,9 +241,16 @@
  BULGARIAN_EMPIRE_NAME: "Bulgarian Empire"
  BULGARIAN_EMPIRE_NAME_ADJ: "Bulgarian"
  
- # New Reforms
+ # New Reforms and Governments Mech
+ 
+ mechanic_need_crownland_to_annex_high_feudal_yes: "Can only §YDiplomatically Annex§! subjects while having at least §Y30%§! Crown Land\n§YDiplomatic Integration§! of Personal Unions and other unique subjects is allowed regardless of Crown Land"
+ mechanic_nobility_loyalty_hit_on_integration_high_feudal_yes: "Diplomatic Annexations reduce the loyalty of the Nobility by §R20.0%§!"
+ mechanic_may_maintain_high_feudal_policies_post_feudalism_yes: "Prevents gaining the §YReliance on High Feudal Policies§! modifier for maintaining High Feudal Policies after embracing the §YRenaissance§! Institution"
+ NEEDS_30_CROWNLAND_TT_HIGH_FEUDAL: "You need at least §Y30%§! Crown Land in order to annex this subject."
+ 
+ 
  serbian_princedom_reform: "Serbian Princedom"
- serbian_princedom_reform_desc: ""
+ serbian_princedom_reform_desc: "Ruled by the noble caste throughout Serbia, the Princedoms wielded great influence during the weak reign of Stefan Uros V. When the Serbian empire shattered in 1371, the various Princedoms, while still owing allegiance to the ruler of Serbia, became independent realms in all but name."
  bulgarian_tsardom_reform_old: "Bulgarian Tsardom"
  bulgarian_tsardom_reform_old_desc: ""
  
@@ -195,6 +278,9 @@
  # Opinions
  1356_past_transgressions: "Past Transgressions"
  1356_past_cordial_relations: "Cordial Relations"
+ 
+ regional_hegemon_ambition: "Regional Hegemon"
+ 
  
  # Events
  serbiancollapse.1.t: "The Serbian Civil War"
@@ -226,7 +312,20 @@
  court_politics.34.aaa: "It is a $MONARCHTITLE$ duty to learn the Arts of Warfare"
  court_politics.34.bbb: "It is a $MONARCHTITLE$ duty to learn the Arts of Warfare"
  
+ new_ideas_events.51.t: "Military Academia Designation"
+ new_ideas_events.51.desc: "The time has come to designate a focus for the Military Academia to study. To what aspect of Warfare should they focus on?"
+ new_ideas_events.51.a: "Designate a Focus on Fire Warfare"
+ new_ideas_events.51.b: "Designate a Focus on Shock Warfare"
+ new_ideas_events.51.c: "Designate a Focus on Maneuverability"
+ new_ideas_events.51.d: "Designate a Focus on Siege Warfare"
  
+ new_ideas_events.50.t: "National Focus of the Scribes"
+ new_ideas_events.50.desc: "The Scribes have been tasked with managing an important aspect of the state. To what matter should they oversee?"
+ new_ideas_events.50.a: "Task the Scribes with managing Administrative affairs"
+ new_ideas_events.50.b: "Task the Scribes with managing Diplomatic affairs"
+ new_ideas_events.50.c: "Task the Scribes with managing Military affairs"
+ 
+ court_politics.100.t: "Former Subject Nobility Outraged"
  
  
  # Tooltips
@@ -234,6 +333,11 @@
  serbian_collapse_tooltip_2.tt: "In the Serbian Civil War, you cannot directly annex provinces, but instead must use the §Y‘Claim the Serbian Throne’§! Peace Treaty to fully annex @SER §YSerbia§!. Be warned as @SER §YSerbia§! also has the §Y‘Crush Simeon’s Rebellion’§!  Peace Treaty and will instead attempt to §Rannex us§! if they are victorious."
  serbian_collapse_tooltip_3.tt: "Gains Claims on all @BYZ §YByzantine§! Provinces\nGains a §YRestoration of Union§! Casus Belli against @BYZ §YByzantium§!\nAdopts the @SER §YSerbian Tsardom§! Government Reform and renames to the §YSerbian Empire§!\n"
  serbian_collapse_tooltip_5.tt: "Prevents the §YCollapse of the Serbian Empire§! Disaster"
+ 
+ NOT_TUTOR_HEIR_THIS_RULER: "Has §RNOT§! requested an Advisor tutor an heir in the last §Y15§! years"
+ only_one_heir_education.tt: "In the event our Heir §YDies§!, we will unable to tutor a §OSecondary Heir§! for §Y15§! years.\nThe new Heir must also be within the §Yage§! of §Y10-15!§!"
+ 
+ HAS_NOT_RECRUITED_GENERAL_15: "Has §RNOT§! recruited a general through this decision within the last 15 years"
  
  
  has_adm_advisor_4_tooltip:0 "Is employing an §YAdministrative§! Advisor with at least Skill §Y4§!."
@@ -250,7 +354,95 @@
  HAS_NOT_RECRUITED_GENERAL_15: "Has §RNOT§! recruited a general through this decision within the last 15 years"
 
  
+ centralize_power_to_state_gov_reform_tt: "If we have the §JHigh Feudal Monarchy§! or §JElective Feudal Monarchy§! Government Reform, it will be upgraded to §YFeudal Nobility§! or §YElective Monarchy Reform§!\n"
+ 
  # Flags
  1356_serbian_empire_restored: "The Serbian Empire has been Restored"
  1356_serbian_empire_collapse: "The Serbian Empire has Collapsed"
+ 
+ 
+ 
+ # National ideas
+ 
+ domination_ideas:0 "Domination Ideas"
+ domination_ideas_bonus:0 "Full Domination Focus"
+ education_ideas:0 "Erudite Ideas"
+ education_ideas_bonus:0 "Full Erudite Focus"
+ professionalism_ideas:0 "Professional Ideas"
+ professionalism_ideas_bonus:0 "Full Professional Focus"
+ 
+ diplomatic_foreign_bank_access: "Foreign Bank Access"
+ diplomatic_foreign_bank_access_desc: "Our skilled diplomats have done well to build cordial relations with some of the most influential banks on the continent. Should there come a time in which we must petition their aid, they will surely assist us."
+ innovative_land_works: "Land Work Innovations"
+ innovative_land_works_desc: "Throughout the countryside, there are plenty of areas worth establishing a village, though the terrain can prove difficult to master. We should patronage the finest thinkers throughout our region in order to lay down the foundations for which we may finally settle these areas." 
+ 
+ 
+ domination_adm_idea_1: "Erudite Advisors"
+ domination_adm_idea_1_desc: "In order for the state to run effectively, we must employ the most talented and gifted individuals. Those who have a scholarly background have proven effective in the past, thus we should first look there.\n\n§YErudite Ideas§! does §RNOT§! offer Policies with other Idea Groups!\n\n§YMechanic§!: Unlocks a Decision to recruit a §YLevel 3§! §Advisor with §G-50.0%§! Discount. This Advisor choice can be any of the Base Game Advisors. This decision can only be taken every §Y20§! years.\n\nFrom §YErudite Advisors§!, we gain the following:"
+ domination_adm_idea_3: "Careful Rule"
+ domination_adm_idea_3_desc: "It is no simple matter to rule over a large swathe of people. We should adopt a more methodical and pragmatic approach to our subjects, opposed to recklessness that breeds rebellion."
+ domination_adm_idea_4: "Pragmatic Succession"
+ domination_adm_idea_4_desc: "While a popular Monarch’s reign would undoubtedly bring a Golden Age, that Golden Age can easily be undone by the bickering of their successors. In order to ensure a stable succession of power, allow the Scribes and Officials of the Court to formulate a robust law of succession. While it's likely there will still be challenges to a new Monarch in time, they will possess the strongest claim."
+ domination_adm_idea_5: "Scholars of the Future"
+ domination_adm_idea_5_desc: "Throughout the many towns and cities throughout the realm, there exist areas in need of a center of learning. While the largest cities will remain home to the most prestigious and rigorous of colleges, developing these smaller areas will grow the availability of enlightened figures over the decades and centuries."
+ domination_adm_idea_6: "Local Scribes"
+ domination_adm_idea_6_desc: "Ensure that all the various governorships throughout the state are provided a court scribe. As the state grows more centralized, this will improve the efficiency in which the state can maintain a robust bureaucracy."
+ domination_adm_idea_7: "Expansion of the Advisory Council"
+ domination_adm_idea_7_desc: "In order to ensure the State has the best to offer in terms of advisors, it should invest in expanding the bureaucracy to include a more encompassing board of advisors. While this will also produce more agrees of disagreements, it also brings with it an expansion to the state’s focus on affairs.\n\n§YMechanic§!: Unlocks a Decision to designate a §YScribe National Focus§!. This will increase one of the three §YPower Attributes§! by §G+1.0§!. Scribe National Focus designations can be swapped out every §Y25§! years.\n\nFrom §YExpansion of the Advisory Council§!, we gain the following:" 
+ 
+ 
+  
+ domination_mil_idea_1: "Lessons of War"
+ domination_mil_idea_1_desc: "Every battle our army participates in should be recorded and studied. Both Victory and Defeat offer valuable lessons in the future battles to come.\n\n§YProfessional Ideas§! does §RNOT§! offer Policies with other Idea Groups!\n"
+ domination_mil_idea_2: "Tactical Approach"
+ domination_mil_idea_2_desc: "No matter the size of our army, if it lacks a cohesive plan, it will fall apart the moment battle comes. We should seek to refine our tactical approach to warfare." 
+ domination_mil_idea_3: "Art of Strategy"
+ domination_mil_idea_3_desc: "While there can be countless engagements throughout war, few can prove to be a decisive edge needed to gain the upper gain. When the time comes, we must know to press forward to achieve a resounding victory.\n\n§YMechanic§!: Unlocks a Decision to Recruit a free §G100§! Army Tradition General. This decision can only be taken every §Y20§! years.\n\nFrom §YArt of Strategy§!, we gain the following:"
+ domination_mil_idea_4: "Integrated Conscription"
+ domination_mil_idea_4_desc: "Expand the upper levels of our military structure to encompass figures from our assimilated population. This also brings with it the opportunity of having more loyal and distinguished generals."
+ domination_mil_idea_5: "Military Academia"
+ domination_mil_idea_5_desc: "Laid the foundation for a National Military Academy in which only the most proven individuals can participate.\n\n§YMechanic§!: Unlocks a Decision to designate a §YMilitary Academia Focus§!. This will allow us to increase one of the four §YLeader Pips§! permanently until we decide to designate another Academia Focus. Military Academia Focuses can be swapped out every §Y25§! years.\n\nFrom §YMilitary Academia§!, we gain the following:"
+ domination_mil_idea_6: "Improved Siegecraft"
+ domination_mil_idea_6_desc: "The introduction of the Cannon completely redefined siege warfare. Now is the time we invest further and devise more mechanisms in order to make more effective use of these weapons of war."
+ domination_mil_idea_7: "A Standing Army"
+ domination_mil_idea_7_desc: "As the nations of the world slowly move from the levies of the Feudal age to a more professional standing army, our nation has made great strides to achieve this goal. As such, our army will be one of the most professional in this new age!" 
+ 
+ 
+ domination_dip_idea_1: "War Justification"
+ domination_dip_idea_1_desc: "If we are to establish geopolitical dominance, we must justify our reasons for war. Eliminating one foe, will only create two more if we become over ambitious.\n\n§YDomination Ideas§! does §RNOT§! offer Policies with other Idea Groups!\n" 
+ domination_dip_idea_2: "Seamless Integration"
+ domination_dip_idea_2_desc: "The incorporation of new lands into the growing realm must be executed with precision. Formulating a detailed plan to incorporate new territories will make the process of doing so more efficient as the realm borders expand."
+ domination_dip_idea_3: "Claim States"
+ domination_dip_idea_3_desc: "It is not enough to simply go for a piece of territory. For us to achieve greater hegemony we should instead look to incorporate lands on a regional basis instead.\nPermanent §YSubjugation§! Casus Belli against neighboring nations with less than §Y100§! Total Development."
+ domination_dip_idea_4: "Regional Autonomy"
+ domination_dip_idea_4_desc: "For far reaching territories that can prove difficult for the government to manage directly, we should instead grant regional autonomy to these regions. This will also relieve a major burden on the state."
+ domination_dip_idea_5: "Spheres of Influence"
+ #domination_dip_idea_5_desc: "In order for us to succeed as a major power, we should seek to establish spheres of influence, where our power is the only recognized one. \n\n§YMechanic§!: May convert Vassals and Marches subjects into §YPuppet States§! if they have more than §Y150§! Total Development.\n§YPuppet States§! do not consume a Diplomatic Relations slot and can be called into wars at the cost of Opinion\n\nPuppet States also gain the following bonuses:\nLand Force Limit: §G+5.00§!\nNaval Force Limit §G+5.00§!\nYearly Tax Income: §G+48.00§!\n\nFrom §YSpheres of Influence§!, we gain the following:"
+ domination_dip_idea_5_desc: "In order for us to succeed as a major power, we should seek to establish spheres of influence, where our power is the only recognized one. \n\n§YMechanic§!: May convert Vassals and Marches subjects into §YPuppet States§! if they have more than §Y150§! Total Development.\n§YPuppet States§! do not cost a Diplomatic Relations slot.\n\nPuppet States also gain the following bonuses:\nLand Force Limit: §G+5.00§!\nNaval Force Limit §G+5.00§!\nYearly Tax Income: §G+48.00§!\n\nFrom §YSpheres of Influence§!, we gain the following:" 
+ domination_dip_idea_6: "Dominate Negotiations"
+ domination_dip_idea_6_desc: "When negotiating peace, we should seek to gain as much as we can at the negotiating table. Should an enemy be soundly defeated, they will have no choice but to comply with our righteous demands." 
+ domination_dip_idea_7: "The Absolutism"
+ domination_dip_idea_7_desc: "A Leader who brings greatness to his nation should rule without question. Truly they have been blessed by the Heavens with a Divine right to rule!"  
+ 
+ 
+ # New Subject Interaction Category
+ DIPLOMACYACTION_CATEGORY_province:0 "Subject actions"
+ 
+ convert_subject_into_puppet_state_1356: "Establish Puppet State"
+ convert_subject_into_puppet_state_1356_title: "Establish Puppet State"
+ convert_subject_into_puppet_state_1356_desc:  "§Y[From.GetName]§! will become a Puppet State. As a Puppet State, §Y[From.GetName]§! cannot be annexed but instead has to integrated like a Personal Union.\n\nWhile a Puppet State §Y[From.GetName]§! will not cost §Y[Root.GetName]§! a diplomatic slot and will join all wars.\nAs a Puppet State, §Y[From.GetName]§! will recieve the following bonuses:\nLand Force Limit: §G+5.00§!\nNaval Force Limit §G+5.00§!\nYearly Tax Income: §G+48.00§!"
+ convert_subject_into_puppet_state_1356_tooltip: "Elevate a powerful vassal or march to the status of a Puppet State. Puppet States do not cost a diplomatic slot and are more loyal than vassals and marches."
+ 
+ 
+ 
+ # New Subject Types
+ 
+ puppet_state_domination_ideas:0 "Puppet State"
+ puppet_state_domination_ideas_long_desc:0 "A Puppet State behaves like a vassal subject, but more connected to it's overlord. Puppet States do §YNOT§! cost a diplomatic slot for their overlord."
+ puppet_state_domination_ideas_title:0 "Puppet State"
+ puppet_state_domination_ideas_title_plural:0 "Puppet States"
+ puppet_state_domination_ideas_overlord:0 "Puppet State Overlord"
+ puppet_state_domination_ideas_subject:0 "Puppet State Subject"
+ puppet_state_domination_ideas_is_our:0 "§Y$NAME$§! is our Puppet State."
+ 
  

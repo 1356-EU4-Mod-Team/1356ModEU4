@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = BYZ }
 			NOT = { exists = GRE }
 			NOT = { tag = HLR }
@@ -50,7 +54,6 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
-			owns = 151 # Constantinople
 			owns = 149	# Edirne
 			owns = 144  # Epiros
 			owns = 147	# Salonica
@@ -63,6 +66,10 @@ country_decisions = {
 			owns = 318	# Smyrna
 			owns = 1853	# Kozani
 			owns = 2296	# Biga
+			owns = 151  # Constantinople
+			151 = {		# Constantinople
+				is_state = yes
+			}
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -72,6 +79,8 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = BYZ
+			on_change_tag_effect = yes
+			restore_country_name = yes
 			if = {
 				limit = {
 					NOT = { culture_group = byzantine }

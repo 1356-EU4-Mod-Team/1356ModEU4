@@ -1,8 +1,8 @@
 # 270 Troki (1356)
 # Changes: religion
 
-owner = TAK
-controller = TAK
+owner = T5K
+controller = T5K
 religion = baltic_pagan_reformed
 culture = lithuanian
 capital = "Trakai"
@@ -13,7 +13,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 2 
 is_city = yes
-add_core = TAK
+add_core = T5K
 
 discovered_by = western
 discovered_by = eastern

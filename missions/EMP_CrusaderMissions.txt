@@ -53,6 +53,9 @@ EMP_crusader_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural conquest
+		}
 	}
 	EMP_crusader_convert_the_holy_land = {
 		icon = convert_the_holy_lands
@@ -90,6 +93,9 @@ EMP_crusader_1 = {
 				name = "kni_converted_the_holy_land"
 				duration = -1
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 }
@@ -165,6 +171,8 @@ EMP_crusader_2 = {
 			owns = 379
 		}
 		effect = {
+			custom_tooltip = crusader_can_always_reform_jerusalem
+			set_country_flag = can_form_jerusalem_later_too
 			if = {
 				limit = {
 					religion = catholic
@@ -178,6 +186,9 @@ EMP_crusader_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 	EMP_crusader_syria = {
@@ -251,6 +262,9 @@ EMP_crusader_2 = {
 				add_permanent_claim = ROOT
 			}			
 		}
+		ai_weight = {
+			factor = 500	#Natural conquest
+		}
 	}
 	EMP_crusader_egypt = {
 		icon = the_land_of_moses
@@ -275,7 +289,6 @@ EMP_crusader_2 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = crusader_egypt_tt
-				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 15
 					region = egypt_region
@@ -303,6 +316,9 @@ EMP_crusader_2 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural conquest
+		}
 	}
 	EMP_crusader_ark_of_the_covenant = {
 		icon = ark_of_the_covenant
@@ -316,6 +332,9 @@ EMP_crusader_2 = {
 		}
 		effect = {
 			country_event = { id = knights_missions.4 }
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}	
 }
@@ -368,7 +387,6 @@ EMP_crusader_3 = {
 				papal_influence = 50
 			}
 			else = {
-			# Audax Validator "." Ignore_1007
 				grown_by_development = 10
 			}
 		}
@@ -404,7 +422,6 @@ EMP_crusader_3 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = crusader_greece_tt
-				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					OR = {
@@ -443,6 +460,9 @@ EMP_crusader_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 	EMP_crusader_latin_empire = {
@@ -510,6 +530,9 @@ EMP_crusader_3 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural conquest
+		}
 	}
 	EMP_crusader_catholic = {
 		icon = shield_of_christendom
@@ -521,7 +544,6 @@ EMP_crusader_3 = {
 				limit = {
 					religion = catholic
 				}
-				# Audax Validator "." Ignore_1007
 				curia_treasury_contribution = 5
 			}
 			else = {
@@ -802,7 +824,6 @@ EMP_crusader_4 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = cruader_piracy_tt
-				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 10
 					region = maghreb_region
@@ -877,7 +898,6 @@ EMP_crusader_5 = {
 			}
 		}
 		effect = {
-		# Audax Validator "." Ignore_1007
 			create_conquistador = {
 				tradition = 100
 				culture = scottish

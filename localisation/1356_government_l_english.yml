@@ -9,8 +9,6 @@
  elective_feudal_monarchy_desc: "An elective feudal monarchy is an early monarchy ruled by an elected monarch, in contrast to a hereditary monarchy in which the office is automatically passed down as a family inheritance."
  french_vassal_feudal_monarchy_reform: "Feudal Ducal Monarchy"
  french_vassal_feudal_monarchy_reform_desc: "The Subjects under a King typically had a different way of diplomacy then their overlord. It was much harder to make alliances, or even royal marriages."
- barbary_sultanate_reform: "Barbary Sultanate"
- barbary_sultanate_reform_desc: ""
  ilkhanate_government_tribal_reform: "Ilkhanate Government (Tribal)"
  ilkhanate_government_tribal_reform_desc: ""
  timurid_government_absolute_reform: "Timurid Government (Absolute)"
@@ -56,8 +54,6 @@
  archduchy_desc: "An Austrian creation, an archduchy is similar to a duchy, but with more privleges and a more prestigious standing. Austria is the biggest example of an archduchy, but there were a couple others in history."
  byzantine_empire_gov: "Theme System"
  byzantine_empire_gov_desc: "The Theme System was the Byzantine method of governing their territories."
- barbary_sultanate: "Barbary Sultanate"
- barbary_sultanate_desc: "The Barbary Sultantes typically consisted of the nations in North Africa, many of them funded Barbary Corsairs to raid and pillage naval vessals in the Mediterranean Sea."
  ilkhanate_government_tribal: "Ilkhanate Government (Tribal)"
 
  timurid_government_absolute: "Timurid Government (Absolute)"

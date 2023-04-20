@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = french_vassal_feudal_monarchy_reform
+add_government_reform = appanage_reform
 government_rank = 1
 technology_group = western
 primary_culture = cosmopolitan_french
@@ -149,7 +149,7 @@ add_historical_friend = PRO
 
 1440.1.1 = { 
 	government = monarchy
-	add_government_reform = feudalism_reform
+	add_government_reform = high_feudal_monarchy_reform
 }
 
 1454.9.10 = {

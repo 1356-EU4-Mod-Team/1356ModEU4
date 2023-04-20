@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = high_feudal_monarchy_reform
 government_rank = 1
 technology_group = eastern
 primary_culture = serbian
@@ -177,7 +177,7 @@ fixed_capital = 138 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1440.1.1 = { add_government_reform = feudalism_reform }
+1440.1.1 = { add_government_reform = high_feudal_monarchy_reform }
 
 1456.12.25 = {
 	monarch = {

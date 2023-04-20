@@ -2,8 +2,8 @@
 
 graphical_culture = easterngfx
 
-#color = { 166  72  57 } # For 1.35 for change_country_color
-color = { 255 220 146 }  # Serbian Empire Color
+#color = { 166  72  57 } # 
+color = { 255 220 146 }  # Serbian Empire Color # For 1.35 for change_country_color
 
 revolutionary_colors = { 13  0  5 }
 

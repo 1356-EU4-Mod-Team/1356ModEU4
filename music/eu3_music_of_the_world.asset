@@ -1,0 +1,84 @@
+music = {
+	name = "A City"
+	file = "eu3_music_of_the_world/a city.ogg"
+}
+music = {
+	name = "Africa"
+	file = "eu3_music_of_the_world/africa.ogg"
+}
+music = {
+	name = "Debt"
+	file = "eu3_music_of_the_world/debt.ogg"
+}
+music = {
+	name = "Decisions"
+	file = "eu3_music_of_the_world/decisions.ogg"
+}
+music = {
+	name = "English"
+	file = "eu3_music_of_the_world/english.ogg"
+}
+music = {
+	name = "Europe"
+	file = "eu3_music_of_the_world/europe.ogg"
+}
+music = {
+	name = "Himalaya"
+	file = "eu3_music_of_the_world/himalaya.ogg"
+}
+music = {
+	name = "Holy"
+	file = "eu3_music_of_the_world/holy.ogg"
+}
+music = {
+	name = "Impressive"
+	file = "eu3_music_of_the_world/impressive.ogg"
+}
+music = {
+	name = "Labour"
+	file = "eu3_music_of_the_world/labour.ogg"
+}
+music = {
+	name = "Morning"
+	file = "eu3_music_of_the_world/morning.ogg"
+}
+music = {
+	name = "New Times"
+	file = "eu3_music_of_the_world/new times.ogg"
+}
+music = {
+	name = "The Royal Court"
+	file = "eu3_music_of_the_world/royal court.ogg"
+}
+music = {
+	name = "Story of a Nation"
+	file = "eu3_music_of_the_world/story of a nation.ogg"
+}
+music = {
+	name = "The Fields"
+	file = "eu3_music_of_the_world/the fields.ogg"
+}
+music = {
+	name = "The Market"
+	file = "eu3_music_of_the_world/the market.ogg"
+}
+music = {
+	name = "The Minich"
+	file = "eu3_music_of_the_world/the minich.ogg"
+}
+music = {
+	name = "The Plague"
+	file = "eu3_music_of_the_world/the plague.ogg"
+}
+music = {
+	name = "Wait"
+	file = "eu3_music_of_the_world/wait.ogg"
+}
+music = {
+	name = "War"
+	file = "eu3_music_of_the_world/war.ogg"
+}
+music = {
+	name = "Wealth"
+	file = "eu3_music_of_the_world/wealth.ogg"
+}

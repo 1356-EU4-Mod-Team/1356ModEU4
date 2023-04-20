@@ -9,12 +9,16 @@ country_decisions = {
 				tag = GLH
 				tag = ILK
 				tag = KHA #1356
+				tag = CHG #1356
+				has_reform = holy_horde_reform				
 				#was_never_end_game_tag_trigger = yes #1356
 			}
 			OR = {
 				culture_group = altaic
+				primary_culture = altaic_new 
 				culture_group = tartar
 				culture_group = mongolic_culture_group #1356
+				has_reform = holy_horde_reform				
 			}
 			NOT = { has_country_flag = mongol_empire_flag }
 			NOT = { tag = HLR }
@@ -52,11 +56,27 @@ country_decisions = {
 			}
 		}
 		allow = {
-			OR = {
-				tag = YUA
-				tag = GLH
-				tag = ILK
-				tag = KHA #1356
+			if = {
+				limit = {
+					has_reform = holy_horde_reform
+				}
+				OR = {
+					tag = YUA
+					tag = GLH
+					tag = ILK
+					tag = KHA
+					tag = CHG
+					has_reform = holy_horde_reform
+				}
+			}
+			else = {
+				OR = {
+					tag = YUA
+					tag = GLH
+					tag = ILK
+					tag = KHA
+					tag = CHG					
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = mongolia_decision_tooltip
@@ -93,7 +113,17 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 		}
 		effect = {
+			hidden_effect = {
+				set_global_flag = is_forming_the_mongol_empire
+				1 = {
+					province_event = {
+						id = passive_effects_events.13
+						days = 10
+					}
+				}
+			}
 			change_tag = MGE
+			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = {
@@ -109,7 +139,10 @@ country_decisions = {
 				dismantle_empire_of_china = yes
 			}
 			if = {
-				limit = { is_revolutionary = no }
+				limit = { 
+					is_revolutionary = no
+					NOT = { has_reform = holy_horde_reform }
+				}
 				change_government = tribal
 				add_government_reform = great_mongol_state_reform
 			}
@@ -134,6 +167,7 @@ country_decisions = {
 				tag = GLH
 				tag = MGE
 				tag = KHA #1356
+				tag = CHG #1356
 			}
 			NOT = { has_country_flag = restored_ilkhanate_decision_flag }
 			NOT = { has_mission = mission_conquer_persia_tatars }
@@ -194,7 +228,12 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				culture_group = tartar
+				primary_culture = altaic_new 
 				culture_group = altaic
 				culture_group = mongolic_culture_group #1356
 			}
@@ -226,6 +265,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ILK
+			on_change_tag_effect = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

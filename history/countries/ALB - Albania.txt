@@ -100,6 +100,7 @@ capital = 4175 # Lezhe
 # The League of Lezhe
 
 1443.3.4 = {
+	add_government_reform = league_of_lezhe_reform
 	monarch = {
 		name = "Gjergj Skanderbeg"
 		dynasty = "Kastrioti"

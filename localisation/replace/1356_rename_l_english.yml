@@ -35,6 +35,8 @@
  desc_immortal_personality:0 "This ruler is a figure of Legendary Proportions! Rulers with this trait are less likely to die by normal means."
  immortal_personality_die_desc:0 "If it bleeds, it can be killed."
  
+  fort_breaker_desc:0 "Fortifications are the bane of any expansionistic country. Even if it will take the lives of all of our men, no fort shall stand between us and our victory."
+  russian_nation_title: "Proclaim the Tsardom of Russia"
  
  PROV4702:0 "Serres"
  PROV_ADJ4702:0 "Serres"

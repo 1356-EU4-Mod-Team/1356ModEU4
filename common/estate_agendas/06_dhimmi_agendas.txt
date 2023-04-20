@@ -12,18 +12,35 @@ estate_dhimmi_hire_advisor = {
 		factor = 1
 	}
 	task_requirements = {
-		employed_advisor = {
-			category = ADM
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_dhimmi
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_dhimmi
+			}
 		}
-		is_in_deficit = no
+		else = {
+			employed_advisor = {
+				category = ADM
+			}
+			is_in_deficit = no
+		}
 	}
     task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dhimmi
+		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 10
 		}
     }
     failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
             estate = estate_dhimmi
 			desc = EST_VAL_AGENDA_DENIED
@@ -55,12 +72,27 @@ estate_dhimmi_fire_advisor = {
 		clr_country_flag = need_to_fire_adm_advisor
 	}
 	task_requirements = {
-		custom_trigger_tooltip = {
-			tooltip = fire_adm_advisor_tooltip
-			has_country_flag = just_fired_adm_advisor
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_dhimmi
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_dhimmi
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = fire_adm_advisor_tooltip
+				has_country_flag = just_fired_adm_advisor
+			}
 		}
 	}
     task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dhimmi
+		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 10
@@ -77,6 +109,8 @@ estate_dhimmi_fire_advisor = {
 		NOT = { has_country_flag = just_fired_adm_advisor }
 	}
     failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
             estate = estate_dhimmi
 			desc = EST_VAL_AGENDA_DENIED
@@ -231,35 +265,50 @@ estate_dhimmi_develop_x = {
 		province_id = event_target:agenda_province
 	}
     task_requirements = {
-		event_target:agenda_province = {
-			if = {
-				limit = {
-					root = {
-						check_variable = {
-							which = develop_x_category
-							value = 3
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_dhimmi
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_dhimmi
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				if = {
+					limit = {
+						root = {
+							check_variable = {
+								which = develop_x_category
+								value = 3
+							}
 						}
 					}
+					base_manpower = "province_mil_var"
 				}
-				base_manpower = "province_mil_var"
-			}
-			else_if = {
-				limit = {
-					root = {
-						check_variable = {
-							which = develop_x_category
-							value = 2
+				else_if = {
+					limit = {
+						root = {
+							check_variable = {
+								which = develop_x_category
+								value = 2
+							}
 						}
 					}
+					base_production = "province_dip_var"
 				}
-				base_production = "province_dip_var"
-			}
-			else = {
-				base_tax = "province_adm_var"
+				else = {
+					base_tax = "province_adm_var"
+				}
 			}
 		}
     }
     task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dhimmi
+		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 10
@@ -287,6 +336,8 @@ estate_dhimmi_develop_x = {
 		}
     }
     failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
 			if = {
 				limit = { owned_by = root }
@@ -305,241 +356,10 @@ estate_dhimmi_develop_x = {
     }
 }
 
-estate_dhimmi_build_temple_in_y = {
-	can_select = {
-		adm_tech = 6 #1356
-		any_owned_province = {
-			NOT = { religion_group = root }
-			NOT = { has_building = cathedral }
-			OR = {
-				AND = {
-					NOT = { has_building = temple }
-					num_free_building_slots = 1
-				}
-				AND = {
-					ROOT = { adm_tech = 25 } #1356
-					has_building = temple
-				}
-			}
-		}
-	}
-	selection_weight = {
-		factor = 1
-		modifier = {
-			factor = 0.65
-			NOT = {
-				any_owned_province = {
-					NOT = { religion_group = root }
-					is_state_core = root
-					base_tax = 4
-					NOT = { has_building = cathedral }
-					OR = {
-						AND = {
-							NOT = { has_building = temple }
-							num_free_building_slots = 1
-						}
-						AND = {
-							ROOT = { adm_tech = 25 } #1356
-							has_building = temple
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.2
-			any_owned_province = {
-				NOT = { religion_group = root }
-				is_state_core = root
-				base_tax = 7
-				NOT = { has_building = cathedral }
-				OR = {
-					AND = {
-						NOT = { has_building = temple }
-						num_free_building_slots = 1
-					}
-					AND = {
-						ROOT = { adm_tech = 25 } #1356
-						has_building = temple
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			NOT = {
-				crown_land_share = 15
-			}
-		}
-	}
-	pre_effect = {
-		set_variable = {
-			which = estate_church_build_temple_in_y_var
-			value = 0
-		}
-		random_owned_province = {
-			limit = {
-				NOT = { religion_group = root }
-				is_state_core = root
-				NOT = { has_building = cathedral }
-				OR = {
-					AND = {
-						NOT = { has_building = temple }
-						num_free_building_slots = 1
-					}
-					AND = {
-						ROOT = { adm_tech = 25 } #1356
-						has_building = temple
-					}
-				}
-			}
-			save_event_target_as = agenda_province
-		}
-		random_owned_province = {
-			limit = {
-				NOT = { religion_group = root }
-				is_state_core = root
-				base_tax = 4
-				NOT = { has_building = cathedral }
-				OR = {
-					AND = {
-						NOT = { has_building = temple }
-						num_free_building_slots = 1
-					}
-					AND = {
-						ROOT = { adm_tech = 25 } #1356
-						has_building = temple
-					}
-				}
-			}
-			save_event_target_as = agenda_province
-		}
-		random_owned_province = {
-			limit = {
-				NOT = { religion_group = root }
-				is_state_core = root
-				base_tax = 7
-				NOT = { has_building = cathedral }
-				OR = {
-					AND = {
-						NOT = { has_building = temple }
-						num_free_building_slots = 1
-					}
-					AND = {
-						ROOT = { adm_tech = 25 } #1356
-						has_building = temple
-					}
-				}
-			}
-			save_event_target_as = agenda_province
-		}
-		event_target:agenda_province = {
-			if = {
-				limit = {
-					NOT = { has_building = temple }
-				}
-				ROOT = {
-					set_variable = {
-						which = estate_church_build_temple_in_y_var
-						value = 1
-					}
-				}
-			}
-			else = {
-				ROOT = {
-					set_variable = {
-						which = estate_church_build_temple_in_y_var
-						value = 2
-					}
-				}
-			}
-		}
-	}
-	fail_if = {
-		event_target:agenda_province = {
-			OR = {
-				religion_group = root
-				NOT = { owned_by = root }
-			}
-		}
-	}
-	provinces_to_highlight = {
-		province_id = event_target:agenda_province
-	}
-    task_requirements = {
-		if = {
-			limit = {
-				check_variable = {
-					which = estate_church_build_temple_in_y_var
-					value = 2
-				}
-			}
-			event_target:agenda_province = {
-				has_building = cathedral
-			}
-		}
-		else = {
-			event_target:agenda_province = {
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
-			}
-		}
-    }
-    task_completed_effect = {
-		add_estate_loyalty = {
-			estate = estate_dhimmi
-			loyalty = 10
-		}
-		if = {
-			limit = {
-				NOT = { crown_land_share = 15 }
-				estate_territory = {
-					estate = estate_dhimmi
-					territory = 10
-				}
-			}
-			take_estate_land_share_small = { estate = estate_dhimmi }
-			event_target:agenda_province = {
-				add_province_modifier = { #balances out +3 missionary strength from cathedrals
-					name = agenda_dhimmi_get_a_church
-					duration = 10950
-				}
-			}
-		}
-		else = {
-			event_target:agenda_province = {
-				add_base_tax = 1
-				add_province_modifier = { #balances out +3 missionary strength from cathedrals
-					name = agenda_dhimmi_get_a_church
-					duration = 10950
-				}
-			}
-		}
-    }
-    failing_effect = {
-		event_target:agenda_province = {
-			if = {
-				limit = { owned_by = root }
-				add_named_unrest = {
-					name = local_dhimmi_displeased
-					value = 5
-				}
-			}
-		}
-		add_estate_loyalty_modifier = {
-			estate = estate_dhimmi
-			desc = EST_VAL_AGENDA_DENIED
-			loyalty = -5
-			duration = 7300
-		}
-    }
-}
 
 estate_dhimmi_build_university_in_y = {
 	can_select = {
-		adm_tech = 23 #1356
+		adm_tech = 23
 		any_owned_province = {
 			NOT = { religion_group = root }
 			is_state_core = root
@@ -619,11 +439,26 @@ estate_dhimmi_build_university_in_y = {
 		province_id = event_target:agenda_province
 	}
     task_requirements = {
-		event_target:agenda_province = {
-			has_building = university
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_dhimmi
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_dhimmi
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				has_building = university
+			}
 		}
     }
     task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dhimmi
+		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 10
@@ -633,6 +468,8 @@ estate_dhimmi_build_university_in_y = {
 		add_mil_power = 35
     }
     failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
 			if = {
 				limit = { owned_by = root }
@@ -688,12 +525,27 @@ estate_dhimmi_stop_converting_province_x = {
 		province_id = event_target:agenda_province
 	}
 	task_requirements = {
-		event_target:agenda_province = {
-			has_missionary = no
-			NOT = { religion_group = muslim }
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_dhimmi
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_dhimmi
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				has_missionary = no
+				NOT = { religion_group = muslim }
+			}
 		}
 	}
     task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dhimmi
+		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 15
@@ -706,6 +558,8 @@ estate_dhimmi_stop_converting_province_x = {
 		}
     }
     failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
             estate = estate_dhimmi
 			desc = EST_VAL_AGENDA_DENIED
@@ -746,7 +600,9 @@ estate_dhimmi_increase_autonomy_in_province_x = {
 				NOT = { has_province_modifier = autonomy_decreased }
 			}
 			save_event_target_as = agenda_province
-
+			choose_random_development_bonus_effect = yes
+		}
+		event_target:agenda_province = {
 			if = {
 				limit = {
 					local_autonomy = 60
@@ -799,7 +655,6 @@ estate_dhimmi_increase_autonomy_in_province_x = {
 					}
 				}
 			}
-			choose_random_development_bonus_effect = yes
 		}
 	}
 	on_invalid = {
@@ -811,101 +666,136 @@ estate_dhimmi_increase_autonomy_in_province_x = {
 		province_id = event_target:agenda_province
 	}
 	fail_if = {
-		event_target:agenda_province = {
-			OR = {
+		OR = {
+			event_target:agenda_province = {
 				NOT = { owned_by = root }
-				religion_group = root
-				AND = {
-					root = {
-						check_variable = {
-							which = estate_dhimmi_increase_autonomy_in_province_x_var
-							value = 5
-						}
-					}
-					NOT = { local_autonomy = 50 }
-				}
-				AND = {
-					root = {
-						check_variable = {
-							which = estate_dhimmi_increase_autonomy_in_province_x_var
-							value = 4
-						}
-					}
-					NOT = { local_autonomy = 35 }
-				}
-				AND = {
-					root = {
-						check_variable = {
-							which = estate_dhimmi_increase_autonomy_in_province_x_var
-							value = 3
-						}
-					}
-					NOT = { local_autonomy = 20 }
-				}
-				AND = {
-					root = {
-						check_variable = {
-							which = estate_dhimmi_increase_autonomy_in_province_x_var
-							value = 2
-						}
-					}
-					NOT = { local_autonomy = 5 }
-				}
 			}
+			event_target:agenda_province = {
+				religion_group = root
+			}
+			custom_trigger_tooltip = {
+				tooltip = estate_dhimmi_increase_autonomy_in_province_x_tooltip
+				hidden_trigger = {
+					if = {
+						limit = {
+							check_variable = {
+								which = estate_dhimmi_increase_autonomy_in_province_x_var
+								value = 5
+							}
+						}
+						event_target:agenda_province = {
+							NOT = { local_autonomy = 50 }
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								which = estate_dhimmi_increase_autonomy_in_province_x_var
+								value = 4
+							}
+						}
+						event_target:agenda_province = {
+							NOT = { local_autonomy = 35 }
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								which = estate_dhimmi_increase_autonomy_in_province_x_var
+								value = 3
+							}
+						}
+						event_target:agenda_province = {
+							NOT = { local_autonomy = 20 }
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								which = estate_dhimmi_increase_autonomy_in_province_x_var
+								value = 2
+							}
+						}
+						event_target:agenda_province = {
+							NOT = { local_autonomy = 5 }
+						}
+					}
+					else = {
+						hidden_trigger = {
+							always = no
+						}
+					}
+				}
+			}	
 		}
 	}
 	task_requirements = {
 		if = {
 			limit = {
-				check_variable = {
-					which = estate_dhimmi_increase_autonomy_in_province_x_var
-					value = 5
+				has_estate_agenda_auto_completion = {
+					estate = estate_dhimmi
 				}
 			}
-			event_target:agenda_province = {
-				local_autonomy = 75
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					which = estate_dhimmi_increase_autonomy_in_province_x_var
-					value = 4
-				}
-			}
-			event_target:agenda_province = {
-				local_autonomy = 60
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					which = estate_dhimmi_increase_autonomy_in_province_x_var
-					value = 3
-				}
-			}
-			event_target:agenda_province = {
-				local_autonomy = 45
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					which = estate_dhimmi_increase_autonomy_in_province_x_var
-					value = 2
-				}
-			}
-			event_target:agenda_province = {
-				local_autonomy = 30
+			has_estate_agenda_auto_completion = {
+				estate = estate_dhimmi
 			}
 		}
 		else = {
-			event_target:agenda_province = {
-				local_autonomy = 15
+			if = {
+				limit = {
+					check_variable = {
+						which = estate_dhimmi_increase_autonomy_in_province_x_var
+						value = 5
+					}
+				}
+				event_target:agenda_province = {
+					local_autonomy = 75
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_dhimmi_increase_autonomy_in_province_x_var
+						value = 4
+					}
+				}
+				event_target:agenda_province = {
+					local_autonomy = 60
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_dhimmi_increase_autonomy_in_province_x_var
+						value = 3
+					}
+				}
+				event_target:agenda_province = {
+					local_autonomy = 45
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_dhimmi_increase_autonomy_in_province_x_var
+						value = 2
+					}
+				}
+				event_target:agenda_province = {
+					local_autonomy = 30
+				}
+			}
+			else = {
+				event_target:agenda_province = {
+					local_autonomy = 15
+				}
 			}
 		}
 	}
     task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dhimmi
+		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 10
@@ -915,6 +805,8 @@ estate_dhimmi_increase_autonomy_in_province_x = {
 		}
     }
     failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
 			clear_random_development_bonus_flags_effect = yes
 		}
@@ -967,30 +859,47 @@ estate_dhimmi_three_privileges = {
 	task_requirements = {
 		if = {
 			limit = {
-				check_variable = {
-					which = estate_dhimmi_three_privileges_var
-					value = 2
+				has_estate_agenda_auto_completion = {
+					estate = estate_dhimmi
 				}
 			}
-			num_of_estate_privileges = {
+			has_estate_agenda_auto_completion = {
 				estate = estate_dhimmi
-				value = 3
 			}
 		}
 		else = {
-			num_of_estate_privileges = {
-				estate = estate_dhimmi
-				value = 2
+			if = {
+				limit = {
+					check_variable = {
+						which = estate_dhimmi_three_privileges_var
+						value = 2
+					}
+				}
+				num_of_estate_privileges = {
+					estate = estate_dhimmi
+					value = 3
+				}
+			}
+			else = {
+				num_of_estate_privileges = {
+					estate = estate_dhimmi
+					value = 2
+				}
 			}
 		}
 	}
     task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dhimmi
+		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 20
 		}
     }
     failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
             estate = estate_dhimmi
 			desc = EST_VAL_AGENDA_DENIED
@@ -1120,34 +1029,51 @@ estate_dhimmi_relations_with_X = {
 	task_requirements = {
 		if = {
 			limit = {
-				check_variable = {
-					which = estate_dhimmi_relations_with_X
-					value = 2
+				has_estate_agenda_auto_completion = {
+					estate = estate_dhimmi
 				}
 			}
-			event_target:agenda_country = {
-				has_opinion = {
-					who = root
-					value = 100
-				}
+			has_estate_agenda_auto_completion = {
+				estate = estate_dhimmi
 			}
 		}
 		else = {
-			event_target:agenda_country = {
-				has_opinion = {
-					who = root
-					value = 50
+			if = {
+				limit = {
+					check_variable = {
+						which = estate_dhimmi_relations_with_X
+						value = 2
+					}
+				}
+				event_target:agenda_country = {
+					has_opinion = {
+						who = root
+						value = 100
+					}
+				}
+			}
+			else = {
+				event_target:agenda_country = {
+					has_opinion = {
+						who = root
+						value = 50
+					}
 				}
 			}
 		}
 	}
-	task_completed_effect = {
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_dhimmi
+		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 15
 		}
 	}
     failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
             estate = estate_dhimmi
 			desc = EST_VAL_AGENDA_DENIED

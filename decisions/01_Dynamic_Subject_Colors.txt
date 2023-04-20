@@ -1,0 +1,56 @@
+# country_decisions = {
+
+	### Disabled for now | Will take another look in a future update
+
+
+	# encourge_subjects_to_adopt_regalia = { # For 
+		# major = yes
+		# potential = {
+			# NOT = { has_country_flag = desires_subjects_to_adopt_color }
+			# is_subject = no
+		# }
+		# allow = {
+			# is_at_war = no
+			# is_subject = no
+		# }
+		# effect = {
+			# custom_tooltip = subjects_will_adopt_regalia_colors.tt
+			# set_country_flag = desires_subjects_to_adopt_color
+		# }
+	# }
+	
+	# adopt_overlord_regalia = { # For 
+		# major = yes
+		# potential = {
+			# NOT = { has_country_flag = desires_subjects_to_adopt_color }
+			# is_subject = yes
+		# }
+		# allow = {
+			# is_at_war = no
+			# is_subject = yes
+			# overlord = {
+				# has_country_flag = desires_subjects_to_adopt_color
+				# NOT = { 
+					# has_opinion_modifier = {
+						# who = ROOT
+						# modifier = subject_adopted_my_regalia_colors
+					# }
+				# }	
+			# }	
+		# }
+		# effect = {
+			# custom_tooltip = subjects_will_adopt_regalia_colors.tt
+			# change_country_color = { country = overlord }			
+			# add_opinion = {
+				# who = overlord
+				# modifier = subject_adopted_my_regalia_colors
+			# }	
+			# reverse_add_opinion = {
+				# who = overlord
+				# modifier = subject_adopted_my_regalia_colors
+			# }					
+			
+		# }
+	# }	
+# }	
+	

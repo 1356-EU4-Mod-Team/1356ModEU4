@@ -1933,12 +1933,12 @@ renaissance = { #1356
 		is_state = yes
 		is_island = no
 		OR = {
-			development = 20
+			development = 10
 			is_capital = yes
 			normal_or_historical_nations = no
 		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 100		#in 100 for when a province can_start
 	
 	
 	on_start = institution_events.2
@@ -1996,17 +1996,7 @@ renaissance = { #1356
 				region = italy_region
 				culture_group = latin
 			}	
-		}
-		
-		modifier = {
-			factor = 1.9
-			custom_trigger_tooltip = {
-				tooltip = tooltip_full_scholar
-				owner = {
-					full_idea_group = royal_education_ideas
-				}
-			}
-		}		
+		}	
 		modifier = {
 			factor = 0.05
 			scale = yes
@@ -2273,7 +2263,7 @@ new_world_i = {
 			}
 		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 100		#in 100 for when a province can_start
 	
 	
 	on_start = institution_events.3
@@ -2546,7 +2536,7 @@ printing_press = {
 		}
 
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 100		#in 100 for when a province can_start
 	
 	
 	on_start = institution_events.4
@@ -2737,16 +2727,7 @@ printing_press = {
 					has_institution = printing_press
 				}
 			}
-		}
-		modifier = {
-			factor = 1.9
-			custom_trigger_tooltip = {
-				tooltip = tooltip_full_majesty_ideas
-				owner = {
-					full_idea_group = grand_court_ideas
-				}
-			}
-		}		
+		}	
 		modifier = {
 			factor = 1
 			scale = yes
@@ -2856,7 +2837,7 @@ global_trade = {
 			}
 			AND = {
 				is_year = 1700
-				is_capital = no
+
 				OR = {
 					region = maghreb_region
 					region = egypt_region
@@ -2867,7 +2848,7 @@ global_trade = {
 			AND = {
 				is_year = 1720
 				has_port = yes
-				is_capital = no
+
 				OR = {
 					superregion = india_superregion
 					superregion = persia_superregion
@@ -2877,7 +2858,7 @@ global_trade = {
 			AND = {
 				is_year = 1750
 				has_port = yes
-				is_capital = no
+
 				superregion = africa_superregion
 			}
 		}
@@ -2905,7 +2886,7 @@ global_trade = {
 		}
 
 	}
-	start_chance = 25		#in 100 for when a province can_start
+	start_chance = 100		#in 100 for when a province can_start
 	
 	
 	on_start = institution_events.5
@@ -3035,16 +3016,7 @@ global_trade = {
 			}
 		}
 		
-		modifier = {
-			factor = 2.5
-			custom_trigger_tooltip = {
-				tooltip = tooltip_full_imperial_ideas
-				owner = {
-					full_idea_group = imperial_ideas
-				}
-			}
-		}			
-		
+
 		modifier = {
 			factor = 0.5
 			printing_press = 100

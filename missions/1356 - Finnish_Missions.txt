@@ -5,6 +5,7 @@ finnish_missions = {
 	potential = {
 		tag = FIN
 		NOT = { has_global_flag = disabled_1356_related_missions }
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 	
@@ -168,6 +169,7 @@ finnish_missions_2 = {
 	potential = {
 		tag = FIN
 		NOT = { has_global_flag = disabled_1356_related_missions }
+		NOT = { has_dlc = "Lions of the North" }		
 	}
 	has_country_shield = yes
 	

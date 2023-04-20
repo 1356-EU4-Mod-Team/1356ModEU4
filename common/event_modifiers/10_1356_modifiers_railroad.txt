@@ -2,9 +2,28 @@
 # For Ai vs Ai Direct Interaction (Never directly at the player, though can happen if player is allied to target nations that's attacked)
 
 death_note_modifier = {
-	diplomatic_reputation = -300
+	diplomatic_reputation = -100
 }	
 
 being_railroad_forbidden_wars = { # Forcing the Ai into a certain direction
 	can_not_declare_war = yes
+}	
+
+regional_unifying_candidate_lucky_modifier = { # Tags that recieve this should be destined to unify their home region
+	ae_impact = -0.25
+	core_creation = -0.25
+	land_forcelimit = 12
+	global_manpower = 10
+	land_maintenance_modifier = -0.25	
+	global_tax_income = 48	
+	land_morale = 0.10
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+	technology_cost = -0.1
+	idea_cost = -0.1
+ 	years_of_nationalism = -5	
+	global_autonomy = -0.1	
+	global_unrest = -2	
+ 	governing_capacity = 250	
 }	

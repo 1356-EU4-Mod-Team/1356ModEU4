@@ -37,7 +37,7 @@ espionage_adm_specialization = { # Specialization
 }	
 
 in_espionage_network_screen = { # Dummy modifier so event cant be spammed
-	transport_power = 0.1
+	#transport_power = 0.1
 }
 
 # Specializations and Cooldowns
@@ -128,6 +128,49 @@ great_thinker_dip = {
 great_thinker_mil = {
 	mil_advisor_cost = -0.1
 }
+
+
+designated_scribe_focus_cooldown = {
+}
+
+scholarly_scribe_focus_adm = {
+	country_admin_power = 1
+}
+
+scholarly_scribe_focus_dip = {
+ 	country_diplomatic_power = 1
+}
+
+scholarly_scribe_focus_mil = {
+ 	country_military_power = 1
+}
+
+
+designiate_military_academia_focus_cooldown = {
+}
+
+military_academia_focus_fire = {
+	leader_land_fire = 1
+	leader_naval_fire = 1	
+}
+
+military_academia_focus_shock = {
+ 	leader_land_shock = 1
+ 	leader_naval_shock = 1	
+}
+
+military_academia_focus_manuever = {
+ 	leader_land_manuever = 1
+	leader_naval_manuever = 1	
+}
+
+military_academia_focus_siege = {
+ 	leader_siege = 1
+}
+
+recruited_hundred_tradition_general_professional_ideas = {
+}
+
 
 # Naval Hegemons Related Modifiers
 hegemon_britain_rules_the_waves = {

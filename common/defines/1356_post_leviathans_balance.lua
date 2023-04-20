@@ -46,3 +46,10 @@ NDefines.NDiplomacy.GREAT_PROJECT_WARSCORE_COST_MODIFIER = 0.15
 -- New 1.34 Changes
 NDefines.NMilitary.CAVALRY_COST = 20.0
 NDefines.NMilitary.ARTILLERY_COST = 32.0
+
+--New 1.35 Changes
+NDefines.NGovernment.GOVERNMENT_REFORM_YEARLY_BASE_PROGRESS = 9.0 --- Just to slow government reform progress a little
+NDefines.NGovernment.GOVERNMENT_REFORM_COST_INCREASE = 50.0 --- Just to slow government reform progress a little  
+NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 60			-- from 60 
+NDefines.NEconomy.LAND_TECH_MERC_MAINTENANCE_IMPACT = 0.05 --- From 0.08
+NDefines.NMilitary.MERCENARY_BASE_COST = 8.0 -- From 10.0

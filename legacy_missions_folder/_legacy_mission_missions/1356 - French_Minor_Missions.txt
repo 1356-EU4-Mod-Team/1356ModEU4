@@ -1,0 +1,397 @@
+french_minor_take_land_slot_1 = { 
+	slot = 6
+	generic = no
+	ai = yes
+	
+	potential = { 
+		NOT = { has_dlc = "Emperor" }
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = VAL
+		}
+		# has_country_flag = use_golden_bull_missions_instead_of_paradox
+		# NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	FRE_minor_take_normandy = { #Take Normandy
+		icon = mission_galleys_in_port
+		required_missions = { fre_minor_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1879
+				province_id = 4385
+				province_id = 168
+				province_id = 167
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1879 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4385 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			168 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			167 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+		}
+	}
+}
+
+french_minor_take_land_slot_2 = { 
+	slot = 7
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = VAL
+		}
+		NOT = { has_dlc = "Emperor" }
+	}
+	has_country_shield = yes
+	
+
+	FRE_minor_take_loire = { #Take Loire
+		icon = mission_conquer_5_states
+		required_missions = { fre_minor_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 178
+				province_id = 177
+				province_id = 4389
+				province_id = 184
+				province_id = 179
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			178 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			177 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4389 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			184 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			179 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 25
+		}
+	}
+
+	FRE_minor_take_paris = { #Take most of the rest of France
+		icon = mission_cannons_firing
+		required_missions = { FRE_minor_take_champagne FRE_minor_take_valois_picardie_champagne FRE_minor_take_loire FRE_minor_take_poitou FRE_minor_take_normandy }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 183
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			183 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "french_ducal_paris_conquest"
+				duration = 7300
+			}
+		}
+	}
+}
+
+french_minor_take_land_slot_3 = { 
+	slot = 8
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = VAL
+		}
+		NOT = { has_dlc = "Emperor" }
+	}
+	has_country_shield = yes
+	
+	fre_minor_secure_our_independence = { #FREEDOM
+		icon = mission_monarch_in_throne_room
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		trigger = {
+			is_vassal = no
+			is_subject = no
+		}
+		effect = {
+			create_general = {
+				tradition = 40
+			}
+			loire_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			normandy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ile_de_france_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			poitou_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			186 = {
+				add_permanent_claim = ROOT
+			}
+			4390 = {
+				add_permanent_claim = ROOT
+			}
+			89 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	FRE_minor_take_poitou = { #Take Poitou
+		icon = mission_assemble_an_army
+		required_missions = { fre_minor_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4387
+				province_id = 4111
+				province_id = 4386
+				province_id = 180
+				province_id = 195
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4387 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4111 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4386 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			180 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			195 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 25
+		}
+	}
+}
+
+french_minor_form_france = { #Would like to add a time window somewhat seperating these so they cant be done in quick unison.
+	slot = 8
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = VAL
+		}
+		NOT = { has_dlc = "Emperor" }
+
+	}
+	has_country_shield = yes
+	
+	fre_minor_form_france = {
+		icon = mission_empire
+		required_missions = { FRE_minor_take_paris }
+		position = 4
+		completed_by = 1821.1.1
+		trigger = {
+			always = yes
+		}
+		effect = {
+			custom_tooltip = fre_minor_form_france_tt
+			add_prestige = 3
+		}
+	}
+}
+
+french_minor_take_land_slot_4 = { 
+	slot = 9
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = VAL
+		}
+		NOT = { has_dlc = "Emperor" }
+
+	}
+	has_country_shield = yes	
+
+	FRE_minor_take_valois_picardie_champagne = { #Take most of the rest of France
+		icon = mission_assemble_an_army
+		required_missions = { fre_minor_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 182
+				province_id = 4388
+				province_id = 183
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			182 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4388 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			183 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 25
+		}
+	}
+}
+
+french_minor_take_land_slot_10 = { 
+	slot = 10
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = VAL
+		}
+		NOT = { has_dlc = "Emperor" }
+
+	}
+	has_country_shield = yes	
+	
+	FRE_minor_take_champagne = { #Take Champagne
+		icon = mission_assemble_an_army
+		required_missions = { fre_minor_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 186
+				province_id = 4390
+				province_id = 185
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			186 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4390 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			185 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 25
+		}
+	}
+}

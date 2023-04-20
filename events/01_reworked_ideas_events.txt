@@ -415,7 +415,7 @@ country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
 	id = new_ideas_events.21
 	title = "new_ideas_events.21.t"
 	desc = "new_ideas_events.21.desc"
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = INVENTION_eventPicture
 	
 	#fire_only_once = yes
 	#major = yes
@@ -440,7 +440,7 @@ country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
 	id = new_ideas_events.22
 	title = "new_ideas_events.22.t"
 	desc = "new_ideas_events.22.desc"
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = ADVISOR_eventPicture
 	
 	#fire_only_once = yes
 	#major = yes
@@ -452,13 +452,9 @@ country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
 			type = artist
 			cost_multiplier = 0.50
 			skill = 3
-			religion = ROOT
-			culture = ROOT
+			# religion = ROOT
+			# culture = ROOT
 		}
-		add_country_modifier = {
-			name = "great_thinker_adm"
-			duration = 7300
-		}	
 	}
 	option = { 
 		name = "new_ideas_events.22.b"	#Dip	
@@ -466,13 +462,9 @@ country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
 			type = inquisitor
 			cost_multiplier = 0.50
 			skill = 3
-			religion = ROOT
-			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_adm"
-			duration = 7300
-		}			
+			# religion = ROOT
+			# culture = ROOT
+		}		
 	}	
 	option = { 
 		name = "new_ideas_events.22.c"	#Mil	
@@ -480,13 +472,9 @@ country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
 			type = master_of_mint
 			cost_multiplier = 0.50
 			skill = 3
-			religion = ROOT
-			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_adm"
-			duration = 7300
-		}			
+			# religion = ROOT
+			# culture = ROOT
+		}		
 	}	
 	option = { 
 		name = "new_ideas_events.22.dd"	#Adm
@@ -494,13 +482,9 @@ country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
 			type = natural_scientist
 			cost_multiplier = 0.50
 			skill = 3
-			religion = ROOT
-			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_adm"
-			duration = 7300
-		}			
+			# religion = ROOT
+			# culture = ROOT
+		}		
 	}
 	option = { 
 		name = "new_ideas_events.22.e"	#Dip	
@@ -508,13 +492,9 @@ country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
 			type = philosopher
 			cost_multiplier = 0.50
 			skill = 3
-			religion = ROOT
-			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_adm"
-			duration = 7300
-		}			
+			# religion = ROOT
+			# culture = ROOT
+		}		
 	}	
 	option = { 
 		name = "new_ideas_events.22.f"	#Mil	
@@ -522,13 +502,9 @@ country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
 			type = theologian
 			cost_multiplier = 0.50
 			skill = 3
-			religion = ROOT
-			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_adm"
-			duration = 7300
-		}			
+			# religion = ROOT
+			# culture = ROOT
+		}		
 	}
 	option = { 
 		name = "new_ideas_events.22.g"	#Mil	
@@ -536,13 +512,9 @@ country_event = { # Great Thinkers of NATIONNAME - Invite Advisors
 			type = treasurer
 			cost_multiplier = 0.50
 			skill = 3
-			religion = ROOT
-			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_adm"
-			duration = 7300
-		}			
+			# religion = ROOT
+			# culture = ROOT
+		}		
 	}		
 }
 
@@ -550,7 +522,7 @@ country_event = { # Great Thinkers of Diplo
 	id = new_ideas_events.23
 	title = "new_ideas_events.23.t"
 	desc = "new_ideas_events.23.desc"
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = ADVISOR_eventPicture
 	
 	#fire_only_once = yes
 	#major = yes
@@ -564,10 +536,6 @@ country_event = { # Great Thinkers of Diplo
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_dip"
-			duration = 7300
 		}	
 	}
 	option = { 
@@ -578,10 +546,6 @@ country_event = { # Great Thinkers of Diplo
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_dip"
-			duration = 7300
 		}			
 	}	
 	option = { 
@@ -592,11 +556,7 @@ country_event = { # Great Thinkers of Diplo
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_dip"
-			duration = 7300
-		}			
+		}		
 	}	
 	option = { 
 		name = "new_ideas_events.23.dd"	#Adm
@@ -606,11 +566,7 @@ country_event = { # Great Thinkers of Diplo
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_dip"
-			duration = 7300
-		}			
+		}		
 	}
 	option = { 
 		name = "new_ideas_events.23.e"	#Dip	
@@ -620,10 +576,6 @@ country_event = { # Great Thinkers of Diplo
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_dip"
-			duration = 7300
 		}			
 	}	
 	option = { 
@@ -634,10 +586,6 @@ country_event = { # Great Thinkers of Diplo
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_dip"
-			duration = 7300
 		}			
 	}
 	option = { 
@@ -648,11 +596,7 @@ country_event = { # Great Thinkers of Diplo
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_dip"
-			duration = 7300
-		}			
+		}		
 	}		
 }
 
@@ -660,7 +604,7 @@ country_event = { # Great Thinkers of Military
 	id = new_ideas_events.24
 	title = "new_ideas_events.24.t"
 	desc = "new_ideas_events.24.desc"
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = ADVISOR_eventPicture
 	
 	#fire_only_once = yes
 	#major = yes
@@ -675,10 +619,6 @@ country_event = { # Great Thinkers of Military
 			religion = ROOT
 			culture = ROOT
 		}
-		add_country_modifier = {
-			name = "great_thinker_mil"
-			duration = 7300
-		}	
 	}
 	option = { 
 		name = "new_ideas_events.24.b"	#Dip	
@@ -688,10 +628,6 @@ country_event = { # Great Thinkers of Military
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_mil"
-			duration = 7300
 		}			
 	}	
 	option = { 
@@ -702,11 +638,7 @@ country_event = { # Great Thinkers of Military
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_mil"
-			duration = 7300
-		}			
+		}		
 	}	
 	option = { 
 		name = "new_ideas_events.24.dd"	#Adm
@@ -716,11 +648,7 @@ country_event = { # Great Thinkers of Military
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_mil"
-			duration = 7300
-		}			
+		}		
 	}
 	option = { 
 		name = "new_ideas_events.24.e"	#Dip	
@@ -730,11 +658,7 @@ country_event = { # Great Thinkers of Military
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_mil"
-			duration = 7300
-		}			
+		}		
 	}	
 	option = { 
 		name = "new_ideas_events.24.f"	#Mil	
@@ -744,11 +668,7 @@ country_event = { # Great Thinkers of Military
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_mil"
-			duration = 7300
-		}			
+		}		
 	}
 	option = { 
 		name = "new_ideas_events.24.g"	#Mil	
@@ -758,11 +678,7 @@ country_event = { # Great Thinkers of Military
 			skill = 3
 			religion = ROOT
 			culture = ROOT
-		}
-		add_country_modifier = {
-			name = "great_thinker_mil"
-			duration = 7300
-		}			
+		}		
 	}		
 }
 
@@ -798,4 +714,209 @@ country_event = { # Full Eminence Completion
 		}
 		custom_tooltip = eminence_pp_info.tt
 	}
+}
+
+
+country_event = { # Scribe National Focus
+	id = new_ideas_events.50
+	title = "new_ideas_events.50.t"
+	desc = "new_ideas_events.50.desc"
+	picture = BIG_BOOK_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.50.a"	#Adm
+		trigger = {
+			NOT = { has_country_modifier = scholarly_scribe_focus_adm }
+		}			
+		add_country_modifier = {
+			name = "scholarly_scribe_focus_adm"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = scholarly_scribe_focus_dip
+			}
+			remove_country_modifier = scholarly_scribe_focus_dip
+		}
+		if = {
+			limit = {
+				has_country_modifier = scholarly_scribe_focus_mil
+			}
+			remove_country_modifier = scholarly_scribe_focus_mil
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.50.b"	#Dip
+		trigger = {
+			NOT = { has_country_modifier = scholarly_scribe_focus_dip }
+		}			
+		add_country_modifier = {
+			name = "scholarly_scribe_focus_dip"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = scholarly_scribe_focus_adm
+			}
+			remove_country_modifier = scholarly_scribe_focus_adm
+		}
+		if = {
+			limit = {
+				has_country_modifier = scholarly_scribe_focus_mil
+			}
+			remove_country_modifier = scholarly_scribe_focus_mil
+		}			
+	}	
+	option = { 
+		name = "new_ideas_events.50.c"	#Mil	
+		trigger = {
+			NOT = { has_country_modifier = scholarly_scribe_focus_mil }
+		}	
+		add_country_modifier = {
+			name = "scholarly_scribe_focus_mil"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = scholarly_scribe_focus_dip
+			}
+			remove_country_modifier = scholarly_scribe_focus_dip
+		}
+		if = {
+			limit = {
+				has_country_modifier = scholarly_scribe_focus_adm
+			}
+			remove_country_modifier = scholarly_scribe_focus_adm
+		}			
+	}	
+}
+
+
+country_event = { # Military Academia Focus
+	id = new_ideas_events.51
+	title = "new_ideas_events.51.t"
+	desc = "new_ideas_events.51.desc"
+	picture = BIG_BOOK_eventPicture
+	
+	#fire_only_once = yes
+	#major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = "new_ideas_events.51.a"	#Fire
+		trigger = {
+			NOT = { has_country_modifier = military_academia_focus_fire }
+		}			
+		add_country_modifier = {
+			name = "military_academia_focus_fire"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_shock
+			}
+			remove_country_modifier = military_academia_focus_shock
+		}
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_manuever
+			}
+			remove_country_modifier = military_academia_focus_manuever
+		}	
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_siege
+			}
+			remove_country_modifier = military_academia_focus_siege
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.51.b"	#Shock
+		trigger = {
+			NOT = { has_country_modifier = military_academia_focus_shock }
+		}			
+		add_country_modifier = {
+			name = "military_academia_focus_shock"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_fire
+			}
+			remove_country_modifier = military_academia_focus_fire
+		}
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_manuever
+			}
+			remove_country_modifier = military_academia_focus_manuever
+		}	
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_siege
+			}
+			remove_country_modifier = military_academia_focus_siege
+		}		
+	}
+	option = { 
+		name = "new_ideas_events.51.c"	#Manuever
+		trigger = {
+			NOT = { has_country_modifier = military_academia_focus_manuever }
+		}			
+		add_country_modifier = {
+			name = "military_academia_focus_manuever"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_fire
+			}
+			remove_country_modifier = military_academia_focus_fire
+		}
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_shock
+			}
+			remove_country_modifier = military_academia_focus_shock
+		}	
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_siege
+			}
+			remove_country_modifier = military_academia_focus_siege
+		}		
+	}
+	
+	option = { 
+		name = "new_ideas_events.51.d"	#Siege
+		trigger = {
+			NOT = { has_country_modifier = military_academia_focus_siege }
+		}			
+		add_country_modifier = {
+			name = "military_academia_focus_siege"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_fire
+			}
+			remove_country_modifier = military_academia_focus_fire
+		}
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_shock
+			}
+			remove_country_modifier = military_academia_focus_shock
+		}	
+		if = {
+			limit = {
+				has_country_modifier = military_academia_focus_manuever
+			}
+			remove_country_modifier = military_academia_focus_manuever
+		}		
+	}	
 }

@@ -59,12 +59,13 @@ capital = 17 # Akershus
 	}
 }
 
-1388.2.1 = { add_government_reform = feudalism_reform } # Norway gets under Denmark PU
+1388.2.1 = { add_government_reform = high_feudal_monarchy_reform } # Norway gets under Denmark PU
 
 1436.1.1 = { 
 	leader = { 
 		name = "Amund Bolt"
-		type = general  
+		type = general 
+ 
 		fire = 1 
 		shock = 2 
 		manuever = 2 
@@ -76,7 +77,8 @@ capital = 17 # Akershus
 1520.1.1 = { 
 	leader = { 
 		name = "Olav Galle" 
-		type = general  
+		type = general 
+ 
 		fire = 1 
 		shock = 2 
 		manuever = 2 

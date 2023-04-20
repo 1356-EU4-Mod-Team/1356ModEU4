@@ -91,7 +91,7 @@ country_event = {
 			}
 			hidden_effect = { add_ruler_personality_ancestor = { key = zealot } }
 		}
-		add_reform_desire = 0.03
+		add_reform_desire = 0.02
 	}
 	
 	option = { # Hussite King, Catholic nation - tolerance option
@@ -628,7 +628,10 @@ country_event = {
 		religion = catholic
 		any_owned_province = {
 			religion = protestant
-			culture = czech
+			OR = {
+				culture = czech
+				culture = czech_new
+			}
 		}
 		is_year = 1580
 	}

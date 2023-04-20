@@ -92,7 +92,7 @@ country_decisions = {
 					NOT = { government = monarchy }
 					is_revolutionary = no
 				}
-				change_government_to_monarchy = yes
+				change_government = monarchy
 			}
 			if = {
 				limit = { is_revolutionary = no }
@@ -102,12 +102,14 @@ country_decisions = {
 			change_unit_type = muslim
 			set_global_flag = bukhara_formed
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = { 
+					has_custom_ideas = no
+					NOT = { has_idea_group = BUK_ideas }
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
-            }	
-            set_country_flag = formed_bukhara_flag
+			}
+			set_country_flag = formed_bukhara_flag
 		}
-
 		ai_will_do = {
 			factor = 1
 		}

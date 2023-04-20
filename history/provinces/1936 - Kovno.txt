@@ -1,8 +1,8 @@
 # 1936 - Kovno (1356)
 # Changes: religion
 
-owner = TAK
-controller = TAK
+owner = T5K
+controller = T5K
 culture = lithuanian
 religion = baltic_pagan_reformed
 capital = "Kovno"
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = TAK
+add_core = T5K
 
 discovered_by = western
 discovered_by = eastern

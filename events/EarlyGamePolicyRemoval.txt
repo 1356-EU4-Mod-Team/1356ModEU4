@@ -1,1 +1,27 @@
 # namespace = removes_policy_1356
+
+country_event = { # Just recyling appaanges_event.1 for High Feudal Monarchies
+	id = removes_policy_1356.1
+	title = removes_policy_1356.1.t
+	desc = removes_policy_1356.1.d
+	picture = DIPLOMACY_SIGNING_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		add_country_modifier = {
+			name = "remove_high_feudal_policies"
+			duration = 367
+		}	
+	}	
+				
+
+	option = {
+		name = removes_policy_1356.1.a
+		tooltip = {
+			add_country_modifier = {
+				name = "remove_high_feudal_policies"
+				duration = 365
+			}
+		}	
+	}
+}

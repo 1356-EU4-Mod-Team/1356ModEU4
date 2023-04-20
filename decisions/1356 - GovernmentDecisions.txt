@@ -25,6 +25,7 @@ country_decisions = {
 		effect = { 
 			change_government = republic
 			add_government_reform = frisian_republic_gov
+			on_change_tag_effect = yes
 			set_government_rank = 1
 			add_stability = -2
 		}

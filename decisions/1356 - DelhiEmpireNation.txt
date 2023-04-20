@@ -105,6 +105,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = TUG
+			on_change_tag_effect = yes
 			change_government = monarchy
 			#set_legacy_government = delhian_empire_legacy
 			add_government_reform = delhian_empire_reform

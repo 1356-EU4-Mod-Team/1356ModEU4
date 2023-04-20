@@ -141,7 +141,7 @@ fixed_capital = 71 # Cannot move capital away from this province & no power cost
 	}
 }
 
-#1440.1.1 = { add_government_reform = feudalism_reform } #Duplicate?
+#1440.1.1 = { add_government_reform = high_feudal_monarchy_reform } #Duplicate?
 
 1440.9.21 = {
 	monarch = {

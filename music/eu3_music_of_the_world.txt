@@ -1,0 +1,349 @@
+song = {
+	name = "A City"
+	chance = {
+		modifier = {
+			factor = 1.1
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Africa"
+	chance = {
+		modifier = {
+			factor = 1.75
+			OR = {
+				technology_group = east_african
+				technology_group = central_african
+				technology_group = sub_saharan
+			}
+		}
+		modifier = {
+			factor = 1.25
+			NOT = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = nomad_group
+				technology_group = east_african
+				technology_group = central_african
+				technology_group = sub_saharan
+			}
+		}
+		modifier = {
+			factor = 0
+			technology_group = western
+			technology_group = eastern
+			capital_scope = {
+				OR = {
+					superregion = europe_superregion
+					superregion = eastern_europe_superregion
+					superregion = near_east_superregion
+					superregion = persia_superregion
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					is_overseas = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Debt"
+	chance = {
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Decisions"
+	chance = {
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "English"
+	chance = {
+		modifier = {
+			factor = 1.75
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				technology_group = western
+				technology_group = eastern
+				capital_scope = {
+					superregion = europe_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Europe"
+	chance = {
+		modifier = {
+			factor = 0.25
+			NOT = {
+				technology_group = western
+				technology_group = eastern
+				capital_scope = {
+					superregion = europe_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Himalaya"
+	chance = {
+		modifier = {
+			factor = 1.75
+			OR = {
+				technology_group = chinese
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = north_american
+				technology_group = andean
+				technology_group = high_american
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				technology_group = chinese
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = north_american
+				technology_group = andean
+				technology_group = high_american
+				any_owned_province = {
+					is_overseas = yes
+				}
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = india_superregion
+						superregion = east_indies_superregion
+						continent = north_america
+						continent = south_american
+						continent = new_world
+						continent = oceania
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Holy"
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Impressive"
+	chance = {
+		modifier = {
+			factor = 1.2
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Labour"
+	chance = {
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Morning"
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "New Times"
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_year = 1600
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				technology_group = western
+				technology_group = eastern
+				capital_scope = {
+					superregion = europe_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "The Royal Court"
+	chance = {
+		modifier = {
+			factor = 0.25
+			NOT = {
+				technology_group = western
+				technology_group = eastern
+				capital_scope = {
+					superregion = europe_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Story of a Nation"
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "The Fields"
+	chance = {
+		modifier = {
+			factor = 1.1
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "The Market"
+	chance = {
+		modifier = {
+			factor = 1.2
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				technology_group = muslim
+				technology_group = ottoman
+				technology_group = indian
+				technology_group = nomad_group
+			}
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "The Minich"
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "The Plague"
+	chance = {
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "Wait"
+	chance = {
+		modifier = {
+			factor = 1.75
+			technology_group = chinese
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				technology_group = chinese
+			}
+		}
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "War"
+	chance = {
+		modifier = {
+			factor = 0.75
+			is_at_war = no
+		}
+	}
+}
+song = {
+	name = "Wealth"
+	chance = {
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+	}
+}

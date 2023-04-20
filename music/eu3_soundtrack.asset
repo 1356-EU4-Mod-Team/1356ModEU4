@@ -1,0 +1,80 @@
+music = {
+	name = "Battle of Damascus"
+	file = "battleofdamascus.ogg"
+}
+music = {
+	name = "Choose Your Path"
+	file = "chooseyourpath.ogg"
+}
+music = {
+	name = "City Of Jerusalem"
+	file = "cityofjerusalem.ogg"
+}
+music = {
+	name = "Conquistador - Main Theme"
+	file = "conquistador_maintheme.ogg"
+}
+music = {
+	name = "Eine Kleine Court Musik"
+	file = "einekleinecourtmusik.ogg"
+}
+music = {
+	name = "Emperor of These Lands"
+	file = "emperoroftheselands.ogg"
+}
+music = {
+	name = "The Highland Wanderer"
+	file = "highlandwanderer.ogg"
+}
+music = {
+	name = "Mare Atlanticum"
+	file = "mareatlanticum.ogg"
+}
+music = {
+	name = "A Song for Merchants"
+	file = "mood_asongformerchants.ogg"
+}
+music = {
+	name = "Discover New Land"
+	file = "mood_discovernewland.ogg"
+}
+music = {
+	name = "Land of Glory"
+	file = "mood_landofglory.ogg"
+}
+music = {
+	name = "Night Falls Over Our Empire"
+	file = "mood_nightoverourempire.ogg"
+}
+music = {
+	name = "Para Bellum"
+	file = "parabellum.ogg"
+}
+music = {
+	name = "Prologue - Europa Universalis"
+	file = "prologue_europauniversalis.ogg"
+}
+music = {
+	name = "Somewhere"
+	file = "somewhere.ogg"
+}
+music = {
+	name = "Swashbuckling Privateers"
+	file = "swashbucklingprivateers.ogg"
+}
+music = {
+	name = "Travel South"
+	file = "travelsouth.ogg"
+}
+music = {
+	name = "A Cruce Victoria"
+	file = "war_acrucevictoria.ogg"
+}
+music = {
+	name = "East vs West"
+	file = "war_eastvswest.ogg"
+}
+music = {
+	name = "To Constantinople"
+	file = "war_toconstantinople.ogg"
+}

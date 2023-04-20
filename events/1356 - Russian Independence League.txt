@@ -506,14 +506,14 @@ country_event = {
 		}		
 		#clr_global_flag = russian_independence_league_fired
 		set_global_flag = russian_independence_won		
-		if = {
-			limit = { 
-				has_custom_ideas = no
-				NOT = { tag = MOS }
-			}
-			swap_non_generic_missions = yes
-			country_event = { id = ideagroups.1 } #Swap Ideas				
-		}		
+		#if = { # Better Unique ideas in 1.35 Post Patch
+		#	limit = { 
+		#		has_custom_ideas = no
+		#		NOT = { tag = MOS }
+		#	}
+		#	swap_non_generic_missions = yes
+		#	country_event = { id = ideagroups.1 } #Swap Ideas				
+		#}		
 		if = {
 			limit = {
 				NZH = {

@@ -1,0 +1,573 @@
+sapmi_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = SMI
+	}
+	has_country_shield = yes
+	
+	sap_raise_army = {
+		position = 1
+		icon = mission_build_up_to_force_limit
+		trigger = { army_size_percentage = 1 }
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125
+			}
+		}
+	}
+	
+	unite_sami_tribes = {
+		position = 3
+		icon = mission_unite_home_region
+		required_missions = { sap_raise_army }
+		provinces_to_highlight = {
+			OR = {
+					province_id = 21
+					province_id = 315
+					province_id = 1777
+					province_id = 4113
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			21 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			315 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1777 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4113 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "sap_united_tribes"
+				duration = 9125
+			}
+		}
+	}
+	
+	expand_into_scandinavia = {
+		position = 4
+		icon = mission_conquer_5_states
+		required_missions = { unite_sami_tribes }
+		provinces_to_highlight = {
+			OR = {
+				area = norrland_area
+				area = northern_norway
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			norrland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_norway = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "sap_expand"
+				duration = 9125
+			}
+			add_prestige = 10
+		}
+	}
+	
+	expand_into_russia = {
+		position = 5
+		icon = mission_conquer_5_states
+		required_missions = { expand_into_scandinavia }
+		provinces_to_highlight = {
+			area = pomor_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			pomor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "sap_expand"
+				duration = 9125
+			}
+			add_prestige = 10
+		}
+	}
+	
+	unify_scandinavia = {
+		position = 6
+		icon = mission_conquer_5_states
+		required_missions = { expand_into_russia }
+		provinces_to_highlight = {
+			region = scandinavia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			scandinavia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 9125
+			}
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 9125
+			}
+			add_prestige = 20
+		}
+	}
+}
+sapmi_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = SMI
+	}
+	has_country_shield = yes
+	
+	modernize_sapmi = {
+		icon = mission_early_game_buildings
+		trigger = { has_institution = feudalism }
+		effect = {
+			add_country_modifier = {
+				name = "sap_modernize"
+				duration = 9125
+			}
+		}
+	}
+	
+	reform_government = {
+		icon = mission_early_game_buildings
+		required_missions = { modernize_sapmi }
+		trigger = {
+			NOT = { government = tribal }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125
+			}
+			every_owned_province = {
+				add_local_autonomy = -10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+	
+	reform_religion = {
+		icon = mission_religious
+		required_missions = { reform_government }
+		trigger = {
+			religion = finnish_pagan_reformed
+			stability = 3
+		}
+		effect = {
+			country_event = {
+				id = sapmi.1
+				days = 1
+			}
+		}
+	}
+	
+	send_diplomat_to_pope = {
+		icon = mission_religious
+		required_missions = { reform_religion }
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = orthodox
+			}
+			if = {
+				limit = { religion = catholic }
+				has_opinion = {
+					who = PAP
+					value = 150
+				}
+			}
+		}
+		effect = {
+			add_papal_influence = 25
+		}
+	}
+	
+	convert_the_tribes = {
+		icon = mission_religious
+		required_missions = { send_diplomat_to_pope }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 21
+				province_id = 315
+				province_id = 1777
+				province_id = 4113
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				religion = catholic
+				religion = orthodox
+			}
+			21 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion_group = christian
+			}
+			315 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion_group = christian
+			}
+			1777 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion_group = christian
+			}
+			4113 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion_group = christian
+			}
+			4151 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion_group = christian
+			}
+			4114 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion_group = christian
+			}
+			18 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion_group = christian
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "sap_converted"
+				duration = 7300
+			}
+			add_papal_influence = 10
+		}
+	}
+}
+
+sapmi_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = SMI
+	}
+	has_country_shield = yes
+	
+	improve_relations = {
+		icon = mission_alliances
+		trigger = {
+			all_neighbor_country = {
+				has_opinion = {
+					who = ROOT
+					value = 20
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 9125
+			}
+		}
+	}
+	
+	find_an_ally = {
+		icon = mission_alliances
+		required_missions = { improve_relations }
+		trigger = {
+			num_of_allies = 1
+		}
+		effect = {
+			add_dip_power = 100
+			add_prestige = 5
+		}
+	}
+	
+	spread_the_religion = {
+		position = 4
+		icon = mission_religious
+		required_missions = { reform_religion }
+		trigger = {
+			religion = finnish_pagan_reformed
+			num_of_owned_provinces_with = {
+				value = 10
+				religion = finnish_pagan_reformed
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "sap_converted"
+				duration = 7300
+			}
+			add_prestige = 10
+		}
+	}
+	
+	build_shrines = {
+		icon = mission_religious
+		required_missions = { spread_the_religion }
+		trigger = {
+			temple = 5
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_prestige = 100
+		}
+	}
+	
+	unify_religion = {
+		icon = mission_religious
+		required_missions = { build_shrines }
+		provinces_to_highlight = {
+			OR = {
+				area = bothnia_area
+				area = finland_area
+				area = estonia_ingria_area
+				province_id = 1777
+				province_id = 315
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			bothnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			finland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1777 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			315 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "sap_converted"
+				duration = 7300
+			}
+		}
+	}
+}
+
+sapmi_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = SMI
+	}
+	has_country_shield = yes
+	
+	sap_build_treasury = {
+		icon = mission_war_chest
+		position = 2
+		trigger = {
+			treasury = 400
+		}
+		effect = {
+			add_country_modifier = {
+				name = "strong_treasury"
+				duration = 9125
+			}
+		}
+	}
+	
+	sap_buildings = {
+		icon = mission_early_game_buildings
+		required_missions = { sap_build_treasury }
+		position = 3
+		trigger = {
+			workshop = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 7300
+			}
+		}
+	}
+	
+	the_fur_trade = {
+		icon = mission_galleys_in_port
+		position = 4
+		required_missions = { sap_buildings }
+		trigger = {
+			1652 = { #White Sea, let's see if this fixes it.
+				is_strongest_trade_power = SMI
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "dominant_trade_hub"
+				duration = 7300
+			}
+		}
+	}
+	
+	the_fish_trade = {
+		icon = mission_galleys_in_port
+		position = 5
+		required_missions = { the_fur_trade }
+		trigger = {
+			fish = 4
+		}
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 7300
+			}
+		}
+	}
+	
+	control_trade = {
+		icon = mission_galleys_in_port
+		position = 6
+		required_missions = { the_fish_trade }
+		trigger = {
+			1263 = {
+				is_strongest_trade_power = SMI
+			}
+		}
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = "dominant_trade_hub"
+				duration = 7300
+			}
+		}
+	}
+	
+	dominate_trade = {
+		icon = mission_galleys_in_port
+		position = 7
+		required_missions = { control_trade }
+		trigger = {
+			1975 = {
+				is_strongest_trade_power = SMI
+			}
+			1926 = {
+				is_strongest_trade_power = SMI
+			}
+		}
+		effect = {
+			add_treasury = 1000
+			add_country_modifier = {
+				name = "dominant_trade_hub"
+				duration = 7300
+			}
+		}
+	}
+}
+
+sapmi_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = SMI
+	}
+	has_country_shield = yes
+	
+	build_trade_posts = {
+		icon = mission_early_game_buildings
+		required_missions = { sap_build_treasury }
+		position = 3
+		trigger = {
+			marketplace = 4
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "building_spree"
+				duration = 9125
+			}
+		}
+	}
+	
+	build_income = {
+		icon = mission_war_chest
+		required_missions = { build_trade_posts }
+		trigger = {
+			monthly_income = 5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "building_spree"
+				duration = 9125
+			}
+		}
+	}
+	
+	build_merchant_fleet = {
+		icon = mission_galleys_in_port
+		required_missions = { build_income }
+		trigger = {
+			num_of_light_ship = 15
+		}
+		effect = {
+			add_treasury = 200
+		}
+	}
+	
+	overseas_colonies = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { control_trade }
+		position = 7
+		trigger = {
+			any_owned_province = {
+				is_colony = yes
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 7300
+			}
+		}
+	}
+}

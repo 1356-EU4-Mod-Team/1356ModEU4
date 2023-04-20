@@ -11,12 +11,13 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			has_reform = steppe_horde
-			has_reform = tribal_federation
-			has_reform = mountain_khanate_chagatai
-			has_reform = great_mongol_state_reform
-			has_reform = golden_horde_khanate
-			has_reform = tribal_federation_ilkhan_reform
+			is_a_horde_nation_1356 = yes
+			#has_reform = steppe_horde
+			#has_reform = tribal_federation
+			#has_reform = mountain_khanate_chagatai
+			#has_reform = great_mongol_state_reform
+			#has_reform = golden_horde_khanate
+			#has_reform = tribal_federation_ilkhan_reform
 		}
 		NOT = { has_country_flag = no_new_succession_crisis_if_pretender_rebels }
 		NOT = { has_reform = tribal_rule_by_might_reform } #1356
@@ -65,19 +66,32 @@ country_event = {
 			# NOT = { legitimacy_or_horde_unity = 50 }
 			# has_regency = yes
 		# }
+		OR = {
+			NOT = { has_estate_privilege = estate_nomadic_tribes_secured_succession }
+			NOT = {
+				heir_total_stats = {
+					stats = 12
+				}
+			}
+		}		
 	}
 	
 	immediate = {
 		hidden_effect = {
-			random_owned_province = {
+			if = {
 				limit = {
-					is_capital = no
-					is_state = yes
+					NOT = { legitimacy_or_horde_unity = 50 }
 				}
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 2
-					win = yes
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						is_state = yes
+					}
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 2
+						win = yes
+					}
 				}
 			}
 		}
@@ -117,6 +131,12 @@ country_event = {
 		trigger = {
 			has_regency = yes
 		}
+		if = {
+			limit = {
+				has_consort_regency = yes
+			}
+			remove_consort = yes
+		}
 		define_ruler = {
 			dynasty = ROOT #Uncles, or other relatives were by far the most likely coup-makers
 		}
@@ -136,6 +156,7 @@ country_event = {
 		OR = {
 			has_reform = steppe_horde
 			has_reform = tribal_federation
+			has_reform = tribal_federation_ilkhan_reform
 		}
 		has_ruler_modifier = tribal_succession_crisis
 		NOT = {
@@ -157,21 +178,3 @@ country_event = {
 }
 	
 	
-country_event = {
-	id = tribal_succession.333
-	title = tribal_succession.2.t
-	desc = tribal_succession.2.d
-	picture = NEW_HEIR_eventPicture
-	
-	trigger = {
-		always = no
-	}
-	
-	# mean_time_to_happen = {
-		# days = 1
-	# }
-	
-	option = {
-		add_horde_unity = -100
-	}
-}	

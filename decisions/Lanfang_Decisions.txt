@@ -50,7 +50,12 @@ country_decisions = {
 				4802 = {
 					move_capital_effect = yes
 				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
+				if = {
+					limit = {
+						NOT = { has_idea_group = LFA_ideas }
+					}
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
 			}
 		}
 		ai_will_do = {
@@ -68,6 +73,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 		}
 		provinces_to_highlight = {
@@ -93,6 +102,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = LFA
+			on_change_tag_effect = yes
 			change_primary_culture = hakka
 			change_religion = confucianism
 			if = {
@@ -111,7 +121,13 @@ country_decisions = {
 				change_religion = confucianism
 				add_base_production = 3
 			}
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = {
+					NOT = { has_idea_group = LFA_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_lanfang_flag
 		}
 		ai_will_do = {
 			factor = 1

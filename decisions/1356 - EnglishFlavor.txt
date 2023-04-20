@@ -55,16 +55,17 @@ country_decisions = {
 			NOT = { 233 = { has_province_modifier = duchy_of_cornwall_modifier_province } }
 		}
 		allow = {
-			OR = {
-			tag = ENG
-			AND = { 
-				tag = GBR
-				NOT = { exists = ENG }
-			}
-		}
 			government = monarchy
 			has_heir = yes
-			owns_core_province = 233
+			owns_core_province = 233	
+			is_at_war = no		
+			OR = {
+				tag = ENG
+				AND = { 
+					tag = GBR
+					NOT = { exists = ENG }
+				}
+			}
 		}
 		effect = {
 			add_legitimacy = 5

@@ -12,6 +12,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				AND = {
 					NOT = { exists = PUN }
 					religion = sikhism
@@ -58,7 +62,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PUN
-			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
+			#swap_non_generic_missions = yes #Punjab does not have any unique missions
 			lahore_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

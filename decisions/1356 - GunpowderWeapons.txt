@@ -85,30 +85,4 @@ country_decisions = {
 			factor = 1
 		}			
 	}	
-
-	reform_government_old_reforms = { # Transition out of Feudal age
-		major = yes
-		potential = {
-			OR = {
-				technology_group = western
-				technology_group = eastern
-			}
-			OR = {
-				has_reform = high_feudal_monarchy_reform
-				has_reform = elective_feudal_monarchy_reform
-			}	
-		}
-		allow = {
-			government_reform_progress = 15
-			adm_tech = 9
-			is_year = 1435
-		}		
-		effect = {
-			change_government_reform_progress = -15
-			add_government_reform = feudalism_reform
-		}	
-		ai_will_do = { # AI will currently only switch when they embrace gunpowder
-			factor = 1000
-		}			
-	}	
-}	
+}

@@ -2,7 +2,9 @@
 
 graphical_culture = westerngfx
 
-color = { 57  160  101 }
+#color = { 57  160  101 }
+color = { 40 110 140 }
+revolutionary_colors = { 9 8 5 }
 
 historical_score = 4700
 
@@ -39,15 +41,14 @@ monarch_names = {
 	"Filipe #0" = 60
 	"Afonso #4" = 40
 	"Pedro #1" = 40
-	"António #0" = 20
+	"MONARCH_NAME_ANTONIO" = 20
 	"Duarte #0" = 20
 	"Henrique #0" = 20
 	"José #0" = 20
 	"Manuel #0" = 20
 	"Sebastião #0" = 20
-	"Maria #0" = -10
 	"Miguel #0" = 10
-	"Teodósio #0" = 10
+	"MONARCH_NAME_TEODOSIO" = 10
 	"Dinis #1" = 5
 	"Fernando #1" = 5
 	"Alexandre #0" = 5
@@ -57,7 +58,7 @@ monarch_names = {
 	"Luís #0" = 5
 	"Álvaro #0" = 0
 	"André #0" = 0
-	"António #0 Francisco" = 0
+	"MONARCH_NAME_ANTONIO_FRANCISCO" = 0
 	"Bartolomeu #0" = 0
 	"Caetano #0" = 0
 	"Damião #0" = 0
@@ -85,6 +86,16 @@ monarch_names = {
 	"Simão #0" = 0
 	"Uriel #0" = 0
 	"Vicente #0" = 0
+	"Maria #0" = -10
+	"Isabel #0" = -5
+	"Joana #0" = -1
+	"Beatriz #0" = -1
+	"Maria Manuela #0" = -1
+	"Filipa #0" = -1
+	"Luísa #0" = -1
+	"Catarina #0" = -1
+	"Ana #0" = -1
+	"Barbara #0" = -1
 }
 
 leader_names = {
@@ -92,7 +103,7 @@ leader_names = {
 	Cabral Coelho Corte-Real Coutinho
 	"da Câmara" "da Costa" "da Cunha" "da Fonseca" "de Albuquerque"
 	"de Almeida" "de Andrade" "de Aveiro" "de Ataíde" "de Azevedo"
-	"de Bragança" "de Brito" "de Carvalho" "de Castelo-Branco" "de Castro"
+	"de Bragança" "de Braganza" "de Brito" "de Carvalho" "de Castelo-Branco" "de Castro"
 	"de Correia" "de Faria" "da Gama" "de Guimarães" "de Lemos" "de Magalhães"
 	"de Marialva" "de Melo" "de Mendonça" "de Meneses" "de Noronha"
 	"de Oliveira" "de Paiva" "de Penamacor" "de Pimentel" "de Queiróz"
@@ -111,22 +122,40 @@ leader_names = {
 }
 
 ship_names = {
-	Anunciada
-	Bérrio "Boa Viagem" "Bom Jesus" "Bom Jesus do Carmo" "Bom Jesus de Marzagão" "Bom Jesus da Vidigueira" Bretão
-	Cambaia Chagas "Correio d'Ásia"
-	El-Rei Enxobregas "Espírito Santo" Estrela
-	"Flor do Mar"
-	Garça
-	"Imaculada Conceição"
-	Jóia
-	"Monte Carvalho"
-	"Nazaré" "Nossa Senhora" "N. Sra. da Aparecida" "N. Sra. da Atalaia" "N. Sra. da Batalha" "N. Sra. da Boa Hora" "N. Sra. da Boa Memória" "N. Sra. da Boa Viagem" "N. Sra. da Candalaria" "N. Sra. da Caridade" "N.Sra. da Conceição" "N. Sra. da Consolação" "N. Sra. da Esperança" "N. Sra. da Glória" "N. Sra. da Graça" "N. Sra. da Guia" "N. Sra. d'Ajuda Lusitana" "N. Sra. da Luz" "N. Sra. da Nazaré" "N. Sra. da Oliveira" "N. Sra. da Palma" "N. Sra. da Penha de França" "N. Sra. da Quietação" "N. Sra. da Salvação" "N. Sra. da Saúde" "N. Sra. da Visitação" "N. Sra. da Vitória" "N. Sra. das Ondas" "N. Sra. das Portas do Céu" "N. Sra. das Relíquias" "N. Sra. de Belém" "N. Sra. de Guadalupe" "N. Sra. do Castelo" "N. Sra. do Livramento" "N. Sra. do Loreto" "N. Sra do Paraíso" "N. Sra. do Pilar" "N. Sra. do Rosário" "N. Sra. dos Prazeres" "N. Sra. dos Ramos"
-	"Princesa do Céu"
-	Raínha "Reis Magos"
-	"Sacramento" "Santa Ana" "Santa Catarina" "Santa Cruz" "Santa Fé" "Santa Helena" "Santa Joana" "Santa Madre de Deus" "S. Maria de Sabóia" "Santo Milagre" "Santiago Maior" "Santíssima Trindade" "Santíssimo Sacramento" "Santo Alberto" "Santo António" "Santo Espírito" "Santo Inácio" "São Bartolomeu" "São Bento" "São Bernardo" "São Carlos" "São Cristovão" "São Domingos" "São Filipe" "São Francisco" "São Francisco de Borja" "São Gabriel" "São Gonçalo" "São João" "São João de Deus" "São Jorge" "S. José" "São Julião" "São Lourenço" "São Lucas" "São Luís" "São Mateus" "São Paulo" "São Pedro" "São Rafael" "São Roque" "São Salvador" "São Tomé" "São Valentim" "S. António de Lisboa" "S. Catarina de Ribamar" "S. Francisco de Assis" "S. Francisco Xavier" "S. João Baptista" "S. João Evangelista" "S. Pedro de Rates" "S. Pedro da Ribeira" "S. Salvador do Mundo" "S. Teresa de Jesus" "S. Tomé da Cantuária"
-	Taforeia Trindade
-	Visitação
+	Activo "Afonso de Albuquerque" Águia Albacora "Almas Santas" Amazona Andorinha António Arpão Bazana Belém Benjamin Boaventura "Bom Jesus de Mazagão"
+	"Cabo de São Vicente" Calipso Capitania Chagas "Cinco Chagas" Colombo "Conde Dom Henrique" "Condessa de Resende" "Coração de Jesus" Coroa "Corte Real"
+	Curiosa Damão Dão Delfim Diana Diligente "Diogo Cão" "Dom João VI" "Don João Sexto" "Dona Maria II" Douro "Duquesa de Bragança" Espadarte Falcão Fénix
+	"Fénix Constitucional" Fereta "Flor de la Mar" Furão Gaivota Galgo Garça Garota Giavota Golfinho "Graça Divina" Guadiana "Infante Don Pedro" "Jesus da Ajuda"
+	Lebre Leio Liz "Lobo Soares" Luanda "Madre de Deus" Magnânimo "Maria I" "Martim de Freitas" Medusa Minerva "Monte du Ouro" Neptuno Ninfa "N. Sra. Belém"
+	"N. Sra. da Ajuda" "N. Sra. da Ajuda e São Fransisco" "N. Sra. da Ajuda e São Pedro" "N. Sra. da Arribada" "N. Sra. da Assunção" "N. Sra. da Atalaia"
+	"N. Sra. da Boa Hora" "N. Sra. da Boa Memória" "N. Sra. da Boa Viagem" "N. Sra. da Caridade" "N. Sra. da Caridade e São Fransisco" "N. Sra. da Conceicao"
+	"N. Sra. da Conceição e São João" "N. Sra. da Conceição e São José" "N. Sra. da Conceição e Sao Vicente" "N. Sra. da Encarnação" "N. Sra. da Esperanca"
+	"N. Sra. da Estrela" "N. Sra. da Glória" "N. Sra. da Graça" "N. Sra. da Guia" "N. Sra. da Lampadosa" "N. Sra. da Luz" "N. Sra. da Madre de Deus"
+	"N. Sra. da Misericórdia" "N. Sra. da Natividade" "N. Sra. da Nazaré" "N. Sra. da Nazaré e Santa Ana" "N. Sra. da Nazaré e Santo António" "N. Sra. da Oliveira"
+	"N. Sra. da Oliveira de Guimarães" "N. Sra. da Oliveira e Santo António" "N. Sra. da Palma e São Pedro" "N. Sra. da Penha de Franca" "N. Sra. da Piedade"
+	"N. Sra. da Vitória" "N. Sra. das Angústias" "N. Sra. das Brotas" "N. Sra. das Merces" "N. Sra. das Necessidades" "N. Sra. das Ondas"
+	"N. Sra. das Portas do Céu de Rosette" "N. Sra. de Belem e São José" "N. Sra. de Bettencourt" "N. Sra. de Guadalupe" "N. Sra. de Belém"
+	"N. Sra. do Bom" "N. Sra. do Bom Despacho" "N. Sra. do Bom Sucesso" "N. Sra. do Cabo" "N. Sra. do Cabo e São Pedro" "N. Sra. do Cardais"
+	"N. Sra. do Livramento" "N. Sra. do Livramento e São José" "N. Sra. do Loreto" "N. Sra. do Monte do Carmo" "N. Sra. do Pilar" "N. Sra. do Quietação"
+	"N. Sra. do Rosário" "N. Sra. do Rosário e Santo André" "N. Sra. do Vale" "N. Sra. do Vencimento e São José" "N. Sra. dos Milagres" "N. Sra. dos Prazeres"
+	"N. Sra. dos Prazeres e Santo Antonio" "N. Sra. dos Remédios dos Cassabe" "N. Sra. Madre de Deus" "N. Sra. Madre de Deus e São Fransisco"
+	"N. Sra. Madre de Deus e São José" "N. Sra. Necessidades e Santo Antonio" "Nossa Senhora da Glória" "Nossa Senhora das Necessidades" "Nossa Senhora da Conceição"
+	"Nossa Senhora da Esperanca" "Nossa Senhora da Vitória" "Oliveira de Guimarães" "Padre Eterno" Pérola Polifemo "Princesa Carlota" "Princesa da Beira"
+	"Princesa da Beira e Portuguesa" "Princesa do Brasil" "Princesa do Céu" "Princesa Real" "Príncipe do Brasil" "Príncipe Dom Pedro" "Príncipe Real"
+	"Príncipe Regente" Quietação "Rainha de Portugal" "Rainha dos Anjos" "Rainha Santa Isabel" "Real Carolina" "Real Fidelíssima" "Real Fonsor" "Real Fonza"
+	"Real Voador" Relíquias Sacramento "Salvador do Mundo" "Santa Ana" "Santa Ana e Maria" "Santa Ana e São Joaquim" "Santa Catarina" "Santa Catarina do Monte Sinai"
+	"Santa Clara" "Santa Cruz" "Santa Cruz do Ouro" "Santa Maria Isabel de Saboia" "Santa Rosa" "Santa Teresa" "Santa Teresa de Jesus" Santiago "Santiago Maior"
+	"Santíssimo Sacramento" "Santíssima Trinidade" "Santo Alberto" "Santo Andre" "Santo António" "Santo António de Flores" "Santo António de Padua"
+	"Santo António de Tanna" "Santo António e São Joaquim" "Santo António e São José" "Santo Agustinho" "Santo Miguel" "São António" "São Bartholomeu"
+	"São Benedito" "São Bento" "São Bernardo" "São Boaventura" "São Brás e São Lourenço" "São Cristovão" "São Fransisco de Assis" "São Fransisco de Paula"
+	"São Fransisco Xavier" "São Fransisco Xavier e Santo António" "São Fransisco Xavier e Todo o Bem" "São João" "São João Baptista" "São João de Deus"
+	"São João Magnânimo" "São Jorge" "São José" "São José e N. Sra. da Conceição" "São José e N. Sra. das Mercês" "São José Paquete África" "São Lourenço"
+	"São Martinho" "São Nicolau" "São Pedro" "São Pedro Goncalves" "São Rafael" "São Salvador" "São Sebasteio" "São Simão" "São Tomé" "Sacramento"
+	"Santíssimo Sacramento" "Sem Nome" Serpente "Serpento do Mar" "Simenta de Carvalho" Successo Taforea Tejo "Temível Portuguesa" "Todos os Santos" Torta
+	Tritão Ulisses União Unido Unilo Urania Vale "Vasco da Gama" Vénus Vingança Voador Volador Vulcano "Zabra Augusta" "Zabra Júlia" "São Gabriel" Bérrio
+	Gonçalo Nunes Argo "Arca de Noé" Júpiter Jesus Cristo "Jesus Cristo" Lisboa
 }
+
 
 army_names = {
 	"Guarda Real" "Terço de $PROVINCE$" "Exército de $PROVINCE$" "Bandeira de $PROVINCE$"  "Terço da Armada Real da Coroa de Portugal" 

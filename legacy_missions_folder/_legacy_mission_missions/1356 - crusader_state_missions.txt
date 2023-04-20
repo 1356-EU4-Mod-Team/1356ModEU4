@@ -1,0 +1,175 @@
+crusader_states_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		NOT = { has_global_flag = disabled_1356_related_missions }
+		always = no
+		OR = {
+			tag = CYP
+			tag = KOJ
+			tag = KNI
+			AND = {
+				tag = ATO
+				OR = {
+					culture_group = latin
+					culture_group = french
+				}
+				religion = catholic
+			}
+			AND = {
+				tag = ATH
+				OR = {
+					culture_group = latin
+					culture_group = french
+				}
+				religion = catholic
+			}
+			AND = {
+				tag = ACH
+				OR = {
+					culture_group = latin
+					culture_group = french
+				}
+				religion = catholic
+			}
+			AND = {
+				tag = CIC
+				OR = {
+					culture_group = latin
+					culture_group = french
+				}
+				religion = catholic
+			}
+		}
+	}
+	has_country_shield = yes
+	
+	conquer_adana = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 327
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			is_subject = no
+			owns = 327
+		}
+		effect = {
+			add_claim = 377
+			add_prestige = 5
+		}
+	}
+	reconquer_aleppo = {
+		icon = mission_conquer_50_development
+		required_missions = { conquer_adana }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 2313
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			is_subject = no
+			owns = 2313 	#Antioch
+			327 = {
+				owner = { 
+					religion_group = christian
+				}
+			}
+			2313 = {
+				owner = { 
+					religion_group = christian
+				}
+			}
+		}
+		effect = {
+			add_claim = 378
+			add_prestige = 5
+		}
+	}
+	reconquer_beirut = {
+		icon = mission_conquer_50_development
+		required_missions = { reconquer_aleppo }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 378
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			is_subject = no
+			owns = 378 	# Beirut
+			327 = {
+				owner = { 
+					religion_group = christian
+				}
+			}
+			2313 = {
+				owner = { 
+					religion_group = christian
+				}
+			}
+			378 = {
+				owner = { 
+					NOT = { religion_group = christian }
+				}
+			}
+		}
+		effect = {
+			add_claim = 379
+			add_prestige = 5
+		}
+	}
+	reconquer_jerusalem = {
+		icon = mission_conquer_50_development
+		required_missions = { reconquer_beirut }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 379
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			is_subject = no
+			owns = 379 	# Beirut
+			327 = {
+				owner = { 
+					religion_group = christian
+				}
+			}
+			2313 = {
+				owner = { 
+					religion_group = christian
+				}
+			}
+			378 = {
+				owner = { 
+					religion_group = christian
+				}
+			}
+			379 = {
+				owner = { 
+					NOT = { religion_group = christian }
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cru_conquered_jerusalem"
+				duration = 7300
+			}
+		}
+	}
+}

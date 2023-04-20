@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = high_feudal_monarchy_reform
 government_rank = 1
 primary_culture = romagnan
 religion = catholic
@@ -22,7 +22,7 @@ fixed_capital = 105 # Cannot move capital away from this province & no power cos
 
  # BT Out
 
-1356.12.26 = { government = monarchy add_government_reform = feudalism_reform }
+1356.12.26 = { government = monarchy add_government_reform = high_feudal_monarchy_reform }
 
 1404.3.1 = {
 	monarch = {

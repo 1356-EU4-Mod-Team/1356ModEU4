@@ -1,0 +1,476 @@
+#Define estate loyalty and influence modifiers here
+
+estate_brahmins = {
+	modifier_definition = {
+		type = loyalty
+		key = brahmins_hindu_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = loyalty
+		key = brahmins_muslim_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = loyalty
+		key = brahmins_other_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = brahmins_hindu_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = brahmins_muslim_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = brahmins_other_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = privileges
+		key = brahmins_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_church = {
+	modifier_definition = {
+		type = loyalty
+		key = church_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = church_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = church_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_maratha = {
+	modifier_definition = {
+		type = loyalty
+		key = maratha_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = maratha_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = loyalty
+		key = maratha_muslim_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = maratha_muslim_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	# No Other Nobility like estate
+	modifier_definition = {
+		type = loyalty
+		key = maratha_exclusive_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = maratha_exclusive_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = maratha_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_nobles = {
+	modifier_definition = {
+		type = loyalty
+		key = nobles_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = nobles_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	# No Other Nobility like estate
+	modifier_definition = {
+		type = loyalty
+		key = nobles_exclusive_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = nobles_exclusive_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = nobles_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_burghers = {
+	modifier_definition = {
+		type = loyalty
+		key = burghers_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = burghers_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = burghers_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_vaisyas = {
+	modifier_definition = {
+		type = loyalty
+		key = vaisyas_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = vaisyas_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = loyalty
+		key = vaisyas_non_muslim_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = vaisyas_non_muslim_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = vaisyas_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_cossacks = {
+	modifier_definition = {
+		type = loyalty
+		key = cossacks_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = cossacks_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = cossacks_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_nomadic_tribes = {
+	modifier_definition = {
+		type = loyalty
+		key = nomadic_tribes_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = nomadic_tribes_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = nomadic_tribes_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_dhimmi = {
+	modifier_definition = {
+		type = loyalty
+		key = dhimmi_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = dhimmi_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = dhimmi_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_jains = {
+	modifier_definition = {
+		type = loyalty
+		key = jains_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = jains_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = jains_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_rajput = {
+	modifier_definition = {
+		type = loyalty
+		key = rajput_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = rajput_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = loyalty
+		key = rajput_muslim_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = rajput_muslim_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	# No Other Nobility like estate
+	modifier_definition = {
+		type = loyalty
+		key = rajput_exclusive_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = rajput_exclusive_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = rajput_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_janissaries = {
+	modifier_definition = {
+		type = loyalty
+		key = janissaries_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = janissaries_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = janissaries_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_eunuchs = {
+	modifier_definition = {
+		type = loyalty
+		key = eunuchs_loyalty_modifier
+		trigger = {
+			always = yes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = eunuchs_influence_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = eunuchs_privilege_slots
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+#For special scripted modifiers which are not in the code base.
+estate_special = {
+	#For the Republics which only have limited terms
+	modifier_definition = {
+		type = privileges
+		key = max_terms
+		trigger = {
+			has_government_attribute = has_limited_terms
+		}
+	}
+}

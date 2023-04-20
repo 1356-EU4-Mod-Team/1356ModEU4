@@ -10,21 +10,19 @@ merc__local_free_company = {
     cost_modifier = 0.75
     trigger = {
         total_development = 150
-		NOT = { has_idea = organised_mercenary_recruitment }
-        is_allowed_to_recruit_mercenaries = yes		
+        is_allowed_to_recruit_mercenaries = yes
     }
     # No home province means local mercenary company
 }
 
 merc__local_small_company = {
-    regiments_per_development = 0.07
+    regiments_per_development = 0.05
     cavalry_weight = 0.1
     artillery_weight = 0.1
     cavalry_cap = 2
     trigger = {
         NOT = { total_development = 150 }
-		NOT = { has_idea = organised_mercenary_recruitment }
-        is_allowed_to_recruit_mercenaries = yes		
+        is_allowed_to_recruit_mercenaries = yes
     }
     cost_modifier = 0.3
     modifier = {
@@ -41,8 +39,7 @@ merc__local_free_city_company = {
     cavalry_cap = 2
     trigger = {
         has_reform = free_city
-		NOT = { has_idea = organised_mercenary_recruitment }
-        is_allowed_to_recruit_mercenaries = yes		
+        is_allowed_to_recruit_mercenaries = yes
     }
     cost_modifier = 0.3
     modifier = {
@@ -53,21 +50,20 @@ merc__local_free_city_company = {
 }
 
 merc__local_grand_company = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     cavalry_weight = 0.1
     artillery_weight = 0.1
     cavalry_cap = 2
     cost_modifier = 0.75
     trigger = {
         total_development = 150
-		NOT = { has_idea = organised_mercenary_recruitment }
-        is_allowed_to_recruit_mercenaries = yes		
+        is_allowed_to_recruit_mercenaries = yes
     }
     # No home province means local mercenary company
 }
 
 merc__local_independent_army = {
-    regiments_per_development = 0.075
+    regiments_per_development = 0.05
     cavalry_weight = 0.1
     artillery_weight = 0.1
     cavalry_cap = 2
@@ -110,71 +106,4 @@ twenty_good_men = {
 	modifier = {
 		land_morale = 0.15
 	}
-}
-
-
-
-## Eminence Merc Companies
-merc__local_free_company_eminence = {
-    regiments_per_development = 0.025
-    cavalry_weight = 0.1
-    artillery_weight = 0.1
-    cavalry_cap = 2
-    cost_modifier = 0.75
-    trigger = {
-        total_development = 150
-		has_idea = organised_mercenary_recruitment
-        is_allowed_to_recruit_mercenaries = yes		
-    }
-    # No home province means local mercenary company
-}
-
-merc__local_small_company_eminence = {
-    regiments_per_development = 0.07
-    cavalry_weight = 0.1
-    artillery_weight = 0.1
-    cavalry_cap = 2
-    trigger = {
-        NOT = { total_development = 150 }
-		has_idea = organised_mercenary_recruitment
-        is_allowed_to_recruit_mercenaries = yes		
-    }
-    cost_modifier = 0.3
-    modifier = {
-        reinforce_speed = -0.25
-        recover_army_morale_speed = -0.1
-    }
-    # No home province means local mercenary company
-}
-
-merc__local_free_city_company_eminence = {
-    regiments_per_development = 0.1
-    cavalry_weight = 0.1
-    artillery_weight = 0.1
-    cavalry_cap = 2
-    trigger = {
-        has_reform = free_city
-		has_idea = organised_mercenary_recruitment
-        is_allowed_to_recruit_mercenaries = yes		
-    }
-    cost_modifier = 0.3
-    modifier = {
-        reinforce_speed = -0.25
-        recover_army_morale_speed = -0.1
-    }
-    # No home province means local mercenary company
-}
-
-merc__local_grand_company_eminence = {
-    regiments_per_development = 0.05
-    cavalry_weight = 0.1
-    artillery_weight = 0.1
-    cavalry_cap = 2
-    cost_modifier = 0.75
-    trigger = {
-        total_development = 150
-		has_idea = organised_mercenary_recruitment
-        is_allowed_to_recruit_mercenaries = yes		
-    }
-    # No home province means local mercenary company
 }

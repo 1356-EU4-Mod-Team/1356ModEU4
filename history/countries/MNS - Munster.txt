@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = earldom_reform
+add_government_reform = tanistry_reform
 government_rank = 1
 technology_group = western
 religion = catholic
@@ -80,7 +80,7 @@ capital = 375	# Cork
 # Tadhg deposed
 
 1438.1.1 = {
-	add_government_reform = earldom_reform
+	add_government_reform = tanistry_reform
 	monarch = {
 		name = "Mathghamhain Dall"
 		dynasty = "O'Brien"

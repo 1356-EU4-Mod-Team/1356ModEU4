@@ -6,15 +6,11 @@ estate_brahmins = {
 	#This replaces Church Estate for Dharmic Group and replaces Dhimmi Estate for Muslim Group.
 	trigger = {
 		has_dlc = "Dharma"
-		NOT = { has_government_attribute = disables_brahmins }
-		NOT = { has_country_flag = disables_brahmins_flag }
+		NOT = { has_government_attribute = disables_estate_brahmins }
+		NOT = { has_country_flag = disables_estate_brahmins_flag }
 		OR = {
-			AND = {
-				technology_group = indian
-				religion = zoroastrian
-			}			
-			has_government_attribute = enables_brahmins
-			has_country_flag = enables_brahmins_flag
+			has_government_attribute = enables_estate_brahmins
+			has_country_flag = enables_estate_brahmins_flag
 			AND = {
 				OR = {
 					AND = {
@@ -25,11 +21,8 @@ estate_brahmins = {
 					religion = hinduism
 				}
 				NOT = { has_government_attribute = is_pirate_republic_reform }
-				NOT = { has_government_attribute = is_merchant_republic }
-				NOT = { has_reform = veche_republic }
-				NOT = { has_reform = trading_city }
+				#NOT = { has_government_attribute = is_merchant_republic }
 				NOT = { has_reform = siberian_tribe }
-				NOT = { has_reform = cossacks_reform }
 				NOT = { government = native }
 				NOT = { is_revolutionary_republic_trigger = yes }
 				OR = {
@@ -55,7 +48,7 @@ estate_brahmins = {
 		church_power_modifier = 0.2
 		monthly_fervor_increase = 1
 		#stability_cost_modifier = -0.1
-		build_time = -0.15
+		build_time = -0.10
 		monthly_piety_accelerator = 0.002
 		yearly_karma_decay = 0.35
 		yearly_patriarch_authority = 0.08
@@ -188,12 +181,18 @@ estate_brahmins = {
 		estate_brahmins_statutory_rights
 		estate_brahmins_religious_diplomats
 		estate_brahmins_one_faith_one_culture
-		estate_brahmins_new_world_mission
+		estate_brahmins_administrative_privileges
+		estate_brahmins_development_of_temples
+		estate_brahmins_expand_the_theology
+		estate_brahmins_clerical_education
+		estate_brahmins_legitimacy_of_rule
+		estate_brahmins_institutionalized_brahimns
+		estate_brahmins_donation_right
 	}
 
 	agendas = {
-		estate_brahmins_build_temple_in_y
-		estate_brahmins_build_manufactory_in_y
+		#estate_brahmins_build_temple_in_y
+		#estate_brahmins_build_manufactory_in_y
 		estate_brahmins_build_university_in_y
 		estate_brahmins_develop_x
 		estate_brahmins_convert_province_x

@@ -1,6 +1,6 @@
 
 nestorian_rebels = {
-
+	color = { 232 228 136 }
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = nestorian

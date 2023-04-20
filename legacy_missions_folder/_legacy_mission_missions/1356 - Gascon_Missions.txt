@@ -1,0 +1,1830 @@
+gas_new_kingdom_group = { #Create a New Kingdom - Left Side
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		tag = GUY
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_country_flag = 1356_stay_gascony }
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	GAS_secure_navarra = { #Annex Navarra
+		icon = mission_conquer_50_development
+		required_missions = { GAS_carve_out_a_new_kingdom_for_ourselves }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 210
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			210 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			209 = { add_permanent_claim = ROOT } #Vizcaya
+		}
+	}
+	GAS_secure_vizcaya = { #Secure the rest of the basque
+		icon = mission_assemble_an_army
+		required_missions = { GAS_secure_navarra }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 209
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			209 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_manpower = 5
+			211 = {	add_permanent_claim = ROOT }
+			214 = { add_permanent_claim = ROOT }
+			2989 = { add_permanent_claim = ROOT }
+		}
+	}
+	GAS_take_rioja_zaragoza_pirineo = { #Take part of Aragon and Rioja
+		icon = mission_cannons_firing
+		required_missions = { GAS_secure_vizcaya }
+		position = 5
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2989
+				province_id = 214
+				province_id = 211
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			214 = { country_or_non_sovereign_subject_holds = ROOT } #Zaragoza	
+			211 = { country_or_non_sovereign_subject_holds = ROOT } #Pirineo
+			2989 = { country_or_non_sovereign_subject_holds = ROOT } #Rioja
+		}
+		effect = {
+			1745 = {	add_permanent_claim = ROOT }
+			1746 = { add_permanent_claim = ROOT }
+			2755 = { add_permanent_claim = ROOT }
+		}
+	}
+
+	GAS_new_kingdom_take_soria_cantabria_burgos = { #Take the rest of the Iberian land you need.
+		icon = mission_assemble_an_army
+		required_missions = { GAS_new_kingdom_point_of_no_return }
+		position = 7
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1745
+				province_id = 1746
+				province_id = 2755
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1745 = { country_or_non_sovereign_subject_holds = ROOT } #Zaragoza	
+			1746 = { country_or_non_sovereign_subject_holds = ROOT } #Pirineo
+			2755 = { country_or_non_sovereign_subject_holds = ROOT } #Rioja
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_mod_2_modifier"
+				duration = -1
+			}
+			add_accepted_culture = catalan
+		}
+	}
+	GAS_new_kingdom_fortify_key_provinces = { #Take the rest of the Iberian land you need.
+		icon = mission_arabian_fort
+		required_missions = { GAS_new_kingdom_take_soria_cantabria_burgos GAS_new_kingdom_conquer_teruel_barcelona_tarragona }
+		position = 8
+		completed_by = 1821.1.1
+		trigger = {
+			OR = {
+				fort_15th = 4
+				fort_16th = 4
+				fort_17th = 4
+				fort_18th = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_mod_4_modifier"
+				duration = -1
+			}
+			add_accepted_culture = aragonese
+		}
+	}
+
+	
+}
+gas_new_kingdom_group_2 = { #Create a New Kingdom - Special Missions
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { 
+		tag = GUY
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_country_flag = 1356_stay_gascony }
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	GAS_carve_out_a_new_kingdom_for_ourselves = { #Starting Path for Pyrenne Kingdom, abandon France for a new Kingdom.
+		icon = mission_monarch_in_throne_room
+		required_missions = { GAS_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+	
+		trigger = {
+			OR = {
+				primary_culture = gascon
+				primary_culture = basque
+			}
+			religion = catholic
+			is_subject = no
+			is_at_war = no
+			is_bankrupt = no
+			NOT = { government_rank = 2 }
+			num_of_generals = 1
+			army_size = 6
+		}
+		effect = {
+			add_prestige = 5
+			210 = { #Navarra
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	GAS_new_kingdom_point_of_no_return = { #The Point of no Return for Gascony
+		icon = mission_monarch_in_throne_room
+		required_missions = { GAS_take_rioja_zaragoza_pirineo GAS_new_kingdom_urgell_girona }
+		position = 6
+		completed_by = 1821.1.1
+	
+		trigger = {
+			is_subject = no
+			is_at_war = no
+			is_bankrupt = no
+			OR = {
+				primary_culture = gascon
+				primary_culture = basque
+			}
+			religion = catholic
+			prestige = 40
+			OR = { #Religion requirement
+				is_papal_controller = yes
+				is_previous_papal_controller = yes
+				papal_influence = 75
+				AND = {
+					invested_papal_influence = 25
+					papal_influence = 50
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = 1356_GAS_pyrenne_tt
+			set_country_flag = GAS_pyrenee_kingdom
+			swap_non_generic_missions = yes #Technally gives nothing new.
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_point_of_no_return_modifier"
+				duration = -1
+			}
+			country_event = { 
+				id = flagas.1
+				days = 30
+				random = 30
+			}
+			add_accepted_culture = basque
+			2988 = { add_permanent_claim = ROOT }
+			213 = { add_permanent_claim = ROOT }
+			2990 = { add_permanent_claim = ROOT }
+		}
+	}
+		
+	GAS_the_pyrenee_kingdom = { #You've secured the Pyrenee Kingdom!
+		icon = mission_monarch_in_throne_room
+		required_missions = { GAS_new_kingdom_fortify_key_provinces GAS_new_kingdom_conquer_valencia_alicante_baleares }
+		position = 9
+		completed_by = 1821.1.1
+		trigger = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			legitimacy = 75
+		}
+		effect = {
+			custom_tooltip = 1356_GAS_pyrenne_tt
+			set_country_flag = gas_claimed_pyrenne_kingdom
+			swap_non_generic_missions = yes #Technally gives nothing new.
+			country_event = { 
+				id = flagas.2
+				days = 30
+				random = 30
+			}
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_modifier"
+				duration = -1
+			}
+			add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
+			add_legitimacy = 10
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+		}
+	}
+	
+}
+gas_new_kingdom_group_3 = { #Create a New Kingdom - Right Side
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+		tag = GUY
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_country_flag = 1356_stay_gascony }
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+
+	GAS_new_kingdom_toulouse = { #Secure the land north of the mountains
+		icon = mission_assemble_an_army
+		required_missions = { GAS_carve_out_a_new_kingdom_for_ourselves }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2753
+				province_id = 196
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2753 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			196 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			197 = { #Roussillon
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_new_kingdom_take_fort_roussillon = { #Secure the fort on the medi coast of aragon/pyrenees
+		icon = mission_conquer_50_development
+		required_missions = { GAS_new_kingdom_toulouse }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 197
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			197 = {	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			212 = { add_permanent_claim = ROOT }
+			2987 = { add_permanent_claim = ROOT }
+		}
+	}
+	GAS_new_kingdom_urgell_girona = { #Secure the rest of the pyrenees
+		icon = mission_unite_home_region
+		required_missions = { GAS_new_kingdom_take_fort_roussillon }
+		position = 5
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 212
+				province_id = 2987
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			212 = {	country_or_non_sovereign_subject_holds = ROOT }
+			2987 = {	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_army_tradition = 10
+		}
+	}
+	GAS_new_kingdom_conquer_teruel_barcelona_tarragona = { #Conquer the coast and the missing aragonese province
+		icon = mission_assemble_an_army
+		required_missions = { GAS_new_kingdom_point_of_no_return }
+		position = 7
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2988
+				province_id = 213
+				province_id = 2990
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2988 = { country_or_non_sovereign_subject_holds = ROOT }
+			213 = { country_or_non_sovereign_subject_holds = ROOT }
+			2990 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_mod_1_modifier"
+				duration = -1
+			}
+			220 = {	add_permanent_claim = ROOT }
+			1750 = { add_permanent_claim = ROOT }
+			333 = { add_permanent_claim = ROOT }
+		}
+	}
+	GAS_new_kingdom_conquer_valencia_alicante_baleares = { #Conquer the coast and rest of Valencia
+		icon = mission_assemble_an_army
+		required_missions = { GAS_new_kingdom_conquer_teruel_barcelona_tarragona }
+		position = 8
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 220
+				province_id = 1750
+				province_id = 333
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			220 = { country_or_non_sovereign_subject_holds = ROOT }
+			1750 = { country_or_non_sovereign_subject_holds = ROOT }
+			333 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_mod_3_modifier"
+				duration = -1
+			}
+		}
+	}
+}
+
+gas_secure_gascony_group = { #Secure Duchy of Gascony - 
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+		NOT = { has_country_flag = GAS_pyrenne_kingdom }
+		tag = GUY
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	GAS_secure_our_duchy = { #Secure Gascony
+		icon = mission_unite_home_region
+		required_missions = { GAS_unite_the_south_mission }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 173
+				province_id = 174
+				province_id = 175
+				province_id = 176
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			173 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			guyenne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			194 = {
+				add_permanent_claim = ROOT
+			}
+			195 = {
+				add_permanent_claim = ROOT
+			}
+			4112 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_secure_our_culture = { #Secure the Gascons
+		icon = mission_conquer_50_development
+		required_missions = { GAS_secure_our_duchy }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 194
+				province_id = 195
+				province_id = 4112
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			194 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			195 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4112 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			196 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_annex_toulouse = { #Secure Toulouse
+		icon = mission_assemble_an_army
+		required_missions = { GAS_secure_our_culture }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 196
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			196 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			4111 = {
+				add_permanent_claim = ROOT
+			}
+			4387 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_annex_rest_of_gascon_kingdom = { #Secure the rest of Gascony
+		icon = mission_build_up_to_force_limit
+		required_missions = { GAS_annex_toulouse }
+		position = 7
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4111
+				province_id = 4387
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4111 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4387 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_war_exhaustion = -2
+			add_years_of_income = 0.5
+		}
+	}
+	GAS_secure_gascon_area = { #Ensure Gascony is properly secured before forming it
+		icon = mission_assemble_an_army
+		required_missions = { GAS_annex_rest_of_gascon_kingdom GAS_secure_massif_central_p2 }
+		position = 8
+		completed_by = 1821.1.1
+		trigger = {
+			NOT = { num_of_revolts = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			NOT = { average_autonomy = 20 }
+		}
+		effect = {
+			add_dip_power = 150
+		}
+	}
+}
+
+# gas_minor_form_gascony_group = { #Gascon Minor form Gascony Group
+	# slot = 4
+	# generic = no
+	# ai = yes
+	# potential = { 
+		# OR = {
+			# tag = AMG
+			# tag = FOI
+		# }
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	# }
+	# has_country_shield = yes
+	
+	# GAS_minor_secure_our_duchy = { #Secure Gascony
+		# icon = mission_unite_home_region
+		# required_missions = { GAS_secure_our_independence }
+		# position = 3
+		# completed_by = 1821.1.1
+		# provinces_to_highlight = {
+			# OR = {
+				# province_id = 173
+				# province_id = 174
+				# province_id = 175
+				# province_id = 176
+			# }
+			# NOT = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+		# }
+		# trigger = {
+			# 173 = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# guyenne_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+		# }
+		# effect = {
+			# 194 = {
+				# add_permanent_claim = ROOT
+			# }
+			# 195 = {
+				# add_permanent_claim = ROOT
+			# }
+			# 4112 = {
+				# add_permanent_claim = ROOT
+			# }
+		# }
+	# }
+	# GAS_minor_secure_our_culture = { #Secure the Gascons
+		# icon = mission_conquer_50_development
+		# required_missions = { GAS_minor_secure_our_duchy }
+		# position = 4
+		# completed_by = 1821.1.1
+		# provinces_to_highlight = {
+			# OR = {
+				# province_id = 194
+				# province_id = 195
+				# province_id = 4112
+			# }
+			# NOT = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+		# }
+		# trigger = {
+			# 194 = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# 195 = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# 4112 = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+
+		# }
+		# effect = {
+			# add_adm_power = 50
+			# add_dip_power = 50
+			# add_prestige = 5
+		# }
+	# }
+	
+	# gas_minor_form_gascony = { #Claim the title Kingdom of Gascony
+		# icon = mission_monarch_in_throne_room
+		# required_missions = { GAS_minor_secure_our_culture }
+		# position = 6
+		# completed_by = 1821.1.1
+		# provinces_to_highlight = {
+			# OR = {
+				# province_id = 174
+				# province_id = 173
+				# province_id = 175
+				# province_id = 176
+				# province_id = 4112
+				# province_id = 194
+			# }
+			# NOT = {
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+		# }
+		# trigger = {
+			# NOT = { exists = GUY }
+			# is_at_war = no
+			# is_free_or_tributary_trigger = yes
+			# is_nomad = no
+			# primary_culture = gascon
+			# owns_core_province = 174	# Aquitaine
+			# owns_core_province = 173	# Labourd
+			# owns_core_province = 175	# Armagnac
+			# owns_core_province = 176	# Foix
+			# owns_core_province = 4112	# Quercy
+			# owns_core_province = 194	# Perigord
+		# }
+		# effect = {
+			# change_tag = GUY
+			# swap_non_generic_missions = yes
+			# remove_non_electors_emperors_from_empire_effect = yes
+			# 174 = { #Aquitaine
+				# move_capital_effect = yes
+				# add_base_manpower = 1
+				# add_base_tax = 2
+			# }
+			# if = {
+				# limit = {
+					# NOT = { government_rank = 2 }
+				# }
+				# set_government_rank = 2
+			# }
+			# add_country_modifier = {
+				# name = "centralization_modifier"
+				# duration = 7300
+			# }
+			# add_prestige = 25
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+					# OR = {
+						# ai = no
+						# AND = {
+							# ai = yes
+							# has_idea_group = default_ideas
+						# }
+					# }
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# set_country_flag = formed_gascony_flag
+		# }
+	# }
+	
+# }
+
+gas_form_aquitaine_group = { #Secure Duchy of Gascony/The Kingdom of Aquitaine - Form Aquitaine
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+		NOT = { has_country_flag = GAS_pyrenne_kingdom }
+		tag = GUY
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	GAS_form_aquitaine = { #You can now form Aquitaine!
+		icon = mission_empire
+		required_missions = { GAS_secure_gascon_area }
+		position = 9
+		completed_by = 1821.1.1
+		
+		trigger = {
+			NOT = { exists = AQT }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			prestige = 50
+			legitimacy = 75
+		}
+		effect = {
+			custom_tooltip = 1356_GAS_pyrenne_tt
+			174 = { #Aquitaine
+				move_capital_effect = yes
+				add_base_manpower = 1
+				add_base_tax = 2
+			}
+			change_tag = AQT
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_aquitaine_flag
+		}
+	}
+}
+
+gas_freedom = { 
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = AMG
+			tag = FOI
+			tag = GUY
+		}
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	GAS_secure_our_independence = { #FREEDOM
+		icon = mission_monarch_in_throne_room
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		
+		trigger = {
+			is_subject = no
+		}
+		effect = {
+			create_general = {
+				tradition = 35
+			}
+			198 = {
+				add_permanent_claim = ROOT
+			}
+			languedoc_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			173 = {
+				add_permanent_claim = ROOT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine- 
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+		NOT = { has_country_flag = GAS_pyrenne_kingdom }
+		tag = GUY
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	GAS_unite_the_south_mission = { #Path for uniting southern france
+		icon = mission_monarch_in_throne_room
+		required_missions = { GAS_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		
+		trigger = {
+			OR = {
+				primary_culture = gascon
+				primary_culture = occitain
+			}
+			OR = {
+				religion = catholic
+				religion = hussite
+				religion = protestant
+				religion = reformed
+			}
+			is_subject = no
+			is_at_war = no
+			is_bankrupt = no
+			NOT = { government_rank = 2 }
+			num_of_generals = 1
+			army_size = 6
+		}
+		effect = {
+			add_prestige = 5
+			languedoc_area = { 
+				add_permanent_claim = ROOT
+			}
+			guyenne_area = { 
+				add_permanent_claim = ROOT
+			}
+			173 = { #Navarra
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	GAS_secure_toulouse = { #Secure the Occitans P1
+		icon = mission_cannons_firing
+		required_missions = { GAS_unite_the_south_mission }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 198
+				province_id = 196
+				province_id = 2753
+				province_id = 200
+				province_id = 4391
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			198 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			196 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2753 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			200 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4391 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			provence_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			204 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_secure_provence = { #Secure the Occitans P2
+		icon = mission_assemble_an_army
+		required_missions = { GAS_secure_our_culture GAS_secure_toulouse }
+		position = 5
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 204
+				province_id = 202
+				province_id = 201
+				province_id = 2991
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			204 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			202 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			201 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2991 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			199 = {
+				add_permanent_claim = ROOT
+			}
+			203 = {
+				add_permanent_claim = ROOT
+			}
+			190 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_secure_massif_central = { #Secure the Occitains P3
+		icon = mission_cannons_firing
+		required_missions = { GAS_secure_provence }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 199
+				province_id = 203
+				province_id = 190
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			199 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			203 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			190 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			add_accepted_culture = occitain
+		}
+	}
+	GAS_secure_massif_central_p2 = { #Secure the Occitans P4
+		icon = mission_great_wall
+		required_missions = { GAS_secure_massif_central }
+		position = 7
+		completed_by = 1821.1.1
+		trigger = {
+			199 = {
+				has_building = fort_15th
+			}
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	GAS_stay_gascony = { #Do NOT form France OR Aquitaine!
+		icon = mission_empire
+		required_missions = { GAS_triumph_against_french GAS_secure_gascon_area }
+		position = 9
+		completed_by = 1821.1.1
+		trigger = {
+			NOT = { exists = FRA }
+			NOT = { exists = AQT }
+			is_at_war = no
+		}
+		effect = {
+			custom_tooltip = 1356_GAS_stay_gas_tt
+			set_country_flag = 1356_stay_gascony
+			swap_non_generic_missions = yes
+			set_government_rank = 3
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GUY
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}	
+			add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
+			add_prestige = 25
+			add_legitimacy = 25
+		}
+	}	
+}
+
+gas_secure_brittany = { 
+	slot = 6
+	generic = no
+	ai = yes
+	
+	potential = { 
+		NOT = { has_country_flag = GAS_pyrenne_kingdom }
+		tag = GUY
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+		
+	GAS_take_brittany = { #Take Brittany
+		icon = mission_build_up_to_force_limit
+		required_missions = { GAS_take_loire }
+		position = 5
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 170
+				province_id = 171
+				province_id = 169
+				province_id = 4384
+				province_id = 172
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			170 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			171 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			169 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4384 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			172 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 75
+		}
+	}
+	
+}
+
+gas_secure_france = { #Either Take France OR Take the Pyrenees
+	slot = 7
+	generic = no
+	ai = yes
+	
+	potential = { 
+		NOT = { has_country_flag = GAS_pyrenne_kingdom }
+		tag = GUY
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+	#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	GAS_path_to_france_mission = { #Path for uniting France
+		icon = mission_monarch_in_throne_room
+		required_missions = { GAS_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		
+		trigger = {
+			culture_group = french
+			OR = {
+				religion = catholic
+				religion = hussite
+				religion = protestant
+				religion = reformed
+			}
+			is_subject = no
+			is_at_war = no
+			is_bankrupt = no
+			NOT = { government_rank = 2 }
+			num_of_generals = 1
+			army_size = 6
+		}
+		effect = {
+			poitou_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	GAS_take_poitou = { #Take Poitou
+		icon = mission_cannons_firing
+		required_missions = { GAS_path_to_france_mission }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4387
+				province_id = 4111
+				province_id = 4386
+				province_id = 180
+				province_id = 195
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4387 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4111 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4386 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			180 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			195 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			loire_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			set_country_flag = gas_french_kingdom
+			
+		}
+	}
+	GAS_take_loire = { #Take Loire
+		icon = mission_conquer_5_states
+		required_missions = { GAS_take_poitou }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 178
+				province_id = 177
+				province_id = 4389
+				province_id = 184
+				province_id = 179
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			178 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			177 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4389 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			184 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			179 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			normandy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			brittany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_take_normandy = { #Take Normandy
+		icon = mission_sea_battles
+		required_missions = { GAS_take_loire }
+		position = 5
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1879
+				province_id = 4385
+				province_id = 168
+				province_id = 167
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1879 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4385 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			168 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			167 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			ile_de_france_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_take_valois_picardie_champagne = { #Take the rest of France
+		icon = mission_monarch_in_throne_room
+		required_missions = { GAS_take_normandy GAS_take_brittany }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 89
+				province_id = 186
+				province_id = 4390
+				province_id = 182
+				province_id = 4388
+				province_id = 183
+				province_id = 185
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			89 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			186 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4390 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			182 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4388 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			183 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			185 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 0.75
+		}
+	}
+
+	GAS_triumph_against_french = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { GAS_take_valois_picardie_champagne }
+		position = 8
+		completed_by = 1821.1.1
+		
+		trigger = {
+			always = yes #Just so the tree path doesnt look weird, and an excuse for the modifier/description of this to exist.
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gas_triumph_over_french"
+				duration = 7300
+			}
+		}
+	}
+	
+	GAS_reform_france = { #Claim the title Kingdom of France
+		icon = mission_empire
+		required_missions = { GAS_triumph_against_french }
+		position = 9
+		completed_by = 1821.1.1
+		trigger = {
+			NOT = { exists = FRA }
+			is_at_war = no
+		}
+		effect = {
+			custom_tooltip = 1356_GAS_pyrenne_tt
+			set_country_flag = GAS_formed_france_k
+			change_tag = FRA
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}	
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+	}
+}
+
+gas_african_ambitions = { #Lifted from Aquitaine Missions
+	slot = 10
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = GUY
+		#has_country_flag = use_golden_bull_missions_instead_of_paradox
+		#NOT = { has_global_flag = disabled_1356_related_missions }
+	}
+	has_country_shield = yes
+	
+	GAS_take_baleares = { #Take the Baleares
+		icon = mission_invade_island
+		required_missions = { GAS_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 333
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			333 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+		effect = {
+			tunisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_take_tunis = { #Take Tunis
+		icon = mission_sea_battles
+		required_missions = { GAS_take_baleares }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2455
+				province_id = 2454
+				province_id = 341
+				province_id = 2473
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2455 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2454 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			341 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+			2473 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			kabylia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			djerba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tripolitania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_repel_the_tunisian_pirates = { #Take Tunis' coast.
+		icon = mission_galleys_in_port
+		required_missions = { GAS_take_tunis }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = tripolitania_area
+				area = djerba_area
+				area = kabylia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kabylia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			djerba_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tripolitania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+
+		}
+		effect = {
+			algiers_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		
+		}
+	}
+	GAS_repel_the_algerian_pirates = { #Take the Algerian Coast
+		icon = mission_establish_high_seas_navy
+		required_missions = { GAS_repel_the_tunisian_pirates }
+		position = 5
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			area = algiers_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			algiers_area = {
+				type = all				
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+
+		}
+		effect = {
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_repel_the_moroccan_pirates = { #Take Morocco's Coast
+		icon = mission_galleys_in_port
+		required_missions = { GAS_repel_the_algerian_pirates }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = northern_morocco_area
+				area = southern_morocco_area
+				area = western_morocco_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			northern_morocco_area = {
+				type = all	
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_morocco_area = {
+				type = all	
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_morocco_area = {
+				type = all	
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+
+		}
+		effect = {
+			add_yearly_sailors = 4
+		}
+	}
+	GAS_gain_a_west_african_port = { #Take a West African port
+		icon = mission_arabian_fort
+		required_missions = { GAS_repel_the_moroccan_pirates }
+		position = 7
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = sao_tome_area
+				area = jolof_area
+				area = west_africa_coast_area
+				area = futa_jallon_area
+				area = gulf_of_guinea_area
+				area = benin_area
+				area = guinea_coast_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				sao_tome_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				jolof_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				west_africa_coast_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				futa_jallon_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				gulf_of_guinea_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				benin_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				guinea_coast_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+			}
+		}
+		effect = {
+			add_dip_power = 30
+		}
+	}
+	GAS_control_part_slave_trade = { #Time to take part of this lucrative Slave Trade for ourselves
+		icon = mission_african_soldier
+		required_missions = { GAS_gain_a_west_african_port }
+		position = 8
+		completed_by = 1821.1.1
+		trigger = {	
+			trading_part = {
+				trade_goods = slaves
+				value = 0.05
+			}	
+		}
+		effect = {
+			coastal_kongo = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			angola_namibia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_conquer_a_kongo_port = { #Time to take over those savages
+		icon = mission_african_soldier
+		required_missions = { GAS_control_part_slave_trade }
+		position = 9
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1167
+				province_id = 1172
+				province_id = 1168
+				province_id = 4080
+				province_id = 4079
+				province_id = 1166
+				province_id = 4078
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				1167 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				1172 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				1168 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				4080 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				4079 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				1166 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				4078 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			
+			
+			}
+
+		}
+		effect = {
+			cape_of_good_hope_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_colonize_the_cape = { #In order to get to the greater riches of India we need to plant our feet in the strategic region of South Africa.
+		icon = mission_colonial
+		required_missions = { GAS_conquer_a_kongo_port }
+		position = 11
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 833
+				province_id = 1179
+				province_id = 1177
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				833 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				1179 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				1177 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			1196 = { #Kilwa
+				add_permanent_claim = ROOT
+			} 
+		}
+	}
+	GAS_secure_kilwa = { #In order to get to the greater riches of India we need to plant our feet in the strategic region of East Africa
+		icon = mission_sea_battles
+		required_missions = { GAS_colonize_the_cape }
+		position = 12
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 1196
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1196 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+		}
+		effect = {
+			2788 = { #Hafun
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	GAS_secure_an_indian_route = { #Take Hafun for its stragetic port!
+		icon = mission_invade_island
+		required_missions = { GAS_secure_kilwa  }
+		position = 13
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 2788
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+				2788 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+		}
+		effect = {
+			517 = { #Surat
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	GAS_secure_indian_port = { #Take a port in India to begin our Indian Conquest!
+		icon = mission_establish_high_seas_navy
+		required_missions = { GAS_secure_an_indian_route }
+		position = 14
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 517 #Surat
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+				517 = { #Surat
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+		}
+		effect = {
+			add_dip_power = 30
+		}
+	}
+}

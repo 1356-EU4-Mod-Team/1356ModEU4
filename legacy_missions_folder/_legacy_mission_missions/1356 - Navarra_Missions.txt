@@ -1,0 +1,1441 @@
+nav_family_claims_2 = { 
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV }
+	has_country_shield = yes
+
+#Claiming France	
+	nav_norman_claims = { #Family Claims on Artois
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 1879
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1879 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1879 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_picard_claims = { #Family Claims on Artois
+		icon = mission_assemble_an_army
+		required_missions = { nav_norman_claims }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 89
+				province_id = 88
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			89 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			88 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			186 = {
+				add_permanent_claim = ROOT
+			}
+			4390 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_champagne_claims = { #His Mothers Champagne Claims
+		icon = mission_assemble_an_army
+		required_missions = { nav_picard_claims }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 186
+				province_id = 4390
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			186 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4390 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			185 = {
+				add_permanent_claim = ROOT
+			}
+		}
+}
+
+	nav_nemours = { #Take Nemours
+		icon = mission_conquer_5_states
+		required_missions = { nav_champagne_claims }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 185
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			185 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			182 = {
+				add_permanent_claim = ROOT
+			}
+			4388 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	nav_loire_conquest = { #Take Nemours
+		icon = mission_cannons_firing
+		required_missions = { nav_royal_land_claims }
+		position = 8
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			area = loire_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			loire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			poitou_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	nav_annex_poitou = { #Take Poitou
+		icon = mission_assemble_an_army
+		required_missions = { nav_loire_conquest }
+		position = 10
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			area = poitou_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 4386
+			owns_core_province = 180
+			owns_core_province = 4111
+			owns_core_province = 4387	
+		}
+		effect = {
+			massif_central_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guyenne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			languedoc_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			provence_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			savoy_dauphine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_gascon_land = { #Finish off the Gascon Culture Group
+		icon = mission_cannons_firing
+		required_missions = { nav_annex_poitou }
+		position = 12
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 195
+				province_id = 4112
+				province_id = 194
+				province_id = 173
+				province_id = 1900
+				area = pyrenees_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			pyrenees_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_core_province = 4112
+			owns_core_province = 194
+			owns_core_province = 195
+			owns_core_province = 190
+			owns_core_province = 173
+			}
+		effect = {
+			add_prestige = 5
+		}
+	}
+	nav_claim_gascony = { #Form Gascony but dont swap
+		icon = mission_empire
+		required_missions = { nav_gascon_land }
+		position = 13
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 195
+				province_id = 4112
+				province_id = 194
+				province_id = 173
+				province_id = 1900
+				area = pyrenees_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		trigger = {
+			NOT = { exists = GUY }
+			is_at_war = no
+			pyrenees_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_core_province = 4112
+			owns_core_province = 194
+			owns_core_province = 195
+			owns_core_province = 190
+			owns_core_province = 173
+		}
+		effect = {
+			set_country_flag = formed_gascony_flag
+			add_prestige = 25
+			if = { #Kingdom Rank Swap
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "nav_gascon_kingdom_claimed"
+				duration = 7300
+			}
+		}
+	}
+	
+
+	nav_claim_kingdom_of_france = { #Take the title but dont form it.
+		icon = mission_empire
+		required_missions = { nav_claim_aquitaine nav_claim_gascony }
+		position = 14
+		completed_by = 1821.1.1
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4112
+				province_id = 194
+				province_id = 173
+				area = loire_area
+				area = normandy_area
+				area = massif_central_area
+				area = poitou_area
+				area = champagne_area
+				area = picardy_area
+				area = ile_de_france_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		trigger = {
+			NOT = { exists = FRA }
+			NOT = { has_country_flag = nav_formed_france }
+			is_at_war = no
+			loire_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			normandy_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			massif_central_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			poitou_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			champagne_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			picardy_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			ile_de_france_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			owns_core_province = 173
+			owns_core_province = 194
+			owns_core_province = 4112
+		}
+		effect = {
+			set_country_flag = nav_claimed_france
+			set_country_flag = formed_france_flag
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAV
+			}
+			add_country_modifier = {
+				name = "nav_france_kingdom_claimed"
+				duration = 7300
+			}
+		}
+	}
+}
+
+nav_form_france_slot_2 = { 
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV	}
+	has_country_shield = yes
+
+	nav_royal_land_claims = { #Family Claims on Kingdom of France
+		icon = mission_conquer_50_development
+		required_missions = { nav_nemours }
+		position = 7
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 182
+				province_id = 4388
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			182 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4388 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			183 = {
+				add_permanent_claim = ROOT
+			}
+			loire_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bourgogne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wallonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_royal_land_claims_mission = { #Family Claims on Kingdom of France
+		icon = mission_have_two_subjects
+		required_missions = { nav_royal_land_claims }
+		position = 8
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 183
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			183 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+		}
+	}
+	
+	nav_form_france = { #Swap to France, transition to French Missions.
+		icon = mission_empire
+		required_missions = { nav_royal_land_claims_mission }
+		position = 9
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = ile_de_france_area
+				area = normandy_area
+				area = loire_area
+				province_id = 186
+				province_id = 4390
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tag = NAV
+			NOT = { has_country_flag = nav_claimed_france }
+			NOT = { exists = FRA }
+			is_at_war = no
+			owns_core_province = 177	# Maine
+			owns_core_province = 179	# Blois
+			owns_core_province = 182	# Vermandois
+			owns_core_province = 183	# Île-de-France
+			owns_core_province = 184	# Orléannais
+			owns_core_province = 185	# Othe
+			owns_core_province = 186	# Champagne		
+			
+		}
+		effect = {
+			set_country_flag = nav_formed_france
+			set_country_flag = formed_france_flag
+			change_tag = FRA
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}	
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+	}
+
+	nav_occitian_land = { #Finish off the Occitian Culture Group
+		icon = mission_conquer_50_development
+		required_missions = { nav_annex_poitou }
+		position = 11
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = languedoc_area
+				area = provence_area
+				province_id = 203
+				province_id = 204
+				province_id = 198
+				province_id = 199
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			pyrenees_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			provence_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_core_province = 203
+			owns_core_province = 204
+			owns_core_province = 199
+			owns_core_province = 198
+			
+		}
+		effect = {
+			add_prestige = 5
+		}
+	}
+	nav_claim_aquitaine = { #Form Aquitaine but dont swap
+		icon = mission_empire
+		required_missions = { nav_occitian_land }
+		position = 13
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = savoy_dauphine_area
+				area = provence_area
+				area = languedoc_area
+				province_id = 190
+				province_id = 199
+				province_id = 198
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		trigger = {
+			NOT = { exists = AQT }
+			is_at_war = no
+			190 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			199 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			198 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			savoy_dauphine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			languedoc_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			provence_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = formed_aquitaine_flag
+			add_prestige = 25
+			if = { #Kingdom Rank Swap
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "nav_aquitaine_kingdom_claimed"
+				duration = 7400
+			}
+		}
+	}
+}
+
+nav_family_claims_3 = { 
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV }
+	has_country_shield = yes
+		
+	#Burgundian Missions
+	nav_royal_land_claims_bur = { #Family Claims on Duchy of Burgundy
+		icon = mission_have_two_subjects
+		required_missions = { nav_royal_land_claims }
+		position = 8
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4392
+				province_id = 192
+				province_id = 1877
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4392 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			192 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1877 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			add_country_modifier = {
+				name = "1356_burgundy_kingdom_claim"
+				duration = 5300
+			}
+			191 = {
+				add_permanent_claim = ROOT
+			}
+			193 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_county_burgundy_and_nevers = { #Take the rest of the Duchy of burgundy
+		icon = mission_conquer_50_development
+		required_missions = { nav_royal_land_claims_bur }
+		position = 9
+		completed_by = 1821.1.1
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 191
+				province_id = 193
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 191
+			owns_core_province = 193
+		}
+		effect = {
+			205 = {
+				add_permanent_claim = ROOT
+			}
+			1867 = {
+				add_permanent_claim = ROOT
+			}
+			202 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_rest_of_burgundian_kingdom = { #Savoy, and Vaud
+		icon = mission_unite_home_region
+		required_missions = { nav_county_burgundy_and_nevers }
+		position = 11
+		completed_by = 1821.1.1
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 205
+				province_id = 1867
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 205 #Savoy
+			owns_core_province = 1867 #Vaud
+		}
+		effect = {
+			add_prestige = 5
+		}
+	
+	
+	}
+
+	nav_claim_kingdom_of_two_burgundies = { #Form Arles but dont swap. 
+		icon = mission_empire
+		required_missions = { nav_rest_of_burgundian_kingdom nav_occitian_land }
+		position = 12
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = bourgogne_area
+				area = provence_area
+				area = savoy_dauphine_area
+				area = romandie_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		trigger = {
+			NOT = { exists = ARE }
+			is_at_war = no
+			tag = NAV
+			bourgogne_area = { owned_by = ROOT }
+			provence_area = { owned_by = ROOT }
+			savoy_dauphine_area = { owned_by = ROOT }
+			romandie_area = { owned_by = ROOT }	
+		}
+		effect = {
+			set_country_flag = formed_arles_flag
+			add_prestige = 25
+			if = { #Kingdom Rank Swap
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "nav_arles_kingdom_claimed"
+				duration = 7400
+			}
+			lorraine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	nav_lorraine_claims = { #Annex Lorraine
+		icon = mission_conquer_5_states
+		required_missions = { nav_claim_kingdom_of_two_burgundies }
+		position = 13
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			area = lorraine_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			lorraine_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+		}
+		effect = {
+			add_prestige = 5
+		}
+	}
+
+	nav_claim_karling_ancestory = { #Claim Ancestory to Charlamagne himself
+		icon = mission_have_two_subjects
+		required_missions = { nav_claim_lotharingia nav_claim_kingdom_of_france }
+		position = 15
+		completed_by = 1821.1.1
+		
+		#Make some sort of global popup for everyone here, as Charles II is being overly ambitious here now.
+		
+		trigger = {
+			NOT = { exists = NCH }
+			OR = { #Feudal or Discovery
+				current_age = age_of_feudalism
+				current_age = age_of_discovery		
+				NOT = { is_year = 1550 }
+			}
+			government = monarchy
+			OR = { #Gotta be Catholic or Orthodox
+				religion = catholic
+				religion = orthodox
+				#AddHeresiesHere?			
+			}
+			prestige = 75
+			legitimacy = 100
+			OR = { #Gotta have church authority to ask
+				AND = { #Papal
+					papal_influence = 100
+					OR = {
+						has_opinion = {
+							who = PAP
+							value = 150
+						}
+						reverse_has_opinion = {
+							who = PAP
+							value = 150
+						}
+					}
+				}
+				patriarch_authority = 0.75
+				AND = { 
+					NOT = { exists = PAP }
+					religion = catholic
+				}
+			}
+			OR = { #Culture
+				culture_group = french
+				primary_culture = basque
+				culture_group = germanic
+				culture_group = latin			
+			}		
+		}	
+		effect = {
+			add_country_modifier = { #Modifier for claiming throne
+				name = "1356_claim_to_karling_throne"
+				duration = -1
+				desc = 1356_KARLING_THRONE_CLAIM_TOOLTIP
+			}
+			add_country_modifier = { #Extra Troops
+				name = "generic_men_flock_to_banner"
+				duration = 5300
+				desc = 1356_RECRUIT_FLOCK_TO_BANNER_TOOLTIP
+			}
+			set_global_flag = 1356_karling_throne_claimed
+		}
+	}
+	
+	nav_claim_charlamagne_empire = {
+		icon = mission_empire
+		required_missions = { nav_claim_karling_ancestory }
+		position = 16
+		completed_by = 1821.1.1
+		
+		trigger = {
+			NOT = { has_global_flag = 1356_karling_empire_formed }
+			NOT = { exists = NCH }
+			is_at_war = no
+			OR = { #Feudal or Discovery
+				current_age = age_of_feudalism
+				current_age = age_of_discovery	
+				NOT = { is_year = 1550 }
+			}
+			government = monarchy
+			OR = { #Gotta be Catholic or Orthodox
+				religion = catholic
+				religion = orthodox
+				#AddHeresiesHere?			
+			}
+			prestige = 75
+			legitimacy = 100
+			OR = { #Gotta have church authority to ask
+				AND = { #Papal
+					papal_influence = 100
+					OR = {
+						has_opinion = {
+							who = PAP
+							value = 150
+						}
+						reverse_has_opinion = {
+							who = PAP
+							value = 150
+						}
+					}
+				}
+				patriarch_authority = 0.75
+				AND = { 
+					NOT = { exists = PAP }
+					religion = catholic
+				}
+				
+			}
+			OR = { #Culture German/Latin/French/Basque
+				culture_group = french
+				primary_culture = basque
+				culture_group = germanic
+				culture_group = latin			
+			}		
+			num_of_cities = 50
+			owns_core_province = 183 #Paris/French Capital
+			owns_core_province = 174 #Aquitaine/Aquitaine Capital
+			owns_core_province = 1878 #Aachen/Lotharingia Capital
+			owns_core_province = 192 #Dijonnais/Burgundy Capital
+			owns_core_province = 168 #Normandy
+			owns_core_province = 172 #Nantais/Blois Capital
+			owns_core_province = 170 #Finistere/Montfort Capital
+			owns_core_province = 97 #Holland
+		}
+		effect = {
+			custom_tooltip = 1356_forming_karling_empire_tooltip #Note this nation does NOT have custom missions and there is no intention to make any currently.
+			set_country_flag = 1356_karling_empire_formed
+			change_tag = NCH
+			swap_non_generic_missions = yes #No missions here. None intended either.
+			add_adm_power = 200
+			add_dip_power = 100
+			add_mil_power = 100
+			add_prestige = 100
+			add_legitimacy = 100
+			add_stability = 1
+			if = { #Change ideas
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = { #Give Empire Rank
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = "nav_francia_kingdom_claimed"
+				duration = 7400
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						ai = no
+						NOT = { tag = ROOT }
+						knows_country = ROOT
+					}
+					country_event = { #Global Popup
+						id = flavor_fla_nav.99
+						days = 5
+						#random = 15
+						
+					}
+				}
+			}
+		}
+	
+	}
+}
+
+nav_family_claims_slot_2_p2 = { 
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV }
+	has_country_shield = yes
+
+#Claiming Lotharingia
+	nav_wallonian_claims = { #Annex Wallonia
+		icon = mission_alliances
+		required_missions = { nav_royal_land_claims }
+		position = 8
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			area = wallonia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			wallonia_area = { 
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			holland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			netherlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			flanders_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	
+	}
+	nav_dutch_claims = { #Annex Holland and the Lowlands
+		icon = mission_cannons_firing
+		required_missions = { nav_wallonian_claims }
+		position = 11
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = holland_area
+				area = netherlands_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			holland_area = { owned_by = ROOT }
+			netherlands_area = { owned_by = ROOT }
+			}
+		effect = {
+			add_prestige = 5
+		}
+	
+	}
+
+	nav_claim_lotharingia = { #Form Lotharingia but dont swap
+		icon = mission_empire
+		required_missions = { nav_dutch_claims nav_lorraine_claims nav_secure_aachen }
+		position = 14
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = bourgogne_area
+				area = holland_area
+				area = netherlands_area
+				area = lorraine_area
+				area = wallonia_area
+				area = flanders_area
+				province_id = 1878
+				
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		trigger = {
+			NOT = { exists = LOT }
+			is_at_war = no
+			bourgogne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			holland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			netherlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lorraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			wallonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			flanders_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_core_province = 1878
+		}
+		effect = {
+			set_country_flag = formed_lotharingia_flag
+			add_prestige = 25
+			if = { #Kingdom Rank Swap
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "nav_lotharingia_kingdom_claimed"
+				duration = 7400
+			}
+		}
+	}
+	
+}
+
+nav_family_claims_1 = { #Integrate Flanders, Aachen, and the Bretons
+
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV }
+	has_country_shield = yes
+	
+
+	#Form France but keep Navarra as your main title.
+
+	nav_show_the_bretons_whos_who = { #Annex Brittany
+		icon = mission_cannons_firing
+		required_missions = {  }
+		position = 5
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			area = brittany_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			brittany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+		effect = {
+			add_adm_power = 25
+			add_prestige = 5
+		}
+	}
+
+
+	nav_flemish_claims = { #Annex Flanders
+		icon = mission_sea_battles
+		required_missions = { nav_wallonian_claims }
+		position = 9
+		completed_by = 1821.1.1	
+		provinces_to_highlight = {
+			area = flanders_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			flanders_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1878 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_secure_aachen = { #Annex Aachen
+		icon = mission_conquer_50_development
+		required_missions = { nav_flemish_claims }
+		position = 13
+		completed_by = 1821.1.1	
+		provinces_to_highlight = {
+			province_id = 1878
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1878 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+		}
+	}
+	
+}
+
+nav_missions_1_extra = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAV
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	nav_basque_fisheries = {
+		icon = mission_early_game_buildings
+		required_missions = { }
+		position = 14
+		provinces_to_highlight = {
+			province_id = 209
+			OR = {
+				NOT = {	owned_by = ROOT }
+				NOT = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_transport = 5
+			209 = {
+				owned_by = ROOT
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+			}			
+		}
+		effect = {
+			add_country_modifier = {
+				name = "basque_fisheries_modifier"
+				duration = 7300
+			}
+			munster_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	nav_north_sea_whaling = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { nav_basque_fisheries }
+		position = 15
+		provinces_to_highlight = {
+			province_id = 1975
+			NOT = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		trigger = {
+			1975 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		effect = {
+			create_explorer = {tradition = 50 }
+			add_country_modifier = {
+				name = "basque_exploration"
+				duration = 7300
+			}
+			iceland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_claim = ROOT
+			}
+			if = {
+				limit = {
+					is_random_new_world = no
+				}
+				2573 = {
+					if = {
+						limit = {
+							NOT = {
+								is_permanent_claim = ROOT
+								is_core = ROOT
+							}
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	nav_terranova = {
+		icon = mission_settlers_north_america
+		required_missions = { nav_north_sea_whaling }
+		position = 16
+		provinces_to_highlight = {
+			province_id = 2573
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_city = yes
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			2573 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_city = yes
+			}
+		}
+		effect = {
+			country_event = { id = flavor_nav.1 }
+			newfoundland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			labrador_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			cote_nord_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_newfoundland_labrador = {
+		icon = mission_iberian_conquistador
+		required_missions = { nav_terranova }
+		position = 17
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = newfoundland_area
+						area = labrador_area
+						area = cote_nord_area
+					}
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				AND = {
+					province_id = 1490
+					NOT = { is_strongest_trade_power = ROOT }
+				}
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			1490 = {
+				is_strongest_trade_power = ROOT
+			}
+			newfoundland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			labrador_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cote_nord_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = nav_newfoundland
+				duration = -1
+			}
+		}
+	}
+
+	nav_aragonese_inheritance = {
+		icon = mission_monarch_in_throne_room
+		required_missions = {  }
+		position = 18
+		provinces_to_highlight = {
+			area = aragon_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			aragon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			iberia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_dominate_espainiako = {
+		icon = mission_unite_home_region
+		required_missions = { nav_aragonese_inheritance }
+		position = 19
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "conquest_of_espainiako"
+				duration = -1
+			}
+		}
+	}
+}
+	

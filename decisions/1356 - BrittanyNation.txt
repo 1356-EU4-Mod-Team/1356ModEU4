@@ -35,6 +35,7 @@ country_decisions = {
 		effect = {
 			change_tag = BRI
 			inherit = BLS
+			on_change_tag_effect = yes
             swap_non_generic_missions = yes
 			set_capital = 172 # Vendee
 			random_owned_province = {

@@ -1,4 +1,3 @@
-# Audax Validator "!" Ignore_1001
 republic_mechanic = {
 	basic_reform = yes
 	republican_name = yes
@@ -39,7 +38,9 @@ oligarchy_reform = {
 		NOT = { culture_group = latin }
 	}
 	modifiers = {
+		burghers_loyalty_modifier = 0.05
 		global_tax_modifier = 0.05
+		global_unrest = -0.5
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -65,7 +66,7 @@ signoria_reform = {
 		culture_group = latin
 	}
 	modifiers = {
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.15
 		max_absolutism = 10
 	}
 	custom_attributes = {
@@ -91,17 +92,28 @@ protectorate_parliament_reform = {
 	legacy_equivalent = protectorate_parliament_legacy
 	modifiers = {
 		global_autonomy = -0.05
-		land_morale = 0.05
+		land_morale = 0.1
 		max_absolutism = 20
 		republican_tradition = -0.5
 	}
 
 	conditional = {
-		allow = { has_dlc = "Common Sense" }
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
 		has_parliament = yes
 		custom_attributes = {
 			blocked_call_diet = yes
-			disables_estate_nobles = yes
+		}
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
 		}
 	}
 	has_term_election = no
@@ -113,7 +125,52 @@ protectorate_parliament_reform = {
 	}
 }
 
-prussian_republic_reform = { #1356
+parliamentary_republic_reform = {
+	icon = "protectorate_parliament_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = parliamentary_republic_reform
+			have_had_reform = parliamentary_republic_reform
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_new_country = no
+	nation_designer_cost = 30
+	valid_for_nation_designer = yes
+	modifiers = {
+		global_autonomy = -0.05
+		land_morale = 0.1
+		can_revoke_parliament_seats = yes 
+		parliament_backing_chance = 0.25
+		num_of_parliament_issues = 1
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
+		}
+	}
+	duration = 5
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		cannot_become_dictatorship = yes
+	}
+}
+
+prussian_republic_reform = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = yes
 	potential = {
@@ -124,18 +181,25 @@ prussian_republic_reform = { #1356
 			}
 			AND = {
 				tag = GER
+				NOT = { map_setup = map_setup_random }
 				OR = {
-				# Audax Validator "." Ignore_ALL
+					has_reform = prussian_monarchy
 					have_had_reform = prussian_monarchy
 					have_had_reform = prussian_republic_reform
 					have_had_reform = prussian_theocratic_reform
+					is_hegemon_of_type = military_hegemon
+					development_in_provinces = {
+						value = 500
+						culture = prussian
+					}
 				}
 			}
 			AND = {
 				is_playing_custom_nation = yes
 				OR = {
-				# Audax Validator "." Ignore_ALL
+					has_reform = prussian_republic_reform
 					have_had_reform = prussian_monarchy
+					have_had_reform = prussian_monarchy_base
 					have_had_reform = prussian_republic_reform
 					have_had_reform = prussian_theocratic_reform
 				}
@@ -147,12 +211,23 @@ prussian_republic_reform = { #1356
 	}
 	trigger = {
 		OR = {
-			is_playing_custom_nation = yes
 			religion = protestant
 			religion = reformed
 			religion = hussite #1356
 			religion = anglican
 			religion = catholic
+			AND = {
+				is_playing_custom_nation = yes
+				OR = {
+					hidden_trigger = {
+						has_reform = prussian_republic_reform
+					}
+					have_had_reform = prussian_monarchy
+					have_had_reform = prussian_monarchy_base
+					have_had_reform = prussian_republic_reform
+					have_had_reform = prussian_theocratic_reform
+				}
+			}
 			has_unlocked_government_reform_tooltip = {
 				government_reform = prussian_republic_reform
 			}
@@ -173,7 +248,9 @@ prussian_republic_reform = { #1356
 	
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 	
 	custom_attributes = {
@@ -476,6 +553,7 @@ military_dictatorship_reform = {
 		has_reform = military_dictatorship_reform
 	}
 	valid_for_nation_designer = yes
+	nation_designer_cost = 25
 	legacy_equivalent = military_dictatorship
 	has_term_election = no
 	modifiers = {
@@ -680,7 +758,6 @@ peasants_republic = {
 	icon = "peasant_republic"
 	potential = {
 		OR = {
-			has_country_flag = ikko_ikki_peasants_flag
 			has_country_flag = great_peasants_war_peasant_republic
 			have_had_reform = peasants_republic
 			have_had_reform = stateless_society
@@ -713,9 +790,58 @@ peasants_republic = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
+		disables_estate_nobles = yes
+		is_peasants_republic = yes
 	}
 	duration = 4
 }
+
+ikko_ikki_republic_reform = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = PAP }
+		OR = {
+			culture_group = japanese_g
+			have_had_reform = ikko_ikki_republic_reform
+		}
+	}
+	trigger = {
+		religion_group = eastern
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		culture_group = japanese_g
+		religion_group = eastern
+	}
+	nation_designer_cost = 20
+	modifiers = {
+		yearly_harmony = 0.25
+		yearly_karma_decay = 0.002
+		tolerance_own = 1
+		production_efficiency = 0.1
+		land_morale = 0.05
+		global_missionary_strength = 0.02
+	}
+	effect = {
+		hidden_effect = {
+			set_country_flag = ikko_ikki_peasants_flag
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = ikko_ikki_peasants_flag
+		}
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		disables_estate_nobles = yes
+		is_peasants_republic = yes
+	}
+	duration = 4
+}
+
 
 kongsi_federation = {
 	allow_normal_conversion = yes
@@ -741,41 +867,10 @@ kongsi_federation = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		allow_draft_transport_ships = yes
+		disables_estate_nobles = yes
 	}
 	duration = 4
 }
-
-
-caspian_peasants_republic_reform = {
-	allow_normal_conversion = yes
-	valid_for_nation_designer = no
-	nation_designer_cost = 0
-	legacy_equivalent = peasants_republic_legacy
-	republican_name = yes
-	royal_marriage = no
-	icon = "peasant_republic"
-	potential = {
-		have_had_reform = caspian_peasants_republic_reform
-		primary_culture = mazandarani 
-	}
-	modifiers = {
-		merchants = 1
-		land_morale = 0.10
-		max_absolutism = 10
-	}
-	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
-		government_abilities = {
-			iqta_mechanic
-		}
-	}	
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
-	duration = 4
-}
-
 
 free_city = {
 	icon = "free_city"
@@ -826,8 +921,8 @@ trading_city = {
 		mr_guilds
 	}
 	modifiers = {
-		max_absolutism = 20
 		global_trade_power = 0.1
+		max_absolutism = 20
 	}
 
 	custom_attributes = {
@@ -875,7 +970,7 @@ ambrosian_republic = {
 	}
 	legacy_equivalent = ambrosian_republic_legacy
 	valid_for_nation_designer = yes
-	nation_designer_cost = 10
+	nation_designer_cost = 25
 	modifiers = {
 		global_tax_modifier = 0.1
 		land_morale = 0.05
@@ -890,14 +985,15 @@ ambrosian_republic = {
 }
 
 veche_republic = {
-	icon = "merchant"
+	icon = "russian_principality"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { have_had_reform = novgorod_republic }
+		NOT = { has_reform = great_veche_republic }
+		NOT = { have_had_reform = great_veche_republic }
 		OR = {
-			AND = {
-				culture_group = east_slavic
-			}
+			culture_group = east_slavic
+			culture_group = slavic
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = veche_republic
@@ -906,12 +1002,17 @@ veche_republic = {
 	}
 	legacy_equivalent = veche_republic_legacy
 	nation_designer_trigger = {
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 	}
 	modifiers = {
 		merchants = 1
-		governing_capacity = 50
-		max_absolutism = -10
+		governing_capacity = 100
+		max_absolutism = 10
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.1
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -950,7 +1051,6 @@ veche_republic = {
 		allow = {
 			has_dlc = "Res Publica"
 			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Third Rome" }
 		}
 		can_use_trade_post = yes
 		can_form_trade_league = yes
@@ -958,58 +1058,44 @@ veche_republic = {
 	}
 	conditional = {
 		allow = {
-			has_dlc = "Third Rome"
-			NOT = { has_dlc = "Mare Nostrum" }
-			NOT = { has_dlc = "Res Publica" }
-		}
-		government_abilities = {
-			russian_mechanic
-		}
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
 			has_dlc = "Mare Nostrum"
 			NOT = { has_dlc = "Res Publica" }
 		}
-		government_abilities = {
-			russian_mechanic
-		}
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
 	}
 	conditional = {
 		allow = {
-			has_dlc = "Third Rome"
 			NOT = { has_dlc = "Mare Nostrum" }
 			has_dlc = "Res Publica"
 		}
-		government_abilities = {
-			russian_mechanic
-		}
 		can_use_trade_post = yes
 	}
 	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			has_dlc = "Mare Nostrum"
-			has_dlc = "Res Publica"
+		allow = { 
+			OR = {
+				has_dlc = "Third Rome" 
+				has_dlc = "Domination"
+			}
 		}
 		government_abilities = {
 			russian_mechanic
 		}
-		can_use_trade_post = yes
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
+		custom_attributes = {
+			weaker_russian_ability = yes
+		}
 	}
-	duration = 4
+	duration = 5
 }
 
 great_veche_republic = {
-	icon = "merchant"
+	icon = "king"
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		religion = orthodox
 		OR = {
 			AND = {
@@ -1031,16 +1117,20 @@ great_veche_republic = {
 	nation_designer_cost = 40
 
 	nation_designer_trigger = {
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		religion = orthodox
 	}
 
 	modifiers = {
 		global_manpower_modifier = 0.2
 		merchants = 1
-		governing_capacity = 50
-		max_absolutism = 30
-		governing_capacity = 300
+		max_absolutism = 20
+		governing_capacity = 350
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.2
 	}
 
 	custom_attributes = {
@@ -1050,77 +1140,91 @@ great_veche_republic = {
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
-			NOT = { has_dlc = "Mare Nostrum" }
-			NOT = { has_dlc = "Third Rome" }
 		}
 		can_use_trade_post = yes
 	}
 	conditional = {
 		allow = {
 			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Res Publica" }
-			NOT = { has_dlc = "Third Rome" }
 		}
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Third Rome" 
+			NOT = { has_dlc = "Domination" }
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			russian_mechanic
+			russian_modernization_mechanic
+		}
+	}
+	duration = 6
+}
+
+great_russian_republic_reform = {
+	icon = "organized_military_staff"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = great_russian_republic_reform
+			have_had_reform = great_russian_republic_reform
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = great_russian_republic_reform
+			}
+		}
+	}
+	fixed_rank = 3
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	modifiers = {
+		global_manpower_modifier = 0.2
+		merchants = 2
+		governing_capacity = 350
+		yearly_absolutism = 0.05
+		global_autonomy = -0.05
+		embracement_cost = -0.5
+		max_absolutism = 50
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
 	}
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
-			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Third Rome" }
-		}
-		can_use_trade_post = yes
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			NOT = { has_dlc = "Mare Nostrum" }
-			NOT = { has_dlc = "Res Publica" }
-		}
-		government_abilities = {
-			russian_mechanic
-		}
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Res Publica" }
-		}
-		government_abilities = {
-			russian_mechanic
-		}
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			NOT = { has_dlc = "Mare Nostrum" }
-			has_dlc = "Res Publica"
-		}
-		government_abilities = {
-			russian_mechanic
 		}
 		can_use_trade_post = yes
 	}
 	conditional = {
 		allow = {
-			has_dlc = "Third Rome"
 			has_dlc = "Mare Nostrum"
-			has_dlc = "Res Publica"
 		}
-		government_abilities = {
-			russian_mechanic
-		}
-		can_use_trade_post = yes
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
 	}
-	duration = 4
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		claim_states = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			russian_rule_mechanic
+		}
+	}
+	duration = 6
 }
 
 american_republic = {
@@ -1157,10 +1261,14 @@ american_republic = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
+		disables_estate_nobles = yes
 	}
 	conditional = {
 		allow = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		has_parliament = yes
 		custom_attributes = {
@@ -1201,11 +1309,14 @@ federal_republic = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		#blocked_call_diet = yes
+		disables_estate_nobles = yes
 	}
 	conditional = {
 		allow = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		has_parliament = yes
 		custom_attributes = {
@@ -1425,6 +1536,8 @@ self_governing_colony_government = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
+		enables_estate_nobles = yes
+		enables_estate_burghers = yes
 	}
 	effect = {
 		hidden_effect = {
@@ -1452,13 +1565,265 @@ self_governing_colony_government = {
 	}
 	duration = 4
 }
+
+trade_company_government = {
+	icon = "paper_with_seal"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = trade_company_government
+			have_had_reform = trade_company_government
+		}
+	}
+	modifiers = {
+		tolerance_heathen = 1
+		tolerance_of_heathens_capacity = 1
+		production_efficiency = 0.1
+		governing_capacity = 50
+		global_manpower_modifier = 0.1
+		naval_forcelimit_modifier = 0.1
+	}
+	nation_designer_cost = 60
+	valid_for_nation_designer = yes
+	boost_income = yes
+	duration = 4
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		enables_estate_burghers = yes
+		is_merchant_republic = yes
+		elections_increase_factions_influence = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Leviathan"
+		}
+		allow_draft_transport_ships = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+
+}
+
+english_parliamentary_republic_government = {
+	icon = "house_of_lords"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			culture_group = british
+			culture = anglois
+		}
+	}
+	nation_designer_cost = 20
+	nation_designer_trigger = {
+		OR = {
+			culture_group = british
+			culture = anglois
+		}
+	}
+	valid_for_nation_designer = yes
+	modifiers = {
+		num_of_parliament_issues = 1
+		republican_tradition = 0.25
+		max_absolutism = 5
+	}
+	duration = 5
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
+		}
+	}
+}
+
+roman_republic_government = {
+	icon = "roman_empire"
+	allow_normal_conversion = no
+	nation_designer_trigger = {
+		primary_culture = roman
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	potential = {
+		has_dlc = "Domination"
+		primary_culture = roman 
+	}
+	modifiers = {
+		administrative_efficiency = 0.05
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.1
+		num_of_parliament_issues = 1
+	}
+	fixed_rank = 3
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			gain_rt_from_parliament = yes
+		}
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 5
+}
+
+civic_republicanism_government = {
+	icon = "parliament"
+	valid_for_nation_designer = no
+	allow_normal_conversion = no
+	potential = {
+		has_dlc = "Domination"
+		NOT = { has_reform = crown_colony_government }
+		NOT = { has_reform = private_enterprise_colony_government }
+		NOT = { has_reform = self_governing_colony_government }
+	}
+	modifiers = {
+		candidate_random_bonus = 1
+		all_estate_influence_modifier = -0.05
+		max_terms = 2
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = "NEEDS_REGULAR_ELECTIONS"
+			has_government_attribute = has_term_election
+		}
+	}
+
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		custom_attributes = {
+			enables_plutocratic_idea_group = yes
+			enables_aristocratic_idea_group = no
+			has_limited_terms = yes
+			has_candidate_bonus = yes
+		}
+	}
+
+	conditional = {
+		allow = { NOT = { has_dlc = "Domination" } }
+		custom_attributes = {
+			enables_plutocratic_idea_group = yes
+			enables_aristocratic_idea_group = no
+		}
+	}
+	effect = {
+		hidden_effect = {
+			set_variable = {
+				which = election_term
+				value = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			set_variable = {
+				which = election_term
+				value = 1
+			}
+		}
+		clr_ruler_focus_modifiers = yes
+	}
+	post_removed_effect = {
+		clr_ruler_focus_modifiers = yes
+	}
+	duration = 5
+}
+
+calvinist_republic_government = {
+	icon = "calvinism"
+	allow_normal_conversion = no
+	potential = {
+		has_dlc = "Domination"
+		religion = reformed
+	}
+	trigger = {
+		religion = reformed 
+		NOT = { total_development = 400 }
+	}
+	nation_designer_cost = 50
+	valid_for_nation_designer = no
+	nation_designer_trigger = {
+		religion = reformed 
+		NOT = { total_development = 400 }
+	}
+	modifiers = {
+		monthly_fervor_increase = 0.1
+		tolerance_own = 1 
+		own_territory_dice_roll_bonus = 1
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_divine_idea_group = yes
+	}
+	duration = 4
+}
 dutch_republic = {
 	icon = "dutch_republic"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			AND = {
-				tag = NED
+				OR = {
+					primary_culture = dutch
+					primary_culture = frisian
+					primary_culture = flemish
+				}
 				NOT = { map_setup = map_setup_random }
 			}
 			AND = {
@@ -1471,15 +1836,14 @@ dutch_republic = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	royal_marriage = yes
-	nation_designer_trigger = {
-		has_dlc = "Res Publica"
-	}
 
 	modifiers = {
 		heavy_ship_power = 0.1
 		trade_efficiency = 0.1
-		governing_capacity = 50
+		reduced_liberty_desire_on_other_continent = 10
 		max_absolutism = 10
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.2
 	}
 
 	removed_effect = {
@@ -1493,6 +1857,7 @@ dutch_republic = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
+		has_dutch_election = yes
 	}
 	conditional = {
 		allow = {
@@ -1514,12 +1879,16 @@ dutch_republic = {
 		}
 	}
 	conditional = {
-		allow = { has_dlc = "Common Sense" }
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
 		has_parliament = yes
 	}
 	duration = 4
 }
-
 
 cossacks_reform = {
 	icon = "horde_riding"
@@ -1563,10 +1932,24 @@ cossacks_reform = {
 	modifiers = {
 		cavalry_power = 0.2
 		cavalry_cost = -0.2
-		cav_to_inf_ratio = 0.2
+		cav_to_inf_ratio = 0.25
 		governing_capacity = 50
-		max_absolutism = -40
+		special_unit_forcelimit = 0.25
 	}
+
+	conditional = {
+		allow = {
+			has_dlc = "The Cossacks"
+		}
+		custom_attributes = {
+			enables_estate_cossacks = yes
+		}
+	}
+	custom_attributes = {
+		enables_horde_idea_group = yes
+		disables_estate_nobles = yes
+	}
+
 	duration = 4
 }
 
@@ -1577,7 +1960,6 @@ republican_authoritarianism_reform = {
 	icon = "merchant"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { has_reform = novgorod_republic }
 		NOT = {
 			has_government_attribute = is_pirate_republic_reform
 		}
@@ -1613,7 +1995,7 @@ nepotism_reform = {
 		NOT = { 
 			OR = {
 				has_reform = venice_merchants_reform 
-				has_reform = dutch_republic
+				has_government_attribute = has_dutch_election
 				has_reform = presidential_despot_reform
 				has_reform = military_dictatorship_reform
 				has_reform = admiralty_reform
@@ -1951,6 +2333,12 @@ consolidation_of_power_reform = {
 	modifiers = {
 		max_absolutism = 10
 		election_cycle = 1
+		max_terms = 1
+	}
+	effect = {
+		hidden_effect = {
+			
+		}
 	}
 	custom_attributes = {
 		reelection_depowers_estates = yes
@@ -1973,15 +2361,13 @@ lottery_reform = {
 		NOT = { 
 			OR = {
 				has_reform = venice_merchants_reform 
-				has_reform = dutch_republic
+				has_government_attribute = has_dutch_election
 				has_reform = presidential_despot_reform
 				has_reform = military_dictatorship_reform
 				has_reform = admiralty_reform
 				has_reform = military_rulership_reform
 				has_reform = prussian_republic
-				has_reform = prussian_republic_reform				
-				has_reform = nov_favor_princely_ties
-				has_reform = nov_promote_local_boyars
+				has_reform = prussian_republic_reform
 			}
 		}
 	}
@@ -2033,7 +2419,7 @@ devotee_to_the_people_reform = {
 		}
 		OR = {
 			has_reform = venice_merchants_reform 
-			has_reform = dutch_republic
+			has_government_attribute = has_dutch_election
 			has_reform = presidential_despot_reform
 			has_reform = military_dictatorship_reform
 			has_reform = admiralty_reform
@@ -2045,7 +2431,7 @@ devotee_to_the_people_reform = {
 	trigger = {
 		OR = {
 			has_reform = venice_merchants_reform 
-			has_reform = dutch_republic
+			has_government_attribute = has_dutch_election
 			has_reform = presidential_despot_reform
 			has_reform = military_dictatorship_reform
 			has_reform = admiralty_reform
@@ -2342,7 +2728,7 @@ administrative_divisions_reform = {
 }
 
 union_of_states_reform = {
-	icon = "merchant_ship"
+	icon = "constitution"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
@@ -2808,7 +3194,12 @@ revolutionary_council_reform = {
 		election_cycle = -1
 	}
 	conditional = {
-		allow = { has_dlc = "Common Sense" }
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
 		has_parliament = yes
 	}
 	ai = {
@@ -3296,19 +3687,6 @@ pirate_representation_reform = {
 				crown_stronger_than_estate = { estate = estate_nobles }
 				has_reform = pirate_representation_reform
 			}
-		}	
-		if = {
-			limit = { has_dlc = "Res Publica" }
-			NOT = { has_reform = elective_monarchy }
-		}
-		if = {
-			limit = { has_dlc = "Lions of the North" }
-			NOT = { has_reform = polish_elective_monarchy }
-		}
-		if = {
-			limit = { NOT = { has_dlc = "Mandate of Heaven" } }
-			NOT = { has_reform = celestial_empire }
-			NOT = { is_revolutionary_republic_trigger = yes }
 		}
 	}
 	modifiers = {
@@ -3316,7 +3694,12 @@ pirate_representation_reform = {
 		max_absolutism = -15
 	}
 	conditional = {
-		allow = { has_dlc = "Common Sense" }
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
 		has_parliament = yes
 	}
 
@@ -3363,6 +3746,16 @@ seize_executive_power_reform = {
 		add_stability = -3
 		change_government = monarchy
 		if = {
+			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
+		if = {
 			limit = { has_country_flag = had_states_general_mechanic }
 			country_event = { id = dutch_republic.33 }
 			clr_country_flag = had_states_general_mechanic
@@ -3386,6 +3779,16 @@ proclaim_divine_guidance_reform = {
 		set_country_flag = populists_in_government
 		add_stability = -3
 		change_government = theocracy
+		if = {
+			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
 	}
 	ai = {
 		factor = 0
@@ -3424,7 +3827,12 @@ federal_senate_reform = {
 	}
 
 	conditional = {
-		allow = { has_dlc = "Common Sense" }
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
 		has_parliament = yes
 		custom_attributes = {
 			halved_parliament_bribes = yes
@@ -3538,7 +3946,17 @@ become_rev_empire_reform = {
 		set_country_flag = populists_in_government
 		hidden_effect = {
 			change_government = monarchy
-		}		
+			if = {
+				limit = {
+					tag = AVE
+				}
+				hidden_effect = {
+					country_event = {
+						id = flavor_gbr.20
+					}
+				}
+			}
+		}
 		add_government_reform = revolutionary_empire_reform
 		if = {
 			limit = { has_country_flag = had_states_general_mechanic }
@@ -3584,393 +4002,3 @@ millenarian_theocracy_reform = {
 		factor = 10
 	}
 }
-
-######1356 Changes#####
-
-novgorod_republic_gov = { #The New Russian Noble Republic Government ### For Russia tag specifically
-	icon = "russian_principality"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_reform = tsardom }
-		NOT = { have_had_reform = tsardom }
-		NOT = { has_reform = tsardom_republic }
-		#religion = orthodox
-		OR = {
-			culture_group = east_slavic
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = novgorod_republic_gov
-			}
-		}
-	}
-	legacy_equivalent = novgorod_republic_gov_legacy
-	#boost_income = yes #WHY IS THIS THE THING THAT WILL FORCE YOU TO BE A MERCHANT REPUBLIC?!
-	fixed_rank = 3
-	republican_name = yes
-	royal_marriage = yes
-	valid_for_nation_designer = no
-	nation_designer_cost = 1000
-	duration = 8	
-
-	# nation_designer_trigger = {
-		# culture_group = east_slavic
-		#religion = orthodox
-	# }
-	modifiers = {
-		governing_capacity = 100
-		army_tradition = 0.10
-		max_absolutism = 20
-		nobles_influence_modifier = 0.05
-		development_cost = -0.1
-	}
-	
-	custom_attributes = {
-		enables_plutocratic_idea_group = no
-		enables_aristocratic_idea_group = yes
-		#is_merchant_republic = no
-	}
-	
-	conditional = {
-		allow = { has_dlc = "Third Rome" }
-		government_abilities = {
-			russian_mechanic
-		}
-	}
-}
-
-novgorod_republic = { # For Novgorod ONLY
-	icon = "novgorod_republic"
-	allow_normal_conversion = yes
-	potential = {
-		has_reform = novgorod_republic
-	}
-	nation_designer_trigger = {
-		culture_group = east_slavic
-	}
-	modifiers = {
-		max_absolutism = -10
-		shock_damage_received = -0.10
-		nobles_influence_modifier = 0.10
-		burghers_influence_modifier = 0.10
-		church_influence_modifier = 0.10
-		development_cost = -0.1
-	}
-	
-	#republican_name = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 40
-
-	fixed_rank = 1
-	republican_name = yes
-	royal_marriage = yes
-	valid_for_nation_designer = no
-	nation_designer_cost = 1000
-	duration = 6	
-
-	factions = {
-		mr_aristocrats
-		mr_traders
-		mr_guilds
-	}
-	boost_income = yes
-
-	custom_attributes = {
-		enables_plutocratic_idea_group = no
-		enables_aristocratic_idea_group = yes
-		#has_term_election = no
-		#ruler_reigns_until_death_or_appointment = yes
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			NOT = { has_dlc = "Mare Nostrum" }
-			NOT = { has_dlc = "Third Rome" }
-		}
-		can_use_trade_post = yes
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Res Publica" }
-			NOT = { has_dlc = "Third Rome" }
-		}
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Third Rome" }
-		}
-		can_use_trade_post = yes
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			NOT = { has_dlc = "Mare Nostrum" }
-			NOT = { has_dlc = "Res Publica" }
-		}
-		government_abilities = {
-			russian_mechanic
-		}
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Res Publica" }
-		}
-		government_abilities = {
-			russian_mechanic
-		}
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			NOT = { has_dlc = "Mare Nostrum" }
-			has_dlc = "Res Publica"
-		}
-		government_abilities = {
-			russian_mechanic
-		}
-		can_use_trade_post = yes
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			has_dlc = "Mare Nostrum"
-			has_dlc = "Res Publica"
-		}
-		government_abilities = {
-			russian_mechanic
-		}
-		can_use_trade_post = yes
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-}
-
-nov_delegated_power_to_veche = { # For Novgorod ONLY tier 2
-	icon = "nov_delegated_power_to_veche"
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
-	potential = {
-		has_reform = novgorod_republic
-	}
-	fixed_rank = 0	
-	modifiers = {
-		merchants = 1
-		republican_tradition = 0.3
-		governing_capacity = 100
-	}
-	
-}
-
-nov_promote_local_boyars = { # For Novgorod ONLY tier 2
-	icon = "nov_promote_local_boyars"
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
-	potential = {
-		has_reform = novgorod_republic
-	}
-	modifiers = {
-		reelection_cost = -0.1
-		stability_cost_modifier = -0.1
-		candidate_random_bonus = 1
-	}
-}
-
-nov_favor_princely_ties = { # For Novgorod ONLY tier 2
-	icon = "nov_favor_princely_ties"
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
-	potential = {
-		has_reform = novgorod_republic
-	}
-	fixed_rank = 0	
-	modifiers = {
-		republican_tradition = -0.3
-		max_absolutism = 25
-		leader_land_shock = 1
-	}
-	
-}
-
-
-#swiss_canton_reform = { #Maybe give it access to Parlament mechanics?
-#	icon = "free_city"
-#	allow_normal_conversion = no
-#	valid_for_nation_designer = no
-#	nation_designer_cost = 0
-#	legacy_equivalent = swiss_canton
-#	republican_name = yes
-#	royal_marriage = no
-#	potential = {
-#		primary_culture = swiss 
-#	}
-#	modifiers = {
-#		land_forcelimit_modifier = 0.15
-#		mercenary_cost = -0.1
-#	}
-#	custom_attributes = {
-#		enables_plutocratic_idea_group = yes
-#		enables_aristocratic_idea_group = no
-#	}
-#	duration = 4
-#}
-
-ahm_republic_reform = { #Maybe give it access to Parlament mechanics?
-	icon = "noble_indian_ahm"
-	allow_normal_conversion = no
-	valid_for_nation_designer = no
-	nation_designer_cost = 0
-	legacy_equivalent = ahm_republic
-	republican_name = yes
-	royal_marriage = yes
-	potential = {
-		tag = AHM
-	}
-	modifiers = {
-		army_tradition = 0.75
-		candidate_random_bonus = 1
-		governing_capacity = 100
-	}
-	custom_attributes = {
-		enables_plutocratic_idea_group = no
-		enables_aristocratic_idea_group = yes
-		enables_nepotism = yes
-	}
-	duration = 5
-}
-
-frisian_republic_gov = {
-	allow_normal_conversion = yes
-	icon = "peasant_republic"
-	potential = {
-		primary_culture = frisian
-		OR = {
-			have_had_reform = frisian_republic_gov
-			has_reform = frisian_republic_gov
-		}
-	}
-	rulers_can_be_generals = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 20
-	legacy_equivalent = frisian_republic_legacy
-	modifiers = {
-		global_trade_goods_size_modifier = 0.05
-		land_morale = 0.05
-		global_unrest = -1
-		max_absolutism = -10
-	}
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
-	duration = 3
-}
-
-viking_republic_reform = {
-	icon = "british_queen"
-	allow_normal_conversion = no
-	potential = {
-		OR = {
-			has_reform = viking_republic_reform
-			have_had_reform = viking_republic_reform
-		}
-		tag = VIK
-		#religion = norse_pagan_reformed #Perhaps...
-	}
-	lock_level_when_selected = yes
-	valid_for_nation_designer = no
-	nation_designer_cost = 15
-	nation_designer_trigger = {
-		has_dlc = "Common Sense"
-	}
-	royal_marriage = yes
-	republican_name = yes
-	legacy_equivalent = viking_republic_legacy
-	start_territory_to_estates = 0.3
-	modifiers = {
-		governing_capacity = 50
-		republican_tradition = 0.3
-		global_unrest = -2
-		max_absolutism = 20
-	}
-	
-	duration = 4
-
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	custom_attributes = {
-		enables_plutocratic_idea_group = no
-		enables_aristocratic_idea_group = yes
-	}
-}
-
-tsardom_republic = {
-	icon = "russian_principality"
-	allow_normal_conversion = yes
-	potential = {
-		religion = orthodox
-		OR = {
-			AND = {
-				tag = RUS
-				NOT = { map_setup = map_setup_random }
-			}
-			AND = {
-				tag = UKR
-				NOT = { map_setup = map_setup_random }
-			}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = tsardom_republic
-			}
-		}
-	}
-	fixed_rank = 3
-	
-	republican_name = yes
-	royal_marriage = yes
-	duration = 4
-	legacy_equivalent = tsardom_republic_legacy
-	valid_for_nation_designer = yes
-	nation_designer_cost = 40
-
-	nation_designer_trigger = {
-		culture_group = east_slavic
-		religion = orthodox
-	}
-
-	modifiers = {
-		merchants = 1
-		global_manpower_modifier = 0.20
-		caravan_power = 0.33
-		global_trade_goods_size_modifier = 0.1
-		global_autonomy = -0.05
-		governing_capacity = 200
-	}
-	
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-		is_merchant_republic = no
-	}
-
-	conditional = {
-		allow = { has_dlc = "Third Rome" }
-		government_abilities = {
-			russian_mechanic
-		}
-		claim_states = yes
-	}
-}
-
-#####1356 Changes End#####

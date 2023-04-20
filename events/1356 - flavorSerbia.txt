@@ -101,11 +101,14 @@ country_event = { # Victory for Simeon Uros # Emperor of Serbs and Greeks
 		custom_tooltip = serbian_collapse_tooltip_3.tt
 		hidden_effect = {
 			add_government_reform = serbian_government_reform
+			SER = {
+				change_country_color = { color = { 166  72  57 } }
+			}	
 			BYZ = {
 				every_owned_province = {
 					add_claim = TES
 				}
-			}	
+			}				
 			if = {
 				limit = {
 					exists = BYZ
@@ -148,6 +151,12 @@ country_event = { # Collapse of the Serbian Empire
 		hidden_effect = {
 			end_disaster = serbian_empire_collapse
 		}	
+		# if = {
+			# limit = {
+				# tag = SER
+			# }	
+			# change_country_color = { color = { 166  72  57 } }
+		# }			
 		#custom_tooltip = serbian_collapse_tooltip_3.tt
 	}
 }

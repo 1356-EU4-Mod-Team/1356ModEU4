@@ -157,7 +157,7 @@ tughlaq_prince_vassal = {
 	can_fight_independence_war = yes
 	should_quit_wars_on_activation = no
 	can_have_subjects_of_other_types = yes
-	gives_daimyo_bonuses = yes
+	gives_daimyo_bonuses = no
 	joins_overlords_wars = no
 	joins_colonial_wars = no	
 	gets_help_with_rebels = yes
@@ -205,7 +205,7 @@ tughlaq_prince_vassal = {
 		independent_nations = no
 	}
 	
-		# Subject Interactions
+	# Subject Interactions
 	#(disable)
 	scutage = no
 	place_relative_on_throne = no
@@ -605,9 +605,19 @@ horde_clan_subject = {
 	counts_for_borders = no
 	can_transfer_in_peace = no
 	can_send_tribute = yes	
+	#joins_overlords_wars = yes
 	joins_overlords_wars = yes
 	# can_concentrate_development = yes # Works for me	
 	extend_trading_range = yes
+	#### Doesn't seem to be working currently. Will adjust whenever it comes fully functional
+	#opinion_cost_instead_of_favors_cost = no
+	#favors_cost_to_join_offensive_wars = 10   #Defines how much favors the overlord need to invest to call the subject into an offensive war
+	#favors_cost_to_join_defensive_wars = 10   #Defines how much favors the overlord need to invest to call the subject into a defensive war	
+	#opinion_cost_to_join_offensive_wars = 40
+	#opinion_cost_to_join_defensive_wars = 20
+	# opinion_on_subject_integration = -40	
+	# can_be_co_belligerented =  no 
+	# can_be_called_to_wars =  no 	
 	
 	liberty_desire_development_ratio = 0.175
 	trust_on_start = 0
@@ -655,4 +665,91 @@ horde_clan_subject = {
 	has_power_projection = yes
 	# (continuous)
 	embargo_rivals = no
+}
+
+
+puppet_state_domination_ideas = {
+	copy_from = vassal
+	count = vassal	
+	
+	# Graphics:
+	# It just looks nice
+    sprite = GFX_icon_appanage
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
+
+	# Properties:
+	transfer_trade_power = no
+	joins_overlords_wars = yes
+	can_be_annexed = no
+	can_be_integrated = yes	
+	has_power_projection = no
+	gets_help_with_rebels = yes
+	forms_trade_companies = no
+	takes_diplo_slot = no
+	uses_military_focus = yes
+	counts_for_borders = yes
+	can_use_claims = yes
+	can_transfer_in_peace = yes	
+	# can_be_co_belligerented = yes
+	# can_be_called_to_wars = yes
+	extend_trading_range = yes
+	is_voluntary = no
+	can_fight_independence_war = yes
+	overlord_can_fabricate_for = yes
+	does_overlord_size_count_for_warscore_cost = yes
+	can_gain_favors = yes
+
+	max_government_rank = 2
+	
+	base_liberty_desire = -25.0
+	liberty_desire_development_ratio = 0.1
+	liberty_desire_same_dynasty = -5.0
+	pays_overlord = 1.0
+	forcelimit_to_overlord = 0.2						# Percent of subject FL to use as base for modifiers
+	naval_forcelimit_to_overlord = 0.2					# Percent of subject FL to use as base for modifiers
+	manpower_to_overlord = 0.2							# Percent of subject FL to use as base for modifiers
+	sailors_to_overlord = 0.2							# Percent of subject FL to use as base for modifiers
+	annex_cost_per_development = 7.0					# annex/integrate cost per development	
+	
+
+	relative_power_class = 1
+	diplomacy_view_class = 1
+	should_quit_wars_on_activation = yes
+
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	support_loyalists = no
+	place_relative_on_throne = yes
+	sacrifice_ruler = yes
+	sacrifice_heir = yes
+	divert_trade = yes
+	seize_territory = yes
+	siphon_income = yes
+	embargo_rivals = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	conscript_general = yes
+	knowledge_sharing = yes	
+	block_settlement_growth = yes
+	allow_settlement_growth = yes	
+
+	# Modifiers:
+	modifier_subject = clear # Use this to clear after copy_from.
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = puppet_state_subject_bonus
+	}	
+
+	
+	overlord_opinion_modifier = 1356_is_a_puppet_state # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
+	subject_opinion_modifier = 1356_is_a_puppet_state	
 }

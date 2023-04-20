@@ -19,7 +19,6 @@
  # New 'Ideas Modifiers'
  espionage_infiltrate_army_bonus_faction_influence: "§WMay use§! §YInfiltrate Armies§! §Wfor Spy Network cost of§!" 
  espionage_inflame_seperatism_bonus_faction_influence: "§WMay use§! §YInflame Separatist Sentiment§! §Wfor Spy Network cost of§!" 
- eminence_base_power_projection_faction_influence: "§WPermanent§! §OPower Projection§!"
  
  
  # New Modifiers
@@ -53,7 +52,7 @@
  espionage_inflamed_seperatist_sentiment: "Seperatist Sentiment Inflamed"
  patronaged_a_invetor_inno: "Patronaged an Inventor"
  is_considering_patronage_of_inventors: "Is considering Patronage of Inventors"
- great_thinker_advisor_cooldown: "Recruited Great Thinker"
+ great_thinker_advisor_cooldown: "Recently Recruited Erudite Advisor"
  great_thinker_adm: "Administrative Great Thinker"
  great_thinker_dip: "Diplomatic Great Thinker"
  great_thinker_mil: "Military Great Thinker"
@@ -79,7 +78,7 @@
  masters_of_intrigue_espionage: "Masters of Intrigue"
  masters_of_intrigue_espionage_desc: "Over the years, our spies have perfected the art of Intrigue, and in doing so, have made actions once thought inconceivable now possible. Should we manage to establish a strong network of spies in a foreign country we can incite Seperatist Sentiments, causing instability, and Infiltrate our foes armies, providing us intel on what a foreign nation might be plotting with its armies and navies.\nMay assign §OSpecialization Missions§! through the §Y'Assign Espionage Specializations Missions'§! Decision."
  wonders_of_the_world_econ: "Wonders of the World"
- wonders_of_the_world_econ_desc: "Throughout the World exists many Great Monuments waiting to be built. It is time we take the Initiative and begin construction of these Great Projects.\nUpgrades §OEncourage Development§! State Edict to §OEconomic Provincial Development§!, increasing §YLocal Development Cost§! Bonus to §G-15%§!"
+ wonders_of_the_world_econ_desc: "Throughout the World exists many Great Monuments waiting to be built. It is time we take the Initiative and begin construction of these Great Projects."
  
  # New Content related to Estates
  estate_nobles_magna_carta:0 "The Magna Carta"
@@ -101,9 +100,6 @@
  PATRONAGE_INVENTOR_COOLDOWN: "Has §RNOT§! an Inventor in the last 10 years"
  GREAT_THINKER_COOLDOWN_TIMER: "Has §RNOT§! recruited a Great Thinker in the last 20 years."
  
- grand_eminence_idea_full: "Full Eminence Ideas"
- eminence_pp_info.tt: "This §OPower Projection§! is §OPermanent§! unless we get rid of §YEminence Ideas§!"
- flavor_fra.6.a.guy.tt: "Should this result in War, we will be able to claim §YGascony§! cores like a Reconquest War."
  
  BRITISH_NAVAL_HEGMON_CHECK: "Has the British Hegemony been claimed?"
  BALTIC_NAVAL_HEGMON_CHECK: "Has the Baltic Sea Hegemony been claimed?"
@@ -153,8 +149,8 @@
  espionage_access_the_network_desc: "Placeholder"
  patronage_local_researcher_inno_title: "Patronage a Local Inventor"
  patronage_local_researcher_inno_desc: ""
- invite_a_great_thinker_advisor_title: "Invite a §OGreat Thinker§!"
- invite_a_great_thinker_advisor_desc: "Great Placeholder of Time"
+ invite_a_great_thinker_advisor_title: "Recruit a Erudite Advisor"
+ invite_a_great_thinker_advisor_desc: "We will begin a search to recruit a Great Thinker throughout our lands. This decision can only be taken every 20 years."
  establish_the_national_bank_title: "Found the National Bank"
  establish_the_national_bank_desc: "Placeholder in Placeholder"
  
@@ -285,11 +281,7 @@
  flaflavorlith.505.aa: "We will not fight for our freedom just to fall under Lithuanian influence."
  flaflavorlith.505.bb: "We will not fight for our freedom just to fall under Lithuanian influence."
  
- # New Merc Companies
- merc__local_small_company_eminence:0 "§OEminence§! Free Company"
- merc__local_free_city_company_eminence:0 "§OEminence§! Free City Company"
- merc__local_free_company_eminence:0 "§OEminence§! Free Company"
- merc__local_grand_company_eminence:0 "§OEminence§! Grand Company" 
+
  
  # New Government Reforms
  colonial_empire_reform: "Colonial Empire"

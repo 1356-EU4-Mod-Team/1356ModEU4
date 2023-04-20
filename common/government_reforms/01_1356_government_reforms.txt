@@ -1,0 +1,2336 @@
+######1356 Changes Start######
+
+# Monarchy
+theocratic_kingdom_eran = { #1356
+	icon = "peacock_throne"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = theocratic_kingdom_eran
+			have_had_reform = theocratic_kingdom_eran
+		}
+	}	
+	valid_for_nation_designer = no
+	has_devotion = yes
+	modifiers = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+		tolerance_own = 1
+		church_loyalty_modifier = 0.05
+		monarch_admin_power = 2
+	}
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}	
+}
+
+gond_kingdom = { # Big Gond Kingdom Reform
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Dharma"
+		technology_group = indian
+		primary_culture = gondi
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		technology_group = indian
+		primary_culture = gondi
+	}
+	legacy_equivalent = tribal_kingdom_legacy
+	modifiers = {
+		defensiveness = 0.2
+	}
+}
+
+
+
+######1356 Changes#######
+
+high_feudal_monarchy_reform = {
+	icon = "high_feudal_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		# OR = {
+			# technology_group = western
+			# technology_group = eastern
+		# }		
+		if = {
+			limit = {
+				is_year = 1435
+			}	
+			has_reform = high_feudal_monarchy_reform
+		}	
+	}
+	# potential = { # Here for some code guideance
+		# religion_group = muslim
+		# OR = {
+			# AND = {
+				# tag = MAM
+				# NOT = { map_setup = map_setup_random }
+			# }
+			# have_had_reform = mamluk_government
+		# }
+	# }	
+	
+	custom_attributes = {
+		locked_government_type = yes
+		nobility_loyalty_hit_on_integration_high_feudal = yes
+		need_crownland_to_annex_high_feudal = yes
+		may_maintain_high_feudal_policies_post_feudalism = yes
+	}	
+	lock_level_when_selected = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		vassal_income = 0.15
+		nobles_influence_modifier = 0.1
+		#diplomatic_upkeep = 1
+		reduced_liberty_desire = 12.5
+		max_absolutism = -50
+		can_fabricate_for_vassals = yes		
+	}
+}
+
+
+elective_feudal_monarchy_reform = {
+	icon = "feudal_elective_monarchy" 
+	allow_normal_conversion = yes
+	# potential = {
+		# OR = {
+			# has_reform = elective_feudal_monarchy_reform
+			# have_had_reform = elective_feudal_monarchy_reform
+		# }
+	# }
+	potential = {
+		OR = {
+			technology_group = western
+			technology_group = eastern
+		}			
+		if = {
+			limit = {
+				is_year = 1435
+			}	
+			has_reform = elective_feudal_monarchy_reform
+		}	
+	}	
+	lock_level_when_selected = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		global_unrest = -1
+		max_absolutism = -50
+		diplomatic_reputation = 1
+		can_fabricate_for_vassals = yes		
+		improve_relation_modifier = 0.10
+		all_estate_influence_modifier = 0.10
+		nobles_privilege_slots = 1		
+	}
+	#conditional = {
+		#allow = { has_dlc = "Res Publica" }
+		#is_elective = yes
+#	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		nobility_loyalty_hit_on_integration_high_feudal = yes
+		need_crownland_to_annex_high_feudal = yes
+		may_maintain_high_feudal_policies_post_feudalism = yes		
+	}
+
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		custom_attributes = {
+			has_ruler_election = yes
+		}
+	}
+}
+
+# byzantine_empire_reform = { ### Use 1.35 version now
+	# icon = "crown_highlighted"
+	# allow_normal_conversion = no 
+	# potential = {	
+		# OR = {
+			# has_reform = byzantine_empire_reform
+			# have_had_reform = byzantine_empire_reform
+		# }
+		# tag = BYZ
+	# }
+	# valid_for_nation_designer = no 
+	# nation_designer_cost = 0
+	# lock_level_when_selected = yes
+	# legacy_equivalent = byzantine_empire_gov
+	# fixed_rank = 3
+	# modifiers = {
+		# governing_capacity = 100
+		# mercenary_manpower = 0.33
+		# land_maintenance_modifier = -0.05
+		# global_manpower_modifier = 0.1
+		# diplomats = 1
+		# land_forcelimit = 5
+		# global_manpower = 2.5
+		# global_tax_income = 12
+	# }
+	# custom_attributes = {
+		# locked_government_type = yes
+	# }
+# }
+
+#archduchy_reform = {
+#	icon = "king_highlighted"
+#	allow_normal_conversion = no 
+#	potential = {
+#		OR = {
+#			has_reform = archduchy_reform
+#			have_had_reform = archduchy_reform
+#		}
+#		tag = HAB
+#	}
+#	legacy_equivalent = archduchy_legacy
+#	lock_level_when_selected = yes
+#	fixed_rank = 1
+#	valid_for_nation_designer = no 
+#	nation_designer_cost = 0
+#	modifiers = {
+#		diplomats = 1
+#		diplomatic_reputation = 2
+#		imperial_authority_value = 0.1
+#		prestige = 1
+#	}
+#	custom_attributes = {
+#		locked_government_type = yes
+#	}
+#}
+
+serbian_government_reform = {
+	icon = "serbian_government"
+	allow_normal_conversion = no 
+	potential = {
+		# OR = {
+			# has_reform = serbian_government_reform
+			# have_had_reform = serbian_government_reform
+		# }
+		has_reform = serbian_government_reform
+	}
+	legacy_equivalent = serbian_government_legacy
+	lock_level_when_selected = yes
+	#fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	modifiers = {
+		legitimacy = 0.5
+		core_creation = -0.1
+		diplomatic_upkeep = 1
+		vassal_forcelimit_bonus = 0.1
+		land_forcelimit = 2
+		global_tax_income = 12
+		global_manpower = 2.5
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	
+	effect = {
+		override_country_name = SERBIAN_EMPIRE_NAME
+	}
+
+	removed_effect = {
+		restore_country_name = yes
+		if = {
+			limit = {
+				tag = SER
+			}	
+			change_country_color = { color = { 166  72  57 } }
+		}	
+	}		
+}
+
+serbian_princedom_reform = {
+	icon = "serbian_government"
+	allow_normal_conversion = no 
+	potential = {
+		primary_culture = serbian
+	}
+	trigger = {
+		primary_culture = serbian
+	}	
+	#legacy_equivalent = serbian_government_legacy
+	lock_level_when_selected = no
+	#fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	modifiers = {
+		land_forcelimit = 1
+		legitimacy = 0.5
+		global_tax_income = 8
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	ai = {
+		factor = 1000
+	}	
+}
+
+# bulgarian_tsardom_reform_old = { ## Implemented in Vanilla
+	# icon = "crown_highlighted"
+	# allow_normal_conversion = no 
+	# potential = {
+		# has_reform = bulgarian_tsardom_reform_old
+	# }
+	#legacy_equivalent = serbian_government_legacy
+	# lock_level_when_selected = no
+	#fixed_rank = 3
+	# valid_for_nation_designer = no 
+	# nation_designer_cost = 0
+	# modifiers = {
+		# land_forcelimit = 2
+		# global_tax_income = 12
+		# monthly_splendor = 1.5
+		# global_manpower = 2.5		
+	# }
+	# custom_attributes = {
+		# locked_government_type = yes
+	# }
+	
+	# effect = {
+		# override_country_name = BULGARIAN_EMPIRE_NAME
+	# }
+
+	# removed_effect = {
+		# restore_country_name = yes
+	# }		
+# }
+
+
+delhi_sultanate_reform = {
+	icon = "noble_muslim"
+	allow_normal_conversion = no 
+	potential = {
+		has_reform = delhi_sultanate_reform
+		tag = DLH
+	}
+	legacy_equivalent = delhi_sultanate_legacy
+	#fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	modifiers = {
+		tolerance_heathen = 3
+		monarch_admin_power = 1
+		unjustified_demands = -0.2
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+}
+
+bahamis_sultanate_reform = {
+	icon = "bahamis_government"
+	allow_normal_conversion = no 
+	potential = {
+		has_reform = bahamis_sultanate_reform
+	}
+	legacy_equivalent = bahamis_sultanate_legacy
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no 
+	modifiers = {
+		governing_capacity = 50
+		tolerance_heathen = 2
+		global_missionary_strength = 0.01
+		monthly_piety = -0.002
+		free_leader_pool = 1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+}
+
+vij_government_reform = {
+	icon = "vijhindu_government"
+	allow_normal_conversion = no 
+	potential = {
+		has_reform = vij_government_reform
+	}
+	legacy_equivalent = vij_government_legacy
+	lock_level_when_selected = yes
+	#fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	modifiers = {
+		governing_capacity = 75
+		diplomats = 1
+		tolerance_own = 1
+		fabricate_claims_cost= -0.25
+		#unjustified_demands = -0.2
+	}
+}
+
+bengali_sultanate_reform = {
+	icon = "bengal_government"
+	allow_normal_conversion = no 
+	potential = {
+		has_reform = bengali_sultanate_reform
+	}
+	legacy_equivalent = bengali_sultanate_legacy
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	modifiers = {
+		tolerance_heathen = 2
+		missionaries = 1
+		monarch_military_power = 2
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+delhian_empire_reform = {
+	icon = "peacock_throne"
+	allow_normal_conversion = no 
+	potential = {
+		OR = {
+			has_reform = delhian_empire_reform
+			have_had_reform = delhian_empire_reform
+		}
+	}
+	legacy_equivalent = delhian_empire_legacy
+	lock_level_when_selected = yes
+	fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	modifiers = {
+		governing_capacity = 100
+		monarch_diplomatic_power = 2
+		tolerance_heathen = 2
+		yearly_absolutism = 1
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+gondi_kingdom_kingdom_reform = {
+	icon = "rajput_kingdom"
+	allow_normal_conversion = no 
+	potential = {
+		OR = {
+			has_reform = gondi_kingdom_kingdom_reform
+			have_had_reform = gondi_kingdom_kingdom_reform
+		}
+	}
+	legacy_equivalent = gondi_kingdom_kingdom
+	lock_level_when_selected = yes
+	#fixed_rank = 3
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	modifiers = {
+		years_of_nationalism = -5
+		fort_maintenance_modifier = -0.20
+		defensiveness = 0.2
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+
+# french_vassal_feudal_monarchy_reform = { # Appanges in Vanilla
+	# icon = "castle"
+	# allow_normal_conversion = no
+	# potential = {
+		# culture_group = french
+		# NOT = { tag = FRA }
+		#exists = FRA
+		# OR = {
+			# AND = {
+				# has_reform = french_vassal_feudal_monarchy_reform
+				# is_subject_of = FRA
+			# }
+			# AND = {
+				# have_had_reform = french_vassal_feudal_monarchy_reform
+				# is_subject_of = FRA
+			# }
+		# }
+	# }
+	# legacy_equivalent = french_vassal_feudal_monarchy
+	# valid_for_nation_designer = no
+	# nation_designer_cost = 0
+	# lock_level_when_selected = yes
+	# fixed_rank = 1
+	# modifiers = {
+		# governing_capacity = -50
+		# diplomats = 1
+		# diplomatic_reputation = -1 
+	# }
+	# custom_attributes = {
+		# locked_government_type = yes
+	# }
+	# ai = {
+		# factor = 0
+	# }
+
+# }
+
+# kalmar_union_reform = { # Variation added in 1.34 for Vanilla
+	# icon = "elective_monarchy"
+	# allow_normal_conversion = yes
+	# potential = {
+		# OR = {
+			# has_reform = kalmar_union_reform
+			# have_had_reform = kalmar_union_reform
+		# }
+	# }
+	# legacy_equivalent = kalmar_union_legacy
+	# lock_level_when_selected = yes
+	# valid_for_nation_designer = no
+	# nation_designer_cost = 0
+	# modifiers = {
+		# governing_capacity = 100
+		# reduced_liberty_desire = 10
+		# global_autonomy = -0.1
+	# }
+	# custom_attributes = {
+		# locked_government_type = yes
+	# }
+# }
+
+# barbary_sultanate_reform = {  ## Added to Vanilla
+	# icon = "barbary_pirates_icon"
+	# allow_normal_conversion = yes
+	# potential = {
+		# religion_group = muslim
+		# OR = {
+			# culture_group = maghrebi
+			# culture_group = berber_culture_group
+		# }	
+	# }
+	# nation_designer_cost = 30
+	# queen = no
+	# nation_designer_trigger = {
+		# religion_group = muslim
+		# culture_group = maghrebi
+	# }
+
+	# legacy_equivalent = barbary_sultanate
+	# modifiers = {
+		#Tempted to give a negative modifier for this here  ### Anddddd Geno nerfed it
+		# privateer_efficiency = 0.20	
+		# galley_power = 0.10
+		# improve_relation_modifier = -0.15
+		# capture_ship_chance = 0.20
+	# }
+
+	# conditional = {
+		# allow = { has_dlc = "Cradle of Civilization" }
+		# government_abilities = {
+			# iqta_mechanic
+		# }
+	# }
+# }
+
+# beylik_reform = { # Variation added in 1.35 for Vanilla
+	# icon = "noble_muslim"
+	# allow_normal_conversion = yes
+	# potential = {
+		# NOT = {	tag = TUR }
+		# NOT = { tag = RUM }
+		# primary_culture = turkish
+	# }
+	# legacy_equivalent = beylik_legacy 
+	# lock_level_when_selected = yes 
+	# valid_for_nation_designer = no
+	# maintain_dynasty = yes
+	# fixed_rank = 1	
+	# modifiers = { 
+		#Adjusted for 1.31 
+		# global_tax_modifier = 0.1
+		# global_manpower_modifier = 0.20
+		# governing_capacity = -50
+	# }
+	# custom_attributes = {
+		# locked_government_type = yes
+	# }
+# }
+
+timurid_government_reform = {
+	icon = "ottoman_government"
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = muslim
+		tag = TIM
+		OR = {
+			has_reform = timurid_government_reform
+			have_had_reform = timurid_government_reform
+		}
+	}
+	valid_for_nation_designer = no
+	legacy_equivalent = timurid_government
+	fixed_rank = 3
+	maintain_dynasty = yes
+	modifiers = {
+		governing_capacity = 150
+		unjustified_demands = -0.15
+		legitimacy = 0.5
+		global_autonomy = -0.05
+		max_absolutism = 10
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+# earldom_reform = { # Semi Integrated in Vanilla
+	# icon = "man_and_children"
+	# allow_normal_conversion = yes
+	# potential = {	
+		# OR = {
+			# has_reform = earldom_reform
+			# have_had_reform = earldom_reform
+		# }
+		# primary_culture = irish
+	# }
+	# valid_for_nation_designer = no 
+	# lock_level_when_selected = yes
+	# legacy_equivalent = earldom_legacy 
+	# fixed_rank = 1
+	# modifiers = {
+		# land_morale = 0.1
+		# leader_land_manuever = 1
+		# hostile_attrition = 1
+		# diplomatic_upkeep = -1
+	# }
+# }
+
+# chinese_kingdom_government_reform = { # Chinese Kingdom works for Vanilla
+	# icon = "peasants"
+	# allow_normal_conversion = no
+	# potential = {
+		# NOT = { has_reform = celestial_empire }
+		# government_rank = 2
+		# culture_group = east_asian
+		# OR = {
+			# religion_group = eastern
+			# religion_group = pagan
+		# }
+	# }
+	# maintain_dynasty = yes
+	# lock_level_when_selected = yes
+	# legacy_equivalent = chinese_kingdom_government
+	# fixed_rank = 2
+	# valid_for_nation_designer = no
+	# modifiers = {
+		# governing_capacity = 100
+		# province_warscore_cost = -0.2
+		# ae_impact = -0.15
+		# diplomatic_upkeep = -1	
+	# }
+	# custom_attributes = {
+		# locked_government_type = yes
+	# }
+# }
+
+#crusader_state_reform = {
+#	icon = "castle"
+#	potential = {	
+#		OR = {
+#			has_reform = crusader_state_reform
+#			have_had_reform = crusader_state_reform
+#		}
+#		primary_culture = crusader_culture
+#		religion = catholic
+#	}
+#	allow_normal_conversion = no
+#	lock_level_when_selected = yes
+#	legacy_equivalent = crusader_state_gov
+#	valid_for_nation_designer = no
+#	nation_designer_cost = 0
+#	modifiers = {
+#		global_missionary_strength = 0.02
+#		religious_unity = 0.2
+#		papal_influence = 0.5
+#		tolerance_own = 1
+#		tolerance_heathen = -2
+#	}
+#	custom_attributes = {
+#		locked_government_type = yes
+#		royal_marriage = yes
+#		queen = yes
+#		heir = yes #CHANGE INTO SLAVE RULER MECHANICS MAYBE?
+#	}
+#}
+
+german_kingdoms = {
+	icon = "crown"
+	allow_normal_conversion = no
+	monarchy = yes
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	fixed_rank = 3
+	potential = {
+		OR = { #Either? 
+			tag = SWA
+			tag = GER
+		}
+		has_global_flag = 1356_bt_start_flag #BT startup. Prevents Standard 1356 issues.
+		has_global_flag = golden_bull_bt_centralized_empire_flag #Centralized Empire
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	
+	modifiers = {
+		governing_capacity = 100
+		global_autonomy = -0.10
+		war_exhaustion = -0.02
+		unjustified_demands = -0.1
+		num_accepted_cultures = 2
+	}
+}
+
+populist_dictatorship = {
+
+	allow_normal_conversion = no
+	dictatorship = yes
+	legacy_equivalent = despotic_monarchy
+	lock_level_when_selected = yes
+	icon = "parliament_hall"
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+
+	modifiers = {
+		unjustified_demands = -0.1
+		war_exhaustion = -0.025
+		land_morale = 0.15
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	has_term_election = no
+}
+
+golden_bull_federation_government = {
+	icon = "elective_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = golden_bull_federation_government
+			have_had_reform = golden_bull_federation_government
+		}
+		OR = {
+			tag = UMI
+			tag = MRD
+			tag = CUM
+		}
+	}
+	legacy_equivalent = elective_feudal_monarchy
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		governing_capacity = 150
+		monarch_diplomatic_power = 1
+		monarch_admin_power = 1
+		stability_cost_modifier = -0.2
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+	}
+}
+
+
+# Republics
+
+
+
+# caspian_peasants_republic_reform = {
+	# allow_normal_conversion = yes
+	# valid_for_nation_designer = no
+	# nation_designer_cost = 0
+	# legacy_equivalent = peasants_republic_legacy
+	# republican_name = yes
+	# royal_marriage = no
+	# icon = "peasant_republic"
+	# potential = {
+		# have_had_reform = caspian_peasants_republic_reform
+		# primary_culture = mazandarani 
+	# }
+	# modifiers = {
+		# merchants = 1
+		# land_morale = 0.10
+		# max_absolutism = 10
+	# }
+	# conditional = {
+		# allow = { has_dlc = "Cradle of Civilization" }
+	# }	
+	# custom_attributes = {
+		# enables_plutocratic_idea_group = yes
+		# enables_aristocratic_idea_group = no
+	# }
+	# duration = 4
+# }
+
+
+novgorod_republic_gov = { #The New Russian Noble Republic Government ### For Russia tag specifically
+	icon = "russian_principality"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = tsardom }
+		NOT = { have_had_reform = tsardom }
+		NOT = { has_reform = tsardom_republic }
+		#religion = orthodox
+		OR = {
+			culture_group = east_slavic
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = novgorod_republic_gov
+			}
+		}
+	}
+	legacy_equivalent = novgorod_republic_gov_legacy
+	#boost_income = yes #WHY IS THIS THE THING THAT WILL FORCE YOU TO BE A MERCHANT REPUBLIC?!
+	fixed_rank = 3
+	republican_name = yes
+	royal_marriage = yes
+	valid_for_nation_designer = no
+	nation_designer_cost = 1000
+	duration = 8	
+
+	# nation_designer_trigger = {
+		# culture_group = east_slavic
+		#religion = orthodox
+	# }
+	modifiers = {
+		governing_capacity = 100
+		army_tradition = 0.10
+		max_absolutism = 20
+		nobles_influence_modifier = 0.05
+		development_cost = -0.1
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.1		
+	}
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+		#is_merchant_republic = no
+	}
+	
+	conditional = {
+		allow = { 
+			OR = {
+				has_dlc = "Third Rome" 
+				has_dlc = "Domination"
+			}
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+		custom_attributes = {
+			weaker_russian_ability = yes
+		}
+	}
+}
+
+novgorod_republic = { # For Novgorod ONLY
+	icon = "novgorod_republic"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = novgorod_republic
+	}
+	nation_designer_trigger = {
+		culture_group = east_slavic
+	}
+	modifiers = {
+		max_absolutism = -10
+		shock_damage_received = -0.10
+		nobles_influence_modifier = 0.10
+		burghers_influence_modifier = 0.10
+		church_influence_modifier = 0.10
+		development_cost = -0.1
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.1				
+	}
+	
+	#republican_name = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	fixed_rank = 1
+	republican_name = yes
+	royal_marriage = yes
+	valid_for_nation_designer = no
+	nation_designer_cost = 1000
+	duration = 6	
+
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	boost_income = yes
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+		#has_term_election = no
+		#ruler_reigns_until_death_or_appointment = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+			NOT = { has_dlc = "Third Rome" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+			NOT = { has_dlc = "Third Rome" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Third Rome" }
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			NOT = { has_dlc = "Mare Nostrum" }
+			NOT = { has_dlc = "Res Publica" }
+		}
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			NOT = { has_dlc = "Mare Nostrum" }
+			has_dlc = "Res Publica"
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+			has_dlc = "Mare Nostrum"
+			has_dlc = "Res Publica"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = { 
+			OR = {
+				has_dlc = "Third Rome" 
+				has_dlc = "Domination"
+			}
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+		custom_attributes = {
+			weaker_russian_ability = yes
+		}
+	}	
+}
+
+nov_delegated_power_to_veche = { # For Novgorod ONLY tier 2
+	icon = "nov_delegated_power_to_veche"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = novgorod_republic
+	}
+	fixed_rank = 0	
+	modifiers = {
+		merchants = 1
+		republican_tradition = 0.3
+		governing_capacity = 100
+	}
+	
+}
+
+nov_promote_local_boyars = { # For Novgorod ONLY tier 2
+	icon = "nov_promote_local_boyars"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = novgorod_republic
+	}
+	modifiers = {
+		reelection_cost = -0.1
+		stability_cost_modifier = -0.1
+		candidate_random_bonus = 1
+	}
+}
+
+nov_favor_princely_ties = { # For Novgorod ONLY tier 2
+	icon = "nov_favor_princely_ties"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = novgorod_republic
+	}
+	fixed_rank = 0	
+	modifiers = {
+		republican_tradition = -0.3
+		max_absolutism = 25
+		leader_land_shock = 1
+	}
+	
+}
+
+
+#swiss_canton_reform = { #Maybe give it access to Parlament mechanics?
+#	icon = "free_city"
+#	allow_normal_conversion = no
+#	valid_for_nation_designer = no
+#	nation_designer_cost = 0
+#	legacy_equivalent = swiss_canton
+#	republican_name = yes
+#	royal_marriage = no
+#	potential = {
+#		primary_culture = swiss 
+#	}
+#	modifiers = {
+#		land_forcelimit_modifier = 0.15
+#		mercenary_cost = -0.1
+#	}
+#	custom_attributes = {
+#		enables_plutocratic_idea_group = yes
+#		enables_aristocratic_idea_group = no
+#	}
+#	duration = 4
+#}
+
+ahm_republic_reform = { #Maybe give it access to Parlament mechanics?
+	icon = "noble_indian_ahm"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = ahm_republic
+	republican_name = yes
+	royal_marriage = yes
+	potential = {
+		tag = AHM
+	}
+	modifiers = {
+		army_tradition = 0.75
+		candidate_random_bonus = 1
+		governing_capacity = 100
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+		enables_nepotism = yes
+	}
+	duration = 5
+}
+
+frisian_republic_gov = {
+	allow_normal_conversion = yes
+	icon = "peasant_republic"
+	potential = {
+		primary_culture = frisian
+		OR = {
+			have_had_reform = frisian_republic_gov
+			has_reform = frisian_republic_gov
+		}
+	}
+	rulers_can_be_generals = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = frisian_republic_legacy
+	modifiers = {
+		global_trade_goods_size_modifier = 0.05
+		land_morale = 0.05
+		global_unrest = -1
+		max_absolutism = -10
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 3
+}
+
+viking_republic_reform = {
+	icon = "british_queen"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = viking_republic_reform
+			have_had_reform = viking_republic_reform
+		}
+		tag = VIK
+		#religion = norse_pagan_reformed #Perhaps...
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "Common Sense"
+	}
+	royal_marriage = yes
+	republican_name = yes
+	legacy_equivalent = viking_republic_legacy
+	start_territory_to_estates = 0.3
+	modifiers = {
+		governing_capacity = 50
+		republican_tradition = 0.3
+		global_unrest = -2
+		max_absolutism = 20
+	}
+	
+	duration = 4
+
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+# tsardom_republic = { # We just use the Vanilla one now
+	# icon = "russian_principality"
+	# allow_normal_conversion = yes
+	# potential = {
+		# religion = orthodox
+		# OR = {
+			# AND = {
+				# tag = RUS
+				# NOT = { map_setup = map_setup_random }
+			# }
+			# AND = {
+				# tag = UKR
+				# NOT = { map_setup = map_setup_random }
+			# }
+			# AND = {
+				# is_playing_custom_nation = yes
+				# have_had_reform = tsardom_republic
+			# }
+		# }
+	# }
+	# fixed_rank = 3
+	
+	# republican_name = yes
+	# royal_marriage = yes
+	# duration = 4
+	# legacy_equivalent = tsardom_republic_legacy
+	# valid_for_nation_designer = yes
+	# nation_designer_cost = 40
+
+	# nation_designer_trigger = {
+		# culture_group = east_slavic
+		# religion = orthodox
+	# }
+
+	# modifiers = {
+		# merchants = 1
+		# global_manpower_modifier = 0.20
+		# caravan_power = 0.33
+		# global_trade_goods_size_modifier = 0.1
+		# global_autonomy = -0.05
+		# governing_capacity = 200
+	# }
+	
+	# custom_attributes = {
+		# enables_plutocratic_idea_group = yes
+		# enables_aristocratic_idea_group = no
+		# is_merchant_republic = no
+	# }
+
+	# conditional = {
+		# allow = { has_dlc = "Third Rome" }
+		# claim_states = yes
+	# }
+# }
+
+
+### Theocracy
+
+patriarch_government_reform = {
+	potential = {
+		OR = {
+			owns_core_province = 358 #Alexandria
+			owns_core_province = 151 #Constantanopole
+			owns_core_province = 2313 #Antioch
+			owns_core_province = 379 #Jerusalem
+			owns_core_province = 410 #Baghdad
+			AND = {
+				owns_core_province = 118 #Rome
+				NOT = { religion = catholic }
+			}
+		}
+		OR = {
+			religion = nestorian
+			religion = coptic
+			religion = orthodox
+			#religion = catholic #How would we do this since they are under the pope?
+		}
+	}
+
+	modifiers = {
+		prestige_per_development_from_conversion = 0.33
+		tolerance_own = 1
+	}
+	valid_for_nation_designer = no
+	icon = "papacy"
+	allow_normal_conversion = yes
+	legacy_equivalent = patriarch_government_legacy
+	lock_level_when_selected = yes
+	rulers_can_be_generals = no
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+
+## Tribes
+
+######1356 Changes#######
+tribal_federation_ilkhan_reform = { #Tribes
+	icon = "ilkhanid_federation"
+	potential = {
+		OR = {
+			tag = JLR
+			tag = CHB
+			tag = MUZ
+			tag = SAB
+			tag = ILK
+			has_reform = tribal_federation_ilkhan_reform
+			have_had_reform = tribal_federation_ilkhan_reform
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	raze_province = yes	
+	maintain_dynasty = yes
+	queen = yes
+	nation_designer_cost = 0
+	modifiers = {
+		years_of_nationalism = -5
+		cav_to_inf_ratio = 0.25
+		province_warscore_cost = -0.15
+		monarch_military_power = 1
+		cavalry_cost = -0.15
+		global_tax_income = 12
+		land_forcelimit = 2
+	}
+	legacy_equivalent = tribal_federation_ilkhan
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+ilkhanate_government_tribal_reform = { #Ilkhanate itself ### Defunct for now will rework in the future
+	icon = "ilkhanid_federation"
+	potential = {
+		# tag = ILK
+		# OR = {
+			# has_reform = tribal_federation_ilkhan_reform
+			# have_had_reform = tribal_federation_ilkhan_reform
+		# }
+		always = no
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	raze_province = yes	
+	nation_designer_cost = 0
+	modifiers = {
+		unjustified_demands = -0.2
+		legitimacy = 0.5
+		cav_to_inf_ratio = 0.25
+		max_absolutism = 10
+		monarch_military_power = 2
+	}
+	legacy_equivalent = ilkhanate_government_tribal
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+
+#tribal_republic_gov = { #Cut for now as I had issues actually getting the Republic Mechanics to work here.
+#	icon = "shaman"
+#	allow_normal_conversion = yes
+#	valid_for_nation_designer = yes
+#	valid_for_new_country = no
+#	allow_convert = yes
+#	nation_designer_cost = 0
+#	modifiers = {
+#		core_creation = -0.15
+#	}
+#	
+#	republic = yes
+#	rulers_can_be_generals = yes
+#	duration = 8
+#	
+#	legacy_equivalent = tribal_democracy_legacy
+#}
+
+## 1356 Tribal Inheritance
+
+subvert_rival_clans_reform_tribes = {
+	allow_normal_conversion = yes
+	icon = "subvert_rival_clans"
+	modifiers = {
+		harsh_treatment_cost = -0.2
+		monarch_lifespan = 0.20
+		all_estate_influence_modifier = 0.1		
+		global_unrest = -1		
+	}
+	custom_attributes = {
+		enables_regencies_tribes_if_rival = yes
+		regencies_remain_same_tribe = yes
+	}	
+	
+	ai = {
+		factor = 2	
+	}
+}
+
+mongolic_succession_reforms_tribes = {
+	allow_normal_conversion = yes
+	icon = "mongol_succession"
+	queen = no
+
+	potential = {
+		OR = {
+			has_reform = mongolic_succession_reforms_tribes
+			have_had_reform = mongolic_succession_reforms_tribes
+			tag = ILK
+			tag = GOL
+			tag = GLH
+			tag = CHG
+			tag = KHA
+			tag = OIR
+			tag = MGE
+			tag = BLU
+			tag = WHI
+			tag = TRS
+		}
+	}	
+	maintain_dynasty = yes	
+	modifiers = {
+		governing_capacity = 75
+		reform_progress_growth = -0.15
+		leader_land_shock = 1
+		free_leader_pool = 1
+		cavalry_cost = -0.10
+	}
+	custom_attributes = {
+		regencies_enabled_mongol_tribe = yes
+		tribal_succ_crisis_if_35 = yes		
+	}		
+	ai = {
+		factor = 1000
+	}
+}
+
+tribal_rule_by_might_reform = {
+	allow_normal_conversion = yes
+	icon = "tribal_rule_by_might"
+	queen = no
+	heir = no
+	modifiers = {
+		raze_power_gain = 0.10
+		no_stability_loss_on_monarch_death = yes
+		prestige_from_land = 1		
+		warscore_from_battles_modifier = 0.10
+	}
+	custom_attributes = {
+		generals_become_rulers = yes
+		prevents_regency_tribe = yes
+	}		
+	ai = {
+		factor = 0.75
+		modifier = {
+			factor = 0
+			tag = TRS
+		}		
+	}
+}
+
+tribal_hereditary_succession = {
+	allow_normal_conversion = yes
+	icon = "indian_crown"
+	queen = yes
+	modifiers = {
+		legitimacy = 0.50
+		horde_unity = 0.50
+		infantry_cost = -0.10
+		heir_chance = 0.25
+		reform_progress_growth = 0.2		
+	}
+	custom_attributes = {
+		enables_consorts_regent_regency_tribal = yes
+		tribal_succession_50_tribal = yes
+	}		
+	ai = {
+		factor = 2
+	}
+}
+
+formalize_noble_caste_tribal = {
+	allow_normal_conversion = yes
+	icon = "nobility_tribal"
+	modifiers = {
+		diplomats = 1
+		unjustified_demands = -0.10
+		nobles_loyalty_modifier = 0.1
+		nobles_influence_modifier = 0.1
+		reform_progress_growth = 0.1
+	}
+	custom_attributes = {
+		enables_nobles_estate_tribal = yes
+	}		
+	ai = {
+		factor = 1	
+	}
+}
+
+formalize_clergical_caste_tribal = {
+	allow_normal_conversion = yes
+	icon = "clergical_estate_tribal"
+	modifiers = {
+		global_missionary_strength = 0.01
+		tolerance_own = 1
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.1
+		reform_progress_growth = 0.1
+		global_tax_income = 12
+		missionaries = 1
+	}
+	custom_attributes = {
+		enables_church_estate_tribal = yes	
+	}		
+	ai = {
+		factor = 2
+	}
+}
+
+grow_trade_relations_tribal = {
+	allow_normal_conversion = yes
+	icon = "formalize_merchant_caste"
+	modifiers = {
+		mercantilism_cost = -0.25
+		trade_efficiency = 0.1
+		burghers_loyalty_modifier = 0.1
+		burghers_influence_modifier = 0.1
+		merchants = 1
+		placed_merchant_power = 5
+		reform_progress_growth = 0.1
+	}
+	custom_attributes = {
+		enables_merchants_estates_tribal = yes	
+	}		
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				legitimacy = 85
+				horde_unity = 85
+			}
+		}
+	}
+}
+
+fortify_structure_of_the_tribe_tribal = {
+	allow_normal_conversion = yes
+	icon = "chieftain"
+	modifiers = {
+		war_exhaustion = -0.05
+		war_taxes_cost_modifier = -0.50
+		nomadic_tribes_loyalty_modifier = 0.1
+		nomadic_tribes_influence_modifier = 0.1
+		reform_progress_growth = -0.1
+		land_forcelimit_modifier = 0.10
+		national_focus_years = -10
+	}
+	custom_attributes = {
+		enables_tribes_estates_tribal = yes	
+	}		
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				legitimacy = 85
+				horde_unity = 85
+			}
+		}
+	}
+}
+
+delegate_power_to_clan_leaders_tribal = {
+	icon = "delegate_power_to_tribes"
+	allow_normal_conversion = yes
+	modifiers = {
+		#yearly_tribal_allegiance = 2
+		yearly_government_power = 2		
+		land_morale = 0.10
+		prestige_decay = -0.01
+		governing_capacity = 100
+		max_absolutism = 15
+		max_absolutism_effect = 0.15		
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	custom_attributes = {
+		provides_2_tribal_alligenance = yes	
+	}		
+	ai = {
+		factor = 2
+	}
+}
+
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Legacy Governments
+
+tsardom_republic_legacy = {
+	# government mechanics flags go here
+	icon = "king"
+	monarchy = yes
+	legacy_government = yes
+	allow_normal_conversion = no
+	duration = 8
+
+	valid_for_new_country = no
+	allow_convert = no
+	
+	republican_name = yes
+	royal_marriage = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		culture_group = east_slavic
+		religion = orthodox
+	}
+
+    fixed_rank = 3
+	modifiers = {
+		governing_capacity = 150
+		global_tax_modifier = 0.1
+		max_absolutism = -40
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		claim_states = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+patriarch_government_legacy = {
+	icon = "papacy"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	rulers_can_be_generals = no
+	monastic = yes
+	religion = yes
+	
+	royal_marriage = no
+	
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+	
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
+	}
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+    	governing_capacity = 50
+		tolerance_own = 1
+		prestige_per_development_from_conversion = 0.33
+		global_autonomy = -0.05
+	}
+	
+}
+
+# elective_feudal_monarchy = { # Is this even used?
+	# icon = "castle"
+	# allow_normal_conversion = yes
+	# legacy_government = yes
+	# monarchy = yes
+	# is_elective = yes
+	# valid_for_new_country = yes
+	# valid_for_nation_designer = no
+	# nation_designer_cost = 0
+	
+	#allow_vassal_alliance = yes
+	
+	# ai = {
+		# factor = 0
+	# }
+	
+	# modifiers = {
+		# governing_capacity = 100
+		# land_maintenance_modifier = -0.1
+		# max_absolutism = 3	
+	
+	# }
+	
+# }
+
+archduchy_legacy = {
+	icon = "king_highlighted"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		governing_capacity = 100
+		diplomats = 1
+		diplomatic_reputation = 2
+		imperial_authority_value = 0.1
+		prestige = 1
+	}
+	
+}
+
+serbian_government_legacy = {
+	icon = "king_highlighted"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		governing_capacity = 250
+		diplomats = 1
+		legitimacy = 1
+		vassal_income = 0.20
+		core_creation = -0.1
+	}
+	
+}
+
+delhi_sultanate_legacy = {
+	icon = "king_highlighted"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		governing_capacity = 250
+		diplomats = 1
+		legitimacy = 1
+		vassal_income = 0.20
+		core_creation = -0.1
+	}
+	
+}
+
+bahamis_sultanate_legacy = {
+	icon = "king_highlighted"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		governing_capacity = 250
+		tolerance_heathen = 3
+		global_missionary_strength = 0.01
+		land_morale = 0.05
+		free_leader_pool = 1
+	}
+	
+}
+
+vij_government_legacy = {
+	icon = "king_highlighted"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		diplomats = 1
+		tolerance_own = 1
+		fabricate_claims_cost= -0.33
+		unjustified_demands = -0.2
+	}
+	
+}
+
+bengali_sultanate_legacy = {
+	icon = "king_highlighted"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		governing_capacity = 250
+		diplomats = 1
+		legitimacy = 1
+		vassal_income = 0.20
+		core_creation = -0.1
+	}
+	
+}
+
+delhian_empire_legacy = {
+	icon = "king_highlighted"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		governing_capacity = 250
+		diplomats = 1
+		legitimacy = 1
+		vassal_income = 0.20
+		core_creation = -0.1
+	}
+	
+}
+
+byzantine_empire_gov = {
+	icon = "crown_highlighted"
+	allow_normal_conversion = no 
+	legacy_government = yes
+	monarchy = yes
+	valid_for_nation_designer = no
+	valid_for_new_country = no 
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		governing_capacity = 150
+		mercenary_cost = -0.15
+		land_maintenance_modifier = -0.1
+		global_manpower_modifier = 0.1
+		diplomatic_upkeep = -1
+		diplomats = 1
+	}
+}
+
+beylik_legacy = {
+	icon = "noble_muslim"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes 
+	maintain_dynasty = yes
+	valid_for_new_country = no 
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	modifiers = {
+		governing_capacity = 100
+		global_tax_modifier = 0.1
+		global_manpower_modifier = 0.1
+		stability_cost_modifier = -0.1
+		diplomatic_upkeep = 1
+	}
+}
+
+earldom_legacy = {
+	icon = "castle"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		governing_capacity = 100
+		land_morale = 0.1
+		hostile_attrition = 1
+		leader_land_manuever = 1
+		diplomatic_upkeep = -1
+
+	}
+	
+}
+
+swiss_canton = {
+	icon = "free_city"
+	allow_normal_conversion = no
+	nation_designer_cost = 0
+	legacy_government = yes
+	republic = yes
+	modifiers = {
+		governing_capacity = 100
+		global_unrest = -2
+		land_forcelimit_modifier = 0.15
+		mercenary_cost = -0.1
+	}
+	ai = {
+		factor = 4
+	}
+}
+
+gondi_kingdom_kingdom = {
+	icon = "free_city"
+	allow_normal_conversion = no
+	nation_designer_cost = 0
+	legacy_government = yes
+	republic = yes
+	modifiers = {
+		governing_capacity = 50
+		global_unrest = -2
+		land_forcelimit_modifier = 0.15
+		mercenary_cost = -0.1
+	}
+	ai = {
+		factor = 4
+	}
+}
+
+ahm_republic = {
+	icon = "free_city"
+	allow_normal_conversion = no
+	nation_designer_cost = 0
+	legacy_government = yes
+	republic = yes
+	modifiers = {
+		army_tradition = 0.75
+		candidate_random_bonus = 1
+		governing_capacity = 250
+	}
+	ai = {
+		factor = 4
+	}
+}
+
+novgorod_republic_gov_legacy = { #The New Russian Noble Republic Government
+	# government mechanics flags go here
+	icon = "russian_principality"
+	allow_normal_conversion = no
+	legacy_government = yes
+	monarchy = yes
+	duration = 8
+
+	valid_for_new_country = no
+	
+	republican_name = yes
+	royal_marriage = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		culture_group = east_slavic
+	}
+	
+    fixed_rank = 1
+	
+	modifiers = {
+		governing_capacity = 100
+		global_tax_modifier = 0.1
+		max_absolutism = -40
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+		}
+	}
+	
+	ai = {
+		factor = 0
+	}
+}
+
+french_vassal_feudal_monarchy = { #French Dukes Only
+	icon = "castle"
+	monarchy = yes
+	legacy_government = yes
+	allow_normal_conversion = no
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	fixed_rank = 1
+	modifiers = {
+		governing_capacity = 100
+		diplomats = 1
+		improve_relation_modifier = -0.15
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+kalmar_union_legacy = {
+	icon = "paper_money_map"
+	monarchy = yes
+	legacy_government = yes
+	allow_normal_conversion = no
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	fixed_rank = 3
+	
+	modifiers = {
+		governing_capacity = 100
+		reduced_liberty_desire = 25
+		global_autonomy = -0.1
+	}
+	
+	ai = {
+		factor = 0
+	}
+
+}
+
+barbary_sultanate = { #Barbary Pirates
+	icon = "muslim"
+	allow_normal_conversion = no
+	monarchy = yes
+	legacy_government = yes
+	queen = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	
+	modifiers = {
+		governing_capacity = 200
+		privateer_efficiency = 0.15	
+		ship_durability = 0.1
+		trade_steering = 0.10
+		galley_power = 0.20
+		improve_relation_modifier = -0.1
+		capture_ship_chance = 0.15
+	}
+
+	ai = {
+		factor = 0
+	}
+
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+	}
+}
+
+timurid_government = {  #Timurid Empire (Fedual)
+	icon = "muslim"
+	allow_normal_conversion = no
+	monarchy = yes
+	legacy_government = yes
+	queen = no
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	maintain_dynasty = yes	
+	fixed_rank = 3
+	
+	
+	modifiers = {
+		governing_capacity = 2500
+		unjustified_demands = -0.15
+		legitimacy = 0.5
+		max_absolutism = 10
+	}
+	
+	ai = {
+		factor = 0
+	}
+	
+}
+
+ilkhanate_government_tribal = {  #Ilkhanate (Tribal)
+	icon = "muslim"
+	allow_normal_conversion = no
+	legacy_government = yes
+	queen = yes
+	valid_for_new_country = no
+	allow_convert = no
+	tribal = yes
+	maintain_dynasty = yes
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		governing_capacity = 350
+		unjustified_demands = -0.15
+		legitimacy = 0.5
+		max_absolutism = 10
+	}
+	
+	ai = {
+		factor = 0
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+	}
+	
+}
+
+tribal_federation_ilkhan = { #Ilkhan Tribes
+	icon = "soldiers_2"
+	allow_normal_conversion = no
+	#legacy_government = yes
+	valid_for_new_country = yes
+	allow_convert = no
+	maintain_dynasty = yes
+	queen = yes
+	tribal = yes
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+
+	modifiers = {
+		governing_capacity = 100
+		years_of_nationalism = -5
+		cav_to_inf_ratio = 0.25
+		province_warscore_cost = -0.10
+	}
+	
+	ai = {
+		factor = 0
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+	}
+}
+
+chinese_kingdom_government = { #Chinese Minor Government Type
+	icon = "crown"
+	allow_normal_conversion = no
+	legacy_government = yes
+	monarchy = yes
+	maintain_dynasty = yes
+
+	allow_force_tributary = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	allow_convert = no
+	
+	modifiers = {
+		governing_capacity = 500
+		province_warscore_cost = -0.2
+		ae_impact = -0.15
+		diplomatic_upkeep = -2	
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+crusader_state_gov = {
+	icon = "castle"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		global_missionary_strength = 0.02
+		religious_unity = 0.2
+		papal_influence = 0.5
+		tolerance_own = 1
+		tolerance_heathen = -2	
+	}
+}
+
+frisian_republic_legacy = {
+	# government mechanics flags go here
+	icon = "fist_in_air"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = no
+	allow_convert = no
+
+	republic = yes
+	rulers_can_be_generals = no
+	
+	modifiers = {
+		governing_capacity = 50
+		global_trade_goods_size_modifier = 0.05
+		land_morale = 0.1 
+		global_unrest = -1
+		global_tax_modifier = -0.1
+		max_absolutism = -50
+		global_autonomy = -0.05
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+viking_republic_legacy = { #BT Vikings TAG
+	# government mechanics flags go here
+	icon = "british_queen"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	
+	duration = 4
+	royal_marriage = yes
+	republican_name = yes
+
+	valid_for_nation_designer = no
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "Common Sense"
+	}
+
+	republic = yes
+	start_territory_to_estates = 0.3
+	modifiers = {
+		republican_tradition = 0.3
+		global_unrest = -2
+		global_autonomy = -0.05
+		max_absolutism = -20
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+#########1356 Changes END########

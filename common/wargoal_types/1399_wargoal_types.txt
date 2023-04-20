@@ -474,3 +474,38 @@ serbian_civil_war_wargoal = {
 	
 	war_name = CORE_WAR_NAME
 }
+
+
+take_capital_vassalize_domination_idea = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+
+		required_treaty_to_take_provinces = {
+			po_subjugate_vassal
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_subjugate_vassal
+		}
+
+		country_desc = ALL_COUNTRIES_WITH_100_DEV		
+	}
+	
+	defender = {
+		badboy_factor = 0.75
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = VASSAL_MISSION_WAR_NAME
+	
+}

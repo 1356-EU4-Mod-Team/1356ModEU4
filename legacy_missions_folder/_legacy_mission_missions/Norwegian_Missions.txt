@@ -1,0 +1,447 @@
+norwegian_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = NOR
+	}
+	has_country_shield = yes
+	
+	protect_norway = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125
+			}
+		}
+	}
+	
+	norwegian_navy = {
+		icon = mission_galleys_in_port
+		position = 2
+		required_missions = { protect_norway }
+		trigger = {
+			navy_size_percentage = 0.8
+		}
+		effect = {
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 9125
+			}
+		}
+	}
+	
+	conquer_gotaland = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = { norwegian_navy }
+		provinces_to_highlight = {
+			area = vastra_gotaland_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			vastra_gotaland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	
+	foothold_in_scotland = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = { conquer_gotaland }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4110
+				province_id = 253
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4110 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			253 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			highlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lowlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	nor_conquer_scotland = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = { foothold_in_scotland }
+		provinces_to_highlight = {
+			OR = {
+				area = highlands_area
+				area = lowlands_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			highlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lowlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			kingdom_of_the_isles_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	the_isles = {
+		icon = mission_establish_high_seas_navy
+		position = 6
+		required_missions = { conquer_scotland }
+		provinces_to_highlight = {
+			area = kingdom_of_the_isles_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kingdom_of_the_isles_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			leinster_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	foothold_in_ireland = {
+		icon = mission_conquer_5_states
+		position = 7
+		required_missions = { the_isles }
+		provinces_to_highlight = {
+			area = leinster_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			leinster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			munster_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			connacht_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ulster_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	nor_conquer_ireland = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = { foothold_in_ireland }
+		provinces_to_highlight = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = ulster_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			munster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			connacht_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ulster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			british_isles_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+norwegian_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = NOR
+	}
+	has_country_shield = yes
+	
+	expand_north = {
+		icon = mission_unite_home_region
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4151
+				province_id = 1777
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1777 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4151 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 150
+		}
+	}
+	nor_colonize_greenland = {
+		icon = mission_establish_high_seas_navy
+		position = 2
+		provinces_to_highlight = {
+			area = greenland_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			greenland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+		}
+	}
+	
+	discover_vinland = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { nor_colonize_greenland }
+		position = 3
+		provinces_to_highlight = {
+			area = newfoundland_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			newfoundland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	
+	colonize_markland = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { discover_vinland }
+		position = 4
+		provinces_to_highlight = {
+			area = labrador_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			labrador_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	
+	colonize_acadia = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { colonize_markland }
+		position = 5
+		provinces_to_highlight = {
+			area = lower_acadia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			lower_acadia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			canada_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	rest_of_britain = {
+		icon = mission_unite_home_region
+		required_missions = { nor_conquer_scotland }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = scottish_marches_area
+				area = yorkshire_area
+				area = east_midlands_area
+				area = west_midlands_area
+				area = wessex_area
+				area = home_counties_area
+				area = east_anglia_area
+				area = wales_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			scottish_marches_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yorkshire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_midlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_midlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			wessex_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			home_counties_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_anglia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			wales_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			normandy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	viking_legacy = {
+		icon = mission_galleys_in_port
+		required_missions = { rest_of_britain }
+		position = 7
+		provinces_to_highlight = {
+			area = normandy_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			normandy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+		}
+	}
+}

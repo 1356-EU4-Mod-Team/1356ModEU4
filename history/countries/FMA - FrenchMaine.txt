@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = french_vassal_feudal_monarchy_reform
+add_government_reform = appanage_reform
 government_rank = 1 #County
 technology_group = western
 primary_culture = cosmopolitan_french

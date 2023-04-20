@@ -81,6 +81,10 @@ bergian_ideas = {
 	start = {
 		global_tax_modifier = 0.1
 		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
 	}
 
 	bonus = {

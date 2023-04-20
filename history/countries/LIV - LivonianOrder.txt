@@ -2,13 +2,19 @@ government = theocracy
 add_government_reform = monastic_order_reform
 government_rank = 1
 technology_group = western
-primary_culture = prussian
+primary_culture = baltic_german
 add_accepted_culture = latvian
 add_accepted_culture = estonian
 religion = catholic
 historical_friend = TEU
 historical_friend = RIG
 capital = 37	# Livland
+
+set_estate_privilege = estate_church_lands_of_riga
+set_estate_privilege = estate_church_bishopric_of_dorpat
+set_estate_privilege = estate_church_bishopric_of_osel_wiek
+set_estate_privilege = estate_church_bishopric_of_courland
+set_estate_privilege = estate_church_bishopric_of_reval
 
 1345.12.1 = {
 	monarch = {

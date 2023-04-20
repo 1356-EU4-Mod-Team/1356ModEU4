@@ -6,6 +6,7 @@ ahead_of_time = {
 	yearly_army_professionalism = 0.003
 	army_tradition_decay = -0.005
 	innovativeness_gain = 0.1
+	monthly_russian_modernization = 0.05	
 }
 
 technology = {

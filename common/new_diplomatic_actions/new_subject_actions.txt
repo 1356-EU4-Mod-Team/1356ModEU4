@@ -1,0 +1,76 @@
+# Home to Subject Actions related Diplomatic Actions
+# Massive Shoutout to the Europa Expanded Team!
+# 'category = 
+
+# abbasid_praise = {
+	# category = province
+
+	# require_acceptance = no
+
+	# is_visible = {
+		# always = yes
+	# }
+	
+	# is_allowed = {
+		# always = yes
+	# }
+	
+	# on_accept = {
+		# add_trust = {
+			# who = FROM
+			# value = 5
+			# mutual = yes
+		# }
+	# }
+	
+	# ai_will_do = {
+		# always = 0
+	# }
+# }
+
+convert_subject_into_puppet_state_1356 = {
+	category = province
+	require_acceptance = no
+
+	is_visible = {
+		always = yes
+		#is_subject = no
+		# government = monarchy
+		# ai = no
+		# NOT = { has_reform = elective_monarchy }
+		# FROM = {
+			# is_subject = no
+			# government = monarchy
+			# NOT = { has_reform = elective_monarchy }
+		# }
+	}
+	is_allowed = {
+		#always = yes
+		#ai = no	 ## Allowed for the Ai to use for now
+		is_at_war = no
+		has_idea = domination_dip_idea_5
+		NOT = { truce_with = FROM }
+		FROM = {
+			total_development = 150
+			is_subject_of = ROOT
+		}	
+		FROM = {
+			OR = {
+				is_subject_of_type = march
+				is_subject_of_type = vassal
+			}
+		}			
+	}
+	on_accept = {
+		ROOT = {
+			create_subject = {
+				subject_type = puppet_state_domination_ideas
+				subject = FROM
+			}
+		}	
+	}
+
+	ai_will_do = {
+		factor = 0 # Ai will not do this
+	}
+}

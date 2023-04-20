@@ -219,87 +219,98 @@ country_decisions = {
 			country_event = { id = new_ideas_events.10 }	# Deals with Espionage Network Specializations	
 		}
 	}	
-	patronage_local_researcher_inno = {
+	invite_a_great_thinker_advisor = { # Reworked for Erudite Ideas
 		major = yes
+		color = { 138  193  231 }
 		potential = {
-			has_idea_group = innovativeness_ideas
-			#has_idea = empiricism		
-			NOT = { has_country_modifier = is_considering_patronage_of_inventors }
+			has_idea_group = education_ideas	
 		}
 
 		allow = {
-			custom_trigger_tooltip = {
-				tooltip = PATRONAGE_INVENTOR_COOLDOWN
-				NOT = { has_country_modifier = patronaged_a_invetor_inno }
-			}	
-			treasury = 200
-			NOT = { num_of_loans = 5 }
-			ai = no
 			is_at_war = no
-			has_idea_group = innovativeness_ideas
-			has_idea = empiricism	
+			has_idea_group = education_ideas
+			has_idea = domination_adm_idea_1	
+			NOT = { has_country_modifier = great_thinker_advisor_cooldown }
 		}
 		effect = {
-			hidden_effect = {
-				add_country_modifier = {
-					name = "is_considering_patronage_of_inventors"
-					duration = -1
-					hidden = yes
-				}	
-			}	
-			country_event = { id = new_ideas_events.20 }	#Deals with Patronage
-		}
-	}
-	invite_a_great_thinker_advisor = { # Selects an Advisor of Choice
-		major = yes
-		potential = {
-			has_idea_group = innovativeness_ideas
-			#has_idea = empiricism		
-			#NOT = { has_country_modifier = searching_for_great_thinker }
-		}
-
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = GREAT_THINKER_COOLDOWN_TIMER
-				NOT = { has_country_modifier = great_thinker_adm }
-				NOT = { has_country_modifier = great_thinker_dip }
-				NOT = { has_country_modifier = great_thinker_mil }
-			}	
-			ai = no
-			is_at_war = no
-			has_idea_group = innovativeness_ideas
-			has_idea = dynamic_court	
-			NOT = { has_country_modifier = searching_for_great_thinker }
-		}
-		effect = {
-			hidden_effect = {
-				add_country_modifier = {
-					name = "great_thinker_advisor_cooldown"
-					duration = 365
-					hidden = yes
-				}	
-			}	
+			add_country_modifier = {
+				name = "great_thinker_advisor_cooldown"
+				duration = 7300
+				#hidden = yes
+			}		
 			country_event = { id = new_ideas_events.21 }	# The Search Begins	
 		}
 	}	
-	establish_the_national_bank = { # Bank is now Triggerable
+	
+	designiate_scribe_national_focus = { # Reworked for Erudite Ideas
 		major = yes
+		color = { 138  193  231 }
 		potential = {
-			has_idea_group = economic_ideas
-			#has_idea = empiricism		
-			#NOT = { has_country_modifier = searching_for_great_thinker }
-			NOT = { has_country_flag = bank }
+			has_idea_group = education_ideas
+			#has_idea = domination_adm_idea_1		
 		}
 
 		allow = {
-			#ai = no
 			is_at_war = no
-			has_idea_group = economic_ideas
-			has_idea = national_bank	
+			has_idea_group = education_ideas
+			has_idea = domination_adm_idea_7	
+			NOT = { has_country_modifier = designated_scribe_focus_cooldown }
 		}
 		effect = {
-			set_country_flag = bank
-			country_event = { id = 4042 }	# Bank Forms
+			add_country_modifier = {
+				name = "designated_scribe_focus_cooldown"
+				duration = 9125
+				#hidden = yes
+			}		
+			country_event = { id = new_ideas_events.50 }	# Designate Focus	
 		}
 	}	
+	
+	designiate_military_academia_focus = { # Leader Pips for Professional Ideas
+		major = yes
+		color = { 138  193  231 }
+		potential = {
+			has_idea_group = professionalism_ideas
+			#has_idea = domination_adm_idea_1		
+		}
+
+		allow = {
+			#is_at_war = no
+			has_idea_group = professionalism_ideas
+			has_idea = domination_mil_idea_5	
+			NOT = { has_country_modifier = designiate_military_academia_focus_cooldown }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "designiate_military_academia_focus_cooldown"
+				duration = 9125
+				#hidden = yes
+			}		
+			country_event = { id = new_ideas_events.51 }	# Designate Focus	
+		}
+	}	
+	
+	recruit_professional_general_idea_decision = { # 100 Army Tradition General for Professional
+		major = yes
+		color = { 138  193  231 }
+		potential = {
+			has_idea_group = professionalism_ideas
+			#has_idea = domination_adm_idea_1		
+		}
+
+		allow = {
+			#is_at_war = no
+			has_idea_group = professionalism_ideas
+			has_idea = domination_mil_idea_3	
+			NOT = { has_country_modifier = recruited_hundred_tradition_general_professional_ideas }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "recruited_hundred_tradition_general_professional_ideas"
+				duration = 7300
+				#hidden = yes
+			}	
+			create_general = { tradition = 100 }
+		}
+	}		
 }	

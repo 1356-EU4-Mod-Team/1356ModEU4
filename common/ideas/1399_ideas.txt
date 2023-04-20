@@ -62,6 +62,10 @@ DAU_ideas = { #Dauphine ideas -Apparently Dauphin is french for Dolphin?-
 	
 	the_dauphin_of_france = { #After the Duchy of Dauphin fell into the hands of the King of France, by the terms of the treaty of romans, france would hold Dauphin, but all future heirs were to be called "le dauphin". This happened up till the french revolution.
 		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
 		prestige = 0.5
 		nobles_loyalty_modifier = 0.15
 	}
@@ -208,7 +212,11 @@ ANJ_ideas = { #Anjou ideas
 
 BOU_ideas = { #Bourbonnais ideas
 	start = { #Yeah I couldn't find much besides the House of Bourbon came from here....
-		legitimacy = 2
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
 		global_unrest = -1
 	}
 	
@@ -1176,7 +1184,10 @@ GYO_ideas = { #Needs Tweaks
 	}
 	gyo_legitimate_monarch = {
 		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
 		meritocracy = 1
+		horde_unity = 1
 	}
 	gyo_war_exhaustion = {
 		war_exhaustion = -0.05
@@ -1291,9 +1302,11 @@ WLI_ideas = {
 		hostile_attrition = 2
 	}
 	WLI_generic_ideas_3 = { #Bishopric & Republic
-		republican_tradition = 0.5
-		devotion = 1
 		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
 	}
 	WLI_generic_ideas_4 = { #Cultural Blend
 		global_trade_goods_size_modifier = 0.1
@@ -1539,7 +1552,9 @@ EGY_ideas = {
 	egy_idea_2 = { #Claim decendence from Ancient Egyptian Dynasty
 		legitimacy = 1
 		devotion = 1
-        republican_tradition = 0.5
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
 		max_absolutism = 15
 	}
 	egy_idea_3 = { #A Powerful Navy for a Powerful Pharaoh
@@ -1572,7 +1587,7 @@ CUM_ideas = {
 	}
 	
 	bonus = { 
-		may_perform_slave_raid = yes
+		#may_perform_slave_raid = yes
 		privateer_efficiency = 0.25
 	}
 	
@@ -1599,8 +1614,10 @@ CUM_ideas = {
 	}
 	cum_idea_6 = { #Cuman Unity - Whats left of us have to band together in order to prevent the death of the Cuman identity!-
 		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
 		horde_unity = 1
-		republican_tradition = 0.3
 	}
 	cum_idea_7 = { #Feirce Caravan defense
 		discipline = 0.05
@@ -1611,7 +1628,11 @@ CUM_ideas = {
 ahm_ideas = {
 	start = {
 		land_morale = 0.10
+		legitimacy = 1
+		devotion = 1
 		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
 	}
 	
 	bonus = {
@@ -1857,7 +1878,8 @@ canary_ideas = {
 FZA_ideas = {
 	start = { 
 		hostile_attrition = 1
-		may_perform_slave_raid = yes
+		#may_perform_slave_raid = yes
+		land_morale = 0.15
 	}
 	
 	bonus = { 
@@ -1896,7 +1918,8 @@ FZA_ideas = {
 
 algerian_ideas = {
 	start = {
-		may_perform_slave_raid = yes
+		#may_perform_slave_raid = yes
+		land_morale = 0.15
 		galley_power = 0.2		
 	}
 	bonus = {
@@ -1934,7 +1957,8 @@ algerian_ideas = {
 TRP_ideas = { #Tripoli ideas
 	start = {
 		privateer_efficiency = 0.25
-		may_perform_slave_raid = yes
+		#may_perform_slave_raid = yes
+		ship_durability = 0.10
 	}
 	
 	bonus = {
@@ -1977,7 +2001,7 @@ TRP_ideas = { #Tripoli ideas
 united_berber_ideas = { #United Berber Culture Group ideas
 	start = {
 		land_morale = 0.15
-		may_perform_slave_raid = yes
+		naval_attrition = -0.25
 	}
 	
 	bonus = {
@@ -2164,11 +2188,14 @@ golden_bull_barbary_pirate_ideas = { #cloned from vanilla
 	start = {
 		galley_power = 0.2
 		privateer_efficiency = 0.2
-		may_perform_slave_raid = yes #Unique to this idea set
+		#may_perform_slave_raid = yes #Unique to this idea set
 	}
 	bonus = {
-		republican_tradition = 0.5
 		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
 	}
 	trigger = {
 		OR = {
@@ -2694,9 +2721,10 @@ TRO_ideas = { #Special thanks to @Raumarici from our discord for these
 	}
 	tro_idea_3 = { 
 		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
 		horde_unity = 1
-		republican_tradition = 0.3
-		devotion = 0.5
 	}
 	tro_idea_4 = { 
 		land_morale = 0.1
@@ -2771,9 +2799,10 @@ MDL_ideas = { #Madagascar
     }
     respected_malgasy_governors_jibm = {
 		legitimacy = 1
-		republican_tradition = 0.3
 		devotion = 1
-		horde_unity = 0.5
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
 	}
 
 	sakalava_trade_jibm = {
@@ -2813,8 +2842,11 @@ WHI_ideas = {
 		global_prov_trade_power_modifier = 0.10
 	}
 	glh_legacy_of_the_golden_horde = {
-		horde_unity = 1
 		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
 	}
 	tradition_of_conquest = {
 		core_creation = -0.25

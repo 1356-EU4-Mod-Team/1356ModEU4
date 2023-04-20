@@ -1,7 +1,7 @@
 ﻿l_english:
  golden_bull_NEWS_FEED:0 "§Y1356 - A Timeline Extension Mod for EUIV§!"
- golden_bull_ENTRY_1:0 "@SER §JSerbia§! @TES Mini-Update is now available!\n§Y               Game Balance Adjustments§!\n\n\n\n\n\n\n\n\n\n\n§Y §!"
- golden_bull_ENTRY_2:0 "- Updated Balkans Politics for Serbia, Bulgaria, Hungary and \n  Byzantium\n- Added several new nations to Serbia, encompassing major noble \n  families \n- Redone the Collapse of the Serbian Empire Disaster\n- Rebalanced Serbian, Bulgarian, Byzantine, and Ottoman Ideas\n- Added Thessalian Ideas, a Mix of Serbian and Byzantine ideas for \n  Thessaly\n- Reworked the Ottoman Ai to be much more aggressive, focusing \n  on consolidating smaller Anatolian Beyliks\n- Ottomans will now attempt to avoid players in the Balkan region\n  earlier in the game\n- Constantinople has a province when owned by Byzantium,\n  now cost significantly more to take\n- Added the 'Court Politics' Government Tier for Monarchies\n- Fixed Teutonic Missions not working such as Imperial Protection\n- Fixed cases where certain nations that formed such as Bukhara\n  crash the game for having over 7 total ideas"
+ golden_bull_ENTRY_1:0 "§JNational Ideas§! - Mini-Update is now available!\n§Y               Game Balance Adjustments§!\n\n\n\n\n\n\n\n\n\n\n§Y §!"
+ golden_bull_ENTRY_2:0 "- Updated to support 1.35 Domination Update \n- Reworked National Ideas Sets\n- Added Erudite, Domination, and Professional Idea Groups\n- These Idea groups do not offer Policies and instead offer unique \n mechanics\n- Scholarly, Imperial, Domineering, Grand Court, Condottiere and Professionalize Ideas have been retired\n- Rebalanced Settlement and Navigation Ideas to include proper\n modifiers, now also gives +1 Colonists, allowing Proto-Colonization\n- Reworked High Feudal Monarchy and Elective Feudal Monarchy\n- Fixed issues with Court Politics related decisions \n- Reworked @ILK Ilkhanate Formable Decision and Ideas\n- Reworked @RUS Russia Formable Decision \n- Fixes to mid-game stability, improving performance and\n reducing potential crashes\n- Adjusted some of the 1356 related Tribal Government reforms, \nmaking them more appealing\n- Implemented Phase 1 of adjusting older events and other content, alongside host of other bugfixes"
  golden_bull_ENTRY_3:0 ""
  golden_bull_ENTRY_4:0 ""
  golden_bull_ENTRY_5:0 ""
@@ -11,4 +11,4 @@
  golden_bull_ENTRY_7:0 ""
  golden_bull_ENTRY_8:0 ""
  golden_bull_ENTRY_9:0 ""
- golden_bull_ENTRY_99:0 "Eu4 v1.34.5.0 §GMultiplayer Checksum§!: 6a4f"
+ golden_bull_ENTRY_99:0 "Eu4 v1.35.1.0 §GMultiplayer Checksum§!: f214"

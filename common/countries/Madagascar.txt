@@ -9,7 +9,7 @@ historical_idea_groups = {
     expansion_ideas   
     quantity_ideas
 	defensive_ideas
-	grand_court_ideas
+	domination_ideas
 	quality_ideas
     influence_ideas
     offensive_ideas

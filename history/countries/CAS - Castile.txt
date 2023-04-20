@@ -58,7 +58,7 @@ national_focus = MIL
 	}
 }
 
-1369.3.23 = { add_government_reform = feudalism_reform capital = 219 } # Pedro I de Borgoña-Ivrea assassinated
+1369.3.23 = { add_government_reform = high_feudal_monarchy_reform capital = 219 } # Pedro I de Borgoña-Ivrea assassinated
 
 1379.5.29 = {
 	monarch = {

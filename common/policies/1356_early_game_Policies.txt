@@ -18,16 +18,18 @@ goldenbull_reconstruct_state_burucracy = {
 		government_rank = 2
 		NOT = { is_year = 1450 }
 	}
-	
-	 monthly_reform_progress_modifier = 0.25
+		
+	monthly_reform_progress_modifier = 0.20
 
 	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1000
-			tag = TUR
-		}
+		factor = 0 #0.5
+		# modifier = {
+			# factor = 1000
+			# tag = TUR
+		# }
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_autonomous_lordships = {
@@ -56,12 +58,14 @@ goldenbull_autonomous_lordships = {
 	#expand_administration_cost = 0.5
 
 	ai_will_do = {
-		factor = 0.25
-		modifier = {
-			factor = 1000
-			tag = LIT
-		}		
+		factor = 0 #0.25 
+		# modifier = {
+			# factor = 1000
+			# tag = LIT
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_maintain_relam_peace = {
@@ -137,6 +141,8 @@ goldenbull_maintain_relam_peace = {
 	ai_will_do = { # Disabled for AI
 		factor = 0	
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_delegate_admin_policies = {
@@ -174,12 +180,14 @@ goldenbull_delegate_admin_policies = {
 	free_dip_policy = 1
 
 	ai_will_do = {
-		factor = 0.33
-		modifier = {
-			factor = 1000
-			tag = DAN
-		}		
+		factor = 0 #0.33
+		# modifier = {
+			# factor = 1000
+			# tag = DAN
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_royal_education_admin = {
@@ -214,12 +222,14 @@ goldenbull_royal_education_admin = {
 	monthly_support_heir_gain = 0.1
 
 	ai_will_do = {
-		factor = 0.4
-		modifier = {
-			factor = 1000
-			tag = ENG
-		}		
+		factor = 0 #0.4
+		# modifier = {
+			# factor = 1000
+			# tag = ENG
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_diverse_advisors = {
@@ -250,6 +260,8 @@ goldenbull_diverse_advisors = {
 	ai_will_do = { # Disabled for AI
 		factor = 0		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 
@@ -281,6 +293,8 @@ goldenbull_culture_adivsors = {
 	ai_will_do = { # Disabled for AI
 		factor = 0
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 
@@ -311,8 +325,10 @@ goldenbull_justify_war_ae_debuff = {
 	unjustified_demands = 0.2
 
 	ai_will_do = {
-		factor = 0.4
+		factor = 0 #0.4
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_office_foreign_affairs = {
@@ -338,12 +354,14 @@ goldenbull_office_foreign_affairs = {
 	diplomats = 1
 
 	ai_will_do = {
-		factor = 0.3
-		modifier = {
-			factor = 1000
-			tag = FRA
-		}		
+		factor = 0 #0.3
+		# modifier = {
+			# factor = 1000
+			# tag = FRA
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_estate_concessions_policy = {
@@ -370,16 +388,18 @@ goldenbull_estate_concessions_policy = {
 	#possible_dip_policy = -1
 
 	ai_will_do = {
-		factor = 0.03
-		modifier = {
-			factor = 1000
-			tag = POL
-		}		
-		modifier = {
-			factor = 1000
-			tag = HUN
-		}		
+		factor = 0 #0.03
+		# modifier = {
+			# factor = 1000
+			# tag = POL
+		# }		
+		# modifier = {
+			# factor = 1000
+			# tag = HUN
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_focus_domestic_trade = {
@@ -407,12 +427,14 @@ goldenbull_focus_domestic_trade = {
 	trade_efficiency = 0.15
 
 	ai_will_do = {
-		factor = 0.35
-		modifier = {
-			factor = 1000
-			culture_group = latin
-		}		
+		factor = 0 #0.00
+		# modifier = {
+			# factor = 1000
+			# culture_group = latin
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_delegate_dip_policies = {
@@ -450,12 +472,14 @@ goldenbull_delegate_dip_policies = {
 	free_mil_policy = 1
 
 	ai_will_do = {
-		factor = 0.23
-		modifier = {
-			factor = 1000
-			tag = MAM
-		}		
+		factor = 0 #0.23
+		# modifier = {
+			# factor = 1000
+			# tag = MAM
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_royal_education_diplomatic = {
@@ -490,12 +514,14 @@ goldenbull_royal_education_diplomatic = {
 	monthly_support_heir_gain = 0.1
 
 	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1000
-			tag = FRA
-		}		
+		factor = 0 #0.5
+		# modifier = {
+			# factor = 1000
+			# tag = FRA
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 
@@ -523,30 +549,32 @@ goldenbull_grow_the_vassals_struct = {
 	diplomatic_annexation_cost = -0.2
 
 	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1000
-			tag = MOS
-		}	
-		modifier = {
-			factor = 1000
-			tag = FRA
-		}	
-		modifier = {
-			factor = 1000
-			tag = HAB
-		}	
-		modifier = {
-			factor = 1000
-			tag = BUR
-		}		
+		factor = 0 #0.5
+		# modifier = {
+			# factor = 1000
+			# tag = MOS
+		# }	
+		# modifier = {
+			# factor = 1000
+			# tag = FRA
+		# }	
+		# modifier = {
+			# factor = 1000
+			# tag = HAB
+		# }	
+		# modifier = {
+			# factor = 1000
+			# tag = BUR
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 
 # Military policies
 
-goldenbull_focus_on_cav = {
+goldenbull_focus_on_cav = { # Come back here
 	monarch_power = MIL
 	potential = {
 		is_year = 1355
@@ -574,16 +602,18 @@ goldenbull_focus_on_cav = {
 	prestige_from_land = 1
 
 	ai_will_do = {
-		factor = 0.35
-		modifier = {
-			factor = 1000
-			tag = POL
-		}	
-		modifier = {
-			factor = 1000
-			tag = FRA
-		}		
+		factor = 0 #0.35
+		# modifier = {
+			# factor = 1000
+			# tag = POL
+		# }	
+		# modifier = {
+			# factor = 1000
+			# tag = FRA
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_permit_loot_warfare = {
@@ -610,16 +640,18 @@ goldenbull_permit_loot_warfare = {
 	improve_relation_modifier = -0.10
 
 	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1000
-			tag = ENG
-		}		
-		modifier = {
-			factor = 1000
-			tag = WHI
-		}		
+		factor = 0 #0.5
+		# modifier = {
+			# factor = 1000
+			# tag = ENG
+		# }		
+		# modifier = {
+			# factor = 1000
+			# tag = WHI
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_free_leaders_policy = {
@@ -648,9 +680,11 @@ goldenbull_free_leaders_policy = {
 	nobles_influence_modifier = 0.1
 
 	ai_will_do = {
-		factor = 0.8
+		factor = 0 #0.8
 		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_focus_adm_dip_not_mil = {
@@ -689,16 +723,18 @@ goldenbull_focus_adm_dip_not_mil = {
 	free_dip_policy = 1
 
 	ai_will_do = {
-		factor = 0.1
-		modifier = {
-			factor = 1000
-			tag = SER
-		}
-		modifier = {
-			factor = 1000
-			tag = TUR
-		}		
+		factor = 0 #0.1
+		# modifier = {
+			# factor = 1000
+			# tag = SER
+		# }
+		# modifier = {
+			# factor = 1000
+			# tag = TUR
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_glory_of_war_hordes = {
@@ -733,9 +769,11 @@ goldenbull_glory_of_war_hordes = {
 	#possible_mil_policy = -1
 
 	ai_will_do = {
-		factor = 1000
+		factor = 0 #1000
 		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_royal_education_military = {
@@ -770,20 +808,22 @@ goldenbull_royal_education_military = {
 	monthly_support_heir_gain = 0.1
 
 	ai_will_do = {
-		factor = 0.15
-		modifier = {
-			factor = 1000
-			tag = TUR
-		}
-		modifier = {
-			factor = 1000
-			tag = TRS
-		}	
-		modifier = {
-			factor = 1000
-			tag = JLR
-		}		
+		factor = 0 #0.15
+		# modifier = {
+			# factor = 1000
+			# tag = TUR
+		# }
+		# modifier = {
+			# factor = 1000
+			# tag = TRS
+		# }	
+		# modifier = {
+			# factor = 1000
+			# tag = JLR
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_levy_the_war_taxes = {
@@ -811,9 +851,11 @@ goldenbull_levy_the_war_taxes = {
 	land_maintenance_modifier = -0.10
 
 	ai_will_do = {
-		factor = 0.45
+		factor = 0 #0.45
 		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_invest_in_the_castles = {
@@ -844,9 +886,11 @@ goldenbull_invest_in_the_castles = {
 	#possible_mil_policy = -1
 
 	ai_will_do = {
-		factor = 0.7
+		factor = 0 #0.7
 		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 
@@ -878,16 +922,18 @@ goldenbull_strengthen_religious_control = {
 	church_loyalty_modifier = 0.1
 	
 	ai_will_do = {
-		factor = 0.2
-		modifier = {
-			factor = 1000
-			tag = POR
-		}	
-		modifier = {
-			factor = 1000
-			tag = ETH
-		}		
+		factor = 0 #0.2
+		# modifier = {
+			# factor = 1000
+			# tag = POR
+		# }	
+		# modifier = {
+			# factor = 1000
+			# tag = ETH
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_theocratic_reform = {
@@ -915,12 +961,14 @@ goldenbull_theocratic_reform = {
 	tolerance_own = 2
 	
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1000
-			tag = PAP
-		}		
+		factor = 0 #0
+		# modifier = {
+			# factor = 1000
+			# tag = PAP
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_reelection_campaigns = {
@@ -948,16 +996,18 @@ goldenbull_reelection_campaigns = {
 	republican_tradition = 0.3
 	
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1000
-			tag = GEN
-		}
-		modifier = {
-			factor = 1000
-			tag = VEN
-		}		
+		factor = 0 #5
+		# modifier = {
+			# factor = 1000
+			# tag = GEN
+		# }
+		# modifier = {
+			# factor = 1000
+			# tag = VEN
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 
@@ -984,8 +1034,10 @@ goldenbull_pursue_closer_bonds = {
 	years_to_integrate_personal_union = 15
 	
 	ai_will_do = {
-		factor = 0.6		
+		factor = 0	#0.6	
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_aid_the_poor_theo = {
@@ -1014,12 +1066,14 @@ goldenbull_aid_the_poor_theo = {
     global_tax_modifier = -0.05
 	
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1000
-			tag = PAP
-		}		
+		factor = 0 #5
+		# modifier = {
+			# factor = 1000
+			# tag = PAP
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_vision_of_commerce = {
@@ -1048,12 +1102,14 @@ goldenbull_vision_of_commerce = {
 	global_ship_trade_power = 0.33
 	
 	ai_will_do = {
-		factor = 3
-		modifier = {
-			factor = 1000
-			tag = VEN
-		}		
+		factor = 0 #3
+		# modifier = {
+			# factor = 1000
+			# tag = VEN
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_patronage_the_shipwrights = {
@@ -1080,12 +1136,14 @@ goldenbull_patronage_the_shipwrights = {
 	global_ship_recruit_speed = -0.20
 	
 	ai_will_do = {
-		factor = 0.3
-		modifier = {
-			factor = 5
-			culture_group = latin
-		}		
+		factor = 0 #0.3
+		# modifier = {
+			# factor = 5
+			# culture_group = latin
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_guards_of_the_holy_sites = {
@@ -1113,12 +1171,14 @@ goldenbull_guards_of_the_holy_sites = {
 	discipline = 0.025
 	
 	ai_will_do = {
-		factor = 3
-		modifier = {
-			factor = 1000
-			tag = PAP
-		}		
+		factor = 0 #3
+		# modifier = {
+			# factor = 1000
+			# tag = PAP
+		# }		
 	}
+	effect = {}
+	removed_effect = {}	
 }
 
 goldenbull_expansion_of_the_merchant_fleet = {
@@ -1148,14 +1208,16 @@ goldenbull_expansion_of_the_merchant_fleet = {
 	naval_tradition_from_trade = 1
 	
 	ai_will_do = {
-		factor = 3
-		modifier = {
-			factor = 1000
-			tag = VEN
-		}	
-		modifier = {
-			factor = 1000
-			culture_group = latin
-		}			
+		factor = 0 #3
+		# modifier = {
+			# factor = 1000
+			# tag = VEN
+		# }	
+		# modifier = {
+			# factor = 1000
+			# culture_group = latin
+		# }			
 	}
+	effect = {}
+	removed_effect = {}	
 }

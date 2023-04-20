@@ -1,0 +1,600 @@
+# zurich_two = {
+	# slot = 2
+	# generic = no
+	# ai = yes
+	# potential = {
+		# always = no
+		# tag = ZUR
+		# government = swiss_canton_reform
+	# }
+	# has_country_shield = yes
+	
+	# zur_appease_cantons = {
+		# icon = mission_build_up_to_force_limit
+		# trigger = {
+			# army_size_percentage = 1
+			# manpower_percentage = 0.5
+			# ZUR = {
+				# all_subject_country = {
+					# NOT = {
+						# liberty_desire = 25
+					# }
+				# }
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_cantons_satisfied
+				# duration = 10950
+			# }
+			# add_country_modifier = {
+				# name = zur_ready_for_war
+				# duration = 10950
+			# }
+			# add_mil_power = 50
+			# 1870 = {
+				# if = {
+					# limit = {
+						# NOT = {
+							# owned_by = ROOT
+							# is_core = ROOT
+						# }
+					# }
+					# add_permanent_claim = ROOT
+				# }
+			# }
+		# }
+	# }
+	
+	# zur_control_thurgau = {
+		# icon = mission_conquer_50_development
+		# required_missions = { zur_appease_cantons }
+		# position = 2
+		# trigger = {
+			# 1870 = {
+				# controlled_by = ROOT
+			# }
+			# OR = {
+				# war_score_against = {
+					# who = HAB
+					# value = 20
+				# }
+				# war_score_against = {
+					# who = THG
+					# value = 20
+				# }
+			# }
+		# }
+		# effect = {
+			# 1870 = {
+				# owner = {
+					# white_peace = ROOT
+				# }
+			# }
+			# create_subject = {
+				# subject_type = canton
+				# subject = THG
+			# }
+			# add_prestige = 15
+		# }
+	# }
+	
+	# zur_make_bern_canton = {
+		# icon = mission_have_two_subjects
+		# required_missions = { zur_control_thurgau }
+		# position = 3
+		# trigger = {
+			# BRN = {
+				# is_subject_of = ROOT
+				# is_subject_of_type = canton
+			# }
+		# }
+		# effect = {
+			# ZUR = {
+				# every_subject_country = {
+					# add_liberty_desire = -15
+				# }
+			# }
+			# add_adm_power = 100
+		# }
+	# }
+	
+	# zur_vaud_canton = { #This trigger also doesn't work completly.
+		# icon = mission_cannons_firing
+		# required_missions = { zur_make_bern_canton }
+		# position = 4
+		# trigger = {
+			# OR = {
+				# 1867 = {
+					# controlled_by = ROOT
+					# owner = {
+						# war_score = -50
+					# }
+				# }
+				# owns = 1867
+			# }
+
+		# }
+		# effect = {
+			# 1867 = {
+				# cede_province = VAU
+			# }
+			# create_subject = {	
+				# subject_type = canton
+				# subject = VAU
+			# }
+			# white_peace = SAV
+			# 72 = {
+				# if = {
+					# limit = {
+						# NOT = {
+							# owned_by = ROOT
+							# is_core = ROOT
+						# }
+					# }
+					# add_permanent_claim = ROOT
+				# }
+			# }
+		# }
+	# }
+	
+	# zur_conquer_fribourg = {
+		# icon = mission_assemble_an_army
+		# required_missions = { zur_vaud_canton }
+		# position = 5
+		# trigger = {
+			# 72 = {
+				# owned_by = ROOT
+				# is_core = ROOT
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_conquest_of_fribourg
+				# duration = 9250
+			# }
+			# add_adm_power = 100
+			# add_prestige = 10
+		# }
+	# }
+	
+	# zur_decrease_canton_privleges = {
+		# icon = mission_have_two_subjects
+		# required_missions = { zur_conquer_fribourg }
+		# position = 6
+		# trigger = {
+			# ZUR = {
+				# all_subject_country = {
+					# NOT = {
+						# liberty_desire = 40
+					# }
+				# }
+				# num_of_subjects = 6
+			# }
+			# adm_power = 100
+		# }
+		# effect = {
+			# ZUR = {
+				# every_subject_country = {
+					# add_liberty_desire = -25
+				# }
+			# }
+		# }
+	# }
+# }
+
+# zur_three = {
+	# slot = 3
+	# generic = no
+	# ai = yes
+	# potential = {
+		# always = no
+		# tag = ZUR
+		# government = swiss_canton_reform
+	# }
+	# has_country_shield = yes
+	
+	# zur_sempacherbrief = {
+		# icon = mission_alliances
+		# required_missions = { zur_appease_cantons }
+		# position = 2
+		# trigger = {
+			# num_of_subjects = 4
+			# ZUR = {
+				# all_subject_country = {
+					# NOT = {
+						# liberty_desire = 40
+					# }
+				# }
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_sempacherbrief_written
+				# duration = -1
+			# }
+			# add_dip_power = 150
+		# }
+	# }
+	
+	# zur_sundgau = {
+		# icon = mission_cannons_firing
+		# required_missions = { zur_control_thurgau }
+		# position = 3
+		# trigger = {
+			# 1880 = {
+				# owned_by = ROOT
+				# is_core = ROOT
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_clearing_the_habsburgs
+				# duration = 18250
+			# }
+			# add_prestige = 30
+		# }
+	# }
+	
+	# zur_milan = {
+		# icon = mission_conquer_50_development
+		# required_missions = { zur_vaud_canton }
+		# position = 5
+		# trigger = {
+			# 104 = {
+				# owned_by = ROOT
+				# is_core = ROOT
+				# pure_unrest = 0
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_expansion_into_italy
+				# duration = 18250
+			# }
+		# }
+	# }
+	
+	# zur_weather_reformation = { #It should be noted that THIS DOESNT WORK.
+		# icon = mission_religious
+		# required_missions = { zur_milan zur_conquer_fribourg }
+		# position = 6
+		# trigger = {
+			# OR = {
+				# ZUR = {
+					# all_subject_country = {
+						# has_matching_religion = ROOT
+					# }
+				# }
+				# has_country_flag = zur_enacted_tolerance_decision
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_religious_unity
+				# duration = -1
+			# }
+			# add_adm_power = 100
+		# }
+	# }
+	
+	# zur_unite_switzerland = {
+		# icon = mission_unite_home_region
+		# required_missions = { zur_weather_reformation }
+		# position = 7
+		# trigger = {
+			# ZUR = {
+				# all_subject_country = {
+					# NOT = {
+						# liberty_desire = 20
+					# }
+				# }
+			# }
+		# }
+		# effect = {
+			# set_country_flag = can_form_switzerland_one
+			# add_prestige = 20
+		# }
+	# }
+# }
+
+# zur_four = {
+	# slot = 4
+	# generic = no
+	# ai = yes
+	# potential = {
+		# always = no
+		# tag = ZUR
+		# government = swiss_canton_reform
+	# }
+	# has_country_shield = yes
+	
+	# zur_anti_austria = {
+		# icon = mission_empire
+		# position = 2
+		# trigger = {
+			# custom_trigger_tooltip = {
+				# tooltip = zur_insult
+				# reverse_has_opinion_modifier = {
+					# who = HAB
+					# modifier = insulted
+				# }
+			# }
+			# HAB = {
+				# is_rival = ROOT
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_fiery_rhetoric
+				# duration = 10950
+			# }
+			# add_dip_power = 100
+		# }
+	# }
+	
+	# zur_fortify_zurich = {
+		# icon = mission_conquer_50_development
+		# position = 3
+		# trigger = {
+			# 1869 = {
+				# has_building = fort_15th
+			# }
+		# }
+		# effect = {
+			# add_mil_power = 50
+			# add_country_modifier = {
+				# name = zur_fort 
+				# duration = -1
+			# }
+		# }
+	# }
+	
+	# zur_rent_out_mercs = {
+		# icon = mission_have_two_subjects
+		# position = 4
+		# trigger = {
+			# manpower = 5
+			# num_of_subjects = 3
+		# }
+		# effect = {
+			# #country_event= {
+			# #	id = swiss_event.2
+			# #}
+			# #add_manpower = -5
+		# }
+	# }
+	
+	# zur_swiss_guard = {
+		# icon = mission_assemble_an_army
+		# required_missions = { zur_rent_out_mercs }
+		# position = 5
+		# trigger = {
+			# PAP = {
+				# has_opinion = {
+					# who = ROOT
+					# value = 100
+				# }
+			# }
+			# papal_influence = 50
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_papal_diplomacy
+				# duration = 10950
+			# }
+		# }
+	# }
+# }
+
+# zur_six = {
+	# slot = 6
+	# generic = no 
+	# ai = yes
+	# potential = {
+		# always = no
+		# tag = ZUR
+		# government = swiss_canton_reform
+	# }
+	# has_country_shield = yes
+	
+	# zur_develop_wallis = {
+		# icon = mission_early_game_buildings
+		# required_missions = { zur_dev_plan }
+		# position = 3
+		# trigger = {
+			# 1871 = {
+				# development = 15
+			# }
+		# }
+		# effect = {
+			# add_adm_power = 25
+			# add_dip_power = 25
+			# 1871 = {
+				# add_building = workshop
+			# }
+		# }
+	# }
+	
+	# zur_develop_vaud = {
+		# icon = mission_early_game_buildings 
+		# required_missions = { zur_develop_wallis }
+		# position = 5
+		# trigger = {
+			# 1867 = {
+				# owned_by = ROOT
+				# development = 15
+			# }
+		# }
+		# effect = {
+			# add_adm_power = 25
+			# add_dip_power = 25
+			# 1867 = {
+				# add_province_modifier = {
+					# name = zur_bustling_city
+					# duration = 10950
+				# }
+				# add_building = temple
+			# }
+		# }
+	# }
+# }
+
+# zur_eight = {
+	# slot = 8
+	# generic = no 
+	# ai = yes
+	# potential = {
+		# always = no
+		# tag = ZUR
+		# government = swiss_canton_reform
+	# }
+	# has_country_shield = yes
+	
+	# zur_dev_plan = {
+		# icon = mission_early_game_buildings
+		# position = 2
+		# trigger = {
+			# adm_power = 50
+			# dip_power = 50
+			# mil_power = 50
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_reduced_dev_cost
+				# duration = 18250
+			# }
+			# 166 = {
+				# add_base_tax = 2
+				# add_base_production = 2
+				# add_base_manpower = 2
+			# }
+			# 1869 = {
+				# add_base_tax = 2
+				# add_base_production = 2
+				# add_base_manpower = 2
+			# }
+		# }
+	# }
+	
+	# zur_develop_zurich = {
+		# icon = mission_early_game_buildings
+		# required_missions = { zur_dev_plan }
+		# position = 3
+		# trigger = {
+			# 1869 = {
+				# development = 20
+				# has_building = temple
+				# has_building = workshop
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = zur_reduced_build_cost
+				# duration = 10950
+			# }
+			# add_adm_power = 50
+		# }
+	# }
+	
+	# zur_develop_waldstatte = {
+		# icon = mission_early_game_buildings 
+		# required_missions = { zur_develop_zurich }
+		# position = 5
+		# trigger = {
+			# 166 = {
+				# development = 20
+				# has_building = temple
+				# has_building = workshop 
+			# }
+		# }
+		# effect = {
+			# add_adm_power = 75
+			# 166 = {
+				# add_province_modifier = {
+					# name = zur_waldstatte_dev_cost
+					# duration = -1
+				# }
+			# }
+		# }
+	# }
+	
+	# zur_finish_dev_plan = {
+		# icon = mission_early_game_buildings
+		# required_missions = { zur_develop_waldstatte zur_develop_bern zur_develop_vaud }
+		# position = 6
+		# trigger = {
+			# ZUR = {
+				# all_owned_province = {
+					# development = 20
+				# }
+			# }
+		# }
+		# effect = {
+			# every_owned_province = {
+				# limit = {
+					# primary_culture = swiss
+				# }
+				# add_base_manpower = 2
+				# add_base_production = 2
+				# add_base_tax = 2
+			# }
+			# add_country_modifier = {
+				# name = zur_developed_subjects
+				# duration = -1
+			# }
+		# }
+	# }
+# }
+
+# zur_ten = {
+	# slot = 10
+	# generic = no 
+	# ai = yes
+	# potential = {
+		# always = no
+		# tag = ZUR
+		# government = swiss_canton_reform
+	# }
+	# has_country_shield = yes
+	
+	# zur_develop_raetia = {
+		# icon = mission_early_game_buildings 
+		# required_missions = { zur_dev_plan }
+		# position = 3
+		# trigger = {
+			# 1873 = {
+				# development = 15
+			# }
+		# }
+		# effect = {
+			# 1873 = {
+				# add_base_manpower = 2
+				# add_base_tax = 2
+				# add_base_production = 2
+			# }
+			# add_adm_power = 25
+			# add_dip_power = 25
+		# }
+	# }
+	
+	# zur_develop_bern = {
+		# icon = mission_early_game_buildings 
+		# required_missions = { zur_develop_raetia }
+		# position = 5
+		# trigger = {
+			# 165 = {
+				# owns_or_subject_of = ROOT
+				# development = 15
+			# }
+		# }
+		# effect = {
+			# add_adm_power = 75
+			# add_mil_power = 75
+			# add_country_modifier = {
+				# name = zur_berner_trade_goods
+				# duration = -1
+			# }
+		# }
+	# }
+# }

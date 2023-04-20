@@ -155,7 +155,7 @@ capital = 1775	# Kiel
 }
 
 1440.1.1 = {
-	add_government_reform = feudalism_reform 
+	add_government_reform = high_feudal_monarchy_reform 
 	heir = {
 		name = "Christian I"
 		monarch_name = "Christian I"

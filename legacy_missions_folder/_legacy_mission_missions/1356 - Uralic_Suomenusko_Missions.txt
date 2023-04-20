@@ -1,0 +1,66 @@
+uralic_suomenusko_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = M2A
+			tag = MI1
+			tag = BOG
+			tag = UDM
+			tag = MRR
+			tag = MR1
+			tag = MR2
+		}
+	}
+	has_country_shield = yes
+	
+	uralic_suomenusko_reform_technology = {
+		position = 1
+		icon = mission_build_up_to_force_limit
+		trigger = { 
+			has_institution = feudalism
+		}
+		effect = {
+			remove_country_modifier = uralic_technology_starting_modifier
+		}
+	}
+	
+	uralic_suomenusko_reform_levies = {
+		position = 2
+		icon = mission_build_up_to_force_limit
+		required_missions = { uralic_suomenusko_reform_technology }
+		trigger = {
+			total_development = 20
+		}
+		effect = {
+			remove_country_modifier = uralic_force_limit_starting_modifier
+		}
+	}
+	
+	uralic_suomenusko_reform_army = {
+		position = 3
+		icon = mission_build_up_to_force_limit
+		required_missions = { uralic_suomenusko_reform_levies }
+		trigger = {
+			total_development = 40
+		}
+		effect = {
+			remove_country_modifier = uralic_army_starting_modifier
+		}
+	}
+	
+	uralic_suomenusko_reform_religion = {
+		position = 4
+		icon = mission_build_up_to_force_limit
+		required_missions = { uralic_suomenusko_reform_army }
+		trigger = { 
+			capital_scope = {
+				has_building = temple
+			}
+		}
+		effect = {
+			remove_country_modifier = uralic_religion_starting_modifier
+		}
+	}
+}

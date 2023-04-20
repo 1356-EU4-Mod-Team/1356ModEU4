@@ -1,0 +1,2637 @@
+yuan_toqtoa_red_turban_rebellion_xinan_region_group = { #Toqto's Return - Crush the Xinan Rebels
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		
+		#NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	
+	yua_quell_red_turban_rebellion_toqto_xinan_mission = { #Begin to Crush the Rebellion - Xinan
+		icon =  mission_conquer_5_states
+		required_missions = { yua_quell_red_turban_rebellion_toqto_north_western_china_mission }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = sichuan_area
+				area = chuanbei_area
+				area = yun_gui_borderland_area
+				area = chuannan_area
+				area = yun_gui_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					sichuan_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					chuanbei_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					yun_gui_borderland_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					chuannan_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					yun_gui_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					sichuan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					chuanbei_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					yun_gui_borderland_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					chuannan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					yun_gui_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			} 
+		}
+		effect = {
+			sichuan_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			chuanbei_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			yun_gui_borderland_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			chuannan_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			yun_gui_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+		}
+	}	
+}	
+
+yuan_training_the_peasants_path = { #Toqto's Return - Repair the devestated mil
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		#NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes
+
+	
+	yua_quell_red_turban_new_start_mission_1 = { #Start fixing your devestated militairy
+		icon =  mission_assemble_an_army
+		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
+		position = 3
+		trigger = {
+			always = yes
+		}
+		effect = {
+			add_prestige = 5
+		}
+	}
+	
+	yua_quell_red_turban_mission_1 = { #Hit the Force Limit - Removes Debuffs related to manpower and training.
+		icon =  mission_arabian_fort
+		required_missions = { yua_quell_red_turban_new_start_mission_1 }
+		position = 4
+		trigger = {
+			army_size_percentage = 1
+			is_year = 1359
+		}
+		effect = {
+			remove_country_modifier = yua_quell_red_turban_mission_1_modifier
+		}
+	}
+	yua_quell_red_turban_mission_2 = { #Hit the Force Limit P2 - Removes Debuffs related to manpower and training.
+		icon =  mission_assemble_an_army
+		required_missions = { yua_quell_red_turban_mission_1 }
+		position = 5
+		trigger = {
+			army_size_percentage = 0.75
+			is_year = 1362
+		}
+		effect = {
+			remove_country_modifier = yua_quell_red_turban_mission_2_modifier
+		}
+	}
+	yua_quell_red_turban_mission_3 = { #Morale/Infantry Power/Tradition Decay
+		icon =  mission_build_up_to_force_limit
+		required_missions = { yua_quell_red_turban_mission_2 }
+		position = 6
+		trigger = {
+			mil_power = 200
+		}
+		effect = {
+			add_mil_power = -200
+			remove_country_modifier = yua_quell_red_turban_mission_3_modifier
+		}
+	}
+	yua_quell_red_turban_mission_4 = { #Calvary Power/Cav Flanking/Tradition Decay/Reinforce Speed
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_mission_3 }
+		position = 8
+		trigger = {
+			manpower = 15
+		}
+		effect = {
+			add_manpower = -15
+			remove_country_modifier = yua_quell_red_turban_mission_4_modifier
+		}
+	}
+	yua_quell_red_turban_mission_5 = { #Discipline/Tradition Decay/Recover Morale Speed
+		icon =  mission_great_wall
+		required_missions = { yua_quell_red_turban_mission_4 }
+		position = 10
+		trigger = {
+			manpower = 10
+			mil_power = 100
+		}
+		effect = {
+			add_manpower = -10
+			add_mil_power = -100
+			remove_country_modifier = yua_quell_red_turban_mission_5_modifier
+		}
+	}
+	yua_quell_red_turban_mission_6 = { #Price of stuff
+		icon =  mission_japanese_samurai
+		required_missions = { yua_quell_red_turban_mission_5 }
+		position = 12
+		trigger = {
+			treasury = 200
+		}
+		effect = {
+			add_treasury = -200
+			remove_country_modifier = yua_quell_red_turban_mission_6_modifier
+		}
+	}
+}
+
+
+yuan_toqtoa_red_turban_rebellion_misc_group = { #Toqto's Return - Crush the Nomads, Korea, and Tibet
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		#NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	
+	yua_toqtoa_red_turban_rebellion_tibet = { #Crush the Rebels - Tibet
+		icon =  mission_arabian_fort
+		required_missions = { yua_quell_red_turban_rebellion_toqto_xinan_mission }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = amdo_area
+				area = kham_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					amdo_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					kham_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					amdo_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					kham_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			amdo_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			kham_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}			
+		}
+	}
+	yua_toqtoa_red_turban_rebellion_tibet_more_mission = { #Crush the Rebels - The Rest of Tibet
+		icon =  mission_cannons_firing
+		required_missions = { yua_toqtoa_red_turban_rebellion_tibet }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = ngari_area
+				area = bhutan_area
+				area = tsang_area
+				area = utsang_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					ngari_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					bhutan_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					tsang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					utsang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					ngari_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					bhutan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tsang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					utsang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			add_adm_power = 100
+			add_prestige = 5
+			add_country_modifier = { 
+				name = yua_annex_tibet_modifier
+				duration = 3650 
+			}
+			ngari_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			bhutan_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}	
+			tsang_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			utsang_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}			
+		}
+	}	
+
+	yua_toqtoa_red_turban_rebellion_korea = { #Crush the Rebels - Northern Korea
+		icon =  mission_junk_boat
+		required_missions = { yua_quell_red_turban_rebellion_toqto_secured_north_china_mission }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = pyongan_area
+				area = hamgyeong_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					pyongan_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					hamgyeong_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					tsang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					utsang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					pyongan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					hamgyeong_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			hamgyeong_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			pyongan_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}			
+		}
+	}
+	yua_toqtoa_red_turban_rebellion_korea_2 = { #Crush the Rebels -  Southern Korea
+		icon =  mission_have_two_subjects
+		required_missions = { yua_toqtoa_red_turban_rebellion_korea }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = western_korea_area
+				area = eastern_korea_area
+				area = south_korea_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					western_korea_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					eastern_korea_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					south_korea_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					utsang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					western_korea_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					eastern_korea_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					south_korea_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			add_adm_power = 150
+			add_prestige = 10
+			add_country_modifier = { 
+				name = yua_crushed_pre_start_korean_rebellion_modifier
+				duration = 3650 
+			}
+			western_korea_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			eastern_korea_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			south_korea_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}			
+		}
+	}
+}
+
+yuan_toqtoa_red_turban_rebellion_west_china_group = { #Toqto's Return - Crush the Rebels, Western China
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		#NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	
+	yua_quell_red_turban_rebellion_toqto_north_western_china_mission = { #Begin to Crush the Rebellion - North Western China
+		icon =  mission_monarch_in_throne_room
+		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_4 }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = west_gansu_area
+				area = gansu_area
+				area = shaanxi_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					west_gansu_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					gansu_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					shaanxi_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					west_gansu_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					gansu_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}		
+					shaanxi_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			west_gansu_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			gansu_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			shaanxi_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}			
+		}
+	}
+	yua_quell_red_turban_rebellion_toqto_henan_china_mission = { #Begin to Crush the Rebellion - North Henan, South Henan
+		icon =  mission_landsknecht_soldier
+		required_missions = { yua_quell_red_turban_rebellion_toqto_north_western_china_mission }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = north_henan_area
+				area = henan_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					north_henan_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					henan_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					north_henan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}		
+					henan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			north_henan_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			henan_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}			
+		}
+	}
+
+	yua_quell_red_turban_rebellion_toqto_southern_china_coast_mission = { #Begin to Crush the Rebellion - Southern China Coast
+		icon = mission_rice_field
+		required_missions = { yua_quell_red_turban_rebellion_toqto_secured_north_china_mission }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = jiangxi_area
+				area = huguang_area
+				area = hunan_area
+				area = guangxi_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					jiangxi_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					huguang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					hunan_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					guangxi_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					jiangxi_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					huguang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					hunan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					guangxi_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			jiangxi_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			huguang_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			hunan_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			guangxi_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}			
+		}
+	}
+	yua_quell_red_turban_rebellion_toqto_end = { #Secured China from the rebellion, the Empire is saved...Or is it? -Turns into Noble Rebellion Path- #SCRIPT THAT PART STILL #UNFINISHED
+		icon =  mission_sea_battles
+		required_missions = { yua_toqtoa_red_turban_rebellion_korea_2 yua_red_turban_rebellion_buryatia yua_quell_red_turban_rebellion_toqto_secured_current_areas_south_china_mission }
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				area = guangdong_area
+				area = west_guangdong_area
+				area = fujian_area
+				area = jiangxi_area
+				area = huguang_area
+				area = zhejiang_area
+				area = south_anhui_area
+				area = south_jiangsu_area
+				area = hunan_area
+				area = guangxi_area
+			}
+		}	
+		trigger = {
+			NOT = { has_disaster = red_turban_rebellion_disaster }
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			north_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			xinan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			fujian_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jiangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			huguang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zhejiang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_anhui_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_jiangsu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hunan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			guangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_mandate = 25
+			add_meritocracy = 25
+			set_country_flag = red_turban_rebellion_over_flag
+			add_years_of_income = 1.5
+			add_inflation = 1.5	
+			remove_country_modifier = yuan_starting_modifiers
+			
+			#remove_country_modifier = mongol_debuff - Save this for later, alongside the reforming of Empire work that is to come.
+			#Let them keep the province modifiers in China for the rebellion
+			#Set the flag to remove the altaic stuff though
+		}
+	}
+}
+
+yuan_toqtoa_red_turban_rebellion_group = { #Start of the Crush the Rebellion Tree
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		#NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes
+	
+	yua_quell_red_turban_rebellion_toqto_mission_4 = { #Crush The Rebels 
+		icon =  mission_assemble_an_army
+		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
+		position = 3
+		trigger = {
+			always = yes
+		}
+		effect = {
+			add_prestige = 2
+		}
+	}
+}
+
+yuan_toqtoa_red_turban_rebellion_secure_main_regions_group = { #Toqto's Return - Secure areas of Importance
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		#NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	yua_quell_red_turban_rebellion_capital_mission = { #Begin to Crush the Rebellion - Crush the Capital Regions Rebels
+		icon =  mission_bedouins
+		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_4 }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = hebei_area
+				area = south_hebei_area
+				area = shanxi_area
+				area = liaoning_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					hebei_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					south_hebei_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					shanxi_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					liaoning_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				
+				AND = {
+					hebei_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					south_hebei_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					shanxi_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					liaoning_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			hebei_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			south_hebei_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			shanxi_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			liaoning_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}				
+		}
+	}
+	yua_red_turban_rebellion_inner_mongolia_mission = { #Crush the Rebels - Ordos, Inner Mongolia, Eastern Mongolia
+		icon =  mission_steppe_warriors
+		required_missions = { yua_quell_red_turban_rebellion_capital_mission }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = ordos_area
+				area = inner_mongolia_area
+				area = eastern_mongolia
+			}
+		}	
+		trigger = {
+			ordos_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			inner_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			eastern_mongolia = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			is_year = 1358
+		}
+		effect = {
+			ordos_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			inner_mongolia_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}	
+			eastern_mongolia = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}				
+		}
+	}	
+	yua_quell_red_turban_rebellion_toqto_north_china_coast_mission = { #Begin to Crush the Rebellion - Shandong, North Jiangsu, North Anhui
+		icon =  mission_have_two_subjects
+		required_missions = { yua_red_turban_rebellion_inner_mongolia_mission }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = shandong_area
+				area = jiangsu_area
+				area = anhui_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					shandong_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					jiangsu_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					anhui_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					shandong_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}		
+					jiangsu_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					anhui_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			shandong_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			jiangsu_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			anhui_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}			
+		}
+	}
+	yua_quell_red_turban_rebellion_toqto_secured_north_china_mission = { #Secured North China
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_toqtoa_red_turban_rebellion_tibet yua_quell_red_turban_rebellion_toqto_north_china_coast_mission yua_quell_red_turban_rebellion_toqto_henan_china_mission }
+		position = 7
+		provinces_to_highlight = {
+			region = north_china_region
+		}	
+		trigger = {
+			OR = {
+				north_china_region = {
+					type = all
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }		
+				}
+				north_china_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			is_year = 1358
+			}
+		effect = {
+			add_years_of_income = 2
+			add_inflation = 1
+		}
+	}
+
+	yua_quell_red_turban_rebellion_south_coast_p1_mission = { #Begin to Crush the Rebellion - South China Coast P1
+		icon =  mission_persian_soldiers
+		required_missions = { yua_quell_red_turban_rebellion_toqto_secured_north_china_mission }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = south_jiangsu_area
+				area = south_anhui_area
+				area = zhejiang_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					south_jiangsu_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					south_anhui_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					zhejiang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					south_jiangsu_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					south_anhui_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					zhejiang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			south_jiangsu_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			south_anhui_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			zhejiang_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+		}
+	}	
+	yua_quell_red_turban_rebellion_south_coast_p2_mission = { #Begin to Crush the Rebellion - South China Coast P2
+		icon = mission_junk_boat
+		required_missions = { yua_quell_red_turban_rebellion_south_coast_p1_mission yua_quell_red_turban_rebellion_toqto_southern_china_coast_mission }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = fujian_area
+				area = guangdong_area
+				area = west_guangdong_area
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					fujian_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					guangdong_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					west_guangdong_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					fujian_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					guangdong_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					west_guangdong_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			fujian_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			guangdong_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}
+			west_guangdong_area = {
+				add_province_modifier = { 
+					name = yuan_toqo_mission_reconquer_china_reward
+					duration = 3650 
+					desc = yuan_toqo_mission_reconquer_china_reward_tooltip
+				}
+			}			
+		}
+	}
+	yua_quell_red_turban_rebellion_toqto_secured_current_areas_south_china_mission = { #Secured South China
+		icon =  mission_japanese_samurai
+		required_missions = { yua_quell_red_turban_rebellion_south_coast_p2_mission}
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = guangdong_area
+				area = west_guangdong_area
+				area = fujian_area
+				area = jiangxi_area
+				area = huguang_area
+				area = zhejiang_area
+				area = south_anhui_area
+				area = south_jiangsu_area
+				area = hunan_area
+				area = guangxi_area
+			}			
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					guangdong_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					west_guangdong_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					fujian_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					jiangxi_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					huguang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					zhejiang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					south_anhui_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					south_jiangsu_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					hunan_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					guangxi_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					guangdong_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					west_guangdong_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					fujian_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					jiangxi_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					huguang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					zhejiang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					south_anhui_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					south_jiangsu_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					hunan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					guangxi_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			add_inflation = 1.5	
+		}
+	}	
+}
+
+yuan_toqtoa_start_group = { #Toqto'a Starting Mission - The Return of Toqtoa
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes
+
+	yua_quell_red_turban_rebellion_mission_0 = { #Get a Feel for the Situation
+		icon =  mission_chinese_general_riding
+		required_missions = {  }
+		position = 1
+		trigger = {
+			always = yes
+		}
+		effect = {
+			add_prestige = 1
+		}
+	}
+	
+	yua_quell_red_turban_rebellion_toqto_mission = { #The Return of Toqtoa
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
+		position = 2
+		trigger = {
+			has_country_flag = yuan_toqto_returns_flag
+		}
+		effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+	
+}
+
+yuan_toqtoa_red_turban_rebellion_4_group = { #Toqto's Return - Crush Part of the Rebels
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		#NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes
+	
+	yua_red_turban_rebellion_outer_mongolia_mission = { #Crush the Rebels - Outer Mongolia, Gobi, Uliastai, Kabdo, North Zungaria, Turpan-Kumul
+		icon =  mission_steppe_warriors
+		required_missions = { yua_red_turban_rebellion_inner_mongolia_mission }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = outer_mongolia_area
+				area = north_zungaria
+				area = uliastai_area
+				area = altai_sayan_area
+				area = central_mongolia_area
+				province_id = 2122
+				province_id = 4206
+				province_id = 716
+				province_id = 1066
+				
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					outer_mongolia_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					north_zungaria = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					uliastai_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					altai_sayan_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					central_mongolia_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					2122 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					4206 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					716 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					1066 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					outer_mongolia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					north_zungaria = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					uliastai_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					altai_sayan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					central_mongolia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					2122 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					4206 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					716 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					1066 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			outer_mongolia_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			north_zungaria = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}	
+			uliastai_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			altai_sayan_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			central_mongolia_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			2122 = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			4206 = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			716 = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			1066 = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}				
+		}
+	}
+	yua_red_turban_rebellion_manchuria = { #Crush the Rebels - Manchuria minus Liaoning & Ilin Hala
+		icon =  mission_steppe_warriors
+		required_missions = { yua_red_turban_rebellion_outer_mongolia_mission }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = heilongjiang_area
+				area = east_heilongjiang_area
+				area = jilin_area
+				area = central_jilin_area
+				area = central_heilongjiang_area
+				area = ningguta_area
+				province_id = 2103
+				province_id = 1048
+				province_id = 4214
+				province_id = 1050
+				province_id = 4216
+				
+			}
+		}	
+		trigger = {
+			OR = {
+				AND = {
+					heilongjiang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					east_heilongjiang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					jilin_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					central_jilin_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					central_heilongjiang_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					ningguta_area = {
+						type = all
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					
+					2103 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					1048 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					4214 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					1050 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					4216 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				AND = {
+					heilongjiang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					east_heilongjiang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					jilin_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					central_jilin_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					central_heilongjiang_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					ningguta_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					2103 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					1048 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					4214 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					1050 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					4216 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			heilongjiang_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			east_heilongjiang_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}	
+			jilin_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			central_jilin_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			central_heilongjiang_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			ningguta_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			2103 = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			1048 = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			4214 = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			1050 = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}
+			4216 = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}			
+		}
+	}
+	yua_red_turban_rebellion_buryatia = { #Crush the Rebels - Buryatia
+		icon =  mission_unite_home_region
+		required_missions = { yua_red_turban_rebellion_manchuria }
+		position = 10
+		provinces_to_highlight = {
+			area = buryatia_area
+		}	
+		trigger = {
+			OR = {
+				buryatia_area = {
+					type = all
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				buryatia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			is_year = 1358
+		}
+		effect = {
+			buryatia_area = {
+				add_province_modifier = { 
+					name = yuan_toqoa_mission_keep_korea_reward
+					duration = 3650 
+				}
+			}			
+		}
+	}		
+}
+
+# yuan_starter_group_2 = { #Starting Mission - Explain the situation and the Sides
+	# slot = 5
+	# generic = no
+	# ai = yes
+	
+	# potential = { #Disapear after a side is chosen
+		# tag = YUA
+		# NOT = { has_country_flag = yuan_toqto_killed_flag }
+		# NOT = { has_country_flag = yuan_toqto_returns_flag }
+	# }
+	# has_country_shield = yes
+
+	# yua_side_with_one_side = { #Explain to Players it continues when they pick a side of the event
+		# icon =  mission_buddhist_monk_praying
+		# required_missions = { yua_quell_red_turban_rebellion_mission_0 yua_quell_red_turban_rebellion_toqto_mission yua_quell_red_turban_rebellion_korean_consort_mission }
+		# position = 3
+		# trigger = {
+			# always = yes
+		# }
+		# effect = {
+			# add_prestige = 1
+		# }
+	# }
+
+# }
+
+# yuan_ki_start_group = { #Starter Ki Mission - UNFINISHED PATH
+	# slot = 6
+	# generic = no
+	# ai = yes
+	
+	# potential = { 
+		# tag = YUA
+		# NOT = { has_country_flag = yuan_toqto_returns_flag }
+	# }
+	# has_country_shield = yes
+	
+	# yua_quell_red_turban_rebellion_korean_consort_mission = {
+		# icon =  mission_alliances
+		# required_missions = { yua_quell_red_turban_rebellion_mission_0 }
+		# position = 2
+		# trigger = {
+			# has_country_flag = yuan_toqto_killed_flag
+		# }
+		# effect = {
+			# swap_non_generic_missions = yes
+		# }
+	
+	# }
+# }
+	
+yuan_toqtoa_interior_religion = { #Toqto's Return - Dealing with the topic of Religion
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	
+	yua_toqtoa_reform_religion_start = { #Change how we handle our Religion so we can stay stable, gains ability to convert again.
+		icon = mission_buddhist_monk_praying
+		required_missions = { yua_toqtoa_interior_start }
+		position = 14
+	
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816 #Bejing
+				province_id = 2190 #Qaraqorum
+				province_id = 726 #Shenyang
+				province_id = 700 #Xi'an
+				province_id = 730 #Girin
+				province_id = 4215 #Fudali
+			}
+			NOT = { controlled_by = YUA } #Is this right?
+		}
+		trigger = {
+			1816 = { controlled_by = YUA }
+			2190 = { controlled_by = YUA }
+			726 = { controlled_by = YUA }
+			700 = { controlled_by = YUA }
+			730 = { controlled_by = YUA }
+			4215 = { controlled_by = YUA }
+			is_at_war = no
+			NOT = { num_of_rebel_controlled_provinces = 5 }
+		}
+		effect = {
+			country_event = { 
+				id = yua.200
+				days = 60
+				random = 30
+			}
+			remove_country_modifier = yua_toqtoa_religion_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_religion_mission_2 = { #Harmony, Instution Spread, Heretic Tolerance, Unity
+		icon = mission_religious
+		required_missions = { yua_toqtoa_reform_religion_start }
+		position = 15
+	
+		trigger = {
+			calc_true_if = {
+				all_core_province  = {
+					religion = ROOT
+				}
+				amount = 10
+			}
+			is_at_war = no
+			NOT = { num_of_rebel_controlled_provinces = 5 }
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_religion_reform_mission_2_modifier
+		}	
+	}
+	yua_toqtoa_reform_religion_mission_3 = { #Can't convert Hethens, Religious Unity
+		icon = mission_buddhist_monk_praying
+		required_missions = { yua_toqtoa_reform_religion_mission_2 }
+		position = 16
+	
+		trigger = {
+			calc_true_if = {
+				all_core_province  = {
+					religion = ROOT
+				}
+				amount = 30
+			}
+			is_at_war = no
+			NOT = { num_of_rebel_controlled_provinces = 5 }
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_religion_reform_mission_3_modifier
+		}	
+	}
+	yua_toqtoa_reform_religion_mission_4 = { #Final Conversion Mission, heretic conversion speed and heretic tolerance
+		icon = mission_buddhist_monk_praying
+		required_missions = { yua_toqtoa_reform_religion_mission_3 }
+		position = 17
+	
+		trigger = {
+			calc_true_if = {
+				all_core_province  = {
+					religion = ROOT
+				}
+				amount = 50
+			}
+			dominant_religion = ROOT
+			is_at_war = no
+			NOT = { num_of_rebel_controlled_provinces = 5 }
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_toqtoa_religion_reform_mission_4_modifier
+				duration = 3000
+				desc = yua_toqtoa_religion_reform_mission_4_modifier_tt
+			}
+		}	
+	}
+	yua_toqtoa_reform_culture_mission_1 = { #Culture Conversion Cost/New Culture
+		icon = mission_manchu_warrior
+		required_missions = { yua_toqtoa_reform_religion_mission_4 }
+		position = 18
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816 #Bejing
+				province_id = 2190 #Qaraqorum
+				province_id = 726 #Shenyang
+				province_id = 727 #Aigun
+				province_id = 730 #Girin
+				province_id = 1048 #Miyoo Gasan
+				province_id = 1056 #Barguzin
+				province_id = 725 #Cicigar
+				province_id = 2122 #Hami
+			}
+			NOT = { controlled_by = YUA } 
+		}
+		trigger = {
+			owns = 1816
+			owns = 2190
+			owns = 726
+			owns = 730
+			owns = 727
+			owns = 1048
+			owns = 1056
+			owns = 725
+			owns = 2122
+			is_emperor_of_china = yes
+			is_at_war = no
+			primary_culture = mongol
+			num_of_cities = 75
+			stability = 1
+			prestige = 0
+			NOT = { num_of_loans = 1 }
+			NOT = { num_of_revolts = 3 }
+			NOT = { has_disaster = red_turban_rebellion_disaster }
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			yuan_culture_convert_decision_effect = yes
+			remove_accepted_culture = khalkha
+			remove_accepted_culture = oirats
+			remove_accepted_culture = chahar
+			remove_accepted_culture = buryat
+			set_country_flag = yuan_quelled_chinese_rebellion_flag #Can cause OIR.1 to trigger if at war with CHG. May be used to cause future revolts. #TODO
+			remove_country_modifier = yua_toqtoa_culture_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_culture_mission_2 = { #Culture Conversion Cost, Promote Culture Cost, Accepted Cultures
+		icon = mission_rice_field #Welcome to the Rice fields mother fucker
+		required_missions = { yua_toqtoa_reform_culture_mission_1 }
+		position = 19
+	
+		trigger = {
+			dip_power = 200
+			is_at_war = no
+			NOT = { num_of_rebel_controlled_provinces = 5 }
+		}
+		effect = {
+			add_dip_power = -200
+			remove_country_modifier = yua_toqtoa_culture_reform_mission_2_modifier
+		}	
+	}
+	yua_toqtoa_reform_culture_mission_3 = { #Gains Reward
+		icon = mission_buddhist_monk_praying
+		required_missions = { yua_toqtoa_reform_culture_mission_2 }
+		position = 20
+	
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 30
+				has_owner_accepted_culture = yes
+				NOT = { culture = root }
+				is_overseas = no
+			}
+			is_at_war = no
+			NOT = { num_of_rebel_controlled_provinces = 5 }
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_toqtoa_culture_reform_mission_3_modifier
+				duration = -1
+				desc = yua_toqtoa_culture_reform_mission_3_modifier_tt
+			}
+		}	
+	}
+
+}
+
+yuan_toqtoa_interior_royal_family = { #Toqto's Return - Handling the Royal Family/Global Governence/Stability/
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	
+	yua_toqtoa_reform_royal_family_mission_1 = { #Heir Chance, Corruption, Prestige
+		icon =  mission_alliances
+		required_missions = { yua_toqtoa_interior_start }
+		position = 14
+		trigger = {
+			treasury = 200
+			adm_power = 100
+		}
+		effect = {
+			add_treasury = -200
+			add_adm_power = -100
+			remove_country_modifier = yua_toqtoa_royal_family_reform_mission_1_modifier
+		}
+	}
+	yua_toqtoa_reform_royal_family_mission_2 = { #Legitimacy, Mandate
+		icon = mission_chinese_general_riding
+		required_missions = { yua_toqtoa_reform_royal_family_mission_1 yua_toqtoa_reform_religion_start }
+		position = 15
+		trigger = {
+			months_of_ruling = 60
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_royal_family_reform_mission_2_modifier
+		}
+	}
+	yua_toqtoa_reform_royal_family_mission_3 = { #Monarch Power Gains
+		icon =  mission_rice_field
+		required_missions = { yua_toqtoa_reform_royal_family_mission_2 }
+		position = 16
+		trigger = {
+			OR = {
+				AND = {
+					adm = 3
+					heir_adm = 3
+					consort_adm = 3
+				}
+				AND = {
+					dip = 3
+					heir_dip = 3
+					consort_dip = 3
+				}
+				AND = {
+					mil = 3
+					heir_mil = 3
+					consort_mil = 3
+				
+				}
+			}
+			legitimacy_equivalent = 85
+		}
+		effect = {
+			add_adm_power = 400
+			add_dip_power = 400
+			add_mil_power = 400
+			remove_country_modifier = yua_toqtoa_royal_family_reform_mission_3_modifier
+		}
+	}
+	yua_toqtoa_reform_administration_mission_7 = { #Min Autonomy/Global Autonomy
+		icon = mission_buddhist_monk_praying
+		required_missions = { yua_toqtoa_reform_royal_family_mission_3 yua_toqtoa_reform_administration_mission_3 }
+		position = 17
+	
+		trigger = {
+			NOT = { average_autonomy = 50 }
+			adm_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+			remove_country_modifier = yua_toqtoa_administration_reform_mission_7_modifier
+		}	
+	}
+	yua_toqtoa_reform_administration_mission_8 = { #Autonomy Change Time/Territories Autonomy
+		icon = mission_early_game_buildings
+		required_missions = { yua_toqtoa_reform_administration_mission_7 }
+		position = 18
+	
+		trigger = {
+			NOT = { average_autonomy = 30 }
+			adm_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+			remove_country_modifier = yua_toqtoa_administration_reform_mission_8_modifier
+		}	
+	}
+	yua_toqtoa_reform_administration_mission_9 = { #Global Autonomy/Autonomy Change Time
+		icon = mission_central_asian_city
+		required_missions = { yua_toqtoa_reform_administration_mission_8 }
+		position = 19
+	
+		trigger = {
+			NOT = { average_autonomy = 25 }
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_administration_reform_mission_9_modifier
+		}	
+	}
+	yua_toqtoa_reform_stability_mission_1 = { #Stab Cost/Tech Cost/Institution Spread
+		icon = mission_high_income
+		required_missions = { yua_toqtoa_reform_administration_mission_9 yua_toqtoa_reform_culture_mission_3 yua_toqtoa_reform_administration_mission_6 }
+		position = 21
+	
+		trigger = {
+			adm_power = 150
+			dip_power = 150
+			mil_power = 100
+		}
+		effect = {
+			add_adm_power = -150
+			add_dip_power = -150
+			add_mil_power = -100
+			remove_country_modifier = yua_toqtoa_stability_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_stability_mission_2 = { #Stab Cost/Harsh Treatment Cost/Idea Cost
+		icon = mission_alliances
+		required_missions = { yua_toqtoa_reform_stability_mission_1 yua_toqtoa_reform_economy_mission_2 }
+		position = 22
+	
+		trigger = {
+			months_of_ruling = 60
+			adm_tech = 3
+			dip_tech = 3
+			mil_tech = 3	
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			remove_country_modifier = yua_toqtoa_stability_reform_mission_2_modifier
+		}	
+	}
+	yua_toqtoa_reform_yuan_finished_mission = { #Signifys an end to the chaos internally
+		icon = mission_empire
+		required_missions = { yua_toqtoa_reform_stability_mission_2 }
+		position = 23
+	
+		trigger = {
+			months_of_ruling = 60
+		}
+		effect = {
+			add_adm_power = 300
+			add_dip_power = 300
+			add_mil_power = 300
+			add_prestige = 15
+		}	
+	}
+}
+
+yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issues
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+
+	yua_toqtoa_interior_start = { #Start of interior path
+		icon =  mission_chinese_general_riding
+		required_missions = { }
+		position = 13
+		trigger = {
+			has_country_flag = yuan_toqto_returns_flag
+		}
+		effect = {
+			add_prestige = 1
+		}
+	}
+}
+
+yuan_toqtoa_interior_province_administration = { #Toqto's Return - Get the Provinces Autonomy under control/Advisors
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	
+	yua_toqtoa_reform_administration_mission_1 = { #Advisors 
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_interior_start }
+		position = 14
+	
+		trigger = {
+			treasury = 200
+		}
+		effect = {
+			add_treasury = -200
+			remove_country_modifier = yua_toqtoa_administration_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_administration_mission_2 = { #General Advisor Costs
+		icon = mission_high_income
+		required_missions = { yua_toqtoa_reform_administration_mission_1 }
+		position = 15
+	
+		trigger = {
+			OR = {
+				philosopher = 2
+				natural_scientist = 2
+				artist = 2
+				treasurer = 2
+				theologian = 2
+				master_of_mint = 2
+				inquisitor = 2
+				statesman = 2
+				naval_reformer = 2
+				trader = 2
+				spymaster = 2
+				colonial_governor = 2
+				diplomat = 2
+				navigator = 2
+				army_reformer = 2
+				army_organiser = 2
+				commandant = 2
+				quartermaster = 2
+				recruitmaster = 2
+				fortification_expert = 2
+				grand_captain = 2
+			}
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_administration_reform_mission_2_modifier
+		}	
+	}
+	yua_toqtoa_reform_administration_mission_3 = { #Specific Advisor Costs
+		icon = mission_high_income
+		required_missions = { yua_toqtoa_reform_administration_mission_2 yua_toqtoa_reform_diplomacy_mission_2 }
+		position = 16
+	
+		trigger = {
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			remove_country_modifier = yua_toqtoa_administration_reform_mission_3_modifier
+		}	
+	}
+	yua_toqtoa_reform_administration_mission_4 = { #Capital Region Bejing/Datong/Shenyang
+		icon = mission_central_asian_city
+		required_missions = { yua_toqtoa_reform_administration_mission_3 }
+		position = 17
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816
+				province_id = 697
+				province_id = 726
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 1816
+			owns = 697
+			owns = 726
+			1816 = { NOT = { local_autonomy = 26 } }
+			697 = { NOT = { local_autonomy = 26 } }
+			726 = { NOT = { local_autonomy = 26 } }
+		}
+		effect = {
+			1816 = {
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+			697 = { 
+				add_base_production = 3
+				add_base_manpower = 2
+			}
+			726 = {
+				add_base_production = 3
+				add_base_manpower = 2
+			}
+		}	
+	}
+	yua_toqtoa_reform_administration_mission_5 = { #Central Region Xi'an/Louyang/Lanzhou/Chengdu
+		icon = mission_central_asian_city
+		required_missions = { yua_toqtoa_reform_administration_mission_4 }
+		position = 18
+	
+		provinces_to_highlight = {
+			OR = {
+				province_id = 700
+				province_id = 1836
+				province_id = 699
+				province_id = 679
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 700 #Xi'an
+			owns = 1836 #Louyang
+			owns = 699 #Lanzhou
+			owns = 679 #Chengdu
+			700 = { NOT = { local_autonomy = 26 } }
+			1836 = { NOT = { local_autonomy = 26 } }
+			699 = { NOT = { local_autonomy = 26 } }
+			679 = { NOT = { local_autonomy = 26 } }
+		}
+		effect = {
+			700 = { #Xi'an
+				add_base_tax = 1
+				add_base_manpower = 4
+			}
+			1836 = { #Louyang
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			699 = { #Lanzhou
+				add_base_tax = 1
+				add_base_manpower = 4
+			}
+			679 = { #Chengdu
+				add_base_production = 4
+				add_base_manpower = 1
+			}
+		}
+	}
+	yua_toqtoa_reform_administration_mission_6 = { #Southern Region Canton/Hengyang/Fuzhou/Yunnan
+		icon = mission_central_asian_city
+		required_missions = { yua_toqtoa_reform_administration_mission_5 yua_toqtoa_reform_diplomacy_mission_6 yua_toqtoa_reform_trade_mission_3 }
+		position = 20
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 667
+				province_id = 2174
+				province_id = 669
+				province_id = 662
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 667 #Canton
+			owns = 2174 #Hengyang
+			owns = 669 #Fuzhou
+			owns = 662 #Yunnan
+			667 = { NOT = { local_autonomy = 26 } }
+			2174 = { NOT = { local_autonomy = 26 } }
+			669 = { NOT = { local_autonomy = 26 } }
+			662 = { NOT = { local_autonomy = 26 } } 
+		}
+		effect = {
+			667 = { #Canton
+				add_base_tax = 1
+				add_base_production = 3
+				add_base_manpower = 1
+			}
+			2174 = { #Hengyang
+				add_base_production = 4
+				add_base_manpower = 1
+			}
+			669 = { #Fuzhou
+				add_base_production = 4
+				add_base_manpower = 1
+			}
+			662 = { #Yunnan
+				add_base_production = 3
+				add_base_manpower = 2
+			}
+		}	
+	}
+
+}
+
+yuan_toqtoa_interior_diplomacy = { #Toqto's Return - Get our Diplomacy back on Track
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	
+	yua_toqtoa_reform_diplomacy_mission_1 = { #Hire Diplomats 
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_interior_start }
+		position = 14
+	
+		trigger = {
+			treasury = 150
+		}
+		effect = {
+			add_treasury = -150
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_diplomacy_mission_2 = { #Fix our Dip Rep
+		icon = mission_noble_council
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_1 }
+		position = 15
+	
+		trigger = {
+			OR = {
+				dip = 4
+				consort_dip = 3
+				heir_dip = 3
+			}
+			is_at_war = no
+			has_regency = no
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_2_modifier
+		}	
+	}
+	yua_toqtoa_reform_diplomacy_mission_3 = { #Improve our Relations Speed/Remove extra AE
+		icon = mission_market_place_with_asian_traders
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_2 }
+		position = 16
+	
+		trigger = {
+			dip_power = 200
+			has_advisor = yes
+			has_regency = no
+		}
+		effect = {
+			add_dip_power = -200
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_3_modifier
+		}	
+	}
+	yua_toqtoa_reform_diplomacy_mission_4 = { #Remove negative Diplomatic Relations
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_3 }
+		position = 17
+	
+		trigger = {
+			stability = 0
+			dip_power = 200
+			num_of_diplomatic_relations = 3
+			has_regency = no
+		}
+		effect = {
+			add_dip_power = -200
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_4_modifier
+		}	
+	}
+	
+	yua_toqtoa_reform_diplomacy_mission_5 = { #Allow player to have vassals/Remove Vassal Disloyalty
+		icon = mission_japanese_samurai
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_4 yua_toqtoa_reform_administration_mission_4 }
+		position = 18
+	
+		trigger = {
+			num_of_diplomatic_relations = 4
+			manpower = 20
+			is_at_war = no
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_5_modifier
+		}	
+	}
+	yua_toqtoa_reform_diplomacy_mission_6 = { #General Vassal Bonuses
+		icon = mission_japanese_fort
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_5 }
+		position = 19
+	
+		trigger = {
+			dip_tech = 4
+			is_at_war = no
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_6_modifier
+		}	
+	}
+}
+
+yuan_toqtoa_interior_spies_trade = { #Toqto's Return - Get our Spys back on track/Claims/Fix our Trade
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	
+	yua_toqtoa_reform_spies_mission_1 = { #Offense and Defense
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_interior_start }
+		position = 14
+	
+		trigger = {
+			owns = 1821
+			is_core = 1821
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_spies_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_spies_mission_2 = { #Relations, Rebel Support, etc
+		icon = mission_alliances
+		required_missions = { yua_toqtoa_reform_spies_mission_1 }
+		position = 15
+	
+		trigger = {
+			OR = {
+				AND = {
+					is_at_war = yes
+					treasury = 250
+				}
+				#has_spy_network_in = { #Goryeo
+				#	who = GYO
+				#	value = 20
+				#}
+				KOR = {
+					has_spy_network_in = { #Korea
+						who = ROOT
+						value = 20
+					}
+				}
+				CHG = {
+					has_spy_network_in = { #Changtai
+						who = ROOT
+						value = 20
+					}
+				}
+				MNG = {
+					has_spy_network_in = { #Ming
+						who = ROOT
+						value = 20
+					}
+				}
+				QIC = {
+					has_spy_network_in = { #Qi
+						who = ROOT
+						value = 20
+					}
+				}
+				UTS = {
+					has_spy_network_in = { #Tsang
+						who = ROOT
+						value = 20
+					}
+				}
+			}
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_spies_reform_mission_2_modifier
+		}	
+	}
+	yua_toqtoa_reform_spies_mission_3 = { #Claims, Trade Conflict, Enemy Core Cost, Claim Duration.
+		icon = mission_asian_trader
+		required_missions = { yua_toqtoa_reform_spies_mission_2 }
+		position = 16
+	
+		trigger = {
+			dip_power = 100 
+			mil_power = 100
+		}
+		effect = {
+			add_dip_power = -100
+			add_mil_power = -100
+			remove_country_modifier = yua_toqtoa_spies_reform_mission_3_modifier
+		}	
+	}
+	yua_toqtoa_reform_trade_mission_1 = { 
+		icon = mission_asian_trader
+		required_missions = { yua_toqtoa_reform_spies_mission_3 }
+		position = 17
+	
+		trigger = {
+			gems = 4
+			spices = 2
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_trade_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_trade_mission_2 = { 
+		icon = mission_junk_boat
+		required_missions = { yua_toqtoa_reform_trade_mission_1 }
+		position = 18
+	
+		trigger = {
+			advisor = trader
+			fur = 9
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_trade_reform_mission_2_modifier
+		}	
+	}
+	yua_toqtoa_reform_trade_mission_3 = { 
+		icon = mission_market_place_with_asian_traders
+		required_missions = { yua_toqtoa_reform_trade_mission_2 }
+		position = 19
+	
+		trigger = {
+			num_of_trade_embargos = 6
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_trade_reform_mission_3_modifier
+		}	
+	}
+	yua_toqtoa_reform_economy_mission_1 = { #Tax Modifier/Build Cost/Build Time/Interest/Inflation
+		icon = mission_rice_field
+		required_missions = { yua_toqtoa_reform_trade_mission_3 }
+		position = 20
+	
+		trigger = {
+			adm_power = 200
+		}
+		effect = {
+			add_adm_power = -200
+			remove_country_modifier = yua_toqtoa_economy_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_economy_mission_2 = { #Tax Modifier/Production Modifier/Inflation Cost/Trade Goods Produced
+		icon = mission_high_income
+		required_missions = { yua_toqtoa_reform_economy_mission_1 }
+		position = 21
+	
+		trigger = {
+			mercantilism = 5
+			treasury = 150
+		}
+		effect = {
+			add_treasury = -150
+			remove_country_modifier = yua_toqtoa_economy_reform_mission_2_modifier
+		}	
+	}	
+}

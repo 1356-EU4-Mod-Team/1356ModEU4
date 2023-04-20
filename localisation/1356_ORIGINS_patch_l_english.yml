@@ -65,13 +65,13 @@
  goldenbull_expansion_of_the_merchant_fleet: "Expansion of the Merchant Fleet"
  goldenbull_expansion_of_the_merchant_fleet_desc: ""
  
- reliance_on_feudalism: "High Feudal Retainment"
+ reliance_on_feudalism: "Reliance on High Feudal Policies"
  reliance_on_feudalism_desc: ""
  high_feudal_burecracy: "High Feudal Bureaucracy"
  high_feudal_burecracy_desc: ""
  high_feudal_ae_impact: "High Feudal War Justification"
  high_feudal_ae_impact_desc: ""
- relying_on_feudal_policies: "Reliance on High Feudal Policies"
+ relying_on_feudal_policies: "Relying on High Feudal Policies"
 
 
 
@@ -141,8 +141,8 @@
  BANDITS_KINGDOM_ADJ: "Bandits and Brigands"
  
  # Post 1.34
- information_events.1.t: "Playing with Early Game Policies"
- information_events.1.d: "In 1356, players are given access to an array of early game policies designed to tailor their experience over the course of the next 100 years. While you can keep these policies active post embracing the renaissance, you will be unable to select new ones or replace old ones post 1450. Furthermore, a §R-1§! Possible Policies modifier will be imposed until all early game policies have been removed."
+ information_events.1.t: "Playing with High Feudal Policies"
+ information_events.1.d: "In 1356, players are given access to an array of early game policies known as 'High Feudal Policies' designed to tailor their experience over the course of the next 100 years. While you can keep these policies active post embracing the renaissance, you will be unable to select new ones or replace old ones post 1450. Furthermore, a §R-1§! Possible Policies modifier will be imposed until all early game policies have been removed.\n\nMonarchies with the High Feudal Monarchy or Elective Feudal Monarchy Reform will be able to negate this penalty, but will remain with the inability to select new High Feudal Policies."
  information_events.1.a: "Understood"
- information_events.1.tt: "Embracing the §YRenaissance Institution§! will provides §G+1§! Possible Policies, bringing the maximum possible policies to §G+3§!"
+ information_events.1.tt: "Embracing the §YRenaissance Institution§! will provides §G+1§! Possible Policies, bringing the maximum possible policies to §G+3§!\n\nThe §YCentralize Power to the State§! Decision will enable you to swap out §JHigh Feudal Monarchy§! and §JElective Feudal Monarchy§! reforms in favor of the §YFeudal Nobility§! and §YElective Monarchy§! Reforms\n\n§YNon-Tribal§! and §YNon-Native nations§! that do not use these reforms will instead just recieve the §Gbonuses§! from the Decision."
  

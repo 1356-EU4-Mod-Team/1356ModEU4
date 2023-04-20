@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no # Nations that form Rum is handled differently in 1356
+			}
 			NOT = { tag = TUR }
 			NOT = { exists = RUM }
 			NOT = { tag = HLR }
@@ -64,17 +68,19 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = RUM
+			on_change_tag_effect = yes
+			restore_country_name = yes
 			RUM = {
 				if = {
 					limit = {
 						NOT = { government = monarchy }
 						is_revolutionary = no
 					}
-					change_government_to_monarchy = yes
+					change_government = monarchy
 				}
 				if = {
 					limit = { is_revolutionary = no }
-					add_government_reform = ottoman_government
+					add_government_reform = sultanate_of_rum_reform
 				}
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -101,6 +107,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = formed_rum_flag
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1

@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { tag = SPA }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -97,6 +101,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = SPA
+			on_change_tag_effect = yes
+			restore_country_name = yes
 			if = {
 				limit = {
 					NOT = { 
@@ -142,6 +148,18 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				tag = CAS
+				NOT = { is_enemy = ARA }
+				NOT = { is_rival = ARA }
+			}
+			modifier = {
+				factor = 0
+				tag = ARA
+				NOT = { is_enemy = CAS }
+				NOT = { is_rival = CAS }
+			}
 		}
 		ai_importance = 400
 	}
@@ -155,6 +173,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			is_tutorial_active = no
 			OR = {
@@ -221,13 +243,13 @@ country_decisions = {
 				AND = {
 					tag = CAS
 					ARA = {
-						NOT = { num_of_cities = 37 } #Keep this number the same as above. Original 17 +15, +5 with Spain update
+						NOT = { num_of_cities = 40 } #Keep this number the same as above. Original 17 +15, +5 with Spain update
 					}
 				}
 				AND = {
 					tag = ARA
 					CAS = {
-						NOT = { num_of_cities = 45 } #Keep this number the same as above. Original 25 +15, +5 with Spain update
+						NOT = { num_of_cities = 47 } #Keep this number the same as above. Original 25 +15, +5 with Spain update
 					}
 				}
 			}
@@ -257,6 +279,8 @@ country_decisions = {
 				inherit = CAS
 			}
 			change_tag = SPA
+			on_change_tag_effect = yes
+			restore_country_name = yes
 			if = {
 				limit = {
 					NOT = { 
